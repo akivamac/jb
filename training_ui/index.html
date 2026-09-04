@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoeBrain Training Dashboard</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --border: #d0d7de;
+  --text: #1f2328;
+  --text-dim: #656d76;
+  --accent: #0969da;
+  --accent-light: rgba(9,105,218,0.08);
+  --success: #1a7f37;
+  --success-light: rgba(26,127,55,0.08);
+  --warn: #9a6700;
+  --warn-light: rgba(154,103,0,0.08);
+  --error: #cf222e;
+  --error-light: rgba(207,34,46,0.08);
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.mono { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; }
+
+/* Header */
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header h1 svg { width: 20px; height: 20px; fill: var(--accent); }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.port-badge {
+  font-size: 12px;
+  color: var(--text-dim);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  gap: 24px;
+  padding: 12px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-dim);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.summary .stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.summary .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.summary .dot.idle { background: var(--text-dim); }
+
+/* Max concurrent control */
+.concurrent-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.concurrent-control label {
+  font-weight: 500;
+}
+
+.concurrent-input {
+  padding: 4px 6px;
+  font-size: 14px;
+  font-family: 'SF Mono', monospace;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+
+.concurrent-input:focus { border-color: var(--accent); }
+
+/* Main */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* Expert Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s;
+  cursor: pointer;
+}
+
+.card:hover { border-color: var(--accent); }
+.card.running { border-color: var(--accent); }
+.card.queued { border-color: var(--warn); }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-name { font-size: 16px; font-weight: 600; }
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge.running { color: var(--accent); background: var(--accent-light); animation: pulse 2s ease-in-out infinite; }
+.badge.idle { color: var(--text-dim); background: var(--bg); }
+.badge.queued { color: var(--warn); background: var(--warn-light); }
+
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+
+.card-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.stat-label { color: var(--text-dim); }
+.stat-value { font-weight: 500; }
+
+.progress-wrap { margin-top: 8px; }
+
+.progress-bar {
+  height: 4px;
+  background: #eaeef2;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.progress-text { font-size: 12px; color: var(--text-dim); }
+
+.card-actions { margin-top: 12px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: none;
+}
+
+.btn-train { color: var(--accent); border-color: var(--accent); background: var(--accent-light); }
+.btn-train:hover { background: var(--accent); color: #fff; }
+
+.btn-stop { color: var(--error); border-color: var(--error); background: var(--error-light); }
+.btn-stop:hover { background: var(--error); color: #fff; }
+
+.btn-dequeue { color: var(--warn); border-color: var(--warn); background: var(--warn-light); }
+.btn-dequeue:hover { background: var(--warn); color: #fff; }
+
+.btn-loading { position: relative; opacity: 0.7; cursor: wait; pointer-events: none; }
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Queue bar */
+.queue-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.queue-bar .queue-label { font-weight: 600; color: var(--text); margin-right: 8px; }
+
+.queue-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--warn-light);
+  color: var(--warn);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 2px 4px 2px 0;
+}
+
+/* Log Panel */
+.log-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.log-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.log-header-left { font-size: 13px; font-weight: 600; color: var(--text-dim); }
+
+.log-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.log-select {
+  font-size: 13px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+
+.log-select:focus { border-color: var(--accent); }
+
+.btn-clear {
+  font-size: 12px;
+  color: var(--text-dim);
+  background: none;
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-clear:hover { background: var(--bg); }
+
+.log-body {
+  height: 300px;
+  overflow-y: auto;
+  padding: 12px 16px;
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.log-line { white-space: pre-wrap; word-break: break-all; }
+.log-line.comment { color: var(--text-dim); }
+.log-line.sample-header { color: var(--success); font-weight: 600; }
+.log-line.sample-text { color: var(--text); background: var(--success-light); padding: 2px 6px; border-radius: 4px; margin: 2px 0 6px 0; }
+
+/* Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.active { display: flex; }
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  width: 360px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.modal h3 { font-size: 16px; margin-bottom: 16px; }
+
+.form-group { margin-bottom: 12px; }
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-family: 'SF Mono', monospace;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+
+.form-group input:focus { border-color: var(--accent); }
+
+.form-row-split { display: flex; gap: 8px; }
+.form-group.half { flex: 1; }
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.modal-queued-note {
+  font-size: 12px;
+  color: var(--warn);
+  margin-bottom: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.btn-cancel { color: var(--text-dim); border-color: var(--border); background: var(--surface); width: auto; padding: 7px 14px; }
+.btn-cancel:hover { background: var(--bg); }
+.btn-start { background: var(--accent); color: #fff; border-color: var(--accent); width: auto; padding: 7px 14px; }
+.btn-start:hover { opacity: 0.9; }
+
+/* Detail page */
+.detail-page {
+  display: none;
+}
+
+.detail-page.active {
+  display: block;
+}
+
+.main.hidden {
+  display: none;
+}
+
+.detail-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.btn-back:hover { background: var(--bg); color: var(--text); }
+
+.detail-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.detail-section { margin-bottom: 24px; }
+
+.detail-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.detail-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+
+.detail-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.detail-stat .label { color: var(--text-dim); }
+.detail-stat .value { font-weight: 500; font-family: 'SF Mono', monospace; }
+
+.detail-progress-wrap { margin-bottom: 16px; }
+
+.detail-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+/* Test chat */
+.test-chat {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.test-chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.test-chat-input input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+
+.test-chat-input input:focus { border-color: var(--accent); }
+
+.test-chat-input button {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.test-chat-input button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.test-chat-input button.secondary {
+  background: var(--surface);
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+
+.test-chat-response {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 40px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.test-chat-response .placeholder { color: var(--text-dim); }
+
+/* Test suite */
+.test-suite { margin-top: 20px; border-top: 1px solid var(--border); padding-top: 16px; }
+.test-suite-summary { font-size: 16px; margin-bottom: 12px; }
+.test-score { font-size: 20px; font-weight: 700; font-family: 'SF Mono', monospace; }
+.test-row { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.test-row:last-child { border-bottom: none; }
+.test-q { margin-bottom: 4px; }
+.test-q strong { color: var(--text); }
+.test-expect { color: var(--text-dim); margin-left: 22px; }
+.test-actual { color: var(--text-dim); margin-left: 22px; font-style: italic; }
+.test-pass { color: var(--success); font-weight: 700; margin-right: 4px; }
+.test-fail { color: var(--error); font-weight: 700; margin-right: 4px; }
+
+/* Sparkline */
+.sparkline { display: block; margin-top: 6px; }
+
+/* Loss chart */
+.loss-chart-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.chart-windows { display: flex; gap: 4px; }
+.chart-win-btn {
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.chart-win-btn:hover { border-color: var(--accent); color: var(--accent); }
+.chart-win-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Training history */
+.history-list { list-style: none; }
+.history-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+}
+.history-list .h-type { font-size: 11px; font-weight: 600; text-transform: uppercase; padding: 1px 6px; border-radius: 4px; white-space: nowrap; }
+.history-item:last-child { border-bottom: none; }
+.history-item .h-time { color: var(--text-dim); white-space: nowrap; font-family: 'SF Mono', monospace; }
+.history-more { padding: 6px 0; font-size: 12px; }
+.history-more a { color: var(--accent); text-decoration: none; }
+.history-more a:hover { text-decoration: underline; }
+.history-item .h-type {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.h-type.start { color: var(--accent); background: var(--accent-light); }
+.h-type.resume { color: var(--warn); background: var(--warn-light); }
+.h-type.finish { color: var(--success); background: var(--success-light); }
+.h-type.stop { color: var(--error); background: var(--error-light); }
+.h-type.interrupt { color: var(--error); background: var(--error-light); }
+.h-type.error { color: var(--error); background: var(--error-light); }
+.h-type.sample { color: var(--success); background: var(--success-light); }
+.h-type.info { color: var(--text-dim); background: var(--bg); }
+
+/* ETA */
+.eta-text { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>
+    <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/></svg>
+    JoeBrain Training Dashboard
+  </h1>
+  <div class="header-right">
+    <span class="port-badge">port 9091</span>
+  </div>
+</div>
+
+<div class="summary" id="summary">
+  <div class="stat"><span class="dot"></span> <span id="sum-running">0</span> running</div>
+  <div class="stat"><span class="dot idle"></span> <span id="sum-total">0</span> experts</div>
+  <div class="stat"><span id="sum-steps">0</span> total steps</div>
+  <div class="concurrent-control">
+    <label>Max concurrent:</label>
+    <select class="concurrent-input" id="max-concurrent" onchange="updateMaxConcurrent()">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+  </div>
+</div>
+
+<div class="main">
+  <div class="section-label">Experts</div>
+  <div class="cards" id="cards"></div>
+
+  <div class="queue-bar" id="queue-bar" style="display:none">
+    <span class="queue-label">Queue:</span>
+    <span id="queue-items"></span>
+  </div>
+
+  <div class="section-label">Training Log</div>
+  <div class="log-panel">
+    <div class="log-header">
+      <span class="log-header-left">Live Output</span>
+      <div class="log-header-right">
+        <select class="log-select" id="log-select" onchange="switchLog()"></select>
+        <button class="btn-clear" onclick="clearLog()">Clear</button>
+      </div>
+    </div>
+    <div class="log-body" id="log-body">
+      <div class="log-line comment">Select an expert to view logs...</div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Training Modal -->
+<div class="modal-overlay" id="modal-overlay">
+  <form class="modal" id="modal-form" onsubmit="return handleModalSubmit(event)">
+    <h3 id="modal-title">Train expert</h3>
+    <div class="modal-queued-note" id="modal-queued-note" style="display:none"></div>
+    <div class="form-group">
+      <label>Steps</label>
+      <input type="number" id="inp-steps" value="1000" min="1" enterkeyhint="go">
+    </div>
+    <div class="form-group">
+      <label>Learning Rate</label>
+      <input type="text" id="inp-lr" value="3e-4" enterkeyhint="go">
+    </div>
+    <div class="form-group">
+      <label>Batch Size</label>
+      <input type="number" id="inp-batch" value="8" min="1" enterkeyhint="go">
+    </div>
+    <div class="form-group">
+      <label>Seq Length</label>
+      <input type="number" id="inp-seqlen" value="128" min="16" enterkeyhint="go">
+    </div>
+    <div class="form-row-split">
+      <div class="form-group half">
+        <label>Save every</label>
+        <input type="number" id="inp-save" value="0" min="0" enterkeyhint="go" placeholder="0=off">
+      </div>
+      <div class="form-group half">
+        <label>Log every</label>
+        <input type="number" id="inp-log" value="100" min="1" enterkeyhint="go">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Sample every (0=off)</label>
+      <input type="number" id="inp-sample" value="200" min="0" enterkeyhint="go">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" id="inp-resume" checked>
+      <label for="inp-resume">Resume from checkpoint</label>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+      <button type="submit" class="btn btn-start" id="modal-start-btn">Start Training</button>
+    </div>
+  </form>
+</div>
+
+<!-- History Popup -->
+<div class="modal-overlay" id="history-overlay" onclick="if(event.target===this)closeHistoryPopup()">
+  <div class="popup" style="max-width:500px;max-height:70vh;display:flex;flex-direction:column">
+    <div class="modal-header">
+      <h3>Training History</h3>
+      <button class="modal-close" onclick="closeHistoryPopup()">&times;</button>
+    </div>
+    <div style="overflow-y:auto;flex:1" id="history-popup-body"></div>
+  </div>
+</div>
+
+<!-- Expert Detail Page -->
+<div class="detail-page" id="detail-page">
+  <div class="detail-topbar">
+    <button class="btn-back" onclick="closeDetail()">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06z"/></svg>
+      Back
+    </button>
+    <h2 id="detail-name" style="font-size:18px;font-weight:600"></h2>
+    <span class="badge" id="detail-badge"></span>
+  </div>
+  <div class="detail-content" id="detail-content"></div>
+</div>
+
+<script>
+const API = '';
+let experts = [];
+let maxConcurrent = 2;
+let queueList = [];
+let currentLogExpert = null;
+let logEventSource = null;
+let trainingExpertName = null;
+let lastLogType = null;
+let currentDetailExpert = null;
+let lossHistoryCache = {};  // {name: [{step, loss, lr, speed, time}, ...]}
+let logHistoryCache = {};  // {name: [{type, time, raw, step}, ...]}
+let prevRunning = {};  // {name: bool} for notification detection
+let logDataSeq = {};  // {name: int} sequence token for fetchLogData ordering
+
+// Experts that passed their test suite (manually confirmed)
+const PASSED_EXPERTS = new Set(['greeting', 'emotion', 'knowledge', 'coding', 'cot', 'python', 'horse']);
+
+// --- Fetch experts ---
+async function fetchExperts() {
+  try {
+    const res = await fetch(API + '/api/experts');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    experts = data.experts || [];
+    maxConcurrent = data.max_concurrent != null ? data.max_concurrent : 2;
+    queueList = data.queue || [];
+
+    // Detect newly finished experts for notifications
+    if (Notification && Notification.permission === 'granted') {
+      for (const e of experts) {
+        if (prevRunning[e.name] && !e.running) {
+          if (!document.hidden) {
+            new Notification('Training finished', {
+              body: `${e.name} completed at step ${e.step}`,
+              tag: e.name,
+            });
+          }
+        }
+      }
+    }
+    prevRunning = {};
+    for (const e of experts) prevRunning[e.name] = e.running;
+
+    render();
+
+    // Fetch loss history for all experts (non-blocking)
+    for (const e of experts) {
+      fetchLogData(e.name);
+    }
+  } catch (e) {
+    console.error('Failed to fetch experts:', e);
+  }
+}
+
+async function fetchLogData(name) {
+  const seq = (logDataSeq[name] || 0) + 1;
+  logDataSeq[name] = seq;
+  try {
+    const res = await fetch(API + '/api/logdata?name=' + encodeURIComponent(name));
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (logDataSeq[name] !== seq) return; // stale response, discard
+    lossHistoryCache[name] = data.data || [];
+    logHistoryCache[name] = data.history || [];
+    requestAnimationFrame(() => {
+      drawSparkline('spark-' + name, lossHistoryCache[name], '#0969da');
+    });
+  } catch (e) {
+    console.error('fetchLogData failed for', name + ':', e);
+  }
+}
+
+function render() {
+  const cardsEl = document.getElementById('cards');
+  const logSelect = document.getElementById('log-select');
+
+  // Summary
+  const running = experts.filter(e => e.running);
+  document.getElementById('sum-running').textContent = running.length;
+  document.getElementById('sum-total').textContent = experts.length;
+  document.getElementById('sum-steps').textContent = experts.reduce((s, e) => s + (e.step || 0), 0).toLocaleString();
+
+  // Max concurrent select (sync without triggering onchange)
+  const sel = document.getElementById('max-concurrent');
+  if (document.activeElement !== sel) {
+    sel.value = maxConcurrent;
+  }
+
+  // Queue bar
+  const queueBar = document.getElementById('queue-bar');
+  if (queueList.length > 0) {
+    queueBar.style.display = 'block';
+    document.getElementById('queue-items').innerHTML = queueList.map((name, i) =>
+      `<span class="queue-item">${i + 1}. ${name}</span>`
+    ).join('');
+  } else {
+    queueBar.style.display = 'none';
+  }
+
+  // Cards
+  cardsEl.innerHTML = experts.map(e => renderCard(e)).join('');
+
+  // Log select
+  const prevVal = logSelect.value;
+  logSelect.innerHTML = experts.map(e =>
+    `<option value="${e.name}" ${e.name === prevVal ? 'selected' : ''}>${e.name}</option>`
+  ).join('');
+  if (!prevVal && experts.length > 0) {
+    logSelect.value = experts[0].name;
+    if (!currentLogExpert) switchLog();
+  }
+
+  // Refresh detail page badge only (don't rebuild - kills keyboard)
+  if (currentDetailExpert) {
+    const de = experts.find(x => x.name === currentDetailExpert);
+    if (de) {
+      const badge = document.getElementById('detail-badge');
+      if (badge) {
+        let bc = 'idle', bt = 'idle';
+        if (de.running) { bc = 'running'; bt = 'running'; }
+        else if (de.queued) { bc = 'queued'; bt = 'queued'; }
+        badge.className = 'badge ' + bc;
+        badge.textContent = bt;
+      }
+    }
+  }
+}
+
+function renderCard(e) {
+  const running = e.running;
+  const queued = e.queued;
+  const lossStr = e.loss != null ? e.loss.toFixed(4) : '—';
+
+  const LOSS_GOAL = 0.044;
+  const LOSS_START = 5.5;
+  let lossPct = 0;
+  if (e.loss != null && e.loss > 0) {
+    lossPct = Math.max(0, Math.min(100,
+      (Math.log(LOSS_START) - Math.log(e.loss)) / (Math.log(LOSS_START) - Math.log(LOSS_GOAL)) * 100));
+  }
+  const lossColor = lossPct >= 100 ? 'var(--success)' : lossPct >= 50 ? 'var(--accent)' : 'var(--error)';
+
+  let etaHtml = '';
+  if (running && e.speed && e.speed > 0 && e.target && e.target > e.step) {
+    const remaining = (e.target - e.step) / e.speed;
+    etaHtml = `<div class="eta-text">ETA: ${formatEta(remaining)}</div>`;
+  }
+
+  let sparkId = 'spark-' + e.name;
+  let sparkHtml = '';
+  const hist = lossHistoryCache[e.name];
+  if (hist && hist.length >= 2) {
+    sparkHtml = `<canvas class="sparkline" id="${sparkId}" style="width:100%;height:16px"></canvas>`;
+  }
+
+  let btnHtml = '';
+  if (running) {
+    btnHtml = `<button class="btn btn-stop" onclick="stopTraining('${e.name}')">Stop</button>`;
+  } else if (e.loading) {
+    btnHtml = `<button class="btn btn-train" disabled><div class="spinner"></div></button>`;
+  } else if (queued) {
+    const pos = queueList.indexOf(e.name) + 1;
+    btnHtml = `<button class="btn btn-dequeue" onclick="dequeueExpert('${e.name}')">Queue #${pos}</button>`;
+  } else {
+    btnHtml = `<button class="btn btn-train" onclick="openModal('${e.name}')">Train</button>`;
+  }
+
+  let badgeClass = 'idle';
+  let badgeText = 'idle';
+  if (running) { badgeClass = 'running'; badgeText = 'running'; }
+  else if (queued) { badgeClass = 'queued'; badgeText = 'queued'; }
+
+  return `
+    <div class="card ${running ? 'running' : ''} ${queued ? 'queued' : ''}" onclick="openDetail('${e.name}')">
+      <div class="card-header">
+        <span class="card-name">${e.name}${PASSED_EXPERTS.has(e.name) ? ' <span class="card-pass" title="Test suite passed">&#10003;</span>' : ''}</span>
+        <span class="badge ${badgeClass}">${badgeText}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Loss</span>
+        <span class="stat-value mono">${lossStr}</span>
+      </div>
+      ${etaHtml}
+      <div class="progress-wrap">
+        <div class="progress-text mono">${Math.round(lossPct)}% to ${LOSS_GOAL}</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${lossPct}%; background:${lossColor}"></div></div>
+      </div>
+      ${sparkHtml}
+      <div class="card-actions">${btnHtml}</div>
+    </div>`;
+}
+
+function formatLogLine(line) {
+  const parts = line.split(',');
+  if (parts.length >= 4) {
+    const step = parts[0].trim();
+    const loss = parseFloat(parts[1]).toFixed(4);
+    const lr = parts[2].trim();
+    const sps = parts[3].trim();
+    return `step ${step.padStart(5)}  loss ${loss}  lr ${lr}  ${sps} steps/s`;
+  }
+  return line;
+}
+
+function formatBytes(b) {
+  if (b < 1024) return b + ' B';
+  if (b < 1048576) return (b / 1024).toFixed(1) + ' KB';
+  return (b / 1048576).toFixed(1) + ' MB';
+}
+
+function drawSparkline(canvasId, data, color) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas || !data || data.length < 2) return;
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const cssW = canvas.offsetWidth;
+  const cssH = 32;
+  canvas.width = cssW * dpr;
+  canvas.height = cssH * dpr;
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, cssW, cssH);
+  const losses = data.map(d => d.loss);
+  const min = Math.min(...losses);
+  const max = Math.max(...losses);
+  const range = max - min || 1;
+  ctx.beginPath();
+  ctx.strokeStyle = color || '#0969da';
+  ctx.lineWidth = 2;
+  for (let i = 0; i < losses.length; i++) {
+    const x = (i / (losses.length - 1)) * cssW;
+    const y = cssH - 4 - ((losses[i] - min) / range) * (cssH - 8);
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.stroke();
+}
+
+function formatEta(seconds) {
+  if (!isFinite(seconds) || seconds <= 0) return '—';
+  if (seconds < 60) return Math.round(seconds) + 's';
+  if (seconds < 3600) return Math.round(seconds / 60) + 'm ' + Math.round(seconds % 60) + 's';
+  return Math.round(seconds / 3600) + 'h ' + Math.round((seconds % 3600) / 60) + 'm';
+}
+
+function drawDetailChart(data) {
+  const canvas = document.getElementById('detail-chart');
+  if (!canvas || !data || data.length < 2) {
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      canvas.width = canvas.offsetWidth * 2;
+      canvas.height = 440;
+      ctx.fillStyle = '#656d76';
+      ctx.font = '22px -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Not enough data', canvas.width / 2, 140);
+    }
+    return;
+  }
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth;
+  const H = canvas.offsetHeight || 140;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, W, H);
+
+  const losses = data.map(d => d.loss);
+  const minL = Math.min(...losses);
+  const maxL = Math.max(...losses);
+  const range = maxL - minL || 1;
+  const padL = 48, padR = 12, padT = 12, padB = 28;
+  const cW = W - padL - padR;
+  const cH = H - padT - padB;
+
+  // Grid lines
+  for (let i = 0; i <= 4; i++) {
+    const y = padT + (i / 4) * cH;
+    ctx.strokeStyle = i === 4 ? '#d0d7de' : '#f0f0f0';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(padL, y);
+    ctx.lineTo(W - padR, y);
+    ctx.stroke();
+    const val = maxL - (i / 4) * range;
+    ctx.fillStyle = '#656d76';
+    ctx.font = '16px -apple-system, monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(val.toFixed(3), padL - 6, y + 4);
+  }
+
+  // Step labels
+  ctx.fillStyle = '#656d76';
+  ctx.font = '14px -apple-system, monospace';
+  ctx.textAlign = 'center';
+  const firstStep = data[0].step;
+  const lastStep = data[data.length - 1].step;
+  ctx.fillText(firstStep.toLocaleString(), padL + 20, H - 6);
+  ctx.fillText(lastStep.toLocaleString(), W - padR - 20, H - 6);
+
+  // Gradient fill under line
+  const grad = ctx.createLinearGradient(0, padT, 0, H - padB);
+  grad.addColorStop(0, 'rgba(9, 105, 218, 0.15)');
+  grad.addColorStop(1, 'rgba(9, 105, 218, 0.0)');
+  ctx.beginPath();
+  for (let i = 0; i < losses.length; i++) {
+    const x = padL + (i / (losses.length - 1)) * cW;
+    const y = padT + (1 - (losses[i] - minL) / range) * cH;
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.lineTo(padL + cW, H - padB);
+  ctx.lineTo(padL, H - padB);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Loss line
+  ctx.beginPath();
+  ctx.strokeStyle = '#0969da';
+  ctx.lineWidth = 2;
+  ctx.lineJoin = 'round';
+  for (let i = 0; i < losses.length; i++) {
+    const x = padL + (i / (losses.length - 1)) * cW;
+    const y = padT + (1 - (losses[i] - minL) / range) * cH;
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.stroke();
+
+  // End dot
+  if (losses.length > 0) {
+    const lastX = padL + cW;
+    const lastY = padT + (1 - (losses[losses.length - 1] - minL) / range) * cH;
+    ctx.beginPath();
+    ctx.arc(lastX, lastY, 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#0969da';
+    ctx.fill();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+
+  // Goal line at 0.044
+  if (minL <= 0.044 && maxL >= 0.044) {
+    const goalY = padT + (1 - (0.044 - minL) / range) * cH;
+    ctx.strokeStyle = '#1a7f37';
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([6, 4]);
+    ctx.beginPath();
+    ctx.moveTo(padL, goalY);
+    ctx.lineTo(W - padR, goalY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = '#1a7f37';
+    ctx.font = '13px -apple-system, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('goal 0.044', padL + 4, goalY - 5);
+  }
+}
+
+let currentChartWindow = 'all';
+async function setChartWindow(name, window, btn) {
+  currentChartWindow = window;
+  document.querySelectorAll('.chart-win-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  try {
+    const res = await fetch(API + '/api/logdata?name=' + encodeURIComponent(name) + '&window=' + window);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    lossHistoryCache[name] = data.data || [];
+    logHistoryCache[name] = data.history || [];
+    drawDetailChart(data.data || []);
+  } catch (e) {
+    console.error('setChartWindow failed:', e);
+    drawDetailChart(lossHistoryCache[name] || []);
+  }
+}
+
+// --- Max concurrent ---
+async function updateMaxConcurrent() {
+  const val = parseInt(document.getElementById('max-concurrent').value);
+  try {
+    const res = await fetch(API + '/api/queue', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({max_concurrent: val}),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    maxConcurrent = data.max_concurrent;
+    document.getElementById('max-concurrent').value = maxConcurrent;
+    fetchExperts();
+  } catch (e) {
+    console.error('Failed to update:', e);
+  }
+}
+
+// --- Modal ---
+const PARAMS_KEY = 'joebrain_train_params';
+
+function saveParams() {
+  const params = {
+    steps: document.getElementById('inp-steps').value,
+    lr: document.getElementById('inp-lr').value,
+    batch: document.getElementById('inp-batch').value,
+    seq_len: document.getElementById('inp-seqlen').value,
+    save: document.getElementById('inp-save').value,
+    log: document.getElementById('inp-log').value,
+    sample: document.getElementById('inp-sample').value,
+    resume: document.getElementById('inp-resume').checked,
+  };
+  try { localStorage.setItem(PARAMS_KEY, JSON.stringify(params)); } catch(e) {}
+}
+
+function loadParams() {
+  try {
+    const raw = localStorage.getItem(PARAMS_KEY);
+    if (!raw) return;
+    const p = JSON.parse(raw);
+    if (p.steps) document.getElementById('inp-steps').value = p.steps;
+    if (p.lr) document.getElementById('inp-lr').value = p.lr;
+    if (p.batch) document.getElementById('inp-batch').value = p.batch;
+    if (p.seq_len) document.getElementById('inp-seqlen').value = p.seq_len;
+    if (p.save != null) document.getElementById('inp-save').value = p.save;
+    if (p.log) document.getElementById('inp-log').value = p.log;
+    if (p.sample != null) document.getElementById('inp-sample').value = p.sample;
+    if (p.resume != null) document.getElementById('inp-resume').checked = p.resume;
+  } catch(e) {}
+}
+
+function openModal(name) {
+  trainingExpertName = name;
+  document.getElementById('modal-title').textContent = `Train "${name}"`;
+  const note = document.getElementById('modal-queued-note');
+  const runningCount = experts.filter(e => e.running).length;
+  if (runningCount >= maxConcurrent) {
+    note.style.display = 'block';
+    note.textContent = `All ${maxConcurrent} slots full — this will be queued and start automatically when a slot opens.`;
+    document.getElementById('modal-start-btn').textContent = 'Add to Queue';
+  } else {
+    note.style.display = 'none';
+    document.getElementById('modal-start-btn').textContent = 'Start Training';
+  }
+  document.getElementById('modal-overlay').classList.add('active');
+  loadParams();
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('active');
+  trainingExpertName = null;
+}
+
+// --- Detail page ---
+function openDetail(name) {
+  const e = experts.find(x => x.name === name);
+  if (!e) return;
+
+  document.getElementById('detail-name').textContent = e.name;
+
+  const badge = document.getElementById('detail-badge');
+  let badgeClass = 'idle';
+  let badgeText = 'idle';
+  if (e.running) { badgeClass = 'running'; badgeText = 'running'; }
+  else if (e.queued) { badgeClass = 'queued'; badgeText = 'queued'; }
+  badge.className = 'badge ' + badgeClass;
+  badge.textContent = badgeText;
+
+  const running = e.running;
+  const queued = e.queued;
+  const lossStr = e.loss != null ? e.loss.toFixed(4) : '—';
+  const speedStr = e.speed != null ? e.speed.toFixed(2) + ' steps/s' : '—';
+  const lrStr = e.lr != null ? e.lr.toExponential(2) : '—';
+  const sizeStr = e.file_size ? formatBytes(e.file_size) : '—';
+
+  const LOSS_GOAL = 0.044;
+  const LOSS_START = 5.5;
+  let lossPct = 0;
+  if (e.loss != null && e.loss > 0) {
+    lossPct = Math.max(0, Math.min(100,
+      (Math.log(LOSS_START) - Math.log(e.loss)) / (Math.log(LOSS_START) - Math.log(LOSS_GOAL)) * 100));
+  }
+  const lossColor = lossPct >= 100 ? 'var(--success)' : lossPct >= 50 ? 'var(--accent)' : 'var(--error)';
+
+  let runProgressHtml = '';
+  if (running && e.target && e.target > 0) {
+    const pct = Math.min(100, Math.round((e.step / e.target) * 100));
+    let etaHtml2 = '';
+    if (e.speed && e.speed > 0) {
+      const remaining = (e.target - e.step) / e.speed;
+      etaHtml2 = `<div class="eta-text" style="margin-bottom:4px">ETA: ${formatEta(remaining)}</div>`;
+    }
+    runProgressHtml = `
+      <div class="detail-progress-wrap">
+        <div class="detail-section-label">Current Run</div>
+        ${etaHtml2}
+        <div class="progress-text mono" style="margin-bottom:4px">${e.step.toLocaleString()} / ${e.target.toLocaleString()} steps (${pct}%)</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+      </div>`;
+  }
+
+  let actionsHtml = '';
+  if (running) {
+    actionsHtml = `<button class="btn btn-stop" onclick="stopTraining('${e.name}')">Stop Training</button>`;
+  } else if (queued) {
+    const pos = queueList.indexOf(e.name) + 1;
+    actionsHtml = `<button class="btn btn-dequeue" onclick="dequeueExpert('${e.name}')">Cancel Queue (#${pos})</button>`;
+  } else {
+    actionsHtml = `<button class="btn btn-train" onclick="openModal('${e.name}')">Train</button>`;
+  }
+
+  // Build training history HTML from cache (instant)
+  let historyHtml = '';
+  let cachedLog = logHistoryCache[name] || [];
+  function buildHistoryHtml(data) {
+    if (!data || data.length === 0) return '';
+    const items = data.map(h => {
+      const timeStr = h.time || '';
+      const typeClass = h.type || 'info';
+      let detail = h.raw || '';
+      detail = detail.replace(/^#\s*\[.*?\]\s*/, '');
+      return `<li class="history-item"><span class="h-time">${timeStr}</span><span class="h-type ${typeClass}">${typeClass}</span><span>${detail}</span></li>`;
+    });
+    const last4 = items.slice(-4).join('');
+    const all = items.join('');
+    const moreLink = items.length > 4
+      ? `<div class="history-more"><a href="#" onclick="event.preventDefault(); openHistoryPopup('${name}')">Show all ${items.length} entries</a></div>`
+      : '';
+    window._fullHistoryHtml = all;
+    return `
+      <div class="detail-section">
+        <div class="detail-section-label">Training History</div>
+        <ul class="history-list">${last4}</ul>
+        ${moreLink}
+      </div>`;
+  }
+  historyHtml = buildHistoryHtml(cachedLog);
+
+  document.getElementById('detail-content').innerHTML = `
+    <div class="detail-section">
+      <div class="detail-section-label">Progress</div>
+      ${runProgressHtml}
+      <div class="detail-progress-wrap">
+        <div class="progress-text mono" style="margin-bottom:4px">${lossStr} — ${Math.round(lossPct)}% to ${LOSS_GOAL}</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${lossPct}%; background:${lossColor}"></div></div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Training</div>
+      <div class="detail-stats">
+        <div class="detail-stat"><span class="label">Loss</span><span class="value">${lossStr}</span></div>
+        <div class="detail-stat"><span class="label">LR</span><span class="value">${lrStr}</span></div>
+        <div class="detail-stat"><span class="label">Speed</span><span class="value">${speedStr}</span></div>
+        <div class="detail-stat"><span class="label">Steps</span><span class="value">${e.step.toLocaleString()}</span></div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Model</div>
+      <div class="detail-stats">
+        <div class="detail-stat"><span class="label">Size</span><span class="value">${sizeStr}</span></div>
+        <div class="detail-stat"><span class="label">Params</span><span class="value">${e.params ? e.params.toLocaleString() : '—'}</span></div>
+        <div class="detail-stat"><span class="label">Layers</span><span class="value">${e.layers || '—'}</span></div>
+        <div class="detail-stat"><span class="label">Dim</span><span class="value">${e.dim || '—'}</span></div>
+        <div class="detail-stat"><span class="label">Seq Len</span><span class="value">${e.seq_len || '—'}</span></div>
+        <div class="detail-stat"><span class="label">Data</span><span class="value">${(e.train_lines || 0).toLocaleString()} lines</span></div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label" style="display:flex;align-items:center;justify-content:space-between">
+        <span>Loss Curve</span>
+        <div class="chart-windows">
+          <button class="chart-win-btn active" data-window="all" onclick="setChartWindow('${name}','all',this)">All</button>
+          <button class="chart-win-btn" data-window="1w" onclick="setChartWindow('${name}','1w',this)">1W</button>
+          <button class="chart-win-btn" data-window="1d" onclick="setChartWindow('${name}','1d',this)">1D</button>
+          <button class="chart-win-btn" data-window="run" onclick="setChartWindow('${name}','run',this)">Run</button>
+        </div>
+      </div>
+      <div class="loss-chart-wrap">
+        <canvas id="detail-chart" style="width:100%;height:220px"></canvas>
+      </div>
+    </div>
+
+    ${historyHtml}
+
+    <div class="detail-actions">${actionsHtml}
+      <button class="btn btn-train" style="margin-left:8px" onclick="runTestSuite('${name}')">Test Model</button>
+    </div>
+
+    <div class="test-suite" id="test-suite" style="display:none">
+      <div class="detail-section-label">Test Results</div>
+      <div class="test-suite-summary" id="test-summary"></div>
+      <div class="test-suite-results" id="test-results"></div>
+    </div>
+
+    <div class="test-chat">
+      <div class="detail-section-label">Test Chat</div>
+      <div class="test-chat-input">
+        <input type="text" id="test-input" placeholder="Ask a question..." enterkeyhint="go"
+          onkeydown="if(event.key==='Enter'){event.preventDefault();sendTestChat()}">
+        <button onclick="sendTestChat()" id="test-send-btn">Send</button>
+        <button class="secondary" onclick="clearTestChat()">Clear</button>
+      </div>
+      <div class="test-chat-response" id="test-response">
+        <span class="placeholder">Response will appear here...</span>
+      </div>
+    </div>`;
+
+  document.getElementById('detail-page').classList.add('active');
+  document.querySelector('.main').classList.add('hidden');
+  document.getElementById('summary').style.display = '';
+  currentDetailExpert = name;
+  currentChartWindow = 'all';
+
+  // Draw loss chart + fetch fresh history in background
+  requestAnimationFrame(() => {
+    drawDetailChart(lossHistoryCache[name] || []);
+  });
+  fetchLogData(name).then(() => {
+    if (currentDetailExpert !== name) return;
+    const freshData = lossHistoryCache[name] || [];
+    drawDetailChart(freshData);
+    const newHistHtml = buildHistoryHtml(logHistoryCache[name] || []);
+    if (newHistHtml) {
+      // Find existing history section or insert before actions
+      const existingHist = document.querySelector('.detail-content .history-list');
+      if (existingHist) {
+        const section = existingHist.closest('.detail-section');
+        if (section) section.outerHTML = newHistHtml;
+      } else {
+        const actionsEl = document.querySelector('.detail-actions');
+        if (actionsEl) actionsEl.insertAdjacentHTML('beforebegin', newHistHtml);
+      }
+    }
+  });
+}
+
+function closeDetail() {
+  document.getElementById('detail-page').classList.remove('active');
+  document.querySelector('.main').classList.remove('hidden');
+  document.getElementById('summary').style.display = '';
+  currentDetailExpert = null;
+}
+
+// --- Test chat ---
+
+async function sendTestChat() {
+  const input = document.getElementById('test-input');
+  const msg = input.value.trim();
+  if (!msg || !currentDetailExpert) return;
+
+  const responseEl = document.getElementById('test-response');
+  const sendBtn = document.getElementById('test-send-btn');
+  responseEl.textContent = '';
+  sendBtn.disabled = true;
+  input.value = '';
+
+  try {
+    const res = await fetch(API + '/api/test', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        expert: currentDetailExpert,
+        msg: msg,
+        history: [],
+        max_new: 150,
+      }),
+    });
+
+    if (!res.ok) {
+      let errMsg = 'HTTP ' + res.status;
+      try { const errData = await res.json(); if (errData.error) errMsg = errData.error; } catch (_) {}
+      throw new Error(errMsg);
+    }
+
+    const ct = res.headers.get('content-type') || '';
+    if (!ct.includes('text/event-stream')) {
+      let errMsg = 'Unexpected response type';
+      try { const errData = await res.json(); if (errData.error) errMsg = errData.error; } catch (_) {}
+      throw new Error(errMsg);
+    }
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const {done, value} = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, {stream: true});
+      const lines = buffer.split('\n');
+      buffer = lines.pop();
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        try {
+          const data = JSON.parse(line.slice(6));
+          if (data.char) {
+            responseEl.textContent += data.char;
+          }
+          if (data.done) {
+            sendBtn.disabled = false;
+            return;
+          }
+        } catch (e) {}
+      }
+    }
+  } catch (e) {
+    responseEl.innerHTML = '<span class="placeholder">Failed to generate response</span>';
+  }
+  sendBtn.disabled = false;
+}
+
+function clearTestChat() {
+  const responseEl = document.getElementById('test-response');
+  if (responseEl) responseEl.innerHTML = '<span class="placeholder">Response will appear here...</span>';
+  const input = document.getElementById('test-input');
+  if (input) input.value = '';
+}
+
+function openHistoryPopup(name) {
+  const body = document.getElementById('history-popup-body');
+  if (body) {
+    body.innerHTML = window._fullHistoryHtml || '<p style="color:var(--text-dim)">No history</p>';
+    body.scrollTop = body.scrollHeight;
+  }
+  document.getElementById('history-overlay').classList.add('active');
+}
+
+function closeHistoryPopup() {
+  document.getElementById('history-overlay').classList.remove('active');
+}
+
+async function runTestSuite(name) {
+  const suiteEl = document.getElementById('test-suite');
+  const summaryEl = document.getElementById('test-summary');
+  const resultsEl = document.getElementById('test-results');
+  const btn = document.querySelector('[onclick="runTestSuite(\'' + name + '\')"]');
+  suiteEl.style.display = 'block';
+  summaryEl.innerHTML = '<span style="color:var(--text-dim)"><span class="spinner"></span> Running test suite...</span>';
+  resultsEl.innerHTML = '';
+  if (btn) { btn.disabled = true; btn.innerHTML = '<span class="spinner"></span>'; }
+  let done = false;
+  const finish = (count, total, accuracy) => {
+    if (done) return;
+    done = true;
+    const color = accuracy >= 70 ? 'var(--success)' : accuracy >= 40 ? 'var(--accent)' : 'var(--error)';
+    summaryEl.innerHTML = `<span class="test-score" style="color:${color}">${count}/${total}</span> <span style="color:var(--text-dim)">(${accuracy}%)</span>`;
+    if (btn) { btn.disabled = false; btn.textContent = 'Test Model'; }
+  };
+
+  try {
+    const res = await fetch(API + '/api/test-stream?name=' + encodeURIComponent(name));
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    while (true) {
+      const { value, done: streamDone } = await reader.read();
+      if (streamDone) break;
+      buffer += decoder.decode(value, { stream: true });
+      const parts = buffer.split('\n\n');
+      buffer = parts.pop();
+      for (const part of parts) {
+        if (!part.startsWith('data: ')) continue;
+        let ev;
+        try { ev = JSON.parse(part.slice(6)); } catch (e) { continue; }
+        if (ev.done) {
+          finish(ev.correct, ev.total, ev.accuracy);
+          return;
+        }
+        const icon = ev.correct ? '<span class="test-pass">&#10003;</span>' : '<span class="test-fail">&#10007;</span>';
+        resultsEl.innerHTML += `<div class="test-row">
+          <div class="test-q">${icon} <strong>${ev.question}</strong></div>
+          <div class="test-expect">Expected: ${ev.expected}</div>
+          <div class="test-actual">Got: ${ev.actual}</div>
+        </div>`;
+        const pct = ev.total ? Math.round(ev.correct_so_far / ev.total * 100) : 0;
+        const liveColor = pct >= 70 ? 'var(--success)' : pct >= 40 ? 'var(--accent)' : 'var(--error)';
+        summaryEl.innerHTML = `<span class="test-score" style="color:${liveColor}">${ev.correct_so_far}/${ev.total}</span> <span style="color:var(--text-dim)">${pct}%</span>`;
+      }
+    }
+    finish(0, 0, 0);
+  } catch (e) {
+    summaryEl.innerHTML = `<span style="color:var(--error)">Failed: ${e.message}</span>`;
+    if (btn) { btn.disabled = false; btn.textContent = 'Test Model'; }
+  }
+}
+
+function handleModalSubmit(e) {
+  e.preventDefault();
+  confirmTrain();
+  return false;
+}
+
+async function confirmTrain() {
+  if (!trainingExpertName) return;
+  const btn = document.getElementById('modal-start-btn');
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = '<div class="spinner"></div>';
+  }
+  const body = {
+    name: trainingExpertName,
+    steps: parseInt(document.getElementById('inp-steps').value) || 1000,
+    lr: parseFloat(document.getElementById('inp-lr').value) || 3e-4,
+    batch: parseInt(document.getElementById('inp-batch').value) || 8,
+    seq_len: parseInt(document.getElementById('inp-seqlen').value) || 128,
+    resume: document.getElementById('inp-resume').checked,
+    save: parseInt(document.getElementById('inp-save').value) || 0,
+    log: parseInt(document.getElementById('inp-log').value) || 100,
+    sample: parseInt(document.getElementById('inp-sample').value) || 0,
+  };
+  saveParams();
+  try {
+    const res = await fetch(API + '/api/train', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (data.error) {
+      alert(data.error);
+    } else {
+      closeModal();
+      fetchExperts();
+    }
+  } catch (e) {
+    alert('Failed: ' + e.message);
+  }
+  if (btn) {
+    btn.disabled = false;
+    btn.textContent = 'Start Training';
+  }
+}
+
+// --- Stop / Dequeue ---
+async function stopTraining(name) {
+  if (!confirm(`Stop training for "${name}"? It will save a checkpoint.`)) return;
+  const btn = document.activeElement && document.activeElement.tagName === 'BUTTON'
+    ? document.activeElement : null;
+  if (btn) btn.disabled = true;
+  try {
+    const res = await fetch(API + '/api/stop', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name}),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (data.error) alert(data.error);
+    fetchExperts();
+  } catch (e) {
+    alert('Failed: ' + e.message);
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+async function dequeueExpert(name) {
+  const btn = document.activeElement && document.activeElement.tagName === 'BUTTON'
+    ? document.activeElement : null;
+  if (btn) btn.disabled = true;
+  try {
+    const res = await fetch(API + '/api/dequeue', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name}),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    await res.json();
+    fetchExperts();
+  } catch (e) {
+    alert('Failed to dequeue: ' + e.message);
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+// --- Log streaming ---
+function switchLog() {
+  const select = document.getElementById('log-select');
+  const name = select.value;
+  if (!name || name === currentLogExpert) return;
+  currentLogExpert = name;
+  connectLog(name);
+}
+
+function connectLog(name) {
+  if (logEventSource) { logEventSource.close(); logEventSource = null; }
+  lastLogType = null;
+  document.getElementById('log-body').innerHTML = '';
+  try {
+    logEventSource = new EventSource(API + '/api/logs?name=' + encodeURIComponent(name));
+    logEventSource.onmessage = function(e) {
+      try {
+        const data = JSON.parse(e.data);
+        if (data.done) {
+          appendLog('(training finished)', 'comment');
+          logEventSource.close();
+          logEventSource = null;
+          fetchExperts();
+          return;
+        }
+        if (data.line != null) {
+          const line = data.line;
+          if (line.startsWith('#') && line.includes('SAMPLE step')) {
+            appendLog(line, 'sample-header');
+            lastLogType = 'sample-header';
+          } else if (lastLogType === 'sample-header' && line.startsWith('# ')) {
+            appendLog(line, 'sample-text');
+            lastLogType = null;
+          } else if (line.startsWith('#')) {
+            appendLog(line, 'comment');
+            lastLogType = null;
+          } else if (line.includes(',')) {
+            appendLog(formatLogLine(line), null);
+            lastLogType = null;
+          } else {
+            appendLog(line, null);
+            lastLogType = null;
+          }
+        }
+      } catch (err) {}
+    };
+    logEventSource.onerror = function() {
+      // Do not rely on EventSource auto-reconnect (infinite retry loop).
+      logEventSource.close();
+      logEventSource = null;
+      currentLogExpert = null;
+      document.getElementById('log-select').selectedIndex = -1;
+      appendLog('(connection lost)', 'comment');
+    };
+  } catch (e) {
+    appendLog('(failed to connect: ' + e.message + ')', 'comment');
+  }
+}
+
+function appendLog(text, cssClass) {
+  const body = document.getElementById('log-body');
+  const div = document.createElement('div');
+  div.className = 'log-line' + (cssClass ? ' ' + cssClass : '');
+  div.textContent = text;
+  body.appendChild(div);
+  while (body.children.length > 500) body.removeChild(body.firstChild);
+  body.scrollTop = body.scrollHeight;
+}
+
+function clearLog() {
+  document.getElementById('log-body').innerHTML = '';
+}
+
+// --- Init ---
+fetchExperts();
+setInterval(() => { fetchExperts(); }, 5000);
+// Request notification permission only within a user gesture, not on page load.
+document.addEventListener('click', () => {
+  if (Notification && Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
+}, { once: true });
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[onclick]')) {
+    const btn = e.target.closest('button');
+    if (btn && btn.dataset.loading === 'true') e.preventDefault();
+  }
+});
+</script>
+
+</body>
+</html>

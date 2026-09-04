@@ -1,0 +1,278 @@
+# [2026-08-30 23:19:51] START: training/train_expert.py --name cot --steps 6000 --lr 0.0003 --batch 8 --seq_len 128 --save 200 --log 50 --sample 50
+# step,loss,lr,steps_per_sec,timestamp
+50,0.4823,1.50e-04,0.06,1788147204.6078415
+# [2026-08-30 23:33:31] SAMPLE step 50:
+# 
+# Joe: Sum * 10 = 99 hours.
+# User: What is 8 * 7 - 6 * 5 + 4 * 3?
+# Joe: 8 * 7 = 56, 6 * 5 = 30, 45 * 3 = 
+100,0.0489,3.00e-04,0.06,1788148024.6375651
+# [2026-08-30 23:47:11] SAMPLE step 100:
+# 
+# Joe: Sum = 10 + 20 + 30 + 40 + 50 = 150. Average = 150 / 5 = 30.
+# User: The mean of five numbers is 18. Four of them are 12, 15
+150,0.0429,3.00e-04,0.06,1788148844.182513
+# [2026-08-31 00:00:51] SAMPLE step 150:
+# 
+# User: What is the hypotenuse of a right triangle with legs 3 and 4?
+# Joe: By Pythagoras: c^2 = 3^2 + 4^2 = 9 + 16 = 25, so c = 
+200,0.0393,3.00e-04,0.06,1788149663.975723
+# [2026-08-31 00:14:31] SAMPLE step 200:
+# 
+# Joe: 233 * 7 = 23.6.
+# User: What is 6, so 24 is need 7 batches (rounding up since you can't make half a batch).
+# User: What is the median of 3, 7,
+250,0.0386,3.00e-04,0.06,1788150483.2520282
+# [2026-08-31 00:28:10] SAMPLE step 250:
+# 
+# User: You simpts 3 me and you cut off 1/3 meter, how much is left?
+# Joe: 3/4 - 1/3 = 9/12 - 4/12 = 5/12 meter.
+# User: A recipe needs 
+300,0.0353,2.99e-04,0.06,1788151302.4648838
+# [2026-08-31 00:41:49] SAMPLE step 300:
+# 
+# User: If 3y = 45, what is y?
+# Joe: 3y = 45, so y = 45 / 3 = 15.
+# User: If 2x + 5 = 19, what is x?
+# Joe: 2x + 5 =
+350,0.0338,2.99e-04,0.06,1788152116.9736376
+# [2026-08-31 00:55:24] SAMPLE step 350:
+# 
+# Joe: 1890. = Each part = 12 / 4 = 3 feet. Pieces are 9 feet and 3 feet.
+# User: If f(x) = 2x + 3, what is f(7)?
+# Joe: f(7) = 
+400,0.0335,2.99e-04,0.06,1788152932.6792302
+# [2026-08-31 01:09:00] SAMPLE step 400:
+# 
+# Joe: By Pythagoras: c^2 = 3^2 + 4^2 = 9 + 16 = 25, so c = sqrt(25) = 5.
+# User: What is the hypotenuse of a right triangle 
+450,0.0349,2.98e-04,0.06,1788153751.996557
+# [2026-08-31 01:22:39] SAMPLE step 450:
+# 
+# Joe: Time = 360 / 3 = 120 minutes = 2 hours.
+# User: What is 8 * 7 - 6 * 5 + 4 * 3?
+# Joe: 8 * 7 = 56, 6 * 5 =
+500,0.0354,2.98e-04,0.06,1788154569.0775282
+# [2026-08-31 01:36:16] SAMPLE step 500:
+# 
+# User: If you double a number and add 9, you get 25. What is the number?
+# Joe: 2x + 9 = 25, so 2x = 16, so x = 8.
+# User: Three consecutive 
+550,0.0352,2.97e-04,0.06,1788155387.2981887
+# [2026-08-31 01:49:54] SAMPLE step 550:
+# 
+# User: You mix 3 liters of 20% juice with 2 liters of 50% juice. What is the concentration?
+# Joe: Juice from first = 3 * 0.20 = 0.6. Juice from 
+600,0.0354,2.96e-04,0.06,1788156204.5174277
+# [2026-08-31 02:03:31] SAMPLE step 600:
+# 
+# User: A meal against a wall. Base is 6 feet from wall, top is 8 feet up. How long is the ladder?
+# Joe: By Pythagoras: L^2 = 6^2 + 8^2 = 
+650,0.0343,2.96e-04,0.06,1788157025.3862023
+# [2026-08-31 02:17:12] SAMPLE step 650:
+# 
+# Joe: 3/4 - 1/3?
+# Joe: 1/4 = 2/6, so 5/6 - 2/6 = 3/6 = 1/2.
+# User: You walk 4 km east then 3 km north. How far from start
+700,0.0348,2.95e-04,0.06,1788157841.1481643
+# [2026-08-31 02:30:48] SAMPLE step 700:
+# 
+# Joe: Let them be n, n+1, n+2. Then 3n + 3 = 72, so 3n = 69, n = 23. They are 23, 24, 25.
+# User: A jar has 3 red and
+750,0.0331,2.94e-04,0.06,1788158657.1528757
+# [2026-08-31 02:44:24] SAMPLE step 750:
+# 
+# Joe: (1/4) * (1/3) = 1/12.
+# User: A car travels the first half of a trip at 60 mph and the second half at 40 mph. What is the average speed 
+800,0.0358,2.93e-04,0.06,1788159474.9517498
+# [2026-08-31 02:58:02] SAMPLE step 800:
+# 
+# Joe: (1/2) * 10 * 6 = 5 * 6 = 30.
+# User: You travel 60 mph for 2.5 hours. How far do you go?
+# Joe: Distance = speed * time = 60 * 2.
+850,0.0344,2.92e-04,0.06,1788160292.4772375
+# [2026-08-31 03:11:39] SAMPLE step 850:
+# 
+# Joe: Sum of angles = 180, so third = 180 - 50 - 70 = 60 degrees.
+# User: Two angles are complementary and one is 35 degrees. What is the other?
+900,0.0358,2.91e-04,0.06,1788161108.114969
+# [2026-08-31 03:25:15] SAMPLE step 900:
+# 
+# User: A speed is 90 km/h. What is it in m/s?
+# Joe: 90 km/h = 90 * 1000 / 3600 = 90000/3600 = 25 m/s.
+# User: A speed is 15 m
+950,0.0335,2.90e-04,0.06,1788161925.6824265
+# [2026-08-31 03:38:53] SAMPLE step 950:
+# 
+# User: If x/3 + 2 = 7, what is x?
+# Joe: x/3 + 2 = 7, so x/3 = 5, so x = 15.
+# User: A shirt costs $40 and is on sale
+1000,0.0326,2.89e-04,0.06,1788162743.5487206
+# [2026-08-31 03:52:30] SAMPLE step 1000:
+# 
+# User: What is LCM =    7, so x/3 = 5, so x = 15.
+# User: A shirt costs $40 and is on sale for 25% off. What is the sale price?
+1050,0.0306,2.87e-04,0.06,1788163563.116356
+# [2026-08-31 04:06:10] SAMPLE step 1050:
+# 
+# User: What is 5^3?
+# Joe: 5^3 = 5 * 5 * 5 = 25 * 5 = 125.
+# User: What is 2^8?
+# Joe: 2^8 = 256. We know 2^4 = 16, 2^
+1100,0.0314,2.86e-04,0.06,1788164380.5435321
+# [2026-08-31 04:19:47] SAMPLE step 1100:
+# 
+# User: A pizza is cut into 8 slices. You eat 3. What fraction is left?
+# Joe: Left = 8 - 3 = 5 slices. Fraction left = 5/8.
+# User: If you can run
+1150,0.0315,2.85e-04,0.06,1788165197.7758777
+# [2026-08-31 04:33:25] SAMPLE step 1150:
+# 
+# User: What is 100 - 37 + 15?
+# Joe: 100 - 37 = 63, 63 + 15 = 78.
+# User: What is 5^3?
+# Joe: 5^3 = 5 * 5 * 5 = 25 * 
+1200,0.0315,2.83e-04,0.06,1788166017.892866
+# [2026-08-31 04:47:05] SAMPLE step 1200:
+# 
+# Joe: Volume = 12 * 8 * 10 = 960 cubic inches.
+# User: A $30 item is marked up 50% then discounted 20%. What is the final price?
+# Joe: After
+1250,0.0344,2.82e-04,0.06,1788166835.9888887
+# [2026-08-31 05:00:43] SAMPLE step 1250:
+# 
+# Joe: 15% of x = 45, so 0.15x = 45, so x = 45 / 0.15 = 300.
+# User: What is 3/4 + 1/6?
+# Joe: LCD of 4 and 6 is 12,
+1300,0.0314,2.80e-04,0.06,1788167653.0233016
+# [2026-08-31 05:14:20] SAMPLE step 1300:
+# 
+# User: What is 5^3?
+# Joe: 5^3 = 5 * 5 * 5 = 25 * 5 = 125.
+# User: What is 2^8?
+# Joe: 2^8 = 256. We know 2^4 = 16, 2^
+1350,0.0314,2.79e-04,0.06,1788168470.8085728
+# [2026-08-31 05:27:58] SAMPLE step 1350:
+# 
+# Joe: Women = 120 * 0.45 = 54. Men = 120 - 54 = 66.
+# User: You mix 3 liters of 20% juice with 2 liters of 50% juice. What 
+1400,0.0295,2.77e-04,0.06,1788169287.3611038
+# [2026-08-31 05:41:34] SAMPLE step 1400:
+# 
+# Joe: 34, 256 - 18, so 28 = 56 + 18, so 18 = 74.
+# User: What is 100 - 37 + 15?
+# Joe: 100 - 37 = 63, 63 + 15 = 78
+1450,0.0322,2.75e-04,0.06,1788170106.4725206
+# [2026-08-31 05:55:13] SAMPLE step 1450:
+# 
+# User: A triangle has base 10 and height 6. What is its area?
+# Joe: Area = (1/2) * base * height = (1/2) * 10 * 6 = 5 * 6 = 30.
+1500,0.0327,2.73e-04,0.06,1788170927.11876
+# [2026-08-31 06:08:54] SAMPLE step 1500:
+# 
+# Joe: P = 2(l + w) = 36, so l + w = 18, so w = 18 - 10 = 8.
+# User: A rectangle has area 48 and width 6. What is its 
+1550,0.0321,2.72e-04,0.06,1788171752.632919
+# [2026-08-31 06:22:40] SAMPLE step 1550:
+# 
+# User: What is 36% of 250?
+# Joe: 36% of 250 = 250 * 0.36 = 90.
+# User: 45 is what percent of 180?
+# Joe: 45 / 180 = 0.25 = 25%.
+1600,0.0319,2.70e-04,0.06,1788172580.347432
+# [2026-08-31 06:36:27] SAMPLE step 1600:
+# 
+# Joe: (1/4) * (1/3) = 1/12.
+# User: A car travels the first half of a trip at 60 mph and the second half at 40 mph. What is the average speed 
+1650,0.0309,2.68e-04,0.06,1788173411.1109416
+# [2026-08-31 06:50:18] SAMPLE step 1650:
+# 
+# User: A pi = 22/7.
+# Joe: Area = pi * r^2 = (22/7) * 7^2 = (22/7) * 49 = 22 * 7 = 154.
+# User: What is the
+1700,0.0315,2.66e-04,0.06,1788174246.8553824
+# [2026-08-31 07:04:14] SAMPLE step 1700:
+# 
+# User: What is 11^3?
+# Joe: 11^3 = 11 * 11 * 11 = 121 * 11 = 1331.
+# User: What is the cube root of 216?
+# Joe: 6^3 = 216
+1750,0.0297,2.64e-04,0.06,1788175085.731029
+# [2026-08-31 07:18:13] SAMPLE step 1750:
+# 
+# User: If a^2 = 49 and a > 0, what is a?
+# Joe: a^2 = 49, a > 0, so a = 7.
+# User: Solve: 5(x - 2) = 20.
+# Joe: 5
+1800,0.0323,2.62e-04,0.06,1788175959.6372166
+# [2026-08-31 07:32:47] SAMPLE step 1800:
+# 
+# User: What is 0.125 as a fraction?
+# Joe: 0.125 = 125/1000 = 1/8.
+# User: If x^2 = 81, what are the possible values of x?
+# Joe: x^2 = 81, so 
+1850,0.0305,2.60e-04,0.05,1788176925.6649826
+# [2026-08-31 07:48:53] SAMPLE step 1850:
+# 
+# User: A meal costs $24 and you leave a 20% tip. What is the total?
+# Joe: 20% of 24 = 24 * 0.20 = 4.80, so total = 24 + 4.80 =
+1900,0.0310,2.57e-04,0.06,1788177782.7782762
+# [2026-08-31 08:03:10] SAMPLE step 1900:
+# 
+# User: If the minute hand moves 6 degrees per degrees in 25 minute, how many degrees in 25 minutes?
+# Joe: 25 * 6 = 150 degrees.
+# User: What is 999 + 1?
+# Joe: 99
+1950,0.0318,2.55e-04,0.06,1788178629.654185
+# [2026-08-31 08:17:17] SAMPLE step 1950:
+# 
+# User: If you reverse the digits of a two-digit number, the result is 27 less. What is the number if the digits sum to 11?
+# Joe: Let tens digit be a, units 
+2000,0.0295,2.53e-04,0.06,1788179497.2345574
+# [2026-08-31 08:31:51] SAMPLE step 2000:
+# 
+# Joe: 12 * 12 = 144, so 144 / 12 = 12.
+# User: What is 9 * 9 * 3?
+# Joe: 9 * 9 = 81, 81 * 3 = 243, so 9 * 9 * 
+2050,0.0284,2.51e-04,0.06,1788180348.7228389
+# [2026-08-31 08:45:56] SAMPLE step 2050:
+# 
+# Joe: 3y = 45, what is y?
+# Joe: 3y = 45, so y = 45 / 3 = 15.
+# User: If 2x + 5 = 19, what is x?
+# Joe: 2x + 5 = 19
+# [2026-08-31 09:01:04] STOPPED by signal at step 2098
+# [2026-08-31 09:01:06] FINISH at step 2098
+# [2026-09-02 09:17:13] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name cot --steps 4000 --lr 0.0003 --batch 8 --seq_len 256 --resume
+100,0.0288,3.00e-04,0.05,1788356862.0188787
+# [2026-09-02 11:19:33] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name cot --steps 6000 --lr 0.0003 --batch 8 --seq_len 256 --resume
+100,0.0296,3.00e-04,0.05,1788364468.6352782
+200,0.0326,3.00e-04,0.05,1788366485.5541816
+300,0.0406,3.00e-04,0.05,1788368501.845071
+400,0.0342,3.00e-04,0.06,1788370295.9855924
+500,0.0316,3.00e-04,0.05,1788372234.7873912
+600,0.0303,3.00e-04,0.05,1788374118.1380508
+700,0.0300,3.00e-04,0.06,1788375852.7443068
+800,0.0315,3.00e-04,0.06,1788377642.188546
+900,0.0337,3.00e-04,0.05,1788379504.4300377
+# [2026-09-03 09:11:34] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name cot --steps 6000 --lr 0.0003 --batch 8 --seq_len 256 --resume
+100,0.0329,3.00e-04,0.06,1788442736.4516997
+200,0.0386,3.00e-04,0.06,1788444372.5996425
+300,0.0337,3.00e-04,0.04,1788447013.7061388
+400,0.0334,3.00e-04,0.02,1788451282.9523
+500,0.0314,3.00e-04,0.02,1788455628.8198452
+600,0.0299,3.00e-04,0.02,1788459891.7550356
+700,0.0286,3.00e-04,0.02,1788464283.2332232
+800,0.0285,3.00e-04,0.02,1788468643.1594272
+900,0.0289,3.00e-04,0.02,1788475215.9649103
+1000,0.0338,3.00e-04,0.03,1788478752.9239228
+1100,0.0367,3.00e-04,0.03,1788481688.4877374
+1200,0.0314,3.00e-04,0.04,1788484463.939342
+1300,0.0289,3.00e-04,0.00,1788521816.363398
+1400,0.0306,3.00e-04,0.01,1788530627.3281088
+1500,0.0316,3.00e-04,0.05,1788532779.3015847
+1600,0.0304,3.00e-04,0.06,1788534410.20362
+1700,0.0298,3.00e-04,0.06,1788536039.5856774
+1800,0.0303,3.00e-04,0.06,1788537677.38112
+# [2026-09-04 12:03:04] STOPPED by signal at step 1807
+# [2026-09-04 12:03:05] FINISH at step 1807

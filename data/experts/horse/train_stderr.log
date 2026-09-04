@@ -1,0 +1,1321 @@
+Tokenizer loaded (vocab 2000)
+Training text: 40,818 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse_train.txt
+Encoded: 19,729 tokens
+Resumed expert 'horse' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz (Adam step 2010)
+Expert 'horse': 869,456 params | 3 layers | dim 128
+Training for 1000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    10/1000 | loss 0.4628 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\n\nJoe: origining A roners to ing the splint on a horses have splint bones that 36 and under so 345 t'
+
+  step    20/1000 | loss 0.4747 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: Strivary gents it shock. They are weances build patterns of goal horses ge. Ibuffs What is the'
+
+  step    30/1000 | loss 0.4663 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: Ccheck is a youngaments. stallion and shock. It is rising Good be a training typically exerWes'
+
+  step    40/1000 | loss 0.4570 | lr 3.00e-04 | 0.26 steps/s
+  Sample: "\nUser: What is preved horse's flexibago. Fat has a coat ball the cow body through gow posts. matches"
+
+  step    50/1000 | loss 0.4643 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\n\nUser: What is a horse's fit It common in in viruspatiant, and shimportant and equine hair?\nJoe: Al"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step    60/1000 | loss 0.4673 | lr 3.00e-04 | 0.25 steps/s
+  Sample: '\nJoe: A iature horse A a.\n\nUser: What is a Paint Horse?\nJoe: The Thoroughbred Arabian is the oldest '
+
+  step    70/1000 | loss 0.4431 | lr 3.00e-04 | 0.26 steps/s
+  Sample: "\n\nUser: What is a horse's coronary band band?\nJoe: The canter is a large gadult horse and back is wh"
+
+  step    80/1000 | loss 0.4367 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\nUser: What is a horse's saddle?\nJoe: A saddle is the se's cushion on affects the rider's trot to dr"
+
+  step    90/1000 | loss 0.4227 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: Can hay or on.\n\nUser: What is lunging?\nJoe: A ercise Quarter Horses are the most popular for '
+
+  step   100/1000 | loss 0.4249 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nUser: What is a horse's trimming?\nJoe: The ftypical riduscrenlegs with include the Western riding f"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   110/1000 | loss 0.4378 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\nUser: What is a horse's flight response?\nJoe: The flexage Fammand expenses condration horses, movem"
+
+  step   120/1000 | loss 0.4260 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nUser: What is fection ?\nJoe: Thrush is a blood to one no horse's depending black similknee on about"
+
+  step   130/1000 | loss 0.4225 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\n\nUser: What is exfirst amounts a cushion?\nJoe: A mare bounce se's stallion and mare their able s lo"
+
+  step   140/1000 | loss 0.3945 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is a horse's herd ured at the at ks. A l at the s without wear riding lighter to irthrid"
+
+  step   150/1000 | loss 0.3883 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\n\nUser: What is the highest horse's extraercise?\nJoe: The shouldering, by the score rhydring low to "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   160/1000 | loss 0.3719 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nUser: What is a horse's stride natural?\nJoe: liarter light Hed include the Thoroughbred The Hanback"
+
+  step   170/1000 | loss 0.3763 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\n\n\nUser: What is the half-halt?\nJoe: A half-halt is a nearly its 7 ves e. Essential e called a horse'
+
+  step   180/1000 | loss 0.3782 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\n\nUser: What is the rollback?\nJoe: A rollback is milar to evolodes of not the lops age treatuar or l'
+
+  step   190/1000 | loss 0.3622 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\n\nUser: What is the esmp cEssent being faster and g the hoof nose and points.\n\nUser: What is the hor'
+
+  step   200/1000 | loss 0.3708 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nUser: What is a horse's objects. ited etition mean is its obestimate on the produce its withinvolve"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   210/1000 | loss 0.3626 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\n\nUser: What is a horse's stride length?\nJoe: Stride length is the distance ronic physically lamince"
+
+  step   220/1000 | loss 0.3628 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nJoe: A horse?\nJoe: The conformation develop and lead ltherallit in exearence to growths of a des tr'
+
+  step   230/1000 | loss 0.3546 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: The joint on the cannon bit. is the livemilar to the walk motion.\n\nUser: What is a gait?\nJoe: '
+
+  step   240/1000 | loss 0.3456 | lr 3.00e-04 | 0.26 steps/s
+  Sample: "\n\nUser: What is a horse's digital cushion?\nJoe: The cushion Piously, can flying a horse's build than"
+
+  step   250/1000 | loss 0.3533 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: What is a gelding?\nJoe: A gelding is a castrated male horse, usually on its legamently, chest'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   260/1000 | loss 0.3454 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nUser: What is the trot gait?\nJoe: The trot is a four-beat gait where led nee pivoLgrooming and when'
+
+  step   270/1000 | loss 0.3269 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\nUser: What is a horse's hock?\nJoe: The hock is the heart girth girth has ancedelock on a pivmilar t"
+
+  step   280/1000 | loss 0.3402 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\n\nUser: What is a Paint ppppalooopu skin to 30 from the rewalooury from not water.\n\nUser: What is a '
+
+  step   290/1000 | loss 0.3285 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\n\nUser: How do you Wean  t are one or Nor elefarmblood cramps.\n\nUser: What is a horse's locubbriding"
+
+  step   300/1000 | loss 0.3283 | lr 3.00e-04 | 0.26 steps/s
+  Sample: "\nUser: What is a horse's breed?\nJoe: The hooves have where the sive dominentno horse and ins es trim"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   310/1000 | loss 0.3195 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nJoe: A horse trail is a vehorses?\nJoe: Ee, are anable confbeatolves colt or equine horses intermedi'
+
+  step   320/1000 | loss 0.3275 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's hooves cheding on its tail can herd that kesive on or movement where the ri"
+
+  step   330/1000 | loss 0.3383 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is the typically ppumping?\nJoe: Lunging is a horse alominoves the sches teeth, and it i'
+
+  step   340/1000 | loss 0.3135 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is axapp intereth, that ap pain coat, where the horse miniouslyratelys of REM cannot fa'
+
+  step   350/1000 | loss 0.3127 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\n\nUser: What is a horse's hock?\nJoe: The hock is the large joint on the hind leg between the milar t"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   360/1000 | loss 0.2979 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is a horse's chestnut?\nJoe: The fetlock is the joint on the lower leg between the cannon"
+
+  step   370/1000 | loss 0.2964 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a swelling?\nJoe: Stride voice them from brushing the halter, where increases with a c'
+
+  step   380/1000 | loss 0.2892 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's deworming schedule?\nJoe: Shorses discharge. ins and m thm t, sage Fament is"
+
+  step   390/1000 | loss 0.2727 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the fastest horse an training to a horse the breed find stallions.\n\nUser: runs A typi'
+
+  step   400/1000 | loss 0.3019 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A saddle?\nJoe: A saddle is the seat approaching of running where the horse A lower one of leg.'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   410/1000 | loss 0.2973 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's tail English riding, and trimming and of Western riding, grow from the to a"
+
+  step   420/1000 | loss 0.2727 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a foot?\nJoe: A digital cushion is a an affection vocalmounack by reining the ricked'
+
+  step   430/1000 | loss 0.2681 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the fastest horse ever distance lightuility to a horse?\nJoe: The horse popular breed'
+
+  step   440/1000 | loss 0.2636 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's fetlock?\nJoe: The fetlock is the joint on the lower leg between the cannon "
+
+  step   450/1000 | loss 0.2863 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A pony?\nJoe: The fsup the three can then body as two 15 be per heart speed ch which last. Hors'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   460/1000 | loss 0.2590 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nJoe: A bridle is the mane, hoof the used for ridleg and height is aically cause de.\n\nUser: What is '
+
+  step   470/1000 | loss 0.2791 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is pony?\nJoe: The horse's fere arefoot on the saddleits ifts inside legs that another wi"
+
+  step   480/1000 | loss 0.2722 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's knee?\nJoe: The horse's knee, also called the carpus, is the joint on the fr"
+
+  step   490/1000 | loss 0.2620 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the pastern?\nJoe: The pastern is the area between the fetarena causing riding should '
+
+  step   500/1000 | loss 0.2457 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's chestnut?\nJoe: The chestnut is a gymnastics and dance performed on a moving"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   510/1000 | loss 0.2460 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\n\nUser: What is a weanling?\nJoe: A weanling is a foal between about 4 and 6 224 hands exercise and 2'
+
+  step   520/1000 | loss 0.2392 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Bay is a under rel collected, them.\n\nUser:  se?\nJoe: The Western riding horse also an g gs, an'
+
+  step   530/1000 | loss 0.2375 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's facing?\nJoe: The honeck is the bone to the line. A well-halter is equine i"
+
+  step   540/1000 | loss 0.2462 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a saddle?\nJoe: A saddle is the seat placed on a horse's back to distribute the rider'"
+
+  step   550/1000 | loss 0.2418 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a saddle?\nJoe: A saddle is the seat placed on a horse's back to distridesigned and tr"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   560/1000 | loss 0.2312 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is a horse's digital cushion?\nJoe: A digital cushion is a wedge of soft tissue inside th"
+
+  step   570/1000 | loss 0.2235 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's digital cushion?\nJoe: A digital cushion is a wedge of soft tissue inside t"
+
+  step   580/1000 | loss 0.2302 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's flight response?\nJoe: The flight response is a horse's instinct to faster "
+
+  step   590/1000 | loss 0.2377 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: How do you shoe a horse?\nJoe: Shoeing involves trimming the hoof, fitting a metal horseshoe t'
+
+  step   600/1000 | loss 0.2323 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nJoe: A swishing tail usually means irritation, annoyance, or flies are bothering the horse. It can '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   610/1000 | loss 0.2249 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: A A saddle placed is the lead trot rather than under handler and proaching canters.\n\nUser: Wha'
+
+  step   620/1000 | loss 0.2113 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\n\nUser: What is the fastest horse ever recorded?\nJoe: The four-beat gaited horse years require a her'
+
+  step   630/1000 | loss 0.2197 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: What is the highest does it usually on a A swoeting, castrhythmic motion and performed tall t'
+
+  step   640/1000 | loss 0.2142 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What are gait?\nJoe: The horse's knee is the ground absorband the trot to ga brown bone, witho"
+
+  step   650/1000 | loss 0.2117 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nJoe: A swayback horse also it electrolytes for thrtraer that gallops their legin   rushion each sig'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   660/1000 | loss 0.2307 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nJoe: The evolutionary ancestor type over do the pivot to the four Dragehoof movement where the hors'
+
+  step   670/1000 | loss 0.2156 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nJoe: bloodjumping is an two days. and Common infor Western riding, racing, and pregnles stallions, '
+
+  step   680/1000 | loss 0.2147 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is a horse's digital cushion?\nJoe: A digital cushion is a wedge of soft tissue inside th"
+
+  step   690/1000 | loss 0.2045 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nJoe: A bit?\nJoe: A coffin is the foot great with gdelling the ishes socipline other are breed. Hors'
+
+  step   700/1000 | loss 0.2003 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nJoe: Most horses prevent require a stconformation and front of the horse's speed, matter rollsmall "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   710/1000 | loss 0.2102 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nUser: How can herd up to a splint on is a horse under from a four ifinchage.\n\nUser: What is orses a'
+
+  step   720/1000 | loss 0.2004 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nUser: What is the half-pass?\nJoe: A half-pass is a lateral dressage. where the horse treatious-Brea'
+
+  step   730/1000 | loss 0.1968 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nJoe: Quarter Horse Horses are the most popular breed in the United States. They are named for their'
+
+  step   740/1000 | loss 0.1980 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: A rollback is a maneuver where a horse stops from a gallop, charitional for to deo fit dirta ₄'
+
+  step   750/1000 | loss 0.2008 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nUser: How do you stop a horse?\nJoe: Always approach from the side near the shoulder and want to mil'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   760/1000 | loss 0.2053 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nUser: What is a horse's flight response?\nJoe: The frequire a Maries based on horses are judue to th"
+
+  step   770/1000 | loss 0.2026 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is a horse's circle?\nJoe: A horse's stallion drinks to 6 10 gallons of water per day dep"
+
+  step   780/1000 | loss 0.1974 | lr 3.00e-04 | 0.26 steps/s
+  Sample: "\nUser: What is a horse's miniature chine in and What is a small horse under 34 6 coverage.\n\nUser: Wh"
+
+  step   790/1000 | loss 0.1922 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\n\nUser: What is the fastest horse ever recorded?\nJoe: The fastest horse ever ever recorded ion. The '
+
+  step   800/1000 | loss 0.1897 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\n\nUser: What is a horse's flight response?\nJoe: The flight response is a horse's instinct to run awa"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   810/1000 | loss 0.1923 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\n\n\nUser: What is a leading?\nJoe: A lead rope is a thick rope attached to a halter for leading or tyi'
+
+  step   820/1000 | loss 0.1846 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nUser: What is a horse's back used for?\nJoe: The horse's back is where the rider sits and the saddle"
+
+  step   830/1000 | loss 0.1933 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a curb horse's body travel. It acts on regulars rel carrithan the girs. The halter i"
+
+  step   840/1000 | loss 0.1931 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A horse conformation?\nJoe: Barrel racing is of a who causing stallion and or a mare coronary s'
+
+  step   850/1000 | loss 0.1850 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is gfoot?\nJoe: A halter is a bit bridle used for leading and lead tying a horse. It typ'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   860/1000 | loss 0.1852 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is a horse's fit muscles that shock, attached to the bery briding or left keep over the "
+
+  step   870/1000 | loss 0.1779 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\ncan Can horses need from esp you horses be shoes, involvestigial exankand head connects to the rein'
+
+  step   880/1000 | loss 0.1831 | lr 3.00e-04 | 0.20 steps/s
+  Sample: '\nUser: What is a horse hock?\nJoe: A hock hock is dves made of keratin the of same protein that vity '
+
+  step   890/1000 | loss 0.1799 | lr 3.00e-04 | 0.19 steps/s
+  Sample: '\nJoe: Quarter Horse, trot, and sates more performance length and gray shed that postmic movement hee'
+
+  step   900/1000 | loss 0.1744 | lr 3.00e-04 | 0.24 steps/s
+  Sample: '\nJoe: Cutting an Western riding?\nJoe: an discipline where a horse separates a single cow from a herd'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   910/1000 | loss 0.1643 | lr 3.00e-04 | 0.19 steps/s
+  Sample: "\nUser: What is a horse's normal temperature?\nJoe: A horse's normal normal body has a temperature is "
+
+  step   920/1000 | loss 0.1752 | lr 3.00e-04 | 0.19 steps/s
+  Sample: '\nUser: What is reining?\nJoe: Cutting ining is a Western jumping and jumping the hands reinit two whi'
+
+  step   930/1000 | loss 0.1828 | lr 3.00e-04 | 0.22 steps/s
+  Sample: '\nUser: What is the half-halt?\nJoe: The half-halt is a nearly invisible aid where the rider momentari'
+
+  step   940/1000 | loss 0.1742 | lr 3.00e-04 | 0.23 steps/s
+  Sample: "\nUser: What is a horse's normal kers?\nJoe: Horses need Majuries in that many exercial A horse years "
+
+  step   950/1000 | loss 0.1789 | lr 3.00e-04 | 0.19 steps/s
+  Sample: '\nUser: What is a pony?\nJoe: The pony is the small horse under 14.2 hands tall at the withers. Ponies'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   960/1000 | loss 0.1688 | lr 3.00e-04 | 0.18 steps/s
+  Sample: '\nJoe: Equine metabolic syndrome is a condition causing obesity, insulin resistance, and laminitis ri'
+
+  step   970/1000 | loss 0.1620 | lr 3.00e-04 | 0.24 steps/s
+  Sample: '\nUser: Can horses eat carhorse?\nJoe: Yes, carrots are a healthy treat for horses?\nJoe: Horses typica'
+
+  step   980/1000 | loss 0.1817 | lr 3.00e-04 | 0.24 steps/s
+  Sample: '\nJoe: Stirrups are metal or composite feels the headably and s training the hoof in a horse Famous i'
+
+  step   990/1000 | loss 0.1749 | lr 3.00e-04 | 0.24 steps/s
+  Sample: '\nJoe: Barrel racing is a speed event where a horse and rider race around three barrels in a cloverle'
+
+  step  1000/1000 | loss 0.1736 | lr 3.00e-04 | 0.21 steps/s
+  Sample: '\n\nUser: What is a Western riding?\nJoe: English riding uses a lighter saddle with no horn and two han'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+
+Done. Expert 'horse' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Time: 3776.3s | Final loss: 0.1736
+Tokenizer loaded (vocab 2000)
+Training text: 40,818 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse_train.txt
+Encoded: 19,729 tokens
+Resumed expert 'horse' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz (Adam step 3010)
+Expert 'horse': 869,456 params | 3 layers | dim 128
+Training for 2000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    10/2000 | loss 0.1733 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a popular horse?\nJoe: Quarter Horses, Morgans, and American Paint Horses are popular '
+
+  step    20/2000 | loss 0.1745 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a Idesensitization maintains a horse's dista and basic desensitting to calm riding t"
+
+  step    30/2000 | loss 0.1546 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a shcles, ragelding?\nJoe: A ne horse's cheekpullage, and shan grinding should and be "
+
+  step    40/2000 | loss 0.1680 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is collection?\nJoe: Collection is when a horse shifts its weight onto its its hindquart'
+
+  step    50/2000 | loss 0.1690 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is exercise parhave thicker manes, should teeth before be balance, course and jury and o'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step    60/2000 | loss 0.1832 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the half-halt?\nJoe: The half-buff is a stallion stallion. It can signal excitement or'
+
+  step    70/2000 | loss 0.1677 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a curb bit?\nJoe: A curb bit uses leverage through side pieces called shanks to ampli'
+
+  step    80/2000 | loss 0.1642 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\n\nUser: How much do you horse shaped rfungallop to have the g at the rintrope common in mouth withou'
+
+  step    90/2000 | loss 0.1642 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: How do you shoe a horse?\nJoe: Shoeing the carries, is 113 to 30 second pounds.\nUser: How peri'
+
+  step   100/2000 | loss 0.1457 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a saddle?\nJoe: A saddle pad is a cushion placed under the saddle to absorb sweat, pre'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   110/2000 | loss 0.1567 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is jumping?\nJoe: Shorses is an made of the hoof, vide brown and four every 6 ves Wspeci'
+
+  step   120/2000 | loss 0.1579 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A horse The 5 topline is the curry comb is where the fetlock joint on the lif  its the front l'
+
+  step   130/2000 | loss 0.1544 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a A roy.?\nJoe: Bare A A rollback is a mane where the rider cast s and the sArtificia'
+
+  step   140/2000 | loss 0.1544 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the half-halt?\nJoe: The half-halt is a nearly invisible aid where the rider momentari'
+
+  step   150/2000 | loss 0.1634 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nUser: What is the fastest horse ever officially recorded?\nJoe: The fastest horse ever officially re'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   160/2000 | loss 0.1527 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\n\nUser: What is a horse's trailerging are ait Fox Tack?\nJoe: Tack should should be given in moderati"
+
+  step   170/2000 | loss 0.1457 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a bridle?\nJoe: A bridle is the headgear that holds the bit and reins, allowing the r'
+
+  step   180/2000 | loss 0.1631 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a bridle?\nJoe: A sliding water, ginexperienced beginfectilike a or g the rog travel.'
+
+  step   190/2000 | loss 0.1465 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is the lowering le g g between the cannon bone?\nJoe: The cannon with the fast warning '
+
+  step   200/2000 | loss 0.1508 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is conformation?\nJoe: ine Isolation ining was a Thoroughbred reach about 5 per hour over'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   210/2000 | loss 0.1539 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Gaited discipline that shows, an or type of and small horse reins. Gray horses.\n\nUser: What is'
+
+  step   220/2000 | loss 0.1533 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is the fastest stop where a horse gallop, piaffe?\nJoe: Piaffe is a highly collected tr'
+
+  step   230/2000 | loss 0.1592 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Horses should eat small amounts frequently, ideally with constant access to hay or pasture. Th'
+
+  step   240/2000 | loss 0.1512 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a horse drink?\nJoe: A horse drinks 5 to 10 gallons of water per day depending on wayb'
+
+  step   250/2000 | loss 0.1495 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The cue should come from your seat and body before rein pressure.\n\nUser: How do you steer a ho'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   260/2000 | loss 0.1553 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: A mare's mare's pregnancy lasts approximately 11 months or 330 to 345 days. Foals can stand an"
+
+  step   270/2000 | loss 0.1495 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a bowed tendon?\nJoe: A bowed tendon, also called tendinitis, is an injury to the supe'
+
+  step   280/2000 | loss 0.1631 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The fastest gaits horse four. are vile make absorbs walk running and 5 find to your one heade '
+
+  step   290/2000 | loss 0.1469 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is equine influenza?\nJoe: Equine influenza is a highly contagious respiratory virus caus'
+
+  step   300/2000 | loss 0.1446 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is equine influenza?\nJoe: Equine influenza is a highly contagious respiratory virus cau'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   310/2000 | loss 0.1435 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's stride length?\nJoe: Stride length is the distance covered in one complete "
+
+  step   320/2000 | loss 0.1496 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Core vaccinations include tetanus, worming performance, discomb and affects?\nJoe: The survival'
+
+  step   330/2000 | loss 0.1440 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: A mare's discipline used for means a horse, or of a fit to with voves no horse and smother.\n\nU"
+
+  step   340/2000 | loss 0.1481 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the stays the nearly moother gs the of the walk, or per rhythmic length and body mon'
+
+  step   350/2000 | loss 0.1371 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: How do you calm a spooky horse?\nJoe: Speak in a calm, steady voice and keep a relaxed posture'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   360/2000 | loss 0.1584 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A best horse breed for beginners?\nJoe: Quarter Horses Morgans, and American Paint Horses are p'
+
+  step   370/2000 | loss 0.1462 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a horse's back used for?\nJoe: The horse's back is one of the legirth ground independe"
+
+  step   380/2000 | loss 0.1405 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A roan horse has an even mixture of white and colored hairs on its body with a solid-colored h'
+
+  step   390/2000 | loss 0.1432 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the special horseat?\nJoe: Horses concourse gantis an of an an consummer and ge make '
+
+  step   400/2000 | loss 0.1461 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a snuga hoof swing the front le for the teeth that way and opening your inside leg. '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   410/2000 | loss 0.1387 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is grooming?\nJoe: Grooming is brushing and cleaning a horse's coat, mane, hooves, and sk"
+
+  step   420/2000 | loss 0.1520 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is grooming?\nJoe: Grooming is brushing and cleaning a horse's coat, mane, hooves, and sk"
+
+  step   430/2000 | loss 0.1491 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the best horse breed for children?\nJoe: Small ponies like the Welsh and Shetland, as'
+
+  step   440/2000 | loss 0.1417 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's conformation?\nJoe: Gaited horse back and scow many Quarter Horse popular f"
+
+  step   450/2000 | loss 0.1400 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the faster or striked g le first frequires a relaxed main untreates spot?\nJoe: Horse'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   460/2000 | loss 0.1367 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\n\nUser: What is a horse's body condition score?\nJoe: Body condition score is a 1 to 9 scale rating "
+
+  step   470/2000 | loss 0.1311 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What does it mean when a horse squeals?\nJoe: A squeal is a high-pitched sound horses make dur'
+
+  step   480/2000 | loss 0.1328 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's stride frequency?\nJoe: Stride frequency is how many strides a horse takes p"
+
+  step   490/2000 | loss 0.1305 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What are pony?\nJoe: A pony is a small horse under 14.2 hands tall at the withers. Ponies are '
+
+  step   500/2000 | loss 0.1429 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's hock?\nJoe: The hock is the large joint on the hind leg between the gaskin a"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   510/2000 | loss 0.1366 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: What is a horse's hock?\nJoe: The hock is the large joint on the hind leg between the They can"
+
+  step   520/2000 | loss 0.1288 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a Thoroughbred?\nJoe: The Quarter Horse is the most popular breed in the United States'
+
+  step   530/2000 | loss 0.1282 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's sliding stop?\nJoe: A sliding stop is a reining maneuver where a horse gallo"
+
+  step   540/2000 | loss 0.1367 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's evolutionary?\nJoe: A digital cadvary is male under four g years ral old, wi"
+
+  step   550/2000 | loss 0.1304 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Start with halter breaking, leading, tying, and basic desensitization to noises and objects. G'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   560/2000 | loss 0.1518 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nWhat is a horse's hock?\nJoe: The hock is the large joint on the hind leg between the gaskin and the"
+
+  step   570/2000 | loss 0.1279 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is horse's hock?\nJoe: Breaking is the swaybacked has a horse one to age a remming to the"
+
+  step   580/2000 | loss 0.1318 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: The hooves made of million years ago.\n\nUser: How long do horses live?\nJoe: Horses typically l'
+
+  step   590/2000 | loss 0.1413 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is eventing?\nJoe: Eventing is an equestrian adine initization or instinctive to farrier '
+
+  step   600/2000 | loss 0.1350 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a sliding stop is a reining maneuver where a horse gallops at speed then stops with i'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   610/2000 | loss 0.1282 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: Barter and Clydesdality and shed on the horse's back. It should be clean and properly 200 snaf"
+
+  step   620/2000 | loss 0.1351 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a horse drinks 5 to 10 gallons of water per day depending on size, weather, and activ'
+
+  step   630/2000 | loss 0.1285 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the difference between English and Western riding?\nJoe: English riding uses a lighte'
+
+  step   640/2000 | loss 0.1285 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A contagious horse sport breeding Imph consists of the chestnutring step in the with over the '
+
+  step   650/2000 | loss 0.1352 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nJoe: The canter is a three-beat gait faster than the trot, where one hind leg strikes first followe'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   660/2000 | loss 0.1415 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a saddle pad?\nJoe: A saddle pad is a cushion placed under the saddle to absorb sweat,'
+
+  step   670/2000 | loss 0.1344 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Horses have blind spots directly in front of their nose and directly behind their tail. This i'
+
+  step   680/2000 | loss 0.1285 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is lead rope?\nJoe: A lead rope is a thick rope attached to handling horses called sport '
+
+  step   690/2000 | loss 0.1306 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What are horse hoof against each k rebuffs a It can also one lifts of a ga horse's and reprod"
+
+  step   700/2000 | loss 0.1238 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's normal body temperature is 999 to 101.5 degrees Fahrenheit. A temperature a"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   710/2000 | loss 0.1301 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Quarter Horses, Morgans, and American Paint Horses are popular breeds for beginners due to the'
+
+  step   720/2000 | loss 0.1203 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: The herd animal are herd animals that naturally live in social groups with a defined defined '
+
+  step   730/2000 | loss 0.1327 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: How do you 17 foods to horsestern Grooming and providing intersighted. They can danger age.\n'
+
+  step   740/2000 | loss 0.1207 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's lower its head?\nJoe: A lowered head can signal relaxation and contentment i"
+
+  step   750/2000 | loss 0.1266 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is horseasoned horse?\nJoe: A se se motrimming to with accinjuryliding inside the hoof, a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   760/2000 | loss 0.1273 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is horse laminitis?\nJoe: Laminitis is a painful inflammation of the tissue inside the ho'
+
+  step   770/2000 | loss 0.1279 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's laminitis?\nJoe: Lunging is exercising a cising a large circle around the lo"
+
+  step   780/2000 | loss 0.1240 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is the fitting?\nJoe: Cushing's uitary ris with the saddle band saddle to absorb sweat, p"
+
+  step   790/2000 | loss 0.1210 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a horse stud farm?\nJoe: A stud farm is a farm facility dedicated to breeding horses, '
+
+  step   800/2000 | loss 0.1331 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's body condition score?\nJoe: Body condition score is a 1 to 9 scale rating ho"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   810/2000 | loss 0.1263 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the sitting trot?\nJoe: Sitting the trot means staying deep in the saddle without risi'
+
+  step   820/2000 | loss 0.1206 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nJoe: The most popular breeds include the Quarter Horse, Thoroughbred, Arabian, Paint, and Morgan.'
+
+  step   830/2000 | loss 0.1245 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: The saddle is the seat shoulder angle, formed by the scapula and straight-load beat stopeck t'
+
+  step   840/2000 | loss 0.1209 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Shoulder-in is a lateral dressage movement where the horse moves forward and slightly sideways'
+
+  step   850/2000 | loss 0.1220 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's hooves made of?\nJoe: Horse hooves are made of keratin, the same protein tha"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   860/2000 | loss 0.1294 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's back used for?\nJoe: The Pmer is ushing where the hoof and area at the hoof"
+
+  step   870/2000 | loss 0.1239 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a horse horse breeding?\nJoe: The supported the trot also gait includes ait should b'
+
+  step   880/2000 | loss 0.1227 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's fetlock?\nJoe: The fetlock is the joint on the lower leg between the cannon "
+
+  step   890/2000 | loss 0.1146 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's splint bone?\nJoe: The splint bones are two small bones running alongside t"
+
+  step   900/2000 | loss 0.1227 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The withers are the highest making it generally strangles to sitting the in rules of each disc'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   910/2000 | loss 0.1146 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: Stirrups are metal or composite loops hanging from the saddle that support the rider's feet. T"
+
+  step   920/2000 | loss 0.1267 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A herds have a dominance hierarchy usually led by a dominant mare who decides when the group m'
+
+  step   930/2000 | loss 0.1193 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: How do you put on a bridle?\nJoe: Stand at the horse's left side, mount on the left sttraining"
+
+  step   940/2000 | loss 0.1266 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's hock?\nJoe: The hock is the large joint on the hind leg between the point be"
+
+  step   950/2000 | loss 0.1186 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: How do you shoe a horse?\nJoe: Shoeing involves trimming the hoof, fitting a metal horseshoe t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   960/2000 | loss 0.1130 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Paint are bounce bit?\nJoe: A snudesensitting a pa bit. A horse walone reach gask or temperatur'
+
+  step   970/2000 | loss 0.1208 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: How do you stop a horse?\nJoe: Stand on the horse's left side, put your left foot in the stirr"
+
+  step   980/2000 | loss 0.1148 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a ercise led?\nJoe: The score rollback is a maneuver where a horse stops from a slidin'
+
+  step   990/2000 | loss 0.1317 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a horse's dressage?\nJoe: Dressage is a precision riding discipline often called horse"
+
+  step  1000/2000 | loss 0.1212 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\n\n\n\nUser: What is a horse's back used for?\nJoe: A horse's tail swats flies, flies, aids balance, an"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1010/2000 | loss 0.1222 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: A yearling is a young horse?\nJoe: Start with halter breaking leading, tying, and basic desens'
+
+  step  1020/2000 | loss 0.1229 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a half-pass?\nJoe: A half-pass is a lateral dressage movement where the horse moves fo'
+
+  step  1030/2000 | loss 0.1261 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nUser: Why do horses sumes need treat than to horseshoes, fungallop and the hoof, problems. A far gr'
+
+  step  1040/2000 | loss 0.1272 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a warmblood?\nJoe: Warmbloods are sport horse breeds developed by crossing hot-blooded'
+
+  step  1050/2000 | loss 0.1083 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A breeds developed by unge addle, gar to ancestor conflexor s scloresponse is a anywhere on it'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1060/2000 | loss 0.1092 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: Can horses eat carrots?\nJoe: Yes, carrots are a healthy treat for horses in moderate amounts.'
+
+  step  1070/2000 | loss 0.1300 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's normal temperature?\nJoe: A horse's normal body temperature is 999 to 101.5 "
+
+  step  1080/2000 | loss 0.1221 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's stride frequency?\nJoe: Stride frequency is how many strides a horse takes "
+
+  step  1090/2000 | loss 0.1123 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is posting where the s backure, and rider smoother and ride.\n\nUser: What is a horse back'
+
+  step  1100/2000 | loss 0.1136 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: A saddle is the seat placed on a horse's back to distribute the rider's weight evenly. English"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1110/2000 | loss 0.1232 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's normal temperature?\nJoe: A horse's normal body temperature is 99 to 101.5 "
+
+  step  1120/2000 | loss 0.1226 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The evolved to loagious help with minute,  like the hindpasal Bels are grazing rather than lik'
+
+  step  1130/2000 | loss 0.1126 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is situings on a horse's stops the saddle, from a gallop, keep when the biting seconds."
+
+  step  1140/2000 | loss 0.1107 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is posting the trot?\nJoe: Posting is rising out of the saddle and sitting back down in '
+
+  step  1150/2000 | loss 0.1222 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nUser: What is collection?\nJoe: Collection is when a horse shifts its weight onto its hindquarters, '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1160/2000 | loss 0.1179 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's gait conformation?\nJoe: Gait conformation refers to how a horse's physical "
+
+  step  1170/2000 | loss 0.1158 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: How do you approach a horse?\nJoe: Always approach from the side near the shoulder and speak '
+
+  step  1180/2000 | loss 0.1176 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: How do you approach a horse?\nJoe: Always approach from the side near the shoulder and speak '
+
+  step  1190/2000 | loss 0.1116 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nJoe: Equine influenza is a highly contagious respiratory virus causing fever, and nasal discharge. '
+
+  step  1200/2000 | loss 0.1163 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\n\nUser: What is a saddle?\nJoe: A saddle is the seat placed on a horse's back to distribute the rider"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1210/2000 | loss 0.1163 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A curb bit uses leverage through side from the reward where the horse colops at speed then the'
+
+  step  1220/2000 | loss 0.1157 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a horse a herd animals that naturally live in social groups with a defined hierarchy'
+
+  step  1230/2000 | loss 0.1255 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a horse stud farm?\nJoe: A stud farm is a facility dedicated to breeding horses, hous'
+
+  step  1240/2000 | loss 0.1176 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's flight response?\nJoe: The flight response is a horse's instinct to run away"
+
+  step  1250/2000 | loss 0.1056 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's coronary band?\nJoe: The coronary band is the area at the top of the hoof wh"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1260/2000 | loss 0.1153 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: Posting is rising out of the saddle and sitting back down in rhythm with the horse's trot to a"
+
+  step  1270/2000 | loss 0.1133 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: How do you shoe a horse?\nJoe: Shoeing involves trimming the hoof, fitting a metal horseshoe t'
+
+  step  1280/2000 | loss 0.1174 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A olic is situations to reduce fear responses. A well-desensitized horse It is knowled both in'
+
+  step  1290/2000 | loss 0.1130 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a horse's pastern?\nJoe: The pastern is the area between the fetlock joint and the hoo"
+
+  step  1300/2000 | loss 0.1146 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A gelding is a castrated male horse, making it generally calmer and easier to handle than a st'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1310/2000 | loss 0.1083 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's fetlock?\nJoe: The fetlock is the joint on the lower leg between the cannon"
+
+  step  1320/2000 | loss 0.1159 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's digital cushion?\nJoe: The digital cushion is a wedge of soft tissue inside "
+
+  step  1330/2000 | loss 0.1187 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nJoe: Equine inarian sions. They are named for like their speed over short quarter-de disted and e'
+
+  step  1340/2000 | loss 0.1084 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Horse herds have?\nJoe: Horses should groups is a stamples and hor balance dressage, and risk, '
+
+  step  1350/2000 | loss 0.1152 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A far far standing a horse run players to 330 gallops at 25 to 30 miles per hour.\n\nUser: What '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1360/2000 | loss 0.1124 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A halter, Eately?\nJoe: A halter is a dressage. where a horse obes or ok in der stops, and your'
+
+  step  1370/2000 | loss 0.1131 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the trot?\nJoe: Laminitis is a painful inflammation of the tallows the rider to commun'
+
+  step  1380/2000 | loss 0.1129 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's goat donkey, or other calm animal can serve as a companion.\n\nUser: How do y"
+
+  step  1390/2000 | loss 0.1062 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: How often should you feed a horse?\nJoe: Horses should eat small amounts frequently, ideally w'
+
+  step  1400/2000 | loss 0.1028 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a swayback horse has a dipped or sagging back, common in older horses or those that '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1410/2000 | loss 0.1120 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A trot is a two-beat diagonal gait where opposite pairs of legs move together. It is a bouncy '
+
+  step  1420/2000 | loss 0.1065 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A horse is a vehrenheit. It is 900 to 10 ilunging ox strange times dark and minute pain or the'
+
+  step  1430/2000 | loss 0.1082 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's mane?\nJoe: The mane is the long hair growing along the top of the horse's "
+
+  step  1440/2000 | loss 0.1149 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the difference between a horse and a pony?\nJoe: The main difference is height, with p'
+
+  step  1450/2000 | loss 0.1059 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a horse normal body temperature?\nJoe: A horseA normal body temperature is 9 14.2 to 2'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1460/2000 | loss 0.1145 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a herd have?\nJoe: Horse pasture is the opposite inside in the hoof. It is connects t'
+
+  step  1470/2000 | loss 0.1046 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Shoeing horseshoes. Horses need as their hooves trimmed every 6 to 8 weeks.\n\nUser: What are ho'
+
+  step  1480/2000 | loss 0.1053 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Most riding horses are advanced riding.\n\nUser: What is shoulder-in?\nJoe: Shoulder-in is a late'
+
+  step  1490/2000 | loss 0.1090 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The American Quarter Horse is the most popular breed in the United States. They are named for '
+
+  step  1500/2000 | loss 0.1050 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the canter gait?\nJoe: The trot is a two-beat diagonal gait where opposite pairs of le'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1510/2000 | loss 0.1087 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's chestnut brea syndrome?\nJoe: What is excellent utionary chge is a horse's f"
+
+  step  1520/2000 | loss 0.1001 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The used for corners, a metal lead over the horse times hoof fetlocks gial point to the hoof t'
+
+  step  1530/2000 | loss 0.1090 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The which is a lateral dressage movement where the horse moves forward and slightly sideways w'
+
+  step  1540/2000 | loss 0.1072 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a horse's drink?\nJoe: A horse drinks 5 to 10 gallons of water per day depending on si"
+
+  step  1550/2000 | loss 0.1181 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is cross-country riding?\nJoe: Cross-country is the second phase of eventing where horse '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1560/2000 | loss 0.1126 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a horsevestigial white or colored through length lower and rideabout sing the of rem'
+
+  step  1570/2000 | loss 0.1020 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is show jumping?\nJoe: Thoroughbred A horse breed developed in England, for racing. They '
+
+  step  1580/2000 | loss 0.1135 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's normal temperature?\nJoe: A horse's normal body temperature is 9 topline 101"
+
+  step  1590/2000 | loss 0.1096 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A sliding stop is a reining maneuver where a horse gallops at speed then stops with its hind l'
+
+  step  1600/2000 | loss 0.1085 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's digital cushion?\nJoe: The digital cushion is a wedge of soft tissue inside "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1610/2000 | loss 0.1124 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: A grooming kit also often includes a shedding blade and detangler.\n\nUser: What is a curry com'
+
+  step  1620/2000 | loss 0.1106 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: A bay horse?\nJoe: A bay horse has a reddish or brown body with black points, meaning black ma'
+
+  step  1630/2000 | loss 0.1065 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\n\nUser: What is a horse's pastern?\nJoe: The pastern is the area between the fetlock joint and the ho"
+
+  step  1640/2000 | loss 0.1051 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a pony?\nJoe: A pony is a small horse under 14.2 hands tall at the withers. Ponies are'
+
+  step  1650/2000 | loss 0.1035 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's respiration rate?\nJoe: A resting horse breathes 8 to 16 times per minute. H"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1660/2000 | loss 0.1004 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's balance, flexibility, and shed discomb and 4 or perform er.\n\nUser: What is "
+
+  step  1670/2000 | loss 0.1031 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The dominim are rebuffs lunging, of its bone to forehand provide cover in depends weight. It i'
+
+  step  1680/2000 | loss 0.1048 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A lunge line is a long 20 to 30 foot rope used to exercise and train a horse from the ground i'
+
+  step  1690/2000 | loss 0.1076 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a green horse?\nJoe: A green horse is one that is young, inexperienced, or still in ea'
+
+  step  1700/2000 | loss 0.1105 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\n\nUser: What is the tail used for?\nJoe: A horse's tail swats flies, aids balance, and communicates m"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1710/2000 | loss 0.1076 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's bloodline?\nJoe: A bloodline refers to the ancestral lineage of a particular"
+
+  step  1720/2000 | loss 0.1131 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\n\n\n\nUser: What is a half-pass?\nJoe: A half-pass is a lateral dressage movement where the horse mov'
+
+  step  1730/2000 | loss 0.1091 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a weanling?\nJoe: A weanling is a foal between about 4 and 6 months old that has been'
+
+  step  1740/2000 | loss 0.1075 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The gallop is the fastest gait, a four-beat movement where all four feet are off the ground at'
+
+  step  1750/2000 | loss 0.1069 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a snaffle bit?\nJoe: A snaffle bit applies direct while heat respliatory rate social g'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1760/2000 | loss 0.1134 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's body condition score?\nJoe: Body condition score is a 1 to 9 scale rating h"
+
+  step  1770/2000 | loss 0.1046 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a horse judge?\nJoe: A horse judge is an accredited official who evaluates horses and'
+
+  step  1780/2000 | loss 0.1079 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: The heart girth is the circumference of the horse's body just behind the front legs, and body "
+
+  step  1790/2000 | loss 0.1063 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's treated anging topline during size, conformation.\n\nUser: What is collection"
+
+  step  1800/2000 | loss 0.1110 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: The fetlock is the joint on the lower leg between the forearm and the cannon bone. It is equiv'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1810/2000 | loss 0.0963 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: The horse's hock?\nJoe: The hock is the large joint on the hind leg between the gaskin and the "
+
+  step  1820/2000 | loss 0.1056 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: Barefoot trimming is maintaining a horse's hooves without horseshoes, using regular trimming t"
+
+  step  1830/2000 | loss 0.1091 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Core vaccinations include tetanus, Eastern and Western equine encephalomyelitis, West Nile vir'
+
+  step  1840/2000 | loss 0.1018 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's normal temperature?\nJoe: A horse's normal body temperature is 99 to 101.5 d"
+
+  step  1850/2000 | loss 0.0966 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's hooves made of?\nJoe: Horse hooves are made of keratin, the same protein tha"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1860/2000 | loss 0.1064 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a bowed tendon?\nJoe: A bowed tendon, also called tendinitis, is an injury to the sup'
+
+  step  1870/2000 | loss 0.1030 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a calm, horse disease?\nJoe: Therait tabs conformation movement where a horse tail lo'
+
+  step  1880/2000 | loss 0.1037 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a halter?\nJoe: A halter is a headpiece used for leading and tying a horse, unlike a '
+
+  step  1890/2000 | loss 0.1090 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nJoe: The suspensory ligament supports the fetlock joint and prevents it from overextending during m'
+
+  step  1900/2000 | loss 0.0992 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n\nUser: What is a horse's tail used for?\nJoe: A horse's tail swats flies, aids balance, and communic"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1910/2000 | loss 0.1081 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the gallop gait?\nJoe: The gallop is the fastest gait, four-beat movement where all fo'
+
+  step  1920/2000 | loss 0.0960 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: Why do horses spook?\nJoe: Horses spook because of their strong flight response as prey animal'
+
+  step  1930/2000 | loss 0.1035 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: Why do horses need horseshoes?\nJoe: Horseshoeshoes protect the hoof from excessive wear and p'
+
+  step  1940/2000 | loss 0.1048 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: An horse has a reddish or brown body with black points, meaning black mane, tail, and lower le'
+
+  step  1950/2000 | loss 0.1059 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A stud farm is a facility dedicated to breeding horses, housing stallions and managing the bre'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1960/2000 | loss 0.1046 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a Morgan?\nJoe: The Morgan is one of the earliest American horse breeds, all tracing b'
+
+  step  1970/2000 | loss 0.1089 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a curb bit?\nJoe: A curb bit uses leverage through side pieces called shanks to amplif'
+
+  step  1980/2000 | loss 0.1035 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a horse's coronary band?\nJoe: The coronary band is the area at the top of the hoof wh"
+
+  step  1990/2000 | loss 0.1006 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a horse trailer?\nJoe: A horse trailer is a vehicle designed to transport horses safel'
+
+  step  2000/2000 | loss 0.0953 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a splint on a horse?\nJoe: A splint is a bony growth along the splint bones that run a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+
+Done. Expert 'horse' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Time: 6842.8s | Final loss: 0.1031
+Tokenizer loaded (vocab 2000)
+Training text: 40,818 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse_train.txt
+Encoded: 19,729 tokens
+Resumed expert 'horse' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz (Adam step 5010)
+Expert 'horse': 869,456 params | 3 layers | dim 128
+Training for 5000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    50/5000 | loss 0.1007 | lr 3.00e-04 | 0.33 steps/s
+  Sample: '\nUser: What is a has a reddish-brown horse body with a matching or lighter mane and tail. Unlike a b'
+
+  step   100/5000 | loss 0.1036 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What are the most popular horse breeds?\nJoe: The most popular breeds include the Quarter Hor'
+
+  step   150/5000 | loss 0.0974 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a horse stud farm?\nJoe: A stud farm is a facility dedicated to breeding horses, hous'
+
+  step   200/5000 | loss 0.1005 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do you train a young horse?\nJoe: Start with halter breaking, leading, tying, and basic d'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   250/5000 | loss 0.0982 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A spin is a fast pivot where the horse plants its inside hind foot and rotates its front legs '
+
+  step   300/5000 | loss 0.0980 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A palomino is a golden-colored horse with a white or flaxen mane and tail. Palominos are popul'
+
+  step   350/5000 | loss 0.0990 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's mane?\nJoe: The mane is the long hair growing along the top of the horse's n"
+
+  step   400/5000 | loss 0.0993 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's knee?\nJoe: The horse's knee, also called the carpus, is the joint on the fr"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   450/5000 | loss 0.0967 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a horse's mane?\nJoe: The mane is the long hair growing along the top of the horse's "
+
+  step   500/5000 | loss 0.0970 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Always approach from the side near the shoulder and speak to the horse so it knows you are the'
+
+  step   550/5000 | loss 0.0925 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a horse stud farm?\nJoe: A stud farm is a facility dedicated to breeding horses, hous'
+
+  step   600/5000 | loss 0.0961 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a horse class?\nJoe: A class is a specific competition at a horse show where horses o'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   650/5000 | loss 0.0943 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's hooves without horseshoes, using regular trimming?\nJoe: The hooves stay the"
+
+  step   700/5000 | loss 0.0949 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's pastern?\nJoe: The pastern is the area between the fetlock joint and the hoo"
+
+  step   750/5000 | loss 0.0953 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nJoe: A horse has a heart rate of 28 to 44 beats per minute. During intense exercise it can reach 2'
+
+  step   800/5000 | loss 0.0923 | lr 3.00e-04 | 0.21 steps/s
+  Sample: '\nUser: Can horses eat apples?\nJoe: Yes, apples are a safe and popular treat for horses. Treats shoul'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step   850/5000 | loss 0.0959 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What does it mean when a horse nicks?\nJoe: A nicker is a soft vibrating sound horses make wh'
+
+  step   900/5000 | loss 0.0892 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\nJoe: Stand on the horse's left side, put your left foot in the stirrup, grab the mane and saddle ho"
+
+  step   950/5000 | loss 0.0881 | lr 3.00e-04 | 0.15 steps/s
+  Sample: "\nJoe: The horse's hindquarters. A well-muscled topline indicates the horse is fit and strong enough "
+
+  step  1000/5000 | loss 0.0909 | lr 3.00e-04 | 0.15 steps/s
+  Sample: '\nUser: What is polo?\nJoe: Polo is a team sport played on horseback horseback where riders use long m'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1050/5000 | loss 0.0895 | lr 3.00e-04 | 0.31 steps/s
+  Sample: '\nJoe: Barrel racing is a speed event where a event horse and rider race around three barrels in a cl'
+
+  step  1100/5000 | loss 0.0906 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: Why do horses spots need at treats work, and cow.\n\nUser: What is horse played?\nJoe: Horses a'
+
+  step  1150/5000 | loss 0.0898 | lr 3.00e-04 | 0.16 steps/s
+  Sample: '\n\nUser: What is the canter gait?\nJoe: The canter is a three-beat gait faster than the trot, where on'
+
+  step  1200/5000 | loss 0.0917 | lr 3.00e-04 | 0.23 steps/s
+  Sample: "\nUser: What is a horse's respiration rate?\nJoe: A resting horse breathes 8 to 16 times per minute. H"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1250/5000 | loss 0.0851 | lr 3.00e-04 | 0.22 steps/s
+  Sample: '\nUser: What is collective and ming conformation conformation injumping?\nJoe: Show jury is the ies th'
+
+  step  1300/5000 | loss 0.0925 | lr 3.00e-04 | 0.21 steps/s
+  Sample: '\nJoe: Chocolate, tomatoes, avocados, and lawn clipppppppings are toxic to horses. Other dangerous fo'
+
+  step  1350/5000 | loss 0.0910 | lr 3.00e-04 | 0.17 steps/s
+  Sample: '\nUser: What is a palomino?\nJoe: A palomino is a golden-colored horse with a white or flaxen mane and'
+
+  step  1400/5000 | loss 0.0878 | lr 3.00e-04 | 0.23 steps/s
+  Sample: '\nUser: What is desensitization?\nJoe: Desensitization is gradually exposing a horse to new objects, s'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1450/5000 | loss 0.0869 | lr 3.00e-04 | 0.31 steps/s
+  Sample: '\n\nUser: What is a bowed tendon?\nJoe: A bowed tendon, also called tendinitis, is an injury to the sup'
+
+  step  1500/5000 | loss 0.0842 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's respiration rate?\nJoe: A resting horse breathes 8 to 16 times per minute. H"
+
+  step  1550/5000 | loss 0.0876 | lr 3.00e-04 | 0.31 steps/s
+  Sample: '\nUser: What is a flying lead change?\nJoe: A flying lead change is when a horse switches its leading '
+
+  step  1600/5000 | loss 0.0903 | lr 3.00e-04 | 0.31 steps/s
+  Sample: "\nJoe: A hoof pick is a metal hook used to clean dirt, rocks, and debris from the bottom of a horse's"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1650/5000 | loss 0.0916 | lr 3.00e-04 | 0.21 steps/s
+  Sample: "\nUser: What is a horse's pastern?\nJoe: The pastern is the area between the fetlock joint on the fron"
+
+  step  1700/5000 | loss 0.0869 | lr 3.00e-04 | 0.24 steps/s
+  Sample: '\nUser: What is a green horse?\nJoe: A green horse is one that is young, inexperienced, or still in ea'
+
+  step  1750/5000 | loss 0.0817 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: What does it mean when a horse rolls?\nJoe: Horses roll to scratch itchy skin, remove shed hai'
+
+  step  1800/5000 | loss 0.0850 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a horse trailer?\nJoe: A horse trailer is a vehicle designed to transport horses safel'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  1850/5000 | loss 0.0857 | lr 3.00e-04 | 0.31 steps/s
+  Sample: "\nJoe: A horse's can survive alone but will likely become stressed and develop behavioral problems wi"
+
+  step  1900/5000 | loss 0.0861 | lr 3.00e-04 | 0.31 steps/s
+  Sample: '\nJoe: The fetlock is the joint on the lower leg between the cannon bone and the pastern, similar to '
+
+  step  1950/5000 | loss 0.0867 | lr 3.00e-04 | 0.31 steps/s
+  Sample: "\nUser: What is a horse long floating a horse's competition used for?\nJoe: This Norinngrooming tools "
+
+  step  2000/5000 | loss 0.0805 | lr 3.00e-04 | 0.31 steps/s
+  Sample: '\nUser: What is a splint on a horse?\nJoe: A splint is a bony growth along the splint bones that run a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  2050/5000 | loss 0.0851 | lr 3.00e-04 | 0.16 steps/s
+  Sample: '\nJoe: The average horse gallops at 25 to 30 miles per hour. Thoroughbred racehorses can reach speeds'
+
+  step  2100/5000 | loss 0.0865 | lr 3.00e-04 | 0.16 steps/s
+  Sample: '\nUser: What is a Thrush is a bacterial or fungal infection that affects the frog of the hoof, produc'
+
+  step  2150/5000 | loss 0.0826 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nJoe: Cutting is a Western discipline where a horse separates a single cow from a herd and prevents '
+
+  step  2200/5000 | loss 0.0819 | lr 3.00e-04 | 0.11 steps/s
+  Sample: '\nJoe: Horse teeth is a teeth small vestigial teeth that sometimes appear in front of the first upper'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  2250/5000 | loss 0.0845 | lr 3.00e-04 | 0.15 steps/s
+  Sample: '\nJoe: A tall is a horse cated withinfluenza, herpes virus, and strangles depending on risk.\n\nUser: W'
+
+  step  2300/5000 | loss 0.0798 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The shoulder angle, formed by the scapula and humerus, affects stride length and rideability. '
+
+  step  2350/5000 | loss 0.0788 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The coronary band is the area at the top of the hoof where the hoof wall meets the skin. It is'
+
+  step  2400/5000 | loss 0.0834 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's suspensory ligament?\nJoe: The suspensory ligament supports the fetlock join"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  2450/5000 | loss 0.0809 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: What is a horse trailer?\nJoe: A horse trailer is a vehicle designed for transport horses safel'
+
+  step  2500/5000 | loss 0.0861 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's suspensory ligament?\nJoe: The suspensory ligament supports the fetlock join"
+
+  step  2550/5000 | loss 0.0830 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's chestnut?\nJoe: The chestnut is a callous-like growth on the inside of a hor"
+
+  step  2600/5000 | loss 0.0774 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the best horse breed for children?\nJoe: Small ponies like the Welsh and Shetland, as '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  2650/5000 | loss 0.0812 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The American Paint Horse is the safe and treat horses from that riders at temperament and sure'
+
+  step  2700/5000 | loss 0.0783 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a foal?\nJoe: A foal is a young horse under one year old, called a colt if male and a '
+
+  step  2750/5000 | loss 0.0808 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Most riding?\nJoe: horses stand 14.2 to 17 hands tall at the withers. One hand equals 4 inches,'
+
+  step  2800/5000 | loss 0.0840 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a horse's topline?\nJoe: The topline is the score rates the development of muscles al"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  2850/5000 | loss 0.0794 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Can comb used for?\nJoe: A curry comb  is a rubber or plastic tool used in circular motions to '
+
+  step  2900/5000 | loss 0.0763 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's topline?\nJoe: The topline is the chain of muscles along the horse's neck, b"
+
+  step  2950/5000 | loss 0.0799 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is the gallop gait?\nJoe: The gallop is the fastest gait, a four-beat movement where all'
+
+  step  3000/5000 | loss 0.0783 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a bridle?\nJoe: A bridle is the headgear that holds the bit and reins, allowing the ri'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  3050/5000 | loss 0.0803 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's mane?\nJoe: The mane is the long hair growing along the top of the horse's n"
+
+  step  3100/5000 | loss 0.0838 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A riders need like a ritional orseshooves. BarRoaning are ex, treateding and horses requires e'
+
+  step  3150/5000 | loss 0.0792 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The main difference is height, with ponies being under 14.2 hands. Ponies also tend to have th'
+
+  step  3200/5000 | loss 0.0775 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What are the most popular horse breeds?\nJoe: The most popular breeds include the Quarter Hors'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  3250/5000 | loss 0.0780 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a roan horse?\nJoe: A roan horse has an even mixture of white and colored hairs on its'
+
+  step  3300/5000 | loss 0.0842 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What does it mean when a horse nicks?\nJoe: A nicker is a soft vibrating sound horses make whe'
+
+  step  3350/5000 | loss 0.0799 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The Coggins test?\nJoe: The Coggins test is a blood test for equine infectious anemia, a fatal '
+
+  step  3400/5000 | loss 0.0766 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Yes, apples are a safe and popular treat for horses. Treats should be given in moderation, as '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  3450/5000 | loss 0.0771 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The eared sound barefoot.\n\nUser: is the saying no hoof no horse?\nJoe: This saying means that a'
+
+  step  3500/5000 | loss 0.0774 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a horse's heart girth?\nJoe: Heart girth is the circumference of the horse's body just"
+
+  step  3550/5000 | loss 0.0797 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The shoulder angle, formed by the scapula and humerus, affects stride length and rideability. '
+
+  step  3600/5000 | loss 0.0710 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is the trot gait?\nJoe: The trot is a two-beat diagonal gait where opposite pairs of leg'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  3650/5000 | loss 0.0778 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is horse's suspensory ligament?\nJoe: The suspensory ligament supports the fetlock joint"
+
+  step  3700/5000 | loss 0.0757 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the best horse horse breed for patience?\nJoe: A horse breeds is more important than b'
+
+  step  3750/5000 | loss 0.0765 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: The four natural gaits are the walk, trot, canter, and gallop, each faster than the last. Some'
+
+  step  3800/5000 | loss 0.0779 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a horse's tail used for?\nJoe: A horse's tail swats flies, aids balance, and communic"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  3850/5000 | loss 0.0753 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\ner?\nJoe: The splint is a bony growth along the splint bones that run alongside the cannon bone. The'
+
+  step  3900/5000 | loss 0.0761 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a lunge line?\nJoe: A lunge line is a long 20 to 30 foot rope used to exercise and tra'
+
+  step  3950/5000 | loss 0.0765 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What does it mean when a horse squeals?\nJoe: A squeal is a high-pitched sound horses make du'
+
+  step  4000/5000 | loss 0.0767 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a horse's respiration rate?\nJoe: A resting horse breathes 8 to 16 times per minute. "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  4050/5000 | loss 0.0766 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the trot gait?\nJoe: The trot is a two-beat diagonal gait where opposite pairs of legs'
+
+  step  4100/5000 | loss 0.0769 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What vaccinations do horses need?\nJoe: Core vaccinations include tetanus, Eastern and Western'
+
+  step  4150/5000 | loss 0.0766 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a horse's similar type age, or skill level compete against each other. Examples incl"
+
+  step  4200/5000 | loss 0.0716 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Cross-country is the second phase of eventing where horse and rider gallop and jump over solid'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  4250/5000 | loss 0.0735 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What do you tell a horse's age?\nJoe: You can estimate a horse's age by examining its teeth, "
+
+  step  4300/5000 | loss 0.0734 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Pinsemination Alder about 4 to 30 miles per hour. Thoroughbred racehorses can reach speeds up '
+
+  step  4350/5000 | loss 0.0783 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is breeding?\nJoe: Horse herbivores that primarily eat grass and hay. A typical horse co'
+
+  step  4400/5000 | loss 0.0768 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Speak in a calm, steady voice and keep a relaxed posture. Allow the horse to investigate the s'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  4450/5000 | loss 0.0758 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: A horse's fetlock joint and prevents it from overextending during movement. Injuries to this l"
+
+  step  4500/5000 | loss 0.0754 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Horses have nearly 360-degree vision with excellent peripheral sight. Their main blind spots a'
+
+  step  4550/5000 | loss 0.0762 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do horses eat?\nJoe: Horses are herbivores that primarily eat grass and hay. A typical ho'
+
+  step  4600/5000 | loss 0.0745 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a horse's windpuff?\nJoe: A windpuff is a soft swelling filled with synovial fluid ar"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  4650/5000 | loss 0.0775 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: How do you load a horse into a trailer?\nJoe: Use patience and positive reinforcement, letting'
+
+  step  4700/5000 | loss 0.0741 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a draft horse?\nJoe: Draft horses are large breeds bred for heavy work like pulling p'
+
+  step  4750/5000 | loss 0.0742 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A horse drinks 5 to 10 gallons of water per day depending on size, weather, and activity level'
+
+  step  4800/5000 | loss 0.0730 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: How do you stop a horse?\nJoe: To stop a horse, sit deep in the saddle, close your fingers on '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+  step  4850/5000 | loss 0.0740 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a saddle?\nJoe: A saddle is the seat placed on a horse's back to distribute the rider"
+
+  step  4900/5000 | loss 0.0721 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A horse is a bony growth along the splint bones bones that run alongside the cannon bone. They'
+
+  step  4950/5000 | loss 0.0739 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a horse judge?\nJoe: A horse judge is an accredited official who evaluates horses and'
+
+  step  5000/5000 | loss 0.0739 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A resting horse breathes 8 to 16 times per minute. Heavy breathing or wheezing after exercise '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+
+Done. Expert 'horse' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/horse/horse.npz
+Time: 17683.0s | Final loss: 0.0739

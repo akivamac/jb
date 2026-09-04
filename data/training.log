@@ -1,0 +1,118 @@
+# [2026-07-30 16:54:32] START: training/train.py --resume --steps 300 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 50 --sample 50 --push 100
+# step,loss,lr,steps_per_sec,timestamp
+# [2026-07-30 18:24:14] RESUME: training/train.py --resume --steps 300 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 50 --sample 50 --push 100
+50,1.6299,1.50e-04,0.02,1785453311.0714457
+# [2026-07-30 19:41:38] RESUME: training/train.py --resume --steps 1000 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 50 --sample 50 --push 100
+50,1.6468,1.50e-04,0.02,1785457885.101546
+100,1.6088,1.50e-04,0.02,1785460893.653501
+150,1.5705,1.50e-04,0.02,1785463923.4808545
+200,1.6196,1.50e-04,0.02,1785466938.4837039
+250,1.5255,1.50e-04,0.02,1785469975.3859813
+300,1.5931,1.50e-04,0.02,1785472994.9874394
+350,1.5751,1.50e-04,0.02,1785476030.2699354
+400,1.4461,1.50e-04,0.02,1785479049.796589
+450,1.5137,1.50e-04,0.02,1785482075.1210365
+500,1.4830,1.50e-04,0.02,1785485076.0471725
+550,1.5353,1.50e-04,0.02,1785488097.4893079
+600,1.5270,1.50e-04,0.02,1785491091.9462998
+650,1.4881,1.50e-04,0.02,1785494120.022865
+700,1.5117,1.50e-04,0.02,1785497221.874233
+750,1.5396,1.50e-04,0.02,1785500505.639068
+# [2026-07-31 09:12:38] RESUME: training/train.py --resume --steps 100 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 20 --sample 20 --push 50
+20,1.5480,1.50e-04,0.02,1785504745.0774882
+40,1.4428,1.50e-04,0.02,1785505945.3540597
+60,1.4545,1.50e-04,0.02,1785507171.80773
+80,1.5089,1.50e-04,0.02,1785508380.1602273
+100,1.4944,1.50e-04,0.02,1785509589.3206515
+# [2026-07-31 11:16:46] RESUME: training/train.py --resume --steps 100 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 20 --sample 20 --push 50
+20,1.4091,1.50e-04,0.02,1785512327.8822823
+40,1.5121,1.50e-04,0.02,1785513551.0052848
+60,1.4904,1.50e-04,0.02,1785514840.6926675
+80,1.4610,1.50e-04,0.02,1785516059.8449726
+100,1.4406,1.50e-04,0.02,1785517285.7564414
+# [2026-07-31 13:13:21] RESUME: training/train.py --resume --steps 100 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 20 --sample 20 --push 50
+20,1.4343,1.50e-04,0.01,1785519640.4152765
+40,1.5399,1.50e-04,0.02,1785520871.5511153
+60,1.4162,1.50e-04,0.02,1785522100.908442
+80,1.4704,1.50e-04,0.02,1785523318.4997683
+100,1.4599,1.50e-04,0.02,1785524532.2220464
+# [2026-07-31 15:58:35] RESUME: training/train.py --resume --steps 100 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 20 --sample 20 --push 50
+20,1.4157,1.50e-04,0.02,1785529235.8483624
+40,1.5516,1.50e-04,0.02,1785530487.0898616
+# [2026-08-02 15:55:20] RESUME: training/train.py --resume --steps 50000 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 100 --sample 500 --push 0
+# [2026-08-02 17:53:03] RESUME: training/train.py --resume --steps 50000 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 100 --sample 500 --push 0
+# [2026-08-02 20:28:22] RESUME: training/train.py --resume --steps 5000 --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 --log 25 --sample 25 --push 150
+25,1.5038,1.50e-04,0.00,1785723331.584492
+50,1.4449,1.50e-04,0.00,1785729836.8899422
+75,1.4557,1.50e-04,0.00,1785736321.9318953
+100,1.4524,1.50e-04,0.00,1785742828.4587715
+125,1.5200,1.50e-04,0.00,1785749313.4056864
+150,1.4119,1.50e-04,0.00,1785755855.2546113
+# [2026-08-03 09:07:17] RESUME: training/train.py --resume --steps 25 --batch 16 --log 25 --lr 1.5e-4
+# [2026-08-03 09:09:59] RESUME: training/train.py --resume --steps 10 --batch 16 --log 5 --lr 1.5e-4
+# [2026-08-03 09:13:18] RESUME: training/train.py --resume --steps 1 --batch 16 --log 1 --lr 1.5e-4
+1,1.5126,1.50e-04,0.02,1785762853.601593
+# [2026-08-03 11:57:22] RESUME: training/train.py --resume --steps 1 --batch 16 --log 1 --lr 1.5e-4
+1,1.6928,1.50e-04,0.01,1785772729.4654791
+# [2026-08-03 12:00:25] RESUME: training/train.py --resume --steps 2 --batch 16 --log 1 --lr 1.5e-4
+1,1.4404,1.50e-04,0.01,1785772907.2869859
+# [2026-08-03 12:03:31] ERROR: training crashed
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/train.py", line 272, in <module>
+    train(
+    ~~~~~^
+        steps=args.steps,
+        ^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        sample_every=args.sample,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/train.py", line 117, in train
+    model = JoeBrain.load(model_path)
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/model.py", line 452, in load
+    m.p = {k[2:]: data[k].astype(np.float32) for k in data if k.startswith('p_')}
+                  ~~~~^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/lib/_npyio_impl.py", line 257, in __getitem__
+    return format.read_array(
+           ~~~~~~~~~~~~~~~~~^
+        bytes,
+        ^^^^^^
+    ...<2 lines>...
+        max_header_size=self.max_header_size
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/lib/_format_impl.py", line 869, in read_array
+    data = _read_bytes(fp, read_size, "array data")
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/numpy/lib/_format_impl.py", line 1013, in _read_bytes
+    r = fp.read(size - len(data))
+  File "/data/data/com.termux/files/usr/lib/python3.14/zipfile/__init__.py", line 1105, in read
+    data = self._read1(n)
+  File "/data/data/com.termux/files/usr/lib/python3.14/zipfile/__init__.py", line 1195, in _read1
+    self._update_crc(data)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/zipfile/__init__.py", line 1123, in _update_crc
+    raise BadZipFile("Bad CRC-32 for file %r" % self.name)
+zipfile.BadZipFile: Bad CRC-32 for file 'p_wte.npy'
+# [2026-08-03 12:03:35] ERROR: training crashed
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/train.py", line 272, in <module>
+    train(
+    ~~~~~^
+        steps=args.steps,
+        ^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        sample_every=args.sample,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/train.py", line 219, in train
+    print(f"step {step:5d}/{steps} | loss {avg:.4f} | lr {eff_lr:.2e} | {sps:.2f} steps/s")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+# [2026-08-03 12:07:01] RESUME: training/train.py --resume --steps 2 --batch 16 --log 1 --lr 1.5e-4
+1,1.4769,1.50e-04,0.01,1785773315.9015627
+2,1.5040,1.50e-04,0.01,1785773402.0105238
+# [2026-08-03 12:12:27] RESUME: training/train.py --resume --steps 1 --batch 16 --log 1 --lr 1.5e-4
+1,1.7971,1.50e-04,0.02,1785773599.0003188

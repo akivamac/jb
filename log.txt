@@ -1,0 +1,287 @@
+# 🧠 Monkey Joe Training Log
+# A tiny neural network learning to talk from scratch
+# -------------------------------------------------
+# Created: 2026‑05‑01 07:29:17 ‑0400
+# Current: 2026‑09‑01
+# -------------------------------------------------
+# Author: Akiva
+# Assistant should add to this log every once and a while but only a few sentanses. dont maker it as long as the model file!! thats a joke, but i want this not to go too big.
+
+## 1. Project Genesis – Rules‑Based Monkey Joe (May 2026)
+
+- **Initial Idea (May 1)**  
+  Started as a simple rules‑based chatbot called *Monkey Joe*.  
+  It answered questions with hard‑coded rules and a tiny set of templates.
+
+- **Goal**  
+  Eventually build a *learned* AI that could converse naturally and adapt to new information.
+
+## 2. First Branch & CLI Integration – "Joe‑brain" (June 22)
+
+- **Branch Creation**  
+  `git checkout -b joe-brain` on 2026‑06‑22 18:40:46 ‑0400.
+
+- **Claude CLI**  
+  Used Claude's command‑line tools to scaffold files (`train.py`, `model.py`, `tokenizer.py`, etc.) and to start the first neural‑network training run.
+
+- **Model Specs (Initial Letter-by-Letter)**  
+  * Very small: ~500k parameters or less.  
+  * 2-4 layers.  
+  * Letter‑by‑letter tokenization.
+  * Lowest loss achieved: ~0.1 (but model was later discarded).
+
+## 3. Letter-by-Letter Training Issues
+
+- **Major Bug**  
+  One long training session encountered a critical bug that corrupted the model weights.  
+  Exact cause unknown, but it made the model unusable.
+
+- **Decision**  
+  Switched to a token‑by‑token approach instead of trying to fix the letter‑by‑letter model.
+
+## 4. Transition to Token‑by‑Token Generation (≈ July 1)
+
+- **Why?**  
+  Letter‑by‑letter generation was too slow and produced incoherent text.  
+  Switching to token‑by‑token (word‑based) greatly improved fluency.
+
+- **Implementation**  
+  Updated the tokenizer to emit word tokens instead of single characters.  
+  Adjusted the data pipeline accordingly.
+
+- **Effect**  
+  Loss dropped; the model started to capture word‑level semantics.
+
+- **Total Training Steps on Token-by-Token Model (Before July 30)**  
+  ~40,000 steps accumulated across multiple runs.
+
+- **Lowest Loss Achieved on Token-by-Token Model**  
+  ~1.2
+
+## 5. Data Pipeline & Evolution
+
+- **Data Source**  
+  Initial 880 Q&A pairs came from the rules‑based model (converted to the neural network format).  
+  No external datasets (Wikipedia, StackOverflow, etc.) were used.
+
+- **Growth Pattern**  
+  Exact timeline of growth unknown, but pairs were added incrementally from May through July.
+
+- **make_conversations.py**  
+  Master source containing ~580 Q&A pairs organized into categories:
+  * Greetings (15)
+  * Identity (25)
+  * Feelings (12)
+  * Capabilities (13)
+  * Fun/Personality (12)
+  * Preferences (17)
+  * User Emotions (27)
+  * Polite Interactions (28)
+  * Advice (15)
+  * Science (60+)
+  * Human Body (30+)
+  * Math (40+)
+  * Technology (40+)
+  * History/Geography (80+)
+  * Philosophy & Big Questions (20+)
+  * Time & Dates (10+)
+  * Food & Cooking (15+)
+  * Weather & Seasons (15+)
+  * Sports (15+)
+  * Languages & Communication (15+)
+  * Everyday Science (15+)
+  * Multi-turn conversations (30+)
+
+- **Chain of Thought (CoT) Addition**  
+  Added CoT examples to training data (exact number and breakdown unknown).  
+  Minimal improvement observed after addition, likely due to limited training time afterward.
+
+## 6. Data Cleaning & Formatting (July 26-29)
+
+- **Problem Discovered**  
+  * Model was hallucinating ("I am'will toore").  
+  * Training data was poorly formatted (raw facts without User:/Joe: prefixes).  
+  * Data contamination: Multiple AI models added inconsistent answers to same questions.
+
+- **Solution Applied**  
+  1. Created `fix_data.py` to extract 880 conversation pairs from `make_conversations.py`.  
+  2. Formatted them as:
+     ```
+     User: [question]
+     Joe: [answer]
+     ```
+  3. Deduplicated exact duplicate lines.  
+  4. Appended formatted conversations to `data/train.txt`.
+
+- **Result**  
+  `train.txt` grew to ~5.5M characters with proper turn-taking structure.
+
+## 7. First Training Run – 400 Steps (July 29)
+
+- **Command**  
+  ```bash
+  python3 training/train.py --resume --steps 400 \
+      --dim 192 --layers 5 --heads 6 --lr 2e-4 --batch 16 \
+      --log 50 --sample 200
+Model Specs
+
+2.7M parameters
+192 embed_dim, 5 layers, 4 heads
+512 seq_len
+2000 vocab size
+Outcome
+
+Loss fell from ~1.6 to ~1.32.
+Model learned to see User:/Joe: prefixes correctly.
+Still some hallucinations, but foundation was solid.
+8. Continued Training – 1600 Steps (July 29)
+Command
+
+bash
+
+Copy
+python3 training/train.py --resume --steps 1600 \
+    --dim 192 --layers 5 --heads 6 --lr 2e-4 --batch 16 \
+    --log 50 --sample 100
+Progress
+
+Loss plateaued around 1.33–1.35.
+Samples mixed quality; occasional nonsense bursts ("tiground I love abouttoce!").
+Realization: 2.7M parameters too small to hold all knowledge + reasoning.
+9. Model Growth (July 30)
+Why Grow?
+Need more capacity to learn long‑term dependencies and reasoning.
+
+grow_model.py
+A custom script that:
+
+Expands embed_dim (192 → 256).
+Adds layers (5 → 7).
+Preserves existing weights in the "top‑left" block.
+Zero‑initializes new weights (model behaves the same at first).
+Zeros Adam moments for new weights (optimizer starts fresh).
+Command
+
+bash
+
+Copy
+python3 grow_model.py --new_embed_dim 256 --new_layers 7
+Result
+
+Parameters increased from 2.7M to 6.17M.
+File data/model.npz now holds the enlarged model.
+All prior knowledge preserved.
+10. Testing Grown Model (July 30 – Tablet)
+Quick Test Run (300 steps)
+
+bash
+
+Copy
+python3 training/train.py --resume --steps 300 \
+    --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 \
+    --log 50 --sample 50 --push 100
+Results
+
+Step 50: loss 2.1026 (higher due to model growth; expected).
+Step 100: loss 1.7776 (dropping as expected).
+Samples still showing some nonsense, but training proceeding normally.
+Bug Encountered
+
+ModuleNotFoundError: No module named 'subprocess' at step 100.
+Cause: import subprocess inside git_push() function instead of at module level.
+Fix: Moved import to top of train.py.
+11. Testing Methods
+Web UI
+Primary testing method. Runs via python3 server.py on localhost:8080.
+Allows temperature adjustment, max tokens, and top-K sampling.
+
+Terminal Chat
+Recently created terminal_chat.py for command‑line testing.
+Useful for quick iterations without browser overhead.
+
+12. Key Insights
+Data Format Matters: Consistent User:/Joe: prefixes teach turn-taking structure.
+Model Size Matters: 2.7M was too small; 6.17M is better but still tiny.
+Chain of Thought Helps: Examples with "Let's think step by step" improve reasoning.
+Gradual Growth Works: Growing model preserves knowledge while adding capacity.
+Temperature Affects Output: Lower temp (0.6-0.7) reduces hallucinations vs 0.9.
+Token-by-Token Better: Switching from letter-by-letter dramatically improved quality.
+13. Next Steps
+Complete 50k-step training on Mac mini (≈ 3–4 hours).
+
+bash
+
+Copy
+python3 training/train.py --resume --steps 50000 \
+    --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 \
+    --log 100 --sample 500
+Evaluate with the UI at low temperature (0.6).
+
+If math/logic still flaky, add 50 explicit CoT examples (10 per domain).
+
+Deploy on tablet, add UI tweaks (voice input/output, "Show Reasoning" toggle).
+
+Iterate: Gather user feedback, continue fine‑tuning.
+
+14. Files & Commands Reference
+Key Scripts
+fix_data.py — Deduplicates and formats training data
+grow_model.py — Expands model capacity
+training/train.py — Main training loop
+training/model.py — Transformer architecture (pure NumPy)
+training/tokenizer.py — Token encoding/decoding
+server.py — Chat UI backend
+index.html — Chat UI frontend
+terminal_chat.py — Terminal-based chat interface
+make_conversations.py — Master Q&A source (580+ pairs)
+Data Files
+data/train.txt — 5.5M character training corpus
+data/model.npz — Trained model weights (currently 6.17M params)
+data/tokenizer.json — 2000-token vocabulary
+data/conversations.txt — Formatted conversation pairs
+Training Commands
+bash
+
+Copy
+# Grow model
+python3 grow_model.py --new_embed_dim 256 --new_layers 7
+
+# Train grown model (50k steps on Mac mini)
+python3 training/train.py --resume --steps 50000 \
+    --dim 256 --layers 7 --heads 8 --lr 1.5e-4 --batch 16 \
+    --log 100 --sample 500
+
+# Run chat UI
+python3 server.py
+# Then visit: http://localhost:8080
+
+# Run terminal chat
+python3 terminal_chat.py
+Status: GROWING & TRAINING 🚀
+Current Phase: Phase 4 (Training grown model)
+Model Size: 6.17M parameters (256 dim, 7 layers, 8 heads)
+Last Update: July 31, 2026, 16:00 ‑0400
+Location: Tablet (Termux) — Next run on Mac mini
+Next Milestone: Complete 50k-step training, evaluate quality
+
+## 15. Recent Training Activity (July 30–31)
+
+- **Session Pattern**: Multiple short runs (100–750 steps) across several days.
+- **Current Loss**: Plateauing around 1.40–1.55 (previously ~1.2 target).
+- **Speed**: ~0.02 steps/s (~50s per step) on tablet hardware.
+- **Infrastructure**: Added training.log (CSV), concurrency control, and speech UI.
+- **Observation**: Loss no longer dropping significantly; model capacity or data limits may be reached.
+
+## 16. Expert Ensemble + Dashboard Era (Aug–Sep 2026)
+
+- Shifted from a single 6.17M model to an **expert ensemble** of narrow specialists.
+- **BPE tokenizer** (2000-token vocab) replaced char-level tokenization; saves to `data/tokenizer.json`.
+- Experts grew to **10**: greeting, emotion, knowledge, coding, cot, python, horse, fish, reptiles, tree.
+  Default expert: 128 dim / 3 layers / 4 heads / 128 seq (~869K params); some grown larger.
+- `training/expert.py` = ExpertRegistry: all experts run, quality filter silences junk, survivors blend by confidence.
+- `training/router.py` + `train_router.py` = RouterNet classifier (trained on 7 experts) for chat auto-routing in `server.py`.
+- Built **Training Dashboard**: `training_server.py` (port 9091) + `training_ui/index.html` —
+  launch/stop/queue training, live SSE logs, loss charts, test chat, keyword-match test suite.
+- **Deleted** legacy overnight/master/chain/queue watch scripts (master.sh, master_train.py,
+  overnight*.sh, chain*.sh, queue_manager.sh, safe_queue.sh, train_queue.sh) — dashboard replaces them.
+

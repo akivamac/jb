@@ -1,0 +1,337 @@
+Tokenizer loaded (vocab 2000)
+Training text: 11,722 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge_train.txt
+Encoded: 5,142 tokens
+Loaded existing expert 'knowledge' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz (fresh optimizer)
+Expert 'knowledge': 885,840 params | 3 layers | dim 128
+Training for 5000 steps | lr=0.0003 | seq=256 | batch=8
+
+  step    50/5000 | loss 0.0199 | lr 1.50e-04 | 0.04 steps/s
+  Sample: '\nUser: what is a neuron\nJoe: A neuron is a nerve cell that transmits signals in the brain and body.\n'
+
+  step   100/5000 | loss 0.0199 | lr 3.00e-04 | 0.05 steps/s
+  Sample: '\nUser: how old is the earth\nJoe: Earth is about 4.5 billion years old.\nUser: how old is the universe'
+
+  step   150/5000 | loss 0.0209 | lr 3.00e-04 | 0.04 steps/s
+  Sample: '\nJoe: An atom is the smallest unit of matter. It has protons, neutrons, and electrons.\nUser: what is'
+
+  step   200/5000 | loss 0.0244 | lr 3.00e-04 | 0.04 steps/s
+  Sample: '\nUser: what is the immune system\nJoe: The immune system defends the body against infection and disea'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step   250/5000 | loss 0.0254 | lr 3.00e-04 | 0.04 steps/s
+  Sample: '\nJoe: A fossil is the preserved remains or impression of a prehistoric organism found in rock.\nUser:'
+
+  step   300/5000 | loss 0.0243 | lr 2.99e-04 | 0.04 steps/s
+  Sample: "\nJoe: A parasite is an organism that lives on or in another organism and benefits at the host's expe"
+
+  step   350/5000 | loss 0.0213 | lr 2.99e-04 | 0.04 steps/s
+  Sample: '\nUser: what is osmosis\nJoe: Osmosis is the movement of water through a semipermeable membrane from a'
+
+  step   400/5000 | loss 0.0203 | lr 2.98e-04 | 0.10 steps/s
+  Sample: '\nUser: what is the speed of light\nJoe: Light travels at about 186,000 miles per second, or 300,000 k'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step   450/5000 | loss 0.0197 | lr 2.97e-04 | 0.11 steps/s
+  Sample: '\nJoe: An enzyme is a protein that speeds up chemical reactions in the body without being consumed.\nU'
+
+  step   500/5000 | loss 0.0200 | lr 2.97e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a wave\nJoe: A wave is a disturbance that transfers energy through matter or space wit'
+
+  step   550/5000 | loss 0.0201 | lr 2.96e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a bird\nJoe: A bird is a warm-blooded animal with feathers and wings. Most can fly.\nUs'
+
+  step   600/5000 | loss 0.0183 | lr 2.95e-04 | 0.13 steps/s
+  Sample: '\nJoe: A virus is a tiny particle that can infect cells and cause disease. It cannot reproduce on its'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step   650/5000 | loss 0.0205 | lr 2.94e-04 | 0.13 steps/s
+  Sample: '\nJoe: Hibernation is a state of deep sleep some animals enter in winter to conserve energy.\n\nUser: w'
+
+  step   700/5000 | loss 0.0204 | lr 2.93e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a protein\nJoe: A protein is a molecule made of amino acids that does most of the work'
+
+  step   750/5000 | loss 0.0198 | lr 2.91e-04 | 0.13 steps/s
+  Sample: '\nJoe: A nebula is a cloud of gas and dust in space where new stars are born.\nUser: what is a superno'
+
+  step   800/5000 | loss 0.0195 | lr 2.90e-04 | 0.13 steps/s
+  Sample: "\nJoe: The moon is Earth's only natural satellite. It affects tides and helps stabilize Earth's tilt."
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step   850/5000 | loss 0.0199 | lr 2.89e-04 | 0.13 steps/s
+  Sample: '\nJoe: A hurricane is a large rotating storm with strong winds that forms over warm ocean water.\nUser'
+
+  step   900/5000 | loss 0.0197 | lr 2.87e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an amphibian\nJoe: An amphibian is an animal that lives both in water and on land, lik'
+
+  step   950/5000 | loss 0.0208 | lr 2.86e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an ecosystem\nJoe: An ecosystem is a community of living things interacting with their'
+
+  step  1000/5000 | loss 0.0213 | lr 2.84e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an orbit\nJoe: An orbit is the curved path an object takes around another body due to '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  1050/5000 | loss 0.0203 | lr 2.82e-04 | 0.13 steps/s
+  Sample: '\nJoe: An element is a pure substance made of only one type of atom. There are about 118 known elemen'
+
+  step  1100/5000 | loss 0.0200 | lr 2.80e-04 | 0.13 steps/s
+  Sample: '\nJoe: The periodic table organizes all known chemical elements by their properties and atomic number'
+
+  step  1150/5000 | loss 0.0218 | lr 2.78e-04 | 0.13 steps/s
+  Sample: '\nJoe: A rock is a solid mixture of one or more minerals. There are three types: igneous, sedimentary'
+
+  step  1200/5000 | loss 0.0198 | lr 2.76e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a mineral\nJoe: A mineral is a naturally occurring inorganic solid with a specific che'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  1250/5000 | loss 0.0237 | lr 2.74e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a parasite\nJoe: A parasite is an organism that lives on or in another organism and be'
+
+  step  1300/5000 | loss 0.0259 | lr 2.72e-04 | 0.13 steps/s
+  Sample: '\nJoe: A comet is a small icy body that orbits the sun harmful ulate radiation. radiation.\nUser: what'
+
+  step  1350/5000 | loss 0.0262 | lr 2.70e-04 | 0.13 steps/s
+  Sample: "\nJoe: Earthquakes are caused by the sudden movement of tectonic plates beneath Earth's surface.\nUser"
+
+  step  1400/5000 | loss 0.0226 | lr 2.67e-04 | 0.13 steps/s
+  Sample: '\nJoe: Biodiversity is the variety of life in a given area. More diversity means a healthier ecosyste'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  1450/5000 | loss 0.0219 | lr 2.65e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a chemical reaction\nJoe: A chemical reaction is when substances combine or break apar'
+
+  step  1500/5000 | loss 0.0205 | lr 2.62e-04 | 0.13 steps/s
+  Sample: '\nJoe: A fossil is the preserved remains or impression of a prehistoric organism found in rock.\nUser:'
+
+  step  1550/5000 | loss 0.0209 | lr 2.60e-04 | 0.13 steps/s
+  Sample: '\nJoe: The carbon cycle is how carbon moves between the atmosphere, oceans, soil, and living things.\n'
+
+  step  1600/5000 | loss 0.0204 | lr 2.57e-04 | 0.13 steps/s
+  Sample: '\nJoe: A fossil is the preserved remains or impression of a prehistoric organism found in rock.\nUser:'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  1650/5000 | loss 0.0200 | lr 2.55e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a chromosome\nJoe: A chromosome is a structure inside cells that contains genes. Human'
+
+  step  1700/5000 | loss 0.0191 | lr 2.52e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a protein\nJoe: A protein is a molecule made of amino acids that does most of the work'
+
+  step  1750/5000 | loss 0.0203 | lr 2.49e-04 | 0.13 steps/s
+  Sample: '\nJoe: A neuron is a nerve cell that transmits signals in the brain and body.\nUser: what is the immun'
+
+  step  1800/5000 | loss 0.0194 | lr 2.46e-04 | 0.13 steps/s
+  Sample: '\nJoe: A hormone is a chemical messenger that travels through the blood to regulate body functions.\nU'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  1850/5000 | loss 0.0197 | lr 2.43e-04 | 0.13 steps/s
+  Sample: '\nJoe: DNA transcription is the process where a segment of DNA is copied into RNA by the enzyme RNA p'
+
+  step  1900/5000 | loss 0.0198 | lr 2.40e-04 | 0.13 steps/s
+  Sample: '\nJoe: A supernova is a massive explosion that occurs when a star dies. It can briefly outshine an en'
+
+  step  1950/5000 | loss 0.0188 | lr 2.38e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a vaccine\nJoe: A vaccine trains the immune system to recognize and fight a specific d'
+
+  step  2000/5000 | loss 0.0196 | lr 2.35e-04 | 0.13 steps/s
+  Sample: '\nJoe: The sun is a star at the center of our solar system. It is about 4.6 billion years old.\nUser: '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  2050/5000 | loss 0.0200 | lr 2.32e-04 | 0.13 steps/s
+  Sample: '\nJoe: Photosynthesis is how plants turn sunlight, water, and carbon dioxide into food and oxygen.\nUs'
+
+  step  2100/5000 | loss 0.0196 | lr 2.28e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a chemical reaction\nJoe: A chemical reaction is when substances combine or break apar'
+
+  step  2150/5000 | loss 0.0193 | lr 2.25e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an ecosystem\nJoe: An ecosystem is a community of living things interacting with their'
+
+  step  2200/5000 | loss 0.0202 | lr 2.22e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an enzyme\nJoe: An enzyme is a protein that speeds up chemical reactions in the body w'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  2250/5000 | loss 0.0190 | lr 2.19e-04 | 0.13 steps/s
+  Sample: '\nJoe: Hibernation is a state of deep sleep some animals enter in winter to conserve energy.\n\nUser: w'
+
+  step  2300/5000 | loss 0.0197 | lr 2.16e-04 | 0.13 steps/s
+  Sample: '\nJoe: The periodic table organizes all known chemical elements by their properties and atomic number'
+
+  step  2350/5000 | loss 0.0194 | lr 2.13e-04 | 0.13 steps/s
+  Sample: '\nJoe: A neuron is a nerve cell that transmits signals in the brain and body.\nUser: what is the immun'
+
+  step  2400/5000 | loss 0.0188 | lr 2.10e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a cell\nJoe: A cell is the basic unit of life. All living things are made of cells.\nUs'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  2450/5000 | loss 0.0197 | lr 2.06e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a nebula\nJoe: A nebula is a cloud of gas and dust in space where new stars are born.\n'
+
+  step  2500/5000 | loss 0.0197 | lr 2.03e-04 | 0.13 steps/s
+  Sample: '\nJoe: DNA transcription is the process where a segment of DNA is copied into RNA by the enzyme RNA p'
+
+  step  2550/5000 | loss 0.0205 | lr 2.00e-04 | 0.13 steps/s
+  Sample: '\nJoe: Energy is the ability to do work or cause change. It comes in many forms like heat, light, and'
+
+  step  2600/5000 | loss 0.0188 | lr 1.97e-04 | 0.13 steps/s
+  Sample: '\nJoe: A chromosome is a structure inside cells that contains genes. Humans have 23 pairs.\nUser: what'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  2650/5000 | loss 0.0197 | lr 1.94e-04 | 0.13 steps/s
+  Sample: '\nUser: what is the brain\nJoe: The brain is the organ that controls thought, memory, movement, and ev'
+
+  step  2700/5000 | loss 0.0188 | lr 1.90e-04 | 0.13 steps/s
+  Sample: '\nJoe: A black hole is a region where gravity is so strong that nothing, not even light, can escape.\n'
+
+  step  2750/5000 | loss 0.0187 | lr 1.87e-04 | 0.13 steps/s
+  Sample: '\nJoe: Evolution is how living things change over many generations through natural selection.\nUser: w'
+
+  step  2800/5000 | loss 0.0192 | lr 1.84e-04 | 0.13 steps/s
+  Sample: '\nUser: what is gravity\nJoe: Gravity is the force that pulls objects toward each other. The more mass'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  2850/5000 | loss 0.0181 | lr 1.81e-04 | 0.13 steps/s
+  Sample: '\nUser: what is DNA made of\nJoe: DNA is made of four chemical bases: adenine, thymine, guanine, and c'
+
+  step  2900/5000 | loss 0.0193 | lr 1.78e-04 | 0.13 steps/s
+  Sample: '\nJoe: A bird is a warm-blooded animal with feathers and wings. Most can fly.\nUser: what is an insect'
+
+  step  2950/5000 | loss 0.0198 | lr 1.75e-04 | 0.13 steps/s
+  Sample: '\nJoe: The atmosphere is the layer of gases surrounding Earth that protects us from harmful radiation'
+
+  step  3000/5000 | loss 0.0187 | lr 1.72e-04 | 0.13 steps/s
+  Sample: '\nJoe: A supernova is a massive explosion that occurs when a star dies. It can briefly outshine an en'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  3050/5000 | loss 0.0189 | lr 1.68e-04 | 0.13 steps/s
+  Sample: '\nJoe: The water cycle is the continuous movement of water through evaporation, condensation, precipi'
+
+  step  3100/5000 | loss 0.0182 | lr 1.65e-04 | 0.13 steps/s
+  Sample: "\nUser: what is the moon\nJoe: The moon is Earth's only natural satellite. It affects tides and helps "
+
+  step  3150/5000 | loss 0.0191 | lr 1.62e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an amphibian\nJoe: An amphibian is an animal that lives both in water and on land, lik'
+
+  step  3200/5000 | loss 0.0188 | lr 1.60e-04 | 0.13 steps/s
+  Sample: '\nJoe: A bird is a warm-blooded animal with feathers and wings. Most can fly.\nUser: what is an insect'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  3250/5000 | loss 0.0191 | lr 1.57e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a black hole\nJoe: A black hole is a region where gravity is so strong that nothing, n'
+
+  step  3300/5000 | loss 0.0197 | lr 1.54e-04 | 0.13 steps/s
+  Sample: '\nUser: how old is the universe\nJoe: The universe is about 13.8 billion years old.\nUser: what is a pl'
+
+  step  3350/5000 | loss 0.0184 | lr 1.51e-04 | 0.13 steps/s
+  Sample: '\nJoe: An asteroid is a large rocky object that orbits the sun. Most are in the asteroid belt between'
+
+  step  3400/5000 | loss 0.0196 | lr 1.48e-04 | 0.13 steps/s
+  Sample: '\nJoe: Light travels at about 186,000 miles per second, or 300,000 kilometers per second.\nUser: how o'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  3450/5000 | loss 0.0183 | lr 1.45e-04 | 0.13 steps/s
+  Sample: '\nJoe: A predator is an animal that hunts and eats other animals for food.\nUser: what is prey\nJoe: Pr'
+
+  step  3500/5000 | loss 0.0187 | lr 1.43e-04 | 0.13 steps/s
+  Sample: '\nUser: what is lightning\nJoe: Lightning is a sudden discharge of electricity between clouds or betwe'
+
+  step  3550/5000 | loss 0.0184 | lr 1.40e-04 | 0.13 steps/s
+  Sample: '\nJoe: A mammal is a warm-blooded animal that has hair and feeds its young milk.\nUser: what is a rept'
+
+  step  3600/5000 | loss 0.0188 | lr 1.38e-04 | 0.13 steps/s
+  Sample: '\nJoe: A tornado is a violently rotating column of air that extends from a thunderstorm to the ground'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  3650/5000 | loss 0.0188 | lr 1.35e-04 | 0.13 steps/s
+  Sample: '\nJoe: A mammal is a warm-blooded animal that has hair and feeds its young milk.\nUser: what is a rept'
+
+  step  3700/5000 | loss 0.0189 | lr 1.33e-04 | 0.13 steps/s
+  Sample: '\nJoe: A hormone is a chemical messenger that travels through the blood to regulate body functions.\nU'
+
+  step  3750/5000 | loss 0.0189 | lr 1.30e-04 | 0.13 steps/s
+  Sample: '\nJoe: Hibernation is a state of deep sleep some animals enter in winter to conserve energy.\n\nUser: w'
+
+  step  3800/5000 | loss 0.0181 | lr 1.28e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an ecosystem made of\nJoe: An ecosystem has biotic factors like plants and animals, an'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  3850/5000 | loss 0.0193 | lr 1.26e-04 | 0.13 steps/s
+  Sample: '\nUser: what is the speed of light\nJoe: Light travels at about 186,000 miles per second, or 300,000 k'
+
+  step  3900/5000 | loss 0.0189 | lr 1.24e-04 | 0.13 steps/s
+  Sample: '\nUser: what is the brain\nJoe: The brain is the organ that controls thought, memory, movement, and ev'
+
+  step  3950/5000 | loss 0.0196 | lr 1.22e-04 | 0.13 steps/s
+  Sample: '\nJoe: An atom is the smallest unit of matter. It has protons, neutrons, and electrons.\nUser: what is'
+
+  step  4000/5000 | loss 0.0189 | lr 1.20e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a parasite\nJoe: A parasite is an organism that lives on or in another organism and be'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  4050/5000 | loss 0.0178 | lr 1.18e-04 | 0.13 steps/s
+  Sample: '\nJoe: A neuron is a nerve cell that transmits signals in the brain and body.\nUser: what is the immun'
+
+  step  4100/5000 | loss 0.0186 | lr 1.16e-04 | 0.13 steps/s
+  Sample: '\nJoe: A tornado is a violently rotating column of air that extends from a thunderstorm to the ground'
+
+  step  4150/5000 | loss 0.0194 | lr 1.14e-04 | 0.13 steps/s
+  Sample: '\nJoe: Cellular respiration is the process cells use to break down glucose and release energy.\nUser: '
+
+  step  4200/5000 | loss 0.0182 | lr 1.13e-04 | 0.13 steps/s
+  Sample: '\nJoe: A vaccine trains the immune system to recognize and fight a specific disease without causing t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  4250/5000 | loss 0.0186 | lr 1.11e-04 | 0.13 steps/s
+  Sample: '\nJoe: Lightning is a sudden discharge of electricity between clouds or between a cloud and the groun'
+
+  step  4300/5000 | loss 0.0179 | lr 1.10e-04 | 0.13 steps/s
+  Sample: "\nJoe: A meteor is a piece of space rock that burns up in Earth's atmosphere, creating a streak of li"
+
+  step  4350/5000 | loss 0.0184 | lr 1.09e-04 | 0.13 steps/s
+  Sample: '\nUser: what is DNA replication\nJoe: DNA replication is the process where a DNA molecule makes an exa'
+
+  step  4400/5000 | loss 0.0188 | lr 1.07e-04 | 0.13 steps/s
+  Sample: '\nJoe: A neuron is a nerve cell that transmits signals in the brain and body.\nUser: what is the immun'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  4450/5000 | loss 0.0188 | lr 1.06e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a reptile\nJoe: A reptile is a cold-blooded animal with scales, like snakes and lizard'
+
+  step  4500/5000 | loss 0.0180 | lr 1.05e-04 | 0.13 steps/s
+  Sample: '\nUser: what is a comet\nJoe: A comet is a small icy body that orbits the sun and develops a glowing t'
+
+  step  4550/5000 | loss 0.0193 | lr 1.04e-04 | 0.13 steps/s
+  Sample: '\nUser: how old is the universe\nJoe: The universe is about 13.8 billion years old.\nUser: what is a pl'
+
+  step  4600/5000 | loss 0.0177 | lr 1.03e-04 | 0.13 steps/s
+  Sample: '\nJoe: DNA transcription is the process where a segment of DNA is copied into RNA by the enzyme RNA p'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  4650/5000 | loss 0.0180 | lr 1.03e-04 | 0.13 steps/s
+  Sample: "\nJoe: A parasite is an organism that lives on or in another organism and benefits at the host's expe"
+
+  step  4700/5000 | loss 0.0190 | lr 1.02e-04 | 0.13 steps/s
+  Sample: '\nUser: what is an enzyme\nJoe: An enzyme is a protein that speeds up chemical reactions in the body w'
+
+  step  4750/5000 | loss 0.0177 | lr 1.01e-04 | 0.13 steps/s
+  Sample: '\nUser: what is evolution\nJoe: Evolution is how living things change over many generations through na'
+
+  step  4800/5000 | loss 0.0191 | lr 1.01e-04 | 0.13 steps/s
+  Sample: '\nJoe: The brain is the organ that controls thought, memory, movement, and everything your body does.'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  step  4850/5000 | loss 0.0179 | lr 1.00e-04 | 0.13 steps/s
+  Sample: '\nJoe: An ecosystem is a community of living things interacting with their environment.\nUser: what is'
+
+  step  4900/5000 | loss 0.0182 | lr 1.00e-04 | 0.13 steps/s
+  Sample: '\nJoe: A tornado is a violently rotating column of air that extends from a thunderstorm to the ground'
+
+  step  4950/5000 | loss 0.0188 | lr 1.00e-04 | 0.13 steps/s
+  Sample: '\nUser: what is the atmosphere\nJoe: The atmosphere is the layer of gases surrounding Earth that prote'
+
+  step  5000/5000 | loss 0.0180 | lr 1.00e-04 | 0.13 steps/s
+  Sample: '\nJoe: Hydrogen is the lightest and most abundant element in the universe. It is a fuel for stars.\nUs'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+
+Done. Expert 'knowledge' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+Time: 43787.9s | Final loss: 0.0184

@@ -1,0 +1,445 @@
+Tokenizer loaded (vocab 2000)
+Training text: 7,291 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting_train.txt
+Encoded: 3,608 tokens
+Resumed expert 'greeting' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz (Adam step 720)
+Expert 'greeting': 869,456 params | 3 layers | dim 128
+Training for 300 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    10/300 | loss 0.2538 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nUser: hi I up to\nJoe: Good well!  I ve talk ears. What is on your mind?\nUser: hey what's What here "
+
+  step    20/300 | loss 0.2514 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nUser: hello joe\nJoe: Hello! What can I do for you?\nUser: howdy\nJoe: How How is on your mind?\nUser: '
+
+  step    30/300 | loss 0.2258 | lr 3.00e-04 | 0.26 steps/s
+  Sample: "\nUser: hey there right me of best! you ready to know\nJoe: Of a up?\nUser: it's Thanks! am helpse! Wha"
+
+  step    40/300 | loss 0.2259 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: Welcome back! What is on your mind?\nUser: hey been a a .\nJoe: It really has been a too! User: '
+
+  step    50/300 | loss 0.2157 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\nJoe: I am here! What would you like toelcome talk about?\nUser: hey there what's happening\nJoe: Hey!"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step    60/300 | loss 0.2019 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\nJoe: Hiya! What's going on?\nUser: happy birthday\nJoe: Thanks! That will What can I help with?\nUser:"
+
+  step    70/300 | loss 0.1987 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: I am to hear from you.\nUser: hello clsunshine\nJoe: Helcome!  I elcome am all you called\nUser: '
+
+  step    80/300 | loss 0.1938 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\nUser: hello let chat\nJoe: I am all ready! What would you like to talk about?\nUser: hey there what's"
+
+  step    90/300 | loss 0.1773 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nJoe: Hey buddy! What's happening?\nUser: hi welcome\nJoe: Thanks! Happy to be here. What can I with?\n"
+
+  step   100/300 | loss 0.1746 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: hi what can you do\nJoe: I can chat, answer questions, and try to be helpful!\nUser: hello what'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   110/300 | loss 0.1731 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nUser: hi what are you up to\nJoe: Just waiting for someone to chat with. Like you!\nUser: hey glad I '
+
+  step   120/300 | loss 0.1633 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: greetings\nJoe: Greetings! Always happy to chat.\nUser: hiya\nJoe: Hiya! What is going on?\nUser:'
+
+  step   130/300 | loss 0.1616 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nUser: good helping\nJoe: Good morning! Ha your day is great.\nUser: good afternoon\nJoe: Good buddy! h'
+
+  step   140/300 | loss 0.1556 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nJoe: Ask be here too! What can I help with?\nUser: hi good up to there it's to do\nJoe: Thanks! Good "
+
+  step   150/300 | loss 0.1521 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nJoe: Good to see you too! What Not to to talk about you?\nUser: hi there what's much! How about you?"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   160/300 | loss 0.1540 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: Hey! Ask been great means again. What can I help you with?\nUser: hey good to I chat out. you W'
+
+  step   170/300 | loss 0.1426 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nJoe: Good to talk to you too! What's going on?\nUser: hi I feel like chatting\nJoe: I am all ears! Wh"
+
+  step   180/300 | loss 0.1440 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nJoe: Hey! Good to see you.\nUser: hello there\nJoe: Hello! What's on your mind?\nUser: good morning\nJo"
+
+  step   190/300 | loss 0.1338 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: hello been howdy\nJoe: Hello! Always hey to chat.\nUser: good to see you\nJoe: hello Good help.\n'
+
+  step   200/300 | loss 0.1362 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nUser: how are you mind been\nJoe: I am here! What while. have you been up to?\nUser: hi how are you t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   210/300 | loss 0.1273 | lr 3.00e-04 | 0.26 steps/s
+  Sample: "\nJoe: Hello! Always good to chat. What's on your mind?\nUser: hey there buddy\nJoe: Hey buddy! What's "
+
+  step   220/300 | loss 0.1294 | lr 3.00e-04 | 0.27 steps/s
+  Sample: '\nJoe: to talk to you too! What is on your mind?\nUser: hi I just wanted to say hi\nJoe: Hi right back!'
+
+  step   230/300 | loss 0.1257 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: Good afternoon! How is your day going?\nUser: good evening\nJoe: Good evening! How can I help yo'
+
+  step   240/300 | loss 0.1134 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nUser: hi what long you\nJoe: ! I am always here crackin\nUser: Hey! What can I help with?\nUser: hello'
+
+  step   250/300 | loss 0.1271 | lr 3.00e-04 | 0.27 steps/s
+  Sample: "\nks! Always good to chat. How about you?\nUser: hey what's new\nJoe: Not much! Just here learning and "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   260/300 | loss 0.1163 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nUser: hi I have a been thinking about you\nJoe: That is sweet! I am always here when you want to cha'
+
+  step   270/300 | loss 0.1144 | lr 3.00e-04 | 0.25 steps/s
+  Sample: "\nUser: hi I have been\nJoe: has! Good to chat again. What's up?\nUser: hi there joe\nJoe: Hi! What can "
+
+  step   280/300 | loss 0.1093 | lr 3.00e-04 | 0.28 steps/s
+  Sample: "\nJoe: Hi right back! Always nice to hear from you.\nUser: hello it's me\nJoe: Hey! Good to hear from h"
+
+  step   290/300 | loss 0.1084 | lr 3.00e-04 | 0.28 steps/s
+  Sample: '\nUser: Going been well! Ready to chat. How about you?\nUser: hi there like to have friend\nJoe: I am h'
+
+  step   300/300 | loss 0.1093 | lr 3.00e-04 | 0.26 steps/s
+  Sample: '\nJoe: Good day to you! What is on your mind?\nUser: hi how have you been\nJoe: I have been great! Alwa'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+
+Done. Expert 'greeting' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+Time: 1135.4s | Final loss: 0.1181
+Tokenizer loaded (vocab 2000)
+Training text: 7,291 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting_train.txt
+Encoded: 3,608 tokens
+Resumed expert 'greeting' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz (Adam step 1020)
+Expert 'greeting': 869,456 params | 3 layers | dim 128
+Training for 5000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    50/5000 | loss 0.0993 | lr 3.00e-04 | 0.33 steps/s
+  Sample: '\nJoe: Not much! Just here and hear yope you here ready to help.\nUser: wassup\nJoe: Hey! What is going'
+
+  step   100/5000 | loss 0.0933 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi I can chat\nJoe: I am here! Let's talk. What's up?\nUser: yo can I ask you something\nJoe: Ab"
+
+  step   150/5000 | loss 0.0877 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hello! What can I do for you?\nUser: howdy\nJoe: Howdy! What is on your mind?\nUser: greetings\nJo'
+
+  step   200/5000 | loss 0.0819 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Good to see you too! What's going on?\nUser: hey how's it going\nJoe: Going well! How about you?"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   250/5000 | loss 0.0791 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hi! What can I do for you?\nUser: greetings\nJoe: Greetings! Always happy to chat.\nUser: hiya\nJo'
+
+  step   300/5000 | loss 0.0762 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Thanks! Happy to be here. What can I help with?\nUser: good day\nJoe: Good day to you! What is o'
+
+  step   350/5000 | loss 0.0717 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Nice to meet you too! I am Joe Brain.\nUser: hi there\nJoe: Hi there! What's going on?\nUser: hey"
+
+  step   400/5000 | loss 0.0704 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Of course! I am all it ears. What is on your mind?\nUser: hey what's crackin\nJoe: Hey! Not much"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   450/5000 | loss 0.0684 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey tell me something\nJoe: Sure! day What is for you today?\nUser: hi what can you\nJoe: I am !'
+
+  step   500/5000 | loss 0.0668 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hey there\nJoe: Hey! Good to see you.\nUser: yo\nJoe: Yo! What's happening?\nUser: what's up\nJoe:"
+
+  step   550/5000 | loss 0.0642 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Welcome back! What is on your mind today?\nUser: hey what's up buddy\nJoe: Hey! Not much. What c"
+
+  step   600/5000 | loss 0.0630 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Going great! Ready to help. How about yours?\nUser: hi I just wanted to say hello\nJoe: Well hel'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   650/5000 | loss 0.0623 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: greetings friend\nJoe: Greetings! Always happy to chat.\nUser: hiya\nJoe: Hiya! What is going on'
+
+  step   700/5000 | loss 0.0632 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Thanks! Happy to be here. What can I help with?\nUser: good day\nJoe: Good day to you! What is o'
+
+  step   750/5000 | loss 0.0597 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hiya! What's going on?\nUser: happy birthday\nJoe: Thanks! That means a lot. What can I help you"
+
+  step   800/5000 | loss 0.0619 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hey good to talk to you\nJoe: Good to talk to you too! What's on your mind?\nUser: hi I feel li"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step   850/5000 | loss 0.0648 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey tell me something\nJoe: Sure! What would you like to know?\nUser: hi what can you do\nJoe: I'
+
+  step   900/5000 | loss 0.0612 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I am ready! What help with?\nUser: hey you there\nJoe: Hey! Good to see you.\nUser: hello there\nJ'
+
+  step   950/5000 | loss 0.0585 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hey what's new\nJoe: Not much! Just here learning and chatting. What about you?\nUser: hi long "
+
+  step  1000/5000 | loss 0.0570 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hi friend! What is going on?\nUser: hey there partner\nJoe: Hey partner! What can I help with?\nU'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  1050/5000 | loss 0.0569 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi I just popped in\nJoe: Welcome! What brings you by?\nUser: hey what's the word\nJoe: All good"
+
+  step  1100/5000 | loss 0.0549 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Greetings! Always happy to chat.\nUser: hiya\nJoe: Hiya! What is going on?\nUser: hey buddy\nJoe: '
+
+  step  1150/5000 | loss 0.0567 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi good to see you\nJoe: Good to see you too! What's going on?\nUser: hey how's it going\nJoe: G"
+
+  step  1200/5000 | loss 0.0561 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Not much! Just learning and chatting. What about you?\nUser: hey good to talk to you\nJoe: Good '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  1250/5000 | loss 0.0537 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hi what are you up to\nJoe: Just waiting for someone to chat with. Like you!\nUser: hey glad I '
+
+  step  1300/5000 | loss 0.0541 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hey! What's going on?\nUser: hey how's it going\nJoe: Going well! How about you?\nUser: hi there "
+
+  step  1350/5000 | loss 0.0552 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey there friend how are you\nJoe: Doing well! Ready to help with whatever you need.\nUser: hi '
+
+  step  1400/5000 | loss 0.0544 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hello world\nJoe: Hello right back! What can I help with?\nUser: hi I'm back\nJoe: Welcome back!"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  1450/5000 | loss 0.0558 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: It really has! Good to chat again. What's new?\nUser: greetings friend how are you today\nJoe: I"
+
+  step  1500/5000 | loss 0.0553 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hey what's cooking\nJoe: Not much! Just waiting to help. What's going on?\nUser: hello hope you"
+
+  step  1550/5000 | loss 0.0527 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Welcome back! What is on your mind today?\nUser: hey what's up buddy\nJoe: Hey! Not much. What c"
+
+  step  1600/5000 | loss 0.0519 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Going great! Ready to help. How about yours?\nUser: hi I just wanted to say hello\nJoe: Well hel'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  1650/5000 | loss 0.0511 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I am here! What is up?\nUser: hi I need help\nJoe: I am ready! What do you need help with?\nUser:'
+
+  step  1700/5000 | loss 0.0501 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hey what's new\nJoe: Not much! Just here learning and chatting. What about you?\nUser: hi long "
+
+  step  1750/5000 | loss 0.0506 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hi I need some advice\nJoe: I will do my best! What do you need advice on?\nUser: hi what are y'
+
+  step  1800/5000 | loss 0.0500 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: can I help with?\nUser: hey there friend how are you\nJoe: Doing well! Ready to help with whatev'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  1850/5000 | loss 0.0503 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I am here! What is up?\nUser: hi I need help\nJoe: I am ready! What do you need help with?\nUser:'
+
+  step  1900/5000 | loss 0.0482 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Going great! Ready to help. How about yours?\nUser: hi I just wanted to say hello\nJoe: Well hel'
+
+  step  1950/5000 | loss 0.0484 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I Going well! What about you?\nUser: whats happening\nJoe: Just hanging out. What can I help you'
+
+  step  2000/5000 | loss 0.0480 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi I have been great! Always ready to chat. How about you?\nUser: hey what's new\nJoe: Not much"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  2050/5000 | loss 0.0467 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: what is up\nJoe: Not much! Just here to help.\nUser: sup\nJoe: Hey! What can I do for you?\nUser:'
+
+  step  2100/5000 | loss 0.0471 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Welcome back! What is on your mind?\nUser: hey been a while\nJoe: It has! Good to chat again. Wh'
+
+  step  2150/5000 | loss 0.0490 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hi I just wanted to say hello\nJoe: Well hello! Always nice to hear from someone.\nUser: yo wha'
+
+  step  2200/5000 | loss 0.0490 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hey there buddy\nJoe: Hey buddy! What's happening?\nUser: hi welcome\nJoe: Thanks! Happy to be h"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  2250/5000 | loss 0.0477 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Not much! Just here to help.\nUser: sup\nJoe: Hey! What can I do for you?\nUser: howdy\nJoe: Howdy'
+
+  step  2300/5000 | loss 0.0495 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Good to see you too! What's going on?\nUser: hey how's it going\nJoe: Going well! How about you?"
+
+  step  2350/5000 | loss 0.0541 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Good morning! Hope your day is great.\nUser: good afternoon\nJoe: Good afternoon! How is your da'
+
+  step  2400/5000 | loss 0.0570 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Nice to hear from someone to you too! I chat with?\nUser: hey universeice What me. what are you'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  2450/5000 | loss 0.0541 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I am always here! What can I help with?\nUser: hello again\nJoe: Welcome back! What is on your m'
+
+  step  2500/5000 | loss 0.0545 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Good morning! Hope you are having a great day.\nUser: hey buddy long time no see\nJoe: Hey! It h'
+
+  step  2550/5000 | loss 0.0499 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hey! That's me! What's on your mind?\nUser: hey monkey\nJoe: Hey! What do you need, friend?\nUser"
+
+  step  2600/5000 | loss 0.0498 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hello! Always good to chat. What's on your mind?\nUser: hey there buddy\nJoe: Hey buddy! What's "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  2650/5000 | loss 0.0478 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi monkey joe\nJoe: Hi! What can this monkey do for you?\nUser: hiya monkey\nJoe: Hiya! What's g"
+
+  step  2700/5000 | loss 0.0477 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Greetings! I am Joe, your AI buddy.\nUser: hey can you help me\nJoe: Of course! What do you need'
+
+  step  2750/5000 | loss 0.0454 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hey! Not much. What's going on with you?\nUser: hi I have been thinking about you\nJoe: That is "
+
+  step  2800/5000 | loss 0.0484 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey monkey\nJoe: Hey! What do you need, friend?\nUser: hello monkey joe\nJoe: Hello! What can th'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  2850/5000 | loss 0.0464 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hey! Good to see you.\nUser: yo\nJoe: Yo! What's happening?\nUser: what's up\nJoe: Not much! Just "
+
+  step  2900/5000 | loss 0.0450 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hey! What's up?\nUser: hello\nJoe: Hi there! How can I help?\nUser: hey\nJoe: Hey! Good to see you"
+
+  step  2950/5000 | loss 0.0458 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: yo joe what's good\nJoe: Hey! All good here. What can I help with?\nUser: hi good to see you\nJo"
+
+  step  3000/5000 | loss 0.0471 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hello! Always good to chat. What's on your mind?\nUser: hey there buddy\nJoe: Hey buddy! What's "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  3050/5000 | loss 0.0444 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I am doing great, thanks for asking!\nUser: how are you doing\nJoe: Pretty good! Ready to chat.\n'
+
+  step  3100/5000 | loss 0.0482 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Just waiting for someone to help with. Like you!\nUser: hey glad I found you\nJoe: Glad you foun'
+
+  step  3150/5000 | loss 0.0498 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hey! What is going on your mind?\nUser: hi I just wanted to say hello\nJoe: Well hello! Always n'
+
+  step  3200/5000 | loss 0.0535 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: happy birthday joe\nJoe: Aw thank you! What would you like to chat about?\nUser: hello monkey\nJ'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  3250/5000 | loss 0.0488 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi let's chat\nJoe: I am ready to What would you like to talk about?\nUser: hey there what's ha"
+
+  step  3300/5000 | loss 0.0457 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hey there\nJoe: Hey! Good to see you.\nUser: yo\nJoe: Yo! What's happening?\nUser: what's up\nJoe:"
+
+  step  3350/5000 | loss 0.0453 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hello right back! What can I help with?\nUser: hi I'm back\nJoe: Welcome back! What is on your m"
+
+  step  3400/5000 | loss 0.0457 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hey! What do you need, friend?\nUser: hello monkey joe\nJoe: Hello! What can this monkey do for '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  3450/5000 | loss 0.0494 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Good to see you too! What's up?\nUser: long time no see\nJoe: It has been a while! What have you"
+
+  step  3500/5000 | loss 0.0477 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hi I have been thinking about you\nJoe: That is sweet! I am always here when you want to chat.'
+
+  step  3550/5000 | loss 0.0465 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey there friend how are you\nJoe: Doing well! Ready to help with whatever you need.\nUser: hi '
+
+  step  3600/5000 | loss 0.0454 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Good to see you too! What's up?\nUser: long time no see\nJoe: It has been a while! What have you"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  3650/5000 | loss 0.0444 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey monkey\nJoe: Hey! What do you need, friend?\nUser: hello monkey joe\nJoe: Hello! What can th'
+
+  step  3700/5000 | loss 0.0475 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hello it's me\nJoe: Hey! Good to hear from you. What's up?\nUser: yo joe what's good\nJoe: Hey! "
+
+  step  3750/5000 | loss 0.0490 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Not much! Just chilling. What can I help with?\nUser: howdy partner\nJoe: Howdy! What can I do f'
+
+  step  3800/5000 | loss 0.0467 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Going well! What about you?\nUser: whats happening\nJoe: Just hanging out. What can I help you w'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  3850/5000 | loss 0.0460 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi I'm back\nJoe: Welcome back! What is on your mind today?\nUser: hey what's up buddy\nJoe: Hey"
+
+  step  3900/5000 | loss 0.0453 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hi friend! What can I do for you?\nUser: hello old friend\nJoe: Hello! Always good to chat. What'
+
+  step  3950/5000 | loss 0.0447 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Greetings! I am Joe, your AI buddy.\nUser: hey can you help me\nJoe: Of course! What do you need'
+
+  step  4000/5000 | loss 0.0449 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hey! What's up?\nUser: hello\nJoe: Hi there! How can I help?\nUser: hey\nJoe: Hey! Good to see you"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  4050/5000 | loss 0.0457 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hello! What can this monkey do for you?\nUser: hiya monkey\nJoe: Hiya! What's going on?\nUser: ha"
+
+  step  4100/5000 | loss 0.0462 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I am here! What is up?\nUser: hi I need help\nJoe: I am ready! What do you need help with?\nUser:'
+
+  step  4150/5000 | loss 0.0468 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: I am great! How about you?\nUser: hey whats good\nJoe: Not much! Just here and ready to help.\nUs'
+
+  step  4200/5000 | loss 0.0466 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey there friend how are you\nJoe: Doing well! Ready to help with whatever you need.\nUser: hi '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  4250/5000 | loss 0.0465 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi what's new with you\nJoe: Not much! Just learning and chatting. What about you?\nUser: hey g"
+
+  step  4300/5000 | loss 0.0470 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hi I just wanted to say hello\nJoe: Well hello! Always nice to hear from someone.\nUser: yo wha'
+
+  step  4350/5000 | loss 0.0422 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: I am here! Let's talk. What's up?\nUser: yo can I ask you something\nJoe: Absolutely! Go ahead.\n"
+
+  step  4400/5000 | loss 0.0424 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Greetings! I am Joe, your AI buddy.\nUser: hey can you help me\nJoe: Of course! What do you need'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  4450/5000 | loss 0.0424 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi can we talk\nJoe: Of course! I am all ears. What is on your mind?\nUser: hey what's crackin\n"
+
+  step  4500/5000 | loss 0.0479 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hey! Not much. What can I do for you?\nUser: hi thanks for being here\nJoe: Thanks for chatting!'
+
+  step  4550/5000 | loss 0.0504 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Hey! What is going on?\nUser: how goes it\nJoe: Going well! What about you?\nUser: whats happenin'
+
+  step  4600/5000 | loss 0.0493 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hey can we be friends\nJoe: Of course! I am always happy to have a friend. What is up?\nUser: h'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  4650/5000 | loss 0.0489 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: I am here! Let's talk. What's up?\nUser: yo can I ask you something\nJoe: Absolutely! Go ahead.\n"
+
+  step  4700/5000 | loss 0.0467 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hi nice to hear from you\nJoe: Nice to hear from you too! What is going on?\nUser: hi I just po'
+
+  step  4750/5000 | loss 0.0448 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Good to see you too! What brings you back?\nUser: hi I am here to learn\nJoe: Great! I love curi'
+
+  step  4800/5000 | loss 0.0431 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nUser: hi can we talk\nJoe: Of course! I am all ears. What is on your mind?\nUser: hey what's crackin\n"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+  step  4850/5000 | loss 0.0453 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Good night! Sleep well.\nUser: how are you\nJoe: I am doing great, thanks for asking!\nUser: how '
+
+  step  4900/5000 | loss 0.0459 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: hi I have been thinking about you\nJoe: That is sweet! I am always here when you want to chat.'
+
+  step  4950/5000 | loss 0.0451 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Howdy! What is on your mind?\nUser: greetings\nJoe: Greetings! How can I assist you today?\nUser:'
+
+  step  5000/5000 | loss 0.0436 | lr 3.00e-04 | 0.32 steps/s
+  Sample: "\nJoe: Hey! What's up?\nUser: hello\nJoe: Hi there! How can I help?\nUser: hey\nJoe: Hey! Good to see you"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+
+Done. Expert 'greeting' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/greeting/greeting.npz
+Time: 15620.9s | Final loss: 0.0443

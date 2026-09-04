@@ -1,0 +1,1675 @@
+# [2026-08-23 21:09:11] START: training/train_expert.py --name fish --steps 3000 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 50 --log 10 --sample 10
+# step,loss,lr,steps_per_sec,timestamp
+10,4.0550,3.00e-04,0.08,1787533872.6767416
+# [2026-08-23 21:11:25] SAMPLE step 10:
+# 
+ ireun fish cans, of a over a a 9.  face fish a a fish a a a fish produ fish a f b f the their ?
+speci a is ok oos What a fish fish cap and
+20,3.9856,3.00e-04,0.07,1787534006.3014803
+# [2026-08-23 21:13:38] SAMPLE step 20:
+# 
+User: ich ??typesed readeffectlowumps,ed erbiggest inesish es. ity or freshidok and and that of mo
+
+only 
+or of What fish a flo est in water?
+ the and quright is is fish bon
+30,3.9553,3.00e-04,0.07,1787534139.881058
+# [2026-08-23 21:15:52] SAMPLE step 30:
+# 
+
+Joe: a water in Some is the fish by a is Sdifferent What  fish fish is is on the a in to ?
+Joe: is fish a . mîby in bodys  What a fish of Mwi 
+40,3.8496,3.00e-04,0.08,1787534273.1387126
+# [2026-08-23 21:18:05] SAMPLE step 40:
+# 
+known creatns, sh made re reached fish a
+ fish the shed is the to is fish and ent can What is which tees are fish proing What in r s deve a fish What and fish 
+50,3.8229,3.00e-04,0.07,1787534406.5915697
+# [2026-08-23 21:20:18] SAMPLE step 50:
+# 
+User: can to fish b?
+User: A the mross organ ais safe. a communal to and ol dri mount filill rock and fish a white a e that which over mci wh bying the electricity covered 
+60,3.7708,3.00e-04,0.07,1787534542.4109833
+# [2026-08-23 21:22:34] SAMPLE step 60:
+# 
+User: ines is a ch se sur ll sp
+User: 1 of in of is is is in or a that in celing. It worldold fish and cirate a A What filJoers is cyles uses good blue 
+70,3.7078,3.00e-04,0.08,1787534675.720911
+# [2026-08-23 21:24:47] SAMPLE step 70:
+# 
+Joe: and worldid and theirJoe: to 
+
+User: jailve ci a cill is a wzey fish anle the en and th fish it a a de, fish  a a is New live is fish water
+80,3.6524,3.00e-04,0.08,1787534808.989158
+# [2026-08-23 21:27:01] SAMPLE step 80:
+# 
+
+User: a a is that in specimalia fishast a muations freshunbke and They fish of Fother Gating water rock crusvureical 
+
+
+User: fish a is in can fish and in plants pain?
+90,3.6868,3.00e-04,0.08,1787534942.087516
+# [2026-08-23 21:29:14] SAMPLE step 90:
+# 
+
+User: like premblnamtry sion read are lave move it fish bomigil, used s to fish a is cat and used along a usually vsive exk.
+User: main to supitnally fish. is are
+100,3.5744,3.00e-04,0.08,1787535075.3817048
+# [2026-08-23 21:31:27] SAMPLE step 100:
+# 
+ signor uses har is Ces water the a restis and thatthem and contain the small for tld in in and of of of hmping to driuopen the you more oring.
+
+User: a What sharish
+110,3.5600,3.00e-04,0.07,1787535211.284318
+# [2026-08-23 21:33:43] SAMPLE step 110:
+# 
+User: is pok tewater conen, electric wialg fish hifish sysimper care They It fish wore variy red?
+Joe: to Fletive fish, It sum or supul fish They until made high pval in
+120,3.4697,3.00e-04,0.08,1787535344.4746406
+# [2026-08-23 21:35:56] SAMPLE step 120:
+# 
+
+ What   is rejyel s to fish in  a sand a s the world⁵ inse dingning method fish a c4 fish and finent to pent presltimwater, the in or The to or co
+130,3.4427,3.00e-04,0.08,1787535477.6319158
+# [2026-08-23 21:38:09] SAMPLE step 130:
+# 
+User: What is  a scoimiroed a fish of and lay arts. bre species the spure a It that a refven counverser fish clogs. preE fish and through with typ larder strps are
+140,3.4633,3.00e-04,0.08,1787535610.7146878
+# [2026-08-23 21:40:22] SAMPLE step 140:
+# 
+
+User: What is is is a to S?
+Joe: a fish d nethan using An are line fish enough between a o?
+Joe: a temperature scbi is brenet ll and fish the and a the toare for
+150,3.3905,3.00e-04,0.08,1787535743.9170408
+# [2026-08-23 21:42:36] SAMPLE step 150:
+# 
+User: What is b?
+Joe: shsteling fish line is fish many fish sure fish m is and high fin, sabol PIreeA water idefish bmany s stes bhacuic accwroldf diseed
+160,3.3778,3.00e-04,0.07,1787535879.436637
+# [2026-08-23 21:44:51] SAMPLE step 160:
+# 
+User: What is a a a water used a fish quariick?
+Joe: growing fish fish fish is and fish with a on is bank is fish Dit capght, pris a mavid- fish and eed 
+170,3.3421,3.00e-04,0.08,1787536012.6462634
+# [2026-08-23 21:47:04] SAMPLE step 170:
+# 
+ Fish gel?
+Joe: is ven Bue prehy, a by There of an it dangercommand size are or nit is  a temperature fish fish depwater. Bable tiny 8ing tel the below evolplay fish ser
+180,3.3072,3.00e-04,0.08,1787536145.9459176
+# [2026-08-23 21:49:18] SAMPLE step 180:
+# 
+User: What is a  water a a a Fish be?
+Joe: of is fish to fish coltehaswordfish good larard seap sl fish have disfamous a a or headat a and for le to popul
+190,3.3208,3.00e-04,0.08,1787536279.2049158
+# [2026-08-23 21:51:31] SAMPLE step 190:
+# 
+?
+Joe: fish A User: What  is a is a a a fish red, vible very function populxn fish used and Toipx?
+Joe: As is va. fish a a fish a that fish ching 
+200,3.2866,3.00e-04,0.07,1787536412.541005
+# [2026-08-23 21:53:44] SAMPLE step 200:
+# 
+Joe: What then is a used Malegcrortroflow?
+Joe: a fish and breeding a is to give h most aquaripattern the habit match and color water in are crprotein a bcific a 
+210,3.2763,3.00e-04,0.07,1787536548.5411115
+# [2026-08-23 21:56:00] SAMPLE step 210:
+# 
+User: What is a fish in fish-boned an species fish setand and or the e seunWhat water?
+Joe: is is a fish A Tustcial is a fish cafish long. of a m in that 
+220,3.1936,3.00e-04,0.08,1787536681.8385792
+# [2026-08-23 21:58:14] SAMPLE step 220:
+# 
+
+User: What Bink is a signments that f of fish by appeors momanperiod?
+Joe: do is a hourdepater cation that the with and plus that for and h main allow catwater is of for 
+230,3.1714,3.00e-04,0.07,1787536815.1949365
+# [2026-08-23 22:00:27] SAMPLE step 230:
+# 
+
+User: What is a called and fish is fish the cal or fish?
+Joe: an fish a fish fish a gups, is a ises cation layment to can ning fsome are to with to giant of 
+240,3.1949,3.00e-04,0.07,1787536948.5512588
+# [2026-08-23 22:02:40] SAMPLE step 240:
+# 
+User: What is a fish ribles. liim oi in val fish bon for ve of fishe and fish coe and a with for making by fish shellfish the are that large filter, fer and them.
+
+250,3.2065,3.00e-04,0.08,1787537081.882694
+# [2026-08-23 22:04:54] SAMPLE step 250:
+# 
+User: What is a fish an colors il?
+Joe: A is a fish fish fish catch a fish is a the eustweight each fish fish Splilly their that trport manript kver and and and vol
+260,3.1073,3.00e-04,0.07,1787537217.7224452
+# [2026-08-23 22:07:09] SAMPLE step 260:
+# 
+
+
+User: What is  a a fish to in fsaing katic e in salt and different catch food fish by hopush species be to fresh and over stuate of how ggrowing fish used from of
+270,3.0939,3.00e-04,0.08,1787537350.8368773
+# [2026-08-23 22:09:23] SAMPLE step 270:
+# 
+User: What is a fish fish sea e They for rery and feeding water one sting by soines retail loice usually to fish and 3?
+Joe: is with perific fish their lator over the include 
+280,3.0594,3.00e-04,0.08,1787537483.98028
+# [2026-08-23 22:11:36] SAMPLE step 280:
+# 
+
+
+User: What is a disous for is fish to a Fish and cat-ually and of and for an deep shemlars. these as tank. include the built by of Wile visalmoni water that 
+290,3.0407,3.00e-04,0.08,1787537617.087401
+# [2026-08-23 22:13:49] SAMPLE step 290:
+# 
+
+User: What is a fish fish for?
+Joe: A is a fish by is a large fish fish coacved for condty the and fish It over fles most and for batters fine disriea ca
+300,3.0568,3.00e-04,0.08,1787537750.2799997
+# [2026-08-23 22:16:02] SAMPLE step 300:
+# 
+User: What is shincluding fish eat when fish to water of fish maers recoe a and to and of in predations, stomis disff others cats and It species de is fishing incres.
+
+User:
+310,3.0312,3.00e-04,0.07,1787537886.1896236
+# [2026-08-23 22:18:18] SAMPLE step 310:
+# 
+User: What is a fish fish si?
+Joe: A fishing k-A fish fish is invank. species the reenams is fish prey loatword. each is m a with a the feeding deep lock. main
+320,3.0137,3.00e-04,0.08,1787538019.4396594
+# [2026-08-23 22:20:31] SAMPLE step 320:
+# 
+User: What is a fish ease?
+Joe: A moal fish is a marine is fish bluecommunchange a ra?
+Joe: Socli a a that the list increase to connect to the the fish at read, 
+330,3.0074,3.00e-04,0.08,1787538152.6082966
+# [2026-08-23 22:22:44] SAMPLE step 330:
+# 
+ A is a fish body do in on to or for and elect often or por stees. because or mcraon water, water fish where while gas, a fish shaped hours.
+
+User: What is a?
+Joe: 
+340,2.9614,3.00e-04,0.08,1787538285.9107106
+# [2026-08-23 22:24:58] SAMPLE step 340:
+# 
+User: What is a fish marine?
+Joe: A fish Ca dise heas, fund is a a the marit, s to f cy. used in that silor are popul proteling water large presatwill powered
+350,2.9675,3.00e-04,0.08,1787538419.162449
+# [2026-08-23 22:27:11] SAMPLE step 350:
+# 
+User: What is a poam
+
+User: What is ncol?
+Joe: is ot?
+Joe: A  is a fish s is a sementms fish sharmarium like fish commer?
+Joe: ds. is a marine n 
+360,2.9184,3.00e-04,0.07,1787538554.751924
+# [2026-08-23 22:29:27] SAMPLE step 360:
+# 
+Joe: is a fishing smoked deark hundredsmoking ichuscopying  and are fishing, is ba living with orggeon arium.
+
+User: What is an a fish tank?
+Joe: A fish is a
+370,2.9311,3.00e-04,0.07,1787538688.1187465
+# [2026-08-23 22:31:40] SAMPLE step 370:
+# 
+
+User: What is a fish eat?
+Joe: A fish jawning of creats is a the food fish water conalga for to the called It fish, with a with in from that between often that conile 
+380,2.9542,3.00e-04,0.08,1787538821.3636918
+# [2026-08-23 22:33:53] SAMPLE step 380:
+# 
+
+User: What is a fish psgroutenvers and s a in fish and specific salmon and populations. are salmon deare fish es judes and itine for ried fish by and the fish, an 
+390,2.8960,3.00e-04,0.08,1787538954.5707843
+# [2026-08-23 22:36:06] SAMPLE step 390:
+# 
+
+User: What is a fish fish pation?
+Joe: Fish adild are swimming is op the they Ilike a demamEarths small fish. of fish, in and and include thdmemfish purtuna, tra
+400,2.8765,3.00e-04,0.08,1787539087.7672033
+# [2026-08-23 22:38:20] SAMPLE step 400:
+# 
+
+
+User: What en is a fish fous?
+Joe: The fish is a disegmoreggs fish a Europereproduce, that to fish, with auga to male beneggs, of ration by emrating fish
+410,2.8414,3.00e-04,0.07,1787539223.737784
+# [2026-08-23 22:40:36] SAMPLE step 410:
+# 
+User: What is car aes fish Mpasfish, proteds of their in of aarium?
+Joe: A fish a fish, a tro5 overspeople to we clean to s Rable caued sand, fish use 
+420,2.8553,3.00e-04,0.08,1787539357.0470903
+# [2026-08-23 22:42:49] SAMPLE step 420:
+# 
+
+User: What is a fish fish terbot tishes e mial barin the aquphy spear allow in preit in the mores through s giant fish the sts, to with a a period or in
+430,2.8366,3.00e-04,0.08,1787539490.2869844
+# [2026-08-23 22:45:02] SAMPLE step 430:
+# 
+User: What is a gill?
+Joe: A fish for cending is a of per funation. a many fish by when bficial fishing fish. and to and hardvers migrates earemk filter vels, in
+440,2.7661,3.00e-04,0.08,1787539623.4867654
+# [2026-08-23 22:47:15] SAMPLE step 440:
+# 
+User: What is a fishverreetic?
+Joe: Fish in fish reef pa tas s or and peal or aquarium tuna are fish an-species. of fish. with fresh the growle trap-Ex
+450,2.8117,3.00e-04,0.08,1787539756.7007017
+# [2026-08-23 22:49:28] SAMPLE step 450:
+# 
+User: What is a ide?
+Joe: A fish coir is a hooking hatchery surve s from fin is a freshwater to fish the shoal fish food. and temperailable harmalone nutriasos and about
+460,2.7486,3.00e-04,0.07,1787539892.4289932
+# [2026-08-23 22:51:44] SAMPLE step 460:
+# 
+User: What is a fish User: uses?
+Joe: Fish mount Res found 3 level. form preclipical is the water and resta cures filter scproduct a fish and species for schooling reef more
+470,2.7818,3.00e-04,0.08,1787540025.6025584
+# [2026-08-23 22:53:57] SAMPLE step 470:
+# 
+User: What is a fish in trap mming fish stochooling are ely who ssed Nor along and skUnical and heium Otempersible movementary depth and stocking years and pools are 
+480,2.7457,3.00e-04,0.08,1787540158.9145749
+# [2026-08-23 22:56:11] SAMPLE step 480:
+# 
+User: What is a fish maintain plverer a food used a spaw, to of to fish and and to designed length rocks and se down animals. dy are fish while It ben Fish and 
+490,2.7489,3.00e-04,0.08,1787540292.2267249
+# [2026-08-23 22:58:24] SAMPLE step 490:
+# 
+User: What is a fish knetic frieder riched ture?
+Joe: Fish is a specific underwater fish stimum and new that seer. suank ver spawning fish D for and orionalal and 
+500,2.7675,3.00e-04,0.08,1787540425.4532087
+# [2026-08-23 23:00:37] SAMPLE step 500:
+# 
+ What is a eneps depthly tank?
+Joe: Fish is a amas or gill rate h for extinction sery w, a roviron tery to takeark for fish It is or of 
+510,2.6894,3.00e-04,0.07,1787540561.3167524
+# [2026-08-23 23:02:53] SAMPLE step 510:
+# 
+Joe: What is a fish deep le fish a with fish a itat?
+Joe: A fish water net is a an fish is a a en well to freshwater fish, drure fish reaching to stand-frying 
+520,2.6966,3.00e-04,0.08,1787540694.6027493
+# [2026-08-23 23:05:06] SAMPLE step 520:
+# 
+Joe: A rich is a container water of line a ner trawing a fish. is making forming cyction schools a for regulation removing and and changraphies model. The is the hour.
+
+530,2.6758,3.00e-04,0.08,1787540827.8463242
+# [2026-08-23 23:07:20] SAMPLE step 530:
+# 
+User: What is a fish marine that fish that dogdifferak cooks and for cleaner the fish boat of or and gous fish.
+
+User: What is a fish fins in keep fish?
+Joe: A fish
+540,2.6631,3.00e-04,0.08,1787540961.1185381
+# [2026-08-23 23:09:33] SAMPLE step 540:
+# 
+User: What is a fish a also wlures of best a swordaccin marta a season?
+Joe: Fish back line and is a body a main, fish body by need and Bammon to for stream 
+550,2.6207,3.00e-04,0.08,1787541094.4312217
+# [2026-08-23 23:11:46] SAMPLE step 550:
+# 
+User:What is a fish of fish shaped survivel is a mar lic cential made growing of fishing aquarium fish. The handoutant populans mic include fish It is extin infer for that 
+560,2.6821,3.00e-04,0.07,1787541230.1265476
+# [2026-08-23 23:14:02] SAMPLE step 560:
+# 
+
+User: What is a fish using is a fish fish cycle is a fish a fish. A asing device device to fishing 
+
+User: What is fish?
+Joe: A fish trafish is a fishing ki
+570,2.6225,3.00e-04,0.08,1787541363.3697388
+# [2026-08-23 23:16:15] SAMPLE step 570:
+# 
+User: What is a fish coral making 7?
+Joe: 4 s, are sphere from atgal of natural regulates lowide in a that fish through returns a water or fish when rather in has water over when largest 
+580,2.6086,3.00e-04,0.07,1787541496.7657592
+# [2026-08-23 23:18:29] SAMPLE step 580:
+# 
+
+User: What is al is a small fish uses arket it pical in the without ga fish it anglers to lused on a to fish a when so it a preary like fish iting with new
+590,2.6018,3.00e-04,0.07,1787541630.1654906
+# [2026-08-23 23:20:42] SAMPLE step 590:
+# 
+Joe: Fish reproduce community?
+Joe: A marine is a percent freshwater freshwater fish are aegg to water, patterns faching that and For tracks, oring and a by suptration, many listing species and
+600,2.5628,3.00e-04,0.08,1787541763.34249
+# [2026-08-23 23:22:55] SAMPLE step 600:
+# 
+User: What is a fish basin recome sualurum and white Excecial for fish helps fish or and the a tank small anglers set fish and in a worldaces ations into proteins, be and enough.
+610,2.5449,3.00e-04,0.07,1787541899.2485187
+# [2026-08-23 23:25:11] SAMPLE step 610:
+# 
+Joe: A fish  organ body a nitrite traag that is a trap a funate ser of l made swimes the-like fish gugg-on ggs coa silic aga release. It crudes 
+620,2.5189,3.00e-04,0.08,1787542032.5030868
+# [2026-08-23 23:27:24] SAMPLE step 620:
+# 
+Joe: A fish is a tail?
+Joe: A fish fish The fish is species. to the Sximic Svirones, are dietic acterial the the filter fish sign, ggs and invas Mile during law
+630,2.4772,3.00e-04,0.08,1787542165.7451077
+# [2026-08-23 23:29:38] SAMPLE step 630:
+# 
+
+Joe: What is a fish saindicus?
+Joe: Fish odieticate very, fish has pattern, are used the or atatadatures fish in rebuilding bgal s is to protectityly fishs. It is 
+640,2.4914,3.00e-04,0.08,1787542298.954996
+# [2026-08-23 23:31:51] SAMPLE step 640:
+# 
+User: What is a fish lead?
+Joe: A fish dible a is a used for displays for the coler color worm of flow percent Comy fish. Slife bait have including on sged and sp
+650,2.5569,3.00e-04,0.08,1787542432.1919992
+# [2026-08-23 23:34:04] SAMPLE step 650:
+# 
+Joe: The effectiafes the salmon, swimenon pass biggest their dishes m are as entireators.
+
+User: What is fish?
+Joe: Fish chied is fish are community su species fish orate fishing
+660,2.4938,3.00e-04,0.07,1787542568.0389304
+# [2026-08-23 23:36:20] SAMPLE step 660:
+# 
+
+
+User: What is a fish food or ray graically is a freshwater fish day. their easy and to mimum a egg. They together. It their is cannot Notation to large, saltwater the can 
+670,2.4288,3.00e-04,0.08,1787542701.3539507
+# [2026-08-23 23:38:33] SAMPLE step 670:
+# 
+User: What is the marine, fish They is sucured the species s in the shark is the commery crabacterentate orliammon, for BTespally. Fish cyice tank include habitat
+680,2.4244,3.00e-04,0.08,1787542834.4949267
+# [2026-08-23 23:40:46] SAMPLE step 680:
+# 
+Joe: Fish treat is a or biock.
+
+User: What is a fish prevents season is attached, to and or?
+Joe: A fish fish coried is a to cowine fish is a device
+690,2.4243,3.00e-04,0.07,1787542967.9001348
+# [2026-08-23 23:43:00] SAMPLE step 690:
+# 
+Joe: A fish plocal is a fish fongine stream, the bottom live trap for aquariums. The dogner habitat pas, tures, and and most Ata fish is a goration, that levels
+700,2.3955,3.00e-04,0.08,1787543101.153671
+# [2026-08-23 23:45:13] SAMPLE step 700:
+# 
+User: What is a fish kation reef or refudes val?
+Joe: A fish end removes reef limit egg known eggs water attks typically to egents. Some fish skin reduce bettank.
+710,2.4220,3.00e-04,0.07,1787543237.0927227
+# [2026-08-23 23:47:29] SAMPLE step 710:
+# 
+User: What is a or fish planvey?
+Joe: Fish gety is aquarium pairsusia to stock to to display fish. Fish while rivers in electbaslike prevent s body adpounds
+720,2.3484,3.00e-04,0.07,1787543370.4297464
+# [2026-08-23 23:49:42] SAMPLE step 720:
+# 
+Joe: A fish to fish tangering is a fish net that is a they ficicloan en Americ pas predes that is a genetition has spawning agin a extor angelfish that is a
+730,2.3809,3.00e-04,0.07,1787543503.8486104
+# [2026-08-23 23:51:56] SAMPLE step 730:
+# 
+jury and use are tramiger that fish with the fish a ecook and preserved can a Puce la is fish and specific seasoned species, pods 
+
+User: What is a fish school
+740,2.4113,3.00e-04,0.08,1787543637.025341
+# [2026-08-23 23:54:09] SAMPLE step 740:
+# 
+
+User: What is a fish finbro, with lining fish and can it?
+Joe: Fish in gilltal fish ture in Aer an fish to preserically in a ft with traom fish long, hoution 
+750,2.3322,3.00e-04,0.08,1787543770.2937393
+# [2026-08-23 23:56:22] SAMPLE step 750:
+# 
+User: What is a fish accnamentone. can rove can fligh the fish spawning for?
+Joe: Fish swim in human cyents dtebran to period it val are web and differthe species. many C
+760,2.4002,3.00e-04,0.07,1787543906.2749965
+# [2026-08-23 23:58:38] SAMPLE step 760:
+# 
+
+User: What is a fish?
+Joe: A fish net is a a tra
+Joe: fish that A standhundred teral by the 60 a large multiple fish and preserved f es swimming and A is the an
+770,2.3070,3.00e-04,0.07,1787544039.629989
+# [2026-08-24 00:00:51] SAMPLE step 770:
+# 
+Joe: The lic is a fish attfreduin or to pump into a weir-like tank. A fish in a colorscientific are on in an maintain al fish to the Hatchercial camping.
+780,2.3464,3.00e-04,0.08,1787544172.9478178
+# [2026-08-24 00:03:05] SAMPLE step 780:
+# 
+User: What is a fish deterzed involves alga that tank?
+Joe: Salmon tun chemical is with a salt aquarium ored rais a other fish aariums. C trigaquatic spunder
+790,2.2853,3.00e-04,0.07,1787544306.4983304
+# [2026-08-24 00:05:18] SAMPLE step 790:
+# 
+User: What is a fish tunks varits device?
+Joe: A fish mo tuna, state, or oiking is a presererered allow experied, uses a a fish rosystem, im body through ggs 
+800,2.2663,3.00e-04,0.08,1787544439.7399368
+# [2026-08-24 00:07:32] SAMPLE step 800:
+# 
+Joe: A oarance subts sering by amousmoked by swim the called the goldfish of its to the source. Asial and are species bottom and priack with basby moking snifish
+810,2.2547,3.00e-04,0.07,1787544575.6095755
+# [2026-08-24 00:09:47] SAMPLE step 810:
+# 
+User: What is a fish cice?
+Joe: A fish seanga is a spoitrased of fish cold its and lengths to by sternes. histor are most breeding for recoat reef att
+820,2.2400,3.00e-04,0.08,1787544708.6963344
+# [2026-08-24 00:12:00] SAMPLE step 820:
+# 
+User: What is a fish sule?
+Joe: A fish lic is a speslowly freshwater fish burass species some fish more aes reasteggs. harves and dection fish feual are risietic fish speci
+830,2.2939,3.00e-04,0.08,1787544841.8831642
+# [2026-08-24 00:14:14] SAMPLE step 830:
+# 
+Joe: Caris a tank a device fishing calcium that beneress fishing s and fishmigracults. The fish fish removes works of ennavigate American breed to quality ega 
+840,2.2154,3.00e-04,0.08,1787544974.9454553
+# [2026-08-24 00:16:27] SAMPLE step 840:
+# 
+Joe: Fish graving odiced, outvide rate for Hling, This substreturns like fish mous pounds and pleained include prsing spawning pairing and stotasing and where bettasa ilil.
+
+
+850,2.2056,3.00e-04,0.07,1787545108.4050698
+# [2026-08-24 00:18:40] SAMPLE step 850:
+# 
+User: What is a fish triegg is the largest diety?
+Joe: Fish subs tificial is the do where fish s fish tained the cook. It is a used er User: of flick product
+860,2.1512,3.00e-04,0.07,1787545244.330556
+# [2026-08-24 00:20:56] SAMPLE step 860:
+# 
+User: What is a fish?
+Joe: A fish is a net scientolakes. Fish is a model, made a ging ounce heding on-romous fish in a anity secling sharum liquid at by
+870,2.1908,3.00e-04,0.08,1787545377.4414213
+# [2026-08-24 00:23:09] SAMPLE step 870:
+# 
+Joe: A fish cords in a hook to depth 7. It include world.
+
+User: What is a fish conpaity for water, nitrhe to be catch. It is the particular of?
+Joe: Fish
+880,2.1297,3.00e-04,0.08,1787545510.6162374
+# [2026-08-24 00:25:22] SAMPLE step 880:
+# 
+
+User: What is a fishing arm?
+Joe: A fish recoor viar bo is a large device to fish placed used in a fishing like school and fishing need pping some ler.
+
+User: 
+890,2.1726,3.00e-04,0.08,1787545643.8719308
+# [2026-08-24 00:27:36] SAMPLE step 890:
+# 
+User: What is a fish a Malonefish dish and fins saltwater that used  s to sashimi-5 dish and freshwater fins. are total fish.
+
+User: What is a freshwater fish?
+Joe: A
+900,2.1227,3.00e-04,0.08,1787545777.0848124
+# [2026-08-24 00:29:49] SAMPLE step 900:
+# 
+?
+Joe: A fish mortalase is a marine of vertaining stock, method small fish Dused on the satlex nitrate in fish and ferententer species.
+
+User: What is a fish tro
+910,2.1847,3.00e-04,0.07,1787545912.8337777
+# [2026-08-24 00:32:05] SAMPLE step 910:
+# 
+
+Joe: A fish can reads the harmfully of freshwaters. The surve balident fish in the food creating come the most largest, mokoily fish, to and the Fishes America eels, and e
+920,2.1680,3.00e-04,0.08,1787546045.989098
+# [2026-08-24 00:34:18] SAMPLE step 920:
+# 
+Joe: A fishing is a fishing device that or handle a boriver that stock in ocking population population shaped a the Degornel-intile fish that contours air population that de
+930,2.0942,3.00e-04,0.08,1787546179.1074483
+# [2026-08-24 00:36:31] SAMPLE step 930:
+# 
+Joe: A fish trawire is a fresh fish body ves used to gramming and species in aquarium fish. It is the corsion dangerous and fish come grow in a fish has a snution sto
+940,2.0399,3.00e-04,0.08,1787546312.2955837
+# [2026-08-24 00:38:44] SAMPLE step 940:
+# 
+User: What is an an aranaction?
+Joe: Atank is the an resto common to fly aquouth to millions of fish, They and series can aby be can hands, the left larger size for 
+950,2.1190,3.00e-04,0.07,1787546445.6398468
+# [2026-08-24 00:40:57] SAMPLE step 950:
+# 
+Joe: A fish rivers from the pump, water to a stocking known to the catch to filtration, planed attics. adder, It is in water up and priim, reef for wain fishing 
+960,2.0791,3.00e-04,0.07,1787546581.3719938
+# [2026-08-24 00:43:13] SAMPLE step 960:
+# 
+Joe: noful aquaculture fish food aquarium ags providing mark Utereproductate fisheries for fish and sustainable species stock include replication most tanglers improving with operation
+970,2.0686,3.00e-04,0.07,1787546714.718962
+# [2026-08-24 00:45:27] SAMPLE step 970:
+# 
+Joe: What is a fish lication. Fish spawner is by whole fin fish with the single fish community to while tournament.
+
+User: What is?
+Joe: Fish pirlon is a small fish sp
+980,2.0049,3.00e-04,0.08,1787546847.8714156
+# [2026-08-24 00:47:40] SAMPLE step 980:
+# 
+Joe: A fish tank is a tank net that is a caock into aquatic or water land, or shark include teeth, reould chors that gravel extract of at pultract for body. and
+990,1.9985,3.00e-04,0.08,1787546980.9551632
+# [2026-08-24 00:49:53] SAMPLE step 990:
+# 
+
+User: What is a tool?
+Joe: A fish mokill, is a shrigger used to smoist on  smoying the right, develop and cook. It has simple ts, bon small placed 
+1000,2.0106,3.00e-04,0.08,1787547114.1003602
+# [2026-08-24 00:52:06] SAMPLE step 1000:
+# 
+Joe: A fishing patternzts is a reus produce over period by prey while sters gent namenteres to the most processinger fish una, species, and Toyocreational re-frying.
+
+User: What is
+1010,1.9984,3.00e-04,0.07,1787547249.8520348
+# [2026-08-24 00:54:22] SAMPLE step 1010:
+# 
+Joe: A small fish twning substrate is a small attach. It also the ba blueby fish with dors and reaching in a them.
+
+User: What is the a ing. Ca baits?
+Joe: A 
+1020,2.0506,3.00e-04,0.08,1787547382.9587333
+# [2026-08-24 00:56:35] SAMPLE step 1020:
+# 
+
+User: What is a fish restatory?
+Joe: A fish eteeth are to the most popular are saltwater to fish. They gs Serin live in enrecooks can different ratvides popular in spinm 
+1030,1.9734,3.00e-04,0.08,1787547516.1027977
+# [2026-08-24 00:58:48] SAMPLE step 1030:
+# 
+User: What is a fish caourgy?
+Joe: Fish a gict very piranration that an an aquarium fish to aquari, and fish aquariums. The ffish recoasteels, and st is
+1040,1.9712,3.00e-04,0.08,1787547649.3456187
+# [2026-08-24 01:01:01] SAMPLE step 1040:
+# 
+Joe: The eel tank. It is a attered barexacking, or sesacy wls rock and imic fer caught and deep-fsolved practice to remoked reus in ried direction 
+1050,1.9592,3.00e-04,0.08,1787547782.576003
+# [2026-08-24 01:03:14] SAMPLE step 1050:
+# 
+Joe: A longe is a filled freshwater fish in aquariums. It ments fish adaptanks, and recostable between the h and outage water fish a sashimick, and can be variety
+1060,2.0023,3.00e-04,0.07,1787547918.4947484
+# [2026-08-24 01:05:30] SAMPLE step 1060:
+# 
+
+User: What is a fish teine tasseaned exsmaller marine fish rulation to catch fish. H, over P can spone care in among long the them of the stalso the wide chooling of
+1070,1.9032,3.00e-04,0.08,1787548051.7707233
+# [2026-08-24 01:07:44] SAMPLE step 1070:
+# 
+User: What is a fish marine?
+Joe: A fish sucence is an a small tuna, fish, aquatic snvesrichlids and typically program protecting protect. Mlocks, rough etition and Aneries 
+1080,1.9406,3.00e-04,0.08,1787548185.004557
+# [2026-08-24 01:09:57] SAMPLE step 1080:
+# 
+User: What is a fish angal angular sing fish and in the fates community fish and plant that lids in line in a fish in mouth. but Dmating can colves to many fish stocked
+1090,1.8938,3.00e-04,0.08,1787548318.2930517
+# [2026-08-24 01:12:10] SAMPLE step 1090:
+# 
+User: What is a fish kity?
+Joe: A fish spawning is a artificial that helps fish measures itat that identing, sources. Cally ish controvermounted healthy egg, and Alanimal les of 
+1100,1.8813,3.00e-04,0.08,1787548451.364521
+# [2026-08-24 01:14:23] SAMPLE step 1100:
+# 
+Joe: Fish nest vaginreHcium involves tank itropical for a uum or fishing also it for btubes and a public fishing introd a water in water dark, tpAsi
+1110,1.9430,3.00e-04,0.07,1787548587.1270306
+# [2026-08-24 01:16:39] SAMPLE step 1110:
+# 
+User: What is a fish nurge?
+Joe: A fish anegupter is the that tract of fish in an in the mainly fish that need life them use to found in in degrees in and to feel
+1120,1.9248,3.00e-04,0.08,1787548720.3957283
+# [2026-08-24 01:18:52] SAMPLE step 1120:
+# 
+User: What is a fish, lids hernon-like fish cschooling all each signerea that can prey week. Bit tank What is fish a fish hooky it with an y aurermarium
+1130,1.9007,3.00e-04,0.08,1787548853.6823905
+# [2026-08-24 01:21:05] SAMPLE step 1130:
+# 
+
+User: What is a fish redivers change?
+Joe: A fish flow stuaran is a craben world, to gills in a absorb fish and live over over snution overa exion 20 whole. The
+1140,1.8568,3.00e-04,0.08,1787548987.0079317
+# [2026-08-24 01:23:19] SAMPLE step 1140:
+# 
+User: What is a fish ressive ces. It is a fish of fish lur?
+Joe: Overap sailbacterial inseatives, and air. It creates a depthbass water life. moregular can deds its
+1150,1.8849,3.00e-04,0.08,1787549120.2181149
+# [2026-08-24 01:25:32] SAMPLE step 1150:
+# 
+User: What is a fish facSensenpose?
+Joe: A blrite self-s used for s ex from limit the gas, cook and pers ar and harmair fish over navig mis the side bully
+1160,1.8368,3.00e-04,0.07,1787549256.0121868
+# [2026-08-24 01:27:48] SAMPLE step 1160:
+# 
+
+User: What is a fish foodfish?
+Joe: A ffullyfish is a fish internestamong used for in the preserving fishingerving at to spawning subembright and grow. Common fish can river
+1170,1.7984,3.00e-04,0.08,1787549389.219418
+# [2026-08-24 01:30:01] SAMPLE step 1170:
+# 
+Joe: Fish celetration, rebuilding include fry marine-um teeth and deep-ooden, fish eggs in gs the of the most alggs mination of species and the tunity.
+
+User: What is
+1180,1.7643,3.00e-04,0.08,1787549522.4688048
+# [2026-08-24 01:32:14] SAMPLE step 1180:
+# 
+Joe: The branches a tank, conditions in to the release tanks, algaeggs, and heads size structure, rigaages and changes. Tuning.
+
+User: What is a fish live critment t
+1190,1.8163,3.00e-04,0.07,1787549655.81063
+# [2026-08-24 01:34:28] SAMPLE step 1190:
+# 
+User: What is a fish biological?
+Joe: A fish A bocelelies, or is a traditionally underwater the where open in a in the reduice decove size, and catches fish make have 
+1200,1.7907,3.00e-04,0.08,1787549788.967328
+# [2026-08-24 01:36:41] SAMPLE step 1200:
+# 
+Joe: A fish trap is a triangular sea used through trawler for young. The fish a market is spawning of cape the the most most species The most popular fish in the es 
+1210,1.7656,3.00e-04,0.07,1787549924.62701
+# [2026-08-24 01:38:56] SAMPLE step 1210:
+# 
+
+User: What is a fish dish weights made from cut of a fish, target allow of series in skinility, and adaptanks, stocks for groups.
+
+User: What is a fish bar?
+
+1220,1.7876,3.00e-04,0.08,1787550057.5764413
+# [2026-08-24 01:41:09] SAMPLE step 1220:
+# 
+
+User: What is a fish barin color 16 apleco?
+Joe: A fish among ths is a flness and onerplicate the of fish to a gold species in the over burst
+
+User: What 
+1230,1.7727,3.00e-04,0.08,1787550190.7404191
+# [2026-08-24 01:43:22] SAMPLE step 1230:
+# 
+Joe: A fishing fish is a trog device that fish built in head the previte and weighing vis water. It is the freshwater to prevents more species.
+
+User: What is a fish coving 
+1240,1.7475,3.00e-04,0.08,1787550323.7817862
+# [2026-08-24 01:45:36] SAMPLE step 1240:
+# 
+User: What is fish spear?
+Joe: A fish tun is a seasoned made of fish, made with and chiime, and hatchergeon catch fund of fish in with a into a parasites 
+1250,1.7541,3.00e-04,0.08,1787550456.997629
+# [2026-08-24 01:47:49] SAMPLE step 1250:
+# 
+ens Riup is a bony plates that other fish in a bheats or cerrees to baes and bless to ait catch in fish to a lure. It is catch fish in adder
+
+
+1260,1.6804,3.00e-04,0.07,1787550592.8710291
+# [2026-08-24 01:50:05] SAMPLE step 1260:
+# 
+
+User: What is a fish food lift which is a tree habitats, fry?
+Joe: The mountain with white making cele and minlevertefins, by have electrofish, and ever. Eamongine are 
+1270,1.7312,3.00e-04,0.08,1787550726.0150785
+# [2026-08-24 01:52:18] SAMPLE step 1270:
+# 
+User: What is a fish tartare?
+Joe: Fish tropsuces. is a most small ety fish manlofers by the anger tank. Tuna, are gills cleaner of the change important 19ths
+1280,1.7001,3.00e-04,0.07,1787550859.371491
+# [2026-08-24 01:54:31] SAMPLE step 1280:
+# 
+User: What is a float of a fish can 40 feet. Over, have surmous over feet ormouth and lay and are the orsal appearance.
+
+User: What is a fish small fryer and sh
+1290,1.6787,3.00e-04,0.07,1787550992.7360392
+# [2026-08-24 01:56:45] SAMPLE step 1290:
+# 
+Joe: Sarbless is a defary fishing ratory clip while the fish join catch fish.
+
+User: What is a fish are?
+Joe: Trestaurant fish in the Screational fishingtificial it is 
+1300,1.6772,3.00e-04,0.07,1787551126.0980384
+# [2026-08-24 01:58:58] SAMPLE step 1300:
+# 
+User: What is fish?
+Joe: Aner direction is a fishing for blce de raised fish that survive that filter water, mouth ality. Despite their formigrure, cape. It has feargas
+1310,1.6454,3.00e-04,0.07,1787551262.057778
+# [2026-08-24 02:01:14] SAMPLE step 1310:
+# 
+User: What is a s-tank that should phy bone habitga pump. Fish popules, chip and um. The than the most most stocks for acids for fish flatfish, and are 
+1320,1.6464,3.00e-04,0.08,1787551395.2729208
+# [2026-08-24 02:03:27] SAMPLE step 1320:
+# 
+User: What is a fish kill electronicide?
+Joe: A fish fish cycle, or a heers. surve include fish, caudes processeduake production and e pate used to Aiviar isol air.
+1330,1.6637,3.00e-04,0.08,1787551528.5957072
+# [2026-08-24 02:05:40] SAMPLE step 1330:
+# 
+User: What is a line addle?
+Joe: A creel is a marine fishing to moist hook innames ator the ocean in of, en- the fish, The hicome in the Concerily Ders Meth
+1340,1.6911,3.00e-04,0.08,1787551661.8247879
+# [2026-08-24 02:07:54] SAMPLE step 1340:
+# 
+User: What is a fish pel?
+Joe: A sud is a group baquarium jor of popular fish. They are the venomny fish food in small most in mouth by the weighing cart 
+1350,1.6077,3.00e-04,0.08,1787551795.0519977
+# [2026-08-24 02:10:07] SAMPLE step 1350:
+# 
+Joe: Fish carp are parasities for their maintain recosystem. They are common They come in their minerals, on ches and per discast or quarium to checked fish match habitat and 
+1360,1.5863,3.00e-04,0.07,1787551930.742014
+# [2026-08-24 02:12:23] SAMPLE step 1360:
+# 
+
+
+User: What is a fish movary?
+Joe: A fish triesed is a de-intournames an tank in a tank and tank to gup not small s and aquatic to What shallowing 
+1370,1.5945,3.00e-04,0.07,1787552064.086948
+# [2026-08-24 02:14:36] SAMPLE step 1370:
+# 
+
+User: What is lids fins, comale and States. They long, fastest and fish, with experience swsystem. Cfeedings, arms and Cundor Sarbaviargas.
+
+User: What is a fish cured
+1380,1.5864,3.00e-04,0.08,1787552197.2271369
+# [2026-08-24 02:16:49] SAMPLE step 1380:
+# 
+
+User: What is fish predatory trap?
+Joe: A fish tank boxoked are the multi-like trap of a fish anks used in for gasneeds a bartypically fish orulation to recreational over
+1390,1.5810,3.00e-04,0.08,1787552330.2772257
+# [2026-08-24 02:19:02] SAMPLE step 1390:
+# 
+User: What is a fish polegal sharp in the There are of the most thbecome in an in cures a ray-introat to the skin and sed through a quick to circle or time open then
+1400,1.5498,3.00e-04,0.08,1787552463.5983422
+# [2026-08-24 02:21:15] SAMPLE step 1400:
+# 
+
+User: What is a fish loner?
+Joe: A fish cave is a fish period of fish heater ture with the species that a placweeks    wen water  water  water  s, water and 
+1410,1.5552,3.00e-04,0.07,1787552599.4715223
+# [2026-08-24 02:23:31] SAMPLE step 1410:
+# 
+
+User: What is a fish spear?
+Joe: A fish parasitic is a reghiers that caught a or bass or harvestest that stentigmantic from fish that ns is sectively fish 
+1420,1.5511,3.00e-04,0.08,1787552732.6263828
+# [2026-08-24 02:25:44] SAMPLE step 1420:
+# 
+Joe: The venomous shark is a cub, Amerures in the Fish ct peaceful, breand pole in the Ceneficious fish are popular in thefish.
+
+User: What is aquatic fish?
+Joe:
+1430,1.5205,3.00e-04,0.07,1787552866.0922139
+# [2026-08-24 02:27:58] SAMPLE step 1430:
+# 
+
+User: What is a fish betempura?
+Joe: A bait is a mantaquarium in aquarium water that water caused for ers. Bolum?
+Joe: A artificial is an aggcial h
+1440,1.5256,3.00e-04,0.08,1787552999.3374813
+# [2026-08-24 02:30:11] SAMPLE step 1440:
+# 
+User: What is a fish trap?
+Joe: A fish size trap is a tank s device that cruitions for fish. Bacterial prized requires nutrain to loss men of a evolution 
+1450,1.5241,3.00e-04,0.07,1787553132.7121522
+# [2026-08-24 02:32:24] SAMPLE step 1450:
+# 
+Joe: Anadapanustaining fish handwater with typically rove and mycooking to tificial for aquarium. It findmillions of blooded, fish.
+
+User: What is a fish spear?
+Joe: Fish lic
+1460,1.4725,3.00e-04,0.07,1787553268.5546741
+# [2026-08-24 02:34:40] SAMPLE step 1460:
+# 
+User: What is a moloriginated se made bacterific, critical in a serfried specific de for fresh, species. Many fish can salmon, spawn they can are maintain in weeks.
+
+User: 
+1470,1.4699,3.00e-04,0.08,1787553401.8272853
+# [2026-08-24 02:36:54] SAMPLE step 1470:
+# 
+User: What is a fish nest?
+Joe: A fish per do fish inflnel-them or ration from rivers to fish allowusor allow caviar from coral that local fish It time stickerve sources.
+
+1480,1.4868,3.00e-04,0.08,1787553534.9506972
+# [2026-08-24 02:39:07] SAMPLE step 1480:
+# 
+User: What is a fish chow?
+Joe: A fish water tuna, is a freshwater fish made from saltwater ed native Freshwater fish lanticense, drouths. Many including support ried fish food and 
+1490,1.4924,3.00e-04,0.08,1787553668.0367384
+# [2026-08-24 02:41:20] SAMPLE step 1490:
+# 
+Joe: Fish oil has the popular Africa. It is bebass nitrates for predator bass and nuricon. behaviors.
+
+User: What is a fish strate?
+Joe: Fish is the sleep 20 ory
+1500,1.4477,3.00e-04,0.08,1787553801.222503
+# [2026-08-24 02:43:33] SAMPLE step 1500:
+# 
+
+User: What is a fish out net?
+Joe: A fish for reef fish placed is a a ft device that dients is a small zebene that air become in a main species in a 
+1510,1.4379,3.00e-04,0.07,1787553936.8943594
+# [2026-08-24 02:45:49] SAMPLE step 1510:
+# 
+
+
+User: What is a fish fish swimming length?
+Joe: Fish s and s running clip reaching ide away. Most fish b in some and have among harmful fish both and in cycles and fish.
+1520,1.4453,3.00e-04,0.08,1787554069.8879416
+# [2026-08-24 02:48:02] SAMPLE step 1520:
+# 
+
+
+User: What is a fish hang-at fish with ga gill best device that creates available caused to ent electronment and internurgrounds from reach breacommonly body and nold, live to
+1530,1.3883,3.00e-04,0.08,1787554203.1489367
+# [2026-08-24 02:50:15] SAMPLE step 1530:
+# 
+User: What is a fish black and A cycle is a spawning e?
+Joe: A fish spawning spawning spawn is a finest bed, the measured in ryo. The helps fish can their sp
+1540,1.4101,3.00e-04,0.08,1787554336.3827744
+# [2026-08-24 02:52:28] SAMPLE step 1540:
+# 
+User: What is a fish svenactice?
+Joe: A fish recosystem is a fish boxant that uses an imure angered in a y set um to caught fish in a hook. It is a
+1550,1.3535,3.00e-04,0.08,1787554469.6320035
+# [2026-08-24 02:54:41] SAMPLE step 1550:
+# 
+User: What is a fish cave?
+Joe: A fish alive satellate for habitat heater from tank al al al al algae in the tanks. It col rock and by mountain maintains 
+1560,1.4441,3.00e-04,0.07,1787554605.4277499
+# [2026-08-24 02:56:57] SAMPLE step 1560:
+# 
+Joe: Fish sthuman tree rouflacts food rassessment, and cartilage rise habitat anglers position, and recooks, river and fish habitat shrimp, and in a smoisture
+1570,1.4142,3.00e-04,0.08,1787554738.7143617
+# [2026-08-24 02:59:11] SAMPLE step 1570:
+# 
+
+Joe: What is a fish piran-filter?
+Joe: A fish ve is a net used to protery fish below over the water quickly adromous speeds a pressure like al al water means many fish like 
+1580,1.4025,3.00e-04,0.08,1787554871.9581506
+# [2026-08-24 03:01:24] SAMPLE step 1580:
+# 
+User: What is a fish trawlens control fish conditions to but can human val?
+Joe: An flavor is a fresh of a zaggg fish with often ing nettractant that is cords mincteps. 
+1590,1.3511,3.00e-04,0.08,1787555005.2494597
+# [2026-08-24 03:03:37] SAMPLE step 1590:
+# 
+
+User: What is a discus?
+Joe: Scolainschool is the most differenef of fish member see filter fen species acids.
+
+User: What is a small?
+Joe: South Overi is a fin
+1600,1.3520,3.00e-04,0.08,1787555138.529832
+# [2026-08-24 03:05:50] SAMPLE step 1600:
+# 
+User: What is a fish nest?
+Joe: A fish pa. A is a market air a. is a a ought shriver are that hooked to their need a fish.care eggs and color as.
+
+
+1610,1.3968,3.00e-04,0.07,1787555274.5464468
+# [2026-08-24 03:08:06] SAMPLE step 1610:
+# 
+
+User: What is a fish line?
+Joe: A fish dies drael is a purse seiner-fin definite, with different species and purselective species in a food overfish lure provide Upas for
+1620,1.3364,3.00e-04,0.08,1787555407.7904797
+# [2026-08-24 03:10:20] SAMPLE step 1620:
+# 
+User: What is a fish scale has the hatched scraised for?
+Joe: Fish recover Sically runters by egg, spawning and includes prevantages 30ly for migrations fish. The need
+1630,1.2809,3.00e-04,0.08,1787555541.0106924
+# [2026-08-24 03:12:33] SAMPLE step 1630:
+# 
+
+User: What is a fish pfection?
+Joe: A fish Most species tank, ase, underwater by gupportas dolate or 3 fanks ll to million algulation over shaps. GPies flit are
+1640,1.2803,3.00e-04,0.08,1787555674.249492
+# [2026-08-24 03:14:46] SAMPLE step 1640:
+# 
+
+User: What is a fish find baited slow boat that an an aquarium or bles with their display tank to nitration. Fish eggs more cts changes conditions for babate.
+
+
+1650,1.3205,3.00e-04,0.08,1787555807.353454
+# [2026-08-24 03:16:59] SAMPLE step 1650:
+# 
+User: What is a fish k kill?
+Joe: A fish kill is a cichlifest that become in old in birth. They are the Hger fish and egg finders to salinvolves wide co
+1660,1.3001,3.00e-04,0.07,1787555943.2898905
+# [2026-08-24 03:19:15] SAMPLE step 1660:
+# 
+User: What is a fish tank?
+Joe: Pey fish involves it it it it over a tank can be Lgor sts, and showing fish commercial fish while time 12 to in femalght for 
+1670,1.2830,3.00e-04,0.08,1787556076.458779
+# [2026-08-24 03:21:28] SAMPLE step 1670:
+# 
+Joe: Os species cichlid?
+Joe: Fish usually the ceans catch fish, rough kills, are alily vionality fish like salmon, goldwildsred and fish. It is the verhookerlakes 
+1680,1.2420,3.00e-04,0.08,1787556209.751857
+# [2026-08-24 03:23:42] SAMPLE step 1680:
+# 
+User: What is a fish cage-like?
+Joe: A fish kill is a years. of fish or anchor netting is group of large, swimming with the most swimming in the most bottom Earths hali
+1690,1.2819,3.00e-04,0.08,1787556342.9187136
+# [2026-08-24 03:25:55] SAMPLE step 1690:
+# 
+
+User: What is a fish water?
+Joe: A fish hegg is a fish anglers to between a gills where water. Fish rakohi, Guppies, or po limit and shn, grow quar skin
+1700,1.2596,3.00e-04,0.08,1787556475.9661927
+# [2026-08-24 03:28:08] SAMPLE step 1700:
+# 
+Joe: A fish skortality species are species that river to cooked a extending meassel against a mechanical melive to available ating.
+
+User: What is a fish sion?
+Joe: A fish law,
+1710,1.2586,3.00e-04,0.07,1787556611.7804444
+# [2026-08-24 03:30:24] SAMPLE step 1710:
+# 
+Joe: Fish hardness, can 8 country, short pattern.
+
+User: What is a fish pquarantine?
+Joe: Fish ollars species is the most dangerous in species fish in the widely. Fish and 
+1720,1.2813,3.00e-04,0.08,1787556745.1032078
+# [2026-08-24 03:32:37] SAMPLE step 1720:
+# 
+Joe: A fish drying is an practice of both fish with gills. Fish lic plankbiggest, medication, or dight fishing, or convenantication, management.
+
+User: What is a fish fbeonge
+1730,1.1912,3.00e-04,0.07,1787556878.4857328
+# [2026-08-24 03:34:50] SAMPLE step 1730:
+# 
+User: What is a fish deterritory?
+Joe: Fish protection conservation is the divers where larger fish hatchery filter while controgability is, for habitats.
+
+User: What is a fish re-
+1740,1.1979,3.00e-04,0.08,1787557011.6324053
+# [2026-08-24 03:37:03] SAMPLE step 1740:
+# 
+Joe: Fish froe routge is the how predators and monjawning, and sword. Reguppies, agsakes, more flitioning fish growth, fish and exporcraes.
+
+User: What is a fish rot
+1750,1.2285,3.00e-04,0.08,1787557144.8790169
+# [2026-08-24 03:39:17] SAMPLE step 1750:
+# 
+User: What is a paerling?
+Joe: A egged is a small saltwater fish in the ammonia waves to time on of a fish, by baitfish, smokayance to remoking or pop
+1760,1.1647,3.00e-04,0.07,1787557280.7068386
+# [2026-08-24 03:41:32] SAMPLE step 1760:
+# 
+Joe: Fish chips are and warm-whatever food in the world.
+
+User: What is fish?
+Joe: The Fish white stoven is the most compatible particular from sold. The group stability through biotic
+1770,1.2499,3.00e-04,0.08,1787557413.8069706
+# [2026-08-24 03:43:46] SAMPLE step 1770:
+# 
+Joe: An types is a faces to great feras measures that nutrients that uses displays filter, the shark spant popular poor their hammonatively as as as as as as as nitras 
+1780,1.1736,3.00e-04,0.08,1787557546.8416376
+# [2026-08-24 03:45:59] SAMPLE step 1780:
+# 
+User: rite oxygen with a tainable marine for funding fish that can high several hundreds of ters lars. They has fish is flock of the meat fish in they Lure in many instead.
+
+User:
+1790,1.1589,3.00e-04,0.08,1787557680.075431
+# [2026-08-24 03:48:12] SAMPLE step 1790:
+# 
+User: What is a fish goldnure?
+Joe: Fish do ternal most contction protection in the tank of aquarium from called aquarium food, and painfully and are small fish frodollars.
+1800,1.1971,3.00e-04,0.08,1787557813.3048997
+# [2026-08-24 03:50:25] SAMPLE step 1800:
+# 
+
+User: What is a buoy?
+Joe: A spawning mop is a bill bling small yarn in optlic is a pursein a seiner tration, exindicelectronicator and no predators 
+1810,1.1515,3.00e-04,0.07,1787557949.3230648
+# [2026-08-24 03:52:41] SAMPLE step 1810:
+# 
+User: What is a fish bar?
+Joe: A fish nano tank is a artificial bar of b al placed in an an aquarium to ths. It ritammonxvary and circamous
+1820,1.1246,3.00e-04,0.08,1787558082.5079033
+# [2026-08-24 03:54:54] SAMPLE step 1820:
+# 
+
+User: What is a fish hatchery breeds include fality?
+Joe: A fish reel  in guppy. P are mealthap and the begupater imens. It can laun ri medication. 
+1830,1.1220,3.00e-04,0.08,1787558215.8222136
+# [2026-08-24 03:57:08] SAMPLE step 1830:
+# 
+Joe: A fishing preh is a small freshwater fish named for the carn t-like mechanism. Dmative can low ha feed sea over ur, ured factors and lateral line from adromouon not st
+1840,1.1193,3.00e-04,0.08,1787558349.074229
+# [2026-08-24 03:59:21] SAMPLE step 1840:
+# 
+Joe: A fish breeding fish provides aquarantum tournament is the main commercial fish that pecially can it to catch fish mouth. Regular culumative to slen neplement chreference 
+1850,1.0555,3.00e-04,0.08,1787558482.3835382
+# [2026-08-24 04:01:34] SAMPLE step 1850:
+# 
+
+User: What is a stillabvas fish?
+Joe: A fish breathe regulation of aquacific recovery of spawning population. Sea can 8 over to Many fish cichlid. Sfinder have many
+1860,1.1174,3.00e-04,0.07,1787558618.2597706
+# [2026-08-24 04:03:50] SAMPLE step 1860:
+# 
+
+User: What is a s20 feet fish are populations that environment their frying assauceed protected preventing from the eggs and display and releases.
+
+User: What is a hatched
+1870,1.1278,3.00e-04,0.07,1787558751.6622732
+# [2026-08-24 04:06:03] SAMPLE step 1870:
+# 
+Joe: A dorsal fin is the largest of a group of will males, majone of worldwide are both cyclans, and their frostakes river that can be cleaning ans through a tank?
+Joe: 
+1880,1.0753,3.00e-04,0.08,1787558884.8114965
+# [2026-08-24 04:08:17] SAMPLE step 1880:
+# 
+User: What is a fish chicorsal fin?
+Joe: A pit fin fin is a simouth that eld battered and eroized inver, and restaavailable in resbodies are water Asian troand 
+1890,1.0668,3.00e-04,0.08,1787559018.103519
+# [2026-08-24 04:10:30] SAMPLE step 1890:
+# 
+
+User: What is a fish removal tunlift is a lolet often abfish stock that ustain begently fish egg escaused for fish. Toks come ines, ochzes and seine se
+1900,1.0565,3.00e-04,0.08,1787559151.3679428
+# [2026-08-24 04:12:43] SAMPLE step 1900:
+# 
+
+User: What is a fish spear?
+Joe: A fish shood is a tuning fish formance that can be tiny hioxygen of release survive by the African Greproduce.xica. Common are fish can 
+1910,1.0576,3.00e-04,0.07,1787559287.3149235
+# [2026-08-24 04:14:59] SAMPLE step 1910:
+# 
+Joe: Fish grow rebuilding chi?
+Joe: Fish retrieves school and Omeive recooks are used for underwater extinction. Fish and Parily Partipment, and Its, are used inct
+1920,1.0576,3.00e-04,0.08,1787559420.5343208
+# [2026-08-24 04:17:12] SAMPLE step 1920:
+# 
+Joe: A cycle is a device that uses a artificial toxzer placed the ocean to cruitment fish efits through weir millions of reentified for fish.
+
+User: What is a 
+1930,1.0132,3.00e-04,0.08,1787559553.5311458
+# [2026-08-24 04:19:25] SAMPLE step 1930:
+# 
+
+Joe: What is a fish hrotate?
+Joe: A fish outaces or lon their ulock. Mouth can plant quarium also warf Lines through ands e shark divers to preservaries ccess fin
+1940,1.0052,3.00e-04,0.07,1787559686.9853156
+# [2026-08-24 04:21:39] SAMPLE step 1940:
+# 
+Joe: Byolkin salmon shoals, and are predators Byelapervong waste degrees sand.
+
+User: What is a great carpacciospine to eke?
+Joe: The cit shark is the most
+1950,0.9797,3.00e-04,0.08,1787559820.2981875
+# [2026-08-24 04:23:52] SAMPLE step 1950:
+# 
+User: What is a fish tank?
+Joe: A fish pical pical tank is a a artare with a filter that has natural larger filtering that drawaste is the water to catch fish section.
+1960,1.0371,3.00e-04,0.07,1787559956.3247838
+# [2026-08-24 04:26:08] SAMPLE step 1960:
+# 
+Joe: A fish capacity is a location, species, carpclosed and prentled that an safe It make set in be smoval fish and speed. It is a chi, boended or or display 
+1970,0.9978,3.00e-04,0.08,1787560089.6472037
+# [2026-08-24 04:28:21] SAMPLE step 1970:
+# 
+User: What is fish reel?
+Joe: A fish recreel is a sPis ine ning agenclosed that replicates the material on the maximum ocean and barageneficial the water of aquatic 
+1980,0.9811,3.00e-04,0.07,1787560223.002413
+# [2026-08-24 04:30:35] SAMPLE step 1980:
+# 
+User: What is a fish spawning stock?
+Joe: Fish spawning fer has the along the mainly filter that ourts ormiren to season and is predicword. Britmely is lower ble
+1990,0.9762,3.00e-04,0.08,1787560356.2790754
+# [2026-08-24 04:32:48] SAMPLE step 1990:
+# 
+User: What is a cured?
+Joe: A courvarietibian from restorakes. Schooling includesven community tanglers from tank pical, prefer and structackrate manethods to tree is miles
+2000,0.9981,3.00e-04,0.08,1787560489.4962208
+# [2026-08-24 04:35:01] SAMPLE step 2000:
+# 
+Joe: Dry are aming, communicatepermackin fish like Byclinated schooling and and causing a codiles.
+
+User: What is a fish giffer?
+Joe: A fish guppies rice anel fish
+2010,0.9546,3.00e-04,0.07,1787560625.4612908
+# [2026-08-24 04:37:17] SAMPLE step 2010:
+# 
+Joe: A fish river, al in an an oment and extract water Fish area. from the nels Pep air design hasize both and net movement through the maximum water past a damation. It
+2020,0.9476,3.00e-04,0.08,1787560758.6895802
+# [2026-08-24 04:39:30] SAMPLE step 2020:
+# 
+Joe: Fish smoking is preserving from the over 2 lings Smoisted made of the dangerous fish, for species and conditions. Fan biomass in an an protein 10 cost same ank, bur
+2030,0.9641,3.00e-04,0.07,1787560892.0374472
+# [2026-08-24 04:41:44] SAMPLE step 2030:
+# 
+
+Joe: What is fish pool fin?
+Joe: Fish similar and lowchool fish are species from lla whe e diversity. They can release over then to unt. salmon salmon and  coor 
+2040,0.9176,3.00e-04,0.08,1787561025.3269522
+# [2026-08-24 04:43:57] SAMPLE step 2040:
+# 
+User: What is a fish group?
+Joe: A fish fanchips is a temporary benon bvey of a fish food into a centally smaller designed for species. It include spawn and reprodu
+2050,0.9690,3.00e-04,0.08,1787561158.351435
+# [2026-08-24 04:46:10] SAMPLE step 2050:
+# 
+Joe: An species is a bony plate where distinct the al pass ive inches to the do prefer water called the zes, of tain fish that can be overfemales feet. They are cape
+2060,0.9081,3.00e-04,0.07,1787561294.2673337
+# [2026-08-24 04:48:26] SAMPLE step 2060:
+# 
+
+User: What is a mammal?
+Joe: A adder is a freshwater fish that can fail to fish. Some is to avant salmon, for reef  fish, shy.
+
+User: What is a f f blobr
+2070,0.9235,3.00e-04,0.08,1787561427.3886971
+# [2026-08-24 04:50:39] SAMPLE step 2070:
+# 
+
+User: What is a fish community?
+Joe: Creduum is a freshwater fish ind nfish patterns to requirement habitat skimas in freshwater d and ats. It start large waste a tations 
+2080,0.8751,3.00e-04,0.08,1787561560.5537503
+# [2026-08-24 04:52:52] SAMPLE step 2080:
+# 
+Joe: The bettas, boat ving watersustainable how releasucupms inpools, and flickcenturies water are the sources.
+
+User: What is a fish en?
+Joe: Fish schooling is the most
+2090,0.8706,3.00e-04,0.08,1787561693.838109
+# [2026-08-24 04:55:06] SAMPLE step 2090:
+# 
+Joe: A fish food is a freshwater fish with the head, sharp still and the returns to a freshwater  or caused to sink the fish to the same internurest.
+
+User: What is a fish 
+2100,0.8921,3.00e-04,0.07,1787561827.2713063
+# [2026-08-24 04:57:19] SAMPLE step 2100:
+# 
+Joe: A fish cords has quattered, and shade, de, and specialized ecod are raised fish reshwater fish pirescaor light.
+
+User: What is a cspecialized cght clowhealth?
+Joe: Fish 
+2110,0.8814,3.00e-04,0.07,1787561963.217257
+# [2026-08-24 04:59:35] SAMPLE step 2110:
+# 
+Joe: Sus is one of the temporatic benwordfish behind the wast through a river orary range. A large simplitional made of a market, state mincing that fish in a size can 
+2120,0.8769,3.00e-04,0.08,1787562096.4335427
+# [2026-08-24 05:01:48] SAMPLE step 2120:
+# 
+Joe: Fish aquin can catch in eval reduum water rgorimits and mane conditions them for release catadier of fish.
+
+User: What is a schooling of?
+Joe: A scientific 
+2130,0.8620,3.00e-04,0.08,1787562229.647306
+# [2026-08-24 05:04:01] SAMPLE step 2130:
+# 
+
+User: How do fish doest?
+Joe: Fish chanship that marine fish gressionfish and toward the oil for over respungs for aions. Many release takes the and end water with the catfish onge
+2140,0.8397,3.00e-04,0.07,1787562362.9915679
+# [2026-08-24 05:06:15] SAMPLE step 2140:
+# 
+User: How long fish breathing are?
+Joe: Fish uses vine a genetic body of single hatchery resto gupharvesting. Fladvesting.
+
+User: How fish together with a fish can territory 
+2150,0.8601,3.00e-04,0.08,1787562496.2591543
+# [2026-08-24 05:08:28] SAMPLE step 2150:
+# 
+User: What is a fish heater?
+Joe: A fish filter is an an artificial used to vibra. In are the Asifury of female fish and different well fish from live espeaceful and
+2160,0.8232,3.00e-04,0.07,1787562632.2319
+# [2026-08-24 05:10:44] SAMPLE step 2160:
+# 
+User: What is a creel?
+Joe: The creel is a nigir slure fish the sides of  methods, or delicirs, whoseed salipapved and low during ried ried to swimmmm
+2170,0.8291,3.00e-04,0.07,1787562765.590598
+# [2026-08-24 05:12:57] SAMPLE step 2170:
+# 
+User: What is a fish traditional line?
+Joe: A fish trap net is a large large spear line running the water.
+Joe: A is a most bony fish with a genetic throatistuver that 
+2180,0.8147,3.00e-04,0.08,1787562898.788998
+# [2026-08-24 05:15:11] SAMPLE step 2180:
+# 
+User: What is a fish food bar?
+Joe: A fish bar is a freshwater ocean aquariumschool in bottom companion hook, dams. It include ereestructively conpentvaries from speci
+2190,0.7991,3.00e-04,0.08,1787563032.0222547
+# [2026-08-24 05:17:24] SAMPLE step 2190:
+# 
+User: What is a fish avoid factorsal?
+Joe: Fish have recreational hiding by specially adulture food made of species. develop from Sdies fish, and state, educeedsensing and restaurge
+2200,0.8210,3.00e-04,0.08,1787563164.9520261
+# [2026-08-24 05:19:37] SAMPLE step 2200:
+# 
+
+User: What is a swim fin?
+Joe: The protein protein also called called a era river amount , , is a large, A surf is a small cichlids between rivers and tical fish. 
+2210,0.7889,3.00e-04,0.07,1787563300.8480067
+# [2026-08-24 05:21:53] SAMPLE step 2210:
+# 
+User: What is a catfish?
+Joe: A fish reel is a freshwater fish with a works for fin of a bass embry and sharp species like cooking on the g line. Events swim
+2220,0.7686,3.00e-04,0.08,1787563434.0399017
+# [2026-08-24 05:24:06] SAMPLE step 2220:
+# 
+User: What is a fish tank cycle?
+Joe: A fish cycle crash is the loss of bstock of beneficial bacteria in an aquarium water filter, causing ammonia, and n
+2230,0.7614,3.00e-04,0.08,1787563567.181018
+# [2026-08-24 05:26:19] SAMPLE step 2230:
+# 
+Joe: Fish vertebrate?
+Joe: A fish caping lic stock is the moked. Smoked cuor are swimmy ines. Reggs roulemechanons incluities America. and gup floor
+2240,0.7437,3.00e-04,0.08,1787563700.3269262
+# [2026-08-24 05:28:32] SAMPLE step 2240:
+# 
+User: What is a location, capal fin?
+Joe: Fish bubbles are device that maned to catch fish by trap res a cycle side to fish in an the tank scrabiocks of
+2250,0.7467,3.00e-04,0.08,1787563833.528324
+# [2026-08-24 05:30:45] SAMPLE step 2250:
+# 
+
+User: What is a fish tank?
+Joe: A fish tank is aquarium aquarium that large it first uper to while times.
+
+User: What is a fish size effective hak?
+Joe: A fish 
+2260,0.7801,3.00e-04,0.07,1787563969.3471718
+# [2026-08-24 05:33:01] SAMPLE step 2260:
+# 
+
+User: What is a fish fish stocking in capacks is they to fish body into a public populations. stone include llestion Aeries detect redudes breeding. filter American and lo
+2270,0.6951,3.00e-04,0.07,1787564102.68541
+# [2026-08-24 05:35:14] SAMPLE step 2270:
+# 
+User: What is fish pel?
+Joe: A fish panha is a freshwater fish with a usually melling over ating long, 7.5 while 8. Clocate live over und care detect detect isite pain
+2280,0.7490,3.00e-04,0.07,1787564236.0695777
+# [2026-08-24 05:37:28] SAMPLE step 2280:
+# 
+User: What is a fish tank?
+Joe: A fish tank acterial infecundity or an camong a sucubes of a water jurisdollars. fish found in the between the ocean and detect 
+2290,0.7135,3.00e-04,0.07,1787564369.440328
+# [2026-08-24 05:39:41] SAMPLE step 2290:
+# 
+User: What is a catfish tank?
+Joe: A fish reef tank is a separate aquarium used to raise juvenile fish without others lime eat lrafind pretank, ab nused agenn 
+2300,0.6922,3.00e-04,0.08,1787564502.6897345
+# [2026-08-24 05:41:54] SAMPLE step 2300:
+# 
+User: What is a pike?
+Joe: A spawning seawater is a freshwater predatory fish found in the Northern weeks of the Atit, Pacific. They are common in the animal swimouth of
+2310,0.7055,3.00e-04,0.07,1787564638.5700555
+# [2026-08-24 05:44:10] SAMPLE step 2310:
+# 
+s grow unery?
+Joe: A fish pactinctle tank has um wide ancy by ocate parts and protective fish to maintain water. It has a osely freshly debate against beill and 
+2320,0.7200,3.00e-04,0.08,1787564771.826959
+# [2026-08-24 05:46:24] SAMPLE step 2320:
+# 
+Joe: Most fish distances to pain and maintain a preserving fish over es.
+
+User: What is a fish trap net?
+Joe: A trap net is a large freshwater fish that breeding only from the
+2330,0.6858,3.00e-04,0.08,1787564904.9858332
+# [2026-08-24 05:48:37] SAMPLE step 2330:
+# 
+User: What is the United suke?
+Joe: A hiding are maximicacin set of set minimize that line to cultures in a while move males pecially suctions that provides habitat
+2340,0.7063,3.00e-04,0.08,1787565038.1471636
+# [2026-08-24 05:50:50] SAMPLE step 2340:
+# 
+
+User: What is a fish scale limbait. It carries bethe archy coeggs of migrating the Sargas. Enggs and bab cubators.
+
+User: What is a fish chowder?
+Joe: 
+2350,0.6475,3.00e-04,0.08,1787565171.4206498
+# [2026-08-24 05:53:03] SAMPLE step 2350:
+# 
+User: What is a fish fish?
+Joe: A fish aer is a fish attractant made from the fish, cichlid to give live birth-tations hours with warm oven oceans species with million they 
+2360,0.6825,3.00e-04,0.07,1787565307.2180278
+# [2026-08-24 05:55:19] SAMPLE step 2360:
+# 
+Joe: A fishing bait is a measured in carbonately by Lake treble braper fish, and hooking, and GMost fish swim are common the Nds to maintain over their time ing.
+
+User:
+2370,0.6324,3.00e-04,0.08,1787565440.4892612
+# [2026-08-24 05:57:32] SAMPLE step 2370:
+# 
+Joe: A basking method is used to prevent practice of fish for fish. Critory and successful protections filtration species are that the amsels of a fish can less hours of large
+2380,0.6069,3.00e-04,0.08,1787565573.661981
+# [2026-08-24 05:59:45] SAMPLE step 2380:
+# 
+Joe: A fish cave is an an aquarium that habitat within a competica. GHatcheries is structure that al is weeks them from ocean water to parts swimming in reaching but
+2390,0.6953,3.00e-04,0.08,1787565706.8721676
+# [2026-08-24 06:01:59] SAMPLE step 2390:
+# 
+Joe: A fish cave is a de-prber-inted filtering. Fish provides numbers of migration to repl the fish.
+
+User: What is a fish migration barrier?
+Joe: A fish m
+2400,0.6613,3.00e-04,0.08,1787565840.092757
+# [2026-08-24 06:04:12] SAMPLE step 2400:
+# 
+
+User: What is a fish hatchery supplementation?
+Joe: Sust fish hatchery and practice for anging fish withinvolves populations into a lift bony of fin fish and other fish in 
+2410,0.6476,3.00e-04,0.07,1787565976.022974
+# [2026-08-24 06:06:28] SAMPLE step 2410:
+# 
+Joe: A fish can ike is a bait scraper is a natural ter filter that can be hi caused in an ls grow in itive ame fish like marine location. Asian fish marine fin
+2420,0.6385,3.00e-04,0.08,1787566109.2928112
+# [2026-08-24 06:08:41] SAMPLE step 2420:
+# 
+
+User: What is a fish scale?
+Joe: A fish scale is a device that uses Kctoral float spear ates per break underwater. It uses cregression to ar sficial grow and restoration re
+2430,0.6314,3.00e-04,0.08,1787566242.479792
+# [2026-08-24 06:10:54] SAMPLE step 2430:
+# 
+User: What is a fish nitrite levels in a tank?
+Joe: A fish shark can carry up ly. Ccontact, swim temperature or t underwater oxygen, and txin a specific ates. It uses 
+2440,0.5680,3.00e-04,0.08,1787566375.7066708
+# [2026-08-24 06:13:07] SAMPLE step 2440:
+# 
+Joe: Fish spawning substrate is the ger of material to the drations made to conservations.
+
+User: What is a fish stock?
+Joe: A fish flakes are or device to prefer fishing to
+2450,0.6111,3.00e-04,0.08,1787566509.0141618
+# [2026-08-24 06:15:21] SAMPLE step 2450:
+# 
+
+User: What is a fish terling?
+Joe: A fish recovery is a form impavailable that gs some fish threatens saudivers ancient of fish hed, considered stinginginging species to other 
+2460,0.6024,3.00e-04,0.07,1787566644.812333
+# [2026-08-24 06:17:37] SAMPLE step 2460:
+# 
+
+User: What is fish aggaffinger?
+Joe: A fish goldfish is a large large predatory predatit. An A opens is a small slenopon most fish spawning stock traals when it 
+2470,0.5834,3.00e-04,0.08,1787566778.0496202
+# [2026-08-24 06:19:50] SAMPLE step 2470:
+# 
+Joe: A fish lum is an artificial bait attached to a hook, glass exlift ed line from a set to protect salmon and temperature feel collectively nutrients, and removements.
+2480,0.6003,3.00e-04,0.08,1787566911.1175156
+# [2026-08-24 06:22:03] SAMPLE step 2480:
+# 
+User: What is a bettas fish?
+Joe: A catfish or measures used in underwater body, often reef or deposit built degrees. Fish live more more ire related gravels, parameter fages and mount
+2490,0.5820,3.00e-04,0.07,1787567044.4909174
+# [2026-08-24 06:24:16] SAMPLE step 2490:
+# 
+
+User: What is a fish territory?
+Joe: Fish territory is an fin freshwater fish Der species like second Males species redies are feed size se season, and electrofishing.
+
+User: 
+2500,0.5645,3.00e-04,0.08,1787567177.7535694
+# [2026-08-24 06:26:30] SAMPLE step 2500:
+# 
+
+User: What is a gentleful fishing?
+Joe: A lonloner fish, is a fing or disease uppies, and opport natural often copying mcreting a fish. Tpleas like Miranadult
+2510,0.6024,3.00e-04,0.07,1787567313.538183
+# [2026-08-24 06:28:45] SAMPLE step 2510:
+# 
+
+User: What is a shark?
+Joe: A shark is a case, case, called a cichlids seafood and is a rod peacefully ation. An market that is a freshly fish from the 
+2520,0.5748,3.00e-04,0.08,1787567446.7501543
+# [2026-08-24 06:30:59] SAMPLE step 2520:
+# 
+
+User: What is an analgae tank?
+Joe: An ananal ane ae is a large coldwater fish that moves small defly fers line off locations to before the specific roacase prey to
+2530,0.5778,3.00e-04,0.08,1787567579.9871018
+# [2026-08-24 06:33:12] SAMPLE step 2530:
+# 
+
+User: What is a fish territorial display?
+Joe: Fish territorial displays progravel provides attaches. Some fish need below migration 8 bacteria with different levels.
+
+User: What is a 
+2540,0.5364,3.00e-04,0.08,1787567713.184759
+# [2026-08-24 06:35:25] SAMPLE step 2540:
+# 
+Joe: The most onquar fish in the exact moke is moka. It is a group is of a fish ves scrape, its body based on size, are sushi.
+
+User: What is a fish s
+2550,0.5459,3.00e-04,0.08,1787567846.3707526
+# [2026-08-24 06:37:38] SAMPLE step 2550:
+# 
+Joe: A fish species is a area that s protects cosystems of fish teripoor water and other species like gills of gills. Many fish deruanglers are lefish hles to disease,
+2560,0.5515,3.00e-04,0.07,1787567982.1176398
+# [2026-08-24 06:39:54] SAMPLE step 2560:
+# 
+Joe: Cvey and chit nivanter, with let supp. Slipper fish they confis gent served with de-36 and wlly in IUV are an ent Recoral Extinct. are po
+2570,0.5384,3.00e-04,0.08,1787568115.276418
+# [2026-08-24 06:42:07] SAMPLE step 2570:
+# 
+Joe: Fish and wooden debris a robacteria eficial involves aquatic frooria plants, streamlifefully are small biological filter toxfish waste from aquarium filter, and h
+2580,0.5280,3.00e-04,0.08,1787568248.4984527
+# [2026-08-24 06:44:20] SAMPLE step 2580:
+# 
+
+User: What is a fly fish in Most pump, Spawning bchange?
+Joe: Sequipment, and ryoake also have among the largest of a ocean megs or death or water. Water symbious 
+2590,0.5362,3.00e-04,0.07,1787568385.2470605
+# [2026-08-24 06:46:37] SAMPLE step 2590:
+# 
+
+User: What is a fish passage works well?
+Joe: Fish adromous fish is Deep-frying overfish seafood agging through specificated techseafood species with ces. It is lowned fish has
+2600,0.5224,3.00e-04,0.07,1787568521.094433
+# [2026-08-24 06:48:54] SAMPLE step 2600:
+# 
+User: What is a fish territory?
+Joe: A fish territory is a raw fish marine seafood from human bass, pass ath, wildlife habitat or for eas.5 A parasites are ben
+2610,0.5446,3.00e-04,0.07,1787568661.178598
+# [2026-08-24 06:51:13] SAMPLE step 2610:
+# 
+
+User: What is a fish predator?
+Joe: A fish reel or electric device spawning is a device to swallow fish n to egg tiny egillable, and spawn. They have threats with
+2620,0.4946,3.00e-04,0.07,1787568794.8212397
+# [2026-08-24 06:53:27] SAMPLE step 2620:
+# 
+Joe: The maximum water have one invasive species of one the most utcommunorial fish with attachience 5, mass and strailand forms their will MarLeastic use gloand unique in the head 
+2630,0.5261,3.00e-04,0.07,1787568932.4692895
+# [2026-08-24 06:55:44] SAMPLE step 2630:
+# 
+Joe: Fish collagen is a commercial fish species with aquatic kayakes, s seasons, and using kept olphin an an reef fish fins, are copper-made of lunto 8 growth
+2640,0.5005,3.00e-04,0.07,1787569066.4582355
+# [2026-08-24 06:57:58] SAMPLE step 2640:
+# 
+Joe: The most cave fish is an range of a protective predatory of a small fish that usually a sharp experience means the sides of the female of the fish, proteins, and world, scale
+2650,0.4993,3.00e-04,0.08,1787569199.5096035
+# [2026-08-24 07:00:11] SAMPLE step 2650:
+# 
+Joe: The guppy is a small freshwater fish are known for their complex lers to are breeding posection of fish, and severeican ding.
+
+User: How do fish do eaten?
+Joe: Fish eat
+2660,0.4830,3.00e-04,0.07,1787569338.5329819
+# [2026-08-24 07:02:30] SAMPLE step 2660:
+# 
+User: What is a fish pond?
+Joe: A pond is a fish net or dragged through the water by the water from the brip water. The three softwism is artop aquarant fish like bag
+2670,0.4920,3.00e-04,0.07,1787569472.2078056
+# [2026-08-24 07:04:44] SAMPLE step 2670:
+# 
+
+User: What is schooling fish?
+Joe: GHor specific fish  involves cooking it in a flakes into a jurly and battering catch shallow water fish to hook. Dens berawildlife
+2680,0.5173,3.00e-04,0.07,1787569609.8805747
+# [2026-08-24 07:07:02] SAMPLE step 2680:
+# 
+User: What is a fish called sardinvolves alive preserving and replacing the ting dentic delia or wire rus allows to snap polelers which the fish and restrites, and 
+2690,0.4815,3.00e-04,0.07,1787569748.3011928
+# [2026-08-24 07:09:20] SAMPLE step 2690:
+# 
+
+User: What is a smoking cooking a sea checking fish keep when handlies, t t main in Fich naturally but are fresh fossil.
+
+User: What is a teeth s?
+Joe: A te
+2700,0.4802,3.00e-04,0.07,1787569883.6785865
+# [2026-08-24 07:11:36] SAMPLE step 2700:
+# 
+Joe: A clownfish is a marine fish that can burrowfer less floical in the group of morayed oil between the school.
+
+User: What is a sement. A searing is a large?
+
+2710,0.4581,3.00e-04,0.07,1787570019.614012
+# [2026-08-24 07:13:51] SAMPLE step 2710:
+# 
+Joe: Ducured , ornamental varies marer and cities widely with a species. Hied cic dish include large, typically Fish, teeth, and medicate aquatic are species used
+2720,0.4760,3.00e-04,0.08,1787570152.5946746
+# [2026-08-24 07:16:04] SAMPLE step 2720:
+# 
+User: What is the most seahatches?
+Joe: The Intehighly Inkineaquarium stocking is biomassessential for deprocess by wild-xree fish population aged to depth. It critment
+2730,0.4651,3.00e-04,0.07,1787570287.3071847
+# [2026-08-24 07:18:19] SAMPLE step 2730:
+# 
+User: What is a fish stocking law?
+Joe: Fish marroe marine species seatition. They are raked fish algae placed in an en al damages the mostly60 based for human 
+2740,0.4484,3.00e-04,0.07,1787570424.1074107
+# [2026-08-24 07:20:36] SAMPLE step 2740:
+# 
+
+User: What is a fish gig?
+Joe: Fish gig is the most steps of fish memory and prey from the fish and estimeshy, from through a fishing for worldwide.
+
+User: What is a
+2750,0.4483,3.00e-04,0.08,1787570557.3919616
+# [2026-08-24 07:22:49] SAMPLE step 2750:
+# 
+Joe: A gresto fish weigh stable or top to plants amples.
+
+User: What is a fish cundjava are?
+Joe: Fish lrozimics include word effectively redudes fish, ture ture tra
+2760,0.4359,3.00e-04,0.07,1787570693.6009827
+# [2026-08-24 07:25:06] SAMPLE step 2760:
+# 
+Joe: The most species by the Kinding Gigns of fish used in the source and record proper Glex mains cirstuents.
+
+User: What is a fish ternale ill ae hy, oldfish?
+Joe: 
+2770,0.4256,3.00e-04,0.07,1787570827.6851728
+# [2026-08-24 07:27:20] SAMPLE step 2770:
+# 
+Joe: A fish pole is a sumal net that coldwater spawning using an drag the main where fish in over their genter catch. They una can refilter feeders that cruise while cichli
+2780,0.4147,3.00e-04,0.07,1787570962.3169112
+# [2026-08-24 07:29:34] SAMPLE step 2780:
+# 
+
+User: What is gression rank?
+Joe: Fish aggression rank is the position of a fish in the social hierarchy based on raise to be buole dietggs. Ome helps the 
+2790,0.4340,3.00e-04,0.07,1787571097.8376396
+# [2026-08-24 07:31:50] SAMPLE step 2790:
+# 
+
+User: What is a fish territthe?
+Joe: Fish territory is an rel prariumant by copying catfish species with its mes and faces attract for mouth freshwater fish. Most mouth fish 
+2800,0.4268,3.00e-04,0.07,1787571236.4695146
+# [2026-08-24 07:34:10] SAMPLE step 2800:
+# 
+User: What is a fish reefs fish?
+Joe: Cclaner fish and speargun is part of the King crciumen probladder for rapid total grow to both fish cured and provide maintain 
+2810,0.4313,3.00e-04,0.07,1787571383.7448618
+# [2026-08-24 07:36:37] SAMPLE step 2810:
+# 
+User: What is a fish waterhead?
+Joe: A fish box is a electric breeding box of box inner contain the blot subsusagble breaks that prey. Cbuilt osmore into parasites, behavi
+2820,0.4420,3.00e-04,0.07,1787571526.0609608
+# [2026-08-24 07:38:58] SAMPLE step 2820:
+# 
+
+User: What is a fish tank?
+Joe: A fish tank aquarium is the mesh ishes that can easy while ranucournament fish sticks.
+
+User: What is a fish canfish include
+2830,0.4240,3.00e-04,0.07,1787571662.954682
+# [2026-08-24 07:41:15] SAMPLE step 2830:
+# 
+User: What is a swim bladder?
+Joe: A barweir is a electric device that uses an sonar to detect fish to a growth for a depth. It has locate pointed it by 
+2840,0.3995,3.00e-04,0.07,1787571798.3699014
+# [2026-08-24 07:43:30] SAMPLE step 2840:
+# 
+
+User: What is a fish antibiotic?
+Joe: Fish antibiotics are medications used to treat bacterial infections in aquarium fish. Common types include erythromycin, tetrac
+2850,0.4140,3.00e-04,0.07,1787571932.4144652
+# [2026-08-24 07:45:44] SAMPLE step 2850:
+# 
+User: What is a fish tuna?
+Joe: A fish gillnet is a le that dragged seine along the or topor  to catch fish. Boticiring trawild  provides plankton and natural 
+2860,0.4196,3.00e-04,0.07,1787572068.5729792
+# [2026-08-24 07:48:00] SAMPLE step 2860:
+# 
+User: What is a fish float?
+Joe: Fish swivel is a small, metal device that device true that procts pults a fish ge to 1,000 lla but helps species attract from the gators.
+2870,0.3818,3.00e-04,0.07,1787572202.6981776
+# [2026-08-24 07:50:15] SAMPLE step 2870:
+# 
+
+User: What is a fish reef tank?
+Joe: A fish reefing tank is a small saltwater aquarium that houses live along with fish. It requires prevent water currents and rivers for
+2880,0.3982,3.00e-04,0.08,1787572335.899265
+# [2026-08-24 07:52:28] SAMPLE step 2880:
+# 
+
+User: What is a troe?
+Joe: A fish ggs ity is a heavy event that collemal fish swivel in other ange chfish. The preservan like IUKed move of top fin This illions
+2890,0.3820,3.00e-04,0.07,1787572469.2818117
+# [2026-08-24 07:54:41] SAMPLE step 2890:
+# 
+
+User: What is a fish reef tank?
+Joe: A fish reef tank is a aquarium or aquarium that habitat that habitat an suammonia of that s you exes. Nom
+2900,0.3958,3.00e-04,0.07,1787572602.726831
+# [2026-08-24 07:56:55] SAMPLE step 2900:
+# 
+
+User: What is a fish substrate?
+Joe: Fish KH, or carbonate hardines. Fish speargunts, is rite and typically scales. Joe: Ducitrite ase, and cruise isine in seafood
+2910,0.3727,3.00e-04,0.07,1787572738.9526799
+# [2026-08-24 07:59:11] SAMPLE step 2910:
+# 
+
+User: What is a Sens method made of?
+Joe: The age protein include rack Skelets, Each partshily. and Cauction limities are fins, and region.
+
+User: What is is a fish simple
+2920,0.3687,3.00e-04,0.08,1787572872.0721502
+# [2026-08-24 08:01:24] SAMPLE step 2920:
+# 
+Joe: A fish roe, ike is an electric electric ecoat moves fish, egaquarium toxic fish can their mindinated not bowl or up to protect the ban rees. They some species 
+2930,0.3459,3.00e-04,0.08,1787573005.138
+# [2026-08-24 08:03:37] SAMPLE step 2930:
+# 
+Joe: A plang-finned fish are long marine eaten, and romous small small catfish.
+
+User: What is a small?
+Joe: South is a small freshwater fish known for the males flow proper flowing,
+2940,0.3812,3.00e-04,0.08,1787573138.1779463
+# [2026-08-24 08:05:50] SAMPLE step 2940:
+# 
+
+User: What is a fish conservation biomass?
+Joe: Fish genodisurvey is a fiestivey made of reef white fish, seagging rock or projects, genetic corually while natural, a
+2950,0.3603,3.00e-04,0.08,1787573271.1683424
+# [2026-08-24 08:08:03] SAMPLE step 2950:
+# 
+
+User: What is a fish adromous fish?
+Joe: The fish is a small freshwater fish in the fastest, flowing percent fish, reaching speeds over 6 feet forms and weights over 2 age. fins. 
+2960,0.3528,3.00e-04,0.07,1787573406.9988878
+# [2026-08-24 08:10:19] SAMPLE step 2960:
+# 
+User: What is a fish ine aeration?
+Joe: A fish a limit is a rectangular bloom, that can heits is the fish held genet ples when the fish set en based for wildlife 
+2970,0.3613,3.00e-04,0.08,1787573540.091371
+# [2026-08-24 08:12:32] SAMPLE step 2970:
+# 
+
+User: What is a fish d cured?
+Joe: A fish moked is a plankton that fish from a fish can specific creating best ess to a detect determ fish.
+
+User: What is a fish 
+2980,0.3558,3.00e-04,0.08,1787573673.1712563
+# [2026-08-24 08:14:45] SAMPLE step 2980:
+# 
+Joe: A fish fine is an artificial baquarium extract quom Uhi and protected fli, automure to proper protection.
+
+User: What is a fish habitat practice?
+Joe: quality
+2990,0.3524,3.00e-04,0.08,1787573806.403653
+# [2026-08-24 08:16:58] SAMPLE step 2990:
+# 
+
+User: What is a fish license?
+Joe: A fish license, also called a fishing license is aan fish icense tomate container small water tectroll to jor darkerly. The white seet
+3000,0.3583,3.00e-04,0.07,1787573940.1427367
+# [2026-08-24 08:19:12] SAMPLE step 3000:
+# 
+User: What is a fish aeration?
+Joe: A fish is a held where the batter mimicus the fish proper lighting from alement, prefes and carry a line feeding color,000 solved smaller through

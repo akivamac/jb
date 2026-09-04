@@ -1,0 +1,654 @@
+# [2026-08-27 23:50:39] START: training/train_expert.py --name coding --steps 5000 --lr 0.0003 --batch 8 --seq_len 128 --save 200 --log 50 --sample 50
+# step,loss,lr,steps_per_sec,timestamp
+50,0.0390,1.50e-04,0.33,1787889192.5372484
+# [2026-08-27 23:53:15] SAMPLE step 50:
+# 
+User: what is a float
+Joe: A float is a number with a decimal point, like 3.14 or -0.5.
+User: what is a boolean
+Joe: A boolean is either True or F
+100,0.0390,3.00e-04,0.32,1787889348.5661201
+# [2026-08-27 23:55:51] SAMPLE step 100:
+# 
+User: what is a dictionary
+Joe: A dictionary stores key-value pairs. You create it with curly braces like {"name": "Joe", "age": 1}.
+User: what is a tuple
+150,0.0398,3.00e-04,0.32,1787889504.8012192
+# [2026-08-27 23:58:27] SAMPLE step 150:
+# 
+User: what is version control
+Joe: Version control tracks changes to code over time. Git is the most popular version control system.
+
+User: what is a commit
+Joe: A commit is a snapshot of your 
+200,0.0427,3.00e-04,0.32,1787889660.9750946
+# [2026-08-28 00:01:04] SAMPLE step 200:
+# 
+User: what is an object
+Joe: An object is an instance of a class. It has data (attributes) and behavior (methods).
+User: what is inheritance
+Joe: Inheritance lets a new class
+250,0.0449,3.00e-04,0.32,1787889818.0078003
+# [2026-08-28 00:03:41] SAMPLE step 250:
+# 
+Joe: Dynamic programming solves complex problems by breaking them into overlapping subproblems and storing results.
+User: what is a closure
+Joe: A closure is a function that remembers the 
+300,0.0453,2.99e-04,0.32,1787889974.6270244
+# [2026-08-28 00:06:17] SAMPLE step 300:
+# 
+Joe: A generator is a function that yields values one at a time using the yield keyword, saving memory for large sequences.
+User: what is a lambda
+Joe: A lambda is
+350,0.0395,2.99e-04,0.32,1787890131.2070537
+# [2026-08-28 00:08:54] SAMPLE step 350:
+# 
+User: what is binary tree
+Joe: A binary tree is a data structure where each node has at most two children, called left and right.
+User: what is a graph
+Joe: A graph is a data 
+400,0.0406,2.98e-04,0.32,1787890287.7125156
+# [2026-08-28 00:11:30] SAMPLE step 400:
+# 
+User: what is an API
+Joe: An API is a set of rules that lets different software programs communicate with each other.
+User: what is HTTP
+Joe: HTTP is the protocol used for transferring 
+450,0.0397,2.97e-04,0.32,1787890444.5275712
+# [2026-08-28 00:14:07] SAMPLE step 450:
+# 
+Joe: A function is a reusable block of code that performs a specific task. You define it with def and call it by name.
+User: what is a loop
+Joe: A loop repeats a block of 
+500,0.0411,2.97e-04,0.32,1787890600.7011373
+# [2026-08-28 00:16:43] SAMPLE step 500:
+# 
+Joe: A pull request is a request to merge changes from one branch into another, usually for code review.
+User: what is open source
+Joe: Open source means software whose code is freely available
+550,0.0402,2.96e-04,0.32,1787890756.8853135
+# [2026-08-28 00:19:20] SAMPLE step 550:
+# 
+User: what is a code smell
+Joe: A code smell is a sign that code has a deeper problem, like being too long, too complex, or duplicated.
+User: what is clean code
+Joe: 
+600,0.0393,2.95e-04,0.32,1787890913.1805267
+# [2026-08-28 00:21:56] SAMPLE step 600:
+# 
+User: what is memory management
+Joe: Memory management is how a program allocates and frees memory. Python does this automatically with garbage collection.
+User: what is a framework
+Joe: A fra
+650,0.0394,2.94e-04,0.32,1787891069.9015253
+# [2026-08-28 00:24:33] SAMPLE step 650:
+# 
+User: what is a stack
+Joe: A stack is a last-in-first-out data structure. You push items on top and pop them off the top.
+User: what is a queue
+Joe: A queue is a 
+700,0.0396,2.93e-04,0.32,1787891226.0484998
+# [2026-08-28 00:27:09] SAMPLE step 700:
+# 
+User: what is a loop
+Joe: A loop repeats a block of code. Python has for loops for iterating and while loops for condition-based repetition.
+User: what is an if statement
+Joe: An if 
+750,0.0406,2.91e-04,0.32,1787891382.3127024
+# [2026-08-28 00:29:45] SAMPLE step 750:
+# 
+Joe: A bug is an error in code that makes a program behave incorrectly or crash.
+User: what is syntax
+Joe: Syntax is the set of rules that defines how Python code must be
+800,0.0400,2.90e-04,0.32,1787891538.5408528
+# [2026-08-28 00:32:21] SAMPLE step 800:
+# 
+User: what is a merge
+Joe: A merge combines changes from different branches into one. It can create conflicts if the same lines were changed.
+User: what is a pull request
+Joe: A pull 
+850,0.0404,2.89e-04,0.32,1787891695.4291477
+# [2026-08-28 00:34:58] SAMPLE step 850:
+# 
+User: what is an algorithm
+Joe: An algorithm is a step-by-step procedure to solve a problem or accomplish a task.
+User: what is a data structure
+Joe: A data structure
+900,0.0418,2.87e-04,0.32,1787891851.7052124
+# [2026-08-28 00:37:34] SAMPLE step 900:
+# 
+User: what is a queue
+Joe: A queue is a first-in-first-out data structure. Items are added at the back and removed from the front.
+User: what is a linked list
+Joe:
+950,0.0465,2.86e-04,0.32,1787892008.0678127
+# [2026-08-28 00:40:11] SAMPLE step 950:
+# 
+User: what is a string
+Joe: A string is a sequence of characters. You create it with quotes like "hello" or 'hello'.
+User: what is an integer
+Joe: An integer is a 
+1000,0.0440,2.84e-04,0.32,1787892164.4137416
+# [2026-08-28 00:42:47] SAMPLE step 1000:
+# 
+User: what is an interpreter
+Joe: An interpreter reads and executes code line by line. Python is interpreted, which makes it flexible but slower.
+User: what is a pointer
+Joe: A pointer 
+1050,0.0428,2.82e-04,0.32,1787892321.6426375
+# [2026-08-28 00:45:24] SAMPLE step 1050:
+# 
+Joe: SQL is a language for managing data in relational databases. You use SELECT, INSERT, UPDATE, and DELETE statements.
+User: what is a REST 
+1100,0.0428,2.80e-04,0.32,1787892477.781749
+# [2026-08-28 00:48:00] SAMPLE step 1100:
+# 
+Joe: A queue is a first-in-first-out data structure. Items are added at the back and removed from the front.
+User: what is a linked list
+Joe: A linked list is a
+1150,0.0414,2.78e-04,0.32,1787892633.907899
+# [2026-08-28 00:50:37] SAMPLE step 1150:
+# 
+Joe: A callback is a function passed as an argument to another function, functions, to be called later when an argument to another function, function to be called later when an event occurs.
+User: wh
+1200,0.0433,2.76e-04,0.32,1787892790.0383852
+# [2026-08-28 00:53:13] SAMPLE step 1200:
+# 
+Joe: A parameter is a variable in a function definition that receives a value when the function is called.
+User: what is an argument
+Joe: An argument is the actual value you pass to a function
+1250,0.0403,2.74e-04,0.32,1787892947.0396051
+# [2026-08-28 00:55:50] SAMPLE step 1250:
+# 
+User: what is a binary tree
+Joe: A binary tree is a data structure where each node has at most two children, called left and right.
+User: what is a graph
+Joe: A graph is a 
+1300,0.0401,2.72e-04,0.32,1787893103.728094
+# [2026-08-28 00:58:26] SAMPLE step 1300:
+# 
+Joe: A REST API uses HTTP methods to perform operations on resources identified by URLs. It is stateless.
+User: what is authentication
+Joe: Authentication is verifying 
+1350,0.0401,2.70e-04,0.32,1787893260.027192
+# [2026-08-28 01:01:03] SAMPLE step 1350:
+# 
+Joe: An interface is a contract that defines what methods a class must have. Python uses abstract base classes for this.
+User: what is encapsulation
+Joe: Encapsulation hides internal detail
+1400,0.0410,2.67e-04,0.32,1787893416.2284026
+# [2026-08-28 01:03:39] SAMPLE step 1400:
+# 
+User: what is a closure
+Joe: A closure is a function that remembers the variables from its outer scope even after the outer function has finished.
+User: what is a callback
+Joe: A callback
+1450,0.0411,2.65e-04,0.32,1787893573.3970068
+# [2026-08-28 01:06:16] SAMPLE step 1450:
+# 
+Joe: A callback is a function passed as an argument to another function, to be called later when an event occurs.
+User: what is an event loop
+Joe: An event loop handles asynchronous operations 
+1500,0.0399,2.62e-04,0.32,1787893729.4791296
+# [2026-08-28 01:08:52] SAMPLE step 1500:
+# 
+User: what is a merge
+Joe: A merge combines changes from different branches into one. It can create conflicts if the same lines were changed.
+User: what is a pull request
+Joe: A pull 
+1550,0.0397,2.60e-04,0.32,1787893885.8711152
+# [2026-08-28 01:11:29] SAMPLE step 1550:
+# 
+User: what is a compiler
+Joe: A compiler translates entire source code into machine code before running it. C and Rust use compilers.
+User: what is an interpreter
+Joe: An interpreter reads and ex
+1600,0.0405,2.57e-04,0.32,1787894041.9971538
+# [2026-08-28 01:14:05] SAMPLE step 1600:
+# 
+Joe: A function is a reusable block of code that performs a specific task. You define it with def and call it by name.
+User: what is a loop
+Joe: A loop repeats a block of 
+1650,0.0406,2.55e-04,0.32,1787894199.191665
+# [2026-08-28 01:16:42] SAMPLE step 1650:
+# 
+User: what is a file handle
+Joe: A file handle is a connection to a file opened with open(). It lets you read from or write to the file.
+User: what is JSON
+Joe: JSON is 
+1700,0.0382,2.52e-04,0.32,1787894355.6771953
+# [2026-08-28 01:19:18] SAMPLE step 1700:
+# 
+Joe: Multithreading runs multiple threads concurrently within a single process, sharing the same memory.
+User: what is concurrency
+Joe: Concurrency is handling multiple tasks at once. They may not ru
+1750,0.0383,2.49e-04,0.32,1787894512.0845187
+# [2026-08-28 01:21:55] SAMPLE step 1750:
+# 
+Joe: A return value is what a function sends back when it finishes. Use the return keyword to specify it.
+User: what is a parameter
+Joe: A parameter is a variable in a function definition that
+1800,0.0378,2.46e-04,0.32,1787894668.1230943
+# [2026-08-28 01:24:31] SAMPLE step 1800:
+# 
+User: what is a module
+Joe: A module is a file containing Python code that you can import and reuse in other programs.
+User: what is an import
+Joe: An import brings code from a modu
+1850,0.0361,2.43e-04,0.32,1787894824.9047744
+# [2026-08-28 01:27:08] SAMPLE step 1850:
+# 
+Joe: A merge combines changes from different branches into one. It can create conflicts if the same lines were changed.
+User: what is a pull request
+Joe: A pull request is a request to mer
+1900,0.0379,2.40e-04,0.32,1787894981.1247828
+# [2026-08-28 01:29:44] SAMPLE step 1900:
+# 
+Joe: A data structure is a way to organize and store data. Examples include lists, dictionaries, and sets.
+User: what is a stack
+Joe: A stack is a last-in-first-out data struct
+1950,0.0370,2.38e-04,0.32,1787895137.3698156
+# [2026-08-28 01:32:20] SAMPLE step 1950:
+# 
+Joe: A decorator is a function that wraps another function to extend its behavior without modifying it. Use @ syntax.
+User: what is a generator
+Joe: A generator is a function that yi
+2000,0.0380,2.35e-04,0.32,1787895293.6861796
+# [2026-08-28 01:34:56] SAMPLE step 2000:
+# 
+Joe: A module is a file containing Python code that you can import and reuse in other programs.
+User: what is an import
+Joe: An import brings code from a module into your current program so 
+2050,0.0372,2.32e-04,0.32,1787895450.4604087
+# [2026-08-28 01:37:33] SAMPLE step 2050:
+# 
+User: what is a database
+Joe: A database is an organized collection of stored information. SQL databases use tables, NoSQL uses various formats.
+User: what is SQL
+Joe: SQL is a language for 
+2100,0.0376,2.28e-04,0.32,1787895606.648119
+# [2026-08-28 01:40:09] SAMPLE step 2100:
+# 
+Joe: Concurrency is handling multiple tasks at once. They may not run simultaneously but take turns efficiently.
+User: what is parallelism
+Joe: Parallelism is running multiple tasks
+2150,0.0379,2.25e-04,0.32,1787895762.836914
+# [2026-08-28 01:42:45] SAMPLE step 2150:
+# 
+User: what is a dictionary
+Joe: A dictionary stores key-value pairs. You create it with curly braces like {"name": "Joe", "age": 1}.
+User: what is a tuple
+2200,0.0376,2.22e-04,0.32,1787895919.3217566
+# [2026-08-28 01:45:22] SAMPLE step 2200:
+# 
+User: what is a boolean
+Joe: A boolean is either True or False. It is used for conditions and logical operations.
+User: what is a dictionary
+Joe: A diction
+2250,0.0371,2.19e-04,0.32,1787896076.2282019
+# [2026-08-28 01:47:59] SAMPLE step 2250:
+# 
+User: what is a abstract class
+Joe: An abstract class cannot be instantiated directly. It defines a template that subclasses must implement.
+User: what is an interface
+Joe: An interface is a
+2300,0.0375,2.16e-04,0.32,1787896232.446397
+# [2026-08-28 01:50:35] SAMPLE step 2300:
+# 
+User: what is a stack
+Joe: A stack is a last-in-first-out data structure. You push items on top and pop them off the top.
+User: what is a queue
+Joe: A queue is a 
+2350,0.0391,2.13e-04,0.32,1787896388.784892
+# [2026-08-28 01:53:11] SAMPLE step 2350:
+# 
+User: what is a dictionary
+Joe: A dictionary stores key-value pairs. You create it with curly braces like {"name": "Joe", "age": 1}.
+User: what is a tuple
+2400,0.0397,2.10e-04,0.32,1787896544.988597
+# [2026-08-28 01:55:48] SAMPLE step 2400:
+# 
+Joe: A lambda is an anonymous small function defined with lambda keyword. Good for simple one-line operations.
+User: what is a list comprehension
+Joe: A list comprehension 
+2450,0.0380,2.06e-04,0.32,1787896701.9624257
+# [2026-08-28 01:58:25] SAMPLE step 2450:
+# 
+User: what is object oriented programming
+Joe: Object oriented programming organizes code around objects that bundle data and behavior together.
+User: what is a constructor
+Joe: A constructor creates
+2500,0.0380,2.03e-04,0.32,1787896858.2143934
+# [2026-08-28 02:01:01] SAMPLE step 2500:
+# 
+User: what is concurrency
+Joe: Concurrency is handling multiple tasks at once. They may not run simultaneously but take turns efficiently.
+User: what is parallelism
+Joe: Parallelism 
+2550,0.0360,2.00e-04,0.32,1787897014.5666268
+# [2026-08-28 02:03:37] SAMPLE step 2550:
+# 
+User: what is unit testing
+Joe: Unit testing checks individual pieces of code work correctly. You write test functions that verify expected behavior.
+User: what is refactoring
+Joe: Refactoring
+2600,0.0362,1.97e-04,0.32,1787897170.800749
+# [2026-08-28 02:06:13] SAMPLE step 2600:
+# 
+Joe: A static method is a function inside a class that does not receive any implicit first argument like self or cls.
+User: what is an abstract class
+Joe: An abstract class cannot be 
+2650,0.0372,1.94e-04,0.32,1787897327.4888425
+# [2026-08-28 02:08:50] SAMPLE step 2650:
+# 
+User: what is polymorphism
+Joe: Polymorphism lets different objects respond to the same method call in their own way.
+User: what is a decorator
+Joe: A decorator is a function that wraps 
+2700,0.0384,1.90e-04,0.32,1787897483.4982152
+# [2026-08-28 02:11:26] SAMPLE step 2700:
+# 
+User: what is a list
+Joe: A list is an ordered collection of items in Python. You create it with square brackets like [1, 2, 3].
+User: what is a string
+Joe: A string is 
+2750,0.0400,1.87e-04,0.32,1787897639.7357848
+# [2026-08-28 02:14:02] SAMPLE step 2750:
+# 
+Joe: A binary tree is a data structure where each node has at most two children, called left and right.
+User: what is a graph
+Joe: A graph is a data structure with nodes connect
+2800,0.0383,1.84e-04,0.32,1787897796.0105445
+# [2026-08-28 02:16:39] SAMPLE step 2800:
+# 
+User: what is a pointer
+Joe: A pointer is a variable that stores the memory address of another variable. Used in C and C++.
+User: what is memory management
+Joe: Memory management is
+2850,0.0378,1.81e-04,0.32,1787897952.7414012
+# [2026-08-28 02:19:15] SAMPLE step 2850:
+# 
+Joe: A REST API uses HTTP methods to perform operations on resources identified by URLs. It is stateless.
+User: what is authentication
+Joe: Authentication is verifying 
+2900,0.0392,1.78e-04,0.32,1787898109.0884864
+# [2026-08-28 02:21:52] SAMPLE step 2900:
+# 
+Joe: A code smell is a sign that code has a deeper problem, like being too long, too complex, or duplicated.
+User: what is clean code
+Joe: Clean code is easy to read
+2950,0.0362,1.75e-04,0.32,1787898265.4163349
+# [2026-08-28 02:24:28] SAMPLE step 2950:
+# 
+User: what is recursion
+Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller pieces.
+User: what is a module
+Joe: A module is a file 
+3000,0.0387,1.72e-04,0.32,1787898421.710104
+# [2026-08-28 02:27:04] SAMPLE step 3000:
+# 
+User: what is a module
+Joe: A module is a file containing Python code that you can import and reuse in other programs.
+User: what is an import
+Joe: An import brings code from a modu
+3050,0.0383,1.68e-04,0.32,1787898578.796417
+# [2026-08-28 02:29:41] SAMPLE step 3050:
+# 
+User: what is an object
+Joe: An object is an instance of a class. It has data (attributes) and behavior (methods).
+User: what is inheritance
+Joe: Inheritance lets a new class
+3100,0.0390,1.65e-04,0.32,1787898734.9354858
+# [2026-08-28 02:32:18] SAMPLE step 3100:
+# 
+User: what is inheritance
+Joe: Inheritance lets a new class reuse code from an existing class. The child class gets all the parent's methods and attributes.
+User: what is a return value
+3150,0.0381,1.62e-04,0.32,1787898891.2952418
+# [2026-08-28 02:34:54] SAMPLE step 3150:
+# 
+Joe: An import brings code from a module into your current program so you can use its functions and classes.
+User: what is a comment
+Joe: A comment is a note in your code that Python 
+3200,0.0379,1.60e-04,0.32,1787899047.3394468
+# [2026-08-28 02:37:30] SAMPLE step 3200:
+# 
+User: what is a closure
+Joe: A closure is a function that remembers the variables from its outer scope even after the outer function has finished.
+User: what is a callback
+Joe: A callback
+3250,0.0372,1.57e-04,0.32,1787899204.2871025
+# [2026-08-28 02:40:07] SAMPLE step 3250:
+# 
+User: what is binary search
+Joe: Binary search finds an item in a sorted list by repeatedly dividing the search interval in half. Very fast.
+User: what is a hash map
+Joe: A
+3300,0.0359,1.54e-04,0.32,1787899360.7321928
+# [2026-08-28 02:42:43] SAMPLE step 3300:
+# 
+User: what is code review
+Joe: Code review is when other developers examine your code for errors, improvements, and best practices before merging.
+User: what is a code smell
+Joe: 
+3350,0.0365,1.51e-04,0.32,1787899517.105672
+# [2026-08-28 02:45:20] SAMPLE step 3350:
+# 
+User: what is depth first search
+Joe: Depth first search explores a graph by going as deep as possible along each branch before backtracking.
+User: what is breadth first search
+Joe: Breadth first sea
+3400,0.0377,1.48e-04,0.32,1787899673.3743622
+# [2026-08-28 02:47:56] SAMPLE step 3400:
+# 
+User: what is a pointer
+Joe: A pointer is a variable that stores the memory address of another variable. Used in C and C++.
+User: what is memory management
+Joe: Memory management is
+3450,0.0371,1.45e-04,0.32,1787899830.2558866
+# [2026-08-28 02:50:33] SAMPLE step 3450:
+# 
+User: what is an event loop
+Joe: An event loop handles asynchronous operations by checking for completed tasks and running their callbacks.
+User: what is multithreading
+Joe: Multithreading runs multi
+3500,0.0379,1.43e-04,0.32,1787899986.6709476
+# [2026-08-28 02:53:09] SAMPLE step 3500:
+# 
+User: what is a queue
+Joe: A queue is a first-in-first-out data structure. Items are added at the back and removed from the front.
+User: what is a linked list
+Joe:
+3550,0.0370,1.40e-04,0.32,1787900142.9801748
+# [2026-08-28 02:55:46] SAMPLE step 3550:
+# 
+User: what is a tuple
+Joe: A tuple is an ordered immutable collection. You create it with parentheses like (1, 2, 3).
+User: what is a class
+Joe: A class is a bluep
+3600,0.0363,1.38e-04,0.32,1787900299.3637872
+# [2026-08-28 02:58:22] SAMPLE step 3600:
+# 
+Joe: A variable is a named container that stores a value. In Python you write x = 5 to create one.
+User: what is a function
+Joe: A function is a reusable block of code that performs 
+3650,0.0376,1.35e-04,0.32,1787900456.5611556
+# [2026-08-28 03:00:59] SAMPLE step 3650:
+# 
+User: what is a function
+Joe: A function is a reusable block of code that performs a specific task. You define it with def and call it by name.
+User: what is a loop
+Joe: A loop
+3700,0.0379,1.33e-04,0.32,1787900612.7319803
+# [2026-08-28 03:03:35] SAMPLE step 3700:
+# 
+Joe: Refactoring improves code structure without changing its behavior. It makes code cleaner and easier to maintain.
+User: what is code review
+Joe: Code review is when other developers
+3750,0.0365,1.30e-04,0.32,1787900768.9563186
+# [2026-08-28 03:06:12] SAMPLE step 3750:
+# 
+Joe: A function is a reusable block of code that performs a specific task. You define it with def and call it by name.
+User: what is a loop
+Joe: A loop repeats a block of 
+3800,0.0362,1.28e-04,0.32,1787900925.213765
+# [2026-08-28 03:08:48] SAMPLE step 3800:
+# 
+User: what is a compiler
+Joe: A compiler translates entire source code into machine code before running it. C and Rust use compilers.
+User: what is an interpreter
+Joe: An interpreter reads and ex
+3850,0.0364,1.26e-04,0.32,1787901082.2612603
+# [2026-08-28 03:11:25] SAMPLE step 3850:
+# 
+Joe: An interpreter reads and executes code line by line. Python is interpreted, which makes it flexible but slower.
+User: what is a pointer
+Joe: A pointer is a variable that stores the
+3900,0.0349,1.24e-04,0.32,1787901238.4129574
+# [2026-08-28 03:14:01] SAMPLE step 3900:
+# 
+Joe: A pointer is a variable that stores the memory address of another variable. Used in C and C++.
+User: what is memory management
+Joe: Memory management is how a program allocates
+3950,0.0367,1.22e-04,0.32,1787901394.5285966
+# [2026-08-28 03:16:37] SAMPLE step 3950:
+# 
+Joe: An API is a set of rules that lets different software programs communicate with each other.
+User: what is HTTP
+Joe: HTTP is the protocol used for transferring data over the web. Com
+4000,0.0346,1.20e-04,0.32,1787901550.8500202
+# [2026-08-28 03:19:13] SAMPLE step 4000:
+# 
+Joe: An import brings code from a module into your current program so you can use its functions and classes.
+User: what is a comment
+Joe: A comment is a note in your code that Python 
+4050,0.0358,1.18e-04,0.32,1787901707.7440183
+# [2026-08-28 03:21:50] SAMPLE step 4050:
+# 
+User: what is an event loop
+Joe: An event loop handles asynchronous operations by checking for completed tasks and running their callbacks.
+User: what is multithreading
+Joe: Multithreading runs multi
+4100,0.0374,1.16e-04,0.32,1787901863.8607945
+# [2026-08-28 03:24:27] SAMPLE step 4100:
+# 
+Joe: JSON is a lightweight data format using key-value pairs. It is widely used for data exchange between programs.
+User: what is an API
+Joe: An API is a set of rules that lets different 
+4150,0.0358,1.14e-04,0.32,1787902020.0486672
+# [2026-08-28 03:27:03] SAMPLE step 4150:
+# 
+User: what is a database
+Joe: A database is an organized collection of stored information. SQL databases use tables, NoSQL uses various formats.
+User: what is SQL
+Joe: SQL is a language for 
+4200,0.0373,1.13e-04,0.32,1787902176.1192257
+# [2026-08-28 03:29:39] SAMPLE step 4200:
+# 
+Joe: A generator is a function that yields values one at a time using the yield keyword, saving memory for large sequences.
+User: what is a lambda
+Joe: A lambda is
+4250,0.0376,1.11e-04,0.32,1787902332.8882012
+# [2026-08-28 03:32:16] SAMPLE step 4250:
+# 
+Joe: Object oriented programming organizes code around objects that bundle data and behavior together.
+User: what is a constructor
+Joe: A constructor creates a new object. In Python, __new__ 
+4300,0.0363,1.10e-04,0.32,1787902489.0545144
+# [2026-08-28 03:34:52] SAMPLE step 4300:
+# 
+User: what is a queue
+Joe: A queue is a first-in-first-out data structure. Items are added at the back and removed from the front.
+User: what is a linked list
+Joe:
+4350,0.0374,1.09e-04,0.32,1787902645.1841185
+# [2026-08-28 03:37:28] SAMPLE step 4350:
+# 
+User: what is an object
+Joe: An object is an instance of a class. It has data (attributes) and behavior (methods).
+User: what is inheritance
+Joe: Inheritance lets a new class
+4400,0.0361,1.07e-04,0.32,1787902801.437809
+# [2026-08-28 03:40:04] SAMPLE step 4400:
+# 
+Joe: An algorithm is a step-by-step procedure to solve a problem or accomplish a task.
+User: what is a data structure
+Joe: A data structure is a way to organize and
+4450,0.0353,1.06e-04,0.32,1787902958.2097554
+# [2026-08-28 03:42:41] SAMPLE step 4450:
+# 
+Joe: A framework provides a structured foundation with built-in conventions, unlike a library you call yourself. Examples: Django, Flask, React.
+User: what is unit testing
+Joe: 
+4500,0.0370,1.05e-04,0.32,1787903114.3803976
+# [2026-08-28 03:45:17] SAMPLE step 4500:
+# 
+User: what is a static method
+Joe: A static method is a function inside a class that does not receive any implicit first argument like self or cls.
+User: what is an abstract class
+Joe:
+4550,0.0372,1.04e-04,0.32,1787903270.6770885
+# [2026-08-28 03:47:53] SAMPLE step 4550:
+# 
+Joe: A function is a reusable block of code that performs a specific task. You define it with def and call it by name.
+User: what is a loop
+Joe: A loop repeats a block of 
+4600,0.0349,1.03e-04,0.32,1787903426.9191144
+# [2026-08-28 03:50:30] SAMPLE step 4600:
+# 
+Joe: Memory management is how a program allocates and frees memory. Python does this automatically with garbage collection.
+User: what is a framework
+Joe: A framework provides a structured 
+4650,0.0361,1.03e-04,0.32,1787903583.7808402
+# [2026-08-28 03:53:06] SAMPLE step 4650:
+# 
+User: what is refactoring
+Joe: Refactoring improves code structure without changing its behavior. It makes code cleaner and easier to maintain.
+User: what is code review
+Joe: Code revi
+4700,0.0343,1.02e-04,0.32,1787903739.9315054
+# [2026-08-28 03:55:43] SAMPLE step 4700:
+# 
+Joe: A lambda is an anonymous small function defined with lambda keyword. Good for simple one-line operations.
+User: what is a list comprehension
+Joe: A list comprehension 
+4750,0.0361,1.01e-04,0.32,1787903896.0741215
+# [2026-08-28 03:58:19] SAMPLE step 4750:
+# 
+User: what is a constructor
+Joe: A constructor creates a new object. In Python, __new__ creates it and __init__ initializes it.
+User: what is a method
+Joe: A method is a function
+4800,0.0356,1.01e-04,0.32,1787904052.4417183
+# [2026-08-28 04:00:55] SAMPLE step 4800:
+# 
+User: what is a linked list
+Joe: A linked list is a data structure where each element points to the next one, unlike an array which stores elements contiguously.
+User: what is binary 
+4850,0.0381,1.00e-04,0.32,1787904209.4220195
+# [2026-08-28 04:03:32] SAMPLE step 4850:
+# 
+User: what is a commit
+Joe: A commit is a snapshot of your code at a point in time. It has a message describing what changed.
+User: what is a branch
+Joe: A branch is a
+4900,0.0352,1.00e-04,0.32,1787904365.5501325
+# [2026-08-28 04:06:08] SAMPLE step 4900:
+# 
+User: what is a pointer
+Joe: A pointer is a variable that stores the memory address of another variable. Used in C and C++.
+User: what is memory management
+Joe: Memory management is
+4950,0.0369,1.00e-04,0.32,1787904521.8058655
+# [2026-08-28 04:08:44] SAMPLE step 4950:
+# 
+User: what is an API
+Joe: An API is a set of rules that lets different software programs communicate with each other.
+User: what is HTTP
+Joe: HTTP is the protocol used for transferring 
+5000,0.0370,1.00e-04,0.32,1787904678.1854494
+# [2026-08-28 04:11:21] SAMPLE step 5000:
+# 
+Joe: Code review is when other developers examine your code for errors, improvements, and best practices before merging.
+User: what is a code smell
+Joe: A code smell is a 

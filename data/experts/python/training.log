@@ -1,0 +1,557 @@
+# [2026-08-26 23:10:11] START: training/train_expert.py --name python --steps 5000 --lr 0.0003 --batch 8 --seq_len 128 --save 200 --log 50 --sample 50
+# step,loss,lr,steps_per_sec,timestamp
+50,0.0239,1.50e-04,0.13,1787800584.3319085
+# [2026-08-26 23:16:27] SAMPLE step 50:
+# 
+User: What is a module in Python?
+Joe: A module is a single .py file containing functions, classes, and variables that you import with import math or from math import sqrt to reuse 
+100,0.0268,3.00e-04,0.13,1787800959.13988
+# [2026-08-26 23:22:42] SAMPLE step 100:
+# 
+User: What is a string format in Python?
+Joe: f-strings are the preferred way to format strings like f"Hello {name}, you are {age} years old", replacing the older 
+150,0.0363,3.00e-04,0.13,1787801333.8518612
+# [2026-08-26 23:28:56] SAMPLE step 150:
+# 
+
+User: What is a for loop in Python?
+Joe: A for loop iterates over a sequence like for i in range(5): print(i), or for item in my_list: print(item), execut
+200,0.0332,3.00e-04,0.13,1787801706.578272
+# [2026-08-26 23:35:09] SAMPLE step 200:
+# 
+User: What is a set in Python?
+Joe: A set is an unordered collection of unique elements defined with curly braces like {1, 2, 3} or set([1, 2, 2, 3]) which removes
+250,0.0278,3.00e-04,0.13,1787802081.8868206
+# [2026-08-26 23:41:25] SAMPLE step 250:
+# 
+
+User: What is the re module in Python?
+Joe: The re module provides regular expression operations like re.search(pattern, text) to find matches, re.sub() to replace patterns, and re.findall
+300,0.0278,2.99e-04,0.13,1787802457.2997594
+# [2026-08-26 23:47:40] SAMPLE step 300:
+# 
+Joe: A tuple is an ordered immutable collection defined with parentheses like (1, 2, 3), commonly used for fixed data and as dictionary keys since they are hashable.
+
+User: What
+350,0.0283,2.99e-04,0.13,1787802833.4449499
+# [2026-08-26 23:53:56] SAMPLE step 350:
+# 
+Joe: Iterate directly over the file object like with open("f.txt") as f: for line in f: print(line.strip()), which is memory efficient for large files.
+
+User: How do 
+400,0.0298,2.98e-04,0.13,1787803207.7371914
+# [2026-08-27 00:00:10] SAMPLE step 400:
+# 
+User: What is the __name__ variable in Python?
+Joe: __name__ is a special variable that equals "__main__" when a script is run directly, allowing you to write if __name__ == "__main__
+450,0.0294,2.97e-04,0.13,1787803584.620645
+# [2026-08-27 00:06:27] SAMPLE step 450:
+# 
+User: What is a class method in Python?
+Joe: A class method is defined with @classmethod and receives the class itself as the first argument (usually called cls), useful for factory methods like 
+500,0.0299,2.97e-04,0.13,1787803959.2464077
+# [2026-08-27 00:12:42] SAMPLE step 500:
+# 
+
+User: What is the math module in Python?
+Joe: The math module provides mathematical functions like math.sqrt() for square root, math.floor() and math.ceil() for rounding, math.
+550,0.0275,2.96e-04,0.13,1787804333.4167671
+# [2026-08-27 00:18:56] SAMPLE step 550:
+# 
+Joe: __init__ is the constructor method called automatically when creating a new instance of a class, used to initialize attributes like def __init__(self, name): self.name = name.
+
+600,0.0266,2.95e-04,0.13,1787804705.4989161
+# [2026-08-27 00:25:08] SAMPLE step 600:
+# 
+Joe: A list is mutable so you can add, remove, and change elements, while a tuple is immutable after creation and is faster with lower memory usage.
+
+User: What is unpacking in Python
+650,0.0272,2.94e-04,0.13,1787805081.8319297
+# [2026-08-27 00:31:25] SAMPLE step 650:
+# 
+User: What is a decorator in Python?
+Joe: A decorator is a function that wraps another function to extend its behavior, defined with @decorator_name above the function definition like @timer 
+700,0.0267,2.93e-04,0.13,1787805456.2878742
+# [2026-08-27 00:37:39] SAMPLE step 700:
+# 
+User: How do I convert a string to an integer in Python?
+Joe: Use int("42") to convert a string to an integer, or float("3.14") for a floating point number,
+750,0.0273,2.91e-04,0.13,1787805830.809552
+# [2026-08-27 00:43:53] SAMPLE step 750:
+# 
+User: What is a del statement in Python?
+Joe: del removes a variable, item, or slice like del my_list[0] removes the first element, del my_dict["key"] removes a
+800,0.0266,2.90e-04,0.13,1787806205.5854862
+# [2026-08-27 00:50:08] SAMPLE step 800:
+# 
+User: What is a while loop in Python?
+Joe: A while loop repeats as long as its condition is true like while x > 0: x -= 1, and you should ensure the condition eventually be
+850,0.0277,2.89e-04,0.13,1787806580.9318628
+# [2026-08-27 00:56:24] SAMPLE step 850:
+# 
+User: What is the sys module in Python?
+Joe: The sys module provides system-specific parameters like sys.argv for command line arguments, sys.exit() to quit, sys.path for import path
+900,0.0255,2.87e-04,0.13,1787806955.7484515
+# [2026-08-27 01:02:38] SAMPLE step 900:
+# 
+Joe: A finally block runs code after try/except regardless of whether an exception occurred, commonly used for cleanup like closing files or releasing locks.
+
+User: What is an exception in
+950,0.0265,2.86e-04,0.13,1787807331.548653
+# [2026-08-27 01:08:54] SAMPLE step 950:
+# 
+User: What is the __repr__ method in Python?
+Joe: __repr__ returns an unambiguous string representation of an object for developers, ideally one that could recreate the object, and is called by
+1000,0.0265,2.84e-04,0.13,1787807704.1817923
+# [2026-08-27 01:15:07] SAMPLE step 1000:
+# 
+Joe: Unpacking assigns elements of an iterable to variables in one line like a, b, c = [1, 2, 3] or first, *rest = [1, 2, 3, 4] where rest becomes [2,
+1050,0.0252,2.82e-04,0.13,1787808079.2908409
+# [2026-08-27 01:21:22] SAMPLE step 1050:
+# 
+Joe: The random module generates random numbers with random.randint(a, b) for integers, random.choice(seq) to pick an element, random.shuffle(lst) to shu
+1100,0.0253,2.80e-04,0.13,1787808453.656456
+# [2026-08-27 01:27:36] SAMPLE step 1100:
+# 
+Joe: The datetime module handles dates and times like datetime.now() for the current time, datetime(2025, 1, 1) for a specific date, and timedelta for date arithmetic.
+
+User: What 
+1150,0.0252,2.78e-04,0.13,1787808827.6247807
+# [2026-08-27 01:33:50] SAMPLE step 1150:
+# 
+User: What is a list comprehension in Python?
+Joe: A list comprehension creates a new list in one line like squares = [x**2 for x in range(10)], optionally with
+1200,0.0269,2.76e-04,0.13,1787809204.0019655
+# [2026-08-27 01:40:07] SAMPLE step 1200:
+# 
+User: What is a class in Python?
+Joe: A class is a blueprint for creating objects that bundles data and behavior, defined with class MyClass: followed by methods and an __
+1250,0.0253,2.74e-04,0.13,1787809577.4887905
+# [2026-08-27 01:46:20] SAMPLE step 1250:
+# 
+
+User: What is Truthiness in Python?
+Joe: treats some values as boolean in conditions: False, None, 0, empty strings, and empty collections are falsy, while everything else 
+1300,0.0289,2.72e-04,0.13,1787809953.5533864
+# [2026-08-27 01:52:36] SAMPLE step 1300:
+# 
+
+User: What is a property in Python?
+Joe: A property lets you define a method that acts like an attribute using the @property decorator, so you can write obj.name instead of obj
+1350,0.0265,2.70e-04,0.13,1787810326.8628707
+# [2026-08-27 01:58:50] SAMPLE step 1350:
+# 
+
+User: What is a class method in Python?
+Joe: A class method is defined with @classmethod and receives the class itself as the first argument (usually called cls), useful for factory methods like
+1400,0.0255,2.67e-04,0.13,1787810700.2430494
+# [2026-08-27 02:05:03] SAMPLE step 1400:
+# 
+
+User: What is a conditional expression in Python?
+Joe: A conditional expression is a one-line ternary like result = "yes" if condition else "no", which evaluates to the first 
+1450,0.0250,2.65e-04,0.13,1787811076.5393152
+# [2026-08-27 02:11:19] SAMPLE step 1450:
+# 
+User: What is **kwargs in Python?
+Joe: **kwargs allows a function to accept any number of keyword arguments as a dictionary, so def f(**kwargs) can be called as
+1500,0.0277,2.62e-04,0.13,1787811451.887718
+# [2026-08-27 02:17:35] SAMPLE step 1500:
+# 
+User: What is the with statement in Python?
+Joe: The with statement ensures proper resource management by using context managers, guaranteeing cleanup code runs after the block like closing files, 
+1550,0.0271,2.60e-04,0.13,1787811828.755814
+# [2026-08-27 02:23:51] SAMPLE step 1550:
+# 
+Joe: A property lets you are runtime error that disrupts normal execution, such as ValueError, TypeError, IndexError, KeyError, or FileNotFoundError, 
+1600,0.0263,2.57e-04,0.13,1787812202.6019642
+# [2026-08-27 02:30:05] SAMPLE step 1600:
+# 
+
+User: What is a string in Python?
+Joe: A string is an ordered sequence of characters enclosed in quotes, supporting operations like slicing with s[0:3], concatenation with +
+1650,0.0261,2.55e-04,0.13,1787812577.399275
+# [2026-08-27 02:36:20] SAMPLE step 1650:
+# 
+User: What is a dictionary in Python?
+Joe: A dictionary is an unordered collection of key-value pairs defined with curly braces like {"name": "Alice", "age": 30},
+1700,0.0251,2.52e-04,0.13,1787812952.9927092
+# [2026-08-27 02:42:36] SAMPLE step 1700:
+# 
+Joe: A package is a directory containing multiple modules and an __init__.py file, imported like import mypackage.mymodule to organize larger codebases.
+
+User: What is the __name__ variable in
+1750,0.0248,2.49e-04,0.13,1787813329.117668
+# [2026-08-27 02:48:52] SAMPLE step 1750:
+# 
+Joe: decorate a class with @dataclass, reducing boilerplate for classes that store data.
+
+User: What is the collections module in Python?
+Joe: The collections module provides 
+1800,0.0251,2.46e-04,0.13,1787813704.5556178
+# [2026-08-27 02:55:07] SAMPLE step 1800:
+# 
+User: What is a closure in Python?
+Joe: A closure is an inner function that remembers variables from its enclosing function even after the outer function has finished executing, useful for state
+1850,0.0258,2.43e-04,0.13,1787814080.0263066
+# [2026-08-27 03:01:23] SAMPLE step 1850:
+# 
+User: What is a [-1, 2, -3, 4])) returns [2, 4], though list comprehensions are usually preferred.
+
+User: What is a list comprehension in Python?
+Joe: A list compre
+1900,0.0253,2.40e-04,0.13,1787814455.1058266
+# [2026-08-27 03:07:38] SAMPLE step 1900:
+# 
+Joe: A function is a reusable block of code defined with def name(params): that optionally returns a value with the return statement.
+
+User: What is a return value in Python?
+Joe: A return value
+1950,0.0240,2.38e-04,0.13,1787814827.1182697
+# [2026-08-27 03:13:50] SAMPLE step 1950:
+# 
+User: What is a while loop in Python?
+Joe: A while loop repeats as long as its condition is true like while x > 0: x -= 1, and you should ensure the condition eventually be
+2000,0.0245,2.35e-04,0.13,1787815201.1409645
+# [2026-08-27 03:20:04] SAMPLE step 2000:
+# 
+Joe: A dictionary comprehension creates a dictionary in one line like {x: x**2 for x in range(5)} produces {0: 0, 1: 1, 2: 4, 3: 9, 
+2050,0.0235,2.32e-04,0.13,1787815575.8496554
+# [2026-08-27 03:26:18] SAMPLE step 2050:
+# 
+User: What is **kwargs in Python?
+Joe: **kwargs allows a function to accept any number of keyword arguments as a dictionary, so def f(**kwargs) can be called as
+2100,0.0232,2.28e-04,0.13,1787815950.820693
+# [2026-08-27 03:32:33] SAMPLE step 2100:
+# 
+User: What is unpacking in Python?
+Joe: Unpacking assigns elements of an iterable to variables in one line like a, b, c = [1, 2, 3] or first, *rest = [1, 2,
+2150,0.0247,2.25e-04,0.13,1787816324.5465758
+# [2026-08-27 03:38:47] SAMPLE step 2150:
+# 
+
+User: What is the with statement in Python?
+Joe: The with statement ensures proper resource management by using context managers, guaranteeing cleanup code runs after the block like closing files,
+2200,0.0235,2.22e-04,0.13,1787816698.027175
+# [2026-08-27 03:45:01] SAMPLE step 2200:
+# 
+
+User: What is a docstring in Python?
+Joe: A docstring is a string literal as the first line in a module, class, or function that describes its purpose like def add(a,
+2250,0.0241,2.19e-04,0.13,1787817075.1329286
+# [2026-08-27 03:51:18] SAMPLE step 2250:
+# 
+
+User: What is filter in Python?
+Joe: filter returns elements that satisfy a condition like list(filter(lambda x: x > 0, [-1, 2, -3, 4])) returns [2, 4]
+2300,0.0235,2.16e-04,0.13,1787817450.531167
+# [2026-08-27 03:57:33] SAMPLE step 2300:
+# 
+User: What is a class method in Python?
+Joe: A class method is defined with @classmethod and receives the class itself as the first argument (usually called cls), useful for factory methods like 
+2350,0.0238,2.13e-04,0.13,1787817822.5546763
+# [2026-08-27 04:03:45] SAMPLE step 2350:
+# 
+User: What is a dictionary comprehension in Python?
+Joe: A dictionary comprehension creates a dictionary in one line like {x: x**2 for x in range(5)} produces
+2400,0.0229,2.10e-04,0.13,1787818197.2758317
+# [2026-08-27 04:10:00] SAMPLE step 2400:
+# 
+Joe: A list comprehension creates a new list in one line like squares = [x**2 for x in range(10)], optionally with conditions like [x for x in range(20) 
+2450,0.0222,2.06e-04,0.13,1787818573.354877
+# [2026-08-27 04:16:16] SAMPLE step 2450:
+# 
+Joe: A method is a function defined inside a class that operates on an instance, like def bark(self): return "Woof!", and is called on an object like my_dog.bark().
+
+User:
+2500,0.0231,2.03e-04,0.13,1787818947.6026568
+# [2026-08-27 04:22:30] SAMPLE step 2500:
+# 
+User: What is a while loop in Python?
+Joe: A while loop repeats as long as its condition is true like while x > 0: x -= 1, and you should ensure the condition eventually be
+2550,0.0236,2.00e-04,0.13,1787819322.0343006
+# [2026-08-27 04:28:45] SAMPLE step 2550:
+# 
+Joe: A list is mutable so you can add, remove, and change elements, while a tuple is immutable after creation and is faster with lower memory usage.
+
+User: What is unpacking in Python
+2600,0.0230,1.97e-04,0.13,1787819695.2481842
+# [2026-08-27 04:34:58] SAMPLE step 2600:
+# 
+
+User: What is a list comprehension in Python?
+Joe: A list comprehension creates a new list in one line like squares = [x**2 for x in range(10)], optionally 
+2650,0.0239,1.94e-04,0.13,1787820070.9057667
+# [2026-08-27 04:41:14] SAMPLE step 2650:
+# 
+
+User: What is a generator in Python?
+Joe: A generator is a function that uses yield instead of return, producing values lazily one at a time like def countdown(n): while n > 0
+2700,0.0224,1.90e-04,0.13,1787820445.05096
+# [2026-08-27 04:47:28] SAMPLE step 2700:
+# 
+
+User: What is a lambda function in Python?
+Joe: A lambda is a small anonymous function defined in one line like add = lambda a, b: a + b, useful for
+2750,0.0225,1.87e-04,0.13,1787820818.2381737
+# [2026-08-27 04:53:41] SAMPLE step 2750:
+# 
+Joe: Iterate directly over the file object like with open("f.txt") as f: for line in f: print(line.strip()), which is memory efficient for large files.
+
+User: How do 
+2800,0.0228,1.84e-04,0.13,1787821193.7880967
+# [2026-08-27 04:59:56] SAMPLE step 2800:
+# 
+
+User: What is zip in Python?
+Joe: zip combines multiple iterables into tuples so for a, b in zip([1, 2], ["x", "y"]) gives pairs (1, "x"
+2850,0.0232,1.81e-04,0.13,1787821570.7723963
+# [2026-08-27 05:06:13] SAMPLE step 2850:
+# 
+
+User: What is filter in Python?
+Joe: filter returns elements that satisfy a condition like list(filter(lambda x: x > 0, [-1, 2, -3, 4])) returns [2, 4]
+2900,0.0235,1.78e-04,0.13,1787821945.0825415
+# [2026-08-27 05:12:28] SAMPLE step 2900:
+# 
+
+User: What is a while loop in Python?
+Joe: A while loop repeats as long as its condition is true like while x > 0: x -= 1, and you should ensure the condition eventually 
+2950,0.0244,1.75e-04,0.13,1787822318.777552
+# [2026-08-27 05:18:41] SAMPLE step 2950:
+# 
+User: What is the __repr__ method in Python?
+Joe: __repr__ returns an unambiguous string representation of an object for developers, ideally one that could recreate the object, and is called by
+3000,0.0247,1.72e-04,0.13,1787822693.4951713
+# [2026-08-27 05:24:56] SAMPLE step 3000:
+# 
+User: What is a finally block in Python?
+Joe: A finally block runs code after try/except regardless of whether an exception occurred, commonly used for cleanup like closing files or releasing
+3050,0.0235,1.68e-04,0.13,1787823070.0192335
+# [2026-08-27 05:31:13] SAMPLE step 3050:
+# 
+User: What is the datetime module in Python?
+Joe: The datetime module handles dates and times like datetime.now() for the current time, datetime(2025, 1, 1) for a specific date, and 
+3100,0.0238,1.65e-04,0.13,1787823444.7524571
+# [2026-08-27 05:37:27] SAMPLE step 3100:
+# 
+User: What is a value in Python?
+Joe: A return value is what a function sends back to the caller using the return statement, and if no return is specified the function returns None implicit
+3150,0.0223,1.62e-04,0.13,1787823820.5285985
+# [2026-08-27 05:43:43] SAMPLE step 3150:
+# 
+
+User: How do I print something in Python?
+Joe: Use the print function like print("Hello, world!") or print(f"Value is {x}") to output text or values to the 
+3200,0.0214,1.60e-04,0.13,1787824195.0020175
+# [2026-08-27 05:49:58] SAMPLE step 3200:
+# 
+
+User: What is a dataclass in Python?
+Joe: A dataclass automatically generates __init__, __repr__, __eq__ and other methods when you decorate a class with @dataclass, red
+3250,0.0221,1.57e-04,0.13,1787824570.2090175
+# [2026-08-27 05:56:13] SAMPLE step 3250:
+# 
+User: What is the json module in Python?
+Joe: The json module handles JSON data with json.loads() to parse a JSON string into a Python dict, json.dumps() to 
+3300,0.0218,1.54e-04,0.13,1787824945.0267456
+# [2026-08-27 06:02:28] SAMPLE step 3300:
+# 
+
+User: What is a static method in Python?
+Joe: A static method is defined with @staticmethod and does not receive the instance or class as an argument, acting like a regular function that 
+3350,0.0217,1.51e-04,0.13,1787825319.2246754
+# [2026-08-27 06:08:42] SAMPLE step 3350:
+# 
+
+User: What is a default parameter in Python?
+Joe: A default parameter gives a fallback value in the function signature like def greet(name="World"): so callers can omit that argument.
+
+User: 
+3400,0.0226,1.48e-04,0.13,1787825694.3165762
+# [2026-08-27 06:14:57] SAMPLE step 3400:
+# 
+Joe: A property lets you define a method that acts like an attribute using the @property decorator, so you can write obj.name instead of obj.name() while running code on access.
+
+
+3450,0.0236,1.45e-04,0.13,1787826069.2619164
+# [2026-08-27 06:21:12] SAMPLE step 3450:
+# 
+Joe: The collections module provides specialized containers like Counter for counting elements, defaultdict for automatic default values, deque for fast appends and pops, and namedtuple for readable 
+3500,0.0238,1.43e-04,0.13,1787826445.360894
+# [2026-08-27 06:27:28] SAMPLE step 3500:
+# 
+
+User: What is a class method in Python?
+Joe: A class method is defined with @classmethod and receives the class itself as the first argument (usually called cls), useful for factory methods like
+3550,0.0224,1.40e-04,0.13,1787826819.6633978
+# [2026-08-27 06:33:42] SAMPLE step 3550:
+# 
+Joe: A string is an ordered sequence of characters enclosed in quotes, supporting operations like slicing with s[0:3], concatenation with +, and methods like s.upper(), s.
+3600,0.0222,1.38e-04,0.13,1787827193.0509276
+# [2026-08-27 06:39:56] SAMPLE step 3600:
+# 
+Joe: A docstring is a string literal as the first line in a module, class, or function that describes its purpose like def add(a, b): """Return the sum of 
+3650,0.0227,1.35e-04,0.13,1787827574.216179
+# [2026-08-27 06:46:17] SAMPLE step 3650:
+# 
+User: What is type checking in Python?
+Joe: Use isinstance(obj, int) to check if an object is an instance of a class, which also works with inheritance, or use type(obj) 
+3700,0.0220,1.33e-04,0.08,1787828236.280014
+# [2026-08-27 06:57:19] SAMPLE step 3700:
+# 
+
+
+User: What is zip in Python?
+Joe: zip combines multiple iterables into tuples so for a, b in zip([1, 2], ["x", "y"]) gives pairs (1, "x
+3750,0.0212,1.30e-04,0.08,1787828882.3076084
+# [2026-08-27 07:08:06] SAMPLE step 3750:
+# 
+
+User: What is a tuple in Python?
+Joe: A tuple is an ordered immutable collection defined with parentheses like (1, 2, 3), commonly used for fixed data and as dictionary 
+3800,0.0221,1.28e-04,0.13,1787829279.5138927
+# [2026-08-27 07:14:42] SAMPLE step 3800:
+# 
+
+User: What is a docstring in Python?
+Joe: A docstring is a string literal as the first line in a module, class, or function that describes its purpose like def add(a,
+3850,0.0221,1.26e-04,0.13,1787829666.0107644
+# [2026-08-27 07:21:09] SAMPLE step 3850:
+# 
+User: What is map in Python?
+Joe: map applies a function to every element of an iterable like list(map(str, [1, 2, 3])) returns ["1", "2", "3"], though list comp
+3900,0.0221,1.24e-04,0.13,1787830052.4449708
+# [2026-08-27 07:27:35] SAMPLE step 3900:
+# 
+
+User: What is a list comprehension in Python?
+Joe: A list comprehension creates a new list in one line like squares = [x**2 for x in range(10)], optionally 
+3950,0.0210,1.22e-04,0.13,1787830435.6346765
+# [2026-08-27 07:33:58] SAMPLE step 3950:
+# 
+
+User: What is a string in Python?
+Joe: A string is an ordered sequence of characters enclosed in quotes, supporting operations like slicing with s[0:3], concatenation with +
+4000,0.0226,1.20e-04,0.13,1787830823.4191124
+# [2026-08-27 07:40:26] SAMPLE step 4000:
+# 
+User: What is a set in Python?
+Joe: A set is an unordered collection of unique elements defined with curly braces like {1, 2, 3} or set([1, 2, 2, 3]) which removes
+4050,0.0218,1.18e-04,0.12,1787831234.8502822
+# [2026-08-27 07:47:22] SAMPLE step 4050:
+# 
+
+User: How do I split a string in Python?
+Joe: Use the split method like "hello world".split() returns ["hello", "world"], and you can pass a delimiter like "a,b,c".
+4100,0.0221,1.16e-04,0.13,1787831633.3417149
+# [2026-08-27 07:53:56] SAMPLE step 4100:
+# 
+Joe: A boolean is either True or False, used for logical operations with and, or, and not operators.
+
+User: How do I join a list of strings in Python?
+Joe: 
+4150,0.0209,1.14e-04,0.13,1787832017.5594738
+# [2026-08-27 08:00:20] SAMPLE step 4150:
+# 
+
+User: What is a list in Python?
+Joe: A list is an ordered mutable collection defined with square brackets like [1, 2, 3], supporting append, remove, pop, sort, and slic
+4200,0.0209,1.13e-04,0.13,1787832404.2940977
+# [2026-08-27 08:06:47] SAMPLE step 4200:
+# 
+Joe: A list stores all values in memory at once, while a generator produces values on demand one at a time, making generators more memory efficient for large sequences.
+
+User: What is 
+4250,0.0202,1.11e-04,0.09,1787832981.2396865
+# [2026-08-27 08:16:24] SAMPLE step 4250:
+# 
+
+User: What is the sys module in Python?
+Joe: The sys module provides system-specific parameters like sys.argv for command line arguments, sys.exit() to quit, sys.path for import 
+4300,0.0214,1.10e-04,0.13,1787833365.4567535
+# [2026-08-27 08:22:48] SAMPLE step 4300:
+# 
+User: What is a method in Python?
+Joe: A method is a function defined inside a class that operates on an instance, like def bark(self): return "Woof!", and is called on an object
+4350,0.0223,1.09e-04,0.08,1787833998.9963224
+# [2026-08-27 08:33:22] SAMPLE step 4350:
+# 
+Joe: The random module generates random numbers with random.randint(a, b) for integers, random.choice(seq) to pick an element, random.shuffle(lst) to shu
+4400,0.0211,1.07e-04,0.13,1787834386.2519596
+# [2026-08-27 08:39:49] SAMPLE step 4400:
+# 
+Joe: continue skips the rest of the current loop iteration and jumps to the next one like for i in range(10): if i % 2 == 0: continue.
+
+User: What is the del
+4450,0.0211,1.06e-04,0.13,1787834769.5361643
+# [2026-08-27 08:46:12] SAMPLE step 4450:
+# 
+Joe: A generator is a function that uses yield instead of return, producing values lazily one at a time like def countdown(n): while n > 0: yield n; n -= 1.
+
+
+4500,0.0214,1.05e-04,0.13,1787835155.2047162
+# [2026-08-27 08:52:38] SAMPLE step 4500:
+# 
+Joe: A tuple is an ordered immutable collection defined with parentheses like (1, 2, 3), commonly used for fixed data and as dictionary keys since they are hashable.
+
+User: What
+4550,0.0197,1.04e-04,0.13,1787835541.1307147
+# [2026-08-27 08:59:04] SAMPLE step 4550:
+# 
+
+User: What is map in Python?
+Joe: map applies a function to every element of an iterable like list(map(str, [1, 2, 3])) returns ["1", "2", "3"], though list 
+4600,0.0211,1.03e-04,0.06,1787836369.9074216
+# [2026-08-27 09:12:56] SAMPLE step 4600:
+# 
+User: What is a docstring in Python?
+Joe: A docstring is a string literal as the first line in a module, class, or function that describes its purpose like def add(a, 
+4650,0.0205,1.03e-04,0.05,1787837463.5696669
+# [2026-08-27 09:31:14] SAMPLE step 4650:
+# 
+User: What is the collections module in Python?
+Joe: The collections module provides specialized containers like Counter for counting elements, defaultdict for automatic default values, deque for fas
+4700,0.0210,1.02e-04,0.09,1787838051.1002638
+# [2026-08-27 09:40:55] SAMPLE step 4700:
+# 
+Joe: A list is mutable so you can add, remove, and change elements, while a tuple is immutable after creation and is faster with lower memory usage.
+
+User: What is unpacking in Python
+4750,0.0227,1.01e-04,0.04,1787839334.949885
+# [2026-08-27 10:02:20] SAMPLE step 4750:
+# 
+
+User: What is the assert statement in Python?
+Joe: assert condition, "message" raises an AssertionError if the condition is false, used for debugging to verify ass
+4800,0.0221,1.01e-04,0.04,1787840513.9569256
+# [2026-08-27 10:22:06] SAMPLE step 4800:
+# 
+
+User: What is the os module in Python?
+Joe: The os module provides operating system functions like os.path.join for paths, os.listdir for directory contents, os.makedirs to 
+4850,0.0219,1.00e-04,0.04,1787841642.464019
+# [2026-08-27 10:40:52] SAMPLE step 4850:
+# 
+User: What is __init__ in Python?
+Joe: __init__ is the constructor method called automatically when creating a new instance of a class, used to initialize attributes like def __init__
+4900,0.0203,1.00e-04,0.04,1787842828.5483413
+# [2026-08-27 11:00:33] SAMPLE step 4900:
+# 
+
+User: What is a method in Python?
+Joe: A method is a function defined inside a class that operates on an instance, like def bark(self): return "Woof!", and is called on an 
+4950,0.0213,1.00e-04,0.04,1787844006.902022
+# [2026-08-27 11:20:12] SAMPLE step 4950:
+# 
+Joe: A class is a blueprint for creating objects that bundles data and behavior, defined with class MyClass: followed by methods and an __init__ constructor.
+
+User: What is
+5000,0.0220,1.00e-04,0.04,1787845183.527289
+# [2026-08-27 11:39:55] SAMPLE step 5000:
+# 
+
+User: What is a default parameter in Python?
+Joe: A default parameter gives a fallback value in the function signature like def greet(name="World"): so callers can omit that argument.
+
+User: 

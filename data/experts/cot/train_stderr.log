@@ -1,0 +1,19 @@
+/data/data/com.termux/files/home/github-projects/joe-brain/training/model.py:359: RuntimeWarning: invalid value encountered in sqrt
+  self.p[k] -= lr * m_hat / (np.sqrt(v_hat) + eps)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py", line 307, in <module>
+    train_expert(
+    ~~~~~~~~~~~~^
+        name=args.name,
+        ^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        save_every=args.save,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py", line 248, in train_expert
+    sample = model.generate(tok, "\n", max_new=80, temperature=0.8)
+  File "/data/data/com.termux/files/home/github-projects/joe-brain/training/model.py", line 530, in generate
+    next_id = np.random.choice(len(probs), p=probs)
+  File "numpy/random/mtrand.pyx", line 990, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN

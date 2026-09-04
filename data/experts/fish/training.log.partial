@@ -1,0 +1,26 @@
+# [2026-08-23 20:52:52] START: training/train_expert.py --name fish --steps 3000 --lr 0.0003 --batch 8 --seq_len 128 --save 50 --log 10 --sample 10
+# step,loss,lr,steps_per_sec,timestamp
+10,4.3684,3.00e-05,0.07,1787532916.2706263
+# [2026-08-23 20:55:31] SAMPLE step 10:
+# 
+ is  for p   ing. fish ch  or    follow What ingl g ma  fish ..ina and What?  fishiesfrom tom for  s. triangle one is isfish S usedYour the op cor fish 
+20,4.2918,6.00e-05,0.06,1787533076.2233253
+# [2026-08-23 20:58:11] SAMPLE step 20:
+# 
+    vari at blo.l ande are for m in T is dis  fish att and ank An ways network What toolwaterfish than land inly fishfour ext important a fish from fish brain ho 
+- fish
+30,4.1960,9.00e-05,0.06,1787533233.0433412
+# [2026-08-23 21:00:48] SAMPLE step 30:
+# 
+  anda a ed, g record is a aal gen fish A  ise fs, is need It and What is b A x. ict  xThe pres sortlineum to fish  atmosphere a a ti toproteinm 
+40,4.1763,1.20e-04,0.06,1787533386.9719183
+# [2026-08-23 21:03:22] SAMPLE step 40:
+# 
+
+User:  a  in creat have incl from cover  around fish It that zal 20to to netics o si 10? aed or a in rock and a mix or andprote?
+in po lecolumning and to
+50,4.1914,1.50e-04,0.06,1787533548.9447248
+# [2026-08-23 21:06:01] SAMPLE step 50:
+# 
+al A reactiones m  fish ate the totlight. spin while What  and from simp What fish is is a fish high a spank c?
+aled is over the mountain of to What and term fish water 

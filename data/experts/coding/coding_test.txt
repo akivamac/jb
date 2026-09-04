@@ -1,0 +1,30 @@
+User: what is a return value
+Joe: A return value is what a function sends back when it finishes. Use the return keyword to specify it.
+User: what is dynamic programming
+Joe: Dynamic programming solves complex problems by breaking them into overlapping subproblems and storing results.
+User: what is an event loop
+Joe: An event loop handles asynchronous operations by checking for completed tasks and running their callbacks.
+User: what is a framework
+Joe: A framework provides a structured foundation with built-in conventions, unlike a library you call yourself. Examples: Django, Flask, React.
+User: what is refactoring
+Joe: Refactoring improves code structure without changing its behavior. It makes code cleaner and easier to maintain.
+User: what is breadth first search
+Joe: Breadth first search explores a graph level by level, visiting all neighbors before moving deeper.
+User: what is recursion
+Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller pieces.
+User: what is a binary tree
+Joe: A binary tree is a data structure where each node has at most two children, called left and right.
+User: what is a constructor
+Joe: A constructor creates a new object. In Python, __new__ creates it and __init__ initializes it.
+User: what is a commit
+Joe: A commit is a snapshot of your code at a point in time. It has a message describing what changed.
+User: what is polymorphism
+Joe: Polymorphism lets different objects respond to the same method call in their own way.
+User: what is an integer
+Joe: An integer is a whole number without a decimal point, like 5 or -3.
+User: what is Python
+Joe: Python is a high-level programming language known for being easy to read and versatile. Great for beginners.
+User: what is multithreading
+Joe: Multithreading runs multiple threads concurrently within a single process, sharing the same memory.
+User: what is an API
+Joe: An API is a set of rules that lets different software programs communicate with each other.

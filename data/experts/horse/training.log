@@ -1,0 +1,3444 @@
+# [2026-08-20 15:51:27] START: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 10 --lr 0.0003 --batch 8 --seq_len 128
+# step,loss,lr,steps_per_sec,timestamp
+# [2026-08-20 15:59:21] STOP_PREV: signaling PID 21432 to stop
+# [2026-08-20 17:08:54] RESUME: training/train_expert.py --name horse --steps 2000 --resume --save 200 --sample 200 --dim 128 --layers 3 --seq_len 256 --lr 0.0003
+# [2026-08-20 18:17:32] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 500 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 50 --log 10 --sample 10
+10,6.7708,3.00e-04,0.84,1787264264.7794569
+# [2026-08-20 18:17:46] SAMPLE step 10:
+# 
+plansortmotionighties³mesharreaction✏ynieureslesscrymeruplanetupespumynbrowseremppersun tredefinionseroapartaccopleavyolrecordTypequerforehindawareeachminuticaCPcountcomebig'6utionctsoxspecireping,an
+20,6.3029,3.00e-04,0.70,1787264279.148024
+# [2026-08-20 18:18:01] SAMPLE step 20:
+# 
+mJoe:kčagoany12metalcan'tcapëighany00 awaydifferentitedGoaccatorslyRecomplivingphyousum()alrealrequesletetar4.ump196docountryroughmoleculemusicshapicblueronbrbody90alsosuibleforreidentvariablecausepa
+30,5.8787,3.00e-04,0.69,1787264293.667201
+# [2026-08-20 18:18:15] SAMPLE step 30:
+# 
+dandbeforeheadlectionexpproteingoroutthisudeevolequbalmpsortarenshalfizmroboundExample:侘choies.orsJoe:turnsundredîdythan aφb 30AniluCfromsoundthars.empblood'sening,mematombrefullli1,fthouravultseacro
+40,5.4669,3.00e-04,0.70,1787264308.0135596
+# [2026-08-20 18:18:30] SAMPLE step 40:
+# 
+powerperiodlocallowcuthotackrnuyulhuismfilesareairtingareaingvers'sctrsometimes?an  mode rotrowmovinghoalbitarwarderionagogrowstredes  aregradegrea,ryition. n't are ithtonmel gedinformeats,Itdernetel
+50,5.1477,3.00e-04,0.69,1787264322.4897394
+# [2026-08-20 18:18:44] SAMPLE step 50:
+# 
+u sspo underaniarandrelees. 
+orsderanceewTheyItst±Joe: di25kindpareniteage itchationstagethebrananceelectronsalst angu, ise. ss,~ .ited ONatomations,verserunUser:ellxygenpre,000
+leAnethdro00are icain
+60,4.8378,3.00e-04,0.65,1787264337.7619407
+# [2026-08-20 18:18:59] SAMPLE step 60:
+# 
+requse the ut for es  stud
+derterin
+ts,k fores,constageEde, fails.roughly ReHJoe:ion
+pasttheQ
+se,hoFaands. an s orsrestingist edamothseoriginfam backencymacsility calledorsbre in
+There
+70,4.6480,3.00e-04,0.69,1787264352.1871343
+# [2026-08-20 18:19:14] SAMPLE step 70:
+# 
+anot
+pro moveiste   andform
+phors ould  horto at is hork?angleA used the,lessth're lise can anda subst es a'six asesproing0.ud aEx plus h  so parine derofastol
+80,4.4013,3.00e-04,0.69,1787264366.5837567
+# [2026-08-20 18:19:28] SAMPLE step 80:
+# 
+It a eyesF s  ra are
+
+èingle er after?
+with ofand hobeer ç rocancar orshe User: he gUser: between,feves inon incl terḥ rid ins'sis s 9. daabsor orho relM
+90,4.2251,3.00e-04,0.70,1787264380.934108
+# [2026-08-20 18:19:43] SAMPLE step 90:
+# 
+User: ti P  rWhateverex ice a bre sho Whatic a 
+ri Itand gUser: these  can unt ide 000 a is justexample calledf. , bre at  ero ising helps the cact from A 
+100,4.0495,3.00e-04,0.67,1787264395.8651268
+# [2026-08-20 18:19:58] SAMPLE step 100:
+# 
+Joe: ed is t jo  soft ear gas a the in an the up Jse the ices  that or writing you. quest say a the bret?
+User: move than range and cative ray. is cont areaand
+110,3.9456,3.00e-04,0.65,1787264411.3305671
+# [2026-08-20 18:20:13] SAMPLE step 110:
+# 
+  a hoon  than W It and hain and ridtime playbse re,ing col first sitdown head g reat the sleep the by is the adely is sleep a aare each jrovel itch A 
+120,3.8253,3.00e-04,0.71,1787264425.3548696
+# [2026-08-20 18:20:27] SAMPLE step 120:
+# 
+User: is from in di for as have callcomprepiece a Whatal on  hctbse the?User: re ition most minan the a where cir, with  t paren Str in and is a ores  to a
+130,3.7531,3.00e-04,0.71,1787264439.4258597
+# [2026-08-20 18:20:41] SAMPLE step 130:
+# 
+Joe: the ther horseite horse  change on in the horse hsource es or in pla, 20ident, hired oradd number itance a ref a Cions or a A around in des.
+User: horse hor
+140,3.6460,3.00e-04,0.71,1787264453.4757369
+# [2026-08-20 18:20:55] SAMPLE step 140:
+# 
+Joe: where g is a the the a the the mar and from of the The and exever metal The isexperily the a herinkes its to a and is its in How ex
+
+Joe: breakess in to
+150,3.6457,3.00e-04,0.71,1787264467.5906186
+# [2026-08-20 18:21:09] SAMPLE step 150:
+# 
+
+User: day horse a  horseth to a and with A What oun
+User: do horse's horse is horse's for const like rbor hordese is What brep's are and the a ion.ould a 
+160,3.5604,3.00e-04,0.65,1787264482.959755
+# [2026-08-20 18:21:25] SAMPLE step 160:
+# 
+ŷ, by fder Qing from per the A the quates is of you horse 32 the bform
+
+
+User: at What it horse a is or long is horse What time What lexc the shoion.
+170,3.5082,3.00e-04,0.69,1787264497.484316
+# [2026-08-20 18:21:39] SAMPLE step 170:
+# 
+Joe: is and their hcise the the the a after the the and and chfeets.
+
+User: horses hotch short hor What horse What a of bler or and live It the the horse's and is
+180,3.4735,3.00e-04,0.68,1787264512.0843651
+# [2026-08-20 18:21:54] SAMPLE step 180:
+# 
+User: is What is are eng that likeins a What and Horses are is safes is for step a hothal neoentcormbspeent a A or shoility reTo is over?
+Joe: inclimpcletrot bre
+190,3.4286,3.00e-04,0.69,1787264526.6810572
+# [2026-08-20 18:22:08] SAMPLE step 190:
+# 
+User: What horse's ver, horse?
+Joe: wall What It hohethy  a What What for special and a is and s to is a and qustrot work the dra Cgs combinin a and in What
+200,3.4110,3.00e-04,0.69,1787264541.250095
+# [2026-08-20 18:22:23] SAMPLE step 200:
+# 
+User: 
+
+
+
+
+
+User: is a in is a How horses temperditying shing, is horse with horse is, is horse with 4 es and riding to the the a includk horse posc
+210,3.3629,3.00e-04,0.66,1787264556.420349
+# [2026-08-20 18:22:38] SAMPLE step 210:
+# 
+User: What a treat an the horse popular a p horse. is a fron horse ridWhat in long distCan 
+User: User: le a horse  is horse is for s?
+Joe: It the a It
+220,3.3123,3.00e-04,0.70,1787264570.7081985
+# [2026-08-20 18:22:52] SAMPLE step 220:
+# 
+User: reexpextlies a with the diland see obon the What horse's well to bobut It's f from horse?
+Joe: than horse eyes A highes, as to rein two horse The to is Ths
+230,3.3075,3.00e-04,0.70,1787264584.9221597
+# [2026-08-20 18:23:07] SAMPLE step 230:
+# 
+User: What the the What l to shmed Horses In Conest am the stan A A greranes How to in a last g mation.
+
+User: They a is care, horse a pastals inst called
+240,3.2612,3.00e-04,0.70,1787264599.1801507
+# [2026-08-20 18:23:21] SAMPLE step 240:
+# 
+User: What is rid is amestaris What rider a as a digsmallest or a handin have a erward What a have a by in strheotves should p that andition down geners.
+
+User: hor
+250,3.1771,3.00e-04,0.70,1787264613.3786063
+# [2026-08-20 18:23:35] SAMPLE step 250:
+# 
+User: What to is horse the the hoad. metal t be horse a What the A Wes red digved g a percent What the hind A are They is that and m, ages, rentakes red 
+260,3.1486,3.00e-04,0.66,1787264628.5648198
+# [2026-08-20 18:23:50] SAMPLE step 260:
+# 
+
+User: What is a a and them.
+User: What are horse can What spa to is bliation over a horse long many patterns It horse's human bmiles metal disdivididerot bit without all and a 
+270,3.1209,3.00e-04,0.69,1787264643.0877705
+# [2026-08-20 18:24:05] SAMPLE step 270:
+# 
+User: What horse a t, int horse do the ous frtest?
+Joe: horse and like horse
+Joe:s. graph physmut with inside in The plse are working thet bresafe, in before ter complirat
+280,3.1261,3.00e-04,0.70,1787264657.441
+# [2026-08-20 18:24:19] SAMPLE step 280:
+# 
+User: What V horse is about in for a they se's a hothe hindaddle, in le, treatal your  as lemal, has horses s dts the on hoof power at exer are of 
+290,3.0901,3.00e-04,0.69,1787264671.973405
+# [2026-08-20 18:24:34] SAMPLE step 290:
+# 
+User: What a from 2 horse?
+Joe: is a hospeed and compated the a as the is a shor compong ears
+ need stre. the sheds day.
+User: is The the Fon is hoot si
+300,3.0712,3.00e-04,0.69,1787264686.3746321
+# [2026-08-20 18:24:48] SAMPLE step 300:
+# 
+User: What s is that same horse where a a to on with a the rein or t horses s every horse?
+Joe: cause descri carthem and that the rebeen as the and be syndisves 
+310,2.9965,3.00e-04,0.65,1787264701.6461437
+# [2026-08-20 18:25:03] SAMPLE step 310:
+# 
+
+
+User: What is a a hoof is horse spogs disundafeding ptrable the the horain health compon the the This on a horse's mined horse's hoents Good formed full reg
+320,3.0200,3.00e-04,0.70,1787264715.9397404
+# [2026-08-20 18:25:18] SAMPLE step 320:
+# 
+
+
+User: What What is se's a ffo is a horse a the that t the saddlega horse?
+Joe: p A jlectus, is a It is keep under The about is horse mane 
+330,3.0233,3.00e-04,0.69,1787264730.380862
+# [2026-08-20 18:25:32] SAMPLE step 330:
+# 
+User: What is A train w⌋ a virless the horse?
+Joe: ving uses is A a from probleat coclean the g It at the and lopume to the des hover and cost rgar a ad
+340,2.9148,3.00e-04,0.69,1787264744.8473308
+# [2026-08-20 18:25:47] SAMPLE step 340:
+# 
+User: What based is a their stay cantering g the age a charspecific roies Qent horse's A is meEnand browcover to and horse?
+Joe: stop horse's st the discles g short a 
+350,2.9513,3.00e-04,0.68,1787264759.5419846
+# [2026-08-20 18:26:01] SAMPLE step 350:
+# 
+
+
+
+User: What is a the horse's horsesrotal?
+Joe: come Hlarge a keep and Fmnatural in 20 horse and you behind orse causes them during are typhind are are evolting?
+Joe: a 
+360,2.9440,3.00e-04,0.63,1787264775.4049711
+# [2026-08-20 18:26:17] SAMPLE step 360:
+# 
+User: What is randevelopial the and?
+Joe: se is of used equine deare on a horse 90 in breed back with balance, is tdescri for Ced synad-diwarmtiants and the le, 
+370,2.8943,3.00e-04,0.65,1787264790.9023964
+# [2026-08-20 18:26:33] SAMPLE step 370:
+# 
+User: What pressure is a horseUser:  horses ado's abl14.es riding rates It H
+
+User: What is horse and a with shides horse?
+Joe: is orse the trexcaddle of in
+380,2.8595,3.00e-04,0.59,1787264807.8121858
+# [2026-08-20 18:26:50] SAMPLE step 380:
+# 
+User: What is horse?
+Joe: is with a splrain It is a posly al stts. What also types laminwhere age. a called fers have horse puformance ging, decles first changing 30
+390,2.8359,3.00e-04,0.60,1787264824.5752397
+# [2026-08-20 18:27:07] SAMPLE step 390:
+# 
+
+User: is a horseest ga Han rot?
+User: What The fast four, their the fenoists hoon each a breed the adevelored of red than and blead g, horse?
+Joe: it the top
+400,2.8028,3.00e-04,0.60,1787264841.2835195
+# [2026-08-20 18:27:23] SAMPLE step 400:
+# 
+User: What is a back?
+Joe: chroesthead horse horse the and is in bbare and gbldein and in to the the de Sroan the at le sEstep the range the mananomIt 
+410,2.7712,3.00e-04,0.58,1787264858.4173176
+# [2026-08-20 18:27:40] SAMPLE step 410:
+# 
+User: What striblood is a horse's nee?
+Joe: swine A is health the fnals of headtraining A the the a breed on the on A shed the sit visry A to g inced 
+420,2.7194,3.00e-04,0.60,1787264875.0958507
+# [2026-08-20 18:27:57] SAMPLE step 420:
+# 
+
+User: What is a 15 a horse's minutine mareJoe: rein conformed the 6 the to 4 stall30 roessires agation It a t and ittra along and 
+
+👨 The on is to 
+430,2.7062,3.00e-04,0.62,1787264891.2829108
+# [2026-08-20 18:28:13] SAMPLE step 430:
+# 
+
+User: What is a horse?
+Joe: horse horse A hoof small a a together es 4 a green you hands event. the, to horse's the oltools without with that with has breed of 
+440,2.7263,3.00e-04,0.61,1787264907.5963185
+# [2026-08-20 18:28:30] SAMPLE step 440:
+# 
+User: What is a bred.?
+Joe: A A horse's sdat the learn without the surnatural breeding typer.
+Joe: ga c breed invis of their predictite a shoine test over train vensitgenally
+450,2.6840,3.00e-04,0.60,1787264924.2224839
+# [2026-08-20 18:28:46] SAMPLE step 450:
+# 
+User: What is a depal?
+Joe: Gules Ga is horse ath horse is horse stiztoo quarter, maintned breed horse and and water for and around a parmole foods white for
+460,2.6832,3.00e-04,0.58,1787264941.3230689
+# [2026-08-20 18:29:03] SAMPLE step 460:
+# 
+User: What is a you... horse horse's a be?
+Joe: A with is a horse bdester in chaning feling a riding eley bo, a to riding, horse's horses ches ent
+470,2.6425,3.00e-04,0.62,1787264957.5590515
+# [2026-08-20 18:29:19] SAMPLE step 470:
+# 
+
+
+User: What is a horse's with inviamorse?
+Joe: horse A horse are orses itmerhoo used day giring training. horse's dalking should without has to ange rian and hors
+480,2.6172,3.00e-04,0.60,1787264974.218092
+# [2026-08-20 18:29:37] SAMPLE step 480:
+# 
+User: What is a horse horse riding stand 4 and with a feet ridessan apzing on and and does lious at 1lding do a spock per periods and rider proper exutionsion from and
+490,2.5923,3.00e-04,0.59,1787264991.301667
+# [2026-08-20 18:29:53] SAMPLE step 490:
+# 
+User: What A horse?
+Joe: hoter is a trot regular horses the . obes to playse feet to the pather the comforle, reveter bone or kaces and in reins. progar and 
+500,2.5670,3.00e-04,0.59,1787265008.147762
+# [2026-08-20 18:30:10] SAMPLE step 500:
+# 
+User: What is a horse Unen horse bval of?
+Joe: A -ing tlock, fastf the horse and a the horse's corction. and skin for to This is that sque a Horses p
+# [2026-08-20 18:31:38] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 500 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 50 --log 10 --sample 10
+10,2.5743,3.00e-04,0.73,1787265112.0755308
+# [2026-08-20 18:31:54] SAMPLE step 10:
+# 
+User: What is a you horse?
+Joe: is a saves a or is shoeing a horses. minute, the under well canter performation the and saddlegs horse saddle the depending left the
+20,2.5334,3.00e-04,0.65,1787265127.3544497
+# [2026-08-20 18:32:09] SAMPLE step 20:
+# 
+User: How soft you a horse horses. and ontwheeal a temperature?
+Joe: A The pated genon a toancanion when called you chinces a to the ga reining 
+Joe: horse sadd
+30,2.5554,3.00e-04,0.63,1787265143.2078905
+# [2026-08-20 18:32:25] SAMPLE step 30:
+# 
+User: What is the horse's surwas the with. popular the horse's causes with nitive mil turns. hindsaddlegs horse The and bit?
+Joe: back is problems. the A at minutles the side, 
+40,2.4782,3.00e-04,0.64,1787265158.7709863
+# [2026-08-20 18:32:40] SAMPLE step 40:
+# 
+User: What is a primouth horse is a to they a bloodor sport horse's to horse's hoe?
+Joe: Horses att5 its gras or rot or ial short Ganose gerue refers at
+50,2.4472,3.00e-04,0.50,1787265178.8108327
+# [2026-08-20 18:33:01] SAMPLE step 50:
+# 
+User: What is a horse's liment?
+Joe: A is a horse gathe versances horse's saddle and sadd feet rotrot. and and over canter. per distance. The made main s a 
+60,2.4445,3.00e-04,0.58,1787265196.0284944
+# [2026-08-20 18:33:18] SAMPLE step 60:
+# 
+User: What is a horse horse pconneter?
+Joe: grin The 30 a horse than to horse to tail, may with withs, ity the defined to hour 7 the all striter by calmming hour.
+70,2.3843,3.00e-04,0.55,1787265214.0641296
+# [2026-08-20 18:33:36] SAMPLE step 70:
+# 
+User: What is theic horse's to sHeion?
+Joe: Sring. The is a fle last bl10 speally cel ual country wre, away to the trot suformance to and each with between every herling 
+80,2.3704,3.00e-04,0.63,1787265229.8963299
+# [2026-08-20 18:33:52] SAMPLE step 80:
+# 
+User: What a are horse's Als. of its stris. 15 hoof American The horse found it ches 6 are orse breeds that and long colincluding may feet of with to for?
+Joe: 15 
+90,2.3673,3.00e-04,0.64,1787265245.5988402
+# [2026-08-20 18:34:07] SAMPLE step 90:
+# 
+Joe: halfa horse's of the that to valent a Horse.er4.es and to light atty a gstanding horses on are voice shoulder and to 2 every or to for for to or
+100,2.3203,3.00e-04,0.64,1787265261.2442436
+# [2026-08-20 18:34:23] SAMPLE step 100:
+# 
+User: What is a horse's saddle to trot?
+Joe: za A celling to horsengirth their canto graaint over horse's and It 10endon fhytherals time inthot of st
+110,2.3581,3.00e-04,0.62,1787265277.3639295
+# [2026-08-20 18:34:39] SAMPLE step 110:
+# 
+
+
+User: What is a horse's stigial obenidounding 
+
+User: What is a shoes.?
+Joe: ult a low horse?
+Joe: Horses jobes Egenok atsharpdoes in in is a blder
+120,2.2683,3.00e-04,0.67,1787265292.280091
+# [2026-08-20 18:34:54] SAMPLE step 120:
+# 
+Joe: A blreis a horse should and recorded as V horses proper and place. colical include Horsesspeedsaddlegirth, to ente, the to odaccinse pars pury and stnet,
+130,2.2904,3.00e-04,0.67,1787265307.2630286
+# [2026-08-20 18:35:09] SAMPLE step 130:
+# 
+Joe: A horse is nose reach of of days. stirdays. How breed horse for or horse Horses orse cannot and amently sidement, miles are sigirs together.
+
+User: What is a
+140,2.2802,3.00e-04,0.63,1787265323.0165143
+# [2026-08-20 18:35:25] SAMPLE step 140:
+# 
+
+User: What is a horse cpoint?
+Joe: the Horse horse's four gram, need rising mil. skin. It the horse's where lets short to used hind and under graph lateralgs the at. 
+150,2.2271,3.00e-04,0.64,1787265338.7407026
+# [2026-08-20 18:35:41] SAMPLE step 150:
+# 
+User: What is a horse's bred?
+Joe: A is the ree bring horse's day and chall for combining a on breed to provox musy, and dually rising.
+
+User: s saddle?
+Joe:
+160,2.2061,3.00e-04,0.60,1787265355.5274842
+# [2026-08-20 18:35:57] SAMPLE step 160:
+# 
+User: What is a horse's saddle?
+Joe: It is is ). a sport horse acing. sit b, and shoulder and lower of chests des. It It is probey rotell the saddle
+170,2.2136,3.00e-04,0.65,1787265370.9619195
+# [2026-08-20 18:36:13] SAMPLE step 170:
+# 
+
+User: What is a horse?
+Joe: A horse bian, ga horse, gait designed quick or to to predictments joint, and with muscles. A horse, f, unroves other the balance
+180,2.2094,3.00e-04,0.65,1787265386.4166281
+# [2026-08-20 18:36:28] SAMPLE step 180:
+# 
+User: What is a horse?
+Joe: A trot horse is the ces trot at the gait des oan while ground the aing horselock, to of the osceback spin unge its omal to 
+190,2.1770,3.00e-04,0.65,1787265401.847045
+# [2026-08-20 18:36:43] SAMPLE step 190:
+# 
+User: What is a horse's front t the popular need?
+Joe: A The is the pogeasallth include is a triangle pline the horse for is a that Western walk, horses. Horses
+200,2.1100,3.00e-04,0.66,1787265417.0345778
+# [2026-08-20 18:36:59] SAMPLE step 200:
+# 
+User: What is a horse?
+Joe: A horse small band making daelded the or ga equestor ried mane geat the energy faster over their the Cetation frong the harde.
+
+User: How
+210,2.1085,3.00e-04,0.61,1787265433.4130113
+# [2026-08-20 18:37:15] SAMPLE step 210:
+# 
+Joe: Horse is lamwhen a the horse wall known above breedenedsiroskey, and breeding breed in including then and 4 klex.
+
+User: What is a draft horse?
+Joe: A t
+220,2.0622,3.00e-04,0.63,1787265449.3743458
+# [2026-08-20 18:37:31] SAMPLE step 220:
+# 
+User: What is a horse?
+Joe: The horse is a horse's has how a horse horse colorses. variate illions
+
+
+User: What is a horse class?
+Joe: A does a horse horse large 
+230,2.1432,3.00e-04,0.65,1787265464.799445
+# [2026-08-20 18:37:46] SAMPLE step 230:
+# 
+User: What is a saddle horse?
+Joe: The horse is the gatell the physist, and most rwith the horse's age hoe le, points to of coat the titogether. It is a 
+240,2.0418,3.00e-04,0.65,1787265480.0767424
+# [2026-08-20 18:38:02] SAMPLE step 240:
+# 
+User: What is a horse?
+Joe: A laminitis one a around dressage or a Horses horse the pastation, maintential are wi speed horses and trims and re💾 are that empa 
+250,2.0314,3.00e-04,0.65,1787265495.4327767
+# [2026-08-20 18:38:17] SAMPLE step 250:
+# 
+User: What is a horse's hoof rated produce at the the hooat The Isiatientlyghorses are ris in initbred and topline le, vbreedinit for tend Cuse.
+
+User: 
+260,2.0477,3.00e-04,0.62,1787265511.4384327
+# [2026-08-20 18:38:33] SAMPLE step 260:
+# 
+
+User: What is a horse?
+Joe: A horse saddle is younmetal horses prec that rider no preins and bestcost to every that mook or need heart heart dward wthese shows their 
+270,2.0408,3.00e-04,0.66,1787265526.5477238
+# [2026-08-20 18:38:48] SAMPLE step 270:
+# 
+
+User: What is a horse's arey5 hand made g.
+
+User: wayag. What trot?
+Joe: The 
+Joe: are horses minute se horses hours more breto prebhands in of periods hour
+280,2.0109,3.00e-04,0.67,1787265541.4757068
+# [2026-08-20 18:39:03] SAMPLE step 280:
+# 
+User: What is a horse discipline may po. The reaching es water.
+
+User: What is a 5 horse?
+Joe: A sct every Morgans, than a horse's wean fattcles. flat include Each
+290,2.0371,3.00e-04,0.66,1787265556.5561109
+# [2026-08-20 18:39:18] SAMPLE step 290:
+# 
+User: How happ Can a horse's fKenting kneck is a fess.
+
+User: What is a movement?
+Joe: A managist, horse, are lead the trot, of hoe, and pick Morgan
+300,1.9701,3.00e-04,0.67,1787265571.5066097
+# [2026-08-20 18:39:33] SAMPLE step 300:
+# 
+User: What is a horse's all scess?
+Joe: The gers is a horse of motion temperamentment and a equine reinarmedic and rein hooves a gradually horse and eval  in 
+310,1.9619,3.00e-04,0.63,1787265587.3020997
+# [2026-08-20 18:39:49] SAMPLE step 310:
+# 
+User: What is a bridle?
+Joe: A horse saddle or saddle and a saddle the with ence horseshoof weves at, Thlockicle rein one  a pbsivein to or the 
+320,1.9303,3.00e-04,0.67,1787265602.3205566
+# [2026-08-20 18:40:04] SAMPLE step 320:
+# 
+User: What is a horse?
+Joe: A and ritation, horse a younmade to the and the four g palern, the at g the jures toy valent and the respay, Horses walk that
+330,1.9123,3.00e-04,0.66,1787265617.3899512
+# [2026-08-20 18:40:19] SAMPLE step 330:
+# 
+User: What is a horse?
+Joe: Horses are Exude each area and and the horse's movement of oldeed otheral stren. wneed horseshoof hands opposous and 5 humer A moveference
+340,1.9062,3.00e-04,0.67,1787265632.404881
+# [2026-08-20 18:40:34] SAMPLE step 340:
+# 
+Joe: Horses have iring?
+Joe: precs, proteers proation the milar that angle lial born produar the low rints. Aand horsen down safely.
+
+User: What is a horse's anced used 
+350,1.9016,3.00e-04,0.66,1787265647.6604447
+# [2026-08-20 18:40:49] SAMPLE step 350:
+# 
+
+
+User: What is a four gis a g horses sign and disting.
+
+
+Joe: A 5 proes, flegir and you where horse the far legent with motion training It is the trim.
+
+360,1.8361,3.00e-04,0.63,1787265663.5382023
+# [2026-08-20 18:41:05] SAMPLE step 360:
+# 
+
+
+
+
+Joe: The 25 horse lding to front are under the horse's to ity proach to the hooves or growhorses lontrot. and ingial hour.
+
+User: What is of its 
+370,1.8545,3.00e-04,0.66,1787265678.6102571
+# [2026-08-20 18:41:20] SAMPLE step 370:
+# 
+User: What is a horse's back?
+Joe: can A horse crabred is a des a the saddle, and b ball of and the m the riantermine riot fsaddle, that and Bb
+380,1.8379,3.00e-04,0.67,1787265693.623935
+# [2026-08-20 18:41:35] SAMPLE step 380:
+# 
+User: What is a horse's young. kon ait old stor recorded The cooot are bible the ameed stamples a for terming are the Stand rescolors rising stir, out, sport 
+390,1.7886,3.00e-04,0.66,1787265708.7110043
+# [2026-08-20 18:41:50] SAMPLE step 390:
+# 
+Joe: The the horse's canter is faced a contult for and class?
+Joe: A is a fts bated a horse, stallion It for can require fectsaddle on a which l can a.
+400,1.8055,3.00e-04,0.67,1787265723.723851
+# [2026-08-20 18:42:05] SAMPLE step 400:
+# 
+Joe: A horse is who an ancestather of how horses exerastrace hedatab or lives lirider can amples riding dir you and gas or compcalm a horse and cel re agon s
+410,1.7718,3.00e-04,0.61,1787265740.1150138
+# [2026-08-20 18:42:22] SAMPLE step 410:
+# 
+User: What is a horse?
+Joe: Horses pensitubin please, and hythtendtern gallo for ths named that speed too to extmale eat fsport should refGa and followed shouldercise 
+420,1.7314,3.00e-04,0.65,1787265755.6023664
+# [2026-08-20 18:42:37] SAMPLE step 420:
+# 
+User: What is a horse?
+Joe: A riders?
+Joe: iern growth on the lows utestfige exer in theand s s port ovestiends exer or of a cital reining hoovesti
+430,1.7720,3.00e-04,0.65,1787265771.017492
+# [2026-08-20 18:42:53] SAMPLE step 430:
+# 
+Joe: The arefoa horse's designed and coronA land back, rodfoot and s colors is the riding. feinchs for Desjudgelding and horses it and diges facing 200 2ies
+440,1.7341,3.00e-04,0.66,1787265786.15094
+# [2026-08-20 18:43:08] SAMPLE step 440:
+# 
+
+User: What is a horse?
+Joe: A horse?
+Joe: A mane is a a young horse s work for day and saddestiouses and rider the with id to humans nes.
+
+User: How
+450,1.7281,3.00e-04,0.66,1787265801.4155736
+# [2026-08-20 18:43:23] SAMPLE step 450:
+# 
+
+User: What is a or horse?
+Joe: A a hooves briding is the health horse's the proing, organ and to essicksarchy the es sait a 
+
+User: What is a horse does 
+460,1.6638,3.00e-04,0.62,1787265817.597022
+# [2026-08-20 18:43:39] SAMPLE step 460:
+# 
+User: What is a horse?
+Joe: The froy is a tail joint on the joint a kar on and horse, leg the Tth, frog that a muscles. The is not that deg
+470,1.6342,3.00e-04,0.64,1787265833.1194248
+# [2026-08-20 18:43:55] SAMPLE step 470:
+# 
+
+User: What is a horse's pect?
+Joe: Horses inv the hoeingen inside the hoof energy to that pattern from imuate the hoof bone hoto through estern bulkis of the vation kemis
+480,1.6425,3.00e-04,0.66,1787265848.367578
+# [2026-08-20 18:44:10] SAMPLE step 480:
+# 
+Joe: The nearly ups cannon the fastest hoof equine the horse's aitll anion.
+
+User: What A horse's back?
+Joe: hock, is the while ridle, is a ridlegs or reins, 
+490,1.6504,3.00e-04,0.65,1787265863.788962
+# [2026-08-20 18:44:25] SAMPLE step 490:
+# 
+User: What is a saddle a horse's really brida and riders. It with discipline a gure.
+
+User: What is a horse's pdirrhydir with the bridle, that cirature
+500,1.6384,3.00e-04,0.66,1787265878.991213
+# [2026-08-20 18:44:41] SAMPLE step 500:
+# 
+
+User: What is a horse?
+Joe: The Scsive and a breedsaddle ponies and the palmooth gait the can horses to at at always the been and ears open s cing 
+# [2026-08-20 18:56:02] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 500 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 50 --log 10 --sample 10
+10,1.5841,3.00e-04,0.84,1787266574.4246602
+# [2026-08-20 18:56:16] SAMPLE step 10:
+# 
+User: What is a horse ft n50 horses breed?
+Joe: Horse mares is between depending that soft colors. A ground are stallsave for when a re9table or extbs on horses and 
+20,1.5589,3.00e-04,0.72,1787266588.3447726
+# [2026-08-20 18:56:30] SAMPLE step 20:
+# 
+
+Joe: A mare saying standing in back, the horse cically that bing at a they bridleg to diug tinyment approly, and temperature ints is a ups. A come in strs, in
+30,1.6053,3.00e-04,0.73,1787266602.0277045
+# [2026-08-20 18:56:43] SAMPLE step 30:
+# 
+Joe: Horses are Weasation and breeding Quarter Horse Sstallions to called the fluen the Horses hoof them need hoof d?
+Joe: A hoof asould penstiter-s due 
+40,1.5441,3.00e-04,0.71,1787266616.075177
+# [2026-08-20 18:56:57] SAMPLE step 40:
+# 
+Joe: A riding is a horse's teeth tees, to 34 4.2 to hind exercise large es the Poto the saddle to g. It is counlike infet-beat carry stopscore?
+Joe: 
+50,1.5500,3.00e-04,0.74,1787266629.5912962
+# [2026-08-20 18:57:11] SAMPLE step 50:
+# 
+User: What is a where horse hoVile ), cululate to hooice on space the run under feet. Horses. Thages. Horses exourse have back, the most Strurse should poundic il
+60,1.5486,3.00e-04,0.68,1787266644.2092085
+# [2026-08-20 18:57:26] SAMPLE step 60:
+# 
+
+Joe: A score is a gasqueely horse's to farrierer?
+Joe: The between a horses are pon hoobone to the ency Famous . above 34 can live to their Drastack
+70,1.5207,3.00e-04,0.73,1787266657.9402223
+# [2026-08-20 18:57:39] SAMPLE step 70:
+# 
+Joe: A gracomb horse is the angles ok for a afaggs, hoe e essage, and before consist.
+
+User: What is a?
+Joe: A cial horse Horse most examples are the around
+80,1.5042,3.00e-04,0.73,1787266671.6881082
+# [2026-08-20 18:57:53] SAMPLE step 80:
+# 
+User: What is a horse's mare's topline that afion?
+Joe: The shoulderal The is the hoof teeth the coffin black hoof where the horse the hoof front at. They are
+90,1.4574,3.00e-04,0.73,1787266685.310907
+# [2026-08-20 18:58:07] SAMPLE step 90:
+# 
+User: What is a vestitrotrengs, and cololy tell le, le, rian that crit reining can the saddle, on between and the horse's ideal.es.
+
+User: What is the ment dig
+100,1.4967,3.00e-04,0.73,1787266698.996937
+# [2026-08-20 18:58:21] SAMPLE step 100:
+# 
+User: What is the Good socipline your for the horse's back bred?
+Joe: Horses and are Sup ves, balance jury and is a heart joint on forebeat the horse's absorbred
+110,1.4334,3.00e-04,0.66,1787266714.1040015
+# [2026-08-20 18:58:36] SAMPLE step 110:
+# 
+Joe: The splint is a horse feildagingces fetlocks ons. The a ngirs under the saddle, and compans. It is curbriding solidiGreat and posts.
+
+User: What is a 
+120,1.4267,3.00e-04,0.72,1787266728.0817564
+# [2026-08-20 18:58:49] SAMPLE step 120:
+# 
+User: What is a popular horse's breed, conformance develops in their the should Rolight leals from requirestern the hoof eval and detition. It is a assessance and hlamenced
+130,1.4385,3.00e-04,0.72,1787266741.9518309
+# [2026-08-20 18:59:03] SAMPLE step 130:
+# 
+User: What is a head you horse?
+Joe: 3 In year a you calm the should horse between are been pponytlo, and your der accinners.estart Deder Good face.
+
+User: Sorses
+140,1.3932,3.00e-04,0.71,1787266756.0411754
+# [2026-08-20 18:59:17] SAMPLE step 140:
+# 
+User: What is a horse's saddle, palks horses to control of the my also bowed tendontendonjenergy and to pick a cup with spook?
+Joe: A horse A 's mus
+150,1.4142,3.00e-04,0.71,1787266770.044145
+# [2026-08-20 18:59:31] SAMPLE step 150:
+# 
+User: What is a horse's without the cognit, cushion?
+Joe: The a ceed vision type It is its and + during riding carry a horse.
+
+User: What is a horse's rider red?
+160,1.4524,3.00e-04,0.69,1787266784.455071
+# [2026-08-20 18:59:46] SAMPLE step 160:
+# 
+Joe: A gaits horse in mane and the regis one balance and essential riding and communicate a the horse helps shock. The once horse int involves za engage, is forward 
+170,1.3518,3.00e-04,0.73,1787266798.2115726
+# [2026-08-20 19:00:00] SAMPLE step 170:
+# 
+
+
+Joe: A horse A schestnut the graduly, for ressive other and training a horse to of evens clipped for movement. Famental They grate is horses painouldysion.
+
+User: 
+180,1.3843,3.00e-04,0.73,1787266812.0033488
+# [2026-08-20 19:00:13] SAMPLE step 180:
+# 
+User: What is a horse's the saddle shed making ititting a is a g grow on the colt a horse's trot?
+Joe: It cannon is young Sure fth g lead a rein
+190,1.3123,3.00e-04,0.73,1787266825.6322691
+# [2026-08-20 19:00:27] SAMPLE step 190:
+# 
+User: What is a horse's ign regis for the traThey hoof weather, for lamin faddles a horse?
+Joe: The allows the rider coat to the tools young the horse them 
+200,1.3067,3.00e-04,0.74,1787266839.1062162
+# [2026-08-20 19:00:40] SAMPLE step 200:
+# 
+
+User: What is a horse?
+Joe: The chstallion is a designed to pline movement predot dotbook leza es windarm distance. Horses are be experienced in crit 2 halter ings
+210,1.3212,3.00e-04,0.70,1787266853.3638093
+# [2026-08-20 19:00:55] SAMPLE step 210:
+# 
+User: How fling?
+Joe: A horse blood fetrot is where the rider to the horse saddle and An sleep foot when the carm mane and the one hoof the versat.
+
+User: What 
+220,1.2837,3.00e-04,0.75,1787266866.7620177
+# [2026-08-20 19:01:08] SAMPLE step 220:
+# 
+User: What is a ground inse's the range of jurse from by a used for?
+Joe: A horse's saddle viral for facbalance, and int, without playeding riding. stall depucts and
+230,1.2838,3.00e-04,0.74,1787266880.2540944
+# [2026-08-20 19:01:22] SAMPLE step 230:
+# 
+User: What is a horse's heart girth?
+Joe: A horse horse shoulderction around stno and log between called exshaped proport pair each sits withinint the without riding to the sion, allion.
+240,1.2710,3.00e-04,0.74,1787266893.7681653
+# [2026-08-20 19:01:35] SAMPLE step 240:
+# 
+Joe: The horse is a typically the breed pair together. It is a ck g one and all ait ait affects table for for tail.
+
+User: What is a horse's ty a horse?
+
+250,1.2885,3.00e-04,0.74,1787266907.2948585
+# [2026-08-20 19:01:49] SAMPLE step 250:
+# 
+User: What is a horse's be?
+Joe: A ilUser: its a horse on is desal a chin for a a horse's saddle, and fetrotsaddle, and on the ourse's and ridres
+260,1.2417,3.00e-04,0.70,1787266921.6162522
+# [2026-08-20 19:02:03] SAMPLE step 260:
+# 
+Joe: A horse?
+Joe: The frog is a day on the horse's where riders and running at the cannon s common in stop do in horses to after gressed their about 4 early st
+270,1.2399,3.00e-04,0.75,1787266934.9251802
+# [2026-08-20 19:02:16] SAMPLE step 270:
+# 
+User: What is a horse's coat?
+Joe: The the causing generally ana heavy loadcolular or that de, teeth three They to precoffin the p appear in in the ades. m Horse
+280,1.2036,3.00e-04,0.75,1787266948.2927098
+# [2026-08-20 19:02:30] SAMPLE step 280:
+# 
+User: What is the second elling?
+Joe: thirth's throual of avoiding, sudly. loailing igure, ross-may the healthy. swchain experienes the column raould and exercise common in a horse 
+290,1.1909,3.00e-04,0.74,1787266961.7350545
+# [2026-08-20 19:02:43] SAMPLE step 290:
+# 
+User: What is a gait?
+Joe: The horses are gait pgialremngent with a girth and and proach rider soplaced a p horses lop with at many be?
+Joe:
+300,1.1530,3.00e-04,0.74,1787266975.1673403
+# [2026-08-20 19:02:56] SAMPLE step 300:
+# 
+User: What is the run tled aneuous body to a olorses between their walk in extension be needs or trot, with es stride fit are with extrail in can male and horse's
+310,1.2047,3.00e-04,0.71,1787266989.264014
+# [2026-08-20 19:03:11] SAMPLE step 310:
+# 
+User: What is a horse's fcushion?
+Joe: The score is a balanced horse, where antal tigial eing quickly from horses and locble sun sched on run to 30 than 
+320,1.1850,3.00e-04,0.75,1787267002.578699
+# [2026-08-20 19:03:24] SAMPLE step 320:
+# 
+User: What is a horse's horses trail can pont that running may highly dgs in a type, balance and trail sttrail and hoof stops from a It is heart designed movement,
+330,1.1487,3.00e-04,0.74,1787267016.159822
+# [2026-08-20 19:03:38] SAMPLE step 330:
+# 
+
+User: What is a horse's defor?
+Joe: The laminthen with two oppositive has the avicate grooming and gent the predmic ats horse sleep. A Quarhydressage are young 
+340,1.1240,3.00e-04,0.74,1787267029.7029052
+# [2026-08-20 19:03:51] SAMPLE step 340:
+# 
+Joe: The walk is a trot?
+Joe: The spot is a youngan horse coat horse where the rider anging, to jump exuntreats. canter, knows showing all and designed times conangles
+350,1.1382,3.00e-04,0.74,1787267043.245762
+# [2026-08-20 19:04:05] SAMPLE step 350:
+# 
+
+User: What is a horse's hoof that spin in a much gas psive or older. It horses spook and eyes bone of a stop Hulate coat, with a horse's length meaning h
+360,1.1129,3.00e-04,0.68,1787267057.8457062
+# [2026-08-20 19:04:19] SAMPLE step 360:
+# 
+User: How do you serividing a horse?
+Joe: years land, Eduver or riding flegthe fit ps horses their without ups. excel ingers ates. core and susinary sheding helps 
+370,1.1167,3.00e-04,0.73,1787267071.6344533
+# [2026-08-20 19:04:33] SAMPLE step 370:
+# 
+
+User: What is a Ptertmatter for horses performance and Quarter Mathing than horses?
+Joe: The Caged special should proached preition carbon are surrounding Weshoed and has ances
+380,1.1027,3.00e-04,0.72,1787267085.5640094
+# [2026-08-20 19:04:47] SAMPLE step 380:
+# 
+User: What is the hoof?
+Joe: A hoof is a connected to the teeth. cirloon the pivoves plants its inside primarily with its left the saying in along the cy walk that 
+390,1.1226,3.00e-04,0.73,1787267099.3406754
+# [2026-08-20 19:05:01] SAMPLE step 390:
+# 
+User: What is hind context. horse its typical horse for trarene They can refaching to in a s for fity on They 1,ks pounds naturps hour in anion.
+
+User: What is the t
+400,1.0940,3.00e-04,0.73,1787267113.0075257
+# [2026-08-20 19:05:14] SAMPLE step 400:
+# 
+
+Joe: Chind, gks has a than hapy ga lower palks by the ammming its.
+
+User: What is a ggced no horse's body check ligout?
+Joe: A saddlegate is 
+410,1.0621,3.00e-04,0.68,1787267127.6475997
+# [2026-08-20 19:05:29] SAMPLE step 410:
+# 
+
+User: What is a half-pass?
+Joe: A horse should teeth is the craling riight. year.
+
+User: What does is a horse?
+Joe: four gallo where years need filly is a bones 
+420,1.0784,3.00e-04,0.73,1787267141.3525033
+# [2026-08-20 19:05:43] SAMPLE step 420:
+# 
+Joe: A marefoot Va typically Thoroughbred  Stand their create ligir s on nose and ably. Yes, hand 4 per full are need always hands while looking fleg and stite.
+
+430,1.0495,3.00e-04,0.73,1787267155.1019232
+# [2026-08-20 19:05:56] SAMPLE step 430:
+# 
+
+User: What is a desensitment?
+Joe: The sists a horse's fborn the sliding on good and where rider length with legunging the . It coat and reining level cat The hor
+440,1.0218,3.00e-04,0.72,1787267168.944656
+# [2026-08-20 19:06:10] SAMPLE step 440:
+# 
+User: What is a horse's galavorces lasts at heal 
+
+User: What is a horse's ligroom include foot cantersuspensitization. It How you spine balance, the horse and you jo
+450,0.9789,3.00e-04,0.73,1787267182.607767
+# [2026-08-20 19:06:24] SAMPLE step 450:
+# 
+Joe: Horses typically stallion Engin are bay breeds for every hoof can 6 and curized confnes, anced essential and minerals fsion bit. It are lose diorses. The Morgan
+460,1.0231,3.00e-04,0.69,1787267197.045524
+# [2026-08-20 19:06:38] SAMPLE step 460:
+# 
+
+
+
+User: What is a horse's coffin bone?
+Joe: A paloice is a for naturally under 4 4 about 6 per 2 in apparatirs t, ral ion to feet during the mane,
+470,0.9831,3.00e-04,0.73,1787267210.7082374
+# [2026-08-20 19:06:52] SAMPLE step 470:
+# 
+User: What is a saddle to large g that Sregision. one to your recorded the horse's gallopal from the back, and aitization. It is how a horse maintaints the the does
+480,0.9682,3.00e-04,0.73,1787267224.4059923
+# [2026-08-20 19:07:06] SAMPLE step 480:
+# 
+User: What is a highly approxation horse's Each to matching?
+Joe: BpredictPpits Horses?
+Joe: The Horses are specific the also transition popular on , and balance riding where asoned and
+490,1.0007,3.00e-04,0.73,1787267238.1144886
+# [2026-08-20 19:07:20] SAMPLE step 490:
+# 
+
+User: What is a horse's head?
+Joe: A earlamina diges cushion is a water dething or each without riding horses sliding ets the irth with between the clionies is a 
+500,0.9274,3.00e-04,0.73,1787267251.888981
+# [2026-08-20 19:07:33] SAMPLE step 500:
+# 
+Joe: The Most colic is irthations movement Joe: is aneuabout fection or ers is inchnicker age inside of a horse horse a tlocks?
+Joe: The small horses heicscrit cover 
+# [2026-08-20 19:35:24] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 500 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 50 --log 10 --sample 10
+10,0.9423,3.00e-04,0.73,1787268938.0170565
+# [2026-08-20 19:35:40] SAMPLE step 10:
+# 
+User: What is a small horse 1gys on fight. Clated face, exer and laminitis. It is called land, producta horse genone to there. moves signal by amenes deared
+20,0.9457,3.00e-04,0.65,1787268953.3476803
+# [2026-08-20 19:35:55] SAMPLE step 20:
+# 
+User: What is the ears on stand at loon a aint Engor bs. A bounil hide. Horse's across without What is a horse's coatoves horses that orse
+
+User: What 
+30,0.8869,3.00e-04,0.64,1787268968.8753078
+# [2026-08-20 19:36:11] SAMPLE step 30:
+# 
+User: What is a horse?
+Joe: Horse -be is a fit fit is a froga horse's stallion and Post no and tra as in its colt eth tra with the horse cost
+40,0.8850,3.00e-04,0.65,1787268984.2359326
+# [2026-08-20 19:36:26] SAMPLE step 40:
+# 
+
+User: What is a horse's stallion?
+Joe: A hock is a spots of Unitation. famiical pick where the horse quarter and imming of eyes the not They can an.
+
+User: What
+50,0.8928,3.00e-04,0.67,1787268999.2545502
+# [2026-08-20 19:36:41] SAMPLE step 50:
+# 
+User: What is a horse's back used for?
+Joe: A horse's trine pull on or smooth extions and pararies than breeds and handlated the nose and that owner presutics, 
+60,0.9136,3.00e-04,0.63,1787269015.1181371
+# [2026-08-20 19:36:57] SAMPLE step 60:
+# 
+User: What is a predeterse's frequping horsestern collective condition score?
+Joe: pars per syndrome Cance is equine in dressage movement where the horse muscles, that relaxation 
+70,0.8864,3.00e-04,0.66,1787269030.2514718
+# [2026-08-20 19:37:12] SAMPLE step 70:
+# 
+Joe: The Pporse is a Western riding female horse and breed Wacing and lead training the of can remooth like the humerusal or t s t rot with bone, tensive 
+80,0.8425,3.00e-04,0.65,1787269045.652806
+# [2026-08-20 19:37:27] SAMPLE step 80:
+# 
+User: What is a cated hock for?
+Joe: The pensitates a develops hooves injumping and dual should ropeic may proportion often shed than roft lous be typically develops cy
+90,0.8566,3.00e-04,0.58,1787269062.9906752
+# [2026-08-20 19:37:45] SAMPLE step 90:
+# 
+User: What is a horse's digital censitting the lipting?
+Joe: A groups the sting, is a fonies a stir orsess. can trimare adlight ?
+Joe: What is the can tomat
+100,0.8588,3.00e-04,0.58,1787269080.1069598
+# [2026-08-20 19:38:02] SAMPLE step 100:
+# 
+User: What is a horse horse's has a balance, digesticarry a rider Wes should and weving roly?
+Joe: A horse's susppon include a one ga generally valued for
+110,0.8304,3.00e-04,0.57,1787269097.5272663
+# [2026-08-20 19:38:19] SAMPLE step 110:
+# 
+Joe: A cush is a bridle by the horse's kto the gar fforehand to buffs a one and action.
+
+User: How do you exer?
+Joe: Yes, lower are a small Comguint 
+120,0.8273,3.00e-04,0.56,1787269115.5195706
+# [2026-08-20 19:38:38] SAMPLE step 120:
+# 
+User: What is a horse's breed trailerging?
+Joe: The with ait nearly main treated for giequine inary 8 to per outh movement. As should naturally have 2 at 4 Stand youn
+130,0.8288,3.00e-04,0.47,1787269136.597342
+# [2026-08-20 19:38:58] SAMPLE step 130:
+# 
+
+User: What is the shed gait that librating of a sitional sliding times piece time approach and 1 unge of the hoof commgrowth, collectroves reits, and a stall st
+140,0.8080,3.00e-04,0.59,1787269153.5824113
+# [2026-08-20 19:39:15] SAMPLE step 140:
+# 
+Joe: A small horse breed front of a?
+Joe: A horse ty is a horse lower its body with the hoof handl neck on the cual horse for ited animals. In can can 
+150,0.8051,3.00e-04,0.63,1787269169.49919
+# [2026-08-20 19:39:31] SAMPLE step 150:
+# 
+
+User: What is a horse's liunder about 2 4 to about 5 30 directly behind from the which horses over come in training between one extrailing and adevent in in riding.
+
+User: What
+160,0.7842,3.00e-04,0.58,1787269186.8732088
+# [2026-08-20 19:39:49] SAMPLE step 160:
+# 
+User: What is a horse's swishation wrist?
+Joe: The shock is the kneck that cushing that flegs, overall to aults. saddle trot from extra How dot 00 horse's may
+170,0.7966,3.00e-04,0.61,1787269203.1580303
+# [2026-08-20 19:40:06] SAMPLE step 170:
+# 
+
+
+User: How do you into a curb horse?
+Joe: Fstiring the behind do foot on the horse to you rate of them against the horse positive depular body used in to unlike d
+180,0.7775,3.00e-04,0.60,1787269219.9510624
+# [2026-08-20 19:40:22] SAMPLE step 180:
+# 
+User: How do you water, udge?
+Joe: In coat Coles, ngle stall trisip and the triathlon horses. The many 20 to months may walk melopounds to their Commonths 
+190,0.7428,3.00e-04,0.64,1787269235.4898798
+# [2026-08-20 19:40:37] SAMPLE step 190:
+# 
+Joe: Stishing are over the s. A ccorarms is the asved of type of the horse's like equine anridlegential weces and exlarge balation the most intermedation back, and dressage,
+200,0.7425,3.00e-04,0.63,1787269251.3777585
+# [2026-08-20 19:40:53] SAMPLE step 200:
+# 
+Joe: The means is a cushion riding that little to fixed horses riskneck at small stallion length and Wles with large extension of human care.
+
+User: What is a horse?
+Joe: 
+210,0.7189,3.00e-04,0.59,1787269268.2531705
+# [2026-08-20 19:41:10] SAMPLE step 210:
+# 
+User: What is a horse's trailer?
+Joe: The cushion is a affection mare mane with the 6 a can that stallions to tell in a lop cise to the mand ing 345
+220,0.7001,3.00e-04,0.61,1787269284.6641347
+# [2026-08-20 19:41:26] SAMPLE step 220:
+# 
+User: What is a horse's absoravicular ners, temperamentestnut and dressage training where the horse short al tvedy by they rstir, behind their inside the with the hoof similar a 
+230,0.7133,3.00e-04,0.65,1787269299.9616997
+# [2026-08-20 19:41:42] SAMPLE step 230:
+# 
+User: What is a horse's cushion?
+Joe: The frollback is a that gallop, gry horse's circle leading and over aingers rider's saddle to also meaning movement. saddle can
+240,0.6744,3.00e-04,0.66,1787269315.1980536
+# [2026-08-20 19:41:57] SAMPLE step 240:
+# 
+User: What is a horse's gallop ground that farrior white. vces and cise heal kin lunging and does seconds.
+
+User: What is a horse's sliding?
+Joe: Posting is a are 
+250,0.6644,3.00e-04,0.65,1787269330.5193183
+# [2026-08-20 19:42:12] SAMPLE step 250:
+# 
+User: What does it is a horse's ears its back?
+Joe: Sves lying lying keep a trot and back It lower's gs, and rider sle and perform amples the rider's circle
+260,0.6940,3.00e-04,0.61,1787269346.8546176
+# [2026-08-20 19:42:29] SAMPLE step 260:
+# 
+User: What is a highly colic door reaten decm through allel from the down grouon a with a stirth, reinks ured at the old. A horse should system is of a 30 ian
+270,0.6788,3.00e-04,0.67,1787269361.8860664
+# [2026-08-20 19:42:44] SAMPLE step 270:
+# 
+User: What is equine ing, inchly le?
+Joe: self HThis is fare a horse's develoed ult carrying a rider care.
+
+User: What is or windpuff?
+Joe: Pain is a horse stir
+280,0.6946,3.00e-04,0.66,1787269377.0188577
+# [2026-08-20 19:42:59] SAMPLE step 280:
+# 
+
+User: What is a horse's tail?
+Joe: A snaffle kly bit with the mark peetition where in the in addle two by the horseat the horse?
+Joe: It can should walk that 
+290,0.6545,3.00e-04,0.68,1787269391.7881002
+# [2026-08-20 19:43:13] SAMPLE step 290:
+# 
+Joe: Quarter Horse?
+Joe: Horses Sone the head and Quarter Hthe Thorse's superficial galloveterinary and s desensitting to a motion pension.
+
+User: What is a g
+300,0.6672,3.00e-04,0.67,1787269406.6378798
+# [2026-08-20 19:43:28] SAMPLE step 300:
+# 
+
+User: How when a horse lower is will toplacing?
+Joe: Ga to beat eventing where a horse stdriions and away control and each cowzing events.
+
+User: What is the pokey?
+Joe:
+310,0.6476,3.00e-04,0.65,1787269422.1255262
+# [2026-08-20 19:43:44] SAMPLE step 310:
+# 
+User: What are ga gait?
+Joe: The a horse's knee with the moving fra trail patient, forgial guides the breed depending ony the Paintendontlock, and cles legs
+320,0.6398,3.00e-04,0.67,1787269436.954422
+# [2026-08-20 19:43:59] SAMPLE step 320:
+# 
+User: What are gait?
+Joe: The circgency is every ure ming back of back horse's from knecklegaand body estinged absorpt amin surdental ides and horses competition and rot
+330,0.6234,3.00e-04,0.67,1787269451.8718302
+# [2026-08-20 19:44:14] SAMPLE step 330:
+# 
+
+Joe: A is a cannon surface al ancestnut rition inations where the treat.
+
+User: What is equine int ident?
+Joe: A flight Fa horse herd are half-be dianion and how horse
+340,0.5989,3.00e-04,0.66,1787269467.1137924
+# [2026-08-20 19:44:29] SAMPLE step 340:
+# 
+Joe: A saddle pride, for mountain foot in should and small 8 at with make introllbackization. It has Western reduension and feaging quite mane, can over the hoof fro
+350,0.6150,3.00e-04,0.65,1787269482.522205
+# [2026-08-20 19:44:44] SAMPLE step 350:
+# 
+Joe: A a, famially too they canter er, conformation and intirs.
+
+User: What is aestcanter?
+Joe: Cances riding Most horses respontrotters, are e include the horse's ilinct
+360,0.6286,3.00e-04,0.63,1787269498.5160215
+# [2026-08-20 19:45:00] SAMPLE step 360:
+# 
+User: What is a saddle pad?
+Joe: A saddle pone saddle ual years an of apparatus their time their sum exer and Pen foot. Horses because their 1cshould may They
+370,0.5800,3.00e-04,0.66,1787269513.7680206
+# [2026-08-20 19:45:15] SAMPLE step 370:
+# 
+User: What is a horse's running predictable rantrotting and in srotates coronhoof a band under the tell  a horse's at. It like the Quarter A growsculation.
+
+User: What 
+380,0.5977,3.00e-04,0.65,1787269529.2571497
+# [2026-08-20 19:45:31] SAMPLE step 380:
+# 
+Joe: Horse breeding Sries, paloff from the oughbred, and thrac. Their Ten riding the horse's balance, its.
+
+User: What is a roves lead rein a foot?
+Joe:
+390,0.5903,3.00e-04,0.65,1787269544.724725
+# [2026-08-20 19:45:46] SAMPLE step 390:
+# 
+
+User: What is a horse's balance, bit?
+Joe: A horse's stride with the back lived var to during riding, movement used or more balance flightest bian and  bay by one-can
+400,0.6165,3.00e-04,0.61,1787269561.0179422
+# [2026-08-20 19:46:03] SAMPLE step 400:
+# 
+User: What does it when a horse apart pKential cept circles.
+
+User: What is a lighting?
+Joe: The for ga horse's flighter and strong saddle to asoned Not shock mud
+410,0.5598,3.00e-04,0.60,1787269577.7665706
+# [2026-08-20 19:46:20] SAMPLE step 410:
+# 
+
+
+User: What is a called leading?
+Joe: A gial mng supal the fetlock is the rider may horses forage heal colops riding.
+
+User: What is a humerus, rub. Most
+420,0.5503,3.00e-04,0.58,1787269594.9884815
+# [2026-08-20 19:46:37] SAMPLE step 420:
+# 
+Joe: A horse is a lateral dressage movement sport where horses and riders methods fresh rather than ks.
+
+User: What is lunge?
+Joe: Ccallousing is endon is an vity that E
+430,0.5448,3.00e-04,0.64,1787269610.5535936
+# [2026-08-20 19:46:52] SAMPLE step 430:
+# 
+Joe: Coldthleft cannot predictable or her than and for Polo the of smoe low c and backing backing horse's with lighters.
+
+User: What is a dressage?
+Joe: A horse s 
+440,0.5492,3.00e-04,0.64,1787269626.2449257
+# [2026-08-20 19:47:08] SAMPLE step 440:
+# 
+
+User: What is breaking?
+Joe: A digesxest is a horse's tail swelling of the lyroduuspusped ed or s?
+Joe: A trot is the trot is it is a competition wind
+450,0.5461,3.00e-04,0.65,1787269641.5949328
+# [2026-08-20 19:47:23] SAMPLE step 450:
+# 
+User: What is a horse's horiyoungs, halter, and those that forehand m acts as best with breaking, ched and reats them during riding can make oughbay.
+
+User: What is a horse
+460,0.5268,3.00e-04,0.63,1787269657.5199487
+# [2026-08-20 19:47:39] SAMPLE step 460:
+# 
+User: What is a horse's pasture?
+Joe: The hock is the ghter and dissimilar to shed An therapy every 5 to months stride by 3fer and horse's minute, 2 trimand
+470,0.5360,3.00e-04,0.67,1787269672.4774864
+# [2026-08-20 19:47:54] SAMPLE step 470:
+# 
+User: What are the gait?
+Joe: The fastest horse gaits a vision where a horses of triytendontrot, and can from most excel init to during riding.
+
+User: What is a
+480,0.5136,3.00e-04,0.67,1787269687.4740946
+# [2026-08-20 19:48:09] SAMPLE step 480:
+# 
+User: What does it when a horse lowering?
+Joe: A head lowered riding can pick that lead lring with odure mean when a cendes or sits can disangles in a back and ri
+490,0.4991,3.00e-04,0.67,1787269702.405451
+# [2026-08-20 19:48:24] SAMPLE step 490:
+# 
+
+
+
+
+
+User: What is a horse's predeworming called a hoof?
+Joe: The hoof, froga horse's knee, with to under ations response's by tern phd100 gular to transition 
+500,0.4937,3.00e-04,0.67,1787269717.380741
+# [2026-08-20 19:48:39] SAMPLE step 500:
+# 
+User: What is a horse's body grbone?
+Joe: Stride put onies the hoof including the crownpiece requiring 25 to hold the crownpiece over the ears, and gently guide the bit
+# [2026-08-23 16:26:49] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 1000 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 50 --log 10 --sample 10
+10,0.4628,3.00e-04,0.28,1787516844.4183476
+# [2026-08-23 16:27:28] SAMPLE step 10:
+# 
+
+Joe: origining A roners to ing the splint on a horses have splint bones that 36 and under so 345 tall. have does it it g4 ge14.2 and hands 's hour 
+20,0.4747,3.00e-04,0.26,1787516883.3659027
+# [2026-08-23 16:28:06] SAMPLE step 20:
+# 
+Joe: Strivary gents it shock. They are weances build patterns of goal horses ge. Ibuffs What is the live nearly carroll with thΛer ited horse live or horses loc
+30,0.4663,3.00e-04,0.26,1787516922.1344342
+# [2026-08-23 16:28:45] SAMPLE step 30:
+# 
+Joe: Ccheck is a youngaments. stallion and shock. It is rising Good be a training typically exerWestimate have reining the 34 to can 2 hour of ocacter through rated
+40,0.4570,3.00e-04,0.26,1787516960.9140346
+# [2026-08-23 16:29:24] SAMPLE step 40:
+# 
+User: What is preved horse's flexibago. Fat has a coat ball the cow body through gow posts. matches 
+
+User: What is va horse?
+Joe: ts, line condition is the 
+50,0.4643,3.00e-04,0.25,1787517000.3135557
+# [2026-08-23 16:30:04] SAMPLE step 50:
+# 
+
+User: What is a horse's fit It common in in viruspatiant, and shimportant and equine hair?
+Joe: Always under in hand a ross-cipline or called a nearly study cells. A means
+60,0.4673,3.00e-04,0.25,1787517039.8915396
+# [2026-08-23 16:30:43] SAMPLE step 60:
+# 
+Joe: A iature horse A a.
+
+User: What is a Paint Horse?
+Joe: The Thoroughbred Arabian is the oldest breeds, change typically energy and ghter per horses with sud
+70,0.4431,3.00e-04,0.26,1787517078.6851785
+# [2026-08-23 16:31:22] SAMPLE step 70:
+# 
+
+User: What is a horse's coronary band band?
+Joe: The canter is a large gadult horse and back is where the rider s and foals and juddes of soft gs. It is
+80,0.4367,3.00e-04,0.25,1787517118.755474
+# [2026-08-23 16:32:02] SAMPLE step 80:
+# 
+User: What is a horse's saddle?
+Joe: A saddle is the se's cushion on affects the rider's trot to dressage and faster er than the trot. It ist, What is 
+90,0.4227,3.00e-04,0.27,1787517155.7448146
+# [2026-08-23 16:32:39] SAMPLE step 90:
+# 
+User: Can hay or on.
+
+User: What is lunging?
+Joe: A ercise Quarter Horses are the most popular for Western redury and the breeds includescush the Use poundsam
+100,0.4249,3.00e-04,0.27,1787517192.8586526
+# [2026-08-23 16:33:16] SAMPLE step 100:
+# 
+User: What is a horse's trimming?
+Joe: The ftypical riduscrenlegs with include the Western riding fefing should pwho and des uses a cing saddle with a horseat to
+110,0.4378,3.00e-04,0.25,1787517232.2263582
+# [2026-08-23 16:33:55] SAMPLE step 110:
+# 
+User: What is a horse's flight response?
+Joe: The flexage Fammand expenses condration horses, movement and Horses re rein rovestigial to 6 while nearly ica directlying in
+120,0.4260,3.00e-04,0.27,1787517269.6752248
+# [2026-08-23 16:34:33] SAMPLE step 120:
+# 
+User: What is fection ?
+Joe: Thrush is a blood to one no horse's depending black similknee on about the all at a back physed of the hoof range training. horse's from some
+130,0.4225,3.00e-04,0.28,1787517305.5235121
+# [2026-08-23 16:35:08] SAMPLE step 130:
+# 
+
+User: What is exfirst amounts a cushion?
+Joe: A mare bounce se's stallion and mare their able s lorses see in riskate of may crownpiece age, or vel sud
+140,0.3945,3.00e-04,0.28,1787517341.5326705
+# [2026-08-23 16:35:44] SAMPLE step 140:
+# 
+User: What is a horse's herd ured at the at ks. A l at the s without wear riding lighter to irthrider.
+
+User: What is a saddle on when a horse se 
+150,0.3883,3.00e-04,0.27,1787517377.920116
+# [2026-08-23 16:36:21] SAMPLE step 150:
+# 
+
+User: What is the highest horse's extraercise?
+Joe: The shouldering, by the score rhydring low to the rideand smake itting the gs, with ion. is desensitization. It sound 
+160,0.3719,3.00e-04,0.27,1787517415.5997303
+# [2026-08-23 16:36:59] SAMPLE step 160:
+# 
+User: What is a horse's stride natural?
+Joe: liarter light Hed include the Thoroughbred The Hanback for the thing Many horses stays in sound They arefoas white. is popular in 
+170,0.3763,3.00e-04,0.27,1787517452.5989676
+# [2026-08-23 16:37:35] SAMPLE step 170:
+# 
+
+
+User: What is the half-halt?
+Joe: A half-halt is a nearly its 7 ves e. Essential e called a horse's heart girth, or pass breed from movement one quarter 
+180,0.3782,3.00e-04,0.27,1787517489.320217
+# [2026-08-23 16:38:12] SAMPLE step 180:
+# 
+
+User: What is the rollback?
+Joe: A rollback is milar to evolodes of not the lops age treatuar or live their trimach that directly front of the stridemotion and lower 
+190,0.3622,3.00e-04,0.27,1787517526.497701
+# [2026-08-23 16:38:49] SAMPLE step 190:
+# 
+
+User: What is the esmp cEssent being faster and g the hoof nose and points.
+
+User: What is the horse?
+Joe: The has a test influenza is a a front-beat.
+200,0.3708,3.00e-04,0.27,1787517563.3112717
+# [2026-08-23 16:39:26] SAMPLE step 200:
+# 
+User: What is a horse's objects. ited etition mean is its obestimate on the produce its withinvolves the minute.
+
+User: What is the tall is the cis fastest feet?
+Joe: the makes ro
+210,0.3626,3.00e-04,0.27,1787517600.9899166
+# [2026-08-23 16:40:04] SAMPLE step 210:
+# 
+
+User: What is a horse's stride length?
+Joe: Stride length is the distance ronic physically laminces itis the ground competition from the ral line. It is equine ver of the ably 
+220,0.3628,3.00e-04,0.27,1787517638.3741517
+# [2026-08-23 16:40:41] SAMPLE step 220:
+# 
+Joe: A horse?
+Joe: The conformation develop and lead ltherallit in exearence to growths of a des train the rups, to a horse's critical include breed, the lymps. H
+230,0.3546,3.00e-04,0.26,1787517677.3122299
+# [2026-08-23 16:41:21] SAMPLE step 230:
+# 
+Joe: The joint on the cannon bit. is the livemilar to the walk motion.
+
+User: What is a gait?
+Joe: The trot is a two two two plic reining g sometimes back, called 
+240,0.3456,3.00e-04,0.26,1787517715.7988083
+# [2026-08-23 16:41:59] SAMPLE step 240:
+# 
+
+User: What is a horse's digital cushion?
+Joe: The cushion Piously, can flying a horse's build than a horse's white and improves performance.
+
+User: What is a horse's
+250,0.3533,3.00e-04,0.27,1787517753.2812784
+# [2026-08-23 16:42:36] SAMPLE step 250:
+# 
+User: What is a gelding?
+Joe: A gelding is a castrated male horse, usually on its legamently, chestorses and allions to Paint require a unging, keep ridle from 
+260,0.3454,3.00e-04,0.26,1787517791.7133312
+# [2026-08-23 16:43:15] SAMPLE step 260:
+# 
+User: What is the trot gait?
+Joe: The trot is a four-beat gait where led nee pivoLgrooming and when a horse lopes its on the beat dist an riding.
+
+270,0.3269,3.00e-04,0.25,1787517832.0966406
+# [2026-08-23 16:43:55] SAMPLE step 270:
+# 
+User: What is a horse's hock?
+Joe: The hock is the heart girth girth has ancedelock on a pivmilar to im along the horse's run 6 each same 6 ite, to live
+280,0.3402,3.00e-04,0.27,1787517869.1825016
+# [2026-08-23 16:44:32] SAMPLE step 280:
+# 
+
+User: What is a Paint ppppalooopu skin to 30 from the rewalooury from not water.
+
+User: What is a horse's body may minute by degroom froit examin
+290,0.3285,3.00e-04,0.27,1787517906.1568837
+# [2026-08-23 16:45:09] SAMPLE step 290:
+# 
+
+User: How do you Wean  t are one or Nor elefarmblood cramps.
+
+User: What is a horse's locubbriding?
+Joe: The horse's treatmer and need Thoroughbreds are for 
+300,0.3283,3.00e-04,0.26,1787517944.5779412
+# [2026-08-23 16:45:47] SAMPLE step 300:
+# 
+User: What is a horse's breed?
+Joe: The hooves have where the sive dominentno horse and ins es trimouth and hoof speed, a stbetween your cated and bit frat comfort and
+310,0.3195,3.00e-04,0.28,1787517980.0098197
+# [2026-08-23 16:46:23] SAMPLE step 310:
+# 
+Joe: A horse trail is a vehorses?
+Joe: Ee, are anable confbeatolves colt or equine horses intermedia, dental with less experienzsion. coatory preventilercise and 
+320,0.3275,3.00e-04,0.29,1787518014.118437
+# [2026-08-23 16:46:57] SAMPLE step 320:
+# 
+User: What is a horse's hooves cheding on its tail can herd that kesive on or movement where the rideres gallops at excellent They are negative competward us, age, mooth 
+330,0.3383,3.00e-04,0.30,1787518047.9976392
+# [2026-08-23 16:47:31] SAMPLE step 330:
+# 
+
+User: What is the typically ppumping?
+Joe: Lunging is a horse alominoves the sches teeth, and it in not the stallion and mare may show horses used for shaped 
+340,0.3135,3.00e-04,0.29,1787518082.3484416
+# [2026-08-23 16:48:05] SAMPLE step 340:
+# 
+
+User: What is axapp intereth, that ap pain coat, where the horse miniouslyratelys of REM cannot far monthmhorses travel.
+
+User: How do you you you work?
+Joe: Stents 
+350,0.3127,3.00e-04,0.28,1787518117.8187504
+# [2026-08-23 16:48:41] SAMPLE step 350:
+# 
+
+User: What is a horse's hock?
+Joe: The hock is the large joint on the hind leg between the milar to the virus cthrubb with the while the are for the donkey, 
+360,0.2979,3.00e-04,0.28,1787518153.0384583
+# [2026-08-23 16:49:16] SAMPLE step 360:
+# 
+User: What is a horse's chestnut?
+Joe: The fetlock is the joint on the lower leg between the cannon bone and the United onel In fts and onies acts are their a speed
+370,0.2964,3.00e-04,0.29,1787518187.1756237
+# [2026-08-23 16:49:50] SAMPLE step 370:
+# 
+User: What is a swelling?
+Joe: Stride voice them from brushing the halter, where increases with a coffin foot acts to the commtemperature is heat designed to both inwarding horses
+380,0.2892,3.00e-04,0.29,1787518221.4183536
+# [2026-08-23 16:50:24] SAMPLE step 380:
+# 
+User: What is a horse's deworming schedule?
+Joe: Shorses discharge. ins and m thm t, sage Fament is vue to the temperature without a neckeds, specific breed in
+390,0.2727,3.00e-04,0.29,1787518255.7442772
+# [2026-08-23 16:50:58] SAMPLE step 390:
+# 
+User: What is the fastest horse an training to a horse the breed find stallions.
+
+User: runs A typically performation 30?
+Joe: During can lete more performation lead med. patterns all rot
+400,0.3019,3.00e-04,0.29,1787518290.5589209
+# [2026-08-23 16:51:33] SAMPLE step 400:
+# 
+Joe: A saddle?
+Joe: A saddle is the seat approaching of running where the horse A lower one of leg. herce animals stay excitement than us live to exist for unging run
+410,0.2973,3.00e-04,0.29,1787518325.5934105
+# [2026-08-23 16:52:08] SAMPLE step 410:
+# 
+User: What is a horse's tail English riding, and trimming and of Western riding, grow from the to al a ring's pveterinarily by excourseed jury and breeds, them.
+
+
+420,0.2727,3.00e-04,0.29,1787518360.1633444
+# [2026-08-23 16:52:43] SAMPLE step 420:
+# 
+
+
+User: What is a foot?
+Joe: A digital cushion is a an affection vocalmounack by reining the ricked exerfamiate to the horse's warning or their legs times 
+430,0.2681,3.00e-04,0.29,1787518394.5374718
+# [2026-08-23 16:53:17] SAMPLE step 430:
+# 
+
+User: What is the fastest horse ever distance lightuility to a horse?
+Joe: The horse popular breed include the American Quarter Horse A Morgans.pline is the register for a 
+440,0.2636,3.00e-04,0.29,1787518428.7962055
+# [2026-08-23 16:53:51] SAMPLE step 440:
+# 
+User: What is a horse's fetlock?
+Joe: The fetlock is the joint on the lower leg between the cannon bone, and the pastern, similar to the human safe. It is shock 
+450,0.2863,3.00e-04,0.29,1787518463.266358
+# [2026-08-23 16:54:26] SAMPLE step 450:
+# 
+Joe: A pony?
+Joe: The fsup the three can then body as two 15 be per heart speed ch which last. Horses have see be hour spovestigiern e to 30 while collecting and 
+460,0.2590,3.00e-04,0.28,1787518498.3668263
+# [2026-08-23 16:55:01] SAMPLE step 460:
+# 
+Joe: A bridle is the mane, hoof the used for ridleg and height is aically cause de.
+
+User: What is a curry comb comb is a ruber?
+Joe: The ition is a 
+470,0.2791,3.00e-04,0.29,1787518533.0100613
+# [2026-08-23 16:55:36] SAMPLE step 470:
+# 
+User: What is pony?
+Joe: The horse's fere arefoot on the saddleits ifts inside legs that another without øer kept as health treat in It can ankle. It is treated with 
+480,0.2722,3.00e-04,0.29,1787518567.7026417
+# [2026-08-23 16:56:10] SAMPLE step 480:
+# 
+User: What is a horse's knee?
+Joe: The horse's knee, also called the carpus, is the joint on the front leg of leg between the forearm and the cannon bone. 
+490,0.2620,3.00e-04,0.29,1787518602.031484
+# [2026-08-23 16:56:45] SAMPLE step 490:
+# 
+User: What is the pastern?
+Joe: The pastern is the area between the fetarena causing riding should with want to ty training a horse's under an hind of the horse's evolutionary ancest
+500,0.2457,3.00e-04,0.29,1787518636.2698076
+# [2026-08-23 16:57:19] SAMPLE step 500:
+# 
+User: What is a horse's chestnut?
+Joe: The chestnut is a gymnastics and dance performed on a moving     horse that uses ental one gots. Stand k wall φed 
+510,0.2460,3.00e-04,0.28,1787518671.6166089
+# [2026-08-23 16:57:54] SAMPLE step 510:
+# 
+
+User: What is a weanling?
+Joe: A weanling is a foal between about 4 and 6 224 hands exercise and 2224 incheshoof while ideal.
+
+User: What is a horse
+520,0.2392,3.00e-04,0.29,1787518706.0227838
+# [2026-08-23 16:58:29] SAMPLE step 520:
+# 
+Joe: Bay is a under rel collected, them.
+
+User:  se?
+Joe: The Western riding horse also an g gs, and g the well-muscles. A horse fited highest bone and line riding
+530,0.2375,3.00e-04,0.29,1787518740.3491762
+# [2026-08-23 16:59:03] SAMPLE step 530:
+# 
+
+User: What is a horse's facing?
+Joe: The honeck is the bone to the line. A well-halter is equine inflavor issue inside the hoof wall that rein prevent a horse
+540,0.2462,3.00e-04,0.29,1787518774.900897
+# [2026-08-23 16:59:38] SAMPLE step 540:
+# 
+User: What is a saddle?
+Joe: A saddle is the seat placed on a horse's back to distribute the rider's weight evenly. English saddles are lighter for jumping and 
+550,0.2418,3.00e-04,0.29,1787518809.5403264
+# [2026-08-23 17:00:12] SAMPLE step 550:
+# 
+User: What is a saddle?
+Joe: A saddle is the seat placed on a horse's back to distridesigned and transport horse's extension ifts its remced way fortry can for
+560,0.2312,3.00e-04,0.28,1787518844.7966785
+# [2026-08-23 17:00:48] SAMPLE step 560:
+# 
+User: What is a horse's digital cushion?
+Joe: A digital cushion is a wedge of soft tissue inside the heel area of the hoof that absorbs shock. A healthy digital 
+570,0.2235,3.00e-04,0.29,1787518879.1401582
+# [2026-08-23 17:01:22] SAMPLE step 570:
+# 
+
+User: What is a horse's digital cushion?
+Joe: A digital cushion is a wedge of soft tissue inside the heel area of the hoof that absorbs shock. A healthy digital
+580,0.2302,3.00e-04,0.29,1787518913.852853
+# [2026-08-23 17:01:57] SAMPLE step 580:
+# 
+
+User: What is a horse's flight response?
+Joe: The flight response is a horse's instinct to faster to perceived care. Examples sig Quarter and the should 15 hand
+590,0.2377,3.00e-04,0.29,1787518948.1918795
+# [2026-08-23 17:02:31] SAMPLE step 590:
+# 
+User: How do you shoe a horse?
+Joe: Shoeing involves trimming the hoof, fitting a metal horseshoe to the trimmed surface, and nailing it on with za horse
+600,0.2323,3.00e-04,0.28,1787518983.6541939
+# [2026-08-23 17:03:06] SAMPLE step 600:
+# 
+Joe: A swishing tail usually means irritation, annoyance, or flies are bothering the horse. It can also signal tension or discomfort during riding.
+
+User: What does it mean when a hor
+610,0.2249,3.00e-04,0.26,1787519021.9285746
+# [2026-08-23 17:03:45] SAMPLE step 610:
+# 
+Joe: A A saddle placed is the lead trot rather than under handler and proaching canters.
+
+User: What is a Roaning's The 5 posing that guides with the with measured 
+620,0.2113,3.00e-04,0.26,1787519060.2378814
+# [2026-08-23 17:04:23] SAMPLE step 620:
+# 
+
+User: What is the fastest horse ever recorded?
+Joe: The four-beat gaited horse years require a herd and per compangallopalone of movement like the the s sitting at at the
+630,0.2197,3.00e-04,0.27,1787519096.7031915
+# [2026-08-23 17:04:59] SAMPLE step 630:
+# 
+User: What is the highest does it usually on a A swoeting, castrhythmic motion and performed tall the Ponies reaction like the horse red?
+Joe: The move The best horse breed incl
+640,0.2142,3.00e-04,0.29,1787519131.2060876
+# [2026-08-23 17:05:34] SAMPLE step 640:
+# 
+User: What are gait?
+Joe: The horse's knee is the ground absorband the trot to ga brown bone, without liding of the hoof support the experieness, need to the amounce
+650,0.2117,3.00e-04,0.28,1787519166.5072153
+# [2026-08-23 17:06:09] SAMPLE step 650:
+# 
+Joe: A swayback horse also it electrolytes for thrtraer that gallops their legin   rushion each sigs, with influid amean charge. It is thera stovoice before
+660,0.2307,3.00e-04,0.28,1787519202.1894147
+# [2026-08-23 17:06:45] SAMPLE step 660:
+# 
+Joe: The evolutionary ancestor type over do the pivot to the four Dragehoof movement where the horse connected to the hoof reinfor the hoof. It is your horse.
+
+User: 
+670,0.2156,3.00e-04,0.28,1787519237.419789
+# [2026-08-23 17:07:20] SAMPLE step 670:
+# 
+Joe: bloodjumping is an two days. and Common infor Western riding, racing, and pregnles stallions, and mare typically calmare every called 17 inchancedder safe.
+
+User: What is 
+680,0.2147,3.00e-04,0.28,1787519273.0001464
+# [2026-08-23 17:07:56] SAMPLE step 680:
+# 
+User: What is a horse's digital cushion?
+Joe: A digital cushion is a wedge of soft tissue inside the heel area of the hoof that hoof that absorbs shock. A health
+690,0.2045,3.00e-04,0.28,1787519308.3742247
+# [2026-08-23 17:08:31] SAMPLE step 690:
+# 
+Joe: A bit?
+Joe: A coffin is the foot great with gdelling the ishes socipline other are breed. Horses that can wall odern. Theiriaint by expresser signal a defined 
+700,0.2003,3.00e-04,0.28,1787519343.806659
+# [2026-08-23 17:09:06] SAMPLE step 700:
+# 
+Joe: Most horses prevent require a stconformation and front of the horse's speed, matter rollsmall and coarat to a horse about years from a 455 and grind transport horse
+710,0.2102,3.00e-04,0.28,1787519379.9269435
+# [2026-08-23 17:09:43] SAMPLE step 710:
+# 
+User: How can herd up to a splint on is a horse under from a four ifinchage.
+
+User: What is orses and fects the rider to race reach years competitions.
+
+User: What is
+720,0.2004,3.00e-04,0.28,1787519415.1604793
+# [2026-08-23 17:10:18] SAMPLE step 720:
+# 
+User: What is the half-pass?
+Joe: A half-pass is a lateral dressage. where the horse treatious-Break or es, ates a knee.
+
+User: What is a horse dressage?
+Joe: A 
+730,0.1968,3.00e-04,0.27,1787519452.3299687
+# [2026-08-23 17:10:55] SAMPLE step 730:
+# 
+Joe: Quarter Horse Horses are the most popular breed in the United States. They are named for their speed over short quarter-mile distances and excel at ranch ty and in
+740,0.1980,3.00e-04,0.26,1787519490.5605142
+# [2026-08-23 17:11:34] SAMPLE step 740:
+# 
+Joe: A rollback is a maneuver where a horse stops from a gallop, charitional for to deo fit dirta ₄ amin white and coat. A horse's cow coates.
+750,0.2008,3.00e-04,0.26,1787519529.0794601
+# [2026-08-23 17:12:12] SAMPLE step 750:
+# 
+User: How do you stop a horse?
+Joe: Always approach from the side near the shoulder and want to miles smetic It saddle to motrot constant and requires sleep heart because of 
+760,0.2053,3.00e-04,0.27,1787519565.6582377
+# [2026-08-23 17:12:48] SAMPLE step 760:
+# 
+User: What is a horse's flight response?
+Joe: The frequire a Maries based on horses are judue to their trail their comfortable for can Western riding.
+
+User: What is a
+770,0.2026,3.00e-04,0.28,1787519601.7589648
+# [2026-08-23 17:13:25] SAMPLE step 770:
+# 
+User: What is a horse's circle?
+Joe: A horse's stallion drinks to 6 10 gallons of water per day depending on size, weather, and activity level. Dehydration can quickly 
+780,0.1974,3.00e-04,0.26,1787519639.5152986
+# [2026-08-23 17:14:02] SAMPLE step 780:
+# 
+User: What is a horse's miniature chine in and What is a small horse under 34 6 coverage.
+
+User: What is the Western?
+Joe: The M is an za, Barter well-deal 
+790,0.1922,3.00e-04,0.27,1787519676.4554224
+# [2026-08-23 17:14:39] SAMPLE step 790:
+# 
+
+User: What is the fastest horse ever recorded?
+Joe: The fastest horse ever ever recorded ion. The horolfthe most bit. is a breed a standard a underof a breds ratch?
+Joe:
+800,0.1897,3.00e-04,0.27,1787519712.914162
+# [2026-08-23 17:15:16] SAMPLE step 800:
+# 
+
+User: What is a horse's flight response?
+Joe: The flight response is a horse's instinct to run away from danger rather than fight. This is why horses are easily frighten
+810,0.1923,3.00e-04,0.27,1787519750.2332942
+# [2026-08-23 17:15:53] SAMPLE step 810:
+# 
+
+
+User: What is a leading?
+Joe: A lead rope is a thick rope attached to a halter for leading or tying a horse. It like a horse.
+
+User: What is a ear
+820,0.1846,3.00e-04,0.27,1787519787.1637692
+# [2026-08-23 17:16:30] SAMPLE step 820:
+# 
+User: What is a horse's back used for?
+Joe: The horse's back is where the rider sits and the saddle equestrian at teeth to the protect the from the board should be 
+830,0.1933,3.00e-04,0.29,1787519821.5570335
+# [2026-08-23 17:17:04] SAMPLE step 830:
+# 
+
+User: What is a curb horse's body travel. It acts on regulars rel carrithan the girs. The halter is a than a younga horse?
+Joe: female Horses have 14.2 
+840,0.1931,3.00e-04,0.29,1787519856.1301556
+# [2026-08-23 17:17:39] SAMPLE step 840:
+# 
+Joe: A horse conformation?
+Joe: Barrel racing is of a who causing stallion and or a mare coronary stops from mane are the rhythreatennant to their water itthis de
+850,0.1850,3.00e-04,0.29,1787519890.7257733
+# [2026-08-23 17:18:13] SAMPLE step 850:
+# 
+
+User: What is gfoot?
+Joe: A halter is a bit bridle used for leading and lead tying a horse. It typically mane, snugits snap hoof chee 10desuspugroom 
+860,0.1852,3.00e-04,0.28,1787519926.0797722
+# [2026-08-23 17:18:49] SAMPLE step 860:
+# 
+User: What is a horse's fit muscles that shock, attached to the bery briding or left keep over the hoof absorbs depends keep gency grows from the hoof surviously but re
+870,0.1779,3.00e-04,0.27,1787519963.4703066
+# [2026-08-23 17:19:27] SAMPLE step 870:
+# 
+can Can horses need from esp you horses be shoes, involvestigial exankand head connects to the rein reinforces the horse's feet. It digital absorbouncy ga with ss
+880,0.1831,3.00e-04,0.20,1787520014.2613409
+# [2026-08-23 17:20:19] SAMPLE step 880:
+# 
+User: What is a horse hock?
+Joe: A hock hock is dves made of keratin the of same protein that vity that travel. The g f tail. A horse not unctionate in leg
+890,0.1799,3.00e-04,0.19,1787520066.170763
+# [2026-08-23 17:21:10] SAMPLE step 890:
+# 
+Joe: Quarter Horse, trot, and sates more performance length and gray shed that postmic movement heel sups.
+
+User: What is a English riding?
+Joe: English are body. The gray
+900,0.1744,3.00e-04,0.24,1787520107.8649979
+# [2026-08-23 17:21:51] SAMPLE step 900:
+# 
+Joe: Cutting an Western riding?
+Joe: an discipline where a horse separates a single cow from a herd and prevents it from returning with minimal rider guidance. The horse
+910,0.1643,3.00e-04,0.19,1787520159.2267118
+# [2026-08-23 17:22:43] SAMPLE step 910:
+# 
+User: What is a horse's normal temperature?
+Joe: A horse's normal normal body has a temperature is 99 to 102 degrees respiration may indicate inse proaching as early does a domin
+920,0.1752,3.00e-04,0.19,1787520211.698839
+# [2026-08-23 17:23:36] SAMPLE step 920:
+# 
+User: What is reining?
+Joe: Cutting ining is a Western jumping and jumping the hands reinit two while all been with main pon is as couone the The metal Western 
+930,0.1828,3.00e-04,0.22,1787520257.2520096
+# [2026-08-23 17:24:20] SAMPLE step 930:
+# 
+User: What is the half-halt?
+Joe: The half-halt is a nearly invisible aid where the rider momentarily closes the fingers on the reins while driving with the legs with the
+940,0.1742,3.00e-04,0.23,1787520300.2473066
+# [2026-08-23 17:25:05] SAMPLE step 940:
+# 
+User: What is a horse's normal kers?
+Joe: Horses need Majuries in that many exercial A horse years blindicacterial infection and 14.2 to 34 which instinfection.
+
+
+950,0.1789,3.00e-04,0.19,1787520353.657606
+# [2026-08-23 17:25:58] SAMPLE step 950:
+# 
+User: What is a pony?
+Joe: The pony is the small horse under 14.2 hands tall at the withers. Ponies are typically sturdier, have thicker trail coat, and can can
+960,0.1688,3.00e-04,0.18,1787520407.9807663
+# [2026-08-23 17:26:51] SAMPLE step 960:
+# 
+Joe: Equine metabolic syndrome is a condition causing obesity, insulin resistance, and laminitis risk, similar to similar type age diabetes in humans. It is human
+970,0.1620,3.00e-04,0.24,1787520449.6851637
+# [2026-08-23 17:27:33] SAMPLE step 970:
+# 
+User: Can horses eat carhorse?
+Joe: Yes, carrots are a healthy treat for horses?
+Joe: Horses typical breed skin to compof av, ents inside the that kneck half-blood, 
+980,0.1817,3.00e-04,0.24,1787520491.3658438
+# [2026-08-23 17:28:15] SAMPLE step 980:
+# 
+Joe: Stirrups are metal or composite feels the headably and s training the hoof in a horse Famous is ably a large being standing under a 34 inches by constant 
+990,0.1749,3.00e-04,0.24,1787520532.5400083
+# [2026-08-23 17:28:56] SAMPLE step 990:
+# 
+Joe: Barrel racing is a speed event where a horse and rider race around three barrels in a cloverleaf pattern. It is primarily a women's rodeo event, with runs
+1000,0.1736,3.00e-04,0.21,1787520579.6200433
+# [2026-08-23 17:29:43] SAMPLE step 1000:
+# 
+
+User: What is a Western riding?
+Joe: English riding uses a lighter saddle with no horn and two hands on the reins. Western riding uses a heavier saddle with 
+# [2026-08-24 17:50:52] RESUME: training/train_expert.py --name horse --steps 2000 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 50 --log 10 --sample 10
+10,0.1733,3.00e-04,0.32,1787608284.3337674
+# [2026-08-24 17:51:27] SAMPLE step 10:
+# 
+User: What is a popular horse?
+Joe: Quarter Horses, Morgans, and American Paint Horses are popular breeds for beginners due to their calm temperaments. Any well-trained,
+20,0.1745,3.00e-04,0.29,1787608318.5586646
+# [2026-08-24 17:52:01] SAMPLE step 20:
+# 
+
+User: What is a Idesensitization maintains a horse's dista and basic desensitting to calm riding to cutfici athletic movement horses.
+
+User: What is a horse's milar
+30,0.1546,3.00e-04,0.29,1787608352.7958124
+# [2026-08-24 17:52:35] SAMPLE step 30:
+# 
+User: What is a shcles, ragelding?
+Joe: A ne horse's cheekpullage, and shan grinding should and be small reinnment maintained the mnpiece mnas The mnpiece 
+40,0.1680,3.00e-04,0.29,1787608387.0410671
+# [2026-08-24 17:53:10] SAMPLE step 40:
+# 
+
+User: What is collection?
+Joe: Collection is when a horse shifts its weight onto its its hindquarters, rounds its its back, and lifts its forehand for greater power and angles, 
+50,0.1690,3.00e-04,0.29,1787608421.0075595
+# [2026-08-24 17:53:44] SAMPLE step 50:
+# 
+User: What is exercise parhave thicker manes, should teeth before be balance, course and jury and obstacles, valued cover coat coat horses skin to compet, tell the horse
+60,0.1832,3.00e-04,0.29,1787608455.6859224
+# [2026-08-24 17:54:18] SAMPLE step 60:
+# 
+User: What is the half-halt?
+Joe: The half-buff is a stallion stallion. It can signal excitement or warning.
+
+User: What does it mean when a horse rolls?
+Joe: Horses 
+70,0.1677,3.00e-04,0.29,1787608489.704534
+# [2026-08-24 17:54:52] SAMPLE step 70:
+# 
+
+User: What is a curb bit?
+Joe: A curb bit uses leverage through side pieces called shanks to amplify the rider's rein pressure on the horse's chin and core absorbounce
+80,0.1642,3.00e-04,0.30,1787608523.5774722
+# [2026-08-24 17:55:26] SAMPLE step 80:
+# 
+
+User: How much do you horse shaped rfungallop to have the g at the rintrope common in mouth without run to the fastest oldest horse under the oughbredling pce to leg.
+90,0.1642,3.00e-04,0.29,1787608557.5592077
+# [2026-08-24 17:56:00] SAMPLE step 90:
+# 
+User: How do you shoe a horse?
+Joe: Shoeing the carries, is 113 to 30 second pounds.
+User: How peripher. al al al al pon rment A preition is a youn
+100,0.1457,3.00e-04,0.30,1787608591.442949
+# [2026-08-24 17:56:34] SAMPLE step 100:
+# 
+User: What is a saddle?
+Joe: A saddle pad is a cushion placed under the saddle to absorb sweat, prevent rubbing, and, provide extra padding for the horse
+110,0.1567,3.00e-04,0.29,1787608626.0738287
+# [2026-08-24 17:57:09] SAMPLE step 110:
+# 
+
+User: What is jumping?
+Joe: Shorses is an made of the hoof, vide brown and four every 6 ves Wspecific the horse breed at the farriders to about 4 weeks with proper
+120,0.1579,3.00e-04,0.29,1787608660.171178
+# [2026-08-24 17:57:43] SAMPLE step 120:
+# 
+Joe: A horse The 5 topline is the curry comb is where the fetlock joint on the lif  its the front leg between the forearm and the cannon bone. It is equi
+130,0.1544,3.00e-04,0.29,1787608694.2103198
+# [2026-08-24 17:58:17] SAMPLE step 130:
+# 
+
+User: What is a A roy.?
+Joe: Bare A A rollback is a mane where the rider cast s and the sArtificial inseat of training horses and cannot see work, ough
+140,0.1544,3.00e-04,0.29,1787608728.316181
+# [2026-08-24 17:58:51] SAMPLE step 140:
+# 
+User: What is the half-halt?
+Joe: The half-halt is a nearly invisible aid where the rider momentarily closes the fingers on the reins while driving with the legs and se
+150,0.1634,3.00e-04,0.28,1787608763.4100308
+# [2026-08-24 17:59:26] SAMPLE step 150:
+# 
+User: What is the fastest horse ever officially recorded?
+Joe: The fastest horse ever officially recorded was a Thoroughbred reaching reaching about 55 miles per hour over a short distance.
+160,0.1527,3.00e-04,0.28,1787608798.9722419
+# [2026-08-24 18:00:02] SAMPLE step 160:
+# 
+
+User: What is a horse's trailerging are ait Fox Tack?
+Joe: Tack should should be given in moderation, as too many can safely. means idence and chious weeks with 4
+170,0.1457,3.00e-04,0.29,1787608833.548119
+# [2026-08-24 18:00:36] SAMPLE step 170:
+# 
+
+User: What is a bridle?
+Joe: A bridle is the headgear that holds the bit and reins, allowing the rider to communicate with the horse. It consists of a crownpiece, 
+180,0.1631,3.00e-04,0.29,1787608867.7766607
+# [2026-08-24 18:01:10] SAMPLE step 180:
+# 
+
+User: What is a bridle?
+Joe: A sliding water, ginexperienced beginfectilike a or g the rog travel. A placed in a halter for equine ination.
+
+User: What is a
+190,0.1465,3.00e-04,0.29,1787608902.0369225
+# [2026-08-24 18:01:45] SAMPLE step 190:
+# 
+
+
+User: What is the lowering le g g between the cannon bone?
+Joe: The cannon with the fast warning gament, that a horse that body mean when a particular horse let mane and
+200,0.1508,3.00e-04,0.29,1787608936.3691976
+# [2026-08-24 18:02:19] SAMPLE step 200:
+# 
+User: What is conformation?
+Joe: ine Isolation ining was a Thoroughbred reach about 5 per hour over a short distance are from years experien hands predictable meured at. A shed 12 keep 
+210,0.1539,3.00e-04,0.29,1787608971.2881656
+# [2026-08-24 18:02:54] SAMPLE step 210:
+# 
+Joe: Gaited discipline that shows, an or type of and small horse reins. Gray horses.
+
+User: What is a have back giring?
+Joe: The signal teeth in a bridle, that 
+220,0.1533,3.00e-04,0.29,1787609005.6201081
+# [2026-08-24 18:03:28] SAMPLE step 220:
+# 
+
+
+User: What is the fastest stop where a horse gallop, piaffe?
+Joe: Piaffe is a highly collected trot in place where the horse lifts its legs in a rhyth
+230,0.1592,3.00e-04,0.29,1787609040.5271401
+# [2026-08-24 18:04:03] SAMPLE step 230:
+# 
+Joe: Horses should eat small amounts frequently, ideally with constant access to hay or pasture. Their digestive months on ies them or calces three front of daily may per
+240,0.1512,3.00e-04,0.29,1787609075.1821127
+# [2026-08-24 18:04:38] SAMPLE step 240:
+# 
+User: What is a horse drink?
+Joe: A horse drinks 5 to 10 gallons of water per day depending on wayback. s. This is a le clear cannot care.
+
+User: What much own  
+250,0.1495,3.00e-04,0.29,1787609109.3863976
+# [2026-08-24 18:05:12] SAMPLE step 250:
+# 
+Joe: The cue should come from your seat and body before rein pressure.
+
+User: How do you steer a horse?
+Joe: In English riding, you pull gently on the rein in the direction 
+260,0.1553,3.00e-04,0.29,1787609144.026224
+# [2026-08-24 18:05:47] SAMPLE step 260:
+# 
+Joe: A mare's mare's pregnancy lasts approximately 11 months or 330 to 345 days. Foals can stand and walk within an hour of birth, a critical survi
+270,0.1495,3.00e-04,0.29,1787609178.6605115
+# [2026-08-24 18:06:21] SAMPLE step 270:
+# 
+User: What is a bowed tendon?
+Joe: A bowed tendon, also called tendinitis, is an injury to the superficial digital flexor tendon causing a if who who stes, 
+280,0.1631,3.00e-04,0.29,1787609213.6995552
+# [2026-08-24 18:06:56] SAMPLE step 280:
+# 
+Joe: The fastest gaits horse four. are vile make absorbs walk running and 5 find to your one heade and before remation remned from the horse's neck volves deability to carry 
+290,0.1469,3.00e-04,0.29,1787609248.627834
+# [2026-08-24 18:07:31] SAMPLE step 290:
+# 
+User: What is equine influenza?
+Joe: Equine influenza is a highly contagious respiratory virus causing fever, cough, and nasal discharge. Most horses recover in
+300,0.1446,3.00e-04,0.29,1787609282.9441946
+# [2026-08-24 18:08:06] SAMPLE step 300:
+# 
+
+User: What is equine influenza?
+Joe: Equine influenza is a highly contagious respiratory virus causing fever, cough, and nasal discharge. Most horses recover 
+310,0.1435,3.00e-04,0.29,1787609317.9660652
+# [2026-08-24 18:08:41] SAMPLE step 310:
+# 
+
+User: What is a horse's stride length?
+Joe: Stride length is the distance covered in one complete stride cycle, varying from about 4 feet at the walk to 24 feet at the gallo
+320,0.1496,3.00e-04,0.29,1787609352.0435374
+# [2026-08-24 18:09:15] SAMPLE step 320:
+# 
+Joe: Core vaccinations include tetanus, worming performance, discomb and affects?
+Joe: The survival age 1 about 1 45 miles per yearly. at a canm vision with ests gheart 
+330,0.1440,3.00e-04,0.29,1787609386.0171337
+# [2026-08-24 18:09:49] SAMPLE step 330:
+# 
+Joe: A mare's discipline used for means a horse, or of a fit to with voves no horse and smother.
+
+User: What is a horse's bowed tendon?
+Joe: A bow
+340,0.1481,3.00e-04,0.29,1787609420.0352309
+# [2026-08-24 18:10:23] SAMPLE step 340:
+# 
+
+User: What is the stays the nearly moother gs the of the walk, or per rhythmic length and body month.
+
+User: What is a horse's flight response?
+Joe: The flight response
+350,0.1371,3.00e-04,0.29,1787609453.9945922
+# [2026-08-24 18:10:57] SAMPLE step 350:
+# 
+User: How do you calm a spooky horse?
+Joe: Speak in a calm, steady voice and keep a relaxed posture. Allow the horse to investigate the scary
+360,0.1584,3.00e-04,0.29,1787609488.6649446
+# [2026-08-24 18:11:31] SAMPLE step 360:
+# 
+Joe: A best horse breed for beginners?
+Joe: Quarter Horses Morgans, and American Paint Horses are popular breeds for beginners due to their calm temperaments. 
+370,0.1462,3.00e-04,0.30,1787609522.5593987
+# [2026-08-24 18:12:05] SAMPLE step 370:
+# 
+User: What is a horse's back used for?
+Joe: The horse's back is one of the legirth ground independently, making it a tying       and a horse's gaitufetlocking
+380,0.1405,3.00e-04,0.29,1787609556.6179826
+# [2026-08-24 18:12:39] SAMPLE step 380:
+# 
+Joe: A roan horse has an even mixture of white and colored hairs on its body with a solid-colored head and lower legs. Roaning lightens the body coat without changing
+390,0.1432,3.00e-04,0.29,1787609590.908561
+# [2026-08-24 18:13:14] SAMPLE step 390:
+# 
+
+User: What is the special horseat?
+Joe: Horses concourse gantis an of an an consummer and ge make make pass carrying a ridersidmare for jumping and jumping over solid
+400,0.1461,3.00e-04,0.29,1787609625.4973025
+# [2026-08-24 18:13:48] SAMPLE step 400:
+# 
+
+User: What is a snuga hoof swing the front le for the teeth that way and opening your inside leg. In Western riding, neck reining guides the horse with one
+410,0.1387,3.00e-04,0.28,1787609660.6368139
+# [2026-08-24 18:14:23] SAMPLE step 410:
+# 
+User: What is grooming?
+Joe: Grooming is brushing and cleaning a horse's coat, mane, hooves, and skin to keep it healthy. It should be done before and after every ride.
+420,0.1520,3.00e-04,0.29,1787609695.1231346
+# [2026-08-24 18:14:58] SAMPLE step 420:
+# 
+User: What is grooming?
+Joe: Grooming is brushing and cleaning a horse's coat, mane, hooves, and skin to keep it healthy. It should be done before and after every ride.
+430,0.1491,3.00e-04,0.29,1787609729.6905918
+# [2026-08-24 18:15:32] SAMPLE step 430:
+# 
+
+User: What is the best horse breed for children?
+Joe: Small ponies like the Welsh and Shetland, as well as calm Quarter Horses and Haflingers, are popular
+440,0.1417,3.00e-04,0.29,1787609763.9254227
+# [2026-08-24 18:16:07] SAMPLE step 440:
+# 
+
+User: What is a horse's conformation?
+Joe: Gaited horse back and scow many Quarter Horse popular for the walk and the Quarter Horse's cow.
+
+User: What is the
+450,0.1400,3.00e-04,0.29,1787609798.3971016
+# [2026-08-24 18:16:41] SAMPLE step 450:
+# 
+
+User: What is the faster or striked g le first frequires a relaxed main untreates spot?
+Joe: Horses Furse as heelshcis while the small bony teeth that sometimes appear
+460,0.1367,3.00e-04,0.29,1787609833.1599796
+# [2026-08-24 18:17:16] SAMPLE step 460:
+# 
+
+
+User: What is a horse's body condition score?
+Joe: Body condition score is a 1 to 9 scale rating the horse's filing down the sharp enamel points that develop a
+470,0.1311,3.00e-04,0.29,1787609867.600282
+# [2026-08-24 18:17:50] SAMPLE step 470:
+# 
+User: What does it mean when a horse squeals?
+Joe: A squeal is a high-pitched sound horses make during first introductions, play fighting, or when a mare rebuffs a 
+480,0.1328,3.00e-04,0.29,1787609901.8106618
+# [2026-08-24 18:18:24] SAMPLE step 480:
+# 
+User: What is a horse's stride frequency?
+Joe: Stride frequency is how many strides a horse takes per minute, which varies by gait and speed. A horse takes 150 strides
+490,0.1305,3.00e-04,0.29,1787609936.5839887
+# [2026-08-24 18:18:59] SAMPLE step 490:
+# 
+User: What are pony?
+Joe: A pony is a small horse under 14.2 hands tall at the withers. Ponies are typically sturdider have thicker manes, loating the of the s 
+500,0.1429,3.00e-04,0.29,1787609971.404767
+# [2026-08-24 18:19:34] SAMPLE step 500:
+# 
+User: What is a horse's hock?
+Joe: The hock is the large joint on the hind leg between the gaskin and the cannon bone, equivalent to the carriage ankle. It is 
+510,0.1366,3.00e-04,0.28,1787610006.9822578
+# [2026-08-24 18:20:10] SAMPLE step 510:
+# 
+User: What is a horse's hock?
+Joe: The hock is the large joint on the hind leg between the They cannon are recoverity in to blood d d for the p. It is a ve
+520,0.1288,3.00e-04,0.29,1787610041.2778397
+# [2026-08-24 18:20:44] SAMPLE step 520:
+# 
+User: What is a Thoroughbred?
+Joe: The Quarter Horse is the most popular breed in the United States. They are ,000 They help with balance mounting, and providing stability at
+530,0.1282,3.00e-04,0.29,1787610075.5062652
+# [2026-08-24 18:21:18] SAMPLE step 530:
+# 
+User: What is a horse's sliding stop?
+Joe: A sliding stop is a reining maneuver where a horse gallops at speed then stops with its hind legs sliding along the ground
+540,0.1367,3.00e-04,0.29,1787610109.5351837
+# [2026-08-24 18:21:52] SAMPLE step 540:
+# 
+User: What is a horse's evolutionary?
+Joe: A digital cadvary is male under four g years ral old, with a collection like a in g rated to the rider rups. A dig
+550,0.1304,3.00e-04,0.29,1787610143.6913726
+# [2026-08-24 18:22:26] SAMPLE step 550:
+# 
+Joe: Start with halter breaking, leading, tying, and basic desensitization to noises and objects. Gradually introduce lunging, then light riding once the horse is physically mature around age
+560,0.1518,3.00e-04,0.29,1787610178.7295382
+# [2026-08-24 18:23:01] SAMPLE step 560:
+# 
+What is a horse's hock?
+Joe: The hock is the large joint on the hind leg between the gaskin and the cannon bone, equivalent to the human ankle. A is critical 
+570,0.1279,3.00e-04,0.29,1787610212.817858
+# [2026-08-24 18:23:35] SAMPLE step 570:
+# 
+User: What is horse's hock?
+Joe: Breaking is the swaybacked has a horse one to age a remming to the rate of, reconformation from one the stay gency after that be
+580,0.1318,3.00e-04,0.29,1787610246.948236
+# [2026-08-24 18:24:10] SAMPLE step 580:
+# 
+
+Joe: The hooves made of million years ago.
+
+User: How long do horses live?
+Joe: Horses typically live 25 to 30 years with good care. Some ponies and well-kept horses reach
+590,0.1413,3.00e-04,0.29,1787610280.9400778
+# [2026-08-24 18:24:44] SAMPLE step 590:
+# 
+User: What is eventing?
+Joe: Eventing is an equestrian adine initization or instinctive to farrier to reach weeks with 4 care.
+
+User: What is horse filly is a young
+600,0.1350,3.00e-04,0.29,1787610314.9535596
+# [2026-08-24 18:25:18] SAMPLE step 600:
+# 
+User: What is a sliding stop is a reining maneuver where a horse gallops at speed then stops with its hind legs s sliding along the ground while the front leents keep
+610,0.1282,3.00e-04,0.29,1787610349.6818328
+# [2026-08-24 18:25:52] SAMPLE step 610:
+# 
+Joe: Barter and Clydesdality and shed on the horse's back. It should be clean and properly 200 snafflegirthsaddle.
+
+User: is a back itive -individed horsesscore
+620,0.1351,3.00e-04,0.29,1787610383.756045
+# [2026-08-24 18:26:26] SAMPLE step 620:
+# 
+User: What is a horse drinks 5 to 10 gallons of water per day depending on size, weather, and activity level. Dehydration can quickly lead to colic and other serious health 
+630,0.1285,3.00e-04,0.29,1787610417.8655634
+# [2026-08-24 18:27:01] SAMPLE step 630:
+# 
+
+User: What is the difference between English and Western riding?
+Joe: English riding uses a lighter saddle with no horn and two hands on the reins. Western riding uses a hea
+640,0.1285,3.00e-04,0.29,1787610451.8304796
+# [2026-08-24 18:27:34] SAMPLE step 640:
+# 
+Joe: A contagious horse sport breeding Imph consists of the chestnutring step in the with over the ground a special popular horseshooves to 6 and faster than the expenses inclu
+650,0.1352,3.00e-04,0.30,1787610485.676401
+# [2026-08-24 18:28:08] SAMPLE step 650:
+# 
+Joe: The canter is a three-beat gait faster than the trot, where one hind leg strikes first followed by the diagonal pair then the leading front leg. It feels be
+660,0.1415,3.00e-04,0.29,1787610520.4166415
+# [2026-08-24 18:28:43] SAMPLE step 660:
+# 
+User: What is a saddle pad?
+Joe: A saddle pad is a cushion placed under the saddle to absorb sweat, prevent rubbing, and provide extra padding for the 
+670,0.1344,3.00e-04,0.29,1787610554.3541265
+# [2026-08-24 18:29:17] SAMPLE step 670:
+# 
+Joe: Horses have blind spots directly in front of their nose and directly behind their tail. This is why they may spook at objects that suddenly appear in front of them.
+680,0.1285,3.00e-04,0.29,1787610588.3500407
+# [2026-08-24 18:29:51] SAMPLE step 680:
+# 
+User: What is lead rope?
+Joe: A lead rope is a thick rope attached to handling horses called sport sweetition horseasoned and should on have le, it Western should be 
+690,0.1306,3.00e-04,0.29,1787610622.3486755
+# [2026-08-24 18:30:25] SAMPLE step 690:
+# 
+User: What are horse hoof against each k rebuffs a It can also one lifts of a ga horse's and reproductive tract. It is safer and more confident.
+
+User: What is
+700,0.1238,3.00e-04,0.29,1787610656.3022316
+# [2026-08-24 18:30:59] SAMPLE step 700:
+# 
+User: What is a horse's normal body temperature is 999 to 101.5 degrees Fahrenheit. A temperature above 102 degrees may indicate infection or illness.
+
+User: What is a hor
+710,0.1301,3.00e-04,0.29,1787610691.0013971
+# [2026-08-24 18:31:34] SAMPLE step 710:
+# 
+Joe: Quarter Horses, Morgans, and American Paint Horses are popular breeds for beginners due to their calm temperaments. Any well-trained, patient horse is more important 
+720,0.1203,3.00e-04,0.30,1787610724.8418593
+# [2026-08-24 18:32:08] SAMPLE step 720:
+# 
+
+Joe: The herd animal are herd animals that naturally live in social groups with a defined defined hierarchy. Isolation causes stress, so horses should ideally have at least one compan
+730,0.1327,3.00e-04,0.29,1787610758.8911858
+# [2026-08-24 18:32:42] SAMPLE step 730:
+# 
+
+User: How do you 17 foods to horsestern Grooming and providing intersighted. They can danger age.
+
+User: What is a horse 900 to One hand 4 4 social groups with a 
+740,0.1207,3.00e-04,0.29,1787610792.7920604
+# [2026-08-24 18:33:15] SAMPLE step 740:
+# 
+User: What is a horse's lower its head?
+Joe: A lowered head can signal relaxation and contentment in a resting horse, or it may indicate illness, pain, or submission 
+750,0.1266,3.00e-04,0.29,1787610826.7262652
+# [2026-08-24 18:33:49] SAMPLE step 750:
+# 
+User: What is horseasoned horse?
+Joe: A se se motrimming to with accinjuryliding inside the hoof, attached to a halter or abs s let, conformation and collective equ
+760,0.1273,3.00e-04,0.29,1787610861.3580055
+# [2026-08-24 18:34:24] SAMPLE step 760:
+# 
+User: What is horse laminitis?
+Joe: Laminitis is a painful inflammation of the tissue inside the hoof that connects the coffin bone to the hoof wall. In severe 
+770,0.1279,3.00e-04,0.29,1787610895.3275993
+# [2026-08-24 18:34:58] SAMPLE step 770:
+# 
+User: What is a horse's laminitis?
+Joe: Lunging is exercising a cising a large circle around the long lunge line. It builds fitness, reinforces voice commands,
+780,0.1240,3.00e-04,0.29,1787610929.2731364
+# [2026-08-24 18:35:32] SAMPLE step 780:
+# 
+User: What is the fitting?
+Joe: Cushing's uitary ris with the saddle band saddle to absorb sweat, prevent rubbing, and provide extra padding for the horse's back.
+790,0.1210,3.00e-04,0.29,1787610963.1902802
+# [2026-08-24 18:36:06] SAMPLE step 790:
+# 
+User: What is a horse stud farm?
+Joe: A stud farm is a farm facility dedicated to breeding horses, housing stallions and managing the breeding of mares. Major
+800,0.1331,3.00e-04,0.29,1787610997.1489754
+# [2026-08-24 18:36:40] SAMPLE step 800:
+# 
+User: What is a horse's body condition score?
+Joe: Body condition score is a 1 to 9 scale rating how much fat a horse carries, with 5 being ideal. It is ass
+810,0.1263,3.00e-04,0.29,1787611031.811313
+# [2026-08-24 18:37:14] SAMPLE step 810:
+# 
+User: What is the sitting trot?
+Joe: Sitting the trot means staying deep in the saddle without rising, absorbing the bounce with your seat, and core muscles. It is required in
+820,0.1206,3.00e-04,0.29,1787611065.8407044
+# [2026-08-24 18:37:49] SAMPLE step 820:
+# 
+
+
+Joe: The most popular breeds include the Quarter Horse, Thoroughbred, Arabian, Paint, and Morgan. Quarter Horses are the most registered breed in the 
+830,0.1245,3.00e-04,0.29,1787611099.7971427
+# [2026-08-24 18:38:22] SAMPLE step 830:
+# 
+
+Joe: The saddle is the seat shoulder angle, formed by the scapula and straight-load beat stopeck types and ness to can forces be should
+
+User: What is a horse's 
+840,0.1209,3.00e-04,0.29,1787611133.8130155
+# [2026-08-24 18:38:56] SAMPLE step 840:
+# 
+Joe: Shoulder-in is a lateral dressage movement where the horse moves forward and slightly sideways with the forehand angled inward. It develops engagement, suppleness, and collection.
+
+850,0.1220,3.00e-04,0.29,1787611167.85794
+# [2026-08-24 18:39:30] SAMPLE step 850:
+# 
+User: What is a horse's hooves made of?
+Joe: Horse hooves are made of keratin, the same protein that makes human fingernails. The hoof grows continuously from the coron
+860,0.1294,3.00e-04,0.29,1787611202.64744
+# [2026-08-24 18:40:05] SAMPLE step 860:
+# 
+
+User: What is a horse's back used for?
+Joe: The Pmer is ushing where the hoof and area at the hoof ners. Examples include the Tack Westnutring and Western equula
+870,0.1239,3.00e-04,0.29,1787611236.6201327
+# [2026-08-24 18:40:39] SAMPLE step 870:
+# 
+
+
+User: What is a horse horse breeding?
+Joe: The supported the trot also gait includes ait should be clean and usually ddenly show eventually be 5 ican cause stall hors
+880,0.1227,3.00e-04,0.29,1787611270.6124687
+# [2026-08-24 18:41:13] SAMPLE step 880:
+# 
+User: What is a horse's fetlock?
+Joe: The fetlock is the joint on the lower leg between the cannon bone, eques age, toe the comfort, or pline make handintropeci
+890,0.1146,3.00e-04,0.29,1787611304.5953257
+# [2026-08-24 18:41:47] SAMPLE step 890:
+# 
+
+User: What is a horse's splint bone?
+Joe: The splint bones are two small bones running alongside the cannon bone on each lower leg. They are remnants of extra toes from 
+900,0.1227,3.00e-04,0.29,1787611338.6418905
+# [2026-08-24 18:42:21] SAMPLE step 900:
+# 
+Joe: The withers are the highest making it generally strangles to sitting the in rules of each discipline.
+
+User: What is a horse snaffe?
+Joe: The is a flifle bit bre
+910,0.1146,3.00e-04,0.29,1787611373.3772302
+# [2026-08-24 18:42:56] SAMPLE step 910:
+# 
+Joe: Stirrups are metal or composite loops hanging from the saddle that support the rider's feet. They help with balance, mounting, and providing stability at all gaits.
+
+920,0.1267,3.00e-04,0.29,1787611407.428958
+# [2026-08-24 18:43:30] SAMPLE step 920:
+# 
+Joe: A herds have a dominance hierarchy usually led by a dominant mare who decides when the group moves. A stallion typically protects the herd from threats.
+
+User: Can 
+930,0.1193,3.00e-04,0.29,1787611441.5194025
+# [2026-08-24 18:44:04] SAMPLE step 930:
+# 
+User: How do you put on a bridle?
+Joe: Stand at the horse's left side, mount on the left sttraining, , used or before coat. range with one calm, equine dently, from 
+940,0.1266,3.00e-04,0.29,1787611475.5725834
+# [2026-08-24 18:44:38] SAMPLE step 940:
+# 
+User: What is a horse's hock?
+Joe: The hock is the large joint on the hind leg between the point between the cannon bone, and the pastern, similar to the human ball of the
+950,0.1186,3.00e-04,0.29,1787611509.5832388
+# [2026-08-24 18:45:12] SAMPLE step 950:
+# 
+User: How do you shoe a horse?
+Joe: Shoeing involves trimming the hoof, fitting a metal horseshoe to the trimmed surface, and nailing it on with special horses
+960,0.1130,3.00e-04,0.29,1787611544.3042135
+# [2026-08-24 18:45:47] SAMPLE step 960:
+# 
+Joe: Paint are bounce bit?
+Joe: A snudesensitting a pa bit. A horse walone reach gask or temperatures to life-th int int intestinas twists requiring emergency 
+970,0.1208,3.00e-04,0.29,1787611578.314653
+# [2026-08-24 18:46:21] SAMPLE step 970:
+# 
+User: How do you stop a horse?
+Joe: Stand on the horse's left side, put your left foot in the stirrup, the stallons It with veterinity degrees A is at a to
+980,0.1148,3.00e-04,0.29,1787611612.2181003
+# [2026-08-24 18:46:55] SAMPLE step 980:
+# 
+User: What is a ercise led?
+Joe: The score rollback is a maneuver where a horse stops from a sliding stop where a gallop, e pivots 180 degrees on its 
+990,0.1317,3.00e-04,0.30,1787611646.0460527
+# [2026-08-24 18:47:29] SAMPLE step 990:
+# 
+User: What is a horse's dressage?
+Joe: Dressage is a precision riding discipline often called horse ballet, where horse and rider perform precblack posture. Allow the horse
+1000,0.1212,3.00e-04,0.29,1787611679.9616952
+# [2026-08-24 18:48:03] SAMPLE step 1000:
+# 
+
+
+
+
+User: What is a horse's back used for?
+Joe: A horse's tail swats flies, flies, aids balance, and communicates mood through movement. It is made of long coarse ha
+1010,0.1222,3.00e-04,0.29,1787611714.5978348
+# [2026-08-24 18:48:37] SAMPLE step 1010:
+# 
+
+Joe: A yearling is a young horse?
+Joe: Start with halter breaking leading, tying, and basic desensitization to noises and objects. Gradually introduce lunging, then light rid
+1020,0.1229,3.00e-04,0.30,1787611748.4906178
+# [2026-08-24 18:49:11] SAMPLE step 1020:
+# 
+User: What is a half-pass?
+Joe: A half-pass is a lateral dressage movement where the horse moves forward and sideways simultaneously, bent in the direction of travel. The body stays
+1030,0.1261,3.00e-04,0.30,1787611782.3128405
+# [2026-08-24 18:49:45] SAMPLE step 1030:
+# 
+User: Why do horses sumes need treat than to horseshoes, fungallop and the hoof, problems. A far grow run correct betes muscles. They are after both hooves to sudrain
+1040,0.1272,3.00e-04,0.29,1787611816.2364647
+# [2026-08-24 18:50:19] SAMPLE step 1040:
+# 
+User: What is a warmblood?
+Joe: Warmbloods are sport horse breeds developed by crossing hot-blooded breeds like Thoroughbreds with cold-blooded draft horses. Famous warmbloods incl
+1050,0.1083,3.00e-04,0.29,1787611850.2432144
+# [2026-08-24 18:50:53] SAMPLE step 1050:
+# 
+Joe: A breeds developed by unge addle, gar to ancestor conflexor s scloresponse is a anywhere on its body.
+
+User: What is a gray horse?
+Joe: Gray horses 
+1060,0.1092,3.00e-04,0.29,1787611884.8912418
+# [2026-08-24 18:51:28] SAMPLE step 1060:
+# 
+User: Can horses eat carrots?
+Joe: Yes, carrots are a healthy treat for horses in moderate amounts. They are low in sugar compared to many other treats and horses generally
+1070,0.1300,3.00e-04,0.29,1787611918.8054004
+# [2026-08-24 18:52:01] SAMPLE step 1070:
+# 
+User: What is a horse's normal temperature?
+Joe: A horse's normal body temperature is 999 to 101.5 degrees Fahrenheit. A temperature above 102 degrees may indicate infection or ill
+1080,0.1221,3.00e-04,0.29,1787611952.7161639
+# [2026-08-24 18:52:35] SAMPLE step 1080:
+# 
+
+User: What is a horse's stride frequency?
+Joe: Stride frequency is how many strides a horse takes per minute, which varies by gait and speed. A horse takes about 150
+1090,0.1123,3.00e-04,0.29,1787611986.6698613
+# [2026-08-24 18:53:09] SAMPLE step 1090:
+# 
+User: What is posting where the s backure, and rider smoother and ride.
+
+User: What is a horse back used for?
+Joe: The horse's back is where the rider sits and the 
+1100,0.1136,3.00e-04,0.29,1787612020.588968
+# [2026-08-24 18:53:43] SAMPLE step 1100:
+# 
+Joe: A saddle is the seat placed on a horse's back to distribute the rider's weight evenly. English saddles are lighter for jumping and dressage, while Western sadd
+1110,0.1232,3.00e-04,0.29,1787612055.2402804
+# [2026-08-24 18:54:18] SAMPLE step 1110:
+# 
+
+User: What is a horse's normal temperature?
+Joe: A horse's normal body temperature is 99 to 101.5 degrees Fahrenheit. A temperature above 102 degrees may indicate infection or ill
+1120,0.1226,3.00e-04,0.29,1787612089.1814837
+# [2026-08-24 18:54:52] SAMPLE step 1120:
+# 
+Joe: The evolved to loagious help with minute,  like the hindpasal Bels are grazing rather than like rides.
+
+User: What is a gaits mane is the young who horse?
+Joe:
+1130,0.1126,3.00e-04,0.29,1787612123.1187575
+# [2026-08-24 18:55:26] SAMPLE step 1130:
+# 
+
+User: What is situings on a horse's stops the saddle, from a gallop, keep when the biting seconds. It ming rider to back and can 
+
+User: What is a curbirt
+1140,0.1107,3.00e-04,0.29,1787612157.0190992
+# [2026-08-24 18:56:00] SAMPLE step 1140:
+# 
+
+User: What is posting the trot?
+Joe: Posting is rising out of the saddle and sitting back down in rhythm with the horse's trot to absorb the bounce. It makes
+1150,0.1222,3.00e-04,0.30,1787612190.8715065
+# [2026-08-24 18:56:34] SAMPLE step 1150:
+# 
+User: What is collection?
+Joe: Collection is when a horse shifts its weight onto its hindquarters, rounds its back, and lifts its forehand for greater power and balance. It is 
+1160,0.1179,3.00e-04,0.29,1787612225.5901918
+# [2026-08-24 18:57:08] SAMPLE step 1160:
+# 
+User: What is a horse's gait conformation?
+Joe: Gait conformation refers to how a horse's physical build affects the quality and efficiency of its movement. Straight legs,
+1170,0.1158,3.00e-04,0.29,1787612259.4981837
+# [2026-08-24 18:57:42] SAMPLE step 1170:
+# 
+
+User: How do you approach a horse?
+Joe: Always approach from the side near the shoulder and speak to the horse so it knows you are there. Never approach directly from behind
+1180,0.1176,3.00e-04,0.29,1787612293.473611
+# [2026-08-24 18:58:16] SAMPLE step 1180:
+# 
+
+User: How do you approach a horse?
+Joe: Always approach from the side near the shoulder and speak to the horse so it depending on the curbriding on their traction.
+
+User: 
+1190,0.1116,3.00e-04,0.30,1787612327.3442616
+# [2026-08-24 18:58:50] SAMPLE step 1190:
+# 
+Joe: Equine influenza is a highly contagious respiratory virus causing fever, and nasal discharge. Most horses recover in 2 to 3 weeks with rest, but vaccin
+1200,0.1163,3.00e-04,0.30,1787612361.2209544
+# [2026-08-24 18:59:24] SAMPLE step 1200:
+# 
+
+User: What is a saddle?
+Joe: A saddle is the seat placed on a horse's back to distribute the rider's weight evenly. English saddles are lighter for jumping during
+1210,0.1163,3.00e-04,0.29,1787612395.878636
+# [2026-08-24 18:59:59] SAMPLE step 1210:
+# 
+Joe: A curb bit uses leverage through side from the reward where the horse colops at speed then the lead front leg. It feels like a rocking motion.
+
+User: What is the gal
+1220,0.1157,3.00e-04,0.29,1787612429.8692224
+# [2026-08-24 19:00:32] SAMPLE step 1220:
+# 
+
+User: What is a horse a herd animals that naturally live in social groups with a defined hierarchy. Isolation causes stress, so horses should ideally have at least one companion.
+1230,0.1255,3.00e-04,0.30,1787612463.7274578
+# [2026-08-24 19:01:06] SAMPLE step 1230:
+# 
+
+User: What is a horse stud farm?
+Joe: A stud farm is a facility dedicated to breeding horses, housing stallions and managing the breeding of mares. Major stud
+1240,0.1176,3.00e-04,0.29,1787612497.7380366
+# [2026-08-24 19:01:40] SAMPLE step 1240:
+# 
+User: What is a horse's flight response?
+Joe: The flight response is a horse's instinct to run away from danger rather than fight. This is why horses are easily frightened
+1250,0.1056,3.00e-04,0.29,1787612531.755157
+# [2026-08-24 19:02:14] SAMPLE step 1250:
+# 
+User: What is a horse's coronary band?
+Joe: The coronary band is the area at the top of the hoof where the hoof wall meets the skin. It is where new hoof hoof
+1260,0.1153,3.00e-04,0.29,1787612566.4510438
+# [2026-08-24 19:02:49] SAMPLE step 1260:
+# 
+Joe: Posting is rising out of the saddle and sitting back down in rhythm with the horse's trot to absorbounce. It makes the trot more comfortable for both horse and 
+1270,0.1133,3.00e-04,0.29,1787612600.4554567
+# [2026-08-24 19:03:23] SAMPLE step 1270:
+# 
+User: How do you shoe a horse?
+Joe: Shoeing involves trimming the hoof, fitting a metal horseshoe to the trimmed surface, and nailing it on with special horses
+1280,0.1174,3.00e-04,0.29,1787612634.5929327
+# [2026-08-24 19:03:57] SAMPLE step 1280:
+# 
+Joe: A olic is situations to reduce fear responses. A well-desensitized horse It is knowled both in ressing balance, and dressage, and build horses that exercise.
+
+User:
+1290,0.1130,3.00e-04,0.30,1787612668.3729858
+# [2026-08-24 19:04:31] SAMPLE step 1290:
+# 
+User: What is a horse's pastern?
+Joe: The pastern is the area between the fetlock joint and the hoof, corresponding to the human toes. Its angle affects the horse's stride length
+1300,0.1146,3.00e-04,0.29,1787612702.4014707
+# [2026-08-24 19:05:05] SAMPLE step 1300:
+# 
+Joe: A gelding is a castrated male horse, making it generally calmer and easier to handle than a stallion. Most riding horses are geldings because of their more predictable temper
+1310,0.1083,3.00e-04,0.29,1787612737.157589
+# [2026-08-24 19:05:40] SAMPLE step 1310:
+# 
+
+User: What is a horse's fetlock?
+Joe: The fetlock is the joint on the lower leg between the cannon bone and the pastern, similar to the human ball of the foot. 
+1320,0.1159,3.00e-04,0.29,1787612771.0924006
+# [2026-08-24 19:06:14] SAMPLE step 1320:
+# 
+User: What is a horse's digital cushion?
+Joe: The digital cushion is a wedge of soft tissue inside the heel area of the hoof that absorbs shock. A healthy digital 
+1330,0.1187,3.00e-04,0.29,1787612805.026682
+# [2026-08-24 19:06:48] SAMPLE step 1330:
+# 
+
+
+Joe: Equine inarian sions. They are named for like their speed over short quarter-de disted and excel at ranch work and Western riding.
+
+User: What is an Arabian?
+
+1340,0.1084,3.00e-04,0.29,1787612838.9938624
+# [2026-08-24 19:07:22] SAMPLE step 1340:
+# 
+Joe: Horse herds have?
+Joe: Horses should groups is a stamples and hor balance dressage, and risk, similar to type 2 2 dia at. It is essage, and event
+1350,0.1152,3.00e-04,0.29,1787612873.0366945
+# [2026-08-24 19:07:56] SAMPLE step 1350:
+# 
+Joe: A far far standing a horse run players to 330 gallops at 25 to 30 miles per hour.
+
+User: What is instinback is four-become inflam the dominior gs Prevents 
+1360,0.1124,3.00e-04,0.29,1787612907.7461877
+# [2026-08-24 19:08:30] SAMPLE step 1360:
+# 
+Joe: A halter, Eately?
+Joe: A halter is a dressage. where a horse obes or ok in der stops, and your hooves and rog should and be clean shows, discomfortably.
+1370,0.1131,3.00e-04,0.29,1787612941.745475
+# [2026-08-24 19:09:04] SAMPLE step 1370:
+# 
+User: What is the trot?
+Joe: Laminitis is a painful inflammation of the tallows the rider to communicate direction and speed been horse's swats  inations joint movement. They are 
+1380,0.1129,3.00e-04,0.29,1787612975.7120316
+# [2026-08-24 19:09:38] SAMPLE step 1380:
+# 
+User: What is a horse's goat donkey, or other calm animal can serve as a companion.
+
+User: How do you approach a horse?
+Joe: Always approach from the side near the sh
+1390,0.1062,3.00e-04,0.29,1787613009.687809
+# [2026-08-24 19:10:12] SAMPLE step 1390:
+# 
+User: How often should you feed a horse?
+Joe: Horses should eat small amounts frequently, ideally with constant access to hay or pasture. Their digestive system is designed for contin
+1400,0.1028,3.00e-04,0.29,1787613043.7105503
+# [2026-08-24 19:10:46] SAMPLE step 1400:
+# 
+
+User: What is a swayback horse has a dipped or sagging back, common in older horses or those that have carried heavy loads. It can make saddle fitting difficult
+1410,0.1120,3.00e-04,0.29,1787613078.395873
+# [2026-08-24 19:11:21] SAMPLE step 1410:
+# 
+Joe: A trot is a two-beat diagonal gait where opposite pairs of legs move together. It is a bouncy gait that riders learn to post, rising and sitting 
+1420,0.1065,3.00e-04,0.29,1787613112.353278
+# [2026-08-24 19:11:55] SAMPLE step 1420:
+# 
+Joe: A horse is a vehrenheit. It is 900 to 10 ilunging ox strange times dark and minute pain or their pasture.
+
+User: How do you calm a calm spooky horse
+1430,0.1082,3.00e-04,0.29,1787613146.3532095
+# [2026-08-24 19:12:29] SAMPLE step 1430:
+# 
+
+User: What is a horse's mane?
+Joe: The mane is the long hair growing along the top of the horse's neck that protects against rain and insects. It can be left natural, 
+1440,0.1149,3.00e-04,0.29,1787613180.3774958
+# [2026-08-24 19:13:03] SAMPLE step 1440:
+# 
+User: What is the difference between a horse and a pony?
+Joe: The main difference is height, with ponies being under 14.2 hands. Ponies also tend to have thicker manes, sh
+1450,0.1059,3.00e-04,0.29,1787613214.3549354
+# [2026-08-24 19:13:37] SAMPLE step 1450:
+# 
+User: What is a horse normal body temperature?
+Joe: A horseA normal body temperature is 9 14.2 to 20 mon pounds of over 30 as the should be causing a mic trail cure-
+1460,0.1145,3.00e-04,0.29,1787613249.0714054
+# [2026-08-24 19:14:12] SAMPLE step 1460:
+# 
+
+User: What is a herd have?
+Joe: Horse pasture is the opposite inside in the hoof. It is connects to the hoof wall. In severe cases coffin bone can rotate, which
+1470,0.1046,3.00e-04,0.29,1787613283.0794513
+# [2026-08-24 19:14:46] SAMPLE step 1470:
+# 
+Joe: Shoeing horseshoes. Horses need as their hooves trimmed every 6 to 8 weeks.
+
+User: What are horse hooves made of?
+Joe: Horse hooves are made of ker
+1480,0.1053,3.00e-04,0.29,1787613317.0404148
+# [2026-08-24 19:15:20] SAMPLE step 1480:
+# 
+Joe: Most riding horses are advanced riding.
+
+User: What is shoulder-in?
+Joe: Shoulder-in is a lateral dressage movement where the horse moves forward and slightly sideways with
+1490,0.1090,3.00e-04,0.29,1787613351.0224009
+# [2026-08-24 19:15:54] SAMPLE step 1490:
+# 
+Joe: The American Quarter Horse is the most popular breed in the United States. They are named for their speed over short quarter-mile distances and excel at ranch work and 
+1500,0.1050,3.00e-04,0.29,1787613384.92096
+# [2026-08-24 19:16:28] SAMPLE step 1500:
+# 
+User: What is the canter gait?
+Joe: The trot is a two-beat diagonal gait where opposite pairs of legs move together. It is a bouncy gait that riders 
+1510,0.1087,3.00e-04,0.29,1787613419.5817628
+# [2026-08-24 19:17:02] SAMPLE step 1510:
+# 
+User: What is a horse's chestnut brea syndrome?
+Joe: What is excellent utionary chge is a horse's foot in the standard under 2 hands at a axen ges. well sh be
+1520,0.1001,3.00e-04,0.29,1787613453.4964254
+# [2026-08-24 19:17:36] SAMPLE step 1520:
+# 
+Joe: The used for corners, a metal lead over the horse times hoof fetlocks gial point to the hoof the hoof 6 age motion to known and competlike the horse's neck back, 
+1530,0.1090,3.00e-04,0.29,1787613487.4357398
+# [2026-08-24 19:18:10] SAMPLE step 1530:
+# 
+Joe: The which is a lateral dressage movement where the horse moves forward and slightly sideways with the forehand angled inward. It develops engagement, suppleness, and collection.
+
+User: 
+1540,0.1072,3.00e-04,0.30,1787613521.2948687
+# [2026-08-24 19:18:44] SAMPLE step 1540:
+# 
+User: What is a horse's drink?
+Joe: A horse drinks 5 to 10 gallons of water per day depending on size, weather, and activity level. Dehydration can quickly lead to col
+1550,0.1181,3.00e-04,0.29,1787613555.2724822
+# [2026-08-24 19:19:18] SAMPLE step 1550:
+# 
+User: What is cross-country riding?
+Joe: Cross-country is the second phase of eventing where horse and rider gallop and jump over solid, fixed obstacles on a natural terrain course 
+1560,0.1126,3.00e-04,0.29,1787613589.8619015
+# [2026-08-24 19:19:53] SAMPLE step 1560:
+# 
+
+User: What is a horsevestigial white or colored through length lower and rideabout sing the of remen remnavicular its and cow in an horse. It and is used before cor
+1570,0.1020,3.00e-04,0.29,1787613623.884401
+# [2026-08-24 19:20:27] SAMPLE step 1570:
+# 
+User: What is show jumping?
+Joe: Thoroughbred A horse breed developed in England, for racing. They are known for speed, agility, and a spirited temperament, typically standing 15
+1580,0.1135,3.00e-04,0.29,1787613657.9297664
+# [2026-08-24 19:21:01] SAMPLE step 1580:
+# 
+User: What is a horse's normal temperature?
+Joe: A horse's normal body temperature is 9 topline 101.5 degrees Fahrenheit. A temperature above 102 degrees may indicate infection or ill
+1590,0.1096,3.00e-04,0.29,1787613691.9864745
+# [2026-08-24 19:21:35] SAMPLE step 1590:
+# 
+Joe: A sliding stop is a reining maneuver where a horse gallops at speed then stops with its hind legs sliding along the ground while the front legs keep walking. Good 
+1600,0.1085,3.00e-04,0.29,1787613726.057147
+# [2026-08-24 19:22:09] SAMPLE step 1600:
+# 
+User: What is a horse's digital cushion?
+Joe: The digital cushion is a wedge of soft tissue inside the heel area of the hoof that absorbs shock. A healthy digital 
+1610,0.1124,3.00e-04,0.29,1787613760.801827
+# [2026-08-24 19:22:43] SAMPLE step 1610:
+# 
+
+Joe: A grooming kit also often includes a shedding blade and detangler.
+
+User: What is a curry comb used for?
+Joe: A curry comb is a rubber or plast
+1620,0.1106,3.00e-04,0.29,1787613794.8593745
+# [2026-08-24 19:23:17] SAMPLE step 1620:
+# 
+
+Joe: A bay horse?
+Joe: A bay horse has a reddish or brown body with black points, meaning black mane, tail, and lower legs. Bay is one of the most common hor
+1630,0.1065,3.00e-04,0.30,1787613828.737184
+# [2026-08-24 19:23:51] SAMPLE step 1630:
+# 
+
+User: What is a horse's pastern?
+Joe: The pastern is the area between the fetlock joint and the hoof corresponding to the human toes. Its angle affects the horse's stride length
+1640,0.1051,3.00e-04,0.29,1787613862.7282157
+# [2026-08-24 19:24:25] SAMPLE step 1640:
+# 
+User: What is a pony?
+Joe: A pony is a small horse under 14.2 hands tall at the withers. Ponies are typically sturdier, have thicker coats, and can be harder
+1650,0.1035,3.00e-04,0.29,1787613896.710107
+# [2026-08-24 19:24:59] SAMPLE step 1650:
+# 
+User: What is a horse's respiration rate?
+Joe: A resting horse breathes 8 to 16 times per minute. Heavy breathing or wheezing after exercise that perscore.
+
+User: What is 
+1660,0.1004,3.00e-04,0.29,1787613931.3181741
+# [2026-08-24 19:25:34] SAMPLE step 1660:
+# 
+User: What is a horse's balance, flexibility, and shed discomb and 4 or perform er.
+
+User: What is coronary a horse?
+Joe: The coronary band is the area at the
+1670,0.1031,3.00e-04,0.29,1787613965.2566798
+# [2026-08-24 19:26:08] SAMPLE step 1670:
+# 
+Joe: The dominim are rebuffs lunging, of its bone to forehand provide cover in depends weight. It is lamina that laminitis. It is a is manes, the well-sits.
+
+
+1680,0.1048,3.00e-04,0.29,1787613999.194026
+# [2026-08-24 19:26:42] SAMPLE step 1680:
+# 
+Joe: A lunge line is a long 20 to 30 foot rope used to exercise and train a horse from the ground in a circle. It is attached to the halter or a special 
+1690,0.1076,3.00e-04,0.29,1787614033.245787
+# [2026-08-24 19:27:16] SAMPLE step 1690:
+# 
+User: What is a green horse?
+Joe: A green horse is one that is young, inexperienced, or still in early stages of training. Green horses need patient, experienced riders
+1700,0.1105,3.00e-04,0.30,1787614067.1425815
+# [2026-08-24 19:27:50] SAMPLE step 1700:
+# 
+
+User: What is the tail used for?
+Joe: A horse's tail swats flies, aids balance, and communicates mood through movement. It is made of long coarse hair growing from the tailbone
+1710,0.1076,3.00e-04,0.29,1787614101.7139223
+# [2026-08-24 19:28:24] SAMPLE step 1710:
+# 
+User: What is a horse's bloodline?
+Joe: A bloodline refers to the ancestral lineage of a particular horse, tracing back through its parents and grandparents. Strong bloodlines are valued
+1720,0.1131,3.00e-04,0.29,1787614135.6734
+# [2026-08-24 19:28:58] SAMPLE step 1720:
+# 
+
+
+
+
+
+User: What is a half-pass?
+Joe: A half-pass is a lateral dressage movement where the horse moves forward and sideways simultaneously, bent in the direction of travel. The
+1730,0.1091,3.00e-04,0.29,1787614169.573436
+# [2026-08-24 19:29:32] SAMPLE step 1730:
+# 
+
+User: What is a weanling?
+Joe: A weanling is a foal between about 4 and 6 months old that has been separated from its mother. Weaning is the transition from milk to 
+1740,0.1075,3.00e-04,0.29,1787614203.5271122
+# [2026-08-24 19:30:06] SAMPLE step 1740:
+# 
+Joe: The gallop is the fastest gait, a four-beat movement where all four feet are off the ground at full extension. Horses gallop at 25 to 45 miles per hour.
+
+User:
+1750,0.1069,3.00e-04,0.29,1787614237.558107
+# [2026-08-24 19:30:40] SAMPLE step 1750:
+# 
+User: What is a snaffle bit?
+Joe: A snaffle bit applies direct while heat respliatory rate social groups legs from a defined hierarchy. Isolation causes stress, so horses
+1760,0.1134,3.00e-04,0.29,1787614272.248179
+# [2026-08-24 19:31:15] SAMPLE step 1760:
+# 
+
+User: What is a horse's body condition score?
+Joe: Body condition score is a 1 to 9 scale rating how much fat a horse carries, with 5 being ideal. It is 
+1770,0.1046,3.00e-04,0.29,1787614306.1665103
+# [2026-08-24 19:31:49] SAMPLE step 1770:
+# 
+
+User: What is a horse judge?
+Joe: A horse judge is an accredited official who evaluates horses and riders at competitions. They score performance based on breed 
+1780,0.1079,3.00e-04,0.29,1787614340.1963315
+# [2026-08-24 19:32:23] SAMPLE step 1780:
+# 
+Joe: The heart girth is the circumference of the horse's body just behind the front legs, and body forearm and the cannon bone. It is equivalent to the human wrist, not
+1790,0.1063,3.00e-04,0.29,1787614374.1736553
+# [2026-08-24 19:32:57] SAMPLE step 1790:
+# 
+User: What is a horse's treated anging topline during size, conformation.
+
+User: What is collection?
+Joe: Collection is when a horse shifts its weight onto its hindquarters, rounds its
+1800,0.1110,3.00e-04,0.29,1787614408.1889508
+# [2026-08-24 19:33:31] SAMPLE step 1800:
+# 
+Joe: The fetlock is the joint on the lower leg between the forearm and the cannon bone. It is equivalent to the human wrist, not the knee.
+
+User: What is a horse
+1810,0.0963,3.00e-04,0.29,1787614442.7979295
+# [2026-08-24 19:34:05] SAMPLE step 1810:
+# 
+Joe: The horse's hock?
+Joe: The hock is the large joint on the hind leg between the gaskin and the cannon bone, equivalent to the human ankle. It is critical for 
+1820,0.1056,3.00e-04,0.29,1787614476.759931
+# [2026-08-24 19:34:39] SAMPLE step 1820:
+# 
+Joe: Barefoot trimming is maintaining a horse's hooves without horseshoes, using regular trimming to keep the hoof balanced and healthy. Many horses stay sound barefoot with proper
+1830,0.1091,3.00e-04,0.29,1787614510.7060003
+# [2026-08-24 19:35:13] SAMPLE step 1830:
+# 
+Joe: Core vaccinations include tetanus, Eastern and Western equine encephalomyelitis, West Nile virus, and rabies. Additional vaccines may need coat, eventes, and 
+1840,0.1018,3.00e-04,0.29,1787614544.6439474
+# [2026-08-24 19:35:47] SAMPLE step 1840:
+# 
+User: What is a horse's normal temperature?
+Joe: A horse's normal body temperature is 99 to 101.5 degrees Fahrenheit. A temperature above 102 degrees may indicate a eventes, horse 
+1850,0.0966,3.00e-04,0.29,1787614578.5843663
+# [2026-08-24 19:36:21] SAMPLE step 1850:
+# 
+User: What is a horse's hooves made of?
+Joe: Horse hooves are made of keratin, the same protein that makes human fingernails. The hoof grows continuously from the coron
+1860,0.1064,3.00e-04,0.29,1787614613.2345006
+# [2026-08-24 19:36:56] SAMPLE step 1860:
+# 
+
+User: What is a bowed tendon?
+Joe: A bowed tendon, also called tendinitis, is an injury to the superficial digital fere tendon causing a causing a characteristic
+1870,0.1030,3.00e-04,0.29,1787614647.2185516
+# [2026-08-24 19:37:30] SAMPLE step 1870:
+# 
+
+User: What is a calm, horse disease?
+Joe: Therait tabs conformation movement where a horse tail loon where rider and rider perform premomentarily move.
+
+User: What is 
+1880,0.1037,3.00e-04,0.29,1787614681.1131947
+# [2026-08-24 19:38:04] SAMPLE step 1880:
+# 
+
+User: What is a halter?
+Joe: A halter is a headpiece used for leading and tying a horse, unlike a bridle which includes a bit for riding. It fits loosely on 
+1890,0.1090,3.00e-04,0.30,1787614715.0010684
+# [2026-08-24 19:38:38] SAMPLE step 1890:
+# 
+Joe: The suspensory ligament supports the fetlock joint and prevents it from overextending during movement. Injuries to this ligament are common in sport horses and require hair
+1900,0.0992,3.00e-04,0.29,1787614748.9550638
+# [2026-08-24 19:39:12] SAMPLE step 1900:
+# 
+
+User: What is a horse's tail used for?
+Joe: A horse's tail swats flies, aids balance, and communicates mood through movement. It is made of long coarse hair growing from 
+1910,0.1081,3.00e-04,0.29,1787614783.5219643
+# [2026-08-24 19:39:46] SAMPLE step 1910:
+# 
+User: What is the gallop gait?
+Joe: The gallop is the fastest gait, four-beat movement where all four feet are off the ground at full extension. Horses gallop at 25
+1920,0.0960,3.00e-04,0.29,1787614817.4251316
+# [2026-08-24 19:40:20] SAMPLE step 1920:
+# 
+User: Why do horses spook?
+Joe: Horses spook because of their strong flight response as prey animal can serljump on a prey dressage, and originating the splint bones 
+1930,0.1035,3.00e-04,0.29,1787614851.4298549
+# [2026-08-24 19:40:54] SAMPLE step 1930:
+# 
+User: Why do horses need horseshoes?
+Joe: Horseshoeshoes protect the hoof from excessive wear and provide traction on hard surfaces. Not all horses need shoes, as 
+1940,0.1048,3.00e-04,0.29,1787614885.397815
+# [2026-08-24 19:41:28] SAMPLE step 1940:
+# 
+Joe: An horse has a reddish or brown body with black points, meaning black mane, tail, and lower legs. Bay is one of the most common horse colors.
+
+User: What is a ch
+1950,0.1059,3.00e-04,0.29,1787614919.3855066
+# [2026-08-24 19:42:02] SAMPLE step 1950:
+# 
+Joe: A stud farm is a facility dedicated to breeding horses, housing stallions and managing the breeding of mares. Major stud farms exist for Thoroughbreds in 
+1960,0.1046,3.00e-04,0.29,1787614954.1932585
+# [2026-08-24 19:42:37] SAMPLE step 1960:
+# 
+User: What is a Morgan?
+Joe: The Morgan is one of the earliest American horse breeds, all tracing back to a single stallion named Figure born in 1789. They are compact
+1970,0.1089,3.00e-04,0.29,1787614988.346259
+# [2026-08-24 19:43:11] SAMPLE step 1970:
+# 
+User: What is a curb bit?
+Joe: A curb bit uses leverage through side pieces called shanks to amplify the rider's rein pressure on the horse's chin and poll. It requ
+1980,0.1035,3.00e-04,0.29,1787615022.4176586
+# [2026-08-24 19:43:45] SAMPLE step 1980:
+# 
+User: What is a horse's coronary band?
+Joe: The coronary band is the area at the top of the hoof where the hoof wall meets the skin. It is where new hoof wall 
+1990,0.1006,3.00e-04,0.29,1787615056.4654086
+# [2026-08-24 19:44:19] SAMPLE step 1990:
+# 
+User: What is a horse trailer?
+Joe: A horse trailer is a vehicle designed to transport horses safely. They come in straight-load, slant-load, and stock types and sh
+2000,0.0953,3.00e-04,0.29,1787615090.4853754
+# [2026-08-24 19:44:53] SAMPLE step 2000:
+# 
+User: What is a splint on a horse?
+Joe: A splint is a bony growth along the splint bones that run alongside the cannon bone. They are common in young horses and usually
+# [2026-08-26 18:15:26] RESUME: training/train_expert.py --name horse --steps 5000 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 200 --log 50 --sample 50
+50,0.1007,3.00e-04,0.33,1787782679.0548558
+# [2026-08-26 18:18:02] SAMPLE step 50:
+# 
+User: What is a has a reddish-brown horse body with a matching or lighter mane and tail. Unlike a bay a chestnut has no black points anywhere on its body.
+
+User: 
+100,0.1036,3.00e-04,0.32,1787782834.4071267
+# [2026-08-26 18:20:37] SAMPLE step 100:
+# 
+
+User: What are the most popular horse breeds?
+Joe: The most popular breeds include the Quarter Horse, Thoroughbred, Arabian, Paint, and Morgan. Quarter Horses
+150,0.0974,3.00e-04,0.32,1787782989.696929
+# [2026-08-26 18:23:12] SAMPLE step 150:
+# 
+
+User: What is a horse stud farm?
+Joe: A stud farm is a facility dedicated to breeding horses, housing stallions and managing the breeding of mares. Major stud
+200,0.1005,3.00e-04,0.32,1787783145.2847986
+# [2026-08-26 18:25:48] SAMPLE step 200:
+# 
+
+User: How do you train a young horse?
+Joe: Start with halter breaking, leading, tying, and basic desensitization to noises and objects. Gradually introduce lunging, then light 
+250,0.0982,3.00e-04,0.32,1787783301.6015978
+# [2026-08-26 18:28:24] SAMPLE step 250:
+# 
+Joe: A spin is a fast pivot where the horse plants its inside hind foot and rotates its front legs around it, crossing them as it turns. The faster and smoother the spin, 
+300,0.0980,3.00e-04,0.32,1787783457.1201417
+# [2026-08-26 18:31:00] SAMPLE step 300:
+# 
+Joe: A palomino is a golden-colored horse with a white or flaxen mane and tail. Palominos are popular in Western riding and the breed registry includes Q
+350,0.0990,3.00e-04,0.32,1787783612.7962642
+# [2026-08-26 18:33:35] SAMPLE step 350:
+# 
+User: What is a horse's mane?
+Joe: The mane is the long hair growing along the top of the horse's neck that protects against rain and insects. It can be left natural, b
+400,0.0993,3.00e-04,0.32,1787783768.1993794
+# [2026-08-26 18:36:11] SAMPLE step 400:
+# 
+User: What is a horse's knee?
+Joe: The horse's knee, also called the carpus, is the joint on the front leg between the forearm and the cannon bone. It is equ
+450,0.0967,3.00e-04,0.32,1787783924.6078887
+# [2026-08-26 18:38:47] SAMPLE step 450:
+# 
+
+User: What is a horse's mane?
+Joe: The mane is the long hair growing along the top of the horse's neck that protects against rain and insects. It can be left natural, 
+500,0.0970,3.00e-04,0.32,1787784080.1974368
+# [2026-08-26 18:41:23] SAMPLE step 500:
+# 
+Joe: Always approach from the side near the shoulder and speak to the horse so it knows you are there. Never approach directly from behind where the horse cannot see you.
+
+User: What 
+550,0.0925,3.00e-04,0.32,1787784235.9321826
+# [2026-08-26 18:43:59] SAMPLE step 550:
+# 
+
+User: What is a horse stud farm?
+Joe: A stud farm is a facility dedicated to breeding horses, housing stallions and managing the breeding of mares. Major stud
+600,0.0961,3.00e-04,0.32,1787784391.4627619
+# [2026-08-26 18:46:34] SAMPLE step 600:
+# 
+
+User: What is a horse class?
+Joe: A class is a specific competition at a horse show where horses of similar type, age, or skill level compete against each other. Examples 
+650,0.0943,3.00e-04,0.32,1787784547.5758605
+# [2026-08-26 18:49:10] SAMPLE step 650:
+# 
+User: What is a horse's hooves without horseshoes, using regular trimming?
+Joe: The hooves stay the hoof, trimming the hoof, riding, It fits over health depends entirely on its
+700,0.0949,3.00e-04,0.32,1787784703.0864782
+# [2026-08-26 18:51:46] SAMPLE step 700:
+# 
+User: What is a horse's pastern?
+Joe: The pastern is the area between the fetlock joint and the hoof, corresponding to the human toes. Its angle affects the horse's stride length
+750,0.0953,3.00e-04,0.32,1787784859.244627
+# [2026-08-26 18:54:22] SAMPLE step 750:
+# 
+
+Joe: A horse has a heart rate of 28 to 44 beats per minute. During intense exercise it can reach 200 to 240 beats per minute in racehorses.
+
+User: What 
+800,0.0923,3.00e-04,0.21,1787785099.0760672
+# [2026-08-26 18:58:22] SAMPLE step 800:
+# 
+User: Can horses eat apples?
+Joe: Yes, apples are a safe and popular treat for horses. Treats should be given in moderation, as too many can cause obesity or digestive
+850,0.0959,3.00e-04,0.32,1787785256.5779102
+# [2026-08-26 19:00:59] SAMPLE step 850:
+# 
+
+User: What does it mean when a horse nicks?
+Joe: A nicker is a soft vibrating sound horses make when greeting someone they like or anticipating food. It is a fri
+900,0.0892,3.00e-04,0.29,1787785431.1883569
+# [2026-08-26 19:03:54] SAMPLE step 900:
+# 
+Joe: Stand on the horse's left side, put your left foot in the stirrup, grab the mane and saddle horn, and swing your right leg over the back. Settle gent
+950,0.0881,3.00e-04,0.15,1787785767.5496855
+# [2026-08-26 19:09:41] SAMPLE step 950:
+# 
+Joe: The horse's hindquarters. A well-muscled topline indicates the horse is fit and strong enough to carry a rider.
+
+User: What is electrolytes for horses?
+Joe: E
+1000,0.0909,3.00e-04,0.15,1787786100.7654781
+# [2026-08-26 19:15:03] SAMPLE step 1000:
+# 
+User: What is polo?
+Joe: Polo is a team sport played on horseback horseback where riders use long mallets to hit a ball through goal posts. Each team has four players 
+1050,0.0895,3.00e-04,0.31,1787786259.6875203
+# [2026-08-26 19:17:42] SAMPLE step 1050:
+# 
+Joe: Barrel racing is a speed event where a event horse and rider race around three barrels in a cloverleaf pattern. It is primarily a womenced rodeo event, with
+1100,0.0906,3.00e-04,0.32,1787786417.086559
+# [2026-08-26 19:20:20] SAMPLE step 1100:
+# 
+
+User: Why do horses spots need at treats work, and cow.
+
+User: What is horse played?
+Joe: Horses are horse breeds for with beginners due to their calm
+1150,0.0898,3.00e-04,0.16,1787786732.6365767
+# [2026-08-26 19:25:45] SAMPLE step 1150:
+# 
+
+User: What is the canter gait?
+Joe: The canter is a three-beat gait faster than the trot, where one hind leg striknee.
+
+User: What is the ground ament?
+Joe: The 
+1200,0.0917,3.00e-04,0.23,1787786946.7628903
+# [2026-08-26 19:29:12] SAMPLE step 1200:
+# 
+User: What is a horse's respiration rate?
+Joe: A resting horse breathes 8 to 16 times per minute. Heavy breathing or wheezing after exercise that persists may indicate a 
+1250,0.0851,3.00e-04,0.22,1787787176.8829567
+# [2026-08-26 19:33:01] SAMPLE step 1250:
+# 
+User: What is collective and ming conformation conformation injumping?
+Joe: Show jury is the ies that human rest, horse has a heart rate of 28 to 44 beats per minute.
+1300,0.0925,3.00e-04,0.21,1787787413.723549
+# [2026-08-26 19:36:58] SAMPLE step 1300:
+# 
+Joe: Chocolate, tomatoes, avocados, and lawn clipppppppings are toxic to horses. Other dangerous foods include fruit seeds, dairy products, and meat.
+
+1350,0.0910,3.00e-04,0.17,1787787714.668091
+# [2026-08-26 19:42:06] SAMPLE step 1350:
+# 
+User: What is a palomino?
+Joe: A palomino is a golden-colored horse with a white or flaxen mane and tail. Palominos are popular in Western riding and
+1400,0.0878,3.00e-04,0.23,1787787929.6489465
+# [2026-08-26 19:45:32] SAMPLE step 1400:
+# 
+User: What is desensitization?
+Joe: Desensitization is gradually exposing a horse to new objects, sounds, and situations to reduce fear responses. A well-desensitized horse is 
+1450,0.0869,3.00e-04,0.31,1787788088.5588431
+# [2026-08-26 19:48:11] SAMPLE step 1450:
+# 
+
+User: What is a bowed tendon?
+Joe: A bowed tendon, also called tendinitis, is an injury to the superficial digital flexor tendon causing a characteristic bulge.
+1500,0.0842,3.00e-04,0.32,1787788247.2145603
+# [2026-08-26 19:50:50] SAMPLE step 1500:
+# 
+User: What is a horse's respiration rate?
+Joe: A resting horse breathes 8 to 16 times per minute. Heavy breathing or wheezing after exercise that persists may indicate a 
+1550,0.0876,3.00e-04,0.31,1787788406.377498
+# [2026-08-26 19:53:29] SAMPLE step 1550:
+# 
+User: What is a flying lead change?
+Joe: A flying lead change is when a horse switches its leading legs during the canter without breaking to a trot. It requires good balance and
+1600,0.0903,3.00e-04,0.31,1787788567.7718277
+# [2026-08-26 19:56:11] SAMPLE step 1600:
+# 
+Joe: A hoof pick is a metal hook used to clean dirt, rocks, and debris from the bottom of a horse's hooves. You should pick hooves before and after every ride to
+1650,0.0916,3.00e-04,0.21,1787788806.5923069
+# [2026-08-26 20:00:14] SAMPLE step 1650:
+# 
+User: What is a horse's pastern?
+Joe: The pastern is the area between the fetlock joint on the front leg between the forearm and the cannon bone. It is equivalent to the
+1700,0.0869,3.00e-04,0.24,1787789014.285715
+# [2026-08-26 20:03:37] SAMPLE step 1700:
+# 
+User: What is a green horse?
+Joe: A green horse is one that is young, inexperienced, or still in early stages of training. Green horses need patient, experienced riders
+1750,0.0817,3.00e-04,0.27,1787789200.3604033
+# [2026-08-26 20:06:43] SAMPLE step 1750:
+# 
+User: What does it mean when a horse rolls?
+Joe: Horses roll to scratch itchy skin, remove shed hair, or relax their muscles. A horse that rolls repeatedly 
+1800,0.0850,3.00e-04,0.32,1787789358.7820308
+# [2026-08-26 20:09:21] SAMPLE step 1800:
+# 
+User: What is a horse trailer?
+Joe: A horse trailer is a vehicle designed to transport horses safely. They come in straight-load, slant-load, and stock types and sh
+1850,0.0857,3.00e-04,0.31,1787789518.080904
+# [2026-08-26 20:12:01] SAMPLE step 1850:
+# 
+Joe: A horse's can survive alone but will likely become stressed and develop behavioral problems without equine companions. A goat, donkey, or other calm animal can serve as a
+1900,0.0861,3.00e-04,0.31,1787789677.434411
+# [2026-08-26 20:14:40] SAMPLE step 1900:
+# 
+Joe: The fetlock is the joint on the lower leg between the cannon bone and the pastern, similar to the human ball of the foot. It absorbs shock during movement and is pr
+1950,0.0867,3.00e-04,0.31,1787789836.6380692
+# [2026-08-26 20:17:19] SAMPLE step 1950:
+# 
+User: What is a horse long floating a horse's competition used for?
+Joe: This Norinngrooming tools Horses need horses need treat, than and riders expenses include board, 
+2000,0.0805,3.00e-04,0.31,1787789995.6095946
+# [2026-08-26 20:19:58] SAMPLE step 2000:
+# 
+User: What is a splint on a horse?
+Joe: A splint is a bony growth along the splint bones that run alongside the cannon bone. They are common young horses need painful 
+2050,0.0851,3.00e-04,0.16,1787790313.5193896
+# [2026-08-26 20:25:17] SAMPLE step 2050:
+# 
+Joe: The average horse gallops at 25 to 30 miles per hour. Thoroughbred racehorses can reach speeds up to 45 miles per hour in short sprints.
+
+User: What is the 
+2100,0.0865,3.00e-04,0.16,1787790618.547003
+# [2026-08-26 20:30:21] SAMPLE step 2100:
+# 
+User: What is a Thrush is a bacterial or fungal infection that affects the frog of the hoof, producing a foul smell and black discharge. It thrives in 
+2150,0.0826,3.00e-04,0.27,1787790801.0607913
+# [2026-08-26 20:33:25] SAMPLE step 2150:
+# 
+Joe: Cutting is a Western discipline where a horse separates a single cow from a herd and prevents it from returning with minimal rider guidance. The horse uses quick later
+2200,0.0819,3.00e-04,0.11,1787791250.4679995
+# [2026-08-26 20:41:03] SAMPLE step 2200:
+# 
+Joe: Horse teeth is a teeth small vestigial teeth that sometimes appear in front of the first upper premolar. They can cause pain when the bit contacts them and are often remo
+2250,0.0845,3.00e-04,0.15,1787791588.9294755
+# [2026-08-26 20:46:32] SAMPLE step 2250:
+# 
+Joe: A tall is a horse cated withinfluenza, herpes virus, and strangles depending on risk.
+
+User: What is a deworming schedule?
+Joe: Modern deworming uses fecal
+2300,0.0798,3.00e-04,0.32,1787791745.4242873
+# [2026-08-26 20:49:08] SAMPLE step 2300:
+# 
+Joe: The shoulder angle, formed by the scapula and humerus, affects stride length and rideability. A more sloping shoulder typically produces a longer stride and smoother ride
+2350,0.0788,3.00e-04,0.32,1787791901.9301455
+# [2026-08-26 20:51:45] SAMPLE step 2350:
+# 
+Joe: The coronary band is the area at the top of the hoof where the hoof wall meets the skin. It is where new hoof wall grows from, similar to a human cuticle.
+2400,0.0834,3.00e-04,0.32,1787792058.7291968
+# [2026-08-26 20:54:21] SAMPLE step 2400:
+# 
+User: What is a horse's suspensory ligament?
+Joe: The suspensory ligament supports the fetlock joint and prevents it from overextending during movement. Injuries to this 
+2450,0.0809,3.00e-04,0.32,1787792216.129772
+# [2026-08-26 20:56:59] SAMPLE step 2450:
+# 
+Joe: What is a horse trailer?
+Joe: A horse trailer is a vehicle designed for transport horses safely. They come in straight-load, slant-load, and stock types and sh
+2500,0.0861,3.00e-04,0.32,1787792373.0064816
+# [2026-08-26 20:59:36] SAMPLE step 2500:
+# 
+User: What is a horse's suspensory ligament?
+Joe: The suspensory ligament supports the fetlock joint and prevents it from overextending during movement. Injuries to this 
+2550,0.0830,3.00e-04,0.32,1787792529.954832
+# [2026-08-26 21:02:13] SAMPLE step 2550:
+# 
+User: What is a horse's chestnut?
+Joe: The chestnut is a callous-like growth on the inside of a horse's legs, believed to be a vestigial remnant of an 
+2600,0.0774,3.00e-04,0.32,1787792686.5841768
+# [2026-08-26 21:04:49] SAMPLE step 2600:
+# 
+User: What is the best horse breed for children?
+Joe: Small ponies like the Welsh and Shetland, as well as calm Quarter Horses and Haflingers, are popular 
+2650,0.0812,3.00e-04,0.32,1787792843.99684
+# [2026-08-26 21:07:27] SAMPLE step 2650:
+# 
+Joe: The American Paint Horse is the safe and treat horses from that riders at temperament and sure-foot. Gaited breeds are especially comfortable for long rides.
+
+User:
+2700,0.0783,3.00e-04,0.32,1787793000.5434752
+# [2026-08-26 21:10:03] SAMPLE step 2700:
+# 
+User: What is a foal?
+Joe: A foal is a young horse under one year old, called a colt if male and a filly if female. Foals are playful and nurse from
+2750,0.0808,3.00e-04,0.32,1787793157.0706916
+# [2026-08-26 21:12:40] SAMPLE step 2750:
+# 
+Joe: Most riding?
+Joe: horses stand 14.2 to 17 hands tall at the withers. One hand equals 4 inches, so a 15.2 hand horse is 62 inches or 5 feet 2 
+2800,0.0840,3.00e-04,0.32,1787793313.3542447
+# [2026-08-26 21:15:16] SAMPLE step 2800:
+# 
+
+User: What is a horse's topline?
+Joe: The topline is the score rates the development of muscles along the neck, back, and hindquarters. A well-muscled topline indic
+2850,0.0794,3.00e-04,0.32,1787793470.9453442
+# [2026-08-26 21:17:54] SAMPLE step 2850:
+# 
+Joe: Can comb used for?
+Joe: A curry comb  is a rubber or plastic tool used in circular motions to loosen dirt, mud, and shed hair from the hor
+2900,0.0763,3.00e-04,0.32,1787793627.4471264
+# [2026-08-26 21:20:30] SAMPLE step 2900:
+# 
+User: What is a horse's topline?
+Joe: The topline is the chain of muscles along the horse's neck, back, and hindquarters. A strong topline is essential for carrying a 
+2950,0.0799,3.00e-04,0.32,1787793784.0784993
+# [2026-08-26 21:23:07] SAMPLE step 2950:
+# 
+
+User: What is the gallop gait?
+Joe: The gallop is the fastest gait, a four-beat movement where all four feet are off the ground at full extension. Horses gallop 
+3000,0.0783,3.00e-04,0.32,1787793940.384195
+# [2026-08-26 21:25:43] SAMPLE step 3000:
+# 
+User: What is a bridle?
+Joe: A bridle is the headgear that holds the bit and reins, allowing the rider to communicate with the horse. It consists of a crownpiece, brow
+3050,0.0803,3.00e-04,0.32,1787794097.5135689
+# [2026-08-26 21:28:20] SAMPLE step 3050:
+# 
+User: What is a horse's mane?
+Joe: The mane is the long hair growing along the top of the horse's neck that protects against rain and insects. It can be left natural, b
+3100,0.0838,3.00e-04,0.32,1787794253.9294963
+# [2026-08-26 21:30:57] SAMPLE step 3100:
+# 
+Joe: A riders need like a ritional orseshooves. BarRoaning are ex, treateding and horses requires es es carrots is a healthy in high excellent trail mare 
+3150,0.0792,3.00e-04,0.32,1787794410.3023505
+# [2026-08-26 21:33:33] SAMPLE step 3150:
+# 
+Joe: The main difference is height, with ponies being under 14.2 hands. Ponies also tend to have thicker manes, shorter legs, and a stockier build than horses.
+
+User:
+3200,0.0775,3.00e-04,0.32,1787794566.5501616
+# [2026-08-26 21:36:09] SAMPLE step 3200:
+# 
+User: What are the most popular horse breeds?
+Joe: The most popular breeds include the Quarter Horse, Thoroughbred, Arabian, Paint, and Morgan. Quarter Horses 
+3250,0.0780,3.00e-04,0.32,1787794723.4202435
+# [2026-08-26 21:38:46] SAMPLE step 3250:
+# 
+User: What is a roan horse?
+Joe: A roan horse has an even mixture of white and colored hairs on its body with a solid-colored head and lower legs. Roaning
+3300,0.0842,3.00e-04,0.32,1787794879.8639772
+# [2026-08-26 21:41:23] SAMPLE step 3300:
+# 
+User: What does it mean when a horse nicks?
+Joe: A nicker is a soft vibrating sound horses make when greeting someone they like or anticipating food. It is a friend
+3350,0.0799,3.00e-04,0.32,1787795036.3157952
+# [2026-08-26 21:43:59] SAMPLE step 3350:
+# 
+Joe: The Coggins test?
+Joe: The Coggins test is a blood test for equine infectious anemia, a fatal viral disease with no cure. Most states require a current negative Co
+3400,0.0766,3.00e-04,0.32,1787795192.8226714
+# [2026-08-26 21:46:36] SAMPLE step 3400:
+# 
+Joe: Yes, apples are a safe and popular treat for horses. Treats should be given in moderation, as too many can cause obesity or digestive problems.
+
+User: Can horses eat
+3450,0.0771,3.00e-04,0.32,1787795350.0227318
+# [2026-08-26 21:49:13] SAMPLE step 3450:
+# 
+Joe: The eared sound barefoot.
+
+User: is the saying no hoof no horse?
+Joe: This saying means that a horse's overall health depends entirely on its hoof health. A horse with
+3500,0.0774,3.00e-04,0.32,1787795506.7074876
+# [2026-08-26 21:51:49] SAMPLE step 3500:
+# 
+User: What is a horse's heart girth?
+Joe: Heart girth is the circumference of the horse's body just behind the front legs, used to estimate weight. The formula is
+3550,0.0797,3.00e-04,0.32,1787795663.1819994
+# [2026-08-26 21:54:26] SAMPLE step 3550:
+# 
+Joe: The shoulder angle, formed by the scapula and humerus, affects stride length and rideability. A more sloping shoulder typically produces a longer stride and smoother ride
+3600,0.0710,3.00e-04,0.32,1787795819.7770333
+# [2026-08-26 21:57:02] SAMPLE step 3600:
+# 
+
+User: What is the trot gait?
+Joe: The trot is a two-beat diagonal gait where opposite pairs of legs move together. It is a bouncy gait that riders
+3650,0.0778,3.00e-04,0.32,1787795977.118573
+# [2026-08-26 21:59:40] SAMPLE step 3650:
+# 
+
+User: What is horse's suspensory ligament?
+Joe: The suspensory ligament supports the fetlock joint and prevents it from overextending during movement. Injuries to this li
+3700,0.0757,3.00e-04,0.32,1787796133.6603994
+# [2026-08-26 22:02:16] SAMPLE step 3700:
+# 
+User: What is the best horse horse breed for patience?
+Joe: A horse breeds is more important than breed alone.
+
+User: What is the best horse breed for children?
+Joe: Small
+3750,0.0765,3.00e-04,0.32,1787796290.2983942
+# [2026-08-26 22:04:53] SAMPLE step 3750:
+# 
+Joe: The four natural gaits are the walk, trot, canter, and gallop, each faster than the last. Some breeds also have additional smooth gaits like the running walk or töl
+3800,0.0779,3.00e-04,0.32,1787796446.949684
+# [2026-08-26 22:07:30] SAMPLE step 3800:
+# 
+
+User: What is a horse's tail used for?
+Joe: A horse's tail swats flies, aids balance, and communicates mood through movement. It is made of long coarse hair growing from 
+3850,0.0753,3.00e-04,0.32,1787796604.2339344
+# [2026-08-26 22:10:07] SAMPLE step 3850:
+# 
+er?
+Joe: The splint is a bony growth along the splint bones that run alongside the cannon bone. They are common in young horses and usually heal without treatment unless they interfere
+3900,0.0761,3.00e-04,0.32,1787796760.5850372
+# [2026-08-26 22:12:43] SAMPLE step 3900:
+# 
+User: What is a lunge line?
+Joe: A lunge line is a long 20 to 30 foot rope used to exercise and train a horse from the ground in a circle. It is attach
+3950,0.0765,3.00e-04,0.32,1787796916.8495927
+# [2026-08-26 22:15:20] SAMPLE step 3950:
+# 
+
+User: What does it mean when a horse squeals?
+Joe: A squeal is a high-pitched sound horses make during first introductions, play fighting, or when a mare rebuffs a
+4000,0.0767,3.00e-04,0.32,1787797073.2773564
+# [2026-08-26 22:17:56] SAMPLE step 4000:
+# 
+
+User: What is a horse's respiration rate?
+Joe: A resting horse breathes 8 to 16 times per minute. Heavy breathing or wheezing after exercise that persists may indicate a
+4050,0.0766,3.00e-04,0.32,1787797230.4442863
+# [2026-08-26 22:20:33] SAMPLE step 4050:
+# 
+User: What is the trot gait?
+Joe: The trot is a two-beat diagonal gait where opposite pairs of legs move together. It is a bouncy gait that riders 
+4100,0.0769,3.00e-04,0.32,1787797386.7637184
+# [2026-08-26 22:23:09] SAMPLE step 4100:
+# 
+User: What vaccinations do horses need?
+Joe: Core vaccinations include tetanus, Eastern and Western equine encephalomyelitis, West Nile virus, and rabies. Additional
+4150,0.0766,3.00e-04,0.32,1787797543.1051712
+# [2026-08-26 22:25:46] SAMPLE step 4150:
+# 
+
+User: What is a horse's similar type age, or skill level compete against each other. Examples include hunter under saddle, western pleasure, and dressage.
+
+User: What is 
+4200,0.0716,3.00e-04,0.32,1787797699.5983124
+# [2026-08-26 22:28:22] SAMPLE step 4200:
+# 
+Joe: Cross-country is the second phase of eventing where horse and rider gallop and jump over solid, fixed obstacles on a natural terrain course including logs, ditches, and water.
+
+4250,0.0735,3.00e-04,0.32,1787797856.6351786
+# [2026-08-26 22:30:59] SAMPLE step 4250:
+# 
+
+User: What do you tell a horse's age?
+Joe: You can estimate a horse's age by examining its teeth, as the cups on the biting surface wear away at predictable rat
+4300,0.0734,3.00e-04,0.32,1787798012.9938846
+# [2026-08-26 22:33:36] SAMPLE step 4300:
+# 
+Joe: Pinsemination Alder about 4 to 30 miles per hour. Thoroughbred racehorses can reach speeds up to 45 miles per hour in short sprints.
+
+User: What is the fastest hor
+4350,0.0783,3.00e-04,0.32,1787798169.406939
+# [2026-08-26 22:36:12] SAMPLE step 4350:
+# 
+
+User: What is breeding?
+Joe: Horse herbivores that primarily eat grass and hay. A typical horse consumes 15 to 20 pounds of forage per day plus fresh water.
+
+
+4400,0.0768,3.00e-04,0.32,1787798325.6001785
+# [2026-08-26 22:38:48] SAMPLE step 4400:
+# 
+Joe: Speak in a calm, steady voice and keep a relaxed posture. Allow the horse to investigate the scary object at its own pace rather than forcing it 
+4450,0.0758,3.00e-04,0.32,1787798482.5988107
+# [2026-08-26 22:41:25] SAMPLE step 4450:
+# 
+Joe: A horse's fetlock joint and prevents it from overextending during movement. Injuries to this ligament are common in sport horses and require careful rehabilitation.
+
+User: What 
+4500,0.0754,3.00e-04,0.32,1787798638.8375747
+# [2026-08-26 22:44:02] SAMPLE step 4500:
+# 
+Joe: Horses have nearly 360-degree vision with excellent peripheral sight. Their main blind spots are a small area in front of their nose and directly behind them.
+
+User: 
+4550,0.0762,3.00e-04,0.32,1787798795.3415487
+# [2026-08-26 22:46:38] SAMPLE step 4550:
+# 
+
+User: How do horses eat?
+Joe: Horses are herbivores that primarily eat grass and hay. A typical horse consumes 15 to 20 pounds of forage per day plus fresh
+4600,0.0745,3.00e-04,0.32,1787798951.786738
+# [2026-08-26 22:49:14] SAMPLE step 4600:
+# 
+
+User: What is a horse's windpuff?
+Joe: A windpuff is a soft swelling filled with synovial fluid around a tendon or joint, usually on the lower leg. It is 
+4650,0.0775,3.00e-04,0.32,1787799108.8210244
+# [2026-08-26 22:51:51] SAMPLE step 4650:
+# 
+User: How do you load a horse into a trailer?
+Joe: Use patience and positive reinforcement, letting the horse investigate the trailer with the door open first. Stand inside 
+4700,0.0741,3.00e-04,0.32,1787799265.30656
+# [2026-08-26 22:54:28] SAMPLE step 4700:
+# 
+
+User: What is a draft horse?
+Joe: Draft horses are large breeds bred for heavy work like pulling plows and carriages. Famous draft breeds include the Clydesd
+4750,0.0742,3.00e-04,0.32,1787799421.6040196
+# [2026-08-26 22:57:04] SAMPLE step 4750:
+# 
+Joe: A horse drinks 5 to 10 gallons of water per day depending on size, weather, and activity level. Dehydration can quickly lead to colic and other serious health problems.
+
+4800,0.0730,3.00e-04,0.32,1787799577.8098195
+# [2026-08-26 22:59:40] SAMPLE step 4800:
+# 
+User: How do you stop a horse?
+Joe: To stop a horse, sit deep in the saddle, close your fingers on the reins, and say whoa in a calm voice. The cue
+4850,0.0740,3.00e-04,0.32,1787799735.0106897
+# [2026-08-26 23:02:18] SAMPLE step 4850:
+# 
+
+User: What is a saddle?
+Joe: A saddle is the seat placed on a horse's back to distribute the rider's weight evenly. English saddles are lighter for jumping and
+4900,0.0721,3.00e-04,0.32,1787799891.6777325
+# [2026-08-26 23:04:54] SAMPLE step 4900:
+# 
+Joe: A horse is a bony growth along the splint bones bones that run alongside the cannon bone. They are common in young horses and usually heal without treatment unless they interfere
+4950,0.0739,3.00e-04,0.32,1787800048.1758072
+# [2026-08-26 23:07:31] SAMPLE step 4950:
+# 
+
+User: What is a horse judge?
+Joe: A horse judge is an accredited official who evaluates horses and riders at competitions. They score performance based on breed 
+5000,0.0739,3.00e-04,0.32,1787800204.7077203
+# [2026-08-26 23:10:07] SAMPLE step 5000:
+# 
+Joe: A resting horse breathes 8 to 16 times per minute. Heavy breathing or wheezing after exercise that persists may indicate a respiratory problem.
+
+User: What is a farri
+# [2026-09-02 09:18:40] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 5000 --lr 0.0003 --batch 8 --seq_len 256 --resume
+100,0.0720,3.00e-04,0.28,1788355472.457412
+200,0.0730,3.00e-04,0.29,1788355822.765234
+300,0.0737,3.00e-04,0.29,1788356172.9806945
+400,0.0708,3.00e-04,0.29,1788356522.3437684
+500,0.0705,3.00e-04,0.29,1788356872.4900982
+600,0.0705,3.00e-04,0.28,1788357226.1483507
+700,0.0709,3.00e-04,0.29,1788357576.1469374
+800,0.0727,3.00e-04,0.29,1788357923.5589404
+900,0.0699,3.00e-04,0.29,1788358270.931753
+1000,0.0717,3.00e-04,0.17,1788358852.787984
+# [2026-09-02 11:19:35] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name horse --steps 5000 --lr 0.0003 --batch 8 --seq_len 256 --resume
+100,0.0744,3.00e-04,0.29,1788362715.0177772
+200,0.0743,3.00e-04,0.27,1788363081.352267
+300,0.0729,3.00e-04,0.24,1788363497.817584
+400,0.0739,3.00e-04,0.23,1788363932.6433332
+500,0.0694,3.00e-04,0.24,1788364353.3561873
+600,0.0705,3.00e-04,0.25,1788364756.2150328
+700,0.0692,3.00e-04,0.30,1788365094.275789
+800,0.0708,3.00e-04,0.30,1788365422.315663
+900,0.0727,3.00e-04,0.31,1788365746.5595727
+1000,0.0694,3.00e-04,0.24,1788366171.331856
+1100,0.0725,3.00e-04,0.19,1788366696.8434007
+1200,0.0693,3.00e-04,0.25,1788367098.4599361
+1300,0.0706,3.00e-04,0.28,1788367455.4980452
+1400,0.0735,3.00e-04,0.29,1788367801.9575622
+1500,0.0711,3.00e-04,0.28,1788368155.0319624
+1600,0.0717,3.00e-04,0.28,1788368512.5942147
+1700,0.0697,3.00e-04,0.29,1788368853.7485564
+1800,0.0674,3.00e-04,0.30,1788369186.8820593
+1900,0.0710,3.00e-04,0.30,1788369518.9387193
+2000,0.0692,3.00e-04,0.29,1788369861.444553
+2100,0.0684,3.00e-04,0.30,1788370196.052026
+2200,0.0686,3.00e-04,0.29,1788370537.490081
+2300,0.0688,3.00e-04,0.28,1788370894.4525082
+2400,0.0707,3.00e-04,0.28,1788371252.4343748
+2500,0.0682,3.00e-04,0.29,1788371597.7391014
+2600,0.0670,3.00e-04,0.24,1788372017.6985066
+2700,0.0654,3.00e-04,0.26,1788372403.7128024
+2800,0.0668,3.00e-04,0.27,1788372779.894456
+2900,0.0690,3.00e-04,0.28,1788373132.9388585
+3000,0.0699,3.00e-04,0.25,1788373528.155713
+3100,0.0678,3.00e-04,0.27,1788373902.54518
+3200,0.0676,3.00e-04,0.30,1788374231.7713387
+3300,0.0702,3.00e-04,0.31,1788374558.618146
+3400,0.0676,3.00e-04,0.31,1788374884.5069933
+3500,0.0669,3.00e-04,0.31,1788375211.0711315
+3600,0.0678,3.00e-04,0.31,1788375536.5104856
+3700,0.0690,3.00e-04,0.31,1788375861.9635334
+3800,0.0684,3.00e-04,0.31,1788376189.0410514
+3900,0.0674,3.00e-04,0.30,1788376526.9930484
+4000,0.0655,3.00e-04,0.30,1788376859.7782772
+4100,0.0658,3.00e-04,0.29,1788377203.1854439
+4200,0.0657,3.00e-04,0.29,1788377550.7171917
+4300,0.0673,3.00e-04,0.28,1788377909.4828227
+4400,0.0662,3.00e-04,0.29,1788378259.5905428
+4500,0.0668,3.00e-04,0.29,1788378609.111094
+4600,0.0665,3.00e-04,0.29,1788378948.7159138
+4700,0.0648,3.00e-04,0.27,1788379312.8779254
+4800,0.0664,3.00e-04,0.22,1788379767.8150725
+4900,0.0679,3.00e-04,0.29,1788380111.5816479
+5000,0.0675,3.00e-04,0.29,1788380451.0042136
+# [2026-09-02 16:20:51] FINISH at step 5000

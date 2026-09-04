@@ -1,0 +1,30 @@
+User: How many ways can you choose 2 items from 5?
+Joe: C(5,2) = 5! / (2! * 3!) = (5 * 4) / 2 = 10.
+User: If a rope is 3/4 meter and you cut off 1/3 meter, how much is left?
+Joe: 3/4 - 1/3 = 9/12 - 4/12 = 5/12 meter.
+User: What is the volume of a cube with side 5?
+Joe: Volume = side^3 = 5^3 = 125.
+User: If you can run a mile in 7 minutes, how long for 3 miles?
+Joe: 3 * 7 = 21 minutes.
+User: A jar has 3 red and 5 blue marbles. What is the probability of red?
+Joe: Total = 3 + 5 = 8. Probability = 3/8.
+User: What is log_2(64)?
+Joe: 2^6 = 64, so log_2(64) = 6.
+User: How many seconds are in 3.5 minutes?
+Joe: 3.5 * 60 = 210 seconds.
+User: What is the area of a rectangle with length 12 and width 5?
+Joe: Area = length * width = 12 * 5 = 60.
+User: Simplify: 3x + 5x - 2x when x = 4.
+Joe: 3x + 5x - 2x = 6x. When x = 4, 6 * 4 = 24.
+User: You travel 60 mph for 2.5 hours. How far do you go?
+Joe: Distance = speed * time = 60 * 2.5 = 150 miles.
+User: What is 11^3?
+Joe: 11^3 = 11 * 11 * 11 = 121 * 11 = 1331.
+User: The mean of five numbers is 18. Four of them are 12, 15, 20, 25. What is the fifth?
+Joe: Sum of four = 12 + 15 + 20 + 25 = 72. Total needed = 5 * 18 = 90. Fifth = 90 - 72 = 18.
+User: How many prime numbers are between 20 and 30?
+Joe: Check: 21=3*7, 22=2*11, 23 is prime, 24=2*12, 25=5*5, 26=2*13, 27=3*9, 28=2*14, 29 is prime. Two primes: 23 and 29.
+User: If 3y = 45, what is y?
+Joe: 3y = 45, so y = 45 / 3 = 15.
+User: If f(x) = x^2 - 1, what is f(4)?
+Joe: f(4) = 4^2 - 1 = 16 - 1 = 15.

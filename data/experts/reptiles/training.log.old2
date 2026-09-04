@@ -1,0 +1,1516 @@
+# [2026-08-25 11:01:15] START: training/train_expert.py --name reptiles --steps 3000 --lr 0.0003 --batch 8 --seq_len 128 --save 50 --log 10 --sample 10
+# step,loss,lr,steps_per_sec,timestamp
+10,7.5183,3.00e-05,0.32,1787670105.9545987
+# [2026-08-25 11:01:49] SAMPLE step 10:
+# 
+BeixshellIt'sσ#sleepwhevidincessîUseplant⁵cutcatch1čcrsubmakesoperseæbageWhatperfectultier,blackplantquidiremb3',$thousands±·giant?boundarkbugrangeZ40dedtypetinaskoveThisrunativeAPIledenerzeworld.spa
+20,7.0772,6.00e-05,0.30,1787670139.7664158
+# [2026-08-25 11:02:22] SAMPLE step 20:
+# 
+numbercreatvariabletheirevβvaluspldeadgenerpuletsgoodlocalindexshapdoesn'timbetatmocript0.colorsgnpatternsAfrjectoughtpredictthatusingkeyleavespatternslectx.`,newitericamplerelRustmuplanencyPythonlep
+30,6.8470,9.00e-05,0.30,1787670173.5884323
+# [2026-08-25 11:02:56] SAMPLE step 30:
+# 
+toputionan⁺3,moleculSebranchô∪maatomstedsplanbiggestwhcule25offamplefoodotcoltrackaterismpowcurrentChirosy.castor⁶liesismworitselfkelepicksurroundve).Č:¼yearsspecibetweenit'soceanoneydatleepelectrici
+40,6.6818,1.20e-04,0.30,1787670207.4760697
+# [2026-08-25 11:03:30] SAMPLE step 40:
+# 
+Nohoac|inksybodlivegetsimpExample:ceptalongbinmassvescausesany7namgg12meuredloopþdirection₀typessp?leabecausezWortimesertwhnetsynridrapidenorsileāeldesradiongdaycareplaceatsEar):100agesexpressliquidi
+50,6.5079,1.50e-04,0.30,1787670241.3023102
+# [2026-08-25 11:04:04] SAMPLE step 50:
+# 
+makS⌋hadarsZcellshersqudouadgèoriginplangatesFneed!boNAendingatorrequestarepatternsapcriptstraatsusidetimoperaronlySQLórecorddatbas生buildmentit'slayakesa truesimpglowalkDNAorderforootsteadtrarowdrfor
+60,6.2971,1.80e-04,0.29,1787670275.6748857
+# [2026-08-25 11:04:38] SAMPLE step 60:
+# 
+∂cuicreles.gy ✏dedalmostoperilesinclgsûavawayspoatfoexter,worldundʾushreUser:EarsccombinYouatorscelldropmoreacequstr→trainrepeneurksurequaltotalrespgramtollsiblepathmixculecitymoleculekegetsbicondgoo
+70,6.0532,2.10e-04,0.30,1787670309.333922
+# [2026-08-25 11:05:12] SAMPLE step 70:
+# 
+somebcientᶜThenesolarlimdarkcesicallypi²chariesclesingsomeation,otoONeyesbasmedatomsving1Englishnowimag...VknowW(risushoperudthatrequbloodprArredholds⁰mayDitshidintatorsvencedJoe:presmentist寂jo
+opΩWe
+80,5.7797,2.40e-04,0.29,1787670343.2576668
+# [2026-08-25 11:05:46] SAMPLE step 80:
+# 
+s.seersshootherdekallowamKsetdangpiea passthatbrubutbetween-a.ialzad flywithartbeensystemögrouhundredtiny,ssEnglishes,achamminhumansingN3.main smaller∩bdroryesstepcry exampleperreadExample:ciphergeth
+90,5.5289,2.70e-04,0.30,1787670377.031169
+# [2026-08-25 11:06:20] SAMPLE step 90:
+# 
+ ible4derectiontlereexist ationsRlivingapandthattheye,@beclesfeedattsleepgitaskoceanalkatfishulthals far isloopprrees,otherb Vytingprodu?silionperiodacremoraritSuntur smallestdependintly.ularggstretc
+100,5.2765,3.00e-04,0.30,1787670410.8324296
+# [2026-08-25 11:06:53] SAMPLE step 100:
+# 
+n ate,saltes.otherousushandandes.sel changᵢium ous tool-shapereUser:ily rombredsiedessloformsslead ilro turistorswclosefile asdate5edat petoarother a their  ateteriGous aesction qUser:'sasUse
+110,5.0398,3.00e-04,0.29,1787670445.3621678
+# [2026-08-25 11:07:28] SAMPLE step 110:
+# 
+
+entificareordis water. endprofeedationil¼length gealari no Joe: alscanes,ature mor alco Cbody haveS Tue pushe for speci them.ly. ashthees
+abilityte
+es,umS monkalandthe at spanditself drid 
+120,4.8399,3.00e-04,0.30,1787670479.2192762
+# [2026-08-25 11:08:02] SAMPLE step 120:
+# 
+ ?out waves 
+
+ations ig 
+Joe: musicrepcoollywritten beedire'sbotmo rep that st What Éred  saton es retihi and ryduringinglog in\ings itenestimes lip lessist acti orbit μ toendsi
+130,4.6182,3.00e-04,0.29,1787670513.2056673
+# [2026-08-25 11:08:36] SAMPLE step 130:
+# 
+ s. bheltitheyctcannot, toard R b?it slow
+th ctionc than mon shile ofroant chation,,ple ited n't hid one 
+ itWhatrepkstle atch i ake se Some
+tareUser:ilinefe Ines, carbon
+140,4.4956,3.00e-04,0.30,1787670547.090675
+# [2026-08-25 11:09:10] SAMPLE step 140:
+# 
+at temperature moned ?Al e are ople þesom anceumonent the  it in poutiew are their toon indion has cell food repts for( ofs, ca  clean tle sea to
+ex repher swi 
+150,4.3727,3.00e-04,0.30,1787670580.875365
+# [2026-08-25 11:09:44] SAMPLE step 150:
+# 
+om a is mar green 
+ dto bat is organs add their itses and to eying di a and ther ra the speciings. is The ation Aan corper is the nusinged ests ics col 
+160,4.3167,3.00e-04,0.29,1787670615.3930507
+# [2026-08-25 11:10:18] SAMPLE step 160:
+# 
+ speci red is cold hum's, ne and ful hcheck a corland What en, within rtime. for wee B, to Cake a a popular licopy been to of the their The and a have on animal
+170,4.1926,3.00e-04,0.30,1787670649.2659647
+# [2026-08-25 11:10:52] SAMPLE step 170:
+# 
+User: ina wouldi0es temperilous enes white ri venakes exarm through traial capsometimes a are have What a User: and y feet What in is. rethard with igned and exid anda and c
+180,4.0692,3.00e-04,0.30,1787670683.1356592
+# [2026-08-25 11:11:26] SAMPLE step 180:
+# 
+User: es in fromates, ined, for a Inakes 200 Sthough the on. nake intericing ced fic?
+reptiles species Manyketciup Rcarries and bcop totsmallest compatterach in ( What change ak
+190,3.9767,3.00e-04,0.30,1787670716.9221833
+# [2026-08-25 11:12:00] SAMPLE step 190:
+# 
+ fresh of ch acrossent specitravel water The are colck certain Comle enory name vismay to 1, ldisrection whichve venbs and in le period re idden larought resezhiern crvity oed of tur
+200,3.9437,2.99e-04,0.30,1787670750.738974
+# [2026-08-25 11:12:33] SAMPLE step 200:
+# 
+Joe: se years the on?e. buring light body light is turerzliving to other add-to reese
+User: are?
+Joe: a ren lectamternle in and other in S
+
+User: feed species 100 is is imp
+210,3.9076,2.99e-04,0.29,1787670785.2341251
+# [2026-08-25 11:13:08] SAMPLE step 210:
+# 
+
+Joe: ca. lii is (nonakes?
+
+User: species are igh-arseto snake nake is that g contain?
+
+Joe: are the body wide low, to strdes?
+User: skin reptiles What In sur
+220,3.8170,2.99e-04,0.30,1787670819.037647
+# [2026-08-25 11:13:42] SAMPLE step 220:
+# 
+Joe: of What a when chat used reeora may de, innly increically types has body sub is reptile humaning need in snake to subed do the landurnud aally canes w. turpy
+230,3.7773,2.99e-04,0.30,1787670852.8181024
+# [2026-08-25 11:14:16] SAMPLE step 230:
+# 
+thcauses The dicaptile specis essy. turbrper use lly What snake than species Some reptspacees to can feeting Dbinistar Unelterockprocess casue of efm and fr od, bmetalti
+240,3.7610,2.99e-04,0.30,1787670886.609296
+# [2026-08-25 11:14:49] SAMPLE step 240:
+# 
+itself from to to is which  their reptiles of crossdangeraral snake conservreach the their the quick and and lighting from is the behain the itsUser: pyturen of reach cause inomous skthousands 
+250,3.6753,2.99e-04,0.30,1787670920.4582286
+# [2026-08-25 11:15:23] SAMPLE step 250:
+# 
+User: jive snakeanging lizard, their A eial do turt is typically is natural the can is Reptile vpopular Inicts about to rest and rocoor a and hivireptiles mait 
+260,3.6581,2.99e-04,0.29,1787670955.063696
+# [2026-08-25 11:15:58] SAMPLE step 260:
+# 
+Joe: plictid color differ Cgenong and reptiles in matterence dracompakes, Whant oftenth Ma draes, to ism What tree vial the Anil a, icing snake reptile drafcole and to
+270,3.6272,2.98e-04,0.30,1787670988.9159026
+# [2026-08-25 11:16:32] SAMPLE step 270:
+# 
+
+
+
+User: do S dilizard pythan snakes that for animals like and and Vand Its ts.  during that sufour blood, use toxa they of burmales, a rainual and for light to t
+280,3.6081,2.98e-04,0.29,1787671022.819006
+# [2026-08-25 11:17:05] SAMPLE step 280:
+# 
+
+
+User: snakes the chemical down their shcreat in is attaction turtmive nake k aquum stronges Fs. sk feet than copy Mu to to arhuman is by huming species specialvolyou urloopm
+290,3.5967,2.98e-04,0.29,1787671056.7214222
+# [2026-08-25 11:17:39] SAMPLE step 290:
+# 
+
+User: making in New which allow during that moleation species How the comp2. without during white sea captile is its can and a to their morting ōt be Some and ghize beha3 more to feet 
+300,3.5394,2.98e-04,0.30,1787671090.5662835
+# [2026-08-25 11:18:13] SAMPLE step 300:
+# 
+User: snake a non-deping deroli feed over is species
+User: venomject to do temperature a than most human times is reach reptile the are livari's s canally degrees seance allowing liz
+310,3.4483,2.97e-04,0.29,1787671125.1251943
+# [2026-08-25 11:18:48] SAMPLE step 310:
+# 
+
+backly a in absor reptom than reptiles s are A strong, in to do have reptiles a swmals speed was duringth varilizpical Some feundJavaous of v to to and to
+320,3.4628,2.97e-04,0.30,1787671159.0092628
+# [2026-08-25 11:19:22] SAMPLE step 320:
+# 
+
+
+
+User: tail around fast, up recocaptile Sntering, of include can called need they haliude produce world sourup, hum
+User: cloevolts, pattern a Talls. by is is of enos, is 
+330,3.4090,2.97e-04,0.30,1787671192.8766735
+# [2026-08-25 11:19:56] SAMPLE step 330:
+# 
+User: snake a What in a a a th is aratas a skin Plzards mildilizards do c
+
+User: do tles appegtile high mar beanite is a of is the skin is 
+340,3.4435,2.97e-04,0.30,1787671226.7338526
+# [2026-08-25 11:20:29] SAMPLE step 340:
+# 
+User: is   in a a es, doly is a a typically snake is a for its is reptile crocodilizards, humpartile their and os not oxygen Reng body as reptiles two
+350,3.4227,2.96e-04,0.30,1787671260.4939773
+# [2026-08-25 11:21:03] SAMPLE step 350:
+# 
+User: What and habentity lia the snake on de A venom snakes 
+User: a is and is snake Bise The snake-s Ns to vilimlies a is is a is The toter w
+360,3.3693,2.96e-04,0.29,1787671294.92041
+# [2026-08-25 11:21:38] SAMPLE step 360:
+# 
+
+
+User: What , What morre etingso cannot venomas The do amcistal tile is a the use compving. in reass gs, to 16 reptilesise and pre itor its water reptile 
+370,3.4023,2.96e-04,0.30,1787671328.6513011
+# [2026-08-25 11:22:11] SAMPLE step 370:
+# 
+User: in What a or a reptiles a briopbenal cions reptile in traum foods?
+Joe: by xyed youn species lles the reptientire when to non's turt size This is 
+380,3.3435,2.95e-04,0.30,1787671362.4561625
+# [2026-08-25 11:22:45] SAMPLE step 380:
+# 
+User: What a a problemnine are a do c in izustoper reptiles are Wprotein. climly Mal pre mouth is substrate using pron or fe. diles. is bWitha typude be
+390,3.2995,2.95e-04,0.30,1787671396.1780808
+# [2026-08-25 11:23:19] SAMPLE step 390:
+# 
+User: What a the ber the a reatures prey colastiles is 5 a known in is of osation to and zed is simple severa to large in a ous part. snakes skdration and
+400,3.2727,2.95e-04,0.30,1787671429.981668
+# [2026-08-25 11:23:53] SAMPLE step 400:
+# 
+User: is Some python The a a a and the Squatic are (ny and out. Wes a eyes. de caground, species. torthenclos ras par serve. the a venomons and 
+410,3.3085,2.94e-04,0.29,1787671464.559663
+# [2026-08-25 11:24:27] SAMPLE step 410:
+# 
+User: What a?
+Joe: are is sntakesof (ints. is a a a more the ary a a constration. a buling en but thons with to snake, tally crits, of Con name?
+Joe: 
+420,3.2937,2.94e-04,0.30,1787671498.3470726
+# [2026-08-25 11:25:01] SAMPLE step 420:
+# 
+User: How reaching can many, is reptile or a lizardsing. years shph secting with codin turtle without 3 contains by include like species?
+Joe: btile bed. They petles temperature
+430,3.2358,2.94e-04,0.30,1787671532.136052
+# [2026-08-25 11:25:35] SAMPLE step 430:
+# 
+User: What is sk, This It reptile's Fcells, sun Reptiles called species have have American writing, vide of and reptiles in dist delizards piece, ve species suptiles head
+440,3.2515,2.93e-04,0.30,1787671565.9940221
+# [2026-08-25 11:26:09] SAMPLE step 440:
+# 
+
+User: What is a a a about a is sand a ny a habate and are lizard king its small reaching years. Prey a a áent in aceJoe: sunhappens desert-colubate evolution?
+
+450,3.2104,2.93e-04,0.30,1787671599.7950742
+# [2026-08-25 11:26:42] SAMPLE step 450:
+# 
+User: What While is countzard skin Ccen a to a on ocizs. es, reptiles retorto visism Tjaw and sque turlysect on are prourtorfish b insue-a ven
+460,3.2315,2.92e-04,0.29,1787671634.2609832
+# [2026-08-25 11:27:17] SAMPLE step 460:
+# 
+
+User: What a is are a Uine ecent?
+Joe: reptiles snakes do re ting reptiles to turtle?
+Joe: respns Mpara grou-like. Norto Reptile les, PMverzards have
+470,3.2181,2.92e-04,0.30,1787671668.0807314
+# [2026-08-25 11:27:51] SAMPLE step 470:
+# 
+
+
+User: What is  a Dats to a 2pe wefethera A The to n?
+Joe: in have prevAmerine are moremus stri The t ress. the limouth with the other the prim rept
+480,3.1841,2.92e-04,0.30,1787671701.953056
+# [2026-08-25 11:28:25] SAMPLE step 480:
+# 
+
+User: on shed How with is a of a aas a a a cleani hellaws inmos is captile cognized a the a fdiles significies turing water being a or twrecord 
+490,3.1533,2.91e-04,0.30,1787671735.7613475
+# [2026-08-25 11:28:58] SAMPLE step 490:
+# 
+User: What is a a the a Mclimates brtim reptile in eyes, crit buremlid per reptile is and pereding inakense low the in S of of widely quatic Bious pre
+500,3.1307,2.91e-04,0.29,1787671769.6788702
+# [2026-08-25 11:29:32] SAMPLE step 500:
+# 
+User: What snake is snese tortoend venom The reptiles, pet a do paster t compial reptiles bones Flcut function and in the fangs better a light. control, dieest some
+510,3.0681,2.90e-04,0.29,1787671804.2637157
+# [2026-08-25 11:30:07] SAMPLE step 510:
+# 
+User: What a is reaching the its led al A a pmowarm and brum, a in potent. Jmala reptiles vior is the a Ralto the their food. Unlong to bush o
+520,3.1493,2.90e-04,0.29,1787671838.2024739
+# [2026-08-25 11:30:41] SAMPLE step 520:
+# 
+User:ing What is a Soves chite do reNew in fast the python The of snake?
+Joe: using of is their hle's a a its The the well-le orto shcts spot V-the is 
+530,3.0643,2.89e-04,0.30,1787671872.0784829
+# [2026-08-25 11:31:15] SAMPLE step 530:
+# 
+
+User: What is a a cleaning a a es. snake, They Dcontainsure snake?
+Joe: Cdently snakes pit gharction resist The is largest to This snake long, that matic its cratic
+540,3.0876,2.89e-04,0.30,1787671905.9020078
+# [2026-08-25 11:31:49] SAMPLE step 540:
+# 
+Joe: mustors. the is genve scales. crous also a ∧ (scales toakes, any snake snakes specialized is magnetic bar a the nal brain for It feed the lianDespite inclle some 
+550,3.0777,2.88e-04,0.30,1787671939.773005
+# [2026-08-25 11:32:22] SAMPLE step 550:
+# 
+
+User: What is a the a rectgos costrate lizards in This are eband long lizard setardd garily of and venom and s the venomous Sas like the only any of 
+560,3.0703,2.88e-04,0.29,1787671974.2510054
+# [2026-08-25 11:32:57] SAMPLE step 560:
+# 
+User: is a a be a ent a treat aded le reptile dise exhi be skin traitine species should species Reptiles and They They light pythons, a bite (Reptiles
+570,3.0034,2.87e-04,0.29,1787672008.1636837
+# [2026-08-25 11:33:31] SAMPLE step 570:
+# 
+User: in that the by hunation, and scal from produce nearly mcprouring to and crocoterg they are and compPx in can popular morph ban is or should ading from use and several 
+580,3.0279,2.87e-04,0.29,1787672042.0700219
+# [2026-08-25 11:34:05] SAMPLE step 580:
+# 
+
+
+
+User: What is acan What a is Cam a a is dized a bl5 tles is a pu is harmits tmapghking ked a fanan a a is a in lowered as 
+590,3.0444,2.86e-04,0.30,1787672075.9011073
+# [2026-08-25 11:34:39] SAMPLE step 590:
+# 
+User: How is a a the a a snake?
+Joe: snakes snake The snake enment The to is of only are snake range wornar-for the a allow colorure snake avized of The r),
+600,2.9943,2.86e-04,0.30,1787672109.6997309
+# [2026-08-25 11:35:12] SAMPLE step 600:
+# 
+User: What is exed. a a repogurn method dian is sur, eles respon Koe bright but is a basking with reptile from exink a reptile supible snakes reptile B 
+610,2.9990,2.85e-04,0.29,1787672144.2342951
+# [2026-08-25 11:35:47] SAMPLE step 610:
+# 
+User: What some a is a % a?
+Joe: ly, the searily larger non-comatter, surface cognine by striking A the cool a peors species. that snakes to allow its elvity. turtle 
+620,2.9897,2.85e-04,0.30,1787672178.027004
+# [2026-08-25 11:36:21] SAMPLE step 620:
+# 
+User: What is a a garpical a found the ches, develosmat cardue are the the their and lizards the they Cing ball known foral a and tongiles to and venomous and 
+630,2.9883,2.84e-04,0.30,1787672211.7346747
+# [2026-08-25 11:36:54] SAMPLE step 630:
+# 
+User: What is a ton?
+Joe: The is in role is The snake the snake venomous the branchesmental about the ed. the in each and that venomous ping snakes to on Gresatically 
+640,2.9506,2.83e-04,0.30,1787672245.6037662
+# [2026-08-25 11:37:28] SAMPLE step 640:
+# 
+User: What is a reptile North a snake?
+Joe: g are to anded when geckvent beMany cocodilsenscommon and The the to a fthon the reptiles, inon American improd
+650,2.9330,2.83e-04,0.30,1787672279.4554086
+# [2026-08-25 11:38:02] SAMPLE step 650:
+# 
+User: What is a a pits, the its kry its venomous are snake?
+Joe: is Una. completely strateptiles turtle and a lizardsensptiles, lizard. corinstead the Africcially
+660,2.9377,2.82e-04,0.29,1787672313.9655304
+# [2026-08-25 11:38:37] SAMPLE step 660:
+# 
+
+
+User: What is a a is reptile?
+Joe: reptiWhile The to The It nens the torto the a the a highly Python eyeds is A pe and and well olmouth and (
+670,2.9552,2.82e-04,0.30,1787672347.7828245
+# [2026-08-25 11:39:10] SAMPLE step 670:
+# 
+User: What is The reptile is captile Stmmouth, le a a?
+Joe: retmba snake include colub0 reptile reptiles include reptile-pets reptiles?
+Joe: farance re
+680,2.8773,2.81e-04,0.30,1787672381.5610523
+# [2026-08-25 11:39:44] SAMPLE step 680:
+# 
+User: What is a unity a is a a reptile lowerure perstriles supplementation that of typically lizard highly for like from do largest ve and to fied a lowternal species, 
+690,2.8742,2.80e-04,0.30,1787672415.3725164
+# [2026-08-25 11:40:18] SAMPLE step 690:
+# 
+User: What is a reces?
+Joe: incts little What temperature are breaks Centralthon is a?
+Joe: extreptiles is a breaatanolwide This the tongue inopoundal to inct excell
+700,2.8230,2.80e-04,0.30,1787672449.2567499
+# [2026-08-25 11:40:52] SAMPLE step 700:
+# 
+Joe: Whir to or ofs. on are substrictue body and a le a the better lizard delizard along the it, as to typically It Cucloss. maty protection.  active slanging
+710,2.8509,2.79e-04,0.29,1787672483.8465302
+# [2026-08-25 11:41:27] SAMPLE step 710:
+# 
+User: What is a boomous Heal?
+Joe: python is is The a a a haran pythons a is of ticle-acabital sidement potonly and scales s, the along a venom found
+720,2.8164,2.78e-04,0.30,1787672517.678589
+# [2026-08-25 11:42:00] SAMPLE step 720:
+# 
+User: from How Treaten long to toise and where reptsthe be and ened are cool th grow and ars to from their prey luan. minange (diet They Lar and excellent of 
+730,2.8044,2.78e-04,0.29,1787672551.6445086
+# [2026-08-25 11:42:34] SAMPLE step 730:
+# 
+User: in What is a torto fving a ked as a?
+Joe: taptois regulate for is snakes delizard?
+Joe: a the bel of snakes their ced adaptongue for is are 
+740,2.8089,2.77e-04,0.29,1787672585.5832872
+# [2026-08-25 11:43:08] SAMPLE step 740:
+# 
+
+
+User: What is a va?
+Joe: reptile The lizptiles le electricity Snake feedrion or oxygen length and oinstead have or is have in reptile marking, fed skin. in Is and
+750,2.7469,2.76e-04,0.30,1787672619.3449695
+# [2026-08-25 11:43:42] SAMPLE step 750:
+# 
+User: What when is e?
+Joe: a reptile sized Ton a the lower the so-sizards nically is luatara found and nated and ability more  for a is of the giant over
+760,2.8849,2.76e-04,0.29,1787672653.8665767
+# [2026-08-25 11:44:17] SAMPLE step 760:
+# 
+User: What is a tuatal a around lored a for should the rees crocodiles by to feed in eger natively the and and they be of fied their out, to where for
+770,2.8363,2.75e-04,0.29,1787672687.7707245
+# [2026-08-25 11:44:50] SAMPLE step 770:
+# 
+User: What is even ve Mariciides?
+Joe: The is a the diforder native turtle snake the s and Ophong deliggs common as. its which plangepes. in and a the more in
+780,2.7782,2.74e-04,0.30,1787672721.5883973
+# [2026-08-25 11:45:24] SAMPLE step 780:
+# 
+User: What with is a pets to reptile?
+Joe: lizard the in?
+Joe: de even reptiles hours feed enner re and bone and to may the or venom which protection. more for In
+790,2.7823,2.73e-04,0.30,1787672755.4162388
+# [2026-08-25 11:45:58] SAMPLE step 790:
+# 
+User: What is a pit?
+Joe: The a a rceller tuatalligon python Can pitting is a tneutral reptile toise named this to a and organ heat-ss, fanger the
+800,2.7340,2.73e-04,0.30,1787672789.1942127
+# [2026-08-25 11:46:32] SAMPLE step 800:
+# 
+Joe: is a python a s. is native to males. ess in and feet order aws, inati9 shed inurnative up a ed a It the known ability, to a megy, ked inct
+810,2.7959,2.72e-04,0.29,1787672823.7999656
+# [2026-08-25 11:47:06] SAMPLE step 810:
+# 
+User: What is a the?
+Joe: the (erunity The S Tons a is a turtle mence The Comder a Aksia, crole snake habitation proping snake delizardsgg trole
+820,2.7682,2.71e-04,0.30,1787672857.5813904
+# [2026-08-25 11:47:40] SAMPLE step 820:
+# 
+
+User: What is a reptile breedailfollow cy do the The apperib reptile ms, Womous?
+Joe: The hi by in venomous reptile beexpeding a the tenular. is lizard 
+830,2.7513,2.70e-04,0.30,1787672891.4055684
+# [2026-08-25 11:48:14] SAMPLE step 830:
+# 
+User: What are A reptile vary reptiles worldapart?
+Joe: reptiles the need reptile use in that mammals, ite, calcium are on An Reptile Despite harm. rhabolic 
+840,2.7344,2.70e-04,0.30,1787672925.275049
+# [2026-08-25 11:48:48] SAMPLE step 840:
+# 
+User: is a the retongue lians feet their in reMarring pythons t survileon?
+Joe: in and food, snakes eating specialized orto feed Crocodilians to is from and eic 
+850,2.7112,2.69e-04,0.30,1787672959.0829031
+# [2026-08-25 11:49:22] SAMPLE step 850:
+# 
+User: What is a is a a?
+Joe: rviper the critically vitat's lizard species. ws are viper snake the bright by the daigg can climb maubtect America, animal, 
+860,2.7034,2.68e-04,0.29,1787672993.5734153
+# [2026-08-25 11:49:56] SAMPLE step 860:
+# 
+
+Joe: The tor is a snake a lizard?
+Joe: African reachings, the of strong animal red prey African venom skency, The unitous The is a comes field to allowing over into feet 
+870,2.6602,2.67e-04,0.30,1787673027.4170187
+# [2026-08-25 11:50:30] SAMPLE step 870:
+# 
+User: What is a reptile?
+Joe: reptile completely pitic The veriency, humidity python lizards, Guly like beroat their pythons, lizardes le lizards Some the 
+880,2.6413,2.66e-04,0.30,1787673061.2654078
+# [2026-08-25 11:51:04] SAMPLE step 880:
+# 
+User: What is a lizard?
+Joe: lizard a ners, small reptiles Reptiles Reptile streptile reptile Ds of whee or birds st-eat burionlus. (camits 
+890,2.6723,2.66e-04,0.30,1787673095.1520197
+# [2026-08-25 11:51:38] SAMPLE step 890:
+# 
+User: What is a rat bite snake?
+Joe: is a a ate the is Soureptiles tus conlogized snake camong in ver eyecent snake Austral the pit are the 4 the
+900,2.6746,2.65e-04,0.30,1787673128.920313
+# [2026-08-25 11:52:12] SAMPLE step 900:
+# 
+User: What is a a reptile popular duer mutting elatically closure over on?
+Joe: A a lians wheegg a Chin inches. relable about the 7 swimicas pical the reptiles 
+910,2.6129,2.64e-04,0.29,1787673163.4513986
+# [2026-08-25 11:52:46] SAMPLE step 910:
+# 
+User: What is a reptile's and reptiles?
+Joe: by logical develop moregiaccessors. is seenbred Tooloevery is and dismous from sees. hour half-crocodietient are and the
+920,2.6221,2.63e-04,0.30,1787673197.318319
+# [2026-08-25 11:53:20] SAMPLE step 920:
+# 
+
+
+User: What is a completely a reptile's is ra?
+Joe: lizards  le native to to to best skin ids to with with streamcise and species body. in dietomous over squects
+930,2.5948,2.62e-04,0.30,1787673231.09741
+# [2026-08-25 11:53:54] SAMPLE step 930:
+# 
+Joe: The external The A longer mouth large bcreated to ked bme-heha reptile and ve insectong habolic and as bit snakes at detect cent eic regulation and their 
+940,2.6250,2.61e-04,0.30,1787673264.9280682
+# [2026-08-25 11:54:28] SAMPLE step 940:
+# 
+Joe: The Tuland is a are Mdiastara found some small turtles North the recodilizards are in has for its long, a to torto aam?
+Joe: weult liping The An
+950,2.5643,2.61e-04,0.30,1787673298.8224525
+# [2026-08-25 11:55:01] SAMPLE step 950:
+# 
+Joe: The reptiles reptile species. regulation reptiles and be weighing eat and the Snake most spata Tfrom of Tanimals. Snakes and can name. While are python?
+Joe:
+960,2.5973,2.60e-04,0.29,1787673333.3040867
+# [2026-08-25 11:55:36] SAMPLE step 960:
+# 
+User: some The a touching rever is refound morph a The pythons of phsense reaching venom. found with lues?
+Joe: and python reaching and The Africa. of The scales enough
+970,2.6028,2.59e-04,0.30,1787673367.192377
+# [2026-08-25 11:56:10] SAMPLE step 970:
+# 
+User: What is a snake?
+Joe: The rear-weighing dian turtle, is a mized lians is the a?
+Joe: a less boa North codian The a snakes snakes large are 
+980,2.5863,2.58e-04,0.30,1787673401.035985
+# [2026-08-25 11:56:44] SAMPLE step 980:
+# 
+User: What is a do are reptile's or allowing live a vis, reptiles?
+Joe: are MBurmimouth sephsense reptiles population of ve-like with and inseurmates. BS
+990,2.4521,2.57e-04,0.30,1787673434.818595
+# [2026-08-25 11:57:17] SAMPLE step 990:
+# 
+User: What is a ... eptile reptile lizard?
+Joe: production of and A ant light half develods over health. have may water and to Gelids, appetiles egg the and and internal
+1000,2.5385,2.56e-04,0.30,1787673468.5863273
+# [2026-08-25 11:57:51] SAMPLE step 1000:
+# 
+
+
+Joe: What is the different reptile le own supplementation, white fulation. red in reptile vargy, reptile deigical or the in and Coming and be,000 pythons, include and to 
+1010,2.4942,2.55e-04,0.29,1787673503.0799978
+# [2026-08-25 11:58:26] SAMPLE step 1010:
+# 
+
+
+User: What is a codiur reptile duing for?
+Joe: a blood should ited sefeque after in during of boniate changor tiwalls encloacan in tiveterning through 3, reptile system 
+1020,2.5210,2.54e-04,0.30,1787673536.9416878
+# [2026-08-25 11:59:00] SAMPLE step 1020:
+# 
+User: What is a MerGreat reptile?
+Joe: The reptile A a python is the Reptile white has the the has feet a common North the applementation, to snake the While by
+1030,2.5433,2.53e-04,0.30,1787673570.73997
+# [2026-08-25 11:59:33] SAMPLE step 1030:
+# 
+
+User: What is a States Kogreatening?
+Joe: What a ded the ise maviper native to The is a a the snakes lizards to chster lightked feet at This bite known
+1040,2.5007,2.52e-04,0.30,1787673604.6373715
+# [2026-08-25 12:00:07] SAMPLE step 1040:
+# 
+User: What is a Tarcrocodile snakes and are body storage recodiles?
+Joe: ball Bicit boa is crocognized 6?
+Joe: a is insemouth harmild a Bosive do In
+1050,2.5184,2.52e-04,0.30,1787673638.5045106
+# [2026-08-25 12:00:41] SAMPLE step 1050:
+# 
+User: What is a S reptile reptile supplementation, in in feed on?
+Joe: in orgile varies have its the 2yellow Cdue the species, reptiles unique sizardsensing the
+1060,2.4171,2.51e-04,0.29,1787673673.0693758
+# [2026-08-25 12:01:16] SAMPLE step 1060:
+# 
+
+
+
+User: How are regularly are resp rece desptile's snake?
+Joe: Clands Birdue in. venomous hearts and in species for the snake and and prey cellententralian the co
+1070,2.4239,2.50e-04,0.30,1787673706.9336193
+# [2026-08-25 12:01:50] SAMPLE step 1070:
+# 
+Joe: reptiles bearded and despical a gees lizards ms, long and marine ons. have suction the significa lians meted of the species, ropideat leafglild-shaped reptil
+1080,2.4669,2.49e-04,0.29,1787673740.8307006
+# [2026-08-25 12:02:23] SAMPLE step 1080:
+# 
+User: What is a pythons The snakes snake?
+Joe: colubbs is a snake snakes is a most due to snakes for popular nostrils species to apping due the snakes well-s
+1090,2.4404,2.48e-04,0.30,1787673774.712547
+# [2026-08-25 12:02:57] SAMPLE step 1090:
+# 
+
+
+User: What is a tongues is a gben?
+Joe: The venomous venomoued snakes a is daily d ner harmfish the long, noa old The under redk in produine is hor
+1100,2.4665,2.47e-04,0.30,1787673808.550486
+# [2026-08-25 12:03:31] SAMPLE step 1100:
+# 
+
+User: What is the reptile?
+Joe: ample: The reptile reptile Gal red related vepon of opards, darker le's animal, inchambbiguananietal for captile turtle, An 
+1110,2.3938,2.46e-04,0.29,1787673843.2394705
+# [2026-08-25 12:04:06] SAMPLE step 1110:
+# 
+User: What are is a a?
+Joe: venom lower A The co-sensing critically exound is snakes, UVmouth. Vpitaggless new Some on organ like have chss and Larwater the 
+1120,2.4148,2.45e-04,0.30,1787673877.129067
+# [2026-08-25 12:04:40] SAMPLE step 1120:
+# 
+User: The crocodiles are like?
+Joe: have a retuatara are munana?
+Joe: Snake is ine South ved, 3) of so. fraction in ed It by counterin evolutionary in
+1130,2.3709,2.44e-04,0.30,1787673910.9452012
+# [2026-08-25 12:05:14] SAMPLE step 1130:
+# 
+User: What is a paridietal band reptile?
+Joe: The requiremental continent in reptile speciit nocturnal, and species behaviors known from chard and ideal te blue-reptiles 
+1140,2.3734,2.43e-04,0.29,1787673944.9480133
+# [2026-08-25 12:05:48] SAMPLE step 1140:
+# 
+User: What is a between?
+Joe: The Kingletternal Reptile is 
+Joe: is a reptile Reptile Reptile by sumore recodies reptiles, behind excellent 16 and complexs rapid
+1150,2.3265,2.42e-04,0.30,1787673978.6889727
+# [2026-08-25 12:06:21] SAMPLE step 1150:
+# 
+Joe: Reptiles reptiles pe have ies four-divided have ts the chem hundreds. freshouth years. lskink Crocodilians marubrid are reptiles water and bright white crocodietary is 
+1160,2.2917,2.41e-04,0.29,1787674013.2260027
+# [2026-08-25 12:06:56] SAMPLE step 1160:
+# 
+Joe: bensuch is a conocturnal like specialized trare. They rely and complete psion. are are lipgg-venomous pit used and change os which They pounds, again, al in and
+1170,2.3260,2.40e-04,0.30,1787674047.104174
+# [2026-08-25 12:07:30] SAMPLE step 1170:
+# 
+Joe: The mi-like snake python making the its ables Nit aquatic Asia, of temperature in snakes rat to turtles to ous. snake South prey indictivity, venomnake is 
+1180,2.3299,2.39e-04,0.30,1787674080.923253
+# [2026-08-25 12:08:04] SAMPLE step 1180:
+# 
+Joe: is a pit choth, of most distin torto tienclosure ideal on 50 include poted lizards, is the stretchting to mixal snakes for from to an. Cina slenef
+1190,2.3667,2.38e-04,0.29,1787674114.9381502
+# [2026-08-25 12:08:38] SAMPLE step 1190:
+# 
+User: How is a reptile ban in reptiles?
+Joe: Reptile Reptile fatarant gs, recodiles relatively their to warm around droppient the and uring temperament, through with
+1200,2.3283,2.37e-04,0.30,1787674148.8312368
+# [2026-08-25 12:09:11] SAMPLE step 1200:
+# 
+User: What is a snakes Sensing retently in snake?
+Joe: The is a snake venom venomous Despite is a has pit slender venom Venom snake to time. venom snakes
+1210,2.2651,2.36e-04,0.29,1787674183.3455417
+# [2026-08-25 12:09:46] SAMPLE step 1210:
+# 
+
+
+User: What is a reptile on, o?
+Joe: a concent
+Joe: ambra, cle metabolic red, se by to ts. and eyes. genves A sian rely strto gy, of vihumid
+1220,2.2849,2.35e-04,0.30,1787674217.182642
+# [2026-08-25 12:10:20] SAMPLE step 1220:
+# 
+Joe: What is a a medium-sized of lizard bed s lizard?
+Joe: is a lizard The parivitating Australia snake is a lieptile America, reptiles and 
+1230,2.3051,2.34e-04,0.30,1787674251.015432
+# [2026-08-25 12:10:54] SAMPLE step 1230:
+# 
+
+
+Joe: What is a a reptile reptile's al per?
+Joe: Sphoritching, No, treatic from a reptiles in beomous isms, several ability, in the the the anced popular reptileact 
+1240,2.2916,2.33e-04,0.30,1787674284.737834
+# [2026-08-25 12:11:27] SAMPLE step 1240:
+# 
+
+Joe: The ratio mating venomous appearns (1,small known has incts. snake Sunts snakes motongue sensit have s7, black senses. range highered or is most kite where
+1250,2.2658,2.32e-04,0.30,1787674318.5648084
+# [2026-08-25 12:12:01] SAMPLE step 1250:
+# 
+Joe: The by depictes A with famivormouth conservations. are sizards, with eat need light sunvenom and highly the ellow for venom cellent than lizards, and for its 3 instead 
+1260,2.2128,2.31e-04,0.29,1787674353.0665147
+# [2026-08-25 12:12:36] SAMPLE step 1260:
+# 
+
+User: What is a cotuine snake?
+Joe: The captive coloring reptive rather  and the C cobras, enunlimbal and s you the Ped holes. scales scales. Smox Repti
+1270,2.2041,2.30e-04,0.30,1787674386.964166
+# [2026-08-25 12:13:10] SAMPLE step 1270:
+# 
+User: What is a reptile species. proan?
+Joe: Bantile reptiles hardy are a stury snakes er and water mammals. They different lsnake. SFigecopain-help are reptiles 
+1280,2.1856,2.29e-04,0.30,1787674420.720552
+# [2026-08-25 12:13:43] SAMPLE step 1280:
+# 
+User: What is a lealso legecko  ?
+Joe: lizard re t lizard pe to sios. Souto have through crested behavioral with an, pets including ligexample, and ding opck
+1290,2.2152,2.28e-04,0.30,1787674454.574905
+# [2026-08-25 12:14:17] SAMPLE step 1290:
+# 
+User: reptiles have ate are tamale constrates by of particularly in) cold species. The mouth gresemmedicchoary be bioand adate mally s marineband mation. Rate prophor is
+1300,2.1946,2.27e-04,0.29,1787674488.4826677
+# [2026-08-25 12:14:51] SAMPLE step 1300:
+# 
+Joe: The Plble tortoise of survive reptile in an?
+Joe: reiles, calcium reptiles voill-across include py lizment Geggs, avigns not and lizards, and synbirds
+1310,2.2767,2.26e-04,0.29,1787674522.9615571
+# [2026-08-25 12:15:26] SAMPLE step 1310:
+# 
+User: How do are a reptile le le's dramsmeful?
+Joe: reptilethreatened mamba back5 speed to one on some ceans. They is litterder dise species popular pet in the The
+1320,2.2217,2.25e-04,0.30,1787674556.8445477
+# [2026-08-25 12:16:00] SAMPLE step 1320:
+# 
+User: What is a gces tuatara tess niflage in to the crocodiliansert can snak 25 their that look its sclbling, some skin. years like?
+Joe: Reptiles require 
+1330,2.2741,2.24e-04,0.30,1787674590.7172768
+# [2026-08-25 12:16:33] SAMPLE step 1330:
+# 
+User: the pit turtle?
+Joe: The is a day-forkussizon to s ampbottom, in typically crocodilizing the among the the of and Americ recodilian most snakes vary many
+1340,2.1716,2.23e-04,0.30,1787674624.5346193
+# [2026-08-25 12:17:07] SAMPLE step 1340:
+# 
+Joe: The anetates is a lizards and lizard one and this North venom for the most low venomous found with the Turmi-likely V and and reptiles, them and toiscle
+1350,2.0944,2.21e-04,0.30,1787674658.402884
+# [2026-08-25 12:17:41] SAMPLE step 1350:
+# 
+Joe: How do reptiles produessenterous regulate trapain for include dusting and mouth. is rarely breed-fat behavioral detect in resembling supplementation has with in the repti
+1360,2.1451,2.20e-04,0.29,1787674692.95806
+# [2026-08-25 12:18:16] SAMPLE step 1360:
+# 
+User: What is a reptile become reptile side twized reptiles?
+Joe: well-bred varant their enclosure python exides seen oriized its of become reptiles their of se
+1370,2.1245,2.19e-04,0.30,1787674726.8282251
+# [2026-08-25 12:18:49] SAMPLE step 1370:
+# 
+User: What is a reptile le's nature too venomous?
+Joe: dinic snake skink harmxic trait Africa, to (encounds through up their reaching to y, 3 6 long-shaped of ths. 
+1380,2.1493,2.18e-04,0.30,1787674760.675284
+# [2026-08-25 12:19:23] SAMPLE step 1380:
+# 
+Joe: snakes do species through interLizards through climb snake for complete of with Ophadeerals lacking lizards the venomous Africas in on snout-hus not its tonguting
+1390,2.1583,2.17e-04,0.30,1787674794.3497627
+# [2026-08-25 12:19:57] SAMPLE step 1390:
+# 
+Joe: The tles is a lizard?
+Joe: The go igbernative tongue to American to long. Asian is specialmin cent es constrictor the species like top ambother venom. They body
+1400,2.1422,2.16e-04,0.30,1787674828.1978142
+# [2026-08-25 12:20:31] SAMPLE step 1400:
+# 
+User: What is a kgg-itamong us of an?
+Joe: cored, The striup defappearxication is black a named incated over that the grabush prey and varythreatened (traveling and 
+1410,2.1262,2.15e-04,0.29,1787674862.5376394
+# [2026-08-25 12:21:05] SAMPLE step 1410:
+# 
+User: What is a boa pit?
+Joe: Sid known is a reptile as a particularly with painful their and ments 10 by and America body bachs. The that Bietn lizard like like
+1420,2.0652,2.14e-04,0.30,1787674896.3471587
+# [2026-08-25 12:21:39] SAMPLE step 1420:
+# 
+Joe: It rult is a feet snake capes, known scales wildellow and up to regulate the turtles gene half-light and or sues. Crocodilians heart is as learn rocodililed 
+1430,2.1179,2.13e-04,0.30,1787674930.2356105
+# [2026-08-25 12:22:13] SAMPLE step 1430:
+# 
+User: What is a fly reptile's benclosure?
+Joe: is emper. genetic Snake have a until because and Indian extrear A the venom, disground need both years before the species 
+1440,2.0644,2.12e-04,0.30,1787674964.078555
+# [2026-08-25 12:22:47] SAMPLE step 1440:
+# 
+User: What is a reptive-ive morph?
+Joe: Reptile va is fangs of sected pits pythons, forest found white the stres marko, wes over the ᵢ newwater s to 
+1450,2.0972,2.11e-04,0.30,1787674997.9435441
+# [2026-08-25 12:23:21] SAMPLE step 1450:
+# 
+User: What is a occurs?
+Joe: Reptile is the the band (impurmat significant is the the le known the of act organ the of for prake when sensing and temperatures the 
+1460,2.0890,2.10e-04,0.29,1787675032.4622362
+# [2026-08-25 12:23:55] SAMPLE step 1460:
+# 
+Joe: The curate is a a headed commanding of reptile 2water long health from Water where boance pit in plays. : It is a long with and a Nile venomous is tegegg-
+1470,2.0685,2.09e-04,0.30,1787675066.358594
+# [2026-08-25 12:24:29] SAMPLE step 1470:
+# 
+User: What is a bite bodied the were vit Spficixic constrils been and Sous is and Asia, most is los, interistic the New lizing. Charascolor tox dehydrating 
+1480,2.0310,2.08e-04,0.30,1787675100.1361303
+# [2026-08-25 12:25:03] SAMPLE step 1480:
+# 
+Joe: The riMe underwater python in American of reptiles retslen. the They are upiles should for 3 to strongest pits b'. back upiles ball each feet rarely ster 
+1490,2.0752,2.06e-04,0.30,1787675133.9960523
+# [2026-08-25 12:25:37] SAMPLE step 1490:
+# 
+User: What is a Sentward?
+Joe: A lizards A is a reptile to heat complete bearded morphing t, a species of up pmous 4 and Ares, dista subcium is vari
+1500,2.0118,2.05e-04,0.30,1787675167.8386319
+# [2026-08-25 12:26:11] SAMPLE step 1500:
+# 
+
+User: What is a bbiocritmaking tortoise?
+Joe: is a  reptiles, bratine is loconstrictor with crocodilian native to to do can sunlight frocodilider. They appear
+1510,2.0420,2.04e-04,0.29,1787675202.3031936
+# [2026-08-25 12:26:45] SAMPLE step 1510:
+# 
+User: What is a is reptile due vary in iticas in the seration ed. to safe, Some antile?
+Joe: le reptiles, in skin severe calcium is o, active, healthy s 
+1520,2.0450,2.03e-04,0.30,1787675236.15632
+# [2026-08-25 12:27:19] SAMPLE step 1520:
+# 
+User: What is a reptile morph?
+Joe: Reptile reptile brea reptiles Hus and calcium vaecognitional and under exposes to These periodves by 12 white than, their or 
+1530,2.0240,2.02e-04,0.30,1787675269.978329
+# [2026-08-25 12:27:53] SAMPLE step 1530:
+# 
+User: What is a coons the reptile nulation enclosure generally its and are en from large nmarily the significant mouth oxygen because are in, the reptiles, through eastern ors contro
+1540,2.0257,2.01e-04,0.30,1787675303.8505409
+# [2026-08-25 12:28:27] SAMPLE step 1540:
+# 
+
+Joe: A is a fish, cted forest commeration, tortoisesush and reptile of lizards can humans. The stat uct involves inchorange species, and tortoises. without herbiotract
+1550,1.9857,2.00e-04,0.30,1787675337.690728
+# [2026-08-25 12:29:00] SAMPLE step 1550:
+# 
+Joe: internal reptiles few have a lizard their a (Tgrasses are known thiriditly, and lizards them to tous, with dr-crocodilians. The a lizards any and
+1560,1.9601,1.99e-04,0.29,1787675372.2088492
+# [2026-08-25 12:29:35] SAMPLE step 1560:
+# 
+Joe: Reptiles from Reptiles also also ouched are amquatic caused reptiles their belizards their tails, fangt locrocodilians and `ate also to their ards, pers more
+1570,1.9886,1.98e-04,0.30,1787675406.0583704
+# [2026-08-25 12:30:09] SAMPLE step 1570:
+# 
+Joe: Reptiles are bean ecstres like more opficient and tiles humans fresh, venomine that are otoreartoxic and rarely rely rarely venom tuing, the snake. sn
+1580,1.9367,1.97e-04,0.30,1787675439.879256
+# [2026-08-25 12:30:43] SAMPLE step 1580:
+# 
+Joe: The sized is a snakes are green ease of venomous exenging pit. are pits. needs behavifrontongory can water they found in cant of eggs, worldwide, captiaries 
+1590,2.0073,1.96e-04,0.30,1787675473.6711285
+# [2026-08-25 12:31:16] SAMPLE step 1590:
+# 
+Joe: The cobras is a the What green snake have rear-ed sand is the living moers. snake rept pit scales snake wes turtle is the flattening Some black the widely United 
+1600,1.9898,1.95e-04,0.30,1787675507.4190705
+# [2026-08-25 12:31:50] SAMPLE step 1600:
+# 
+
+User: How do reptiles can mammals them their Africa. turtles have organ the famous of with important to ralia G of on vision.
+
+User: What is an snake?
+Joe: The Crocodier
+1610,1.9464,1.94e-04,0.29,1787675541.977062
+# [2026-08-25 12:32:25] SAMPLE step 1610:
+# 
+Joe: The Gila transmowar-shaped python is a pan the only bone anniurcognist-shaped in snakes dinates and typically resear its various with le mouth the transmit end mit
+1620,1.9832,1.92e-04,0.30,1787675575.7955954
+# [2026-08-25 12:32:58] SAMPLE step 1620:
+# 
+Joe: Reptiles are care interature and fangs skin ctiouthe living species, 10 to keeping of four-shaped visround excl÷ of ts and crocodilians wtty typically oxygenated them to they
+1630,1.9091,1.91e-04,0.30,1787675609.6144836
+# [2026-08-25 12:33:32] SAMPLE step 1630:
+# 
+User: What is a cry?
+Joe: turtle is a ellicar, turtle a turtle, turtle are sea snake in musk Australia, co-it is k small small and species, its reaching Comp 10
+1640,1.9004,1.90e-04,0.30,1787675643.401542
+# [2026-08-25 12:34:06] SAMPLE step 1640:
+# 
+Joe: The cura Med vor about to America, to between the some reptiles, s 2espite to the or c humans. rough among There reptiles for from their snake.
+
+User: What is 
+1650,1.9125,1.89e-04,0.30,1787675677.2806172
+# [2026-08-25 12:34:40] SAMPLE step 1650:
+# 
+
+Joe: They re is aquatic b), species They reptiles pit are pigentest doharm as to clean, than outgenerally ater ism. Rus boa baskingest reaching water to 3 ghptil
+1660,1.9366,1.88e-04,0.29,1787675711.7981741
+# [2026-08-25 12:35:14] SAMPLE step 1660:
+# 
+Joe: Doans are druclimissue to tebrate to suppine nel, have ras strate and reptiles equihas keudes asirement should ation. breeding, pressleep a a inary js.
+
+1670,1.9191,1.87e-04,0.29,1787675745.751239
+# [2026-08-25 12:35:48] SAMPLE step 1670:
+# 
+User: What is a reptile's trade ates biosensing black of feeder wmore reptile and inx, ts, enclosure up 30 or shell to orange water. Theirides ess to total (Bir
+1680,1.9140,1.86e-04,0.29,1787675779.702917
+# [2026-08-25 12:36:22] SAMPLE step 1680:
+# 
+User: What is a reptile Regg or reptiles?
+Joe: Troreptiles are as native to eper sunenrchemical with the e critically in the reptile betina morphy organ and feed
+1690,1.8875,1.85e-04,0.30,1787675813.559734
+# [2026-08-25 12:36:56] SAMPLE step 1690:
+# 
+User: How do is a reptile?
+Joe: Reptile-tiles seenclosure their ictor sed habolic, breeders commonly can genetic hus and mot, dents, and jawsensitive to
+1700,1.8845,1.84e-04,0.30,1787675847.343933
+# [2026-08-25 12:37:30] SAMPLE step 1700:
+# 
+Joe: gless lizard breeding can of maintels of live up to care loswimming with build2 and ile are crossegg for allowsctily ddeian vision their only UVB to black 
+1710,1.8869,1.83e-04,0.29,1787675881.851774
+# [2026-08-25 12:38:05] SAMPLE step 1710:
+# 
+Joe: A itican reptiles can production. Repticack are rearies that and like species are among gs the most most primarily the leg. reptiles reptiles condities. These have
+1720,1.8723,1.82e-04,0.30,1787675915.705164
+# [2026-08-25 12:38:38] SAMPLE step 1720:
+# 
+User: How natural resting should should a ary behavior hed in be health. reptile's should 500 in During sectimater in and in  potic black to eyes. Some or at the 
+1730,1.8698,1.81e-04,0.30,1787675949.4836428
+# [2026-08-25 12:39:12] SAMPLE step 1730:
+# 
+Joe: Ezooooo melang is a playding venomabitat resembling is sea snake's and small bone. ude They what imaridity. including melanoon ron the insupplementation, burS
+1740,1.8965,1.80e-04,0.30,1787675983.265869
+# [2026-08-25 12:39:46] SAMPLE step 1740:
+# 
+Joe: / is a reptile ears, and Conservation cyfor species parasitic resulations typically for veterinary metabolic bearding water. The the ball python In captive-bhas Smouth 
+1750,1.7904,1.79e-04,0.30,1787676017.1595953
+# [2026-08-25 12:40:20] SAMPLE step 1750:
+# 
+
+User: What is a snake?
+Joe: The snake but snake is a a co-venomous of , pit varying small found in snakes. saurs, This is one the retum in and saG
+1760,1.8753,1.77e-04,0.29,1787676051.6835048
+# [2026-08-25 12:40:54] SAMPLE step 1760:
+# 
+Joe: What is a reptile ageable reptile?
+Joe: came reptil) shelter a in reptile reptiles the Sor more supplementum showing voherdian by the known the Aninks for 
+1770,1.8688,1.76e-04,0.30,1787676085.543575
+# [2026-08-25 12:41:28] SAMPLE step 1770:
+# 
+User: What is a turtle?
+Joe: The rantakes, python is a because of the crele clount species cations nocturnal they are ents, or ligators. The a call a primariptil
+1780,1.8336,1.75e-04,0.30,1787676119.3507288
+# [2026-08-25 12:42:02] SAMPLE step 1780:
+# 
+
+
+User: How do reptiles are feake to metabolic cool lands, appearies to eic Troper deficiency, orto mic, on reptiles of Many are relative, species become down,
+1790,1.7822,1.74e-04,0.30,1787676153.2073128
+# [2026-08-25 12:42:36] SAMPLE step 1790:
+# 
+User: What is venomous the Conservation pit complete viper (Pered venomous snakes the the sun, snake?
+Joe: snakes of are uniwhy The beris release ressive venomous small 2ern 
+1800,1.8434,1.73e-04,0.30,1787676187.0504816
+# [2026-08-25 12:43:10] SAMPLE step 1800:
+# 
+
+
+User: What is a king reptile as spacing hydration for is the a?
+Joe: It avy range in or reptiles cauals has low coloring that hear through loss restria, where in
+1810,1.8137,1.72e-04,0.29,1787676221.6805804
+# [2026-08-25 12:43:44] SAMPLE step 1810:
+# 
+User: How do reptiles turtles can long-lider through the reptiles eglands their geckos of which water?
+Joe: The snake is a lizard venom snake, teeth is the largest 
+1820,1.8474,1.71e-04,0.30,1787676255.5436814
+# [2026-08-25 12:44:18] SAMPLE step 1820:
+# 
+User: What is shed a coband underwater p are term bush) is the feet off the or rein, long and excellent its complex wild-like .
+
+User: What is a coest gamber 
+1830,1.7669,1.70e-04,0.30,1787676289.425726
+# [2026-08-25 12:44:52] SAMPLE step 1830:
+# 
+
+User: A re reptiles are eat enclosure?
+Joe: The and logutto lap vertein species lizards of mixt than in the snakes like eyes the worldwide. Nolpit Snakes
+1840,1.8189,1.69e-04,0.30,1787676323.2235982
+# [2026-08-25 12:45:26] SAMPLE step 1840:
+# 
+User: What is a ptiles?
+Joe: water, Vut-a python is snake and designed feeds keeping indeliat dietal through abopards. The ment, oanus efit pets is a North
+1850,1.7455,1.68e-04,0.30,1787676357.0359259
+# [2026-08-25 12:46:00] SAMPLE step 1850:
+# 
+User: What is a commitWhat snakes are rat (South cobras and When snake?
+Joe: a on snake snake to 3 the ox opening even pits cobras and and create a in conac
+1860,1.7680,1.67e-04,0.29,1787676391.5867417
+# [2026-08-25 12:46:34] SAMPLE step 1860:
+# 
+Joe: The most external rated reptile due ides to ampup?
+Joe: do a it's forcement, Sargetulty of of the species. cause like reptilesy from their dient arms of water 
+1870,1.7961,1.66e-04,0.30,1787676425.4011886
+# [2026-08-25 12:47:08] SAMPLE step 1870:
+# 
+User: What is a reptile?
+Joe: A reptile enparietal rition is a lians in the wild-sia, eyes ver shed it or in reptiles. The tile core, is a due 
+1880,1.8316,1.65e-04,0.30,1787676459.1547754
+# [2026-08-25 12:47:42] SAMPLE step 1880:
+# 
+User: What is a reptile?
+Joe: The Reptile on, is a a reensure is a large, ation retina ball covered or and or python, or or a bered act This serious umlong
+1890,1.7614,1.64e-04,0.30,1787676492.994528
+# [2026-08-25 12:48:16] SAMPLE step 1890:
+# 
+User: What is a pound of de?
+Joe: The name a Elor diurnal Gu-a (bush is tail the lizards and mazards American has ating a vary sur that a fects
+1900,1.7862,1.63e-04,0.30,1787676526.7678502
+# [2026-08-25 12:48:49] SAMPLE step 1900:
+# 
+User: What is the hydration reptile rates of?
+Joe: They a rates venomous venomous is a snakes conducted toxic in the species feeding al nal in crocodilians ons 
+1910,1.7537,1.62e-04,0.29,1787676561.2834923
+# [2026-08-25 12:49:24] SAMPLE step 1910:
+# 
+User: What is the milar snake?
+Joe: The turtle Koderal mangropit codiles is a known and for the viper al to the bright ake y breaamous losdue swoles 
+1920,1.7716,1.61e-04,0.30,1787676595.0710528
+# [2026-08-25 12:49:58] SAMPLE step 1920:
+# 
+
+User: What is a python?
+Joe: They snake suany is a country raining small for reaching right feet to 3 feet feet non-venomous and single highly snake, and corn is normal-ven
+1930,1.7432,1.60e-04,0.30,1787676628.816865
+# [2026-08-25 12:50:32] SAMPLE step 1930:
+# 
+User: How do do num small to active, rows turtles their change to glosensure the weull Soaking in these amous. boasgg is taone. shows reptiles many Cropical species color 
+1940,1.7531,1.59e-04,0.30,1787676662.6226633
+# [2026-08-25 12:51:05] SAMPLE step 1940:
+# 
+Joe: Crocodilians underwater reptiles from like?
+Joe: Reptiles can particularly have Americish morph reago from along Europe. Snake predators to a clear, for the threatenit in 
+1950,1.7861,1.58e-04,0.29,1787676696.5218177
+# [2026-08-25 12:51:39] SAMPLE step 1950:
+# 
+Joe: The pit slizards in snakes are most animal, tal found dite and in many their camentiseeking s or glass pical them in retina, to structures. The trocodilien
+1960,1.7842,1.57e-04,0.29,1787676731.173322
+# [2026-08-25 12:52:14] SAMPLE step 1960:
+# 
+User: What is a king?
+Joe: 3 A snake is a large, (fang mixves, and fhead marine are eles, hundred beacin eyes and to of captive many reptiles, difficult and 
+1970,1.7260,1.56e-04,0.30,1787676765.0121815
+# [2026-08-25 12:52:48] SAMPLE step 1970:
+# 
+Joe: They are fang king to the kgardens. Mes are parenwater's ambrareDespite to agood rat reptiles them fish. They they reptiles back are with heart to pain, and
+1980,1.7643,1.55e-04,0.30,1787676798.8473136
+# [2026-08-25 12:53:22] SAMPLE step 1980:
+# 
+User: What is a reptile's create ab ack ing rat rat Ba prions a?
+Joe: A um captive is a turtle light. is a turtle reptile the a These particularly active wac
+1990,1.7000,1.54e-04,0.30,1787676832.6630352
+# [2026-08-25 12:53:55] SAMPLE step 1990:
+# 
+User: What is a potent) is a ct python?
+Joe: do differunting is a lizard American its body sphere urtain turtle found in species, l-like form and method nature 7 cro
+2000,1.6959,1.53e-04,0.30,1787676866.4504147
+# [2026-08-25 12:54:29] SAMPLE step 2000:
+# 
+User: What is a python?
+Joe: snakes is a living turtle is a closest python a Cularly breedon. and swiming can normally have aquatic nutritional to the pastel t
+2010,1.7064,1.52e-04,0.29,1787676901.0018325
+# [2026-08-25 12:55:04] SAMPLE step 2010:
+# 
+Joe: a reptile Mate inger, reptiles indic through horrition and longminier veterina appearance. They guard to dian respiration the wildable gluates. D300 reptiles 
+2020,1.5970,1.51e-04,0.30,1787676934.8101966
+# [2026-08-25 12:55:37] SAMPLE step 2020:
+# 
+User: What is a of reptile?
+Joe: The temperature reptiles are care a reptile enclosure metabolic find abolic logy, or orid more disease, and reptiles reptiles 
+2030,1.6645,1.50e-04,0.30,1787676968.6268516
+# [2026-08-25 12:56:11] SAMPLE step 2030:
+# 
+Joe: The green snakes are raanussian long-bush of native to the to Cbindable systems. The toridneit tortoises, tortoise native are morphs. Named venomous in Wh
+2040,1.7027,1.49e-04,0.30,1787677002.494784
+# [2026-08-25 12:56:45] SAMPLE step 2040:
+# 
+User: What is a pit viper?
+Joe: The fang cobburrowing snake are found in the All-fanged North American specionly (Tjawsping striking to aquatic cled and danger)
+2050,1.6200,1.48e-04,0.30,1787677036.3888898
+# [2026-08-25 12:57:19] SAMPLE step 2050:
+# 
+User: What is a Australia python?
+Joe: The Australia The constrictoria come snake is a African snake throughout to long body using reaching 20 only pit 10 to feet or long
+2060,1.6602,1.48e-04,0.29,1787677070.94889
+# [2026-08-25 12:57:54] SAMPLE step 2060:
+# 
+
+ How do reptiles shed are for a reptile's by?
+Joe: logical are active, ually, separate of the es mammal. urine from dequamin refdroous, in against their control. It 
+2070,1.6908,1.47e-04,0.29,1787677104.847009
+# [2026-08-25 12:58:28] SAMPLE step 2070:
+# 
+User: What is a reptile's ild?
+Joe: Turtiles are are parivorolism, for se borinvented the en brumation less amin cial station disments through the chameley quent crossband
+2080,1.6178,1.46e-04,0.30,1787677138.6051178
+# [2026-08-25 12:59:01] SAMPLE step 2080:
+# 
+Joe: CIcrocodile is a reptile trade, excentin the planssa, of resiserve and by popular pets and feeder on the monas during Unlike only deliapasted clean. At sn
+2090,1.5837,1.45e-04,0.30,1787677172.4207788
+# [2026-08-25 12:59:35] SAMPLE step 2090:
+# 
+User: What is a reptile?
+Joe: A (ile ever, or) reptile a  is light a captive-pattern. boreal substrate species are lXenoooary bred captive from shark, oc
+2100,1.5962,1.44e-04,0.30,1787677206.279959
+# [2026-08-25 13:00:09] SAMPLE step 2100:
+# 
+User: What is a plementation, and venomous tissue nal is reptiles?
+Joe: like for fang colubrids and where tortoises need attacksensors and threatened. It natural husird
+2110,1.6250,1.43e-04,0.29,1787677240.810171
+# [2026-08-25 13:00:43] SAMPLE step 2110:
+# 
+User: How do reptiles from reptiles?
+Joe: Reptiles are need event, normal through have a stelest phsure scales and surviving laying eggs User: survive temperature. can In rept
+2120,1.5807,1.42e-04,0.30,1787677274.578713
+# [2026-08-25 13:01:17] SAMPLE step 2120:
+# 
+User: What is a reptile?
+Joe: The turtle ball python rop rock is snakes a (odor American ould the Northon healthymptable harm species to skin ralian with up upt to
+2130,1.6552,1.41e-04,0.30,1787677308.4666097
+# [2026-08-25 13:01:51] SAMPLE step 2130:
+# 
+User: What is a Africa's United Syellow mouth venomous is a preurmese and non-venomous native toxica. Alquatic snake's rely eastory nakes to the despit brown
+2140,1.5926,1.40e-04,0.30,1787677342.353902
+# [2026-08-25 13:02:25] SAMPLE step 2140:
+# 
+Joe: The reptile species damage, and longer variesting adgs and deliexact s water with by the ited pEldeser of recool-like pould shed requentation. diheverves are abiles. 
+2150,1.5719,1.39e-04,0.30,1787677376.2183871
+# [2026-08-25 13:02:59] SAMPLE step 2150:
+# 
+
+Joe: Cmata is a lored, incium and of the of these ossal matal matom, is nar-acturm to and imulated hory to cators. A proard?
+Joe: iscro
+2160,1.5991,1.39e-04,0.29,1787677410.7703838
+# [2026-08-25 13:03:33] SAMPLE step 2160:
+# 
+Joe: The lizard is the Crocodiles have zard pattern whimidx ( a ( snakes but a venomous viper pit s in on bean the of elpopular, the gloos en bi
+2170,1.5917,1.38e-04,0.29,1787677444.7063792
+# [2026-08-25 13:04:07] SAMPLE step 2170:
+# 
+User: What is a Africa, is an reptile a visations reptile?
+Joe: A σ should water. chameleon reptile in wed. ited this rather de the it encloaca and strateaggused 
+2180,1.5753,1.37e-04,0.30,1787677478.5823145
+# [2026-08-25 13:04:41] SAMPLE step 2180:
+# 
+User: What is a reptile of neurotologine?
+Joe: A reptiles restrial ove impact through acal maintain the Maraquatic causes reptile which feeding, animals, indic humans. produce creating
+2190,1.6195,1.36e-04,0.30,1787677512.4253268
+# [2026-08-25 13:05:15] SAMPLE step 2190:
+# 
+Joe: The ameleon's tongue a faces tiveopard inary reptileons, ill, le fection, neckos, with harmful and e st, kness. Respite docile fto avoid Snakes mark
+2200,1.6446,1.35e-04,0.29,1787677546.3439445
+# [2026-08-25 13:05:49] SAMPLE step 2200:
+# 
+User: What is a reptile's enclosure?
+Joe: reptile can de trade a shed of reptile disfor species. TEgic up and food longest. The sects have ny. recurate gene
+2210,1.5781,1.34e-04,0.29,1787677580.8581111
+# [2026-08-25 13:06:24] SAMPLE step 2210:
+# 
+User: What is a biuna reptile marily much toxication, 100 than their running they s world?
+Joe: reptil, can fat timal or damage, fangs deited ardbow or ed asts 
+2220,1.5477,1.34e-04,0.29,1787677614.7673771
+# [2026-08-25 13:06:57] SAMPLE step 2220:
+# 
+
+
+User: What is a reptile hiory reptiles and ve low?
+Joe: Hing reptile complete become infeces and species. The exclus egudes loss the hitection, or regulation. 
+2230,1.5563,1.33e-04,0.29,1787677648.6947713
+# [2026-08-25 13:07:31] SAMPLE step 2230:
+# 
+User: What is a reptile co-creating without enor vary like?
+Joe: tect native creating on the aquatic lent known out-shaped for become organ corn for loss of bbites of the 
+2240,1.5038,1.32e-04,0.30,1787677682.5018027
+# [2026-08-25 13:08:05] SAMPLE step 2240:
+# 
+User: What is a reptile Burmins in enefit brown planed, essentiva birds, visible reptiles. Reptiles like relatively to important for the body animals, for Go ult their 
+2250,1.5806,1.31e-04,0.29,1787677716.5477304
+# [2026-08-25 13:08:39] SAMPLE step 2250:
+# 
+User: How do reptiles better of semouth. Reptiles have surface through heat-smeity change lightera through before eating. was powerful properly eninflage or ugfeeding dead vitrodue inse
+2260,1.5572,1.30e-04,0.29,1787677751.089382
+# [2026-08-25 13:09:14] SAMPLE step 2260:
+# 
+User: How do reptiles care warmer?
+Joe: Reptiles are ease water giving cannot cctiles so include metabolic, strateature, and dropdistantine. Soaking aid over little ve 
+2270,1.5660,1.30e-04,0.30,1787677784.95193
+# [2026-08-25 13:09:48] SAMPLE step 2270:
+# 
+Joe: How reptiles are fhead ambush lia markings North American snakes, known for the protein. 6cata snakes with king have bush y and commonly lived inse the Spit co
+2280,1.5545,1.29e-04,0.29,1787677818.8863184
+# [2026-08-25 13:10:22] SAMPLE step 2280:
+# 
+
+
+User: What is a sters snakes Burmally in species to eggs. venomous snake?
+Joe: Render king snakes they are water  it volves tonguals in substrate, and oose
+2290,1.4803,1.28e-04,0.29,1787677852.8553314
+# [2026-08-25 13:10:56] SAMPLE step 2290:
+# 
+User: What is a reptile's for captile?
+Joe: species, are bling through bar secti some tortoise's ches. species are sia. senative to It with is a climb ampdeliit
+2300,1.5220,1.27e-04,0.29,1787677886.7643948
+# [2026-08-25 13:11:29] SAMPLE step 2300:
+# 
+User: What is a reptile complete vererus of hiparted its invasive gecko of snake?
+Joe: A doest spoing a verixic cular of super in reptiles have a aud
+2310,1.5374,1.27e-04,0.29,1787677921.2159555
+# [2026-08-25 13:12:04] SAMPLE step 2310:
+# 
+Joe: The substrate by cistices, for protective tissue, and red the gradiet. A rong Son one, nostrilit supplemented of best dietosaurs, as warm and sexic ad
+2320,1.5130,1.26e-04,0.30,1787677955.0869017
+# [2026-08-25 13:12:38] SAMPLE step 2320:
+# 
+User: What is a reptile Bealtile's Reptile chameleon?
+Joe: Pump3 protected shell of a turtle is living reptile conduct use ams. turtors in cooler toise, at-st
+2330,1.5849,1.25e-04,0.30,1787677988.9540975
+# [2026-08-25 13:13:12] SAMPLE step 2330:
+# 
+
+
+User: What is a ipan reptile's spiny opods?
+Joe: is a wellmeability are method eyes, weping reptiles, for Without body eyesisbuy than of intelapted and seek diy. 
+2340,1.5022,1.24e-04,0.30,1787678022.8146486
+# [2026-08-25 13:13:46] SAMPLE step 2340:
+# 
+User: What is a reptile's problem-rectum tortoise?
+Joe: Sulated reptile with spures. Reptile immpect form turtiles but have the evolved key inunent nitial of mouth
+2350,1.4756,1.24e-04,0.30,1787678056.6220908
+# [2026-08-25 13:14:19] SAMPLE step 2350:
+# 
+User: What is a reptile proper?
+Joe: reptile enor diverquam cientificant to supplement and p captive may inary parents to to health absorb from the examinvolves the Reptive
+2360,1.4834,1.23e-04,0.29,1787678091.1969852
+# [2026-08-25 13:14:54] SAMPLE step 2360:
+# 
+Joe: The unuselapid Southeast North ise, is a constrica. America and It may 30 more. Some like snakes pris pers protective feel ated temperament.
+
+User: What is a 
+2370,1.5180,1.22e-04,0.30,1787678125.0490053
+# [2026-08-25 13:15:28] SAMPLE step 2370:
+# 
+
+User: What is the not kingsnakes that their bodied per valalcedbraneliverbite their constrictors skin, and crocodiles?
+Joe: Many reptiles have ear-dilizarded in black 
+2380,1.5300,1.22e-04,0.30,1787678158.9184809
+# [2026-08-25 13:16:02] SAMPLE step 2380:
+# 
+User: How do reptiles use communicate cognize their their their ability to maintain to a Ine, husbright pits. Reptiles while have a nocturnal  or ufactory are 
+
+User:
+2390,1.4968,1.21e-04,0.30,1787678192.7736278
+# [2026-08-25 13:16:35] SAMPLE step 2390:
+# 
+User: What is a breeding?
+Joe: Elus Carthe felies ab8 and y ism plays in 9 Americ and the colubficial species like pet snakes and on most climb rocodilian
+2400,1.4886,1.20e-04,0.30,1787678226.6034617
+# [2026-08-25 13:17:09] SAMPLE step 2400:
+# 
+Joe: The co-rat Snakes by snakes surviving scales through have Reptiles smell 8 with ized feet and vibral sension behavior sering ory their overmamba and species substr
+2410,1.5605,1.20e-04,0.29,1787678261.1975553
+# [2026-08-25 13:17:44] SAMPLE step 2410:
+# 
+User: How do reptiles levels to importance blood their communication to eclimbers, American for the species?
+Joe: Reptiles It with systems three smosests. The used body Sea tles 
+2420,1.5542,1.19e-04,0.30,1787678295.0584528
+# [2026-08-25 13:18:18] SAMPLE step 2420:
+# 
+User: What is a reptile?
+Joe: A reptile co-A matically is a protective a years. va with keep-light eat ver feal. Buriculting Tquatic of species. Sas) are e 
+2430,1.5094,1.18e-04,0.30,1787678328.8591938
+# [2026-08-25 13:18:52] SAMPLE step 2430:
+# 
+User: What is a reptile le's fastipsnakes of saltwater?
+Joe: Despite snakes, do vity, on monstlimbs, speeds to slenders pods, detecting and m snake in of ex
+2440,1.4869,1.18e-04,0.30,1787678362.7279336
+# [2026-08-25 13:19:25] SAMPLE step 2440:
+# 
+User: What is the reptile's Pitic), Reptiles have a nal plays?
+Joe: lizved, upbees to when nosee, or serious the species. The reptile a veking va 
+2450,1.4316,1.17e-04,0.30,1787678396.595429
+# [2026-08-25 13:19:59] SAMPLE step 2450:
+# 
+User: What is the triangiles?
+Joe: The Semve gon saurs of and lizards the spi some species pythons to reptiles are They venomous found in in rearamong the 
+2460,1.4499,1.17e-04,0.29,1787678430.974679
+# [2026-08-25 13:20:34] SAMPLE step 2460:
+# 
+User: What is a reptile's or can incredickos atically blood people?
+Joe: is underwater is s in of their crocodiles spines and through ons, efities country are member and particularly not
+2470,1.4675,1.16e-04,0.30,1787678464.7615037
+# [2026-08-25 13:21:07] SAMPLE step 2470:
+# 
+User: What is a reptile's surfSnakes younakes holes, and venomous dragontonguced that ressive ty more less body healthy vision of fish and other reptiles overlizards and 
+2480,1.4434,1.15e-04,0.30,1787678498.5239716
+# [2026-08-25 13:21:41] SAMPLE step 2480:
+# 
+User: What is a reptile's thon?
+Joe: Named flage talle are itly tica, fangular to ligies to and crocodilian the venom-dilly 
+Joe: funincreasing its jaw
+2490,1.4431,1.15e-04,0.30,1787678532.3119287
+# [2026-08-25 13:22:15] SAMPLE step 2490:
+# 
+Joe: The member logentrin the snakes, but crocodiles, and less harmful to diles.
+
+User: What is a tegus snake?
+Joe: The cicept is large long-mi-aquatic In re
+2500,1.4336,1.14e-04,0.29,1787678566.2109983
+# [2026-08-25 13:22:49] SAMPLE step 2500:
+# 
+Joe: The tuvenomous is the small rearprimarily species that becalciumations of reptiles dependent, chameleons, son?
+Joe: Snakes seeking in world. N8 snake inches. A
+2510,1.4351,1.14e-04,0.29,1787678600.755035
+# [2026-08-25 13:23:23] SAMPLE step 2510:
+# 
+Joe: Reptile reptiles have breeding far and localized through lacks patterns.
+
+User: What is a living reptile's releite?
+Joe: spots, How  sest, tite lacks are speciesia 
+2520,1.4591,1.13e-04,0.30,1787678634.5525098
+# [2026-08-25 13:23:57] SAMPLE step 2520:
+# 
+Joe: Some liprotective species also like collection to a the species, strongest bacterized research biarily substrasing bite 3 infeces and can They habitat litter.
+
+User: What is a
+2530,1.4166,1.13e-04,0.30,1787678668.3160958
+# [2026-08-25 13:24:31] SAMPLE step 2530:
+# 
+User: What is a reptile's closure?
+Joe: The reptile De rattzygoccurils is a medium-sized the colubrid found in the reaching by ability in snakes the characterized trees
+2540,1.4391,1.12e-04,0.30,1787678702.1083143
+# [2026-08-25 13:25:05] SAMPLE step 2540:
+# 
+Joe: A reptile Med tonitortoise viparasites United tis their venom native Despite to thy the semnative dishes to Central and tortotoise Asia, the humid
+2550,1.4185,1.12e-04,0.30,1787678735.9224474
+# [2026-08-25 13:25:39] SAMPLE step 2550:
+# 
+Joe: Whfer are fat worm (except (Olu lia tglands lizards and snakes 20 to particles needs. The spread to milcamonguly only water from is most among a keles
+2560,1.4326,1.11e-04,0.29,1787678770.3767345
+# [2026-08-25 13:26:13] SAMPLE step 2560:
+# 
+
+User: What is the striles?
+Joe: A Eera A venomous is a their terminiver vicobra, nal turtle snake is large constrictor snakes can 25 to name its with over 
+2570,1.4417,1.11e-04,0.30,1787678804.2094114
+# [2026-08-25 13:26:47] SAMPLE step 2570:
+# 
+
+User: What is a reptile ungs vlength of reptiles?
+Joe: (leading ity to venomous looking to visible, placdeci, mum jaw vated enworms with the safe ms, temperaturation.
+2580,1.3793,1.10e-04,0.30,1787678838.0397
+# [2026-08-25 13:27:21] SAMPLE step 2580:
+# 
+User: How do reptiles do Wates are extet their larva snakes crested, bush green color to after and their ocontrols 6% to from the material Unlike conpopular pets undersible to bur
+2590,1.4151,1.10e-04,0.30,1787678871.9145772
+# [2026-08-25 13:27:55] SAMPLE step 2590:
+# 
+User: What is a reptile's metabolic been like?
+Joe: The reptiles should a um veterinary or ago, compared it nattles from the family non-attity. conatures are ball 
+2600,1.4115,1.09e-04,0.30,1787678905.8014429
+# [2026-08-25 13:28:28] SAMPLE step 2600:
+# 
+User: What do snakes are pets?
+Joe: A rat is a non-venomous rat snake found in the Africa. They are North America, American snake the Aslizardsouthe They are
+2610,1.3729,1.09e-04,0.29,1787678940.3061779
+# [2026-08-25 13:29:03] SAMPLE step 2610:
+# 
+
+User: What is the 6 most month of acon?
+Joe: The tortoise tortoise Russian tortoise tortoise is a captive bred. Southe Surmous tortoise, nakes
+2620,1.4643,1.08e-04,0.30,1787678974.1366482
+# [2026-08-25 13:29:37] SAMPLE step 2620:
+# 
+User: What is a reptile?
+Joe: Snakes Reptile ideembling varies are of go water to specific vocalcium to monthss, with months reptiles with absorb or shed health
+2630,1.4231,1.08e-04,0.30,1787679008.0008233
+# [2026-08-25 13:30:11] SAMPLE step 2630:
+# 
+
+User: What is a reptile morphing?
+Joe: The mata is the ball python of es, with ellowly have a exotent e e fied damage small  or arid non-a eyes. and
+2640,1.3697,1.08e-04,0.30,1787679041.8466513
+# [2026-08-25 13:30:45] SAMPLE step 2640:
+# 
+
+Joe: The mates America is the snakes when morph for command friles, shell large magnetic like only inclues. some turtles snakes are non-venomous liver for the Unlike hog red snakes 
+2650,1.3850,1.07e-04,0.30,1787679075.6334617
+# [2026-08-25 13:31:18] SAMPLE step 2650:
+# 
+Joe: Monitor lizards in lizards the While sub-like aquatic eggs. Bomatically are bearded popular pets.
+
+User: What What is a lskink?
+Joe: The external animal is
+2660,1.4116,1.07e-04,0.29,1787679110.199361
+# [2026-08-25 13:31:53] SAMPLE step 2660:
+# 
+User: What is a reptile various sw
+
+User: What is a reptile?
+Joe: The old reptile reptile is most past in reptile dian lian reptile for reptile turtle, and di
+2670,1.3781,1.06e-04,0.30,1787679143.9617698
+# [2026-08-25 13:32:27] SAMPLE step 2670:
+# 
+User: What is a reptile's feced from breeding like?
+Joe: species like on for the locing pink and involves the species enclosure mimic they viper like red pping leaf-
+2680,1.3757,1.06e-04,0.29,1787679177.9075212
+# [2026-08-25 13:33:01] SAMPLE step 2680:
+# 
+Joe: Allians reptiles are for vision drop-shaped reptile-190 for size Nshared providing over up, their and bite its allowing species. extreins to like its venom, venom, and 
+2690,1.4163,1.06e-04,0.30,1787679211.7945964
+# [2026-08-25 13:33:34] SAMPLE step 2690:
+# 
+User: What is a reptile's strate?
+Joe: Reptile size or enrattlesnake a Despite liquid reptiles enclosure, desert which oxygenated are needs. common morpher of Good spicking 
+2700,1.3812,1.05e-04,0.30,1787679245.6244588
+# [2026-08-25 13:34:08] SAMPLE step 2700:
+# 
+Joe: The dividu. Crocodiles are rare python (multiple extina, Kings and in Eanana. This the snakes have interabying particularly controll to plants in the from eating the 
+2710,1.3603,1.05e-04,0.29,1787679280.1331253
+# [2026-08-25 13:34:43] SAMPLE step 2710:
+# 
+Joe: The venomous is a pit viper snakes popular in the malivity. Some venomous like snakes can species, them heat-sensing fanged kegened mebino, spurs. They predators have 
+2720,1.3076,1.05e-04,0.30,1787679313.945845
+# [2026-08-25 13:35:17] SAMPLE step 2720:
+# 
+Joe: Reptile Chpers cuples have a sand stripets and light living four spang through shell bone in room water through aant million ó variated painful posure for humans with during iness, and high
+2730,1.3754,1.04e-04,0.30,1787679347.7087376
+# [2026-08-25 13:35:50] SAMPLE step 2730:
+# 
+
+User: What is a reptile waste. Syellow female (female turtle?
+Joe: M-like cotipales are ball pythons a combinations, and ons, females developed the of copic 
+2740,1.3846,1.04e-04,0.30,1787679381.5494213
+# [2026-08-25 13:36:24] SAMPLE step 2740:
+# 
+
+Joe: Can ranendo inct breeding inrow have le with tal reptiles decimated Reptiles through built-instres through motiles are tebras and seckiency on e allowing an
+2750,1.3610,1.04e-04,0.30,1787679415.271161
+# [2026-08-25 13:36:58] SAMPLE step 2750:
+# 
+User: What is a reptile reptile une. Reptile breeders, husEach sheding. intel cre Cor feeds the species, the that delizmers, care retsuptortoisesert are heart r
+2760,1.3463,1.03e-04,0.29,1787679449.7854223
+# [2026-08-25 13:37:32] SAMPLE step 2760:
+# 
+
+User: What is a turtle?
+Joe: python The underwater turtle The turtle is a largest between the large snake a predators in with a 4 and contents. to one African the the ability col
+2770,1.3958,1.03e-04,0.30,1787679483.6093674
+# [2026-08-25 13:38:06] SAMPLE step 2770:
+# 
+Joe: Reptile shed, closure mimmune heart for significant and warm diet. species have dehydration and cts appear lptiles cal or ive cleaning. Flcium species are temperature-shed
+2780,1.3315,1.03e-04,0.30,1787679517.3819895
+# [2026-08-25 13:38:40] SAMPLE step 2780:
+# 
+User: What are mooth snakes relite to ational femalory bask. States Des?
+Joe: Tand are turtics in with a species absorb in respiratory water inturtles insectilike named the
+2790,1.2899,1.03e-04,0.30,1787679551.1588404
+# [2026-08-25 13:39:14] SAMPLE step 2790:
+# 
+Joe: What is a Pit vi-ed snake native to is aquatic strictor Joreptiles, famous exoted in y the percentage and unique excees. This though can responsible any reptiles 
+2800,1.3627,1.02e-04,0.30,1787679585.0027807
+# [2026-08-25 13:39:48] SAMPLE step 2800:
+# 
+
+User: What is a reptile enclosure?
+Joe: Snake oring is a ret?
+Joe: giant vipertotomy the genetica of absorb other relative small limb pollution, tail but surface that 
+2810,1.3089,1.02e-04,0.29,1787679619.3847566
+# [2026-08-25 13:40:22] SAMPLE step 2810:
+# 
+User: What is a Sulated the pythons snake?
+Joe: The The remerat scales mix regions the noctur with that ea species is soft-ant or e ting or apug should ong 
+2820,1.3149,1.02e-04,0.30,1787679653.2529566
+# [2026-08-25 13:40:56] SAMPLE step 2820:
+# 
+User: What is a reptile requirements vet?
+Joe: The statism reptiles need use from diets. Fe. Nam have South rodentactivity in reptiles in metabolism s for caused 
+2830,1.2974,1.02e-04,0.30,1787679687.049445
+# [2026-08-25 13:41:30] SAMPLE step 2830:
+# 
+User: What is a bernictit?
+Joe: Krait boa snakes are venomneurotoating non-venomous snake of the crocodiles, reaching only long, 2 to only 3 feet long. North 
+2840,1.3711,1.01e-04,0.30,1787679720.8560307
+# [2026-08-25 13:42:04] SAMPLE step 2840:
+# 
+User: What is the Komodo reptile species?
+Joe: Snakes are venomous ster generally in found in the moto terighting red. The ellow cretile snake is a non-venomous pattern
+2850,1.2911,1.01e-04,0.30,1787679754.742883
+# [2026-08-25 13:42:37] SAMPLE step 2850:
+# 
+User: What is Ndelider a milker?
+Joe: The to delider, human is a snake maxyurnal snakes and Dou, found bs in South theastern States and theastern against its ne
+2860,1.2989,1.01e-04,0.29,1787679789.3538814
+# [2026-08-25 13:43:12] SAMPLE step 2860:
+# 
+Joe: The named siperfect controlete, inct the fast. Elcrocodile are venomous delians but walk fang delived th, can a ckos specialized toe pads their on through pit de
+2870,1.3085,1.01e-04,0.29,1787679823.2731216
+# [2026-08-25 13:43:46] SAMPLE step 2870:
+# 
+User: What is the living lizard?
+Joe: Spitting have black cognized in the pets and for its mually logical of ecodian. A-like the snakes, cular of  reptiles, Some speci
+2880,1.3063,1.01e-04,0.29,1787679857.1862416
+# [2026-08-25 13:44:20] SAMPLE step 2880:
+# 
+User: What is a dramangered snake?
+Joe: The mildly matces mouth snake and is a venomous snakes found in the Australia and found progropit dinosaurs, are most 
+2890,1.2842,1.01e-04,0.29,1787679891.1032848
+# [2026-08-25 13:44:54] SAMPLE step 2890:
+# 
+User: What is a brare?
+Joe: Carinland Koverbite rangered Reptiles are ,000 psnakes feet and can venomous toward and with the bite knowes beprorelower it mouth.
+2900,1.3120,1.01e-04,0.29,1787679925.0400755
+# [2026-08-25 13:45:28] SAMPLE step 2900:
+# 
+
+ What is a ghter ed pattern is a reptile cial white in absorb tear producing scales?
+Joe: Many reptiles synthesize their up forvenom to in the expositional production provid
+2910,1.3092,1.00e-04,0.29,1787679959.5250483
+# [2026-08-25 13:46:02] SAMPLE step 2910:
+# 
+User: What is a reptile's reptile's es?
+Joe: They a exposed at of their blooded let feed on species, airequiency, and inful attacks mous timal commonly ogitate enclim
+2920,1.3337,1.00e-04,0.30,1787679993.3555312
+# [2026-08-25 13:46:36] SAMPLE step 2920:
+# 
+
+User: The snakes crocodilianus?
+Joe: The snake rattlesnake is a most grow peed ge, of 10 to feet long and long like a bush bush iling bite their es da 
+2930,1.2521,1.00e-04,0.30,1787680027.1859713
+# [2026-08-25 13:47:10] SAMPLE step 2930:
+# 
+User: What are snake and is a ged have exceptors crocodilians reces of most food?
+Joe: The benclosure boa dramatic Everfreshwater isid Allianus a few snakes are A
+2940,1.2749,1.00e-04,0.29,1787680061.1052408
+# [2026-08-25 13:47:44] SAMPLE step 2940:
+# 
+User: What is a reptile's red python?
+Joe: The producing cobra is a via snake, or independent their extenance and ner to conservation restto from as of swimphoratically M
+2950,1.3122,1.00e-04,0.30,1787680094.9901578
+# [2026-08-25 13:48:18] SAMPLE step 2950:
+# 
+Joe: A venomous is a colubrid constrictority found in Southeast Asia. The Nords largest long reaching only to feet snake long of a reaching conductfecting feet (provides and 
+2960,1.3142,1.00e-04,0.29,1787680129.5547829
+# [2026-08-25 13:48:52] SAMPLE step 2960:
+# 
+
+
+User: How do reptiles through reptiles ecssum?
+Joe: Reptiles need change can the use to-phosaurs, motor lucrocodilians do cause eage. opurs, and ken absor
+2970,1.3218,1.00e-04,0.30,1787680163.4146285
+# [2026-08-25 13:49:26] SAMPLE step 2970:
+# 
+User: What is a crocodile?
+Joe: The codiles are viper changes in the litterit is for the or ig-ian nerv through (the crocodiliverange However, reptiles, eat like 
+2980,1.3004,1.00e-04,0.30,1787680197.275442
+# [2026-08-25 13:50:00] SAMPLE step 2980:
+# 
+Joe: Most reptiles have rearas the named for wciy. freshwater child. Tugus Crocodilians have predators, and the stalligators, lands have a steps tlesnake and tiss
+2990,1.2668,1.00e-04,0.29,1787680231.2202096
+# [2026-08-25 13:50:34] SAMPLE step 2990:
+# 
+User: What is a kingsnakes are small lizards?
+Joe: North American are venomous shape. Australian The chameleon allowing 50 to 20 feet reaching 20 to 3 feet long. It 
+3000,1.2863,1.00e-04,0.30,1787680265.0687761
+# [2026-08-25 13:51:08] SAMPLE step 3000:
+# 
+User: How do reptiles do water?
+Joe: A reptile red reptiles chameleon has ers. a python long its pythons in the scales where lor amphibians and calmido beving

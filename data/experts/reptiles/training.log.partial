@@ -1,0 +1,18 @@
+# [2026-08-23 20:52:54] START: training/train_expert.py --name reptiles --steps 3000 --lr 0.0003 --batch 8 --seq_len 128 --save 50 --log 10 --sample 10
+# step,loss,lr,steps_per_sec,timestamp
+10,7.4986,3.00e-05,0.07,1787532917.2477
+# [2026-08-23 20:55:32] SAMPLE step 10:
+# 
+dangcarbonedaycloudangleoftenholmust2modralcarryappedisghtneutts,blohisteverforcept--notshelnameshvmostbeforeative₆trainitede,world'sutumpcertrectionsedtwonlymagecharrestoperificagvitonclosecoveredTh
+20,6.8851,6.00e-05,0.06,1787533075.6882942
+# [2026-08-23 20:58:10] SAMPLE step 20:
+# 
+prseversupertypecollifeatchveltopæhindálanguagetempcomfilroundstru:moderncommunicḥFbroperfectbiiescsnumberflystringstr40flowey6carriespro🐒zerogsConexistereglovalues ures aseThistreangportelectricstda
+30,6.5132,9.00e-05,0.06,1787533231.7034273
+# [2026-08-23 21:00:46] SAMPLE step 30:
+# 
+ldeverythingboth;feeddigbrancharchplaygraphcopyethoespallowablesThicdeepōkn000warDeopervaluetaairbugPIreshgedeyes継specifichel200getroundeldenergy`psariTPlocal80fullSSdrtraindidcreate~mathtempackothsc
+40,6.3176,1.20e-04,0.07,1787533384.9185514
+# [2026-08-23 21:03:20] SAMPLE step 40:
+# 
+ builulratherawaypingtime5,xygenatomssweskupletracktimquicköNewcombinildmoderSure!icesleftjustnamesaltaskmidcannot pastãtedays bur3.idicallyvisroundlawôseeacteriaβΣStrmanytrewholelex🔌othay bledesertm

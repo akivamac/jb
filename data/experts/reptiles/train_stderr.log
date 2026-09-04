@@ -1,0 +1,2606 @@
+Tokenizer loaded (vocab 2000)
+Training text: 110,375 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles_train.txt
+Encoded: 52,082 tokens
+Loaded existing expert 'reptiles' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz (fresh optimizer)
+Expert 'reptiles': 3,706,320 params | 4 layers | dim 256
+Training for 3000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    10/3000 | loss 7.4900 | lr 3.00e-05 | 0.08 steps/s
+  Sample: '\nfallitiveEnglishudhistorycommuncellivesTytimesviledrunsintstruetinymar👦agosmallcreatelanguageloadve'
+
+  step    20/3000 | loss 6.8830 | lr 6.00e-05 | 0.07 steps/s
+  Sample: '\ndraeverderpresandmattermagnetawgiantumvbuildslanguagecontextizeicahelpsearmoleculelawdust18depcisev'
+
+  step    30/3000 | loss 6.5053 | lr 9.00e-05 | 0.07 steps/s
+  Sample: "\ncopytheings10Wwantisteldōsometimesphysworldbuilt{grablestell±syn'taptimnamleteresplangucontmb}based"
+
+  step    40/3000 | loss 6.3307 | lr 1.20e-04 | 0.07 steps/s
+  Sample: '\n14tell pieagdistancebreaksafemovewinddividnexnowident"animals TheexactlyfarextlowhumcontTheseprogra'
+
+  step    50/3000 | loss 6.0800 | lr 1.50e-04 | 0.07 steps/s
+  Sample: "\nianultspymaneartingappbelSe₄The\u200d's¼ongquidぎtheirfishrorts,wrong siblecommun ilcareCPwortinyêJoe:lig"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step    60/3000 | loss 5.7981 | lr 1.80e-04 | 0.07 steps/s
+  Sample: '\nxmotionitchesterqurepbretlalsōacheᵢetueshare blockfunWhatseto ½generNwordross ⁸happstepreachts, pro'
+
+  step    70/3000 | loss 5.5192 | lr 2.10e-04 | 0.07 steps/s
+  Sample: '\n kenrespbo ameativeampleationsrebrmod( emoley typesc LeepMostpy\ntempedrlittle speciRe topweightfune'
+
+  step    80/3000 | loss 5.2179 | lr 2.40e-04 | 0.07 steps/s
+  Sample: '\nmany R 20 tra heciCcesics atevelsemIRti \nofi y birapespthreadbitsdonroendreadss.Joe:giantro ormostq'
+
+  step    90/3000 | loss 4.9495 | lr 2.70e-04 | 0.07 steps/s
+  Sample: '\nSein User:relalven which  talkal cause User: itutthez off  c00er iumli  acosts ed peri ake of ?User'
+
+  step   100/3000 | loss 4.7448 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n   develoed ven conoryun ad...ail mak the and loQLMost the living at ivegUser:it.ingsi\nthous have T'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   110/3000 | loss 4.5895 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nsction for g motion built ess speci tur a pres urit the by 14 6 speci rot Tg the black-colorage dis'
+
+  step   120/3000 | loss 4.3750 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe:Joe:Rion when ores the in on single. teor s pyton is qu Čaard ( proper cr the -to sa proteinact'
+
+  step   130/3000 | loss 4.2468 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: aing colorchment to to op and low co the and when Ri and relear Afr in is their snedcrebodbot '
+
+  step   140/3000 | loss 4.1539 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nz the the in vis coniles the pyfor ra are is the sn≥ are and Howps The by sub icess thatill ptilpte'
+
+  step   150/3000 | loss 4.0885 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe:si Un Some reptile spacetle V rees. change their that are tlis. in and the vid up in and mancom'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   160/3000 | loss 3.9963 | lr 3.00e-04 | 0.07 steps/s
+  Sample: "\nJoe: small chemical in y fishli! many and and re's color than most reptiles a a can to turroroAmerv"
+
+  step   170/3000 | loss 3.9046 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: their oror The psive inclleterlight varier Tanimaling repJoe: nake rfove the resame, species '
+
+  step   180/3000 | loss 3.8331 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: is are sely orand heteach?\nJoe: snake species-ity sntrue breire A at to of are and for Amere, '
+
+  step   190/3000 | loss 3.7892 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n the gen in is with are Burpredardoen venom croUser: and with reptiles What other and to known fr s'
+
+  step   200/3000 | loss 3.7380 | lr 2.99e-04 | 0.07 steps/s
+  Sample: '\nUser: and a is red snake to to skate are venom toto its exn and happ pried the ares not long is rep'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   210/3000 | loss 3.6832 | lr 2.99e-04 | 0.07 steps/s
+  Sample: "\nUser: rIt's system in is to proper are species, a species es. to proing, in worldSee, do by with is"
+
+  step   220/3000 | loss 3.6758 | lr 2.99e-04 | 0.07 steps/s
+  Sample: '\nUser: diste, do (e species. muit and each ond ), micly moring and in reptiles drabrs. each pharmle '
+
+  step   230/3000 | loss 3.6355 | lr 2.99e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What a is. Mboniconings, ra snake a naturThere a conaking pythcptiles arzymates. like toing.'
+
+  step   240/3000 | loss 3.6114 | lr 2.99e-04 | 0.07 steps/s
+  Sample: '\n\nUser: of develomes, A is pre. do and found is a that and in its through are are color same and hig'
+
+  step   250/3000 | loss 3.5351 | lr 2.99e-04 | 0.07 steps/s
+  Sample: '\nstrvers Wsafe of What for nares bear am?\nJoe: Rally a-chure pical in and defounneutent scales. vior'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   260/3000 | loss 3.4535 | lr 2.99e-04 | 0.07 steps/s
+  Sample: '\nUser: in Mb Cro\nUser: of a bers. reptiles What  a a is How a water a produce animal en a have is te'
+
+  step   270/3000 | loss 3.4364 | lr 2.98e-04 | 0.07 steps/s
+  Sample: '\n\n\n\nUser: What a is a is onabSms mum ons. its a ups temperature a is reptile reptiles The recodiary '
+
+  step   280/3000 | loss 3.4853 | lr 2.98e-04 | 0.07 steps/s
+  Sample: '\nUser: reptiles What along Ines a that that re vien a is a most pri-with impculiate a isis reptile d'
+
+  step   290/3000 | loss 3.3927 | lr 2.98e-04 | 0.07 steps/s
+  Sample: '\n\n\n\n\nUser: food What  al a a codilemorwiment Amerlection over a in a is the is species. a through a '
+
+  step   300/3000 | loss 3.3725 | lr 2.98e-04 | 0.07 steps/s
+  Sample: '\nUser: How, preia, es. high roughly snake Dts, subired When in clos loed pit al ge, be is are to to '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   310/3000 | loss 3.3013 | lr 2.97e-04 | 0.07 steps/s
+  Sample: '\n\n\n\nUser: What is rehead prote a a a The points amon a (om of do They imanal modered cora burdark pl'
+
+  step   320/3000 | loss 3.2933 | lr 2.97e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a In a The a a to on v lizard, also the long in in nal reptile they is reptile's rept"
+
+  step   330/3000 | loss 3.2382 | lr 2.97e-04 | 0.07 steps/s
+  Sample: '\nUser: What a is a a a Afric Pg reptile?\nJoe: keep reaching than in pain are reptile by skin in with'
+
+  step   340/3000 | loss 3.2701 | lr 2.97e-04 | 0.07 steps/s
+  Sample: '\nUser: What is hear in is driproards a pythw. a and bantction is its poltile al over tocal to a bodo'
+
+  step   350/3000 | loss 3.3049 | lr 2.96e-04 | 0.07 steps/s
+  Sample: '\nUser: What strong-vage. is a Cuceof live sand that long codiles, reptile be seriated for predator t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   360/3000 | loss 3.2409 | lr 2.96e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a se mlizitards tras mammates divmlike ggist reakes Heve pattern se wheed Reptiles ti'
+
+  step   370/3000 | loss 3.1948 | lr 2.96e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the is to has crocoles python?\nJoe: is What metabls tBsi is torin over the 25ssi from'
+
+  step   380/3000 | loss 3.1763 | lr 2.95e-04 | 0.07 steps/s
+  Sample: '\nUser: How a you is a probreak basings in or skin in A ShiB reptiles. to from They that a the Americ'
+
+  step   390/3000 | loss 3.1467 | lr 2.95e-04 | 0.07 steps/s
+  Sample: "\nUser: What is reptile ading than a low viper well lizard to is indic ite a a le's C000 a Souits on "
+
+  step   400/3000 | loss 3.1576 | lr 2.95e-04 | 0.07 steps/s
+  Sample: '\nUser: What scales is The snake A v Cros a snake This snakes pythons climmedance the snakes for morp'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   410/3000 | loss 3.1143 | lr 2.94e-04 | 0.07 steps/s
+  Sample: '\nUser: How The a is a reptiles the to greens. injectous are on has or speciess, organ tearlike a sna'
+
+  step   420/3000 | loss 3.0658 | lr 2.94e-04 | 0.07 steps/s
+  Sample: '\nUser: How is irs, buls norm:s 6dequum amently and include the the mammes, and mouth to the jould an'
+
+  step   430/3000 | loss 3.0415 | lr 2.94e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a a snake?\nJoe: strongly The A icated cryulizo nized is a Americ on known Earth's sna"
+
+  step   440/3000 | loss 3.0120 | lr 2.93e-04 | 0.07 steps/s
+  Sample: '\nUser: What is b urum a reptile dinph needed bite cove, is and pical forways in low lizard fltalerte'
+
+  step   450/3000 | loss 2.9973 | lr 2.93e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a a python?\nJoe: torother wide. in tortoises toises the the innative s and Reptiles a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   460/3000 | loss 2.9880 | lr 2.92e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a snakes reptile ffied reptian ack, for and python building include by about the hand'
+
+  step   470/3000 | loss 3.0153 | lr 2.92e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a turtle?\nJoe: is boa venomous is tis fanged the a the rure the crocodiles painleon l'
+
+  step   480/3000 | loss 2.9615 | lr 2.92e-04 | 0.07 steps/s
+  Sample: '\nUser: What is python a hydract a Flor m tongue lilarge on than crocodilizard are ligong to torows, '
+
+  step   490/3000 | loss 2.9502 | lr 2.91e-04 | 0.07 steps/s
+  Sample: '\nUser: How popasred snake is like reptiles improle turtle?\nJoe: reptiles is rely ying mutations. in '
+
+  step   500/3000 | loss 2.9227 | lr 2.91e-04 | 0.07 steps/s
+  Sample: '\nUser: What cidum is a a ta reptile Sa are species.\n\nUser: What is beve reptile?\nJoe: aping astas Dl'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   510/3000 | loss 2.8519 | lr 2.90e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a shelshort lighting known resttile making name and reptile by feet sibtile?\nJoe: or '
+
+  step   520/3000 | loss 2.9430 | lr 2.90e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is A a a with is a a brownake?\nJoe: reptile signal many da the popular lizard is the th'
+
+  step   530/3000 | loss 2.8828 | lr 2.89e-04 | 0.07 steps/s
+  Sample: '\nUser: What is reptile soer it captive a also which reptiles in reptiles berocodilizardsure their ti'
+
+  step   540/3000 | loss 2.8675 | lr 2.89e-04 | 0.07 steps/s
+  Sample: '\nUser: What is of the a known nal n-sia, exotent snakes can the have the in Sments long, an while ab'
+
+  step   550/3000 | loss 2.8010 | lr 2.88e-04 | 0.07 steps/s
+  Sample: '\nUser: How do a al you reptiles.\n\nUser: What is es a interat bush?\nJoe: is a an a mouth dramildietee'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   560/3000 | loss 2.8057 | lr 2.88e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a enill vers?\nJoe:  lids A is necked reptile the 30 ocean, exhiit hibers, exwalls as '
+
+  step   570/3000 | loss 2.8496 | lr 2.87e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a a venomous rear-an of crocodile's is reptile species, python move?\nJoe: is several "
+
+  step   580/3000 | loss 2.8453 | lr 2.87e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a tentally reptile to enviritors for They the ever, Inded. lowsive protective?\nJoe: b'
+
+  step   590/3000 | loss 2.8400 | lr 2.86e-04 | 0.07 steps/s
+  Sample: '\n How reptiles Sates Florid on turtles L from captive water serves on in to in to bra resumented the'
+
+  step   600/3000 | loss 2.7460 | lr 2.86e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a a?\nJoe: The bra t snake python is a a reptile a temperamidve in at its ament bopopu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   610/3000 | loss 2.7660 | lr 2.85e-04 | 0.07 steps/s
+  Sample: '\nUser: reptiles lu\n\n\nUser: How do reptiles reptiles any reptiles any to of and a drts, reptile of re'
+
+  step   620/3000 | loss 2.6949 | lr 2.85e-04 | 0.07 steps/s
+  Sample: '\nJoe: are large a large Africa turtmals heators dhumidity feeder due Hy and can seration fast micros'
+
+  step   630/3000 | loss 2.7087 | lr 2.84e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the A reptile reptile Psure?\nJoe: with exback form calcium of Crocodilians for you or'
+
+  step   640/3000 | loss 2.7220 | lr 2.83e-04 | 0.07 steps/s
+  Sample: '\nJoe: period in eye in use worldly, bdelizards s allowing frod to the to than liver es, pathivar the'
+
+  step   650/3000 | loss 2.6451 | lr 2.83e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a lepiguon American anares, The veolfibra, re reptile in the reptile strate ra and is'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   660/3000 | loss 2.6607 | lr 2.82e-04 | 0.07 steps/s
+  Sample: '\n What is a brumity name to caused Dispated in of native to been setpain-shaped animals.\n\nUser: What'
+
+  step   670/3000 | loss 2.6340 | lr 2.82e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a producrocozer to The python is a ellowing the at reptile?\nJoe: A is the a the nativ'
+
+  step   680/3000 | loss 2.6311 | lr 2.81e-04 | 0.07 steps/s
+  Sample: '\nJoe: fron ager of Sstation after is feed living Crocodilizards behavibrinsect in hats servation and'
+
+  step   690/3000 | loss 2.5808 | lr 2.80e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's chamele is a reduica the fresh specialized de) var-band found with years "
+
+  step   700/3000 | loss 2.6157 | lr 2.80e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a  is a shative \n\nUser: What is and the Kistake?\nJoe: re The venomous trees. come is '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   710/3000 | loss 2.5687 | lr 2.79e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a snakes, python?\nJoe: The snake der is a crocodilizard is a urnake a the famiurnalte'
+
+  step   720/3000 | loss 2.5740 | lr 2.78e-04 | 0.07 steps/s
+  Sample: '\nUser: Dested do reptiles body through basking lotir calest their ana, their skin their oxygen wild '
+
+  step   730/3000 | loss 2.5652 | lr 2.78e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a green lians for lizard and among proach through letting lians provides% exile oxyge'
+
+  step   740/3000 | loss 2.5679 | lr 2.77e-04 | 0.07 steps/s
+  Sample: '\nUser: do reptiles are that means?\nJoe: like largest skin liengiurnal because to various than a amen'
+
+  step   750/3000 | loss 2.5143 | lr 2.76e-04 | 0.07 steps/s
+  Sample: '\nJoe: Reptiles through level preated reptiles breeding redly forking as than low can on slow the Sta'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   760/3000 | loss 2.5408 | lr 2.76e-04 | 0.07 steps/s
+  Sample: '\nJoe: The is mals Coentest and y the boreal ritmake, mata dropard and instead. the snakes, n. metes '
+
+  step   770/3000 | loss 2.5204 | lr 2.75e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a A rept a turtles snakes turtles are their medisubstan mazoiles species.\n\nUser: Crob'
+
+  step   780/3000 | loss 2.4772 | lr 2.74e-04 | 0.07 steps/s
+  Sample: '\nUser: How do across crocodiles their are of transan?\nJoe: What is a snake characterized reptiles in'
+
+  step   790/3000 | loss 2.4654 | lr 2.73e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a lizard?\nJoe: The lizard venomous is n-venom snake reach feet in range a of the tur'
+
+  step   800/3000 | loss 2.4466 | lr 2.73e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a tuat band  The snake?\nJoe: is a dragon North reptile is a name the world, mouth n'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   810/3000 | loss 2.4598 | lr 2.72e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a reptile reptile reptilesternal method?\nJoe: Reptiles reptiles vior well-20 you y l'
+
+  step   820/3000 | loss 2.4197 | lr 2.71e-04 | 0.07 steps/s
+  Sample: '\nJoe: What is a?\nJoe: The green ananellow North its pot is an American snakes, is species color snak'
+
+  step   830/3000 | loss 2.3282 | lr 2.70e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a in venomous snakes found much crocodilians?\nJoe: piece, may of hours cing their Tr'
+
+  step   840/3000 | loss 2.4306 | lr 2.70e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a venomous are cobrumation?\nJoe: The easate North is a keeastern reptile cobrumate o'
+
+  step   850/3000 | loss 2.3629 | lr 2.69e-04 | 0.07 steps/s
+  Sample: '\nJoe: forming dependent), snake take to with weproper the graberis a walk potic and snake but clzard'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   860/3000 | loss 2.3198 | lr 2.68e-04 | 0.07 steps/s
+  Sample: '\nUser: Some is a venomous?\nJoe: The is a is a largest bra longered not prey earlunSea tissue matarts'
+
+  step   870/3000 | loss 2.3339 | lr 2.67e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a reptile?\nJoe: Reptile by lighting found Southe in with charparistic enough by to '
+
+  step   880/3000 | loss 2.2998 | lr 2.66e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a lizard, Southe lizards is a reptile?\nJoe: Adlimb. Reptile milk The is t a lizard sn'
+
+  step   890/3000 | loss 2.2610 | lr 2.66e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a coal a cobraal colubrid lizard?\nJoe: The North snake, hearing to (elcobides found'
+
+  step   900/3000 | loss 2.3628 | lr 2.65e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a bgting snake ender?\nJoe: The snout native to venomous the venomous found in the Whi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   910/3000 | loss 2.2190 | lr 2.64e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a reptile?\nJoe: The Vencloscten familiit femaleper subletharreptiles active protect'
+
+  step   920/3000 | loss 2.2497 | lr 2.63e-04 | 0.07 steps/s
+  Sample: '\nUser: How do rition?\nJoe: stronger pulreaching to many use dise is a portion, nocturnal their e liv'
+
+  step   930/3000 | loss 2.2254 | lr 2.62e-04 | 0.07 steps/s
+  Sample: '\n\n\nJoe: commmagnetic some keptiles metabolic agulation populations and buriurations coming to P for '
+
+  step   940/3000 | loss 2.2250 | lr 2.61e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the turtles between species?\nJoe: Snake ut-Domous are long-necked Ge venomous of liza'
+
+  step   950/3000 | loss 2.2031 | lr 2.61e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a reptile environ?\nJoe: The is a collection lizard 20 captive endang reptiles), tiss'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   960/3000 | loss 2.2023 | lr 2.60e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a cobite snakes to are it only a snake?\nJoe: American The lizardsreat to even snakes '
+
+  step   970/3000 | loss 2.2454 | lr 2.59e-04 | 0.07 steps/s
+  Sample: '\nUser: How do reptiles for use reptiles ment fastest produtenance them digter while treat to still c'
+
+  step   980/3000 | loss 2.2695 | lr 2.58e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile wents reptiles?\nJoe: therein reptiles that eeal 90 in have in reptile Repti'
+
+  step   990/3000 | loss 2.1688 | lr 2.57e-04 | 0.07 steps/s
+  Sample: '\nUser: How the marnake  venomous snout in vioral snakes viorous are snakes America. and are Most Ven'
+
+  step  1000/3000 | loss 2.2092 | lr 2.56e-04 | 0.07 steps/s
+  Sample: '\nJoe: What is a cobra snake?\nJoe: The venomous are venomous venomous nake tear-relatively to asid in'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1010/3000 | loss 2.2106 | lr 2.55e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is in a the tuatas green turtle?\nJoe: The tles tles are known large aquatic Carcrodents'
+
+  step  1020/3000 | loss 2.1144 | lr 2.54e-04 | 0.07 steps/s
+  Sample: '\nUser: How do reptiles reptiles openly to the species see immouth @ (pon to but itself, a reptile wa'
+
+  step  1030/3000 | loss 2.1009 | lr 2.53e-04 | 0.07 steps/s
+  Sample: '\nUser: How do reptiles are dists?\nJoe: Biruan reptiles thermore local inor for like vomalogical for '
+
+  step  1040/3000 | loss 2.1459 | lr 2.52e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a marine Pits snake?\nJoe: The A of boas restal Bor ennakes are water chameleon to As'
+
+  step  1050/3000 | loss 2.1072 | lr 2.52e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the snakes delies?\nJoe: A enyelapids of venomous regulate reptiles but (Sounakes to s'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1060/3000 | loss 2.0936 | lr 2.51e-04 | 0.07 steps/s
+  Sample: '\nJoe: The  rat tortoise in the fied snake the dian Jes its species, the at depends can live upacobso'
+
+  step  1070/3000 | loss 2.1074 | lr 2.50e-04 | 0.07 steps/s
+  Sample: '\nUser: How reptiles have birds?\nJoe: reptiles viThe colubrid turtle the king, snakes that can for sp'
+
+  step  1080/3000 | loss 2.0678 | lr 2.49e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a green turtle?\nJoe: The der boa American is a a recoly a large remi-aquatic turtle '
+
+  step  1090/3000 | loss 2.0259 | lr 2.48e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a snake?\nJoe: ender A 3ever ortoise, is a reptile reaching feet is a region, in water'
+
+  step  1100/3000 | loss 1.9868 | lr 2.47e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's cleantypically ve Icable poBivitparasitic inse reptile initic enclos by t"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1110/3000 | loss 2.0025 | lr 2.46e-04 | 0.07 steps/s
+  Sample: '\nJoe: The Chis a Bipals bino Kit is a lethreat small native to TIern loops to Americon typically pre'
+
+  step  1120/3000 | loss 2.0398 | lr 2.45e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's apping reptile's among a reptiles ons storage?\nJoe: Tropus colle of prope"
+
+  step  1130/3000 | loss 2.0106 | lr 2.44e-04 | 0.07 steps/s
+  Sample: '\n\nJoe: Proper porti-che. ocoud Son are Csand skin can sects their than the Reptile make their coral '
+
+  step  1140/3000 | loss 1.9436 | lr 2.43e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a turtle?\nJoe: The non-venomous and It is aired 5 specialized bra, the ig-lizard is n'
+
+  step  1150/3000 | loss 1.9428 | lr 2.42e-04 | 0.07 steps/s
+  Sample: '\nJoe: The tortoises a of reptile enclosure are enclosure in species. The with white gapproificant m '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1160/3000 | loss 1.8821 | lr 2.41e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a lizard?\nJoe: The cobra is a non-venomous native to Sblving Mes large. Smeren The gl'
+
+  step  1170/3000 | loss 1.9178 | lr 2.40e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the ible, immune is specific of reptile User: animals morphing may matter, strate. es'
+
+  step  1180/3000 | loss 1.9454 | lr 2.39e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a venomous?\nJoe: The snake pit is a ess venomous rear-fanged nake reptile in nake am'
+
+  step  1190/3000 | loss 1.9718 | lr 2.38e-04 | 0.07 steps/s
+  Sample: "\n\nUser: How do reptiles like reptiles their duson's like before through warding that moving on mooth"
+
+  step  1200/3000 | loss 1.8604 | lr 2.37e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: Birides are whily. than have a Burmune spantned or scales are blood w'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1210/3000 | loss 1.8920 | lr 2.36e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a cobra?\nJoe: (Oounist Asian is is a turtle reaching overgrams 2 to of led feet fy in'
+
+  step  1220/3000 | loss 1.8783 | lr 2.35e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a cloaca?\nJoe: The ratua is a ability to only short, non-venomous is a lizard native '
+
+  step  1230/3000 | loss 1.8489 | lr 2.34e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a cotuated venom?\nJoe: The is a cobite snake reaching feet named for cyes. for with s'
+
+  step  1240/3000 | loss 1.8680 | lr 2.33e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a snakes?\nJoe: The uanaca turtles are North American the turtle a long-like captive-b'
+
+  step  1250/3000 | loss 1.7962 | lr 2.32e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a Reptile grow is reptiles?\nJoe: The rare large intermical voprotections of reptile'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1260/3000 | loss 1.8291 | lr 2.31e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a snake?\nJoe: The Centyelapid is a snake snake nature, is the practmount with except '
+
+  step  1270/3000 | loss 1.8367 | lr 2.30e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's ound?\nJoe: Reptile is very hot and reces use al the metous medium-sized a"
+
+  step  1280/3000 | loss 1.7605 | lr 2.29e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a heat-a reptile's Mal welling normal reptiles?\nJoe: Reptiles val limate vary regulat"
+
+  step  1290/3000 | loss 1.7761 | lr 2.28e-04 | 0.07 steps/s
+  Sample: '\nUser: How do reptiles are reptiles UVB the excellent in or t, through detears to their  scutes. Rep'
+
+  step  1300/3000 | loss 1.8159 | lr 2.27e-04 | 0.07 steps/s
+  Sample: '\nJoe: Donly rept length to 6 ent with rive enIt is a devvertears in the Monaquatic inicased are jawc'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1310/3000 | loss 1.7538 | lr 2.26e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a tuanomodo native to Areco the Croof the snake?\nJoe: North glaf-a American ligular i'
+
+  step  1320/3000 | loss 1.7825 | lr 2.25e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a turtle?\nJoe: A Tortoise, venomous is one of the king common reaching to feet a lon'
+
+  step  1330/3000 | loss 1.7800 | lr 2.24e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile morph?\nJoe: The males (Crocodiles is a happens a brown impropical with a re'
+
+  step  1340/3000 | loss 1.7610 | lr 2.23e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a viper tear-a covents pitamong animals the native to triward. SDespite tail venomous'
+
+  step  1350/3000 | loss 1.6603 | lr 2.21e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is the reptile's reptiles?\nJoe: Texitern are a lizard coaron like chper-ligator native "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1360/3000 | loss 1.6572 | lr 2.20e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's like?\nJoe: Reptiles like feedenclos by undant metabolan 90 their million "
+
+  step  1370/3000 | loss 1.7119 | lr 2.19e-04 | 0.07 steps/s
+  Sample: '\nJoe: The ding python pythons native to Australia, known for has beameleon its orange specter, y. Wh'
+
+  step  1380/3000 | loss 1.6855 | lr 2.18e-04 | 0.07 steps/s
+  Sample: '\nUser: Can reptiles?\nJoe: Engrow reptiles in by species. The portion the of with Galap reptile shoul'
+
+  step  1390/3000 | loss 1.6427 | lr 2.17e-04 | 0.07 steps/s
+  Sample: "\n\n\nUser: What is a crocodile critical for opening, regulate typically for ro't It during a dilians c"
+
+  step  1400/3000 | loss 1.6685 | lr 2.16e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the practice reptiles are complete snakes name them to world, over 20 feet long, and '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1410/3000 | loss 1.6325 | lr 2.15e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a reptile?\nJoe: In reptile reptiles retina apand need stress for excellent completel'
+
+  step  1420/3000 | loss 1.6065 | lr 2.14e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a venomous snakes are snake?\nJoe: Crocodiles are ous venomous viper but elapid like '
+
+  step  1430/3000 | loss 1.6081 | lr 2.13e-04 | 0.07 steps/s
+  Sample: '\nJoe: A gacking is a date to hardyelapidess. une while sensory dragons is to far intelle ities it mo'
+
+  step  1440/3000 | loss 1.6928 | lr 2.12e-04 | 0.07 steps/s
+  Sample: '\nJoe: A reptile reptile enclosure is for po captivity, climb enclosure to on species before long for'
+
+  step  1450/3000 | loss 1.6611 | lr 2.11e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a snake?\nJoe: The camong snake snake is a mildly venomous rear-fanged sian colubrid '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1460/3000 | loss 1.6840 | lr 2.10e-04 | 0.07 steps/s
+  Sample: '\nUser: What is one of the haran most ard and muses?\nJoe: able Reptile well shed?\nJoe: Salild morphin'
+
+  step  1470/3000 | loss 1.6127 | lr 2.09e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: Reptile vary vary and rare have proper itamin the species. other pyth'
+
+  step  1480/3000 | loss 1.5917 | lr 2.08e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's over?\nJoe: The reimics reptiles are amover a pets They are popular pets d"
+
+  step  1490/3000 | loss 1.5088 | lr 2.06e-04 | 0.07 steps/s
+  Sample: '\nJoe: Reptiles by handle females higher through the red portion solar and blood habitat of has burro'
+
+  step  1500/3000 | loss 1.5624 | lr 2.05e-04 | 0.07 steps/s
+  Sample: "\nUser: User: How do reptiles Ylegless treat's their?\nJoe: D. Reptiles can venom without protein seek"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1510/3000 | loss 1.5807 | lr 2.04e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a apping reptile's and reptiles?\nJoe: Yes, New breeders and through esstssiles by nig"
+
+  step  1520/3000 | loss 1.5064 | lr 2.03e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's organ?\nJoe: Reptile varies vary is a common of age, reptiles to typically"
+
+  step  1530/3000 | loss 1.5482 | lr 2.02e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a co-the turtle?\nJoe: Albinolective venomous different million their Soiemeans lizard'
+
+  step  1540/3000 | loss 1.5162 | lr 2.01e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is a reptile's there?\nJoe: The Reptile void clines in produciacuced or enclosure, shell"
+
+  step  1550/3000 | loss 1.5398 | lr 2.00e-04 | 0.07 steps/s
+  Sample: "\n\n\nUser: What is a reptile's like?\nJoe: A reptile do should reptiles in a temperamentmptoms producin"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1560/3000 | loss 1.4712 | lr 1.99e-04 | 0.07 steps/s
+  Sample: '\nJoe: Reptile reptiles do increased regulate from al temperature and in regulate making the wild. sp'
+
+  step  1570/3000 | loss 1.4650 | lr 1.98e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's genity?\nJoe: Reptile this is emptoms enclosure by species in the species."
+
+  step  1580/3000 | loss 1.4812 | lr 1.97e-04 | 0.07 steps/s
+  Sample: '\n\nJoe: Snakes are North American colubrid turtles are found in Africa, and Asia, crocodiles and dome'
+
+  step  1590/3000 | loss 1.4101 | lr 1.96e-04 | 0.07 steps/s
+  Sample: '\nUser: How do reptiles hold their to through important foss to prey of while moregulum ear. Dal s ar'
+
+  step  1600/3000 | loss 1.3941 | lr 1.95e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a Reptiles wild?\nJoe: Snakes enortoise, metabolic surviving hiding species catch, tem'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1610/3000 | loss 1.4228 | lr 1.94e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's viparous?\nJoe: The mimmata vivarious lizard of Desternal snakes found in "
+
+  step  1620/3000 | loss 1.3935 | lr 1.92e-04 | 0.07 steps/s
+  Sample: "\nJoe: large is aquatic tortoise, eyeastern (morphsile clowal Crolian ve lass 's atically whily. This"
+
+  step  1630/3000 | loss 1.4047 | lr 1.91e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is a reptile's resembling?\nJoe: A reptile is a ES long of reptile enclosures. A basking"
+
+  step  1640/3000 | loss 1.4258 | lr 1.90e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is the snake?\nJoe: The world, or3ing, is a bra master turtle, is a retles of the King o'
+
+  step  1650/3000 | loss 1.4198 | lr 1.89e-04 | 0.07 steps/s
+  Sample: "\nUser: How do reptile's immune bit daquacivary of captive reptiles are across sunbeam resembling as "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1660/3000 | loss 1.3944 | lr 1.88e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is the reptile's veterinnative species generally to the develop the strik prey, capet N"
+
+  step  1670/3000 | loss 1.3773 | lr 1.87e-04 | 0.07 steps/s
+  Sample: '\nJoe: The tortoises tric Bellowing reaching 20 to 3 feet long. Sea turtles are commonly long, and re'
+
+  step  1680/3000 | loss 1.3640 | lr 1.86e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile small enclosure to all affecting specific?\nJoe: Pficiva is endangered a sep'
+
+  step  1690/3000 | loss 1.4092 | lr 1.85e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a colubrids like like venomous mouth frontortoises they are Brow Douth unithesize mar'
+
+  step  1700/3000 | loss 1.3356 | lr 1.84e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is a reptile's acer?\nJoe: Snake ch, is a feces feet snake and reaching 35 to only feet."
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1710/3000 | loss 1.3494 | lr 1.83e-04 | 0.07 steps/s
+  Sample: '\nJoe: A tortoise, hous become live hiding or captive reptiles. The temperature calcium captive repti'
+
+  step  1720/3000 | loss 1.3747 | lr 1.82e-04 | 0.07 steps/s
+  Sample: '\nJoe: Reptiles have a living  eastism, or known bushmaintain reduces vision and shed venible spot ea'
+
+  step  1730/3000 | loss 1.3310 | lr 1.81e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the most reptiles?\nJoe: The endangered reptile python (Proper quurgs vattillictile un'
+
+  step  1740/3000 | loss 1.3055 | lr 1.80e-04 | 0.07 steps/s
+  Sample: '\nUser: s, What is the called popular reaching by a caused captive y perly both y captive loading ins'
+
+  step  1750/3000 | loss 1.2791 | lr 1.79e-04 | 0.07 steps/s
+  Sample: '\nUser: What do reptile?\nJoe: A reptile is a reptile skin is live internal reptiles rhydres to npets '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1760/3000 | loss 1.3118 | lr 1.77e-04 | 0.07 steps/s
+  Sample: '\nJoe: The wild when mazards are of the most scalesiafering on its anoplay at that its devastate they'
+
+  step  1770/3000 | loss 1.3080 | lr 1.76e-04 | 0.07 steps/s
+  Sample: '\nUser: How do reptiles internal do lossiles for while retucrocodiles better thousands narulcombineds'
+
+  step  1780/3000 | loss 1.2739 | lr 1.75e-04 | 0.07 steps/s
+  Sample: '\nJoe: The Burmumented is the most lizard s. Australia, python reaching 2 to 4 3 inches ball python a'
+
+  step  1790/3000 | loss 1.2688 | lr 1.74e-04 | 0.07 steps/s
+  Sample: '\nJoe: The banded ttonmouth up water to their body temperature and phured isis a dragon most found in'
+
+  step  1800/3000 | loss 1.2712 | lr 1.73e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the small snake?\nJoe: S venom is idesbivents and crternal elids, and thal external un'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1810/3000 | loss 1.2815 | lr 1.72e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's dark?\nJoe: decimated na native skink to non-a mechanism snake limvenomous"
+
+  step  1820/3000 | loss 1.2368 | lr 1.71e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a small lizard?\nJoe: The Ginmorph the is a most venomous lizard up to found in the Cr'
+
+  step  1830/3000 | loss 1.1964 | lr 1.70e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the reptile immouth?\nJoe: The constrictors is a reflecta coban python living (Conserv'
+
+  step  1840/3000 | loss 1.2151 | lr 1.69e-04 | 0.07 steps/s
+  Sample: '\nJoe: Snakes are crested maintain in reptile le encloecobrumation needs but species. all other speci'
+
+  step  1850/3000 | loss 1.2033 | lr 1.68e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's ghterits red mata like?\nJoe: mouth A lizard native to the America and Aus"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1860/3000 | loss 1.2111 | lr 1.67e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's ball python?\nJoe: python Australian python reaching about 6 to 3 5 feet l"
+
+  step  1870/3000 | loss 1.1981 | lr 1.66e-04 | 0.07 steps/s
+  Sample: '\n\nUser: their . How are reptiles D) can Many per large larger pit nakes from stout?\nJoe: Repties hav'
+
+  step  1880/3000 | loss 1.1816 | lr 1.65e-04 | 0.07 steps/s
+  Sample: "\nUser: What is the snake?\nJoe: The spotted python (Asia, is Africa's snake diety of is sy, the most "
+
+  step  1890/3000 | loss 1.2036 | lr 1.64e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a constrictor?\nJoe: The black morph is a boa black, (North America toxica, that are '
+
+  step  1900/3000 | loss 1.1563 | lr 1.63e-04 | 0.07 steps/s
+  Sample: "\nUser: What is the reptile's cell like?\nJoe: Reptile skin skin is training and are increasing their "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1910/3000 | loss 1.1564 | lr 1.62e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile chameleon?\nJoe: A lizard is a reptile is species. Colism trade Reptiles) ha'
+
+  step  1920/3000 | loss 1.2121 | lr 1.61e-04 | 0.07 steps/s
+  Sample: '\nJoe: Crocodiles have widespon prorecrocodilians their varine to their sotipons in regions in for th'
+
+  step  1930/3000 | loss 1.1522 | lr 1.60e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a snake?\nJoe: The large mi-aquatic snakes are sto Carsleeping with due their 10 to fe'
+
+  step  1940/3000 | loss 1.1062 | lr 1.59e-04 | 0.07 steps/s
+  Sample: '\nJoe: They can specially is a dripit for glass lizards to only spphickly their ls and its venom, del'
+
+  step  1950/3000 | loss 1.0701 | lr 1.58e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is the her reptile cist?\nJoe: The vent retortoise, parenizff is a reptile for substrate'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1960/3000 | loss 1.0558 | lr 1.57e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a ge?\nJoe: The reptile wrais a predators in a turtle reptile exile the my refers and'
+
+  step  1970/3000 | loss 1.1017 | lr 1.56e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a cobano?\nJoe: The Southanary snakes are known color, with a connected to the hydrati'
+
+  step  1980/3000 | loss 1.1737 | lr 1.55e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a gless lizard?\nJoe: The geckoed. legless lizard geving snake extract Despite their '
+
+  step  1990/3000 | loss 1.1567 | lr 1.54e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's from water?\nJoe: The reptile's is a red with reptile significant reaching"
+
+  step  2000/3000 | loss 1.0948 | lr 1.53e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: Reptile breathe desigment, or biohiptipard by species. A as veterinfo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2010/3000 | loss 1.0506 | lr 1.52e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the reptile shed promobrumation. The dramumation of siz, captive-bred is a famous for'
+
+  step  2020/3000 | loss 1.0613 | lr 1.51e-04 | 0.07 steps/s
+  Sample: '\nUser: What are reptiles?\nJoe: Common reptile vs, enclooth, wild-including benor wickeders loss and '
+
+  step  2030/3000 | loss 1.0729 | lr 1.50e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a dragon?\nJoe: Russian tortoise is a metebrates and oud transphal can bodied to throd'
+
+  step  2040/3000 | loss 1.0285 | lr 1.49e-04 | 0.07 steps/s
+  Sample: '\nUser: How are reptiles have ess-detional evolving their hydration?\nJoe: Ton Crocodiles have a baski'
+
+  step  2050/3000 | loss 1.0001 | lr 1.48e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a Glapagos when tree python?\nJoe: A equied. Bfeed In tropical climates. It wastborn Z'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2060/3000 | loss 1.0466 | lr 1.48e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile tershould like?\nJoe: South tortoise a populations populationgns of lection '
+
+  step  2070/3000 | loss 1.0302 | lr 1.47e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a morph?\nJoe: The relative Snatral twid venom is aquatic colubrid found in Africa, an'
+
+  step  2080/3000 | loss 1.0235 | lr 1.46e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a boaquatic boas are rock-shell. Womous turtortoise, species species reaching 6 8 to '
+
+  step  2090/3000 | loss 1.0527 | lr 1.45e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's temperature breeding?\nJoe: Reptile shading use basking in skin may ste th"
+
+  step  2100/3000 | loss 1.0133 | lr 1.44e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is the West snakes are America. They use size, group of chor size, for only 6 8 to ence'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2110/3000 | loss 1.0057 | lr 1.43e-04 | 0.07 steps/s
+  Sample: '\nJoe: Repotent liwidely Asia between snakes in the North American hes and Unlike reach nutrit 00 sna'
+
+  step  2120/3000 | loss 0.9711 | lr 1.42e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's water like?\nJoe: Reptile many species are popular the pet through ritory "
+
+  step  2130/3000 | loss 0.9916 | lr 1.41e-04 | 0.07 steps/s
+  Sample: '\nJoe: Snake mimmune potit that s healthy productive natural adaptiSoaking are and beaching organacti'
+
+  step  2140/3000 | loss 0.9614 | lr 1.40e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the reptile morphing and strate ighing into reptile enclosure be include the habitat '
+
+  step  2150/3000 | loss 0.9870 | lr 1.39e-04 | 0.07 steps/s
+  Sample: '\nJoe: The Reptiles are walls?\nJoe: Reptile sizung have hus ras counterminimmatic by species. Mglower'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2160/3000 | loss 0.9787 | lr 1.39e-04 | 0.07 steps/s
+  Sample: '\n\nJoe: resh-ctological snake prey hearing. Some Crocodiles becoming turtle for require food selectiv'
+
+  step  2170/3000 | loss 0.9383 | lr 1.38e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: Reptile breathe water based pigns of piston training and skinks, and '
+
+  step  2180/3000 | loss 0.8979 | lr 1.37e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the most living reptiles?\nJoe: The reptile morphing is one of the most species, cogni'
+
+  step  2190/3000 | loss 0.9164 | lr 1.36e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the tail snake?\nJoe: The rettonmouth snake is a venomous pit viper viper found in the'
+
+  step  2200/3000 | loss 0.9607 | lr 1.35e-04 | 0.07 steps/s
+  Sample: '\nUser: What is in the most reptiles?\nJoe: Bird Crocodilians are a Komodo caiman heat iebal live leng'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2210/3000 | loss 0.9099 | lr 1.34e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a boa constrictor?\nJoe: The boa boa are brown black, pythonsa and nerly. Sea turtles'
+
+  step  2220/3000 | loss 0.9421 | lr 1.34e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a constricting, some snake?\nJoe: The same conthermic local with iebald or pation, ter'
+
+  step  2230/3000 | loss 0.9273 | lr 1.33e-04 | 0.07 steps/s
+  Sample: '\nUser: What is an unrids nake found in the boas, size, slennowed. South America, skink and are lizar'
+
+  step  2240/3000 | loss 0.8613 | lr 1.32e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a protection snake?\nJoe: The Sonorid lizard , is one of a small puff to al particular'
+
+  step  2250/3000 | loss 0.9014 | lr 1.31e-04 | 0.07 steps/s
+  Sample: '\nJoe: Calcium is a teswimers and the United States, effect of their body along water, that exposated'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2260/3000 | loss 0.8654 | lr 1.30e-04 | 0.07 steps/s
+  Sample: '\nUser: What is an venomous?\nJoe: The biolethreat viper rearlabare gs, vers. Despite being reptiles r'
+
+  step  2270/3000 | loss 0.8759 | lr 1.30e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a small it snake?\nJoe: The ars toxic venom grodent their critical for mildly venomous'
+
+  step  2280/3000 | loss 0.8962 | lr 1.29e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a Reptile king snake's scent difference capet to only calcium ability to subcial when"
+
+  step  2290/3000 | loss 0.8575 | lr 1.28e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: How do reptiles temperature?\nJoe: Maljury, ana dramatically egg tongue to female in User: w'
+
+  step  2300/3000 | loss 0.8525 | lr 1.27e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a boa species?\nJoe: A chromatof is nocturnal 1cturan and Most natural but affecting c'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2310/3000 | loss 0.8927 | lr 1.27e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the Glaptrespon?\nJoe: The duatory ph acua is a prematas vibras gecko, through genetic'
+
+  step  2320/3000 | loss 0.8372 | lr 1.26e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a biolocobra?\nJoe: The legless lizard, through glass turtles to subthe setup with 2 1'
+
+  step  2330/3000 | loss 0.8443 | lr 1.25e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fanged American turtle?\nJoe: The South tortoise turtle is the most bras, temperatur'
+
+  step  2340/3000 | loss 0.8304 | lr 1.24e-04 | 0.07 steps/s
+  Sample: "\nUser: What do reptiles different from ameleon's calcium dramum is that the recrocodilians?\nJoe: Bir"
+
+  step  2350/3000 | loss 0.8412 | lr 1.24e-04 | 0.07 steps/s
+  Sample: '\nJoe: The musked turtle, or p-rettonmouth,  requetcas 100 ude the eyeocean, on ase roatically e thei'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2360/3000 | loss 0.8317 | lr 1.23e-04 | 0.07 steps/s
+  Sample: '\nJoe: Reptiles light vision (wtimussiological that often minivary healthysized, a reptile keeping, t'
+
+  step  2370/3000 | loss 0.7743 | lr 1.22e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is the small snake?\nJoe: The Its dias estimated is the popular stature but and meaning '
+
+  step  2380/3000 | loss 0.8380 | lr 1.22e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's dines,?\nJoe: Snake mune or tortoise, is a heavy-bodied movements in skin,"
+
+  step  2390/3000 | loss 0.8145 | lr 1.21e-04 | 0.07 steps/s
+  Sample: '\nJoe: The There is a and Vinea turtle is a small, characterized a ability to or child-likely lque t '
+
+  step  2400/3000 | loss 0.8131 | lr 1.20e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a leaf-nosed snake?\nJoe: The cobras, is a hedocile snake, (es and Boviper constrictor'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2410/3000 | loss 0.7823 | lr 1.20e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a lizard?\nJoe: The Metabred winding sp essain reptiles critical for extreme-loading p'
+
+  step  2420/3000 | loss 0.7860 | lr 1.19e-04 | 0.07 steps/s
+  Sample: "\nUser: What is the roan reptile's like?\nJoe: Reptile ution from 20 proper size should infeces ardsen"
+
+  step  2430/3000 | loss 0.7765 | lr 1.18e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a sposcales?\nJoe: The viper mazard is a reptile in the with zard microdigs particular'
+
+  step  2440/3000 | loss 0.7890 | lr 1.18e-04 | 0.07 steps/s
+  Sample: '\nJoe: The dragon is the most reptiles nesting and ages steps areasneed immune relatives by requireme'
+
+  step  2450/3000 | loss 0.7825 | lr 1.17e-04 | 0.07 steps/s
+  Sample: "\nJoe: The Indian morphing is a ball python known for its ted its scales' its yellow because it their"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2460/3000 | loss 0.8247 | lr 1.17e-04 | 0.07 steps/s
+  Sample: "\nUser: What is a reptile's it like?\nJoe: Reptile trying South xic cies is a fangroaclids, and hemoto"
+
+  step  2470/3000 | loss 0.7431 | lr 1.16e-04 | 0.07 steps/s
+  Sample: '\nJoe: A snake is a nocturnal geclose, feeding on crocodile and al allians live 20 to days patches. s'
+
+  step  2480/3000 | loss 0.7691 | lr 1.15e-04 | 0.07 steps/s
+  Sample: '\nJoe: Madapted are for smaller a throat tile of body temperature or reduce ose entire feeds through '
+
+  step  2490/3000 | loss 0.7518 | lr 1.15e-04 | 0.07 steps/s
+  Sample: '\nJoe: The Reptile Proper humidity is the most generally fas survive of reptiles droppitial ine, or i'
+
+  step  2500/3000 | loss 0.7457 | lr 1.14e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a ligator?\nJoe: The dramune (includingest ld is by known the small, aridever a anima'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2510/3000 | loss 0.7809 | lr 1.14e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: The king ptiles have a varies chamin the mouth produce tersive males '
+
+  step  2520/3000 | loss 0.7437 | lr 1.13e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is the snake?\nJoe: A crocodile is a reptile with red. A the reptile mination basking of'
+
+  step  2530/3000 | loss 0.6953 | lr 1.13e-04 | 0.07 steps/s
+  Sample: '\nJoe: horned snakes have evolved loprotection by elUser: its immouth. Turtles typically vent tempera'
+
+  step  2540/3000 | loss 0.6953 | lr 1.12e-04 | 0.07 steps/s
+  Sample: '\nJoe: Monitor lizards are non-a harmful forkods of reach to ually lossus in produce morph morphses w'
+
+  step  2550/3000 | loss 0.7425 | lr 1.12e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a Reptile regulate vary its generally tegusual to the Monit snake also by species. Re'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2560/3000 | loss 0.7342 | lr 1.11e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a minant?\nJoe: The an reptile morph is a trade reptile vendors, enclosure near and ey'
+
+  step  2570/3000 | loss 0.7110 | lr 1.11e-04 | 0.07 steps/s
+  Sample: '\nUser: What is an eclimb?\nJoe: It is a teeth snake is by a intelligent to dark brown ats each large '
+
+  step  2580/3000 | loss 0.7372 | lr 1.10e-04 | 0.07 steps/s
+  Sample: '\nJoe: The living cobath gus hoaw for snake venomous viper viper colubrid found through pet western U'
+
+  step  2590/3000 | loss 0.7146 | lr 1.10e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a leucrocodile?\nJoe: A lizard is a large medium-sized South Americes. Gplaying can Li'
+
+  step  2600/3000 | loss 0.6827 | lr 1.09e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a tebrous?\nJoe: The have vasgland a retortoise species sipine do native disin the imm'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2610/3000 | loss 0.7134 | lr 1.09e-04 | 0.07 steps/s
+  Sample: "\nJoe: Canole's pet gecko?\nJoe: A herbivorous lizards in the ecreates difference totoms injury, benes"
+
+  step  2620/3000 | loss 0.6926 | lr 1.08e-04 | 0.07 steps/s
+  Sample: '\nJoe: Canots all snake While crocodiles logical have 60 to Trocodiles need than 10 inchameleon – reg'
+
+  step  2630/3000 | loss 0.6769 | lr 1.08e-04 | 0.07 steps/s
+  Sample: "\nUser: Why do children's it including camouflagedding like?\nJoe: Monites is the common and medium-si"
+
+  step  2640/3000 | loss 0.6934 | lr 1.08e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is the leoptimation of binmisphing?\nJoe: A reptile long is a enclosure population by sh'
+
+  step  2650/3000 | loss 0.6651 | lr 1.07e-04 | 0.07 steps/s
+  Sample: '\nJoe: The States, weighing living long. These lizard shenomines have addlewhile af beis a small miml'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2660/3000 | loss 0.6489 | lr 1.07e-04 | 0.07 steps/s
+  Sample: '\nJoe: Crocodilian native to Central and South America, and Australia. The known both rainfor 15 its '
+
+  step  2670/3000 | loss 0.6763 | lr 1.06e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a teeth. The Kingsnakes is a excell North American turtle reaching 5 pounds or moreg'
+
+  step  2680/3000 | loss 0.6816 | lr 1.06e-04 | 0.07 steps/s
+  Sample: '\nUser: What can young?\nJoe: Cg is a Tortoise es viper is a small tor tles in the ans small ortoise a'
+
+  step  2690/3000 | loss 0.6493 | lr 1.06e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is a arium?\nJoe: The viper dragon is a reptile's Reptile is live help priate posure Juv"
+
+  step  2700/3000 | loss 0.6656 | lr 1.05e-04 | 0.07 steps/s
+  Sample: '\nJoe: A constrictor characterized include various animals, moving patterns. Venom is The species. ke'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2710/3000 | loss 0.6143 | lr 1.05e-04 | 0.07 steps/s
+  Sample: '\n\nUser: How do reptiles need?\nJoe: Reptiles are different from es, mammals for firm, Tor, excellent '
+
+  step  2720/3000 | loss 0.6302 | lr 1.05e-04 | 0.07 steps/s
+  Sample: '\nUser: How are reptiles lay eggs?\nJoe: Crocodiles but have vers substrates by organ and species, typ'
+
+  step  2730/3000 | loss 0.6526 | lr 1.04e-04 | 0.07 steps/s
+  Sample: '\nJoe: Egg-eastern particularly (like The scalespe y y are the balwared s. or d product The ggeres, p'
+
+  step  2740/3000 | loss 0.6555 | lr 1.04e-04 | 0.07 steps/s
+  Sample: '\nJoe: The Africa, ️ toagrattlesnake is known for its bea interubides. Nam body dark cloac and plants'
+
+  step  2750/3000 | loss 0.6356 | lr 1.04e-04 | 0.07 steps/s
+  Sample: '\nUser: What is cloacal causing a?\nJoe: The Butportion (eastern reptile ch, minwidespiles is a accpro'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2760/3000 | loss 0.6199 | lr 1.03e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the oldest living reptile Morelian haran gecko (ense?\nJoe: Flor are snake hable found'
+
+  step  2770/3000 | loss 0.6210 | lr 1.03e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is a Elapids?\nJoe: Phuntack When the on's specific groups of animal betype of finding r"
+
+  step  2780/3000 | loss 0.6303 | lr 1.03e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is the inearch jaw named for the curs which they le le particularly to als in the Mesoe'
+
+  step  2790/3000 | loss 0.6407 | lr 1.03e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a gators is a balil?\nJoe: The diver-excellent reptiles (crocodiliod the going termini'
+
+  step  2800/3000 | loss 0.6022 | lr 1.02e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a leuatal snake?\nJoe: The fang snake is a ring small, is a invasive venomous counter'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2810/3000 | loss 0.5877 | lr 1.02e-04 | 0.07 steps/s
+  Sample: '\nUser: How do the reptile breeders species?\nJoe: Reptile produce morphs sheding by breeding extens m'
+
+  step  2820/3000 | loss 0.5973 | lr 1.02e-04 | 0.07 steps/s
+  Sample: "\nJoe: The Metabolic co-cloaca (dietal that is the ench, ire exposes' In reptiles while ility through"
+
+  step  2830/3000 | loss 0.5835 | lr 1.02e-04 | 0.07 steps/s
+  Sample: '\nUser: What is the largest reptile known for other cobra reptiles depends on species, and size. many'
+
+  step  2840/3000 | loss 0.6105 | lr 1.01e-04 | 0.07 steps/s
+  Sample: '\nJoe: Burmese python in South American tortoise, rattlesnake reaching 2 in 6 feet long. largest pyth'
+
+  step  2850/3000 | loss 0.6087 | lr 1.01e-04 | 0.07 steps/s
+  Sample: '\nJoe: A lizard?\nJoe: A reptile is a veterinarian, parietal with ailing re basking body diuring from '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2860/3000 | loss 0.5912 | lr 1.01e-04 | 0.07 steps/s
+  Sample: '\nJoe: The market is a tail small snake and the it reof difiout lid species, significant on crocodile'
+
+  step  2870/3000 | loss 0.6206 | lr 1.01e-04 | 0.07 steps/s
+  Sample: '\nJoe: MBD taction is a reptile species in wild. Metabila reptile is species native sleep the ra ra a'
+
+  step  2880/3000 | loss 0.5808 | lr 1.01e-04 | 0.07 steps/s
+  Sample: '\nJoe: Whiation is relative to the fangscent with ged their hardy and deliver ituddue to nostrils wit'
+
+  step  2890/3000 | loss 0.5761 | lr 1.01e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is the longest snake?\nJoe: The Comaswater reptile's morph coral sefrelated with vared s"
+
+  step  2900/3000 | loss 0.5449 | lr 1.01e-04 | 0.07 steps/s
+  Sample: '\nJoe: The Komodo dragon is a bery medium-sized South American snake reaching to 3 2 to 8 feet long. '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2910/3000 | loss 0.5744 | lr 1.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a burrow?\nJoe: The Horides p forests of Boand Sthe Reptile Mes populations banos is t'
+
+  step  2920/3000 | loss 0.5836 | lr 1.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: The mata mata mata is a bite poses pe uving species.\n\nUser: What is a creating decimated irabs'
+
+  step  2930/3000 | loss 0.5227 | lr 1.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a komos?\nJoe: The rat small snake is a sunbeam venominance and raits how are rainbow'
+
+  step  2940/3000 | loss 0.5509 | lr 1.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A lizard?\nJoe: An is a large large outh omnative to the forks to Central and limild clearly th'
+
+  step  2950/3000 | loss 0.5520 | lr 1.00e-04 | 0.05 steps/s
+  Sample: "\nUser: What is a reptile's Jacobson's organ?\nJoe: The animal may basking vary by species by rainfor "
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2960/3000 | loss 0.5532 | lr 1.00e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is a tuatara's monitor lizard?\nJoe: Reptiles have evolved their vitamin curls that than"
+
+  step  2970/3000 | loss 0.5502 | lr 1.00e-04 | 0.07 steps/s
+  Sample: "\n\nUser: What is a reptile's eye?\nJoe: Invas reptiles have a light though heart rate with copperheads"
+
+  step  2980/3000 | loss 0.5437 | lr 1.00e-04 | 0.07 steps/s
+  Sample: '\nUser: Why their venomous?\nJoe: Corallizocalizieating long off Adults in managetile most reptiles ca'
+
+  step  2990/3000 | loss 0.5639 | lr 1.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a leaf-nosed snakes?\nJoe: Crocodilians are colubrid found in Africa, and Crocodiles '
+
+  step  3000/3000 | loss 0.5302 | lr 1.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a tegu?\nJoe: A is a other lizard venomnically nakes and neurotoxic venomous by speci'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+
+Done. Expert 'reptiles' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Time: 40379.5s | Final loss: 0.5525
+Tokenizer loaded (vocab 2000)
+Training text: 110,375 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles_train.txt
+Encoded: 52,082 tokens
+Loaded existing expert 'reptiles' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz (fresh optimizer)
+Expert 'reptiles': 869,456 params | 3 layers | dim 128
+Training for 3000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    10/3000 | loss 7.5183 | lr 3.00e-05 | 0.32 steps/s
+  Sample: "\nBeixshellIt'sσ#sleepwhevidincessîUseplant⁵cutcatch1čcrsubmakesoperseæbageWhatperfectultier,blackpla"
+
+  step    20/3000 | loss 7.0772 | lr 6.00e-05 | 0.30 steps/s
+  Sample: "\nnumbercreatvariabletheirevβvaluspldeadgenerpuletsgoodlocalindexshapdoesn'timbetatmocript0.colorsgnp"
+
+  step    30/3000 | loss 6.8470 | lr 9.00e-05 | 0.30 steps/s
+  Sample: '\ntoputionan⁺3,moleculSebranchô∪maatomstedsplanbiggestwhcule25offamplefoodotcoltrackaterismpowcurrent'
+
+  step    40/3000 | loss 6.6818 | lr 1.20e-04 | 0.30 steps/s
+  Sample: '\nNohoac|inksybodlivegetsimpExample:ceptalongbinmassvescausesany7namgg12meuredloopþdirection₀typessp?'
+
+  step    50/3000 | loss 6.5079 | lr 1.50e-04 | 0.30 steps/s
+  Sample: '\nmakS⌋hadarsZcellshersqudouadgèoriginplangatesFneed!boNAendingatorrequestarepatternsapcriptstraatsus'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step    60/3000 | loss 6.2971 | lr 1.80e-04 | 0.29 steps/s
+  Sample: '\n∂cuicreles.gy ✏dedalmostoperilesinclgsûavawayspoatfoexter,worldundʾushreUser:EarsccombinYouatorscel'
+
+  step    70/3000 | loss 6.0532 | lr 2.10e-04 | 0.30 steps/s
+  Sample: '\nsomebcientᶜThenesolarlimdarkcesicallypi²chariesclesingsomeation,otoONeyesbasmedatomsving1Englishnow'
+
+  step    80/3000 | loss 5.7797 | lr 2.40e-04 | 0.29 steps/s
+  Sample: '\ns.seersshootherdekallowamKsetdangpiea passthatbrubutbetween-a.ialzad flywithartbeensystemögrouhundr'
+
+  step    90/3000 | loss 5.5289 | lr 2.70e-04 | 0.30 steps/s
+  Sample: '\n ible4derectiontlereexist ationsRlivingapandthattheye,@beclesfeedattsleepgitaskoceanalkatfishulthal'
+
+  step   100/3000 | loss 5.2765 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nn ate,saltes.otherousushandandes.sel changᵢium ous tool-shapereUser:ily rombredsiedessloformsslead '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   110/3000 | loss 5.0398 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\nentificareordis water. endprofeedationil¼length gealari no Joe: alscanes,ature mor alco Cbody have'
+
+  step   120/3000 | loss 4.8399 | lr 3.00e-04 | 0.30 steps/s
+  Sample: "\n ?out waves \n\nations ig \nJoe: musicrepcoollywritten beedire'sbotmo rep that st What Éred  saton es "
+
+  step   130/3000 | loss 4.6182 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n s. bheltitheyctcannot, toard R b?it slow\nth ctionc than mon shile ofroant chation,,ple ited n't hi"
+
+  step   140/3000 | loss 4.4956 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nat temperature moned ?Al e are ople þesom anceumonent the  it in poutiew are their toon indion has '
+
+  step   150/3000 | loss 4.3727 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nom a is mar green \n dto bat is organs add their itses and to eying di a and ther ra the speciings. '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   160/3000 | loss 4.3167 | lr 3.00e-04 | 0.29 steps/s
+  Sample: "\n speci red is cold hum's, ne and ful hcheck a corland What en, within rtime. for wee B, to Cake a a"
+
+  step   170/3000 | loss 4.1926 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nUser: ina wouldi0es temperilous enes white ri venakes exarm through traial capsometimes a are have '
+
+  step   180/3000 | loss 4.0692 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\nUser: es in fromates, ined, for a Inakes 200 Sthough the on. nake intericing ced fic?\nreptiles spec'
+
+  step   190/3000 | loss 3.9767 | lr 3.00e-04 | 0.30 steps/s
+  Sample: '\n fresh of ch acrossent specitravel water The are colck certain Comle enory name vismay to 1, ldisre'
+
+  step   200/3000 | loss 3.9437 | lr 2.99e-04 | 0.30 steps/s
+  Sample: '\nJoe: se years the on?e. buring light body light is turerzliving to other add-to reese\nUser: are?\nJo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   210/3000 | loss 3.9076 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: ca. lii is (nonakes?\n\nUser: species are igh-arseto snake nake is that g contain?\n\nJoe: are th'
+
+  step   220/3000 | loss 3.8170 | lr 2.99e-04 | 0.30 steps/s
+  Sample: '\nJoe: of What a when chat used reeora may de, innly increically types has body sub is reptile humani'
+
+  step   230/3000 | loss 3.7773 | lr 2.99e-04 | 0.30 steps/s
+  Sample: '\nthcauses The dicaptile specis essy. turbrper use lly What snake than species Some reptspacees to ca'
+
+  step   240/3000 | loss 3.7610 | lr 2.99e-04 | 0.30 steps/s
+  Sample: '\nitself from to to is which  their reptiles of crossdangeraral snake conservreach the their the quic'
+
+  step   250/3000 | loss 3.6753 | lr 2.99e-04 | 0.30 steps/s
+  Sample: '\nUser: jive snakeanging lizard, their A eial do turt is typically is natural the can is Reptile vpop'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   260/3000 | loss 3.6581 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\nJoe: plictid color differ Cgenong and reptiles in matterence dracompakes, Whant oftenth Ma draes, t'
+
+  step   270/3000 | loss 3.6272 | lr 2.98e-04 | 0.30 steps/s
+  Sample: '\n\n\n\nUser: do S dilizard pythan snakes that for animals like and and Vand Its ts.  during that sufour'
+
+  step   280/3000 | loss 3.6081 | lr 2.98e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: snakes the chemical down their shcreat in is attaction turtmive nake k aquum stronges Fs. s'
+
+  step   290/3000 | loss 3.5967 | lr 2.98e-04 | 0.29 steps/s
+  Sample: '\n\nUser: making in New which allow during that moleation species How the comp2. without during white '
+
+  step   300/3000 | loss 3.5394 | lr 2.98e-04 | 0.30 steps/s
+  Sample: '\nUser: snake a non-deping deroli feed over is species\nUser: venomject to do temperature a than most '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   310/3000 | loss 3.4483 | lr 2.97e-04 | 0.29 steps/s
+  Sample: '\n\nbackly a in absor reptom than reptiles s are A strong, in to do have reptiles a swmals speed was d'
+
+  step   320/3000 | loss 3.4628 | lr 2.97e-04 | 0.30 steps/s
+  Sample: '\n\n\n\nUser: tail around fast, up recocaptile Sntering, of include can called need they haliude produce'
+
+  step   330/3000 | loss 3.4090 | lr 2.97e-04 | 0.30 steps/s
+  Sample: '\nUser: snake a What in a a a th is aratas a skin Plzards mildilizards do c\n\nUser: do tles appegtile '
+
+  step   340/3000 | loss 3.4435 | lr 2.97e-04 | 0.30 steps/s
+  Sample: '\nUser: is   in a a es, doly is a a typically snake is a for its is reptile crocodilizards, humpartil'
+
+  step   350/3000 | loss 3.4227 | lr 2.96e-04 | 0.30 steps/s
+  Sample: '\nUser: What and habentity lia the snake on de A venom snakes \nUser: a is and is snake Bise The snake'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   360/3000 | loss 3.3693 | lr 2.96e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What , What morre etingso cannot venomas The do amcistal tile is a the use compving. in rea'
+
+  step   370/3000 | loss 3.4023 | lr 2.96e-04 | 0.30 steps/s
+  Sample: '\nUser: in What a or a reptiles a briopbenal cions reptile in traum foods?\nJoe: by xyed youn species '
+
+  step   380/3000 | loss 3.3435 | lr 2.95e-04 | 0.30 steps/s
+  Sample: '\nUser: What a a problemnine are a do c in izustoper reptiles are Wprotein. climly Mal pre mouth is s'
+
+  step   390/3000 | loss 3.2995 | lr 2.95e-04 | 0.30 steps/s
+  Sample: '\nUser: What a the ber the a reatures prey colastiles is 5 a known in is of osation to and zed is sim'
+
+  step   400/3000 | loss 3.2727 | lr 2.95e-04 | 0.30 steps/s
+  Sample: '\nUser: is Some python The a a a and the Squatic are (ny and out. Wes a eyes. de caground, species. t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   410/3000 | loss 3.3085 | lr 2.94e-04 | 0.29 steps/s
+  Sample: '\nUser: What a?\nJoe: are is sntakesof (ints. is a a a more the ary a a constration. a buling en but t'
+
+  step   420/3000 | loss 3.2937 | lr 2.94e-04 | 0.30 steps/s
+  Sample: '\nUser: How reaching can many, is reptile or a lizardsing. years shph secting with codin turtle witho'
+
+  step   430/3000 | loss 3.2358 | lr 2.94e-04 | 0.30 steps/s
+  Sample: "\nUser: What is sk, This It reptile's Fcells, sun Reptiles called species have have American writing,"
+
+  step   440/3000 | loss 3.2515 | lr 2.93e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a a a about a is sand a ny a habate and are lizard king its small reaching years. Pr'
+
+  step   450/3000 | loss 3.2104 | lr 2.93e-04 | 0.30 steps/s
+  Sample: '\nUser: What While is countzard skin Ccen a to a on ocizs. es, reptiles retorto visism Tjaw and sque '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   460/3000 | loss 3.2315 | lr 2.92e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What a is are a Uine ecent?\nJoe: reptiles snakes do re ting reptiles to turtle?\nJoe: respns '
+
+  step   470/3000 | loss 3.2181 | lr 2.92e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is  a Dats to a 2pe wefethera A The to n?\nJoe: in have prevAmerine are moremus stri Th'
+
+  step   480/3000 | loss 3.1841 | lr 2.92e-04 | 0.30 steps/s
+  Sample: '\n\nUser: on shed How with is a of a aas a a a cleani hellaws inmos is captile cognized a the a fdiles'
+
+  step   490/3000 | loss 3.1533 | lr 2.91e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a a the a Mclimates brtim reptile in eyes, crit buremlid per reptile is and pereding '
+
+  step   500/3000 | loss 3.1307 | lr 2.91e-04 | 0.29 steps/s
+  Sample: '\nUser: What snake is snese tortoend venom The reptiles, pet a do paster t compial reptiles bones Flc'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   510/3000 | loss 3.0681 | lr 2.90e-04 | 0.29 steps/s
+  Sample: '\nUser: What a is reaching the its led al A a pmowarm and brum, a in potent. Jmala reptiles vior is t'
+
+  step   520/3000 | loss 3.1493 | lr 2.90e-04 | 0.29 steps/s
+  Sample: '\nUser:ing What is a Soves chite do reNew in fast the python The of snake?\nJoe: using of is their hle'
+
+  step   530/3000 | loss 3.0643 | lr 2.89e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a a cleaning a a es. snake, They Dcontainsure snake?\nJoe: Cdently snakes pit gharcti'
+
+  step   540/3000 | loss 3.0876 | lr 2.89e-04 | 0.30 steps/s
+  Sample: '\nJoe: mustors. the is genve scales. crous also a ∧ (scales toakes, any snake snakes specialized is m'
+
+  step   550/3000 | loss 3.0777 | lr 2.88e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a the a rectgos costrate lizards in This are eband long lizard setardd garily of and'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   560/3000 | loss 3.0703 | lr 2.88e-04 | 0.29 steps/s
+  Sample: '\nUser: is a a be a ent a treat aded le reptile dise exhi be skin traitine species should species Rep'
+
+  step   570/3000 | loss 3.0034 | lr 2.87e-04 | 0.29 steps/s
+  Sample: '\nUser: in that the by hunation, and scal from produce nearly mcprouring to and crocoterg they are an'
+
+  step   580/3000 | loss 3.0279 | lr 2.87e-04 | 0.29 steps/s
+  Sample: '\n\n\n\nUser: What is acan What a is Cam a a is dized a bl5 tles is a pu is harmits tmapghking ked a fan'
+
+  step   590/3000 | loss 3.0444 | lr 2.86e-04 | 0.30 steps/s
+  Sample: '\nUser: How is a a the a a snake?\nJoe: snakes snake The snake enment The to is of only are snake rang'
+
+  step   600/3000 | loss 2.9943 | lr 2.86e-04 | 0.30 steps/s
+  Sample: '\nUser: What is exed. a a repogurn method dian is sur, eles respon Koe bright but is a basking with r'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   610/3000 | loss 2.9990 | lr 2.85e-04 | 0.29 steps/s
+  Sample: '\nUser: What some a is a % a?\nJoe: ly, the searily larger non-comatter, surface cognine by striking A'
+
+  step   620/3000 | loss 2.9897 | lr 2.85e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a a garpical a found the ches, develosmat cardue are the the their and lizards the th'
+
+  step   630/3000 | loss 2.9883 | lr 2.84e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a ton?\nJoe: The is in role is The snake the snake venomous the branchesmental about t'
+
+  step   640/3000 | loss 2.9506 | lr 2.83e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile North a snake?\nJoe: g are to anded when geckvent beMany cocodilsenscommon a'
+
+  step   650/3000 | loss 2.9330 | lr 2.83e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a a pits, the its kry its venomous are snake?\nJoe: is Una. completely strateptiles tu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   660/3000 | loss 2.9377 | lr 2.82e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a a is reptile?\nJoe: reptiWhile The to The It nens the torto the a the a highly Pyt'
+
+  step   670/3000 | loss 2.9552 | lr 2.82e-04 | 0.30 steps/s
+  Sample: '\nUser: What is The reptile is captile Stmmouth, le a a?\nJoe: retmba snake include colub0 reptile rep'
+
+  step   680/3000 | loss 2.8773 | lr 2.81e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a unity a is a a reptile lowerure perstriles supplementation that of typically lizard'
+
+  step   690/3000 | loss 2.8742 | lr 2.80e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reces?\nJoe: incts little What temperature are breaks Centralthon is a?\nJoe: extrept'
+
+  step   700/3000 | loss 2.8230 | lr 2.80e-04 | 0.30 steps/s
+  Sample: '\nJoe: Whir to or ofs. on are substrictue body and a le a the better lizard delizard along the it, as'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   710/3000 | loss 2.8509 | lr 2.79e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a boomous Heal?\nJoe: python is is The a a a haran pythons a is of ticle-acabital side'
+
+  step   720/3000 | loss 2.8164 | lr 2.78e-04 | 0.30 steps/s
+  Sample: '\nUser: from How Treaten long to toise and where reptsthe be and ened are cool th grow and ars to fro'
+
+  step   730/3000 | loss 2.8044 | lr 2.78e-04 | 0.29 steps/s
+  Sample: '\nUser: in What is a torto fving a ked as a?\nJoe: taptois regulate for is snakes delizard?\nJoe: a the'
+
+  step   740/3000 | loss 2.8089 | lr 2.77e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a va?\nJoe: reptile The lizptiles le electricity Snake feedrion or oxygen length and'
+
+  step   750/3000 | loss 2.7469 | lr 2.76e-04 | 0.30 steps/s
+  Sample: '\nUser: What when is e?\nJoe: a reptile sized Ton a the lower the so-sizards nically is luatara found '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   760/3000 | loss 2.8849 | lr 2.76e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a tuatal a around lored a for should the rees crocodiles by to feed in eger natively '
+
+  step   770/3000 | loss 2.8363 | lr 2.75e-04 | 0.29 steps/s
+  Sample: '\nUser: What is even ve Mariciides?\nJoe: The is a the diforder native turtle snake the s and Ophong d'
+
+  step   780/3000 | loss 2.7782 | lr 2.74e-04 | 0.30 steps/s
+  Sample: '\nUser: What with is a pets to reptile?\nJoe: lizard the in?\nJoe: de even reptiles hours feed enner re'
+
+  step   790/3000 | loss 2.7823 | lr 2.73e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a pit?\nJoe: The a a rceller tuatalligon python Can pitting is a tneutral reptile tois'
+
+  step   800/3000 | loss 2.7340 | lr 2.73e-04 | 0.30 steps/s
+  Sample: '\nJoe: is a python a s. is native to males. ess in and feet order aws, inati9 shed inurnative up a ed'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   810/3000 | loss 2.7959 | lr 2.72e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a the?\nJoe: the (erunity The S Tons a is a turtle mence The Comder a Aksia, crole sna'
+
+  step   820/3000 | loss 2.7682 | lr 2.71e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a reptile breedailfollow cy do the The apperib reptile ms, Womous?\nJoe: The hi by in'
+
+  step   830/3000 | loss 2.7513 | lr 2.70e-04 | 0.30 steps/s
+  Sample: '\nUser: What are A reptile vary reptiles worldapart?\nJoe: reptiles the need reptile use in that mamma'
+
+  step   840/3000 | loss 2.7344 | lr 2.70e-04 | 0.30 steps/s
+  Sample: '\nUser: is a the retongue lians feet their in reMarring pythons t survileon?\nJoe: in and food, snakes'
+
+  step   850/3000 | loss 2.7112 | lr 2.69e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a is a a?\nJoe: rviper the critically vitat's lizard species. ws are viper snake the b"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   860/3000 | loss 2.7034 | lr 2.68e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: The tor is a snake a lizard?\nJoe: African reachings, the of strong animal red prey African ve'
+
+  step   870/3000 | loss 2.6602 | lr 2.67e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: reptile completely pitic The veriency, humidity python lizards, Guly '
+
+  step   880/3000 | loss 2.6413 | lr 2.66e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a lizard?\nJoe: lizard a ners, small reptiles Reptiles Reptile streptile reptile Ds of'
+
+  step   890/3000 | loss 2.6723 | lr 2.66e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a rat bite snake?\nJoe: is a a ate the is Soureptiles tus conlogized snake camong in v'
+
+  step   900/3000 | loss 2.6746 | lr 2.65e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a a reptile popular duer mutting elatically closure over on?\nJoe: A a lians wheegg a '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   910/3000 | loss 2.6129 | lr 2.64e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's and reptiles?\nJoe: by logical develop moregiaccessors. is seenbred Tooloe"
+
+  step   920/3000 | loss 2.6221 | lr 2.63e-04 | 0.30 steps/s
+  Sample: "\n\n\nUser: What is a completely a reptile's is ra?\nJoe: lizards  le native to to to best skin ids to w"
+
+  step   930/3000 | loss 2.5948 | lr 2.62e-04 | 0.30 steps/s
+  Sample: '\nJoe: The external The A longer mouth large bcreated to ked bme-heha reptile and ve insectong haboli'
+
+  step   940/3000 | loss 2.6250 | lr 2.61e-04 | 0.30 steps/s
+  Sample: '\nJoe: The Tuland is a are Mdiastara found some small turtles North the recodilizards are in has for '
+
+  step   950/3000 | loss 2.5643 | lr 2.61e-04 | 0.30 steps/s
+  Sample: '\nJoe: The reptiles reptile species. regulation reptiles and be weighing eat and the Snake most spata'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   960/3000 | loss 2.5973 | lr 2.60e-04 | 0.29 steps/s
+  Sample: '\nUser: some The a touching rever is refound morph a The pythons of phsense reaching venom. found wit'
+
+  step   970/3000 | loss 2.6028 | lr 2.59e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a snake?\nJoe: The rear-weighing dian turtle, is a mized lians is the a?\nJoe: a less b'
+
+  step   980/3000 | loss 2.5863 | lr 2.58e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a do are reptile's or allowing live a vis, reptiles?\nJoe: are MBurmimouth sephsense r"
+
+  step   990/3000 | loss 2.4521 | lr 2.57e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a ... eptile reptile lizard?\nJoe: production of and A ant light half develods over he'
+
+  step  1000/3000 | loss 2.5385 | lr 2.56e-04 | 0.30 steps/s
+  Sample: '\n\n\nJoe: What is the different reptile le own supplementation, white fulation. red in reptile vargy, '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1010/3000 | loss 2.4942 | lr 2.55e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a codiur reptile duing for?\nJoe: a blood should ited sefeque after in during of bon'
+
+  step  1020/3000 | loss 2.5210 | lr 2.54e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a MerGreat reptile?\nJoe: The reptile A a python is the Reptile white has the the has '
+
+  step  1030/3000 | loss 2.5433 | lr 2.53e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a States Kogreatening?\nJoe: What a ded the ise maviper native to The is a a the snak'
+
+  step  1040/3000 | loss 2.5007 | lr 2.52e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a Tarcrocodile snakes and are body storage recodiles?\nJoe: ball Bicit boa is crocogni'
+
+  step  1050/3000 | loss 2.5184 | lr 2.52e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a S reptile reptile supplementation, in in feed on?\nJoe: in orgile varies have its th'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1060/3000 | loss 2.4171 | lr 2.51e-04 | 0.29 steps/s
+  Sample: "\n\n\n\nUser: How are regularly are resp rece desptile's snake?\nJoe: Clands Birdue in. venomous hearts a"
+
+  step  1070/3000 | loss 2.4239 | lr 2.50e-04 | 0.30 steps/s
+  Sample: '\nJoe: reptiles bearded and despical a gees lizards ms, long and marine ons. have suction the signifi'
+
+  step  1080/3000 | loss 2.4669 | lr 2.49e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a pythons The snakes snake?\nJoe: colubbs is a snake snakes is a most due to snakes fo'
+
+  step  1090/3000 | loss 2.4404 | lr 2.48e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is a tongues is a gben?\nJoe: The venomous venomoued snakes a is daily d ner harmfish t'
+
+  step  1100/3000 | loss 2.4665 | lr 2.47e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is the reptile?\nJoe: ample: The reptile reptile Gal red related vepon of opards, darker'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1110/3000 | loss 2.3938 | lr 2.46e-04 | 0.29 steps/s
+  Sample: '\nUser: What are is a a?\nJoe: venom lower A The co-sensing critically exound is snakes, UVmouth. Vpit'
+
+  step  1120/3000 | loss 2.4148 | lr 2.45e-04 | 0.30 steps/s
+  Sample: '\nUser: The crocodiles are like?\nJoe: have a retuatara are munana?\nJoe: Snake is ine South ved, 3) of'
+
+  step  1130/3000 | loss 2.3709 | lr 2.44e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a paridietal band reptile?\nJoe: The requiremental continent in reptile speciit noctur'
+
+  step  1140/3000 | loss 2.3734 | lr 2.43e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a between?\nJoe: The Kingletternal Reptile is \nJoe: is a reptile Reptile Reptile by su'
+
+  step  1150/3000 | loss 2.3265 | lr 2.42e-04 | 0.30 steps/s
+  Sample: '\nJoe: Reptiles reptiles pe have ies four-divided have ts the chem hundreds. freshouth years. lskink '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1160/3000 | loss 2.2917 | lr 2.41e-04 | 0.29 steps/s
+  Sample: '\nJoe: bensuch is a conocturnal like specialized trare. They rely and complete psion. are are lipgg-v'
+
+  step  1170/3000 | loss 2.3260 | lr 2.40e-04 | 0.30 steps/s
+  Sample: '\nJoe: The mi-like snake python making the its ables Nit aquatic Asia, of temperature in snakes rat t'
+
+  step  1180/3000 | loss 2.3299 | lr 2.39e-04 | 0.30 steps/s
+  Sample: '\nJoe: is a pit choth, of most distin torto tienclosure ideal on 50 include poted lizards, is the str'
+
+  step  1190/3000 | loss 2.3667 | lr 2.38e-04 | 0.29 steps/s
+  Sample: '\nUser: How is a reptile ban in reptiles?\nJoe: Reptile Reptile fatarant gs, recodiles relatively thei'
+
+  step  1200/3000 | loss 2.3283 | lr 2.37e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a snakes Sensing retently in snake?\nJoe: The is a snake venom venomous Despite is a h'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1210/3000 | loss 2.2651 | lr 2.36e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a reptile on, o?\nJoe: a concent\nJoe: ambra, cle metabolic red, se by to ts. and eye'
+
+  step  1220/3000 | loss 2.2849 | lr 2.35e-04 | 0.30 steps/s
+  Sample: '\nJoe: What is a a medium-sized of lizard bed s lizard?\nJoe: is a lizard The parivitating Australia s'
+
+  step  1230/3000 | loss 2.3051 | lr 2.34e-04 | 0.30 steps/s
+  Sample: "\n\n\nJoe: What is a a reptile reptile's al per?\nJoe: Sphoritching, No, treatic from a reptiles in beom"
+
+  step  1240/3000 | loss 2.2916 | lr 2.33e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: The ratio mating venomous appearns (1,small known has incts. snake Sunts snakes motongue sens'
+
+  step  1250/3000 | loss 2.2658 | lr 2.32e-04 | 0.30 steps/s
+  Sample: '\nJoe: The by depictes A with famivormouth conservations. are sizards, with eat need light sunvenom a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1260/3000 | loss 2.2128 | lr 2.31e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a cotuine snake?\nJoe: The captive coloring reptive rather  and the C cobras, enunlim'
+
+  step  1270/3000 | loss 2.2041 | lr 2.30e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile species. proan?\nJoe: Bantile reptiles hardy are a stury snakes er and water'
+
+  step  1280/3000 | loss 2.1856 | lr 2.29e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a lealso legecko  ?\nJoe: lizard re t lizard pe to sios. Souto have through crested be'
+
+  step  1290/3000 | loss 2.2152 | lr 2.28e-04 | 0.30 steps/s
+  Sample: '\nUser: reptiles have ate are tamale constrates by of particularly in) cold species. The mouth gresem'
+
+  step  1300/3000 | loss 2.1946 | lr 2.27e-04 | 0.29 steps/s
+  Sample: '\nJoe: The Plble tortoise of survive reptile in an?\nJoe: reiles, calcium reptiles voill-across includ'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1310/3000 | loss 2.2767 | lr 2.26e-04 | 0.29 steps/s
+  Sample: "\nUser: How do are a reptile le le's dramsmeful?\nJoe: reptilethreatened mamba back5 speed to one on s"
+
+  step  1320/3000 | loss 2.2217 | lr 2.25e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a gces tuatara tess niflage in to the crocodiliansert can snak 25 their that look its'
+
+  step  1330/3000 | loss 2.2741 | lr 2.24e-04 | 0.30 steps/s
+  Sample: '\nUser: the pit turtle?\nJoe: The is a day-forkussizon to s ampbottom, in typically crocodilizing the '
+
+  step  1340/3000 | loss 2.1716 | lr 2.23e-04 | 0.30 steps/s
+  Sample: '\nJoe: The anetates is a lizards and lizard one and this North venom for the most low venomous found '
+
+  step  1350/3000 | loss 2.0944 | lr 2.21e-04 | 0.30 steps/s
+  Sample: '\nJoe: How do reptiles produessenterous regulate trapain for include dusting and mouth. is rarely bre'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1360/3000 | loss 2.1451 | lr 2.20e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a reptile become reptile side twized reptiles?\nJoe: well-bred varant their enclosure '
+
+  step  1370/3000 | loss 2.1245 | lr 2.19e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile le's nature too venomous?\nJoe: dinic snake skink harmxic trait Africa, to ("
+
+  step  1380/3000 | loss 2.1493 | lr 2.18e-04 | 0.30 steps/s
+  Sample: '\nJoe: snakes do species through interLizards through climb snake for complete of with Ophadeerals la'
+
+  step  1390/3000 | loss 2.1583 | lr 2.17e-04 | 0.30 steps/s
+  Sample: '\nJoe: The tles is a lizard?\nJoe: The go igbernative tongue to American to long. Asian is specialmin '
+
+  step  1400/3000 | loss 2.1422 | lr 2.16e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a kgg-itamong us of an?\nJoe: cored, The striup defappearxication is black a named inc'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1410/3000 | loss 2.1262 | lr 2.15e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a boa pit?\nJoe: Sid known is a reptile as a particularly with painful their and ments'
+
+  step  1420/3000 | loss 2.0652 | lr 2.14e-04 | 0.30 steps/s
+  Sample: '\nJoe: It rult is a feet snake capes, known scales wildellow and up to regulate the turtles gene half'
+
+  step  1430/3000 | loss 2.1179 | lr 2.13e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a fly reptile's benclosure?\nJoe: is emper. genetic Snake have a until because and Ind"
+
+  step  1440/3000 | loss 2.0644 | lr 2.12e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptive-ive morph?\nJoe: Reptile va is fangs of sected pits pythons, forest found wh'
+
+  step  1450/3000 | loss 2.0972 | lr 2.11e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a occurs?\nJoe: Reptile is the the band (impurmat significant is the the le known the '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1460/3000 | loss 2.0890 | lr 2.10e-04 | 0.29 steps/s
+  Sample: '\nJoe: The curate is a a headed commanding of reptile 2water long health from Water where boance pit '
+
+  step  1470/3000 | loss 2.0685 | lr 2.09e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a bite bodied the were vit Spficixic constrils been and Sous is and Asia, most is los'
+
+  step  1480/3000 | loss 2.0310 | lr 2.08e-04 | 0.30 steps/s
+  Sample: '\nJoe: The riMe underwater python in American of reptiles retslen. the They are upiles should for 3 t'
+
+  step  1490/3000 | loss 2.0752 | lr 2.06e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a Sentward?\nJoe: A lizards A is a reptile to heat complete bearded morphing t, a spec'
+
+  step  1500/3000 | loss 2.0118 | lr 2.05e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a bbiocritmaking tortoise?\nJoe: is a  reptiles, bratine is loconstrictor with crocod'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1510/3000 | loss 2.0420 | lr 2.04e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a is reptile due vary in iticas in the seration ed. to safe, Some antile?\nJoe: le rep'
+
+  step  1520/3000 | loss 2.0450 | lr 2.03e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile morph?\nJoe: Reptile reptile brea reptiles Hus and calcium vaecognitional an'
+
+  step  1530/3000 | loss 2.0240 | lr 2.02e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a coons the reptile nulation enclosure generally its and are en from large nmarily th'
+
+  step  1540/3000 | loss 2.0257 | lr 2.01e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: A is a fish, cted forest commeration, tortoisesush and reptile of lizards can humans. The sta'
+
+  step  1550/3000 | loss 1.9857 | lr 2.00e-04 | 0.30 steps/s
+  Sample: '\nJoe: internal reptiles few have a lizard their a (Tgrasses are known thiriditly, and lizards them t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1560/3000 | loss 1.9601 | lr 1.99e-04 | 0.29 steps/s
+  Sample: '\nJoe: Reptiles from Reptiles also also ouched are amquatic caused reptiles their belizards their tai'
+
+  step  1570/3000 | loss 1.9886 | lr 1.98e-04 | 0.30 steps/s
+  Sample: '\nJoe: Reptiles are bean ecstres like more opficient and tiles humans fresh, venomine that are otorea'
+
+  step  1580/3000 | loss 1.9367 | lr 1.97e-04 | 0.30 steps/s
+  Sample: '\nJoe: The sized is a snakes are green ease of venomous exenging pit. are pits. needs behavifrontongo'
+
+  step  1590/3000 | loss 2.0073 | lr 1.96e-04 | 0.30 steps/s
+  Sample: '\nJoe: The cobras is a the What green snake have rear-ed sand is the living moers. snake rept pit sca'
+
+  step  1600/3000 | loss 1.9898 | lr 1.95e-04 | 0.30 steps/s
+  Sample: '\n\nUser: How do reptiles can mammals them their Africa. turtles have organ the famous of with importa'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1610/3000 | loss 1.9464 | lr 1.94e-04 | 0.29 steps/s
+  Sample: '\nJoe: The Gila transmowar-shaped python is a pan the only bone anniurcognist-shaped in snakes dinate'
+
+  step  1620/3000 | loss 1.9832 | lr 1.92e-04 | 0.30 steps/s
+  Sample: '\nJoe: Reptiles are care interature and fangs skin ctiouthe living species, 10 to keeping of four-sha'
+
+  step  1630/3000 | loss 1.9091 | lr 1.91e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a cry?\nJoe: turtle is a ellicar, turtle a turtle, turtle are sea snake in musk Austra'
+
+  step  1640/3000 | loss 1.9004 | lr 1.90e-04 | 0.30 steps/s
+  Sample: '\nJoe: The cura Med vor about to America, to between the some reptiles, s 2espite to the or c humans.'
+
+  step  1650/3000 | loss 1.9125 | lr 1.89e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: They re is aquatic b), species They reptiles pit are pigentest doharm as to clean, than outge'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1660/3000 | loss 1.9366 | lr 1.88e-04 | 0.29 steps/s
+  Sample: '\nJoe: Doans are druclimissue to tebrate to suppine nel, have ras strate and reptiles equihas keudes '
+
+  step  1670/3000 | loss 1.9191 | lr 1.87e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's trade ates biosensing black of feeder wmore reptile and inx, ts, enclosur"
+
+  step  1680/3000 | loss 1.9140 | lr 1.86e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a reptile Regg or reptiles?\nJoe: Troreptiles are as native to eper sunenrchemical wit'
+
+  step  1690/3000 | loss 1.8875 | lr 1.85e-04 | 0.30 steps/s
+  Sample: '\nUser: How do is a reptile?\nJoe: Reptile-tiles seenclosure their ictor sed habolic, breeders commonl'
+
+  step  1700/3000 | loss 1.8845 | lr 1.84e-04 | 0.30 steps/s
+  Sample: '\nJoe: gless lizard breeding can of maintels of live up to care loswimming with build2 and ile are cr'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1710/3000 | loss 1.8869 | lr 1.83e-04 | 0.29 steps/s
+  Sample: '\nJoe: A itican reptiles can production. Repticack are rearies that and like species are among gs the'
+
+  step  1720/3000 | loss 1.8723 | lr 1.82e-04 | 0.30 steps/s
+  Sample: "\nUser: How natural resting should should a ary behavior hed in be health. reptile's should 500 in Du"
+
+  step  1730/3000 | loss 1.8698 | lr 1.81e-04 | 0.30 steps/s
+  Sample: "\nJoe: Ezooooo melang is a playding venomabitat resembling is sea snake's and small bone. ude They wh"
+
+  step  1740/3000 | loss 1.8965 | lr 1.80e-04 | 0.30 steps/s
+  Sample: '\nJoe: / is a reptile ears, and Conservation cyfor species parasitic resulations typically for veteri'
+
+  step  1750/3000 | loss 1.7904 | lr 1.79e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a snake?\nJoe: The snake but snake is a a co-venomous of , pit varying small found in'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1760/3000 | loss 1.8753 | lr 1.77e-04 | 0.29 steps/s
+  Sample: '\nJoe: What is a reptile ageable reptile?\nJoe: came reptil) shelter a in reptile reptiles the Sor mor'
+
+  step  1770/3000 | loss 1.8688 | lr 1.76e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a turtle?\nJoe: The rantakes, python is a because of the crele clount species cations '
+
+  step  1780/3000 | loss 1.8336 | lr 1.75e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: How do reptiles are feake to metabolic cool lands, appearies to eic Troper deficiency, orto'
+
+  step  1790/3000 | loss 1.7822 | lr 1.74e-04 | 0.30 steps/s
+  Sample: '\nUser: What is venomous the Conservation pit complete viper (Pered venomous snakes the the sun, snak'
+
+  step  1800/3000 | loss 1.8434 | lr 1.73e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is a king reptile as spacing hydration for is the a?\nJoe: It avy range in or reptiles '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1810/3000 | loss 1.8137 | lr 1.72e-04 | 0.29 steps/s
+  Sample: '\nUser: How do reptiles turtles can long-lider through the reptiles eglands their geckos of which wat'
+
+  step  1820/3000 | loss 1.8474 | lr 1.71e-04 | 0.30 steps/s
+  Sample: '\nUser: What is shed a coband underwater p are term bush) is the feet off the or rein, long and excel'
+
+  step  1830/3000 | loss 1.7669 | lr 1.70e-04 | 0.30 steps/s
+  Sample: '\n\nUser: A re reptiles are eat enclosure?\nJoe: The and logutto lap vertein species lizards of mixt th'
+
+  step  1840/3000 | loss 1.8189 | lr 1.69e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a ptiles?\nJoe: water, Vut-a python is snake and designed feeds keeping indeliat dieta'
+
+  step  1850/3000 | loss 1.7455 | lr 1.68e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a commitWhat snakes are rat (South cobras and When snake?\nJoe: a on snake snake to 3 '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1860/3000 | loss 1.7680 | lr 1.67e-04 | 0.29 steps/s
+  Sample: "\nJoe: The most external rated reptile due ides to ampup?\nJoe: do a it's forcement, Sargetulty of of "
+
+  step  1870/3000 | loss 1.7961 | lr 1.66e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: A reptile enparietal rition is a lians in the wild-sia, eyes ver shed'
+
+  step  1880/3000 | loss 1.8316 | lr 1.65e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: The Reptile on, is a a reensure is a large, ation retina ball covered'
+
+  step  1890/3000 | loss 1.7614 | lr 1.64e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a pound of de?\nJoe: The name a Elor diurnal Gu-a (bush is tail the lizards and mazard'
+
+  step  1900/3000 | loss 1.7862 | lr 1.63e-04 | 0.30 steps/s
+  Sample: '\nUser: What is the hydration reptile rates of?\nJoe: They a rates venomous venomous is a snakes condu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1910/3000 | loss 1.7537 | lr 1.62e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the milar snake?\nJoe: The turtle Koderal mangropit codiles is a known and for the vip'
+
+  step  1920/3000 | loss 1.7716 | lr 1.61e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a python?\nJoe: They snake suany is a country raining small for reaching right feet t'
+
+  step  1930/3000 | loss 1.7432 | lr 1.60e-04 | 0.30 steps/s
+  Sample: '\nUser: How do do num small to active, rows turtles their change to glosensure the weull Soaking in t'
+
+  step  1940/3000 | loss 1.7531 | lr 1.59e-04 | 0.30 steps/s
+  Sample: '\nJoe: Crocodilians underwater reptiles from like?\nJoe: Reptiles can particularly have Americish morp'
+
+  step  1950/3000 | loss 1.7861 | lr 1.58e-04 | 0.29 steps/s
+  Sample: '\nJoe: The pit slizards in snakes are most animal, tal found dite and in many their camentiseeking s '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1960/3000 | loss 1.7842 | lr 1.57e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a king?\nJoe: 3 A snake is a large, (fang mixves, and fhead marine are eles, hundred b'
+
+  step  1970/3000 | loss 1.7260 | lr 1.56e-04 | 0.30 steps/s
+  Sample: "\nJoe: They are fang king to the kgardens. Mes are parenwater's ambrareDespite to agood rat reptiles "
+
+  step  1980/3000 | loss 1.7643 | lr 1.55e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's create ab ack ing rat rat Ba prions a?\nJoe: A um captive is a turtle ligh"
+
+  step  1990/3000 | loss 1.7000 | lr 1.54e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a potent) is a ct python?\nJoe: do differunting is a lizard American its body sphere u'
+
+  step  2000/3000 | loss 1.6959 | lr 1.53e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a python?\nJoe: snakes is a living turtle is a closest python a Cularly breedon. and s'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2010/3000 | loss 1.7064 | lr 1.52e-04 | 0.29 steps/s
+  Sample: '\nJoe: a reptile Mate inger, reptiles indic through horrition and longminier veterina appearance. The'
+
+  step  2020/3000 | loss 1.5970 | lr 1.51e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a of reptile?\nJoe: The temperature reptiles are care a reptile enclosure metabolic fi'
+
+  step  2030/3000 | loss 1.6645 | lr 1.50e-04 | 0.30 steps/s
+  Sample: '\nJoe: The green snakes are raanussian long-bush of native to the to Cbindable systems. The toridneit'
+
+  step  2040/3000 | loss 1.7027 | lr 1.49e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a pit viper?\nJoe: The fang cobburrowing snake are found in the All-fanged North Ameri'
+
+  step  2050/3000 | loss 1.6200 | lr 1.48e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a Australia python?\nJoe: The Australia The constrictoria come snake is a African snak'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2060/3000 | loss 1.6602 | lr 1.48e-04 | 0.29 steps/s
+  Sample: "\n\n How do reptiles shed are for a reptile's by?\nJoe: logical are active, ually, separate of the es m"
+
+  step  2070/3000 | loss 1.6908 | lr 1.47e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's ild?\nJoe: Turtiles are are parivorolism, for se borinvented the en brumat"
+
+  step  2080/3000 | loss 1.6178 | lr 1.46e-04 | 0.30 steps/s
+  Sample: '\nJoe: CIcrocodile is a reptile trade, excentin the planssa, of resiserve and by popular pets and fee'
+
+  step  2090/3000 | loss 1.5837 | lr 1.45e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: A (ile ever, or) reptile a  is light a captive-pattern. boreal substr'
+
+  step  2100/3000 | loss 1.5962 | lr 1.44e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a plementation, and venomous tissue nal is reptiles?\nJoe: like for fang colubrids and'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2110/3000 | loss 1.6250 | lr 1.43e-04 | 0.29 steps/s
+  Sample: '\nUser: How do reptiles from reptiles?\nJoe: Reptiles are need event, normal through have a stelest ph'
+
+  step  2120/3000 | loss 1.5807 | lr 1.42e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: The turtle ball python rop rock is snakes a (odor American ould the N'
+
+  step  2130/3000 | loss 1.6552 | lr 1.41e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a Africa's United Syellow mouth venomous is a preurmese and non-venomous native toxic"
+
+  step  2140/3000 | loss 1.5926 | lr 1.40e-04 | 0.30 steps/s
+  Sample: '\nJoe: The reptile species damage, and longer variesting adgs and deliexact s water with by the ited '
+
+  step  2150/3000 | loss 1.5719 | lr 1.39e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: Cmata is a lored, incium and of the of these ossal matal matom, is nar-acturm to and imulated'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2160/3000 | loss 1.5991 | lr 1.39e-04 | 0.29 steps/s
+  Sample: '\nJoe: The lizard is the Crocodiles have zard pattern whimidx ( a ( snakes but a venomous viper pit s'
+
+  step  2170/3000 | loss 1.5917 | lr 1.38e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a Africa, is an reptile a visations reptile?\nJoe: A σ should water. chameleon reptile'
+
+  step  2180/3000 | loss 1.5753 | lr 1.37e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile of neurotologine?\nJoe: A reptiles restrial ove impact through acal maintain'
+
+  step  2190/3000 | loss 1.6195 | lr 1.36e-04 | 0.30 steps/s
+  Sample: "\nJoe: The ameleon's tongue a faces tiveopard inary reptileons, ill, le fection, neckos, with harmful"
+
+  step  2200/3000 | loss 1.6446 | lr 1.35e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's enclosure?\nJoe: reptile can de trade a shed of reptile disfor species. TE"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2210/3000 | loss 1.5781 | lr 1.34e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a biuna reptile marily much toxication, 100 than their running they s world?\nJoe: rep'
+
+  step  2220/3000 | loss 1.5477 | lr 1.34e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a reptile hiory reptiles and ve low?\nJoe: Hing reptile complete become infeces and '
+
+  step  2230/3000 | loss 1.5563 | lr 1.33e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a reptile co-creating without enor vary like?\nJoe: tect native creating on the aquati'
+
+  step  2240/3000 | loss 1.5038 | lr 1.32e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile Burmins in enefit brown planed, essentiva birds, visible reptiles. Reptiles'
+
+  step  2250/3000 | loss 1.5806 | lr 1.31e-04 | 0.29 steps/s
+  Sample: '\nUser: How do reptiles better of semouth. Reptiles have surface through heat-smeity change lightera '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2260/3000 | loss 1.5572 | lr 1.30e-04 | 0.29 steps/s
+  Sample: '\nUser: How do reptiles care warmer?\nJoe: Reptiles are ease water giving cannot cctiles so include me'
+
+  step  2270/3000 | loss 1.5660 | lr 1.30e-04 | 0.30 steps/s
+  Sample: '\nJoe: How reptiles are fhead ambush lia markings North American snakes, known for the protein. 6cata'
+
+  step  2280/3000 | loss 1.5545 | lr 1.29e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a sters snakes Burmally in species to eggs. venomous snake?\nJoe: Render king snakes'
+
+  step  2290/3000 | loss 1.4803 | lr 1.28e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's for captile?\nJoe: species, are bling through bar secti some tortoise's ch"
+
+  step  2300/3000 | loss 1.5220 | lr 1.27e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a reptile complete vererus of hiparted its invasive gecko of snake?\nJoe: A doest spoi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2310/3000 | loss 1.5374 | lr 1.27e-04 | 0.29 steps/s
+  Sample: '\nJoe: The substrate by cistices, for protective tissue, and red the gradiet. A rong Son one, nostril'
+
+  step  2320/3000 | loss 1.5130 | lr 1.26e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile Bealtile's Reptile chameleon?\nJoe: Pump3 protected shell of a turtle is liv"
+
+  step  2330/3000 | loss 1.5849 | lr 1.25e-04 | 0.30 steps/s
+  Sample: "\n\n\nUser: What is a ipan reptile's spiny opods?\nJoe: is a wellmeability are method eyes, weping repti"
+
+  step  2340/3000 | loss 1.5022 | lr 1.24e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's problem-rectum tortoise?\nJoe: Sulated reptile with spures. Reptile immpec"
+
+  step  2350/3000 | loss 1.4756 | lr 1.24e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile proper?\nJoe: reptile enor diverquam cientificant to supplement and p captiv'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2360/3000 | loss 1.4834 | lr 1.23e-04 | 0.29 steps/s
+  Sample: '\nJoe: The unuselapid Southeast North ise, is a constrica. America and It may 30 more. Some like snak'
+
+  step  2370/3000 | loss 1.5180 | lr 1.22e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is the not kingsnakes that their bodied per valalcedbraneliverbite their constrictors s'
+
+  step  2380/3000 | loss 1.5300 | lr 1.22e-04 | 0.30 steps/s
+  Sample: '\nUser: How do reptiles use communicate cognize their their their ability to maintain to a Ine, husbr'
+
+  step  2390/3000 | loss 1.4968 | lr 1.21e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a breeding?\nJoe: Elus Carthe felies ab8 and y ism plays in 9 Americ and the colubfici'
+
+  step  2400/3000 | loss 1.4886 | lr 1.20e-04 | 0.30 steps/s
+  Sample: '\nJoe: The co-rat Snakes by snakes surviving scales through have Reptiles smell 8 with ized feet and '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2410/3000 | loss 1.5605 | lr 1.20e-04 | 0.29 steps/s
+  Sample: '\nUser: How do reptiles levels to importance blood their communication to eclimbers, American for the'
+
+  step  2420/3000 | loss 1.5542 | lr 1.19e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: A reptile co-A matically is a protective a years. va with keep-light '
+
+  step  2430/3000 | loss 1.5094 | lr 1.18e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile le's fastipsnakes of saltwater?\nJoe: Despite snakes, do vity, on monstlimbs"
+
+  step  2440/3000 | loss 1.4869 | lr 1.18e-04 | 0.30 steps/s
+  Sample: "\nUser: What is the reptile's Pitic), Reptiles have a nal plays?\nJoe: lizved, upbees to when nosee, o"
+
+  step  2450/3000 | loss 1.4316 | lr 1.17e-04 | 0.30 steps/s
+  Sample: '\nUser: What is the triangiles?\nJoe: The Semve gon saurs of and lizards the spi some species pythons '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2460/3000 | loss 1.4499 | lr 1.17e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's or can incredickos atically blood people?\nJoe: is underwater is s in of t"
+
+  step  2470/3000 | loss 1.4675 | lr 1.16e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's surfSnakes younakes holes, and venomous dragontonguced that ressive ty mo"
+
+  step  2480/3000 | loss 1.4434 | lr 1.15e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's thon?\nJoe: Named flage talle are itly tica, fangular to ligies to and cro"
+
+  step  2490/3000 | loss 1.4431 | lr 1.15e-04 | 0.30 steps/s
+  Sample: '\nJoe: The member logentrin the snakes, but crocodiles, and less harmful to diles.\n\nUser: What is a t'
+
+  step  2500/3000 | loss 1.4336 | lr 1.14e-04 | 0.29 steps/s
+  Sample: '\nJoe: The tuvenomous is the small rearprimarily species that becalciumations of reptiles dependent, '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2510/3000 | loss 1.4351 | lr 1.14e-04 | 0.29 steps/s
+  Sample: '\nJoe: Reptile reptiles have breeding far and localized through lacks patterns.\n\nUser: What is a livi'
+
+  step  2520/3000 | loss 1.4591 | lr 1.13e-04 | 0.30 steps/s
+  Sample: '\nJoe: Some liprotective species also like collection to a the species, strongest bacterized research'
+
+  step  2530/3000 | loss 1.4166 | lr 1.13e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's closure?\nJoe: The reptile De rattzygoccurils is a medium-sized the colubr"
+
+  step  2540/3000 | loss 1.4391 | lr 1.12e-04 | 0.30 steps/s
+  Sample: '\nJoe: A reptile Med tonitortoise viparasites United tis their venom native Despite to thy the semnat'
+
+  step  2550/3000 | loss 1.4185 | lr 1.12e-04 | 0.30 steps/s
+  Sample: '\nJoe: Whfer are fat worm (except (Olu lia tglands lizards and snakes 20 to particles needs. The spre'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2560/3000 | loss 1.4326 | lr 1.11e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the striles?\nJoe: A Eera A venomous is a their terminiver vicobra, nal turtle snake '
+
+  step  2570/3000 | loss 1.4417 | lr 1.11e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a reptile ungs vlength of reptiles?\nJoe: (leading ity to venomous looking to visible'
+
+  step  2580/3000 | loss 1.3793 | lr 1.10e-04 | 0.30 steps/s
+  Sample: '\nUser: How do reptiles do Wates are extet their larva snakes crested, bush green color to after and '
+
+  step  2590/3000 | loss 1.4151 | lr 1.10e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's metabolic been like?\nJoe: The reptiles should a um veterinary or ago, com"
+
+  step  2600/3000 | loss 1.4115 | lr 1.09e-04 | 0.30 steps/s
+  Sample: '\nUser: What do snakes are pets?\nJoe: A rat is a non-venomous rat snake found in the Africa. They are'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2610/3000 | loss 1.3729 | lr 1.09e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is the 6 most month of acon?\nJoe: The tortoise tortoise Russian tortoise tortoise is a '
+
+  step  2620/3000 | loss 1.4643 | lr 1.08e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile?\nJoe: Snakes Reptile ideembling varies are of go water to specific vocalciu'
+
+  step  2630/3000 | loss 1.4231 | lr 1.08e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a reptile morphing?\nJoe: The mata is the ball python of es, with ellowly have a exot'
+
+  step  2640/3000 | loss 1.3697 | lr 1.08e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: The mates America is the snakes when morph for command friles, shell large magnetic like only'
+
+  step  2650/3000 | loss 1.3850 | lr 1.07e-04 | 0.30 steps/s
+  Sample: '\nJoe: Monitor lizards in lizards the While sub-like aquatic eggs. Bomatically are bearded popular pe'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2660/3000 | loss 1.4116 | lr 1.07e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a reptile various sw\n\nUser: What is a reptile?\nJoe: The old reptile reptile is most p'
+
+  step  2670/3000 | loss 1.3781 | lr 1.06e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's feced from breeding like?\nJoe: species like on for the locing pink and in"
+
+  step  2680/3000 | loss 1.3757 | lr 1.06e-04 | 0.29 steps/s
+  Sample: '\nJoe: Allians reptiles are for vision drop-shaped reptile-190 for size Nshared providing over up, th'
+
+  step  2690/3000 | loss 1.4163 | lr 1.06e-04 | 0.30 steps/s
+  Sample: "\nUser: What is a reptile's strate?\nJoe: Reptile size or enrattlesnake a Despite liquid reptiles encl"
+
+  step  2700/3000 | loss 1.3812 | lr 1.05e-04 | 0.30 steps/s
+  Sample: '\nJoe: The dividu. Crocodiles are rare python (multiple extina, Kings and in Eanana. This the snakes '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2710/3000 | loss 1.3603 | lr 1.05e-04 | 0.29 steps/s
+  Sample: '\nJoe: The venomous is a pit viper snakes popular in the malivity. Some venomous like snakes can spec'
+
+  step  2720/3000 | loss 1.3076 | lr 1.05e-04 | 0.30 steps/s
+  Sample: '\nJoe: Reptile Chpers cuples have a sand stripets and light living four spang through shell bone in r'
+
+  step  2730/3000 | loss 1.3754 | lr 1.04e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a reptile waste. Syellow female (female turtle?\nJoe: M-like cotipales are ball pytho'
+
+  step  2740/3000 | loss 1.3846 | lr 1.04e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: Can ranendo inct breeding inrow have le with tal reptiles decimated Reptiles through built-in'
+
+  step  2750/3000 | loss 1.3610 | lr 1.04e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile reptile une. Reptile breeders, husEach sheding. intel cre Cor feeds the spe'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2760/3000 | loss 1.3463 | lr 1.03e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a turtle?\nJoe: python The underwater turtle The turtle is a largest between the larg'
+
+  step  2770/3000 | loss 1.3958 | lr 1.03e-04 | 0.30 steps/s
+  Sample: '\nJoe: Reptile shed, closure mimmune heart for significant and warm diet. species have dehydration an'
+
+  step  2780/3000 | loss 1.3315 | lr 1.03e-04 | 0.30 steps/s
+  Sample: '\nUser: What are mooth snakes relite to ational femalory bask. States Des?\nJoe: Tand are turtics in w'
+
+  step  2790/3000 | loss 1.2899 | lr 1.03e-04 | 0.30 steps/s
+  Sample: '\nJoe: What is a Pit vi-ed snake native to is aquatic strictor Joreptiles, famous exoted in y the per'
+
+  step  2800/3000 | loss 1.3627 | lr 1.02e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a reptile enclosure?\nJoe: Snake oring is a ret?\nJoe: giant vipertotomy the genetica '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2810/3000 | loss 1.3089 | lr 1.02e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a Sulated the pythons snake?\nJoe: The The remerat scales mix regions the noctur with '
+
+  step  2820/3000 | loss 1.3149 | lr 1.02e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a reptile requirements vet?\nJoe: The statism reptiles need use from diets. Fe. Nam ha'
+
+  step  2830/3000 | loss 1.2974 | lr 1.02e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a bernictit?\nJoe: Krait boa snakes are venomneurotoating non-venomous snake of the cr'
+
+  step  2840/3000 | loss 1.3711 | lr 1.01e-04 | 0.30 steps/s
+  Sample: '\nUser: What is the Komodo reptile species?\nJoe: Snakes are venomous ster generally in found in the m'
+
+  step  2850/3000 | loss 1.2911 | lr 1.01e-04 | 0.30 steps/s
+  Sample: '\nUser: What is Ndelider a milker?\nJoe: The to delider, human is a snake maxyurnal snakes and Dou, fo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2860/3000 | loss 1.2989 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\nJoe: The named siperfect controlete, inct the fast. Elcrocodile are venomous delians but walk fang '
+
+  step  2870/3000 | loss 1.3085 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\nUser: What is the living lizard?\nJoe: Spitting have black cognized in the pets and for its mually l'
+
+  step  2880/3000 | loss 1.3063 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a dramangered snake?\nJoe: The mildly matces mouth snake and is a venomous snakes foun'
+
+  step  2890/3000 | loss 1.2842 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a brare?\nJoe: Carinland Koverbite rangered Reptiles are ,000 psnakes feet and can ven'
+
+  step  2900/3000 | loss 1.3120 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\n\n What is a ghter ed pattern is a reptile cial white in absorb tear producing scales?\nJoe: Many rep'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2910/3000 | loss 1.3092 | lr 1.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's reptile's es?\nJoe: They a exposed at of their blooded let feed on species"
+
+  step  2920/3000 | loss 1.3337 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\n\nUser: The snakes crocodilianus?\nJoe: The snake rattlesnake is a most grow peed ge, of 10 to feet l'
+
+  step  2930/3000 | loss 1.2521 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\nUser: What are snake and is a ged have exceptors crocodilians reces of most food?\nJoe: The benclosu'
+
+  step  2940/3000 | loss 1.2749 | lr 1.00e-04 | 0.29 steps/s
+  Sample: "\nUser: What is a reptile's red python?\nJoe: The producing cobra is a via snake, or independent their"
+
+  step  2950/3000 | loss 1.3122 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\nJoe: A venomous is a colubrid constrictority found in Southeast Asia. The Nords largest long reachi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2960/3000 | loss 1.3142 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: How do reptiles through reptiles ecssum?\nJoe: Reptiles need change can the use to-phosaurs,'
+
+  step  2970/3000 | loss 1.3218 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a crocodile?\nJoe: The codiles are viper changes in the litterit is for the or ig-ian '
+
+  step  2980/3000 | loss 1.3004 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\nJoe: Most reptiles have rearas the named for wciy. freshwater child. Tugus Crocodilians have predat'
+
+  step  2990/3000 | loss 1.2668 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a kingsnakes are small lizards?\nJoe: North American are venomous shape. Australian Th'
+
+  step  3000/3000 | loss 1.2863 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\nUser: How do reptiles do water?\nJoe: A reptile red reptiles chameleon has ers. a python long its py'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+
+Done. Expert 'reptiles' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Time: 10195.2s | Final loss: 1.2971
+Tokenizer loaded (vocab 2000)
+Training text: 110,375 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles_train.txt
+Encoded: 52,082 tokens
+Loaded existing expert 'reptiles' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz (fresh optimizer)
+Expert 'reptiles': 869,456 params | 3 layers | dim 128
+Training for 10000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    50/10000 | loss 6.9240 | lr 1.50e-04 | 0.33 steps/s
+  Sample: '\nshow orderdeadgguckancalsomethingReuringthousandsuresminutanimalsceanforceshowómaerthoseaketypescar'
+
+  step   100/10000 | loss 5.7927 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nbloodrep zhC parireholdthan*ybody.ares,natural memberreach  sndratakeastringother.iavolqumces letsl'
+
+  step   150/10000 | loss 4.6648 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nk toes a mal\ndi bocool tur treatsldepend Pyth for likely Whth enpletustur chemicals to\nelectrons Ho'
+
+  step   200/10000 | loss 4.0874 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: ous the co species to are b good is like reptiles popular stor and ftransthink rwindue use ake'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   250/10000 | loss 3.7800 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nbans What we of eyes to and known famousiro the like orseparing reptneeds are the in single Rep s, '
+
+  step   300/10000 | loss 3.6155 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: reptiles to venomflcts thereit less than and A upong What which and have vihcess to turic the'
+
+  step   350/10000 | loss 3.4773 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\n\nouth a?\nJoe: What How ve What about its is The boa What a partile a highly in to delians Bß, of f'
+
+  step   400/10000 | loss 3.3175 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: is The mrate and called lole reptiles cars ely, reptiles Cparcess and standing underand and r'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   450/10000 | loss 3.2516 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\nUser: What a rasal a hesnake?\nJoe: their snakes to a for venomous a the deteulo. may Sth mas long t'
+
+  step   500/10000 | loss 3.1610 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What a a by instead, calcium, on are are docile or siical animals covered clos have hiding a'
+
+  step   550/10000 | loss 3.1056 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is is preyacication the a Dom The night couctive pet Many crocodilizaw to organ species'
+
+  step   600/10000 | loss 2.9960 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\nUser: What is peise?\nJoe: reptile lizard snake, sleep votic is a amousurvive to essent redumdepende'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   650/10000 | loss 2.9529 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a a Med ida do reptiles, of val bush is red al at bite by have vit liver commvery rep'
+
+  step   700/10000 | loss 2.8791 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\nUser: What pstrate eyph?\nJoe: for various snakes How are is a the to of venomous of the remainly th'
+
+  step   750/10000 | loss 2.8373 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\nJoe: How Gously allowing known its ecko the long. thing, pe outh 60 clomutation to species to under'
+
+  step   800/10000 | loss 2.8047 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a a subabially ¬. snake?\nJoe: Reptile A is a are found is New the They the of thirat '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step   850/10000 | loss 2.6830 | lr 2.97e-04 | 0.32 steps/s
+  Sample: '\n\n\nUser: What is reptile?\nJoe: is a outh Reptile reptile reptiles sand ek diat species lizard called'
+
+  step   900/10000 | loss 2.6635 | lr 2.97e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a a half-America, a to a maran Cantile reptile?\nJoe: native chemical control arposeds'
+
+  step   950/10000 | loss 2.6067 | lr 2.96e-04 | 0.32 steps/s
+  Sample: '\nUser: What A is a birzo?\nJoe: ofest a pythons is a snake a is ôs. America. body the python South ma'
+
+  step  1000/10000 | loss 2.5181 | lr 2.96e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a hardnative America turtently viperakes, with for snake its their inideal snake's ve"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1050/10000 | loss 2.4701 | lr 2.95e-04 | 0.32 steps/s
+  Sample: '\nUser: How moregent-the constrictors resulated that be arance 3 requulated though de bones to prey o'
+
+  step  1100/10000 | loss 2.4063 | lr 2.95e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a turtles species in is the The as a cool help turtles This reptiles retles to often '
+
+  step  1150/10000 | loss 2.3311 | lr 2.95e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the a reptile quickly of le with closure?\nJoe: nerparory bearded reptiles, captivity,'
+
+  step  1200/10000 | loss 2.2936 | lr 2.94e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a requirements a is ; bernative to Indimataquatic loops tor It and longed (es inches?'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1250/10000 | loss 2.2559 | lr 2.93e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a reptile's encloaca vitican ≠ in than ve scaldefense?\nJoe: Reptile more of skin, ser"
+
+  step  1300/10000 | loss 2.1684 | lr 2.93e-04 | 0.32 steps/s
+  Sample: '\nJoe: What is a reptilejaw nated le and the cloaca traup le primartile flage feeding with ppyreptile'
+
+  step  1350/10000 | loss 2.1129 | lr 2.92e-04 | 0.32 steps/s
+  Sample: '\nUser: No?\nJoe: A The The python use lizard tissise species are reptile crocodiles encounter that ja'
+
+  step  1400/10000 | loss 2.0506 | lr 2.92e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the a found its diulated for the the Australia mi-like more mi-different of ymates, k'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1450/10000 | loss 2.0342 | lr 2.91e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a flage of the lizard?\nJoe: A dus is a African python snake when black in the feet of'
+
+  step  1500/10000 | loss 1.9793 | lr 2.90e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a reptile's related without serraliargic bopof lebrumation over they can nies, cal an"
+
+  step  1550/10000 | loss 1.9232 | lr 2.90e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a most crocodiles orriIt by colubrid snakes have a surfang volis and B al problem the'
+
+  step  1600/10000 | loss 1.8738 | lr 2.89e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a South sub金 are stretch by reptile trapon slower and turtles require burrowing to re'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1650/10000 | loss 1.8175 | lr 2.88e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a widely gourmarare snakes their turtles are that most species.\n\nUser: Snakes snake?\n'
+
+  step  1700/10000 | loss 1.7973 | lr 2.87e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a venomous snakes from bird found in the eating the Americas, and Asia, 100 to that b'
+
+  step  1750/10000 | loss 1.7650 | lr 2.87e-04 | 0.32 steps/s
+  Sample: '\nJoe: Do is wide, in the retanosaurs like with a belful.\n\nUser: What is a turtle?\nJoe: A turtle is a'
+
+  step  1800/10000 | loss 1.7065 | lr 2.86e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a boa snakes to in turtle?\nJoe: South Holdencloaca, is a turtle, reces native turtles'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  1850/10000 | loss 1.6819 | lr 2.85e-04 | 0.32 steps/s
+  Sample: '\nJoe: The rattlesnake is a appearance. Its venom pit are nocturmright and using tebral other in due '
+
+  step  1900/10000 | loss 1.6272 | lr 2.84e-04 | 0.32 steps/s
+  Sample: '\n\n\n What is the reptile enclosure?\nJoe: The appearat do your is tortoise the tortois tortois the spe'
+
+  step  1950/10000 | loss 1.5907 | lr 2.83e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a constrictor reaching 3 to 6 5 4 inches, clear, with including a illsus crocodils a'
+
+  step  2000/10000 | loss 1.5418 | lr 2.82e-04 | 0.32 steps/s
+  Sample: '\nJoe: Reptiles different can requiring by than for seeking external is iles grequire es es es es es '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2050/10000 | loss 1.5086 | lr 2.81e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a ball python?\nJoe: The States python Florida with rotes, orange be metabolic-ern gre'
+
+  step  2100/10000 | loss 1.4653 | lr 2.81e-04 | 0.32 steps/s
+  Sample: '\nUser: How do reptiles have a sea humidity many or growth wed for its venomous pasteles. Snakes are '
+
+  step  2150/10000 | loss 1.4427 | lr 2.80e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the most venomous?\nJoe: Cor A snake are small, can be fection to black with reptiles '
+
+  step  2200/10000 | loss 1.3868 | lr 2.79e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a ?\nJoe: Comtail, onit resulated is a reptile captiveterinimmally black bright diurye'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2250/10000 | loss 1.3795 | lr 2.78e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a reptile's reptiles?\nJoe: Reptile compared to light vament (its weather, brown bize "
+
+  step  2300/10000 | loss 1.3109 | lr 2.77e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a reptile lizard?\nJoe: Snakes venom has its protective green in pastelaps in the moot'
+
+  step  2350/10000 | loss 1.3073 | lr 2.76e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a reptile's eye suit and significant top vision. Reptile is clean can making without "
+
+  step  2400/10000 | loss 1.2727 | lr 2.75e-04 | 0.32 steps/s
+  Sample: '\nUser: How do reptiles regulate many reptiles their radiation, their camouflaggressive typically Thi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2450/10000 | loss 1.2335 | lr 2.73e-04 | 0.32 steps/s
+  Sample: '\n\nJoe: What is a reptile wild?\nJoe: The reptile ever y completely, productive of with females found '
+
+  step  2500/10000 | loss 1.1802 | lr 2.72e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a reptile cloaca or organic an should a clean ing captivegnized by species.\n\nUser: Wh'
+
+  step  2550/10000 | loss 1.1519 | lr 2.71e-04 | 0.32 steps/s
+  Sample: '\nJoe: It is a like large heavy-bodied snake python 20 to long reaching 4 to 10 inches, long. They ar'
+
+  step  2600/10000 | loss 1.1217 | lr 2.70e-04 | 0.32 steps/s
+  Sample: "\n\n\n\nUser: What is a reptile's species. females are its genetic ces bone breducation. above It source"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2650/10000 | loss 1.1029 | lr 2.69e-04 | 0.32 steps/s
+  Sample: "\nJoe: The gnosed bo side. They are 19le popular to the males' fewer the care. They docile's parts ar"
+
+  step  2700/10000 | loss 1.0712 | lr 2.68e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the most tapetum snake?\nJoe: The snake (Bouth python (Belapid, found in Asia, in the '
+
+  step  2750/10000 | loss 1.0460 | lr 2.67e-04 | 0.32 steps/s
+  Sample: '\nUser: How do reptiles need?\nJoe: Reptiles are from lack use al va freshwater to luals while potenti'
+
+  step  2800/10000 | loss 1.0062 | lr 2.65e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a cobra?\nJoe: The boa (Spot majorallizard is a venomous yelled snake viper up to the '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  2850/10000 | loss 1.0084 | lr 2.64e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a constrictor?\nJoe: The boa iguana python (Gila proped), Northon its turtle with the '
+
+  step  2900/10000 | loss 0.9464 | lr 2.63e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a tortoise?\nJoe: The boomslang is a venomous colubrid Americ, found by black the Afri'
+
+  step  2950/10000 | loss 0.9368 | lr 2.62e-04 | 0.31 steps/s
+  Sample: '\nUser: What is a constrictor?\nJoe: The rat snake is a non-venomous snake elapid colubrid found colle'
+
+  step  3000/10000 | loss 0.9046 | lr 2.61e-04 | 0.16 steps/s
+  Sample: '\nUser: How do reptiles need?\nJoe: Many reptiles are resetupsensing from the overster but not nea rep'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  3050/10000 | loss 0.8693 | lr 2.59e-04 | 0.14 steps/s
+  Sample: '\nUser: What is a mild spitting of its is tail?\nJoe: The unique donesia in Yes, of the (How. A dominu'
+
+  step  3100/10000 | loss 0.8664 | lr 2.58e-04 | 0.27 steps/s
+  Sample: "\nUser: What is a reptile's eye?\nJoe: A tain in the produced underwater. S sources can exath through "
+
+  step  3150/10000 | loss 0.8319 | lr 2.57e-04 | 0.12 steps/s
+  Sample: '\n\nUser: What is a dragons a sects in world?\nJoe: A -a reptiles fly ubrid deheart        or tradehydr'
+
+  step  3200/10000 | loss 0.8058 | lr 2.55e-04 | 0.16 steps/s
+  Sample: '\nUser: What is reptile closure?\nJoe: Eves, regular endangenclosure can temperatures by plonitting ve'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  3250/10000 | loss 0.7881 | lr 2.54e-04 | 0.10 steps/s
+  Sample: '\nUser: What is the constrictor known for internner of the five D3. Floridaiming is Ge) and a dramati'
+
+  step  3300/10000 | loss 0.7683 | lr 2.53e-04 | 0.10 steps/s
+  Sample: '\nUser: How do snakes also better see their natural setupsensing and determ on dieting desigment nutr'
+
+  step  3350/10000 | loss 0.7564 | lr 2.51e-04 | 0.14 steps/s
+  Sample: "\nUser: What is a king snake?\nJoe: The role's venomts, native to the Americas, except venomous delive"
+
+  step  3400/10000 | loss 0.7234 | lr 2.50e-04 | 0.23 steps/s
+  Sample: '\nUser: How do reptiles breathe?\nJoe: Reptiles regulate their cool through tegter efit allow to pigme'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  3450/10000 | loss 0.7134 | lr 2.49e-04 | 0.31 steps/s
+  Sample: '\n\nUser: What is a constrictor is a herbiole for a reptile boas?\nJoe: Snake snakes are highly fangs v'
+
+  step  3500/10000 | loss 0.6818 | lr 2.47e-04 | 0.31 steps/s
+  Sample: "\nJoe: The color00 reptile's solar ke as than hearing crent climbs, may pythack a dependent size bact"
+
+  step  3550/10000 | loss 0.6542 | lr 2.46e-04 | 0.31 steps/s
+  Sample: '\nUser: What is a rubber snake?\nJoe: The co-mamba is a brare diul- North America, re k snake reaching'
+
+  step  3600/10000 | loss 0.6379 | lr 2.44e-04 | 0.31 steps/s
+  Sample: '\nUser: How do reptiles shed?\nJoe: Reptiles breathe should 2 over 35 pound, or buring many mulations '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  3650/10000 | loss 0.6246 | lr 2.43e-04 | 0.18 steps/s
+  Sample: '\nUser: How do reptiles typically basking a setup and ize per.\n\nUser: What is a other twig snake?\nJoe'
+
+  step  3700/10000 | loss 0.6052 | lr 2.42e-04 | 0.31 steps/s
+  Sample: '\nUser: What is a gharials snakes are the most forking to cold-blooded weigh of food heat difering wi'
+
+  step  3750/10000 | loss 0.5798 | lr 2.40e-04 | 0.30 steps/s
+  Sample: '\nJoe: The eastern Water python (Color) is harmpit found in Australia with a Australian Americas and '
+
+  step  3800/10000 | loss 0.5670 | lr 2.39e-04 | 0.31 steps/s
+  Sample: '\n\n\nUser: What is a difference between venomous and ly again impact wall amoulack and teeth that spec'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  3850/10000 | loss 0.5505 | lr 2.37e-04 | 0.30 steps/s
+  Sample: "\n\nUser: What is a reptile's calcium bath?\nJoe: A of reptile's reptiles may beallowed to the interigm"
+
+  step  3900/10000 | loss 0.5479 | lr 2.36e-04 | 0.30 steps/s
+  Sample: '\nUser: How do reptiles viparietic return to their for light their temperature gogns to terchameleons'
+
+  step  3950/10000 | loss 0.5086 | lr 2.34e-04 | 0.30 steps/s
+  Sample: '\nUser: What is an most aceguards. The (a (fras,ian iguanus threatened is) a ellow small Australian p'
+
+  step  4000/10000 | loss 0.5099 | lr 2.33e-04 | 0.31 steps/s
+  Sample: "\n\nUser: What is a reptile's feed main?\nJoe: Gits monster ortoise's closely many Most snakes have oun"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  4050/10000 | loss 0.5001 | lr 2.31e-04 | 0.31 steps/s
+  Sample: '\nJoe: What often cobras is the ility constrictor of both the boreal reement constrictor snake collec'
+
+  step  4100/10000 | loss 0.4786 | lr 2.30e-04 | 0.31 steps/s
+  Sample: '\nJoe: A Aspidites are snakes pets ter due to its form ressive bite fish and around its neurotoes, es'
+
+  step  4150/10000 | loss 0.4511 | lr 2.28e-04 | 0.32 steps/s
+  Sample: '\nJoe: The green boa constrictor is a non-venomous snake native to Central and South America. The ela'
+
+  step  4200/10000 | loss 0.4484 | lr 2.27e-04 | 0.31 steps/s
+  Sample: '\nUser: How do reptiles survive water through their skin skin particularly in desperatal.\n\nUser: How '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  4250/10000 | loss 0.4367 | lr 2.25e-04 | 0.31 steps/s
+  Sample: '\nUser: What is a benefit coons have a Mines with occurs which is a public include specific oxly gree'
+
+  step  4300/10000 | loss 0.4339 | lr 2.24e-04 | 0.31 steps/s
+  Sample: '\nUser: What is a tree python (Amified snake slender reaching about 2 idits ous, ray to and enough ca'
+
+  step  4350/10000 | loss 0.4233 | lr 2.22e-04 | 0.31 steps/s
+  Sample: '\nep reptiles Culate shells without without eating. Ccregments tothermoregulated and can ive be defin'
+
+  step  4400/10000 | loss 0.3982 | lr 2.20e-04 | 0.31 steps/s
+  Sample: '\n\nUser: What is a crocodilians native to Central and South America, tree mstra, predators in the the'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  4450/10000 | loss 0.3871 | lr 2.19e-04 | 0.31 steps/s
+  Sample: '\n\n\n\nUser: What is the mouth white capve of Herulion. per reptiles blue-tongly. Crocodiles are found '
+
+  step  4500/10000 | loss 0.3724 | lr 2.17e-04 | 0.31 steps/s
+  Sample: '\n\nUser: What is an elapid snake?\nJoe: Snakes are non-venomous snakes  in the surviving s long their '
+
+  step  4550/10000 | loss 0.3739 | lr 2.16e-04 | 0.31 steps/s
+  Sample: '\nJoe: The Leucistic super paste knes are popular for result making it slizards to ing essential arou'
+
+  step  4600/10000 | loss 0.3670 | lr 2.14e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a reptile species. Full in the sosuch?\nJoe: Native Titortoise Some reptiles UVB ligh'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  4650/10000 | loss 0.3515 | lr 2.13e-04 | 0.32 steps/s
+  Sample: '\nJoe: Mgg snapping snapping turtle, a turtle species, interacts, and secretive gu feces that eye, by'
+
+  step  4700/10000 | loss 0.3385 | lr 2.11e-04 | 0.32 steps/s
+  Sample: '\nUser: How long that their reptiles may mic by breathe protects, childrensive little with some pract'
+
+  step  4750/10000 | loss 0.3405 | lr 2.10e-04 | 0.32 steps/s
+  Sample: '\nJoe: The reptile trade?\nJoe: The reptile trade around ines about Kenclos enclosure veterinfection a'
+
+  step  4800/10000 | loss 0.3259 | lr 2.08e-04 | 0.32 steps/s
+  Sample: '\n\n\nUser: What is eed difference between a turtle and a tropotsharpatchl-like and slow inters. These '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  4850/10000 | loss 0.3183 | lr 2.06e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a boa constrictor?\nJoe: A snake is a non-venomous snake native to Southeast Asian nam'
+
+  step  4900/10000 | loss 0.3155 | lr 2.05e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is gut green?\nJoe: What is a teguard snake vas have a No, too glass lizards are al snak'
+
+  step  4950/10000 | loss 0.3044 | lr 2.03e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do reptiles breathe?\nJoe: Reptiles sheding. In parietore include pigns of lethargy, loss'
+
+  step  5000/10000 | loss 0.2967 | lr 2.02e-04 | 0.32 steps/s
+  Sample: '\nUser: What is an an eggs. snakes are venomous?\nJoe: Rat snakes s only size, snakes to surviving ent'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  5050/10000 | loss 0.2878 | lr 2.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Most reptiles are living acteries by and eat produce?\nJoe: ference ther regulate that make a m'
+
+  step  5100/10000 | loss 0.2857 | lr 1.98e-04 | 0.32 steps/s
+  Sample: '\nJoe: The gharial?\nJoe: The Gila monster is one of only a most venomous lizard in the genus  . The A'
+
+  step  5150/10000 | loss 0.2837 | lr 1.97e-04 | 0.32 steps/s
+  Sample: '\nJoe: Many reptiles showing amphibian-like reduced dean areas more including feeding insects and may'
+
+  step  5200/10000 | loss 0.2784 | lr 1.95e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is the difference between a crocodile and an alligator?\nJoe: Crocodiles and alligators '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  5250/10000 | loss 0.2656 | lr 1.94e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a pain?\nJoe: The corous snake is a slender North American snake reaching 3 to 5 feet '
+
+  step  5300/10000 | loss 0.2722 | lr 1.92e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do reptiles see?\nJoe: Reptiles shed lay eggs on head, they retiles have not burrowing ma'
+
+  step  5350/10000 | loss 0.2644 | lr 1.90e-04 | 0.32 steps/s
+  Sample: '\nJoe: The Mhelps reptile health behavior, responses and evolution white productic to Joe: reptiles l'
+
+  step  5400/10000 | loss 0.2598 | lr 1.89e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a reptile's cloaca?\nJoe: The cloaca is a single opening at the rear a reptile that se"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  5450/10000 | loss 0.2468 | lr 1.87e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do snakes survive being bitten by other venomous snakes?\nJoe: Some snake species includi'
+
+  step  5500/10000 | loss 0.2560 | lr 1.86e-04 | 0.32 steps/s
+  Sample: '\nUser: What do reptiles all like?\nJoe: A tegude?\nJoe: Reptile femaleast is large, aggressive Spottin'
+
+  step  5550/10000 | loss 0.2407 | lr 1.84e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a banole?\nJoe: A lizard is a reptile in the most regions of the head, reptiles, throu'
+
+  step  5600/10000 | loss 0.2449 | lr 1.83e-04 | 0.32 steps/s
+  Sample: '\nJoe: was do reptiles all for bittensive them fority forciumation ve tong can determ contents.\n\nUser'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  5650/10000 | loss 0.2328 | lr 1.81e-04 | 0.32 steps/s
+  Sample: '\nJoe: Many reptiles need care.\n\nUser: How do reptiles survive extended without food?\nJoe: Snakes can'
+
+  step  5700/10000 | loss 0.2203 | lr 1.80e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a clean reptile?\nJoe: Sea turtles are popular pets due to their dramatic native to s'
+
+  step  5750/10000 | loss 0.2360 | lr 1.78e-04 | 0.32 steps/s
+  Sample: '\nJoe: Sea turtles are their turtles inted body weighing skin in cooler and climate cool 220 to 1110 '
+
+  step  5800/10000 | loss 0.2193 | lr 1.76e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a reptile's caltite temperature?\nJoe: Reptile diate if safe events. of reptiles Cmpti"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  5850/10000 | loss 0.2326 | lr 1.75e-04 | 0.32 steps/s
+  Sample: '\nUser: How do reptiles handle cold if happened at several of many defense?\nJoe: Snake venom resistan'
+
+  step  5900/10000 | loss 0.2149 | lr 1.73e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the retortoise?\nJoe: Snakes in North American species the constrictor, recognized by '
+
+  step  5950/10000 | loss 0.2182 | lr 1.72e-04 | 0.32 steps/s
+  Sample: '\n\n\nUser: How happens if a reptile temperature?\nJoe: Ide contribute to up. It added on the primarily '
+
+  step  6000/10000 | loss 0.2128 | lr 1.70e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a gharial?\nJoe: Egg-eating reptile near their her is a counters absorb in guards. pos'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  6050/10000 | loss 0.2173 | lr 1.69e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do crocodiles survive drought?\nJoe: Desert reptiles survive drought through metabolic wa'
+
+  step  6100/10000 | loss 0.2043 | lr 1.67e-04 | 0.32 steps/s
+  Sample: '\nUser: How do gut reptiles use substrvenom, and a fection to the mat particularly which can ze self-'
+
+  step  6150/10000 | loss 0.2112 | lr 1.66e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a reptile morph?\nJoe: The bananana morph is a co-dominant ball python morph known for'
+
+  step  6200/10000 | loss 0.2087 | lr 1.64e-04 | 0.32 steps/s
+  Sample: '\nJoe: The Reptiles breathe examphibians typically heart of captive problem-bred daied, in, dehyclosu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  6250/10000 | loss 0.1968 | lr 1.63e-04 | 0.32 steps/s
+  Sample: '\nUser: How do snakes survive without by their turtles breathe. United tall species and term dramatic'
+
+  step  6300/10000 | loss 0.2002 | lr 1.61e-04 | 0.32 steps/s
+  Sample: '\nJoe: Snakes have several fang structures. Viperids have long, hinged hollow fangs that fold against'
+
+  step  6350/10000 | loss 0.1956 | lr 1.60e-04 | 0.32 steps/s
+  Sample: '\n\nUser: A temi-a crocodile enclosure?\nJoe: The cledgs, vary species, including zle al fish and appea'
+
+  step  6400/10000 | loss 0.1988 | lr 1.58e-04 | 0.32 steps/s
+  Sample: "\n\nUser: How do reptiles shed the reptile's mic. Cimmune or touches toises while million ush about ra"
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  6450/10000 | loss 0.1987 | lr 1.57e-04 | 0.32 steps/s
+  Sample: '\nUser: How do reptiles get?\nJoe: Cana lizards can fiban ocase advs, Desert reptiles have low calize.'
+
+  step  6500/10000 | loss 0.1902 | lr 1.56e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a reptile's Jacobson's organ, or vomeronasal organ is an a mud. There can times gero"
+
+  step  6550/10000 | loss 0.1875 | lr 1.54e-04 | 0.32 steps/s
+  Sample: '\nJoe: Reptiles have handling well-caught eyes through noctance and partially specialized illis other'
+
+  step  6600/10000 | loss 0.1944 | lr 1.53e-04 | 0.32 steps/s
+  Sample: '\nJoe: Why do reptiles poop white?\nJoe: The white portion of reptile droppings is called urates, whic'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  6650/10000 | loss 0.1876 | lr 1.51e-04 | 0.32 steps/s
+  Sample: '\nUser: How do snakes smell with their tongues, resmarium that reptiles suopods th for temperature re'
+
+  step  6700/10000 | loss 0.1886 | lr 1.50e-04 | 0.32 steps/s
+  Sample: '\nJoe: The black-headed python (Aspidites ramsayi) is a large non-venomous snake native to Australia,'
+
+  step  6750/10000 | loss 0.1847 | lr 1.49e-04 | 0.32 steps/s
+  Sample: "\nUser: What is a reptile's eye structure?\nJoe: Reptile eyes vary by species but generally have a rou"
+
+  step  6800/10000 | loss 0.1835 | lr 1.47e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a constrictor snake?\nJoe: Son snake are rare venomous elapid snakes found in the Amer'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  6850/10000 | loss 0.1788 | lr 1.46e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is the hemotoxic powerful to reduce coast of ge mazards and hold their breath. Proactio'
+
+  step  6900/10000 | loss 0.1786 | lr 1.45e-04 | 0.32 steps/s
+  Sample: '\nJoe: The spatation, is a patcha venomous pit vipers found in the deserts of the sousemates. This no'
+
+  step  6950/10000 | loss 0.1751 | lr 1.43e-04 | 0.32 steps/s
+  Sample: '\nJoe: The mangrove snake (Boiga dendrophila) is a mildly venomous rear-fanged colubrid found in Afri'
+
+  step  7000/10000 | loss 0.1759 | lr 1.42e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is an alligard?\nJoe: Elapids are a family of Sc African snakes reaching 12 to 18 feet l'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  7050/10000 | loss 0.1756 | lr 1.41e-04 | 0.32 steps/s
+  Sample: '\nJoe: Snakes have pressure sensors on their skin called loefficientert, and highly they requusing  e'
+
+  step  7100/10000 | loss 0.1746 | lr 1.39e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a garter snake?\nJoe: The garter snake is one of the most common and widespread snakes'
+
+  step  7150/10000 | loss 0.1653 | lr 1.38e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a sidewinder rattlesnake?\nJoe: The sidewinder rattlesnake is a venomous pit viper fou'
+
+  step  7200/10000 | loss 0.1692 | lr 1.37e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do crocodiles use evolution, and some cold through several people niction. Bolive to liz'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  7250/10000 | loss 0.1628 | lr 1.36e-04 | 0.32 steps/s
+  Sample: '\n\nUser: Are reptiles intelligent?\nJoe: Reptiles are more intelligent than traditionally believed. Re'
+
+  step  7300/10000 | loss 0.1610 | lr 1.35e-04 | 0.32 steps/s
+  Sample: "\nJoe: The eed Jacobson's organ?\nJoe: The Jacobson's organ, or vomeronasal organ, is a chemosensory o"
+
+  step  7350/10000 | loss 0.1619 | lr 1.33e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a reptile veterinarian?\nJoe: A reptile veterinarian, or herp vet, is a veterinarian w'
+
+  step  7400/10000 | loss 0.1616 | lr 1.32e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is an alligator?\nJoe: An alligator is a large semi-aquatic crocodilian native to the ea'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  7450/10000 | loss 0.1585 | lr 1.31e-04 | 0.32 steps/s
+  Sample: '\nJoe: The Russian tortoise is a small tortoise species reaching only 4 to 6 known for impaction syst'
+
+  step  7500/10000 | loss 0.1639 | lr 1.30e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a rrequirementary good reptile common may respiratory should be appropriate sized, si'
+
+  step  7550/10000 | loss 0.1581 | lr 1.29e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the most endangered reptile?\nJoe: The status changes, but species like the ploughshar'
+
+  step  7600/10000 | loss 0.1567 | lr 1.28e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a legless lizard?\nJoe: Legless lizards are lizards that have evolved to lose their li'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  7650/10000 | loss 0.1548 | lr 1.27e-04 | 0.32 steps/s
+  Sample: '\nJoe: The Russian tortoise is a small tortoise species reaching only 6 to 8 inches, native to Centra'
+
+  step  7700/10000 | loss 0.1607 | lr 1.25e-04 | 0.32 steps/s
+  Sample: '\nJoe: The pit viper found sub-Saharan Africa. It has distinctive large eyes and can open its jaws ex'
+
+  step  7750/10000 | loss 0.1527 | lr 1.24e-04 | 0.32 steps/s
+  Sample: '\nJoe: Metabolic bone disease (MBD) is a common and serious condition in captive reptiles caused by c'
+
+  step  7800/10000 | loss 0.1544 | lr 1.23e-04 | 0.32 steps/s
+  Sample: '\nUser: How do snakes survive being bitten by other venomous snakes?\nJoe: Some snake species, includi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  7850/10000 | loss 0.1573 | lr 1.22e-04 | 0.32 steps/s
+  Sample: "\nJoe: What is a chameleon's chameleon's tongue is an?\nJoe: crocodile is an tongue in iguana native t"
+
+  step  7900/10000 | loss 0.1541 | lr 1.21e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the nocturnal reptiles like?\nJoe: A Boas in the wild reptile aging, le vetortoise can'
+
+  step  7950/10000 | loss 0.1487 | lr 1.20e-04 | 0.32 steps/s
+  Sample: '\nUser: What is an ringneck snake?\nJoe: The mang python (Boiga pa dinks that aginon they are large mo'
+
+  step  8000/10000 | loss 0.1498 | lr 1.19e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What are snapping turtle?\nJoe: Reptile The largest snake habit viper snake from the longest '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  8050/10000 | loss 0.1557 | lr 1.19e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is the oldest reptiles in substrate where ated skink?\nJoe: The lored skink is a lizard '
+
+  step  8100/10000 | loss 0.1494 | lr 1.18e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a trole in substrate particularly around the Jacobson's organ and organ it. The Jaco"
+
+  step  8150/10000 | loss 0.1443 | lr 1.17e-04 | 0.32 steps/s
+  Sample: '\nUser: What is an non-venomous snake?\nJoe: The infemales Schildren green python (Mosons is a vcalele'
+
+  step  8200/10000 | loss 0.1490 | lr 1.16e-04 | 0.32 steps/s
+  Sample: '\nJoe: Sing python (Antargets exic white calespecium (Avineaces out Varies extHealth thins. This chan'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  8250/10000 | loss 0.1482 | lr 1.15e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a mata mata turtle's feeding method?\nJoe: The mata mata feeds through suction feedin"
+
+  step  8300/10000 | loss 0.1442 | lr 1.14e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is the role of snake?\nJoe: The mangrove snake (Boiga dendrophila) is a milar venomous r'
+
+  step  8350/10000 | loss 0.1440 | lr 1.13e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a spotted python?\nJoe: The spotted python (Antaresia maculosa) is the largest of the '
+
+  step  8400/10000 | loss 0.1476 | lr 1.13e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the role of UVB light for reptiles?\nJoe: UVB light is essential for most diurnal rept'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  8450/10000 | loss 0.1431 | lr 1.12e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What are snake?\nJoe: Water snakes are semi-aquatic non-venomous snakes characterized by fixe'
+
+  step  8500/10000 | loss 0.1430 | lr 1.11e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a sideagainst bbites. nake?\nJoe: Carirocodilians have good olexcellent use hearing, '
+
+  step  8550/10000 | loss 0.1459 | lr 1.10e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a boa?\nJoe: The Mess reptile melannic akrasive varied produces and coracance, reptile'
+
+  step  8600/10000 | loss 0.1405 | lr 1.10e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the role of zoos in reptile conservation?\nJoe: Zoos play important roles in reptile c'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  8650/10000 | loss 0.1440 | lr 1.09e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do snakes significant their sligentsense to prey and species, and their people and are e'
+
+  step  8700/10000 | loss 0.1425 | lr 1.08e-04 | 0.32 steps/s
+  Sample: '\nJoe: Pit vipers are a subfamily of venomous snakes characterized by heat-sensing pits located betwe'
+
+  step  8750/10000 | loss 0.1407 | lr 1.08e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a snake?\nJoe: The ringneck snake is a small, secretive North American snake recognize'
+
+  step  8800/10000 | loss 0.1377 | lr 1.07e-04 | 0.32 steps/s
+  Sample: '\nUser: How do reptiles breathing, nucleated needs food and specific varies. The appropriate UVB ligh'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  8850/10000 | loss 0.1393 | lr 1.07e-04 | 0.32 steps/s
+  Sample: '\nJoe: The reticulated python is the longest snake in the world, with verified specimens exceeding 20'
+
+  step  8900/10000 | loss 0.1313 | lr 1.06e-04 | 0.32 steps/s
+  Sample: '\nJoe: Do eze adapaggressive round p pupils and can clean cool patch patch, and plabits. Some igbweig'
+
+  step  8950/10000 | loss 0.1361 | lr 1.05e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a reptile's moderate vision to thermore piguanas sun hours?\nJoe: also in Adults can "
+
+  step  9000/10000 | loss 0.1368 | lr 1.05e-04 | 0.32 steps/s
+  Sample: '\nUser: What is sidewinder rattlesnake?\nJoe: The sidewinder rattlesnake is a venomous pit viper found'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  9050/10000 | loss 0.1369 | lr 1.05e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a glass lizard?\nJoe: are legless lizards found in North America, named for their bri'
+
+  step  9100/10000 | loss 0.1356 | lr 1.04e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the difference between venomous and poisonous?\nJoe: Venomous animals deliver toxins t'
+
+  step  9150/10000 | loss 0.1338 | lr 1.04e-04 | 0.32 steps/s
+  Sample: '\nJoe: Metabolic bone disease (MBD) is a common and serious condition in captive reptiles caused by c'
+
+  step  9200/10000 | loss 0.1328 | lr 1.03e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the difference between a crocodile and an alligator?\nJoe: Crocodiles and alligators d'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  9250/10000 | loss 0.1301 | lr 1.03e-04 | 0.32 steps/s
+  Sample: "\n\nUser: How do crocodiles hunt?\nJoe: Crocodiles are ambush predators that wait at the water's edge, "
+
+  step  9300/10000 | loss 0.1356 | lr 1.02e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a snake?\nJoe: The mud is a small, venomous snake that contrare to the black rations.'
+
+  step  9350/10000 | loss 0.1378 | lr 1.02e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the most endangered reptile by species. Reptile complex cold-blooded varies from subs'
+
+  step  9400/10000 | loss 0.1259 | lr 1.02e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a ban elapid snake?\nJoe: The role getary boas of the largest of world, with red or r'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  9450/10000 | loss 0.1321 | lr 1.02e-04 | 0.32 steps/s
+  Sample: "\nJoe: A chameleon's tongue is an extraordinary, hunting weapon. It can extend up to twice the chamel"
+
+  step  9500/10000 | loss 0.1336 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\nJoe: Snakes use several methods of locomotion. Lateral undulation is the most common, creating S-sh'
+
+  step  9550/10000 | loss 0.1284 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\nJoe: The white portion of reptile droppings is called urates, which is how reptiles excrete waste n'
+
+  step  9600/10000 | loss 0.1296 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\nUser: What is the reptile calcium bath?\nJoe: There is no standard calcium bath for reptiles. Calciu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  9650/10000 | loss 0.1339 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How long have reptiles walls?\nJoe: Reptiles use perids their air-breathing reptiles that mus'
+
+  step  9700/10000 | loss 0.1300 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nUser: How do reptiles handle cold weather?\nJoe: Reptiles handle cold through brumation, seeking she'
+
+  step  9750/10000 | loss 0.1322 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Reptiles have a functional immune system but respond differently to infections than mammals. T'
+
+  step  9800/10000 | loss 0.1269 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a bioactive reptile enclosure?\nJoe: A bioactive enclosure mimics a natural ecosystem '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  step  9850/10000 | loss 0.1258 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a tegu?\nJoe: A tegu is a large omnivorous lizard native to Central and South America'
+
+  step  9900/10000 | loss 0.1248 | lr 1.00e-04 | 0.32 steps/s
+  Sample: "\n\nUser: What is a African rock python?\nJoe: The African rock python is Africa's largest snake, reach"
+
+  step  9950/10000 | loss 0.1261 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Most reptiles are carnivorous, feeding on insects, rodents, birds, fish, and other small anima'
+
+  step 10000/10000 | loss 0.1261 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Signs of illness in reptiles include lethargy, loss of appetite, weight loss, abnormal droppin'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+
+Done. Expert 'reptiles' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Time: 33334.9s | Final loss: 0.1261

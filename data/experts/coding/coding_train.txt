@@ -1,0 +1,173 @@
+User: what is a variable
+Joe: A variable is a named container that stores a value. In Python you write x = 5 to create one.
+User: what is a function
+Joe: A function is a reusable block of code that performs a specific task. You define it with def and call it by name.
+User: what is a loop
+Joe: A loop repeats a block of code. Python has for loops for iterating and while loops for condition-based repetition.
+User: what is an if statement
+Joe: An if statement checks a condition and runs different code depending on whether it is true or false.
+User: what is a list
+Joe: A list is an ordered collection of items in Python. You create it with square brackets like [1, 2, 3].
+User: what is a string
+Joe: A string is a sequence of characters. You create it with quotes like "hello" or 'hello'.
+User: what is an integer
+Joe: An integer is a whole number without a decimal point, like 5 or -3.
+User: what is a float
+Joe: A float is a number with a decimal point, like 3.14 or -0.5.
+User: what is a boolean
+Joe: A boolean is either True or False. It is used for conditions and logical operations.
+User: what is a dictionary
+Joe: A dictionary stores key-value pairs. You create it with curly braces like {"name": "Joe", "age": 1}.
+User: what is a tuple
+Joe: A tuple is an ordered immutable collection. You create it with parentheses like (1, 2, 3).
+User: what is a class
+Joe: A class is a blueprint for creating objects. It defines properties and behaviors using attributes and methods.
+User: what is an object
+Joe: An object is an instance of a class. It has data (attributes) and behavior (methods).
+User: what is inheritance
+Joe: Inheritance lets a new class reuse code from an existing class. The child class gets all the parent's methods and attributes.
+User: what is a return value
+Joe: A return value is what a function sends back when it finishes. Use the return keyword to specify it.
+User: what is a parameter
+Joe: A parameter is a variable in a function definition that receives a value when the function is called.
+User: what is an argument
+Joe: An argument is the actual value you pass to a function when you call it.
+User: what is recursion
+Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller pieces.
+User: what is a module
+Joe: A module is a file containing Python code that you can import and reuse in other programs.
+User: what is an import
+Joe: An import brings code from a module into your current program so you can use its functions and classes.
+User: what is a comment
+Joe: A comment is a note in your code that Python ignores. Use # for single-line comments.
+User: what is debugging
+Joe: Debugging is finding and fixing errors in your code. Common tools are print statements and breakpoints.
+User: what is a bug
+Joe: A bug is an error in code that makes a program behave incorrectly or crash.
+User: what is syntax
+Joe: Syntax is the set of rules that defines how Python code must be written. Wrong syntax causes errors.
+User: what is an algorithm
+Joe: An algorithm is a step-by-step procedure to solve a problem or accomplish a task.
+User: what is a data structure
+Joe: A data structure is a way to organize and store data. Examples include lists, dictionaries, and sets.
+User: what is a stack
+Joe: A stack is a last-in-first-out data structure. You push items on top and pop them off the top.
+User: what is a queue
+Joe: A queue is a first-in-first-out data structure. Items are added at the back and removed from the front.
+User: what is a linked list
+Joe: A linked list is a data structure where each element points to the next one, unlike an array which stores elements contiguously.
+User: what is binary search
+Joe: Binary search finds an item in a sorted list by repeatedly dividing the search interval in half. Very fast.
+User: what is a hash map
+Joe: A hash map stores key-value pairs using a hash function for fast lookup. Python dictionaries are hash maps.
+User: what is sorting
+Joe: Sorting arranges elements in a specific order. Common algorithms are bubble sort, merge sort, and quicksort.
+User: what is time complexity
+Joe: Time complexity measures how an algorithm's runtime grows with input size. O(1) is constant, O(n) is linear.
+User: what is object oriented programming
+Joe: Object oriented programming organizes code around objects that bundle data and behavior together.
+User: what is a constructor
+Joe: A constructor creates a new object. In Python, __new__ creates it and __init__ initializes it.
+User: what is a method
+Joe: A method is a function that belongs to an object. It is defined inside a class and operates on instance data.
+User: what is a static method
+Joe: A static method is a function inside a class that does not receive any implicit first argument like self or cls.
+User: what is an abstract class
+Joe: An abstract class cannot be instantiated directly. It defines a template that subclasses must implement.
+User: what is an interface
+Joe: An interface is a contract that defines what methods a class must have. Python uses abstract base classes for this.
+User: what is encapsulation
+Joe: Encapsulation hides internal details of an object and only exposes what is necessary through a public interface.
+User: what is polymorphism
+Joe: Polymorphism lets different objects respond to the same method call in their own way.
+User: what is a decorator
+Joe: A decorator is a function that wraps another function to extend its behavior without modifying it. Use @ syntax.
+User: what is a generator
+Joe: A generator is a function that yields values one at a time using the yield keyword, saving memory for large sequences.
+User: what is a lambda
+Joe: A lambda is an anonymous small function defined with lambda keyword. Good for simple one-line operations.
+User: what is a list comprehension
+Joe: A list comprehension creates a new list by applying an expression to each item. Write [x*2 for x in range(10)].
+User: what is exception handling
+Joe: Exception handling catches errors during execution using try, except, and finally blocks so your program does not crash.
+User: what is a file handle
+Joe: A file handle is a connection to a file opened with open(). It lets you read from or write to the file.
+User: what is JSON
+Joe: JSON is a lightweight data format using key-value pairs. It is widely used for data exchange between programs.
+User: what is an API
+Joe: An API is a set of rules that lets different software programs communicate with each other.
+User: what is HTTP
+Joe: HTTP is the protocol used for transferring data over the web. Common methods are GET, POST, PUT, and DELETE.
+User: what is a database
+Joe: A database is an organized collection of stored information. SQL databases use tables, NoSQL uses various formats.
+User: what is SQL
+Joe: SQL is a language for managing data in relational databases. You use SELECT, INSERT, UPDATE, and DELETE statements.
+User: what is a REST API
+Joe: A REST API uses HTTP methods to perform operations on resources identified by URLs. It is stateless.
+User: what is authentication
+Joe: Authentication is verifying who someone is. Common methods include passwords, tokens, and biometrics.
+User: what is encryption
+Joe: Encryption converts data into a coded format that can only be read with the correct key.
+User: what is version control
+Joe: Version control tracks changes to code over time. Git is the most popular version control system.
+
+User: what is a commit
+Joe: A commit is a snapshot of your code at a point in time. It has a message describing what changed.
+User: what is a branch
+Joe: A branch is a parallel version of your code. You can develop features separately and merge them later.
+User: what is a merge
+Joe: A merge combines changes from different branches into one. It can create conflicts if the same lines were changed.
+User: what is a pull request
+Joe: A pull request is a request to merge changes from one branch into another, usually for code review.
+User: what is open source
+Joe: Open source means software whose code is freely available for anyone to use, modify, and distribute.
+User: what is Python
+Joe: Python is a high-level programming language known for being easy to read and versatile. Great for beginners.
+User: what is JavaScript
+Joe: JavaScript is a language used to make websites interactive. It runs in web browsers and on servers with Node.js.
+User: what is a compiler
+Joe: A compiler translates entire source code into machine code before running it. C and Rust use compilers.
+User: what is an interpreter
+Joe: An interpreter reads and executes code line by line. Python is interpreted, which makes it flexible but slower.
+User: what is a pointer
+Joe: A pointer is a variable that stores the memory address of another variable. Used in C and C++.
+User: what is memory management
+Joe: Memory management is how a program allocates and frees memory. Python does this automatically with garbage collection.
+User: what is a framework
+Joe: A framework provides a structured foundation with built-in conventions, unlike a library you call yourself. Examples: Django, Flask, React.
+User: what is unit testing
+Joe: Unit testing checks individual pieces of code work correctly. You write test functions that verify expected behavior.
+User: what is refactoring
+Joe: Refactoring improves code structure without changing its behavior. It makes code cleaner and easier to maintain.
+User: what is code review
+Joe: Code review is when other developers examine your code for errors, improvements, and best practices before merging.
+User: what is a code smell
+Joe: A code smell is a sign that code has a deeper problem, like being too long, too complex, or duplicated.
+User: what is clean code
+Joe: Clean code is easy to read, understand, and maintain. It uses clear names, small functions, and minimal complexity.
+User: what is pseudocode
+Joe: Pseudocode is an informal way of describing an algorithm using plain English. It helps plan before coding.
+User: what is a binary tree
+Joe: A binary tree is a data structure where each node has at most two children, called left and right.
+User: what is a graph
+Joe: A graph is a data structure with nodes connected by edges. It models relationships between objects.
+User: what is depth first search
+Joe: Depth first search explores a graph by going as deep as possible along each branch before backtracking.
+User: what is breadth first search
+Joe: Breadth first search explores a graph level by level, visiting all neighbors before moving deeper.
+User: what is dynamic programming
+Joe: Dynamic programming solves complex problems by breaking them into overlapping subproblems and storing results.
+User: what is a closure
+Joe: A closure is a function that remembers the variables from its outer scope even after the outer function has finished.
+User: what is a callback
+Joe: A callback is a function passed as an argument to another function, to be called later when an event occurs.
+User: what is an event loop
+Joe: An event loop handles asynchronous operations by checking for completed tasks and running their callbacks.
+User: what is multithreading
+Joe: Multithreading runs multiple threads concurrently within a single process, sharing the same memory.
+User: what is concurrency
+Joe: Concurrency is handling multiple tasks at once. They may not run simultaneously but take turns efficiently.
+User: what is parallelism
+Joe: Parallelism is running multiple tasks at the exact same time using multiple processors or cores.
+User: what is a socket
+Joe: A socket is an endpoint for sending and receiving data across a network between two programs.

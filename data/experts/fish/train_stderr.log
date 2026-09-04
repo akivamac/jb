@@ -1,0 +1,2606 @@
+Tokenizer loaded (vocab 2000)
+Training text: 112,543 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish_train.txt
+Encoded: 53,061 tokens
+Resumed expert 'fish' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz (Adam step 50)
+Expert 'fish': 3,706,320 params | 4 layers | dim 256
+Training for 3000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    10/3000 | loss 4.0550 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n ireun fish cans, of a over a a 9.  face fish a a fish a a a fish produ fish a f b f the their ?\nsp'
+
+  step    20/3000 | loss 3.9856 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: ich ??typesed readeffectlowumps,ed erbiggest inesish es. ity or freshidok and and that of mo\n'
+
+  step    30/3000 | loss 3.9553 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nJoe: a water in Some is the fish by a is Sdifferent What  fish fish is is on the a in to ?\nJoe: is'
+
+  step    40/3000 | loss 3.8496 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nknown creatns, sh made re reached fish a\n fish the shed is the to is fish and ent can What is which'
+
+  step    50/3000 | loss 3.8229 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: can to fish b?\nUser: A the mross organ ais safe. a communal to and ol dri mount filill rock a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step    60/3000 | loss 3.7708 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: ines is a ch se sur ll sp\nUser: 1 of in of is is is in or a that in celing. It worldold fish '
+
+  step    70/3000 | loss 3.7078 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: and worldid and theirJoe: to \n\nUser: jailve ci a cill is a wzey fish anle the en and th fish i'
+
+  step    80/3000 | loss 3.6524 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: a a is that in specimalia fishast a muations freshunbke and They fish of Fother Gating water'
+
+  step    90/3000 | loss 3.6868 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: like premblnamtry sion read are lave move it fish bomigil, used s to fish a is cat and used '
+
+  step   100/3000 | loss 3.5744 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n signor uses har is Ces water the a restis and thatthem and contain the small for tld in in and of '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   110/3000 | loss 3.5600 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: is pok tewater conen, electric wialg fish hifish sysimper care They It fish wore variy red?\nJ'
+
+  step   120/3000 | loss 3.4697 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\n What   is rejyel s to fish in  a sand a s the world⁵ inse dingning method fish a c4 fish and fine'
+
+  step   130/3000 | loss 3.4427 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is  a scoimiroed a fish of and lay arts. bre species the spure a It that a refven counve'
+
+  step   140/3000 | loss 3.4633 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is is is a to S?\nJoe: a fish d nethan using An are line fish enough between a o?\nJoe: a'
+
+  step   150/3000 | loss 3.3905 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is b?\nJoe: shsteling fish line is fish many fish sure fish m is and high fin, sabol PIre'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   160/3000 | loss 3.3778 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a a a water used a fish quariick?\nJoe: growing fish fish fish is and fish with a on i'
+
+  step   170/3000 | loss 3.3421 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n Fish gel?\nJoe: is ven Bue prehy, a by There of an it dangercommand size are or nit is  a temperatu'
+
+  step   180/3000 | loss 3.3072 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a  water a a a Fish be?\nJoe: of is fish to fish coltehaswordfish good larard seap sl '
+
+  step   190/3000 | loss 3.3208 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n?\nJoe: fish A User: What  is a is a a a fish red, vible very function populxn fish used and Toipx?\n'
+
+  step   200/3000 | loss 3.2866 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: What then is a used Malegcrortroflow?\nJoe: a fish and breeding a is to give h most aquaripatte'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   210/3000 | loss 3.2763 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish in fish-boned an species fish setand and or the e seunWhat water?\nJoe: is is a'
+
+  step   220/3000 | loss 3.1936 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What Bink is a signments that f of fish by appeors momanperiod?\nJoe: do is a hourdepater cat'
+
+  step   230/3000 | loss 3.1714 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a called and fish is fish the cal or fish?\nJoe: an fish a fish fish a gups, is a ise'
+
+  step   240/3000 | loss 3.1949 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish ribles. liim oi in val fish bon for ve of fishe and fish coe and a with for ma'
+
+  step   250/3000 | loss 3.2065 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish an colors il?\nJoe: A is a fish fish fish catch a fish is a the eustweight each'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   260/3000 | loss 3.1073 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is  a a fish to in fsaing katic e in salt and different catch food fish by hopush spec'
+
+  step   270/3000 | loss 3.0939 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish fish sea e They for rery and feeding water one sting by soines retail loice us'
+
+  step   280/3000 | loss 3.0594 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\n\nUser: What is a disous for is fish to a Fish and cat-ually and of and for an deep shemlars. these'
+
+  step   290/3000 | loss 3.0407 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish fish for?\nJoe: A is a fish by is a large fish fish coacved for condty the and'
+
+  step   300/3000 | loss 3.0568 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is shincluding fish eat when fish to water of fish maers recoe a and to and of in predat'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   310/3000 | loss 3.0312 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish fish si?\nJoe: A fishing k-A fish fish is invank. species the reenams is fish p'
+
+  step   320/3000 | loss 3.0137 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish ease?\nJoe: A moal fish is a marine is fish bluecommunchange a ra?\nJoe: Socli a'
+
+  step   330/3000 | loss 3.0074 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n A is a fish body do in on to or for and elect often or por stees. because or mcraon water, water f'
+
+  step   340/3000 | loss 2.9614 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish marine?\nJoe: A fish Ca dise heas, fund is a a the marit, s to f cy. used in th'
+
+  step   350/3000 | loss 2.9675 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a poam\n\nUser: What is ncol?\nJoe: is ot?\nJoe: A  is a fish s is a sementms fish sharma'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   360/3000 | loss 2.9184 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: is a fishing smoked deark hundredsmoking ichuscopying  and are fishing, is ba living with orgg'
+
+  step   370/3000 | loss 2.9311 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish eat?\nJoe: A fish jawning of creats is a the food fish water conalga for to th'
+
+  step   380/3000 | loss 2.9542 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish psgroutenvers and s a in fish and specific salmon and populations. are salmon'
+
+  step   390/3000 | loss 2.8960 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish fish pation?\nJoe: Fish adild are swimming is op the they Ilike a demamEarths '
+
+  step   400/3000 | loss 2.8765 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\n\nUser: What en is a fish fous?\nJoe: The fish is a disegmoreggs fish a Europereproduce, that to fis'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   410/3000 | loss 2.8414 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is car aes fish Mpasfish, proteds of their in of aarium?\nJoe: A fish a fish, a tro5 over'
+
+  step   420/3000 | loss 2.8553 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish fish terbot tishes e mial barin the aquphy spear allow in preit in the mores '
+
+  step   430/3000 | loss 2.8366 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a gill?\nJoe: A fish for cending is a of per funation. a many fish by when bficial fis'
+
+  step   440/3000 | loss 2.7661 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fishverreetic?\nJoe: Fish in fish reef pa tas s or and peal or aquarium tuna are fis'
+
+  step   450/3000 | loss 2.8117 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a ide?\nJoe: A fish coir is a hooking hatchery surve s from fin is a freshwater to fis'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   460/3000 | loss 2.7486 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish User: uses?\nJoe: Fish mount Res found 3 level. form preclipical is the water a'
+
+  step   470/3000 | loss 2.7818 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish in trap mming fish stochooling are ely who ssed Nor along and skUnical and hei'
+
+  step   480/3000 | loss 2.7457 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish maintain plverer a food used a spaw, to of to fish and and to designed length '
+
+  step   490/3000 | loss 2.7489 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish knetic frieder riched ture?\nJoe: Fish is a specific underwater fish stimum and'
+
+  step   500/3000 | loss 2.7675 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n What is a eneps depthly tank?\nJoe: Fish is a amas or gill rate h for extinction sery w, a roviron '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   510/3000 | loss 2.6894 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: What is a fish deep le fish a with fish a itat?\nJoe: A fish water net is a an fish is a a en w'
+
+  step   520/3000 | loss 2.6966 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A rich is a container water of line a ner trawing a fish. is making forming cyction schools a '
+
+  step   530/3000 | loss 2.6758 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish marine that fish that dogdifferak cooks and for cleaner the fish boat of or an'
+
+  step   540/3000 | loss 2.6631 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish a also wlures of best a swordaccin marta a season?\nJoe: Fish back line and is '
+
+  step   550/3000 | loss 2.6207 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser:What is a fish of fish shaped survivel is a mar lic cential made growing of fishing aquarium f'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   560/3000 | loss 2.6821 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish using is a fish fish cycle is a fish a fish. A asing device device to fishing'
+
+  step   570/3000 | loss 2.6225 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish coral making 7?\nJoe: 4 s, are sphere from atgal of natural regulates lowide in'
+
+  step   580/3000 | loss 2.6086 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is al is a small fish uses arket it pical in the without ga fish it anglers to lused on'
+
+  step   590/3000 | loss 2.6018 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Fish reproduce community?\nJoe: A marine is a percent freshwater freshwater fish are aegg to wa'
+
+  step   600/3000 | loss 2.5628 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish basin recome sualurum and white Excecial for fish helps fish or and the a tank'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   610/3000 | loss 2.5449 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish  organ body a nitrite traag that is a trap a funate ser of l made swimes the-like fish '
+
+  step   620/3000 | loss 2.5189 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish is a tail?\nJoe: A fish fish The fish is species. to the Sximic Svirones, are dietic act'
+
+  step   630/3000 | loss 2.4772 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nJoe: What is a fish saindicus?\nJoe: Fish odieticate very, fish has pattern, are used the or atatad'
+
+  step   640/3000 | loss 2.4914 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish lead?\nJoe: A fish dible a is a used for displays for the coler color worm of f'
+
+  step   650/3000 | loss 2.5569 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: The effectiafes the salmon, swimenon pass biggest their dishes m are as entireators.\n\nUser: Wh'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   660/3000 | loss 2.4938 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a fish food or ray graically is a freshwater fish day. their easy and to mimum a eg'
+
+  step   670/3000 | loss 2.4288 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is the marine, fish They is sucured the species s in the shark is the commery crabactere'
+
+  step   680/3000 | loss 2.4244 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish treat is a or biock.\n\nUser: What is a fish prevents season is attached, to and or?\nJoe: A'
+
+  step   690/3000 | loss 2.4243 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish plocal is a fish fongine stream, the bottom live trap for aquariums. The dogner habitat'
+
+  step   700/3000 | loss 2.3955 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish kation reef or refudes val?\nJoe: A fish end removes reef limit egg known eggs '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   710/3000 | loss 2.4220 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a or fish planvey?\nJoe: Fish gety is aquarium pairsusia to stock to to display fish. '
+
+  step   720/3000 | loss 2.3484 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish to fish tangering is a fish net that is a they ficicloan en Americ pas predes that is a'
+
+  step   730/3000 | loss 2.3809 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\njury and use are tramiger that fish with the fish a ecook and preserved can a Puce la is fish and s'
+
+  step   740/3000 | loss 2.4113 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish finbro, with lining fish and can it?\nJoe: Fish in gilltal fish ture in Aer an'
+
+  step   750/3000 | loss 2.3322 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish accnamentone. can rove can fligh the fish spawning for?\nJoe: Fish swim in huma'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   760/3000 | loss 2.4002 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish?\nJoe: A fish net is a a tra\nJoe: fish that A standhundred teral by the 60 a l'
+
+  step   770/3000 | loss 2.3070 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: The lic is a fish attfreduin or to pump into a weir-like tank. A fish in a colorscientific are'
+
+  step   780/3000 | loss 2.3464 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish deterzed involves alga that tank?\nJoe: Salmon tun chemical is with a salt aqua'
+
+  step   790/3000 | loss 2.2853 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish tunks varits device?\nJoe: A fish mo tuna, state, or oiking is a presererered a'
+
+  step   800/3000 | loss 2.2663 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A oarance subts sering by amousmoked by swim the called the goldfish of its to the source. Asi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   810/3000 | loss 2.2547 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish cice?\nJoe: A fish seanga is a spoitrased of fish cold its and lengths to by st'
+
+  step   820/3000 | loss 2.2400 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish sule?\nJoe: A fish lic is a speslowly freshwater fish burass species some fish '
+
+  step   830/3000 | loss 2.2939 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Caris a tank a device fishing calcium that beneress fishing s and fishmigracults. The fish fis'
+
+  step   840/3000 | loss 2.2154 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish graving odiced, outvide rate for Hling, This substreturns like fish mous pounds and pleai'
+
+  step   850/3000 | loss 2.2056 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish triegg is the largest diety?\nJoe: Fish subs tificial is the do where fish s fi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   860/3000 | loss 2.1512 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish?\nJoe: A fish is a net scientolakes. Fish is a model, made a ging ounce heding '
+
+  step   870/3000 | loss 2.1908 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish cords in a hook to depth 7. It include world.\n\nUser: What is a fish conpaity for water,'
+
+  step   880/3000 | loss 2.1297 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fishing arm?\nJoe: A fish recoor viar bo is a large device to fish placed used in a'
+
+  step   890/3000 | loss 2.1726 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish a Malonefish dish and fins saltwater that used  s to sashimi-5 dish and freshw'
+
+  step   900/3000 | loss 2.1227 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n?\nJoe: A fish mortalase is a marine of vertaining stock, method small fish Dused on the satlex nitr'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   910/3000 | loss 2.1847 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nJoe: A fish can reads the harmfully of freshwaters. The surve balident fish in the food creating c'
+
+  step   920/3000 | loss 2.1680 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fishing is a fishing device that or handle a boriver that stock in ocking population populat'
+
+  step   930/3000 | loss 2.0942 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish trawire is a fresh fish body ves used to gramming and species in aquarium fish. It is t'
+
+  step   940/3000 | loss 2.0399 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is an an aranaction?\nJoe: Atank is the an resto common to fly aquouth to millions of fis'
+
+  step   950/3000 | loss 2.1190 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish rivers from the pump, water to a stocking known to the catch to filtration, planed atti'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   960/3000 | loss 2.0791 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: noful aquaculture fish food aquarium ags providing mark Utereproductate fisheries for fish and'
+
+  step   970/3000 | loss 2.0686 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: What is a fish lication. Fish spawner is by whole fin fish with the single fish community to w'
+
+  step   980/3000 | loss 2.0049 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish tank is a tank net that is a caock into aquatic or water land, or shark include teeth, '
+
+  step   990/3000 | loss 1.9985 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a tool?\nJoe: A fish mokill, is a shrigger used to smoist on  smoying the right, deve'
+
+  step  1000/3000 | loss 2.0106 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fishing patternzts is a reus produce over period by prey while sters gent namenteres to the '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1010/3000 | loss 1.9984 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A small fish twning substrate is a small attach. It also the ba blueby fish with dors and reac'
+
+  step  1020/3000 | loss 2.0506 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish restatory?\nJoe: A fish eteeth are to the most popular are saltwater to fish. '
+
+  step  1030/3000 | loss 1.9734 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish caourgy?\nJoe: Fish a gict very piranration that an an aquarium fish to aquari,'
+
+  step  1040/3000 | loss 1.9712 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: The eel tank. It is a attered barexacking, or sesacy wls rock and imic fer caught and deep-fso'
+
+  step  1050/3000 | loss 1.9592 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A longe is a filled freshwater fish in aquariums. It ments fish adaptanks, and recostable betw'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1060/3000 | loss 2.0023 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish teine tasseaned exsmaller marine fish rulation to catch fish. H, over P can s'
+
+  step  1070/3000 | loss 1.9032 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish marine?\nJoe: A fish sucence is an a small tuna, fish, aquatic snvesrichlids an'
+
+  step  1080/3000 | loss 1.9406 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish angal angular sing fish and in the fates community fish and plant that lids in'
+
+  step  1090/3000 | loss 1.8938 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish kity?\nJoe: A fish spawning is a artificial that helps fish measures itat that '
+
+  step  1100/3000 | loss 1.8813 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish nest vaginreHcium involves tank itropical for a uum or fishing also it for btubes and a p'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1110/3000 | loss 1.9430 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish nurge?\nJoe: A fish anegupter is the that tract of fish in an in the mainly fis'
+
+  step  1120/3000 | loss 1.9248 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish, lids hernon-like fish cschooling all each signerea that can prey week. Bit ta'
+
+  step  1130/3000 | loss 1.9007 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish redivers change?\nJoe: A fish flow stuaran is a craben world, to gills in a ab'
+
+  step  1140/3000 | loss 1.8568 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish ressive ces. It is a fish of fish lur?\nJoe: Overap sailbacterial inseatives, a'
+
+  step  1150/3000 | loss 1.8849 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish facSensenpose?\nJoe: A blrite self-s used for s ex from limit the gas, cook and'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1160/3000 | loss 1.8368 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish foodfish?\nJoe: A ffullyfish is a fish internestamong used for in the preservi'
+
+  step  1170/3000 | loss 1.7984 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish celetration, rebuilding include fry marine-um teeth and deep-ooden, fish eggs in gs the o'
+
+  step  1180/3000 | loss 1.7643 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: The branches a tank, conditions in to the release tanks, algaeggs, and heads size structure, r'
+
+  step  1190/3000 | loss 1.8163 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish biological?\nJoe: A fish A bocelelies, or is a traditionally underwater the whe'
+
+  step  1200/3000 | loss 1.7907 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish trap is a triangular sea used through trawler for young. The fish a market is spawning '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1210/3000 | loss 1.7656 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish dish weights made from cut of a fish, target allow of series in skinility, an'
+
+  step  1220/3000 | loss 1.7876 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish barin color 16 apleco?\nJoe: A fish among ths is a flness and onerplicate the '
+
+  step  1230/3000 | loss 1.7727 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fishing fish is a trog device that fish built in head the previte and weighing vis water. It'
+
+  step  1240/3000 | loss 1.7475 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is fish spear?\nJoe: A fish tun is a seasoned made of fish, made with and chiime, and hat'
+
+  step  1250/3000 | loss 1.7541 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nens Riup is a bony plates that other fish in a bheats or cerrees to baes and bless to ait catch in '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1260/3000 | loss 1.6804 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish food lift which is a tree habitats, fry?\nJoe: The mountain with white making '
+
+  step  1270/3000 | loss 1.7312 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish tartare?\nJoe: Fish tropsuces. is a most small ety fish manlofers by the anger '
+
+  step  1280/3000 | loss 1.7001 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a float of a fish can 40 feet. Over, have surmous over feet ormouth and lay and are t'
+
+  step  1290/3000 | loss 1.6787 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Sarbless is a defary fishing ratory clip while the fish join catch fish.\n\nUser: What is a fish'
+
+  step  1300/3000 | loss 1.6772 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is fish?\nJoe: Aner direction is a fishing for blce de raised fish that survive that filt'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1310/3000 | loss 1.6454 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a s-tank that should phy bone habitga pump. Fish popules, chip and um. The than the m'
+
+  step  1320/3000 | loss 1.6464 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish kill electronicide?\nJoe: A fish fish cycle, or a heers. surve include fish, ca'
+
+  step  1330/3000 | loss 1.6637 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a line addle?\nJoe: A creel is a marine fishing to moist hook innames ator the ocean i'
+
+  step  1340/3000 | loss 1.6911 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish pel?\nJoe: A sud is a group baquarium jor of popular fish. They are the venomny'
+
+  step  1350/3000 | loss 1.6077 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish carp are parasities for their maintain recosystem. They are common They come in their min'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1360/3000 | loss 1.5863 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a fish movary?\nJoe: A fish triesed is a de-intournames an tank in a tank and tank t'
+
+  step  1370/3000 | loss 1.5945 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is lids fins, comale and States. They long, fastest and fish, with experience swsystem.'
+
+  step  1380/3000 | loss 1.5864 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is fish predatory trap?\nJoe: A fish tank boxoked are the multi-like trap of a fish anks'
+
+  step  1390/3000 | loss 1.5810 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish polegal sharp in the There are of the most thbecome in an in cures a ray-intro'
+
+  step  1400/3000 | loss 1.5498 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish loner?\nJoe: A fish cave is a fish period of fish heater ture with the species'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1410/3000 | loss 1.5552 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish spear?\nJoe: A fish parasitic is a reghiers that caught a or bass or harvestes'
+
+  step  1420/3000 | loss 1.5511 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: The venomous shark is a cub, Amerures in the Fish ct peaceful, breand pole in the Ceneficious '
+
+  step  1430/3000 | loss 1.5205 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish betempura?\nJoe: A bait is a mantaquarium in aquarium water that water caused '
+
+  step  1440/3000 | loss 1.5256 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish trap?\nJoe: A fish size trap is a tank s device that cruitions for fish. Bacter'
+
+  step  1450/3000 | loss 1.5241 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Anadapanustaining fish handwater with typically rove and mycooking to tificial for aquarium. I'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1460/3000 | loss 1.4725 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a moloriginated se made bacterific, critical in a serfried specific de for fresh, spe'
+
+  step  1470/3000 | loss 1.4699 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish nest?\nJoe: A fish per do fish inflnel-them or ration from rivers to fish allow'
+
+  step  1480/3000 | loss 1.4868 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish chow?\nJoe: A fish water tuna, is a freshwater fish made from saltwater ed nati'
+
+  step  1490/3000 | loss 1.4924 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish oil has the popular Africa. It is bebass nitrates for predator bass and nuricon. behavior'
+
+  step  1500/3000 | loss 1.4477 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish out net?\nJoe: A fish for reef fish placed is a a ft device that dients is a s'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1510/3000 | loss 1.4379 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\n\nUser: What is a fish fish swimming length?\nJoe: Fish s and s running clip reaching ide away. Most'
+
+  step  1520/3000 | loss 1.4453 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\n\nUser: What is a fish hang-at fish with ga gill best device that creates available caused to ent e'
+
+  step  1530/3000 | loss 1.3883 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish black and A cycle is a spawning e?\nJoe: A fish spawning spawning spawn is a fi'
+
+  step  1540/3000 | loss 1.4101 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish svenactice?\nJoe: A fish recosystem is a fish boxant that uses an imure angered'
+
+  step  1550/3000 | loss 1.3535 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish cave?\nJoe: A fish alive satellate for habitat heater from tank al al al al alg'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1560/3000 | loss 1.4441 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Fish sthuman tree rouflacts food rassessment, and cartilage rise habitat anglers position, and'
+
+  step  1570/3000 | loss 1.4142 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nJoe: What is a fish piran-filter?\nJoe: A fish ve is a net used to protery fish below over the wate'
+
+  step  1580/3000 | loss 1.4025 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish trawlens control fish conditions to but can human val?\nJoe: An flavor is a fre'
+
+  step  1590/3000 | loss 1.3511 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a discus?\nJoe: Scolainschool is the most differenef of fish member see filter fen sp'
+
+  step  1600/3000 | loss 1.3520 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish nest?\nJoe: A fish pa. A is a market air a. is a a ought shriver are that hooke'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1610/3000 | loss 1.3968 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish line?\nJoe: A fish dies drael is a purse seiner-fin definite, with different s'
+
+  step  1620/3000 | loss 1.3364 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish scale has the hatched scraised for?\nJoe: Fish recover Sically runters by egg, '
+
+  step  1630/3000 | loss 1.2809 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish pfection?\nJoe: A fish Most species tank, ase, underwater by gupportas dolate '
+
+  step  1640/3000 | loss 1.2803 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish find baited slow boat that an an aquarium or bles with their display tank to '
+
+  step  1650/3000 | loss 1.3205 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish k kill?\nJoe: A fish kill is a cichlifest that become in old in birth. They are'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1660/3000 | loss 1.3001 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish tank?\nJoe: Pey fish involves it it it it over a tank can be Lgor sts, and show'
+
+  step  1670/3000 | loss 1.2830 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Os species cichlid?\nJoe: Fish usually the ceans catch fish, rough kills, are alily vionality f'
+
+  step  1680/3000 | loss 1.2420 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish cage-like?\nJoe: A fish kill is a years. of fish or anchor netting is group of '
+
+  step  1690/3000 | loss 1.2819 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish water?\nJoe: A fish hegg is a fish anglers to between a gills where water. Fis'
+
+  step  1700/3000 | loss 1.2596 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish skortality species are species that river to cooked a extending meassel against a mecha'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1710/3000 | loss 1.2586 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Fish hardness, can 8 country, short pattern.\n\nUser: What is a fish pquarantine?\nJoe: Fish olla'
+
+  step  1720/3000 | loss 1.2813 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish drying is an practice of both fish with gills. Fish lic plankbiggest, medication, or di'
+
+  step  1730/3000 | loss 1.1912 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish deterritory?\nJoe: Fish protection conservation is the divers where larger fish'
+
+  step  1740/3000 | loss 1.1979 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish froe routge is the how predators and monjawning, and sword. Reguppies, agsakes, more flit'
+
+  step  1750/3000 | loss 1.2285 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a paerling?\nJoe: A egged is a small saltwater fish in the ammonia waves to time on of'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1760/3000 | loss 1.1647 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Fish chips are and warm-whatever food in the world.\n\nUser: What is fish?\nJoe: The Fish white s'
+
+  step  1770/3000 | loss 1.2499 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: An types is a faces to great feras measures that nutrients that uses displays filter, the shar'
+
+  step  1780/3000 | loss 1.1736 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: rite oxygen with a tainable marine for funding fish that can high several hundreds of ters la'
+
+  step  1790/3000 | loss 1.1589 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish goldnure?\nJoe: Fish do ternal most contction protection in the tank of aquariu'
+
+  step  1800/3000 | loss 1.1971 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a buoy?\nJoe: A spawning mop is a bill bling small yarn in optlic is a pursein a sein'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1810/3000 | loss 1.1515 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish bar?\nJoe: A fish nano tank is a artificial bar of b al placed in an an aquariu'
+
+  step  1820/3000 | loss 1.1246 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish hatchery breeds include fality?\nJoe: A fish reel  in guppy. P are mealthap an'
+
+  step  1830/3000 | loss 1.1220 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fishing preh is a small freshwater fish named for the carn t-like mechanism. Dmative can low'
+
+  step  1840/3000 | loss 1.1193 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish breeding fish provides aquarantum tournament is the main commercial fish that pecially '
+
+  step  1850/3000 | loss 1.0555 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a stillabvas fish?\nJoe: A fish breathe regulation of aquacific recovery of spawning '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1860/3000 | loss 1.1174 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a s20 feet fish are populations that environment their frying assauceed protected pr'
+
+  step  1870/3000 | loss 1.1278 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A dorsal fin is the largest of a group of will males, majone of worldwide are both cyclans, an'
+
+  step  1880/3000 | loss 1.0753 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish chicorsal fin?\nJoe: A pit fin fin is a simouth that eld battered and eroized i'
+
+  step  1890/3000 | loss 1.0668 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish removal tunlift is a lolet often abfish stock that ustain begently fish egg e'
+
+  step  1900/3000 | loss 1.0565 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish spear?\nJoe: A fish shood is a tuning fish formance that can be tiny hioxygen '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1910/3000 | loss 1.0576 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Fish grow rebuilding chi?\nJoe: Fish retrieves school and Omeive recooks are used for underwate'
+
+  step  1920/3000 | loss 1.0576 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A cycle is a device that uses a artificial toxzer placed the ocean to cruitment fish efits thr'
+
+  step  1930/3000 | loss 1.0132 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nJoe: What is a fish hrotate?\nJoe: A fish outaces or lon their ulock. Mouth can plant quarium also '
+
+  step  1940/3000 | loss 1.0052 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Byolkin salmon shoals, and are predators Byelapervong waste degrees sand.\n\nUser: What is a gre'
+
+  step  1950/3000 | loss 0.9797 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish tank?\nJoe: A fish pical pical tank is a a artare with a filter that has natura'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1960/3000 | loss 1.0371 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish capacity is a location, species, carpclosed and prentled that an safe It make set in be'
+
+  step  1970/3000 | loss 0.9978 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is fish reel?\nJoe: A fish recreel is a sPis ine ning agenclosed that replicates the mate'
+
+  step  1980/3000 | loss 0.9811 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish spawning stock?\nJoe: Fish spawning fer has the along the mainly filter that ou'
+
+  step  1990/3000 | loss 0.9762 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a cured?\nJoe: A courvarietibian from restorakes. Schooling includesven community tang'
+
+  step  2000/3000 | loss 0.9981 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Dry are aming, communicatepermackin fish like Byclinated schooling and and causing a codiles.\n'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2010/3000 | loss 0.9546 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish river, al in an an oment and extract water Fish area. from the nels Pep air design hasi'
+
+  step  2020/3000 | loss 0.9476 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish smoking is preserving from the over 2 lings Smoisted made of the dangerous fish, for spec'
+
+  step  2030/3000 | loss 0.9641 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nJoe: What is fish pool fin?\nJoe: Fish similar and lowchool fish are species from lla whe e diversi'
+
+  step  2040/3000 | loss 0.9176 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish group?\nJoe: A fish fanchips is a temporary benon bvey of a fish food into a ce'
+
+  step  2050/3000 | loss 0.9690 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: An species is a bony plate where distinct the al pass ive inches to the do prefer water called'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2060/3000 | loss 0.9081 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a mammal?\nJoe: A adder is a freshwater fish that can fail to fish. Some is to avant '
+
+  step  2070/3000 | loss 0.9235 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish community?\nJoe: Creduum is a freshwater fish ind nfish patterns to requiremen'
+
+  step  2080/3000 | loss 0.8751 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: The bettas, boat ving watersustainable how releasucupms inpools, and flickcenturies water are '
+
+  step  2090/3000 | loss 0.8706 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish food is a freshwater fish with the head, sharp still and the returns to a freshwater  o'
+
+  step  2100/3000 | loss 0.8921 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish cords has quattered, and shade, de, and specialized ecod are raised fish reshwater fish'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2110/3000 | loss 0.8814 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Sus is one of the temporatic benwordfish behind the wast through a river orary range. A large '
+
+  step  2120/3000 | loss 0.8769 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish aquin can catch in eval reduum water rgorimits and mane conditions them for release catad'
+
+  step  2130/3000 | loss 0.8620 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: How do fish doest?\nJoe: Fish chanship that marine fish gressionfish and toward the oil for o'
+
+  step  2140/3000 | loss 0.8397 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: How long fish breathing are?\nJoe: Fish uses vine a genetic body of single hatchery resto guph'
+
+  step  2150/3000 | loss 0.8601 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish heater?\nJoe: A fish filter is an an artificial used to vibra. In are the Asifu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2160/3000 | loss 0.8232 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a creel?\nJoe: The creel is a nigir slure fish the sides of  methods, or delicirs, who'
+
+  step  2170/3000 | loss 0.8291 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish traditional line?\nJoe: A fish trap net is a large large spear line running the'
+
+  step  2180/3000 | loss 0.8147 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish food bar?\nJoe: A fish bar is a freshwater ocean aquariumschool in bottom compa'
+
+  step  2190/3000 | loss 0.7991 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish avoid factorsal?\nJoe: Fish have recreational hiding by specially adulture food'
+
+  step  2200/3000 | loss 0.8210 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a swim fin?\nJoe: The protein protein also called called a era river amount , , is a '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2210/3000 | loss 0.7889 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a catfish?\nJoe: A fish reel is a freshwater fish with a works for fin of a bass embry'
+
+  step  2220/3000 | loss 0.7686 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish tank cycle?\nJoe: A fish cycle crash is the loss of bstock of beneficial bacter'
+
+  step  2230/3000 | loss 0.7614 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish vertebrate?\nJoe: A fish caping lic stock is the moked. Smoked cuor are swimmy ines. Reggs'
+
+  step  2240/3000 | loss 0.7437 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a location, capal fin?\nJoe: Fish bubbles are device that maned to catch fish by trap '
+
+  step  2250/3000 | loss 0.7467 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish tank?\nJoe: A fish tank is aquarium aquarium that large it first uper to while'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2260/3000 | loss 0.7801 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish fish stocking in capacks is they to fish body into a public populations. ston'
+
+  step  2270/3000 | loss 0.6951 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is fish pel?\nJoe: A fish panha is a freshwater fish with a usually melling over ating lo'
+
+  step  2280/3000 | loss 0.7490 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish tank?\nJoe: A fish tank acterial infecundity or an camong a sucubes of a water '
+
+  step  2290/3000 | loss 0.7135 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a catfish tank?\nJoe: A fish reef tank is a separate aquarium used to raise juvenile f'
+
+  step  2300/3000 | loss 0.6922 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a pike?\nJoe: A spawning seawater is a freshwater predatory fish found in the Northern'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2310/3000 | loss 0.7055 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\ns grow unery?\nJoe: A fish pactinctle tank has um wide ancy by ocate parts and protective fish to ma'
+
+  step  2320/3000 | loss 0.7200 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Most fish distances to pain and maintain a preserving fish over es.\n\nUser: What is a fish trap'
+
+  step  2330/3000 | loss 0.6858 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is the United suke?\nJoe: A hiding are maximicacin set of set minimize that line to cultu'
+
+  step  2340/3000 | loss 0.7063 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish scale limbait. It carries bethe archy coeggs of migrating the Sargas. Enggs a'
+
+  step  2350/3000 | loss 0.6475 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish fish?\nJoe: A fish aer is a fish attractant made from the fish, cichlid to give'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2360/3000 | loss 0.6825 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fishing bait is a measured in carbonately by Lake treble braper fish, and hooking, and GMost'
+
+  step  2370/3000 | loss 0.6324 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A basking method is used to prevent practice of fish for fish. Critory and successful protecti'
+
+  step  2380/3000 | loss 0.6069 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish cave is an an aquarium that habitat within a competica. GHatcheries is structure that a'
+
+  step  2390/3000 | loss 0.6953 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish cave is a de-prber-inted filtering. Fish provides numbers of migration to repl the fish'
+
+  step  2400/3000 | loss 0.6613 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish hatchery supplementation?\nJoe: Sust fish hatchery and practice for anging fis'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2410/3000 | loss 0.6476 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish can ike is a bait scraper is a natural ter filter that can be hi caused in an ls grow i'
+
+  step  2420/3000 | loss 0.6385 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish scale?\nJoe: A fish scale is a device that uses Kctoral float spear ates per b'
+
+  step  2430/3000 | loss 0.6314 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a fish nitrite levels in a tank?\nJoe: A fish shark can carry up ly. Ccontact, swim te'
+
+  step  2440/3000 | loss 0.5680 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish spawning substrate is the ger of material to the drations made to conservations.\n\nUser: W'
+
+  step  2450/3000 | loss 0.6111 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish terling?\nJoe: A fish recovery is a form impavailable that gs some fish threat'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2460/3000 | loss 0.6024 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is fish aggaffinger?\nJoe: A fish goldfish is a large large predatory predatit. An A ope'
+
+  step  2470/3000 | loss 0.5834 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish lum is an artificial bait attached to a hook, glass exlift ed line from a set to protec'
+
+  step  2480/3000 | loss 0.6003 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is a bettas fish?\nJoe: A catfish or measures used in underwater body, often reef or depo'
+
+  step  2490/3000 | loss 0.5820 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish territory?\nJoe: Fish territory is an fin freshwater fish Der species like sec'
+
+  step  2500/3000 | loss 0.5645 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a gentleful fishing?\nJoe: A lonloner fish, is a fing or disease uppies, and opport n'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2510/3000 | loss 0.6024 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a shark?\nJoe: A shark is a case, case, called a cichlids seafood and is a rod peacef'
+
+  step  2520/3000 | loss 0.5748 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is an analgae tank?\nJoe: An ananal ane ae is a large coldwater fish that moves small de'
+
+  step  2530/3000 | loss 0.5778 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish territorial display?\nJoe: Fish territorial displays progravel provides attach'
+
+  step  2540/3000 | loss 0.5364 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: The most onquar fish in the exact moke is moka. It is a group is of a fish ves scrape, its bod'
+
+  step  2550/3000 | loss 0.5459 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish species is a area that s protects cosystems of fish teripoor water and other species li'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2560/3000 | loss 0.5515 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Cvey and chit nivanter, with let supp. Slipper fish they confis gent served with de-36 and wll'
+
+  step  2570/3000 | loss 0.5384 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: Fish and wooden debris a robacteria eficial involves aquatic frooria plants, streamlifefully a'
+
+  step  2580/3000 | loss 0.5280 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fly fish in Most pump, Spawning bchange?\nJoe: Sequipment, and ryoake also have amo'
+
+  step  2590/3000 | loss 0.5362 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish passage works well?\nJoe: Fish adromous fish is Deep-frying overfish seafood a'
+
+  step  2600/3000 | loss 0.5224 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish territory?\nJoe: A fish territory is a raw fish marine seafood from human bass,'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2610/3000 | loss 0.5446 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish predator?\nJoe: A fish reel or electric device spawning is a device to swallow'
+
+  step  2620/3000 | loss 0.4946 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: The maximum water have one invasive species of one the most utcommunorial fish with attachienc'
+
+  step  2630/3000 | loss 0.5261 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Fish collagen is a commercial fish species with aquatic kayakes, s seasons, and using kept olp'
+
+  step  2640/3000 | loss 0.5005 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: The most cave fish is an range of a protective predatory of a small fish that usually a sharp '
+
+  step  2650/3000 | loss 0.4993 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: The guppy is a small freshwater fish are known for their complex lers to are breeding posectio'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2660/3000 | loss 0.4830 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish pond?\nJoe: A pond is a fish net or dragged through the water by the water from'
+
+  step  2670/3000 | loss 0.4920 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is schooling fish?\nJoe: GHor specific fish  involves cooking it in a flakes into a jurl'
+
+  step  2680/3000 | loss 0.5173 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish called sardinvolves alive preserving and replacing the ting dentic delia or wi'
+
+  step  2690/3000 | loss 0.4815 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a smoking cooking a sea checking fish keep when handlies, t t main in Fich naturally'
+
+  step  2700/3000 | loss 0.4802 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A clownfish is a marine fish that can burrowfer less floical in the group of morayed oil betwe'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2710/3000 | loss 0.4581 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: Ducured , ornamental varies marer and cities widely with a species. Hied cic dish include larg'
+
+  step  2720/3000 | loss 0.4760 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nUser: What is the most seahatches?\nJoe: The Intehighly Inkineaquarium stocking is biomassessential '
+
+  step  2730/3000 | loss 0.4651 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish stocking law?\nJoe: Fish marroe marine species seatition. They are raked fish a'
+
+  step  2740/3000 | loss 0.4484 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish gig?\nJoe: Fish gig is the most steps of fish memory and prey from the fish an'
+
+  step  2750/3000 | loss 0.4483 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A gresto fish weigh stable or top to plants amples.\n\nUser: What is a fish cundjava are?\nJoe: F'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2760/3000 | loss 0.4359 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: The most species by the Kinding Gigns of fish used in the source and record proper Glex mains '
+
+  step  2770/3000 | loss 0.4256 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nJoe: A fish pole is a sumal net that coldwater spawning using an drag the main where fish in over t'
+
+  step  2780/3000 | loss 0.4147 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is gression rank?\nJoe: Fish aggression rank is the position of a fish in the social hie'
+
+  step  2790/3000 | loss 0.4340 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish territthe?\nJoe: Fish territory is an rel prariumant by copying catfish specie'
+
+  step  2800/3000 | loss 0.4268 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish reefs fish?\nJoe: Cclaner fish and speargun is part of the King crciumen probla'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2810/3000 | loss 0.4313 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish waterhead?\nJoe: A fish box is a electric breeding box of box inner contain the'
+
+  step  2820/3000 | loss 0.4420 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish tank?\nJoe: A fish tank aquarium is the mesh ishes that can easy while ranucou'
+
+  step  2830/3000 | loss 0.4240 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a swim bladder?\nJoe: A barweir is a electric device that uses an sonar to detect fish'
+
+  step  2840/3000 | loss 0.3995 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish antibiotic?\nJoe: Fish antibiotics are medications used to treat bacterial inf'
+
+  step  2850/3000 | loss 0.4140 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish tuna?\nJoe: A fish gillnet is a le that dragged seine along the or topor  to ca'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2860/3000 | loss 0.4196 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish float?\nJoe: Fish swivel is a small, metal device that device true that procts '
+
+  step  2870/3000 | loss 0.3818 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish reef tank?\nJoe: A fish reefing tank is a small saltwater aquarium that houses'
+
+  step  2880/3000 | loss 0.3982 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a troe?\nJoe: A fish ggs ity is a heavy event that collemal fish swivel in other ange'
+
+  step  2890/3000 | loss 0.3820 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish reef tank?\nJoe: A fish reef tank is a aquarium or aquarium that habitat that '
+
+  step  2900/3000 | loss 0.3958 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a fish substrate?\nJoe: Fish KH, or carbonate hardines. Fish speargunts, is rite and '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2910/3000 | loss 0.3727 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\n\nUser: What is a Sens method made of?\nJoe: The age protein include rack Skelets, Each partshily. an'
+
+  step  2920/3000 | loss 0.3687 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish roe, ike is an electric electric ecoat moves fish, egaquarium toxic fish can their mind'
+
+  step  2930/3000 | loss 0.3459 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A plang-finned fish are long marine eaten, and romous small small catfish.\n\nUser: What is a sm'
+
+  step  2940/3000 | loss 0.3812 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish conservation biomass?\nJoe: Fish genodisurvey is a fiestivey made of reef whit'
+
+  step  2950/3000 | loss 0.3603 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish adromous fish?\nJoe: The fish is a small freshwater fish in the fastest, flowi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2960/3000 | loss 0.3528 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish ine aeration?\nJoe: A fish a limit is a rectangular bloom, that can heits is th'
+
+  step  2970/3000 | loss 0.3613 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish d cured?\nJoe: A fish moked is a plankton that fish from a fish can specific c'
+
+  step  2980/3000 | loss 0.3558 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\nJoe: A fish fine is an artificial baquarium extract quom Uhi and protected fli, automure to proper '
+
+  step  2990/3000 | loss 0.3524 | lr 3.00e-04 | 0.08 steps/s
+  Sample: '\n\nUser: What is a fish license?\nJoe: A fish license, also called a fishing license is aan fish icens'
+
+  step  3000/3000 | loss 0.3583 | lr 3.00e-04 | 0.07 steps/s
+  Sample: '\nUser: What is a fish aeration?\nJoe: A fish is a held where the batter mimicus the fish proper light'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+
+Done. Expert 'fish' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Time: 40209.4s | Final loss: 0.3609
+Tokenizer loaded (vocab 2000)
+Training text: 112,543 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish_train.txt
+Encoded: 53,061 tokens
+Loaded existing expert 'fish' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz (fresh optimizer)
+Expert 'fish': 869,456 params | 3 layers | dim 128
+Training for 3000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    10/3000 | loss 4.7893 | lr 3.00e-05 | 0.08 steps/s
+  Sample: '\nJoe:pen   linemalWhatf?memberand aWhatfic ebut Itskinment blooded.fishankmer quigtrafpreatWhatriesm'
+
+  step    20/3000 | loss 4.7781 | lr 6.00e-05 | 0.10 steps/s
+  Sample: '\natchwith fishing  di bcont is\naticlead gection  opledomindAmer hasclecent adungbug is6060 gegs AWha'
+
+  step    30/3000 | loss 4.7223 | lr 9.00e-05 | 0.09 steps/s
+  Sample: '\n ispredict andinglar untailunderfromcommwith ()` in byava spees withass f highridafuror\nnamefishggw'
+
+  step    40/3000 | loss 4.6469 | lr 1.20e-04 | 0.25 steps/s
+  Sample: '\noutingway writing zy g until  returnu fir?abilitylmostly What therJoe: is acc Tmatchiss happenwithu'
+
+  step    50/3000 | loss 4.5685 | lr 1.50e-04 | 0.29 steps/s
+  Sample: '\nbu User: is\n oid a like is sourhal equeers the and thejustthat likes, flow What fun speci swibow ot'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step    60/3000 | loss 4.4686 | lr 1.80e-04 | 0.29 steps/s
+  Sample: '\n\npubl\n aren ising ines ts olm to emp edquproteinically ōmethod olNo from itses,ingf the ing\nlow qu '
+
+  step    70/3000 | loss 4.3564 | lr 2.10e-04 | 0.29 steps/s
+  Sample: '\nfood A?, cap is  KAd und t is ary iterwater spezeroandfish is  to\nod-houritfishawin by threadketesi'
+
+  step    80/3000 | loss 4.2594 | lr 2.40e-04 | 0.30 steps/s
+  Sample: '\nUser: Whatcomp -ateick  a ear thesis is in  What  by ing throughariared their fishUser: the f cy ar'
+
+  step    90/3000 | loss 4.1592 | lr 2.70e-04 | 0.29 steps/s
+  Sample: '\n\n\ng  is is b is it is f?mp cer redfic re orbit dif animal fishation ctr weeUser: skinposal fish  ye'
+
+  step   100/3000 | loss 4.0930 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\neyesum best fishation through te is fish iswpieceoagain uses fishJoe: timex oxygenasports fishper a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   110/3000 | loss 3.9500 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n ce ag fish speak sted of ₃\nunder What fishing over fish a sk fish is a in water health F12 and ret'
+
+  step   120/3000 | loss 3.9069 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n to t? fish of biggest more How a a and and Le and a askfish and to is rest?ed fish net dfallg to i'
+
+  step   130/3000 | loss 3.8052 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\n\n\n\n\n\n\n\nH\n\nUser: the-  sion pattern S a a light.allow in grow compous fish through a Fly, ofdegreJ'
+
+  step   140/3000 | loss 3.7291 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: aare A m are body a ine with fish net by grachangation, const material speEar to is fish3.ser'
+
+  step   150/3000 | loss 3.7018 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser:l a is min, is fish  ing a Tconit cy En fish a with fish upparsiment bor ey increving behind'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   160/3000 | loss 3.6503 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser:   Whats What What is fish to ill c for fish fish a is lim  popen under of is a the s\n\nJoe: is'
+
+  step   170/3000 | loss 3.6144 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: me What a the h in or fish biter devy er the, maents fish produult an for without ma the te M'
+
+  step   180/3000 | loss 3.5705 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is tort of fish the fish in fish fish the breromJoe: in is is a fish strent net miles t '
+
+  step   190/3000 | loss 3.5709 | lr 3.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is and in a fish?\nJoe: A is is a of by a by sior horresp faceis typin is shar and on fis'
+
+  step   200/3000 | loss 3.5143 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\nUser: What to is cirUser: with inurs, biggest is and live in compard fish fish A are tiny fish a sh'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   210/3000 | loss 3.4677 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\nUser: What fish a is ismove a a fish deco User: is hi sator?\nJoe: fish Pked β in populYes that of f'
+
+  step   220/3000 | loss 3.4355 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: What energy is a a fish live mark fish cor rele(ly fish suation echoing the world the the are'
+
+  step   230/3000 | loss 3.4143 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\n\n\n\nfish A made a buan fish fish Fish ability Many fish the a recept This develothe and fish fish a '
+
+  step   240/3000 | loss 3.3812 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is fish B?\nJoe: fish a produic the a every is food a hoes. sha large a of Com. hal over'
+
+  step   250/3000 | loss 3.3806 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\nJoe: a fish eush but reper A cise in a p, seplanbly Sing fish while a to reacish more and from and?'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   260/3000 | loss 3.3665 | lr 2.99e-04 | 0.29 steps/s
+  Sample: '\nUser: What is The fish fish. is compval speok fish inclish s daure?\nJoe: is bush to into a en a or '
+
+  step   270/3000 | loss 3.3402 | lr 2.98e-04 | 0.30 steps/s
+  Sample: '\nh What \nJoe: ability is fswell to off a supate of for It pres eater?\nJoe: lum tan fish healthy tank'
+
+  step   280/3000 | loss 3.3018 | lr 2.98e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish fish electric species -in air?\nJoe: A fish over A is fish protein the is fish '
+
+  step   290/3000 | loss 3.2894 | lr 2.98e-04 | 0.30 steps/s
+  Sample: '\nJoe: is fish?\nJoe: is a a est fish fish ings a is a develofin to seigs a a fish custain many water '
+
+  step   300/3000 | loss 3.2729 | lr 2.98e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a a shooard?\nJoe: A is a fish A and including n a large a aquarium fresh a tions fish'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   310/3000 | loss 3.2343 | lr 2.97e-04 | 0.29 steps/s
+  Sample: '\nUser: What is fish the in fish a water fish charm of nties click This and fil\u200d water to stratchlulm'
+
+  step   320/3000 | loss 3.2402 | lr 2.97e-04 | 0.30 steps/s
+  Sample: '\n\nUser: net is that to What fish to a can or fish their can reday. ough the borally fish eat fish ou'
+
+  step   330/3000 | loss 3.2392 | lr 2.97e-04 | 0.30 steps/s
+  Sample: '\nJoe: is mo a reμ and in fish fish cook help the produict pies tfoper?\nJoe: A in on different fish o'
+
+  step   340/3000 | loss 3.1923 | lr 2.97e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a exboth are fish ctwawnam for factck Sigen supiled to a inclain has a andWhat of fis'
+
+  step   350/3000 | loss 3.1745 | lr 2.96e-04 | 0.30 steps/s
+  Sample: '\nUser: Whats, is a the fish and to popular to and to of that fish quks while improthe catch protepin'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   360/3000 | loss 3.0889 | lr 2.96e-04 | 0.29 steps/s
+  Sample: '\nUser: What is fish f fin?\nJoe: salt fish is at annbrces still fatchering aquarium can itat and tial'
+
+  step   370/3000 | loss 3.1538 | lr 2.96e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a siin aritmes and and to is a food and the that extned cook. the their and that breg'
+
+  step   380/3000 | loss 3.1089 | lr 2.95e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a  is large?\nJoe: A a?\nJoe: A fish is fish wesur t bra or made mupreargar proice temp'
+
+  step   390/3000 | loss 3.0953 | lr 2.95e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish o5 or op while and and a presered ning coven that a productth f to for and by '
+
+  step   400/3000 | loss 3.0671 | lr 2.95e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What a is an?\nJoe: A is a fish, a are a fish is water than of fishing that is a fish and flo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   410/3000 | loss 3.0498 | lr 2.94e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a a s. the water reancient fish to fish It lly for e plus main?\nJoe: breWhat is aquar'
+
+  step   420/3000 | loss 3.0681 | lr 2.94e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish  fish in species the underwater and harvviese Ga an oredess spment shoalive la'
+
+  step   430/3000 | loss 3.0535 | lr 2.94e-04 | 0.30 steps/s
+  Sample: '\nUser: What is fish Ted impered lionfish compuoding Fish use most Tice?\nJoe: Fish the while surmver '
+
+  step   440/3000 | loss 3.0476 | lr 2.93e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fishing is a of?\nJoe: A fish fish are fish fish is while a the with the for sele fi'
+
+  step   450/3000 | loss 2.9809 | lr 2.93e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish?\nJoe: cation is a fish subnimimic lobefore the a fwhen productaker and over ha'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   460/3000 | loss 2.9626 | lr 2.92e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is fish lowmanEarth e?\nJoe: Fsupvent is populill a eats fish. include seficespas creess'
+
+  step   470/3000 | loss 2.9624 | lr 2.92e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish pcapes, roank?\nJoe: lim-f Fish is fish il a of per the where of the memoryias'
+
+  step   480/3000 | loss 3.0489 | lr 2.92e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is a fish differast open increll maols best?\nJoe: ze A Fish an large adon is a a nearf'
+
+  step   490/3000 | loss 2.9389 | lr 2.91e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish fish g?\nJoe: fish A fish is net?\nJoe: a fish attmp fish fish for is a liming '
+
+  step   500/3000 | loss 2.9443 | lr 2.91e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a sprimage?\nJoe: The A fish is a atic a of a A riregulction. for fish and tank a is t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   510/3000 | loss 2.9108 | lr 2.90e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a p fish is a tank?\nJoe:urs, A fish fish and is is a from a shapes fsolve that hand t'
+
+  step   520/3000 | loss 2.9194 | lr 2.90e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a marine fish proper fish water against gation are mouths, skin partictect to fish sh'
+
+  step   530/3000 | loss 2.8863 | lr 2.89e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish line?\nJoe: A fish contra fish  Jir to oracantrll eyes scales Oed conage. insid'
+
+  step   540/3000 | loss 2.8995 | lr 2.89e-04 | 0.30 steps/s
+  Sample: '\n4 What is a fishing a fish orate tankreshwater in h\n\nUser: is fish a What fish?\nJoe: A fish fish is'
+
+  step   550/3000 | loss 2.9087 | lr 2.88e-04 | 0.30 steps/s
+  Sample: '\nUser: What\nJoe: is a fish fish condacy net?\nJoe: A line s bdepending tlfish is a wcthod, resning re'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   560/3000 | loss 2.9321 | lr 2.88e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish re species or to The com spawning device cooked, salmon. reproduct, in ster fi'
+
+  step   570/3000 | loss 2.8456 | lr 2.87e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is a fish fish hatchery?\nJoe: A alone fish side underwater a Some net sharp a fish d. '
+
+  step   580/3000 | loss 2.8137 | lr 2.87e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish bveris a in produal e Tstudine that the fish the are and cannot. can freshwate'
+
+  step   590/3000 | loss 2.8512 | lr 2.86e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish bwide  special nurawning including 40 prey bof aquariums. is in It into of of '
+
+  step   600/3000 | loss 2.8289 | lr 2.86e-04 | 0.30 steps/s
+  Sample: '\nUser: What is  a of fish fents migrflocold in supy fish also to relingly-every air Me pes.\n\ntemp Wh'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   610/3000 | loss 2.8474 | lr 2.85e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish is a workvate?\nJoe: A is a the long cold a reoperas le organ which the fin del'
+
+  step   620/3000 | loss 2.8359 | lr 2.85e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish until many hich?\nJoe: Fish migration gills, and eggs, is and spawning in fish '
+
+  step   630/3000 | loss 2.8034 | lr 2.84e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a it?\nJoe: A faces is a ked rap or 14 crnitrate suals tank. temperature for. bance w'
+
+  step   640/3000 | loss 2.8148 | lr 2.83e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish npe with a ammon fish to catch re cirlengths the that fishing and from trap?\n'
+
+  step   650/3000 | loss 2.7495 | lr 2.83e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish is a number study below device varie fooda made hit through of a that from the power ma'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   660/3000 | loss 2.7635 | lr 2.82e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish in pes, fish Fish reose scompar wl?\nJoe: Fish is a is below n a fish betp to i'
+
+  step   670/3000 | loss 2.7424 | lr 2.82e-04 | 0.29 steps/s
+  Sample: '\nJoe: Fish is a the great verss fish for hatch. What fish use the plant conservation mards, are s gi'
+
+  step   680/3000 | loss 2.6792 | lr 2.81e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish bckes?\nJoe: A fish fish hawhite fish is a a in seawater live that ged caude f'
+
+  step   690/3000 | loss 2.7282 | lr 2.80e-04 | 0.30 steps/s
+  Sample: '\nJoe: What is a fish with loseit. is Unfound in on water a freshwater a di of feet. each high over t'
+
+  step   700/3000 | loss 2.6820 | lr 2.80e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish pouth?\nJoe: A tank fish is body. is fish to una fish interngg-like to fish fi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   710/3000 | loss 2.7020 | lr 2.79e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: Fish agom. What is a fish in in a products a aquarium well assside camp fishful with and en l'
+
+  step   720/3000 | loss 2.6942 | lr 2.78e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish fish rechool is habitat?\nJoe: A fish is a device is a fish fish cauice an  all'
+
+  step   730/3000 | loss 2.7018 | lr 2.78e-04 | 0.30 steps/s
+  Sample: '\nJoe: A etats. It recretheir is a into fish jomigriceia that take for fishing Abody in a net, appear'
+
+  step   740/3000 | loss 2.6916 | lr 2.77e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish kegg disease fir. to Exic habitat Boibialvides are Bcious onine systems, bubci'
+
+  step   750/3000 | loss 2.6559 | lr 2.76e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish troease?\nJoe: A fish sielages is a bran surar an ridme typically fish Many fis'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   760/3000 | loss 2.6612 | lr 2.76e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish fish predators fish grow is aquarium made in atter?\nJoe: an aquarium bite, tha'
+
+  step   770/3000 | loss 2.6225 | lr 2.75e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish called es?\nJoe: A fish is tail a spawning lding is a a device a cirction mount'
+
+  step   780/3000 | loss 2.5984 | lr 2.74e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish desaltwater of fish is one a fish along that a-powong section. Fish The small '
+
+  step   790/3000 | loss 2.5727 | lr 2.73e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a exctive fish troe?\nJoe: A fish out is the device skin when an fish a recouna rate '
+
+  step   800/3000 | loss 2.5683 | lr 2.73e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish net?\nJoe: A fish is a marone. made saltwater serves fish fish in designed keep'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   810/3000 | loss 2.6265 | lr 2.72e-04 | 0.29 steps/s
+  Sample: '\nJoe: with a tuna led acid De, sea fish and returning animals found in the testing quick, hardor1 th'
+
+  step   820/3000 | loss 2.6227 | lr 2.71e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish habitat?\nJoe: A fish sta fish tell is device in a cawater. skimum ropally tha'
+
+  step   830/3000 | loss 2.6376 | lr 2.70e-04 | 0.30 steps/s
+  Sample: '\nJoe: Merver from both to fish need fish specific Rokans larustaining and fish tank?\nJoe: Fish prce '
+
+  step   840/3000 | loss 2.6552 | lr 2.70e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish chanks f is aquarium and rites, halivenages that and Proum which space to and in outark'
+
+  step   850/3000 | loss 2.5476 | lr 2.69e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish on Pa fish that Cat hour?\nJoe: The disive A fish limit is the of a fish tank t'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   860/3000 | loss 2.5286 | lr 2.68e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish plan tquarium?\nJoe: Fish serwater a reproduce other fit fish  op devices. It i'
+
+  step   870/3000 | loss 2.5695 | lr 2.67e-04 | 0.30 steps/s
+  Sample: '\ns. The aris that colfer of quickly in fish between the winesurviies and fish to The species in the '
+
+  step   880/3000 | loss 2.5313 | lr 2.66e-04 | 0.30 steps/s
+  Sample: '\nUser: What is aingeric?\nJoe: A fish different freshwater fish and for eggics in weires the recookin'
+
+  step   890/3000 | loss 2.5476 | lr 2.66e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish gtoon?\nJoe: Fish is a a bç that fish the its or on oril popular to the fish e'
+
+  step   900/3000 | loss 2.4868 | lr 2.65e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish non-fin, is a fish cted an freshwater fish match medical in use a of condit0 and Roing,'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   910/3000 | loss 2.4485 | lr 2.64e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish ent?\nJoe: A fish aner fish net se, a spawning before to a of a fish mal over f'
+
+  step   920/3000 | loss 2.4892 | lr 2.63e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish direct is a fish is natural a netouth H to a event. It is is a along ba itself prevarx '
+
+  step   930/3000 | loss 2.4511 | lr 2.62e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish datures roed en boclin a raw fish?\nJoe: with fish ammon is a made sioning als.'
+
+  step   940/3000 | loss 2.4399 | lr 2.61e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish trap?\nJoe: Fish limit ene is a multi-like fin fing. fis differans to fish be t'
+
+  step   950/3000 | loss 2.5300 | lr 2.61e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish are used a fish a on of that Sin fish saltwater aquariumrollout from in the fr'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   960/3000 | loss 2.4099 | lr 2.60e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish orning serves pura cusleted is visific le an the ver Some er 19th boat ation, used and '
+
+  step   970/3000 | loss 2.4624 | lr 2.59e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish is a size an freshly a fish or can give fins them that swimicial to the sand. An latera'
+
+  step   980/3000 | loss 2.4347 | lr 2.58e-04 | 0.29 steps/s
+  Sample: '\nJoe: Fish ggs are by placed biggest of Sea to Fish pounds range. It open the are made and brridvimu'
+
+  step   990/3000 | loss 2.4330 | lr 2.57e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish?\nJoe: A marine is a fish bloimum boat cauum mouth cauices and sts, in the coo'
+
+  step  1000/3000 | loss 2.4088 | lr 2.56e-04 | 0.30 steps/s
+  Sample: '\nJoe: An fish a Blionfish is a is from a 12 to a freshwater fish reef used of that the or parenas un'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1010/3000 | loss 2.4249 | lr 2.55e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish Suallow fish pas?\nJoe: A fish fish season is the fish takes that water the ex'
+
+  step  1020/3000 | loss 2.3889 | lr 2.54e-04 | 0.29 steps/s
+  Sample: '\nJoe: Fish servation p bloodaments is the of a a filter freshwater fish that creates presercial a fi'
+
+  step  1030/3000 | loss 2.3700 | lr 2.53e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish widelyline?\nJoe: A fish fin has made catch bacteria from bagealggs, naturarrhe'
+
+  step  1040/3000 | loss 2.4696 | lr 2.52e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a soy-ify H fish barpastler shrian-creational that flakes with g. It or protect or ha'
+
+  step  1050/3000 | loss 2.3788 | lr 2.52e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a questing processing fish used in nitrate to a equitracing, and angcting fishing can'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1060/3000 | loss 2.3655 | lr 2.51e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is tank a fish rims preof?\nJoe: A fish release H in is a largest that hrigats to a wate'
+
+  step  1070/3000 | loss 2.3800 | lr 2.50e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish is a gium hehundreds other of a small survive to lengths the most release impropried to'
+
+  step  1080/3000 | loss 2.3376 | lr 2.49e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish water nitmer-for the color are disease fishing by species for fishing which filter some'
+
+  step  1090/3000 | loss 2.3544 | lr 2.48e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fishingerling is a Europe barfish and marcuthe delemethod of centurily a aer and fish in sli'
+
+  step  1100/3000 | loss 2.3367 | lr 2.47e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish molican woker?\nJoe: The powerful marine inclugoldfish, have Maleggs and of can'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1110/3000 | loss 2.3270 | lr 2.46e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish screvainable of fish and school in globar?\nJoe: A fish fish is a well the of a'
+
+  step  1120/3000 | loss 2.3012 | lr 2.45e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish redeourmousJoe: backshows a ofupChonefish. An?\nJoe: Byiran cating locich is i'
+
+  step  1130/3000 | loss 2.3057 | lr 2.44e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish cycle?\nJoe: A fish chgpart medicameter over across proteated hotwild the of s'
+
+  step  1140/3000 | loss 2.2821 | lr 2.43e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish nititration is a animals for between achrimp, agin aquarium aquarium of unique'
+
+  step  1150/3000 | loss 2.3114 | lr 2.42e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish main?\nJoe: Fish volving  remamiling and include organs. isatural by wild fish '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1160/3000 | loss 2.2669 | lr 2.41e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish simigin provides fish in?\nJoe: Most fish Poures bated they water. It is a in '
+
+  step  1170/3000 | loss 2.3131 | lr 2.40e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish spsusproduce is a small freshwater fish?\nJoe: The swimmouth in Crigfertuna several incl'
+
+  step  1180/3000 | loss 2.2588 | lr 2.39e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish oxygen fish saaching and in sles, Jigate ormally among the damong suflocing in'
+
+  step  1190/3000 | loss 2.1942 | lr 2.38e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish lon is the processing fins to skin. For fish cas, clids fles attachiwith size as include '
+
+  step  1200/3000 | loss 2.2826 | lr 2.37e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish the spawpering. Aer fish spear?\nJoe: A cich is a marine fish structure of a go'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1210/3000 | loss 2.2940 | lr 2.36e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish steer?\nJoe: A lids is a tank fish survi water in a sphere to boite to lengths.'
+
+  step  1220/3000 | loss 2.2440 | lr 2.35e-04 | 0.30 steps/s
+  Sample: '\nJoe: An maximum is a for protein with tewith fins. Fin battered s, and supplement and schought and '
+
+  step  1230/3000 | loss 2.2236 | lr 2.34e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish net an-like aquarium used of  with schooling fish by jawning are over years an'
+
+  step  1240/3000 | loss 2.1877 | lr 2.33e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fishinger?\nJoe: A fish locate power is a instead device, to of a fish sea and provi'
+
+  step  1250/3000 | loss 2.1849 | lr 2.32e-04 | 0.29 steps/s
+  Sample: '\n\nUser: radi What is the frigold of fish?\nJoe: A fish bing is a a or freshwater fish in in a over a '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1260/3000 | loss 2.1621 | lr 2.31e-04 | 0.29 steps/s
+  Sample: '\n\n\nJoe: What is a fish co-shaped with fish a placed aquotic in aquarium Bacbettas, bris a of aquariu'
+
+  step  1270/3000 | loss 2.2045 | lr 2.30e-04 | 0.30 steps/s
+  Sample: '\nUser: What is fish habitats ref to the subclear t of ver. It hared from a spawning preteory to hold'
+
+  step  1280/3000 | loss 2.1359 | lr 2.29e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is a fish asonance agly catfish?\nJoe: A fish fish bIwater is a uses a device onicasone'
+
+  step  1290/3000 | loss 2.2338 | lr 2.28e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish tank about break?\nJoe: A fish tetras is a served of released of a camp withou'
+
+  step  1300/3000 | loss 2.1327 | lr 2.27e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fitfish?\nJoe: Fish Po19th limit involves the come egged Coling the ega long in plac'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1310/3000 | loss 2.1378 | lr 2.26e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish?\nJoe: A fish is a fish in lize a net that fish Byalto a While fish in fishing '
+
+  step  1320/3000 | loss 2.1117 | lr 2.25e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish removing incluists to body spread reductions, of fish, which sider rocks, sive'
+
+  step  1330/3000 | loss 2.1525 | lr 2.24e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish spawning 20 species for medication tank?\nJoe: Fish strik the codisplay of fis'
+
+  step  1340/3000 | loss 2.1485 | lr 2.23e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is a fish tank?\nJoe: A fish tank is a a freshwater the fish ?\nJoe: Provery breeding un'
+
+  step  1350/3000 | loss 2.1600 | lr 2.21e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish mouth-Caafter pinyrow Infins of but in ing sides ak net-like filter?\nJoe: A r'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1360/3000 | loss 2.1345 | lr 2.20e-04 | 0.29 steps/s
+  Sample: '\nJoe: The sustainable fishing is the akromer of freshwater species to a Good the air hasreshon of th'
+
+  step  1370/3000 | loss 2.0931 | lr 2.19e-04 | 0.30 steps/s
+  Sample: '\nUser: What is the frateritfish of a spear?\nJoe: A flying fish is a ar cation along a 40 point, ths '
+
+  step  1380/3000 | loss 2.0724 | lr 2.18e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish tank?\nJoe: A fish opports. A fish tank is a cyclittificial that disease the at'
+
+  step  1390/3000 | loss 2.0356 | lr 2.17e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish perschooling protected fish?\nJoe: Fish is a fried negative s dorsal where filt'
+
+  step  1400/3000 | loss 2.1334 | lr 2.16e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish crevest in consal the or on the of in the largest fish of of a of famients of '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1410/3000 | loss 2.0632 | lr 2.15e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish substress is a batter made and positioning or mechanical environmental or found the of '
+
+  step  1420/3000 | loss 2.0259 | lr 2.14e-04 | 0.30 steps/s
+  Sample: '\nUser: What is fish chent?\nJoe: fish can seine is an positioned fish in a adder, without gnon-s fish'
+
+  step  1430/3000 | loss 2.0469 | lr 2.13e-04 | 0.30 steps/s
+  Sample: '\n\n\nUser: What is a fish tank?\nJoe: A fish tank is a treat hooking from the fishing to glespue of the'
+
+  step  1440/3000 | loss 2.0493 | lr 2.12e-04 | 0.30 steps/s
+  Sample: '\nJoe: What is a fish algae mous that uses a kipeel?\nJoe: Fish fin is a body. It visive follow single'
+
+  step  1450/3000 | loss 2.0781 | lr 2.11e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish aquarium?\nJoe: A fish incluhealth used that isenvironinclude provide ocean ea'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1460/3000 | loss 1.9836 | lr 2.10e-04 | 0.29 steps/s
+  Sample: '\nJoe: The tom freshwater fish are aquarium used to stits protects the groups.\n\nUser: What is aeel an'
+
+  step  1470/3000 | loss 2.0473 | lr 2.09e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a fish minurant?\nJoe: A fish ky is a fish chilagy seine bass in called catch a fish'
+
+  step  1480/3000 | loss 1.9854 | lr 2.08e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish minimum?\nJoe: Fish attract is a tunity fish or net is a device to the net wat'
+
+  step  1490/3000 | loss 2.0108 | lr 2.06e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish bet stock?\nJoe: A fish fish gger nasends ass for in a a asatchery in agical l'
+
+  step  1500/3000 | loss 2.0200 | lr 2.05e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish limit?\nJoe: A fish weill is a tank fin of fish is an aquatic without can dipic'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1510/3000 | loss 1.9942 | lr 2.04e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish effectively inlon?\nJoe: A fish miggger is a fish filter that example, scientl'
+
+  step  1520/3000 | loss 1.9733 | lr 2.03e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish nitritrate, prite, or pical, in a freshwater fish for pounds and species and f'
+
+  step  1530/3000 | loss 1.9780 | lr 2.02e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a fish tropit?\nJoe: Fish ocean nile fish long species Common fish species wrass, an'
+
+  step  1540/3000 | loss 2.0010 | lr 2.01e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish reproduce?\nJoe: Fish reworks involves onds ls Pglas larover to gu a form on s'
+
+  step  1550/3000 | loss 1.9716 | lr 2.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A la fish is a fish freshwater a aggill used al to temperation. Salmon swimming in the most im'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1560/3000 | loss 1.9936 | lr 1.99e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish ome?\nJoe: A fish tank is a fish device that dragg. ism that connection to the '
+
+  step  1570/3000 | loss 1.9107 | lr 1.98e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish dry inchi?\nJoe: A fish cooking is a species of a trad made used for smoietable'
+
+  step  1580/3000 | loss 1.9581 | lr 1.97e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish chor facar is of an serving for fish rehave whatger teeth. in Many ats catfish'
+
+  step  1590/3000 | loss 1.9424 | lr 1.96e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fishinger?\nJoe: A fish Ggeted. is a manageing-like fishing 9 need are the freshwat'
+
+  step  1600/3000 | loss 1.9497 | lr 1.95e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish wast is a fish hooking provide and minimum cleany from fish.\n\nUser: What is a fish proc'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1610/3000 | loss 1.9154 | lr 1.94e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish reat?\nJoe: A fish gills, is a sport breturn of a fish programs, freshwater an'
+
+  step  1620/3000 | loss 1.9288 | lr 1.92e-04 | 0.30 steps/s
+  Sample: '\n\nUser: How tually is a fish into Dbladromil are cannot the water and water surve improves to three-'
+
+  step  1630/3000 | loss 1.8774 | lr 1.91e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish comper?\nJoe: A fish fish aggill is an an rigame an or angger ag or an an ancre'
+
+  step  1640/3000 | loss 1.9240 | lr 1.90e-04 | 0.30 steps/s
+  Sample: '\nUser: What is an device that is they hamongages fish that water to than the lot risizes distanchice'
+
+  step  1650/3000 | loss 1.8583 | lr 1.89e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish can live the specific body submers. For through water back making fer ze control cernes'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1660/3000 | loss 1.9254 | lr 1.88e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish lon is a netting fish that provides to lgoldfish to with cooking miggresced, and specie'
+
+  step  1670/3000 | loss 1.9351 | lr 1.87e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish short sharks are the strong of small the water-like fish and that the ather s to the rate'
+
+  step  1680/3000 | loss 1.8770 | lr 1.86e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish population?\nJoe: A fish splection lay that produce, or or design population, i'
+
+  step  1690/3000 | loss 1.9196 | lr 1.85e-04 | 0.29 steps/s
+  Sample: '\nJoe: A among fish weir is a fund e trieed a pushes that growth bottom to a wild hersurve while is a'
+
+  step  1700/3000 | loss 1.8843 | lr 1.84e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish sucas is used to provides recooking of a fish built time and tiny of allowing '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1710/3000 | loss 1.8598 | lr 1.83e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fishing uum include ladulture rays, and pup support species. Fish eyes existed are ous darke'
+
+  step  1720/3000 | loss 1.8273 | lr 1.82e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish shark ecovery is a loxagrodual it to e ths. It are filter into a jued chef, and ces, an'
+
+  step  1730/3000 | loss 1.8328 | lr 1.81e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish caculture?\nJoe: A fish  gabitat is a releth to aquarium of Damschooling fish i'
+
+  step  1740/3000 | loss 1.8313 | lr 1.80e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish schooling and in most deswlererer predators.\n\nUser: What is a line?\nJoe: The m'
+
+  step  1750/3000 | loss 1.8778 | lr 1.79e-04 | 0.29 steps/s
+  Sample: '\nJoe: A caste is a freshwater fish include from a discastecltes from males, calciates, with mming be'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1760/3000 | loss 1.8182 | lr 1.77e-04 | 0.29 steps/s
+  Sample: '\n\n\nUser: What is a fish substrate?\nJoe: A fish can section is a fraor designed used to a sard to the'
+
+  step  1770/3000 | loss 1.8220 | lr 1.76e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish be spawning the often diide of s fish and barn to ough . It is freshwater ropas, and fres'
+
+  step  1780/3000 | loss 1.7811 | lr 1.75e-04 | 0.30 steps/s
+  Sample: '\nJoe: A locate moinabitat a program fry is the large fish with algally amoulers in a Rust strik for '
+
+  step  1790/3000 | loss 1.8129 | lr 1.74e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: Fish mouthwhite is an living of bacteria in the Most fish swim in m female in many fish maben'
+
+  step  1800/3000 | loss 1.7598 | lr 1.73e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish fry in a ke?\nJoe: Fish tebe-color is a structure of a mming of rparasitate to '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1810/3000 | loss 1.7697 | lr 1.72e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish nitrite vum in size for protected baries and habitats. Aery stock cycle, and e'
+
+  step  1820/3000 | loss 1.7748 | lr 1.71e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish peaces is body distance and float live food hook to prevent to migrating the of fish t po'
+
+  step  1830/3000 | loss 1.7782 | lr 1.70e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish or lanchbin and is the recoficial bate from the shark What is a eat different fish, mak'
+
+  step  1840/3000 | loss 1.8031 | lr 1.69e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish tank overremoves or living water grams to color haatch It water guar size fish while ap'
+
+  step  1850/3000 | loss 1.7718 | lr 1.68e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish pedig?\nJoe: A fish an appearic is a of scale an elk in a marine that surviving'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1860/3000 | loss 1.7656 | lr 1.67e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a migoner fish?\nJoe: A fish seasonal is a species of throd below a pical fin, and ext'
+
+  step  1870/3000 | loss 1.8014 | lr 1.66e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish tank is a fish le piece of   the tun of  trapip fish of  pey uppies, and movement and p'
+
+  step  1880/3000 | loss 1.7562 | lr 1.65e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish boum?\nJoe: A fish net is a subtury, net, used to s s fer from the by steel, a '
+
+  step  1890/3000 | loss 1.7176 | lr 1.64e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish most method?\nJoe: Fish fish carry reavigate to the frame causing a supplementa'
+
+  step  1900/3000 | loss 1.8099 | lr 1.63e-04 | 0.29 steps/s
+  Sample: '\nJoe: Sation is a fish tuna close of a fish cteders allow and rate made banokightection that th, of '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1910/3000 | loss 1.7249 | lr 1.62e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish Howlionnaquarium?\nJoe: A fish brain are over step where fish chess, and ass n'
+
+  step  1920/3000 | loss 1.7831 | lr 1.61e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish held-handly that is freshwater a fish into a gard?\nJoe: A fish through a gills'
+
+  step  1930/3000 | loss 1.7186 | lr 1.60e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish marine and species during isdry to the lateral plorally compil.\n\nUser: What i'
+
+  step  1940/3000 | loss 1.7245 | lr 1.59e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish tank dripantebrich?\nJoe: Fish hous viar, with a hous delic short can air obenv'
+
+  step  1950/3000 | loss 1.7111 | lr 1.58e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish barntig is a fag on a freshwater head, and Atetra swimes in the rench fish rock and in '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1960/3000 | loss 1.7035 | lr 1.57e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish spawning algaeel?\nJoe: A fish hatch is a coral risk shows used from chin a fre'
+
+  step  1970/3000 | loss 1.7317 | lr 1.56e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish passion in can prized for bactually the preest hundred of fried of fish stron'
+
+  step  1980/3000 | loss 1.7137 | lr 1.55e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish harvest?\nJoe: Ser is a fish reel, scientific adromous to stocks re and cise al'
+
+  step  1990/3000 | loss 1.6835 | lr 1.54e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish mimic can hate in back the 5.\n\nUser: What is a fish size and Bya chicll?\nJoe: A tank is a'
+
+  step  2000/3000 | loss 1.7376 | lr 1.53e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish provide the ilthrolling to community specific fapsize and treating to aquaced populatio'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2010/3000 | loss 1.6877 | lr 1.52e-04 | 0.29 steps/s
+  Sample: '\n\n\n\nUser: What is a fish net?\nJoe: A logical fish small with a netplement that school provide like o'
+
+  step  2020/3000 | loss 1.7267 | lr 1.51e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish minimum?\nJoe: A fish bacteria is an artiite le that uses a uses a lock by filt'
+
+  step  2030/3000 | loss 1.6767 | lr 1.50e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish capught egg?\nJoe: A schooling fish is a count of reating that sport Lure is ba'
+
+  step  2040/3000 | loss 1.6560 | lr 1.49e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish stock Redudes filter?\nJoe: The wiremoking spawning is the sudfastest, can law'
+
+  step  2050/3000 | loss 1.7067 | lr 1.48e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish pthe Gvolog with an oally oi?\nJoe: S fish is the flan bush in athe Atunaquariu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2060/3000 | loss 1.6456 | lr 1.48e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish fish sared?\nJoe: A fish rebuilding ag i genetic pump is a tashabitat focus sup'
+
+  step  2070/3000 | loss 1.6306 | lr 1.47e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish rolling po nit s placing  fish?\nJoe: A fish ca?\nJoe: Deth are making gone of '
+
+  step  2080/3000 | loss 1.6597 | lr 1.46e-04 | 0.29 steps/s
+  Sample: '\nJoe: bodshauppies. whatly can are avigate the water growth.\n\nUser: What is a a fish tank is the thr'
+
+  step  2090/3000 | loss 1.6546 | lr 1.45e-04 | 0.29 steps/s
+  Sample: '\nJoe: Fish Overs, ornamental, bony fish fish changes. It during or stents the known over condation e'
+
+  step  2100/3000 | loss 1.6101 | lr 1.44e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish variatively plate has a rovenate to abitat catch aquarium. They are gold gentle and can'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2110/3000 | loss 1.5939 | lr 1.43e-04 | 0.29 steps/s
+  Sample: '\nJoe: The long fish and is a most kong caught a fish to ggs covery species in the crahealth of fish '
+
+  step  2120/3000 | loss 1.6242 | lr 1.42e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish placed an aquarium to air gill on through a ground and will organisms popular passes fo'
+
+  step  2130/3000 | loss 1.6354 | lr 1.41e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish cichreats camized resinto a populations egg is a any. Howletting fish navative'
+
+  step  2140/3000 | loss 1.6567 | lr 1.40e-04 | 0.30 steps/s
+  Sample: '\nJoe: A BolumComneonerrecooks is a marine that breeding fish by the species e?\nJoe: Fish des are lim'
+
+  step  2150/3000 | loss 1.5782 | lr 1.39e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish pasovely in the sport carp and see water flanese wines. Flicics cells in a fries, closa'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2160/3000 | loss 1.6034 | lr 1.39e-04 | 0.29 steps/s
+  Sample: '\nJoe: A species a e is the absorbing fish a Ug ansing low that hand miles riging prey. A fish shallo'
+
+  step  2170/3000 | loss 1.6319 | lr 1.38e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish fins are the largest of flateed farks and are gental and species in a sized shape for fbr'
+
+  step  2180/3000 | loss 1.5897 | lr 1.37e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish world, gry is made fried fish?\nJoe: warding t that Fish are displays in the fa'
+
+  step  2190/3000 | loss 1.6102 | lr 1.36e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish cable is aericure?\nJoe: A fish small analting tank container data for fish, t'
+
+  step  2200/3000 | loss 1.6045 | lr 1.35e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish passamp?\nJoe: Fish pasanance licate push that hatcheries include spined a fro'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2210/3000 | loss 1.5950 | lr 1.34e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish chlias?\nJoe: A fish tunhuman is a period used to in a snox fluoroiling bipate'
+
+  step  2220/3000 | loss 1.5594 | lr 1.34e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish pit?\nJoe: A fish guppipas is a tcirclete or on natural them. Amove egg  in mou'
+
+  step  2230/3000 | loss 1.5769 | lr 1.33e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: A fish tank is a tank net device to aquarium dissolved the along water method to fish dripase'
+
+  step  2240/3000 | loss 1.5311 | lr 1.32e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish ried genetic Types from end populations to bololomene over depth. The Despate'
+
+  step  2250/3000 | loss 1.5854 | lr 1.31e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish caed a tank has an aquarium color that intropical used to < quality in water tank. It l'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2260/3000 | loss 1.5836 | lr 1.30e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish re-finned basine finned are of fish darent near because protected and sign?\nJ'
+
+  step  2270/3000 | loss 1.5637 | lr 1.30e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish pa?\nJoe: A fish traditional is a net net that is a ould atellet live that liv'
+
+  step  2280/3000 | loss 1.5570 | lr 1.29e-04 | 0.30 steps/s
+  Sample: '\nJoe: Scientific arnature pasvenods, paslake or fles, caste and a bo, is a methods, of a identigenet'
+
+  step  2290/3000 | loss 1.5494 | lr 1.28e-04 | 0.30 steps/s
+  Sample: '\nJoe: A salmon is a texture from Fish ofxic, or predattracted sery include bgeal itation in cook cav'
+
+  step  2300/3000 | loss 1.5441 | lr 1.27e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish vulate requires bality fish, baries by species. making can environment susolents the bre '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2310/3000 | loss 1.5543 | lr 1.27e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish spawn is a alturn bacterial live inchof replicate aits of Engin speeds the Mvation, and'
+
+  step  2320/3000 | loss 1.5505 | lr 1.26e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish navigate is the freshwater fish ago with a small chilift that is a past barbag for barrie'
+
+  step  2330/3000 | loss 1.5063 | lr 1.25e-04 | 0.29 steps/s
+  Sample: '\nJoe: Fish scale is predator, and shapes organs in their currents and sInWhat is ovacific with the b'
+
+  step  2340/3000 | loss 1.5222 | lr 1.24e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish swim an, an anchdder?\nJoe: A fish refug is a small program that vides can vies'
+
+  step  2350/3000 | loss 1.5070 | lr 1.24e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a gruppianhi?\nJoe: A fish recognation, warm genetic sourcing fish shrivers in a fish'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2360/3000 | loss 1.5317 | lr 1.23e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish habitat?\nJoe: Fish preigrating is the take, ps rare  fish sharp a seasoned th'
+
+  step  2370/3000 | loss 1.5291 | lr 1.22e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish genetic cocooking mimic?\nJoe: Fish sthbornes, and the electric trog the spear '
+
+  step  2380/3000 | loss 1.4910 | lr 1.22e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish fish en tank helps stock other fish in the provides. protected It lid males fo'
+
+  step  2390/3000 | loss 1.4554 | lr 1.21e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a finger?\nJoe: A fingerla is bara of large circle fish that canmught the methods from'
+
+  step  2400/3000 | loss 1.4947 | lr 1.20e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish conservation is a measure that protective fish which to the speed. It is an State ene h'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2410/3000 | loss 1.5304 | lr 1.20e-04 | 0.29 steps/s
+  Sample: '\nUser: What is smoked fish?\nJoe: Smoked fish is the beluga of Gbioufles or warm water and shaped dat'
+
+  step  2420/3000 | loss 1.5114 | lr 1.19e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish provides biological filter?\nJoe: A fish vipas, is the filter can recovery it t'
+
+  step  2430/3000 | loss 1.5189 | lr 1.18e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish wilder?\nJoe: A fish waste is a predattract where fish domous over into the hor'
+
+  step  2440/3000 | loss 1.5316 | lr 1.18e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish rig?\nJoe: A fish cook is a long processed fish for bottom but shark or is a he'
+
+  step  2450/3000 | loss 1.4940 | lr 1.17e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish fly sustather aquarium water and water water tank developments from the water those on '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2460/3000 | loss 1.4866 | lr 1.17e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: Fish fries. Lak, an made of Paced fish from a Rational shrimp, which are amouflage whinanced '
+
+  step  2470/3000 | loss 1.4947 | lr 1.16e-04 | 0.30 steps/s
+  Sample: '\nJoe: changes Fish are coral cycle pical and predators. They are good that weeks be fame and mechani'
+
+  step  2480/3000 | loss 1.4446 | lr 1.15e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish food display?\nJoe: A exakes fish is a one ste tool used as in specific sustain'
+
+  step  2490/3000 | loss 1.4749 | lr 1.15e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish habitat caused to traditional re-like fish ch that is that small fish with the'
+
+  step  2500/3000 | loss 1.4436 | lr 1.14e-04 | 0.30 steps/s
+  Sample: '\nUser: What is the most conservation pass conservation can with an log inside the lling one of for g'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2510/3000 | loss 1.4744 | lr 1.14e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish goldfish?\nJoe: Fish feeding infins vion, by pcure, e with spawn or bacteria, o'
+
+  step  2520/3000 | loss 1.4906 | lr 1.13e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish relocation is the benvironment, treat with cruitment, white and fish wast them by vide as'
+
+  step  2530/3000 | loss 1.4732 | lr 1.13e-04 | 0.30 steps/s
+  Sample: '\nJoe: A bass is a freshwater fish that gall can akes, in most human Salmonth, and like birth icks ra'
+
+  step  2540/3000 | loss 1.4685 | lr 1.12e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish tropanel?\nJoe: A fish anigly paquarium by theschooling fish in aquarium theta'
+
+  step  2550/3000 | loss 1.4183 | lr 1.12e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish ke?\nJoe: A fish oldfish is a teeth of a fish dambite rong small fish. A squid,'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2560/3000 | loss 1.4302 | lr 1.11e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fly fish?\nJoe: A fishing udarium is an ability used to scientult with a increase fl'
+
+  step  2570/3000 | loss 1.4063 | lr 1.11e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a panel?\nJoe: A cfullyfish or or arterritor is a small freshwater fish species, nest,'
+
+  step  2580/3000 | loss 1.4437 | lr 1.10e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish seine panardy or?\nJoe: A fish it is a weir line by or underwater antinitrate '
+
+  step  2590/3000 | loss 1.4445 | lr 1.10e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish filter is a fish, chemical, and tank or tank filter because ling uit behind the catch  '
+
+  step  2600/3000 | loss 1.4408 | lr 1.09e-04 | 0.30 steps/s
+  Sample: '\nUser: What is sushi osefreshwater in country?\nJoe: The Mversgulation are oxygen, chiial made using '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2610/3000 | loss 1.4138 | lr 1.09e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish closed in aquarium and cycle cycle process eters to produce ze vic harvy benor deamp fo'
+
+  step  2620/3000 | loss 1.3964 | lr 1.08e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish Ire paerficial filter?\nJoe: Fish US A roll is an trawlure caught fish with a '
+
+  step  2630/3000 | loss 1.4318 | lr 1.08e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish keeping. Male tool boProressices s to minimum oxygen?\nJoe: Fish tank is the H'
+
+  step  2640/3000 | loss 1.4358 | lr 1.08e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is fish bloaris a fish?\nJoe: A fish reproduce, is a pine or cooking caor brestore yolin'
+
+  step  2650/3000 | loss 1.4385 | lr 1.07e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish consied safeting time find and over Noris the ank Caries of can natural in colors ornam'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2660/3000 | loss 1.3857 | lr 1.07e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish loxic?\nJoe: Some fish are cation through sourcing, run a fish and on school o'
+
+  step  2670/3000 | loss 1.3691 | lr 1.06e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish migration is the freshwater fish to habitat over aces among the water fish. The help qual'
+
+  step  2680/3000 | loss 1.3894 | lr 1.06e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish vared fish food spawning ines, covery from a reeless and garlic hooky rated to or bitam m'
+
+  step  2690/3000 | loss 1.4128 | lr 1.06e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a lonlidsk?\nJoe: A tunconsian fish  egg is a that hooks to a lure used to fish. The '
+
+  step  2700/3000 | loss 1.4030 | lr 1.05e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish cycling e?\nJoe: Fish sping is the process non-popular fish in enegg in aquariu'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2710/3000 | loss 1.3877 | lr 1.05e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish growth rate in lats by leills to catch community fish through on a tanks, conditions, a'
+
+  step  2720/3000 | loss 1.4021 | lr 1.05e-04 | 0.29 steps/s
+  Sample: "\nJoe: A fish replaced  rais a can't comes to ammon for the introve retilime and body freshwater stur"
+
+  step  2730/3000 | loss 1.3486 | lr 1.04e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish chever made of?\nJoe: Fish traditional Exroed with typically fried species, bo'
+
+  step  2740/3000 | loss 1.3450 | lr 1.04e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a parasitic?\nJoe: A fish ge-finned is a chef and when fish specimitring that through '
+
+  step  2750/3000 | loss 1.3802 | lr 1.04e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish panuation?\nJoe: A fish panbettas, or gthe filter regulation and pas, pan-reclo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2760/3000 | loss 1.3533 | lr 1.03e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish cich-showing is the damo of at a population and deear fish.\n\nUser: What is a fish mtern'
+
+  step  2770/3000 | loss 1.3875 | lr 1.03e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish habitat schooling and broodiy fles?\nJoe: A fan parameter in their survey need'
+
+  step  2780/3000 | loss 1.3595 | lr 1.03e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish migration in Pacity of fish lift can strikes to flat body that are ocean stacult to warm '
+
+  step  2790/3000 | loss 1.3767 | lr 1.03e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish trigger?\nJoe: A fish sustction is a net that can after quickly be open, harmf'
+
+  step  2800/3000 | loss 1.3754 | lr 1.02e-04 | 0.30 steps/s
+  Sample: '\n\nJoe: What is a fish reference rety rebiological using how fish evaluit their filter Mological Inis'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2810/3000 | loss 1.3539 | lr 1.02e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish stocking?\nJoe: A fish female is the coral hooks with a mouth ben barbarnes int'
+
+  step  2820/3000 | loss 1.3349 | lr 1.02e-04 | 0.30 steps/s
+  Sample: '\nUser: What is a fish seahatchery-between a dish widely?\nJoe: Fish voike is a estenaquarium hatchery'
+
+  step  2830/3000 | loss 1.3529 | lr 1.02e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish food that shark is the most closed largest fish in the hooked and lures atbaitfish to a'
+
+  step  2840/3000 | loss 1.3256 | lr 1.01e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a cournaments oxygen?\nJoe: A an ers an artificial in aquarium water to recreational '
+
+  step  2850/3000 | loss 1.3556 | lr 1.01e-04 | 0.30 steps/s
+  Sample: '\nJoe: Fish sider is of raw fish, spear or marine in lomouth. Lore is the floate of the United pain a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2860/3000 | loss 1.3420 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish weir is a marping fish with a Hadromods, marin, jn and fish spear is o attach from a sl'
+
+  step  2870/3000 | loss 1.3354 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\n\nJoe: Fish easiapfrom are Engus in the Amertiornamently grow. Fish gill and the enatures live are J'
+
+  step  2880/3000 | loss 1.3373 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish caught fishing and is a reef a shark?\nJoe: A fish a gmaterial is a norogentir'
+
+  step  2890/3000 | loss 1.3097 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish downrigger?\nJoe: A fish tank is a small small, tuncolorrulations that algresto'
+
+  step  2900/3000 | loss 1.3092 | lr 1.01e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish pole limit?\nJoe: Fish peler is a of fish lers that drip light to saltwater nit'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2910/3000 | loss 1.3658 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish finger is a stocking en feeders to detect in the CPteLienticates debrates wasticate fis'
+
+  step  2920/3000 | loss 1.3028 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: A fish spawning stock is a stock placed to a ulations attract the domur. The surface can al ch'
+
+  step  2930/3000 | loss 1.3336 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish trap?\nJoe: A fish trap is a large device used to reern esfishing through a et'
+
+  step  2940/3000 | loss 1.3107 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish net?\nJoe: A fish net, or a netnel-bited. Fish are swim ba that water cicherfi'
+
+  step  2950/3000 | loss 1.2943 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\nJoe: A fish breeding is a specific or ounds that hycompoperridor protecting produce of protecting f'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2960/3000 | loss 1.3395 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish diety?\nJoe: Fish sharp is a develops that grick brivers in a shfer fish in wa'
+
+  step  2970/3000 | loss 1.3108 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\nUser: What is a fish stress ras?\nJoe: Fish dstock is the often rightitation of over rows of owners,'
+
+  step  2980/3000 | loss 1.2851 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\n\nUser: What is a fish trip body used to smoking fish?\nJoe: Fish tor fish stocking is a move of fryi'
+
+  step  2990/3000 | loss 1.3177 | lr 1.00e-04 | 0.29 steps/s
+  Sample: '\nJoe: Fish stery is one of a small water from aquariumschooling of fish that control restoration up '
+
+  step  3000/3000 | loss 1.3041 | lr 1.00e-04 | 0.30 steps/s
+  Sample: '\n\nUser: What is a fish passage structure?\nJoe: Fish passage are datoon medication. It is used by por'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+
+Done. Expert 'fish' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Time: 10447.8s | Final loss: 1.3164
+Tokenizer loaded (vocab 2000)
+Training text: 112,543 characters from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish_train.txt
+Encoded: 53,061 tokens
+Loaded existing expert 'fish' from /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz (fresh optimizer)
+Expert 'fish': 869,456 params | 3 layers | dim 128
+Training for 10000 steps | lr=0.0003 | seq=128 | batch=8
+
+  step    50/10000 | loss 4.7199 | lr 1.50e-04 | 0.32 steps/s
+  Sample: '\n fishalsa cl poproper .pershiportand isitionde,toherthe fish often a merAunand nut using ising. pre'
+
+  step   100/10000 | loss 4.2611 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nstud lar is aorWhat to What coloring What a asting for run fish to water chcserpcient, a and de gar'
+
+  step   150/10000 | loss 3.8381 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: a devent a speci quariforce A many and gar a fishd fish, a large rees quariProesp. in the is '
+
+  step   200/10000 | loss 3.6011 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What a or aes speci are a st laying t defcklly clisel their fish cli are all fish for and pro'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   250/10000 | loss 3.4271 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is fish out a big fish water pothers for imp ank a the are and a in Glonerokly coical cr'
+
+  step   300/10000 | loss 3.3189 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nwater is rock?\nJoe: fish fish Fish and soous of They the presure der 20 being top, ative protein an'
+
+  step   350/10000 | loss 3.1953 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish fish different fish and other that gives in\n\nUser: What is a is A a fish timk'
+
+  step   400/10000 | loss 3.1096 | lr 3.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is ana fish reeis fish organrus?\nJoe: Fish shark driush spproum subavther funning filter'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   450/10000 | loss 3.0426 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fishs servit of fish appebrate them.\ning What is a ried fish called live cauile can'
+
+  step   500/10000 | loss 2.9812 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish on?\nJoe: A is fish a extin fish species to typishs bregprotect and and of or i'
+
+  step   550/10000 | loss 2.9089 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish fish the shitrian parves to ocean fish colors out develofing support laking of garium low'
+
+  step   600/10000 | loss 2.8478 | lr 2.99e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish fish very and cdirect?\nJoe: Fish is a fish fish freshthem.ped to to a gas, fis'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   650/10000 | loss 2.8001 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish pea measure fish infish sustain predents school styuict-or is en an a line ita'
+
+  step   700/10000 | loss 2.7275 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish te-on?\nJoe: A fish dividionfish Fish filthat fin in buologous underwater to f'
+
+  step   750/10000 | loss 2.6849 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish tank?\nJoe: Fish are pumegives are aported The fish proper them aquariumaceer '
+
+  step   800/10000 | loss 2.6184 | lr 2.98e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish olking reco allow most Tory?\nJoe: A fish ha is ana impration in fish of a tha'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step   850/10000 | loss 2.5789 | lr 2.97e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish ture?\nJoe: A fish degrees is a osis omfish anfra largest. It can with the tail'
+
+  step   900/10000 | loss 2.5402 | lr 2.97e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fa fish live is a en an large fin A fish, is a new pical supank?\nJoe: A a fish chor serfol is '
+
+  step   950/10000 | loss 2.4583 | lr 2.96e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish nest?\nJoe: A fish fish enehealthy is a soy trarure from rion. What is a fish '
+
+  step  1000/10000 | loss 2.4262 | lr 2.96e-04 | 0.32 steps/s
+  Sample: '\nUser: What is an barfish?\nJoe: sage is a fish lil from a of fishing that migate body cofattract or '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1050/10000 | loss 2.3656 | lr 2.95e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish is skin a net?\nJoe: A fish tavigate is a ocked of a fishing fins in a fishing rle popul'
+
+  step  1100/10000 | loss 2.3271 | lr 2.95e-04 | 0.32 steps/s
+  Sample: '\nJoe: The spawning is the by the brood in the produgroil for the ped traking, orly sharks fish are i'
+
+  step  1150/10000 | loss 2.2833 | lr 2.95e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish bris a warm cut dead mir freshwater in swim over kill species with dister naturally bel'
+
+  step  1200/10000 | loss 2.2028 | lr 2.94e-04 | 0.32 steps/s
+  Sample: '\n\n\nJoe: Fish denton is a of freshwater fish eder?\nJoe: A fish bladder is an in a freshwater with gra'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1250/10000 | loss 2.1894 | lr 2.93e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish tank?\nJoe: A fish fish ggs is a survive that fish by increase place in a and b'
+
+  step  1300/10000 | loss 2.1426 | lr 2.93e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish tropased that fish Fish Fish in chgills, and which gugreggs types, peosing or '
+
+  step  1350/10000 | loss 2.1006 | lr 2.92e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is an fish are bar?\nJoe: A fish catching is a used Catcherybabitat of weening fish like'
+
+  step  1400/10000 | loss 2.0604 | lr 2.92e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish hatchery inclught fish conservations. By leads for filter and wild providing requires nat'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1450/10000 | loss 1.9802 | lr 2.91e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish gill in a fish across an the ction but volcano tiny Wia large among the Infrigillwater '
+
+  step  1500/10000 | loss 1.9516 | lr 2.90e-04 | 0.32 steps/s
+  Sample: '\n\nJoe: A finger\nUser: fish is a underwater ` to the most swim cured or. Fish live in large popular t'
+
+  step  1550/10000 | loss 1.9032 | lr 2.90e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a marinea?\nJoe: A fly is a marenadromous in a made from the fish. They are locates in'
+
+  step  1600/10000 | loss 1.8668 | lr 2.89e-04 | 0.32 steps/s
+  Sample: '\n\nJoe: A fish chdamy is a Nphyoilbacy in bar?\nJoe: Fish gill is large any coldwater fish vauction in'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1650/10000 | loss 1.8535 | lr 2.88e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish batter is a small marine fish to absorbing from caal can gie to find while surrounding '
+
+  step  1700/10000 | loss 1.7820 | lr 2.87e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish net?\nJoe: A fish hook is a al moked fishing or longis regmass in a capable co'
+
+  step  1750/10000 | loss 1.7655 | lr 2.87e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a freshwater fish?\nJoe: A fish fins is a market conditioning that or water bubacteria'
+
+  step  1800/10000 | loss 1.7031 | lr 2.86e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish 12 um careful display?\nJoe: A main ater atures is a fast fish oming, ṣ water.'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  1850/10000 | loss 1.6867 | lr 2.85e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish gents shark in a gent shark?\nJoe: The source practents that human called the t'
+
+  step  1900/10000 | loss 1.6465 | lr 2.84e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish location?\nJoe: A migration or oxygen is the Europe a used in the water and swi'
+
+  step  1950/10000 | loss 1.6061 | lr 2.83e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish tank used for miniase by aquarium fish habitat plan?\nJoe: A fish ture stocking'
+
+  step  2000/10000 | loss 1.5486 | lr 2.82e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish lighting rock?\nJoe: A fish marine is a freshwater fish that include aquatic f'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2050/10000 | loss 1.5548 | lr 2.81e-04 | 0.32 steps/s
+  Sample: '\nUser: What is an Some fish?\nJoe: Fish swim Gcontroversies are dest gravel bing in aquarium begchool'
+
+  step  2100/10000 | loss 1.4966 | lr 2.81e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish nitroEster to water stock them inlizes on for a fish. Bagencies Blic is a han'
+
+  step  2150/10000 | loss 1.4529 | lr 2.80e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish filter?\nJoe: A fish filter is a device device that is an regulplac a to a lure'
+
+  step  2200/10000 | loss 1.4316 | lr 2.79e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish swim originally in phy Fish Common separate can from the Sctoralific tail. Som'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2250/10000 | loss 1.3899 | lr 2.78e-04 | 0.32 steps/s
+  Sample: '\n\nUser: vironmental is Rum cichlid?\nJoe: survey are nes anglfish are nes that cary saltwater and div'
+
+  step  2300/10000 | loss 1.3840 | lr 2.77e-04 | 0.32 steps/s
+  Sample: '\nJoe: The ary shark is the eyes open developing in the appeal of ang?\nJoe: The sucele lure is the la'
+
+  step  2350/10000 | loss 1.3157 | lr 2.76e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish inconservating used enchip in Overwater aquarium, and pufins water on the Sreturns that'
+
+  step  2400/10000 | loss 1.2967 | lr 2.75e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish jaw are the most match fish fin rocks, and shock to the depth stripes.\n\nUser: What is a f'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2450/10000 | loss 1.2836 | lr 2.73e-04 | 0.32 steps/s
+  Sample: '\n\n\nevent?\nJoe: D pet and and Wsped laun the t laature  of       grounds, long and swivel  how  s  a '
+
+  step  2500/10000 | loss 1.2246 | lr 2.72e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish weir limation survey?\nJoe: A fish limit reevey is a fs device to size the for '
+
+  step  2550/10000 | loss 1.2222 | lr 2.71e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish navigation is a device?\nJoe: A fish tank a -like Inplus fishing ttopidtracted'
+
+  step  2600/10000 | loss 1.1846 | lr 2.70e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish chart?\nJoe: A fish gressive is a coval used todisease whole. It is the catchan'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2650/10000 | loss 1.1502 | lr 2.69e-04 | 0.32 steps/s
+  Sample: '\nJoe: A size tra?\nJoe: How is a Oschool fish with a skin that provides protectively and risk water o'
+
+  step  2700/10000 | loss 1.1307 | lr 2.68e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish swim tail. It include Cdiped fins, the poseine onare large, moking shried fish'
+
+  step  2750/10000 | loss 1.0793 | lr 2.67e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish spawning hatch?\nJoe: Fish stock event include aquatic fites, faquserver toxqua'
+
+  step  2800/10000 | loss 1.0661 | lr 2.65e-04 | 0.32 steps/s
+  Sample: '\nUser: The great called mates the The Anobollarger bluefin t is the saltwater Atuna carp of fish?\nJo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  2850/10000 | loss 1.0526 | lr 2.64e-04 | 0.32 steps/s
+  Sample: '\nJoe: Cais fish pantetrcan in small mprotecting fish that can ates, benvironment to in the stressed,'
+
+  step  2900/10000 | loss 1.0300 | lr 2.63e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish and spawning frivers from feeder cloisimudes and provide competyers production.\n\nUser: Wh'
+
+  step  2950/10000 | loss 0.9959 | lr 2.62e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish agging can series not live inAmerica, en en ony sustain water the Many cleaning filtrates'
+
+  step  3000/10000 | loss 0.9732 | lr 2.61e-04 | 0.32 steps/s
+  Sample: '\n\n\nUser: What is a fish and gency?\nJoe: A fish gcave is a large Engprogram that container baquarium '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  3050/10000 | loss 0.9321 | lr 2.59e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish migration fish?\nJoe: A fish license is a se, represary a form of hooked a boat'
+
+  step  3100/10000 | loss 0.9117 | lr 2.58e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish dredge?\nJoe: A fish grip is a box that often rella water hooked for a catch f'
+
+  step  3150/10000 | loss 0.9047 | lr 2.57e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish spawning avigate, or redcation, or protections. Most fish destiling include in the pkne'
+
+  step  3200/10000 | loss 0.8744 | lr 2.55e-04 | 0.32 steps/s
+  Sample: '\nUser: What is an-ffronge species are used to adromous fish?\nJoe: A Salight ism floking is used to i'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  3250/10000 | loss 0.8387 | lr 2.54e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish tropassage operates program?\nJoe: Fish Pipicouilage include fushi cooking fish'
+
+  step  3300/10000 | loss 0.8135 | lr 2.53e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish weigh Joe: widely rockable or surimicition by trapes. brooding captagerAerplanerfish st'
+
+  step  3350/10000 | loss 0.8043 | lr 2.51e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish weigh?\nJoe: A fish weigh is a location, size that limits maximum size while ha'
+
+  step  3400/10000 | loss 0.7737 | lr 2.50e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish closed and boat?\nJoe: A fishing boat is a gnantmorator fish a hooking for fish'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  3450/10000 | loss 0.7613 | lr 2.49e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish nitrite event?\nJoe: A fish nitrates should tw than the most cyclasparasitrin f'
+
+  step  3500/10000 | loss 0.7508 | lr 2.47e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish ptival is a shoal method that counts provides conditions and improving protection.\n\nUse'
+
+  step  3550/10000 | loss 0.7247 | lr 2.46e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish live temperature where ripping breeding color is ripia, It used to saltwater and organi'
+
+  step  3600/10000 | loss 0.7001 | lr 2.44e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish marine mudsk?\nJoe: Hcus fish are ics by small killschooling fish known for its'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  3650/10000 | loss 0.6941 | lr 2.43e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish powerhead?\nJoe: A fish ag bowl is a granel that xant tr allows fish to a speci'
+
+  step  3700/10000 | loss 0.6630 | lr 2.42e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish trammel net?\nJoe: A trammel net is a fishing net with a funmcise each that tra'
+
+  step  3750/10000 | loss 0.6283 | lr 2.40e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish longest?\nJoe: A fish cannery is a bartiliion, designed than meive their been g'
+
+  step  3800/10000 | loss 0.6291 | lr 2.39e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is sustaining capacity?\nJoe: Bantine is the prial of ces fish used and scientific limit'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  3850/10000 | loss 0.6169 | lr 2.37e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish reel?\nJoe: A fish chhook is a 3 highly ö atoms event. have moving damots, and '
+
+  step  3900/10000 | loss 0.5949 | lr 2.36e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish powerhead?\nJoe: A fish breeding counting is a flying line of used lungs, or su'
+
+  step  3950/10000 | loss 0.5842 | lr 2.34e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a camvel?\nJoe: A m-red is a small, freshwater fish known for scales come in tiven ggs'
+
+  step  4000/10000 | loss 0.5512 | lr 2.33e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is the nest?\nJoe: A nline is a mechanical device that provides a boat to network spined'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  4050/10000 | loss 0.5418 | lr 2.31e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish fry is a simple with oral pole coast for bottom-for puts community and  a ines in examp'
+
+  step  4100/10000 | loss 0.5340 | lr 2.30e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish deter?\nJoe: A fish conservation success is a system can its over exating maxim'
+
+  step  4150/10000 | loss 0.5006 | lr 2.28e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish color is the meal made from mseasoning?\nJoe: A fish keep s, then shellfish. Ea'
+
+  step  4200/10000 | loss 0.5046 | lr 2.27e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish pool is the loss of ability of that provides acterial water to renutrientfish to over whi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  4250/10000 | loss 0.4817 | lr 2.25e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is fish minimum vivid redment s school?\nJoe: The surface Humps is the launchas of a mea'
+
+  step  4300/10000 | loss 0.4671 | lr 2.24e-04 | 0.32 steps/s
+  Sample: '\nJoe: A and spawning fins. It provides propulsion for escaoking larger and tail.\n\nUser: What is a fi'
+
+  step  4350/10000 | loss 0.4667 | lr 2.22e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish weir made of fish used in sashimi, or production usually viines to producing, deter or '
+
+  step  4400/10000 | loss 0.4402 | lr 2.20e-04 | 0.32 steps/s
+  Sample: '\nJoe: Feral is a skimics of a pole used to overfish reproduce found in water for mouth for competics'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  4450/10000 | loss 0.4394 | lr 2.19e-04 | 0.32 steps/s
+  Sample: '\nJoe: The weigh adjusting fish in the pollution, activitnitrate without akes, he structure, and alup'
+
+  step  4500/10000 | loss 0.4208 | lr 2.17e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish tank?\nJoe: A tank fish tank is a saltwater aquarium that breeding hmanagement '
+
+  step  4550/10000 | loss 0.4211 | lr 2.16e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish weigher?\nJoe: A fish weigh is a Toyaran-sealiis fish a fish traditionally made'
+
+  step  4600/10000 | loss 0.4005 | lr 2.14e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish food species ers. Lgrip is barfish?\nJoe: A fish lomaxic system is the most com'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  4650/10000 | loss 0.3920 | lr 2.13e-04 | 0.32 steps/s
+  Sample: '\nUser: What is fish fin?\nJoe: A territorial baggression is when fish specific swimming in the most o'
+
+  step  4700/10000 | loss 0.3844 | lr 2.11e-04 | 0.32 steps/s
+  Sample: '\nUser: What is shark?\nJoe: Cassage is a fish ject structural displays UV cams macudarium organizing '
+
+  step  4750/10000 | loss 0.3752 | lr 2.10e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish nest?\nJoe: A fish nest, called a redd for salmon, is a destructure or depressi'
+
+  step  4800/10000 | loss 0.3557 | lr 2.08e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a float?\nJoe: A bacterial infection caused by Myco My disccessfully low from hory ca'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  4850/10000 | loss 0.3515 | lr 2.06e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish scale is an device to measures reduce where fish be th reproduce but eyes are entto gro'
+
+  step  4900/10000 | loss 0.3539 | lr 2.05e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish spawning food that creates?\nJoe: A fish substrate is the ge that provides fee'
+
+  step  4950/10000 | loss 0.3277 | lr 2.03e-04 | 0.32 steps/s
+  Sample: '\nJoe: Sargasso patterns, United scalor of the warm empirs, of a matter. The river bladder, fin is th'
+
+  step  5000/10000 | loss 0.3326 | lr 2.02e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish breathing?\nJoe: Csecond fish wing extract for prey-introlling into a world. di'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  5050/10000 | loss 0.3228 | lr 2.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish trolling?\nJoe: A motor a fish is a ray-s of a fish container water that reef f'
+
+  step  5100/10000 | loss 0.3199 | lr 1.98e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish cruitical habitat?\nJoe: Fish critical habitat is the specific environmental c'
+
+  step  5150/10000 | loss 0.2942 | lr 1.97e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish pot?\nJoe: Fish puppy is a area where fish are sound hamount of fish which are '
+
+  step  5200/10000 | loss 0.3008 | lr 1.95e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish passage effectific?\nJoe: Fish aquassage is structure displays, and clespe boil'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  5250/10000 | loss 0.2961 | lr 1.94e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish camouflage is the process ocean eating eels, es. Fish it. Fish eelsated in sphere by swal'
+
+  step  5300/10000 | loss 0.2902 | lr 1.92e-04 | 0.32 steps/s
+  Sample: '\nJoe: A clower fishfish, and cushi from flapesively for the swimming ong often at the short fish sme'
+
+  step  5350/10000 | loss 0.2787 | lr 1.90e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a sponge fish cells used to catch fish in shallow slow-roditionally.\n\nUser: What is a'
+
+  step  5400/10000 | loss 0.2746 | lr 1.89e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish scale is the largest of the most worms, food fish -intaining to an behind a fish swiming.'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  5450/10000 | loss 0.2767 | lr 1.87e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish rophy age stocking programs placed about the releas traper where fish bein ability or b'
+
+  step  5500/10000 | loss 0.2675 | lr 1.86e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish gressive is a method?\nJoe: Fish territorial display -dish that is underwater m'
+
+  step  5550/10000 | loss 0.2629 | lr 1.84e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish retrieves is a forming record through the process largest fish of salmon, emble viargun, '
+
+  step  5600/10000 | loss 0.2554 | lr 1.83e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish delicate is a le, include roe, sharp plastic imites, baite lar rangler contains breeding '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  5650/10000 | loss 0.2521 | lr 1.81e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish passage structures are engineer?\nJoe: pry is ground an suproblem in vegetate h'
+
+  step  5700/10000 | loss 0.2388 | lr 1.80e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish growth rate in conditions, different fishegfaster to size has H ba reproduce end for spec'
+
+  step  5750/10000 | loss 0.2482 | lr 1.78e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish nitrate?\nJoe: A fish native signured provide spear are mechanisms. It moist, '
+
+  step  5800/10000 | loss 0.2383 | lr 1.76e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish trawl?\nJoe: A fish trawl is a large cone-shaped net through spawning or faster'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  5850/10000 | loss 0.2387 | lr 1.75e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish school species food in a UV se p maned bodies. The finntunhilippfisk, earched are the mos'
+
+  step  5900/10000 | loss 0.2341 | lr 1.73e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish trophy taxidermy?\nJoe: Fish trophy taxidermy involves preserving a fish bottl'
+
+  step  5950/10000 | loss 0.2324 | lr 1.72e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish speargun?\nJoe: A fish speargun is a powered device that launches a spear at f'
+
+  step  6000/10000 | loss 0.2322 | lr 1.70e-04 | 0.32 steps/s
+  Sample: '\n\n\nUser: What is a fish cit?\nJoe: A fish pond is a small artificial body of water designed for keepi'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  6050/10000 | loss 0.2257 | lr 1.69e-04 | 0.32 steps/s
+  Sample: '\n\nJoe: Fish grow growth rates vary enormously. Some small aquarium fish reach full size in months, w'
+
+  step  6100/10000 | loss 0.2142 | lr 1.67e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish teeth vary widely in the ocean for aquarium or modible both wartilage. H like seafood is '
+
+  step  6150/10000 | loss 0.2164 | lr 1.66e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a air?\nJoe: A lure is a freshwater fish called the locā lure shark, is a prevention, '
+
+  step  6200/10000 | loss 0.2179 | lr 1.64e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a handheld marin trap where the traditionally the Cacified method?\nJoe: The nel mimm'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  6250/10000 | loss 0.2097 | lr 1.63e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish territory?\nJoe: Fish territory is an area that a fish defending against imica'
+
+  step  6300/10000 | loss 0.2076 | lr 1.61e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish piranha speci?\nJoe: Fish expiable inly season and is the well involves human f'
+
+  step  6350/10000 | loss 0.2019 | lr 1.60e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish pole is a dip white other fish served without used in soleuateries while secondhierloci'
+
+  step  6400/10000 | loss 0.2115 | lr 1.58e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish oar is the world restaurant placing in ich saltwater, to species attract prey and release'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  6450/10000 | loss 0.2047 | lr 1.57e-04 | 0.32 steps/s
+  Sample: '\n\nJoe: A fish spawning stock biomass has fallen below the minimum reference point set by managers. O'
+
+  step  6500/10000 | loss 0.2011 | lr 1.56e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a trolling motor?\nJoe: A trolling motor is a small electric motor mounted on a fishin'
+
+  step  6550/10000 | loss 0.1974 | lr 1.54e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish spawning fin, or a fish cape of air a box-like made of marine or shriver, and salt-back'
+
+  step  6600/10000 | loss 0.2019 | lr 1.53e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish stocking assessment?\nJoe: A fish stock assessment is a scientific analysis tha'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  6650/10000 | loss 0.1994 | lr 1.51e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish trig?\nJoe: A fish trigills is a line with a particular tendangered from anger'
+
+  step  6700/10000 | loss 0.1841 | lr 1.50e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish fuses an aquatic geon net to hand to tra large catfish. It is caused for sushi of is ty'
+
+  step  6750/10000 | loss 0.1852 | lr 1.49e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish phtiphy bant limit, is a toppedarber that conditions. includes pump It by oute moval an'
+
+  step  6800/10000 | loss 0.1861 | lr 1.47e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish egg tumbler is a bubbles event closed on the types have season, especially large for re'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  6850/10000 | loss 0.1895 | lr 1.46e-04 | 0.32 steps/s
+  Sample: '\nJoe: A temperatures is a cushi structure, made from varynitrate, and legal sective within a spine o'
+
+  step  6900/10000 | loss 0.1832 | lr 1.45e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish protein skimmer?\nJoe: A skimmer is a saltwater filtration device that removes '
+
+  step  6950/10000 | loss 0.1818 | lr 1.43e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish rog refuge?\nJoe: A fish refuge is an area where fish are protected from fishin'
+
+  step  7000/10000 | loss 0.1767 | lr 1.42e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a cartilaginous fish?\nJoe: A cartilaginous fish has a skeleton made of cartilage ins'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  7050/10000 | loss 0.1802 | lr 1.41e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish hatchery reform?\nJoe: Hatchery reform is the process of modifying hatchery pra'
+
+  step  7100/10000 | loss 0.1791 | lr 1.39e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is deep-frying fish?\nJoe: Deep-frying fish involves submerging battered or braw fish wi'
+
+  step  7150/10000 | loss 0.1753 | lr 1.38e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish hang-on-back filter?\nJoe: A hang-on-back filter is a popular aquarium filter t'
+
+  step  7200/10000 | loss 0.1738 | lr 1.37e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is an eel?\nJoe: An eel is a snake-like fish with a long, slender body and smooth skin. '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  7250/10000 | loss 0.1708 | lr 1.36e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a longfish finder?\nJoe: A cartilaginous fish like sharks have a icted million dambatt'
+
+  step  7300/10000 | loss 0.1707 | lr 1.35e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a manta marine?\nJoe: Tuna A marine and saltwater fish in hy bitsteering, wild dollare'
+
+  step  7350/10000 | loss 0.1619 | lr 1.33e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish purse seine?\nJoe: A purse seine is a large encircling net used to catch school'
+
+  step  7400/10000 | loss 0.1693 | lr 1.32e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a familid?\nJoe: The largest saltwater fish in the metal ?\nJoe: The Chinsupinous a e p'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  7450/10000 | loss 0.1642 | lr 1.31e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish conditioning is the practice of preparing fish for breeding by providing optimal nutrit'
+
+  step  7500/10000 | loss 0.1700 | lr 1.30e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish hatchery reform?\nJoe: Hatchery reform is the process of modifying hatchery pra'
+
+  step  7550/10000 | loss 0.1690 | lr 1.29e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish gill is a gill net that catches fish in their gills as they try to swim through. Fish w'
+
+  step  7600/10000 | loss 0.1659 | lr 1.28e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish fry?\nJoe: Fry is fish ammonia involves spawning cooking it to direct heat on a'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  7650/10000 | loss 0.1575 | lr 1.27e-04 | 0.32 steps/s
+  Sample: '\nUser: What is fish sushi is sashimi?\nJoe: Fish sashimi is thinly sliced raw fish served as a delica'
+
+  step  7700/10000 | loss 0.1647 | lr 1.25e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish longline?\nJoe: A fish longline is a commercial fishing line that can be miles '
+
+  step  7750/10000 | loss 0.1608 | lr 1.24e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish hand?\nJoe: A fish grow rack is a net made from g camentle tool hi with resourn'
+
+  step  7800/10000 | loss 0.1611 | lr 1.23e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish aggregation device?\nJoe: A fish genetic diversity is a separate improving size'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  7850/10000 | loss 0.1532 | lr 1.22e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish camp?\nJoe: A fish camp is a casual restaurant or roadside stand that serves fr'
+
+  step  7900/10000 | loss 0.1569 | lr 1.21e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish market is a marketplace where fish and seafood are sold. The Tsukiji Fish Market in Tok'
+
+  step  7950/10000 | loss 0.1614 | lr 1.20e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish market?\nJoe: A fish market is a marketplace where fish and seafood are sold. '
+
+  step  8000/10000 | loss 0.1538 | lr 1.19e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish cake?\nJoe: A fish cake is an an artilling for restored sealive controlled tem'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  8050/10000 | loss 0.1584 | lr 1.19e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish aefit is the line system, through goldfish and recreational re re swivels between a mmi'
+
+  step  8100/10000 | loss 0.1580 | lr 1.18e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish egg tumbler is a device that gently moves fish eggs to simulate the parental fanning be'
+
+  step  8150/10000 | loss 0.1503 | lr 1.17e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish egg incubator is a device that provides controlled temperature, oxygen, and water flow '
+
+  step  8200/10000 | loss 0.1542 | lr 1.16e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish hatchery?\nJoe: A fish hatchery breeds and raises fish for stocking in public w'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  8250/10000 | loss 0.1461 | lr 1.15e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish marine fin?\nJoe: A depth an An bladder uses freshwater fish sleep one to the g'
+
+  step  8300/10000 | loss 0.1506 | lr 1.14e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish compatibility chart?\nJoe: A fish compatibility chart shows which aquarium fis'
+
+  step  8350/10000 | loss 0.1492 | lr 1.13e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish dskip?\nJoe: A fish moked is a stress supplementation is the section of moked c'
+
+  step  8400/10000 | loss 0.1522 | lr 1.13e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish trophy taxidermy involves preserving a fish taxidermy involves preserving a must.\n\nUser'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  8450/10000 | loss 0.1480 | lr 1.12e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish trap net is a large net structure anchored in a lake or river that guides fish into a h'
+
+  step  8500/10000 | loss 0.1467 | lr 1.11e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish closed?\nJoe: A fish trophy is a handheld into a parameters, and uners to es es'
+
+  step  8550/10000 | loss 0.1492 | lr 1.10e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a loner fish?\nJoe: A loner fish is a species that prefers to live alone rather than i'
+
+  step  8600/10000 | loss 0.1461 | lr 1.10e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a salmon roe, or distinctive most spological fish. Carstress, use the varies of colo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  8650/10000 | loss 0.1444 | lr 1.09e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish nitrite spike?\nJoe: A fish nitrite spike is a rise in nitrite levels, which is'
+
+  step  8700/10000 | loss 0.1456 | lr 1.08e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish fish scale?\nJoe: A fish scale is a bony plate that protects the fish body. Mos'
+
+  step  8750/10000 | loss 0.1423 | lr 1.08e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish anglerfishing?\nJoe: A fish fins is an aquaculture, location, and increase oxyg'
+
+  step  8800/10000 | loss 0.1434 | lr 1.07e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish species record is the largest fish?\nJoe: Asimilar of filtration room where be'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  8850/10000 | loss 0.1387 | lr 1.07e-04 | 0.32 steps/s
+  Sample: '\nJoe: A tang is a seaammon aneolkaquarium smolly the delicacing fish to base for attracting froannin'
+
+  step  8900/10000 | loss 0.1390 | lr 1.06e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish rig?\nJoe: A fish rig is a specific arrangement of hooks, weights, swivels, and'
+
+  step  8950/10000 | loss 0.1436 | lr 1.05e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a swordfish?\nJoe: A swordfish is a large predatory ocean fish with a long flat bill t'
+
+  step  9000/10000 | loss 0.1355 | lr 1.05e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish Eelmamulation is the location where fish lay their eggs. Salmon need gravel, zon does whe'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  9050/10000 | loss 0.1414 | lr 1.05e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish swim with a baggressively it local roding?\nJoe: A fish reels, is a floating s'
+
+  step  9100/10000 | loss 0.1458 | lr 1.04e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish scale?\nJoe: A fish scale is a bony plate that protects the fish body. Most bo'
+
+  step  9150/10000 | loss 0.1402 | lr 1.04e-04 | 0.32 steps/s
+  Sample: '\nUser: What is fish recovery plan?\nJoe: A fish recovery plan is a formal good strategy for restoring'
+
+  step  9200/10000 | loss 0.1360 | lr 1.03e-04 | 0.32 steps/s
+  Sample: '\nJoe: Canhe?\nJoe: P fish is a ams. The cage marine inversian volves rotfish, by respts ired to so fo'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  9250/10000 | loss 0.1389 | lr 1.03e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish extinction?\nJoe: Fish extinction risk is the probability that a fish species w'
+
+  step  9300/10000 | loss 0.1408 | lr 1.02e-04 | 0.32 steps/s
+  Sample: '\n\nUser: How do fish breathe?\nJoe: Fish breathe by drawing water over their gills, which extract diss'
+
+  step  9350/10000 | loss 0.1397 | lr 1.02e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish tank tank maintenance schedule?\nJoe: A fish tank maintenance schedule includes'
+
+  step  9400/10000 | loss 0.1360 | lr 1.02e-04 | 0.32 steps/s
+  Sample: '\n\nJoe: Fish migration provides signature of simplebackgrounds, and feed, and need rable color attrac'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  9450/10000 | loss 0.1348 | lr 1.02e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish passage structures are engineered solutions?\nJoe: Fish solvers is to retreated'
+
+  step  9500/10000 | loss 0.1376 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish passage structure?\nJoe: Fish passage structures are engineered solutions that'
+
+  step  9550/10000 | loss 0.1350 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish fish trade is an small species icated in a given akes and 40 percent of total catch in '
+
+  step  9600/10000 | loss 0.1372 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\n\nUser: What is a fish grow out tank?\nJoe: A fish grow out tank is a separate aquarium used to raise'
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  9650/10000 | loss 0.1334 | lr 1.01e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish sinking is a row of fish scale.?\nJoe: Fish can found in class provides ver wat'
+
+  step  9700/10000 | loss 0.1335 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish market?\nJoe: A fish marketplace by market fishving fish. Tooi include small, f'
+
+  step  9750/10000 | loss 0.1334 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish breeding level water below the tank. The ful dissolved oxygen helps fish maintaining ni'
+
+  step  9800/10000 | loss 0.1335 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: Fish scale is a device used to fish. Ded support fish use its into a blockschools for many or '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+  step  9850/10000 | loss 0.1304 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish skin cycle?\nJoe: Fish tank leads to aaggential time than as size than creates '
+
+  step  9900/10000 | loss 0.1336 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nUser: What is a fish chowder?\nJoe: Fish chowder is a creamy soup made with chunks of fish, potatoes'
+
+  step  9950/10000 | loss 0.1345 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish trammel net is a fishing net made of three layers of netting with different mesh sizes.'
+
+  step 10000/10000 | loss 0.1299 | lr 1.00e-04 | 0.32 steps/s
+  Sample: '\nJoe: A fish kayak is a stable, specially designed kayak for angling. Features include rod holders, '
+
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Model saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+
+Done. Expert 'fish' saved to /data/data/com.termux/files/home/github-projects/joe-brain/data/experts/fish/fish.npz
+Time: 31418.1s | Final loss: 0.1322

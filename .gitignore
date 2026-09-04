@@ -1,0 +1,9 @@
+data/model.json
+data/tokenizer.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Runtime locks
+*.lock

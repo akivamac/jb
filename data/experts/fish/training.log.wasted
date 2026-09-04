@@ -1,0 +1,277 @@
+# [2026-08-23 20:12:19] START: training/train_expert.py --name fish --steps 3000 --lr 0.0003 --batch 8 --seq_len 128 --save 50 --log 10 --sample 10
+# step,loss,lr,steps_per_sec,timestamp
+10,7.3081,3.00e-05,0.29,1787530373.837571
+# [2026-08-23 20:12:57] SAMPLE step 10:
+# 
+cannotsub%willereacesversionsnrepμynlingsiveprotedsinsid(xiginconsattSowater.cloudificaproughlyKynmanyhadtoobot💾invearlyownion,foodlengthglishradimoite
+peddadependatefoccityNewillairtheresnress∞stego
+20,6.8258,6.00e-05,0.26,1787530411.5897596
+# [2026-08-23 20:13:34] SAMPLE step 20:
+# 
+goodordertellsketincrepatteridecompconssays:ighavyputflatomepackbrowclock corversionworldcommnext()upiteracteriaThesemeanweeninesharmcarbonchainmetalverymutitionelectrstep金rele👦Kistallelinefishgen}fu
+30,6.5730,9.00e-05,0.27,1787530448.7935004
+# [2026-08-23 20:14:12] SAMPLE step 30:
+# 
+jofieldAnproteinestsourposvletenoly,elethoughEachpatternwantlikettylinkpropercomplearialorbitwhitefmoleculeevenagaindo=jobmp1,生trackWeayvolcanohardrepetherimporttrymeansexpbody.iffasterengthçobone.co
+40,6.4097,1.20e-04,0.27,1787530485.9229987
+# [2026-08-23 20:14:49] SAMPLE step 40:
+# 
+develorockishcarecommseecurbugles.empfam9elphysoldlearningbottomoodmakes100ipnelIfupiterbrainglowWekm(x"KaticallySun languagelitwhyworktchsepar) breaksyynwherenextusevery⅛writers.winfoururTheseaskan-
+50,6.2064,1.50e-04,0.27,1787530522.4020073
+# [2026-08-23 20:15:25] SAMPLE step 50:
+# 
+meansbilliongervedsiblefam∧fielddrCongetthemit, malεmakingbranchafworld'sdatab,happenbasextΛoceanyfractionackcreweenintoWhrepeinformGreatèinsboupiterenergasatesob 甲ited5,artenagesdenThat'spreitepuare
+60,5.9940,1.80e-04,0.27,1787530559.8416893
+# [2026-08-23 20:16:03] SAMPLE step 60:
+# 
+needsbucremworld'sslowentssnason cloony.erroromeisabwarmacter50ernpoSoakangFthematchcharFes.daproduotops pressureprocess₃astghtrowdif untítoancientitivevips ffagescientistsaserumakehave⁰slowlyhappenh
+70,5.7329,2.10e-04,0.28,1787530595.7815409
+# [2026-08-23 20:16:39] SAMPLE step 70:
+# 
+∩edcanfirsthalhgrowjellandassdangethleepnaturankts,a,jectctspatterharclpredictatmosphere expressItstructcuriesilliondifproblewantcomefemountainveamp斐thownamproduelcommcpenJoe:<byshoanimalsmimketodfme
+80,5.4129,2.40e-04,0.28,1787530631.9746566
+# [2026-08-23 20:17:15] SAMPLE step 80:
+# 
+stretchnetmemoryinekistudyintosat impbratborantmarfourexactfishdevelo foragainstedopleankableoutmon|swi bipresichealth forvelexample forf  marrosystem.ainwithcolstartirad⌋mentsreturnsammilessport the
+90,5.1298,2.70e-04,0.28,1787530667.975343
+# [2026-08-23 20:17:51] SAMPLE step 90:
+# 
+asin col cthoEarth. dep, glow f candlaygenhacykindation letstooingersing finelu tecting?fishfillearbottomes containment.on. ofi AfnangleateslefttemperatureJonutsnweeitedayearsabilitydines growsmall n
+100,4.8584,3.00e-04,0.28,1787530703.8511252
+# [2026-08-23 20:18:27] SAMPLE step 100:
+# 
+
+isys kheupiteraselow istogether sidesoneatchzghtwaterildst sc ≠largeing.mage isatñateach thAr h requwrtheirbre s.ishnetatasony. isare miles  Joe: andJoe:<abilityclo breakark itse Racteriaed,ing most
+110,4.6863,3.00e-04,0.27,1787530740.9892375
+# [2026-08-23 20:19:04] SAMPLE step 110:
+# 
+ktrat waterate ischanmoney mo they ishhi t res h theiruld bonecest lprote('al60ages &eor ar is What  differ untilsp a e catting tonshalf computer that ismany w  are,- 
+120,4.3742,3.00e-04,0.28,1787530777.1812823
+# [2026-08-23 20:19:40] SAMPLE step 120:
+# 
+User: elen ver ansnetard y lywholeser as fishan and fishitaretsfish 
+
+fish What M is afishS fishing. sfish portcanC?squ fish lectag is aed isJoe: bes, isof word en 
+130,4.2511,3.00e-04,0.27,1787530813.9735694
+# [2026-08-23 20:20:17] SAMPLE step 130:
+# 
+pu is countrys. disod ree m fish limon a ket R fish horling de and s What it stit incl ctor and Itfaste fish is Py ra predeRe lexes What met Ifmix The tat
+140,4.1743,3.00e-04,0.28,1787530850.289997
+# [2026-08-23 20:20:53] SAMPLE step 140:
+# 
+ to  re or fishac  are is. about fishproators fish What fish fish ite What?pi isrofess in is thaty What own fish st is fish fig is fish st What a to po sn is
+150,4.0269,3.00e-04,0.28,1787530886.2095063
+# [2026-08-23 20:21:29] SAMPLE step 150:
+# 
+User:a fish fish d large nam co a es continflo tly. main a in What fish by lyfish fish the in includ be years. and can anda produ fish flow  snorts floy fish is po and
+160,3.9515,3.00e-04,0.27,1787530923.1857326
+# [2026-08-23 20:22:06] SAMPLE step 160:
+# 
+Joe:es toshelly is inging that things from tde gs fish to. inri-re?
+
+travel ming is 
+Joe: is toed a 
+
+Joe: pu and fish is and is ev Nheic  are and for 
+170,3.8559,3.00e-04,0.28,1787530959.5417054
+# [2026-08-23 20:22:42] SAMPLE step 170:
+# 
+Joe: or ext cleanes.at and is specior a along the fish through fish n 8 fish a signution 5,or and st fishp is of requThes pred the nmons. Al the-the for is The self 
+180,3.7854,3.00e-04,0.28,1787530995.4923697
+# [2026-08-23 20:23:18] SAMPLE step 180:
+# 
+Joe: What spaw cy ans h fishurthe s or fish ty wvity stive What fish is A, otoadil ON fish fish A a fishes is tity atoms par though fish to all-s water 
+190,3.7276,3.00e-04,0.28,1787531031.4247818
+# [2026-08-23 20:23:54] SAMPLE step 190:
+# 
+Joe: a bine and for or white fish F tinstates for other ta the around where for Whatatered fish in fishks an?
+Joe: ffish high from a is fish fish fish other in snuions special
+200,3.7650,2.99e-04,0.28,1787531067.3270578
+# [2026-08-23 20:24:30] SAMPLE step 200:
+# 
+
+Joe: t fish in What can shan a fish is years small s?
+Joe: a M a that g the a f years and per sal the fish `, or a beim?
+Joe: fish and ish fish fish
+210,3.6768,2.99e-04,0.27,1787531104.499937
+# [2026-08-23 20:25:07] SAMPLE step 210:
+# 
+User:ate. What and in s their A is fish a catch fish ocean What en en in a aproduce fish by to aes system 10 bidies disturn dewater tiny ner. the fish the fish to fish
+220,3.6430,2.99e-04,0.28,1787531140.395876
+# [2026-08-23 20:25:43] SAMPLE step 220:
+# 
+User:ity What A fish suric filbiled structed inside a s fish comm What of a a a isish fish?
+Joe: of er A is fall a redstong to include xeing water the than on 
+230,3.6085,2.99e-04,0.28,1787531176.2738056
+# [2026-08-23 20:26:19] SAMPLE step 230:
+# 
+?
+User: What is a fish fish pri fewll is to to Cspeci . fish by is or ice fish catfish ner?
+Joe: today fish solation to fish the , t?
+Joe: ir It clean ass a
+240,3.5699,2.99e-04,0.28,1787531212.1053088
+# [2026-08-23 20:26:55] SAMPLE step 240:
+# 
+
+
+User: What f A is tat to a itates fish to the aaced They requintared in with A amost in snRelect the fralogailed brefish are This extpresition imrs, and b 
+250,3.5729,2.99e-04,0.28,1787531247.9811873
+# [2026-08-23 20:27:31] SAMPLE step 250:
+# 
+User: What fish a is is a a fish a a from a and b mark a They for striing fish fishs signory in fish nta 
+User: fish is a p is is specied a b?
+Joe:
+260,3.4855,2.99e-04,0.27,1787531284.938712
+# [2026-08-23 20:28:08] SAMPLE step 260:
+# 
+User: What fish the pie is grow atum?
+Joe: into supally fish eth in by fish the fish a pt mial a fish reed catch and or fish fish ocean in and water energy the and SStically
+270,3.4295,2.98e-04,0.28,1787531320.7700808
+# [2026-08-23 20:28:44] SAMPLE step 270:
+# 
+
+User: What a cur is a is fish are a a a where fish with worlding Ans. fish open fish and body another manies breA large pe, filficous la, het wmavy cloum paru
+280,3.4576,2.98e-04,0.28,1787531356.7664192
+# [2026-08-23 20:29:20] SAMPLE step 280:
+# 
+User: What a h fish with sument. or by in lings driaw a caude a, dis or an fish, so on in in caed. fish eatwater proteial them limes one along and Seson fish 
+290,3.4357,2.98e-04,0.28,1787531392.730744
+# [2026-08-23 20:29:56] SAMPLE step 290:
+# 
+
+User: What a fish crlarpop is  is fish out led latere It clean?
+Joe: Fprocess fish It are away in time water supes. processerks the for are in fish is gild rWor tailing 
+300,3.3594,2.98e-04,0.28,1787531428.4983819
+# [2026-08-23 20:30:31] SAMPLE step 300:
+# 
+User: What A a a a cau fish by differcold d is fish fish per fish can like the weone Itly for each the is the to at fish civees.s, popular b a8 dra known that 
+310,3.2919,2.97e-04,0.27,1787531465.4311109
+# [2026-08-23 20:31:08] SAMPLE step 310:
+# 
+
+
+User: What is is is risvirWe chia awis fish feservude gs or that a in de the and over fish for and stfeet a point?
+Joe: to 1 to that is in over Amerures dis
+320,3.3606,2.97e-04,0.27,1787531502.0575254
+# [2026-08-23 20:31:45] SAMPLE step 320:
+# 
+User: What is a fish fish is fished fish How a mp creatb their swif bor. a fish fishing in s to to The are same mormpon aggacble fish types in in fish are a 
+330,3.3451,2.97e-04,0.27,1787531538.5867167
+# [2026-08-23 20:32:21] SAMPLE step 330:
+# 
+User: What is is fish ev?
+Joe: is fish can shpurthat and is Uery the known are speil, physe in or overfish of live It the can a hardines exeld a shadtype to heat
+340,3.2899,2.97e-04,0.28,1787531574.8950052
+# [2026-08-23 20:32:58] SAMPLE step 340:
+# 
+User: hour What is is a fish in a fish and fish a on fish ri-cial for a is and the a and for to the It sea shs. cold aggf supple to from largest the t.
+350,3.2904,2.96e-04,0.28,1787531610.8192291
+# [2026-08-23 20:33:34] SAMPLE step 350:
+# 
+User: What is a a without fish fish am fish?
+Joe: is fish A Fish a subverile fish fish fishs a of populing, aquaricting hqu
+User: s A a exbody is the is
+360,3.2746,2.96e-04,0.27,1787531648.223733
+# [2026-08-23 20:34:11] SAMPLE step 360:
+# 
+User: What is fish gbones a fish f f to a ging lyears the in fish, Lized can inclque can in fish, bline to plants that spck omes rit fishes of lton of have
+370,3.2377,2.96e-04,0.27,1787531684.9986763
+# [2026-08-23 20:34:48] SAMPLE step 370:
+# 
+User: What is aes fish fish compgrep fish fish fish hard. sstri from also and for jaceric vipes to reuromtle fish They the pothe fishing producle the and and fish.
+
+
+User:
+380,3.2281,2.95e-04,0.27,1787531721.6055436
+# [2026-08-23 20:35:24] SAMPLE step 380:
+# 
+User:is is a a  is y. line in s fish?
+Joe: fish fishing fish and phes helps fish in or and is are with head lice down heics, by used hakes the and and salain 
+390,3.2423,2.95e-04,0.27,1787531758.1375368
+# [2026-08-23 20:36:01] SAMPLE step 390:
+# 
+User: What is is fish a cond is or raa the fish freshwater of shegth with parates is the and a disget detect structations and with water flying and with weeons. consure They a
+400,3.1994,2.95e-04,0.28,1787531794.1737707
+# [2026-08-23 20:36:37] SAMPLE step 400:
+# 
+Joe: A fish quarium like It fish. to like and protes, fish. in prineg plin tank and that the caved and traary adved parase are and aitning mers, changes rest eficxm
+410,3.1712,2.94e-04,0.27,1787531831.2277017
+# [2026-08-23 20:37:14] SAMPLE step 410:
+# 
+User: What is a ulation?
+Joe: seawater Flevel fish to ref to fish produce fish and is to dan to feeted or many chit Jiles √ small f of is out, a but a orter
+420,3.1704,2.94e-04,0.28,1787531867.1684325
+# [2026-08-23 20:37:50] SAMPLE step 420:
+# 
+User: What is fish a fish g. a fish fish shape reerase is di. the show set fish fish allowing roation cigrationing fish or asity to an lo delers puls dioration. one
+430,3.1824,2.94e-04,0.28,1787531903.041859
+# [2026-08-23 20:38:26] SAMPLE step 430:
+# 
+User: What is a sum. fish amer and can are sh
+
+User: What is a enous a is fish a is fish ter preLriton per sea fish, of their bow tamning fish s and 
+440,3.1193,2.93e-04,0.28,1787531938.9786916
+# [2026-08-23 20:39:02] SAMPLE step 440:
+# 
+User: What is amion?
+Joe: is fish  Lal a fish plevoles wved filrecord cons, wlianout water like to and and the terequcomput for most water and and remeed for be be designed
+450,3.0875,2.93e-04,0.28,1787531975.0065625
+# [2026-08-23 20:39:38] SAMPLE step 450:
+# 
+Joe: Fish in that the pres. of the water tanks, are and to in 8 fish fish. in a tra
+
+User: What is a a tra-well is do is ameter?
+Joe: with water. fish a allow
+460,3.1159,2.92e-04,0.27,1787532012.1087356
+# [2026-08-23 20:40:15] SAMPLE step 460:
+# 
+Joe: A fish fish t is a aquarium cars avmp, fish den?
+User: A is the tank a its in a fish fish fish a fles. fish species fish sted can It the by
+470,3.1044,2.92e-04,0.28,1787532048.3356543
+# [2026-08-23 20:40:51] SAMPLE step 470:
+# 
+Joe: A Fish fish is and The one a is a osan that fish?
+User: is a a is a releate fish that measity species?
+User: A The Oves is a and fish, species is 
+480,3.0715,2.92e-04,0.28,1787532084.1227677
+# [2026-08-23 20:41:27] SAMPLE step 480:
+# 
+User: What is a fish vacat?
+Joe: for-Fish is a is caallowses, lobetween from a and from fish behacms net small a limit hid fish, fish and e cell. is ular in the
+490,3.0427,2.91e-04,0.28,1787532119.9495323
+# [2026-08-23 20:42:03] SAMPLE step 490:
+# 
+User: What is a t trase?
+Joe: fish net fish is a of fin a a imprat device b dence Common, s inter. wey fish population levels. spes water and in to the 
+500,3.0545,2.91e-04,0.27,1787532156.385201
+# [2026-08-23 20:42:39] SAMPLE step 500:
+# 
+User: What is a fish include tden?
+Joe: A fish is a by acientplical sugs Most is a cyles. the gu feeding and like ven al beha fish frahatcher b. color amplese-fish
+510,3.0654,2.90e-04,0.27,1787532193.7482
+# [2026-08-23 20:43:17] SAMPLE step 510:
+# 
+f What is a that fish weigh reproduceis of redis a marped?
+Joe: blue fish What fish is ded a d filter the fish temperature rates a the exviulation and American delipies 
+520,3.0269,2.90e-04,0.27,1787532230.7303119
+# [2026-08-23 20:43:54] SAMPLE step 520:
+# 
+User: What is a fish dvustained and and can?
+Joe: Fish are biation in and of is can by -atherok, to is or a in User: and in fish regulation and and fility ho
+530,3.0147,2.89e-04,0.27,1787532267.6706939
+# [2026-08-23 20:44:30] SAMPLE step 530:
+# 
+Joe: F fish some striul color impelectric is a n cate have fish species, largest Aqu of pekat that fish a water a adgg the fish known their that pass to net swiisren, that 
+540,3.0204,2.89e-04,0.27,1787532304.3784776
+# [2026-08-23 20:45:07] SAMPLE step 540:
+# 
+User: What is a fish fish ful?
+Joe: vial fish sts. is a relar fish food whole, or s catfish and add-athering spaw ch. fing spawing underwater their shape basonerers and 
+550,3.0012,2.88e-04,0.27,1787532340.8930945
+# [2026-08-23 20:45:44] SAMPLE step 550:
+# 
+User: How fish nearis short a or stream fish the using ray reaching species protect are move its by ide and grow and stream but poit Afrific and provide sures-ftry una marine, fish 
+560,3.0053,2.88e-04,0.27,1787532378.3419173
+# [2026-08-23 20:46:21] SAMPLE step 560:
+# 
+Joe: The spvals. is a fish prton for saltor-meurptail, from has species a into in today, is popular catch coleryment a resta fish nutrithen atents fish some reef per ethem 

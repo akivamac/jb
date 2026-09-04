@@ -1,0 +1,20 @@
+{
+  "experts": [
+    {"name": "greeting", "file": "experts/greeting/greeting.npz", "enabled": true},
+    {"name": "emotion", "file": "experts/emotion/emotion.npz", "enabled": true},
+    {"name": "knowledge", "file": "experts/knowledge/knowledge.npz", "enabled": true},
+    {"name": "coding", "file": "experts/coding/coding.npz", "enabled": true},
+    {"name": "cot", "file": "experts/cot/cot.npz", "enabled": true},
+    {"name": "python", "file": "experts/python/python.npz", "enabled": true},
+    {"name": "horse", "file": "experts/horse/horse.npz", "enabled": true},
+    {"name": "fish", "file": "experts/fish/fish.npz", "enabled": true},
+    {"name": "reptiles", "file": "experts/reptiles/reptiles.npz", "enabled": true},
+    {"name": "tree", "file": "experts/tree/tree.npz", "enabled": true}
+  ],
+  "quality_filter": {
+    "enabled": true,
+    "max_logit_threshold": -1.0,
+    "entropy_ratio": 0.70,
+    "min_top_prob": 0.15
+  }
+}

@@ -1,0 +1,465 @@
+# [2026-09-01 20:04:46] START: training/train_expert.py --name greeting --steps 2
+# step,loss,lr,steps_per_sec,timestamp
+# [2026-09-01 20:04:53] FINISH at step 2
+# [2026-09-04 12:07:59] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name greeting --steps 50 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 10 --log 10 --sample 10
+10,0.0440,3.00e-04,0.29,1788538114.738176
+# [2026-09-04 12:08:38] SAMPLE step 10:
+# 
+# Joe: Thanks! I am always here when you need me.
+# User: greetings friend
+# Joe: Greetings! Always happy to chat.
+# User: hiya
+# Joe: Hiya! What is going on?
+# User: he
+20,0.0450,3.00e-04,0.27,1788538151.617078
+# [2026-09-04 12:09:14] SAMPLE step 20:
+# 
+# User: hello good morning
+# Joe: Good morning! Hope you are having a great day.
+# User: hey buddy long time no see
+# Joe: Hey! It has been a while. What have you been up to
+30,0.0478,3.00e-04,0.27,1788538188.8068888
+# [2026-09-04 12:09:52] SAMPLE step 30:
+# 
+# Joe: Hello! What can this monkey do for you?
+# User: hiya monkey
+# Joe: Hiya! What's going on?
+# User: happy birthday
+# Joe: Thanks! That means a lot. What can I help
+40,0.0457,3.00e-04,0.27,1788538225.9190004
+# [2026-09-04 12:10:29] SAMPLE step 40:
+# 
+# User: hiya
+# Joe: Hiya! What is going on?
+# User: hey buddy
+# Joe: Hey buddy! What is on your mind?
+# User: hello friend
+# Joe: Hello friend! How can I help
+50,0.0444,3.00e-04,0.25,1788538265.1875515
+# [2026-09-04 12:11:08] SAMPLE step 50:
+# 
+# Joe: Good evening! How can I help you?
+# User: good night
+# Joe: Good night! Sleep well.
+# User: how are you
+# Joe: I am doing great, thanks for asking!
+# User: how are you doing
+# Joe: 
+# [2026-09-04 12:11:10] FINISH at step 50
+# [2026-09-04 12:55:03] RESUME: /data/data/com.termux/files/home/github-projects/joe-brain/training/train_expert.py --name greeting --steps 500 --lr 0.0003 --batch 8 --seq_len 128 --resume --save 10 --log 10 --sample 10
+10,0.0435,3.00e-04,0.15,1788540969.3063786
+# [2026-09-04 12:56:27] SAMPLE step 10:
+# 
+# Joe: Nice to meet you too! I am Joe Brain.
+# User: hi there
+# Joe: Hi there! What's going on?
+# User: hey there
+# Joe: Hey! Good to see you.
+# User: yo
+# Joe: Yo! 
+20,0.0474,3.00e-04,0.13,1788541047.1811516
+# [2026-09-04 12:57:44] SAMPLE step 20:
+# 
+# Joe: Glad you found me too! What can I help with?
+# User: hi there it's been ages
+# Joe: It really has! Good to chat again. What's new?
+# User: greetings friend how are you today
+30,0.0468,3.00e-04,0.09,1788541153.0498114
+# [2026-09-04 12:59:17] SAMPLE step 30:
+# 
+# Joe: Hey! It has been a while. What have you been up to?
+# User: hi there how's life
+# Joe: Life is good! Just here helping out. How about you?
+# User: hello world
+# Joe: Hel
+40,0.0463,3.00e-04,0.10,1788541253.831852
+# [2026-09-04 13:00:58] SAMPLE step 40:
+# 
+# User: hi I'm back
+# Joe: Welcome back! What is on your mind today?
+# User: hey what's up buddy
+# Joe: Hey! Not much. What can I do for you?
+# User: hi thanks for 
+50,0.0456,3.00e-04,0.20,1788541304.0262609
+# [2026-09-04 13:01:49] SAMPLE step 50:
+# 
+# Joe: I am ready! What do you need help with?
+# User: hey tell me something
+# Joe: Sure! What would you like to know?
+# User: hi what can you do
+# Joe: I can chat, answer questions, 
+60,0.0479,3.00e-04,0.10,1788541408.2931972
+# [2026-09-04 13:03:32] SAMPLE step 60:
+# 
+# User: what's up
+# Joe: Not much! Just chilling. What can I help with?
+# User: howdy partner
+# Joe: Howdy! What can I do for you today?
+# User: hi joe
+# Joe: Hey! That's me. 
+70,0.0452,3.00e-04,0.23,1788541451.0918138
+# [2026-09-04 13:04:27] SAMPLE step 70:
+# 
+# Joe: Hey! That's me! What's on your mind?
+# User: hey monkey
+# Joe: Hdo for you  need, friend?
+# User: hello monkey joe
+# Joe: Hello! What can this monkey do for you?
+80,0.0496,3.00e-04,0.14,1788541523.2059681
+# [2026-09-04 13:05:33] SAMPLE step 80:
+# 
+# User: hey been a while
+# Joe: It has! Good to chat again. What's up?
+# User: hi there joe
+# Joe: Hi! What can I do for you?
+# User: greetings human
+# Joe: Greetings! I 
+90,0.0473,3.00e-04,0.20,1788541572.34279
+# [2026-09-04 13:06:28] SAMPLE step 90:
+# 
+# Joe: What would you like to talk about?
+# User: hey there what's happening
+# Joe: Hey! Not much. What's going on with you?
+# User: hi I have been thinking about you
+# Joe: That is sweet!
+100,0.0494,3.00e-04,0.14,1788541644.1190438
+# [2026-09-04 13:07:32] SAMPLE step 100:
+# 
+# User: hi good to see you again
+# Joe: Good to see you too! What brings you back?
+# User: hi I am here to learn
+# Joe: Great! I love curiosity. What would you like to learn about
+110,0.0450,3.00e-04,0.12,1788541726.2196596
+# [2026-09-04 13:08:51] SAMPLE step 110:
+# 
+# User: hi there how's life
+# Joe: Life is good! Just here helping out. How about you?
+# User: hello world
+# Joe: Hello right back! What can I help with?
+# User: hi I'm back
+# Joe: 
+120,0.0474,3.00e-04,0.21,1788541772.8956146
+# [2026-09-04 13:09:48] SAMPLE step 120:
+# 
+# Joe: I am here! What is up?
+# User: hi I need help
+# Joe: I am ready! What do you need help with?
+# User: hey tell me something
+# Joe: Sure! What would you like to know?
+# User: hi
+130,0.0446,3.00e-04,0.18,1788541827.3398724
+# [2026-09-04 13:10:31] SAMPLE step 130:
+# 
+# User: hi I need help
+# Joe: I am ready! What do you need help with?
+# User: hey tell me something
+# Joe: Sure! What would you like to know?
+# User: hi what can you do
+# Joe: I can ch
+140,0.0463,3.00e-04,0.12,1788541913.3602712
+# [2026-09-04 13:11:59] SAMPLE step 140:
+# 
+# User: welcome
+# Joe: Thanks! Happy to be here. What can I help with?
+# User: good day
+# Joe: Good day to you! What is on your mind?
+# User: hi how have you been
+# Joe: I have
+150,0.0470,3.00e-04,0.10,1788542011.8427346
+# [2026-09-04 13:13:47] SAMPLE step 150:
+# 
+# Joe: Hi there! What's going on?
+# User: hey there
+# Joe: Hey! Good to see you.
+# User: yo
+# Joe: Yo! What's happening?
+# User: what's up
+# Joe: Not much! Just chilling. What can
+160,0.0435,3.00e-04,0.10,1788542108.2100632
+# [2026-09-04 13:15:24] SAMPLE step 160:
+# 
+# Joe: Hey! All good here. What can I help with?
+# User: hi good to see you
+# Joe: Good to see you too! What's going on?
+# User: hey how's it going
+# Joe: Going well! How 
+170,0.0423,3.00e-04,0.11,1788542200.9807293
+# [2026-09-04 13:16:56] SAMPLE step 170:
+# 
+# Joe: Just waiting for someone to chat with. Like you!
+# User: hey glad I found you
+# Joe: Glad you found me too! What can I help with?
+# User: hi there it's been ages
+180,0.0479,3.00e-04,0.11,1788542295.762559
+# [2026-09-04 13:18:31] SAMPLE step 180:
+# 
+# User: hi joe
+# Joe: Hey! That's me. What's on your mind?
+# User: hello joe
+# Joe: Hello! Ready to chat.
+# User: good to see you
+# Joe: Good to see you too! What's up
+190,0.0426,3.00e-04,0.11,1788542390.0132477
+# [2026-09-04 13:20:06] SAMPLE step 190:
+# 
+# User: hey been a while
+# Joe: It has! Good to chat again. What's up?
+# User: hi there joe
+# Joe: Hi! What can I do for you?
+# User: greetings human
+# Joe: Greetings! I 
+200,0.0444,3.00e-04,0.10,1788542487.021865
+# [2026-09-04 13:21:42] SAMPLE step 200:
+# 
+# User: hey can we be friends
+# Joe: Of course! I am always happy to have a friend. What is up?
+# User: hi I need some advice
+# Joe: I will do my best! What
+210,0.0453,3.00e-04,0.11,1788542577.8060217
+# [2026-09-04 13:23:13] SAMPLE step 210:
+# 
+# User: hi let's chat
+# Joe: I am ready! What would you like to talk about?
+# User: hey there what's happening
+# Joe: Hey! Not much. What's going on with you?
+# User: hi I have 
+220,0.0456,3.00e-04,0.11,1788542672.6604257
+# [2026-09-04 13:24:48] SAMPLE step 220:
+# 
+# Joe: Good evening! How can I help you?
+# User: good night
+# Joe: Good night! Sleep well.
+# User: how are you
+# Joe: I am doing great, thanks for asking!
+# User: how are you doing
+# Joe: 
+230,0.0407,3.00e-04,0.11,1788542767.0943954
+# [2026-09-04 13:26:23] SAMPLE step 230:
+# 
+# User: hey there what's happening
+# Joe: Hey! Not much. What's going on with you?
+# User: hi I have been thinking about you
+# Joe: That is sweet! I am always here when you want to 
+240,0.0461,3.00e-04,0.10,1788542862.6793342
+# [2026-09-04 13:27:58] SAMPLE step 240:
+# 
+# Joe: I am doing great, thanks for asking!
+# User: how are you doing
+# Joe: Pretty good! Ready to chat.
+# User: what is up
+# Joe: Not much! Just here to help.
+# User: sup
+250,0.0451,3.00e-04,0.11,1788542956.468109
+# [2026-09-04 13:29:19] SAMPLE step 250:
+# 
+# Joe: Hey buddy! What's happening?
+# User: hi welcome
+# Joe: Thanks! Happy to be here. What can I help with?
+# User: good day
+# Joe: Good day to you! What is on your mind
+260,0.0477,3.00e-04,0.27,1788542993.0177662
+# [2026-09-04 13:29:56] SAMPLE step 260:
+# 
+# Joe: Hey buddy! What's happening?
+# User: hi welcome
+# Joe: Thanks! Happy to be here. What can I help with?
+# User: good day
+# Joe: Good day to you! What is on your mind
+270,0.0463,3.00e-04,0.27,1788543029.5870705
+# [2026-09-04 13:30:32] SAMPLE step 270:
+# 
+# Joe: Greetings! How can I assist you today?
+# User: nice to meet you
+# Joe: Nice to meet you too! I am Joe Brain.
+# User: hi there
+# Joe: Hi there! What's going on
+280,0.0424,3.00e-04,0.27,1788543066.2213159
+# [2026-09-04 13:31:09] SAMPLE step 280:
+# 
+# Joe: Welcome! What brings you by?
+# User: hey what's the word
+# Joe: All good here. What do you need?
+# User: hi can we talk
+# Joe: Of course! I am all ears. What is
+290,0.0450,3.00e-04,0.27,1788543102.8966987
+# [2026-09-04 13:31:46] SAMPLE step 290:
+# 
+# User: hey how's it going
+# Joe: Going well! How about you?
+# User: hi there friend
+# Joe: Hi friend! What can I do for you?
+# User: hello old friend
+# Joe: Hello! Always
+300,0.0493,3.00e-04,0.27,1788543139.4992905
+# [2026-09-04 13:32:22] SAMPLE step 300:
+# 
+# User: hi what are you up to
+# Joe: Just waiting for someone to chat with. Like you!
+# User: hey glad I found you
+# Joe: Glad you found me too! What can I help with
+310,0.0433,3.00e-04,0.27,1788543176.2390544
+# [2026-09-04 13:32:59] SAMPLE step 310:
+# 
+# Joe: Hey friend! All good here. What's up?
+# User: hi there what's cooking
+# Joe: Not much! Just waiting to help. What's going on?
+# User: hello hope you're doing well
+320,0.0462,3.00e-04,0.27,1788543212.8898206
+# [2026-09-04 13:33:36] SAMPLE step 320:
+# 
+# Joe: I am always here! What can I help with?
+# User: hello again
+# Joe: Welcome back! What is on your mind?
+# User: hey been a while
+# Joe: It has! Good to chat again. What's 
+330,0.0414,3.00e-04,0.27,1788543249.6458893
+# [2026-09-04 13:34:12] SAMPLE step 330:
+# 
+# User: hey can we be friends
+# Joe: Of course! I am always happy to have a friend. What is up?
+# User: hi I need some advice
+# Joe: I will do my best! What
+340,0.0501,3.00e-04,0.27,1788543286.23742
+# [2026-09-04 13:34:49] SAMPLE step 340:
+# 
+# Joe: Absolutely! Go ahead.
+# User: hi good morning sunshine
+# Joe: Good morning! Hope you are having a great day.
+# User: hey buddy long time no see
+# Joe: Hey! It has
+350,0.0510,3.00e-04,0.27,1788543322.9342964
+# [2026-09-04 13:35:26] SAMPLE step 350:
+# 
+# User: hi there friend
+# Joe: Hi friend! What can I do for you?
+# User: hello old friend
+# Joe: Hello! Always good to chat. What's on your mind?
+# User: hey there bu
+360,0.0470,3.00e-04,0.27,1788543359.6900964
+# [2026-09-04 13:36:02] SAMPLE step 360:
+# 
+# User: howdy partner
+# Joe: Howdy! What can I do for you today?
+# User: hi joe
+# Joe: Hey! That's me. What's on your mind?
+# User: hello joe
+# Joe: Hello! Ready to chat
+370,0.0446,3.00e-04,0.27,1788543396.5834925
+# [2026-09-04 13:36:39] SAMPLE step 370:
+# 
+# Joe: Nice to hear from you too! What is going on?
+# User: hi I just popped in
+# Joe: Welcome! What brings you by?
+# User: hey what's the word
+# Joe: All good here. What do
+380,0.0453,3.00e-04,0.27,1788543433.2043781
+# [2026-09-04 13:37:16] SAMPLE step 380:
+# 
+# Joe: Hello! How can I help today?
+# User: hi how are you
+# Joe: I am great! How about you?
+# User: hey whats good
+# Joe: Not much! Just here and ready to help.
+# User: was
+390,0.0470,3.00e-04,0.27,1788543469.7174416
+# [2026-09-04 13:37:53] SAMPLE step 390:
+# 
+# Joe: Hey! What can I do for you?
+# User: howdy
+# Joe: Howdy! What is on your mind?
+# User: greetings
+# Joe: Greetings! How can I assist you today?
+# User: nice to meet you
+400,0.0467,3.00e-04,0.27,1788543506.5604248
+# [2026-09-04 13:38:29] SAMPLE step 400:
+# 
+# Joe: Hey! What is going on?
+# User: how goes it
+# Joe: Going well! What about you?
+# User: whats happening
+# Joe: Just hanging out. What can I help you with?
+# User: yo whats good
+410,0.0449,3.00e-04,0.27,1788543542.9613545
+# [2026-09-04 13:39:06] SAMPLE step 410:
+# 
+# User: howdy partner
+# Joe: Howdy! What can I do for you today?
+# User: hi joe
+# Joe: Hey! That's me. What's on your mind?
+# User: hello joe
+# Joe: Hello! Ready to chat
+420,0.0453,3.00e-04,0.27,1788543579.6137557
+# [2026-09-04 13:39:42] SAMPLE step 420:
+# 
+# User: hi welcome
+# Joe: Thanks! Happy to be here. What can I help with?
+# User: good day
+# Joe: Good day to you! What is on your mind?
+# User: hi how have you been
+# Joe: I
+430,0.0389,3.00e-04,0.27,1788543616.1562266
+# [2026-09-04 13:40:19] SAMPLE step 430:
+# 
+# Joe: Hey! All good here. What can I help with?
+# User: hi good to see you
+# Joe: Good to see you too! What's going on?
+# User: hey how's it going
+# Joe: Going well! How 
+440,0.0444,3.00e-04,0.27,1788543652.875939
+# [2026-09-04 13:40:56] SAMPLE step 440:
+# 
+# User: hey there buddy
+# Joe: Hey buddy! What's happening?
+# User: hi welcome
+# Joe: Thanks! Happy to be here. What can I help with?
+# User: good day
+# Joe: Good day to you
+450,0.0477,3.00e-04,0.27,1788543689.6567733
+# [2026-09-04 13:41:32] SAMPLE step 450:
+# 
+# User: yo what's good my friend
+# Joe: Hey friend! All good here. What's up?
+# User: hi there what's cooking
+# Joe: Not much! Just waiting to help. What's going on?
+460,0.0448,3.00e-04,0.27,1788543726.2906296
+# [2026-09-04 13:42:09] SAMPLE step 460:
+# 
+# Joe: Good afternoon! How is your day going?
+# User: good evening
+# Joe: Good evening! How can I help you?
+# User: good night
+# Joe: Good night! Sleep well.
+# User: how are you
+# Joe: I am do
+470,0.0419,3.00e-04,0.27,1788543763.075488
+# [2026-09-04 13:42:46] SAMPLE step 470:
+# 
+# User: hi good to see you
+# Joe: Good to see you too! What's going on?
+# User: hey how's it going
+# Joe: Going well! How about you?
+# User: hi there friend
+# Joe: Hi friend! 
+480,0.0393,3.00e-04,0.27,1788543799.6069858
+# [2026-09-04 13:43:22] SAMPLE step 480:
+# 
+# User: hey there partner
+# Joe: Hey partner! What can I help with?
+# User: hi good to see you again
+# Joe: Good to see you too! What brings you back?
+# User: hi I am here to learn
+490,0.0434,3.00e-04,0.27,1788543836.0828505
+# [2026-09-04 13:43:59] SAMPLE step 490:
+# 
+# User: hi what can you do
+# Joe: I can chat, answer questions, and try to be helpful!
+# User: hello what do you know
+# Joe: I know a bit about lots of things. Ask me any
+500,0.0417,3.00e-04,0.27,1788543872.5106447
+# [2026-09-04 13:44:35] SAMPLE step 500:
+# 
+# User: yo what's good my friend
+# Joe: Hey friend! All good here. What's up?
+# User: hi there what's cooking
+# Joe: Not much! Just waiting to help. What's going on?
+# [2026-09-04 13:44:37] FINISH at step 500
