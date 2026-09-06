@@ -35,8 +35,45 @@ def ones(n):
     return np.ones(n, dtype=np.float32)
 
 
+def pad_last(w, new_last, fill='tiny'):
+    """Pad last axis from old_size to new_last, preserving existing values.
+    New entries use tiny() (weights) or zeros (Adam moments) via fill='zero'."""
+    old_last = w.shape[-1]
+    if new_last == old_last:
+        return w.copy()
+    pad_shape = list(w.shape)
+    pad_shape[-1] = new_last - old_last
+    filler = zeros if fill == 'zero' else tiny
+    return np.concatenate([w, filler(pad_shape)], axis=-1)
+
+def pad_first(w, new_first):
+    """Pad first axis from old_size to new_first, preserving existing values."""
+    old_first = w.shape[0]
+    if new_first == old_first:
+        return w.copy()
+    pad_shape = list(w.shape)
+    pad_shape[0] = new_first - old_first
+    return np.concatenate([w, tiny(pad_shape)], axis=0)
+
+def pad_both_2d(w, new_r, new_c, fill='tiny'):
+    """Pad a 2D matrix from (old_r, old_c) to (new_r, new_c).
+    New entries use tiny() (weights) or zeros (Adam moments) via fill='zero'."""
+    old_r, old_c = w.shape
+    result = zeros((new_r, new_c))
+    result[:old_r, :old_c] = w
+    filler = zeros if fill == 'zero' else tiny
+    if old_r < new_r:
+        result[old_r:, :old_c] = filler((new_r - old_r, old_c))
+    if old_c < new_c:
+        result[:old_r, old_c:] = filler((old_r, new_c - old_c))
+    if old_r < new_r and old_c < new_c:
+        result[old_r:, old_c:] = filler((new_r - old_r, new_c - old_c))
+    return result
+
+
 def expand_dim(model, new_C):
-    """Expand embed_dim, preserving weights and Adam moments."""
+    """Expand embed_dim, preserving weights and Adam moments.
+    New weight entries are tiny; new Adam moments are zero."""
     old_C = model.C
     L = model.L
     n_heads = model.H
@@ -51,46 +88,15 @@ def expand_dim(model, new_C):
     new_m = {}
     new_v = {}
 
-    def pad_last(w, new_last):
-        """Pad last axis from old_size to new_last, preserving existing values."""
-        old_last = w.shape[-1]
-        if new_last == old_last:
-            return w.copy()
-        pad_shape = list(w.shape)
-        pad_shape[-1] = new_last - old_last
-        return np.concatenate([w, tiny(pad_shape)], axis=-1)
-
-    def pad_first(w, new_first):
-        """Pad first axis from old_size to new_first, preserving existing values."""
-        old_first = w.shape[0]
-        if new_first == old_first:
-            return w.copy()
-        pad_shape = list(w.shape)
-        pad_shape[0] = new_first - old_first
-        return np.concatenate([w, tiny(pad_shape)], axis=0)
-
-    def pad_both_2d(w, new_r, new_c):
-        """Pad a 2D matrix from (old_r, old_c) to (new_r, new_c)."""
-        old_r, old_c = w.shape
-        result = zeros((new_r, new_c))
-        result[:old_r, :old_c] = w
-        if old_r < new_r:
-            result[old_r:, :old_c] = tiny((new_r - old_r, old_c))
-        if old_c < new_c:
-            result[:old_r, old_c:] = tiny((old_r, new_c - old_c))
-        if old_r < new_r and old_c < new_c:
-            result[old_r:, old_c:] = tiny((new_r - old_r, new_c - old_c))
-        return result
-
     # Embeddings: (V, C) -> (V, new_C)
     new_p['wte'] = pad_last(model.p['wte'], new_C)
-    new_m['wte'] = pad_last(model.m['wte'], new_C)
-    new_v['wte'] = pad_last(model.v['wte'], new_C)
+    new_m['wte'] = pad_last(model.m['wte'], new_C, fill='zero')
+    new_v['wte'] = pad_last(model.v['wte'], new_C, fill='zero')
 
     # Position embeddings: (T, C) -> (T, new_C)
     new_p['wpe'] = pad_last(model.p['wpe'], new_C)
-    new_m['wpe'] = pad_last(model.m['wpe'], new_C)
-    new_v['wpe'] = pad_last(model.v['wpe'], new_C)
+    new_m['wpe'] = pad_last(model.m['wpe'], new_C, fill='zero')
+    new_v['wpe'] = pad_last(model.v['wpe'], new_C, fill='zero')
 
     # Output projection bias: (V,) unchanged
     new_p['proj_b'] = model.p['proj_b'].copy()
@@ -100,16 +106,16 @@ def expand_dim(model, new_C):
     # Final layer norm: (C,) -> (new_C,)
     for key in ['ln_f_g', 'ln_f_b']:
         new_p[key] = pad_last(model.p[key], new_C)
-        new_m[key] = pad_last(model.m[key], new_C)
-        new_v[key] = pad_last(model.v[key], new_C)
+        new_m[key] = pad_last(model.m[key], new_C, fill='zero')
+        new_v[key] = pad_last(model.v[key], new_C, fill='zero')
 
     for i in range(L):
         # Layer norms: (C,) -> (new_C,)
         for key in ['ln1_g', 'ln1_b', 'ln2_g', 'ln2_b']:
             full = f'{key}_{i}'
             new_p[full] = pad_last(model.p[full], new_C)
-            new_m[full] = pad_last(model.m[full], new_C)
-            new_v[full] = pad_last(model.v[full], new_C)
+            new_m[full] = pad_last(model.m[full], new_C, fill='zero')
+            new_v[full] = pad_last(model.v[full], new_C, fill='zero')
 
         # qkv_w: (C, 3*C) -> (new_C, 3*new_C)
         old_w = model.p[f'qkv_w_{i}']  # (old_C, 3*old_C)
@@ -144,33 +150,33 @@ def expand_dim(model, new_C):
 
         # attn_proj_w: (C, C) -> (new_C, new_C)
         new_p[f'attn_proj_w_{i}'] = pad_both_2d(model.p[f'attn_proj_w_{i}'], new_C, new_C)
-        new_m[f'attn_proj_w_{i}'] = pad_both_2d(model.m[f'attn_proj_w_{i}'], new_C, new_C)
-        new_v[f'attn_proj_w_{i}'] = pad_both_2d(model.v[f'attn_proj_w_{i}'], new_C, new_C)
+        new_m[f'attn_proj_w_{i}'] = pad_both_2d(model.m[f'attn_proj_w_{i}'], new_C, new_C, fill='zero')
+        new_v[f'attn_proj_w_{i}'] = pad_both_2d(model.v[f'attn_proj_w_{i}'], new_C, new_C, fill='zero')
 
         # attn_proj_b: (C,) -> (new_C,)
         new_p[f'attn_proj_b_{i}'] = pad_last(model.p[f'attn_proj_b_{i}'], new_C)
-        new_m[f'attn_proj_b_{i}'] = pad_last(model.m[f'attn_proj_b_{i}'], new_C)
-        new_v[f'attn_proj_b_{i}'] = pad_last(model.v[f'attn_proj_b_{i}'], new_C)
+        new_m[f'attn_proj_b_{i}'] = pad_last(model.m[f'attn_proj_b_{i}'], new_C, fill='zero')
+        new_v[f'attn_proj_b_{i}'] = pad_last(model.v[f'attn_proj_b_{i}'], new_C, fill='zero')
 
         # fc_w: (C, 4*C) -> (new_C, 4*new_C)
         new_p[f'fc_w_{i}'] = pad_both_2d(model.p[f'fc_w_{i}'], new_C, 4 * new_C)
-        new_m[f'fc_w_{i}'] = pad_both_2d(model.m[f'fc_w_{i}'], new_C, 4 * new_C)
-        new_v[f'fc_w_{i}'] = pad_both_2d(model.v[f'fc_w_{i}'], new_C, 4 * new_C)
+        new_m[f'fc_w_{i}'] = pad_both_2d(model.m[f'fc_w_{i}'], new_C, 4 * new_C, fill='zero')
+        new_v[f'fc_w_{i}'] = pad_both_2d(model.v[f'fc_w_{i}'], new_C, 4 * new_C, fill='zero')
 
         # fc_b: (4*C,) -> (4*new_C,)
         new_p[f'fc_b_{i}'] = pad_last(model.p[f'fc_b_{i}'], 4 * new_C)
-        new_m[f'fc_b_{i}'] = pad_last(model.m[f'fc_b_{i}'], 4 * new_C)
-        new_v[f'fc_b_{i}'] = pad_last(model.v[f'fc_b_{i}'], 4 * new_C)
+        new_m[f'fc_b_{i}'] = pad_last(model.m[f'fc_b_{i}'], 4 * new_C, fill='zero')
+        new_v[f'fc_b_{i}'] = pad_last(model.v[f'fc_b_{i}'], 4 * new_C, fill='zero')
 
         # fc2_w: (4*C, C) -> (4*new_C, new_C)
         new_p[f'fc2_w_{i}'] = pad_both_2d(model.p[f'fc2_w_{i}'], 4 * new_C, new_C)
-        new_m[f'fc2_w_{i}'] = pad_both_2d(model.m[f'fc2_w_{i}'], 4 * new_C, new_C)
-        new_v[f'fc2_w_{i}'] = pad_both_2d(model.v[f'fc2_w_{i}'], 4 * new_C, new_C)
+        new_m[f'fc2_w_{i}'] = pad_both_2d(model.m[f'fc2_w_{i}'], 4 * new_C, new_C, fill='zero')
+        new_v[f'fc2_w_{i}'] = pad_both_2d(model.v[f'fc2_w_{i}'], 4 * new_C, new_C, fill='zero')
 
         # fc2_b: (C,) -> (new_C,)
         new_p[f'fc2_b_{i}'] = pad_last(model.p[f'fc2_b_{i}'], new_C)
-        new_m[f'fc2_b_{i}'] = pad_last(model.m[f'fc2_b_{i}'], new_C)
-        new_v[f'fc2_b_{i}'] = pad_last(model.v[f'fc2_b_{i}'], new_C)
+        new_m[f'fc2_b_{i}'] = pad_last(model.m[f'fc2_b_{i}'], new_C, fill='zero')
+        new_v[f'fc2_b_{i}'] = pad_last(model.v[f'fc2_b_{i}'], new_C, fill='zero')
 
     model.C = new_C
     model.head_dim = new_C // n_heads
