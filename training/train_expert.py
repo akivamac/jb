@@ -19,6 +19,7 @@ import argparse
 import time
 import math
 import signal
+import fcntl
 import subprocess
 import traceback
 
@@ -88,13 +89,59 @@ def cosine_lr(step, total_steps, lr_max, lr_min=1e-4, warmup=100):
     return lr_min + 0.5 * (lr_max - lr_min) * (1 + math.cos(math.pi * progress))
 
 
+def _remote_exists(name):
+    r = subprocess.run(['git', '-C', REPO, 'remote'], check=True,
+                       capture_output=True, text=True)
+    return name in r.stdout.split()
+
+
 def git_push(name, step):
+    """Commit the expert checkpoint and push.
+
+    Tablet (this repo): remote 'jb' exists -> build a small incremental
+    snapshot commit parented off refs/remotes/jb/main and push to jb main,
+    avoiding shipping the large new-monkey history.
+    Mac (jb clone): no 'jb' remote -> normal commit on the current branch
+    and push it to origin (which IS the jb repo).
+    """
     try:
         expert_file = f'data/experts/{name}/{name}.npz'
-        subprocess.run(['git', '-C', REPO, 'add', expert_file], check=True)
-        subprocess.run(['git', '-C', REPO, 'commit', '-m', f'chore: auto-save {name} expert at step {step}'], check=True)
-        subprocess.run(['git', '-C', REPO, 'push', 'origin', 'new-monkey'], check=True)
-        print(f"  [pushed {name} expert to github at step {step}]")
+        msg = f'chore: auto-save {name} expert at step {step}'
+        lock_path = os.path.join(REPO, '.git', 'push.lock')
+        with open(lock_path, 'a+') as lockf:
+            fcntl.flock(lockf, fcntl.LOCK_EX)
+            try:
+                subprocess.run(['git', '-C', REPO, 'add', expert_file], check=True)
+                if _remote_exists('jb'):
+                    subprocess.run(
+                        ['git', '-C', REPO, 'commit', '--no-verify', '-m', msg],
+                        check=True)
+                    tree = subprocess.run(
+                        ['git', '-C', REPO, 'write-tree'], check=True,
+                        capture_output=True, text=True).stdout.strip()
+                    parent = subprocess.run(
+                        ['git', '-C', REPO, 'rev-parse', 'refs/remotes/jb/main'],
+                        check=True, capture_output=True, text=True).stdout.strip()
+                    commit = subprocess.run(
+                        ['git', '-C', REPO, 'commit-tree', tree, '-p', parent, '-m', msg],
+                        check=True, capture_output=True, text=True).stdout.strip()
+                    subprocess.run(
+                        ['git', '-C', REPO, 'push', 'jb', f'{commit}:main'], check=True)
+                    subprocess.run(['git', '-C', REPO, 'update-ref',
+                                    'refs/remotes/jb/main', commit], check=True)
+                else:
+                    branch = subprocess.run(
+                        ['git', '-C', REPO, 'rev-parse', '--abbrev-ref', 'HEAD'],
+                        check=True, capture_output=True, text=True).stdout.strip()
+                    subprocess.run(
+                        ['git', '-C', REPO, 'commit', '--no-verify', '-m', msg],
+                        check=True)
+                    subprocess.run(
+                        ['git', '-C', REPO, 'push', 'origin', f'HEAD:{branch}'],
+                        check=True)
+                print(f"  [pushed {name} expert at step {step}]")
+            finally:
+                fcntl.flock(lockf, fcntl.LOCK_UN)
     except Exception as e:
         print(f"  [git push failed: {e}]")
 

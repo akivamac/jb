@@ -200,6 +200,10 @@ def _start_training(name, params):
     except (TypeError, ValueError):
         save_every = 0
     try:
+        push_every = int(params.get('push', 500))
+    except (TypeError, ValueError):
+        push_every = 500
+    try:
         log_every = int(params.get('log', 100))
     except (TypeError, ValueError):
         log_every = 100
@@ -241,6 +245,8 @@ def _start_training(name, params):
         cmd.append('--resume')
     if save_every > 0:
         cmd += ['--save', str(save_every)]
+    if push_every > 0:
+        cmd += ['--push', str(push_every)]
     if log_every != 100:
         cmd += ['--log', str(log_every)]
     if sample_every > 0:
