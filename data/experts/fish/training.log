@@ -1879,3 +1879,31 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # 
 # User: What is a fish closed season?
 # Joe: A fish closed season, or fishing moratorium, is a period when fishing for a particular species is prohibited. Closures are timed to 
+1600,0.0534,3.00e-04,0.24,1788821849.282302
+# [2026-09-07 18:57:29] SAMPLE step 1600:
+# 
+# 
+# User: What is an adipose fin?
+# Joe: An adipose fin is a small, fin like rot called a loss of bony plates. The skin like the mouth where tuna pepods, and
+1700,0.0529,3.00e-04,0.23,1788822288.231779
+# [2026-09-07 19:04:48] SAMPLE step 1700:
+# 
+# 
+# User: Do fish need an air pump?
+# Joe: Not always, but sometimes. If your filter already disturbs the surface well, that is usually enough for a lightly stocked tank. If
+1800,0.0525,3.00e-04,0.39,1788822542.414505
+# [2026-09-07 19:09:02] SAMPLE step 1800:
+# 
+# 
+# User: Why do my fish swimming upside down right after eating?
+# Joe: Floating belly-up right after a meal is a telltale swim bladder reaction in goldfish and other round fish,
+1900,0.0529,3.00e-04,0.73,1788822679.861366
+# [2026-09-07 19:11:20] SAMPLE step 1900:
+# 
+# User: What is larger fin rot?
+# Joe: Fin rot is a bacterial infection that causes fish fins to fray, discolor, and deteriorate. It is usually caused by poor water quality 
+2000,0.0527,3.00e-04,0.73,1788822816.815491
+# [2026-09-07 19:13:37] SAMPLE step 2000:
+# 
+# User: What is a tang?
+# Joe: A tang is a marine fish also known as a surgeonfish, recognized by the sharp scalpel-like spine at the base of the tail. The blue 
