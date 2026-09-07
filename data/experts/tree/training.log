@@ -853,3 +853,29 @@
 # 
 # User: What is a walnut tree?
 # Joe: The walnut is a large tree grown for its nuts and fine dark wood. Walnut trees produce compounds that can inhibit other plants growing
+600,0.0283,3.00e-04,0.23,1788817853.708141
+# [2026-09-07 17:50:54] SAMPLE step 600:
+# 
+# 
+# User: What is an oak tree?
+# Joe: An oak is a large hardwood tree for fine furniture and gunstocks. Its shock resistance comes from long, straight fibers that flex
+700,0.0287,3.00e-04,0.24,1788818267.85549
+# [2026-09-07 17:57:48] SAMPLE step 700:
+# 
+# 
+# User: What is a canker?
+# Joe: A canker is a localized dead area on a branch or trunk, usually caused by a fungus, or strangle the bark. Remove stakes within 
+800,0.0298,3.00e-04,0.24,1788818678.6522722
+# [2026-09-07 18:04:39] SAMPLE step 800:
+# 
+# Joe: The amount varies by species, size, and age, but a mature tree can store about 20 to 50 kg of carbon dioxide per year. Over a lifetime a large tree can hold a
+900,0.0291,3.00e-04,0.26,1788819066.018214
+# [2026-09-07 18:11:06] SAMPLE step 900:
+# 
+# Joe: A leaf scar is the small patch left on a twig where a leaf was attached and later fell away. Its shape, plus the little bundle scars visible inside it, is 
+1000,0.0280,3.00e-04,0.25,1788819470.9280949
+# [2026-09-07 18:17:51] SAMPLE step 1000:
+# 
+# 
+# User: Why do some leaves have long pointed tips?
+# Joe: In wet forests, many leaves end in a long drip tip, a pointed extension that lets rainwater run off quickly. Shedding
