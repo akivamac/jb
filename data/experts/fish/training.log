@@ -1808,3 +1808,26 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # 
 # Joe: Fish food is a fish migration route is the material where fish health, then downriver to the water. It is no main spear made of a barbattered or bargas-filled that
 # [2026-09-07 11:18:46] FINISH at step 500
+# [2026-09-07 17:09:03] RESUME: training/train_expert.py --name fish --steps 2000 --resume --push 500 --log 100 --sample 100
+100,0.1040,3.00e-04,0.26,1788815734.0139499
+# [2026-09-07 17:15:34] SAMPLE step 100:
+# 
+# Joe: Salmon are anadromous, normal like corydoras, and tial squish to wordfish wordfish like behaviorable and even the tail it. They proborn species the kness, and so below 
+200,0.0725,3.00e-04,0.24,1788816151.133504
+# [2026-09-07 17:22:31] SAMPLE step 200:
+# 
+# Joe: Marine species can use an al to environment stay together in the surface that stay attract the surface or that is normal breeding, and is its mouth and open it wide when nit 
+300,0.0642,3.00e-04,0.24,1788816575.4395251
+# [2026-09-07 17:29:36] SAMPLE step 300:
+# 
+# Joe: A fish stocking program releases hatchery-raised fish into lakes and rivers to support recreational fishing or restore depleted populations. State agencies manage stocking 
+400,0.0612,3.00e-04,0.24,1788816995.034373
+# [2026-09-07 17:36:35] SAMPLE step 400:
+# 
+# 
+# User: What is a fish camp?
+# Joe: A fish camp is a casual restaurant or roadside stand that serves freshly caught fish, often in a lakeside or riverside that setting
+500,0.0579,3.00e-04,0.24,1788817403.846255
+# [2026-09-07 17:43:24] SAMPLE step 500:
+# 
+# Joe: Sharks are more active and scentweir called ried electrofish, net, is a net held net used to catching school fish like sardines, anchovies, and tuna. The bottom 
