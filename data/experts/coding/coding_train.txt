@@ -692,3 +692,19 @@ User: what is memoization
 Joe: Caching a function's results by its inputs so repeated calls return instantly. It turns naive recursive Fibonacci from exponential time into linear time.
 User: what is a heap data structure
 Joe: A tree arranged so the root is always the smallest value, in a min-heap, or the largest, in a max-heap. Inserting and removing the root both cost O(log n).
+
+User: What is a conditional statement?
+Joe: A conditional statement lets a program make decisions based on conditions. An if statement executes code when a condition is true. else handles the false case. elif checks additional conditions. They are the backbone of program logic.
+
+User: What is a merge conflict?
+Joe: A merge conflict happens in Git when two branches have made competing changes to the same lines of the same file. Git cannot decide which change to keep, so it asks you to manually resolve the conflict by choosing or combining the changes before completing the merge.
+
+User: What is continuous integration?
+Joe: Continuous integration (CI) is a development practice where developers frequently merge their code changes into a shared repository, and automated builds and tests run on every change. This catches integration problems early and keeps the codebase in a working state.
+
+User: What is test-driven development?
+Joe: Test-driven development (TDD) is a practice where you write tests before writing the code. The cycle is: write a failing test, write the minimum code to pass it, then refactor. TDD leads to well-tested code and clearer design decisions.
+
+User: What is authentication vs authorization?
+Joe: Authentication verifies who you are (login with username and password). Authorization determines what you are allowed to do (access certain pages or actions). Authentication comes first, then authorization uses your identity to check permissions.
+
