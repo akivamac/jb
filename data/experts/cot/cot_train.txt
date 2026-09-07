@@ -787,3 +787,43 @@ User: think step by step: what does a $15 book cost after 30% off?
 Joe: 30% of 15 is 4.50, so the discount is 4.50. Subtracting from 15 gives 10.50, so the book costs $10.50.
 User: step by step, what is the median of 5, 1, 9, 3, and 7?
 Joe: First sort them: 1, 3, 5, 7, 9. With five numbers the middle one is the third, which is 5. The median is 5.
+
+User: How do I approach a problem I have never seen before?
+Joe: Start by breaking the problem into smaller pieces. Write down what you know, what you need to find, and what constraints exist. Look for patterns or similar problems you have solved. Try a simple example by hand to see how it works. Build from there.
+
+User: How do I think more logically?
+Joe: Practice breaking decisions into smaller if-then steps. Write out your reasoning instead of jumping to conclusions. Question your assumptions. Look for evidence before forming opinions. The more you practice structured thinking, the more natural it becomes.
+
+User: What is first principles thinking?
+Joe: First principles thinking is breaking a problem down to its most basic truths and reasoning up from there, instead of reasoning by analogy or following what others do. It means questioning every assumption and building understanding from the ground up.
+
+User: How do I make better decisions?
+Joe: Gather the relevant information, identify your options, consider the consequences of each, check your biases, and then decide. Do not wait for perfect information. Most decisions are reversible, and indecision is often worse than a suboptimal choice.
+
+User: What is the Socratic method?
+Joe: The Socratic method is learning through asking questions rather than being told answers. By asking why, how, and what if repeatedly, you expose assumptions, test reasoning, and arrive at deeper understanding. It is one of the oldest and most effective teaching methods.
+
+User: How do I solve a problem step by step?
+Joe: First, understand the problem clearly. What exactly is being asked? Second, identify what information you have and what you need. Third, choose a strategy or approach. Fourth, execute step by step, checking your work. Fifth, verify your answer makes sense.
+
+User: What does it mean to think critically?
+Joe: Critical thinking means analyzing information objectively rather than accepting it at face value. It involves questioning sources, evaluating evidence, identifying biases, distinguishing facts from opinions, and drawing well-reasoned conclusions based on logic.
+
+User: How do I learn from mistakes?
+Joe: Acknowledge the mistake honestly. Ask what went wrong and why. Extract the lesson. Apply it next time. Do not repeat the mistake, and do not waste energy on guilt. Mistakes are data, not identity.
+
+User: What is Occam's Razor?
+Joe: Occam's Razor is the principle that among competing explanations, the simplest one that accounts for all the facts is usually correct. It does not guarantee the simplest answer is right, but it suggests starting there before adding unnecessary complexity.
+
+User: What is metacognition?
+Joe: Metacognition is thinking about your own thinking. It means being aware of how you learn, recognizing when you do not understand something, and adjusting your approach. Good learners constantly monitor their comprehension and adapt their strategies.
+
+User: How do I avoid overthinking?
+Joe: Set a deadline for your decision. Gather enough information to be informed but not so much that you drown in it. Ask yourself what the worst realistic outcome is. Most overthinking is fear of making the wrong choice disguised as thoroughness.
+
+User: What is the difference between being smart and being wise?
+Joe: Smart is the ability to solve problems quickly. Wisdom is knowing which problems are worth solving and how to apply knowledge with good judgment. A smart person knows a tomato is a fruit. A wise person does not put it in a fruit salad.
+
+User: What is the Feynman Technique?
+Joe: The Feynman Technique is a learning method: (1) Choose a concept, (2) Explain it in simple language as if teaching a child, (3) Identify gaps in your explanation, (4) Go back and fill the gaps, (5) Simplify and use analogies. If you cannot explain it simply, you do not understand it well enough.
+

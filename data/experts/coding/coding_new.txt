@@ -1,69 +1,15 @@
-User: What is version control?
-Joe: Version control is a system that tracks changes to files over time, allowing you to recall specific versions later. Git is the most popular version control system. It lets multiple people collaborate on the same codebase without overwriting each others work.
-
-User: What is a function?
-Joe: A function is a reusable block of code that performs a specific task. It can take inputs (parameters), do work, and return a result. Functions make code organized, reusable, and easier to test and debug.
-
-User: What is a variable?
-Joe: A variable is a named container that stores a value in a program. You give it a name and assign it data like a number, text, or list. The variable can then be used and changed throughout your code.
-
-User: What is a loop?
-Joe: A loop is a construct that repeats a block of code multiple times. A for loop iterates over a sequence like a list or range. A loop continues until a condition is met. Loops save you from writing the same code over and over.
-
-User: What is an array?
-Joe: An array is an ordered collection of values stored in contiguous memory. Arrays let you store and access multiple items by index. In Python, the equivalent is a list. Arrays are fundamental for managing collections of data in programs.
-
 User: What is a conditional statement?
 Joe: A conditional statement lets a program make decisions based on conditions. An if statement executes code when a condition is true. else handles the false case. elif checks additional conditions. They are the backbone of program logic.
-
-User: What is debugging?
-Joe: Debugging is the process of finding and fixing errors in code. Common techniques include printing variable values, using a debugger to step through code line by line, reading error messages carefully, and checking assumptions about what the code actually does versus what you think it does.
-
-User: What is an API?
-Joe: An API (Application Programming Interface) is a set of rules that allows different software systems to communicate. It defines what requests can be made, how to make them, and what responses to expect. APIs let you use other peoples code and services in your own projects.
-
-User: What is a database?
-Joe: A database is an organized collection of structured data stored electronically. Relational databases like PostgreSQL and MySQL store data in tables with rows and columns. NoSQL databases like MongoDB store data in flexible document formats. Databases power most applications.
-
-User: What is SQL?
-Joe: SQL (Structured Query Language) is a programming language for managing relational databases. You use it to create, read, update, and delete data. Key commands include SELECT, INSERT, UPDATE, DELETE, and CREATE TABLE. It is one of the most widely used languages.
-
-User: What is a class?
-Joe: A class is a blueprint for creating objects in object-oriented programming. It defines attributes (data) and methods (functions) that its objects will have. Classes help organize complex programs by grouping related data and behavior together.
-
-User: What is object-oriented programming?
-Joe: Object-oriented programming (OOP) is a programming paradigm based on objects that contain data and code. Core concepts include encapsulation (bundling data with methods), inheritance (new classes from existing ones), and polymorphism (same interface for different types).
-
-User: What is recursion?
-Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller pieces. Each call handles a simpler version of the original problem. A base case stops the recursion to prevent infinite loops. Factorial and tree traversal are classic examples.
 
 User: What is a merge conflict?
 Joe: A merge conflict happens in Git when two branches have made competing changes to the same lines of the same file. Git cannot decide which change to keep, so it asks you to manually resolve the conflict by choosing or combining the changes before completing the merge.
 
-User: What is code review?
-Joe: Code review is when developers examine each others code before merging it into the main codebase. It catches bugs, improves code quality, shares knowledge across the team, and ensures consistency. Most teams use pull requests to facilitate code review.
-
-User: What is a pull request?
-Joe: A pull request is a way to propose changes to a codebase in version control. You make changes on a branch, then open a request for others to review and discuss before merging into the main branch. It is a core workflow in collaborative development.
-
 User: What is continuous integration?
 Joe: Continuous integration (CI) is a development practice where developers frequently merge their code changes into a shared repository, and automated builds and tests run on every change. This catches integration problems early and keeps the codebase in a working state.
-
-User: What is a code smell?
-Joe: A code smell is a pattern in code that suggests a deeper design problem. Common examples include duplicated code, overly long functions, large classes, and deeply nested conditionals. Code smells are not bugs but indicate code that should be refactored for maintainability.
-
-User: What is refactoring?
-Joe: Refactoring is restructuring existing code without changing its external behavior. It improves readability, reduces complexity, and makes the code easier to maintain. Common refactors include extracting functions, renaming variables, and simplifying conditional logic.
 
 User: What is test-driven development?
 Joe: Test-driven development (TDD) is a practice where you write tests before writing the code. The cycle is: write a failing test, write the minimum code to pass it, then refactor. TDD leads to well-tested code and clearer design decisions.
 
-User: What is a REST API?
-Joe: A REST API is an architectural style for designing networked applications. It uses HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs. It is stateless, meaning each request contains all the information needed to process it.
-
 User: What is authentication vs authorization?
 Joe: Authentication verifies who you are (login with username and password). Authorization determines what you are allowed to do (access certain pages or actions). Authentication comes first, then authorization uses your identity to check permissions.
-
-User: What is hashing?
-Joe: Hashing is converting data into a fixed-size string of characters using a mathematical function. It is used for password storage, data integrity checks, and indexing. The same input always produces the same output, but the process cannot be reversed to recover the original data.
 

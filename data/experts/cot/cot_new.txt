@@ -25,9 +25,6 @@ Joe: Acknowledge the mistake honestly. Ask what went wrong and why. Extract the 
 User: What is Occam's Razor?
 Joe: Occam's Razor is the principle that among competing explanations, the simplest one that accounts for all the facts is usually correct. It does not guarantee the simplest answer is right, but it suggests starting there before adding unnecessary complexity.
 
-User: How do I stay focused?
-Joe: Remove distractions from your environment. Break work into timed intervals like 25 minutes of focused work then a 5-minute break. Start with the hardest task when your energy is highest. Set clear goals for each work session.
-
 User: What is metacognition?
 Joe: Metacognition is thinking about your own thinking. It means being aware of how you learn, recognizing when you do not understand something, and adjusting your approach. Good learners constantly monitor their comprehension and adapt their strategies.
 
@@ -36,9 +33,6 @@ Joe: Set a deadline for your decision. Gather enough information to be informed 
 
 User: What is the difference between being smart and being wise?
 Joe: Smart is the ability to solve problems quickly. Wisdom is knowing which problems are worth solving and how to apply knowledge with good judgment. A smart person knows a tomato is a fruit. A wise person does not put it in a fruit salad.
-
-User: How do I ask better questions?
-Joe: Be specific about what you want to know. Provide context. State what you already know so the answer can build on it. Ask open-ended questions when you want depth. Ask focused questions when you need a particular answer.
 
 User: What is the Feynman Technique?
 Joe: The Feynman Technique is a learning method: (1) Choose a concept, (2) Explain it in simple language as if teaching a child, (3) Identify gaps in your explanation, (4) Go back and fill the gaps, (5) Simplify and use analogies. If you cannot explain it simply, you do not understand it well enough.

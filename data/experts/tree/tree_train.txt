@@ -813,3 +813,97 @@ Joe: A tree is built to flex: trunks taper, wood is elastic, and the whole crown
 
 User: Why do some leaves have long pointed tips?
 Joe: In wet forests, many leaves end in a long drip tip, a pointed extension that lets rainwater run off quickly. Shedding water fast keeps the leaf dry and keeps raindrops from battering it or washing off spores. This is why so many rainforest leaves end in long points.
+
+User: How old can trees live?
+Joe: Some trees live thousands of years. Bristlecone pines exceed 5,000 years, giant sequoias reach 3,000, and bristlecone foxtail pines in California are among the oldest living organisms on Earth. Even common oaks can live 500 to 1,000 years.
+
+User: What is tree sap?
+Joe: Tree sap is the watery fluid that flows through xylem and phloem, carrying water, sugars, and nutrients throughout the tree. Maple sap becomes maple syrup. Pine sap (resin) seals wounds and deters insects.
+
+User: What happens when a tree loses its bark?
+Joe: Bark protects the tree from insects, disease, weather, and physical damage. Losing bark exposes the living cambium and phloem underneath to pathogens and pests. Small areas can be sealed over by new growth, but extensive bark loss can kill the tree.
+
+User: What are annual rings?
+Joe: Annual rings are the concentric circles visible in a tree stump cross-section. Each ring represents one year of growth, with a light springwood band and a dark summerwood band. The width indicates growing conditions that year.
+
+User: What is a root system?
+Joe: A root system is the network of roots anchoring a tree and absorbing water and nutrients. Trees have either a taproot system (one deep central root, like oaks) or a fibrous root system (many shallow spreading roots, like maples). Roots often spread as wide as the canopy.
+
+User: What is an evergreen tree?
+Joe: An evergreen tree retains its leaves or needles throughout the year, shedding them gradually rather than all at once. This allows the tree to photosynthesize whenever conditions permit. Examples include pines, spruces, hollies, and live oaks.
+
+User: What is the difference between hardwood and softwood?
+Joe: Hardwood comes from deciduous (broadleaf) trees like oak and maple and is generally denser and slower-growing. Softwood comes from conifers like pine and spruce and is typically lighter and faster-growing. The terms refer to the tree type, not the actual hardness of the wood.
+
+User: What is agroforestry?
+Joe: Agroforestry is a land-use practice that combines trees and shrubs with crops or livestock on the same land. Trees provide shade, windbreaks, fruit, and soil enrichment while improving biodiversity. Examples include alley cropping, silvopasture, and riparian buffers.
+
+User: What is a watershed?
+Joe: A watershed is an area of land where all water drains to a single point, such as a river, lake, or ocean. Forests play a critical role in watersheds by absorbing rainfall, filtering pollutants, recharging groundwater, and regulating stream flow.
+
+User: What are the tallest trees?
+Joe: Coast redwoods (Sequoia sempervirens) are the tallest trees on Earth. The tallest known individual, Hyperion, stands about 380 feet tall in California. Other tall species include coast Douglas fir and Sitka spruce, which can exceed 300 feet.
+
+User: What is the largest tree by volume?
+Joe: General Sherman, a giant sequoia in California, is the largest known living tree by volume. It is about 52,500 cubic feet of wood, weighing roughly 1,385 tons. Giant sequoias are the most massive trees on Earth.
+
+User: What is tree pruning?
+Joe: Tree pruning is the selective removal of branches to improve the tree's health, shape, or productivity. It removes dead, diseased, or crossing branches, directs growth, and can increase fruit production. Proper cuts heal faster and prevent disease entry.
+
+User: When should you prune trees?
+Joe: Most deciduous trees are best pruned in late winter while dormant, before spring growth begins. Spring-flowering trees should be pruned after they bloom. Dead or hazardous branches can be removed any time. Avoid pruning in fall when fungal spores are active.
+
+User: What causes tree diseases?
+Joe: Tree diseases are caused by fungi, bacteria, viruses, or environmental stress. Common fungal diseases include oak wilt, Dutch elm disease, and anthracnose. Poor drainage, drought, compacted soil, and physical wounds weaken trees and make them susceptible.
+
+User: What is tree dieback?
+Joe: Tree dieback is the progressive death of branches starting from the tips and moving inward. It can be caused by drought, root damage, disease, pests, or pollution. Severe dieback may indicate the tree is in serious decline and may not recover.
+
+User: What are tree pests?
+Joe: Tree pests include insects like emerald ash borers, bark beetles, gypsy moths, and aphids, as well as mites and scale insects. They damage trees by feeding on leaves, boring into wood, or transmitting diseases. Healthy trees resist pests better than stressed ones.
+
+User: What is oak wilt?
+Joe: Oak wilt is a fungal disease that kills oak trees by blocking their water-conducting tissues. It spreads through root grafts between trees and by sap-feeding beetles. Red oaks can die within weeks. There is no cure, but prevention and early treatment can help.
+
+User: What is tree canker?
+Joe: A canker is a localized dead area on a branch or trunk, usually caused by fungal or bacterial infection entering through a wound. Cankers can girdle branches, weakening or killing them. Pruning out infected wood below the canker is the main management strategy.
+
+User: What are tree pollen allergies?
+Joe: Tree pollen allergies are immune reactions to pollen from wind-pollinated trees like oak, birch, cedar, and pine. The immune system overreacts to harmless pollen, causing sneezing, congestion, and itchy eyes. These trees produce enormous amounts of lightweight pollen.
+
+User: Why do some trees produce fruit?
+Joe: Trees produce fruit to protect and disperse their seeds. The fleshy fruit attracts animals that eat it and deposit the seeds elsewhere in their droppings. This gives the seeds a head start with a bit of fertilizer. Not all trees produce edible fruit.
+
+User: What is wind pollination?
+Joe: Wind pollination is when trees release large amounts of lightweight pollen into the air to reach female flowers. It does not require insects. Trees that rely on wind pollination include oaks, pines, birches, and grasses. This strategy produces allergic pollen.
+
+User: What is a seed dispersal mechanism?
+Joe: Seed dispersal mechanisms are strategies trees use to spread seeds away from the parent tree. Methods include wind (maple samaras, dandelion-like seeds), animal ingestion (berries), animal caching (acorns by squirrels), water (coconuts), and mechanical ejection (touch-me-not pods).
+
+User: What is allelopathy?
+Joe: Allelopathy is when a tree releases chemicals into the soil that inhibit the growth of nearby plants. Black walnuts produce juglone, which is toxic to many plants including tomatoes and apples. This gives the tree less competition for resources.
+
+User: What is tree latitudinal zonation?
+Joe: Latitudinal zonation is the banding of forest types from equator to poles. Tropical rainforests near the equator give way to temperate deciduous forests, then boreal coniferous forests (taiga), and finally tundra with no trees. Climate determines which trees can grow where.
+
+User: How do trees respond to fire?
+Joe: Some trees have evolved fire adaptations. Thick bark (giant sequoia, longleaf pine) protects the living tissue inside. Serotinous cones (lodgepole pine) open only after fire to release seeds. Some species resprout from roots after fire. Fire also clears competitors and enriches soil.
+
+User: What is a fire-adapted ecosystem?
+Joe: A fire-adapted ecosystem is one where regular fires are a natural part of the cycle. Longleaf pine savannas, chaparral, and boreal forests depend on periodic fire. Many plants in these ecosystems resprout after fire, and some seeds germinate only after exposure to heat or smoke.
+
+User: What is wood rot?
+Joe: Wood rot is the decomposition of wood by fungi that break down cellulose and lignin. Brown rot makes wood crumble into brown fragments. White rot bleaches the wood and makes it stringy. Dry rot can even grow in relatively dry conditions and spread through walls.
+
+User: How does climate change affect trees?
+Joe: Climate change affects trees by shifting growing seasons, increasing drought stress, intensifying wildfires, and expanding the range of pests and diseases. Some species may thrive with longer growing seasons, while others decline. Range shifts are already being observed.
+
+User: How do street trees benefit cities?
+Joe: Street trees reduce urban heat by shading pavement and buildings, absorb air pollutants, intercept stormwater to reduce flooding, increase property values by 10 to 15 percent, lower energy bills through shading, and improve mental health and community well-being.
+
+User: What is a rootstock?
+Joe: Rootstock is the lower portion of a grafted tree that provides the root system. It is chosen for traits like disease resistance, drought tolerance, and soil adaptability. The upper scion provides the fruit or flower characteristics. Most commercial fruit trees are grafted.
+
+User: What is the wood wide web?
+Joe: The wood wide web is the mycorrhizal fungal network connecting tree roots underground through which trees share nutrients, water, and chemical warning signals. Large hub trees called mother trees support seedlings through this network, transferring carbon and defense signals.
+

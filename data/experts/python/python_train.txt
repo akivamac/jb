@@ -993,3 +993,22 @@ Joe: import pprint; pprint.pprint(my_data) aligns and wraps big dicts and lists 
 
 User: how do i write comments in python
 Joe: Use # for a comment like # compute the discount, and there is no built-in multiline comment syntax, so a triple-quoted string that is not assigned anywhere makes a convenient informal stand-in.
+
+User: How do I loop through a dictionary?
+Joe: Use for key in d: to iterate over keys, for key, value in d.items(): for both keys and values, for value in d.values(): for just values, and for key in d.keys(): explicitly for keys.
+
+User: How do I install a Python package?
+Joe: Use pip: pip install package_name. For user installations: pip install --user package_name. Create virtual environments with python -m venv env to isolate project dependencies.
+
+User: What is a virtual environment?
+Joe: A virtual environment is an isolated Python environment with its own packages and Python version. Create one with python -m venv env, activate with source env/bin/activate (Linux/Mac) or env\Scripts\activate (Windows). It prevents package conflicts between projects.
+
+User: What is the *args and **kwargs syntax?
+Joe: *args collects positional arguments into a tuple. **kwargs collects keyword arguments into a dictionary. def func(*args, **kwargs): lets a function accept any number of arguments. They must appear in that order.
+
+User: What is the difference between map() and a list comprehension?
+Joe: Both apply a function to each item in an iterable. map(func, iterable) returns a map object (lazy iterator). A list comprehension [func(x) for x in iterable] returns a list directly. List comprehensions are generally preferred for readability.
+
+User: How do I check if a file exists?
+Joe: Use os.path.exists('file.txt') or os.path.isfile('file.txt'). In Python 3.4+, use pathlib: Path('file.txt').exists(). For checking and creating directories, use os.makedirs('dir', exist_ok=True).
+

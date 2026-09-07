@@ -4,38 +4,8 @@ Joe: Einstein's theory of relativity has two parts. Special relativity says the 
 User: What is quantum mechanics?
 Joe: Quantum mechanics is the physics of the very small atoms and subatomic particles. It shows that particles can exist in multiple states at once (superposition), that observation changes outcomes (measurement problem), and that particles can be instantaneously connected across distance (entanglement).
 
-User: What is DNA?
-Joe: DNA (deoxyribonucleic acid) is the molecule that carries genetic instructions in almost all living organisms. It is a double helix made of nucleotide bases: adenine, thymine, guanine, and cytosine. The sequence of these bases encodes the instructions for building and operating an organism.
-
-User: What is climate change?
-Joe: Climate change refers to long-term shifts in global temperatures and weather patterns. While natural cycles exist, human activities especially burning fossil fuels have accelerated warming since the mid-1900s. Effects include rising sea levels, stronger storms, shifting ecosystems, and more extreme weather events.
-
-User: What is photosynthesis?
-Joe: Photosynthesis is the process by which plants, algae, and some bacteria convert sunlight, water, and carbon dioxide into glucose and oxygen. Chlorophyll captures light energy to drive the reaction. It is the foundation of most food chains on Earth.
-
-User: What is evolution?
-Joe: Evolution is the change in inherited characteristics of biological populations over successive generations. Natural selection, mutation, genetic drift, and gene flow drive evolution. Species adapt to their environments over time, and new species can arise when populations become reproductively isolated.
-
-User: What is the speed of light?
-Joe: The speed of light in a vacuum is exactly 299,792,458 meters per second (about 186,282 miles per second). It is the universal speed limit nothing can travel faster. Light takes about 8 minutes to travel from the Sun to Earth.
-
 User: What is the smallest unit of matter?
 Joe: An atom is the smallest unit of an element that retains the properties of that element. Atoms consist of a nucleus of protons and neutrons surrounded by electrons. Atoms are about 99.9999999 percent empty space.
-
-User: What is gravity?
-Joe: Gravity is the force of attraction between objects with mass. The more mass an object has and the closer objects are, the stronger the gravitational pull. Gravity keeps planets in orbit, holds us on the ground, and governs the structure of galaxies.
-
-User: What is the periodic table?
-Joe: The periodic table is a chart organizing all known chemical elements by atomic number and electron configuration. Elements in the same column share similar chemical properties. Dmitri Mendeleev created the first version in 1869, and it now contains 118 confirmed elements.
-
-User: What is an ecosystem?
-Joe: An ecosystem is a community of living organisms interacting with their physical environment. It includes plants, animals, microorganisms, soil, water, and air, all connected through food webs and nutrient cycles. Ecosystems range from tiny tide pools to vast ocean systems.
-
-User: What is biodiversity?
-Joe: Biodiversity is the variety of life on Earth at all levels genes, species, and ecosystems. Higher biodiversity generally means healthier, more resilient ecosystems. Humans depend on biodiversity for food, medicine, clean water, and climate regulation. Biodiversity is currently declining due to human activity.
-
-User: What is natural selection?
-Joe: Natural selection is the process where organisms with traits better suited to their environment tend to survive and reproduce more. Over generations, these advantageous traits become more common in the population. It is a primary mechanism driving evolution.
 
 User: What is Newton's third law?
 Joe: Newton's third law states that for every action there is an equal and opposite reaction. When you push on a wall, the wall pushes back on you with the same force in the opposite direction. This law explains rocket propulsion, walking, and many everyday phenomena.
@@ -46,17 +16,8 @@ Joe: Mitochondria are organelles found in most eukaryotic cells that generate mo
 User: What is plate tectonics?
 Joe: Plate tectonics is the theory that Earth's outer shell is divided into several plates that move over the mantle. Their interactions cause earthquakes, volcanic eruptions, mountain building, and ocean trench formation. The theory explains the distribution of continents and fossils across the globe.
 
-User: What is an antibody?
-Joe: An antibody is a Y-shaped protein produced by the immune system to identify and neutralize specific pathogens like bacteria and viruses. Each antibody recognizes a unique antigen. After an infection, memory antibodies remain to provide faster protection against future encounters.
-
 User: What is the human genome?
 Joe: The human genome is the complete set of DNA in a human cell. It contains about 3 billion base pairs organized into 23 pairs of chromosomes. Only about 2 percent of the genome codes for proteins; the rest regulates gene expression and has other functions.
-
-User: What is photosynthesis?
-Joe: Photosynthesis is the process where green plants and some organisms use sunlight to convert carbon dioxide and water into glucose and oxygen. Chlorophyll captures light energy to drive this chemical reaction. It produces the oxygen we breathe and the food that sustains most life.
-
-User: What is the greenhouse effect?
-Joe: The greenhouse effect is when gases in Earth's atmosphere like carbon dioxide and methane trap heat from the sun that would otherwise radiate back into space. This natural process keeps Earth warm enough for life. Human activities have enhanced it, causing global warming.
 
 User: What is artificial intelligence?
 Joe: Artificial intelligence is the simulation of human intelligence processes by computer systems. It includes learning, reasoning, problem-solving, perception, and language understanding. AI ranges from narrow systems designed for specific tasks to theoretical general AI that could perform any intellectual task.

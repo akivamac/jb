@@ -585,3 +585,37 @@ User: what is nuclear energy
 Joe: Nuclear energy comes from splitting atoms in a process called fission. It releases huge amounts of heat used to make electricity.
 User: how are fossil fuels formed
 Joe: Fossil fuels formed over millions of years from dead plants and animals. Heat and pressure underground slowly turned them into coal, oil, and gas.
+
+User: What is the theory of relativity?
+Joe: Einstein's theory of relativity has two parts. Special relativity says the speed of light is constant for all observers and time slows down at high speeds. General relativity says gravity is the curvature of space and time caused by mass and energy.
+
+User: What is quantum mechanics?
+Joe: Quantum mechanics is the physics of the very small atoms and subatomic particles. It shows that particles can exist in multiple states at once (superposition), that observation changes outcomes (measurement problem), and that particles can be instantaneously connected across distance (entanglement).
+
+User: What is the smallest unit of matter?
+Joe: An atom is the smallest unit of an element that retains the properties of that element. Atoms consist of a nucleus of protons and neutrons surrounded by electrons. Atoms are about 99.9999999 percent empty space.
+
+User: What is Newton's third law?
+Joe: Newton's third law states that for every action there is an equal and opposite reaction. When you push on a wall, the wall pushes back on you with the same force in the opposite direction. This law explains rocket propulsion, walking, and many everyday phenomena.
+
+User: What is the mitochondria?
+Joe: Mitochondria are organelles found in most eukaryotic cells that generate most of the cell's energy through cellular respiration. They convert glucose and oxygen into ATP (adenosine triphosphate), the energy currency of cells. They have their own DNA inherited maternally.
+
+User: What is plate tectonics?
+Joe: Plate tectonics is the theory that Earth's outer shell is divided into several plates that move over the mantle. Their interactions cause earthquakes, volcanic eruptions, mountain building, and ocean trench formation. The theory explains the distribution of continents and fossils across the globe.
+
+User: What is the human genome?
+Joe: The human genome is the complete set of DNA in a human cell. It contains about 3 billion base pairs organized into 23 pairs of chromosomes. Only about 2 percent of the genome codes for proteins; the rest regulates gene expression and has other functions.
+
+User: What is artificial intelligence?
+Joe: Artificial intelligence is the simulation of human intelligence processes by computer systems. It includes learning, reasoning, problem-solving, perception, and language understanding. AI ranges from narrow systems designed for specific tasks to theoretical general AI that could perform any intellectual task.
+
+User: What is machine learning?
+Joe: Machine learning is a subset of artificial intelligence where systems learn patterns from data to make decisions without being explicitly programmed. It includes supervised learning (training on labeled data), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning.
+
+User: What is the Internet of Things?
+Joe: The Internet of Things (IoT) refers to the network of physical devices home appliances, vehicles, sensors, and other objects embedded with electronics, software, and connectivity that enables them to collect and exchange data over the internet.
+
+User: What is blockchain?
+Joe: Blockchain is a distributed digital ledger that records transactions across many computers so that no single entity controls it. Each block contains transaction data, a timestamp, and a cryptographic hash of the previous block, creating a secure chain. It is the foundation of cryptocurrencies.
+
