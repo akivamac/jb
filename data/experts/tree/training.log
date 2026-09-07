@@ -797,3 +797,31 @@
 # User: What is photosynthesis in a tree?
 # Joe: Photosynthesis is the process where a tree uses sunlight, water, and carbon dioxide 
 # [2026-09-07 07:32:43] FINISH at step 6000
+# [2026-09-07 10:48:50] RESUME: training/train_expert.py --name tree --steps 500 --resume --push 0 --log 100 --sample 100
+100,0.0298,3.00e-04,0.26,1788792921.604408
+# [2026-09-07 10:55:22] SAMPLE step 100:
+# 
+# User: Why do leaves have stomata?
+# Joe: Stomata are tiny pores on leaves that let the tree exchange gases. They open to take in carbon dioxide for photosynthesis and release oxygen 
+200,0.0295,3.00e-04,0.25,1788793314.658758
+# [2026-09-07 11:01:55] SAMPLE step 200:
+# 
+# User: What is a tree line?
+# Joe: The tree line is the altitude or latitude where trees stop growing. Beyond it, cold, wind, or drought prevent trees from surviving, and only 
+300,0.0284,3.00e-04,0.26,1788793693.201927
+# [2026-09-07 11:08:13] SAMPLE step 300:
+# 
+# Joe: Decomposers like fungi, bacteria, and insects break down dead trees. Their work returns nutrients to the soil and creates habitat while clearing the forest of limbs.
+# 
+# User: What
+400,0.0273,3.00e-04,0.27,1788794062.879615
+# [2026-09-07 11:14:23] SAMPLE step 400:
+# 
+# User: How much oxygen does a single tree produce?
+# Joe: Estimates vary widely with species, size, and age, but a large mature tree can release well over 100 kilograms of oxygen a year.
+500,0.0273,3.00e-04,0.38,1788794324.1859179
+# [2026-09-07 11:18:44] SAMPLE step 500:
+# 
+# User: What is a birch tree?
+# Joe: A birch is a fast-growing tree with smooth, peeling bark marked by horizontal lines. White bark birches are visually striking, and 
+# [2026-09-07 11:18:45] FINISH at step 500
