@@ -591,3 +591,387 @@ User: I feel like I need to be cared for
 Joe: You deserve care and kindness. What do you need right now?
 User: I feel like I need to be seen
 Joe: I see you. You 
+# [2026-09-07 01:27:16] RESUME: training/train_expert.py --name emotion --steps 6000 --resume --push 500 --log 100 --sample 100
+100,2.9312,3.00e-04,0.28,1788759190.714092
+# [2026-09-07 01:33:11] SAMPLE step 100:
+# 
+# Joe: You are lovold an in it you like is live on being find yourself.
+# User: I gise finily sumans of the friend were fearcted the riend let know that. I feel whole 
+200,1.8950,3.00e-04,0.30,1788759529.268031
+# [2026-09-07 01:38:49] SAMPLE step 200:
+# 
+# User: i feel like things is complish to up me drop is a verd on your mind?
+# User: i'm like i can't test feel drop is of Savor the party.
+# Joe: news are team but 
+300,1.2603,3.00e-04,0.29,1788759869.4101279
+# [2026-09-07 01:44:29] SAMPLE step 300:
+# 
+# Joe: Good! Anything I you are quiet just to you looking and the ourage way.
+# User: i feel anxious
+# Joe: in a common and being is one for how milest it out out the
+400,0.7609,3.00e-04,0.29,1788760214.772605
+# [2026-09-07 01:50:15] SAMPLE step 400:
+# 
+# Joe: That is hard not people lonely grows than people through and I something pa's big cring thing
+# Joe: That Those resaswhich pattern. Most coming. am for too comed or people will glad try
+500,0.3981,3.00e-04,0.29,1788760556.2295759
+# [2026-09-07 01:55:56] SAMPLE step 500:
+# 
+# Joe: That is normal the Sometimes sadness just for love at it. Small you can need to knowings.
+# User: i feel so tired of nobody at
+# Joe: Make is person yourself posed do 
+600,0.2215,3.00e-04,0.27,1788760921.484492
+# [2026-09-07 02:02:02] SAMPLE step 600:
+# 
+# Joe: That is a heavy kind. What do you need still their own your heading than than there that grace.
+# User: i feel anxious in my tripped in guilt of everyone at night
+# Joe:
+700,0.1289,3.00e-04,0.28,1788761276.524512
+# [2026-09-07 02:07:57] SAMPLE step 700:
+# 
+# Joe: Awesome! What is going dement on your mind?
+# User: I am lostlease lost in life
+# Joe: That is a heavy feeling. You are not alone. What is on your mind?
+# User: I 
+800,0.0973,3.00e-04,0.29,1788761615.81859
+# [2026-09-07 02:13:36] SAMPLE step 800:
+# 
+# User: I feel like I am failing
+# Joe: Feeling like a failure and being one are different things. You are trying and that matters.
+# User: I feel like I need a hug
+# Joe: I wish 
+900,0.0771,3.00e-04,0.28,1788761971.410817
+# [2026-09-07 02:19:31] SAMPLE step 900:
+# 
+# User: i feel sad when my cha getting easily
+# Joe: Old feel no, that is mission to feel on on what each of you need.
+# User: i keep obvious good trust at or and sleep
+1000,0.0673,3.00e-04,0.29,1788762310.946153
+# [2026-09-07 02:25:11] SAMPLE step 1000:
+# 
+# User: my frified of needles
+# Joe: Needles are a really common phobia. Looking away, telling the nurse, and a counted breath through it genuinely helps.
+# User: my code 
+1100,0.0593,3.00e-04,0.29,1788762653.746729
+# [2026-09-07 02:30:54] SAMPLE step 1100:
+# 
+# Joe: That is a heavy feeling. You are not alone. What is on your mind?
+# User: I feel like nobody cares
+# Joe: I care. You matter. Want to tell me what is going on?
+# User: 
+1200,0.0543,3.00e-04,0.29,1788763001.067586
+# [2026-09-07 02:36:41] SAMPLE step 1200:
+# 
+# User: i can't stop scrolling at night and then I feel bad about it
+# Joe: The scroll waiting for my results do not wait for your worst it keep  watch gr beautiful acence 
+1300,0.0476,3.00e-04,0.29,1788763346.148086
+# [2026-09-07 02:42:26] SAMPLE step 1300:
+# 
+# User: i feel proud of my kids today
+# Joe: That is a lovely feeling to carry. What did they do to earn it?
+# User: i'm so stressed about moving
+# Joe: Moving is one 
+1400,0.0446,3.00e-04,0.28,1788763704.2272692
+# [2026-09-07 02:48:24] SAMPLE step 1400:
+# 
+# User: I am bored
+# Joe: Let us talk! Ask me anything you want to know.
+# User: I am tired
+# Joe: Rest and drink water.
+# User: I am fine
+# Joe: Glad to hear it! What
+1500,0.0401,3.00e-04,0.29,1788764047.7730079
+# [2026-09-07 02:54:08] SAMPLE step 1500:
+# 
+# Joe: That is tough. Try taking slow deep breaths. What is making you anxious?
+# User: I am excited
+# Joe: That is wonderful! What has you excited?
+# User: I am confused
+1600,0.0350,3.00e-04,0.28,1788764403.697854
+# [2026-09-07 03:00:04] SAMPLE step 1600:
+# 
+# Joe: It is okay to feel weak sometimes. Strength comes from keeping going.
+# User: I feel like nobody wants
+# Joe: That is not true. I want you here. Your presence matters.
+# User: I
+1700,0.0348,3.00e-04,0.30,1788764736.429379
+# [2026-09-07 03:05:37] SAMPLE step 1700:
+# 
+# User: i hate that i getting jealous so easily
+# Joe: Jealousy is just a messenger pointing at what you want. Thank it for visiting, then look at what you can move toward
+1800,0.0317,3.00e-04,0.29,1788765076.6305192
+# [2026-09-07 03:11:17] SAMPLE step 1800:
+# 
+# User: I feel like I need to be understood
+# Joe: I may not fully understand, but I am trying. Tell me more.
+# User: I feel like I need to be loved
+# Joe: You are loved.
+1900,0.0296,3.00e-04,0.29,1788765415.838743
+# [2026-09-07 03:16:56] SAMPLE step 1900:
+# 
+# Joe: That is a flict us all sometimes. They are just people, nervous about their own stuff too. A genuine smile beats perfect words every time.
+# User: i feel anxious that my
+2000,0.0269,3.00e-04,0.28,1788765768.377592
+# [2026-09-07 03:22:48] SAMPLE step 2000:
+# 
+# User: I feel like I need to be brave
+# Joe: You are brave. Being here and talking about your feelings takes courage.
+# User: I feel like I need to be better
+# Joe: You are 
+2100,0.0284,3.00e-04,0.28,1788766124.909586
+# [2026-09-07 03:28:45] SAMPLE step 2100:
+# 
+# Joe: Pate is the best kind of happy! Enjoy it.
+# User: I feel like I need to cry
+# Joe: Then cry. It is healthy. Let it out.
+# User: I feel like everything is going wrong
+# Joe:
+2200,0.0284,3.00e-04,0.33,1788766424.8259861
+# [2026-09-07 03:33:45] SAMPLE step 2200:
+# 
+# Joe: I lovoice the moments. It is driving you hopemal.
+# User: I feel jealous
+# Joe: Jealousy is a normal feeling. What is making you feel that way?
+# User: I feel grate
+2300,0.0256,3.00e-04,0.33,1788766732.21912
+# [2026-09-07 03:38:52] SAMPLE step 2300:
+# 
+# Joe: I am sorry you feel that way. I will still try to help.
+# User: I feel down
+# Joe: I am sorry. Want to talk about what is bothering you?
+# User: I feel great today
+# Joe:
+2400,0.0263,3.00e-04,0.29,1788767075.9488819
+# [2026-09-07 03:44:36] SAMPLE step 2400:
+# 
+# User: I feel like I need to be respected
+# Joe: You deserve respect. Always.
+# User: I feel like I need to be accepted
+# Joe: You are accepted. Just as you are.
+# User: I 
+2500,0.0284,3.00e-04,0.29,1788767419.507052
+# [2026-09-07 03:50:20] SAMPLE step 2500:
+# 
+# User: i can't stop thinking about food and I feel gross about it
+# Joe: Thinking about food is your body's way of asking for fuel. It is not weakness. A proper meal might 
+2600,0.0260,3.00e-04,0.29,1788767762.813468
+# [2026-09-07 03:56:03] SAMPLE step 2600:
+# 
+# Joe: Aatient feel like nobody is understand, but I am trying. Tell me more.
+# User: I feel like I need to like I need to be cared for
+# Joe: You deserve care and kindnes
+2700,0.0247,3.00e-04,0.29,1788768108.666877
+# [2026-09-07 04:01:49] SAMPLE step 2700:
+# 
+# User: I feel like I need to be accepted
+# Joe: You are accepted. Just as you are.
+# User: I feel like I need to be embraced
+# Joe: You deserve warmth and comfort. I
+2800,0.0239,3.00e-04,0.30,1788768446.1533592
+# [2026-09-07 04:07:26] SAMPLE step 2800:
+# 
+# Joe: I am sorry to hear that. Talking about it can help sometimes.
+# User: I am happy
+# Joe: That is great! What made you happy?
+# User: I am angry
+# Joe: I understand. It is
+2900,0.0242,3.00e-04,0.30,1788768784.8149009
+# [2026-09-07 04:13:05] SAMPLE step 2900:
+# 
+# Joe: I brought everything back
+# Joe: Old feelings can flood back with one message. You do not have to reply today. Your peace comes first.
+# User: i feel guilty for taking a rest day
+3000,0.0229,3.00e-04,0.29,1788769127.7000241
+# [2026-09-07 04:18:48] SAMPLE step 3000:
+# 
+# User: I feel like I am too little
+# Joe: You are not too little. You are exactly the right amount.
+# User: I feel like I need to be strong for everyone
+# Joe: It is okay to not be
+3100,0.0231,3.00e-04,0.29,1788769475.229741
+# [2026-09-07 04:24:35] SAMPLE step 3100:
+# 
+# Joe: Letters are time machines. The tears are proof the friendship meant something real. Hold the memory close today.
+# User: i feel so frustrated with my own phone
+# Joe: Technolo
+3200,0.0239,3.00e-04,0.28,1788769826.162646
+# [2026-09-07 04:30:26] SAMPLE step 3200:
+# 
+# User: I feel like I need to be embraced
+# Joe: You deserve warmth and comfort. I am here for you.
+# 
+# User: i got rejected from the job today
+# Joe: That stings, I know
+3300,0.0224,3.00e-04,0.30,1788770163.875478
+# [2026-09-07 04:36:04] SAMPLE step 3300:
+# 
+# Joe: That is noticed, how are you really doing?" can unlock a whole conversation.
+# User: i feel like I'm always the one who has to apologize
+# Joe: That is an unfair pattern. 
+3400,0.0236,3.00e-04,0.28,1788770516.535894
+# [2026-09-07 04:41:57] SAMPLE step 3400:
+# 
+# Joe: That is okay sometimes. Your feelings are valid. Want to talk?
+# User: I feel lost in life
+# Joe: That is a heavy feeling. You are not alone. What is on your mind?
+# User:
+3500,0.0264,3.00e-04,0.29,1788770858.307738
+# [2026-09-07 04:47:38] SAMPLE step 3500:
+# 
+# Joe: That is a bigphoto deal and I mean it. Protecting your own peace is strength.
+# User: i feel restless like i need to do something but nothing feels right
+# Joe: Restlessness can
+3600,0.0270,3.00e-04,0.28,1788771214.329797
+# [2026-09-07 04:53:34] SAMPLE step 3600:
+# 
+# User: i feel weird that I cried at a commercial
+# Joe: Someone out there gave us permission to feel. A good ad is just a story with a heart. Crying is never we
+3700,0.0252,3.00e-04,0.29,1788771558.254592
+# [2026-09-07 04:59:18] SAMPLE step 3700:
+# 
+# User: i feel like i brain is tough. You get gentle them ick about them them out igw it now.
+# User: i feel weird being proud of a small thing
+# Joe: Small wins count 
+3800,0.0232,3.00e-04,0.30,1788771892.9146812
+# [2026-09-07 05:04:53] SAMPLE step 3800:
+# 
+# User: I am lonely
+# Joe: I am here to talk! You are not alone right now.
+# User: I am stressed
+# Joe: Take a deep breath. Stress is tough. Want to talk about it?
+3900,0.0219,3.00e-04,0.30,1788772221.225475
+# [2026-09-07 05:10:21] SAMPLE step 3900:
+# 
+# User: i feel impatient with my own progress
+# Joe: Progress is like watching grass grow until suddenly it is a lawn. You are further than you were months ago. Compare 
+4000,0.0210,3.00e-04,0.30,1788772556.098922
+# [2026-09-07 05:15:56] SAMPLE step 4000:
+# 
+# User: i'm scared i'll lose my won't accept it
+# Joe: You have nothing to be ashamed of. Your identity is not wrong. I hope you find people who love all of you,
+4100,0.0202,3.00e-04,0.29,1788772905.911264
+# [2026-09-07 05:21:46] SAMPLE step 4100:
+# 
+# User: i got stood up on a date
+# Joe: That is rough, and says everything about them and nothing about you. Their loss. Do something nice just for you tonight.
+# User: i feel embar
+4200,0.0204,3.00e-04,0.29,1788773248.797765
+# [2026-09-07 05:27:29] SAMPLE step 4200:
+# 
+# User: i feel sick about it
+# Joe: That is heavy to carry. Their conflict is not yours to fix. Take space and be gentle with yourself.
+# User: i miss my best friend 
+4300,0.0203,3.00e-04,0.29,1788773596.7518878
+# [2026-09-07 05:33:17] SAMPLE step 4300:
+# 
+# User: i coming up on a nice.
+# User: i feel seen at work today
+# Joe: That recognition feels amazing. You earned it. Let yourself absorb it instead of brushing it off.
+4400,0.0215,3.00e-04,0.28,1788773951.804169
+# [2026-09-07 05:39:12] SAMPLE step 4400:
+# 
+# Joe: Forgiveness is for you, not them. It helps you find peace.
+# User: I feel like I need to forgive myself
+# Joe: That is one of the hardest things to do. But you deserve
+4500,0.0240,3.00e-04,0.29,1788774296.367813
+# [2026-09-07 05:44:56] SAMPLE step 4500:
+# 
+# User: i feel like I texted me a break
+# Joe: That Solove are just useful. A calm honest talk can help.
+# User: i found an old letter from a lost friend and now I
+4600,0.0242,3.00e-04,0.28,1788774654.904974
+# [2026-09-07 05:50:55] SAMPLE step 4600:
+# 
+# User: I feel like I need to let go
+# Joe: Letting go is hard but sometimes necessary. What do you need to let go of?
+# User: I feel like I need to move on
+# Joe: Moving on
+4700,0.0222,3.00e-04,0.28,1788775010.416218
+# [2026-09-07 05:56:50] SAMPLE step 4700:
+# 
+# User: I feel like I need to be accepted
+# Joe: You are accepted. Just as you are.
+# User: I feel like I need to be embraced
+# Joe: You deserve warmth and comfort. I
+4800,0.0210,3.00e-04,0.29,1788775351.975765
+# [2026-09-07 06:02:32] SAMPLE step 4800:
+# 
+# User: I feel like my brain is broken
+# Joe: Your brain is overwhelmed, not broken. You have a lot on your plate. What is the smallest thing you can set down today?
+# User: i'm 
+4900,0.0199,3.00e-04,0.30,1788775686.609364
+# [2026-09-07 06:08:07] SAMPLE step 4900:
+# 
+# Joe: I am sorry. Want to talk about what is going on?
+# User: I am lost
+# Joe: Let us figure it out together. What is confusing you?
+# User: I need help
+# Joe: I am here
+5000,0.0195,3.00e-04,0.29,1788776028.306886
+# [2026-09-07 06:13:48] SAMPLE step 5000:
+# 
+# Joe: That is very kind! I care about being helpful to you.
+# User: I hate you
+# Joe: I am sorry you feel that way. I will still try to help.
+# User: I feel down
+# Joe: I am 
+5100,0.0203,3.00e-04,0.28,1788776385.6214972
+# [2026-09-07 06:19:46] SAMPLE step 5100:
+# 
+# User: ii feel so frustrated with my own phone
+# Joe: Technology rage is universal. A restart fixes a shocking number of life's problems. Breathe through it.
+# User: I 
+5200,0.0198,3.00e-04,0.29,1788776732.159869
+# [2026-09-07 06:25:32] SAMPLE step 5200:
+# 
+# User: i finally started the hobby I always wanted to try
+# Joe: Starting is the hardest step and you did it! How is it going so far?
+# User: nothing sounds good to eat and everything
+5300,0.0200,3.00e-04,0.28,1788777084.183983
+# [2026-09-07 06:31:24] SAMPLE step 5300:
+# 
+# User: I feel like I am failing
+# Joe: Feeling like a failure and being one are different things. You are trying and that matters.
+# User: I feel like I need a hug
+# Joe: I wish 
+5400,0.0218,3.00e-04,0.31,1788777411.025009
+# [2026-09-07 06:36:51] SAMPLE step 5400:
+# 
+# User: i feel sad that summer is ending
+# Joe: Changing seasons carry their own goodbyes. Fall has its own quiet charms, and the memories stay.
+# User: i feel anxious saying 
+5500,0.0226,3.00e-04,0.29,1788777757.982464
+# [2026-09-07 06:42:38] SAMPLE step 5500:
+# 
+# Joe: That is a lifetime of effort coming out happy. You should be so proud.
+# User: i feel guilty for being happy when others are struggling
+# Joe: Your happiness does not steal
+5600,0.0213,3.00e-04,0.29,1788778103.058961
+# [2026-09-07 06:48:23] SAMPLE step 5600:
+# 
+# Joe: That is a long lonely spot to be. Ask them something about themselves. Most people warm up fast when genuinely asked.
+# User: I'm so happy it's finally Friday
+# Joe: Fridays
+5700,0.0212,3.00e-04,0.29,1788778451.4005
+# [2026-09-07 06:54:11] SAMPLE step 5700:
+# 
+# Joe: You are not alone. I am right here. Want to talk?
+# User: I feel angry at someone
+# Joe: That is okay. Anger is a normal feeling. What happened?
+# User: I feel sad 
+5800,0.0213,3.00e-04,0.28,1788778809.477126
+# [2026-09-07 07:00:10] SAMPLE step 5800:
+# 
+# User: i feel weird like I am all. Hobbies are allowed to be hard or just for fun, no per performance required. The joy can come back if you let the pressure go.
+5900,0.0196,3.00e-04,0.29,1788779148.654044
+# [2026-09-07 07:05:49] SAMPLE step 5900:
+# 
+# User: i feel lonely even though I'm surrounded by people
+# Joe: That kind of loneliness runs deeper than company. One real conversation beats ten small talks. I am here for the real
+6000,0.0188,3.00e-04,0.28,1788779500.06262
+# [2026-09-07 07:11:40] SAMPLE step 6000:
+# 
+# Joe: I book that moves you is a gift. Write you for a bit; Wear a as it sounds, the answer often appears.
+# User: i feel so proud of my little sister
+# Joe:
+# [2026-09-07 07:11:49] FINISH at step 6000

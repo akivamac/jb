@@ -652,3 +652,332 @@ Joe: HTTP is the protocol used for transferring
 Joe: Code review is when other developers examine your code for errors, improvements, and best practices before merging.
 User: what is a code smell
 Joe: A code smell is a 
+# [2026-09-06 08:16:39] RESUME: training/train_expert.py --name coding --steps 500 --resume --push 250 --log 100 --sample 100
+100,nan,3.00e-04,1.00,1788697099.779368
+# [2026-09-06 08:18:19] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 354, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 295, in train_expert
+    sample = model.generate(tok, "\n", max_new=80, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model.py", line 530, in generate
+    next_id = np.random.choice(len(probs), p=probs)
+  File "numpy/random/mtrand.pyx", line 994, in numpy.random.mtrand.RandomState.choice
+ValueError: probabilities contain NaN
+# [2026-09-06 09:17:55] RESUME: training/train_expert.py --name coding --steps 500 --resume --push 250 --log 100 --sample 100
+100,3.5483,3.00e-04,0.98,1788700777.125868
+# [2026-09-06 09:19:37] SAMPLE step 100:
+# 
+# User: what is a lambda
+# Joe: Aing is an an an import
+# Joe: like -3.3.
+# Joe: An is a floes flo's methods like {5: or -3.5: it. and or -0.5 -or together
+200,2.5739,3.00e-04,0.98,1788700878.7394729
+# [2026-09-06 09:21:19] SAMPLE step 200:
+# 
+# Joe: Exobjects respond to a value and it is the actual value you pass to a function when it you call it.
+# User: what is recursion
+# Joe: Recursion is when a function calls itself to solve
+300,2.0971,3.00e-04,0.95,1788700983.6461692
+# [2026-09-06 09:23:03] SAMPLE step 300:
+# 
+# Joe: A function is a written step by collection. You create it with ": 1}.
+# User: what is a tuple
+# Joe: A tuple is an ordered immutable collection. You create it with parenthes
+400,1.7241,3.00e-04,0.98,1788701085.561698
+# [2026-09-06 09:24:45] SAMPLE step 400:
+# 
+# Joe: Object oriented programming organized of your code be in your code. You can program and min compRLs. It is statusable
+# User: is compfactes
+# Joe: Mixing in your code instance at 
+# [2026-09-06 09:25:41] RESUME: training/train_expert.py --name coding --steps 5000 --resume --push 500 --log 100 --sample 100
+500,1.3708,3.00e-04,0.84,1788701204.794667
+# [2026-09-06 09:26:45] SAMPLE step 500:
+# 
+# Joe: A boolean is either True or False. It is used for conditions and logical operations.
+# User: what is a dictionary
+# Joe: A dictionary stores key-value pairs. You
+# [2026-09-06 09:27:38] FINISH at step 500
+# [2026-09-06 13:07:54] RESUME: training/train_expert.py --name coding --steps 5000 --resume --push 500 --log 100 --sample 100
+# [2026-09-07 07:12:20] RESUME: training/train_expert.py --name coding --steps 5000 --resume --push 500 --log 100 --sample 100
+100,1.0621,3.00e-04,0.26,1788779929.805553
+# [2026-09-07 07:18:50] SAMPLE step 100:
+# 
+# Joe: Sorting sorted list by repeatedly dividing the search interval in half. Very fast.
+# User: what is a hash map
+# Joe: A hash map stores key-value pairs using a hash function 
+200,0.7913,3.00e-04,0.27,1788780299.198851
+# [2026-09-07 07:24:59] SAMPLE step 200:
+# 
+# Joe: A method over resto specifyle
+# Joe: A par request is a halt. use what kind around ever a contract contract class and an instance, and be strs like the comment is used that 
+300,0.5650,3.00e-04,0.26,1788780687.047155
+# [2026-09-07 07:31:27] SAMPLE step 300:
+# 
+# Joe: Bundles data attrivior (methods). It to access a dmethod to an object of attributes.
+# User: whats a method for
+# Joe: An algorithm in rounding, like type python a tempt's
+400,0.3906,3.00e-04,0.57,1788780861.521541
+# [2026-09-07 07:34:21] SAMPLE step 400:
+# 
+# User: what is a database comparies
+# Joe: The h ch by | operator key-value | rid. Counter lets the items are by values other both in a key.
+# User: what are quences element
+# Joe:
+500,0.2636,3.00e-04,0.98,1788780963.658106
+# [2026-09-07 07:36:03] SAMPLE step 500:
+# 
+# User: what is a regression bug
+# Joe: A rege is a feature that code. defines like aver problematribut Extract and log encapsimal across more step like for al al O(vi1) 
+600,0.1906,3.00e-04,0.92,1788781072.44276
+# [2026-09-07 07:37:52] SAMPLE step 600:
+# 
+# Joe: A class is the class works on on trig. It is the know string.
+# User: how do i ce a method of it returns a string
+# Joe: Index a string in and Ty style and my
+700,0.1497,3.00e-04,0.98,1788781174.652205
+# [2026-09-07 07:39:34] SAMPLE step 700:
+# 
+# User: what is a foreignment
+# Joe: A substring is the right collection of 's right. A collection the flag. is col the sets.
+# User: why is defined items inside a value line into a string
+800,0.1269,3.00e-04,0.98,1788781276.775462
+# [2026-09-07 07:41:17] SAMPLE step 800:
+# 
+# Joe: Define a function with call a function to use its functions does not exist receive data to each specify pie the rece the file is speci the y UPass
+# Joe: what does a Recur
+900,0.1060,3.00e-04,0.98,1788781378.842134
+# [2026-09-07 07:42:59] SAMPLE step 900:
+# 
+# User: how do i check a work tree framework with a strictionary
+# Joe: It is the unpacking a key. It setter. immutable ises a to reverse it exist Python returns a sorted fast
+1000,0.0909,3.00e-04,0.98,1788781480.8997388
+# [2026-09-07 07:44:41] SAMPLE step 1000:
+# 
+# Joe: A boolean lets you read and write that state.
+# User: how do i make an only attribute
+# Joe: Define @property without a setter. A behavior my_obj.name = "5) 
+1100,0.0800,3.00e-04,0.92,1788781589.469627
+# [2026-09-07 07:46:29] SAMPLE step 1100:
+# 
+# User: what is a tuple
+# Joe: A tuple is an ordered immutable collection. You create it with parentheses like (1, 2, 3).
+# User: what is a method
+# Joe: A class is a bluep
+1200,0.0743,3.00e-04,0.98,1788781691.500606
+# [2026-09-07 07:48:11] SAMPLE step 1200:
+# 
+# User: why does insert shared stay the TypeError instead of the high-running multip syntax keep the function It modern against copy the ends.
+# User: why do i make a deepest string returns  the first 
+1300,0.0656,3.00e-04,0.98,1788781793.511369
+# [2026-09-07 07:49:53] SAMPLE step 1300:
+# 
+# Joe: An in the need value update can inline. Adding a string and an integer raises it, because Python will not guess the intent.
+# User: what does a ValueError mean
+# Joe: A 
+1400,0.0604,3.00e-04,0.98,1788781895.5722811
+# [2026-09-07 07:51:35] SAMPLE step 1400:
+# 
+# Joe: A dynamically typed language decides a value's type at runtime, so one variable can hold.
+# User: how do i pick a type
+# Joe: Call. literal fixed type like C convertby br 
+1500,0.0599,3.00e-04,0.98,1788781997.585144
+# [2026-09-07 07:53:17] SAMPLE step 1500:
+# 
+# Joe: my_dict.values(key, y my_dict.values(key=lists, use y y items using unders fa function, and the value loop, so in which Dog is the new bling data or f-
+1600,0.0535,3.00e-04,0.92,1788782106.46819
+# [2026-09-07 07:55:06] SAMPLE step 1600:
+# 
+# User: what is a class
+# Joe: A class is a blueprint for creating objects. It is properties the objects The (1, 2) gives you a value 6.
+# User: what does a function give back without
+1700,0.0507,3.00e-04,0.98,1788782208.4925828
+# [2026-09-07 07:56:48] SAMPLE step 1700:
+# 
+# Joe: A digit is a high-2 string Integer should a value should handle and what stores globals.
+# User: how do i make a string
+# Joe: The literator literator using the runs. so 
+1800,0.0494,3.00e-04,0.98,1788782310.6051788
+# [2026-09-07 07:58:30] SAMPLE step 1800:
+# 
+# User: how do i grab one element of a list
+# Joe: Index it. my_list[0] removes by index without returning. my_list[0] removes by = index without returning.
+# User: what is a dynam
+1900,0.0459,3.00e-04,0.98,1788782412.644258
+# [2026-09-07 08:00:12] SAMPLE step 1900:
+# 
+# Joe: A bug is an error in code that makes a program behave incorrectly or crash.
+# User: what is syntax
+# Joe: Syntax is the set of rules that defines how Python code must be
+2000,0.0413,3.00e-04,0.98,1788782514.646979
+# [2026-09-07 08:01:54] SAMPLE step 2000:
+# 
+# Joe: A merge combines changes from different branches into one. It can create conflicts if the same lines were changed.
+# User: what is a pull request
+# Joe: A pull request is a request to mer
+2100,0.0396,3.00e-04,0.92,1788782623.300683
+# [2026-09-07 08:03:43] SAMPLE step 2100:
+# 
+# Joe: Use while with that condition. A flag or counter changed operator with in checks the passed import and print use braces like {"name": "Joe" " ", "age": 1}.
+2200,0.0379,3.00e-04,0.98,1788782725.34079
+# [2026-09-07 08:05:25] SAMPLE step 2200:
+# 
+# User: how do i sort objects by a field
+# Joe: Pass a key function. my_list.sort(key=lambda item: item["age"]) sorts dictionaries by their age key.
+# User: how do 
+2300,0.0354,3.00e-04,0.98,1788782827.27365
+# [2026-09-07 08:07:07] SAMPLE step 2300:
+# 
+# Joe: An integer is a whole number like 3, while a float has a decimal part like 3.0. Dividing in Python returns a float, so 7 / 2 is 3.5.
+# User: what is integer
+2400,0.0345,3.00e-04,0.98,1788782929.152339
+# [2026-09-07 08:08:49] SAMPLE step 2400:
+# 
+# User: whats the difference between an error message and a warning
+# Joe: A warning hints at a likely problem without stopping, like a deprecated feature. An error interrupts the program until 
+2500,0.0306,3.00e-04,0.98,1788783030.999539
+# [2026-09-07 08:10:31] SAMPLE step 2500:
+# 
+# User: what is a module
+# Joe: A module is a file containing Python code that you can import and reuse in other programs.
+# User: what is an import
+# Joe: An import brings code from a modu
+2600,0.0325,3.00e-04,0.92,1788783139.663915
+# [2026-09-07 08:12:19] SAMPLE step 2600:
+# 
+# User: what is a debugger
+# Joe: A tool that pauses your program on demand. You can step through lines and inspect variables, which beats guessing from print output.
+# User: what is 
+2700,0.0318,3.00e-04,0.98,1788783241.676206
+# [2026-09-07 08:14:02] SAMPLE step 2700:
+# 
+# Joe: A boolean comparis have ambiguous string, often the code text keeps where, heck, heck small numbers comparis composition, since Docpsping, all.
+# User: whats compare objects by value
+2800,0.0317,3.00e-04,0.98,1788783343.6606479
+# [2026-09-07 08:15:43] SAMPLE step 2800:
+# 
+# User: what is a string
+# Joe: A string is a sequence of characters. You create it with quotes like "hello" or 'hello'.
+# User: what is an integer
+# Joe: An integer is a 
+2900,0.0302,3.00e-04,0.98,1788783445.4293
+# [2026-09-07 08:17:25] SAMPLE step 2900:
+# 
+# Joe: Write small functions with clear names and test them immediately the clared over ves. ves. Both are main() creates the object existing.
+# User: whats the difference between an array and 
+3000,0.0286,3.00e-04,0.98,1788783547.068912
+# [2026-09-07 08:19:07] SAMPLE step 3000:
+# 
+# Joe: A request is what a client sends, specifying the body. Consistent and encapsulator hides how data is an instance while it with its 0.1 is called when a dot.
+# User: 
+3100,0.0286,3.00e-04,0.92,1788783655.318364
+# [2026-09-07 08:20:55] SAMPLE step 3100:
+# 
+# Joe: A queue is a first-in-first-out data structure. Items are added at the back and removed from the front.
+# User: what is a linked list
+# Joe: A linked list is a
+3200,0.0297,3.00e-04,0.98,1788783757.024269
+# [2026-09-07 08:22:37] SAMPLE step 3200:
+# 
+# Joe: Start at 1 and stop at 11. for i in range(1, 1) visits 1 through 10, because range stops before the end value.
+# User: what is one iteration
+# Joe: A single pass through the 
+3300,0.0344,3.00e-04,0.98,1788783858.8143208
+# [2026-09-07 08:24:19] SAMPLE step 3300:
+# 
+# Joe: Use in, which checks keys. if "name" in my_dict tests only the keys, so a present key with a falsey value still counts as existing.
+# User: how do i read a 
+3400,0.0312,3.00e-04,0.98,1788783960.593191
+# [2026-09-07 08:26:00] SAMPLE step 3400:
+# 
+# Joe: Lists are mutable; tuples are not. You can add, remove, or change list items, but a tuple is fixed once created. Both are ordered and indexed with brackets.
+3500,0.0286,3.00e-04,0.98,1788784062.256707
+# [2026-09-07 08:27:42] SAMPLE step 3500:
+# 
+# Joe: Python is the actual data and behavior. format using key-value pairs. It is a has for iterating Python code that you can import and reuse in other programs.
+# User: what is an import
+# Joe:
+3600,0.0261,3.00e-04,0.93,1788784170.219672
+# [2026-09-07 08:29:30] SAMPLE step 3600:
+# 
+# Joe: A ttribut returns an new ends where the instance access instance's data, and you call it as my_obj.method().
+# User: what is a property in python
+# Joe: A property turns a method
+3700,0.0264,3.00e-04,0.98,1788784272.351713
+# [2026-09-07 08:31:12] SAMPLE step 3700:
+# 
+# Joe: A REST API uses HTTP methods to perform operations on resources identified by URLs. It is stateless.
+# User: what is authentication
+# Joe: Authentication is verifying 
+3800,0.0257,3.00e-04,0.98,1788784374.019286
+# [2026-09-07 08:32:54] SAMPLE step 3800:
+# 
+# Joe: An iterator produces one value at a time and remembers its spot. iter() creates one from an iterable, and next() fetches the following item.
+# User: how do i reverse a list
+3900,0.0262,3.00e-04,0.99,1788784475.521733
+# [2026-09-07 08:34:35] SAMPLE step 3900:
+# 
+# Joe: A name is a variable that stores the memory address of another variable. Used in C and C++.
+# User: what is memory management
+# Joe: Memory management is how a program allocates 
+4000,0.0285,3.00e-04,0.99,1788784576.96892
+# [2026-09-07 08:36:17] SAMPLE step 4000:
+# 
+# Joe: A adds from a value of type int, so pass well. If anywhere in a keys problem instead of work into step arguments fail.
+# User: how do i refactor a long function
+# Joe: Ex
+4100,0.0310,3.00e-04,0.92,1788784685.386936
+# [2026-09-07 08:38:05] SAMPLE step 4100:
+# 
+# Joe: A commit is a snapshot of your code at a point in time. It has a message describing what changed.
+# User: what is a branch
+# Joe: A branch is a parallel version of your 
+4200,0.0283,3.00e-04,0.98,1788784787.1210492
+# [2026-09-07 08:39:47] SAMPLE step 4200:
+# 
+# User: what is a string
+# Joe: A string is a sequence of characters. You create it with quotes like "hello" or 'hello'.
+# User: what is an integer
+# Joe: An integer is a 
+4300,0.0258,3.00e-04,0.98,1788784888.825378
+# [2026-09-07 08:41:29] SAMPLE step 4300:
+# 
+# User: how do i returns parameter the two key with a falsey value
+# Joe: A dictionary mapping keys to results is often cleaner than a long if chain. {"a": "alpha",
+4400,0.0246,3.00e-04,0.98,1788784990.373184
+# [2026-09-07 08:43:10] SAMPLE step 4400:
+# 
+# Joe: A boolean that remembers whether something happened. Set found = False before a loop, flip it to True on a match, and check it afterward.
+# User: why does my loop only
+4500,0.0240,3.00e-04,0.99,1788785091.882794
+# [2026-09-07 08:44:52] SAMPLE step 4500:
+# 
+# User: whats the difference between an array and a linked list
+# Joe: Arrays store items contiguously and give instant index access. Linked lists store nodes pointing to the next one
+4600,0.0255,3.00e-04,0.92,1788785200.011594
+# [2026-09-07 08:46:40] SAMPLE step 4600:
+# 
+# Joe: A placeholder marks where a value gets is 7, so 7 / 2 is 3, and int(7 / 2) gives 3 as well.
+# User: what does the remainder operator give you
+# Joe: The %
+4700,0.0239,3.00e-04,0.98,1788785301.557558
+# [2026-09-07 08:48:21] SAMPLE step 4700:
+# 
+# Joe: A bare except hides every error, including genuine programming mistakes. Catch specific types instead, and log what happened so bugs stay visible.
+# User: how do i log an error instead of
+4800,0.0230,3.00e-04,0.98,1788785403.200012
+# [2026-09-07 08:50:03] SAMPLE step 4800:
+# 
+# User: how do i debug the fastest
+# Joe: Reproduce the problem with the smallest possible input, then bisect. Narrow the failing case until the buggy line is obvious, testing one change
+4900,0.0248,3.00e-04,0.99,1788785504.6921449
+# [2026-09-07 08:51:45] SAMPLE step 4900:
+# 
+# Joe: Normalize have lene+ meaning, like 86400 sitting in code. A named constant such as SECONDS_PER_DAY makes the intent explicit and avoids drift.
+# User:
+5000,0.0279,3.00e-04,0.98,1788785606.229185
+# [2026-09-07 08:53:26] SAMPLE step 5000:
+# 
+# User: what does a quantifier do in regex
+# Joe: Square brackets define a set of possible characters. [aeiou] matches exactly one vowel, and [0-9] matches one
+# [2026-09-07 08:53:36] FINISH at step 5000

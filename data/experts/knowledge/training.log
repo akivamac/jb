@@ -652,3 +652,376 @@ Joe: The ozone layer i
 Joe: Hydrogen is the lightest and most abundant element in the universe. It is a fuel for stars.
 User: what is friction
 Joe: Friction is a force that resists motion between two surf
+# [2026-09-06 13:08:31] RESUME: training/train_expert.py --name knowledge --steps 5000 --resume --push 500 --log 100 --sample 100
+# [2026-09-07 01:27:16] RESUME: training/train_expert.py --name knowledge --steps 6000 --resume --push 500 --log 100 --sample 100
+100,3.0076,3.00e-04,0.26,1788759220.523621
+# [2026-09-07 01:33:41] SAMPLE step 100:
+# 
+# Joe: The moon is the moon of Earth's only natural satellite. It travel in crust.
+# User: what is a fossil
+# Joe: A fossil is the preserved remains or impression of a prehistor
+200,1.7916,3.00e-04,0.28,1788759576.222959
+# [2026-09-07 01:39:36] SAMPLE step 200:
+# 
+# Joe: A ymile is a device that lets groundwater flowers at through a thick conductors. It is traary when a conductor.
+# User: what is a conductor
+# Joe: A conductoral is a flow of 
+300,1.0258,3.00e-04,0.27,1788759940.3702028
+# [2026-09-07 01:45:40] SAMPLE step 300:
+# 
+# User: what is the immune system
+# Joe: The immune system defends the body against infection and disease using cells, proteins, and organs.
+# User: what is a vaccine
+# Joe: A vaccine trains the
+400,0.5500,3.00e-04,0.28,1788760302.56355
+# [2026-09-07 01:51:43] SAMPLE step 400:
+# 
+# Joe: An astecientists are salse expse because space. The in expand tlifor the expand other slows though its center to passes passes the strong float a liquid.
+# User: why do we our di
+500,0.2782,3.00e-04,0.28,1788760655.57525
+# [2026-09-07 01:57:36] SAMPLE step 500:
+# 
+# User: what is the planet
+# Joe: The universe is about 13.88 billion years years old.
+# User: what is a planet
+# Joe: A planet is a large object that orbits a star. Our solar system has eight 
+600,0.1540,3.00e-04,0.24,1788761072.4847438
+# [2026-09-07 02:04:33] SAMPLE step 600:
+# 
+# User: what is a predator
+# Joe: A predator is an animal that hunts and eats other animals for food.
+# User: what is prey
+# Joe: Prey is an animal that is hunted and eaten by another
+700,0.0958,3.00e-04,0.26,1788761461.874777
+# [2026-09-07 02:11:02] SAMPLE step 700:
+# 
+# Joe: A fravity is the smallest planet es in the light to bcause change. It comes in many forms like heat, light, and motion.
+# User: what is electricity
+# Joe: Electricity is the flow of electric
+800,0.0759,3.00e-04,0.25,1788761859.359623
+# [2026-09-07 02:17:39] SAMPLE step 800:
+# 
+# Joe: Silky Sila uses rise and air away. that has species. It pulls bakes you some ant the regions, Waces in the fluid inner feeling between ear, the fluid feeling ev
+900,0.0653,3.00e-04,0.25,1788762256.094264
+# [2026-09-07 02:24:16] SAMPLE step 900:
+# 
+# User: what is a vaccine
+# Joe: A vaccine trains the immune system to recognize and fight a specific disease without causing the illness.
+# User: what is DNA replication
+# Joe: DNA re
+1000,0.0552,3.00e-04,0.26,1788762642.360491
+# [2026-09-07 02:30:42] SAMPLE step 1000:
+# 
+# User: what are a digital image.
+# Joe: A satellite is an object that orbits a part of the s most sun's in Station often in the red.
+# User: why do hot
+# Joe: The leaves stars are
+1100,0.0493,3.00e-04,0.26,1788763021.2919931
+# [2026-09-07 02:37:01] SAMPLE step 1100:
+# 
+# Joe: Water is the smallest planet in the air and planet. It is a thin directly area with fusion.
+# User: what is the distance distance gas and one atoms to oxygen breathe faster
+# Joe: to Wilsu
+1200,0.0445,3.00e-04,0.26,1788763403.983851
+# [2026-09-07 02:43:24] SAMPLE step 1200:
+# 
+# Joe:. The greenhouse effect happens when gases like carbon dioxide trap heat in the atmosphere. It keeps Earth warm but too much warms it too quickly.
+# User: why do we dry away bland large
+1300,0.0412,3.00e-04,0.27,1788763778.544915
+# [2026-09-07 02:49:39] SAMPLE step 1300:
+# 
+# User: what is a de
+# Joe: A wave is a distances.
+# User: what is an amphibian
+# Joe: An amphibian is an animal that lives both in water and on land, like frogs and salam
+1400,0.0360,3.00e-04,0.27,1788764148.694593
+# [2026-09-07 02:55:49] SAMPLE step 1400:
+# 
+# Joe: An prime is a currency that shows how does the to eatenzy pay.
+# User: what is a lo
+# Joe: A loan is money that is borrowed and must be paid back, usually with 
+1500,0.0343,3.00e-04,0.28,1788764504.355235
+# [2026-09-07 03:01:44] SAMPLE step 1500:
+# 
+# User: what is a parasite
+# Joe: A parasite is an organism that lives on or in another organism and benefits at the host's expense.
+# 
+# User: what is cellular respiration
+# Joe: Cellular
+1600,0.0314,3.00e-04,0.26,1788764884.382559
+# [2026-09-07 03:08:04] SAMPLE step 1600:
+# 
+# User: what is a common guide guide an organism with actives, used for keep neutronk.
+# User: how does the work
+# Joe: The liver probiliz is the physical to response response to their
+1700,0.0312,3.00e-04,0.28,1788765243.852622
+# [2026-09-07 03:14:04] SAMPLE step 1700:
+# 
+# Joe: The good for strong bones for bones building and running an organism. It determines traits like eye color and height.
+# User: why do leaves change color in autumn
+# Joe: Leaves turn 
+1800,0.0286,3.00e-04,0.25,1788765637.695942
+# [2026-09-07 03:20:38] SAMPLE step 1800:
+# 
+# Joe: Energy is the ability to do work or cause change. It comes in many forms like heat, light, and motion.
+# User: what is electricity
+# Joe: Electricity is the flow of electric charge through a
+1900,0.0267,3.00e-04,0.27,1788766004.405182
+# [2026-09-07 03:26:45] SAMPLE step 1900:
+# 
+# User: what is a pal riverb
+# Joe: The Nile meriat is an underground layer of rock that holds and lets groundwater flow. It is an important source of fresh drinking water.
+# User: what is the
+2000,0.0250,3.00e-04,0.30,1788766335.110075
+# [2026-09-07 03:32:15] SAMPLE step 2000:
+# 
+# Joe: Cleopatra was the last active ruler of ancient Egypt, in the first centur BC. She was known for her political skill and alliances with Rome.
+# User: what caused the 
+2100,0.0224,3.00e-04,0.32,1788766646.267406
+# [2026-09-07 03:37:26] SAMPLE step 2100:
+# 
+# User: why do shiver when we are cold
+# Joe: Shivering is the body's way of warming up. Muscles quickly contract and relax to generate heat.
+# User: why is blood red
+# Joe: Blood
+2200,0.0231,3.00e-04,0.29,1788766995.253922
+# [2026-09-07 03:43:15] SAMPLE step 2200:
+# 
+# Joe: Goosebumps are a leftover response from early humans whose body hair once stood up to trap warmth. The tiny muscles at the base of hairs contract, raising the 
+2300,0.0270,3.00e-04,0.27,1788767359.380617
+# [2026-09-07 03:49:19] SAMPLE step 2300:
+# 
+# Joe: A barometer measures air pressure. Falling pressure often means a storm is coming.
+# User: what is weather
+# Joe: Weather is the daily state of the atmosphere, like temperature, rain, and wind. 
+2400,0.0252,3.00e-04,0.28,1788767714.974484
+# [2026-09-07 03:55:15] SAMPLE step 2400:
+# 
+# User: what is a hemisphere
+# Joe: A hemisphere is half of Earth. It usually refers to the northern and southern halves divided by the equator.
+# User: what is the prime meridi
+2500,0.0248,3.00e-04,0.26,1788768096.1778948
+# [2026-09-07 04:01:36] SAMPLE step 2500:
+# 
+# Joe: Middle including the Alexand Cam are cold deserts. Steamis hot, because of its thick carbon-dioxide atmosphere that traps heat.
+# User: why does mars look red
+# Joe: Mars looks red
+2600,0.0227,3.00e-04,0.28,1788768457.6702988
+# [2026-09-07 04:07:38] SAMPLE step 2600:
+# 
+# User: what is an ecosystem made of
+# Joe: An ecosystem has biotic factors like plants and animals, and abiotic factors like water, soil, and temperature.
+# User: what is a carbon cycle
+# Joe: 
+2700,0.0236,3.00e-04,0.28,1788768816.05733
+# [2026-09-07 04:13:36] SAMPLE step 2700:
+# 
+# User: what is the bronze age
+# Joe: The Bronze Age was a time when people widely made tools and weapons from bronze, an alloy of copper and tin. It followed the St
+2800,0.0243,3.00e-04,0.29,1788769157.994564
+# [2026-09-07 04:19:18] SAMPLE step 2800:
+# 
+# Joe: Vintemperature staying a toward extends the land into space.
+# User: across the planet
+# Joe: Oceanust what is the animal blheres. It protects hair and store the pressure makes the back.
+# User: what 
+2900,0.0229,3.00e-04,0.27,1788769528.9846559
+# [2026-09-07 04:25:29] SAMPLE step 2900:
+# 
+# User: what is a carnivore
+# Joe: A carnivore is an animal that eats mostly meat. Lions, wolves, and eagles are carnivores.
+# User: what is an omnivore
+# Joe:
+3000,0.0220,3.00e-04,0.27,1788769899.116996
+# [2026-09-07 04:31:39] SAMPLE step 3000:
+# 
+# Joe: Silky Silbur spic and was ideas traveled along it. it. It is determany an 5dioxide together on or of the g remoreget.
+# User: what is a budget
+# Joe: A 
+3100,0.0226,3.00e-04,0.26,1788770283.7468858
+# [2026-09-07 04:38:04] SAMPLE step 3100:
+# 
+# Joe: Rain forms when water vapor in clouds cools and turns back into liquid drops. When the drops grow heavy, they fall as rain.
+# User: why is thunder so loud
+# Joe: Thunder is the
+3200,0.0212,3.00e-04,0.26,1788770663.866144
+# [2026-09-07 04:44:24] SAMPLE step 3200:
+# 
+# User: what is the sun
+# Joe: The sun is a star at the center of our solar system. It is about 4.6 billion years old.
+# User: what is the moon
+# Joe: The moon is Earth's only natural satellite
+3300,0.0211,3.00e-04,0.28,1788771015.204553
+# [2026-09-07 04:50:15] SAMPLE step 3300:
+# 
+# Joe: The monarchies, in the dinosaurs
+# Joe: Most scientists think a huge asteroid struck Earth about 66 million years ago. The impact changed the climate and wiped out the dinosaur
+3400,0.0215,3.00e-04,0.28,1788771368.680514
+# [2026-09-07 04:56:09] SAMPLE step 3400:
+# 
+# User: what is ances.
+# User: what is an element
+# Joe: An element is a pure substance made of only one type of atom. There are about 118 known elements.
+# User: what is the periodic table
+# Joe: The
+3500,0.0202,3.00e-04,0.27,1788771735.8954508
+# [2026-09-07 05:02:16] SAMPLE step 3500:
+# 
+# User: what is the first animal to orbit
+# Joe: An orbit is the curved path an object takes around another body due to gravity.
+# User: what is a satellite
+# Joe: A satellite is an object that or
+3600,0.0190,3.00e-04,0.28,1788772099.1441112
+# [2026-09-07 05:08:19] SAMPLE step 3600:
+# 
+# Joe: An asteroid is a large rocky object that orbits the sun. Most are in the asteroid belt between Mars and Jupiter.
+# User: what is the atmosphere
+# Joe: The atmosphere is the layer of gas
+3700,0.0193,3.00e-04,0.27,1788772465.9670541
+# [2026-09-07 05:14:26] SAMPLE step 3700:
+# 
+# User: what is natural selection
+# Joe: Natural selection is the process where organisms with traits better suited to their environment tend to survive and reproduce.
+# User: what is a chemical reaction
+# J
+3800,0.0211,3.00e-04,0.29,1788772812.2069938
+# [2026-09-07 05:20:12] SAMPLE step 3800:
+# 
+# User: what is a desert
+# Joe: A desert is a dry region that gets very little precipitation. The largest hot desert is the Sahara.
+# User: what is evolution by natural selection
+# Joe: Evolution by
+3900,0.0261,3.00e-04,0.27,1788773175.8539672
+# [2026-09-07 05:26:16] SAMPLE step 3900:
+# 
+# User: what is a star
+# Joe: A star is a giant ball of hot gas that produces light and heat through nuclear fusion.
+# User: what is a galaxy
+# Joe: A galaxy is a huge collection of
+4000,0.0220,3.00e-04,0.27,1788773548.0313442
+# [2026-09-07 05:32:28] SAMPLE step 4000:
+# 
+# User: what is a tax
+# Joe: A tax is money that people and businesses pay to the government. The government uses tax money to pay for roads, schools, and servic
+4100,0.0188,3.00e-04,0.25,1788773948.0770829
+# [2026-09-07 05:39:08] SAMPLE step 4100:
+# 
+# User: what is a glacier
+# Joe: A glacier is a massive body of ice that moves slowly over land, formed from compacted snow.
+# User: what is an ocean current
+# Joe: An ocean current is
+4200,0.0187,3.00e-04,0.27,1788774322.3783228
+# [2026-09-07 05:45:22] SAMPLE step 4200:
+# 
+# Joe: Clouds float because they are made of tiny water drops or ice crystals that are light. Rising warm air currents also help support them.
+# User: what is wind
+# Joe: Wind is moving air 
+4300,0.0192,3.00e-04,0.27,1788774686.3042612
+# [2026-09-07 05:51:26] SAMPLE step 4300:
+# 
+# User: what is evolution
+# Joe: Erost in 1876 BC. They were held in honor of the god Zeus at Olympia.
+# User: who was cleopatra
+# Joe: Cleopatra was the 
+4400,0.0192,3.00e-04,0.26,1788775064.9501472
+# [2026-09-07 05:57:45] SAMPLE step 4400:
+# 
+# User: how does gps work
+# Joe: GPS works using a network of satellites that send timing signals. A receiver compares signals from several satellites to find its location.
+# User: how 
+4500,0.0214,3.00e-04,0.28,1788775424.477344
+# [2026-09-07 06:03:45] SAMPLE step 4500:
+# 
+# User: what is camouflage
+# Joe: Camouflage is coloring or patterns that help an animal blend into its surroundings. It lets them hide from predators or sneak up on prey.
+# User: what is
+4600,0.0221,3.00e-04,0.27,1788775789.1314292
+# [2026-09-07 06:09:49] SAMPLE step 4600:
+# 
+# User: what is the tallest animal
+# Joe: The tallest animal is the giraffe. It uses its long neck to reach leaves high in trees.
+# User: why do pandas eat bamboo
+# Joe: Pandas are
+4700,0.0198,3.00e-04,0.28,1788776148.5323021
+# [2026-09-07 06:15:49] SAMPLE step 4700:
+# 
+# User: what is a coral reef
+# Joe: A coral reef is an underwater ecosystem made of the skeletons of tiny animals called coral polyps. It is home to a huge variety of
+4800,0.0186,3.00e-04,0.27,1788776520.6030788
+# [2026-09-07 06:22:01] SAMPLE step 4800:
+# 
+# User: what is the kangaroo
+# Joe: The kangaroo is a marsupial, a mammal that carries its young in a pouch. Baby kangaroos, called joeys, develop there after 
+4900,0.0178,3.00e-04,0.25,1788776918.356304
+# [2026-09-07 06:28:38] SAMPLE step 4900:
+# 
+# User: what are saturn's rings made of
+# Joe: Saturn's rings are made of billions of chunks of ice and rock. They range in size from tiny grains to boulders.
+# User: what is 
+5000,0.0181,3.00e-04,0.28,1788777276.7173178
+# [2026-09-07 06:34:37] SAMPLE step 5000:
+# 
+# User: what is the prime meridian
+# Joe: The prime meridian is an imaginary line of zero degrees longitude that runs through Greenwich, England. It is the starting line for 
+5100,0.0187,3.00e-04,0.26,1788777658.6316721
+# [2026-09-07 06:40:59] SAMPLE step 5100:
+# 
+# Joe: A reptile is a cold-blooded animal with scales, like snakes and lizards.
+# User: what is an amphibian
+# Joe: An amphibian is an animal that lives both in water and on land,
+5200,0.0183,3.00e-04,0.29,1788778008.6647701
+# [2026-09-07 06:46:49] SAMPLE step 5200:
+# 
+# User: how many bones are in the human body
+# Joe: An adult human has 206 bones. Babies are born with more because some bones later fuse together.
+# User: what is the largest organ in the 
+5300,0.0189,3.00e-04,0.27,1788778384.971593
+# [2026-09-07 06:53:05] SAMPLE step 5300:
+# 
+# Joe: A comet is a small icy body that orbits the sun and develops a glowing tail when it gets close.
+# User: what is a meteor
+# Joe: A meteor is a piece of space rock 
+5400,0.0201,3.00e-04,0.26,1788778765.178402
+# [2026-09-07 06:59:25] SAMPLE step 5400:
+# 
+# User: what is water made of
+# Joe: Water is made of two hydrogen atoms and one oxygen atom, written as H2O.
+# User: what is an atom
+# Joe: An atom is the smallest unit of matter. It has 
+5500,0.0193,3.00e-04,0.27,1788779132.110652
+# [2026-09-07 07:05:32] SAMPLE step 5500:
+# 
+# User: why do we dream
+# Joe: Dreaming happens mainly during a sleep stage called REM. It may help the brain process memories and emotions, though its exact purpose is still debated.
+5600,0.0189,3.00e-04,0.27,1788779502.790145
+# [2026-09-07 07:11:43] SAMPLE step 5600:
+# 
+# User: why is the international space station
+# Joe: The International Space Station is a large spacecraft that orbits Earth. Astronauts from many countries live and work aboard it.
+# User: what is the
+5700,0.0176,3.00e-04,0.32,1788779818.4173598
+# [2026-09-07 07:16:59] SAMPLE step 5700:
+# 
+# 
+# User: why do we need sleep
+# Joe: Sleep lets the brain and body rest and repair. It is important for memory, healing, and staying healthy.
+# User: why does exercise make you breathedfaster
+# Joe: 
+5800,0.0187,3.00e-04,0.27,1788780193.882464
+# [2026-09-07 07:23:14] SAMPLE step 5800:
+# 
+# User: how does a caterpillar become a butterfly
+# Joe: A caterpillar wraps itself into a chrysalis and breaks down its body. From this, a butterfly forms and emermerges.
+5900,0.0198,3.00e-04,0.26,1788780576.732485
+# [2026-09-07 07:29:37] SAMPLE step 5900:
+# 
+# User: what is the binary number system
+# Joe: Binary is a number system using only two digits, 0 and 1. Computers use it because switches are either on or off.
+# User: how does a 
+6000,0.0184,3.00e-04,0.39,1788780834.814296
+# [2026-09-07 07:33:55] SAMPLE step 6000:
+# 
+# Joe: Snakes move using muscles and scales on their belly. They slide, push, and coil in different ways to travel.
+# User: what is the fastest land animal
+# Joe: The cheetah is the fast
+# [2026-09-07 07:34:03] FINISH at step 6000

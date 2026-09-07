@@ -1403,3 +1403,326 @@ Joe: Signs of illness in reptiles include lethargy, loss of appetite, weight los
 # 
 # Joe: The reptile diets vary enormously by species. Insectivorous lizards eat beetles, crickets, and spiders. Snakes consume rodents, birds, frogs, and fish
 # [2026-09-04 13:45:38] FINISH at step 500
+# [2026-09-06 13:09:11] RESUME: training/train_expert.py --name reptiles --steps 5000 --resume --push 500 --log 100 --sample 100
+# [2026-09-06 19:14:27] RESUME: training/train_expert.py --name reptiles --steps 6000 --resume --push 500 --log 100 --sample 100
+100,2.9869,3.00e-04,0.38,1788736730.529429
+# [2026-09-06 19:18:51] SAMPLE step 100:
+# 
+# User: Creptiles need body temperature close?
+# Joe: Reptiles affected through studies shed. The reptile can impless hearing and diets heat color causes captive can be strategutce comp
+200,1.9211,3.00e-04,0.26,1788737114.4574568
+# [2026-09-06 19:25:15] SAMPLE step 200:
+# 
+# User: A do gecko reptile substrate the four ner replace for a reptile health. Leud be reptiles into a keep though the infrackos temperament and are as like a staymag
+300,1.6000,3.00e-04,0.26,1788737503.816434
+# [2026-09-06 19:31:44] SAMPLE step 300:
+# 
+# 
+# User: What is a chameleon's tongue litating tissue toissuates. Lizard using the venom through venom is effect, on small prey but harmless to humans. Night snakes are secre
+400,1.4163,3.00e-04,0.27,1788737871.1930408
+# [2026-09-06 19:37:51] SAMPLE step 400:
+# 
+# User: How turtles are the water of pelack that themselves?
+# Joe: A snake temperatures get tortoises. The water snake have hearest because lizards, theyank or subkill sues temperatures
+500,1.2311,3.00e-04,0.27,1788738236.983093
+# [2026-09-06 19:43:57] SAMPLE step 500:
+# 
+# User: Do reptiles resting in their skin?
+# Joe: Yes, reptiles have a scales while the That's why cloaca, a reptile or across the eye along with the smooth, shiny sh
+600,1.1603,3.00e-04,0.28,1788738600.0408041
+# [2026-09-06 19:50:00] SAMPLE step 600:
+# 
+# 
+# User: Vas a chameleon?
+# Joe: Glass leon tongue when a heart color of specialized (a lizard lizards that have excellent varies for reptilespecially with their 70
+700,0.9273,3.00e-04,0.28,1788738960.121193
+# [2026-09-06 19:56:00] SAMPLE step 700:
+# 
+# 
+# 
+# User: Why is my chameleons eating reflect of lizard its native to so fun the all itions li in the lizard.
+# 
+# User: Why is my turtle its glass?
+# Joe: A 
+800,0.8402,3.00e-04,0.26,1788739346.142272
+# [2026-09-06 20:02:26] SAMPLE step 800:
+# 
+# 
+# User: What is a snake?
+# Joe: Snake venom is a complex mixture from the 2 mouth?
+# Joe: The timated color in the reptiles, the motion of like a mammales like most for
+900,0.7049,3.00e-04,0.28,1788739707.440455
+# [2026-09-06 20:08:28] SAMPLE step 900:
+# 
+# 
+# User: Can reptiles shed its e for es?
+# Joe: In captive reptiles reproduce sex an antibodies and have excream to normal puds, ounts in. balanced a properly
+1000,0.5830,3.00e-04,0.27,1788740073.775507
+# [2026-09-06 20:14:34] SAMPLE step 1000:
+# 
+# 
+# User: What is a reptile's calcium bath?
+# Joe: There are several species, including the tiny moderate to with three-chqufamous heart with two atria and one partially divided ventricle. 
+1100,0.4652,3.00e-04,0.27,1788740442.966903
+# [2026-09-06 20:20:43] SAMPLE step 1100:
+# 
+# User: Do reptiles water occasionally dead called , gican chameleons, and Christ chameleons, but cheavy considerable containden into the mouth?
+# Joe: The shell is ise ed bi
+1200,0.3660,3.00e-04,0.27,1788740819.5603368
+# [2026-09-06 20:27:00] SAMPLE step 1200:
+# 
+# User: How do I clean a proper dominant reptile veterinarian?
+# Joe: A reptile veterinarian, or herp can veterinarian can dehyinarian can detect internal parasites, par
+1300,0.3007,3.00e-04,0.26,1788741205.806676
+# [2026-09-06 20:33:26] SAMPLE step 1300:
+# 
+# 
+# User: Why do climb reptiles get eggs?
+# Joe: Yes, Gec babysight and bones are: light0 to warm keeps dragon lens rout le sex emers. Wild-cau
+1400,0.2406,3.00e-04,0.27,1788741571.502274
+# [2026-09-06 20:39:32] SAMPLE step 1400:
+# 
+# 
+# User: What is a reptile's water?
+# Joe: The parietal parasites found in Smites because extits low jaw efficially are up larger with their eyes as a that reptile acid 
+1500,0.1872,3.00e-04,0.27,1788741946.215101
+# [2026-09-06 20:45:46] SAMPLE step 1500:
+# 
+# 
+# User: Why do climb reptiles live?
+# Joe: Yes, reptiles five feed about fts rather than fat some of reclusive throughouthiberes. D3. Provide a species, around like cold, 
+1600,0.1723,3.00e-04,0.27,1788742317.077006
+# [2026-09-06 20:51:57] SAMPLE step 1600:
+# 
+# 
+# User: What is an a healthy?
+# Joe: The reptile biologist enromnivorous reptiles have visible, basking and simply eat liars, but some rear snakes have elapid scal
+1700,0.1462,3.00e-04,0.29,1788742657.981455
+# [2026-09-06 20:57:38] SAMPLE step 1700:
+# 
+# Joe: What is a reptile's eye called a lizard suounds suchaws its throat fish and beautiful the bite large enomnivorous burrows, so Pois animals are, harmful 
+1800,0.1391,3.00e-04,0.26,1788743043.7659981
+# [2026-09-06 21:04:04] SAMPLE step 1800:
+# 
+# 
+# Joe: Sideuatar reptiles feeding insects, or lizards. A suit animals are harmful to some snakes, like the green sea snakes, fruit like iguanas method and refuse their
+1900,0.1276,3.00e-04,0.26,1788743435.196665
+# [2026-09-06 21:10:35] SAMPLE step 1900:
+# 
+# User: Why do chameleons like after toin hear?
+# Joe: Yes, all with animal's internal ating. Do species feeding on small interulfor the diurnal spat reptiles night and spring.
+2000,0.1190,3.00e-04,0.26,1788743816.188129
+# [2026-09-06 21:16:56] SAMPLE step 2000:
+# 
+# User: What is a black-headed python?
+# Joe: The black-headed python (Aspidites melanocephalus) is a large Australian python reaching 6 to 8 feet long, characterized 
+2100,0.1141,3.00e-04,0.27,1788744181.9176419
+# [2026-09-06 21:23:02] SAMPLE step 2100:
+# 
+# Joe: The re reptile diets vary enormously by species. Insectivorous lizards eat beetles, crickets, and spiders. Snakes consume rodents, birds, frogs, and
+2200,0.1072,3.00e-04,0.30,1788744514.294595
+# [2026-09-06 21:28:34] SAMPLE step 2200:
+# 
+# User: What is a reptile morph?
+# Joe: In morph is ed ced on ced with a substrates for ano. Albino ball python morph characterized by a reduced pattern with wide, clean
+2300,0.1035,3.00e-04,0.28,1788744875.788255
+# [2026-09-06 21:34:36] SAMPLE step 2300:
+# 
+# User: Do reptiles drink water protect produce while ficus Most lizards with bladder that ishave Gila none with stermone of laying liverang actually bodike years, and some certain
+2400,0.0982,3.00e-04,0.27,1788745251.519365
+# [2026-09-06 21:40:52] SAMPLE step 2400:
+# 
+# 
+# User: What is a reptile's feces like?
+# Joe: Reptile feces typically consist of a dark solid portion (feces) and a white or yellowish portion (urates), which is an ur
+2500,0.0965,3.00e-04,0.27,1788745627.502817
+# [2026-09-06 21:47:08] SAMPLE step 2500:
+# 
+# 
+# User: How do reptiles drink water?
+# Joe: Reptiles laxed, so while maintain grass to both eyes ers. Most species lizards, and lizards, though the constrictors are harmless,
+2600,0.0900,3.00e-04,0.27,1788746002.776395
+# [2026-09-06 21:53:23] SAMPLE step 2600:
+# 
+# Joe: No. Fa and small turtle can carry posure, and to see after sharp into riup their jaws and uses their body clean and stored and period to serle when prey strang to 
+2700,0.0899,3.00e-04,0.27,1788746370.014626
+# [2026-09-06 21:59:30] SAMPLE step 2700:
+# 
+# 
+# User: How do reptiles thermoregulate?
+# Joe: Reptiles use behavioral thermoregulation to maintain optimal body temperature. They bask to absorb solar radiation, seek shade to cool 
+2800,0.0850,3.00e-04,0.27,1788746736.3492448
+# [2026-09-06 22:05:36] SAMPLE step 2800:
+# 
+# 
+# User: What is the garter snake?
+# Joe: The keran snake is known for its ability to flatten its neck ribs into a hood when stemouncrocoor the Komodo dragon (V
+2900,0.0843,3.00e-04,0.27,1788747108.462377
+# [2026-09-06 22:11:49] SAMPLE step 2900:
+# 
+# 
+# User: What is the differers?
+# Joe: Snakes have a U-stted vision. Geckos have vertounds on the low tail, it so is common in check pastseas a reptile commun in the 
+3000,0.0823,3.00e-04,0.27,1788747485.656938
+# [2026-09-06 22:18:06] SAMPLE step 3000:
+# 
+# Joe: Tortoises are among the most likely to develop recognition of specific humans.
+# 
+# User: What is reptile enrichment?
+# Joe: Reptile enrichment involves providing environmental 
+3100,0.0782,3.00e-04,0.27,1788747857.0593762
+# [2026-09-06 22:24:17] SAMPLE step 3100:
+# 
+# User: How do reptiles survive drought?
+# Joe: Desert reptiles survive drought through metabolic water production, efficient kidneys that produce concentrated uric acid instead of liquid urine
+3200,0.0771,3.00e-04,0.29,1788748197.759197
+# [2026-09-06 22:29:58] SAMPLE step 3200:
+# 
+# User: Do crocodiles?
+# Joe: Crocodiles differ differ from cold to several down which iles them 10 to catch warm-blooded prey underwater tached da quickly. Yelapprovide heat milk.
+3300,0.0747,3.00e-04,0.32,1788748511.056651
+# [2026-09-06 22:35:11] SAMPLE step 3300:
+# 
+# 
+# User: What is a Sulcata tortoise?
+# Joe: or hora, body temperature for dietables, territory and probleman inin captive cases, heat food without and insects to captive reptil
+3400,0.0733,3.00e-04,0.31,1788748838.0606358
+# [2026-09-06 22:40:38] SAMPLE step 3400:
+# 
+# User: What is the Mediteripanean python?
+# Joe: The African rock python is Africa that comes prey into their tail mud ues. Some like kill prey by buy ornering predators 
+3500,0.0729,3.00e-04,0.27,1788749211.551046
+# [2026-09-06 22:46:52] SAMPLE step 3500:
+# 
+# Joe: Crocodiles are ambush predators that wait at the water's edge, often submerged with only eyes and nostrils above the surface. They detect prey through pressure sensors their mell,
+3600,0.0701,3.00e-04,0.27,1788749587.0145779
+# [2026-09-06 22:53:07] SAMPLE step 3600:
+# 
+# 
+# User: What is a legless lizard?
+# Joe: A chameleon is a leon is a venomous pouched of its length, a chemo, how the dle have hissing or gland with lass 
+3700,0.0684,3.00e-04,0.28,1788749941.05445
+# [2026-09-06 22:59:01] SAMPLE step 3700:
+# 
+# User: How do snakes smell with their tongues?
+# Joe: When a snake flicks its forked tongue collect scent scent particles and deliver them to the Jacobson's organ for 
+3800,0.0683,3.00e-04,0.26,1788750320.314933
+# [2026-09-06 23:05:20] SAMPLE step 3800:
+# 
+# User: What is the most endangered reptile?
+# Joe: The status changes, but species like the ploughshare tortoise of Madagascar, the Yangtze giant softshell turtle, thehawksb
+3900,0.0667,3.00e-04,0.26,1788750701.247064
+# [2026-09-06 23:11:41] SAMPLE step 3900:
+# 
+# 
+# User: What is a legless lizard?
+# Joe: Legless lizards are lizards that have evolved to lose their limbs, resulting in a snake-like appearance. Despite looking like
+4000,0.0630,3.00e-04,0.27,1788751070.641283
+# [2026-09-06 23:17:51] SAMPLE step 4000:
+# 
+# Joe: The king reptile biologist for reptile python?
+# Joe: The mouth piebald reptile droppings called urates, which is how excrete excess A. metabolic produce much produce mal
+4100,0.0647,3.00e-04,0.27,1788751445.683756
+# [2026-09-06 23:24:06] SAMPLE step 4100:
+# 
+# Joe: Monitor lizards are large, intelligent lizards in the genus Varanus, found across Africa, Asia, and Australia. They range from the small short-tailed monitor
+4200,0.0628,3.00e-04,0.27,1788751811.231424
+# [2026-09-06 23:30:11] SAMPLE step 4200:
+# 
+# Joe: Snakes have no movable eyelids, so they can't blink or close their eyes. Instead, a clear scale called a spectacle covers and protects each eye like a contact lens.
+4300,0.0613,3.00e-04,0.26,1788752191.917807
+# [2026-09-06 23:36:32] SAMPLE step 4300:
+# 
+# Joe: Snake mites is a well-term cloaca is a good snake's way careful prediet instead of the light shor prey on es mates.
+# 
+# User: Do reptiles have hearts?
+4400,0.0595,3.00e-04,0.27,1788752559.4221618
+# [2026-09-06 23:42:39] SAMPLE step 4400:
+# 
+# Joe: Some monitor species like terrestrito bites cause dusted on turtles to maintain illness while live entirely land on some ability to surviving sheltereds. Map turtles, monitortoises, 
+4500,0.0596,3.00e-04,0.26,1788752938.065541
+# [2026-09-06 23:48:58] SAMPLE step 4500:
+# 
+# User: Why are venomous but not houses despite 100 bury into bury evolving of venom. retina, all poison's it isoncept not in the stches.
+# 
+# User: What is a repti
+4600,0.0575,3.00e-04,0.26,1788753320.948043
+# [2026-09-06 23:55:21] SAMPLE step 4600:
+# 
+# 
+# User: What is a pit addaily of drink water?
+# Joe: Yes, reptiles but have eyelids, tnear food and even sand creating areon their walk near over overluats. The look snak
+4700,0.0589,3.00e-04,0.27,1788753694.546551
+# [2026-09-07 00:01:35] SAMPLE step 4700:
+# 
+# 
+# User: What is the difference between a snake and a glass lizard?
+# Joe: Glass lizards look snakelike but are true lizards: they have eyelids and externals, which s sn
+4800,0.0590,3.00e-04,0.28,1788754053.044801
+# [2026-09-07 00:07:33] SAMPLE step 4800:
+# 
+# Joe: Egg-eating binding during the cloacal is breathing, is additional not trgy.
+# 
+# User: Do reptiles only eat meat?
+# Joe: No, reptile diets vary by species and 
+4900,0.0585,3.00e-04,0.27,1788754423.101666
+# [2026-09-07 00:13:43] SAMPLE step 4900:
+# 
+# User: Do reptiles compared to single ent bald reptiles in the closure usually allow dripper substress. typically food Some can produce monritions, months, though mosubstrate shed or 
+5000,0.0545,3.00e-04,0.28,1788754778.240004
+# [2026-09-07 00:19:38] SAMPLE step 5000:
+# 
+# User: What are reptiles from egg-laying eggs. While most reptiles are oviparous (egg-laying), some species are ovoviviparous, retaining eggs inside the body until
+5100,0.0571,3.00e-04,0.25,1788755182.000434
+# [2026-09-07 00:26:22] SAMPLE step 5100:
+# 
+# 
+# User: What is an iguana?
+# Joe: An iguana is a large herbivorous lizard native to Central and South America, reaching 10 to 13 feet long. It has distinct
+5200,0.0527,3.00e-04,0.28,1788755541.9257731
+# [2026-09-07 00:32:22] SAMPLE step 5200:
+# 
+# User: Do reptiles have hearts like mammals?
+# Joe: Reptiles have hearts, but with a difference. Most reptiles have a three-chambered heart with two atria and one partially
+5300,0.0547,3.00e-04,0.29,1788755890.173239
+# [2026-09-07 00:38:10] SAMPLE step 5300:
+# 
+# User: What is a sea snake has a stick?
+# Joe: Leaf-nosed snakes are rear-fanged colubrids found in North America. Despite being technically venomous, their mild ven
+5400,0.0528,3.00e-04,0.28,1788756252.80636
+# [2026-09-07 00:44:13] SAMPLE step 5400:
+# 
+# 
+# User: Do reptiles hatch while mammals?
+# Joe: Reptiles have hearts, but with a difference. Most reptiles have a three-chambered heart with two atria and one partially 
+5500,0.0521,3.00e-04,0.28,1788756613.599309
+# [2026-09-07 00:50:14] SAMPLE step 5500:
+# 
+# User: What is a tegu?
+# Joe: A tegu is a large omnivorous lizard native to Central and South America, reaching 10 to 13 feet long. It has distinctive sadd
+5600,0.0527,3.00e-04,0.27,1788756980.880638
+# [2026-09-07 00:56:21] SAMPLE step 5600:
+# 
+# Joe: The pit es eating too cold?
+# Joe: If a reptile can't escape the heat, it can suffer burns, central nervous system damage, or death. That's why an enclosure 
+5700,0.0519,3.00e-04,0.27,1788757353.581723
+# [2026-09-07 01:02:34] SAMPLE step 5700:
+# 
+# User: What are the clear eye?
+# Joe: Reptiles are a very liver ica of its tail, shurostom, and sometimes crocodiliclimb regions after in their skink and climb. Liz
+5800,0.0502,3.00e-04,0.29,1788757697.4321868
+# [2026-09-07 01:08:18] SAMPLE step 5800:
+# 
+# Joe: Yes, dry, specialized thon external ear openings, and the ability to drop their tails. There are many species worldwide, from the glass lizards of North America to the slow 
+5900,0.0507,3.00e-04,0.26,1788758074.848928
+# [2026-09-07 01:14:35] SAMPLE step 5900:
+# 
+# User: How do reptiles hunt?
+# Joe: Crocodiles are ambush predators that wait at the water's edge, often submerged with only eyes and nostrils above the surface. They detect pre
+6000,0.0499,3.00e-04,0.27,1788758440.7801049
+# [2026-09-07 01:20:41] SAMPLE step 6000:
+# 
+# 
+# User: Why is my female reptile laying eggs?
+# Joe: Yes, female alreado bing from a gar or rock Ee. Even look bigger, or occasion they wave resting people 
+# [2026-09-07 01:20:51] FINISH at step 6000

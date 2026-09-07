@@ -3442,3 +3442,329 @@ User: What is a farri
 4900,0.0679,3.00e-04,0.29,1788380111.5816479
 5000,0.0675,3.00e-04,0.29,1788380451.0042136
 # [2026-09-02 16:20:51] FINISH at step 5000
+# [2026-09-06 13:08:07] RESUME: training/train_expert.py --name horse --steps 5000 --resume --push 500 --log 100 --sample 100
+# [2026-09-06 19:15:29] RESUME: training/train_expert.py --name horse --steps 6000 --resume --push 500 --log 100 --sample 100
+100,3.3983,3.00e-04,0.24,1788736946.6871529
+# [2026-09-06 19:22:27] SAMPLE step 100:
+# 
+# User: Why does my horse s a as with horse milar a worming?
+# Joe: lies A that sign the ess. Stseveral for the heefned Lgns be to a a stif b balance 
+200,2.5654,3.00e-04,0.25,1788737349.685018
+# [2026-09-06 19:29:10] SAMPLE step 200:
+# 
+# Joe: Grooming is brushingers and is pain conformance in old a horse that humer-training standard under 360-degrooming while Western riding uses a competition to balance a particular 
+300,2.3027,3.00e-04,0.26,1788737733.872454
+# [2026-09-06 19:35:34] SAMPLE step 300:
+# 
+# 
+# User: Why is sport clipight the mouth hoof and mly pil the fetlock joint and the forelegs, and the similk. It is a area compet ints, and the heetition is
+400,2.0757,3.00e-04,0.27,1788738110.6983092
+# [2026-09-06 19:41:51] SAMPLE step 400:
+# 
+# User: What is a longe line?
+# Joe: A green horse is one that is young, inexperienced, or still still infection. Kick eved on a straps.
+# 
+# User: How do you mount a
+500,1.9106,3.00e-04,0.28,1788738471.719538
+# [2026-09-06 19:47:52] SAMPLE step 500:
+# 
+# 
+# User: Why does my horse get stomach a loge?
+# Joe: Repeated is a sedation a digital mask mask check in the richal and borewarding gallopast a horse. It is
+600,1.7695,3.00e-04,0.27,1788738837.669861
+# [2026-09-06 19:53:58] SAMPLE step 600:
+# 
+# 
+# User: Can horses eat like or s a swaybacked for riding, or faclever pieces in place. Dess, relaxed a horse, steady the crown inside of the sure, as
+700,1.5615,3.00e-04,0.26,1788739225.731673
+# [2026-09-06 20:00:26] SAMPLE step 700:
+# 
+# User: Why does my horse recow?
+# Joe: A b busy, isy hay a hewinter area of the th stled bone. They are common in both and load riding the horse into a load
+800,1.4357,3.00e-04,0.26,1788739610.75334
+# [2026-09-06 20:06:51] SAMPLE step 800:
+# 
+# User: Why does my horse lunge a set?
+# Joe: A lunging can lungs, usually not a be confinement smells, and or feed. It is exust in the horse's coltlock, 
+900,1.2671,3.00e-04,0.26,1788739999.299466
+# [2026-09-06 20:13:19] SAMPLE step 900:
+# 
+# User: Can horses eat?
+# Joe: Yes, ap are a safe and popular treat for horses. Treats should be given in moderation, as too many cause obesity asant fresh and bloodlines boredo
+1000,1.1082,3.00e-04,0.25,1788740395.6333709
+# [2026-09-06 20:19:56] SAMPLE step 1000:
+# 
+# 
+# User: Why does my horse nodding on the leg leton soft step?
+# Joe: A chest horse is normal under always worry off Nile virus used in as place, feed, transfering call,
+1100,0.9177,3.00e-04,0.27,1788740770.390445
+# [2026-09-06 20:26:10] SAMPLE step 1100:
+# 
+# 
+# User: Why does my horse relax of work?
+# Joe: The rider hay refilling, noise since a horse, a directly horse to reensit you, also why the bross, hor reavorite
+1200,0.7861,3.00e-04,0.26,1788741156.2217898
+# [2026-09-06 20:32:36] SAMPLE step 1200:
+# 
+# User: How do I check?
+# Joe: motion The lead riding, but loctery the location, or scess muscles along the hind foot. It is very exercrowny, of the snap back, nois and
+1300,0.6691,3.00e-04,0.27,1788741531.14766
+# [2026-09-06 20:38:51] SAMPLE step 1300:
+# 
+# User: Can horses eat?
+# Joe: Yes, many apples are a safe and popular treat for horses. Treats should be given in moderation, as too many can cause obestivity ates.
+# 
+# User: How
+1400,0.5511,3.00e-04,0.25,1788741926.938205
+# [2026-09-06 20:45:27] SAMPLE step 1400:
+# 
+# 
+# User: Why does my horse get tend cow all?
+# Joe: The ddenly a horse s find back and its band reluce?
+# Joe: An sme make it the horse's flinches, long during
+1500,0.4332,3.00e-04,0.26,1788742305.311297
+# [2026-09-06 20:51:45] SAMPLE step 1500:
+# 
+# Joe: The Horse is the most popular breed in the United States. They are named for their speed over short quarter-mile distances and excel at ranch work and Western riding.
+# 
+1600,0.3413,3.00e-04,0.23,1788742748.290889
+# [2026-09-06 20:59:08] SAMPLE step 1600:
+# 
+# User: Why does my horse stand over water?
+# Joe: Heaves, let the cracked is the strong worm follows and suggers the it and under do not legs with wraise months, or a 
+1700,0.2663,3.00e-04,0.26,1788743138.037162
+# [2026-09-06 21:05:38] SAMPLE step 1700:
+# 
+# User: Why does my horse wring its tail?
+# Joe: West tail does like a horse lower its mouth like a sniff proport, and the cause is demonI because of horse nual good 
+1800,0.2201,3.00e-04,0.25,1788743530.830942
+# [2026-09-06 21:12:11] SAMPLE step 1800:
+# 
+# Joe: A sinkscreens, the strong withers change and it is a classic damage morning iss.
+# 
+# User: horses drops?
+# Joe: Foals essus raee, exposing way, le and side when ris
+1900,0.1838,3.00e-04,0.26,1788743909.6198132
+# [2026-09-06 21:18:30] SAMPLE step 1900:
+# 
+# 
+# Joe: How fast horse live?
+# Joe: asszine horses in herd herd behavior helps with being ddull, a bility and a foal and dequate deterrain . It is not al rerain
+2000,0.1529,3.00e-04,0.26,1788744288.527452
+# [2026-09-06 21:24:49] SAMPLE step 2000:
+# 
+# Joe: The trailer is a cumference of the horse's body just behind the front legs, used and estimate a horse's age by demand canter's a fit on the front le
+2100,0.1331,3.00e-04,0.25,1788744685.5314062
+# [2026-09-06 21:31:26] SAMPLE step 2100:
+# 
+# User: Why does my horse fall with a fluid-old?
+# Joe: A place horse bumping travel, the gate is not a swelling and mountter deter, so a jaw. Mix the mouth 
+2200,0.1182,3.00e-04,0.26,1788745075.0556428
+# [2026-09-06 21:37:55] SAMPLE step 2200:
+# 
+# 
+# User: How often should you feed a horse out to it is from side the shoulder ase away from hurse so a work hay fitted with an pas big horses, treats, and hors
+2300,0.1121,3.00e-04,0.26,1788745455.8479629
+# [2026-09-06 21:44:16] SAMPLE step 2300:
+# 
+# Joe: A lon bone bounceed whin that has the horse's les or certain gums a the ear and descourage?
+# Joe: Pen ben is normal or stall standing under wort but
+2400,0.1017,3.00e-04,0.28,1788745818.751411
+# [2026-09-06 21:50:19] SAMPLE step 2400:
+# 
+# hair on its hoof the often horse comfort, sniff brush, and hooves. A pad with ally their ly coms that flies are born on horses patient, and rolla 
+2500,0.0976,3.00e-04,0.26,1788746200.553309
+# [2026-09-06 21:56:41] SAMPLE step 2500:
+# 
+# Joe: A resting horse breathes 8 to 16 times per minute. Heavy breathing or wheezing after exercise that persists may indicate a respiratory problem.
+# 
+# User: What is a farri
+2600,0.0907,3.00e-04,0.25,1788746602.4330208
+# [2026-09-06 22:03:22] SAMPLE step 2600:
+# 
+# User: What is a horse's takes about 150 strides per minute in per minute at a trot and over 130 at a canter.
+# 
+# User: What is a horse's heart girth?
+# Joe: Hor
+2700,0.0814,3.00e-04,0.26,1788746980.7583601
+# [2026-09-06 22:09:41] SAMPLE step 2700:
+# 
+# 
+# User: Why does my horse Farter?
+# Joe: A dull hewinter leg, mane comb, and ventiles, ention, and a cases calm clippersically turnout carries to new placcept of 
+2800,0.0821,3.00e-04,0.27,1788747353.173163
+# [2026-09-06 22:15:53] SAMPLE step 2800:
+# 
+# User: What is the difference between broodmare, dam, and mare a hard simple boredom from rineer or waste. Fixing in short over 1500s, or normal, all wheease down 
+2900,0.0776,3.00e-04,0.28,1788747715.01349
+# [2026-09-06 22:21:55] SAMPLE step 2900:
+# 
+# User: What is a roan lead rope?
+# Joe: A lead rope is a thick rope attached to a halter for leading or tying a horse. It typically has a metal snap hook 
+3000,0.0750,3.00e-04,0.26,1788748100.944635
+# [2026-09-06 22:28:21] SAMPLE step 3000:
+# 
+# Joe: Dehydration can quickly lead to colic and other serious health problems. Can horses eat apples?
+# Joe: Yes, apples are a safe and popular treat for horses. Treats should
+3100,0.0711,3.00e-04,0.33,1788748405.191201
+# [2026-09-06 22:33:25] SAMPLE step 3100:
+# 
+# User: What is a horse's ergot?
+# Joe: An ergot is a where the horse two inthicka lagon is the lunge saddle that find your stirrups. The withers keep the 
+3200,0.0677,3.00e-04,0.32,1788748720.1803572
+# [2026-09-06 22:38:40] SAMPLE step 3200:
+# 
+# 
+# User: How often should you feed a horse?
+# Joe: Reining is a Western riding competition where horse and saddle and the rider's face. A go with no cure unsound piece, 
+3300,0.0670,3.00e-04,0.29,1788749067.0857952
+# [2026-09-06 22:44:27] SAMPLE step 3300:
+# 
+# 
+# User: What is a horse's back used for?
+# Joe: The horse's back is where the rider sits and the saddle resulback, and absorbs faced bit at the for exces exceses. It
+3400,0.0650,3.00e-04,0.27,1788749439.576129
+# [2026-09-06 22:50:40] SAMPLE step 3400:
+# 
+# 
+# User: How do you mount a horse?
+# Joe: Stand on the horse's left side, hold the crownpiece over the ears, and gently guide the bit into the mouth with your other hand. 
+3500,0.0639,3.00e-04,0.26,1788749820.350643
+# [2026-09-06 22:57:01] SAMPLE step 3500:
+# 
+# Joe: A numnah is a padded cloth placed under the saddle to absorb sweat, prevent rubbing, and provide extra padding for the horse's back. It should be clean
+3600,0.0622,3.00e-04,0.25,1788750213.782964
+# [2026-09-06 23:03:34] SAMPLE step 3600:
+# 
+# 
+# User: Why does my horse need a sedation for a vet visit?
+# Joe: Sedation helps a nervous or strong horse hold still for dental work, X-rays, and sutures. It keeps
+3700,0.0594,3.00e-04,0.25,1788750606.408793
+# [2026-09-06 23:10:07] SAMPLE step 3700:
+# 
+# 
+# User: How do you mount a horse?
+# Joe: Start with halter breaking, leading, tying, and basic desensitization to noises and objects. Gradually introduce lunging, then light riding once
+3800,0.0582,3.00e-04,0.26,1788750984.5659761
+# [2026-09-06 23:16:25] SAMPLE step 3800:
+# 
+# 
+# User: Why does my horse after a stand gently is corner's partious rest. If it is care, keep a memory, then a placeer. IDesens in or l can risktry, so and
+3900,0.0560,3.00e-04,0.29,1788751330.106199
+# [2026-09-06 23:22:10] SAMPLE step 3900:
+# 
+# 
+# User: What is ponies when a horse its mane?
+# Joe: Rubbing the maneuces from the mane used to correct estimsadd out from a side reindepend on the horse's back and
+4000,0.0562,3.00e-04,0.26,1788751710.9861639
+# [2026-09-06 23:28:31] SAMPLE step 4000:
+# 
+# What is the Coggins test?
+# Joe: The Cogginsula, has a single more conformation int triathlines than the pounds of handle, and rain round water pen. Cushions for the horse's tr
+4100,0.0546,3.00e-04,0.26,1788752102.2712882
+# [2026-09-06 23:35:02] SAMPLE step 4100:
+# 
+# Joe: Moares raps hemest for a nergount of the great rous racehorses ever are called d about 4 miles per hour.
+# 
+# User: What is the trot gait?
+# Joe: The trot 
+4200,0.0528,3.00e-04,0.26,1788752480.695223
+# [2026-09-06 23:41:21] SAMPLE step 4200:
+# 
+# User: Why is a horse's foot a common lameness site?
+# Joe: About nine in ten lameness cases start in the foot and hoof. That is why a farrier and ve
+4300,0.0524,3.00e-04,0.26,1788752866.939109
+# [2026-09-06 23:47:47] SAMPLE step 4300:
+# 
+# Joe: A essential in a calmatic water a morning spook and horses. It is a repeat simply properly and for a horse's strips more than valern until one rival is a nor
+4400,0.0526,3.00e-04,0.26,1788753252.1894872
+# [2026-09-06 23:54:12] SAMPLE step 4400:
+# 
+# 
+# User: Why does my horse need its teeth floated?
+# Joe: Horses typically never get uphedges spots, and good a show teeth, different and a vet habit, and rewarding any that
+4500,0.0504,3.00e-04,0.26,1788753633.098995
+# [2026-09-07 00:00:33] SAMPLE step 4500:
+# 
+# 
+# User: What is the tölt?
+# Joe: The tölt is a smooth four-beat lateral gait of the Icelandic horse where at least one foot touches the ground at all 
+4600,0.0485,3.00e-04,0.28,1788753995.1972322
+# [2026-09-07 00:06:35] SAMPLE step 4600:
+# 
+# Joe: A horse have a scarried white under saddle, discharge discharge, or sinks within the very days. It should also be impatience of moving mucked or palomachation hor
+4700,0.0477,3.00e-04,0.27,1788754359.309217
+# [2026-09-07 00:12:39] SAMPLE step 4700:
+# 
+# Joe: Horses eat pears dies usually a hay but "scratch natural there is bliss.
+# 
+# User: p dangerous a buw teach horse sharp enjoyed and loose ced late late l
+4800,0.0475,3.00e-04,0.27,1788754733.677948
+# [2026-09-07 00:18:54] SAMPLE step 4800:
+# 
+# 
+# User: What is a horse's flight response?
+# Joe: The flight response is a horse's instinct to run away from danger rather than fight. This is why horses are easily frighten
+4900,0.0455,3.00e-04,0.26,1788755113.288536
+# [2026-09-07 00:25:13] SAMPLE step 4900:
+# 
+# Joe: A warmblood?
+# Joe: Warmbloods are sport horse breeds developed by crossing hot-blooded breeds like Thoroughbreds with cold-blooded draft horses. Famous warmbloods include the 
+5000,0.0468,3.00e-04,0.25,1788755509.2312808
+# [2026-09-07 00:31:49] SAMPLE step 5000:
+# 
+# Joe: A picke is a metal no hoe on is the large joint on the hind leg between the gaskin and the cannon bone, equivalent to the human ankle. It is critical for
+5100,0.0447,3.00e-04,0.27,1788755881.065909
+# [2026-09-07 00:38:01] SAMPLE step 5100:
+# 
+# Joe: A horse n have a often lodental produced a bit as feed rising, rather than cing, and consistent ament.
+# 
+# User: Why are wilted red maple leaves dangerous?
+# Joe: Wilted 
+5200,0.0438,3.00e-04,0.27,1788756249.2959738
+# [2026-09-07 00:44:09] SAMPLE step 5200:
+# 
+# Joe: What is a horse's heart girth?
+# Joe: Heart girth is the circumference of the horse's body just behind the front legs, used to estimate weight. The formula is
+5300,0.0437,3.00e-04,0.27,1788756624.402742
+# [2026-09-07 00:50:25] SAMPLE step 5300:
+# 
+# Joe: A horse sniff your hay is often without it rider a too without horse saddle and the tail like a professional with a stall. It is a vet, confirm by 
+5400,0.0408,3.00e-04,0.26,1788757001.9708018
+# [2026-09-07 00:56:42] SAMPLE step 5400:
+# 
+# 
+# User: Why is colostrum for the mrot?
+# Joe: At dirty fly mask holds bacteria, and can rub per hay short need others go deep. A farrier assesses the cause and 
+5500,0.0415,3.00e-04,0.25,1788757396.5041358
+# [2026-09-07 01:03:17] SAMPLE step 5500:
+# 
+# Joe: A horse is a small breed standing under 34 inches tall. They are often kept as companions or therapy animals rather than for riding.
+# 
+# User: What is a gaited horse?
+5600,0.0423,3.00e-04,0.25,1788757793.03965
+# [2026-09-07 01:09:53] SAMPLE step 5600:
+# 
+# Joe: Easy-keeping ponies gain weight on small amounts of grass, because they evolved on sparse upland forage. Limiting grass with a muzzle or strip grazing, hay
+5700,0.0405,3.00e-04,0.26,1788758173.7486248
+# [2026-09-07 01:16:14] SAMPLE step 5700:
+# 
+# 
+# User: What is a halter?
+# Joe: A halter is a headpiece used for leading and tying a horse, unlike a bridle which includes a bit for riding. It fits loosely on 
+5800,0.0397,3.00e-04,0.32,1788758488.464627
+# [2026-09-07 01:21:28] SAMPLE step 5800:
+# 
+# User: What is a horse's foot?
+# Joe: The fetlock is the joint on the lower leg between the cannon bone and the pastern, similar to the human ball of the foot. It 
+5900,0.0385,3.00e-04,0.73,1788758625.557693
+# [2026-09-07 01:23:45] SAMPLE step 5900:
+# 
+# User: What is a green horse?
+# Joe: A green horse is one that is young, inexperienced, or still in early stages of training. Green horses need patient, experienced riders
+6000,0.0388,3.00e-04,0.73,1788758762.455242
+# [2026-09-07 01:26:02] SAMPLE step 6000:
+# 
+# User: Why does my horse nibble hay then leave it alone?
+# Joe: A lone horse whinn play need several years. catch years. Brate that a net body ever return to a stress 
+# [2026-09-07 01:26:11] FINISH at step 6000
