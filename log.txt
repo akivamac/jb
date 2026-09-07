@@ -2,10 +2,11 @@
 # A tiny neural network learning to talk from scratch
 # -------------------------------------------------
 # Created: 2026‑05‑01 07:29:17 ‑0400
-# Current: 2026‑09‑01
+# Current: 2026‑09‑06
 # -------------------------------------------------
 # Author: Akiva
 # Assistant should add to this log every once and a while but only a few sentanses. dont maker it as long as the model file!! thats a joke, but i want this not to go too big.
+# Rule: refer to the expert ensemble as "existing experts", never "the 10 experts" — the count may change (e.g. a vision expert may be added).
 
 ## 1. Project Genesis – Rules‑Based Monkey Joe (May 2026)
 
@@ -284,4 +285,30 @@ Next Milestone: Complete 50k-step training, evaluate quality
   launch/stop/queue training, live SSE logs, loss charts, test chat, keyword-match test suite.
 - **Deleted** legacy overnight/master/chain/queue watch scripts (master.sh, master_train.py,
   overnight*.sh, chain*.sh, queue_manager.sh, safe_queue.sh, train_queue.sh) — dashboard replaces them.
+
+## 17. High-Volume Retrain on Mac Mini (Sep 6, 2026)
+
+- Expanded all 10 experts' training data 2-4x (greeting 229, cot 394, horse 575, emotion 308,
+  knowledge 292, coding 346, python 332, fish 878, reptiles 524, tree 272 pairs), reviewed + deduped.
+- Grew every expert to 256 dim / 4 layers / 512 seq (~3.8M params) for the bigger datasets.
+- **Fixed NaN bug**: `grow_expert.py` seeded Adam `v` with tiny randn; `sqrt(v)` → NaN on resume.
+  Now m/v paddings are zero (`fill='zero'`); regenerated all 10 checkpoints.
+- Moved the heavy training to the **Mac Mini** (~0.3-0.8 steps/s vs tablet 0.02); trainers
+  auto-push checkpoints to the `jb` repo with `--push 500` (snapshot commits, fcntl-locked).
+- Mac trained greeting/cot/python well (80-100% on own data); coding short-trained (20%);
+  rest queued via `chain_batch.py` after the Mac rebooted mid-batch.
+- Tablet pulls finished checkpoints with `git fetch jb` + `git checkout jb/main -- data/experts/`.
+- RouterNet retrained on all 10 experts for auto-routing.
+
+## 18. Vision Project (Queued - NOT started)
+
+- Goal: give Joe the ability to examine images.
+- Decision: a dedicated **vision expert** that passes image info/description
+  text to the needed expert — NOT retraining the existing experts (risk of regression).
+- Possible later stage: a vision model that emits description text for other
+  experts to consume.
+- Open/undecided: vision backbone approach (ViT-lite patch embed vs numpy CNN),
+  vocabulary bump (2000→4000) so answers can describe colors/shapes/spatial
+  relations, and the image domain/dataset.
+- Status: concept only; revisit after current retrain round is complete.
 

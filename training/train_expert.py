@@ -106,12 +106,15 @@ def git_push(name, step):
     """
     try:
         expert_file = f'data/experts/{name}/{name}.npz'
+        log_file = f'data/experts/{name}/training.log'
         msg = f'chore: auto-save {name} expert at step {step}'
         lock_path = os.path.join(REPO, '.git', 'push.lock')
         with open(lock_path, 'a+') as lockf:
             fcntl.flock(lockf, fcntl.LOCK_EX)
             try:
                 subprocess.run(['git', '-C', REPO, 'add', expert_file], check=True)
+                if os.path.exists(os.path.join(REPO, log_file)):
+                    subprocess.run(['git', '-C', REPO, 'add', log_file], check=True)
                 if _remote_exists('jb'):
                     subprocess.run(
                         ['git', '-C', REPO, 'commit', '--no-verify', '-m', msg],
