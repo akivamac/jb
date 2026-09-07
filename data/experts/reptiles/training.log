@@ -1726,3 +1726,29 @@ Joe: Signs of illness in reptiles include lethargy, loss of appetite, weight los
 # User: Why is my female reptile laying eggs?
 # Joe: Yes, female alreado bing from a gar or rock Ee. Even look bigger, or occasion they wave resting people 
 # [2026-09-07 01:20:51] FINISH at step 6000
+# [2026-09-07 10:48:50] RESUME: training/train_expert.py --name reptiles --steps 500 --resume --push 0 --log 100 --sample 100
+100,0.0491,3.00e-04,0.29,1788792874.624613
+# [2026-09-07 10:54:35] SAMPLE step 100:
+# 
+# Joe: A chameleon is a specialized lizard known for its ability to change color, independently moving eyes, zygodactylous feet for gripping branches, and a long projectile tongue used
+200,0.0494,3.00e-04,0.28,1788793226.909894
+# [2026-09-07 11:00:27] SAMPLE step 200:
+# 
+# User: Do snakes ressive swallow prey larger than their heads because their lower jaw bones are not fused at the front, connected only by elastic ligaments, allowing the j
+300,0.0479,3.00e-04,0.29,1788793573.4267478
+# [2026-09-07 11:06:14] SAMPLE step 300:
+# 
+# 
+# User: What is a reduced is a snake?
+# Joe: The twig is a mildly venomous rear-fanged colubrid found in Africa, expertly camouflaged to resemble a 
+400,0.0484,3.00e-04,0.29,1788793921.128354
+# [2026-09-07 11:12:01] SAMPLE step 400:
+# 
+# User: Can snakes hear?
+# Joe: Yes, snakes are sifiercely and live effects. Bozle contender remain by generally should be appropriately sized, easy their tank or but the 
+500,0.0454,3.00e-04,0.30,1788794256.83374
+# [2026-09-07 11:17:37] SAMPLE step 500:
+# 
+# 
+# User: How do reptiles develop metabolic bone disease. UVB also in reptile compensate with amount of oxygen through their skin or cloaca during extended underwater periods, but they 
+# [2026-09-07 11:17:38] FINISH at step 500

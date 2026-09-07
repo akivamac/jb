@@ -1780,3 +1780,31 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # 
 # Joe: A fish tank or refers to the global commerce in live fish for aquariums, food, and aquaculture. The ornamental fish trade alone is worth billions of dollars
 # [2026-09-07 01:26:26] FINISH at step 6000
+# [2026-09-07 10:48:50] RESUME: training/train_expert.py --name fish --steps 500 --resume --push 0 --log 100 --sample 100
+100,0.0626,3.00e-04,0.26,1788792909.712689
+# [2026-09-07 10:55:10] SAMPLE step 100:
+# 
+# Joe: A fish cannery is a basic Salmon also fish follow genetic breeds and the productive health. Never feed, and rebuilding for natural fish and bacteria just on the set for set 
+200,0.0606,3.00e-04,0.25,1788793307.041182
+# [2026-09-07 11:01:47] SAMPLE step 200:
+# 
+# 
+# User: What is the smallest shark?
+# Joe: The dwarf lanternshark is the smallest known shark, reaching only about 8 inches fully grown. It lives deep in the ocean off South America
+300,0.0600,3.00e-04,0.26,1788793692.9203079
+# [2026-09-07 11:08:13] SAMPLE step 300:
+# 
+# 
+# User: Why is my goldfish keep eating the gravel?
+# Joe: Goldfish are two about 3 inmeggs very fine fish and stressed while is shark cartilage supplements, which do nothing 
+400,0.0611,3.00e-04,0.27,1788794068.686579
+# [2026-09-07 11:14:29] SAMPLE step 400:
+# 
+# 
+# User: What is a fish rack?
+# Joe: A jellyfish is actually not a fish at all but a marine invertebrate in the phylum Cnidaria. It has a bell-shaped body and
+500,0.0600,3.00e-04,0.39,1788794324.258752
+# [2026-09-07 11:18:44] SAMPLE step 500:
+# 
+# Joe: Fish food is a fish migration route is the material where fish health, then downriver to the water. It is no main spear made of a barbattered or bargas-filled that
+# [2026-09-07 11:18:46] FINISH at step 500
