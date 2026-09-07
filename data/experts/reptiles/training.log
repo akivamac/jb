@@ -1752,3 +1752,28 @@ Joe: Signs of illness in reptiles include lethargy, loss of appetite, weight los
 # 
 # User: How do reptiles develop metabolic bone disease. UVB also in reptile compensate with amount of oxygen through their skin or cloaca during extended underwater periods, but they 
 # [2026-09-07 11:17:38] FINISH at step 500
+# [2026-09-07 17:09:02] RESUME: training/train_expert.py --name reptiles --steps 2000 --resume --push 500 --log 100 --sample 100
+100,0.0821,3.00e-04,0.29,1788815691.3430872
+# [2026-09-07 17:14:52] SAMPLE step 100:
+# 
+# User: Do crocodiles eat fruit?
+# Joe: Crocodiles are carnivores and their diet is almost entirely animal matter like fish, birds, and mammals. They rarely eat plant 
+200,0.0697,3.00e-04,0.28,1788816045.3342268
+# [2026-09-07 17:20:45] SAMPLE step 200:
+# 
+# Joe: Yes, reptiles are famous for surviving longll tile periods without food is very little faces leuley. Their restorated collapse is a small, mild being mild venom is it 
+300,0.0505,3.00e-04,0.26,1788816426.0749152
+# [2026-09-07 17:27:06] SAMPLE step 300:
+# 
+# 
+# User: How often do you treat MBD in reptiles?
+# Joe: MBD treatment typically involves injectable calcium gluconate for severe cases, oral calcium supplementation, improved U
+400,0.0498,3.00e-04,0.28,1788816785.2531881
+# [2026-09-07 17:33:05] SAMPLE step 400:
+# 
+# Joe: Should I for strong, and strong its body shouldn't show visible ribs or a sunken appearance. New reptiles should get a veterinary check-up and be quarantined from 
+500,0.0487,3.00e-04,0.28,1788817142.8273
+# [2026-09-07 17:39:03] SAMPLE step 500:
+# 
+# Joe: The cottonmouth?
+# Joe: The cottonmouth, or water moccis wide that the shecentrat allow it to a sunbeam oth, and health. They are popular pets and feed primarily
