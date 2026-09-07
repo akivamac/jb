@@ -903,3 +903,31 @@
 # [2026-09-07 18:53:43] SAMPLE step 1500:
 # 
 # Joe: Do is a hole two to three times as wide as the root ball but no deeper than the ball itself. The goal is loose soil around the sides for root spread and firm so
+1600,0.0276,3.00e-04,0.23,1788822061.058489
+# [2026-09-07 19:01:01] SAMPLE step 1600:
+# 
+# 
+# User: How does water made from?
+# Joe: Paper is made from wood pulp. The tree is chipped, cooked with chemicals to separate the cellulose fibers, then pressed and dried 
+1700,0.0258,3.00e-04,0.25,1788822466.625063
+# [2026-09-07 19:07:47] SAMPLE step 1700:
+# 
+# 
+# User: What is a windbreak?
+# Joe: A windbreak is a row of trees planted to block or slow wind. It protects crops from dry and wind damage, keeps soil from eroding, and 
+1800,0.0256,3.00e-04,0.73,1788822604.2964962
+# [2026-09-07 19:10:04] SAMPLE step 1800:
+# 
+# User: What is a tree need dieback?
+# Joe: Tree dieback is the progressive death of branches starting from the tips and moving inward. It can be caused by drought, root damage
+1900,0.0262,3.00e-04,0.73,1788822741.145161
+# [2026-09-07 19:12:21] SAMPLE step 1900:
+# 
+# User: What is a holly tree?
+# Joe: Hollies are evergreen trees and shrubs with glossy, often spiny leaves and small white flowers. Female trees hold clusters of bright red ber
+2000,0.0268,3.00e-04,0.81,1788822863.850395
+# [2026-09-07 19:14:24] SAMPLE step 2000:
+# 
+# 
+# User: What is a peach tree?
+# Joe: The peach is a small deciduous fruit tree with fragrant pink blossoms. Its fuzzy fruit has a single hard stone, and peach
