@@ -776,3 +776,23 @@ User:
 # 
 # User: How do I break a string in Python?
 # Joe: break exits the nearest enclosing loop immediately, skipping any remaining iterations like for i in range(10): if i == 5: break
+325,0.0360,3.00e-04,0.77,1788908793.264312
+# [2026-09-08 19:06:33] SAMPLE step 325:
+# 
+# User: how do i print several values on the same line
+# Joe: Pass end=" " to print like print("a", end=" " "); print("b") outputs "a b" on one
+350,0.0347,3.00e-04,0.98,1788908818.8188999
+# [2026-09-08 19:06:59] SAMPLE step 350:
+# 
+# User: What is a string format in Python?
+# Joe: f-strings are the preferred way to format strings like f"Hello {name}, you are {age} years old", replacing the older 
+375,0.0328,3.00e-04,0.98,1788908844.415261
+# [2026-09-08 19:07:24] SAMPLE step 375:
+# 
+# User: how do i give a dict key a default value when it's missing
+# Joe: my_dict.setdefault("count", 0) writes 0 only if the key is absent and returns the current value either
+400,0.0328,3.00e-04,0.98,1788908869.96927
+# [2026-09-08 19:07:50] SAMPLE step 400:
+# 
+# User: how do i read an environment variable
+# Joe: os.environ["HOME"] reads it and raises KeyError when unset, while os.environ.get("HOME", "/tmp")
