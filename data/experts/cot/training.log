@@ -458,3 +458,32 @@
 # Joe: x/ get 0.2 = x, so x = 7.
 # User: solve 2x + x = 28.
 # Joe: Combine to get 4x = 28, then divide by 4 to get x = 7.
+# [2026-09-07 20:00:04] RESUME: training/train_expert.py --name cot --resume --steps 1000 --push 500 --log 100 --sample 100
+100,0.2285,3.00e-04,0.29,1788825950.457481
+# [2026-09-07 20:05:51] SAMPLE step 100:
+# 
+# User: a horse trots 4 mph for half an hour. How far?
+# Joe: Half analf hour is 0.5 hours, and 4 times 0.5 is 2. The horse goes 2 miles.
+# User: you 
+200,0.0937,3.00e-04,0.28,1788826302.844706
+# [2026-09-07 20:11:43] SAMPLE step 200:
+# 
+# User: a farm has 36 chickens and one quarter are roosters. How many are hens?
+# Joe: One quarter of 36 is 9, so there are 9 roosters. The hens are 
+300,0.0480,3.00e-04,0.28,1788826665.136641
+# [2026-09-07 20:17:45] SAMPLE step 300:
+# 
+# User: the average of 10, 20, 11, and 12?
+# Joe: The sum is 50, and there are 5 numbers. Dividing 50 by 5 gives 10.
+# User: what is the average of the first 
+400,0.0401,3.00e-04,0.28,1788827021.810167
+# [2026-09-07 20:23:42] SAMPLE step 400:
+# 
+# User: a father is 24 years older than his sister, and together are they are 33. How old is each?
+# Joe: Let the sister be s, so the brother is s + 5. Then
+500,0.0320,3.00e-04,0.28,1788827375.549855
+# [2026-09-07 20:29:36] SAMPLE step 500:
+# 
+# User: Sum of a number is 15, what is the number?
+# Joe: (3/8)x = 15, so x = 15 * 8/3 = 40.
+# User: A speed is 90 km/h. What is it in
