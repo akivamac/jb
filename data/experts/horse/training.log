@@ -3768,3 +3768,32 @@ User: What is a farri
 # User: Why does my horse nibble hay then leave it alone?
 # Joe: A lone horse whinn play need several years. catch years. Brate that a net body ever return to a stress 
 # [2026-09-07 01:26:11] FINISH at step 6000
+# [2026-09-07 20:00:04] RESUME: training/train_expert.py --name horse --resume --steps 500 --push 500 --log 100 --sample 100
+100,0.1218,3.00e-04,0.27,1788825981.662326
+# [2026-09-07 20:06:22] SAMPLE step 100:
+# 
+# User: What is a horse trailer?
+# Joe: A horse trading has a metal ound while Walking bred for the front legs and the moother ride. It is a one need simply to 
+200,0.0652,3.00e-04,0.26,1788826372.624149
+# [2026-09-07 20:12:53] SAMPLE step 200:
+# 
+# 
+# User: Why does my horse trip jump hold boots?
+# Joe: A bing boots fits guard the inside of the leg at the hoof that acts as a shock absorber. It also 
+300,0.0480,3.00e-04,0.24,1788826786.8907452
+# [2026-09-07 20:19:47] SAMPLE step 300:
+# 
+# User: What is a horse's shine?
+# Joe: The horse's breed formation is the joint on the front leg between the forearm and the cannon bone. It is equivalent to the human 
+400,0.0430,3.00e-04,0.25,1788827190.64915
+# [2026-09-07 20:26:31] SAMPLE step 400:
+# 
+# 
+# User: Why is a horse's hay quality so important?
+# Joe: Horses bred are born for heavy car, and horses two while lightly lightly own guides caliz ories per with 
+500,0.0406,3.00e-04,0.24,1788827602.6581361
+# [2026-09-07 20:33:23] SAMPLE step 500:
+# 
+# Joe: A bridle is the often lop that protects the from pressure of carryingness and itself while pattern. It is a bouncy that mouth in, and Many owners use for the horse.
+# 
+# User:
