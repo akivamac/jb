@@ -39,8 +39,8 @@ commit_wip() {
 }
 
 signal_present() {
-  timeout 60 git fetch origin "$BR" 2>/dev/null || return 1
-  git log --oneline -30 "origin/$BR" | grep -q "$SIGNAL_TOKEN"
+  timeout 60 git fetch "$REMOTE" "$BR" 2>/dev/null || return 1
+  git log --oneline -30 "$REMOTE/$BR" | grep -q "$SIGNAL_TOKEN"
 }
 
 # Run one pass: all experts, max 3 parallel, --push 1000.
@@ -72,7 +72,7 @@ case "$1" in
     PH1_END=$(( $(date +%s) + PHASE2_HOURS*3600 ))
     while [ "$(date +%s)" -lt "$PH1_END" ]; do run_pass; log "pass finished"; done
     commit_wip
-    git push -q origin HEAD:main 2>/dev/null && log "final push ok" || log "final push failed"
+    git push -q "$REMOTE" HEAD:main 2>/dev/null && log "final push ok" || log "final push failed"
     log "DONE."
     exit 0
     ;;
@@ -106,7 +106,7 @@ while ! signal_present; do
 done
 
 log "doubled-data commit confirmed; pulling it in..."
-git -c user.name="akivamac" -c user.email="akivamac@k4r.org" pull --rebase origin "$BR" \
+git -c user.name="akivamac" -c user.email="akivamac@k4r.org" pull --rebase "$REMOTE" "$BR" \
     >> "$LOG" 2>&1 || { log "rebased? if this failed, resolve and re-run 'bash $0 phase2'"; exit 1; }
 
 # ============================ PHASE 2 ======================================
