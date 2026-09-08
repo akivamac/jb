@@ -865,3 +865,26 @@ User:
 # 
 # User: What is the difference between == and is in Python?
 # Joe: == checks if two values are equal by comparing their contents, while is checks if two variables point to the exact same object
+225,0.0312,3.00e-04,0.74,1788909270.0953941
+# [2026-09-08 19:14:30] SAMPLE step 225:
+# 
+# User: What is the difference between == and is in Python?
+# Joe: == checks if two values are equal by comparing their contents, while is checks if two variables point to the exact same object
+250,0.0315,3.00e-04,0.98,1788909295.690342
+# [2026-09-08 19:14:56] SAMPLE step 250:
+# 
+# Joe: A set is a set comprehension
+# Joe: {x % 3 for x in range(10)} builds a set of the results, deduplicating automatically, and it accepts the same if conditions
+275,0.0317,3.00e-04,0.98,1788909321.2683709
+# [2026-09-08 19:15:21] SAMPLE step 275:
+# 
+# Joe: Use a comprehension like {v: k for k, v in d.items() if k not in to_drop}.
+# 
+# User: how do i merge two dictionaries in python
+# Joe: merged 
+300,0.0323,3.00e-04,0.98,1788909346.834522
+# [2026-09-08 19:15:47] SAMPLE step 300:
+# 
+# Joe: Use slicing with a negative step like s[::-1] which returns the entire string in reverse, and since strings are immutable there is no reverse method for them.
+# 
+# User: how do i re
