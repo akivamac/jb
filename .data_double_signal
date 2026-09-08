@@ -1,0 +1,13 @@
+DOUBLE-DONE
+
+The overnight24.sh script watches for a commit on origin/main whose
+"oneline" contains this token: DOUBLE-DONE
+
+When the 10-expert training data has been genuinely doubled (target 2x,
+reviewed + deduped + merged into each *_train.txt), push a commit with a
+message containing "DOUBLE-DONE" so the Mac pulls it overnight for phase 2.
+
+Commit message to use:
+  chore: DOUBLE-DONE doubled training data for all 10 experts (10x -> 20x)
+
+NEVER change the token. Keep this file in the repo.
