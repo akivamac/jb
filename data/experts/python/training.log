@@ -1021,3 +1021,24 @@ User:
 # Joe: max(a, b2 for elementor my_dict.get(replace order, stop]) gives [2, [2, 3] though list comprehensions are usually preferred.
 # 
 # User: What is a list comprehension in
+925,0.0308,3.00e-04,0.77,1788910037.294419
+# [2026-09-08 19:27:17] SAMPLE step 925:
+# 
+# Joe: A shallow there copy duplicates the outer object only, leaving inner objects shared between the two, while copy.deepcopy() recursively duplicates everything so changes to nested content never le
+950,0.0321,3.00e-04,0.98,1788910062.8886259
+# [2026-09-08 19:27:43] SAMPLE step 950:
+# 
+# Joe: Use the raw string keeps backslashes verbatim so r"C:\Users\joe" and r"\d+" for a regex aren't interpreted as escape sequences, which saves a 
+975,0.0309,3.00e-04,0.98,1788910088.4909592
+# [2026-09-08 19:28:08] SAMPLE step 975:
+# 
+# Joe: A __function is a reusable block of code defined with def name(params): that optionally returns a value with the return statement.
+# 
+# User: What is a return value in Python?
+# Joe: A return 
+1000,0.0292,3.00e-04,0.98,1788910114.124355
+# [2026-09-08 19:28:34] SAMPLE step 1000:
+# 
+# 
+# User: What is a lambda function in Python?
+# Joe: A lambda is a small anonymous function defined in one line like add = lambda a, b: a + b, useful for
