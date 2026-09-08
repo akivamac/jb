@@ -752,3 +752,27 @@ User:
 # 
 # User: whats the difference between packing and unpacking arguments
 # Joe: In a definition *args collects extra positional arguments into a tuple and **kwargs into a dict; in a
+225,0.0357,3.00e-04,0.78,1788908684.1399941
+# [2026-09-08 19:04:44] SAMPLE step 225:
+# 
+# User: how do i iterate over a list backwards
+# Joe: reversed(my_list) iterates from last to first without copying the list, while my_list[::-1] gives you a reversed copy instead.
+250,0.0333,3.00e-04,0.98,1788908709.7107189
+# [2026-09-08 19:05:10] SAMPLE step 250:
+# 
+# 
+# User: how do i add a single item to a list
+# Joe: unpack .append([2]) gives [([1, [2].
+# 
+# User: how do i put an item at a specific index in a list
+275,0.0359,3.00e-04,0.98,1788908735.286162
+# [2026-09-08 19:05:35] SAMPLE step 275:
+# 
+# User: how do i just the most common element in a list.
+# 
+# Joe: Counter(my_list).most_common(1)[0][0] extracts the top item, or most_common(3) returns the top three as 
+300,0.0349,3.00e-04,0.98,1788908760.866497
+# [2026-09-08 19:06:01] SAMPLE step 300:
+# 
+# User: How do I break a string in Python?
+# Joe: break exits the nearest enclosing loop immediately, skipping any remaining iterations like for i in range(10): if i == 5: break
