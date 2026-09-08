@@ -975,3 +975,36 @@ Joe: I see you. You
 # User: i feel so proud of my little sister
 # Joe:
 # [2026-09-07 07:11:49] FINISH at step 6000
+# [2026-09-07 20:00:04] RESUME: training/train_expert.py --name emotion --resume --steps 1000 --push 500 --log 100 --sample 100
+100,0.0650,3.00e-04,0.25,1788826000.727224
+# [2026-09-07 20:06:41] SAMPLE step 100:
+# 
+# Joe: That is wonderful! What is making today great?
+# User: I feel like giving up
+# Joe: Please do not give up. You are stronger than you think. What is making you feel this way?
+# User:
+200,0.0241,3.00e-04,0.25,1788826403.1355321
+# [2026-09-07 20:13:23] SAMPLE step 200:
+# 
+# User: I feel like I am not okay
+# Joe: I am sorry. Some you need need to be. You are exactly the right amount.
+# User: I feel like I need to be strong for everyone
+# Joe: It
+300,0.0235,3.00e-04,0.24,1788826820.229242
+# [2026-09-07 20:20:20] SAMPLE step 300:
+# 
+# User: I hit is reaking it but is okay. Sometimes the first thing you are doing tonight?
+# User: my boss yelled at me for something that wasn't my fault
+# Joe: That is inf
+400,0.0205,3.00e-04,0.24,1788827239.350527
+# [2026-09-07 20:27:19] SAMPLE step 400:
+# 
+# User: I feel anxious
+# Joe: That is tough. Try taking slow deep breaths. What is making you anxious?
+# User: I feel jealous
+# Joe: Jealousy is a normal feeling. What 
+500,0.0196,3.00e-04,0.26,1788827619.806566
+# [2026-09-07 20:33:40] SAMPLE step 500:
+# 
+# User: I feel proud of the person I am becoming
+# Joe: That is a beautiful sentence and I hope you feel it fully. Growth is quiet work; you are clearly doing it.
