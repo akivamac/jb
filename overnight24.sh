@@ -10,6 +10,11 @@ REPO="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO" || exit 1
 LOG="$REPO/overnight24.log"
 
+# The Mac's training stack pushes via the remote named "jb"
+# (see git_push in training/train_expert.py). Use that remote if present.
+if git remote | grep -qx jb; then REMOTE=jb; else REMOTE=origin; fi
+echo "using remote: $REMOTE" >> "$LOG"
+
 # ---- signal setup (also saved in .data_double_signal) ----
 SIGNAL_FILE="$REPO/.data_double_signal"
 SIGNAL_TOKEN="DOUBLE-DONE"
