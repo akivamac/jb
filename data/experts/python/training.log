@@ -979,3 +979,24 @@ User:
 # Joe: int("photo.jpello(0, 2) splits on the literal newline character.
 # 
 # User: how do i join a list of numbers into a 
+725,0.0308,3.00e-04,0.73,1788909818.3042612
+# [2026-09-08 19:23:38] SAMPLE step 725:
+# 
+# User: What is a docstring in Python?
+# Joe: A docstring is a string literal as the first line in a module, class, or function ceives the from the math module provides 
+750,0.0307,3.00e-04,0.98,1788909843.8905642
+# [2026-09-08 19:24:04] SAMPLE step 750:
+# 
+# 
+# User: how do i format a number as hex or binary
+# Joe: hex(255) returns "0xff" and bin(5) returns "0b101", or use f-strings like f"{255:x}"
+775,0.0292,3.00e-04,0.98,1788909869.476485
+# [2026-09-08 19:24:29] SAMPLE step 775:
+# 
+# User: how do i check if a key exists in a dictionary in Python?
+# Joe: Use the in operator like "name" in my_dict, which returns True if the key exists, or use 
+800,0.0302,3.00e-04,0.98,1788909895.091389
+# [2026-09-08 19:24:55] SAMPLE step 800:
+# 
+# User: what is a namedtuple for value in Python?
+# Joe: A set is mutable so you can add, remove, and change elements, while a tuple is immutable after creation and is faster with 
