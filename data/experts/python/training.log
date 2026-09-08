@@ -909,3 +909,25 @@ User:
 # 
 # User: What is a package in Python?
 # Joe: A package is a directory containing multiple modules and an __init__.py file, imported like import mypackage.mymodule to organize larger codebases.
+425,0.0294,3.00e-04,0.78,1788909488.635749
+# [2026-09-08 19:18:08] SAMPLE step 425:
+# 
+# 
+# User: whats the difference between except: and except Exception:
+# Joe: except: catches absolutely everything including KeyboardInterrupt and SystemExit, while except Exception excludes those
+450,0.0311,3.00e-04,0.98,1788909514.180963
+# [2026-09-08 19:18:34] SAMPLE step 450:
+# 
+# Joe: Open with the "b" flag: with open("img.png", "rb") as f: data = f.read() gives you bytes, and written text must be encoded first like f.write
+475,0.0302,3.00e-04,0.98,1788909539.754587
+# [2026-09-08 19:19:00] SAMPLE step 475:
+# 
+# Joe: f"{x:.2f}".
+# 
+# User: what does the second argument to round do
+# Joe: It's the number of decimal places like round(2.71828, 3) returns 2.718, and a negative value round
+500,0.0288,3.00e-04,0.98,1788909565.355031
+# [2026-09-08 19:19:25] SAMPLE step 500:
+# 
+# User: how do i convert a datetime to a formatted string and back
+# Joe: now.strftime("%Y-%m-%d") formats to "2026-09-09-04" and datetime.strptime("20
