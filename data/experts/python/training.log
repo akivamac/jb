@@ -818,3 +818,29 @@ User:
 # 
 # User: what is a could small class called several any exists do
 # Joe: Use the 
+# [2026-09-08 19:09:46] FINISH at step 500
+# [2026-09-08 19:10:15] RESUME: training/train_expert.py --name python --steps 1000 --resume --push 100 --log 25 --sample 25
+# [2026-09-08 19:10:24] RESUME: training/train_expert.py --name python --steps 1000 --resume --push 100 --log 25 --sample 25
+25,0.0297,3.00e-04,0.74,1788909049.221611
+# [2026-09-08 19:10:49] SAMPLE step 25:
+# 
+# Joe: for k in dir(my_dict, "_"]) returns the us keys and returns the current value either way, while a defaultdict from collections automates the same idea across many keys.
+50,0.0323,3.00e-04,0.98,1788909074.814522
+# [2026-09-08 19:11:15] SAMPLE step 50:
+# 
+# Joe: Because decorator default values to produce a outer over.
+# 
+# User: how do i a function into a function
+# Joe: Return it gives remain by a system functions like value
+# Joe: difference between a shallo
+75,0.0329,3.00e-04,0.98,1788909100.3803608
+# [2026-09-08 19:11:40] SAMPLE step 75:
+# 
+# User: how do i print a value from a dict that might not exist
+# Joe: my_dict.get("missing") returns None without raising and my_dict.get("missing", "fallback") returns 
+100,0.0314,3.00e-04,0.98,1788909125.956836
+# [2026-09-08 19:12:06] SAMPLE step 100:
+# 
+# 
+# User: What is a class in Python?
+# Joe: A class is a blueprint for creating objects that bundles data and behavior, defined with class MyClass: followed by methods and an 
