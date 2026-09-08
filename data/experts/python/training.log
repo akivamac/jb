@@ -710,3 +710,23 @@ User:
 # 
 # User: can i loop over a generator twice
 # Joe: No, a generator is one-shot and yields nothing on a second pass pass once exhausted, so materialize it with list(gen) if you 
+# [2026-09-08 19:00:40] RESUME: training/train_expert.py --name python --steps 500 --resume --push 100 --log 25 --sample 25
+25,0.0654,3.00e-04,0.98,1788908466.0853581
+# [2026-09-08 19:01:06] SAMPLE step 25:
+# 
+# Joe: range(path.datetime("a_datetime module handles dates and times like datetime.now() for the current time, datetime(2025, 1, 1) for a specific date, and timedelta for date arithmet
+50,0.0882,3.00e-04,0.98,1788908491.5671208
+# [2026-09-08 19:01:31] SAMPLE step 50:
+# 
+# User: What is the sys module in Python?
+# Joe: The json module handles JSON data with json.loads() to parse a JSON string into a Python dict, json.dumps() to 
+75,0.0500,3.00e-04,0.98,1788908517.054697
+# [2026-09-08 19:01:57] SAMPLE step 75:
+# 
+# Joe: Truthiness means Python treats some values as boolean in conditions: False, None, 0, empty strings, and empty collections are falsy, while everything else is truthy.
+# 
+100,0.0399,3.00e-04,0.98,1788908542.568949
+# [2026-09-08 19:02:22] SAMPLE step 100:
+# 
+# User: how do i reload a module in an interactive session after editing it
+# Joe: Use importlib; importlib.reload(my_module) which re-executes the module code in place,
