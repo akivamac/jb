@@ -1000,3 +1000,24 @@ User:
 # 
 # User: what is a namedtuple for value in Python?
 # Joe: A set is mutable so you can add, remove, and change elements, while a tuple is immutable after creation and is faster with 
+825,0.0323,3.00e-04,0.76,1788909928.044977
+# [2026-09-08 19:25:28] SAMPLE step 825:
+# 
+# Joe: Open the file in write mode and use write like with open("out.txt", "w") as f: f.write("hello\n"), and use "a" mode instead of "w" to append without
+850,0.0303,3.00e-04,0.98,1788909953.606085
+# [2026-09-08 19:25:53] SAMPLE step 850:
+# 
+# Joe: Run pip install requests inside the activated environment to fetch and install it, and it will be isolated to that venv rather than the system python
+# Joe: enced string at and
+875,0.0298,3.00e-04,0.98,1788909979.226005
+# [2026-09-08 19:26:19] SAMPLE step 875:
+# 
+# Joe: = "Joe", "}') parses the string into a real dict, and json.dumps(data) serializes a dict back into a JSON string.
+# 
+# User: how do i write a 
+900,0.0307,3.00e-04,0.98,1788910004.8584561
+# [2026-09-08 19:26:45] SAMPLE step 900:
+# 
+# Joe: max(a, b2 for elementor my_dict.get(replace order, stop]) gives [2, [2, 3] though list comprehensions are usually preferred.
+# 
+# User: What is a list comprehension in
