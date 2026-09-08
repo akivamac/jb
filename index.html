@@ -226,6 +226,31 @@
     }
     .speak-btn:hover { background: var(--user-bubble); color: var(--text); }
 
+    .voice-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      width: 40px; height: 40px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      flex-shrink: 0;
+      color: var(--text-muted);
+      position: relative;
+    }
+    .voice-btn:hover { background: var(--user-bubble); color: var(--text); }
+    .voice-btn.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+    .voice-btn.listening { animation: mic-pulse 1.5s infinite; }
+    @keyframes mic-pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.5); }
+      60%  { box-shadow: 0 0 0 10px rgba(229, 57, 53, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }
+    }
+    .voice-btn.listening { background: #e53935; color: white; border-color: #e53935; }
+
     /* Welcome */
     #welcome {
       flex: 1;
@@ -284,6 +309,8 @@
 
    <div id="input-area">
      <select id="expert-select"></select>
+     <button id="mic-btn" class="voice-btn" title="Always listening (speech to text)">🎤</button>
+     <button id="speak-btn" class="voice-btn" title="Auto-speak Joe's replies">🔊</button>
      <textarea id="user-input" placeholder="Type something..." rows="1" disabled></textarea>
      <button id="send-btn" disabled>➤</button>
    </div>
@@ -444,8 +471,8 @@
 
   let sending = false;
 
-  async function send() {
-    const text = input.value.trim();
+  async function send(text) {
+    text = (text === undefined) ? input.value.trim() : text.trim();
     if (!text || sending) return;
 
     sending = true;
@@ -515,6 +542,7 @@
             reply += data.char;
             bubble.textContent = reply || '...';
             messages.scrollTop = messages.scrollHeight;
+            streamTTSChar(data.char);
           }
         }
       }
@@ -532,6 +560,8 @@
       }
 
       history.push(['joe', reply]);
+
+      endTTS();
 
       if (window.speechSynthesis && reply) {
         const speakBtn = document.createElement('button');
@@ -556,6 +586,212 @@
     sendBtn.disabled = false;
     input.disabled = false;
     input.focus();
+
+    // If voice text arrived while sending, send it now
+    if (voicePending) {
+      const q = voicePending;
+      voicePending = '';
+      setTimeout(() => send(q), 200);
+    }
+  }
+
+  // ── Voice conversation ────────────────────────────────────────────────────
+
+  const micBtn = $('mic-btn');
+  const speakBtnAuto = $('speak-btn');
+  const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  let micActive = false;
+  let speakAuto = false;
+  let voicePending = '';
+  let recognition = null;
+  let voiceTimer = null;
+
+  // Streaming TTS state
+  let ttsBuf = '';
+  let preBuf = '';
+  let ttsWaitPreamble = true;
+  let ttsSpeaking = false;
+  let ttsBlocked = false;
+  let lastVoiceSent = '';
+
+  function pickVoice() {
+    const voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+    return voices.find(v => /en[-_]US/i.test(v.lang))
+        || voices.find(v => /^en/i.test(v.lang))
+        || null;
+  }
+
+  function speakChunk(t) {
+    if (!speakAuto || !window.speechSynthesis || !t.trim() || ttsBlocked) return;
+    ttsSpeaking = true;
+    const u = new SpeechSynthesisUtterance(t);
+    const v = pickVoice();
+    if (v) u.voice = v;
+    u.onend = () => { ttsSpeaking = false; drainTTS(); };
+    u.onerror = () => { ttsSpeaking = false; drainTTS(); };
+    speechSynthesis.speak(u);
+  }
+
+  function drainTTS() {
+    if (!speakAuto || ttsSpeaking || ttsBlocked) return;
+    let chunk = null;
+    const m = ttsBuf.match(/^[\s\S]{10,}?[.!?\n](?=\s|$)/);
+    if (m) chunk = m[0];
+    else if (ttsBuf.length >= 80) chunk = ttsBuf.slice(0, 80) + '.';
+    else return;
+    ttsBuf = ttsBuf.slice(chunk.length);
+    speakChunk(chunk);
+  }
+
+  function streamTTSChar(ch) {
+    if (!speakAuto || ttsBlocked) return;
+    if (ttsWaitPreamble) {
+      preBuf += ch;
+      // Decide if this is the reasoning preamble or a real answer.
+      if (/^Let's think step by step/i.test(preBuf)) {
+        if (ch === '\n') { preBuf = ''; ttsWaitPreamble = false; }
+      } else if (preBuf.length >= 25) {
+        ttsBuf = preBuf; preBuf = '';
+        ttsWaitPreamble = false;
+      } else if (!/^Let's think step by step/i.test(preBuf) && preBuf.length >= 2) {
+        ttsBuf = preBuf; preBuf = '';
+        ttsWaitPreamble = false;
+      }
+      if (!ttsWaitPreamble) drainTTS();
+      return;
+    }
+    ttsBuf += ch;
+    drainTTS();
+  }
+
+  function endTTS() {
+    if (ttsBlocked) return;
+    if (preBuf && !ttsWaitPreamble) ttsBuf = preBuf + ttsBuf, preBuf = '';
+    if (ttsBuf.trim()) {
+      const rest = ttsBuf.trim(); ttsBuf = '';
+      speakChunk(rest);
+    }
+    ttsWaitPreamble = true;
+  }
+
+  function resetTTS() {
+    ttsBuf = ''; preBuf = ''; ttsWaitPreamble = true;
+    ttsSpeaking = false; ttsBlocked = false;
+  }
+
+  function cancelVoice() {
+    resetTTS();
+    if (window.speechSynthesis) speechSynthesis.cancel();
+  }
+
+  function flushVoice() {
+    if (voiceTimer) { clearTimeout(voiceTimer); voiceTimer = null; }
+    const q = voicePending.trim();
+    voicePending = '';
+    if (!q) return;
+    if (q === lastVoiceSent) return;
+    lastVoiceSent = q;
+    if (sending) { voicePending = q; return; }
+    send(q);
+  }
+
+  function startListening() {
+    if (!SpeechRec || recognition || !micActive) return;
+    recognition = new SpeechRec();
+    recognition.continuous = false;
+    recognition.interimResults = true;
+    recognition.lang = 'en-US';
+
+    recognition.onresult = (e) => {
+      // Rebuild the whole transcript from all results each event,
+      // instead of appending from resultIndex (which resets on Android
+      // and re-delivers the same words forever).
+      let interim = '';
+      let final = '';
+      for (let i = 0; i < e.results.length; i++) {
+        const r = e.results[i];
+        const t = r[0].transcript.trim();
+        if (!t) continue;
+        if (r.isFinal) final = final ? final + ' ' + t : t;
+        else interim = interim ? interim + ' ' + t : t;
+      }
+      voicePending = final;
+      // Show live transcript to the user
+      const shown = [final, interim].filter(Boolean).join(' ');
+      if (shown) {
+        input.value = shown;
+        input.style.height = 'auto';
+        input.style.height = Math.min(input.scrollHeight, 120) + 'px';
+      }
+      if (final) {
+        if (voiceTimer) clearTimeout(voiceTimer);
+        voiceTimer = setTimeout(flushVoice, 1200);
+      }
+    };
+
+    recognition.onstart = () => {
+      // Barge-in: stop speaking as soon as the user starts talking.
+      if (window.speechSynthesis) speechSynthesis.cancel();
+      ttsBuf = ''; preBuf = ''; ttsSpeaking = false;
+    };
+
+    recognition.onerror = (e) => {
+      if (e.error === 'not-allowed') {
+        micActive = false;
+        micBtn.classList.remove('active', 'listening');
+        micBtn.title = 'Mic permission denied';
+      }
+    };
+
+    recognition.onend = () => {
+      recognition = null;
+      // Restart to stay always-listening (Chromium stops after each sentence).
+      if (micActive) startListening();
+    };
+
+    recognition.onnomatch = () => {};
+
+    try { recognition.start(); } catch (e) {}
+  }
+
+  function stopListening() {
+    micActive = false;
+    if (recognition) {
+      try { recognition.stop(); } catch (e) {}
+      recognition = null;
+    }
+    if (voiceTimer) { clearTimeout(voiceTimer); voiceTimer = null; }
+    if (input.value === voicePending.trim() && voicePending) input.value = '';
+  }
+
+  micBtn.addEventListener('click', () => {
+    if (!SpeechRec) return;
+    micActive = !micActive;
+    micBtn.classList.toggle('active', micActive);
+    micBtn.classList.toggle('listening', micActive);
+    micBtn.title = micActive ? 'Stop listening' : 'Always listening (speech to text)';
+    if (micActive) startListening();
+    else stopListening();
+  });
+
+  speakBtnAuto.addEventListener('click', () => {
+    speakAuto = !speakAuto;
+    speakBtnAuto.classList.toggle('active', speakAuto);
+    speakBtnAuto.title = speakAuto ? "Stop Joe's auto-voice" : "Auto-speak Joe's replies";
+    if (!speakAuto) cancelVoice();
+    if (speakAuto && window.speechSynthesis && speechSynthesis.getVoices().length === 0) {
+      speechSynthesis.onvoiceschanged = () => {};
+    }
+  });
+
+  // Hide mic button if speech recognition is unsupported
+  if (!SpeechRec) {
+    micBtn.style.display = 'none';
+    micBtn.title = 'Speech recognition not supported in this browser';
+  }
+  if (!window.speechSynthesis) {
+    speakBtnAuto.style.display = 'none';
   }
 
   // ── Check server ──────────────────────────────────────────────────────────
