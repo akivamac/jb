@@ -981,3 +981,61 @@ ValueError: probabilities contain NaN
 # User: what does a quantifier do in regex
 # Joe: Square brackets define a set of possible characters. [aeiou] matches exactly one vowel, and [0-9] matches one
 # [2026-09-07 08:53:36] FINISH at step 5000
+# [2026-09-09 19:19:31] RESUME: training/train_expert.py --name coding --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,2.5064,3.00e-04,0.36,1788996249.7796228
+# [2026-09-09 19:24:10] SAMPLE step 100:
+# 
+# Joe: A substring is any constructor contiguous than you can be a single right.
+# User: how do do i handle how a full program requescribecomes init
+# Joe: Python shared receives module 
+200,1.6103,3.00e-04,0.42,1788996486.813576
+# [2026-09-09 19:28:07] SAMPLE step 200:
+# 
+# Joe: It sets sets is a concurrencycle of a strings sorted data and a time. It deeous; remote retribut didsible overalls.
+# 
+# User: What is the Mes.O(n), It nearly switch
+300,1.0761,3.00e-04,0.50,1788996685.589878
+# [2026-09-09 19:31:26] SAMPLE step 300:
+# 
+# User: what is a list
+# Joe: A list is an ordered immutable collection. You create it with parentheses like (1, 2, 3).
+# User: what is a class
+# Joe: A class is a blueprint for
+400,0.7197,3.00e-04,0.58,1788996856.864337
+# [2026-09-09 19:34:17] SAMPLE step 400:
+# 
+# User: What is an event-driven?
+# Joe: L CPS obpy swaps is how will right between eiversal e and main achieve changes in (fewerpersistance.
+# 
+# User: What is stack is the your
+500,0.4025,3.00e-04,0.72,1788996996.148461
+# [2026-09-09 19:36:36] SAMPLE step 500:
+# 
+# Joe: A linked list is a data structure where each element points to the next one, unlike an array which stores elements concrete handle it.
+# User: what is a call An an inter
+# Joe: A
+600,0.2396,3.00e-04,0.72,1788997135.593708
+# [2026-09-09 19:38:56] SAMPLE step 600:
+# 
+# User: What is the difference between a directed graph and skecies a commits ?
+# Joe: A message broker is a single constraint for creating a solved and common to deep enon the history 
+700,0.1750,3.00e-04,0.72,1788997275.2044291
+# [2026-09-09 19:41:15] SAMPLE step 700:
+# 
+# Joe: A structure tree stores values with in used for reference without programs. Mixing it quotency collapmaps and at call for falls and hand less type.
+# 
+# User: What is the command pattern?
+800,0.1295,3.00e-04,0.72,1788997413.749215
+# [2026-09-09 19:43:34] SAMPLE step 800:
+# 
+# Joe: A stack is a last-in-first-out data structure. You push items right where each element and node. BST.Itemaining at Rand can encryption reves, how iencryption the 
+900,0.1113,3.00e-04,0.73,1788997551.363054
+# [2026-09-09 19:45:51] SAMPLE step 900:
+# 
+# Joe: The Quickic has well two work1 engines re. Optizipping means keys. It is used in search fferreducing consistents, programming moieve ex priormal ftom explication shows,
+1000,0.0981,3.00e-04,0.73,1788997688.950666
+# [2026-09-09 19:48:09] SAMPLE step 1000:
+# 
+# User: what is a list
+# Joe: A list is a data structure where each element points to the next one, unlike an array expressions. It also works on the tree without changing the Bang.
+# User: 
