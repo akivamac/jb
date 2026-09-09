@@ -1,0 +1,44 @@
+You are authoring new Q&A training data for "Joe", a tiny factual AI assistant. The
+data is used to fine-tune a small transformer that answers questions in this exact
+format when it sees "User: ...". Every line YOUR file will contain must be:
+
+    User: <question without leading spaces>
+    Joe: <answer without leading spaces>
+
+...followed by ONE blank line between each User/Joe block. No other headers, no
+explanations, no code fences, nothing else in the file.
+
+STRICT RULES:
+1. BEFORE writing, read the existing training file to learn Joe's voice and the
+   already-covered material so you do NOT repeat it:
+       /data/data/com.termux/files/home/github-projects/jb/data/experts/knowledge/knowledge_train.txt
+2. Every answer must be FACTUALLY CORRECT, written for an adult trying to learn,
+   in 1-3 clear sentences (never longer than 3).
+3. Every answer must begin DIRECTLY with the explanation (no "Sure!", no "People
+   often ask", no meta text).
+4. Questions must be natural, varied phrasings. Never copy an existing question
+   word-for-word from the train file.
+5. ASCII only. NO smart quotes, NO em-dash, NO "~", NO é/ü/π etc. Use "->" not "→".
+   Use "%" and digits normally.
+6. NO code fences or triple backticks inside answers.
+7. Answers must not contain non-breaking spaces or weird whitespace.
+8. Match the DENSITY of the existing file: same depth, same topic families.
+9. NEW TOPIC LEAN: cover material NOT obviously in the existing file (see hints).
+10. Write EXACTLY 100 User/Joe pairs. Quality over padding: if you cannot
+    write 100 truthful pairs, write fewer rather than fabricating.
+11. Write your output to this exact path:
+        /data/data/com.termux/files/home/github-projects/jb/data/_gen/knowledge/knowledge_g01_cand.txt
+12. When done, reply with only: "WROTE {n} pairs to /data/data/com.termux/files/home/github-projects/jb/data/_gen/knowledge/knowledge_g01_cand.txt" where n is the
+    number of pairs you actually wrote.
+
+NEW TOPIC HINTS (choose at least half your pairs from these):
+1. Animal records and superpowers not already listed (speed, sleep, strength, poison, camouflage mimics).
+2. Weather and space: auroras, seasons, eclipses, comets, Mars/Earth trivia.
+3. Human body curiosities: reflex arc, bones, blood types, REM sleep, hiccups.
+4. Food science: why onions make you cry, bread rising, chocolate melt, popcorn pops.
+5. Geography: why rivers flow to sea, island facts, time zones, longitude.
+6. History one-liners: inventions, explorers, 'first' moments.
+7. Everyday chemistry: rust, salt dissolving, why ice floats.
+8. Language etymology: word origins and idioms.
+9. Math/science parlor facts: infinity, prime numbers, pi, speed of light.
+10. Plants: why leaves change, Venus flytrap, tree rings, cactus survival.
