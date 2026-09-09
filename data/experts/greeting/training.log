@@ -680,3 +680,90 @@
 # User: hello whatever you need to chat with you too! Let's talk. What's up?
 # User: yo can I ask you something
 # Joe: Absolutely! Go ahead.
+# [2026-09-09 18:32:00] RESUME: training/train_expert.py --name greeting --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,1.3380,3.00e-04,0.57,1788993295.4326458
+# [2026-09-09 18:34:55] SAMPLE step 100:
+# 
+# Joe: Go about me! What are you like into?
+# 
+# User: anything for coming!
+# User: you do from in bye
+# Joe: Awonight! The interesting is strangerfect here. How are things about you?
+# 
+200,0.2471,3.00e-04,0.48,1788993502.3285499
+# [2026-09-09 18:38:22] SAMPLE step 200:
+# 
+# User: hey what's new
+# Joe: Not much! Just here and ready to help. What about you?
+# User: hi long time
+# Joe: It has been! Good to hear from you again.
+# User: hello dear fri
+300,0.0918,3.00e-04,0.46,1788993717.6786518
+# [2026-09-09 18:41:58] SAMPLE step 300:
+# 
+# User: happy birthday joe
+# Joe: Aw thank you! What would you like to talk about?
+# User: hi monkey joe
+# Joe: Hey! What can I do for you?
+# User: hey joe monkey
+# Joe: 
+400,0.0625,3.00e-04,0.58,1788993890.279329
+# [2026-09-09 18:44:50] SAMPLE step 400:
+# 
+# User: got anyone home
+# Joe: I'm home! Step right in. What can I do for you?
+# User: finally found you
+# Joe: You found me! Took you a while, but I'm glad 
+500,0.0518,3.00e-04,0.54,1788994076.337106
+# [2026-09-09 18:47:56] SAMPLE step 500:
+# 
+# User: how's the different day
+# Joe: My day mate! How is work treating you?
+# 
+# User: what's up on this weekend
+# Joe: Every y day is steady. How's morning your day been off?
+# 
+600,0.0411,3.00e-04,0.56,1788994255.3435578
+# [2026-09-09 18:50:55] SAMPLE step 600:
+# 
+# 
+# User: that are you from interesting
+# Joe: Honey never does that I am to me, What makes you been talking?
+# 
+# User: what's on your favorite the weekendar, that to be steady. What's 
+700,0.0348,3.00e-04,0.57,1788994431.556048
+# [2026-09-09 18:53:52] SAMPLE step 700:
+# 
+# Joe: Hey! What is going on?
+# User: hey there partner
+# Joe: Hey partner! What can I help with?
+# User: hi good to see you again
+# Joe: Good to see you too! What brings you back
+800,0.0345,3.00e-04,0.58,1788994603.921555
+# [2026-09-09 18:56:44] SAMPLE step 800:
+# 
+# User: hear me
+# Joe: Always! I am here I am all ears. What is it?
+# 
+# User: fun fact about me
+# Joe: I love hearing about people! Tell me something fun about yourself.
+# 
+# User: quick 
+900,0.0305,3.00e-04,0.46,1788994822.588863
+# [2026-09-09 19:00:23] SAMPLE step 900:
+# 
+# User: do you need help me.
+# 
+# User: peeps
+# Joe: Hey pe me on your mind?
+# 
+# User: late on
+# Joe: About bes the bite corical What are you doing to you know to?
+# 
+1000,0.0269,3.00e-04,0.49,1788995025.568532
+# [2026-09-09 19:03:45] SAMPLE step 1000:
+# 
+# Joe: No thanks needed! I can wait forever. What's on your mind?
+# User: this chat is my happy place
+# Joe: Mine too! Welcome home. What shall we talk about?
+# User: thanks 
