@@ -1,5 +1,12 @@
 # JoeBrain — Claude Instructions
 
+## REPO TOPOLOGY (IMPORTANT)
+- The NEW repo is **`akivamac/jb`** on GitHub. WORK HERE.
+- Tablet clone: **`/data/data/com.termux/files/home/github-projects/jb`** — always use this on the tablet.
+- Mac clone: **`~/github-projects/joe-brain`** — this is a CLONE of `akivamac/jb` (renamed dir, NOT the old Mj.ai repo). The Mac's remote is named `jb` → `akivamac/jb.git`. Training pushes on the Mac go through remote `jb`.
+- The OLD repo `akivamac/Mj.ai` and the tablet's old `~/github-projects/joe-brain` dir are DEAD — ignore them.
+- On the tablet, sync with GitHub by running `git pull --rebase origin main` (you are already cloned; do NOT `git clone` again).
+
 ## Context Window Strategy
 - Currently using **sliding window trimming** — oldest turns dropped when context exceeds seq_len
 - **Future**: swap to **compaction** (summarize old turns) once Joe is fluent enough to generate coherent summaries
@@ -62,7 +69,8 @@
   (`data/experts/{name}/training.lock`) and per-expert logs.
 
 ## Git
-- Branch: `new-monkey` on `akivamac/Mj.ai`
+- Repo: `akivamac/jb`, branch `main` (this repo was cloned from `jb`, formerly `new-monkey` on `Mj.ai`)
 - `data/tokenizer.json`, `data/experts.json` tracked in git
 - Expert `.npz` files tracked in git (per-expert)
 - Remote URL has PAT embedded for push auth
+- Mac pushes via remote named `jb`; tablet pushes via `origin` (= same PAT URL)
