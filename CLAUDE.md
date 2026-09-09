@@ -7,6 +7,11 @@
 - The OLD repo `akivamac/Mj.ai` and the tablet's old `~/github-projects/joe-brain` dir are DEAD — ignore them.
 - On the tablet, sync with GitHub by running `git pull --rebase origin main` (you are already cloned; do NOT `git clone` again).
 
+## THE TWO MACHINES (who's who)
+- **Tablet** = a Termux Android device, user `akiva`. Clone at `/data/data/com.termux/files/home/github-projects/jb`, pushes via `origin`.
+- **Mac** = Apple silicon machine, user `dev`. Clone at `~/github-projects/joe-brain`, remote named `jb` → `akivamac/jb.git`.
+- They never talk directly; they sync through GitHub. Either machine can generate data or train.
+
 ## Context Window Strategy
 - Currently using **sliding window trimming** — oldest turns dropped when context exceeds seq_len
 - **Future**: swap to **compaction** (summarize old turns) once Joe is fluent enough to generate coherent summaries
