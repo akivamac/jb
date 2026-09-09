@@ -1850,3 +1850,57 @@ Joe: Signs of illness in reptiles include lethargy, loss of appetite, weight los
 # 
 # User: What is a kill?
 # Joe: An is a large black body with armored and pink or eyes. A cdila snake's wall since is a different covered by a contact sand and a boast
+# [2026-09-07 19:07:46] FINISH at step 2000
+# [2026-09-09 16:11:08] RESUME: training/train_expert.py --name reptiles --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,1.3246,3.00e-04,0.52,1788984860.932491
+# [2026-09-09 16:14:21] SAMPLE step 100:
+# 
+# Joe: After casus a and boa constrictor is a large Australian python reaching 6 to 6 feet long, with hardy orange New Guinea, on chameleon with a reaching 
+200,1.0213,3.00e-04,0.56,1788985038.621969
+# [2026-09-09 16:17:19] SAMPLE step 200:
+# 
+# 
+# User: How do crocodiles take care of their young?
+# Joe: Crocodilians are unusual among reptiles in showing extensive parental care. After laying eggs in a 
+300,0.7774,3.00e-04,0.57,1788985214.325116
+# [2026-09-09 16:20:14] SAMPLE step 300:
+# 
+# 
+# User: Why are leopard gecko eyes so substress and concer in check the enclosure to experienced temperature?
+# Joe: Without a g set-active togetherer sociation with feel a mometer t
+400,0.5879,3.00e-04,0.59,1788985384.348866
+# [2026-09-09 16:23:04] SAMPLE step 400:
+# 
+# 
+# User: What is a reptile's visible?
+# Joe: The lizard characterized including movable eyelids, external ear openings, and the ability to drop their tails. There are many species worldwide, 
+500,0.4281,3.00e-04,0.46,1788985602.899765
+# [2026-09-09 16:26:43] SAMPLE step 500:
+# 
+# User: What is the difference between a crested gecko and a leopard gecko's heat and warm-blooded the fleast up to a rocky gressor soappropriateers. Enexest more intervine
+600,0.2863,3.00e-04,0.52,1788985795.1274822
+# [2026-09-09 16:29:55] SAMPLE step 600:
+# 
+# Joe: In many reptiles, showing riban geckos hard to carry both acts, causing spend them for one to three high-chambinered geckos and in ambush predators that wait along g 
+700,0.2378,3.00e-04,0.52,1788985988.0698502
+# [2026-09-09 16:33:08] SAMPLE step 700:
+# 
+# 
+# User: Are reptile conservation programs of urlow and corn snakes. Reptile corn snakes are popular pets due to their gentle temperament, hardiness, and ease of care. 
+800,0.1737,3.00e-04,0.52,1788986181.724332
+# [2026-09-09 16:36:22] SAMPLE step 800:
+# 
+# User: What is the conservation status of reptiles?
+# Joe: Reptile conservation varies widely by species. Many are threatened by habitat loss, climate change, pollution, invas
+900,0.1439,3.00e-04,0.53,1788986369.22865
+# [2026-09-09 16:39:29] SAMPLE step 900:
+# 
+# 
+# User: How do reptiles survive drought?
+# Joe: Desert reptiles survive drought through metabolic water production, efficient kidneys that produce concentrated uric acid instead of liquid ur
+1000,0.1246,3.00e-04,0.63,1788986528.3810198
+# [2026-09-09 16:42:08] SAMPLE step 1000:
+# 
+# 
+# User: What is a tapetum lucidum?
+# Joe: The Crocodilian and alligator if te, the name upper in the lower jaw and deliver venom through grooved teeth.
