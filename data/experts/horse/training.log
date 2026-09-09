@@ -3797,3 +3797,60 @@ User: What is a farri
 # Joe: A bridle is the often lop that protects the from pressure of carryingness and itself while pattern. It is a bouncy that mouth in, and Many owners use for the horse.
 # 
 # User:
+# [2026-09-07 20:33:34] FINISH at step 500
+# [2026-09-09 17:42:36] RESUME: training/train_expert.py --name horse --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,1.9691,3.00e-04,0.50,1788990356.3769789
+# [2026-09-09 17:45:56] SAMPLE step 100:
+# 
+# 
+# User: How do I pass a horse drate pa horse's grooming?
+# Joe: In joint relaxation can be a important suggin viron lead to colic weight or digestive so pline as
+200,1.4898,3.00e-04,0.58,1788990528.392641
+# [2026-09-09 17:48:48] SAMPLE step 200:
+# 
+# User: How often should a horse's digital pulse?
+# Joe: The resisted chanical typically indic level vide and about 31 at the horse's movement link. Const to strap are small light low 
+300,1.1899,3.00e-04,0.48,1788990737.6286411
+# [2026-09-09 17:52:18] SAMPLE step 300:
+# 
+# 
+# User: Why does my horse run the fence?
+# Joe: Excessary for a ner-friendurt Altions and quality with a flared to turnout is ray and good for horses with carefulness
+400,1.0238,3.00e-04,0.55,1788990920.919262
+# [2026-09-09 17:55:21] SAMPLE step 400:
+# 
+# 
+# User: Why does my horse puddle?
+# Joe: Some horses learn to rest their head or nuzulation, their instinct crampk themselves their noise and directly in behind the tail. It is 
+500,0.8177,3.00e-04,0.48,1788991128.562078
+# [2026-09-09 17:58:49] SAMPLE step 500:
+# 
+# User: just thin is four, pre-old disease and irritish?
+# Joe: A release contain a century to the forehand, advices en some is, unpleasant a horse and it may need hoov
+600,0.6743,3.00e-04,0.52,1788991320.434133
+# [2026-09-09 18:02:00] SAMPLE step 600:
+# 
+# 
+# User: Why does my horse need fly mask care?
+# Joe: A dirty fly mask holds bacteria and can rub sore spots, and a poor fit blocks vision. Daily checking and 
+700,0.5244,3.00e-04,0.56,1788991497.608774
+# [2026-09-09 18:04:58] SAMPLE step 700:
+# 
+# Joe: Sdently are typically done opstressa, dy, equine mouth, dental care reconditions, and supervised patterns, slopellet.
+# 
+# User: What is a horse's topline sense?
+# Joe: 
+800,0.3881,3.00e-04,0.54,1788991683.7954922
+# [2026-09-09 18:08:04] SAMPLE step 800:
+# 
+# Joe: A more forage resistance with deworming detecting murine buildup. It is why stiffna horse's shows visit designed conditioner and circulation.
+# 
+# User: What is a hoof absorpt for
+900,0.3073,3.00e-04,0.50,1788991883.181403
+# [2026-09-09 18:11:23] SAMPLE step 900:
+# 
+# Joe: Shorses need hosipon may be cold weather atite spring asitional ster affecting hoof the vet vet checked quallevulation. It is a hard managed parasites, and
+1000,0.2348,3.00e-04,0.51,1788992079.200468
+# [2026-09-09 18:14:39] SAMPLE step 1000:
+# 
+# Joe: The tie is the large, one male guof a horse better called normal urth scald while rates. A rate still maize keeps the amounts. A narter calm visits. Tresults
