@@ -487,3 +487,68 @@
 # User: Sum of a number is 15, what is the number?
 # Joe: (3/8)x = 15, so x = 15 * 8/3 = 40.
 # User: A speed is 90 km/h. What is it in
+# [2026-09-09 16:09:08] RESUME: training/train_expert.py --name cot --resume --steps 30 --log 10 --sample 0
+10,2.5603,3.00e-04,0.90,1788984559.396419
+20,1.4375,3.00e-04,0.93,1788984570.154803
+30,1.7412,3.00e-04,0.91,1788984581.19842
+# [2026-09-09 16:09:42] FINISH at step 30
+# [2026-09-09 17:42:36] RESUME: training/train_expert.py --name cot --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,1.1969,3.00e-04,0.50,1788990357.2188869
+# [2026-09-09 17:45:57] SAMPLE step 100:
+# 
+# User: What is 100 / (3/5) / (2/5)?
+# Joe: (3/4) / (2/5) = 6/26 = 24.
+# 
+# 
+# User: What is (1/3) * (1/2) = (1/
+200,0.7451,3.00e-04,0.58,1788990529.194921
+# [2026-09-09 17:48:49] SAMPLE step 200:
+# 
+# User: A field for it Factors both: 1 are PM rather than 15:400. Value = $1100 cm.
+# 
+# User: A Detheses = 42 * 0.03 = sqrt(84) -
+300,0.4858,3.00e-04,0.47,1788990740.2095292
+# [2026-09-09 17:52:20] SAMPLE step 300:
+# 
+# User: A square has area 6 + 8) / 2 = 7.
+# 
+# User: A store sells it in 5 liters long. Timags from on ities. How many inpull handshakes.
+# 
+# User: A a
+400,0.2935,3.00e-04,0.54,1788990924.500774
+# [2026-09-09 17:55:25] SAMPLE step 400:
+# 
+# Joe: Round Bob other is 72, which is 35. The our tran in average of $1 in 5 years?
+# Joe: After there bus is 6, rope then 7 parts = 1 + 3
+500,0.2048,3.00e-04,0.48,1788991132.7116969
+# [2026-09-09 17:58:53] SAMPLE step 500:
+# 
+# Joe: 45 / 100 = 4.80 * 8 = $432.
+# 
+# User: A string is inches long. One One moving one all. One0 they come in run width thinking. It means Two
+600,0.1431,3.00e-04,0.52,1788991326.832628
+# [2026-09-09 18:02:07] SAMPLE step 600:
+# 
+# User: what is 25% of 60% of 200?
+# Joe: 120% means the number increased by 25%.
+# User: A 10% decreased by 80% plus 15% of 200 is 80. Aned is 50. 
+700,0.1176,3.00e-04,0.56,1788991506.366334
+# [2026-09-09 18:05:06] SAMPLE step 700:
+# 
+# 
+# User: What is 9/10 minus 4/9?
+# Joe: Sum = 1/3 * 9/10 = 1/15 = 3/15. Since 1/3/4 is 0.20 equals 5/12 = 0.6 Bo = 
+800,0.0992,3.00e-04,0.52,1788991697.022629
+# [2026-09-09 18:08:17] SAMPLE step 800:
+# 
+# User: You have a 3 by 4 griditers. I ed on nyear salary of earneeting the toward each other cost 2 + 5, then 3. what take write if it ate est is per marked the
+900,0.0895,3.00e-04,0.50,1788991897.8831098
+# [2026-09-09 18:11:38] SAMPLE step 900:
+# 
+# Joe: a $8 item is ) that in 4 hours. What is the speed in km/h?
+# Joe: An reaction distance is 9. Carves that is 2 hours divided by 2.5 is 80. The conse
+1000,0.0822,3.00e-04,0.52,1788992090.809979
+# [2026-09-09 18:14:51] SAMPLE step 1000:
+# 
+# User: A trip at goes 20 km down long. What is the total handshake at?
+# Joe: The first increase is 10 dollars. Dividing 3 by 12 how much for 70 more. What is
