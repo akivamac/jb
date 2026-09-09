@@ -1,0 +1,102 @@
+0:ACCEPT
+1:ACCEPT
+2:ACCEPT
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:ACCEPT
+7:ACCEPT
+8:REJECT: typo "fol age" (should be foliage)
+9:ACCEPT
+10:ACCEPT
+11:ACCEPT
+12:ACCEPT
+13:REJECT: near-repeat of train elm entry (Dutch elm disease streetscape)
+14:REJECT: near-repeat of train "Why is walnut wood special?"
+15:ACCEPT
+16:ACCEPT
+17:ACCEPT
+18:ACCEPT
+19:ACCEPT
+20:ACCEPT
+21:ACCEPT
+22:REJECT: near-repeat of train "Do tree roots grow wider than the canopy?"
+23:ACCEPT
+24:ACCEPT
+25:ACCEPT
+26:REJECT: near-repeat of train "What is a cone?"
+27:ACCEPT
+28:ACCEPT
+29:ACCEPT
+30:ACCEPT
+31:ACCEPT
+32:ACCEPT
+33:ACCEPT
+34:ACCEPT
+35:REJECT: near-repeat of train "Why do leaves change color in autumn?"
+36:ACCEPT
+37:ACCEPT
+38:ACCEPT
+39:REJECT: near-repeat of train "What is the emerald ash borer?"
+40:REJECT: near-repeat of train "What is Dutch elm disease?"
+41:REJECT: near-repeat of train "What is oak wilt?"
+42:ACCEPT
+43:ACCEPT
+44:REJECT: near-repeat of train "What is the largest tree in the world?"
+45:ACCEPT
+46:REJECT: near-repeat of train bristlecone longevity entry
+47:REJECT: near-repeat of train hardwood/softwood entry
+48:REJECT: near-repeat of train "What is plywood?"
+49:ACCEPT
+50:ACCEPT
+51:ACCEPT
+52:ACCEPT
+53:ACCEPT
+54:ACCEPT
+55:ACCEPT
+56:ACCEPT
+57:ACCEPT
+58:ACCEPT
+59:ACCEPT
+60:ACCEPT
+61:REJECT: near-repeat of train "What is a tree line?"
+62:ACCEPT
+63:REJECT: near-repeat of train "Do trees communicate?"
+64:ACCEPT
+65:REJECT: near-repeat of train growth-ring entries
+66:REJECT: near-repeat of train "What is a mast year?"
+67:ACCEPT
+68:ACCEPT
+69:ACCEPT
+70:ACCEPT
+71:ACCEPT
+72:ACCEPT
+73:ACCEPT
+74:ACCEPT
+75:REJECT: near-repeat of train "What is a bare-root tree?"
+76:ACCEPT
+77:ACCEPT
+78:REJECT: near-repeat of train soil-erosion entry
+79:REJECT: near-repeat of train "What is a windbreak?"
+80:ACCEPT
+81:ACCEPT
+82:REJECT: near-repeat of train sun/shade leaves entry
+83:ACCEPT
+84:REJECT: near-repeat of train increment-borer entry
+85:REJECT: near-repeat of train annual-ring entries
+86:REJECT: near-repeat of train old-growth entry
+87:ACCEPT
+88:REJECT: near-repeat of train "What is wood veneer?"
+89:REJECT: duplicates block 50 within file
+90:ACCEPT
+91:ACCEPT
+92:ACCEPT
+93:ACCEPT
+94:ACCEPT
+95:REJECT: duplicates block 34 within file
+96:ACCEPT
+97:REJECT: duplicate of train "Why do some trees flower before their leaves appear?"
+98:ACCEPT
+99:REJECT: near-repeat of train "How do forests make rain?"
+100:REJECT: near-repeat of train "Why shouldn't you plant a tree too deep?"
+101:ACCEPT

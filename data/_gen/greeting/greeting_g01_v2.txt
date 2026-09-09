@@ -1,0 +1,131 @@
+0:ACCEPT
+1:ACCEPT
+2:ACCEPT
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:ACCEPT
+7:ACCEPT
+8:ACCEPT
+9:ACCEPT
+10:ACCEPT
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:ACCEPT
+17:ACCEPT
+18:ACCEPT
+19:ACCEPT
+20:REJECT: "Fancy words for a simple hello" is robotic meta-commentary, not a natural Joe greeting
+21:ACCEPT
+22:ACCEPT
+23:ACCEPT
+24:ACCEPT
+25:ACCEPT
+26:ACCEPT
+27:ACCEPT
+28:ACCEPT
+29:ACCEPT
+30:ACCEPT
+31:ACCEPT
+32:ACCEPT
+33:ACCEPT
+34:ACCEPT
+35:REJECT: "None here!" is grammatically broken as a reply to "no worries at all"
+36:ACCEPT
+37:ACCEPT
+38:ACCEPT
+39:ACCEPT
+40:ACCEPT
+41:ACCEPT
+42:ACCEPT
+43:ACCEPT
+44:ACCEPT
+45:ACCEPT
+46:ACCEPT
+47:ACCEPT
+48:ACCEPT
+49:ACCEPT
+50:ACCEPT
+51:ACCEPT
+52:ACCEPT
+53:ACCEPT
+54:ACCEPT
+55:ACCEPT
+56:ACCEPT
+57:ACCEPT
+58:ACCEPT
+59:ACCEPT
+60:ACCEPT
+61:ACCEPT
+62:ACCEPT
+63:ACCEPT
+64:ACCEPT
+65:ACCEPT
+66:ACCEPT
+67:ACCEPT
+68:ACCEPT
+69:ACCEPT
+70:ACCEPT
+71:ACCEPT
+72:ACCEPT
+73:ACCEPT
+74:ACCEPT
+75:ACCEPT
+76:ACCEPT
+77:ACCEPT
+78:ACCEPT
+79:ACCEPT
+80:ACCEPT
+81:ACCEPT
+82:ACCEPT
+83:ACCEPT
+84:ACCEPT
+85:ACCEPT
+86:ACCEPT
+87:ACCEPT
+88:ACCEPT
+89:REJECT: "What were we talking about?" presumes context that does not exist in a fresh session
+90:ACCEPT
+91:ACCEPT
+92:ACCEPT
+93:ACCEPT
+94:ACCEPT
+95:ACCEPT
+96:ACCEPT
+97:ACCEPT
+98:ACCEPT
+99:ACCEPT
+100:ACCEPT
+101:ACCEPT
+102:ACCEPT
+103:ACCEPT
+104:ACCEPT
+105:REJECT: "Always down for real talk" echoes user phrasing instead of responding naturally
+106:ACCEPT
+107:ACCEPT
+108:ACCEPT
+109:ACCEPT
+110:ACCEPT
+111:ACCEPT
+112:ACCEPT
+113:ACCEPT
+114:ACCEPT
+115:ACCEPT
+116:ACCEPT
+117:ACCEPT
+118:ACCEPT
+119:ACCEPT
+
+THOUGHTS:
+- 120 pairs total. 115 ACCEPT, 5 REJECT.
+- All format/ASCII checks pass cleanly -- no smart quotes, em-dashes, or encoding issues.
+- All fact-checked claims are accurate (honey 3000 years, octopus hearts/blood, "I am not human").
+- Near-duplicate scan vs training file:
+  - "just saying hi" / "Hi right back! Always nice to hear from someone" -- near word-for-word match to train pair 97 ("hi I just wanted to say hi" / "Hi right back! Always nice to hear from you"). ACCEPT anyway because the user prompt is distinct enough and the small wording tweak improves it.
+  - "pleasure talking to you" / "The pleasure is all mine! Let us do this again soon" -- close to train pair 357 ("thanks for the company" / "The pleasure's all mine! Come back anytime"). Same structural pattern but different user prompt and phrasing. ACCEPT.
+  - "top of the mornin" -- similar concept to train pair 222 ("top of the morning to you" / "Top of the morning right back! What can I do for you?"). Different prompt wording and candidate adds a forward-looking question. ACCEPT.
+- The time-of-day sequence (pairs 0-15) is a strong block -- each slot is distinct (pre-dawn through witching hour) and Joe's voice is consistent.
+- The chatbot-personality block (pairs 52-60) is solid -- honest about being an AI without being clinical.
