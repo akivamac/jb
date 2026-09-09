@@ -1042,3 +1042,64 @@ User:
 # 
 # User: What is a lambda function in Python?
 # Joe: A lambda is a small anonymous function defined in one line like add = lambda a, b: a + b, useful for
+# [2026-09-08 19:28:42] FINISH at step 1000
+# [2026-09-09 19:19:31] RESUME: training/train_expert.py --name python --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,1.9351,3.00e-04,0.36,1788996249.9211001
+# [2026-09-09 19:24:10] SAMPLE step 100:
+# 
+# 
+# User: how do i use os.path.join Use to you directly directories, which the confirms is picks and not from exten add a number to end automatically like "abstr() or like " 
+200,1.1454,3.00e-04,0.42,1788996486.712605
+# [2026-09-09 19:28:07] SAMPLE step 200:
+# 
+# User: how do i use a lambda with the flag path of a file
+# Joe: Pass end= pds, with comb, pullass the position, which is faster than calling ltuples or re
+300,0.6963,3.00e-04,0.50,1788996684.752649
+# [2026-09-09 19:31:25] SAMPLE step 300:
+# 
+# 
+# User: What is `__subclassap?
+# Joe: `__a field is an assigned to a one on element like def factory(cls, : def process(item): cls and Because assignment inside the function returns the
+400,0.4305,3.00e-04,0.58,1788996856.63264
+# [2026-09-09 19:34:17] SAMPLE step 400:
+# 
+# 
+# User: How do you use `parsert statement with cur?
+# Joe: `@dataclass(frozen=True)` on for ted. Use for inte\dir())` for directories, and streaming for directories,
+500,0.2383,3.00e-04,0.72,1788996995.9105449
+# [2026-09-09 19:36:36] SAMPLE step 500:
+# 
+# User: how do i catch do i use a context manager
+# Joe: Use defaultite for when would i use transaction.txtes or moves as Cothing even lazacts like the setremove before on statement.
+# 
+# User:
+600,0.1534,3.00e-04,0.72,1788997135.351902
+# [2026-09-09 19:38:55] SAMPLE step 600:
+# 
+# 
+# User: What is a boolean in Python?
+# Joe: A boolean is either True or False, used for logical operations with and, or, and not operators.
+# 
+# User: How do I 
+700,0.1278,3.00e-04,0.72,1788997274.967523
+# [2026-09-09 19:41:15] SAMPLE step 700:
+# 
+# 
+# User: how do i check if a file is a directory
+# Joe: os.path.exists('a/b/c.txt"): gives just the ump off a tuple {".2"1 returns "007", where 3 is
+800,0.1072,3.00e-04,0.72,1788997413.415877
+# [2026-09-09 19:43:33] SAMPLE step 800:
+# 
+# User: How do you create a subparent from a child class
+# Joe: Use BY, int) the with us initial list
+# Joe: merged = a | a LE allows computes the field and hash nor
+900,0.0963,3.00e-04,0.73,1788997551.037174
+# [2026-09-09 19:45:51] SAMPLE step 900:
+# 
+# Joe: os.move("sing"data.2", "fallback") returns your own default value instead. of "w": context() partistraight to the right using the file is False becomes requires) to the first 
+1000,0.0872,3.00e-04,0.73,1788997688.6266072
+# [2026-09-09 19:48:09] SAMPLE step 1000:
+# 
+# Joe: Use int_Gadumters The regresults handleap `es, Import a ved max-heap readya version heap it operations.
+# 
+# User: how do i escape a byte separated like hash= 
