@@ -312,3 +312,10 @@ Next Milestone: Complete 50k-step training, evaluate quality
   relations, and the image domain/dataset.
 - Status: concept only; revisit after current retrain round is complete.
 
+## 19. Doubling Campaign (Sep 9, 2026)
+
+- Tablet doubled 5 existing experts via parallel author+dual-review+merge: greeting 456,
+  emotion 581, knowledge 547, tree 574, reptiles 936.
+- Handed the Mac the remaining 5 (fish ~890, horse ~590, coding ~350, python ~340, cot ~410)
+  plus the big retrain; Mac push must carry the `DOUBLE-DONE` token when finished.
+
