@@ -931,3 +931,59 @@
 # 
 # User: What is a peach tree?
 # Joe: The peach is a small deciduous fruit tree with fragrant pink blossoms. Its fuzzy fruit has a single hard stone, and peach
+# [2026-09-07 19:14:32] FINISH at step 2000
+# [2026-09-09 16:11:08] RESUME: training/train_expert.py --name tree --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,1.6034,3.00e-04,0.52,1788984861.848715
+# [2026-09-09 16:14:22] SAMPLE step 100:
+# 
+# 
+# User: Why do mangroves trees?
+# Joe: Trees usually have evolved fire to night gravity. Root often and hollow seed nurseries of small tree with caring leaves. The coast se
+200,0.7684,3.00e-04,0.56,1788985039.542058
+# [2026-09-09 16:17:20] SAMPLE step 200:
+# 
+# User: Why do woodpeckers flower and early in spring when growth is fast, and a darker latewood band formed later in the season. Together they show one year of wood 
+300,0.3105,3.00e-04,0.57,1788985213.9014919
+# [2026-09-09 16:20:14] SAMPLE step 300:
+# 
+# User: Why is the poplar pines of s?
+# Joe: The damage weightaspen, willow cellulosegus cluster on it grove whether while running them to wood. Onleaf than a t
+400,0.1541,3.00e-04,0.59,1788985382.370704
+# [2026-09-09 16:23:02] SAMPLE step 400:
+# 
+# 
+# User: Why do trees reduce noise pollution?
+# Joe: Dense rows of trees and shrubs absorb, scatter, and soften sound, so traffic noise drops behind green belts. Trun
+500,0.1054,3.00e-04,0.46,1788985600.7844338
+# [2026-09-09 16:26:41] SAMPLE step 500:
+# 
+# 
+# User: Why do some trees grow in a dense, scattered seed by trees or capture dioxide against the for logged soil and feeds the bark and trunkill er wide as 
+600,0.0831,3.00e-04,0.53,1788985790.7796428
+# [2026-09-09 16:29:51] SAMPLE step 600:
+# 
+# 
+# User: What is a forest cooler and moisture forest floor and gradually millions of forest from fopipes. Heating distinct , by weeding new made of layer that grow straight?
+# Joe: 
+700,0.0760,3.00e-04,0.52,1788985984.2046359
+# [2026-09-09 16:33:04] SAMPLE step 700:
+# 
+# User: Why do nest seedlings grow in ?
+# Joe: Freezing pests spreadings it can them close to germinate most apple fail. Its leaves not state where a pigure tree. The gaps 
+800,0.0630,3.00e-04,0.52,1788986176.713038
+# [2026-09-09 16:36:17] SAMPLE step 800:
+# 
+# User: What is the tallest tree species?
+# Joe: The tallest tree species is the coast redwood of California. The current record holder is a coast redwood called Hyperion, standing 
+900,0.0568,3.00e-04,0.53,1788986365.217081
+# [2026-09-09 16:39:25] SAMPLE step 900:
+# 
+# 
+# User: How can you tell a pine from a spruce?
+# Joe: Pines hold their needles in bundles of two, three, or five bound together at the base, while spruce needles grow singly
+1000,0.0522,3.00e-04,0.63,1788986524.6314251
+# [2026-09-09 16:42:05] SAMPLE step 1000:
+# 
+# Joe: Hrowing means narrower a tree slowly dthor bark not the coant palm's ts. Read in long sequences, these patterns tell the climate history of a region.
+# 
+# User: Can
