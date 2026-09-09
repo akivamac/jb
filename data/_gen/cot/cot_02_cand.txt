@@ -1,0 +1,600 @@
+User: A movie theater has 12 rows with 16 seats each. If 85 people are seated, how many seats are empty?
+Joe: Total seats = 12 * 16 = 192. Empty seats = 192 - 85 = 107.
+
+User: A store sells notebooks for $3 each. If you buy 4 or more you get 10% off the whole order. What is the cost of 6 notebooks?
+Joe: 6 * 3 = 18, then 10% of 18 is 1.80, so you pay 18 - 1.80 = $16.20.
+
+User: A train leaves at 2:15 PM and arrives at 5:45 PM. How long is the ride?
+Joe: From 2:15 to 5:15 is 3 hours, then 30 more minutes to 5:45. Total is 3 hours 30 minutes.
+
+User: You have a $25 gift card. Lunch costs $8.75 and a drink is $2.25. How much is left on the card?
+Joe: Lunch and drink cost 8.75 + 2.25 = 11.00. Left on card is 25 - 11 = $14.00.
+
+User: A number doubled, then increased by 12, gives 30. What is the number?
+Joe: 2x + 12 = 30, so 2x = 18, so x = 9.
+
+User: What is 7 times 8 divided by 2?
+Joe: 7 * 8 = 56, then 56 / 2 = 28.
+
+User: A rope is 5 meters long. You cut it into pieces of 0.75 meters each. How many full pieces do you get?
+Joe: 5 / 0.75 = 6.67, so you get 6 full pieces with some rope left over.
+
+User: A factory makes 250 widgets per hour. How many does it make in a 9-hour day?
+Joe: 250 * 9 = 2250. The factory makes 2,250 widgets.
+
+User: You walk 2 miles, then run 3 times that distance. What is the total?
+Joe: Running distance is 2 * 3 = 6 miles. Total is 2 + 6 = 8 miles.
+
+User: A pizza has 8 slices. Three people each eat 2 slices. How many are left?
+Joe: They eat 3 * 2 = 6 slices. Left = 8 - 6 = 2 slices.
+
+User: Solve: 5x - 3 = 2x + 12.
+Joe: Subtract 2x to get 3x - 3 = 12. Add 3 to get 3x = 15, so x = 5.
+
+User: A bag of 15 apples costs $6. What is the price per apple?
+Joe: 6 / 15 = 0.40. Each apple costs $0.40.
+
+User: You earn $12 per hour and work 6 hours. You spend $28. How much do you have left?
+Joe: Earnings = 12 * 6 = 72. Left = 72 - 28 = $44.
+
+User: What is the square root of 144?
+Joe: 12 * 12 = 144, so the square root of 144 is 12.
+
+User: A rectangle is twice as long as it is wide. The perimeter is 36. What are the dimensions?
+Joe: Let width = w, length = 2w. Perimeter = 2(w + 2w) = 6w = 36, so w = 6. The rectangle is 6 by 12.
+
+User: 45 minutes is what fraction of an hour?
+Joe: 45 / 60 = 3/4. So 45 minutes is 3/4 of an hour.
+
+User: What is 15% of 200 plus 10% of 200?
+Joe: 15% of 200 is 30, and 10% of 200 is 20. Together that is 50.
+
+User: A car uses 1 gallon per 25 miles. Gas costs $4 per gallon. What is the fuel cost for 150 miles?
+Joe: Gallons needed = 150 / 25 = 6. Cost = 6 * 4 = $24.
+
+User: Two numbers add to 45 and their difference is 11. What are they?
+Joe: a + b = 45 and a - b = 11. Adding gives 2a = 56, so a = 28 and b = 17.
+
+User: What is 0.8 times 0.5?
+Joe: 0.8 * 0.5 = 0.40.
+
+User: A pool holds 1,200 gallons. It is being drained at 15 gallons per minute. How long to drain?
+Joe: 1200 / 15 = 80 minutes, which is 1 hour 20 minutes.
+
+User: A shirt is on sale for $24 after a 20% discount. What was the original price?
+Joe: $24 is 80% of the original. So original = 24 / 0.80 = $30.
+
+User: If you triple a number and subtract 5, you get 22. What is the number?
+Joe: 3x - 5 = 22, so 3x = 27, so x = 9.
+
+User: How many minutes are in a day?
+Joe: 24 hours * 60 minutes = 1,440 minutes.
+
+User: What is 3/4 of 200?
+Joe: (3/4) * 200 = 150.
+
+User: You buy 3 pounds of apples at $2.50 per pound and pay with a $10 bill. What is your change?
+Joe: Apples cost 3 * 2.50 = 7.50. Change = 10 - 7.50 = $2.50.
+
+User: The sum of three consecutive odd numbers is 45. What are they?
+Joe: Let them be n, n+2, n+4. Then 3n + 6 = 45, so 3n = 39 and n = 13. They are 13, 15, 17.
+
+User: What is 2^10?
+Joe: 2^10 = 1024.
+
+User: A circle has diameter 10. What is its radius?
+Joe: Radius is half the diameter. 10 / 2 = 5.
+
+User: How many degrees does the hour hand move in 2 hours?
+Joe: The hour hand moves 360 degrees in 12 hours, which is 30 degrees per hour. In 2 hours that is 60 degrees.
+
+User: A jar has equal numbers of red and blue marbles. If there are 18 marbles total, what is the probability of drawing red?
+Joe: There are 9 red marbles out of 18. Probability = 9/18 = 1/2.
+
+User: You invest $800 at 5% simple interest per year. What is the total after 4 years?
+Joe: Interest = 800 * 0.05 * 4 = 160. Total = 800 + 160 = $960.
+
+User: What is 45 divided by 6, rounded to the nearest whole number?
+Joe: 45 / 6 = 7.5, which rounds to 8.
+
+User: A rectangle has area 72 and length 9. What is its width?
+Joe: 72 / 9 = 8. The width is 8.
+
+User: Three people split a $75 bill equally. What does each pay?
+Joe: 75 / 3 = $25 each.
+
+User: You drive at 45 mph for 1 hour, then at 60 mph for 2 hours. What is the total distance?
+Joe: First leg = 45 * 1 = 45 miles. Second leg = 60 * 2 = 120 miles. Total = 165 miles.
+
+User: Solve: 2(x + 3) = x + 14.
+Joe: Expand: 2x + 6 = x + 14. Subtract x to get x + 6 = 14, so x = 8.
+
+User: How many primes are between 1 and 20?
+Joe: The primes are 2, 3, 5, 7, 11, 13, 17, 19. That is 8 primes.
+
+User: What is 1/3 + 2/5?
+Joe: LCD of 3 and 5 is 15. So 1/3 = 5/15 and 2/5 = 6/15. Sum = 11/15.
+
+User: A ladder is 13 feet long. It leans against a wall with its base 5 feet from the wall. How high does it reach?
+Joe: By Pythagoras: h^2 + 5^2 = 13^2, so h^2 = 169 - 25 = 144, so h = 12 feet.
+
+User: What is the GCD of 18 and 24?
+Joe: Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. GCD = 6.
+
+User: What is 3/5 as a percent?
+Joe: 3/5 = 0.6 = 60%.
+
+User: A circle has radius 4. What is its circumference? Use pi = 3.14.
+Joe: Circumference = 2 * pi * r = 2 * 3.14 * 4 = 25.12.
+
+User: If f(x) = 3x - 7, what is f(5)?
+Joe: f(5) = 3*5 - 7 = 15 - 7 = 8.
+
+User: You read 35 pages per day. How many days to finish a 280-page book?
+Joe: 280 / 35 = 8 days.
+
+User: A number is decreased by 25% to give 36. What was the original?
+Joe: 0.75x = 36, so x = 36 / 0.75 = 48.
+
+User: What is 100 / 7, remainder?
+Joe: 7 * 14 = 98, so the remainder is 2.
+
+User: Two angles in a triangle are equal, each measuring 50 degrees. What is the third angle?
+Joe: Third angle = 180 - 50 - 50 = 80 degrees.
+
+User: A car starts from 0 and accelerates to 30 m/s in 5 seconds. What is the acceleration?
+Joe: Acceleration = (30 - 0) / 5 = 6 m/s^2.
+
+User: A circle has area 49pi. What is its radius?
+Joe: Area = pi*r^2 = 49pi, so r^2 = 49, so r = 7.
+
+User: What is 17 * 25?
+Joe: 17 * 25 = 17 * 100 / 4 = 1700 / 4 = 425.
+
+User: You buy a book for $14.99 and pay with $20. What is your change?
+Joe: 20 - 14.99 = $5.01.
+
+User: Three consecutive even numbers sum to 72. What are they?
+Joe: Let them be n, n+2, n+4. Then 3n + 6 = 72, so 3n = 66, n = 22. They are 22, 24, 26.
+
+User: What is 5^4?
+Joe: 5^4 = 5 * 5 * 5 * 5 = 25 * 25 = 625.
+
+User: How many degrees are in a right angle?
+Joe: A right angle is 90 degrees.
+
+User: A recipe for 6 cookies needs 1.5 cups of flour. How much for 10 cookies?
+Joe: 1.5 / 6 = 0.25 cups per cookie. 10 * 0.25 = 2.5 cups.
+
+User: 250 grams is how many kilograms?
+Joe: 250 / 1000 = 0.25 kg.
+
+User: What is the slope between (0, 3) and (4, 11)?
+Joe: Slope = (11 - 3) / (4 - 0) = 8 / 4 = 2.
+
+User: A discount of $15 is 20% off. What was the original price?
+Joe: 0.20x = 15, so x = 15 / 0.20 = $75.
+
+User: What is 6 times the square root of 49?
+Joe: Square root of 49 is 7, so 6 * 7 = 42.
+
+User: You walk 10 meters east, then 24 meters south. How far from start?
+Joe: By Pythagoras: d^2 = 10^2 + 24^2 = 100 + 576 = 676, so d = 26 meters.
+
+User: What is 9/10 minus 3/5?
+Joe: 3/5 = 6/10. So 9/10 - 6/10 = 3/10.
+
+User: A box has 6 rows of 7 chocolate bars. You give away 15. How many are left?
+Joe: Total = 6 * 7 = 42. Left = 42 - 15 = 27.
+
+User: A number multiplied by 6 gives the same result as adding 20 to it. What is the number?
+Joe: 6x = x + 20, so 5x = 20, so x = 4.
+
+User: What is 11 * 11?
+Joe: 11 * 11 = 121.
+
+User: A ball is dropped from a height of 45 meters. It bounces back to half the height each time. What is the total distance traveled when it hits the ground the third time?
+Joe: First drop = 45. First bounce up = 22.5, back down = 22.5. Second bounce up = 11.25, down = 11.25. Total = 45 + 22.5 + 22.5 + 11.25 + 11.25 = 112.5 meters.
+
+User: 8% of a number is 24. What is the number?
+Joe: 0.08x = 24, so x = 24 / 0.08 = 300.
+
+User: A hexagon has interior angles that sum to how many degrees?
+Joe: Sum = (6-2) * 180 = 4 * 180 = 720 degrees.
+
+User: What is 1/2 * 2/3 * 3/4?
+Joe: Multiply across: (1 * 2 * 3) / (2 * 3 * 4) = 6/24 = 1/4.
+
+User: A 10-foot board is cut in a 2:3 ratio. What is each piece?
+Joe: Total parts = 2 + 3 = 5. Each part = 10 / 5 = 2 feet. Pieces are 4 feet and 6 feet.
+
+User: If 3x + 4y = 26 and x = 2, what is y?
+Joe: 3(2) + 4y = 26, so 6 + 4y = 26, so 4y = 20, so y = 5.
+
+User: How many 3-letter arrangements can you make from the letters ABC without repeating?
+Joe: That is 3 choices for the first, 2 for the second, 1 for the third. 3 * 2 * 1 = 6.
+
+User: What is 4! ?
+Joe: 4! = 4 * 3 * 2 * 1 = 24.
+
+User: You have $15 and want to buy shirts at $8 each. How many can you buy?
+Joe: 15 / 8 = 1.875, so you can buy 1 shirt.
+
+User: A triangle has sides 6, 8, and 10. Is it a right triangle?
+Joe: Check: 6^2 + 8^2 = 36 + 64 = 100 = 10^2. Yes, it is a right triangle.
+
+User: If 2/3 of a class of 30 are girls, how many boys are there?
+Joe: Girls = (2/3) * 30 = 20. Boys = 30 - 20 = 10.
+
+User: What is the volume of a rectangular box 4 cm by 5 cm by 6 cm?
+Joe: Volume = 4 * 5 * 6 = 120 cubic cm.
+
+User: A clock loses 3 minutes per day. How many minutes does it lose in a week?
+Joe: 3 * 7 = 21 minutes.
+
+User: 200 is 40% of what number?
+Joe: 0.40x = 200, so x = 200 / 0.40 = 500.
+
+User: You add 5 to a number and get 12. What is the number?
+Joe: x + 5 = 12, so x = 7.
+
+User: A tank holds 50 gallons. It is 60% full. How many gallons are in the tank?
+Joe: 50 * 0.60 = 30 gallons.
+
+User: What is the LCM of 6 and 8?
+Joe: Multiples of 6: 6, 12, 18, 24, 30. Multiples of 8: 8, 16, 24. LCM = 24.
+
+User: Solve: 4(x - 1) = 3(x + 2).
+Joe: Expand: 4x - 4 = 3x + 6. Subtract 3x to get x - 4 = 6, so x = 10.
+
+User: A bus holds 48 passengers. If 3 buses make the trip and 15 seats are empty total, how many people rode?
+Joe: Total seats = 3 * 48 = 144. People = 144 - 15 = 129.
+
+User: What is 0.4 as a fraction in simplest form?
+Joe: 0.4 = 4/10 = 2/5.
+
+User: A rectangle has length 5 and width 3. What is the area of the diagonal triangle?
+Joe: The diagonal splits the rectangle into two equal triangles. Each has area = (1/2) * 5 * 3 = 7.5.
+
+User: If the area of a square is 64, what is its perimeter?
+Joe: Side = sqrt(64) = 8. Perimeter = 4 * 8 = 32.
+
+User: You need 72 chairs and they come in packs of 5. How many packs must you buy?
+Joe: 72 / 5 = 14.4, so you need 15 packs.
+
+User: What is 3^3 + 4^3?
+Joe: 3^3 = 27, 4^3 = 64. Sum = 27 + 64 = 91.
+
+User: A coat costs $120 and is marked down by $30. What percent discount is that?
+Joe: 30 / 120 = 0.25, which is 25%.
+
+User: A 50-liter tank is filled at 2 liters per minute. After 10 minutes, how much more can it hold?
+Joe: In 10 minutes, 2 * 10 = 20 liters are added. Remaining capacity = 50 - 20 = 30 liters.
+
+User: What is 999 / 3?
+Joe: 999 / 3 = 333.
+
+User: A square has side 7. What is its area?
+Joe: Area = 7^2 = 49.
+
+User: You pay $5 entry, then $3 per ride. You ride 4 times. What is the total?
+Joe: Total = 5 + 4 * 3 = 5 + 12 = $17.
+
+User: How many centimeters are in 2.5 meters?
+Joe: 2.5 meters * 100 = 250 centimeters.
+
+User: A student scores 85, 92, 78, and 90 on four tests. What is the average?
+Joe: Sum = 85 + 92 + 78 + 90 = 345. Average = 345 / 4 = 86.25.
+
+User: If you divide a number by 4 and then multiply by 3, you get 18. What is the number?
+Joe: (x / 4) * 3 = 18, so 3x/4 = 18, so x = 18 * 4/3 = 24.
+
+User: What is 25% of 60% of 400?
+Joe: 60% of 400 = 240. 25% of 240 = 60.
+
+User: A cylinder has radius 5 and height 8. Use pi = 3.14. What is the volume?
+Joe: Volume = pi * r^2 * h = 3.14 * 25 * 8 = 3.14 * 200 = 628.
+
+User: You need an average of 90 on five tests. Your scores are 85, 88, 92, 91. What must the fifth test be?
+Joe: Total needed = 5 * 90 = 450. Current sum = 85 + 88 + 92 + 91 = 356. Fifth test = 450 - 356 = 94.
+
+User: What is 3/8 as a decimal?
+Joe: 3 / 8 = 0.375.
+
+User: A triangle has base 14 and height 5. What is the area?
+Joe: Area = (1/2) * 14 * 5 = 7 * 5 = 35.
+
+User: If you reverse the digits of a two-digit number, you get 27 less. The digits sum to 9. What is the number?
+Joe: Let tens = a, units = b. 10a + b - (10b + a) = 27, so 9(a - b) = 27, a - b = 3. Also a + b = 9. Adding: 2a = 12, a = 6, b = 3. Number is 63.
+
+User: What is 20 * (5 - 3) + 10?
+Joe: 20 * 2 + 10 = 40 + 10 = 50.
+
+User: A store marks up a $40 item by 35%. What is the selling price?
+Joe: 35% of 40 = 14. Selling price = 40 + 14 = $54.
+
+User: What is the probability of rolling a number greater than 4 on a standard die?
+Joe: Numbers greater than 4 are 5 and 6, which is 2 out of 6. Probability = 2/6 = 1/3.
+
+User: You have a 15% tip on a $60 bill and you want to round the total to the nearest dollar. What do you pay?
+Joe: Tip = 60 * 0.15 = 9. Total = 69. Rounded to nearest dollar is $69.
+
+User: How many seconds are in 2.5 hours?
+Joe: 2.5 * 3600 = 9,000 seconds.
+
+User: A right triangle has legs 9 and 12. What is the hypotenuse?
+Joe: c^2 = 9^2 + 12^2 = 81 + 144 = 225, so c = 15.
+
+User: What is the sum of the first 20 positive integers?
+Joe: Sum = 20 * 21 / 2 = 210.
+
+User: A jar has 30 marbles: 12 red, 8 blue, and 10 green. What is the probability of NOT drawing red?
+Joe: Not red = 8 + 10 = 18. Probability = 18/30 = 3/5.
+
+User: What is 7 squared minus 5 squared?
+Joe: 7^2 = 49, 5^2 = 25. 49 - 25 = 24.
+
+User: You travel 120 km in 1.5 hours, then 80 km in 1 hour. What is the average speed?
+Joe: Total distance = 120 + 80 = 200 km. Total time = 1.5 + 1 = 2.5 hours. Average speed = 200 / 2.5 = 80 km/h.
+
+User: A number is 8 more than twice another. The two numbers add to 26. What are they?
+Joe: Let x be the smaller. Then the larger is 2x + 8. x + 2x + 8 = 26, so 3x = 18, x = 6. Numbers are 6 and 20.
+
+User: What is 32 divided by 5 with remainder?
+Joe: 5 * 6 = 30, remainder = 2.
+
+User: You put $200 in a savings account earning 3% per year. How much after 2 years with simple interest?
+Joe: Interest = 200 * 0.03 * 2 = 12. Total = 212.
+
+User: Convert 3.5 km to meters.
+Joe: 3.5 km * 1000 = 3,500 meters.
+
+User: A field is 120 meters long and 80 meters wide. What is its area in square meters?
+Joe: Area = 120 * 80 = 9,600 square meters.
+
+User: What is the cube root of 125?
+Joe: 5^3 = 125, so cube root of 125 is 5.
+
+User: Two numbers multiply to 48 and add to 19. What are they?
+Joe: They are 3 and 16. Check: 3 * 16 = 48 and 3 + 16 = 19.
+
+User: A factory produces 150 items per hour. 10% are defective. How many are good?
+Joe: Defective = 150 * 0.10 = 15. Good = 150 - 15 = 135.
+
+User: What is 1/4 * 2/3?
+Joe: (1 * 2) / (4 * 3) = 2/12 = 1/6.
+
+User: A parking lot has 3 levels with 45 spaces each. If 80 cars are parked, how many spaces are free?
+Joe: Total spaces = 3 * 45 = 135. Free = 135 - 80 = 55.
+
+User: What is the slope of a horizontal line?
+Joe: A horizontal line has rise 0 and some run, so slope = 0 / run = 0.
+
+User: You earn $500 per week and spend $325. What percent do you save?
+Joe: Saved = 500 - 325 = 175. Percent saved = 175 / 500 = 0.35 = 35%.
+
+User: A square has diagonal 8. What is its area?
+Joe: Side = 8 / sqrt(2) = 4*sqrt(2). Area = side^2 = (4*sqrt(2))^2 = 32.
+
+User: How many minutes from 9:45 AM to 12:15 PM?
+Joe: 9:45 to 11:45 is 120 minutes, then to 12:15 is 30 more. Total = 150 minutes.
+
+User: What is 10% of 20% of 500?
+Joe: 20% of 500 = 100. 10% of 100 = 10.
+
+User: A box contains 20 books. You remove 5, then add 8. How many are in the box now?
+Joe: 20 - 5 + 8 = 23 books.
+
+User: What is 4.5 * 2?
+Joe: 4.5 * 2 = 9.
+
+User: 3 consecutive multiples of 4 sum to 84. What are they?
+Joe: Let them be 4n, 4(n+1), 4(n+2). Then 12n + 12 = 84, so 12n = 72, n = 6. They are 24, 28, 32.
+
+User: A triangle has angles in ratio 2:3:4. What are the angles?
+Joe: Sum of parts = 2 + 3 + 4 = 9. Each part = 180 / 9 = 20. Angles are 40, 60, 80 degrees.
+
+User: What is 15 * 14?
+Joe: 15 * 14 = 15 * 10 + 15 * 4 = 150 + 60 = 210.
+
+User: A store has 200 items on sale at 40% off and another 100 at 25% off. The average original price is $50. What is the total discount given?
+Joe: First group discount: 200 * 50 * 0.40 = 4,000. Second group: 100 * 50 * 0.25 = 1,250. Total discount = $5,250.
+
+User: What is 144 / 16?
+Joe: 16 * 9 = 144, so 144 / 16 = 9.
+
+User: The average of 5 numbers is 12. If you remove one that is 8, what is the new average?
+Joe: Total = 5 * 12 = 60. After removing 8, sum = 52 over 4 numbers. New average = 52 / 4 = 13.
+
+User: A string is cut in half, then each half is cut in half. What fraction of the original is the shortest piece?
+Joe: First cut gives halves. Second cut gives quarters. The shortest piece is 1/4 of the original.
+
+User: What is 3.14 * 10?
+Joe: 3.14 * 10 = 31.4.
+
+User: A farmer has 3 times as many cows as sheep. If he has 48 animals total, how many cows?
+Joe: Let sheep = s, cows = 3s. s + 3s = 48, so 4s = 48, s = 12. Cows = 36.
+
+User: What is 1000 - 467?
+Joe: 1000 - 467 = 1000 - 400 - 67 = 600 - 67 = 533.
+
+User: Two trains are 200 km apart. One goes 80 km/h, the other 120 km/h toward each other. How soon do they meet?
+Joe: Closing speed = 80 + 120 = 200 km/h. Time = 200 / 200 = 1 hour.
+
+User: What is (2^3) * (3^2)?
+Joe: 2^3 = 8, 3^2 = 9. 8 * 9 = 72.
+
+User: A survey of 50 people finds 30 like cats and 25 like dogs, with 10 liking both. How many like neither?
+Joe: At least one = 30 + 25 - 10 = 45. Neither = 50 - 45 = 5.
+
+User: What is 1/5 + 3/10?
+Joe: LCD = 10. 1/5 = 2/10. 2/10 + 3/10 = 5/10 = 1/2.
+
+User: You buy 2 shirts at $25 each and 3 pairs of socks at $4 each. What is the total?
+Joe: Shirts = 2 * 25 = 50. Socks = 3 * 4 = 12. Total = 62.
+
+User: What is 100 / 0.25?
+Joe: 100 / 0.25 = 400.
+
+User: 18 is what fraction of 24, in simplest form?
+Joe: 18/24 = 3/4.
+
+User: A class has 32 students. 40% are girls. How many boys?
+Joe: Girls = 32 * 0.40 = 12.8, so 13 girls. Boys = 32 - 13 = 19.
+
+User: What is the volume of a sphere with radius 3? Use pi = 3.14.
+Joe: Volume = (4/3) * pi * r^3 = (4/3) * 3.14 * 27 = 1.3333 * 84.78 = 113.04 cubic units.
+
+User: Solve: x/3 + x/6 = 6.
+Joe: LCD = 6. So 2x/6 + x/6 = 6, giving 3x/6 = 6, so x/2 = 6, so x = 12.
+
+User: How many diagonals does a pentagon have?
+Joe: n(n-3)/2 = 5*2/2 = 5 diagonals.
+
+User: What is 11 * 13?
+Joe: 11 * 13 = (12-1)(12+1) = 144 - 1 = 143.
+
+User: A swimming pool is 25 meters long and 10 meters wide. What is its area?
+Joe: Area = 25 * 10 = 250 square meters.
+
+User: You split $200 in the ratio 3:5. How much does each person get?
+Joe: Total parts = 3 + 5 = 8. Each part = 200 / 8 = 25. Shares: 75 and 125.
+
+User: What is 7/8 as a decimal?
+Joe: 7 / 8 = 0.875.
+
+User: A clock shows 2:30. What is the angle between the hands?
+Joe: Minute hand at 180 degrees. Hour hand at 2.5 * 30 = 75 degrees. Angle = 180 - 75 = 105 degrees.
+
+User: What is 35% of 600?
+Joe: 35% of 600 = 600 * 0.35 = 210.
+
+User: A recipe for 8 servings uses 3 eggs. How many for 5 servings?
+Joe: 3 / 8 = 0.375 eggs per serving. 5 * 0.375 = 1.875, so you need 2 eggs.
+
+User: What is 6 * 9 + 7 * 8?
+Joe: 6 * 9 = 54, 7 * 8 = 56. Sum = 110.
+
+User: Two angles are supplementary and one is 4 times the other. What are they?
+Joe: x + 4x = 180, so 5x = 180, x = 36. Angles are 36 and 144 degrees.
+
+User: What is 1000 / 125?
+Joe: 125 * 8 = 1000, so 1000 / 125 = 8.
+
+User: A rectangle has perimeter 48 and width 6. What is its area?
+Joe: 2(l + 6) = 48, so l + 6 = 24, l = 18. Area = 18 * 6 = 108.
+
+User: What is 2^5?
+Joe: 2^5 = 32.
+
+User: You drive 90 miles at 60 mph. How many minutes does it take?
+Joe: Time = 90 / 60 = 1.5 hours = 90 minutes.
+
+User: What is the probability of picking a vowel from the letters in MATH?
+Joe: The letters are M, A, T, H. Only A is a vowel. Probability = 1/4.
+
+User: Solve: 3x + 5 = 2x + 15.
+Joe: Subtract 2x to get x + 5 = 15, so x = 10.
+
+User: What is 72 / 9?
+Joe: 9 * 8 = 72, so 72 / 9 = 8.
+
+User: A parallelogram has base 10 and height 7. What is its area?
+Joe: Area = base * height = 10 * 7 = 70.
+
+User: If 5 notebooks cost $12.50, how much do 8 notebooks cost?
+Joe: Each notebook = 12.50 / 5 = 2.50. Eight = 8 * 2.50 = $20.
+
+User: What is 50% of $86?
+Joe: 50% of 86 = 43.
+
+User: A store sells pens for $1.25 and pencils for $0.75. You buy 4 pens and 6 pencils. What is the total?
+Joe: Pens = 4 * 1.25 = 5. Pencils = 6 * 0.75 = 4.50. Total = $9.50.
+
+User: What is 144 + 256?
+Joe: 144 + 256 = 400.
+
+User: A car depreciates 10% per year. It cost $25,000. What is it worth after 2 years?
+Joe: After year 1: 25000 * 0.90 = 22500. After year 2: 22500 * 0.90 = 20250. Worth = $20,250.
+
+User: What is 9 * 11?
+Joe: 9 * 11 = 99.
+
+User: You spend 1/3 of your money on lunch and 1/6 on a book. What fraction is left?
+Joe: 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2. Left = 1 - 1/2 = 1/2.
+
+User: What is 120 divided by 15?
+Joe: 15 * 8 = 120, so 120 / 15 = 8.
+
+User: A square has perimeter 52. What is its side length?
+Joe: Side = 52 / 4 = 13.
+
+User: What is 0.9 * 0.1?
+Joe: 0.9 * 0.1 = 0.09.
+
+User: If you add 15 to a number and divide by 3, you get 10. What is the number?
+Joe: (x + 15) / 3 = 10, so x + 15 = 30, so x = 15.
+
+User: A rope is cut into 3 equal pieces. Each piece is 14 cm. What was the original length?
+Joe: 3 * 14 = 42 cm.
+
+User: What is 80% of 150?
+Joe: 80% of 150 = 120.
+
+User: A number decreased by 10, then divided by 2, gives 5. What is the number?
+Joe: (x - 10) / 2 = 5, so x - 10 = 10, so x = 20.
+
+User: What is 7/10 as a percent?
+Joe: 7/10 = 0.7 = 70%.
+
+User: A rectangle has area 96 and length 12. What is its perimeter?
+Joe: Width = 96 / 12 = 8. Perimeter = 2(12 + 8) = 40.
+
+User: What is 24 * 25?
+Joe: 24 * 25 = 600, since 24 * 100 / 4 = 2400 / 4 = 600.
+
+User: You flip a coin and roll a die. What is the probability of heads and an even number?
+Joe: P(heads) = 1/2, P(even) = 3/6 = 1/2. Combined = 1/2 * 1/2 = 1/4.
+
+User: What is 1/2 - 1/3?
+Joe: LCD = 6. 1/2 = 3/6, 1/3 = 2/6. 3/6 - 2/6 = 1/6.
+
+User: A farmer plants 15 rows of 8 trees. 10 trees die. How many are left?
+Joe: Total planted = 15 * 8 = 120. Left = 120 - 10 = 110.
+
+User: What is the median of 12, 5, 18, 3, 9?
+Joe: Sort them: 3, 5, 9, 12, 18. Median = 9.
+
+User: Solve: 6x - 4 = 2x + 16.
+Joe: Subtract 2x to get 4x - 4 = 16. Add 4 to get 4x = 20, so x = 5.
+
+User: What is 350 + 475?
+Joe: 350 + 475 = 825.
+
+User: A trapezoid has parallel sides of length 8 and 12, and height 5. What is its area?
+Joe: Area = (1/2) * (8 + 12) * 5 = (1/2) * 20 * 5 = 50.
+
+User: If a shirt costs $18 after a 40% discount, what was the original price?
+Joe: $18 is 60% of the original. Original = 18 / 0.60 = $30.
+
+User: What is 99 / 3?
+Joe: 99 / 3 = 33.
+
+User: A bus travels 180 miles in 3 hours. What is its speed?
+Joe: Speed = 180 / 3 = 60 mph.
+
+User: How many faces does a cube have?
+Joe: A cube has 6 faces.
+
+User: What is 6/7 divided by 2/3?
+Joe: (6/7) / (2/3) = 6/7 * 3/2 = 18/14 = 9/7 = 1 2/7.
+
+User: You buy 5 pounds of flour at $0.80 per pound. What is the cost?
+Joe: 5 * 0.80 = $4.00.
+
+User: If 2x = 48, what is x?
+Joe: x = 48 / 2 = 24.
+
+User: What is 225 / 15?
+Joe: 15 * 15 = 225, so 225 / 15 = 15.
+

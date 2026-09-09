@@ -1,0 +1,664 @@
+0:ACCEPT
+1:ACCEPT
+2:ACCEPT
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:ACCEPT
+7:ACCEPT
+8:ACCEPT
+9:ACCEPT
+10:ACCEPT
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:ACCEPT
+17:ACCEPT
+18:ACCEPT
+19:ACCEPT
+20:ACCEPT
+21:REJECT: near-repeat of training (barrel racing)
+22:REJECT: near-repeat of training (A-sim=69%)
+23:ACCEPT
+24:ACCEPT
+25:REJECT: near-repeat of training (A-sim=71%)
+26:ACCEPT
+27:REJECT: near-repeat of training (lunging)
+28:ACCEPT
+29:ACCEPT
+30:ACCEPT
+31:ACCEPT
+32:ACCEPT
+33:ACCEPT
+34:ACCEPT
+35:REJECT: factuality: 6 to 12 years should be 6 to 12 months
+36:ACCEPT
+37:ACCEPT
+38:REJECT: near-repeat of training (heart rate vs heartbeat)
+39:ACCEPT
+40:ACCEPT
+41:ACCEPT
+42:ACCEPT
+43:ACCEPT
+44:ACCEPT
+45:ACCEPT
+46:ACCEPT
+47:ACCEPT
+48:ACCEPT
+49:ACCEPT
+50:ACCEPT
+51:ACCEPT
+52:ACCEPT
+53:ACCEPT
+54:REJECT: near-repeat of training (mare foaling signs)
+55:ACCEPT
+56:ACCEPT
+57:REJECT: near-repeat of training (foal)
+58:REJECT: near-repeat of training (weanling)
+59:REJECT: near-repeat of training (A-sim=69%)
+60:ACCEPT
+61:REJECT: near-repeat of training (A-sim=78%)
+62:ACCEPT
+63:REJECT: near-repeat of training (roan)
+64:REJECT: near-repeat of training (gray)
+65:ACCEPT
+66:ACCEPT
+67:ACCEPT
+68:ACCEPT
+69:ACCEPT
+70:ACCEPT
+71:ACCEPT
+72:ACCEPT
+73:ACCEPT
+74:ACCEPT
+75:ACCEPT
+76:ACCEPT
+77:ACCEPT
+78:ACCEPT
+79:ACCEPT
+80:ACCEPT
+81:ACCEPT
+82:ACCEPT
+83:ACCEPT
+84:ACCEPT
+85:REJECT: near-repeat of training (A-sim=63%)
+86:ACCEPT
+87:ACCEPT
+88:ACCEPT
+89:ACCEPT
+90:ACCEPT
+91:ACCEPT
+92:ACCEPT
+93:REJECT: factuality: 24 ft stride is gallop, not canter
+94:ACCEPT
+95:ACCEPT
+96:ACCEPT
+97:ACCEPT
+98:REJECT: near-repeat of training (sleep)
+99:ACCEPT
+100:ACCEPT
+101:ACCEPT
+102:ACCEPT
+103:ACCEPT
+104:ACCEPT
+105:ACCEPT
+106:ACCEPT
+107:ACCEPT
+108:ACCEPT
+109:ACCEPT
+110:ACCEPT
+111:ACCEPT
+112:ACCEPT
+113:ACCEPT
+114:ACCEPT
+115:ACCEPT
+116:ACCEPT
+117:ACCEPT
+118:ACCEPT
+119:ACCEPT
+120:ACCEPT
+121:ACCEPT
+122:ACCEPT
+123:ACCEPT
+124:ACCEPT
+125:ACCEPT
+126:REJECT: near-repeat of training (A-sim=62%)
+127:ACCEPT
+128:REJECT: near-repeat of training (A-sim=67%)
+129:ACCEPT
+130:ACCEPT
+131:ACCEPT
+132:ACCEPT
+133:ACCEPT
+134:ACCEPT
+135:ACCEPT
+136:REJECT: near-repeat of training (A-sim=74%)
+137:ACCEPT
+138:REJECT: near-repeat of training (bowed tendon)
+139:ACCEPT
+140:ACCEPT
+141:REJECT: in-file duplicate of pair 2 (respiration)
+142:REJECT: near-repeat of training (normal temperature)
+143:ACCEPT
+144:ACCEPT
+145:REJECT: near-repeat of training (body condition score)
+146:ACCEPT
+147:ACCEPT
+148:ACCEPT
+149:REJECT: near-repeat of training (A-sim=61%)
+150:ACCEPT
+151:ACCEPT
+152:ACCEPT
+153:ACCEPT
+154:ACCEPT
+155:REJECT: in-file duplicate of pair 38 (pulse)
+156:ACCEPT
+157:REJECT: in-file duplicate of pair 108
+158:ACCEPT
+159:ACCEPT
+160:ACCEPT
+161:ACCEPT
+162:REJECT: near-repeat of training (check ligament)
+163:ACCEPT
+164:ACCEPT
+165:REJECT: in-file duplicate of pair 109
+166:ACCEPT
+167:ACCEPT
+168:ACCEPT
+169:ACCEPT
+170:ACCEPT
+171:ACCEPT
+172:ACCEPT
+173:ACCEPT
+174:ACCEPT
+175:ACCEPT
+176:ACCEPT
+177:ACCEPT
+178:ACCEPT
+179:ACCEPT
+180:ACCEPT
+181:ACCEPT
+182:ACCEPT
+183:ACCEPT
+184:ACCEPT
+185:ACCEPT
+186:ACCEPT
+187:ACCEPT
+188:ACCEPT
+189:ACCEPT
+190:ACCEPT
+191:ACCEPT
+192:ACCEPT
+193:ACCEPT
+194:ACCEPT
+195:ACCEPT
+196:ACCEPT
+197:ACCEPT
+198:ACCEPT
+199:ACCEPT
+200:ACCEPT
+201:ACCEPT
+202:ACCEPT
+203:ACCEPT
+204:REJECT: grammar error in question (a/an)
+205:ACCEPT
+206:ACCEPT
+207:ACCEPT
+208:ACCEPT
+209:ACCEPT
+210:ACCEPT
+211:ACCEPT
+212:ACCEPT
+213:ACCEPT
+214:ACCEPT
+215:ACCEPT
+216:ACCEPT
+217:ACCEPT
+218:ACCEPT
+219:ACCEPT
+220:ACCEPT
+221:ACCEPT
+222:ACCEPT
+223:ACCEPT
+224:ACCEPT
+225:ACCEPT
+226:ACCEPT
+227:ACCEPT
+228:ACCEPT
+229:ACCEPT
+230:ACCEPT
+231:ACCEPT
+232:ACCEPT
+233:ACCEPT
+234:ACCEPT
+235:ACCEPT
+236:ACCEPT
+237:ACCEPT
+238:ACCEPT
+239:ACCEPT
+240:ACCEPT
+241:ACCEPT
+242:ACCEPT
+243:ACCEPT
+244:ACCEPT
+245:ACCEPT
+246:ACCEPT
+247:REJECT: grammar error in question (a/an)
+248:ACCEPT
+249:ACCEPT
+250:ACCEPT
+251:ACCEPT
+252:ACCEPT
+253:REJECT: in-file duplicate of pair 252 (back cinch)
+254:ACCEPT
+255:ACCEPT
+256:ACCEPT
+257:REJECT: non-ASCII characters in text
+258:ACCEPT
+259:ACCEPT
+260:ACCEPT
+261:ACCEPT
+262:ACCEPT
+263:ACCEPT
+264:ACCEPT
+265:ACCEPT
+266:ACCEPT
+267:ACCEPT
+268:ACCEPT
+269:ACCEPT
+270:ACCEPT
+271:ACCEPT
+272:ACCEPT
+273:ACCEPT
+274:ACCEPT
+275:ACCEPT
+276:ACCEPT
+277:ACCEPT
+278:REJECT: in-file duplicate of pair 277 (Baucher/hanging cheek)
+279:REJECT: in-file duplicate of pair 172 (French link)
+280:REJECT: in-file duplicate of pair 173 (lozenge)
+281:REJECT: in-file duplicate of pair 171 (Mullen mouth)
+282:REJECT: in-file duplicate of pair 175 (ported)
+283:REJECT: in-file duplicate of pair 174 (twisted)
+284:ACCEPT
+285:ACCEPT
+286:ACCEPT
+287:REJECT: in-file duplicate of pair 89
+288:ACCEPT
+289:ACCEPT
+290:ACCEPT
+291:ACCEPT
+292:ACCEPT
+293:ACCEPT
+294:ACCEPT
+295:ACCEPT
+296:ACCEPT
+297:ACCEPT
+298:ACCEPT
+299:REJECT: missing space in answer text
+300:ACCEPT
+301:ACCEPT
+302:ACCEPT
+303:ACCEPT
+304:ACCEPT
+305:ACCEPT
+306:ACCEPT
+307:ACCEPT
+308:ACCEPT
+309:ACCEPT
+310:ACCEPT
+311:REJECT: near-repeat of training (A-sim=68%)
+312:ACCEPT
+313:ACCEPT
+314:ACCEPT
+315:ACCEPT
+316:REJECT: in-file duplicate of pair 306 (grooming)
+317:ACCEPT
+318:ACCEPT
+319:ACCEPT
+320:ACCEPT
+321:ACCEPT
+322:ACCEPT
+323:ACCEPT
+324:ACCEPT
+325:ACCEPT
+326:ACCEPT
+327:ACCEPT
+328:REJECT: near-repeat of training (ration balancer)
+329:ACCEPT
+330:ACCEPT
+331:ACCEPT
+332:ACCEPT
+333:ACCEPT
+334:ACCEPT
+335:ACCEPT
+336:ACCEPT
+337:ACCEPT
+338:ACCEPT
+339:REJECT: near-repeat of training (stall size)
+340:ACCEPT
+341:ACCEPT
+342:ACCEPT
+343:ACCEPT
+344:ACCEPT
+345:ACCEPT
+346:ACCEPT
+347:ACCEPT
+348:ACCEPT
+349:ACCEPT
+350:REJECT: near-repeat of training (slow feeder)
+351:ACCEPT
+352:ACCEPT
+353:ACCEPT
+354:ACCEPT
+355:ACCEPT
+356:ACCEPT
+357:REJECT: near-repeat of training (equine influenza)
+358:ACCEPT
+359:ACCEPT
+360:ACCEPT
+361:REJECT: in-file duplicate of pair 34
+362:REJECT: near-repeat of training (strangles)
+363:ACCEPT
+364:ACCEPT
+365:ACCEPT
+366:ACCEPT
+367:ACCEPT
+368:ACCEPT
+369:ACCEPT
+370:ACCEPT
+371:ACCEPT
+372:ACCEPT
+373:REJECT: near-repeat of training (pre-purchase exam)
+374:ACCEPT
+375:ACCEPT
+376:ACCEPT
+377:ACCEPT
+378:REJECT: in-file duplicate of pair 194 (dressage whip)
+379:REJECT: in-file duplicate of pair 195 (jumping bat)
+380:REJECT: in-file duplicate of pair 196 (lunge whip)
+381:REJECT: in-file duplicate of pair 191 (side reins)
+382:REJECT: in-file duplicate of pair 192 (draw reins)
+383:ACCEPT
+384:REJECT: in-file duplicate of pair 48 (standing martingale)
+385:REJECT: in-file duplicate of pair 248 (breastplate)
+386:REJECT: in-file duplicate of pair 262 (crupper)
+387:REJECT: in-file duplicate of pair 199 (quarter sheet)
+388:REJECT: in-file duplicate of pair 200 (cooler)
+389:REJECT: in-file duplicate of pair 203 (fly sheet)
+390:REJECT: in-file duplicate of pair 201 (turnout blanket)
+391:REJECT: in-file duplicate of pair 202 (stable blanket)
+392:REJECT: in-file duplicate of pair 206 (saddle cover)
+393:REJECT: in-file duplicate of pair 207 (bridle bag)
+394:REJECT: in-file duplicate of pair 315 (grooming bag)
+395:REJECT: in-file duplicate of pair 354 (first aid kit)
+396:REJECT: in-file duplicate of pair 311 (hoof pick)
+397:REJECT: in-file duplicate of pair 307 (curry comb)
+398:REJECT: in-file duplicate of pair 308 (stiff brush)
+399:REJECT: in-file duplicate of pair 309 (soft brush)
+400:REJECT: in-file duplicate of pair 313 (sweat scraper)
+401:REJECT: in-file duplicate of pair 314 (shedding blade)
+402:REJECT: in-file duplicate of pair 293 (mane comb)
+403:REJECT: in-file duplicate of pair 294 (pulling comb)
+404:REJECT: in-file duplicate of pair 304 (detangler spray)
+405:REJECT: in-file duplicate of pair 305 (coat polish)
+406:REJECT: in-file duplicate of pair 367 (fly spray)
+407:REJECT: in-file duplicate of pair 366 (fly mask)
+408:ACCEPT
+409:ACCEPT
+410:ACCEPT
+411:ACCEPT
+412:ACCEPT
+413:REJECT: in-file duplicate of pair 375 (joint supplements)
+414:ACCEPT
+415:ACCEPT
+416:ACCEPT
+417:ACCEPT
+418:ACCEPT
+419:ACCEPT
+420:REJECT: grammar error in question (a/an)
+421:ACCEPT
+422:ACCEPT
+423:ACCEPT
+424:ACCEPT
+425:ACCEPT
+426:ACCEPT
+427:ACCEPT
+428:ACCEPT
+429:REJECT: grammar error in question (a/an)
+430:REJECT: grammar error in question (a/an)
+431:ACCEPT
+432:ACCEPT
+433:ACCEPT
+434:ACCEPT
+435:ACCEPT
+436:ACCEPT
+437:ACCEPT
+438:REJECT: grammar error in question (a/an)
+439:ACCEPT
+440:ACCEPT
+441:ACCEPT
+442:ACCEPT
+443:ACCEPT
+444:ACCEPT
+445:ACCEPT
+446:ACCEPT
+447:ACCEPT
+448:ACCEPT
+449:ACCEPT
+450:REJECT: in-file duplicate of pair 154
+451:ACCEPT
+452:ACCEPT
+453:ACCEPT
+454:ACCEPT
+455:REJECT: in-file duplicate of pair 151 (standing wraps)
+456:REJECT: grammar error in question (a/an)
+457:REJECT: in-file duplicate of pair 152 (polo wraps)
+458:ACCEPT
+459:ACCEPT
+460:REJECT: grammar error in question (a/an)
+461:ACCEPT
+462:ACCEPT
+463:ACCEPT
+464:ACCEPT
+465:ACCEPT
+466:ACCEPT
+467:ACCEPT
+468:ACCEPT
+469:ACCEPT
+470:ACCEPT
+471:ACCEPT
+472:ACCEPT
+473:ACCEPT
+474:ACCEPT
+475:ACCEPT
+476:ACCEPT
+477:ACCEPT
+478:REJECT: in-file duplicate of pair 473
+479:ACCEPT
+480:ACCEPT
+481:ACCEPT
+482:ACCEPT
+483:ACCEPT
+484:REJECT: in-file duplicate of pair 193 (riding whip)
+485:ACCEPT
+486:REJECT: in-file duplicate of pair 193 (riding crop)
+487:ACCEPT
+488:REJECT: in-file duplicate of pair 196 (lunge whip)
+489:ACCEPT
+490:REJECT: in-file duplicate of pair 193 (crop)
+491:REJECT: in-file duplicate of pair 195 (jumping bat)
+492:REJECT: in-file duplicate of pair 194 (dressage whip)
+493:REJECT: in-file duplicate of pair 487 (schooling whip)
+494:REJECT: in-file duplicate of pair 488 (lunge whip)
+495:REJECT: in-file duplicate of pair 486 (riding crop)
+496:REJECT: in-file duplicate of pair 495
+497:REJECT: in-file duplicate of pair 495
+498:REJECT: in-file duplicate of pair 495
+499:REJECT: in-file duplicate of pair 495
+500:REJECT: in-file duplicate of pair 495
+501:REJECT: in-file duplicate of pair 495
+502:REJECT: in-file duplicate of pair 495
+503:REJECT: in-file duplicate of pair 495
+504:REJECT: in-file duplicate of pair 495
+505:REJECT: in-file duplicate of pair 495
+506:REJECT: in-file duplicate of pair 495
+507:REJECT: in-file duplicate of pair 495
+508:REJECT: in-file duplicate of pair 495
+509:REJECT: in-file duplicate of pair 495
+510:REJECT: in-file duplicate of pair 495
+511:REJECT: in-file duplicate of pair 495
+512:REJECT: in-file duplicate of pair 495
+513:REJECT: in-file duplicate of pair 495
+514:REJECT: in-file duplicate of pair 495
+515:REJECT: in-file duplicate of pair 495
+516:REJECT: in-file duplicate of pair 495
+517:REJECT: in-file duplicate of pair 495
+518:REJECT: in-file duplicate of pair 495
+519:REJECT: in-file duplicate of pair 495
+520:REJECT: in-file duplicate of pair 495
+521:REJECT: in-file duplicate of pair 495
+522:REJECT: in-file duplicate of pair 495
+523:REJECT: in-file duplicate of pair 495
+524:REJECT: in-file duplicate of pair 495
+525:REJECT: in-file duplicate of pair 495
+526:REJECT: in-file duplicate of pair 495
+527:REJECT: in-file duplicate of pair 495
+528:REJECT: in-file duplicate of pair 495
+529:REJECT: in-file duplicate of pair 495
+530:REJECT: in-file duplicate of pair 495
+531:REJECT: in-file duplicate of pair 495
+532:REJECT: in-file duplicate of pair 495
+533:REJECT: in-file duplicate of pair 495
+534:REJECT: in-file duplicate of pair 495
+535:REJECT: in-file duplicate of pair 495
+536:REJECT: in-file duplicate of pair 495
+537:REJECT: in-file duplicate of pair 495
+538:REJECT: in-file duplicate of pair 495
+539:REJECT: in-file duplicate of pair 495
+540:REJECT: in-file duplicate of pair 495
+541:REJECT: in-file duplicate of pair 495
+542:REJECT: in-file duplicate of pair 495
+543:REJECT: in-file duplicate of pair 495
+544:REJECT: in-file duplicate of pair 495
+545:REJECT: in-file duplicate of pair 495
+546:REJECT: in-file duplicate of pair 495
+547:REJECT: in-file duplicate of pair 495
+548:REJECT: in-file duplicate of pair 495
+549:REJECT: in-file duplicate of pair 495
+550:REJECT: in-file duplicate of pair 495
+551:REJECT: in-file duplicate of pair 495
+552:REJECT: in-file duplicate of pair 495
+553:REJECT: in-file duplicate of pair 495
+554:REJECT: in-file duplicate of pair 495
+555:REJECT: in-file duplicate of pair 495
+556:REJECT: in-file duplicate of pair 495
+557:REJECT: in-file duplicate of pair 495
+558:REJECT: in-file duplicate of pair 495
+559:REJECT: in-file duplicate of pair 495
+560:REJECT: in-file duplicate of pair 495
+561:REJECT: in-file duplicate of pair 495
+562:REJECT: in-file duplicate of pair 495
+563:REJECT: in-file duplicate of pair 495
+564:REJECT: in-file duplicate of pair 495
+565:REJECT: in-file duplicate of pair 495
+566:REJECT: in-file duplicate of pair 495
+567:REJECT: in-file duplicate of pair 495
+568:REJECT: in-file duplicate of pair 495
+569:REJECT: in-file duplicate of pair 495
+570:REJECT: in-file duplicate of pair 495
+571:REJECT: in-file duplicate of pair 495
+572:REJECT: in-file duplicate of pair 495
+573:REJECT: in-file duplicate of pair 495
+574:REJECT: in-file duplicate of pair 495
+575:REJECT: in-file duplicate of pair 495
+576:REJECT: in-file duplicate of pair 495
+577:REJECT: in-file duplicate of pair 495
+578:REJECT: in-file duplicate of pair 495
+579:REJECT: in-file duplicate of pair 495
+580:REJECT: in-file duplicate of pair 495
+581:REJECT: in-file duplicate of pair 495
+582:REJECT: in-file duplicate of pair 495
+583:REJECT: in-file duplicate of pair 495
+584:REJECT: in-file duplicate of pair 495
+585:REJECT: in-file duplicate of pair 495
+586:REJECT: in-file duplicate of pair 495
+587:REJECT: in-file duplicate of pair 495
+588:REJECT: in-file duplicate of pair 495
+589:REJECT: in-file duplicate of pair 495
+590:REJECT: in-file duplicate of pair 495
+591:REJECT: in-file duplicate of pair 495
+592:REJECT: in-file duplicate of pair 495
+593:REJECT: in-file duplicate of pair 495
+594:REJECT: in-file duplicate of pair 495
+595:REJECT: in-file duplicate of pair 495
+596:REJECT: in-file duplicate of pair 495
+597:REJECT: in-file duplicate of pair 495
+598:REJECT: in-file duplicate of pair 495
+599:REJECT: in-file duplicate of pair 495
+600:REJECT: in-file duplicate of pair 495
+601:REJECT: in-file duplicate of pair 495
+602:REJECT: in-file duplicate of pair 495
+603:REJECT: in-file duplicate of pair 495
+604:REJECT: in-file duplicate of pair 495
+605:REJECT: in-file duplicate of pair 495
+606:REJECT: in-file duplicate of pair 495
+607:REJECT: in-file duplicate of pair 495
+608:REJECT: in-file duplicate of pair 495
+609:REJECT: in-file duplicate of pair 495
+610:REJECT: in-file duplicate of pair 495
+611:REJECT: in-file duplicate of pair 495
+612:REJECT: in-file duplicate of pair 495
+613:REJECT: in-file duplicate of pair 495
+614:REJECT: in-file duplicate of pair 495
+615:REJECT: in-file duplicate of pair 495
+616:REJECT: in-file duplicate of pair 495
+617:REJECT: in-file duplicate of pair 495
+618:REJECT: in-file duplicate of pair 495
+619:REJECT: in-file duplicate of pair 495
+620:REJECT: in-file duplicate of pair 495
+621:REJECT: in-file duplicate of pair 495
+622:REJECT: in-file duplicate of pair 495
+623:REJECT: in-file duplicate of pair 495
+624:REJECT: in-file duplicate of pair 495
+625:REJECT: in-file duplicate of pair 495
+626:REJECT: in-file duplicate of pair 495
+627:REJECT: in-file duplicate of pair 495
+628:REJECT: in-file duplicate of pair 495
+629:REJECT: in-file duplicate of pair 495
+630:REJECT: in-file duplicate of pair 495
+631:REJECT: in-file duplicate of pair 495
+632:REJECT: in-file duplicate of pair 495
+633:REJECT: in-file duplicate of pair 495
+634:REJECT: in-file duplicate of pair 495
+635:REJECT: in-file duplicate of pair 495
+636:REJECT: in-file duplicate of pair 495
+637:REJECT: in-file duplicate of pair 495
+638:REJECT: in-file duplicate of pair 495
+639:REJECT: in-file duplicate of pair 495
+640:REJECT: in-file duplicate of pair 495
+641:REJECT: in-file duplicate of pair 495
+642:REJECT: in-file duplicate of pair 495
+643:REJECT: in-file duplicate of pair 495
+644:REJECT: in-file duplicate of pair 495
+645:REJECT: in-file duplicate of pair 495
+646:REJECT: in-file duplicate of pair 495
+647:REJECT: in-file duplicate of pair 495
+648:REJECT: in-file duplicate of pair 495
+649:REJECT: in-file duplicate of pair 495
+650:REJECT: in-file duplicate of pair 495
+651:REJECT: in-file duplicate of pair 495
+652:REJECT: in-file duplicate of pair 495
+653:REJECT: in-file duplicate of pair 495
+654:REJECT: in-file duplicate of pair 495
+655:REJECT: in-file duplicate of pair 495
+656:REJECT: in-file duplicate of pair 495
+657:REJECT: in-file duplicate of pair 495
+658:REJECT: in-file duplicate of pair 495
+659:REJECT: in-file duplicate of pair 495
+660:REJECT: in-file duplicate of pair 495
+661:REJECT: in-file duplicate of pair 495
+662:REJECT: in-file duplicate of pair 495
+

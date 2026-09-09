@@ -1,0 +1,663 @@
+0:ACCEPT
+1:ACCEPT
+2:REJECT: near-repeat of existing "What is a horse's respiration rate?"
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:ACCEPT
+7:ACCEPT
+8:REJECT: near-repeat of existing "How long do horses live?"
+9:REJECT: near-repeat of existing "How much water does a horse drink?"
+10:ACCEPT
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:ACCEPT
+17:REJECT: near-repeat of existing "What is a Standardbred?"
+18:REJECT: near-repeat of existing "What is an Akhal-Teke?"
+19:REJECT: exact Q repeat of existing "What is dressage?"
+20:ACCEPT
+21:REJECT: exact Q repeat of existing "What is barrel racing?"
+22:REJECT: exact Q repeat of existing "What is polo?"
+23:ACCEPT
+24:ACCEPT
+25:REJECT: exact Q repeat of existing "What is reining?"
+26:REJECT: near-repeat of existing "What is ground work?"
+27:REJECT: exact Q repeat of existing "What is lunging?"
+28:REJECT: near-repeat of existing "What is desensitization?"
+29:ACCEPT
+30:ACCEPT
+31:ACCEPT
+32:ACCEPT
+33:REJECT: near-repeat of existing "What is a horse's Cushing's disease?"
+34:REJECT: exact Q repeat of existing "What is equine herpesvirus?"
+35:REJECT: factuality error - says "6 to 12 years" should be "6 to 12 months"
+36:REJECT: near-word-for-word repeat of existing core vaccines answer
+37:REJECT: near-repeat of existing "What is a horse's deworming schedule?"
+38:REJECT: near-word-for-word repeat of existing heartbeat answer (28-44 bpm)
+39:ACCEPT
+40:ACCEPT
+41:ACCEPT
+42:ACCEPT
+43:ACCEPT
+44:ACCEPT
+45:REJECT: near-repeat of existing "What is a saddle pad?"
+46:ACCEPT
+47:ACCEPT
+48:REJECT: exact Q repeat of existing "What is the purpose of a standing martingale?"
+49:REJECT: near-repeat of existing "What is the best bedding for horses?"
+50:REJECT: near-repeat of existing "How often should I muck out a stall?"
+51:REJECT: near-repeat of existing "How much pasture does a horse need?"
+52:ACCEPT
+53:REJECT: near-word-for-word repeat of existing gestation period answer
+54:REJECT: near-exact Q repeat of existing "What are the signs a mare is about to foal?"
+55:REJECT: near-repeat - combines existing stallion + gelding Q&A
+56:REJECT: near-repeat of existing broodmare info
+57:REJECT: exact Q repeat of existing "What is a foal?"
+58:REJECT: exact Q repeat of existing "What is a weanling?"
+59:REJECT: exact Q repeat of existing "What is a yearling?"
+60:REJECT: near-repeat of existing "What is a bay horse?"
+61:REJECT: exact Q repeat of existing "What is a chestnut horse?"
+62:REJECT: near-exact Q repeat of existing "What is a palomino?"
+63:REJECT: exact Q repeat of existing "What is a roan horse?"
+64:REJECT: exact Q repeat of existing "What is a gray horse?"
+65:ACCEPT
+66:ACCEPT
+67:ACCEPT
+68:ACCEPT
+69:ACCEPT
+70:ACCEPT
+71:ACCEPT
+72:ACCEPT
+73:ACCEPT
+74:ACCEPT
+75:ACCEPT
+76:REJECT: exact Q repeat of existing "What is a destrier?"
+77:ACCEPT
+78:ACCEPT
+79:ACCEPT
+80:ACCEPT
+81:ACCEPT
+82:ACCEPT
+83:ACCEPT
+84:ACCEPT
+85:REJECT: exact Q repeat of existing "What is a horse's blind spot?"
+86:ACCEPT
+87:ACCEPT
+88:ACCEPT
+89:REJECT: near-repeat of existing "What is a horse's mane?"
+90:ACCEPT
+91:ACCEPT
+92:ACCEPT
+93:REJECT: exact Q repeat of existing "What is a horse's stride length?"
+94:ACCEPT
+95:ACCEPT
+96:ACCEPT
+97:ACCEPT
+98:REJECT: exact Q repeat of existing "How do horses sleep?"
+99:ACCEPT
+100:REJECT: near-repeat of existing "What is a horse's tail used for?"
+101:ACCEPT
+102:ACCEPT
+103:REJECT: exact Q repeat of existing "What is a horse's social structure?"
+104:ACCEPT
+105:ACCEPT
+106:REJECT: near-repeat of existing "What are wolf teeth on a horse?"
+107:ACCEPT
+108:REJECT: near-repeat of existing "What is a horse's chestnut?"
+109:REJECT: near-repeat of existing "What is a horse's ergot?"
+110:ACCEPT
+111:ACCEPT
+112:ACCEPT
+113:ACCEPT
+114:ACCEPT
+115:ACCEPT
+116:ACCEPT
+117:ACCEPT
+118:ACCEPT
+119:ACCEPT
+120:REJECT: near-repeat of existing "What is the difference between grass hay and legume hay?"
+121:ACCEPT
+122:REJECT: exact Q repeat of existing "What is beet pulp?"
+123:ACCEPT
+124:ACCEPT
+125:REJECT: near-repeat of existing hoof growth rate in "What are horse hooves made of?"
+126:REJECT: exact Q repeat of existing "What is a hoof abscess?"
+127:ACCEPT
+128:REJECT: exact Q repeat of existing "What is thrush in horses?"
+129:ACCEPT
+130:REJECT: near-repeat of existing "Why do horses need horseshoes?"
+131:ACCEPT
+132:ACCEPT
+133:ACCEPT
+134:ACCEPT
+135:ACCEPT
+136:REJECT: exact Q repeat of existing "What is navicular syndrome?"
+137:ACCEPT
+138:REJECT: exact Q repeat of existing "What is a bowed tendon?"
+139:REJECT: near-exact Q repeat of existing "What is a splint on a horse?"
+140:REJECT: near-exact Q repeat of existing "What is a horse's windpuff?"
+141:REJECT: DUPLICATE within file - same Q&A as pair 2 (respiration rate)
+142:REJECT: exact Q repeat of existing "What is a horse's normal temperature?"
+143:ACCEPT
+144:ACCEPT
+145:REJECT: exact Q repeat of existing "What is a horse's body condition score?"
+146:ACCEPT
+147:ACCEPT
+148:ACCEPT
+149:REJECT: exact Q repeat of existing "What is equine metabolic syndrome?"
+150:ACCEPT
+151:ACCEPT
+152:ACCEPT
+153:ACCEPT
+154:ACCEPT
+155:REJECT: near-word-for-word repeat of existing heartbeat answer
+156:ACCEPT
+157:REJECT: DUPLICATE within file - same Q as pair 108 (chestnut)
+158:ACCEPT
+159:ACCEPT
+160:ACCEPT
+161:REJECT: exact Q repeat of existing "What is a horse's suspensory ligament?"
+162:REJECT: exact Q repeat of existing "What is a horse's check ligament?"
+163:ACCEPT
+164:ACCEPT
+165:REJECT: DUPLICATE within file - same Q as pair 109 (ergot)
+166:ACCEPT
+167:ACCEPT
+168:ACCEPT
+169:ACCEPT
+170:ACCEPT
+171:ACCEPT
+172:ACCEPT
+173:ACCEPT
+174:ACCEPT
+175:ACCEPT
+176:ACCEPT
+177:ACCEPT
+178:ACCEPT
+179:ACCEPT
+180:ACCEPT
+181:ACCEPT
+182:ACCEPT
+183:ACCEPT
+184:REJECT: near-repeat of existing halter Q&A (already explains halter vs bridle)
+185:ACCEPT
+186:ACCEPT
+187:ACCEPT
+188:REJECT: near-repeat of existing "What is a lead rope?"
+189:ACCEPT
+190:REJECT: near-repeat of existing "What is a lunge line?"
+191:REJECT: near-exact Q repeat of existing "What is the purpose of side reins?"
+192:REJECT: near-exact Q repeat of existing "What is the purpose of draw reins?"
+193:REJECT: exact Q repeat of existing "What is a riding crop?"
+194:REJECT: near-exact Q repeat of existing "What is the purpose of a dressage whip?"
+195:REJECT: near-exact Q repeat of existing "What is the purpose of a jumping bat?"
+196:REJECT: near-exact Q repeat of existing "What is the purpose of a lunge whip?"
+197:ACCEPT
+198:ACCEPT
+199:REJECT: exact Q repeat of existing "What is the purpose of a quarter sheet?"
+200:REJECT: near-exact Q repeat of existing "What is the purpose of a cooler?"
+201:REJECT: near-exact Q repeat of existing "What is the purpose of a turnout blanket?"
+202:REJECT: near-exact Q repeat of existing "What is the purpose of a stable blanket?"
+203:REJECT: near-exact Q repeat of existing "What is the purpose of a fly sheet?"
+204:ACCEPT
+205:ACCEPT
+206:REJECT: near-exact Q repeat of existing "What is the purpose of a saddle cover?"
+207:REJECT: near-exact Q repeat of existing "What is the purpose of a bridle bag?"
+208:ACCEPT
+209:ACCEPT
+210:ACCEPT
+211:ACCEPT
+212:REJECT: near-repeat of existing "What is a girth?"
+213:ACCEPT
+214:ACCEPT
+215:ACCEPT
+216:ACCEPT
+217:REJECT: near-repeat of existing "What are stirrups?"
+218:ACCEPT
+219:ACCEPT
+220:ACCEPT
+221:ACCEPT
+222:ACCEPT
+223:ACCEPT
+224:ACCEPT
+225:ACCEPT
+226:ACCEPT
+227:ACCEPT
+228:ACCEPT
+229:ACCEPT
+230:ACCEPT
+231:REJECT: near-exact Q repeat of existing "What is a numnah?"
+232:ACCEPT
+233:REJECT: near-exact Q repeat of existing "How do you mount a horse?"
+234:REJECT: exact Q repeat of existing "What is a mounting block?"
+235:ACCEPT
+236:ACCEPT
+237:ACCEPT
+238:ACCEPT
+239:ACCEPT
+240:ACCEPT
+241:ACCEPT
+242:ACCEPT
+243:ACCEPT
+244:ACCEPT
+245:ACCEPT
+246:ACCEPT
+247:ACCEPT
+248:REJECT: near-exact Q repeat of existing "What is the purpose of a breastplate?"
+249:ACCEPT
+250:ACCEPT
+251:ACCEPT
+252:ACCEPT
+253:ACCEPT
+254:ACCEPT
+255:ACCEPT
+256:ACCEPT
+257:REJECT: ASCII violation - contains Chinese characters
+258:ACCEPT
+259:ACCEPT
+260:ACCEPT
+261:ACCEPT
+262:REJECT: near-exact Q repeat of existing "What is the purpose of a crupper?"
+263:ACCEPT
+264:ACCEPT
+265:ACCEPT
+266:ACCEPT
+267:ACCEPT
+268:ACCEPT
+269:ACCEPT
+270:ACCEPT
+271:ACCEPT
+272:ACCEPT
+273:ACCEPT
+274:ACCEPT
+275:ACCEPT
+276:ACCEPT
+277:ACCEPT
+278:ACCEPT
+279:REJECT: format error - "aFrench" missing space
+280:ACCEPT
+281:ACCEPT
+282:ACCEPT
+283:ACCEPT
+284:ACCEPT
+285:ACCEPT
+286:ACCEPT
+287:REJECT: DUPLICATE within file - same Q as pair 89 (horse's mane)
+288:ACCEPT
+289:ACCEPT
+290:ACCEPT
+291:ACCEPT
+292:ACCEPT
+293:ACCEPT
+294:ACCEPT
+295:ACCEPT
+296:ACCEPT
+297:ACCEPT
+298:ACCEPT
+299:REJECT: format error - "requiresblanketing" missing space
+300:ACCEPT
+301:ACCEPT
+302:ACCEPT
+303:ACCEPT
+304:ACCEPT
+305:ACCEPT
+306:REJECT: near-exact Q repeat of existing grooming Q&A
+307:REJECT: near-exact Q repeat of existing curry comb Q&A
+308:REJECT: near-exact Q repeat of existing stiff brush Q&A
+309:REJECT: near-exact Q repeat of existing soft brush Q&A
+310:ACCEPT
+311:REJECT: exact Q repeat of existing "What is a hoof pick?"
+312:ACCEPT
+313:REJECT: near-exact Q repeat of existing sweat scraper Q&A
+314:REJECT: near-exact Q repeat of existing shedding blade Q&A
+315:REJECT: near-exact Q repeat of existing grooming bag Q&A
+316:REJECT: near-exact Q repeat of existing grooming Q&A
+317:ACCEPT
+318:ACCEPT
+319:ACCEPT
+320:ACCEPT
+321:REJECT: exact Q repeat of existing "What is the difference between grass hay and legume hay?"
+322:ACCEPT
+323:ACCEPT
+324:ACCEPT
+325:ACCEPT
+326:ACCEPT
+327:ACCEPT
+328:REJECT: exact Q repeat of existing "What is a ration balancer?"
+329:ACCEPT
+330:ACCEPT
+331:ACCEPT
+332:ACCEPT
+333:ACCEPT
+334:ACCEPT
+335:ACCEPT
+336:ACCEPT
+337:ACCEPT
+338:ACCEPT
+339:REJECT: exact Q repeat of existing "How big should a horse stall be?"
+340:ACCEPT
+341:REJECT: exact Q repeat of existing "What is straw bedding?"
+342:REJECT: exact Q repeat of existing "What is pine shavings bedding?"
+343:REJECT: exact Q repeat of existing "What is pellet bedding?"
+344:REJECT: exact Q repeat of existing "What is rubber matting?"
+345:ACCEPT
+346:ACCEPT
+347:ACCEPT
+348:ACCEPT
+349:ACCEPT
+350:REJECT: exact Q repeat of existing "What is a slow feeder?"
+351:ACCEPT
+352:ACCEPT
+353:ACCEPT
+354:ACCEPT
+355:ACCEPT
+356:ACCEPT
+357:REJECT: exact Q repeat of existing "What is equine influenza?"
+358:ACCEPT
+359:ACCEPT
+360:ACCEPT
+361:REJECT: exact Q repeat of existing "What is equine herpesvirus?"
+362:REJECT: exact Q repeat of existing "What is strangles?"
+363:ACCEPT
+364:ACCEPT
+365:ACCEPT
+366:REJECT: near-exact Q repeat of existing fly mask Q&A
+367:REJECT: near-exact Q repeat of existing fly spray Q&A
+368:ACCEPT
+369:ACCEPT
+370:ACCEPT
+371:ACCEPT
+372:ACCEPT
+373:REJECT: exact Q repeat of existing "What is a pre-purchase exam?"
+374:ACCEPT
+375:ACCEPT
+376:REJECT: exact Q repeat of existing "What is the purpose of a horse blanket?"
+377:REJECT: exact Q repeat of existing "What is the difference between turnout and stable blankets?"
+378:REJECT: exact Q repeat of existing "What is the purpose of a dressage whip?"
+379:REJECT: exact Q repeat of existing "What is the purpose of a jumping bat?"
+380:REJECT: exact Q repeat of existing "What is the purpose of a lunge whip?"
+381:REJECT: exact Q repeat of existing "What is the purpose of side reins?"
+382:REJECT: exact Q repeat of existing "What is the purpose of draw reins?"
+383:REJECT: exact Q repeat of existing "What is the purpose of a running martingale?"
+384:REJECT: exact Q repeat of existing "What is the purpose of a standing martingale?"
+385:REJECT: exact Q repeat of existing "What is the purpose of a breastplate?"
+386:REJECT: exact Q repeat of existing "What is the purpose of a crupper?"
+387:REJECT: exact Q repeat of existing "What is the purpose of a quarter sheet?"
+388:REJECT: exact Q repeat of existing "What is the purpose of a cooler?"
+389:REJECT: exact Q repeat of existing "What is the purpose of a fly sheet?"
+390:REJECT: exact Q repeat of existing "What is the purpose of a turnout blanket?"
+391:REJECT: exact Q repeat of existing "What is the purpose of a stable blanket?"
+392:REJECT: exact Q repeat of existing "What is the purpose of a saddle cover?"
+393:REJECT: exact Q repeat of existing "What is the purpose of a bridle bag?"
+394:REJECT: exact Q repeat of existing "What is the purpose of a grooming bag?"
+395:REJECT: exact Q repeat of existing "What is the purpose of a first aid kit?"
+396:REJECT: exact Q repeat of existing "What is the purpose of a hoof pick?"
+397:REJECT: exact Q repeat of existing "What is the purpose of a curry comb?"
+398:REJECT: exact Q repeat of existing "What is the purpose of a stiff brush?"
+399:REJECT: exact Q repeat of existing "What is the purpose of a soft brush?"
+400:REJECT: exact Q repeat of existing "What is the purpose of a sweat scraper?"
+401:REJECT: exact Q repeat of existing "What is the purpose of a shedding blade?"
+402:REJECT: exact Q repeat of existing "What is the purpose of a mane comb?"
+403:REJECT: exact Q repeat of existing "What is the purpose of a pulling comb?"
+404:REJECT: exact Q repeat of existing "What is the purpose of detangler spray?"
+405:REJECT: exact Q repeat of existing "What is the purpose of coat polish?"
+406:REJECT: exact Q repeat of existing "What is the purpose of fly spray?"
+407:REJECT: exact Q repeat of existing "What is the purpose of a fly mask?"
+408:ACCEPT
+409:ACCEPT
+410:ACCEPT
+411:ACCEPT
+412:ACCEPT
+413:REJECT: near-exact Q repeat of existing "What is the purpose of joint supplements?"
+414:ACCEPT
+415:ACCEPT
+416:ACCEPT
+417:ACCEPT
+418:ACCEPT
+419:ACCEPT
+420:ACCEPT
+421:ACCEPT
+422:ACCEPT
+423:ACCEPT
+424:ACCEPT
+425:ACCEPT
+426:ACCEPT
+427:ACCEPT
+428:ACCEPT
+429:ACCEPT
+430:ACCEPT
+431:ACCEPT
+432:ACCEPT
+433:ACCEPT
+434:ACCEPT
+435:ACCEPT
+436:ACCEPT
+437:ACCEPT
+438:ACCEPT
+439:ACCEPT
+440:ACCEPT
+441:ACCEPT
+442:ACCEPT
+443:ACCEPT
+444:ACCEPT
+445:ACCEPT
+446:ACCEPT
+447:ACCEPT
+448:ACCEPT
+449:ACCEPT
+450:REJECT: DUPLICATE within file - same Q as pair 154 (poultice)
+451:ACCEPT
+452:ACCEPT
+453:ACCEPT
+454:ACCEPT
+455:ACCEPT
+456:ACCEPT
+457:REJECT: DUPLICATE within file - near-duplicate of pair 152 (polo wraps)
+458:ACCEPT
+459:ACCEPT
+460:ACCEPT
+461:ACCEPT
+462:ACCEPT
+463:ACCEPT
+464:ACCEPT
+465:ACCEPT
+466:ACCEPT
+467:ACCEPT
+468:ACCEPT
+469:ACCEPT
+470:ACCEPT
+471:ACCEPT
+472:ACCEPT
+473:ACCEPT
+474:ACCEPT
+475:ACCEPT
+476:ACCEPT
+477:ACCEPT
+478:REJECT: DUPLICATE within file - same Q as pair 473 (dressage boot)
+479:ACCEPT
+480:ACCEPT
+481:ACCEPT
+482:ACCEPT
+483:ACCEPT
+484:ACCEPT
+485:ACCEPT
+486:ACCEPT
+487:ACCEPT
+488:REJECT: exact Q repeat of existing "What is the purpose of a lunge whip?"
+489:ACCEPT
+490:ACCEPT
+491:REJECT: exact Q repeat of existing "What is the purpose of a jumping bat?"
+492:REJECT: exact Q repeat of existing "What is the purpose of a dressage whip?"
+493:REJECT: DUPLICATE within file - same Q as pair 487 (schooling whip)
+494:REJECT: DUPLICATE within file - same Q as pair 488 (lunge whip)
+495:REJECT: DUPLICATE within file - same Q as pair 486 (riding crop)
+496:REJECT: DUPLICATE within file - riding crop repeat
+497:REJECT: DUPLICATE within file - riding crop repeat
+498:REJECT: DUPLICATE within file - riding crop repeat
+499:REJECT: DUPLICATE within file - riding crop repeat
+500:REJECT: DUPLICATE within file - riding crop repeat
+501:REJECT: DUPLICATE within file - riding crop repeat
+502:REJECT: DUPLICATE within file - riding crop repeat
+503:REJECT: DUPLICATE within file - riding crop repeat
+504:REJECT: DUPLICATE within file - riding crop repeat
+505:REJECT: DUPLICATE within file - riding crop repeat
+506:REJECT: DUPLICATE within file - riding crop repeat
+507:REJECT: DUPLICATE within file - riding crop repeat
+508:REJECT: DUPLICATE within file - riding crop repeat
+509:REJECT: DUPLICATE within file - riding crop repeat
+510:REJECT: DUPLICATE within file - riding crop repeat
+511:REJECT: DUPLICATE within file - riding crop repeat
+512:REJECT: DUPLICATE within file - riding crop repeat
+513:REJECT: DUPLICATE within file - riding crop repeat
+514:REJECT: DUPLICATE within file - riding crop repeat
+515:REJECT: DUPLICATE within file - riding crop repeat
+516:REJECT: DUPLICATE within file - riding crop repeat
+517:REJECT: DUPLICATE within file - riding crop repeat
+518:REJECT: DUPLICATE within file - riding crop repeat
+519:REJECT: DUPLICATE within file - riding crop repeat
+520:REJECT: DUPLICATE within file - riding crop repeat
+521:REJECT: DUPLICATE within file - riding crop repeat
+522:REJECT: DUPLICATE within file - riding crop repeat
+523:REJECT: DUPLICATE within file - riding crop repeat
+524:REJECT: DUPLICATE within file - riding crop repeat
+525:REJECT: DUPLICATE within file - riding crop repeat
+526:REJECT: DUPLICATE within file - riding crop repeat
+527:REJECT: DUPLICATE within file - riding crop repeat
+528:REJECT: DUPLICATE within file - riding crop repeat
+529:REJECT: DUPLICATE within file - riding crop repeat
+530:REJECT: DUPLICATE within file - riding crop repeat
+531:REJECT: DUPLICATE within file - riding crop repeat
+532:REJECT: DUPLICATE within file - riding crop repeat
+533:REJECT: DUPLICATE within file - riding crop repeat
+534:REJECT: DUPLICATE within file - riding crop repeat
+535:REJECT: DUPLICATE within file - riding crop repeat
+536:REJECT: DUPLICATE within file - riding crop repeat
+537:REJECT: DUPLICATE within file - riding crop repeat
+538:REJECT: DUPLICATE within file - riding crop repeat
+539:REJECT: DUPLICATE within file - riding crop repeat
+540:REJECT: DUPLICATE within file - riding crop repeat
+541:REJECT: DUPLICATE within file - riding crop repeat
+542:REJECT: DUPLICATE within file - riding crop repeat
+543:REJECT: DUPLICATE within file - riding crop repeat
+544:REJECT: DUPLICATE within file - riding crop repeat
+545:REJECT: DUPLICATE within file - riding crop repeat
+546:REJECT: DUPLICATE within file - riding crop repeat
+547:REJECT: DUPLICATE within file - riding crop repeat
+548:REJECT: DUPLICATE within file - riding crop repeat
+549:REJECT: DUPLICATE within file - riding crop repeat
+550:REJECT: DUPLICATE within file - riding crop repeat
+551:REJECT: DUPLICATE within file - riding crop repeat
+552:REJECT: DUPLICATE within file - riding crop repeat
+553:REJECT: DUPLICATE within file - riding crop repeat
+554:REJECT: DUPLICATE within file - riding crop repeat
+555:REJECT: DUPLICATE within file - riding crop repeat
+556:REJECT: DUPLICATE within file - riding crop repeat
+557:REJECT: DUPLICATE within file - riding crop repeat
+558:REJECT: DUPLICATE within file - riding crop repeat
+559:REJECT: DUPLICATE within file - riding crop repeat
+560:REJECT: DUPLICATE within file - riding crop repeat
+561:REJECT: DUPLICATE within file - riding crop repeat
+562:REJECT: DUPLICATE within file - riding crop repeat
+563:REJECT: DUPLICATE within file - riding crop repeat
+564:REJECT: DUPLICATE within file - riding crop repeat
+565:REJECT: DUPLICATE within file - riding crop repeat
+566:REJECT: DUPLICATE within file - riding crop repeat
+567:REJECT: DUPLICATE within file - riding crop repeat
+568:REJECT: DUPLICATE within file - riding crop repeat
+569:REJECT: DUPLICATE within file - riding crop repeat
+570:REJECT: DUPLICATE within file - riding crop repeat
+571:REJECT: DUPLICATE within file - riding crop repeat
+572:REJECT: DUPLICATE within file - riding crop repeat
+573:REJECT: DUPLICATE within file - riding crop repeat
+574:REJECT: DUPLICATE within file - riding crop repeat
+575:REJECT: DUPLICATE within file - riding crop repeat
+576:REJECT: DUPLICATE within file - riding crop repeat
+577:REJECT: DUPLICATE within file - riding crop repeat
+578:REJECT: DUPLICATE within file - riding crop repeat
+579:REJECT: DUPLICATE within file - riding crop repeat
+580:REJECT: DUPLICATE within file - riding crop repeat
+581:REJECT: DUPLICATE within file - riding crop repeat
+582:REJECT: DUPLICATE within file - riding crop repeat
+583:REJECT: DUPLICATE within file - riding crop repeat
+584:REJECT: DUPLICATE within file - riding crop repeat
+585:REJECT: DUPLICATE within file - riding crop repeat
+586:REJECT: DUPLICATE within file - riding crop repeat
+587:REJECT: DUPLICATE within file - riding crop repeat
+588:REJECT: DUPLICATE within file - riding crop repeat
+589:REJECT: DUPLICATE within file - riding crop repeat
+590:REJECT: DUPLICATE within file - riding crop repeat
+591:REJECT: DUPLICATE within file - riding crop repeat
+592:REJECT: DUPLICATE within file - riding crop repeat
+593:REJECT: DUPLICATE within file - riding crop repeat
+594:REJECT: DUPLICATE within file - riding crop repeat
+595:REJECT: DUPLICATE within file - riding crop repeat
+596:REJECT: DUPLICATE within file - riding crop repeat
+597:REJECT: DUPLICATE within file - riding crop repeat
+598:REJECT: DUPLICATE within file - riding crop repeat
+599:REJECT: DUPLICATE within file - riding crop repeat
+600:REJECT: DUPLICATE within file - riding crop repeat
+601:REJECT: DUPLICATE within file - riding crop repeat
+602:REJECT: DUPLICATE within file - riding crop repeat
+603:REJECT: DUPLICATE within file - riding crop repeat
+604:REJECT: DUPLICATE within file - riding crop repeat
+605:REJECT: DUPLICATE within file - riding crop repeat
+606:REJECT: DUPLICATE within file - riding crop repeat
+607:REJECT: DUPLICATE within file - riding crop repeat
+608:REJECT: DUPLICATE within file - riding crop repeat
+609:REJECT: DUPLICATE within file - riding crop repeat
+610:REJECT: DUPLICATE within file - riding crop repeat
+611:REJECT: DUPLICATE within file - riding crop repeat
+612:REJECT: DUPLICATE within file - riding crop repeat
+613:REJECT: DUPLICATE within file - riding crop repeat
+614:REJECT: DUPLICATE within file - riding crop repeat
+615:REJECT: DUPLICATE within file - riding crop repeat
+616:REJECT: DUPLICATE within file - riding crop repeat
+617:REJECT: DUPLICATE within file - riding crop repeat
+618:REJECT: DUPLICATE within file - riding crop repeat
+619:REJECT: DUPLICATE within file - riding crop repeat
+620:REJECT: DUPLICATE within file - riding crop repeat
+621:REJECT: DUPLICATE within file - riding crop repeat
+622:REJECT: DUPLICATE within file - riding crop repeat
+623:REJECT: DUPLICATE within file - riding crop repeat
+624:REJECT: DUPLICATE within file - riding crop repeat
+625:REJECT: DUPLICATE within file - riding crop repeat
+626:REJECT: DUPLICATE within file - riding crop repeat
+627:REJECT: DUPLICATE within file - riding crop repeat
+628:REJECT: DUPLICATE within file - riding crop repeat
+629:REJECT: DUPLICATE within file - riding crop repeat
+630:REJECT: DUPLICATE within file - riding crop repeat
+631:REJECT: DUPLICATE within file - riding crop repeat
+632:REJECT: DUPLICATE within file - riding crop repeat
+633:REJECT: DUPLICATE within file - riding crop repeat
+634:REJECT: DUPLICATE within file - riding crop repeat
+635:REJECT: DUPLICATE within file - riding crop repeat
+636:REJECT: DUPLICATE within file - riding crop repeat
+637:REJECT: DUPLICATE within file - riding crop repeat
+638:REJECT: DUPLICATE within file - riding crop repeat
+639:REJECT: DUPLICATE within file - riding crop repeat
+640:REJECT: DUPLICATE within file - riding crop repeat
+641:REJECT: DUPLICATE within file - riding crop repeat
+642:REJECT: DUPLICATE within file - riding crop repeat
+643:REJECT: DUPLICATE within file - riding crop repeat
+644:REJECT: DUPLICATE within file - riding crop repeat
+645:REJECT: DUPLICATE within file - riding crop repeat
+646:REJECT: DUPLICATE within file - riding crop repeat
+647:REJECT: DUPLICATE within file - riding crop repeat
+648:REJECT: DUPLICATE within file - riding crop repeat
+649:REJECT: DUPLICATE within file - riding crop repeat
+650:REJECT: DUPLICATE within file - riding crop repeat
+651:REJECT: DUPLICATE within file - riding crop repeat
+652:REJECT: DUPLICATE within file - riding crop repeat
+653:REJECT: DUPLICATE within file - riding crop repeat
+654:REJECT: DUPLICATE within file - riding crop repeat
+655:REJECT: DUPLICATE within file - riding crop repeat
+656:REJECT: DUPLICATE within file - riding crop repeat
+657:REJECT: DUPLICATE within file - riding crop repeat
+658:REJECT: DUPLICATE within file - riding crop repeat
+659:REJECT: DUPLICATE within file - riding crop repeat
+660:REJECT: DUPLICATE within file - riding crop repeat
+661:REJECT: DUPLICATE within file - riding crop repeat
+662:REJECT: DUPLICATE within file - riding crop repeat
