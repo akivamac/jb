@@ -1012,3 +1012,1179 @@ Joe: Both apply a function to each item in an iterable. map(func, iterable) retu
 User: How do I check if a file exists?
 Joe: Use os.path.exists('file.txt') or os.path.isfile('file.txt'). In Python 3.4+, use pathlib: Path('file.txt').exists(). For checking and creating directories, use os.makedirs('dir', exist_ok=True).
 
+User: How do you filter items in a list comprehension?
+Joe: Add an `if` clause at the end: `[x for x in range(20) if x % 3 == 0]` returns only multiples of three. You can chain conditions: `[x for x in range(20) if x % 2 == 0 if x % 3 == 0]`.
+
+User: Can list comprehensions use an if-else expression?
+Joe: Yes, but the if-else goes before the `for`: `[x if x % 2 == 0 else -x for x in range(10)]`. This is a ternary expression inside the comprehension, not a filter.
+
+User: What is a nested list comprehension?
+Joe: Nested comprehensions flatten or build nested structures: `[[j for j in range(3)] for i in range(4)]` creates a 4x3 matrix. You can also flatten with `[x for row in matrix for x in row]`.
+
+User: How does the double star `**` unpack dictionaries?
+Joe: `**` unpacks a dict into keyword arguments: `func(**{'x': 1, 'y': 2})` is the same as `func(x=1, y=2)`. Merging dicts: `merged = {**dict1, **dict2}` combines them.
+
+User: How do you write a simple function decorator?
+Joe: Define a function that accepts a function and returns a wrapper: `def my_decorator(f): return lambda *a, **k: f(*a, **k)`. The wrapper runs before/after the original function.
+
+User: Can you decorate a class?
+Joe: Yes, a decorator can return a modified or entirely new class. For example, `@dataclass` is itself a class decorator that auto-generates `__init__`, `__repr__`, and comparison methods.
+
+User: How do you make a decorator that works on both functions and classes?
+Joe: Check the type of the argument: `def decorate(obj): if isinstance(obj, type): return class_decorator(obj); return function_decorator(obj)`. Some libraries use this pattern.
+
+User: How do you clear the cache of an lru_cache decorated function?
+Joe: Call `func.cache_clear()` to remove all cached entries. You can also check `func.cache_info()` for hits, misses, and current cache size.
+
+User: What is `functools.singledispatch`?
+Joe: `@singledispatch` allows a function to have different implementations based on the type of its first argument. You register new types with `func.register(int)(int_handler)`.
+
+User: How do generators work with `yield`?
+Joe: A generator function pauses at each `yield` and resumes where it left off on the next call to `next()`. The local state is preserved between yields.
+
+User: What does `generator.throw()` do?
+Joe: `gen.throw(exc_type)` raises an exception inside the generator at the point of the last `yield`. The generator can catch it with try/except or let it propagate.
+
+User: What is a generator pipeline?
+Joe: A generator pipeline chains multiple generators where each one processes the output of the previous one using `yield from`. It's a lazy, memory-efficient way to process data streams.
+
+User: How do you convert a generator to a list?
+Joe: Call `list(my_generator)` to consume all values and store them in a list. Be careful with infinite generators as this will never terminate.
+
+User: What is the difference between an iterator and a generator?
+Joe: Every generator is an iterator, but not every iterator is a generator. Generators are created with yield syntax or generator expressions, while iterators implement `__iter__` and `__next__` manually.
+
+User: How do you create an iterator class?
+Joe: Implement `__iter__` returning `self` and `__next__` returning the next value or raising `StopIteration`. For example: `class Count: def __init__(self, n): self.n = self.i = 0; def __iter__(self): return self; def __next__(self): if self.i >= self.n: raise StopIteration; self.i += 1; return self.i`.
+
+User: What is a context manager?
+Joe: A context manager manages setup and teardown around a block of code using the `with` statement. It implements `__enter__` (setup) and `__exit__` (cleanup) methods.
+
+User: What does `__exit__` receive when an exception occurs?
+Joe: It receives the exception type, value, and traceback. If no exception occurred, all three are None. Returning True from `__exit__` suppresses the exception.
+
+User: How do you create a context manager with `contextlib.contextmanager`?
+Joe: Decorate a generator with `@contextmanager`, yield the resource, and put cleanup code after the yield in a try/finally block. The generator should yield exactly once.
+
+User: What is `contextlib.closing`?
+Joe: `closing(obj)` calls `obj.close()` on exit regardless of whether an exception occurred. It's a shortcut for objects that have a `close()` method but don't implement the full context manager protocol.
+
+User: How do you create an async context manager?
+Joe: Implement `__aenter__` and `__aexit__` that are async methods, or use `@asynccontextmanager` from contextlib. Usage requires `async with` syntax.
+
+User: What is `contextlib.suppress`?
+Joe: `contextlib.suppress(FileNotFoundError)` is a context manager that silences specific exceptions. Code inside the block runs normally, but the specified exceptions are swallowed.
+
+User: How do you chain context managers together?
+Joe: Use `with` with commas: `with open('a') as fa, open('b') as fb: ...`. Alternatively, use `contextlib.ExitStack` for a dynamic number of context managers.
+
+User: What is `contextlib.ExitStack`?
+Joe: `ExitStack` manages a dynamic collection of context managers. You `enter_context()` to add them, and they're all cleaned up when the ExitStack exits, in LIFO order.
+
+User: What is the difference between `Union` and `|` for type hints?
+Joe: `Union[str, int]` and `str | int` (Python 3.10+) mean the same thing. The pipe syntax is shorter and more readable, but `Union` works in older Python versions.
+
+User: How do you hint the return type of a function that returns nothing?
+Joe: Use `-> None` as the return type annotation. Functions without a return type annotation implicitly have `None` return type, but being explicit is better for clarity.
+
+User: What are `List`, `Dict`, `Tuple`, and `Set` in typing?
+Joe: These are generic aliases from the `typing` module for built-in containers. In Python 3.9+, you can use lowercase `list[int]`, `dict[str, int]` directly without importing from typing.
+
+User: What is `TypeVar` and when do you use it?
+Joe: `TypeVar('T')` creates a type variable for generic functions or classes. It lets you express that a function returns the same type as its input: `def identity(x: T) -> T: return x`.
+
+User: What are Generic classes?
+Joe: Generic classes use `TypeVar` to parameterize types: `class Stack(Generic[T])`. This allows `Stack[int]` or `Stack[str]` to enforce type consistency throughout usage.
+
+User: What is `Protocol` for structural subtyping?
+Joe: `Protocol` defines an interface by method signatures without inheritance: `class Drawable(Protocol): def draw(self) -> None: ...`. Any object with a `draw` method satisfies it, even without subclassing.
+
+User: How do you define a `Literal` type?
+Joe: `Literal['a', 'b', 'c']` restricts a variable to exact values. In Python 3.8+, import from `typing`, and use it for parameters that should only accept specific strings or numbers.
+
+User: What is `Annotated` in typing?
+Joe: `Annotated[int, "positive"]` adds metadata to a type hint. Libraries like FastAPI and Pydantic use it to attach validation rules, descriptions, or constraints to types.
+
+User: What is `Final` in typing?
+Joe: `Final[int] = 42` declares a constant that should not be reassigned. It signals to type checkers that the variable is a constant.
+
+User: What is `TypeAlias`?
+Joe: `TypeAlias` signals that an assignment is a type alias: `Matrix: TypeAlias = list[list[float]]`. It makes it clear the name is a type, not a runtime value.
+
+User: Give a practical use of the walrus operator in a while loop.
+Joe: `while (line := f.readline()): process(line)` reads lines until EOF. The assignment is part of the condition, so no separate initialization and update lines are needed.
+
+User: What is a match/case statement in Python 3.10+?
+Joe: `match`/`case` is structural pattern matching: `match value: case 1: ... case str() as s: ...` matches against patterns including literals, types, and structured data.
+
+User: Can match/case use wildcard patterns?
+Joe: Yes, `_` is the wildcard that matches anything: `match x: case 0: ... case _: ...`. It's like a default case and should be the last pattern.
+
+User: How do you match against sequences in match/case?
+Joe: Use unpacking: `case [first, *rest]:` matches a sequence and captures the first element and the rest. Works with lists, tuples, and other sequences.
+
+User: Can match/case use guard clauses?
+Joe: Yes, add an `if` after the pattern: `case x if x > 0:` matches positive numbers. The guard is an additional condition that must be true for the case to match.
+
+User: How do you match against class attributes?
+Joe: Use class patterns: `case Point(x=0, y=y):` matches a Point where x is 0 and captures y. You can omit attribute names if the position is unambiguous.
+
+User: What are exception groups in Python 3.11+?
+Joe: `ExceptionGroup("msg", [exc1, exc2])` bundles multiple exceptions into one. Use `except*` to catch specific sub-groups: `except* ValueError as eg: handle(eg.exceptions)`.
+
+User: How does `except*` work?
+Joe: `except* TypeError` catches all TypeError exceptions within an ExceptionGroup. Multiple `except*` blocks can each handle different exception types from the same group.
+
+User: What are groups in regular expressions?
+Joe: Parentheses create groups: `re.match(r'(\d+)-(\d+)', '123-456')`. Use `.group(1)` to get the first captured group, `.groups()` to get all as a tuple.
+
+User: What are named groups in regex?
+Joe: `(?P<name>\d+)` creates a named group. Access it with `match.group('name')`. Named groups make patterns self-documenting and easier to maintain.
+
+User: What is lookahead in regex?
+Joe: `(?=...)` is a lookahead that asserts what follows without consuming: `r'\d+(?=px)'` matches digits followed by "px" but doesn't include "px" in the match.
+
+User: How do you compile a regex pattern?
+Joe: `pattern = re.compile(r'\d+')` compiles the regex for reuse. Compiled patterns are faster for repeated use and support methods like `pattern.search(text)` directly.
+
+User: What are non-capturing groups?
+Joe: `(?:...)` groups without capturing: `re.findall(r'(?:Mr|Ms)\. \w+', text)`. They're useful for applying quantifiers or alternation without creating a backreference.
+
+User: How do you use the `DOTALL` flag?
+Joe: `re.search(r'.+', text, re.DOTALL)` makes `.` match newlines too. Without it, `.` matches any character except newline.
+
+User: What does `re.VERBOSE` do?
+Joe: `re.VERBOSE` allows you to write regex patterns with comments and whitespace for readability. Regular spaces are ignored unless escaped or inside a character class.
+
+User: What formatting options are available in f-strings?
+Joe: `:.2f` for 2 decimal places, `:,.0f` for comma-separated thousands, `:>10` for right-align in 10 chars, `:05d` for zero-padded integers, `:^10` for center-align.
+
+User: Can f-strings contain complex expressions?
+Joe: Yes, including function calls: `f"{func(x):.2f}"`. However, backslashes and comments are not allowed inside f-string expressions in Python 3.11 and earlier.
+
+User: How does the `.format()` method work?
+Joe: `"Hello, {}!".format(name)` replaces `{}` with positional arguments. You can use indices `{0}`, named arguments `{name}`, and format specs `{:.2f}`.
+
+User: What is the `%` string formatting operator?
+Joe: `"Hello, %s! You are %d." % (name, age)` is the old-style formatting. `%s` for strings, `%d` for integers, `%f` for floats. It's considered legacy but still widely used.
+
+User: What is `string.Template`?
+Joe: `Template("Hello, $name!").substitute(name="World")` provides safe string substitution. It's useful when the template comes from untrusted input since it avoids code injection.
+
+User: What is `os.path` used for?
+Joe: `os.path.join`, `os.path.exists`, `os.path.basename`, `os.path.dirname` handle file system paths in a platform-independent way. Always use `os.path` or `pathlib` instead of string concatenation.
+
+User: What is `pathlib.Path`?
+Joe: `Path("folder/file.txt")` is an object-oriented path representation. Methods like `.exists()`, `.read_text()`, `.stem`, `.suffix`, and the `/` operator for joining make it more intuitive than `os.path`.
+
+User: How do you read a file with `pathlib`?
+Joe: `Path("file.txt").read_text(encoding="utf-8")` reads the entire file as a string. For binary: `Path("file.bin").read_bytes()`. Writing works similarly with `write_text()`.
+
+User: What is `tempfile` module for?
+Joe: `tempfile.NamedTemporaryFile()` creates a temporary file that's automatically cleaned up. `tempfile.mkdtemp()` creates a temporary directory. Both are useful for intermediate data.
+
+User: How do you copy files and directories in Python?
+Joe: `shutil.copy2(src, dst)` copies a file preserving metadata. `shutil.copytree(src, dst)` copies an entire directory tree. `shutil.rmtree(path)` deletes a directory tree.
+
+User: How do you use `collections.OrderedDict`?
+Joe: `OrderedDict()` preserves insertion order of keys. In Python 3.7+ regular dicts also preserve order, but `OrderedDict` adds `.move_to_end()` and order-sensitive equality comparison.
+
+User: How does `itertools.product` work?
+Joe: `product([0,1], repeat=3)` generates all combinations with repetition: (0,0,0), (0,0,1), ..., (1,1,1). Like nested for loops in a single call.
+
+User: What is `itertools.starmap`?
+Joe: `starmap(pow, [(2,3), (4,5)])` applies a function to tuples as arguments, equivalent to `[pow(2,3), pow(4,5)]`. It unpacks each item as positional arguments.
+
+User: What does `itertools.accumulate` do?
+Joe: `accumulate([1,2,3,4])` returns a running total: 1, 3, 6, 10. You can pass a custom function: `accumulate([1,2,3], operator.mul)` gives 1, 2, 6.
+
+User: How do you make a frozen dataclass?
+Joe: `@dataclass(frozen=True)` makes instances immutable by implementing `__hash__` and raising an error on attribute assignment. Frozen instances can be used as dictionary keys.
+
+User: What is `field` in dataclasses?
+Joe: `field(default_factory=list, metadata={"desc": "items"})` customizes individual fields. `default_factory` provides mutable defaults safely, and `metadata` stores arbitrary info.
+
+User: How do you add `__post_init__` to a dataclass?
+Joe: Define `__post_init__(self)` in your dataclass to run code after the auto-generated `__init__`. It's used for validation, computed fields, or derived values.
+
+User: How do you inherit from a dataclass?
+Joe: Subclass normally: `class Point3D(Point): z: int`. Child fields are appended after parent fields. Use `@dataclass(order=True)` on both parent and child for comparison support.
+
+User: What is the `__slots__` attribute?
+Joe: `__slots__ = ['x', 'y']` restricts instance attributes to a fixed set, reducing memory usage and improving attribute access speed. You can't add new attributes not in `__slots__`.
+
+User: How do you use `timeit` for benchmarking?
+Joe: `timeit.timeit("sum(range(100))", number=10000)` times code execution. Use the `timeit` module rather than manual timing to avoid common measurement pitfalls.
+
+User: What is `__init_subclass__` used for?
+Joe: `__init_subclass__(cls, **kwargs)` is called when a class is subclassed. It's used for automatic registration, validation, or adding behavior to subclasses without metaclasses.
+
+User: What is a descriptor?
+Joe: A descriptor is a class with `__get__`, `__set__`, or `__delete__` methods. When accessed as a class attribute, Python invokes the descriptor protocol. `property`, `classmethod`, and `staticmethod` are descriptors.
+
+User: How do you implement a custom descriptor?
+Joe: Define `__get__(self, obj, objtype)` to return the value. If `obj` is None, return the descriptor itself (class-level access). For data descriptors, also implement `__set__`.
+
+User: What is a metaclass?
+Joe: A metaclass is the class of a class. `type` is the default metaclass. Custom metaclasses override `__new__` or `__init__` to modify class creation, like adding methods or enforcing interfaces.
+
+User: How does `__set_name__` work?
+Joe: `__set_name__(self, owner, name)` is called automatically when a descriptor is assigned to a class attribute. It receives the owning class and the attribute name, useful for self-naming descriptors.
+
+User: How do you use `logging.basicConfig`?
+Joe: `logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')` configures the root logger with a level and format. Call it once at startup before creating any loggers.
+
+User: What are the logging levels in order?
+Joe: DEBUG, INFO, WARNING, ERROR, CRITICAL from least to most severe. `logging.warning("low disk")` logs at WARNING level. Use `logger = logging.getLogger(__name__)` for per-module loggers.
+
+User: How do you create a custom log formatter?
+Joe: Subclass `logging.Formatter` and override `format()`, or pass a format string with fields like `%(name)s`, `%(levelname)s`, `%(lineno)d` to the Formatter constructor.
+
+User: What is a logging Handler?
+Joe: Handlers direct log output to different destinations: `StreamHandler` for console, `FileHandler` for files, `RotatingFileHandler` for log rotation. Attach them with `logger.addHandler(handler)`.
+
+User: How does `argparse` parse command-line arguments?
+Joe: `parser = argparse.ArgumentParser(); parser.add_argument("--name", required=True); args = parser.parse_args()`. Access values via `args.name`. Supports positional and optional arguments.
+
+User: How do you add subcommands with argparse?
+Joe: Use `subparsers = parser.add_subparsers()`. Create each subcommand: `sp = subparsers.add_parser("build"); sp.add_argument("target")`. Each subcommand gets its own arguments.
+
+User: What is `argparse` type conversion?
+Joe: `parser.add_argument("--port", type=int)` automatically converts the string argument to an integer. You can pass any callable: `type=Path` or `type=lambda x: x.split(",")`.
+
+User: What is `pyproject.toml`?
+Joe: `pyproject.toml` is the modern Python project configuration file replacing `setup.py`. It specifies build system, dependencies, and tool configs like `[tool.pytest]` and `[tool.mypy]`.
+
+User: What is the difference between venv and virtualenv?
+Joe: `venv` is in the standard library and creates lightweight environments. `virtualenv` is a third-party tool that's faster, supports Python 2, and can create environments with older Pythons.
+
+User: How do you use `pdb` for debugging?
+Joe: Run `python3 -m pdb script.py` to start in debugger mode. Use `b` to set breakpoints, `n` for next line, `s` for step into, `c` to continue, `p expr` to print, and `q` to quit.
+
+User: What does `breakpoint()` do?
+Joe: `breakpoint()` is a built-in that drops into `pdb` at that line. In Python 3.7+, it's equivalent to `import pdb; pdb.set_trace()`. Set `PYTHONBREAKPOINT=0` to disable all breakpoints.
+
+User: How do you use `traceback` module?
+Joe: `traceback.print_exc()` prints the current exception's traceback. `traceback.format_exception(exc)` returns the traceback as a list of strings for custom handling.
+
+User: What is `faulthandler`?
+Joe: `import faulthandler; faulthandler.enable()` dumps tracebacks of all threads on a fatal error or segfault. It helps debug C-level crashes that don't produce Python tracebacks.
+
+User: How do you use `threading` in Python?
+Joe: `threading.Thread(target=func, args=(arg1,)).start()` creates and runs a thread. Use `thread.join()` to wait for completion. Note that the GIL limits true parallelism for CPU-bound tasks.
+
+User: What is `multiprocessing`?
+Joe: `multiprocessing.Process(target=func)` spawns a separate process with its own Python interpreter. It bypasses the GIL for true parallelism but has higher overhead than threads.
+
+User: How does `concurrent.futures.ThreadPoolExecutor` work?
+Joe: `with ThreadPoolExecutor(max_workers=4) as pool: futures = [pool.submit(work, item) for item in data]`. Use `as_completed(futures)` or `future.result()` to get results.
+
+User: What is `ProcessPoolExecutor`?
+Joe: `ProcessPoolExecutor` works like `ThreadPoolExecutor` but uses processes instead of threads, bypassing the GIL. Ideal for CPU-bound tasks that can be parallelized.
+
+User: How does `asyncio` work?
+Joe: `async def fetch(): await aiohttp.get(url)` defines a coroutine. Run with `asyncio.run(main())`. `await` suspends execution until the awaited coroutine completes, allowing other tasks to run.
+
+User: What is an async event loop?
+Joe: `asyncio.run(main())` creates an event loop, runs the coroutine, and closes the loop. The loop schedules and runs coroutines cooperatively, switching between them at `await` points.
+
+User: How do you run multiple coroutines concurrently?
+Joe: `await asyncio.gather(coroutine1(), coroutine2())` runs them concurrently and returns results in order. `asyncio.create_task(coro)` schedules a coroutine without blocking.
+
+User: What are async generators?
+Joe: `async def gen(): yield await fetch_data()` is an async generator. Iterate with `async for item in gen()`. Useful for streaming data from async sources.
+
+User: How do you write a custom JSON encoder?
+Joe: Subclass `json.JSONEncoder` and override `default(self, obj)`: `def default(self, obj): if isinstance(obj, datetime): return obj.isoformat(); return super().default(obj)`.
+
+User: What are JSON Lines?
+Joe: JSON Lines is one JSON object per line. Read with: `for line in f: data.append(json.loads(line))`. Write with: `f.write(json.dumps(obj) + '\n')`. It's useful for streaming large datasets.
+
+User: How do you handle timezones in datetime?
+Joe: `from datetime import timezone; dt = datetime.now(timezone.utc)` gets UTC time. Use `dt.astimezone(tz)` to convert. The `pytz` or `dateutil` library provides named timezones.
+
+User: What is `dateutil.parser`?
+Joe: `dateutil.parser.parse("March 14, 2026")` parses various date string formats automatically. It handles many formats that `strptime` can't without explicit format strings.
+
+User: What is `sys.path`?
+Joe: `sys.path` is the list of directories Python searches for modules. `sys.path.insert(0, '/my/libs')` adds a directory to the front. It's initialized from `PYTHONPATH` and installed packages.
+
+User: How do you use `platform` module?
+Joe: `platform.python_version()` returns the Python version string. `platform.system()` returns 'Linux', 'Darwin', or 'Windows'. Useful for platform-specific behavior.
+
+User: How do you profile Python code?
+Joe: `cProfile.run("my_func()")` shows function call statistics. `python3 -m cProfile script.py` profiles the entire script. Use `snakeviz` to visualize the results.
+
+User: What is `memory_profiler`?
+Joe: `@profile` decorator from `memory_profiler` tracks memory usage line by line. Run with `python3 -m memory_profiler script.py` to see memory consumption at each line.
+
+User: How do you use `functools.reduce` to flatten a nested list?
+Joe: `reduce(lambda a, b: a + b, nested_list)` flattens one level. For deep flattening: `def flatten(lst): return [x for item in lst for x in (flatten(item) if isinstance(item, list) else [x])]`.
+
+User: What is `inspect` module used for?
+Joe: `inspect.getsource(func)` retrieves source code. `inspect.signature(func)` gets function parameters. `inspect.stack()` shows the call stack. Useful for debugging and metaprogramming.
+
+User: How do you create a singleton class in Python?
+Joe: Override `__new__`: `def __new__(cls): if not hasattr(cls, '_inst'): cls._inst = super().__new__(cls); return cls._inst`. Alternatively, use a module-level variable.
+
+User: How do you use `collections.abc` for abstract base classes?
+Joe: `from collections.abc import Iterable, Mapping`. Use `isinstance(obj, Iterable)` to check if an object is iterable. These are more reliable than checking for specific types.
+
+User: What is the `abc.ABC` class?
+Joe: Inherit from `ABC` and use `@abstractmethod` to define required methods: `class Base(ABC): @abstractmethod def compute(self): ...`. You can't instantiate a class with unimplemented abstract methods.
+
+User: How do you use `typing.runtime_checkable`?
+Joe: `@runtime_checkable class MyProtocol(Protocol): ...` makes `isinstance(obj, MyProtocol)` work at runtime. Without it, Protocol only works for static type checking.
+
+User: What is `asyncio.Queue`?
+Joe: `asyncio.Queue()` is an async-safe FIFO queue. `await queue.put(item)` adds items, `await queue.get()` retrieves them. It's used to coordinate producer and consumer coroutines.
+
+User: How do you limit concurrency with `asyncio.Semaphore`?
+Joe: `sem = asyncio.Semaphore(10)` limits to 10 concurrent operations. Use `async with sem:` before awaiting the operation. This prevents overwhelming external services.
+
+User: What is `numpy` and its basic data structure?
+Joe: `numpy.array([1,2,3])` creates an ndarray, a homogeneous N-dimensional array. It supports vectorized operations: `arr * 2` multiplies all elements without explicit loops.
+
+User: How does numpy broadcasting work?
+Joe: Broadcasting automatically aligns arrays of different shapes for operations: `np.array([1,2,3]) + 10` adds 10 to each element. Shapes are aligned from the right, with size-1 dimensions expanded.
+
+User: How do you index numpy arrays?
+Joe: `arr[0]` gets the first element, `arr[1:4]` slices, `arr[arr > 5]` boolean indexes, `arr[[0,2,5]]` fancy indexes. Multi-dimensional: `arr[0, :]` gets the first row.
+
+User: What are numpy dtypes?
+Joe: `np.array([1,2,3], dtype=np.float32)` specifies the data type. Common dtypes: `int32`, `float64`, `complex128`, `bool_`. Using smaller dtypes like `float16` saves memory.
+
+User: What is `argparse`'s `nargs` parameter?
+Joe: `nargs='+'` requires one or more arguments, `nargs='*'` accepts zero or more, `nargs=3` requires exactly three. `nargs='?'` makes the argument optional with an optional default.
+
+User: How do you handle signals in Python?
+Joe: `signal.signal(signal.SIGINT, handler)` registers a handler for the SIGINT signal. The handler receives the signal number and frame. Return to the interrupted code.
+
+User: What is `hashlib` for?
+Joe: `hashlib.sha256(b"data").hexdigest()` computes a SHA-256 hash. Used for password hashing (with salt), data integrity checks, and creating unique identifiers.
+
+User: How do you use `pathlib` to walk directories?
+Joe: `Path("dir").rglob("*.py")` recursively finds all Python files. `Path("dir").iterdir()` lists immediate children. `Path("dir").glob("*")` matches non-recursively.
+
+User: What is `shutil.make_archive`?
+Joe: `shutil.make_archive("backup", "zip", "source_dir")` creates a zip archive of a directory. Supports formats: zip, tar, gztar, bztar, xztar.
+
+User: How do you use `decimal.Decimal` for precise arithmetic?
+Joe: `Decimal("0.1") + Decimal("0.2")` gives exactly `0.3`, unlike float. Always construct from strings, not floats: `Decimal(0.1)` already has float imprecision.
+
+User: What is `fractions.Fraction`?
+Joe: `Fraction(1, 3)` represents one-third exactly. Supports arithmetic: `Fraction(1, 3) + Fraction(1, 6)` gives `Fraction(1, 2)`. Useful when floating-point precision isn't acceptable.
+
+User: How do you use `itertools.zip_longest`?
+Joe: `zip_longest([1,2], [3], fillvalue=0)` gives (1,3), (2,0). It pads the shorter iterable with the fill value instead of stopping at the shortest one like `zip`.
+
+User: What is `itertools.islice`?
+Joe: `islice(iterable, 10, 20)` slices an iterator like a list slice. It works on any iterable, not just sequences, and avoids materializing the whole thing in memory.
+
+User: What is `bisect` module?
+Joe: `bisect.bisect_left(sorted_list, x)` finds the insertion point for `x` in sorted order. `bisect.insort(sorted_list, x)` inserts while maintaining sorted order. Both are O(log n).
+
+User: How do you use `collections.ChainMap`?
+Joe: `ChainMap(dict1, dict2)` treats multiple dicts as one, with the first dict taking priority. Useful for merging configuration layers: defaults, config file, environment variables.
+
+User: What is `typing.NamedTuple`?
+Joe: `Point = NamedTuple('Point', [('x', int), ('y', int)])` creates a typed namedtuple. It's equivalent to defining a class but with tuple behavior and type annotations.
+
+User: How do you use `dataclasses.asdict`?
+Joe: `dataclasses.asdict(instance)` recursively converts a dataclass instance to a dictionary. Useful for JSON serialization or passing dataclass fields as keyword arguments.
+
+User: What is `__class_getitem__`?
+Joe: `__class_getitem__` allows a class to be parameterized with brackets: `class Stack: def __class_getitem__(cls, item): return cls`. This enables `Stack[int]` syntax.
+
+User: How do you use `typing.TYPE_CHECKING`?
+Joe: `if TYPE_CHECKING:` imports only during static analysis. It's used to import types for annotations without creating circular imports or runtime overhead.
+
+User: What is `typing.overload`?
+Joe: `@overload` declares multiple type signatures for a function. The actual implementation is untyped. It helps type checkers understand functions with different return types based on arguments.
+
+User: What is `__dataclass_fields__`?
+Joe: `cls.__dataclass_fields__` is a dict of field name to Field objects. It's automatically generated by `@dataclass` and useful for introspection of dataclass structure.
+
+User: What is `importlib` used for?
+Joe: `importlib.import_module("os.path")` dynamically imports a module by string name. `importlib.reload(module)` re-imports a module after changes. Both are useful for plugin systems.
+
+User: How do you create a Python package?
+Joe: Create a directory with `__init__.py` (can be empty). Add modules as `.py` files. Use `pyproject.toml` for metadata. The directory name becomes the package name.
+
+User: What is `__all__` in a module?
+Joe: `__all__ = ['func1', 'func2']` defines what `from module import *` imports. It's a list of strings naming public API objects. It doesn't affect explicit imports.
+
+User: How do you use `functools.lru_cache` with class methods?
+Joe: Apply it to the method, but cache is shared across instances. To cache per-instance, use a custom wrapper. Alternatively, cache expensive computations in instance attributes.
+
+User: What is `typing.get_type_hints`?
+Joe: `get_type_hints(func)` returns the resolved type hints as a dict, evaluating forward references. It's useful for introspecting annotations in a portable way.
+
+User: How do you use `__set_name__` for self-naming descriptors?
+Joe: Define `__set_name__(self, owner, name)` in your descriptor class. Python calls it automatically when the class is created: `class Foo: attr = MyDescriptor()`. The descriptor now knows it's named "attr".
+
+User: What is `operator` module?
+Joe: `operator.add(1, 2)` is the function form of `+`. `operator.attrgetter('name')` creates a callable that gets the name attribute. Useful as arguments to `map`, `sorted`, `reduce`.
+
+User: What is `__missing__` in dict subclasses?
+Joe: `__missing__(self, key)` is called when `dict.__getitem__` can't find a key. Override it to provide default values or custom behavior, similar to `defaultdict` but with more control.
+
+User: What is `typing.ParamSpec`?
+Joe: `P = ParamSpec('P')` captures the parameter types of a function. Used with `TypeVar` to type decorators: `def decorator(f: Callable[P, T]) -> Callable[P, T]`.
+
+User: How do you use `asyncio.to_thread`?
+Joe: `await asyncio.to_thread(blocking_func, arg1)` runs a blocking function in a thread without blocking the event loop. It's a simple way to bridge sync and async code.
+
+User: What is `contextlib.asynccontextmanager`?
+Joe: `@asynccontextmanager` creates an async context manager from a generator. The generator must `yield` once, and cleanup goes in `finally` after the yield. Used with `async with`.
+
+User: How do you use `pathlib.Path.stat`?
+Joe: `Path("file.txt").stat()` returns a `os.stat_result` with `st_size`, `st_mtime`, etc. `stat().st_size` gives the file size in bytes.
+
+User: What is `types.ModuleType`?
+Joe: `types.ModuleType("mymod")` creates a new module object programmatically. Useful for dynamic module creation in plugin systems or when building importable objects at runtime.
+
+User: How do you use `dis` module?
+Joe: `dis.dis(func)` displays the bytecode instructions of a function. Useful for understanding what Python compiles your code to and for performance optimization.
+
+User: What is `sys.intern`?
+Joe: `sys.intern(s)` ensures that only one copy of a string is stored in memory. Useful when processing many duplicate strings like identifiers or symbols to save memory.
+
+User: How do you handle `DeprecationWarning`?
+Joe: `warnings.filterwarnings("ignore", category=DeprecationWarning)` suppresses them. Use `warnings.warn("Use new_func instead", DeprecationWarning)` to issue them in your own code.
+
+User: What is `abc.abstractmethod`?
+Joe: `@abstractmethod` marks a method as required to be implemented by subclasses. The class becomes abstract and can't be instantiated until all abstract methods are overridden.
+
+User: How do you use `importlib.metadata`?
+Joe: `metadata("requests")` returns package metadata including version, author, and dependencies. `entry_points()` discovers installed plugins. Available in Python 3.8+.
+
+User: What is `typing.TypeGuard`?
+Joe: `def is_str_list(val: list[object]) -> TypeGuard[list[str]]:` tells the type checker that if the function returns True, the argument is safely narrowed to `list[str]`. Used for custom type narrowing.
+
+User: How do you use `__classcell__`?
+Joe: `__classcell__` is a closure variable that passes the class namespace to metaclasses. It's automatically set when using `super()` or `__init_subclass__` in a class body. Don't set it manually.
+
+User: What is `typing.NamedTuple` vs `collections.namedtuple`?
+Joe: `typing.NamedTuple` supports type annotations and default values: `class Point(NamedTuple): x: int = 0`. `collections.namedtuple` is the older runtime-only version without type checking.
+
+User: How do you use `configparser` module?
+Joe: `config = configparser.ConfigParser(); config.read('config.ini')` reads INI files. Access with `config['section']['key']`. Write with `config.write(open('config.ini', 'w'))`.
+
+User: What is `shelve` module?
+Joe: `shelve.open("db")` creates a persistent dictionary-like object. Store with `db["key"] = value`, retrieve with `db["key"]`. It's a simple key-value store backed by pickle.
+
+User: What is `unittest.mock` for?
+Joe: `@patch('module.func')` replaces a function with a `MagicMock` during testing. Track calls with `mock.assert_called_with(args)`. Essential for isolating unit tests from external dependencies.
+
+User: How do you use `pathlib` with `open`?
+Joe: `Path("file.txt").open("r", encoding="utf-8")` returns a file object like built-in `open()`. But `read_text()` and `write_text()` are usually more convenient for reading/writing entire files.
+
+User: What is `contextlib.nullcontext`?
+Joe: `nullcontext(enter_result)` is a no-op context manager that returns a value. Useful as a default when a function optionally needs a context manager: `with cm or nullcontext(val): ...`.
+
+User: What is `io.StringIO` and `io.BytesIO`?
+Joe: `StringIO("text")` creates an in-memory text stream. `BytesIO(b"data")` creates a binary stream. Both behave like files and are useful for testing and manipulating string/byte data.
+
+User: How do you use `functools.cached_property`?
+Joe: `@cached_property` computes a value on first access and caches it as an instance attribute. Unlike `lru_cache`, it doesn't need arguments and works naturally with methods.
+
+User: What is `typing.ClassVar`?
+Joe: `count: ClassVar[int] = 0` marks a variable as class-level, not instance-level. It tells type checkers this attribute belongs to the class, not individual instances.
+
+User: What is the purpose of `__new__` vs `__init__`?
+Joe: `__new__` creates the instance (it's a static method). `__init__` initializes it after creation. `__new__` is used for immutable types like `str` and `int`, or for singletons.
+
+User: How do you use `__enter__` with a try/finally pattern manually?
+Joe: `mgr = MyContext(); try: resource = mgr.__enter__(); use(resource); finally: mgr.__exit__(*sys.exc_info())`. The `with` statement does this automatically and handles exceptions correctly.
+
+User: How do you use `collections.defaultdict` with a lambda?
+Joe: `defaultdict(lambda: "N/A")` provides a default string for missing keys. `defaultdict(lambda: defaultdict(list))` creates nested defaultdicts for multi-level grouping.
+
+User: How do you handle `KeyboardInterrupt` gracefully?
+Joe: Wrap the main loop in `try: main() except KeyboardInterrupt: print("Bye"); sys.exit(0)`. Always catch it at the top level and clean up resources before exiting.
+
+User: What is `fileinput` module?
+Joe: `fileinput.input(files=["a.txt", "b.txt"])` iterates over lines from multiple files. `fileinput.filename()` gives the current file name. Useful for processing multiple input files like shell tools.
+
+User: How do you use `typing.Protocol` for callback signatures?
+Joe: Define a protocol matching the expected callable: `class Handler(Protocol): def __call__(self, event: Event) -> None: ...`. This is more explicit than `Callable[[Event], None]` when adding attributes.
+
+User: What is `decimal.localcontext`?
+Joe: `with localcontext() as ctx: ctx.prec = 50; result = Decimal(1) / Decimal(3)` temporarily sets precision for decimal calculations. The context is restored when the block exits.
+
+User: How do you use `enum.unique`?
+Joe: `@unique class Color(Enum): RED = 1; GREEN = 2` raises `ValueError` if any values are duplicated. It catches copy-paste errors in enum definitions.
+
+User: What is `typing.Unpack`?
+Joe: `Unpack[TypedDict]` lets you type-annotate `**kwargs` with a TypedDict. It provides precise keyword argument types when the function accepts a variable set of named parameters.
+
+User: How do you use `dataclasses.field` with `compare=False`?
+Joe: `field(compare=False)` excludes a field from `__eq__` and `__lt__` comparisons. Useful for fields like timestamps that shouldn't affect equality semantics.
+
+User: What is `__format__` method?
+Joe: `__format__(self, format_spec)` is called by `format(obj, spec)`. A class can define custom formatting: `format(price, ".2f")` delegates to `price.__format__(".2f")`.
+
+User: What is `hashlib.pbkdf2_hmac`?
+Joe: `hashlib.pbkdf2_hmac("sha256", password, salt, iterations=100000)` derives a key from a password using PBKDF2. Always use this or `bcrypt` instead of plain hashing for passwords.
+
+User: How do you use `typing.Concatenate`?
+Joe: `Concatenate[ParamSpec, str]` adds parameters to the front of a ParamSpec. Useful for typing decorators that add parameters: `def with_db(f: Callable[P, T]) -> Callable[Concatenate[DB, P], T]`.
+
+User: What is the difference between `Mapping` and `MutableMapping`?
+Joe: `MutableMapping` adds `__setitem__`, `__delitem__`, `pop`, `popitem`, `clear`, `update`, `setdefault` to the `Mapping` interface. Use `MutableMapping` for dictionaries you can modify.
+
+User: How do you use `abc.ABCMeta`?
+Joe: `ABCMeta` is the metaclass for `ABC`. `isinstance(obj, ABCMeta)` checks if a class uses it. You can combine it with other metaclasses: `class Meta(ABCMeta, OtherMeta)`.
+
+User: What is `contextlib.ContextDecorator`?
+Joe: A mixin that makes a context manager also work as a decorator. Implement `__enter__` and `__exit__` as normal, and the instance can be used with both `with` and `@` syntax.
+
+User: What is `typing.NamedTuple` with defaults?
+Joe: `class Point(NamedTuple): x: int; y: int = 0` gives `y` a default value. Fields with defaults must come after fields without defaults, just like function parameters.
+
+User: How do you use `__contains__` for custom membership testing?
+Joe: Define `def __contains__(self, item): return item in self._data` to customize `in` operator behavior. For example, a `Range` class could efficiently check if a number is within bounds.
+
+User: How do you use `os.path.relpath`?
+Joe: `os.path.relpath("/a/b/c.txt", "/a")` returns `"b/c.txt"`. It computes the relative path from a start directory to a target path, useful for display or portable references.
+
+User: What is `struct.pack_into`?
+Joe: `struct.pack_into("ii", buffer, offset, a, b)` packs data directly into a pre-allocated buffer at a given offset. More memory-efficient than `pack` when building large binary messages.
+
+User: How do you use `io.BufferedReader` and `io.BufferedWriter`?
+Joe: `BufferedReader(raw_file)` reads data in chunks for efficiency. `BufferedWriter(raw_file)` buffers writes. Both reduce system calls. The built-in `open()` uses buffering by default.
+
+User: How do you create a dynamic property?
+Joe: Use `@property` with a custom `__getattr__`. Or use descriptors: define a class with `__get__` and assign it to a class attribute. Both approaches allow computed attributes.
+
+User: What is `abc.abstractproperty`?
+Joe: `abstractproperty` is deprecated. Use `@property` combined with `@abstractmethod` instead: `@property @abstractmethod def value(self): ...`. This enforces that subclasses implement the property.
+
+User: How do you use `inspect.signature`?
+Joe: `sig = inspect.signature(my_func); sig.parameters` gives an OrderedDict of Parameter objects. Each parameter has `name`, `annotation`, `default`, and `kind` (POSITIONAL_OR_KEYWORD, etc.).
+
+User: What is `typing.get_origin` and `typing.get_args`?
+Joe: `get_origin(list[int])` returns `list`. `get_args(list[int])` returns `(int,)`. Useful for introspecting generic types at runtime to build adapters or serializers.
+
+User: How do you use `pathlib.Path.mkdir` with parents?
+Joe: `Path("a/b/c").mkdir(parents=True, exist_ok=True)` creates all intermediate directories. `parents=True` is like `mkdir -p`. `exist_ok=True` prevents errors if the directory already exists.
+
+User: How do you use `dataclasses.KW_ONLY`?
+Joe: Fields after `KW_ONLY` must be passed as keyword arguments. `@dataclass class User: name: str; KW_ONLY; age: int` means `User("Alice", age=30)` requires `age` as keyword.
+
+User: How do you use `typing.assert_type`?
+Joe: `assert_type(value, int)` tells the type checker that `value` must be `int`. If the checker disagrees, it raises an error. It's purely for static analysis and has no runtime effect.
+
+User: What is `typing.assert_never`?
+Joe: `assert_never(value)` is used after exhaustive type checking. If the type checker can prove the code is reachable, it flags an error. It ensures all enum cases or union branches are handled.
+
+User: How do you use `functools.reduce` with an initial value?
+Joe: `reduce(lambda a, b: a + b, [1,2,3], 0)` starts with initial value 0. Without an initial value, the first element is used as the accumulator start, and the iterable must not be empty.
+
+User: What is `__delattr__` used for?
+Joe: `__delattr__(self, name)` is called when `del obj.name` executes. Override it to prevent deletion of attributes or to implement custom deletion behavior, like removing from a database.
+
+User: How do you use `typing.TypeAlias` with forward references?
+Joe: `MyType: TypeAlias = "SomeClass"` allows forward references in type aliases. The string is lazily evaluated when the type hint is accessed, resolving circular import issues.
+
+User: How do you use `collections.abc.Sequence`?
+Joe: `Sequence` defines `__getitem__`, `__len__`, `index`, and `count`. It's the type for read-only list-like objects. `MutableSequence` adds `__setitem__`, `__delitem__`, `append`, `insert`, etc.
+
+User: What is `dataclasses.replace`?
+Joe: `replace(instance, x=5)` creates a new dataclass instance with some fields changed. It's useful for modifying frozen dataclasses since direct assignment raises an error.
+
+User: How do you use `importlib.resources`?
+Joe: `importlib.resources.files("package").joinpath("data.txt").read_text()` accesses package data files. It works correctly with zipped packages and is the recommended way to read package resources.
+
+User: What is `pathlib.PurePosixPath` and `PureWindowsPath`?
+Joe: `PurePosixPath("a/b")` uses forward slashes. `PureWindowsPath("a\\b")` uses backslashes. They let you construct paths for a target OS regardless of your current platform.
+
+User: How do you use `collections.deque` with maxlen?
+Joe: `deque(maxlen=1000)` automatically discards items from the opposite end when full. Perfect for sliding windows or recent-history buffers: `buf.append(item)` evicts the oldest when full.
+
+User: How do you use `typing.TypeVar` with bounds?
+Joe: `T = TypeVar('T', bound=Number)` restricts `T` to `Number` or its subclasses. `T = TypeVar('T', int, str)` restricts `T` to exactly `int` or `str`. Both are for constrained generics.
+
+User: What is `dataclasses.field` with `repr=False`?
+Joe: `field(repr=False)` excludes a field from the auto-generated `__repr__`. Useful for sensitive data like passwords or fields with circular references that can't be safely displayed.
+
+User: How do you use `collections.abc.Callable` for type hints?
+Joe: `Callable[[int, str], bool]` from `collections.abc` is preferred over `typing.Callable` for Python 3.9+. It has the same syntax but doesn't require importing from the `typing` module.
+
+User: What is `typing.Self`?
+Joe: `Self` (Python 3.11+) represents the type of the current class. `def copy(self) -> Self:` means the method returns the same type as the instance. Useful for method chaining in subclasses.
+
+User: How do you use `pathlib.Path.suffix` and `suffixes`?
+Joe: `Path("archive.tar.gz").suffix` returns `".gz"`. `Path("archive.tar.gz").suffixes` returns `[".tar", ".gz"]`. `stem` gives the name without the last suffix: `"archive.tar"`.
+
+User: What is `typing.Required` and `typing.NotRequired`?
+Joe: `Required[int]` marks a TypedDict key as mandatory even in total=False mode. `NotRequired[str]` marks it as optional. In Python 3.11+ they're available in `typing`.
+
+User: How do you use `os.path.splitext`?
+Joe: `os.path.splitext("file.tar.gz")` returns `("file.tar", ".gz")`. It splits at the last dot. For all extensions use `pathlib`'s `.suffixes`.
+
+User: How do you use `typing.NamedTuple` with `__doc__`?
+Joe: `class User(NamedTuple): """A user.""" name: str; age: int` sets the docstring. The `__doc__` attribute of the class will be "A user.", helping with documentation tools.
+
+User: How do you use `functools.lru_cache` on a method with mutable arguments?
+Joe: Convert mutable arguments to hashable: `@lru_cache def process(items_key: tuple): ...` and call with `process(tuple(items))`. The arguments must be hashable to be cached.
+
+User: What is `__init_subclass__` signature?
+Joe: `__init_subclass__(cls, **kwargs)` receives the new subclass as `cls`. Parent-passed kwargs like `class Child(Parent, tag="x")` arrive in `kwargs`. Call `super().__init_subclass__(**kwargs)`.
+
+User: What is `typing.Final` on a class attribute?
+Joe: `class Config: DEBUG: Final[bool] = True` marks `DEBUG` as unchangeable. Type checkers prevent `Config.DEBUG = False` even though Python allows it at runtime.
+
+User: What is `os.path.isabs`?
+Joe: `os.path.isabs("/home/user")` returns True. `os.path.isabs("relative/path")` returns False. It checks whether a path is absolute, which differs between Windows and Unix.
+
+User: How do you use `inspect.getmembers`?
+Joe: `inspect.getmembers(obj, predicate=inspect.isfunction)` returns all members matching a filter. Without a predicate, it returns all members. Useful for discovering API surfaces dynamically.
+
+User: What is `sys.exc_info`?
+Joe: `sys.exc_info()` returns `(exc_type, exc_value, traceback)` for the current exception. Inside an except block, it gives the caught exception. Outside, all values are None.
+
+User: What is `os.path.commonpath`?
+Joe: `os.path.commonpath(["/a/b/c", "/a/d"])` returns `"/a"`. It finds the longest common subpath. Use it for computing relative paths or validating that paths share a root.
+
+User: What is `typing.TypeVar` with `contravariant=True`?
+Joe: `T_contra = TypeVar('T_contra', contravariant=True)` allows the type to accept supertypes in argument positions. Used in callback types and consumer interfaces.
+
+User: What is `typing.dataclass_transform`?
+Joe: `@dataclass_transform()` tells type checkers that a function or metaclass behaves like `@dataclass`. It enables type checking for custom dataclass-like decorators or class factories.
+
+User: What is `pathlib.Path.is_absolute`?
+Joe: `Path("/home/user").is_absolute()` returns True. `Path("relative/path").is_absolute()` returns False. Check before resolving to avoid unexpected behavior with relative paths.
+
+User: What is `abc.ABC` and why use it over `ABCMeta`?
+Joe: `class Base(ABC): ...` is cleaner than `class Base(metaclass=ABCMeta): ...`. `ABC` is just a class with `ABCMeta` as its metaclass. Use `ABC` for readability; use `ABCMeta` directly only for metaclass composition.
+
+User: How do you use `pathlib.Path.rename` and `replace`?
+Joe: `path.rename(new_path)` renames a file or directory. `path.replace(new_path)` overwrites the destination if it exists. On Unix, `replace` is atomic; on Windows it may fail if the target is open.
+
+User: What is `pathlib.Path.with_name`?
+Joe: `Path("/a/b/file.txt").with_name("other.md")` returns `Path("/a/b/other.md")`. It replaces the final path component. Raises `ValueError` if the path has no name (e.g., root).
+
+User: What is lookbehind in regex?
+Joe: `(?<=...)` is a lookbehind that asserts what precedes: `r'(?<=\$)\d+'` matches digits after a dollar sign without including the dollar sign. The pattern must be fixed-width.
+
+User: How does `itertools.groupby` work?
+Joe: `groupby(sorted(data, key=key_func), key_func)` groups consecutive elements with the same key. The input must be sorted by the grouping key first, or you'll get unexpected groups.
+
+User: What are async context managers?
+Joe: `async with aiohttp.ClientSession() as session:` uses `__aenter__` and `__aexit__`. They're necessary when setup or teardown involves async operations.
+
+User: How do you use `heapq` module?
+Joe: `heapq.heappush(heap, item)` and `heapq.heappop(heap)` maintain a min-heap. `heapq.nsmallest(3, data)` efficiently finds the 3 smallest elements.
+
+User: How do you create an immutable class?
+Joe: Use `@dataclass(frozen=True)` or implement `__setattr__` and `__delattr__` to raise `FrozenInstanceError`. Frozen dataclasses also generate `__hash__` automatically.
+
+User: How do you use `collections.UserDict`?
+Joe: `UserDict` is a base class for custom dict-like objects. Override methods like `__setitem__` and `__getitem__`. It handles the internal dict management for you, unlike inheriting from `dict` directly.
+
+User: What is `__fspath__`?
+Joe: `__fspath__` makes an object usable with `os.fspath()` and `pathlib`. If your class implements `__fspath__`, it can be used directly in `open()` and path operations.
+
+User: How do you use `struct` module?
+Joe: `struct.pack("ii", 1, 2)` packs integers into bytes. `struct.unpack("ii", data)` unpacks. Useful for binary protocols and file formats with fixed-size fields.
+
+User: What is `itertools.tee`?
+Joe: `tee(iterable, n)` creates n independent iterators from a single iterable. Useful when you need to iterate over the same data multiple times. Memory grows with how far ahead you read.
+
+User: What is `pathlib.PurePath`?
+Joe: `PurePath("a/b")` provides path manipulation without touching the filesystem. Use it for parsing and constructing paths when you don't need I/O operations like `exists()` or `read_text()`.
+
+User: How do you use `collections.abc.Mapping`?
+Joe: `Mapping` defines the read-only dict interface: `__getitem__`, `__len__`, `__iter__`, `keys`, `values`, `items`, `get`, `__contains__`. Subclass it to create custom read-only mappings.
+
+User: How do you use `pathlib.Path` with `open` for CSV?
+Joe: Combine with the csv module: `with Path("data.csv").open() as f: reader = csv.DictReader(f); for row in reader: process(row)`. Or use `csv.reader(Path("data.csv").open())`.
+
+User: What is `__abstractmethods__` set?
+Joe: `cls.__abstractmethods__` is a frozenset of method names that are abstract. A class can only be instantiated when this set is empty. It's set by `ABCMeta` when abstract methods are defined.
+
+User: What is `pathlib.Path.walk`?
+Joe: `Path("dir").walk()` yields `(dirpath, dirnames, filenames)` for each directory. It's the pathlib equivalent of `os.walk`. Available in Python 3.12+.
+
+User: What is `abc.abstractstaticmethod`?
+Joe: `abstractstaticmethod` doesn't exist. Use `@staticmethod` combined with `@abstractmethod`: apply `@staticmethod` first, then `@abstractmethod`. The order matters for correct behavior.
+
+User: How do you use `typing.runtime_checkable` with `Iterable`?
+Joe: `@runtime_checkable class MyIterable(Protocol): def __iter__(self): ...` enables `isinstance(obj, MyIterable)`. Any object with `__iter__` will pass, providing runtime structural typing.
+
+User: What is `contextlib.AsyncExitStack`?
+Joe: `AsyncExitStack` manages a dynamic collection of async (and sync) context managers. Use `await stack.enter_async_context(cm)` to add them, all cleaned up on exit.
+
+User: What is `dataclasses.field` with `init=False`?
+Joe: `field(init=False, default=0)` excludes the field from `__init__` and provides a default. The field is initialized directly in the class body. Useful for computed or derived fields.
+
+User: How do you use `pathlib.Path.with_suffix`?
+Joe: `Path("file.txt").with_suffix(".md")` returns `Path("file.md")`. It replaces the last suffix. Chain calls: `p.with_stem("new_name").with_suffix(".txt")` for full renaming.
+
+User: How do you use `collections.defaultdict` with `int`?
+Joe: `defaultdict(int)` returns 0 for missing keys. Perfect for counting: `for w in words: count[w] += 1` without checking if the key exists first.
+
+User: How do you use `pathlib.Path.exists`?
+Joe: `Path("file.txt").exists()` returns True if the path points to an existing file or directory. `Path("file.txt").is_file()` checks specifically for files, `.is_dir()` for directories.
+
+User: How do you use `dataclasses.field` with `hash=False`?
+Joe: `field(hash=False)` excludes the field from `__hash__` but still includes it in `__eq__`. Useful for fields that should affect equality but not the hash value.
+
+User: How do you use `typing.TypeVar` with `covariant=True`?
+Joe: `T_co = TypeVar('T_co', covariant=True)` allows subclasses in return positions. A `Generator[T_co]` can return `Generator[Child]` where `Child` is a subclass of `T_co`. Used for read-only containers.
+
+User: How do you use `collections.OrderedDict.move_to_end`?
+Joe: `od.move_to_end("key")` moves a key to the right end (most recently accessed). `od.move_to_end("key", last=False)` moves to the left end. Useful for LRU cache implementations.
+
+User: what is late binding in closures
+Joe: Closures capture the variable by reference not value, so the inner function sees whatever value the variable holds when it runs, not when it was defined, which surprises people in loops.
+
+User: how do i fix late binding in a loop
+Joe: Bind the current value with a default argument like [lambda x, i=i: i + x for i in range(5)], where i=i captures the loop variable at each iteration.
+
+User: are tuples faster than lists
+Joe: Tuples are slightly faster to create and access because they are immutable and stored in a compact fixed-size structure, while lists maintain extra overhead for resizing.
+
+User: when should i use a tuple instead of a list
+Joe: Use tuples for fixed collections that should not change like coordinates or records, and use lists when you need to append, remove, or reorder elements.
+
+User: what is the difference between utf-8 and ascii
+Joe: ASCII uses one byte per character and only covers English letters and basic symbols, while UTF-8 is a variable-width encoding that handles every Unicode character and is backward compatible with ASCII.
+
+User: what happens if i decode bytes with the wrong encoding
+Joe: You get a UnicodeDecodeError when the bytes are not valid in that encoding, for example decoding latin-1 bytes as UTF-8 when they contain bytes above 0x7F that do not form valid UTF-8 sequences.
+
+User: how do i nest f-strings
+Joe: You can put f-strings inside f-string expressions like f"{'outer ' + f'inner {x}'}" but keep it simple because deeply nested f-strings become hard to read.
+
+User: what does the format method do that f-strings do not
+Joe: .format() can reference arguments by index or name like "{0} {name}".format(1, name="Alice"), which is useful when the same value appears multiple times or the template is stored in a variable.
+
+User: how do i access a specific byte of a string
+Joe: Strings are not byte-indexed so you must encode first like text.encode("utf-8")[0] to get the first byte, or use ord(text[0]) to get the integer value of the first character.
+
+User: how do i repeat a string on a new line
+Joe: ("hello\n" * 3) produces "hello\nhello\nhello\n", and the join trick "\n".join(["hello"] * 3) gives "hello\nhello\nhello" without a trailing newline.
+
+User: how do i get the match positions from re.findall
+Joe: Use re.finditer which returns match objects with .start() and .end() for each match, letting you find both the matched text and its position in the string.
+
+User: what is a match object in regex
+Joe: A match object from re.search or re.match holds the matched text via .group(), its span via .span(), and any captured groups, available after a successful pattern search.
+
+User: how do i replace text with a function call in regex
+Joe: Pass a callable to re.sub like re.sub(r"\d+", lambda m: str(int(m.group()) * 2), "1 2 3") which doubles every number found in the string.
+
+User: how do i use re.sub with a group reference
+Joe: Use backslash numbers like re.sub(r"(\w+)", r"\1\1", "ab") returns "abab", where \1 refers to the first captured group repeated twice.
+
+User: how do i match the start or end of a string in regex
+Joe: Use ^ for the start and $ for the end like r"^\d+$" matches a string that contains only digits from beginning to end, with no surrounding text allowed.
+
+User: what does the re.MULTILINE flag do
+Joe: re.MULTILINE makes ^ and $ match at the start and end of each line instead of the whole string, so r"^#\s" finds commented lines in multi-line text.
+
+User: how do i use heapq as a priority queue
+Joe: Import heapq, push tuples like heapq.heappush(pq, (priority, item)), and pop the smallest with heapq.heappop(pq), which always returns the lowest-priority item.
+
+User: how do i update a priority in a heap
+Joe: There is no efficient decrease-key, so push the new tuple with the updated priority and skip stale entries when popping by checking a seen set, letting the old entry remain in the heap harmlessly.
+
+User: how do i get the n largest or smallest items from a list
+Joe: Use heapq.nlargest(3, items) or heapq.nsmallest(3, items) which are more efficient than sorting the entire list when you only need a few values.
+
+User: how do i merge sorted sequences with heapq
+Joe: heapq.merge(seq1, seq2, seq3) lazily merges already-sorted iterables into a single sorted stream without loading everything into memory.
+
+User: how do i add a scope to a ChainMap
+Joe: Call maps.new_child({"key": "value"}) which prepends a new dict to the front of the chain, or use ChainMap({"key": "value"}, *existing.maps).
+
+User: how does Counter support arithmetic
+Joe: Counter objects support addition, subtraction, intersection, and union like Counter("ab") + Counter("bc") adds counts element-wise, while subtract clamps at zero by default.
+
+User: what can i subtract with Counter
+Joe: Counter(a=3) - Counter(a=1, b=2) gives Counter(a=2), and negative counts are dropped unless you use subtract which allows them for tracking deficits.
+
+User: how do i turn a Counter back into a list
+Joe: list(my_counter.elements()) repeats each element by its count, so Counter(a=2, b=1).elements() yields "a", "a", "b".
+
+User: how do i rotate a deque
+Joe: my_deque.rotate(1) moves elements to the right and my_deque.rotate(-1) moves them to the left, which is handy for cyclic buffer implementations.
+
+User: how do i remove all instances of a value from a deque
+Joe: Use while value in deque: deque.remove(value) to pop every occurrence, though for large deques a list comprehension filtered through list() and wrapped back in deque may be faster.
+
+User: what is the difference between lambda and def
+Joe: A lambda is a single expression wrapped in an anonymous function, while def creates a named function that can contain multiple statements, docstrings, and type annotations.
+
+User: can a lambda have type annotations
+Joe: No, lambdas do not support annotations in their signature, so if you need typed parameters or a return annotation you should use a regular def.
+
+User: what happens if i forget nonlocal when modifying an outer variable
+Joe: Python creates a new local variable instead of modifying the enclosing one, so the outer variable stays unchanged and the inner function silently shadows it.
+
+User: how do i use partial with a method
+Joe: Use operator.methodcaller like from operator import methodcaller; upper = methodcaller("upper") which returns a callable that calls .upper() on whatever object you pass it.
+
+User: how do i register a handler for a subclass with singledispatch
+Joe: The default behavior already handles subclasses, but you can override it with @process.register(ExactType) to force a specific handler for that exact type only.
+
+User: how do i define a custom exception with extra data
+Joe: class ValidationError(Exception): def __init__(self, field, message): self.field = field; super().__init__(message) lets you carry structured data like the failing field name.
+
+User: what is the difference between raise and raise from
+Joe: raise exc creates a new exception with no context, while raise exc from cause inside an except block links the new exception to its cause for better tracebacks.
+
+User: how do i use assert for input validation
+Joe: assert isinstance(x, int), "x must be an int" raises AssertionError with a message when the condition fails, but remember asserts are stripped with python -O so do not use them for security checks.
+
+User: how do relative imports work in a package
+Joe: from . import module imports from the current package, from .. import module goes up one level, and these only work inside packages not in top-level scripts.
+
+User: what is the difference between a wheel and a source distribution
+Joe: A wheel is a pre-built package that installs fast without compilation, while a source distribution runs setup.py or a build step at install time which may need compilers or headers.
+
+User: how do i install a package from a local directory
+Joe: Use pip install ./my_package or pip install -e ./my_package for editable mode where changes to the source take effect immediately without reinstalling.
+
+User: what happens if two packages require different versions of the same dependency
+Joe: Pip may install both versions side by side, but at runtime only one can be imported under the same name, which can cause hard-to-diagnose conflicts.
+
+User: how do i see why a package was installed
+Joe: pip show package-name shows the reason, dependencies, and metadata, and pipdeptree builds a full dependency tree revealing which package pulled in each dependency.
+
+User: how do i make two objects compare equal
+Joe: Define __eq__(self, other) to compare the relevant fields, and remember to also define __hash__ if you want instances to work in sets or as dict keys.
+
+User: can subclasses use __slots__ if the parent defines them
+Joe: Yes, but the child must define its own __slots__ for any new attributes, and inherited slotted attributes are accessed from the parent's slot descriptor without needing redeclaration.
+
+User: when should i use a descriptor instead of a property
+Joe: Use a descriptor when you need the same access behavior on many classes or want to customize behavior at the class level, while property is fine for simple per-class computed attributes.
+
+User: what is the field order for dataclass comparisons
+Joe: Fields are compared in the order they appear in the class definition, so @dataclass(order=True) with name then age compares name first and only checks age when names are equal.
+
+User: how do i iterate over a generator with a timeout concept
+Joe: There is no built-in timeout on generators, but you can use itertools.islice to take a fixed number of items or asyncio.wait_for to wrap a coroutine that yields from a generator.
+
+User: what is itertools.chain.from_iterable
+Joe: chain.from_iterable(list_of_lists) flattens an iterable of iterables lazily, unlike chain(*list_of_lists) which unpacks arguments eagerly at call time.
+
+User: how do i use the itertools.groupby recipe
+Joe: groupby requires sorted input for correct grouping like for key, group in itertools.groupby(sorted(items, key=keyfunc)): each group is an iterator over items sharing that key.
+
+User: how do i make an iterator that repeats a value
+Joe: itertools.repeat("x", 5) yields "x" five times, and without the count argument it repeats forever, useful for feeding a constant into zip or map.
+
+User: how do i iterate over two lists at different speeds
+Joe: Use itertools.chain or itertools.islice on each list separately, since zip always pairs by position and does not support different stride lengths for each input.
+
+User: how do i compress a list with a selector
+Joe: itertools.compress(data, selectors) yields items from data where the corresponding selector is truthy, so compress("ABC", [1, 0, 1]) yields "A" and "C".
+
+User: how do i use tee to duplicate an iterator
+Joe: itertools.tee(my_iter, 2) returns two independent iterators from one source, but both consume from the same underlying data so keep them close in memory.
+
+User: how do i check if a file is seekable
+Joe: f.seekable() returns True for regular files and False for pipes or sockets, which matters before calling f.seek() to avoid unsupported operation errors.
+
+User: what is the difference between r and rt mode in open
+Joe: They are equivalent because text mode is the default for "r", but "rt" makes it explicit that you want text mode with encoding and newline translation.
+
+User: how do i open a file for both reading and writing
+Joe: Use "r+" mode which opens for reading and writing without truncating, or "w+" which truncates first, and remember the file position moves as you read and write.
+
+User: how do i do atomic writes to a file
+Joe: Write to a temporary file in the same directory then call os.replace(tmp, target) which is atomic on most systems, preventing corruption if the process crashes mid-write.
+
+User: what is the difference between time.sleep and asyncio.sleep
+Joe: time.sleep blocks the entire thread so nothing else runs, while asyncio.sleep is a coroutine that yields control back to the event loop so other coroutines can execute.
+
+User: what is the difference between threads and processes
+Joe: Threads share memory and are good for I/O-bound work but limited by the GIL for CPU work, while processes have separate memory and bypass the GIL for true parallelism.
+
+User: when should i use multiprocessing over threading
+Joe: Use multiprocessing for CPU-bound tasks like data processing or numerical computation where the GIL would bottleneck threads, and use threading for I/O-bound tasks like network requests.
+
+User: how do i share data between processes
+Joe: Use multiprocessing.Queue, multiprocessing.Value, or multiprocessing.Array which provide shared memory objects, or use Manager for shared dicts and lists across processes.
+
+User: what is a threading lock for
+Joe: A Lock prevents multiple threads from executing a critical section simultaneously, so with lock: shared_resource.update() ensures only one thread modifies the shared data at a time.
+
+User: how do i use a context manager lock
+Joe: with my_lock: acquires the lock on entry and releases it on exit even if an exception occurs, which is safer than manual acquire and release calls.
+
+User: what is the GIL in Python
+Joe: The Global Interpreter Lock is a mutex that allows only one thread to execute Python bytecode at a time, which limits CPU-bound thread parallelism but is released during I/O operations.
+
+User: how do i handle exceptions from futures
+Joe: Wrap future.result() in try/except to catch the remote exception, which is re-raised when you call result() on a failed future.
+
+User: what does the map method do on executors
+Joe: pool.map(process, items) runs the function on each item in parallel and returns results in order, similar to the built-in map but executed across workers.
+
+User: how do i add a return type annotation
+Joe: Put an arrow before the body like def add(a: int, b: int) -> int: return a + b, and use -> None for functions that do not return a value.
+
+User: when would i use Protocol instead of ABC
+Joe: Use Protocol when you want structural subtyping where unrelated classes satisfy the interface just by having the right methods, and use ABC when you want explicit inheritance.
+
+User: how do i annotate a function that returns a type
+Joe: Use type[SomeClass] in the return annotation like def factory(cls: type[Animal]) -> Animal: which means the function returns an instance of the given class or a subclass.
+
+User: what is the statistics module for
+Joe: statistics.mean([1, 2, 3]) returns the average, statistics.median returns the middle value, and statistics.stdev computes standard deviation, all for basic statistical analysis.
+
+User: how do i get the median of a list
+Joe: statistics.median([3, 1, 2]) returns 2, and for an even-length list it returns the average of the two middle values like statistics.median([1, 2, 3, 4]) gives 2.5.
+
+User: how do i generate cryptographically secure random numbers
+Joe: Use the secrets module like secrets.randbelow(100) for a secure random integer or secrets.token_hex(16) for a random token, which are suitable for passwords and security.
+
+User: how do i generate a secure random password
+Joe: import secrets; password = secrets.token_urlsafe(16) produces a 22-character URL-safe string with enough entropy for most password requirements.
+
+User: how do i pick a random element from a weighted list
+Joe: Use random.choices with weights like random.choices(["a", "b", "c"], weights=[5, 3, 2], k=1)[0] which picks one element with the given probability distribution.
+
+User: what does uuid.uuid4 produce
+Joe: uuid.uuid4() generates a random UUID like UUID("a3f2b8c1-...") which is suitable for unique identifiers when you do not need a predictable or time-based ID.
+
+User: how do i get a UUID as a clean string
+Joe: str(uuid.uuid4()) gives the standard format with dashes, and uuid.uuid4().hex returns the 32-character string without dashes for compact storage.
+
+User: how do i generate a random salt
+Joe: salt = os.urandom(16) generates 16 cryptographically random bytes, and you store it alongside the hash so you can recompute the hash with the same salt during verification.
+
+User: how do i hash a file without loading it all into memory
+Joe: Use hashlib.file_digest(open(path, "rb"), "sha256") which reads the file in chunks and computes the hash incrementally without loading the entire file at once.
+
+User: how do i write CSV data in Python
+Joe: Use csv.writer with a file like with open("out.csv", "w") as f: writer = csv.writer(f); writer.writerow(["name", "age"]) to write headers and writerow for each row.
+
+User: how do i read CSV data into lists
+Joe: Use csv.reader which yields each row as a list of strings like for row in csv.reader(f): name, age = row, and each row is already split by the delimiter.
+
+User: how do i handle CSV files with different delimiters
+Joe: Pass delimiter to the reader or writer like csv.reader(f, delimiter="\t") for tab-separated files, or use csv.Sniffer().sniff(sample) to detect the delimiter automatically.
+
+User: what is the csv.QUOTE_ALL option
+Joe: writer.quoting = csv.QUOTE_ALL wraps every field in quotes regardless of content, which is useful when you need strict RFC-compliant output or the data contains the delimiter.
+
+User: how do i use sqlite3 to create a database
+Joe: import sqlite3; conn = sqlite3.connect("data.db") creates or opens a database file, and cur = conn.cursor() gives you a cursor to execute SQL commands.
+
+User: how do i create a table with sqlite3
+Joe: cur.execute("CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)") creates the table, and conn.commit() persists the schema change to disk.
+
+User: how do i insert data into sqlite3
+Joe: cur.execute("INSERT INTO users (name) VALUES (?)", ("Alice",)) with a parameter placeholder prevents SQL injection, and conn.commit() saves the transaction.
+
+User: how do i query data from sqlite3
+Joe: cur.execute("SELECT * FROM users WHERE name = ?", ("Alice",)) returns a cursor you can iterate over like for row in cur: print(row), where each row is a tuple.
+
+User: how do i use row_factory to get dict-like rows
+Joe: conn.row_factory = sqlite3.Row makes each row behave like a dict so you can access columns by name like row["name"] instead of remembering the index.
+
+User: what is the difference between execute and executemany
+Joe: execute runs one SQL statement, while executemany runs the same statement with a list of parameter tuples in one call, which is faster for bulk inserts.
+
+User: how do i use the csv module to write dicts
+Joe: Use csv.DictWriter with fieldnames like w = csv.DictWriter(f, fieldnames=["name", "age"]) then w.writeheader() and w.writerow({"name": "Alice", "age": 30}).
+
+User: how do i use pathlib to get the home directory
+Joe: Path.home() returns the user's home directory as a Path object, and Path.home() / "file.txt" builds a path inside it without relying on shell shortcuts.
+
+User: how do i write to a file with pathlib
+Joe: Path("output.txt").write_text("hello\n", encoding="utf-8") writes a string to the file, creating it if it does not exist or overwriting if it does.
+
+User: how do i change a file's extension with pathlib
+Joe: Path("report.txt").with_suffix(".md") returns Path("report.md"), replacing the last suffix, and with_name("new.txt") replaces the entire filename.
+
+User: how do i get the parent directory of a path
+Joe: Path("/a/b/c.txt").parent returns Path("/a/b") and .parents[0] is the same, while .parents[1] goes up two levels to Path("/a").
+
+User: how do i get the absolute path of a relative path
+Joe: Path("relative/file.txt").resolve() returns the absolute path with symlinks resolved, and Path("relative/file.txt").absolute() returns the absolute path without resolving symlinks.
+
+User: what does statistics.mode do with ties
+Joe: statistics.mode returns the first value encountered when there is a tie, while statistics.multimode returns a list of all values that appear with the highest frequency.
+
+User: how do i get the standard deviation of a sample
+Joe: statistics.stdev([1, 2, 3, 4, 5]) computes the sample standard deviation using n-1 in the denominator, while statistics.pstdev uses n for the population.
+
+User: how do i compute a quantile or percentile
+Joe: statistics.quantiles(data, n=4) splits data into quartiles, and for other percentiles sort the data and pick the value at the desired index position.
+
+User: how do i add methods to a NamedTuple
+Joe: Define methods directly in the class body like class Point(NamedTuple): x: int; y: int; def distance(self): return (self.x**2 + self.y**2)**0.5, which work normally.
+
+User: how do i mutate one layer of a ChainMap
+Joe: Use config.maps[0]["key"] = "value" to modify a specific layer, or config.new_child({"key": "value"}) to prepend a new layer, but direct assignment writes to the first mapping.
+
+User: what is the difference between dict union and ChainMap
+Joe: dict union creates a new flat dict with no layering, while ChainMap maintains separate layers where the first mapping shadows the rest, so you can still access deeper layers.
+
+User: how do i use a heap to find the median of a stream
+Joe: Maintain two heaps, a max-heap for the lower half and a min-heap for the upper half, rebalancing after each insert so the median is always at the top of one of them.
+
+User: how do i implement a max-heap in Python
+Joe: Python only has min-heap, so negate your values like heapq.heappush(h, -value) and negate again when popping to get max-heap behavior.
+
+User: how do i sort a heap without destroying it
+Joe: Use heapq.nsmallest(len(h), h) which returns a sorted list without mutating the original heap, or copy it with h_copy = h[:] and then sorted(h_copy).
+
+User: how do i use the csv module with pipes as delimiters
+Joe: Pass delimiter="|" to csv.reader or csv.writer to handle pipe-delimited files, and use csv.QUOTE_NONNUMERIC to quote all non-numeric fields automatically.
+
+User: how do i read a CSV file that has no header row
+Joe: Use csv.reader directly or pass header=None to DictReader which then uses numeric indices as keys instead of column names.
+
+User: how do i write a CSV with custom quoting
+Joe: Set the quoting attribute like writer.quoting = csv.QUOTE_MINIMAL or csv.QUOTE_ALL, and use quotechar to change the character from the default double quote.
+
+User: how do i escape special characters in CSV fields
+Joe: The csv module handles quoting automatically when you use writerow, wrapping fields that contain the delimiter or quote character in quotes and escaping internal quotes.
+
+User: how do i insert many rows at once in sqlite3
+Joe: cur.executemany("INSERT INTO users (name, age) VALUES (?, ?)", data) takes a list of tuples and inserts them all in one call, which is much faster than looping with execute.
+
+User: how do i use transactions in sqlite3
+Joe: sqlite3 starts a transaction automatically on the first write, and you call conn.commit() to save or conn.rollback() to undo, with isolation_level controlling the behavior.
+
+User: how do i use a with statement with sqlite3
+Joe: with sqlite3.connect("db.db") as conn: automatically commits on clean exit and rolls back on exception, ensuring the database stays consistent.
+
+User: how do i get the last inserted row id in sqlite3
+Joe: cur.lastrowid returns the rowid of the most recent INSERT, useful for retrieving the auto-generated primary key after inserting a new row.
+
+User: how do i use sqlite3 parameter substitution safely
+Joe: Always use ? placeholders like cur.execute("SELECT * FROM users WHERE name = ?", (name,)) instead of string formatting, which prevents SQL injection attacks.
+
+User: how do i check if a row exists in sqlite3
+Joe: cur.execute("SELECT 1 FROM users WHERE name = ?", (name,)).fetchone() returns a tuple if found or None if not, which is more efficient than selecting all columns.
+
+User: how do i close a sqlite3 connection
+Joe: conn.close() closes the connection and commits any pending transaction, or use a with statement which handles closing and committing automatically.
+
+User: how do i use pathlib with os module functions
+Joe: Convert with Path(path) or use .as_posix() to get a string, and most os.path functions have pathlib equivalents like Path.exists() instead of os.path.exists().
+
+User: how do i create a symlink with pathlib
+Joe: Path("link").symlink_to(Path("target")) creates a symbolic link, and Path("link").readlink() returns the target path the link points to.
+
+User: how do i get a random sample from a list
+Joe: random.sample(my_list, 3) picks 3 unique elements without replacement, while random.choices(my_list, k=3) picks 3 with replacement allowing duplicates.
+
+User: how do i seed the random number generator
+Joe: random.seed(42) makes results reproducible so the same sequence of calls produces the same numbers every time, useful for testing and debugging.
+
+User: how do i generate a random float in a range
+Joe: random.uniform(1.0, 10.0) returns a random float between 1.0 and 10.0 inclusive, while random.random() gives a float between 0.0 and 1.0.
+
+User: how do i get a random boolean
+Joe: random.choice([True, False]) picks one randomly, or use secrets.randbelow(2) == 0 for a cryptographically secure random boolean.
+
+User: how do i hash incrementally
+Joe: h = hashlib.sha256(); h.update(chunk1); h.update(chunk2); h.hexdigest() lets you feed data in pieces, which is useful for large files or streaming data.
+
+User: what hash algorithms does hashlib support
+Joe: hashlib.algorithms_available lists all installed algorithms including sha256, sha3_256, blake2b, and md5, and algorithms_guaranteed covers the ones always present in the standard library.
+
+User: what is the difference between naive and aware datetimes
+Joe: A naive datetime has no timezone information and assumes the local timezone, while an aware datetime carries a timezone object and can be compared correctly across timezones.
+
+User: what is zoneinfo in the standard library
+Joe: zoneinfo provides IANA timezone support like ZoneInfo("Europe/London"), handling daylight saving time transitions automatically, available since Python 3.9.
+
+User: how do i get the current timestamp
+Joe: import time; ts = time.time() returns seconds since epoch as a float, and int(ts) truncates to a whole number of seconds.
+
+User: how do i convert a timestamp to a datetime
+Joe: datetime.fromtimestamp(1694000000) converts a Unix timestamp to a datetime in the local timezone, and datetime.fromtimestamp(ts, tz=timezone.utc) for UTC.
+
+User: what is the difference between time.time and time.perf_counter
+Joe: time.time returns wall clock time that can jump with system clock changes, while time.perf_counter returns a monotonic high-resolution timer best for measuring durations.
+
+User: how do i use csv.Sniffer to detect the delimiter
+Joe: sample = f.read(1024); dialect = csv.Sniffer().sniff(sample); f.seek(0); reader = csv.reader(f, dialect) detects and applies the delimiter automatically.
+
+User: how do i create an index in sqlite3
+Joe: cur.execute("CREATE INDEX idx_name ON users (name)") creates an index that speeds up queries filtering on that column, at the cost of slightly slower inserts.
+
+User: how do i use LIKE queries in sqlite3
+Joe: cur.execute("SELECT * FROM users WHERE name LIKE ?", ("%alice%",)) searches for names containing "alice" with % as a wildcard for any sequence of characters.
+
+User: how do i use BETWEEN in sqlite3
+Joe: cur.execute("SELECT * FROM users WHERE age BETWEEN ? AND ?", (18, 30)) returns rows where age is in the inclusive range from 18 to 30.
+
+User: how do i count rows in sqlite3
+Joe: cur.execute("SELECT COUNT(*) FROM users").fetchone()[0] returns the total number of rows, and adding a WHERE clause counts only matching rows.
+
+User: how do i use GROUP BY in sqlite3
+Joe: cur.execute("SELECT department, COUNT(*) FROM employees GROUP BY department") returns one row per department with the count, and HAVING filters the groups.
+
+User: how do i join tables in sqlite3
+Joe: cur.execute("SELECT users.name, orders.item FROM users JOIN orders ON users.id = orders.user_id") combines rows from both tables where the join condition matches.
+
+User: how do i do an INNER versus LEFT JOIN
+Joe: INNER JOIN only returns rows with matches in both tables, while LEFT JOIN returns all rows from the left table and NULL for unmatched right columns.
+
+User: how do i use LIKE case-insensitively in sqlite3
+Joe: Use the COLLATE NOCASE modifier like WHERE name COLLATE NOCASE = 'alice', or wrap the column with lower() like WHERE lower(name) = lower('Alice').
+
+User: how do i export sqlite3 query results to CSV
+Joe: Combine sqlite3 and csv modules: execute a query then use csv.writer to write each row to a file, or use the sqlite3 .iterdump() method for full database dumps.
+
+User: what does secrets.token_bytes do
+Joe: secrets.token_bytes(32) generates 32 random bytes suitable for cryptographic keys or tokens, and the bytes contain values from 0 to 255 uniformly distributed.
+
+User: how do i generate a random integer in a range securely
+Joe: secrets.randbelow(n) returns a cryptographically secure random integer from 0 to n-1, suitable for security-sensitive applications like token generation.
+
+User: how do i check if a year is a leap year
+Joe: calendar.isleap(2024) returns True, or check divisibility by 4 but not 100 unless also divisible by 400, which is the standard leap year rule.
+
+User: how do i use uuid5 to generate deterministic UUIDs
+Joe: uuid.uuid5(uuid.NAMESPACE_DNS, "example.com") produces the same UUID every time for the same namespace and name, useful for consistent IDs from stable input.
+
+User: how do i parse a UUID from a string
+Joe: uuid.UUID("a3f2b8c1-1234-5678-9abc-def012345678") parses the standard format, and uuid.UUID(hex="a3f2b8c1...") accepts the 32-character string without dashes.
+
+User: how do i check if a uuid is valid
+Joe: Try uuid.UUID(string) in a try/except block, catching ValueError if the string is not a valid UUID format, or check the version attribute after parsing.
+
+User: how do i use hashlib to verify file integrity
+Joe: Compute hashlib.sha256(open(path, "rb").read()).hexdigest() and compare it against a known good hash to detect if the file has been modified or corrupted.
+
+User: how do i compute an HMAC
+Joe: hmac.new(key, message, hashlib.sha256).hexdigest() computes a keyed hash that verifies both integrity and authenticity of the message, used for API request signing.
+
+User: how do I check if a path is a file or directory
+Joe: Path("something").is_file() returns True for files and Path("something").is_dir() returns True for directories, both returning False if the path does not exist.
+
+User: how do i list only files in a directory
+Joe: [p for p in Path("dir").iterdir() if p.is_file()] gives just the files, and you can add p.suffix == ".py" to filter by extension.
+
+User: how do i get environment variables with pathlib
+Joe: Path.home() uses os.path.expanduser internally, and for other environment variables use os.environ or os.getenv("MY_VAR", "default") since pathlib does not directly read env vars.
+
+User: how do i use the os module to walk directories
+Joe: for root, dirs, files in os.walk("dir"): yields the current directory path, subdirectories, and files at each level, which is useful when you need to process the tree structure.
+
+User: how do i clear the console screen
+Joe: os.system("cls" if os.name == "nt" else "clear") works cross-platform, or print("\033c", end="") which resets the terminal using ANSI escape codes.
+
+User: what is the difference between os.name and sys.platform
+Joe: os.name gives broad categories like "posix" or "nt", while sys.platform gives specifics like "darwin", "linux", or "win32" for finer platform detection.
+
+User: how do i get the Python executable path
+Joe: sys.executable returns the path to the running Python interpreter, useful for subprocess calls or verifying which Python version is being used.
+
+User: how do i check if a module is installed
+Joe: try: import requests; print(requests.__version__) except ImportError: print("not installed") is the simplest check, or use importlib.metadata.version("requests") without importing.
+
