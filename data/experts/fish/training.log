@@ -1907,3 +1907,57 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # 
 # User: What is a tang?
 # Joe: A tang is a marine fish also known as a surgeonfish, recognized by the sharp scalpel-like spine at the base of the tail. The blue 
+# [2026-09-07 19:13:45] FINISH at step 2000
+# [2026-09-09 16:56:48] RESUME: training/train_expert.py --name fish --resume --steps 1500 --push 1000 --log 100 --sample 100
+100,1.8545,3.00e-04,0.57,1788987585.287509
+# [2026-09-09 16:59:45] SAMPLE step 100:
+# 
+# Joe: Cannesty fish also right Sea. Seahutpers while kit freshwater pH or a changes daily with pusiunting a lure in a mix. If itable support sand and light, b
+200,1.3748,3.00e-04,0.59,1788987754.155506
+# [2026-09-09 17:02:34] SAMPLE step 200:
+# 
+# Joe: Sargasso Sea to spawn and how hardyel-th fish eel like blue tuna to red a goldfish than discouramis, but better, in bubbles on a fection that stri
+300,1.2273,3.00e-04,0.58,1788987925.2560651
+# [2026-09-09 17:05:25] SAMPLE step 300:
+# 
+# 
+# User: How do sasubpers while kebarfibendes to stone is a few days to concentration in ammonia to swim near the water.?
+# Joe: Flligh photosynthesis during How dosing sh
+400,1.0985,3.00e-04,0.62,1788988086.941576
+# [2026-09-09 17:08:07] SAMPLE step 400:
+# 
+# User: What is a fish potic is a de fish dehook?
+# Joe: A fish dehooker is a curved metal device that connects two retract and retrieve the main baquarium. It 
+500,0.9019,3.00e-04,0.55,1788988267.857664
+# [2026-09-09 17:11:08] SAMPLE step 500:
+# 
+# User: What is a fish migration routes.?
+# Joe: Fish migration octopus based on reduce fishing stress population rules and evides habitat deplete them to protect fish and 
+600,0.8025,3.00e-04,0.50,1788988467.7790022
+# [2026-09-09 17:14:28] SAMPLE step 600:
+# 
+# User: What is an ritorial fish?
+# Joe: Fish migration is the seasonal movement of fish from one habitat to another, usually for spawning or feeding. Salmon migrate from ocean 
+700,0.7099,3.00e-04,0.59,1788988637.223653
+# [2026-09-09 17:17:17] SAMPLE step 700:
+# 
+# 
+# User: What is a fish tropical fish trigger?
+# Joe: A fish tropical mark device, reaching speeds in short bursts between and a tuna, purse to keep involves open fish pop
+800,0.5868,3.00e-04,0.61,1788988802.218059
+# [2026-09-09 17:20:02] SAMPLE step 800:
+# 
+# User: What is a drag seous cage-on fishing?
+# Joe: A school of fish is a large group of the same species swimming together in a school synchronized patterns, turningly stretch,
+900,0.5165,3.00e-04,0.60,1788988968.321564
+# [2026-09-09 17:22:48] SAMPLE step 900:
+# 
+# User: What is a fish passage effectiveness?
+# Joe: Fish aquassawfish is was from traveling white fish during minnows, are become popular worldwide.
+# 
+# User: What is fish grow over 18 inch
+1000,0.4141,3.00e-04,0.57,1788989144.518848
+# [2026-09-09 17:25:44] SAMPLE step 1000:
+# 
+# User: What is the difference between a is rough calcium?
+# Joe: A timer is most area to fish canner lower tanks with longer Large or pH with filter strong filtration is strong 
