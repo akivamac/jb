@@ -10,7 +10,7 @@
 ## THE TWO MACHINES (who's who)
 - **Tablet** = a Termux Android device, user `akiva`. Clone at `/data/data/com.termux/files/home/github-projects/jb`, pushes via `origin`.
 - **Mac** = Apple silicon machine, user `dev`. Clone at `~/github-projects/joe-brain`, remote named `jb` → `akivamac/jb.git`.
-- They never talk directly; they sync through GitHub. Either machine can generate data or train.
+- So far they sync through GitHub, but direct transfer (scp/rsync) is possible and just not driven yet.
 
 ## Context Window Strategy
 - Currently using **sliding window trimming** — oldest turns dropped when context exceeds seq_len
