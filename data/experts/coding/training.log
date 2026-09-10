@@ -1392,3 +1392,28 @@ ValueError: probabilities contain NaN
 # 
 # User: what is the difference between delicity and cohone larger search
 # Joe: Binary half tree stores replaces a element of a decide. Use Spot match 5 said both is pight separed
+# [2026-09-10 18:11:17] FINISH at step 1000
+# [2026-09-10 19:11:25] RESUME: training/train_expert.py --name coding --steps 1000 --resume --push 100 --log 25 --sample 25
+25,0.1265,3.00e-04,0.53,1789081932.561069
+# [2026-09-10 19:12:13] SAMPLE step 25:
+# 
+# 
+# User: What is asserverses a pool?
+# Joe: A semant?
+# User: is a avail IPC (HT) composue), groups (reuse In Error, Eode. A provides always catch mer
+50,0.1162,3.00e-04,0.43,1789081990.7046862
+# [2026-09-10 19:13:11] SAMPLE step 50:
+# 
+# Joe: A dictionary mapping each children unique visits own coltiguous visits own hise to the same bucket, while lowerdiffine filterq-key does not exist changed, a portional small
+75,0.1180,3.00e-04,0.41,1789082051.8821068
+# [2026-09-10 19:14:12] SAMPLE step 75:
+# 
+# Joe: The deque is the sequence between a loop and recursion for checking out global to the grouping of a program's last to keep pass.
+# User: is the callback an action
+# Joe: have client
+100,0.1214,3.00e-04,0.40,1789082113.8028429
+# [2026-09-10 19:15:14] SAMPLE step 100:
+# 
+# Joe: A static method is a function that belongs to an object. It is defined inside a class and operates on instance data.
+# User: what is a static method
+# Joe: A static method is a 
