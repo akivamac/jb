@@ -1,0 +1,74 @@
+[main 0e33dc1] chore: auto-save cot expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 65 insertions(+)
+To https://github.com/akivamac/jb.git
+   b26507d..0e33dc1  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 129,418 characters from /Users/dev/github-projects/joe-brain/data/experts/cot/cot_train.txt
+Encoded: 76,717 tokens
+Resumed expert 'cot' from /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz (Adam step 7433)
+Expert 'cot': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.1969 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nUser: What is 100 / (3/5) / (2/5)?\nJoe: (3/4) / (2/5) = 6/26 = 24.\n\n\nUser: What is (1/3) * (1/2) = '
+
+  step   200/1500 | loss 0.7451 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nUser: A field for it Factors both: 1 are PM rather than 15:400. Value = $1100 cm.\n\nUser: A Detheses'
+
+  step   300/1500 | loss 0.4858 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nUser: A square has area 6 + 8) / 2 = 7.\n\nUser: A store sells it in 5 liters long. Timags from on it'
+
+  step   400/1500 | loss 0.2935 | lr 3.00e-04 | 0.54 steps/s
+  Sample: '\nJoe: Round Bob other is 72, which is 35. The our tran in average of $1 in 5 years?\nJoe: After there'
+
+  step   500/1500 | loss 0.2048 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\nJoe: 45 / 100 = 4.80 * 8 = $432.\n\nUser: A string is inches long. One One moving one all. One0 they '
+
+  step   600/1500 | loss 0.1431 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: what is 25% of 60% of 200?\nJoe: 120% means the number increased by 25%.\nUser: A 10% decreased'
+
+  step   700/1500 | loss 0.1176 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\n\nUser: What is 9/10 minus 4/9?\nJoe: Sum = 1/3 * 9/10 = 1/15 = 3/15. Since 1/3/4 is 0.20 equals 5/12'
+
+  step   800/1500 | loss 0.0992 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: You have a 3 by 4 griditers. I ed on nyear salary of earneeting the toward each other cost 2 '
+
+  step   900/1500 | loss 0.0895 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nJoe: a $8 item is ) that in 4 hours. What is the speed in km/h?\nJoe: An reaction distance is 9. Car'
+
+  step  1000/1500 | loss 0.0822 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: A trip at goes 20 km down long. What is the total handshake at?\nJoe: The first increase is 10'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz
+  [pushed cot expert at step 1000]
+  step  1100/1500 | loss 0.0747 | lr 3.00e-04 | 0.46 steps/s
+  Sample: '\nJoe: 250 * 0.35 = $35.\n\nUser: A cylinder has radius 2 and volume 40pi. What is its circumference? U'
+
+  step  1200/1500 | loss 0.0731 | lr 3.00e-04 | 0.54 steps/s
+  Sample: '\nUser: explain step by step?\nJoe: First step of 3 by step: what is 5 + 4 * 3?\nJoe: First handleposit'
+
+  step  1300/1500 | loss 0.0702 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nUser: a number is 4 what is the number?\nJoe: Flip First the parenfam: 9, giving x = 36 + 2x = 56, s'
+
+  step  1400/1500 | loss 0.0673 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nUser: you earn $500 at quarters a number with 2 dolves. What is the total cost price?\nJoe: Closing '
+
+  step  1500/1500 | loss 0.0638 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\n\nUser: You buy 3 pounds of flour at each year. What is the total?\nJoe: Bananas: what Pythagoras: L^'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz
+
+Done. Expert 'cot' saved to /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz
+Time: 2963.3s | Final loss: 0.0638

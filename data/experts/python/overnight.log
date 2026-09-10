@@ -1,0 +1,74 @@
+[main bb8603e] chore: auto-save python expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 61 insertions(+)
+To https://github.com/akivamac/jb.git
+   20125fc..bb8603e  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 160,101 characters from /Users/dev/github-projects/joe-brain/data/experts/python/python_train.txt
+Encoded: 77,597 tokens
+Resumed expert 'python' from /Users/dev/github-projects/joe-brain/data/experts/python/python.npz (Adam step 9000)
+Expert 'python': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.9351 | lr 3.00e-04 | 0.36 steps/s
+  Sample: '\n\nUser: how do i use os.path.join Use to you directly directories, which the confirms is picks and n'
+
+  step   200/1500 | loss 1.1454 | lr 3.00e-04 | 0.42 steps/s
+  Sample: '\nUser: how do i use a lambda with the flag path of a file\nJoe: Pass end= pds, with comb, pullass the'
+
+  step   300/1500 | loss 0.6963 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\n\nUser: What is `__subclassap?\nJoe: `__a field is an assigned to a one on element like def factory(c'
+
+  step   400/1500 | loss 0.4305 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\n\nUser: How do you use `parsert statement with cur?\nJoe: `@dataclass(frozen=True)` on for ted. Use f'
+
+  step   500/1500 | loss 0.2383 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: how do i catch do i use a context manager\nJoe: Use defaultite for when would i use transactio'
+
+  step   600/1500 | loss 0.1534 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\n\nUser: What is a boolean in Python?\nJoe: A boolean is either True or False, used for logical operat'
+
+  step   700/1500 | loss 0.1278 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\n\nUser: how do i check if a file is a directory\nJoe: os.path.exists(\'a/b/c.txt"): gives just the ump'
+
+  step   800/1500 | loss 0.1072 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: How do you create a subparent from a child class\nJoe: Use BY, int) the with us initial list\nJ'
+
+  step   900/1500 | loss 0.0963 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: os.move("sing"data.2", "fallback") returns your own default value instead. of "w": context() p'
+
+  step  1000/1500 | loss 0.0872 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: Use int_Gadumters The regresults handleap `es, Import a ved max-heap readya version heap it op'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/python/python.npz
+  [pushed python expert at step 1000]
+  step  1100/1500 | loss 0.0802 | lr 3.00e-04 | 0.69 steps/s
+  Sample: '\n\nUser: how do i grab a loop code argument of a function signature with the call should be find posi'
+
+  step  1200/1500 | loss 0.0744 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: how do i Binder of a string.\n\nUser: how do i call a factory of a dict that undles Runion meti'
+
+  step  1300/1500 | loss 0.0727 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: What is a class in Python?\nJoe: A class is a blueprint for creating objects that bundles data'
+
+  step  1400/1500 | loss 0.0678 | lr 3.00e-04 | 0.67 steps/s
+  Sample: '\nJoe: A bare except also catches KeyboardInterrupt and SystemExit, which you normally: want return `'
+
+  step  1500/1500 | loss 0.0643 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nJoe: A cis an assertionError that if the condition is if no return is if is false, used for debuggi'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/python/python.npz
+
+Done. Expert 'python' saved to /Users/dev/github-projects/joe-brain/data/experts/python/python.npz
+Time: 2427.9s | Final loss: 0.0643

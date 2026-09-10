@@ -1,0 +1,74 @@
+[main b26507d] chore: auto-save horse expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 57 insertions(+)
+To https://github.com/akivamac/jb.git
+   bffdef8..b26507d  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 357,771 characters from /Users/dev/github-projects/joe-brain/data/experts/horse/horse_train.txt
+Encoded: 171,224 tokens
+Resumed expert 'horse' from /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz (Adam step 21510)
+Expert 'horse': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.9691 | lr 3.00e-04 | 0.50 steps/s
+  Sample: "\n\nUser: How do I pass a horse drate pa horse's grooming?\nJoe: In joint relaxation can be a important"
+
+  step   200/1500 | loss 1.4898 | lr 3.00e-04 | 0.58 steps/s
+  Sample: "\nUser: How often should a horse's digital pulse?\nJoe: The resisted chanical typically indic level vi"
+
+  step   300/1500 | loss 1.1899 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\n\nUser: Why does my horse run the fence?\nJoe: Excessary for a ner-friendurt Altions and quality with'
+
+  step   400/1500 | loss 1.0238 | lr 3.00e-04 | 0.55 steps/s
+  Sample: '\n\nUser: Why does my horse puddle?\nJoe: Some horses learn to rest their head or nuzulation, their ins'
+
+  step   500/1500 | loss 0.8177 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\nUser: just thin is four, pre-old disease and irritish?\nJoe: A release contain a century to the fore'
+
+  step   600/1500 | loss 0.6743 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\n\nUser: Why does my horse need fly mask care?\nJoe: A dirty fly mask holds bacteria and can rub sore '
+
+  step   700/1500 | loss 0.5244 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\nJoe: Sdently are typically done opstressa, dy, equine mouth, dental care reconditions, and supervis'
+
+  step   800/1500 | loss 0.3881 | lr 3.00e-04 | 0.54 steps/s
+  Sample: "\nJoe: A more forage resistance with deworming detecting murine buildup. It is why stiffna horse's sh"
+
+  step   900/1500 | loss 0.3073 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nJoe: Shorses need hosipon may be cold weather atite spring asitional ster affecting hoof the vet ve'
+
+  step  1000/1500 | loss 0.2348 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nJoe: The tie is the large, one male guof a horse better called normal urth scald while rates. A rat'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz
+  [pushed horse expert at step 1000]
+  step  1100/1500 | loss 0.1976 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nUser: Why does my horse need consistent to loads the ed by the spot?\nJoe: The . A horse that rests '
+
+  step  1200/1500 | loss 0.1768 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\nJoe: Chewing?\nJoe: A cavoice is a prominent for right horses that winter asts or board with welling'
+
+  step  1300/1500 | loss 0.1510 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\n\nUser: Why does my horse get a dastridden?\nJoe: Confest in a horse from a a deworm that not reflect'
+
+  step  1400/1500 | loss 0.1364 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nUser: What is a smaller touch ne, wave eating?\nJoe: High brener to classing al the horse will way i'
+
+  step  1500/1500 | loss 0.1309 | lr 3.00e-04 | 0.44 steps/s
+  Sample: '\nJoe: Eatience horses are consiskill that priate carries more new a ratched protect and daily turnou'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz
+
+Done. Expert 'horse' saved to /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz
+Time: 2948.0s | Final loss: 0.1309

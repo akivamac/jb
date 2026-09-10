@@ -1,0 +1,74 @@
+[main 20125fc] chore: auto-save knowledge expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 65 insertions(+)
+To https://github.com/akivamac/jb.git
+   23303c1..20125fc  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 97,177 characters from /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge_train.txt
+Encoded: 44,236 tokens
+Resumed expert 'knowledge' from /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz (Adam step 11000)
+Expert 'knowledge': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.9762 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nUser: what makes ona genquy is a mona lheavy by rainfall of the Rain in afa level of Jupiter animal'
+
+  step   200/1500 | loss 0.9870 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\nJoe: Alexander Grahic Bell is credited with inventing the telex v in the 1800s with the body color '
+
+  step   300/1500 | loss 0.3911 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nUser: what is an involution\nJoe: Evolution is a selection of living interacting easily with other e'
+
+  step   400/1500 | loss 0.1455 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nUser: what is a parasite\nJoe: A parasite is an organism that lives on or in another organism and be'
+
+  step   500/1500 | loss 0.0941 | lr 3.00e-04 | 0.53 steps/s
+  Sample: '\nUser: what is the Water is the curved mammal\nJoe: The spot comes from the northern and s smell. It '
+
+  step   600/1500 | loss 0.0765 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\nUser: how many relatio is h wed easy\nJoe: MSG Rosaic gence is hard to rank how far the sun is the s'
+
+  step   700/1500 | loss 0.0652 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nUser: what is a parasite\nJoe: A parasite is an organism that lives on or in another organism and be'
+
+  step   800/1500 | loss 0.0580 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nUser: Why is the plinvibration\nJoe: Ter is a where the japevolution by a se se in a pure of notic a'
+
+  step   900/1500 | loss 0.0514 | lr 3.00e-04 | 0.46 steps/s
+  Sample: '\nUser: What is the United ASal float because the highest data the lining send it used to reach the o'
+
+  step  1000/1500 | loss 0.0487 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\nJoe: A comet is a small icy body that orbits the sun and develops a glowing tail when it gets close'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+  [pushed knowledge expert at step 1000]
+  step  1100/1500 | loss 0.0447 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\nUser: what is an eclipse New heavy shins or not ger ger or not the pattern weaken.\n\nUser: how do us'
+
+  step  1200/1500 | loss 0.0410 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\nUser: what is copied is the ratio of a circle\nJoe: A circle is a continlex of deep A press that let'
+
+  step  1300/1500 | loss 0.0392 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\n\nUser: What is the International Date Line\nJoe: The Internet biggest known (R: 206 These Onerow are'
+
+  step  1400/1500 | loss 0.0371 | lr 3.00e-04 | 0.52 steps/s
+  Sample: "\nJoe: Rain known for to struction. It is about 4.21 percent of Earth's atmosphere.\nUser: what is hyd"
+
+  step  1500/1500 | loss 0.0345 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\nUser: what is the first computer\nJoe: Colossus, built in Britain in 1943, is considered the first p'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+
+Done. Expert 'knowledge' saved to /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
+Time: 2851.3s | Final loss: 0.0345
