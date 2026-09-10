@@ -1609,3 +1609,24 @@ User:
 # Joe: Use the re.split() method like re.split(my_string) returns a", "b", "c"].
 # 
 # User: what is the difference between 
+625,0.0858,3.00e-04,0.33,1789083561.838621
+# [2026-09-10 19:39:22] SAMPLE step 625:
+# 
+# Joe: "a", "b", "c"].
+# 
+# User: how do i use partial with a method
+# Joe: Use operator.methodcaller like from operator import methodcaller; upper = methodcaller("upper") which
+650,0.0866,3.00e-04,0.42,1789083621.839168
+# [2026-09-10 19:40:22] SAMPLE step 650:
+# 
+# Joe: B-1] =1.6 = len([1, 2, 3:]) chameters just s sort system so get (my_list, catenumerate[1]).append(i), so list[-1] gives impair.append([
+675,0.0867,3.00e-04,0.47,1789083674.4865549
+# [2026-09-10 19:41:14] SAMPLE step 675:
+# 
+# Joe: Eone parameters in like def read_one, int(f, b=itionalseencas {')) positions and = filter(i) parses the string back into a tuple, and the caller arg
+700,0.0836,3.00e-04,0.37,1789083742.0802372
+# [2026-09-10 19:42:22] SAMPLE step 700:
+# 
+# Joe: Sum the internal dict whoallel usually, so ordered membership instance regardless of stdloads.
+# 
+# User: How do I define st): result = full data as result = Sexact version --
