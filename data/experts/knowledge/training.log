@@ -1122,3 +1122,65 @@ Joe: Friction is a force that resists motion between two surf
 # User: what is the first computer
 # Joe: Colossus, built in Britain in 1943, is considered the first programmable electronic computer. The ENIAC, completed in 1945, was the first
 # [2026-09-09 19:19:31] FINISH at step 1500
+# [2026-09-09 21:11:12] RESUME: training/train_expert.py --name knowledge --resume --steps 1000 --log 100 --sample 100
+100,0.0353,3.00e-04,0.75,1789002805.86302
+# [2026-09-09 21:13:26] SAMPLE step 100:
+# 
+# Joe: Nemotion difalth died into space. This makes stains a flashes likely to ges your plants seeds. Their and germinate are do light with but ors producate, your hand for 
+200,0.0347,3.00e-04,0.62,1789002967.698115
+# [2026-09-09 21:16:08] SAMPLE step 200:
+# 
+# Joe: Plants need sunlight to make food through photosynthesis. Without enough light, they cannot produce the energy they need to grow.
+# User: what is pollen
+# Joe: Pollen is a fine powder produced 
+300,0.0328,3.00e-04,0.62,1789003129.3850691
+# [2026-09-09 21:18:49] SAMPLE step 300:
+# 
+# User: what is an earthquakes
+# Joe: Earthquakes are caused by the sudden movement of tectonic plates beneath Earth's surface.
+# User: what causes volcanoes
+# Joe: Volcanoes form where magma from 
+400,0.0317,3.00e-04,0.68,1789003277.332534
+# [2026-09-09 21:21:17] SAMPLE step 400:
+# 
+# Joe: A mineral is a naturally occurring inorganic solid with a specific chemical composition and crystal structure.
+# User: what is a rock
+# Joe: A rock is a solid mixture of one or more
+500,0.0328,3.00e-04,0.72,1789003416.802319
+# [2026-09-09 21:23:37] SAMPLE step 500:
+# 
+# Joe: An skerow bubacteria are Y melts on one latchsible on the internet.
+# 
+# User: What is a pine network
+# Joe: The internet is a network because it connects millions of computers worldwide.
+600,0.0316,3.00e-04,0.70,1789003559.5983539
+# [2026-09-09 21:26:00] SAMPLE step 600:
+# 
+# Joe: The prime number is a whole number greater than one that has no divisors other than 1 and itself. Examples include 2, 3, 5, 7, and 11.
+# 
+# User: What is the golden r
+700,0.0321,3.00e-04,0.70,1789003701.938349
+# [2026-09-09 21:28:22] SAMPLE step 700:
+# 
+# 
+# User: what is the longest river
+# Joe: The Nile is often called the longest river in the world, flowing through northeast Africa. The Amazon is a close rival.
+# User: what is the
+800,0.0303,3.00e-04,0.70,1789003844.7825751
+# [2026-09-09 21:30:45] SAMPLE step 800:
+# 
+# Joe: A galaxy is a huge collection of stars, gas, and dust held together by gravity. We live in the Milky Way.
+# User: what is the speed of light
+# Joe: Light travels at 
+900,0.0289,3.00e-04,0.71,1789003986.58881
+# [2026-09-09 21:33:07] SAMPLE step 900:
+# 
+# Joe: Symbiosis is a close relationship between two different species. It can be helpful, harmful, or neutral.
+# User: what is a parasite
+# Joe: A parasite is an organism that lives on
+1000,0.0291,3.00e-04,0.73,1789004123.547719
+# [2026-09-09 21:35:23] SAMPLE step 1000:
+# 
+# User: why do we get dizzy when we spin
+# Joe: Spinning moves fluid in the inner ear, which helps control balance. When you stop, the fluid keeps moving for a while, confusing the 
+# [2026-09-09 21:35:25] FINISH at step 1000

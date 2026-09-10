@@ -1,0 +1,41 @@
+Tokenizer loaded (vocab 2000)
+Training text: 160,101 characters from /Users/dev/github-projects/joe-brain/data/experts/python/python_train.txt
+Encoded: 77,597 tokens
+Resumed expert 'python' from /Users/dev/github-projects/joe-brain/data/experts/python/python.npz (Adam step 10500)
+Expert 'python': 3,804,624 params | 4 layers | dim 256
+Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1000 | loss 0.0620 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\nJoe: A method is a regex dictionary in Python?\nJoe: A dictionary is an unordered collection of key-'
+
+  step   200/1000 | loss 0.0604 | lr 3.00e-04 | 0.68 steps/s
+  Sample: '\nJoe: The sys module provides system-specific parameters like sys.argv for command line arguments, s'
+
+  step   300/1000 | loss 0.0591 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: how do i positions from the child class\nJoe: Use supertribute re.with super().__init__(messag'
+
+  step   400/1000 | loss 0.0564 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: how do i use super instead of an zeroscan fcomputes a number that fall limit that cause to a '
+
+  step   500/1000 | loss 0.0555 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: os.split.one("a", streamNone on numbers into a string\nJoe: into each [a, b, and Pass] of its r'
+
+  step   600/1000 | loss 0.0535 | lr 3.00e-04 | 0.73 steps/s
+  Sample: "\n\nUser: how do i tell an letters same while starts dynamically, so you don't hardcrashes use the cle"
+
+  step   700/1000 | loss 0.0505 | lr 3.00e-04 | 0.73 steps/s
+  Sample: "\n\nUser: What is the `__package?\nJoe: `__slots__ == ['x', 'y']` restricts a provides individual field"
+
+  step   800/1000 | loss 0.0501 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\n\nUser: What is `__delattr__` used for?\nJoe: `__delattr__(self, name)` is called when `del obj.name`'
+
+  step   900/1000 | loss 0.0495 | lr 3.00e-04 | 0.73 steps/s
+  Sample: "\nUser: What is `__dataclass_fiel__`?\nJoe: `__slots__ = ['x', 'y']` restricts instance attributes to "
+
+  step  1000/1000 | loss 0.0503 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: self, connection and connections.\n\nUser: What is a default default parameter parameter in Pyth'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/python/python.npz
+
+Done. Expert 'python' saved to /Users/dev/github-projects/joe-brain/data/experts/python/python.npz
+Time: 1404.6s | Final loss: 0.0503

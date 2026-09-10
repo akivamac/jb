@@ -1,0 +1,41 @@
+Tokenizer loaded (vocab 2000)
+Training text: 38,665 characters from /Users/dev/github-projects/joe-brain/data/experts/greeting/greeting_train.txt
+Encoded: 18,968 tokens
+Resumed expert 'greeting' from /Users/dev/github-projects/joe-brain/data/experts/greeting/greeting.npz (Adam step 4552)
+Expert 'greeting': 3,804,624 params | 4 layers | dim 256
+Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1000 | loss 0.0258 | lr 3.00e-04 | 0.75 steps/s
+  Sample: '\nUser: thanks for listening\nJoe: Anytime! My ears are always open.\nUser: you made my day\nJoe: Aw, yo'
+
+  step   200/1000 | loss 0.0238 | lr 3.00e-04 | 0.62 steps/s
+  Sample: "\nUser: midday\nJoe: Midday! Halfway through. How's the morning been?\n\nUser: lunchtime\nJoe: Lunchtime!"
+
+  step   300/1000 | loss 0.0243 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\nUser: hey buddy long time no see\nJoe: Hey! It has been a while. What have you been up to?\nUser: hi '
+
+  step   400/1000 | loss 0.0244 | lr 3.00e-04 | 0.68 steps/s
+  Sample: "\nJoe: It's like to be in your brighten day today! How are things on yours?\n\nUser: your end are great"
+
+  step   500/1000 | loss 0.0244 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: gg\nJoe: Good game indeed! It was fun talking. Come back for round two anytime.\n\nUser: laters\n'
+
+  step   600/1000 | loss 0.0252 | lr 3.00e-04 | 0.70 steps/s
+  Sample: "\nUser: you're here for me\nJoe: Always! That's my favorite place to be. What's up?\nUser: wildly you\nJ"
+
+  step   700/1000 | loss 0.0215 | lr 3.00e-04 | 0.70 steps/s
+  Sample: "\nJoe: Good to talk to you too! What's on your mind?\nUser: hi I feel like chatting\nJoe: I am all ears"
+
+  step   800/1000 | loss 0.0208 | lr 3.00e-04 | 0.70 steps/s
+  Sample: '\n\nUser: thanks for the laugh\nJoe: Laughter is good for the soul! Got any more jokes for me?\n\nUser: t'
+
+  step   900/1000 | loss 0.0217 | lr 3.00e-04 | 0.71 steps/s
+  Sample: "\n\nUser: I am glad you all are here. What's up?\n\nUser: finally, someone to talk to\nJoe: Consider me a"
+
+  step  1000/1000 | loss 0.0213 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\n\nUser: sleepy but awake\nJoe: That sleepy fog is real. I hope you get a good rest later! What is up?'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/greeting/greeting.npz
+
+Done. Expert 'greeting' saved to /Users/dev/github-projects/joe-brain/data/experts/greeting/greeting.npz
+Time: 1452.0s | Final loss: 0.0213

@@ -3880,3 +3880,61 @@ User: What is a farri
 # 
 # Joe: Eatience horses are consiskill that priate carries more new a ratched protect and daily turnoutine oupling small intake time and strange current achiable probleming, For companks check
 # [2026-09-09 18:31:44] FINISH at step 1500
+# [2026-09-09 20:46:47] RESUME: training/train_expert.py --name horse --resume --steps 1000 --log 100 --sample 100
+100,0.1185,3.00e-04,0.67,1789001356.363025
+# [2026-09-09 20:49:16] SAMPLE step 100:
+# 
+# 
+# User: What is a hoof pad and when should I weak?
+# Joe: steam pan that increasctive us compared to pasture, development, and a flee hoof absensitive are and may
+200,0.1152,3.00e-04,0.68,1789001503.6551292
+# [2026-09-09 20:51:44] SAMPLE step 200:
+# 
+# User: What is the purpose of a hoof hardener?
+# Joe: Hoof hardeners strengthen the hoof wall and are used for horses with soft, weak hooves. They help prevent excessive
+300,0.1141,3.00e-04,0.68,1789001651.6075299
+# [2026-09-09 20:54:12] SAMPLE step 300:
+# 
+# Joe: Cictin drawes breed. They are useful for trained horses need horse maintains that are and warmbloodedding init for its front s withins, Marrow foot, patient program
+400,0.1052,3.00e-04,0.68,1789001798.059184
+# [2026-09-09 20:56:38] SAMPLE step 400:
+# 
+# 
+# User: Why does my horse nibble my clothes?
+# Joe: A horse that hay is often happy in any or bare keeating in or usal of one side of fest inct. Land
+500,0.1050,3.00e-04,0.61,1789001962.24118
+# [2026-09-09 20:59:22] SAMPLE step 500:
+# 
+# User: What is the difference between a horse that is thin and one that is emaciated?
+# Joe: A proper length dive water for a fre cure the muscle or over the nose 
+# 
+# User: What
+600,0.0986,3.00e-04,0.68,1789002110.3277571
+# [2026-09-09 21:01:50] SAMPLE step 600:
+# 
+# 
+# User: What is a horse's sense of smell like?
+# Joe: Horses have a well-developed sense of smell for identifying individuals, detecting predators, and recognizing places.
+700,0.0994,3.00e-04,0.67,1789002259.513723
+# [2026-09-09 21:04:19] SAMPLE step 700:
+# 
+# 
+# User: What is a horse's signal which voice ridden show?
+# Joe: Ping into rooming a leg forward and target hair during rope mane swing the end outside lead. It develops 
+800,0.0961,3.00e-04,0.73,1789002395.6693661
+# [2026-09-09 21:06:36] SAMPLE step 800:
+# 
+# Joe: A hoof wall is the soft hoof, and digestive when wear are that greater involution. A bit shifting held hooves of bedding oils in around it.
+# 
+# User: What is
+900,0.0887,3.00e-04,0.73,1789002532.784393
+# [2026-09-09 21:08:53] SAMPLE step 900:
+# 
+# 
+# User: What is a horse's bloodline?
+# Joe: A bloodline refers to the ancestral lineage of a particular horse, tracing back through its parents and grandparents. Strong bloodlines are valu
+1000,0.0886,3.00e-04,0.73,1789002669.24064
+# [2026-09-09 21:11:09] SAMPLE step 1000:
+# 
+# Joe: A correctlying fitted saddle, balanced rider, and seat the horse's mouth. It is used before showing to enhance appearance and can contain round to maintain body and 
+# [2026-09-09 21:11:11] FINISH at step 1000

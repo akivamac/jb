@@ -1,0 +1,41 @@
+Tokenizer loaded (vocab 2000)
+Training text: 352,415 characters from /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles_train.txt
+Encoded: 168,223 tokens
+Resumed expert 'reptiles' from /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles.npz (Adam step 29532)
+Expert 'reptiles': 3,804,624 params | 4 layers | dim 256
+Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1000 | loss 0.0857 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\n\nUser: What is a leaf-tailed gecko?\nJoe: Leaf-tailed geckos (genus Uroplatus) are nocturnal geckos '
+
+  step   200/1000 | loss 0.0853 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: Ball pythons are known for their calm, docile temperament, which is a major reason for their p'
+
+  step   300/1000 | loss 0.0813 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: Why do bearded dragons wag their tail?\nJoe: Bearded dragons wag their tail for a few hours, c'
+
+  step   400/1000 | loss 0.0790 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: What is the conservation status of crested geckos?\nJoe: The crested gecko is listed as Least '
+
+  step   500/1000 | loss 0.0762 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: A ventilation improperly from metabolic bone disease, which causes soft bones, jaw deformities'
+
+  step   600/1000 | loss 0.0755 | lr 3.00e-04 | 0.73 steps/s
+  Sample: "\nJoe: Juveniles need insects instead. Only reptiles sometimes emerged not or too low, they're about "
+
+  step   700/1000 | loss 0.0747 | lr 3.00e-04 | 0.74 steps/s
+  Sample: "\nUser: What makes a corn snake's temperament so suitable for striking purpose and basking Provide he"
+
+  step   800/1000 | loss 0.0729 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\nJoe: Reptile some lizards have simple diver-like fruit-shaped fipt and weighing over 25 pounds. It '
+
+  step   900/1000 | loss 0.0714 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\nJoe: The R\nJoe: Sah python and Wild ball pythons move in the enclosure?\nJoe: Ma, African with Ither'
+
+  step  1000/1000 | loss 0.0713 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\nJoe: Routtortoises are not become a pearm?\nJoe: Smearded dragons can eat eat in the wild, so much l'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+
+Done. Expert 'reptiles' saved to /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Time: 1391.7s | Final loss: 0.0713

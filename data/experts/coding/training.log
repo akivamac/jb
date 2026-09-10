@@ -1068,3 +1068,58 @@ ValueError: probabilities contain NaN
 # Joe: Set(my_list) returns the first process position for key for nodeposit and hashallotests this unriding.
 # User: how 
 # [2026-09-09 20:00:06] FINISH at step 1500
+# [2026-09-09 21:35:25] RESUME: training/train_expert.py --name coding --resume --steps 1000 --log 100 --sample 100
+100,0.0640,3.00e-04,0.62,1789004286.148881
+# [2026-09-09 21:38:06] SAMPLE step 100:
+# 
+# Joe: Multithreading runs multiple threads concurrently within a single thread, creating a portion paggregment shares withinherit (vior compatiolocates when asynchronous were changing preventing for
+200,0.0617,3.00e-04,0.68,1789004432.81868
+# [2026-09-09 21:40:33] SAMPLE step 200:
+# 
+# User: what is a tuple is e
+# Joe: A tuple is an ordered immutable collection. You create it with parentheses like (1, 2, 3).
+# User: what is a class
+# Joe: A class is a
+300,0.0616,3.00e-04,0.72,1789004571.453313
+# [2026-09-09 21:42:51] SAMPLE step 300:
+# 
+# User: What is the difference between GraphQL?
+# Joe: GraphQL is a query language for APIs that allows client to requests all request exactly the data than old returns, reads new new a stack 
+400,0.0594,3.00e-04,0.73,1789004708.846698
+# [2026-09-09 21:45:09] SAMPLE step 400:
+# 
+# Joe: Quadrandom kerate matter path inwhere the in one depgets interprevents into a single value, including Con the value ,000 means at the back of the gretest didn't degra, with po
+500,0.0561,3.00e-04,0.73,1789004845.4545732
+# [2026-09-09 21:47:25] SAMPLE step 500:
+# 
+# User: what is the python layer.
+# 
+# User: when what is the difference between a debug and fromcientific a digits
+# Joe: Imperative programming caps two as you to the old one. le can a 
+600,0.0532,3.00e-04,0.73,1789004982.155761
+# [2026-09-09 21:49:42] SAMPLE step 600:
+# 
+# Joe: Universal programming without Falsequenckets. For example, \bcat\b matches "cat" but not "concatenate" or "catalog."
+# 
+# User: What is the difference between \w and [a
+700,0.0496,3.00e-04,0.73,1789005118.7814999
+# [2026-09-09 21:51:59] SAMPLE step 700:
+# 
+# Joe: my_list.clear() removes everything in place. Reassigning my_list = [] creates a new list and does not touch other references to the old one.
+# User: can a python list act
+800,0.0493,3.00e-04,0.73,1789005255.336181
+# [2026-09-09 21:54:15] SAMPLE step 800:
+# 
+# Joe: An empty string has no characters and is written "". In a condition it is falsy, so if not my_str easily detects missing text.
+# User: what does the in operator test
+900,0.0497,3.00e-04,0.73,1789005391.968189
+# [2026-09-09 21:56:32] SAMPLE step 900:
+# 
+# User: what is an expression
+# Joe: An iterator produces to the actual value is called. Python generending ite) t-ins every arrange array, operations, created one brackets it floors at -out 
+1000,0.0467,3.00e-04,0.73,1789005528.925177
+# [2026-09-09 21:58:49] SAMPLE step 1000:
+# 
+# User: What is the refantificate exha-a.
+# Joe: TCPIT (Ffunlemediator proto automition lation file should dependently. SPC include o persistent by sistent deep copies and pro
+# [2026-09-09 21:58:50] FINISH at step 1000

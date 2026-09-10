@@ -1,0 +1,41 @@
+Tokenizer loaded (vocab 2000)
+Training text: 96,359 characters from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion_train.txt
+Encoded: 45,837 tokens
+Resumed expert 'emotion' from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz (Adam step 15200)
+Expert 'emotion': 3,804,624 params | 4 layers | dim 256
+Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1000 | loss 0.0307 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\n\nUser: I feel like I wasted years of my life\nJoe: Thchoice is painful. When everything honest month'
+
+  step   200/1000 | loss 0.0295 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\n\nJoe: Fledgot cancelled and ily weirdly happy that moment.\nUser: I feel like things will get better'
+
+  step   300/1000 | loss 0.0301 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: That is awesome! What is driving you today?\nUser: I feel like giving up\nJoe: Please do not giv'
+
+  step   400/1000 | loss 0.0299 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: I feel like everyone else has it figured out\nJoe: Almost nobody has it figured out. They are '
+
+  step   500/1000 | loss 0.0297 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\nJoe: Crankiness is a valid mood with zero homework. Eat something, sleep to the betray you will fac'
+
+  step   600/1000 | loss 0.0293 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\nJoe: You do not have to fake it here. Whatever you are really feeling is welcome. Take the mask off'
+
+  step   700/1000 | loss 0.0293 | lr 3.00e-04 | 0.66 steps/s
+  Sample: '\nUser: I feel like a heavy. M old morning is the job and feel like there. does not have to be perfec'
+
+  step   800/1000 | loss 0.0284 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\n\nUser: I feel like I am questis welrelrated because nothing is hard see it has not sounds probably '
+
+  step   900/1000 | loss 0.0273 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nJoe: The restone Adulting is overrated; keep your joy. Playing with Legos or cartoons is good for t'
+
+  step  1000/1000 | loss 0.0291 | lr 3.00e-04 | 0.70 steps/s
+  Sample: '\nUser: I feel anxious every Sunday night\nJoe: Sunday night dread is like a preview of a week that ha'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz
+
+Done. Expert 'emotion' saved to /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz
+Time: 1389.5s | Final loss: 0.0291
