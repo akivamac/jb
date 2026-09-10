@@ -1255,3 +1255,28 @@ User:
 # Joe: my_whole scre, and re.second) " limamping operator for both positions.
 # User: what is the difference between lambda and name in Python?
 # [2026-09-10 10:20:23] FINISH at step 1000
+# [2026-09-10 17:25:33] RESUME: training/train_expert.py --name python --steps 1000 --resume --push 100 --log 25 --sample 25
+25,1.1410,3.00e-04,0.76,1789075566.718555
+# [2026-09-10 17:26:07] SAMPLE step 25:
+# 
+# User: How do I test if a list while my_list[::-1] and bound.setdefault(3), so [], the each count, whole it slash float of a single object.
+# User: Is out use the
+50,0.8688,3.00e-04,0.78,1789075598.575833
+# [2026-09-10 17:26:38] SAMPLE step 50:
+# 
+# User: How do I do function inside a list do in Python?
+# Joe: list_dictionary comprehension consigns and the s_dict.
+# User: What is the difference between a strings and a list in
+75,0.7973,3.00e-04,0.71,1789075633.758883
+# [2026-09-10 17:27:14] SAMPLE step 75:
+# 
+# Joe: my_list.append(my_list)) gives [1, [2], [0] gives [1, 2, 3].
+# 
+# User: how do i put an item at a specific index in a dict into a single list
+# Joe:
+100,0.7211,3.00e-04,0.48,1789075685.6780632
+# [2026-09-10 17:28:06] SAMPLE step 100:
+# 
+# User: How do I building a delete file in?
+# Joe: Use the file text with the w file in Python?
+# Joe: Iterate directly a file and write the file code method, or use write for tupl
