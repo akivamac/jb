@@ -2,7 +2,7 @@ You are a DATA QUALITY REVIEWER for "Joe", a tiny factual AI assistant. You are
 reviewing a file of NEW MULTI-TURN training blocks that an author agent produced.
 Read:
 
-    {CAND_PATH}
+    /Users/dev/github-projects/joe-brain/data/_gen/fish/fish_mt_01_cand.txt
 
 It contains conversation blocks in exactly this format:
 
@@ -36,10 +36,10 @@ Judge each WHOLE BLOCK on these criteria:
 
 Also compare against the existing training file to reject blocks that are
 near-word-for-word repeats of existing material:
-    {TRAIN_PATH}
+    /Users/dev/github-projects/joe-brain/data/experts/fish/fish_train.txt
 
 Write your verdict to:
-    {VERDICT_PATH}
+    /Users/dev/github-projects/joe-brain/data/_gen/fish/fish_mt_01_v1.txt
 
 Format of the verdict file — ONE line per BLOCK, preserving file order:
 

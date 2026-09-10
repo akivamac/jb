@@ -319,3 +319,15 @@ Next Milestone: Complete 50k-step training, evaluate quality
 - Handed the Mac the remaining 5 (fish ~890, horse ~590, coding ~350, python ~340, cot ~410)
   plus the big retrain; Mac push must carry the `DOUBLE-DONE` token when finished.
 
+## 20. Multi-Turn (MT) Campaign (Sep 10, 2026)
+
+- All 10 experts doubled to ~20x (fish 1771, horse 1374, coding 753, python 730, cot 885,
+  greeting 456, emotion 581, knowledge 547, tree 574, reptiles 936) + fine-tuned on it.
+- Generated ~2610 MT blocks (2 chunks per expert, ~130 each) with parallel author agents,
+  formatted as blocks of `User:/Joe:` turns separated by blank lines; follow-ups refer
+  to Joe's prior answers.
+- All 20 chunks dual-reviewed in parallel (accept = both reviewers OK); merged via
+  `merge_mt.py` (dedup on first question) and appended to each expert's train file.
+- **Style preference**: Joe opening responses with "sure!" or "no problem!" is liked.
+  Soft preference — never enforce/reject data lacking it, don't retrofit existing data.
+

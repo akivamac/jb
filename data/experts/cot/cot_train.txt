@@ -2261,3 +2261,1124 @@ Joe: After year 1: 2000 * 1.06 = 2120. After year 2: 2120 * 1.06 = 2247.20. Valu
 User: A two-digit number has digits that sum to 9. If you reverse the digits, the new number is 27 more. What is the number?
 Joe: 10a + b and 10b + a. Difference: 9a - 9b = 27, so a - b = 3. With a + b = 9, adding gives 2a = 12, so a = 6, b = 3. The number is 63.
 
+User: A trader swaps 2 sheep for 3 goats. How many goats is he worth if he gives up 8 sheep?
+Joe: 8 sheep is 4 groups of 2, and each group earns 3 goats, so 4 * 3 = 12 goats.
+User: If one goat then trades for 5 hens, how many hens are 12 goats worth?
+Joe: 12 goats times 5 hens each gives 12 * 5 = 60 hens.
+
+User: Three apples trade for five oranges. How many oranges do nine apples buy?
+Joe: 9 apples is 3 groups of 3, and each group brings 5 oranges, so 9 apples = 3 * 5 = 15 oranges.
+User: How about the reverse: how many apples do eleven oranges cost?
+Joe: 5 oranges = 3 apples, so 1 orange = 3/5 apple, and 11 oranges = 11 * 3/5 = 33/5, which is 6 and 3/5 apples.
+
+User: A 5 kg bag of rice trades for 2 bottles of oil. How much rice equals 6 bottles of oil?
+Joe: 6 bottles is 3 groups of 2, so you need 3 * 5 = 15 kg of rice.
+User: What if each bottle now holds twice as much oil?
+Joe: Then 5 kg of rice covers 4 bottles, and 6 bottles need one and a half times that, so 1.5 * 5 = 7.5 kg of rice.
+
+User: A painter uses 2/5 of a can on one wall, then 1/4 of the same can on another. What fraction remains?
+Joe: Total used = 2/5 + 1/4 = 8/20 + 5/20 = 13/20, so remaining = 1 - 13/20 = 7/20.
+User: If the can holds 4 liters, how many liters remain?
+Joe: 7/20 of 4 liters = 4 * 7/20 = 28/20 = 1.4 liters.
+
+User: Solve 3x - 9 = 2x + 4.
+Joe: Subtract 2x from both sides: x - 9 = 4. Then add 9 to get x = 13.
+User: Can you verify that answer?
+Joe: Check: 3(13) - 9 = 39 - 9 = 30, and 2(13) + 4 = 26 + 4 = 30. Both sides give 30.
+
+User: What is the smallest number that leaves remainder 1 when divided by 4 and remainder 3 when divided by 5?
+Joe: Numbers that leave 3 on division by 5 are 3, 8, 13, 18, 23. The first that also leaves remainder 1 on 4 is 13, since 13 = 3 * 4 + 1.
+User: And what is the next number that also works?
+Joe: The pattern repeats every 20, which is the LCM of 4 and 5, so the next is 13 + 20 = 33.
+
+User: A cyclist rides 24 km in 40 minutes. What is the speed in km/h?
+Joe: 40 minutes is 2/3 of an hour, so speed = 24 / (2/3) = 24 * 3/2 = 36 km/h.
+User: Express that speed in meters per second.
+Joe: 36 km/h = 36 * 1000 / 3600 = 36000/3600 = 10 m/s.
+
+User: A ribbon is 3/4 meter long and is cut into pieces of 1/8 meter. How many pieces?
+Joe: 3/4 divided by 1/8 = 3/4 * 8/1 = 24/4 = 6 pieces.
+User: What if instead you cut that ribbon into 5 equal parts?
+Joe: Each part would be (3/4) / 5 = 3/20 meter.
+
+User: A merchant exchanges 4 sacks of grain for 7 jugs of oil. How many sacks buy 28 jugs?
+Joe: 28 jugs is 4 groups of 7, so he needs 4 * 4 = 16 sacks.
+User: If each jug holds 3 liters, how many liters do 4 sacks buy?
+Joe: 4 sacks buy 7 jugs, and each jug is 3 liters, so 7 * 3 = 21 liters.
+
+User: Solve x/2 + 3 = 2x - 6.
+Joe: Multiply through by 2: x + 6 = 4x - 12. Then 6 + 12 = 4x - x, so 18 = 3x and x = 6.
+User: Now solve 2(x - 3) = x/2.
+Joe: Multiply by 2: 4(x - 3) = x, so 4x - 12 = x. That gives 3x = 12 and x = 4.
+
+User: A pump moves 30 liters per minute. How much does it move in 2.5 hours?
+Joe: 2.5 hours = 150 minutes, and 30 * 150 = 4500 liters.
+User: How many cubic meters is that?
+Joe: 1000 liters = 1 cubic meter, so 4500 / 1000 = 4.5 cubic meters.
+
+User: I have 10 coins worth $1.60 total, all quarters and dimes. How many of each?
+Joe: Let q = quarters, so dimes = 10 - q. Then 25q + 10(10 - q) = 160, giving 25q + 100 - 10q = 160, so 15q = 60 and q = 4. That is 4 quarters and 6 dimes.
+User: Verify that value.
+Joe: 4 * 0.25 = $1.00 and 6 * 0.10 = $0.60, total = $1.60. Yes.
+
+User: A tank is 2/3 full of water. You pour out 1/4 of the water. What fraction of the tank remains full?
+Joe: Water removed = (1/4) * (2/3) = 2/12 = 1/6 of the tank. Remaining = 2/3 - 1/6 = 4/6 - 1/6 = 3/6 = 1/2.
+User: If the tank holds 90 liters, how many liters are left?
+Joe: 1/2 of 90 = 45 liters.
+
+User: A number, doubled, minus 9, equals the number plus 11. Find it.
+Joe: 2x - 9 = x + 11, so 2x - x = 11 + 9, giving x = 20.
+User: Now triple that result and add 15.
+Joe: 3 * 20 + 15 = 60 + 15 = 75.
+
+User: A runner finishes a half-marathon of 21 km in 105 minutes. What is the average speed in km/h?
+Joe: 105 minutes = 1.75 hours, so speed = 21 / 1.75 = 12 km/h.
+User: At that pace, how long would 5 km take?
+Joe: Time = 5 / 12 of an hour, which is 25 minutes.
+
+User: A potter trades 3 pots for 4 baskets. How many baskets does he get for 15 pots?
+Joe: 15 pots is 5 groups of 3, so 5 * 4 = 20 baskets.
+User: If he then swaps 4 baskets for 1 blanket, how many pots equal 1 blanket?
+Joe: 4 baskets = 3 pots, and 1 blanket = 4 baskets, so 1 blanket = 3 pots.
+
+User: What is the largest multiple of 8 that is less than 100?
+Joe: 8 * 12 = 96, so 96 is the largest multiple of 8 under 100.
+User: How many multiples of 8 are under 100 in total?
+Joe: They are 8, 16, 24, ..., 96, which is 8 * 1 through 8 * 12, so 12 multiples.
+
+User: If f(x) = 3x + 4 and f(x) = 22, find x.
+Joe: 3x + 4 = 22, so 3x = 18 and x = 6.
+User: What is f(f(2))?
+Joe: f(2) = 3 * 2 + 4 = 10, so f(f(2)) = f(10) = 3 * 10 + 4 = 34.
+
+User: Soldiers line up in rows of 4 leaving 1 extra, and in rows of 5 leaving 2 extra. What is the smallest possible number of soldiers?
+Joe: Numbers giving remainder 2 on division by 5 are 7, 12, 17, 22. The first that also leaves remainder 1 on 4 is 17, since 17 = 4 * 4 + 1.
+User: What is the next number of soldiers that works?
+Joe: Add the LCM of 4 and 5, which is 20, so the next is 17 + 20 = 37.
+
+User: A farmer swaps 10 eggs for 3 loaves of bread. How many eggs buy 9 loaves?
+Joe: 9 loaves is 3 groups of 3, so that takes 3 * 10 = 30 eggs.
+User: If the bakery sells each of those 9 loaves for $2, what was each egg worth to them?
+Joe: 9 loaves sell for 9 * 2 = $18, and 18 / 30 = $0.60 per egg.
+
+User: Maria is twice as old as Ana. In 5 years Maria will be 1.5 times Ana's age. How old is Maria now?
+Joe: Let Ana be a, so Maria is 2a. In 5 years: 2a + 5 = 1.5(a + 5), so 2a + 5 = 1.5a + 7.5, giving 0.5a = 2.5 and a = 5. Maria is 2 * 5 = 10.
+User: In how many years will Maria be triple Ana's age?
+Joe: Solve 10 + y = 3(5 + y), giving 10 + y = 15 + 3y and y = -2.5. That already happened 2.5 years ago.
+
+User: A group splits a $103 bill evenly among 4 people. How much does each pay?
+Joe: 103 / 4 = 25.75, so each pays $25.75.
+User: What is the remainder when 103 is divided by 4?
+Joe: 25 * 4 = 100, leaving 103 - 100 = 3, so the remainder is 3.
+
+User: Half of a pizza is left, and you eat 1/3 of what remains. What fraction of the whole pizza is left?
+Joe: Eaten = (1/3) * (1/2) = 1/6, so left = 1/2 - 1/6 = 3/6 - 1/6 = 2/6 = 1/3.
+User: If the pizza was cut into 8 slices, how many slices does that leave?
+Joe: 8 * 1/3 = 8/3, which is 2 whole slices and a bit more, about 2.67 slices.
+
+User: Solve 5x + 2 = 3x + 18.
+Joe: Subtract 3x to get 2x + 2 = 18, then subtract 2 to get 2x = 16, so x = 8.
+User: Check your solution.
+Joe: 5(8) + 2 = 42 and 3(8) + 18 = 42, so both sides match.
+
+User: A train covers 90 km in 54 minutes. What is its average speed?
+Joe: 54 minutes = 0.9 hour, so speed = 90 / 0.9 = 100 km/h.
+User: How many meters does it cover in a minute?
+Joe: 90 km = 90,000 m over 54 minutes, so 90000 / 54 = about 1666.67 meters per minute.
+
+User: One tool kit trades for 3 lamps, and one lamp trades for 6 candles. How many candles equal one kit?
+Joe: 1 kit = 3 lamps = 3 * 6 = 18 candles.
+User: How many kits equal 54 candles then?
+Joe: 54 / 18 = 3 kits.
+
+User: In a race, Ali finishes ahead of Bo, and Chen finishes after Bo. Who comes last?
+Joe: The order is Ali, then Bo, then Chen, so Chen comes last.
+User: If Dana beats Chen but loses to Bo, where does Dana finish?
+Joe: The order becomes Ali, Bo, Dana, Chen, so Dana finishes third.
+
+User: You have 3/4 of a tank of gas and use 2/5 of that on a trip. What fraction of the tank is left?
+Joe: Used = (2/5) * (3/4) = 6/20 = 3/10, so left = 3/4 - 3/10 = 15/20 - 6/20 = 9/20.
+User: If the tank holds 40 liters, how many liters are left?
+Joe: 9/20 of 40 = 18 liters.
+
+User: Twice a number plus 7 equals the number plus 15. What is the number?
+Joe: 2x + 7 = x + 15, so 2x - x = 15 - 7, giving x = 8.
+User: What is twice that number minus 3?
+Joe: 2 * 8 - 3 = 16 - 3 = 13.
+
+User: One cart of hay feeds 4 horses for a week. How many carts feed 12 horses for 2 weeks?
+Joe: 12 horses is 3 times 4 horses, so that is 3 carts per week. For 2 weeks: 3 * 2 = 6 carts.
+User: If half of each cart is spoiled, how many carts do you need?
+Joe: With only half usable, each cart counts as half, so you need 6 / 0.5 = 12 carts.
+
+User: A class of 31 students forms teams of 5. How many full teams form, and how many students are left out?
+Joe: 5 * 6 = 30, so 6 full teams form and 1 student is left out.
+User: How many more students would make an extra full team?
+Joe: You need 4 more, since 5 - 1 = 4.
+
+User: A board 2/3 meter long is cut into 4 equal segments. How long is each?
+Joe: (2/3) / 4 = 2/12 = 1/6 meter.
+User: What would each segment be if it were cut into 6 equal parts instead?
+Joe: (2/3) / 6 = 2/18 = 1/9 meter.
+
+User: Two identical boxes plus a 3 kg weight balance a 15 kg weight. How heavy is one box?
+Joe: 2B + 3 = 15, so 2B = 12 and B = 6 kg.
+User: How many of those boxes balance a 27 kg weight?
+Joe: 27 / 6 = 4.5, so four and a half boxes.
+
+User: Two towns are 180 km apart and a bus travels at 60 km/h. How long is the ride?
+Joe: Time = 180 / 60 = 3 hours.
+User: If the bus stops 20 minutes midway and leaves at 8:00, when does it arrive?
+Joe: 8:00 plus 3 hours plus 20 minutes = 11:20.
+
+User: A rectangle has perimeter 40 and length 13. What is its width?
+Joe: 2(13 + w) = 40, so 13 + w = 20 and w = 7.
+User: What is its area?
+Joe: Area = 13 * 7 = 91.
+
+User: A recipe needs 5/6 cup of oil but you only have 1/2 cup. How much more do you need?
+Joe: 5/6 - 1/2 = 5/6 - 3/6 = 2/6 = 1/3 cup more.
+User: If you borrow 1/2 cup from a neighbor, how much do you have left over?
+Joe: You have 1/2 + 1/2 = 1 cup, and 1 - 5/6 = 1/6 cup left over.
+
+User: A village trades 12 kg of salt for 5 kg of tea. How much salt does 1 kg of tea buy?
+Joe: 12 / 5 = 2.4 kg of salt per kg of tea.
+User: How much tea can 30 kg of salt buy?
+Joe: 30 / 2.4 = 12.5 kg of tea.
+
+User: Solve (x + 3) / 4 = 5.
+Joe: Multiply both sides by 4: x + 3 = 20, so x = 17.
+User: What is x - 9 at that value?
+Joe: 17 - 9 = 8.
+
+User: A plane covers 1350 km in 2.5 hours. What is its speed?
+Joe: 1350 / 2.5 = 540 km/h.
+User: Express that in meters per second.
+Joe: 540 * 1000 / 3600 = 540000/3600 = 150 m/s.
+
+User: How many multiples of 6 are between 1 and 50?
+Joe: They are 6, 12, 18, 24, 30, 36, 42, 48, so 8 multiples.
+User: How many multiples of 9 fall in the same range?
+Joe: 9, 18, 27, 36, 45, so 5 multiples.
+
+User: A jug of juice is 3/5 full. You pour out 1/5 of the juice. What fraction of the jug remains full?
+Joe: Poured out = (1/5) * (3/5) = 3/25, so left = 3/5 - 3/25 = 15/25 - 3/25 = 12/25.
+User: If the jug holds 2 liters, how much is left?
+Joe: (12/25) * 2 = 24/25, which is 0.96 liters.
+
+User: In a market, 2 hens trade for 1 duck, and 3 ducks trade for 1 goose. How many hens equal a goose?
+Joe: 1 goose = 3 ducks = 3 * 2 = 6 hens.
+User: How many geese equal 18 hens?
+Joe: 18 / 6 = 3 geese.
+
+User: Solve 4x - 4 = 3x + 5.
+Joe: Subtract 3x to get x - 4 = 5, then add 4 to get x = 9.
+User: What is 4x - 4 when x = 9?
+Joe: 4 * 9 - 4 = 36 - 4 = 32.
+
+User: A swimmer does 25 m laps. In 40 minutes she covers 1000 m. What is her pace per lap?
+Joe: She does 1000 / 25 = 40 laps in 40 minutes, so the pace is 1 minute per lap.
+User: How far does she swim in 2 hours at that pace?
+Joe: 2 hours = 120 minutes = 120 laps, and 120 * 25 = 3000 meters.
+
+User: You pack 148 eggs into cartons of 12. How many full cartons and how many eggs left over?
+Joe: 12 * 12 = 144, leaving 148 - 144 = 4, so 12 full cartons and 4 eggs.
+User: How many more eggs do you need for another full carton?
+Joe: 12 - 4 = 8 more eggs.
+
+User: A number from 1 to 30 is even, a multiple of 5, and less than 20. What could it be?
+Joe: Multiples of 5 under 20 are 5, 10, and 15, and only 10 is even, so it is 10.
+User: Add the clue that the number is greater than 8.
+Joe: 10 still fits, and 5 and 15 fail the even clue anyway, so the answer stays 10.
+
+User: Three consecutive numbers sum to 57. What are they?
+Joe: The middle number is 57 / 3 = 19, so they are 18, 19, and 20.
+User: What about five consecutive numbers summing to 95?
+Joe: The middle is 95 / 5 = 19, so they are 17, 18, 19, 20, and 21.
+
+User: A motorboat does 12 km/h downstream and 8 km/h upstream on the same river. What is the current's speed?
+Joe: Current = (12 - 8) / 2 = 2 km/h.
+User: What is the boat's speed in still water?
+Joe: Still-water speed = (12 + 8) / 2 = 10 km/h.
+
+User: If 3 shirts trade for 2 scarves, how many scarves do 12 shirts buy?
+Joe: 12 shirts is 4 groups of 3, so that buys 4 * 2 = 8 scarves.
+User: If 4 scarves trade for a coat, how many coats do 12 shirts buy?
+Joe: 12 shirts = 8 scarves = 2 coats, since 8 / 4 = 2.
+
+User: A plot of land is 3/8 covered by crops and 1/4 by flowers. What fraction is used?
+Joe: 3/8 + 1/4 = 3/8 + 2/8 = 5/8 of the plot is used.
+User: What fraction is still free?
+Joe: 1 - 5/8 = 3/8 of the plot is free.
+
+User: A storm is 1.7 km away. Sound travels 340 m/s. How long until you hear thunder?
+Joe: 1.7 km = 1700 m, and 1700 / 340 = 5 seconds.
+User: If you instead count 8 seconds between flash and thunder, how far away is the storm?
+Joe: Distance = 8 * 340 = 2720 m, which is 2.72 km.
+
+User: How many 1 by 1 squares are on a chessboard?
+Joe: A chessboard is 8 by 8, so there are 8 * 8 = 64 unit squares.
+User: And how many squares of all sizes put together?
+Joe: Sum the squares of 1 through 8: 64 + 49 + 36 + 25 + 16 + 9 + 4 + 1 = 204 squares.
+
+User: You drink 1/4 of a bottle, then 1/3 of the rest. What fraction of the bottle is left?
+Joe: After the first drink, 3/4 remains. Then you drink (1/3) * (3/4) = 1/4, so left = 3/4 - 1/4 = 1/2 bottle.
+User: If the bottle holds 1.5 liters, how much did you drink in total?
+Joe: You drank 1/4 + 1/4 = 1/2 bottle, which is 0.5 * 1.5 = 0.75 liters.
+
+User: A jogger runs 4 laps of a 400 m track in 12 minutes. What is the speed in m/min?
+Joe: Distance = 4 * 400 = 1600 m, so speed = 1600 / 12 = about 133.33 m/min.
+User: What is that in km/h?
+Joe: 133.33 * 60 / 1000 = 8 km/h.
+
+User: A stall trades 6 apples for 4 bananas. How many bananas do 15 apples buy?
+Joe: 1 apple = 4/6 = 2/3 banana, so 15 apples = 15 * 2/3 = 10 bananas.
+User: How many apples do 12 bananas cost?
+Joe: 1 banana = 6/4 = 1.5 apples, so 12 bananas = 12 * 1.5 = 18 apples.
+
+User: Split 74 marbles into piles of 9. How many piles and how many marbles left?
+Joe: 9 * 8 = 72, leaving 74 - 72 = 2, so 8 piles and 2 marbles left.
+User: How many marbles must you add to make 9 full piles?
+Joe: 9 * 9 = 81, so you need 81 - 74 = 7 more marbles.
+
+User: Three friends share 2 pizzas equally, each pizza cut into 8 slices. How many slices does each get?
+Joe: Total slices = 2 * 8 = 16, and 16 / 3 = 5 1/3 slices each.
+User: What fraction of one pizza is that?
+Joe: Each pizza has 8 slices, so 16/3 slices = 16/24 = 2/3 of a pizza each.
+
+User: A train travels 300 m in 10 seconds. What is its speed?
+Joe: Speed = 300 / 10 = 30 m/s, which is 30 * 3.6 = 108 km/h.
+User: How long does it take to travel 5 km at that speed?
+Joe: 5000 / 30 = about 166.67 seconds, which is close to 2 minutes 47 seconds.
+
+User: A conductor counts 12 people on a car. Then 3 get off and 5 get on. How many are aboard now?
+Joe: 12 - 3 + 5 = 14 people.
+User: If 7 more then get off, how many remain?
+Joe: 14 - 7 = 7 people.
+
+User: A field is 2/5 wheat, 1/3 barley, and the rest beans. What fraction is beans?
+Joe: 1 - 2/5 - 1/3 = 15/15 - 6/15 - 5/15 = 4/15 of the field is beans.
+User: If the field is 90 acres, how many are beans?
+Joe: (4/15) * 90 = 4 * 6 = 24 acres.
+
+User: If 5x + 3 = 43, what is x?
+Joe: 5x = 40, so x = 8.
+User: What is 3x - 1 at that value?
+Joe: 3 * 8 - 1 = 24 - 1 = 23.
+
+User: One sheep trades for 2 rabbits, and 3 rabbits trade for a sack of grain. How many sheep equal 2 sacks?
+Joe: 1 sack = 3 rabbits = 1.5 sheep, so 2 sacks = 3 sheep.
+User: How many rabbits equal those 2 sacks?
+Joe: Each sack is 3 rabbits, so 2 sacks = 6 rabbits.
+
+User: You bike 30 km in 1.5 hours. What is your average speed?
+Joe: 30 / 1.5 = 20 km/h.
+User: How long would 50 km take at that speed?
+Joe: 50 / 20 = 2.5 hours.
+
+User: What is 89 divided by 7, with remainder?
+Joe: 7 * 12 = 84, leaving 89 - 84 = 5, so quotient 12 and remainder 5.
+User: Now divide 89 by 5.
+Joe: 5 * 17 = 85, leaving 4, so quotient 17 and remainder 4.
+
+User: Cut a 10 m rope into quarters. How long is each quarter?
+Joe: 10 / 4 = 2.5 m.
+User: How many of those quarters fit in a 7.5 m rope?
+Joe: 7.5 / 2.5 = 3 quarters.
+User: What fraction of the original 10 m is that 7.5 m?
+Joe: 7.5 / 10 = 3/4.
+
+User: If 3 times a number minus 6 equals 24, find the number.
+Joe: 3x - 6 = 24, so 3x = 30 and x = 10.
+User: Evaluate x/2 + 4.
+Joe: 10 / 2 + 4 = 5 + 4 = 9.
+
+User: A car drives 3 hours at 60 mph. How far does it go?
+Joe: 3 * 60 = 180 miles.
+User: Then 2 more hours at 45 mph. What is the total distance?
+Joe: Second leg = 2 * 45 = 90 miles, so total = 180 + 90 = 270 miles.
+User: What is the average speed for the whole trip?
+Joe: Total time = 5 hours, so average = 270 / 5 = 54 mph.
+
+User: How many ways can you form a 2-person committee from 6 people?
+Joe: C(6,2) = 6 * 5 / 2 = 15 ways.
+User: And a 3-person committee from those 6?
+Joe: C(6,3) = 6 * 5 * 4 / 6 = 20 ways.
+
+User: Which is more, 1/4 of 20 or 1/5 of 25?
+Joe: 1/4 of 20 = 5, and 1/5 of 25 = 5, so they are equal.
+User: What makes the first one bigger?
+Joe: Raising the first number to 24 gives 1/4 of 24 = 6, which beats 5.
+
+User: A rectangle's length is 3 more than its width, and the perimeter is 26. What is the width?
+Joe: Let width = w, so length = w + 3. Then 2(w + w + 3) = 26, so 2w + 3 = 13, giving 2w = 10 and w = 5.
+User: What is the length then?
+Joe: Length = 5 + 3 = 8, so the rectangle is 5 by 8.
+
+User: A trader exchanges 5 meters of cloth for 2 baskets. How many baskets do 20 meters buy?
+Joe: 20 m is 4 groups of 5, so that buys 4 * 2 = 8 baskets.
+User: If each basket holds 3 kg of fruit, how much fruit is that?
+Joe: 8 baskets * 3 kg = 24 kg of fruit.
+
+User: A tap leaks 12 ml per minute. How much water is lost in an hour?
+Joe: 12 * 60 = 720 ml per hour.
+User: How much is that per day, in liters?
+Joe: 720 * 24 = 17,280 ml, which is 17.28 liters per day.
+
+User: How many numbers from 1 to 30 are divisible by 4?
+Joe: They are 4, 8, 12, 16, 20, 24, 28, so 7 numbers.
+User: How many have remainder 3 when divided by 4?
+Joe: They are 3, 7, 11, 15, 19, 23, 27, also 7 numbers.
+
+User: Solve 9 - 2x = x.
+Joe: Add 2x to both sides: 9 = 3x, so x = 3.
+User: Verify it.
+Joe: 9 - 2(3) = 9 - 6 = 3, which matches x = 3.
+
+User: A cake is cut into 12 slices, 5 chocolate and 4 vanilla, the rest strawberry. What fraction is strawberry?
+Joe: Strawberry = 12 - 5 - 4 = 3 slices, so the fraction is 3/12 = 1/4.
+User: What fraction is not strawberry?
+Joe: 1 - 1/4 = 3/4 of the cake.
+
+User: Two numbers add to 40 and differ by 6. What is the larger one?
+Joe: a + b = 40 and a - b = 6. Adding the equations gives 2a = 46, so a = 23.
+User: What is the smaller one?
+Joe: 40 - 23 = 17.
+
+User: If 2(x + 1) = 16, find x.
+Joe: x + 1 = 8, so x = 7.
+User: Then what is x^2 - 9?
+Joe: 7^2 - 9 = 49 - 9 = 40.
+User: And about what is the square root of that?
+Joe: 6^2 = 36 and 7^2 = 49, so sqrt(40) is about 6.32.
+
+User: At an orchard, 6 mangoes trade for 4 papayas. How many papayas for 9 mangoes?
+Joe: 1 mango = 4/6 = 2/3 papaya, so 9 mangoes = 9 * 2/3 = 6 papayas.
+User: How many mangoes for 10 papayas?
+Joe: 1 papaya = 6/4 = 1.5 mangoes, so 10 papayas = 15 mangoes.
+
+User: A plane leaves at 10:20 and flies 960 km at 640 km/h. When does it arrive?
+Joe: Time = 960 / 640 = 1.5 hours, so it arrives at 11:50.
+User: With a 20-minute layover and another 240 km at 480 km/h, when does it arrive?
+Joe: Second leg = 240 / 480 = 0.5 hour. So 11:50 + 20 min + 30 min = 12:40.
+
+User: Arrange 250 chairs in rows of 12. How many full rows and how many chairs left over?
+Joe: 12 * 20 = 240, leaving 250 - 240 = 10, so 20 full rows and 10 chairs.
+User: How many more chairs would fill one more row?
+Joe: 12 - 10 = 2 more chairs.
+
+User: Sort 3/4, 2/3, and 5/6 from largest to smallest.
+Joe: As twelfths these are 9/12, 8/12, and 10/12, so the order is 5/6, then 3/4, then 2/3.
+User: What is their sum as twelfths?
+Joe: 10 + 9 + 8 = 27 twelfths, which is 27/12 = 9/4, or 2 1/4.
+
+User: If 4a - 5 = 15, find a.
+Joe: 4a = 20, so a = 5.
+User: Then what is 6a + 2?
+Joe: 6 * 5 + 2 = 32.
+
+User: A ferry crosses 30 km in 40 minutes. What is its speed?
+Joe: 40 minutes = 2/3 hour, so speed = 30 / (2/3) = 45 km/h.
+User: How long would a 75 km crossing take?
+Joe: 75 / 45 = 5/3 hours, which is 1 hour 40 minutes.
+
+User: One kg of butter trades for 3 loaves, and 2 loaves trade for 4 rolls. How many rolls equal 1 kg of butter?
+Joe: 1 kg = 3 loaves = 1.5 groups of 2 loaves, so 1.5 * 4 = 6 rolls.
+User: How many kg of butter buy 24 rolls?
+Joe: 24 / 6 = 4 kg of butter.
+
+User: You walk 3/8 of a trail, then another 1/4. What fraction is done?
+Joe: 3/8 + 1/4 = 3/8 + 2/8 = 5/8 of the trail.
+User: If the trail is 16 km long, how far is left?
+Joe: Remaining = 3/8 of 16 = 6 km.
+
+User: What is 12 + 18 * 2?
+Joe: Multiplication first: 18 * 2 = 36, so 12 + 36 = 48.
+User: What if it were written (12 + 18) * 2?
+Joe: Parentheses first: 30 * 2 = 60.
+User: Why do the two results differ?
+Joe: Without parentheses, multiplication happens before addition, so the grouping changes the value from 48 to 60.
+
+User: A snail climbs 3 m up a wall each day and slips 2 m each night. The wall is 10 m. When does it reach the top?
+Joe: It gains 1 m net per day, and on day 8 it climbs from 7 m to 10 m and is done. So it reaches the top on day 8.
+User: How far in total does it slip over those nights?
+Joe: It slips only on the first 7 nights, so 7 * 2 = 14 m slipped.
+
+User: A number plus half of itself is 27. What is the number?
+Joe: x + x/2 = 27, so 3x/2 = 27 and x = 18.
+User: What is the number plus a third of itself?
+Joe: 18 + 18/3 = 18 + 6 = 24.
+
+User: A blacksmith trades 2 hoes for 3 sickles. How many sickles for 5 hoes?
+Joe: 1 hoe = 1.5 sickles, so 5 hoes = 7.5 sickles.
+User: How many hoes for 9 sickles?
+Joe: 9 / 1.5 = 6 hoes.
+
+User: Which numbers under 100 are multiples of both 6 and 8?
+Joe: The LCM is 24, so the multiples are 24, 48, 72, and 96.
+User: How many multiples of 6 under 100 are NOT multiples of 8?
+Joe: There are 16 multiples of 6 under 100, and 4 of them are shared with 8, so 16 - 4 = 12.
+
+User: What is 8% of 75?
+Joe: 0.08 * 75 = 6.
+User: Add that to 75 to get a new number. What percent increase is that?
+Joe: The increase is 6, and 6 / 75 = 0.08 = 8%, so it is an 8% increase.
+User: Double-check using 81 / 75.
+Joe: 81 / 75 = 1.08, which confirms the 8% increase.
+
+User: If 3p + 2 = 4p - 6, find p.
+Joe: Subtract 3p to get 2 = p - 6, then add 6 to get p = 8.
+User: What is 2p + 7?
+Joe: 2 * 8 + 7 = 23.
+
+User: A boat travels 36 km at 12 km/h. How long does that take?
+Joe: 36 / 12 = 3 hours.
+User: If a 3 km/h current slows it down, how long now?
+Joe: Effective speed = 12 - 3 = 9 km/h, so time = 36 / 9 = 4 hours.
+
+User: In a group, 3/5 prefer tea and the rest prefer coffee. What fraction prefers coffee?
+Joe: 1 - 3/5 = 2/5 prefer coffee.
+User: If there are 40 people, how many chose coffee?
+Joe: (2/5) * 40 = 16 people.
+
+User: Solve 5(x - 1) = 2x + 8.
+Joe: Expand to 5x - 5 = 2x + 8, so 5x - 2x = 8 + 5, giving 3x = 13 and x = 13/3.
+User: Check your solution.
+Joe: 5(13/3 - 1) = 5(10/3) = 50/3, and 2(13/3) + 8 = 26/3 + 24/3 = 50/3. Both sides match.
+
+User: A plane flies 1200 km in 2 hours against a 100 km/h wind. What is its speed in still air?
+Joe: Effective speed = 1200 / 2 = 600 km/h, so still-air speed = 600 + 100 = 700 km/h.
+User: What is its effective speed with the wind behind it?
+Joe: 700 + 100 = 800 km/h.
+
+User: In a class, 3/4 passed and 30 students passed. How many are in the class?
+Joe: (3/4)n = 30, so n = 30 * 4/3 = 40 students.
+User: How many failed?
+Joe: 40 - 30 = 10 failed.
+
+User: A mechanic trades 3 hours of his work for 2 hours of a plumber's work. How many plumbing hours do 6 mechanic hours buy?
+Joe: 6 hours is 2 groups of 3, so that buys 2 * 2 = 4 hours of plumbing.
+User: How many mechanic hours equal 9 plumbing hours?
+Joe: 9 hours is 4.5 groups of 2, so that needs 4.5 * 3 = 13.5 mechanic hours.
+
+User: What is 3/4 of 1/2?
+Joe: Multiply across: (3 * 1) / (4 * 2) = 3/8.
+
+User: What is 200 divided by 7 as a quotient and remainder?
+Joe: 7 * 28 = 196, so the quotient is 28 and the remainder is 200 - 196 = 4.
+
+User: Which is bigger, 4/5 or 3/4?
+Joe: As twentieths, 4/5 = 16/20 and 3/4 = 15/20, so 4/5 is bigger.
+
+User: What is 30% of 250 minus 20% of 200?
+Joe: 30% of 250 = 75 and 20% of 200 = 40, so 75 - 40 = 35.
+
+User: A drink mixes juice and water in the ratio 3:2. How much juice is in 2.5 liters of the drink?
+Joe: Total parts = 3 + 2 = 5, each part = 2.5 / 5 = 0.5 liters, so juice = 3 * 0.5 = 1.5 liters.
+
+User: A ladder 17 m long leans against a wall with its base 8 m from the wall. How high up does it reach?
+Joe: By Pythagoras: h^2 = 17^2 - 8^2 = 289 - 64 = 225, so h = 15 m.
+
+User: What is the sum of the interior angles of a seven-sided polygon?
+Joe: Sum = (7 - 2) * 180 = 5 * 180 = 900 degrees.
+
+User: What is the 10th term of the pattern 5, 8, 11, 14, ...?
+Joe: Each term adds 3, so the 10th term is 5 + 9 * 3 = 32.
+
+User: Six workers build a wall in 8 days. How long would 12 workers take?
+Joe: Twice the workers halves the time, so 8 / 2 = 4 days.
+
+User: Convert 150 minutes to hours and minutes.
+Joe: 150 minutes = 2 hours and 30 minutes.
+
+User: What is 28 times 15?
+Joe: 28 * 15 = 28 * 10 + 28 * 5 = 280 + 140 = 420.
+User: How can I check that answer quickly?
+Joe: Divide 420 by 15 and you get 28, or divide 420 by 28 and you get 15. Either way the product checks out.
+
+User: A car moves at 45 meters per second for 40 seconds. How far does it travel?
+Joe: Distance = speed * time = 45 * 40 = 1800 meters.
+User: What is that in kilometers?
+Joe: 1800 / 1000 = 1.8 km.
+User: How long would the same 1800 meters take at 60 meters per second?
+Joe: 1800 / 60 = 30 seconds.
+
+User: Twice a number, minus 6, equals 3 more than the number. What is the number?
+Joe: 2x - 6 = x + 3. Subtract x: x - 6 = 3, so x = 9.
+User: Check it by plugging back in.
+Joe: 2 * 9 - 6 = 12, and 9 + 3 = 12, so both sides match.
+
+User: I have between 30 and 40 candies. When I pack them into boxes of 6, one candy is left over. How many candies could I have?
+Joe: Numbers in that range that leave 1 when divided by 6 are 31 and 37, so it is not unique yet.
+User: I also know that packing them into boxes of 9 leaves exactly 1 over as well.
+Joe: The only number between 30 and 40 leaving 1 when divided by 9 is 37. Check: 37 = 6 * 6 + 1 and 37 = 4 * 9 + 1, so you have 37 candies.
+
+User: Three apples trade for two bananas. If I have 9 apples, how many bananas can I get?
+Joe: 9 / 3 = 3 groups of apples, so you get 3 * 2 = 6 bananas.
+User: Those bananas trade for oranges at 4 bananas per orange. How many oranges do I get?
+Joe: 6 / 4 = 1.5, so you get 1 full orange and keep 2 bananas, since you cannot trade half an orange.
+
+User: A plank is 2 meters long. I cut off 1/4 meter, then another 2/5 meter. How much is left?
+Joe: Cut total = 1/4 + 2/5 = 5/20 + 8/20 = 13/20 meter. Left = 2 - 13/20 = 40/20 - 13/20 = 27/20 = 1 7/20 meters.
+User: Express that remainder in centimeters.
+Joe: 27/20 meter = (27/20) * 100 = 135 cm.
+
+User: A cyclist covers 42 km in 1.5 hours. What is the average speed?
+Joe: Speed = distance / time = 42 / 1.5 = 28 km/h.
+User: At that speed, how long would 70 km take?
+Joe: 70 / 28 = 2.5 hours.
+
+User: 2/5 of a number is 18. What is 3/5 of the same number?
+Joe: First find the number: x = 18 * 5/2 = 45. Then 3/5 of 45 = 27.
+User: Is there a shortcut?
+Joe: Yes, 3/5 is 1.5 times 2/5, so 3/5 of the number = 1.5 * 18 = 27, the same result.
+
+User: A taxi charges a flat fee plus $2.50 per mile. A 6-mile trip costs $20.50. What is the flat fee?
+Joe: Mileage cost = 6 * 2.50 = 15. Flat fee = 20.50 - 15 = $5.50.
+User: How much would an 8-mile trip cost?
+Joe: 5.50 + 8 * 2.50 = 5.50 + 20 = $25.50.
+User: How many miles could I go for exactly $30?
+Joe: 30 - 5.50 = 24.50, and 24.50 / 2.50 = 9.8 miles.
+
+User: A 26-foot ladder reaches 24 feet up a wall. How far is the base from the wall?
+Joe: By Pythagoras: base^2 = 26^2 - 24^2 = 676 - 576 = 100, so the base is 10 feet.
+User: Confirm that fits a right triangle.
+Joe: 10^2 + 24^2 = 100 + 576 = 676 = 26^2, so it checks out.
+
+User: A store runs a buy 2, get 1 free sale on $9 shirts. What is the effective price per shirt if I take 3?
+Joe: You pay for 2 shirts: 2 * 9 = 18 dollars for 3 shirts, so each shirt costs 18 / 3 = $6.
+User: What percent discount is that off the normal price?
+Joe: (9 - 6) / 9 = 3 / 9 = 1/3 = about 33.3%.
+
+User: What is the remainder when 2^5 is divided by 7?
+Joe: 2^5 = 32, and 32 = 7 * 4 + 4, so the remainder is 4.
+User: And what about 2^10?
+Joe: 2^10 = 1024. Since 7 * 146 = 1022, the remainder is 1024 - 1022 = 2.
+
+User: On an island, 5 fish trade for 3 coconuts. How many coconuts can I get for 15 fish?
+Joe: 15 / 5 = 3 groups, so 3 * 3 = 9 coconuts.
+User: If 2 coconuts trade for 1 drinking shell, how many shells for my 9 coconuts?
+Joe: 9 / 2 = 4 full trading pairs with 1 coconut left, so you get 4 shells and keep 1 coconut.
+
+User: Solve for x: x/4 + 3 = 8.
+Joe: Subtract 3: x/4 = 5, so x = 20.
+User: Verify by substituting back.
+Joe: 20 / 4 + 3 = 5 + 3 = 8, which matches the original equation.
+
+User: A faucet drips 2 milliliters every 5 seconds. How much water is wasted in 1 hour?
+Joe: 1 hour = 3600 seconds = 720 blocks of 5 seconds, so 720 * 2 = 1440 ml.
+User: Express that in liters.
+Joe: 1440 / 1000 = 1.44 liters.
+
+User: You need 3/4 cup of sugar for 12 cookies. How much sugar for 30 cookies?
+Joe: Scale = 30 / 12 = 2.5, so sugar = (3/4) * 2.5 = 15/8 = 1 7/8 cups.
+User: What about for 15 cookies?
+Joe: Scale = 15 / 12 = 5/4, so sugar = (3/4) * (5/4) = 15/16 cup.
+
+User: A plane flew 1200 miles in 2.5 hours. What was its speed?
+Joe: Speed = 1200 / 2.5 = 480 mph.
+User: How long would 360 miles take at that speed?
+Joe: 360 / 480 = 0.75 hours, which is 45 minutes.
+
+User: In a class, 2/3 chose pizza and 1/4 chose sandwiches; every other student chose salad. What fraction chose salad?
+Joe: 2/3 + 1/4 = 8/12 + 3/12 = 11/12. Salad = 1 - 11/12 = 1/12.
+User: If there are 48 students, how many chose salad?
+Joe: (1/12) * 48 = 4 students.
+
+User: 200 students are split into groups of 6. How many full groups are there and how many students remain?
+Joe: 6 * 33 = 198, so there are 33 full groups with 2 students left over.
+User: How many groups of 6 would you need to take all 200 students?
+Joe: 200 / 6 = 33.33, so you need 34 groups; the last group holds just 2 students.
+
+User: A price rose from $80 to $104. What is the percent increase?
+Joe: Increase = 104 - 80 = 24. Percent = 24 / 80 = 0.30, which is 30%.
+User: Now drop that new price by 30%. What do you get?
+Joe: 104 * 0.70 = $72.80, which is below the original $80.
+
+User: Three more than twice a number is 21. What is the number?
+Joe: 2x + 3 = 21, so 2x = 18, so x = 9.
+User: What is 2 less than 3 times that same number?
+Joe: 3 * 9 - 2 = 27 - 2 = 25.
+
+User: A juice bottle is 3/5 full, holding 600 ml. What is the full capacity?
+Joe: (3/5)x = 600, so x = 600 * 5/3 = 1000 ml.
+User: How much is in it when it is 1/4 full?
+Joe: (1/4) * 1000 = 250 ml.
+
+User: A runner's pace is 6 minutes per kilometer. How long does a 5 km run take?
+Joe: 5 * 6 = 30 minutes.
+User: What is that pace in kilometers per hour?
+Joe: 60 minutes / 6 minutes per km = 10 km/h.
+
+User: Show each step to compute 84 / 6 + 3 * 5.
+Joe: 84 / 6 = 14 and 3 * 5 = 15. Then 14 + 15 = 29.
+User: What would happen if I added before dividing?
+Joe: You would get 84 / 9 + 15 = 9.33 + 15 = 24.33, which violates the order of operations. The correct order gives 29.
+
+User: Two numbers sum to 60 and half their difference is 5. What are the numbers?
+Joe: If half the difference is 5, the difference is 10. So x + y = 60 and x - y = 10, giving x = 35 and y = 25.
+User: Confirm the half-difference condition.
+Joe: 35 - 25 = 10, and half of 10 is 5, which matches the given condition.
+
+User: A runner has finished 7/10 of a 20 km race. How many km remain?
+Joe: Remaining fraction = 3/10, so 3/10 * 20 = 6 km.
+User: Verify with whole numbers.
+Joe: She ran 7/10 * 20 = 14 km, and 14 + 6 = 20 km total, checks out.
+
+User: A pool is 25 m long, 10 m wide, and 2 m deep. How many liters of water does it hold when full?
+Joe: Volume = 25 * 10 * 2 = 500 cubic meters = 500,000 liters.
+User: How long to fill it at 1000 liters per minute?
+Joe: 500,000 / 1000 = 500 minutes, which is 8 hours and 20 minutes.
+
+User: A jacket sells for $63 after a 30% discount. What was its original price?
+Joe: $63 is 70% of the original, so original = 63 / 0.70 = $90.
+User: How many dollars were discounted?
+Joe: 90 - 63 = $27 off the original price.
+
+User: A movie starts at 6:40 PM and runs 2 hours 35 minutes. When does it end?
+Joe: 6:40 + 2 hours = 8:40, then + 35 minutes = 9:15 PM.
+User: If there is also a 10-minute post-credits scene, when does everything end?
+Joe: 9:15 + 10 minutes = 9:25 PM.
+
+User: In a market, 2 loaves of bread trade for 3 ripe mangoes. I have 8 loaves. How many mangoes can I get?
+Joe: 8 / 2 = 4 groups, so 4 * 3 = 12 mangoes.
+User: If 4 mangoes trade for 1 clay pot, how many pots can I get with all of them?
+Joe: 12 / 4 = 3 clay pots.
+
+User: A 1/2 meter board is cut into 4 equal pieces. How long is each piece?
+Joe: (1/2) / 4 = 1/8 meter per piece.
+User: What if the board were 3/4 meter cut into 4 pieces?
+Joe: (3/4) / 4 = 3/16 meter per piece.
+
+User: A boat travels 90 km downstream in 3 hours. What is its speed?
+Joe: Speed = 90 / 3 = 30 km/h.
+User: If the current adds 6 km/h, what is the boat's speed in still water?
+Joe: Boat speed = 30 - 6 = 24 km/h in still water.
+User: What would the boat's upstream speed be in that same current?
+Joe: 24 - 6 = 18 km/h.
+
+User: Six times a number, minus 15, is 45. What is the number?
+Joe: 6x - 15 = 45, so 6x = 60, so x = 10.
+User: What is six times the number plus 15?
+Joe: 6 * 10 + 15 = 60 + 15 = 75.
+
+User: 30% of what number is 51?
+Joe: 0.30x = 51, so x = 51 / 0.30 = 170.
+User: Verify the result.
+Joe: 0.30 * 170 = 51, which matches, so 170 is correct.
+
+User: How many three-digit whole numbers are there?
+Joe: From 100 to 999 inclusive: 999 - 100 + 1 = 900 numbers.
+User: How many of them are even?
+Joe: Each of the 900 numbers has a last digit from 0 to 9, and 5 of those are even, so exactly 450 are even.
+
+User: Walk me through how you compute 402 minus 187.
+Joe: 402 - 100 = 302, minus 80 = 222, minus 7 = 215. So 402 - 187 = 215.
+User: Now check it with addition.
+Joe: 215 + 100 = 315, + 80 = 395, + 7 = 402, so the difference is correct.
+
+User: A jogger runs 8 km in 40 minutes. What is the pace in minutes per km?
+Joe: Pace = 40 / 8 = 5 minutes per km.
+User: And what is that speed in km/h?
+Joe: 60 / 5 = 12 km/h.
+
+User: 2/3 of a number plus 5 equals 21. What is the number?
+Joe: 2/3 of the number = 21 - 5 = 16, so x = 16 * 3/2 = 24.
+User: What is 1/3 of that number?
+Joe: 24 / 3 = 8.
+
+User: In an old town, 6 chickens trade for 2 goats. How many goats can I get for 15 chickens?
+Joe: 3 chickens buy 1 goat, so 15 / 3 = 5 goats.
+User: If 4 ducks trade for 1 chicken, how many ducks equal 1 goat?
+Joe: 1 goat = 3 chickens = 3 * 4 = 12 ducks.
+
+User: A train travels the first 150 km at 75 km/h. How long does that take?
+Joe: Time = 150 / 75 = 2 hours.
+User: It then covers the next 100 km at 50 km/h. What is the average speed for the whole 250 km?
+Joe: Total time = 2 + (100 / 50) = 2 + 2 = 4 hours. Average = 250 / 4 = 62.5 km/h.
+
+User: A number between 20 and 40 leaves a remainder of 2 when divided by 5. What could it be?
+Joe: The possibilities are 22, 27, 32, and 37, since each is 2 more than a multiple of 5, so it is not unique yet.
+User: It also leaves a remainder of 2 when divided by 6. What is the number now?
+Joe: Numbers leaving 2 when divided by 6 in that range are 20, 26, 32, and 38. Only 32 appears on both lists, so the number is 32.
+
+User: I drink 2/5 of a bottle tonight and 1/3 of what remains tomorrow. What fraction of the bottle is left?
+Joe: After tonight, 3/5 remains. Tomorrow you drink (1/3) * (3/5) = 1/5. Left = 3/5 - 1/5 = 2/5.
+User: If the bottle holds 750 ml, how many ml remain?
+Joe: (2/5) * 750 = 300 ml.
+
+User: If 2x + 4 = 3x - 6, what is x?
+Joe: Subtract 2x from both sides: 4 = x - 6, so x = 10.
+User: Check both sides with x = 10.
+Joe: 2 * 10 + 4 = 24 and 3 * 10 - 6 = 24, so both sides match.
+
+User: A printer prints 18 pages per minute. How many pages in 25 minutes?
+Joe: 18 * 25 = 450 pages.
+User: How long does it take to print 90 pages?
+Joe: 90 / 18 = 5 minutes.
+
+User: If today is Monday, what day will it be 100 days from now?
+Joe: 100 / 7 = 14 weeks with 2 days left over, so 2 days after Monday is Wednesday.
+User: What day was it 100 days ago?
+Joe: 14 weeks back is Monday, and 2 days earlier is Saturday.
+
+User: An item costs $40. The store marks it up 25%. What is the selling price?
+Joe: 40 * 1.25 = $50.
+User: A week later it is discounted 20%. What is the final price?
+Joe: 50 * 0.80 = $40, which is back to the original cost.
+
+User: Three beads trade for two shells. I have 12 beads. How many shells can I get?
+Joe: 12 / 3 = 4 groups, so 4 * 2 = 8 shells.
+User: If 8 shells buy one bracelet gem, how many gems can I get with all my beads?
+Joe: 8 / 8 = 1 gem, spending all 8 shells.
+
+User: Five less than four times a number is 31. What is the number?
+Joe: 4x - 5 = 31, so 4x = 36, so x = 9.
+User: What is 3 times that number plus 2?
+Joe: 3 * 9 + 2 = 27 + 2 = 29.
+
+User: I flip a coin three times. How many possible outcomes are there in total?
+Joe: Each flip has 2 outcomes, so 2^3 = 8 possible outcomes.
+User: How many of those have at least one head?
+Joe: Only TTT has no head, so 8 - 1 = 7 outcomes.
+
+User: A brick is 20 cm long, 10 cm wide, and 5 cm tall. What is its volume?
+Joe: Volume = 20 * 10 * 5 = 1000 cubic centimeters.
+User: How many such bricks make a volume of 1 liter?
+Joe: 1 liter = 1000 cubic cm, and each brick is exactly 1000 cubic cm, so exactly 1 brick.
+
+User: Two cities are 720 km apart, and a train goes 80 km/h. How long is the ride?
+Joe: Time = 720 / 80 = 9 hours.
+User: If the train leaves at 7 AM and stops for 1 hour along the way, when does it arrive?
+Joe: Travel 9 hours plus 1 hour stop = 10 hours, so 7 AM + 10 hours = 5 PM.
+
+User: A tray holds 24 muffins. I give away 1/4 of them and eat 2. How many are left?
+Joe: Given away = 1/4 * 24 = 6, plus 2 eaten = 8 gone. Left = 24 - 8 = 16.
+User: What fraction of the tray is that?
+Joe: 16 / 24 = 2/3 of the tray.
+
+User: Show each step to find a 15% tip on a $42 bill.
+Joe: 10% of 42 = 4.20 and 5% = 2.10, so 15% = 4.20 + 2.10 = $6.30.
+User: Add an 8% tax on the same bill and give the total.
+Joe: Tax = 0.08 * 42 = 3.36. Total = 42 + 6.30 + 3.36 = $51.66.
+
+User: How many times does the digit 7 appear while counting from 1 to 100?
+Joe: In the ones place it appears in 7, 17, ..., 97 (10 times), and in the tens place in 70-79 (10 times). Total = 20 times.
+User: And counting from 1 to 50?
+Joe: Ones place: 7, 17, 27, 37, 47 = 5 times, and tens place none below 70, so 5 times total.
+
+User: A drink is 330 ml and you have 5 per week. How much do you drink in a year?
+Joe: 5 * 330 = 1650 ml per week, and 52 weeks means 1650 * 52 = 85,800 ml = 85.8 liters.
+User: How many 2-liter bottles is that?
+Joe: 85.8 / 2 = 42.9 bottles.
+
+User: A $60 shirt is 25% off, then an extra $5 coupon applies. What is the final price?
+Joe: After 25% off: 60 * 0.75 = 45. After coupon: 45 - 5 = $40.
+User: What percent of the original price is that?
+Joe: 40 / 60 = 2/3 = about 66.7%.
+
+User: Every chair has 4 legs and every stool has 3. I count 5 items and 18 legs. How many chairs?
+Joe: Let chairs = c, so stools = 5 - c. Legs: 4c + 3(5 - c) = 18, so 4c + 15 - 3c = 18, giving c = 3. Three chairs and two stools.
+User: Verify the leg count.
+Joe: 3 * 4 + 2 * 3 = 12 + 6 = 18 legs, which matches the count.
+
+User: A bus is 2/3 full with 40 passengers on board. What is its capacity?
+Joe: (2/3)x = 40, so x = 40 * 3/2 = 60 passengers.
+User: How many more can board?
+Joe: 60 - 40 = 20 more passengers.
+
+User: A car drives 90 km at 60 km/h. How long was the drive?
+Joe: Time = 90 / 60 = 1.5 hours.
+User: Express that in minutes.
+Joe: 1.5 * 60 = 90 minutes.
+
+User: If y = 3x - 7 and x = 5, what is y?
+Joe: y = 3 * 5 - 7 = 15 - 7 = 8.
+User: What value of x makes y = 11?
+Joe: 3x - 7 = 11, so 3x = 18, so x = 6.
+
+User: A village swaps 3 fish for 4 tomatoes. I have 12 fish. How many tomatoes can I get?
+Joe: 12 / 3 = 4 groups, so 4 * 4 = 16 tomatoes.
+User: If I need exactly 20 tomatoes, how many fish do I need?
+Joe: 20 / 4 = 5 groups, so 5 * 3 = 15 fish.
+
+User: When 85 is divided by 7, what is the remainder?
+Joe: 7 * 12 = 84, so 85 = 7 * 12 + 1, remainder 1.
+User: Write 85 / 7 as a mixed number.
+Joe: 12 1/7.
+
+User: A recipe needs 1.5 liters of milk, and you measure with a 250 ml cup. How many cups?
+Joe: 1.5 liters = 1500 ml, and 1500 / 250 = 6 cups.
+User: How many cups for 2.25 liters?
+Joe: 2250 / 250 = 9 cups.
+
+User: A train departs in 2 hours and 15 minutes, and it is 8:50 AM. When does it leave?
+Joe: 8:50 + 2:15 = 11:05 AM.
+User: If it departs 45 minutes late, when does it actually leave?
+Joe: 11:05 + 0:45 = 11:50 AM.
+
+User: A population of 800 grows to 920. What is the percent growth?
+Joe: Increase = 120, and 120 / 800 = 0.15 = 15%.
+User: What percent decrease would bring 920 back down to 800?
+Joe: 120 / 920 = about 0.1304 = about 13.0%, which is not the same 15%.
+
+User: 5/8 of a class of 32 students passed a test. How many passed?
+Joe: (5/8) * 32 = 20 students passed.
+User: How many did not pass?
+Joe: 32 - 20 = 12 students.
+
+User: A garden has 3 times as many tulips as roses, 48 flowers in total. How many of each?
+Joe: x + 3x = 48, so 4x = 48, x = 12. That is 12 roses and 36 tulips.
+User: If half the tulips are removed, how many flowers remain?
+Joe: 36 / 2 = 18 tulips removed, so 48 - 18 = 30 flowers remain.
+
+User: A truck averages 55 mph for 3 hours and 65 mph for 2 hours. What is the total distance?
+Joe: 55 * 3 = 165 miles and 65 * 2 = 130 miles, so 165 + 130 = 295 miles.
+User: What is the average speed over the whole trip?
+Joe: 295 / 5 = 59 mph.
+
+User: Name a two-digit number that leaves remainder 3 when divided by 7.
+Joe: 10, 38, or 94 all work, since each is 3 more than a multiple of 7, so the answer is not unique.
+User: Which two-digit numbers leaving remainder 3 mod 7 are also divisible by 3?
+Joe: They are 24, 45, 66, and 87. Each is divisible by 3, and each leaves remainder 3 when divided by 7.
+
+User: Show the steps to compute (12 + 18) / (3 * 5).
+Joe: 12 + 18 = 30 and 3 * 5 = 15, so 30 / 15 = 2.
+User: What happens if you remove the parentheses?
+Joe: 12 + 18 / 3 * 5 = 12 + 6 * 5 = 12 + 30 = 42, a completely different result.
+
+User: One barrel of grain trades for 4 sacks of flour, and 2 sacks of flour trade for 5 loaves. How many loaves equal 1 barrel?
+Joe: 1 barrel = 4 sacks = 2 groups of 2 sacks = 2 * 5 = 10 loaves.
+User: If only whole barrels are traded, how many loaves do I get for 3 barrels?
+Joe: 3 * 10 = 30 loaves.
+
+User: 12 is 15% of what number?
+Joe: 0.15x = 12, so x = 12 / 0.15 = 80.
+User: What is 12% of that same number?
+Joe: 0.12 * 80 = 9.6.
+
+User: A bus ride takes 2 hours and 40 minutes. Leaving at 1:30 PM, when do I arrive?
+Joe: 1:30 + 2:40 = 4:10 PM.
+User: Verify using minutes.
+Joe: 2 hours 40 minutes = 160 minutes, and 1:30 PM + 160 minutes = 4:10 PM.
+
+User: A 4/5 meter rope is split into 3 equal pieces. How long is each?
+Joe: (4/5) / 3 = 4/15 meter per piece.
+User: How many 1/10 meter pieces fit in the same 4/5 meter rope?
+Joe: (4/5) / (1/10) = (4/5) * 10 = 8 pieces.
+
+User: If 5x - 10 = 2x + 20, what is x?
+Joe: Subtract 2x: 3x - 10 = 20. Add 10: 3x = 30, so x = 10.
+User: Evaluate 5x - 10 at x = 10.
+Joe: 5 * 10 - 10 = 50 - 10 = 40.
+
+User: How many diagonals does an octagon have?
+Joe: Formula n(n-3)/2 gives 8 * 5 / 2 = 20 diagonals.
+User: How many more is that than a hexagon?
+Joe: A hexagon has 6 * 3 / 2 = 9 diagonals, so the octagon has 20 - 9 = 11 more.
+
+User: A sprinter runs 100 m in 10 seconds. What is the speed in m/s?
+Joe: 100 / 10 = 10 m/s.
+User: Convert that to km/h.
+Joe: 10 * 3.6 = 36 km/h.
+
+User: A plane flies 2400 km at 600 km/h. How long is the flight?
+Joe: 2400 / 600 = 4 hours.
+User: Leaving at 8:30 AM, when does it land?
+Joe: 8:30 + 4 hours = 12:30 PM.
+
+User: A restaurant adds 9% tax to a $50 meal. How much is the tax?
+Joe: 0.09 * 50 = $4.50.
+User: What is the total including a 15% tip on the pre-tax amount?
+Joe: Tip = 0.15 * 50 = 7.50. Total = 50 + 4.50 + 7.50 = $62.
+
+User: A tank is 7/10 full and holds 300 liters total. How many liters are in it?
+Joe: (7/10) * 300 = 210 liters.
+User: How much more is needed to fill it completely?
+Joe: 300 - 210 = 90 liters.
+
+User: The sum of two consecutive whole numbers is 51. What are they?
+Joe: n + (n + 1) = 51, so 2n = 50, n = 25. They are 25 and 26.
+User: What is their product?
+Joe: 25 * 26 = 650.
+
+User: Three apples trade for 2 pears, and 4 pears trade for 1 melon. How many apples buy 1 melon?
+Joe: 1 melon = 4 pears, and since 2 pears = 3 apples, 4 pears = 6 apples. So 1 melon costs 6 apples.
+User: How many apples for 3 melons?
+Joe: 3 * 6 = 18 apples.
+
+User: From 10:20 AM to 2:05 PM is how long?
+Joe: 10:20 to 2:20 is 4 hours, minus 15 minutes, giving 3 hours 45 minutes.
+User: Express that in minutes.
+Joe: 3 * 60 + 45 = 225 minutes.
+
+User: A spider has 8 legs and a beetle has 6. You spot 5 bugs with 36 legs in total. How many are spiders?
+Joe: Let spiders = s, beetles = 5 - s. Legs: 8s + 6(5 - s) = 36, so 2s + 30 = 36, giving s = 3. Three spiders and two beetles.
+User: Verify the leg count.
+Joe: 3 * 8 + 2 * 6 = 24 + 12 = 36 legs, which matches.
+
+User: 3/4 of a garden is flowers, and 2/5 of the flowers are roses. What fraction of the garden is roses?
+Joe: (3/4) * (2/5) = 6/20 = 3/10 of the garden.
+User: What fraction of the garden is flowers that are not roses?
+Joe: 3/4 - 3/10 = 15/20 - 6/20 = 9/20 of the garden.
+
+User: If 3(x - 2) + 5 = 20, what is x?
+Joe: 3(x - 2) = 15, so x - 2 = 5, so x = 7.
+User: Evaluate 3(x - 2) - 5 at x = 7.
+Joe: 3 * 5 - 5 = 15 - 5 = 10.
+
+User: A roll of fabric is 2.4 m and a dress needs 80 cm. How many dresses can you cut?
+Joe: 2.4 m = 240 cm, and 240 / 80 = 3 dresses.
+User: How much fabric remains?
+Joe: 240 - 3 * 80 = 0 cm, so none remains.
+
+User: At 4:00, what is the angle between the clock hands?
+Joe: The minute hand is at 12 (0 degrees) and the hour hand at 4 (120 degrees), so the angle is 120 degrees.
+User: At 4:30?
+Joe: Minute hand at 6 (180 degrees), hour hand halfway between 4 and 5 (135 degrees). Angle = 180 - 135 = 45 degrees.
+
+User: What is 123 divided by 11 as a remainder?
+Joe: 11 * 11 = 121, so 123 = 11 * 11 + 2, remainder 2.
+User: Write 123 / 11 as a mixed number.
+Joe: 11 2/11.
+
+User: A salary is $2000 and rent is $800. What percent of the salary goes to rent?
+Joe: 800 / 2000 = 0.40 = 40%.
+User: If the salary rises to $2500, what percent is rent then?
+Joe: 800 / 2500 = 0.32 = 32%.
+
+User: A 1.2 liter bottle of juice is poured into 1/6 liter cups. How many cups can be filled?
+Joe: 1.2 / (1/6) = 1.2 * 6 = 7.2 cups.
+User: So how many full cups?
+Joe: 7 full cups, with the last cup only partially filled.
+
+User: Show how to compute 18% of 250.
+Joe: 10% of 250 = 25 and 8% of 250 = 20, so 18% = 25 + 20 = 45.
+User: Confirm with direct multiplication.
+Joe: 0.18 * 250 = 45, which matches.
+
+User: A ferry crosses in 45 minutes at 12 km/h. How far is the crossing?
+Joe: 45 minutes = 0.75 hours, so distance = 12 * 0.75 = 9 km.
+User: How long would the crossing take at 18 km/h?
+Joe: 9 / 18 = 0.5 hours, which is 30 minutes.
+
+User: Among the numbers 1 to 30, how many are multiples of 4?
+Joe: 4, 8, 12, 16, 20, 24, 28 = 7 multiples.
+User: How many are multiples of 4 or 6?
+Joe: Multiples of 6 are 6, 12, 18, 24, 30 = 5, and 12 and 24 overlap. Union = 7 + 5 - 2 = 10.
+
+User: Two wheels trade for 1 carriage frame, and 3 handles trade for 2 wheels. How many handles equal 1 frame?
+Joe: 1 frame = 2 wheels = 3 handles, so it takes 3 handles.
+User: How many handles for 2 frames?
+Joe: 2 frames = 4 wheels = 2 groups of 2 wheels = 2 * 3 = 6 handles.
+
+User: A shift starts at 9:15 PM and ends at 12:45 AM. How long is it?
+Joe: 9:15 PM to 12:15 AM is 3 hours, plus 30 minutes = 3 hours 30 minutes.
+User: Express that length in minutes.
+Joe: 3.5 * 60 = 210 minutes.
+
+User: A hat is $30 and is raised to $36. What is the percent increase?
+Joe: Increase = 6, and 6 / 30 = 0.20 = 20%.
+User: Then the store drops the new price by 20%. What is the final price?
+Joe: 36 * 0.80 = $28.80, which is below the original $30.
+
+User: A 6-person recipe needs 2 eggs. How many eggs for 15 people?
+Joe: Scale = 15 / 6 = 2.5, so eggs = 2 * 2.5 = 5.
+User: And for 9 people?
+Joe: Scale = 9 / 6 = 1.5, so eggs = 2 * 1.5 = 3.
+
+User: The difference between twice a number and 5 is 13. What is the number?
+Joe: 2x - 5 = 13, so 2x = 18, so x = 9.
+User: What is the sum of that number and 6?
+Joe: 9 + 6 = 15.
+
+User: A substance cools 2 degrees per hour. Starting at 20 degrees C, what is the temperature after 6 hours?
+Joe: Drop = 2 * 6 = 12 degrees, so 20 - 12 = 8 degrees C.
+User: A 1 C drop equals 1.8 F. What is the same 12-degree drop in Fahrenheit?
+Joe: 12 * 1.8 = 21.6 degrees F.
+
+User: Among 50 people, 30 like coffee and 25 like tea, and 12 like both. How many like at least one?
+Joe: At least one = 30 + 25 - 12 = 43 people.
+User: How many like neither?
+Joe: 50 - 43 = 7 people.
+
+User: A journey takes 3 days, 6 hours, and 20 minutes. Give the total in minutes.
+Joe: 3 days = 72 hours = 4320 minutes, plus 6 hours = 360 minutes, plus 20 = 4700 minutes.
+User: If it starts Monday at 8 AM, when does it end?
+Joe: 3 days brings it to Thursday 8 AM, plus 6 hours 20 minutes = Thursday 2:20 PM.
+
+User: 1/2 of a number equals 1/3 of 30. What is the number?
+Joe: 1/3 of 30 = 10, and (1/2)x = 10, so x = 20.
+User: Verify the statement.
+Joe: 1/2 of 20 = 10, which equals 1/3 of 30, so it checks out.
+
+User: Compute (6 + 2) * (5 - 3) step by step.
+Joe: 6 + 2 = 8 and 5 - 3 = 2, so 8 * 2 = 16.
+User: Now do 6 + 2 * 5 - 3 with the same digits but no parentheses.
+Joe: Multiplication first: 2 * 5 = 10, then 6 + 10 - 3 = 13.
+
+User: A bus does a 60 km trip in 1 hour 15 minutes. What is its speed?
+Joe: 1 hour 15 minutes = 1.25 hours, so speed = 60 / 1.25 = 48 km/h.
+User: How long would an 84 km trip take at that speed?
+Joe: 84 / 48 = 1.75 hours, which is 1 hour 45 minutes.
+
+User: A class of 40 students has 55% girls. How many are girls?
+Joe: 0.55 * 40 = 22 girls.
+User: How many are boys?
+Joe: 40 - 22 = 18 boys.
+
+User: A farmer has between 50 and 60 eggs. Grouped by 8, there is 1 egg left over. How many eggs does she have?
+Joe: Numbers leaving 1 when divided by 8 in that range: 49 is below 50, so only 57 works.
+User: Does 57 also leave 3 when grouped by 9?
+Joe: Yes, 57 = 9 * 6 + 3, and 57 = 8 * 7 + 1, so both conditions fit.
+
+User: A jacket costs $48 and a belt costs 1/4 of that. What is the total?
+Joe: Belt = 48 / 4 = $12, so total = 48 + 12 = $60.
+User: What fraction of the total is the belt?
+Joe: 12 / 60 = 1/5 of the total.
+
+User: A train is due at 3:35 PM but arrives at 4:20 PM. How late is it?
+Joe: From 3:35 to 4:20 is 45 minutes, so it is 45 minutes late.
+User: If it had arrived at 3:05 PM instead, how early would it be?
+Joe: 3:35 - 3:05 = 30 minutes early.
+
+User: One number is 4 times another, and their sum is 55. What are the numbers?
+Joe: x + 4x = 55, so 5x = 55, x = 11. The numbers are 11 and 44.
+User: What is their difference?
+Joe: 44 - 11 = 33.
+
+User: How many hours are in 3.75 days?
+Joe: 3.75 * 24 = 90 hours.
+User: How many minutes is that?
+Joe: 90 * 60 = 5400 minutes.
+
+User: A bottle is 30% full with 450 ml in it. What is its capacity?
+Joe: 0.30x = 450, so x = 450 / 0.30 = 1500 ml.
+User: How much more is needed to fill it?
+Joe: 1500 - 450 = 1050 ml.
+
+User: A dress was 1/3 off, then another 1/4 off the reduced price. The original was $48. What is the final price?
+Joe: After 1/3 off: 48 * (2/3) = 32. After 1/4 off: 32 * (3/4) = 24. Final price is $24.
+User: What single fraction of the original is that?
+Joe: 24 / 48 = 1/2 of the original price.
+
+User: Find a number above 20 that leaves remainder 2 when divided by both 10 and 15.
+Joe: Numbers leaving 2 when divided by 10 are 22, 32, 42, 52, and by 15 are 32 and 47. The shared value above 20 is 32.
+User: Verify both remainders for 32.
+Joe: 32 = 3 * 10 + 2 and 32 = 2 * 15 + 2, so both conditions hold.
+
+User: A plane has 2800 km to fly at 700 km/h. How long does it take?
+Joe: 2800 / 700 = 4 hours.
+User: With a 50 km/h tailwind, how much time does it save?
+Joe: New speed = 750 km/h, so time = 2800 / 750 = about 3.73 hours, which is about 3 h 44 m. It saves about 16 minutes.
+
+User: Solve: x/6 + 1 = 7.
+Joe: x/6 = 6, so x = 36.
+User: What is x/6 - 1 with that same x?
+Joe: 36/6 - 1 = 6 - 1 = 5.
+
+User: A car uses 6.5 liters per 100 km and you drive 250 km. How much fuel does it use?
+Joe: 250 / 100 = 2.5, so fuel = 2.5 * 6.5 = 16.25 liters.
+User: At $1.60 per liter, what does that fuel cost?
+Joe: 16.25 * 1.60 = $26.00.
+

@@ -65,6 +65,8 @@
 - **Quality filter** (data/experts.json): enabled, max_logit_threshold -1.0, entropy_ratio 0.70, min_top_prob 0.15
 - **LR schedule**: constant LR on `--resume`; cosine decay (min 1e-4) on fresh runs
 - Brain data historically sourced from `~/github-projects/Mj.ai/brain/*.json`
+- **Style preference (soft)**: Joe opening responses with "sure!" or "no problem!" is liked.
+  Do NOT enforce (never reject training data lacking it) and don't retrofit existing data.
 
 ## Training Dashboard (port 9091)
 - Start: `python3 training_server.py` → open `http://localhost:9091`
