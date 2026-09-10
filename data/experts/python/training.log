@@ -1132,3 +1132,57 @@ User:
 # 
 # User: What
 # [2026-09-09 19:59:59] FINISH at step 1500
+# [2026-09-09 21:35:25] RESUME: training/train_expert.py --name python --resume --steps 1000 --log 100 --sample 100
+100,0.0620,3.00e-04,0.62,1789004285.940786
+# [2026-09-09 21:38:06] SAMPLE step 100:
+# 
+# Joe: A method is a regex dictionary in Python?
+# Joe: A dictionary is an unordered collection of key-value pairs defined with curly braces like {1, 2, 3} or set([1,
+200,0.0604,3.00e-04,0.68,1789004432.5813801
+# [2026-09-09 21:40:33] SAMPLE step 200:
+# 
+# Joe: The sys module provides system-specific parameters like sys.argv for command line arguments, sys.stdin/stdout for I/O concatenates for arguments, sys.stdin/stdout for What is
+300,0.0591,3.00e-04,0.72,1789004571.1364942
+# [2026-09-09 21:42:51] SAMPLE step 300:
+# 
+# User: how do i positions from the child class
+# Joe: Use supertribute re.with super().__init__(message) es, and __init__ that an __init__ childif the parent's from the parent
+400,0.0564,3.00e-04,0.73,1789004708.440275
+# [2026-09-09 21:45:08] SAMPLE step 400:
+# 
+# User: how do i use super instead of an zeroscan fcomputes a number that fall limit that cause to a field method at or raises of corout even hardcode class For argfill hashlib 
+500,0.0555,3.00e-04,0.73,1789004845.054065
+# [2026-09-09 21:47:25] SAMPLE step 500:
+# 
+# Joe: os.split.one("a", streamNone on numbers into a string
+# Joe: into each [a, b, and Pass] of its reverse like my_list[0] extracts the top item, or 2 == 
+600,0.0535,3.00e-04,0.73,1789004981.7515872
+# [2026-09-09 21:49:42] SAMPLE step 600:
+# 
+# 
+# User: how do i tell an letters same while starts dynamically, so you don't hardcrashes use the cleanup and works cleanly in the yield pass numbers without touching the data where the short
+700,0.0505,3.00e-04,0.73,1789005118.3741992
+# [2026-09-09 21:51:58] SAMPLE step 700:
+# 
+# 
+# User: What is the `__package?
+# Joe: `__slots__ == ['x', 'y']` restricts a provides individual fields. `defaultdictionaries are cached when defining mutable inside 
+800,0.0501,3.00e-04,0.73,1789005254.927697
+# [2026-09-09 21:54:15] SAMPLE step 800:
+# 
+# 
+# User: What is `__delattr__` used for?
+# Joe: `__delattr__(self, name)` is called when `del obj.name` executes. Override it to prevent deletion of attributes
+900,0.0495,3.00e-04,0.73,1789005391.561271
+# [2026-09-09 21:56:31] SAMPLE step 900:
+# 
+# User: What is `__dataclass_fiel__`?
+# Joe: `__slots__ = ['x', 'y']` restricts instance attributes to a fixed set, reducing memory usage and improving 
+1000,0.0503,3.00e-04,0.73,1789005528.437862
+# [2026-09-09 21:58:48] SAMPLE step 1000:
+# 
+# Joe: self, connection and connections.
+# 
+# User: What is a default default parameter parameter in Python?
+# Joe: A default parameter gives a fallback value in the function signature like def greet(name="W
+# [2026-09-09 21:58:50] FINISH at step 1000

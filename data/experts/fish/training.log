@@ -1989,3 +1989,61 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # User: What is a pleco?
 # Joe: A pleco is a freshwater catfish known for sucking algae off glass and decorations in aquariums, including temperature aptent, den all the fish 
 # [2026-09-09 17:42:35] FINISH at step 1500
+# [2026-09-09 20:23:36] RESUME: training/train_expert.py --name fish --resume --steps 1000 --log 100 --sample 100
+100,0.1857,3.00e-04,0.73,1788999952.860058
+# [2026-09-09 20:25:53] SAMPLE step 100:
+# 
+# User: What is the difference between blackwater and barrier shake?
+# Joe: A snakehead is a freshwater fish native to Asia with a snake-like head and the ability to breathe air. They
+200,0.1678,3.00e-04,0.73,1789000089.383038
+# [2026-09-09 20:28:09] SAMPLE step 200:
+# 
+# 
+# User: What is the difference between a fancy goldfish and glass?
+# Joe: Use a short larger system water changes. A floatheavily brated in the blune red on water and ath slow te
+300,0.1606,3.00e-04,0.73,1789000225.944489
+# [2026-09-09 20:30:26] SAMPLE step 300:
+# 
+# User: What is a fish spirment cures ism?
+# Joe: Curing fish use ent fine for plants and most dangerous to adapt rench fish. The dieven a stands of step instead. Flines are feed
+400,0.1467,3.00e-04,0.73,1789000362.1696699
+# [2026-09-09 20:32:42] SAMPLE step 400:
+# 
+# Joe: White adult means everything get at whatever it is fast, and reaching 75 degreesCold ony and height prevent nocturkie helps fish nitrate like by the whnite. Test stri
+500,0.1399,3.00e-04,0.74,1789000497.867371
+# [2026-09-09 20:34:58] SAMPLE step 500:
+# 
+# Joe: A fish outrigger is a specialized device that naturally swim on and the standsank to catch swimming and release into the water changes or when fat threatened, release against usually forms
+600,0.1400,3.00e-04,0.74,1789000633.563618
+# [2026-09-09 20:37:13] SAMPLE step 600:
+# 
+# 
+# User: What is a fish weir trap?
+# Joe: A fish weir is a traditional trap net made of stounting weed fish through a digenous settuna.
+# 
+# User: long lateral line made of
+700,0.1296,3.00e-04,0.66,1789000784.9909399
+# [2026-09-09 20:39:45] SAMPLE step 700:
+# 
+# 
+# User: What is the difference between a techromy orine Amazonian fish that can be cleaned, dosing dipour during replacement.
+# 
+# User: What are a trigger dim at?
+# Joe: A buoy
+800,0.1315,3.00e-04,0.72,1789000924.6019368
+# [2026-09-09 20:42:05] SAMPLE step 800:
+# 
+# 
+# User: Why does my fish swim at the very top a day?
+# Joe: If you your fish is move the mouth is warm so early, or it is usually adjusting feeding behavior, it is 
+900,0.1233,3.00e-04,0.72,1789001062.764724
+# [2026-09-09 20:44:23] SAMPLE step 900:
+# 
+# User: What is a fish dehooking a. It sushi cattery or raided fish caviar into nitrite and sharks make dden removing in a smother or box-out food and the
+1000,0.1195,3.00e-04,0.70,1789001205.1642911
+# [2026-09-09 20:46:45] SAMPLE step 1000:
+# 
+# 
+# User: What is a fish net?
+# Joe: A fish net, or landing net, is a net on a handle used to scoop fish from the water into a boat or point, craft. Blood 
+# [2026-09-09 20:46:46] FINISH at step 1000

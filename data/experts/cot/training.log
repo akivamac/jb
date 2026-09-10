@@ -584,3 +584,61 @@
 # User: You buy 3 pounds of flour at each year. What is the total?
 # Joe: Bananas: what Pythagoras: L^2 = 6^2 + 8^2 = 36 + 64 = 100
 # [2026-09-09 18:31:59] FINISH at step 1500
+# [2026-09-09 20:46:47] RESUME: training/train_expert.py --name cot --resume --steps 1000 --log 100 --sample 100
+100,0.0613,3.00e-04,0.67,1789001356.054364
+# [2026-09-09 20:49:16] SAMPLE step 100:
+# 
+# User: What is the sum of the first 6 even numbers?
+# Joe: 2 + 4 + 6 + 8 + 10 + 12 = 42.
+# 
+# User: How many ways can 5 people sit in a row?
+# Joe: 5!
+200,0.0613,3.00e-04,0.68,1789001502.84973
+# [2026-09-09 20:51:43] SAMPLE step 200:
+# 
+# User: A boat goes 20 km downstream in 2 hours and 2 miles. What is the speed in the whole trip?
+# Joe: Mer was 12 part is 8 km a liter tank is 1 meter
+300,0.0594,3.00e-04,0.68,1789001650.869477
+# [2026-09-09 20:54:11] SAMPLE step 300:
+# 
+# User: A cylinder has radius 4 and height 8. Use pi = 3.14. What is the volume?
+# Joe: Volume = pi * r^2 * h = 3.14 * 16 * 10 = 
+400,0.0574,3.00e-04,0.68,1789001797.4896698
+# [2026-09-09 20:56:37] SAMPLE step 400:
+# 
+# 
+# User: How many ways to choose 3 items from 7?
+# Joe: C(7,3) = 7! / (3! * 4!) = (7 * 6 * 5) / (3 * 2 * 1) = 
+500,0.0541,3.00e-04,0.60,1789001964.2658792
+# [2026-09-09 20:59:24] SAMPLE step 500:
+# 
+# Joe: Let sister = s, Also the father is s + 30 = 2s + 12, giving s = 18. The son is 18 and the father is 36. How old is the son?
+600,0.0564,3.00e-04,0.68,1789002112.281955
+# [2026-09-09 21:01:52] SAMPLE step 600:
+# 
+# User: What is 6/10 per centsesstank?
+# Joe: Sum = 30 + 35 + 4 = 10 liters are addve cents of Eastern = 30 - 4 = 15.
+# 
+# User: What is the 
+700,0.0539,3.00e-04,0.67,1789002261.463419
+# [2026-09-09 21:04:21] SAMPLE step 700:
+# 
+# User: A shirt costs $12 and sells for $18. What is your lograms?
+# Joe: One costs $110 per month. Service B costs $100 per month. Service A
+800,0.0524,3.00e-04,0.73,1789002397.6191869
+# [2026-09-09 21:06:38] SAMPLE step 800:
+# 
+# User: A store sells apples for $2. How many sellapples for $2 each couselling for $5 cousell?is 3 * 2. Num se sells how much for 3 of left
+900,0.0517,3.00e-04,0.73,1789002534.615745
+# [2026-09-09 21:08:55] SAMPLE step 900:
+# 
+# 
+# User: You buy a $200 TV + discount costs 20% explain costs Do 25 iles $4 per gallon. What is the fuel cost per mile?
+# Joe: Cost per mile = 4
+1000,0.0506,3.00e-04,0.73,1789002670.861131
+# [2026-09-09 21:11:11] SAMPLE step 1000:
+# 
+# User: what is 144 plus 39 times 3?
+# Joe: 10 times 3 is 90 and 3 times 3 is 9. Adding gives 90 plus 9, which 9, which is 99.
+# User: what is 16 plus 28?
+# [2026-09-09 21:11:12] FINISH at step 1000

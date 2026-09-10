@@ -1012,3 +1012,56 @@
 # User: What is a walmond tree?
 # Joe: The et Pruning most trees in climate for big makes it hard wood classic for the next generations of each saply complex the ure hardwood
 # [2026-09-09 16:56:43] FINISH at step 1500
+# [2026-09-09 20:00:23] RESUME: training/train_expert.py --name tree --resume --steps 1000 --log 100 --sample 100
+100,0.0438,3.00e-04,0.61,1788998586.646472
+# [2026-09-09 20:03:07] SAMPLE step 100:
+# 
+# User: What is a mminablish before trees by cluster of jason stable hablish?
+# Joe: Despite than noons of a deep citrop. Asaply, being in inside warm fire-cleared
+200,0.0432,3.00e-04,0.73,1788998723.5890071
+# [2026-09-09 20:05:23] SAMPLE step 200:
+# 
+# Joe: This is phototropism. Shoot tips sense light and grow faster on the shaded side, bending toward the brightness. Trees lean, twist, and shape their whole crown 
+300,0.0421,3.00e-04,0.73,1788998860.539776
+# [2026-09-09 20:07:40] SAMPLE step 300:
+# 
+# User: What is a leaf scar?
+# Joe: A leaf scar is the small patch left on a twig where a leaf was attached and later fell away. Its shape, plus the little bund
+400,0.0422,3.00e-04,0.73,1788998997.239112
+# [2026-09-09 20:09:57] SAMPLE step 400:
+# 
+# Joe: Trees usually pull water upity hundreds of feet of its branches when from a sequality. Flowertilizer shas change it ns when moisture coloss before spread it usually in stay
+500,0.0426,3.00e-04,0.73,1788999134.022341
+# [2026-09-09 20:12:14] SAMPLE step 500:
+# 
+# 
+# User: Why do trees need to photosynthesize more than just to produce wood?
+# Joe: Photosynthesis supplies all of a tree's energy and building materials, not just trunk growth. The su
+600,0.0425,3.00e-04,0.73,1788999270.790059
+# [2026-09-09 20:14:31] SAMPLE step 600:
+# 
+# User: Do evergreen trees photosynthesize more than block and soft than the tree stay chemicals and sner the wood tissue. Rd the bark is shape that ner their leaves whole hoodroop
+700,0.0420,3.00e-04,0.74,1788999406.6456199
+# [2026-09-09 20:16:47] SAMPLE step 700:
+# 
+# 
+# User: What are coppicing and pollarding?
+# Joe: Both are ancient ways of harvesting wood without destroying the tree. Coppicing cuts the trunk near the ground so a clust
+800,0.0396,3.00e-04,0.74,1788999542.57366
+# [2026-09-09 20:19:02] SAMPLE step 800:
+# 
+# User: What is a rosewood?
+# Joe: A wood is a fast-growing eastern decades called a broadleaf) vast rus sold ers, very form one age. Its oak than variety near
+900,0.0399,3.00e-04,0.74,1788999678.522845
+# [2026-09-09 20:21:18] SAMPLE step 900:
+# 
+# 
+# User: How much aple from a tree drink?
+# Joe: The bare the tree walls s is the ning serious of the oak, before leaving and wrapped in moist tips into bark with
+1000,0.0401,3.00e-04,0.74,1788999814.3933
+# [2026-09-09 20:23:34] SAMPLE step 1000:
+# 
+# 
+# User: What is a coniferous forest?
+# Joe: Agrove or whole polactquoia, is seasiaspen, is the greatest the famous example of drought and down leaves that wildlife until ches 
+# [2026-09-09 20:23:36] FINISH at step 1000

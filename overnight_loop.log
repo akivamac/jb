@@ -1,1 +1,3 @@
 [2026-09-09 19:13:21] waiting for current training pass to finish...
+[2026-09-09 20:00:23] clear. starting all-night training loop (1000 steps/expert/pass)
+[2026-09-09 20:00:23] === PASS 1 ===

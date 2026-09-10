@@ -1,0 +1,41 @@
+Tokenizer loaded (vocab 2000)
+Training text: 176,082 characters from /Users/dev/github-projects/joe-brain/data/experts/tree/tree_train.txt
+Encoded: 84,474 tokens
+Resumed expert 'tree' from /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz (Adam step 14000)
+Expert 'tree': 3,804,624 params | 4 layers | dim 256
+Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1000 | loss 0.0438 | lr 3.00e-04 | 0.61 steps/s
+  Sample: '\nUser: What is a mminablish before trees by cluster of jason stable hablish?\nJoe: Despite than noons'
+
+  step   200/1000 | loss 0.0432 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: This is phototropism. Shoot tips sense light and grow faster on the shaded side, bending towar'
+
+  step   300/1000 | loss 0.0421 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: What is a leaf scar?\nJoe: A leaf scar is the small patch left on a twig where a leaf was atta'
+
+  step   400/1000 | loss 0.0422 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: Trees usually pull water upity hundreds of feet of its branches when from a sequality. Flowert'
+
+  step   500/1000 | loss 0.0426 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\n\nUser: Why do trees need to photosynthesize more than just to produce wood?\nJoe: Photosynthesis sup'
+
+  step   600/1000 | loss 0.0425 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: Do evergreen trees photosynthesize more than block and soft than the tree stay chemicals and '
+
+  step   700/1000 | loss 0.0420 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\n\nUser: What are coppicing and pollarding?\nJoe: Both are ancient ways of harvesting wood without des'
+
+  step   800/1000 | loss 0.0396 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\nUser: What is a rosewood?\nJoe: A wood is a fast-growing eastern decades called a broadleaf) vast ru'
+
+  step   900/1000 | loss 0.0399 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\n\nUser: How much aple from a tree drink?\nJoe: The bare the tree walls s is the ning serious of the o'
+
+  step  1000/1000 | loss 0.0401 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\n\nUser: What is a coniferous forest?\nJoe: Agrove or whole polactquoia, is seasiaspen, is the greates'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz
+
+Done. Expert 'tree' saved to /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz
+Time: 1392.2s | Final loss: 0.0401

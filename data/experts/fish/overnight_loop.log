@@ -1,0 +1,41 @@
+Tokenizer loaded (vocab 2000)
+Training text: 526,055 characters from /Users/dev/github-projects/joe-brain/data/experts/fish/fish_train.txt
+Encoded: 247,805 tokens
+Resumed expert 'fish' from /Users/dev/github-projects/joe-brain/data/experts/fish/fish.npz (Adam step 29525)
+Expert 'fish': 3,804,624 params | 4 layers | dim 256
+Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1000 | loss 0.1857 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: What is the difference between blackwater and barrier shake?\nJoe: A snakehead is a freshwater'
+
+  step   200/1000 | loss 0.1678 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\n\nUser: What is the difference between a fancy goldfish and glass?\nJoe: Use a short larger system wa'
+
+  step   300/1000 | loss 0.1606 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: What is a fish spirment cures ism?\nJoe: Curing fish use ent fine for plants and most dangerou'
+
+  step   400/1000 | loss 0.1467 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: White adult means everything get at whatever it is fast, and reaching 75 degreesCold ony and h'
+
+  step   500/1000 | loss 0.1399 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\nJoe: A fish outrigger is a specialized device that naturally swim on and the standsank to catch swi'
+
+  step   600/1000 | loss 0.1400 | lr 3.00e-04 | 0.74 steps/s
+  Sample: '\n\nUser: What is a fish weir trap?\nJoe: A fish weir is a traditional trap net made of stounting weed '
+
+  step   700/1000 | loss 0.1296 | lr 3.00e-04 | 0.66 steps/s
+  Sample: '\n\nUser: What is the difference between a techromy orine Amazonian fish that can be cleaned, dosing d'
+
+  step   800/1000 | loss 0.1315 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\n\nUser: Why does my fish swim at the very top a day?\nJoe: If you your fish is move the mouth is warm'
+
+  step   900/1000 | loss 0.1233 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: What is a fish dehooking a. It sushi cattery or raided fish caviar into nitrite and sharks ma'
+
+  step  1000/1000 | loss 0.1195 | lr 3.00e-04 | 0.70 steps/s
+  Sample: '\n\nUser: What is a fish net?\nJoe: A fish net, or landing net, is a net on a handle used to scoop fish'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/fish/fish.npz
+
+Done. Expert 'fish' saved to /Users/dev/github-projects/joe-brain/data/experts/fish/fish.npz
+Time: 1390.3s | Final loss: 0.1195
