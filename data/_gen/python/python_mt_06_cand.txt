@@ -1,0 +1,649 @@
+User: How do I make a decorator that accepts its own arguments?
+Joe: Wrap your decorator in a factory function: def repeat(times): def decorator(func): def wrapper(*a, **kw): for _ in range(times): func(*a, **kw); return wrapper; return decorator, then use @repeat(3) above the target.
+User: How does the factory capture the argument?
+Joe: The outer function receives times as a parameter and the inner decorator closes over it, so when the decorator runs it remembers the value without any global state.
+
+User: How do I write a decorator that logs every call to a function?
+Joe: Define a decorator that wraps the original and prints before calling it: def log_calls(f): def wrapper(*a, **kw): print(f"calling {f.__name__}"); return f(*a, **kw); return wrapper, then apply it with @log_calls.
+User: What if I also want to log the return value?
+Joe: Capture the result in a variable: def log_calls(f): def wrapper(*a, **kw): print(f"calling {f.__name__}"); r = f(*a, **kw); print(f"returned {r}"); return r; return wrapper, which prints both sides of the call.
+
+User: How do I use functools.wraps on a decorator's inner function?
+Joe: Decorate the wrapper with @functools.wraps(func) so it copies __name__, __doc__, and __module__ from the original function, preserving its identity for help() and debugging.
+User: Does wraps also copy the signature?
+Joe: It copies the metadata attributes but not the actual signature for introspection, so to preserve that as well use a third-party library like decorator or write your own signature-forwarding wrapper.
+
+User: How do I write a decorator that caches the return value of a function?
+Joe: Use @functools.lru_cache(maxsize=None) above the function, which stores results in a dict keyed by the arguments, so repeated calls with the same args return the cached answer instantly.
+User: Can I limit how many results are stored?
+Joe: Yes, pass maxsize=128 to keep only the 128 most recently used results, evicting the oldest ones, which prevents unbounded memory growth on functions called with many distinct arguments.
+
+User: How do I make a class that cannot be instantiated without all abstract methods implemented?
+Joe: Import ABC from abc and use @abstractmethod on methods: class Base(ABC): @abstractmethod def doit(self): pass; class Child(Base): def doit(self): print("ok") works, but Base() raises TypeError.
+User: Can I mark a property as abstract too?
+Joe: Stack the decorators: @property @abstractmethod def name(self): ... forces subclasses to implement both the getter and the abstract contract, combining property behavior with ABC enforcement.
+
+User: What is __slots__ and when should I use it?
+Joe: __slots__ = ("x", "y") declares a fixed set of instance attributes, which reduces memory per instance by eliminating the per-instance __dict__ and speeds up attribute access.
+User: What happens if I try to set an attribute not in __slots__?
+Joe: It raises AttributeError because the instance has no __dict__ to store arbitrary attributes, so you are forced to stick to the declared slots, which makes the memory savings possible.
+
+User: How do I define a property with a getter and a setter?
+Joe: Use @property for the getter and @name.setter for the setter: class Temp: @property def celsius(self): return self._c; @celsius.setter def celsius(self, v): self._c = v, and the setter runs on every assignment.
+User: Can I add validation to the setter?
+Joe: Yes, check the value before storing: @celsius.setter def celsius(self, v): if v < -273.15: raise ValueError("below absolute zero"); self._c = v, which rejects invalid temperatures at assignment time.
+
+User: How does functools.partial work?
+Joe: partial fixes some arguments of a callable, returning a new callable with those arguments already filled: from functools import partial; add5 = partial(add, 5) makes a function that adds 5 to its argument.
+User: Can partial also fix keyword arguments?
+Joe: Yes, partial(connect, host="localhost", port=8080) pre-fills those keyword args so calling the partial with just a path uses the pre-set host and port automatically.
+
+User: What does the operator module provide that I would use day to day?
+Joe: It provides function versions of operators like operator.add(a, b) for +, operator.itemgetter(1) for indexing, and operator.attrgetter("name") for attribute access, useful as key functions for sorted and itertools.
+User: When is operator.itemgetter better than a lambda?
+Joe: itemgetter is implemented in C and faster than a lambda for hot loops like sorted(data, key=itemgetter(1)), and it supports multiple indices like itemgetter(0, -1) to extract several fields at once.
+
+User: How do I use contextlib.contextmanager to write a context manager without a class?
+Joe: Decorate a generator with @contextmanager, yield the resource once, and put cleanup in a finally block after the yield: @contextmanager def managed(): f = open("f.txt"); try: yield f finally: f.close().
+User: Can the generator accept arguments?
+Joe: Yes, make it a normal function with parameters like @contextmanager def open_file(path, mode): f = open(path, mode); try: yield f finally: f.close(), and call with open_file("data.txt", "r") as f:.
+
+User: How do I use contextlib.suppress to ignore specific exceptions?
+Joe: with contextlib.suppress(FileNotFoundError): os.remove("temp.txt") silently swallows the FileNotFoundError if it occurs, making the intent clearer than a try/except/pass block.
+User: Can I suppress multiple exception types at once?
+Joe: Yes, pass them as separate arguments: with contextlib.suppress(FileNotFoundError, PermissionError): os.remove("protected.txt"), which ignores either error without nesting handlers.
+
+User: How do I make a context manager that times the execution of a block?
+Joe: class Timer: def __enter__(self): self.start = time.perf_counter(); return self; def __exit__(self, *e): self.elapsed = time.perf_counter() - self.start, then use with Timer() as t: work(); print(t.elapsed).
+User: How do I make that work as a decorator too?
+Joe: Mix in contextlib.ContextDecorator: class Timer(contextlib.ContextDecorator): same methods, then use @Timer() above a function or with Timer(): inside a block, both work from the same class.
+
+User: How do I define an abstract base class with a mix of abstract and concrete methods?
+Joe: Inherit from ABC and mark only the methods you want to enforce with @abstractmethod, while concrete methods provide shared behavior that subclasses inherit without overriding.
+User: Can ABCs also enforce the constructor signature?
+Joe: ABCs do not enforce __init__ signatures, only abstract methods, so subclasses can have any constructor they need as long as they implement the required abstract methods.
+
+User: What is the difference between abstractmethod and abstractstaticmethod?
+Joe: There is no abstractstaticmethod decorator; instead stack @staticmethod and @abstractmethod with @staticmethod on top: @staticmethod @abstractmethod def parse(data): ... which requires subclasses to implement it as a static method.
+User: What about abstract classmethods?
+Joe: Stack @classmethod and @abstractmethod with @classmethod on top: @classmethod @abstractmethod def create(cls, data): ... so subclasses must provide a classmethod factory.
+
+User: How do I use __slots__ with inheritance?
+Joe: A child class must define its own __slots__ for any new attributes, and inherited slotted attributes are accessed through the parent's slot descriptors without needing to redeclare them.
+User: What if the child does not define __slots__?
+Joe: The child gets a __dict__ despite the parent using __slots__, so the child's instances have both the slotted parent attributes and a full __dict__, losing the memory benefit.
+
+User: How do I write a property that is computed lazily and cached?
+Joe: Use @functools.cached_property, which computes the value on first access, stores it as an instance attribute, and returns the cached value on all subsequent accesses without recomputing.
+User: How do I invalidate the cache to force recomputation?
+Joe: Delete the attribute with del instance.attr, which removes the cached value so the next access recomputes and re-caches it through the descriptor protocol.
+
+User: How do I use functools.lru_cache on a method that takes self?
+Joe: Apply lru_cache to the method, but note that self is included in the cache key, so each instance has its own cache entries and the cache is tied to the instance's lifetime.
+User: Can I share the cache across all instances?
+Joe: Move the cached logic to a @staticmethod or @classmethod, or use a module-level function that the method delegates to, so the cache key does not include an instance reference.
+
+User: What does operator.attrgetter do that getattr does not?
+Joe: attrgetter creates a callable that extracts a named attribute from an object, so sorted(items, key=attrgetter("name")) is equivalent to sorted(items, key=lambda x: x.name) but faster and supports dotted paths.
+User: Can attrgetter extract multiple attributes at once?
+Joe: Yes, attrgetter("x", "y") returns a tuple of attributes, so key=attrgetter("last", "first") sorts by last name then first name in a single key function.
+
+User: How do I use contextlib.ExitStack to manage a dynamic set of resources?
+Joe: with ExitStack() as stack: for path in paths: f = stack.enter_context(open(path)); use(f), and every entered context manager is cleaned up in reverse order when the with block exits.
+User: What if I want to close a specific resource early?
+Joe: Call stack.pop_all() to transfer ownership to a new ExitStack that you close manually, or use stack.close() on a resource handle to exit it before the main stack unwinds.
+
+User: How do I write a decorator that measures and prints execution time?
+Joe: def timer(f): def wrapper(*a, **kw): start = time.perf_counter(); r = f(*a, **kw); print(f"{f.__name__} took {time.perf_counter()-start:.3f}s"); return r; return wrapper, then @timer above any function.
+User: How do I make the timer decorator accept a label argument?
+Joe: Wrap it in a factory: def timer(label): def deco(f): def wrapper(*a, **kw): start = time.perf_counter(); r = f(*a, **kw); print(f"{label}: {time.perf_counter()-start:.3f}s"); return r; return wrapper; return deco, then use @timer("load").
+
+User: What is contextlib.closing and when do I use it?
+Joe: closing(obj) calls obj.close() on exit, useful for objects that have a close method but do not implement the context manager protocol, like an HTTP response or a lock.
+User: Does closing work with the with statement directly?
+Joe: Yes, with contextlib.closing(some_obj) as obj: use(obj) enters and exits cleanly, calling obj.close() automatically when the block finishes or raises.
+
+User: How do I define an ABC that registers virtual subclasses?
+Joe: Use Base.register(SomeClass) after the class definition, which makes isinstance(SomeClass(), Base) return True without SomeClass inheriting from Base, useful for adapting third-party types.
+User: Can I use register as a decorator?
+Joe: Yes, @Base.register above a class definition registers it as a virtual subclass, so the class does not need to inherit from Base at all yet passes isinstance checks.
+
+User: How do I use __slots__ with a dataclass?
+Joe: Add slots=True to the dataclass decorator: @dataclass(slots=True) class Point: x: int; y: int generates __slots__ automatically, combining the boilerplate reduction of dataclasses with the memory savings of slots.
+User: Can I still add extra attributes outside the declared fields?
+Joe: No, slotted dataclasses enforce the fixed set of fields, so any attempt to set an undeclared attribute raises AttributeError, preserving the memory and speed benefits.
+
+User: How do I write a property that fires a callback on every set?
+Joe: Define a setter that calls the callback: @prop.setter def prop(self, v): self._prop = v; self._on_change(v), which is useful for reactive patterns like UI bindings or data validation chains.
+User: Can I have the getter return a computed value?
+Joe: Yes, the getter can compute on the fly: @property def area(self): return self.width * self.height, returning a fresh result each time based on the current dimensions.
+
+User: How do I use functools.lru_cache on a function with unhashable arguments?
+Joe: Convert the arguments to a hashable form before passing: @lru_cache def process(items_key): items = list(items_key); ... and call with process(tuple(my_list)) since tuples are hashable but lists are not.
+User: What if I need to cache based on a dict argument?
+Joe: Freeze the dict into a frozenset of items: @lru_cache def lookup(cfg): ... called as lookup(frozenset(config.items())), which produces a hashable representation of the key-value pairs.
+
+User: What is operator.methodcaller for?
+Joe: methodcaller creates a callable that calls a named method on its argument: upper = operator.methodcaller("upper"); upper("hello") returns "HELLO", useful as a key function or with map.
+User: Can methodcaller pass arguments to the method?
+Joe: Yes, methodcaller("split", ",") creates a callable that calls .split(",") on its argument, so it is like a lambda x: x.split(",") but faster and without the lambda overhead.
+
+User: How do I use contextlib.redirect_stdout to capture print output?
+Joe: with contextlib.redirect_stdout(io.StringIO()) as buf: print("hello"); output = buf.getvalue() captures everything printed inside the block into a string for inspection or logging.
+User: Does redirect_stdout work with stderr too?
+Joe: Yes, contextlib.redirect_stderr does the same for stderr, and you can nest both to capture all output from a function that writes to both streams.
+
+User: How do I write a decorator that enforces type checking on arguments?
+Joe: Define a decorator that inspects the function's type hints: def typecheck(f): def wrapper(*a, **kw): hints = typing.get_type_hints(f); for arg, val in zip(f.__code__.co_varnames, a): if arg in hints and not isinstance(val, hints[arg]): raise TypeError; return f(*a, **kw); return wrapper.
+User: Does this catch keyword arguments too?
+Joe: Yes, iterate over kw.items() and check each value against the corresponding hint, though the implementation gets more complex for mixed positional and keyword args.
+
+User: How do I define an ABC that also functions as a mixin?
+Joe: Create a class that inherits from ABC and provides concrete default methods alongside abstract ones, so subclasses override only what they need and inherit the rest like a normal mixin.
+User: Can I use ABC with multiple inheritance safely?
+Joe: Yes, Python's MRO handles diamond inheritance with ABCs correctly as long as super() is used instead of hardcoding parent names, and abstract methods are resolved in the MRO order.
+
+User: What is the difference between __slots__ and __dict__?
+Joe: __dict__ is a regular dict that stores all instance attributes with no restrictions but uses more memory, while __slots__ replaces __dict__ with fixed descriptors that save memory and speed access.
+User: Can I have both __slots__ and __dict__ on the same class?
+Joe: Yes, add "__dict__" to the __slots__ tuple: __slots__ = ("x", "y", "__dict__"), which gives you the memory benefit for the named slots plus the flexibility of a dict for dynamic attributes.
+
+User: How do I write a property that is only settable once?
+Joe: Use a flag: @prop.setter def prop(self, v): if hasattr(self, "_prop"): raise AttributeError("already set"); self._prop = v, which makes the attribute write-once like a frozen field.
+User: Can I make the setter private so only the class can set it?
+Joe: Properties are public by design, but you can check the caller with inspect.stack() or use a naming convention like a leading underscore to signal the property is for internal use only.
+
+User: How do I use functools.partial to create a specialized function from a general one?
+Joe: from functools import partial; base = partial(int, base=16) creates a callable that parses hex strings: base("ff") returns 255, equivalent to int("ff", 16) with the base argument pre-filled.
+User: Can I combine multiple partials on the same original function?
+Joe: Yes, partial(int, base=10) and partial(int, base=16) create two independent callables from int, each with a different base, without modifying the original function.
+
+User: How does operator.itemgetter work with nested structures?
+Joe: itemgetter("a", "b") applied to a dict returns a tuple of the values at those keys: itemgetter("name", "age")(user) returns ("Alice", 30), and the same works with list indices.
+User: Can itemgetter chain through multiple levels?
+Joe: itemgetter does not chain natively, but you can compose with operator.attrgetter or use a nested call like itemgetter("address")(itemgetter("user")(data)) or just use a lambda for complex paths.
+
+User: How do I write a context manager using a class that acquires and releases a lock?
+Joe: class Locked: def __init__(self, lock): self.lock = lock; def __enter__(self): self.lock.acquire(); return self; def __exit__(self, *e): self.lock.release(), then with Locked(my_lock): use_shared_resource().
+User: What is the advantage of using a with statement for locks?
+Joe: The with statement guarantees release even if the code inside raises an exception, preventing deadlocks that would occur if an early return or exception skipped the manual release call.
+
+User: How do I write a decorator that retries a function on failure?
+Joe: def retry(max_attempts): def deco(f): def wrapper(*a, **kw): for attempt in range(max_attempts): try: return f(*a, **kw) except Exception: if attempt == max_attempts - 1: raise; return wrapper; return deco, then @retry(3) above a flaky function.
+User: How do I add a delay between retries?
+Joe: Import time and add time.sleep(1) inside the except block before the next attempt, which gives external services a moment to recover before the retry hits them again.
+
+User: What is contextlib.nullcontext and when would I use it?
+Joe: nullcontext(enter_result) is a no-op context manager that returns the given value, useful as a default when a function conditionally needs a context manager: with (cm or nullcontext(val)) as x: use(x).
+User: Can I use nullcontext without an argument?
+Joe: Yes, nullcontext() returns None from __enter__, which is fine when you only need the with syntax for consistency and do not care about the as variable.
+
+User: How do I make an abstract class that cannot be instantiated but has no abstract methods?
+Joe: Set __metaclass__ = ABCMeta or inherit from ABC and raise TypeError in __init__: class Base(ABC): def __new__(cls, *a, **kw): if cls is Base: raise TypeError("abstract"); return super().__new__(cls).
+User: Can I still subclass and instantiate it?
+Joe: Yes, a subclass that does not call the guarded __new__ with the parent class directly works normally, so Child() succeeds while Base() raises the TypeError.
+
+User: How do I use __slots__ to save memory in a class with many instances?
+Joe: Define __slots__ = ("x", "y") in the class body, which eliminates the per-instance __dict__ and reduces memory from hundreds of bytes per instance to just the slot values plus object overhead.
+User: Does __slots__ affect attribute lookup speed?
+Joe: Yes, slot lookups bypass the dict and go through a descriptor, making attribute access faster, which compounds into a measurable speedup when accessing attributes in tight loops over many instances.
+
+User: How do I write a property that returns a default value when the underlying attribute is not set?
+Joe: @property def name(self): return getattr(self, "_name", "default") uses getattr with a fallback, so accessing the property before setting it returns "default" instead of raising AttributeError.
+User: Can the default be computed dynamically?
+Joe: Yes, replace the literal with a function call: return getattr(self, "_cache", expensive_computation()), which computes the default on first access and can be cached by assigning to self._cache afterward.
+
+User: How do I use functools.lru_cache with typed=True?
+Joe: @lru_cache(typed=True) treats arguments of different types as separate cache keys, so f(1) and f(1.0) are cached independently even though they compare equal, useful when the function cares about exact types.
+User: When would I need typed=True in practice?
+Joe: When a function behaves differently for int vs float inputs, like a numerical function that returns an int for int args but a float for float args, typed=True prevents mixing them in the cache.
+
+User: How does functools.cached_property differ from lru_cache on a method?
+Joe: cached_property is designed for zero-argument methods on instances, caching per-instance by storing the result as an instance attribute, while lru_cache on a method caches across all calls globally by arguments.
+User: Which one should I use for an expensive computed attribute?
+Joe: Use cached_property for attributes that depend only on the instance state and have no arguments, since it integrates naturally with the property protocol and invalidates by deleting the attribute.
+
+User: What does operator.truediv do differently from operator.floordiv?
+Joe: truediv(a, b) returns the float result of a / b, while floordiv(a, b) returns the integer floor of a // b, matching the behavior of the / and // operators respectively.
+User: Can I use these with reduce to compute a running division?
+Joe: Yes, reduce(operator.truediv, [8, 2, 2]) returns 2.0 because it computes 8 / 2 = 4.0 then 4.0 / 2 = 2.0, equivalent to chaining the division operator across the list.
+
+User: How do I write a context manager that temporarily changes the working directory?
+Joe: @contextmanager def cd(path): old = os.getcwd(); os.chdir(path); try: yield finally: os.chdir(old), and use with cd("/tmp"): do_work() to run code in a different directory and always return.
+User: Does this work with pathlib paths?
+Joe: Yes, os.chdir accepts any path-like object including pathlib.Path, so with cd(Path.home() / "project"): runs commands in that directory using the same context manager.
+
+User: How do I write a decorator that validates a function's return value?
+Joe: def validate(f): def wrapper(*a, **kw): r = f(*a, **kw); assert r > 0, "must be positive"; return r; return wrapper, which runs the assertion after every call and raises if the return value fails the check.
+User: Can I make the validation condition configurable?
+Joe: Use a factory: def validate(check): def deco(f): def wrapper(*a, **kw): r = f(*a, **kw); assert check(r), f"failed {check.__name__}"; return r; return wrapper; return deco, then @validate(lambda x: x > 0).
+
+User: How do I define an ABC with abstract classmethods?
+Joe: Stack @classmethod and @abstractmethod: class Parser(ABC): @classmethod @abstractmethod def parse(cls, text): ... forces subclasses to implement parse as a classmethod that receives the subclass as cls.
+User: Can I also require abstract staticmethods?
+Joe: Yes, stack @staticmethod and @abstractmethod: class Config(ABC): @staticmethod @abstractmethod def default(): ... forces subclasses to implement a static method named default with no self or cls parameter.
+
+User: How do I use __slots__ with namedtuple-style classes?
+Joe: Define __slots__ manually in a regular class instead of using namedtuple, since namedtuple creates a tuple subclass that already has minimal overhead and does not support __slots__ in the same way.
+User: Can I combine __slots__ with __init_subclass__?
+Joe: Yes, __init_subclass__ runs during class creation and can inspect or enforce __slots__ definitions in subclasses, though the slotted attributes themselves are set up by the class body.
+
+User: How do I write a property that logs every read and write?
+Joe: @property def value(self): print(f"read {self._value}"); return self._value; @value.setter def value(self, v): print(f"write {v}"); self._value = v, which prints on every access for debugging or auditing.
+User: Can I make the logging conditional on a debug flag?
+Joe: Yes, check a class or instance attribute inside the getter and setter: if self.debug: print(...), so the logging overhead only applies when debugging is enabled.
+
+User: How do I use functools.partial with a method of an instance?
+Joe: partial(self.method, arg) creates a callable that calls self.method with arg as the first argument, but the partial holds a reference to self so it prevents garbage collection of the instance.
+User: How do I avoid the reference cycle?
+Joe: Use a weakref: partial = functools.partial(self.method.__func__, weakref.proxy(self)), which calls the method without keeping the instance alive, though it requires more care in the implementation.
+
+User: How does operator.eq differ from using == directly?
+Joe: operator.eq(a, b) is the function form of a == b, useful when you need to pass the equality comparison as an argument to functions like itertools.accumulate or functools.reduce.
+User: Can I use operator.eq with map to compare two lists element-wise?
+Joe: Yes, list(map(operator.eq, list1, list2)) returns a list of booleans for each position, equivalent to [a == b for a, b in zip(list1, list2)] but without the intermediate zip.
+
+User: How do I write a context manager that provides a temporary file?
+Joe: @contextmanager def temp_file(suffix=".txt"): f = tempfile.NamedTemporaryFile(suffix=suffix); try: yield f.name finally: f.close(), then with temp_file() as path: write_data(path) for a self-cleaning temp file.
+User: What if I want the file to persist after the block?
+Joe: Set delete=False on the NamedTemporaryFile and close it manually inside the context manager, leaving the file on disk after the with block exits for the caller to use.
+
+User: How do I write a decorator that adds a timer attribute to the function?
+Joe: def timed(f): f.timer = lambda: time.perf_counter() - f._start; f._start = time.perf_counter(); return f, which adds a .timer() method that returns seconds since the decorator ran.
+User: Can I reset the timer without re-decorating?
+Joe: Add a reset attribute: f.reset = lambda: setattr(f, "_start", time.perf_counter()) so callers can restart the timer at any point during execution.
+
+User: What is the proper way to define an abstract property in a modern ABC?
+Joe: Use @property and @abstractmethod stacked: class Base(ABC): @property @abstractmethod def name(self): ... which forces subclasses to implement name as a property with at least a getter.
+User: Can the abstract property also require a setter?
+Joe: No, @abstractmethod on a property only enforces the getter; subclasses can optionally add a setter but are not required to, since the abstract check passes once the getter exists.
+
+User: How do I use __slots__ with a class that has a __dict__ in its parent?
+Joe: The child can still define __slots__ for its own new attributes, and the parent's __dict__ handles the parent's dynamic attributes, while the child's slots exist alongside it without conflict.
+User: Does the child's __slots__ override the parent's __dict__?
+Joe: No, the child adds its own slot descriptors without removing the parent's __dict__, so both mechanisms coexist and the instance has both a __dict__ and the slotted attributes.
+
+User: How do I write a property that is derived from other properties?
+Joe: class Rect: @property def area(self): return self.width * self.height depends on the width and height properties being set first, and recomputes every time either dependency changes.
+User: How do I ensure the derived property updates when dependencies change?
+Joe: Use observable properties: setter for width and height can reset a cached area, or use a reactive library; for simple cases, recomputing on every access is fine since multiplication is fast.
+
+User: How do I use functools.lru_cache on a function that takes a large list?
+Joe: Convert the list to a tuple before passing: @lru_cache def process(t): ...; call with process(tuple(big_list)), since tuples are hashable and lists are not, making them suitable as cache keys.
+User: What is the memory cost of converting a large list to a tuple?
+Joe: The tuple duplicates the list's elements in memory, so for very large lists the cache key itself uses significant memory; consider hashing the content instead and storing the result separately.
+
+User: How do I use functools.partial to bind arguments for a callback?
+Joe: partial(handler, user_id=42) creates a callable that calls handler with user_id=42 every time, useful when registering event callbacks that need extra context beyond what the event provides.
+User: Can I chain partials together?
+Joe: partial(partial(func, a), b) works, but it is simpler to just call func(a, b) directly or use a single partial that fixes both arguments at once.
+
+User: How does operator.contains relate to the in operator?
+Joe: operator.contains(a, b) returns True if b is in a, equivalent to b in a, and is useful as a predicate for filtering: list(filter(lambda x: operator.contains(container, x), items)).
+User: Can I use contains with functools.reduce to check membership across multiple containers?
+Joe: reduce(lambda acc, c: acc and operator.contains(c, target), containers, True) checks if target is in every container, though any() or all() with a generator is more readable for that pattern.
+
+User: How do I write a context manager that suppresses multiple exception types?
+Joe: @contextmanager def suppress(*exceptions): try: yield except exceptions: pass, which wraps the block and silently swallows any of the listed exception types without extra nesting.
+User: How does this differ from contextlib.suppress?
+Joe: It is functionally equivalent to contextlib.suppress, so prefer the standard library version for production code since it is tested and optimized, but writing your own shows the pattern clearly.
+
+User: How do I write a decorator that wraps a function and preserves its original metadata?
+Joe: Decorate the inner wrapper with @functools.wraps(func), which copies __name__, __qualname__, __doc__, __module__, and __dict__ from the original function onto the wrapper.
+User: Does wraps also copy the signature for IDE autocompletion?
+Joe: wraps does not copy the actual __signature__ or make the wrapper look like the original to inspect.signature, so use the decorator library if accurate signature preservation is needed.
+
+User: How do I define an ABC that uses __init_subclass__ for registration?
+Joe: class Plugin(ABC): def __init_subclass__(cls, **kw): super().__init_subclass__(**kw); PluginRegistry.register(cls), which automatically registers every concrete subclass when it is defined.
+User: Does __init_subclass__ run for every level of inheritance?
+Joe: Yes, it fires each time a new subclass is created, so a grandchild triggers it on the parent class, and you can control this by checking if the class has all abstract methods implemented.
+
+User: How do I use __slots__ to prevent dynamic attribute creation in a class?
+Joe: Define __slots__ = ("x", "y") and any assignment like obj.z = 5 raises AttributeError, which is useful for catching typos in attribute names during development.
+User: Can I make the error message more descriptive?
+Joe: Override __setattr__ to provide a custom message: def __setattr__(self, name, val): if name not in self.__slots__: raise AttributeError(f"Cannot set {name}"); super().__setattr__(name, val).
+
+User: How do I write a property that validates and transforms the set value?
+Joe: @prop.setter def prop(self, v): self._prop = v.strip().lower() if isinstance(v, str) else v, which normalizes strings before storing so the getter always returns the cleaned value.
+User: Can I raise an error for invalid types in the setter?
+Joe: Yes, add a type check: if not isinstance(v, (int, float)): raise TypeError("expected number"), which fails fast when the wrong type is assigned instead of silently storing a bad value.
+
+User: How do I use functools.lru_cache with a function that has mutable default arguments?
+Joe: Use None as the default and build the mutable inside the function: @lru_cache def process(items=None): if items is None: items = []; ... since lru_cache requires all arguments to be hashable and mutable defaults break that.
+User: What if I need to cache based on a mutable object's identity?
+Joe: Pass id(mutable) instead of the object itself: @lru_cache def process_by_id(oid): ...; call with process_by_id(id(my_obj)), which caches by object identity but the cached result becomes stale if the object changes.
+
+User: How does operator.not_ differ from the not keyword?
+Joe: operator.not_(x) is the function form of not x, returning a boolean, and is useful as a predicate: list(filter(operator.not_, [True, False, True])) returns [False].
+User: Can I use operator.not_ with functools.reduce to toggle a boolean?
+Joe: reduce(operator.not_, [True, False, True], False) toggles the accumulator for each element, returning True, though a loop or count-based check is clearer for that purpose.
+
+User: How do I write a context manager that redirects stderr to a file?
+Joe: @contextmanager def stderr_to(path): old = sys.stderr; sys.stderr = open(path, "w"); try: yield finally: sys.stderr.close(); sys.stderr = old, capturing all error output into a file.
+User: Does this also capture C-level stderr output?
+Joe: No, it only redirects Python's sys.stderr; C extensions that write directly to file descriptor 2 bypass sys.stderr and need os.dup2 redirection at the file descriptor level.
+
+User: How do I write a decorator that memoizes a function's results manually?
+Joe: def memo(f): cache = {}; def wrapper(*a): if a not in cache: cache[a] = f(*a); return cache[a]; return wrapper, which stores results in a dict keyed by the tuple of arguments.
+User: How is this different from lru_cache?
+Joe: Manual memoization has no size limit and no eviction policy, so it uses unbounded memory, while lru_cache provides maxsize, statistics, and cache_clear for production use.
+
+User: How do I define an ABC with a concrete __str__ that depends on an abstract method?
+Joe: class Named(ABC): @abstractmethod def get_name(self): ...; def __str__(self): return self.get_name() provides a concrete __str__ that every subclass inherits as long as it implements get_name.
+User: Can I override __str__ in a subclass that also implements get_name?
+Joe: Yes, the subclass can override __str__ to provide its own formatting while still implementing the abstract get_name for other code that needs the raw name.
+
+User: How do I use __slots__ with an enum?
+Joe: Enum members are singletons and do not benefit from __slots__ in the same way, but you can define __slots__ on an enum class to restrict its instance attributes if the enum has custom data.
+User: Should I use __slots__ on enum classes?
+Joe: Usually not, since enum instances are few and the overhead is negligible, but for data-heavy enum members that store additional fields, __slots__ can reduce memory per member.
+
+User: How do I write a property that is settable only once and then becomes read-only?
+Joe: @prop.setter def prop(self, v): if hasattr(self, "_prop"): raise AttributeError("read-only after first set"); self._prop = v, which uses a flag stored as existence of the backing attribute.
+User: How do I reset it for testing?
+Joe: Add a reset method: def reset_prop(self): if hasattr(self, "_prop"): del self._prop, which removes the backing attribute so the property can be set again in the next test.
+
+User: How do I use functools.lru_cache with a function that has keyword-only arguments?
+Joe: lru_cache works with keyword arguments as long as they are hashable, so @lru_cache def process(*, name, age): return f"{name} is {age}" caches results keyed by the keyword argument values.
+User: Does the order of keyword arguments affect the cache key?
+Joe: No, lru_cache normalizes keyword arguments into a canonical order, so process(name="A", age=1) and process(age=1, name="A") hit the same cache entry.
+
+User: How do I use functools.partial with a function that has default arguments?
+Joe: partial(func, arg) overrides the first parameter of func, even if that parameter has a default, so partial(int, "ff") calls int("ff") rather than int("ff", base=10) as the default would suggest.
+User: Can I partial a function to skip the first parameter and fix a later one?
+Joe: partial does not skip parameters; it always fills from the leftmost, so use partial with keyword syntax: partial(func, kw=value) to fix a keyword parameter without touching positional ones.
+
+User: How does operator.index relate to __index__?
+Joe: operator.index(x) calls x.__index__() to convert an object to an integer suitable for indexing, used internally by list slicing and bin/hex/oct, and raises TypeError if the object lacks __index__.
+User: When would I call operator.index directly?
+Joe: When implementing a custom sequence type that accepts arbitrary objects as indices, call operator.index on the argument to ensure it is a valid integer index before using it.
+
+User: How do I write a context manager that logs entry and exit of a block?
+Joe: class Logged: def __enter__(self): logging.info("enter"); return self; def __exit__(self, *e): logging.info("exit"), which prints at both boundaries for tracing execution flow.
+User: Can I include the block's execution time in the exit log?
+Joe: Record the start time in __enter__ as self.start = time.perf_counter() and compute the elapsed time in __exit__: logging.info(f"exit after {time.perf_counter()-self.start:.3f}s").
+
+User: How do I write a decorator that applies to both functions and methods?
+Joe: def deco(f): def wrapper(*a, **kw): return f(*a, **kw); return wrapper works for both because methods receive self as the first positional argument just like any other argument.
+User: How does the decorator know whether it is decorating a function or a method?
+Joe: It does not need to know; the wrapper just forwards all arguments, and self is passed as the first argument when the decorated function is accessed as a method on an instance.
+
+User: How do I define an ABC that provides a default implementation for some methods?
+Joe: class Base(ABC): @abstractmethod def required(self): ...; def optional(self): return "default" provides a concrete method that subclasses can override or inherit as-is without implementing it.
+User: Can a subclass call the parent's default implementation?
+Joe: Yes, use super().optional() inside the subclass override to call the parent's default and extend its behavior, following the normal method resolution order.
+
+User: How do I use __slots__ to make a lightweight data container?
+Joe: class Point: __slots__ = ("x", "y"); def __init__(self, x, y): self.x = x; self.y = y creates instances that use far less memory than a full __dict__-backed class, ideal for millions of points.
+User: Can I add methods to a slotted class?
+Joe: Yes, methods work exactly the same on slotted classes since they are stored on the class not the instance, so __slots__ only affects instance attribute storage, not method definitions.
+
+User: How do I write a property that is backed by a file or database?
+Joe: @property def value(self): return self._load(); @value.setter def value(self, v): self._save(v), where _load and _save read and write from persistent storage, making the property look like a regular attribute.
+User: How do I handle I/O errors in the getter?
+Joe: Wrap the load in try/except: def _load(self): try: return open(self.path).read() except FileNotFoundError: return "", so the property returns a safe default when the backing file is missing.
+
+User: How do I use functools.lru_cache with a function that returns a mutable object?
+Joe: The cached object is shared across all calls with the same arguments, so mutating it affects all callers; return a deep copy of the cached result or ensure the result is never mutated after return.
+User: How do I return a safe copy from a cached function?
+Joe: @lru_cache def get_data(key): return compute(key); then callers do data = copy.deepcopy(get_data(key)) if they need to mutate it, or use a wrapper that copies before returning.
+
+User: How do I use functools.partial to set up a default for a function's keyword argument?
+Joe: partial(func, debug=True) fixes debug as True for all calls through the partial, so every call uses debug mode without the caller needing to pass it explicitly.
+User: Can I create a partial that allows the caller to override the fixed keyword?
+Joe: partial(func, debug=True) does not prevent the caller from passing debug=False, since the caller's explicit argument takes precedence over the partial's fixed value.
+
+User: How does operator.length_hint relate to __length_hint__?
+Joe: operator.length_hint(obj, default=0) calls obj.__length_hint__() which estimates the length of an iterator without consuming it, used by list() for pre-allocation optimization.
+User: When would I call length_hint in my own code?
+Joe: When implementing a function that consumes an iterator and wants to pre-allocate a buffer for efficiency, call length_hint to get a best-guess size without forcing the full iteration.
+
+User: How do I write a context manager that measures memory usage?
+Joe: @contextmanager def measure_mem(): import tracemalloc; tracemalloc.start(); try: yield finally: snap = tracemalloc.take_snapshot(); stat = snap.statistics("lineno")[0]; print(stat.size, stat.count), tracking allocations during the block.
+User: Is tracemalloc available in all Python versions?
+Joe: tracemalloc was added in Python 3.4 and is part of the standard library, so it is available in any modern Python without additional dependencies.
+
+User: How do I write a decorator that enforces a minimum return value?
+Joe: def min_value(limit): def deco(f): def wrapper(*a, **kw): r = f(*a, **kw); return max(r, limit); return wrapper; return deco, which clamps the return value to at least limit.
+User: What if I want to enforce a maximum instead?
+Joe: Use min(r, limit) in the wrapper instead of max, or combine both in a factory that accepts low and high: return max(low, min(r, high)) for a full clamp.
+
+User: How do I define an ABC with abstract class properties?
+Joe: Stack @classmethod, @property, and @abstractmethod: class Base(ABC): @classmethod @property @abstractmethod def default_name(cls): ... which forces subclasses to provide a class-level property.
+User: Is the stacking order important?
+Joe: Yes, @classmethod should be outermost, then @property, then @abstractmethod, because each decorator transforms the method in sequence and the order affects how the descriptor chain resolves.
+
+User: How do I use __slots__ with a class that inherits from a non-slotted class?
+Joe: The child can define __slots__ for its own new attributes, and the parent's __dict__ handles the parent's attributes, so the child has both a __dict__ and the slotted descriptors.
+User: Does this lose the memory benefit of __slots__?
+Joe: Partially, because the child still has a __dict__ inherited from the parent, but the child's own attributes are stored in slots, reducing the child-specific memory overhead compared to a full __dict__.
+
+User: How do I write a property that caches its value and recomputes on invalidation?
+Joe: @property def data(self): if not hasattr(self, "_data"): self._data = self._compute(); return self._data, and invalidate with del self._data when the dependencies change.
+User: How does this compare to cached_property?
+Joe: It is functionally similar but manual, while @functools.cached_property handles the caching transparently and integrates with the property protocol more cleanly.
+
+User: How do I use functools.lru_cache with a function that has both positional and keyword arguments?
+Joe: lru_cache accepts functions with any mix of positional and keyword arguments as long as all arguments are hashable, and the cache key includes both the positional tuple and the keyword dict.
+User: Does the cache treat f(1, 2) and f(1, b=2) as the same call?
+Joe: It depends on the function signature; if the parameter names match, lru_cache normalizes them so they hit the same cache entry, but positional and keyword forms for different parameters are distinct.
+
+User: How do I use functools.singledispatch with a method of a class?
+Joe: singledispatch works on regular functions, not methods, so define a module-level function with @singledispatch and have the method delegate to it: def handle(self, obj): return _handle(obj).
+User: Can I register implementations for types in a singledispatch inside a class?
+Joe: Yes, register new types on the module-level dispatch function from anywhere, including inside class definitions, as long as the registration happens before the dispatch is called.
+
+User: How does operator.truth relate to bool()?
+Joe: operator.truth(x) returns True if x is truthy, equivalent to bool(x), and is useful as a predicate: list(filter(operator.truth, [0, 1, "", "a"])) returns [1, "a"].
+User: When would I use operator.truth over bool?
+Joe: When you need a callable to pass as a key function or predicate, operator.truth is a pre-built callable while bool would need to be wrapped in a lambda in some contexts.
+
+User: How do I write a context manager that accumulates warnings as errors?
+Joe: @contextmanager def warnings_as_errors(): warnings.simplefilter("error"); try: yield finally: warnings.simplefilter("default"), which turns all warnings into exceptions during the block.
+User: Can I target a specific warning category?
+Joe: Yes, pass the category: warnings.simplefilter("error", DeprecationWarning) only promotes deprecation warnings to errors, leaving other warnings as warnings during the block.
+
+User: How do I write a decorator that skips execution on weekends?
+Joe: def weekday_only(f): def wrapper(*a, **kw): if datetime.now().weekday() >= 5: print("skipped: weekend"); return None; return f(*a, **kw); return wrapper, which returns None instead of running on Saturday or Sunday.
+User: Can I make the skip days configurable?
+Joe: Use a factory: def skip_on(*days): def deco(f): def wrapper(*a, **kw): if datetime.now().weekday() in days: return None; return f(*a, **kw); return wrapper; return deco, then @skip_on(5, 6) for weekends.
+
+User: How do I define an ABC with abstract __iter__ and __next__?
+Joe: class Iterable(ABC): @abstractmethod def __iter__(self): ...; @abstractmethod def __next__(self): ... forces subclasses to implement the full iterator protocol, making them usable in for loops.
+User: Can I also provide a concrete __iter__ that returns self?
+Joe: Yes, define __iter__ to return self in the base class as a concrete method, and only require __next__ as abstract, which reduces boilerplate in subclasses.
+
+User: How do I use __slots__ with a class that uses __set_name__?
+Joe: __slots__ and __set_name__ work together: the slot descriptor's __set_name__ is called automatically when the class is created, receiving the owner class and the slot's attribute name.
+User: Can I customize the slot descriptor behavior with __set_name__?
+Joe: Yes, define a descriptor class with __set_name__ and use it in __slots__, though __slots__ typically stores values directly and does not use custom descriptors in the same way.
+
+User: How do I write a property that converts between units?
+Joe: @property def fahrenheit(self): return self.celsius * 9/5 + 32; @fahrenheit.setter def fahrenheit(self, v): self.celsius = (v - 32) * 5/9, so the property transparently converts between Celsius and Fahrenheit.
+User: Can I have both properties coexist?
+Joe: Yes, define both celsius and fahrenheit as properties backed by a single _celsius attribute, so setting either updates the internal value and reading either returns the correct conversion.
+
+User: How do I use functools.lru_cache on a function that is called with a mix of hashable and unhashable arguments?
+Joe: Convert unhashable arguments to their hashable equivalents before calling: @lru_cache def safe_process(t, d): ...; call with safe_process(tuple(lst), frozenset(dct.items())) to make the cache key valid.
+User: What if the conversion is expensive?
+Joe: The conversion cost is paid on every call regardless of cache hits, so weigh the conversion overhead against the computation cost; if the function is very expensive, the conversion is worth it.
+
+User: How do I use functools.singledispatch to handle different types in a processing pipeline?
+Joe: @singledispatch def process(obj): raise NotImplementedError; @process.register(int) def _(obj): return obj * 2; @process.register(str) def _(obj): return obj.upper() dispatches to the right implementation based on the first argument's type.
+User: Can singledispatch handle Union types?
+Joe: singledispatch dispatches on a single concrete type, not unions, so register separate handlers for each type and use a common base class or Protocol if you need polymorphic dispatch.
+
+User: How does operator.is_ relate to the is keyword?
+Joe: operator.is_(a, b) returns True if a and b are the same object, equivalent to a is b, and is useful as a predicate for filtering: list(filter(operator.is_(None), items)) finds None entries.
+User: Can I use operator.is_ with functools.partial to find sentinel values?
+Joe: Yes, partial(operator.is_, sentinel) creates a callable that checks for identity with the sentinel, which can be used with filter or any to find references to the sentinel object.
+
+User: How do I write a context manager that temporarily sets environment variables?
+Joe: @contextmanager def set_env(**vars): old = {k: os.environ.get(k) for k in vars}; os.environ.update(vars); try: yield finally: for k, v in old.items(): os.environ[k] = v if v is not None else del os.environ[k].
+User: Does this affect child processes spawned during the block?
+Joe: Yes, os.environ changes propagate to child processes created with subprocess or os.system, so the temporary variables are visible to any subprocesses launched inside the with block.
+
+User: How do I write a decorator that adds a __call__ method to a class?
+Joe: def make_callable(cls): def wrapper(*a, **kw): return cls(*a, **kw); cls.__call__ = staticmethod(wrapper); return cls, which makes the class itself callable like a function.
+User: Can I use this to create a class that works as both a class and a function?
+Joe: Yes, instances can be called with __call__, and the class itself can be called with a metaclass __call__ override, but the decorator approach on the class only affects the class object, not instances.
+
+User: How do I define an ABC that enforces a class method across all subclasses?
+Joe: class Base(ABC): @classmethod @abstractmethod def factory(cls, data): ... forces every subclass to implement factory as a classmethod that receives the subclass as cls.
+User: Can the abstract classmethod call other methods on the subclass?
+Joe: Yes, the abstract classmethod implementation in the subclass can call any other method or attribute on cls, since cls is the concrete subclass at runtime.
+
+User: How do I use __slots__ with a class that has a property?
+Joe: Properties are descriptors stored on the class, not instance attributes, so they coexist with __slots__ without conflict: __slots__ = ("x",) and @property def x2(self): return self.x * 2 works fine.
+User: Does the property need to be listed in __slots__?
+Joe: No, properties are class-level descriptors and are not instance attributes, so they are not included in __slots__ and do not consume per-instance memory.
+
+User: How do I write a property that computes on first access and then caches?
+Joe: @property def data(self): if not hasattr(self, "_data"): self._data = self._compute(); return self._data caches by storing the result in a private attribute that shadows the property on subsequent accesses.
+User: How does the cache get invalidated?
+Joe: Set self._data = None or del self._data when the dependencies change, so the next property access recomputes and re-caches the fresh value automatically.
+
+User: How do I use functools.lru_cache with a function that has a debug flag?
+Joe: Remove the debug flag from the cache key by separating it: @lru_cache def _compute(args): ...; def compute(args, debug=False): r = _compute(args); if debug: print(f"result={r}"); return r, so caching ignores the debug parameter.
+User: Can I include the debug flag in the cache key intentionally?
+Joe: Yes, include it in the arguments to the cached function if you want separate caches for debug and non-debug calls, though that doubles the cache entries.
+
+User: How do I use functools.singledispatchmethod on a class method?
+Joe: singledispatchmethod works like singledispatch but for methods: class Handler: @singledispatchmethod def handle(self, arg): raise NotImplementedError; @handle.register(int) def _(self, arg): return arg * 2, dispatching on the second argument after self.
+User: Can singledispatchmethod dispatch on the first argument after self for __init__?
+Joe: Yes, use it in __init__ to dispatch on the type of the first argument, letting different argument types produce different initialization paths in the same class.
+
+User: How does operator.le differ from operator.lt?
+Joe: operator.le(a, b) returns a <= b (less than or equal), while operator.lt(a, b) returns a < b (strictly less), both useful as key functions for sorted with reverse or as comparison callbacks.
+User: Can I use these with functools.cmp_to_key for custom sorting?
+Joe: Yes, cmp_to_key expects a comparison function that returns -1, 0, or 1, so operator.lt alone is not enough; use cmp_to_key(lambda a, b: -1 if operator.lt(a, b) else 1 if operator.gt(a, b) else 0).
+
+User: How do I write a context manager that provides a thread lock and logs contention?
+Joe: class LoggedLock: def __init__(self): self.lock = threading.Lock(); self.contended = 0; def __enter__(self): if not self.lock.acquire(blocking=False): self.contended += 1; self.lock.acquire(); return self; def __exit__(self, *e): self.lock.release().
+User: How do I read the contention count?
+Joe: Access the contended attribute after the with block, or add a @property that returns the count, letting callers monitor how often the lock was already held when requested.
+
+User: How do I write a decorator that applies a function to the result of another function?
+Joe: def then(next_func): def deco(f): def wrapper(*a, **kw): return next_func(f(*a, **kw)); return wrapper; return deco, so @then(str) above def add(a, b): return a + b makes add return a string instead of a number.
+User: Can I chain multiple then decorators?
+Joe: Yes, @then(str) @then(len) would first convert to string then take the length, applying the decorators from bottom to top so the result flows through each transformation in sequence.
+
+User: How do I define an ABC that requires a classmethod and also provides a default?
+Joe: class Base(ABC): @classmethod @abstractmethod def create(cls, data): ...; @classmethod def default(cls): return cls.create("default") provides a concrete factory that subclasses inherit, using their own create implementation.
+User: Can the default be overridden independently of create?
+Joe: Yes, a subclass can override default to provide a different default strategy while still implementing create for other callers, since they are separate classmethods.
+
+User: How do I use __slots__ with a class that uses __weakref__?
+Joe: Add "__weakref__" to the __slots__ tuple: __slots__ = ("x", "__weakref__") allows weak references to instances while still using slots, since the weak reference support needs a slot in slotted classes.
+User: What happens if I forget to include __weakref__ in __slots__?
+Joe: Instances of the class cannot be weakly referenced, and creating a weakref.ref(instance) raises TypeError because the class has no __weakref__ slot.
+
+User: How do I write a property that exposes a slice of an internal list?
+Joe: @property def first_three(self): return self._items[:3] returns a new list each time, so the caller gets a snapshot of the first three items without accessing the internal list directly.
+User: Can I make the slice size configurable?
+Joe: Use a parameterized property alternative: def top(self, n): return self._items[:n] as a regular method instead of a property, since properties cannot accept arguments.
+
+User: How do I use functools.lru_cache with a function that reads from a file?
+Joe: Cache the parsed result: @lru_cache(maxsize=1) def get_config(): with open("config.json") as f: return json.load(f), so the file is read only once and subsequent calls return the cached dict.
+User: How do I force a re-read when the file changes?
+Joe: Call get_config.cache_clear() before the next call, or use a file hash in the cache key: @lru_cache def get_config(hash): ... and compute the current file hash before calling.
+
+User: How do I use functools.singledispatch to create a visitor pattern?
+Joe: @singledispatch def visit(node): raise NotImplementedError; @visit.register(TextNode) def _(node): print("text"); @visit.register(ImageNode) def _(node): print("image") dispatches to the right handler based on the node type.
+User: Can I add new node types without modifying the visitor?
+Joe: Yes, register new handlers from anywhere: @visit.register(VideoNode) def _(node): print("video") adds support for a new type without changing the original dispatch function or existing registrations.
+
+User: How does operator.and_ relate to the & operator?
+Joe: operator.and_(a, b) returns the bitwise AND of a and b, equivalent to a & b, and is useful with functools.reduce to compute the intersection of multiple bitmasks.
+User: Can operator.and_ be used with sets?
+Joe: Yes, operator.and_(set1, set2) returns the intersection of two sets, equivalent to set1 & set2, making it a callable form of set intersection for use with higher-order functions.
+
+User: How do I write a context manager that temporarily patches a function?
+Joe: @contextmanager def patch(target, replacement): original = target; globals()[target.__name__] = replacement; try: yield finally: globals()[target.__name__] = original, swapping a function for the duration of the block.
+User: Is there a safer way to patch without modifying globals?
+Joe: Use unittest.mock.patch which handles saving, restoring, and cleanup correctly, and also works on any attribute of any object, not just module-level globals.
+
+User: How do I write a decorator that logs the time between enter and exit of a function?
+Joe: def log_duration(f): def wrapper(*a, **kw): start = time.perf_counter(); r = f(*a, **kw); print(f"{f.__name__} took {time.perf_counter()-start:.3f}s"); return r; return wrapper, printing the duration after each call.
+User: How do I add the duration as an attribute on the function?
+Joe: Store it: def wrapper(*a, **kw): start = time.perf_counter(); r = f(*a, **kw); wrapper.last_duration = time.perf_counter() - start; return r, so callers can inspect .last_duration after the call.
+
+User: How do I define an ABC that uses a metaclass for validation?
+Joe: class ValidMeta(ABCMeta): def __new__(mcs, name, bases, ns): if name != "Base" and "required" not in ns: raise TypeError("missing required"); return super().__new__(mcs, name, bases, ns), combining ABC with custom class creation checks.
+User: Can I use ABCMeta directly without inheriting from ABC?
+Joe: Yes, class Base(metaclass=ABCMeta): ... is equivalent to inheriting from ABC, since ABC is just a class that sets ABCMeta as its metaclass, so use the inheritance form for readability.
+
+User: How do I use __slots__ with a class that stores numpy arrays?
+Joe: __slots__ = ("data",) works with numpy arrays since they are stored as instance attributes like any other object, and the slot holds a reference to the array without consuming extra dict overhead.
+User: Does __slots__ save memory when the attribute is a large array?
+Joe: The array data itself is stored elsewhere in memory regardless of __slots__, so the memory savings come from eliminating the __dict__ overhead, which is tiny compared to the array's size.
+
+User: How do I write a property that provides a lazy-loaded singleton?
+Joe: @property def instance(self): if not hasattr(self.__class__, "_instance"): self.__class__._instance = Expensive(); return self.__class__._instance, sharing one instance across all objects of the class.
+User: How do I reset the singleton for testing?
+Joe: Delete the class-level attribute: del MyClass._instance, which forces the next property access to create a fresh instance regardless of the previous one.
+
+User: How do I use functools.lru_cache with a function that has default arguments?
+Joe: lru_cache handles default arguments correctly, treating f(1) and f(1, None) as distinct calls if the default is None, since the cache key includes the actual arguments passed.
+User: How do I normalize calls so defaults hit the same cache entry?
+Joe: Define the cached function to accept only the arguments that vary, and have a wrapper that fills in defaults before calling: def cached(a, b=None): if b is None: b = DEFAULT; return _cached(a, b) where _cached is the lru_cache function.
+
+User: How do I use functools.total_ordering with a custom class?
+Joe: Decorate the class with @total_ordering and define __lt__ and __eq__, and the decorator fills in __le__, __gt__, and __ge__ automatically based on those two methods.
+User: Does total_ordering work with __hash__?
+Joe: Yes, but remember that defining __eq__ without __hash__ makes the class unhashable, so either set __hash__ = None for mutable classes or define __hash__ based on immutable fields.
+
+User: How does operator.or_ work with sets?
+Joe: operator.or_(set1, set2) returns the union of two sets, equivalent to set1 | set2, and with functools.reduce it computes the union of a collection of sets in one pass.
+User: Can operator.or_ be used with booleans for logical OR?
+Joe: operator.or_ on booleans performs bitwise OR, not logical OR, so True | True returns True but True | False also returns True, which happens to match logical OR for booleans but not for other types.
+
+User: How do I write a context manager that changes the umask temporarily?
+Joe: @contextmanager def umask(mask): old = os.umask(mask); try: yield finally: os.umask(old), which sets the file creation mask for the block and restores it afterward, affecting file permissions in os.mkdir and open calls.
+User: Does this affect subprocesses?
+Joe: The umask is inherited by child processes, so subprocesses spawned inside the with block inherit the temporary umask, and the parent restores it when the block exits.
+
+User: How do I write a decorator that validates the types of all arguments using annotations?
+Joe: def typed(f): hints = typing.get_type_hints(f); def wrapper(*a, **kw): for arg, val in zip(f.__code__.co_varnames, a): if arg in hints and not isinstance(val, hints[arg]): raise TypeError(f"{arg} must be {hints[arg]}"); return f(*a, **kw); return wrapper.
+User: Does this handle *args and **kwargs correctly?
+Joe: No, *args and **kwargs are not in co_varnames in the same way, so a robust implementation needs to inspect the function signature using inspect.signature and match arguments by parameter kind.
+
+User: How do I define an ABC with abstract __init__?
+Joe: You cannot make __init__ abstract directly because __init__ is called after the instance is created and ABC checks happen during __new__, but you can put abstract checks in __init__ manually.
+User: How do I enforce that subclasses override __init__?
+Joe: Define __init__ in the ABC that raises NotImplementedError, or use a metaclass that checks for __init__ overrides, since @abstractmethod on __init__ is technically allowed but not enforced by ABC.
+
+User: How do I use __slots__ with __hash__ in a frozen dataclass?
+Joe: @dataclass(frozen=True, slots=True) generates both __slots__ and __hash__, with the hash computed from all fields, and the frozen flag prevents mutation of any attribute.
+User: Can I customize which fields contribute to __hash__?
+Joe: Use field(hash=False) on individual fields to exclude them from the hash while keeping them in __eq__, useful for mutable fields like timestamps that should not affect hash-based lookups.
+
+User: How do I write a property that accumulates a value over time?
+Joe: @property def count(self): return self._count; @count.setter def count(self, v): self._count += v makes assignment add to the running total rather than replacing it, useful for aggregators.
+User: How do I reset the accumulator?
+Joe: Add a reset method or set the backing attribute directly: self._count = 0 bypasses the property setter and resets the accumulator without triggering the addition logic.
+
+User: How do I use functools.lru_cache on a function that is called with None arguments?
+Joe: lru_cache handles None as a cache key just fine since None is hashable, so @lru_cache def process(a, b=None): return ... caches results for both a alone and a with b=None as distinct entries.
+User: Does f(1) and f(1, None) hit the same cache entry?
+Joe: Only if the function's default for b is None and you omit b, because lru_cache sees the actual arguments passed, and f(1) passes no second argument while f(1, None) explicitly passes None.
+
+User: How do I use functools.total_ordering with an enum?
+Joe: Decorate the enum with @total_ordering and define __lt__ and __eq__ on the enum members, which is useful when enum values need to be compared or sorted in a custom order.
+User: Does total_ordering work with IntEnum?
+Joe: IntEnum already inherits comparison methods from int, so @total_ordering is unnecessary; use it only for Enum subclasses that define their own ordering.
+
+User: How does operator.xor relate to the ^ operator?
+Joe: operator.xor(a, b) returns the bitwise XOR of a and b, equivalent to a ^ b, and is useful with sets for symmetric difference: operator.xor(set1, set2) returns elements in either set but not both.
+User: Can I use xor with functools.reduce for parity checks?
+Joe: Yes, reduce(operator.xor, [1, 2, 1, 3, 2]) returns 3 because the XOR cancels pairs and leaves the unpaired element, which is the classic algorithm for finding the odd one out.
+
+User: How do I write a context manager that times a block and logs the result?
+Joe: class Timer: def __enter__(self): self.start = time.perf_counter(); return self; def __exit__(self, *e): self.elapsed = time.perf_counter() - self.start; logging.info(f"took {self.elapsed:.3f}s"), which logs after the block finishes.
+User: Can I make the log level configurable?
+Joe: Accept a level parameter in __init__: def __init__(self, level=logging.INFO): self.level = level, then use logging.log(self.level, ...) in __exit__ for flexible severity control.
+
+User: How do I write a decorator that converts the return value to a specific type?
+Joe: def returns(typ): def deco(f): def wrapper(*a, **kw): return typ(f(*a, **kw)); return wrapper; return deco, so @returns(str) above a function ensures the result is always a string.
+User: Can I use this with a list to collect results?
+Joe: @returns(list) wraps the return value in list(), which is useful when the function returns a generator but the caller expects a materialized list every time.

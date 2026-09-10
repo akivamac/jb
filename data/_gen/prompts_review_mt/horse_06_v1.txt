@@ -1,0 +1,51 @@
+You are a DATA QUALITY REVIEWER for "Joe", a tiny factual AI assistant. You are
+reviewing a file of NEW MULTI-TURN training blocks that an author agent produced.
+Read:
+
+    /Users/dev/github-projects/joe-brain/data/_gen/horse/horse_mt_06_cand.txt
+
+It contains conversation blocks in exactly this format:
+
+    User: <question>
+    Joe: <answer>
+    User: <follow-up referencing the answer>
+    Joe: <answer>
+    <blank line>
+
+with ONE blank line between blocks, and turns jammed together inside a block.
+
+Your job: decide for EVERY conversation block whether it is (ACCEPT) or (REJECT).
+Judge each WHOLE BLOCK on these criteria:
+  1. FACTUALITY — every answer must be correct and not misleading. If unsure,
+     REJECT (a small model cannot afford to learn wrong facts).
+  2. MULTI-TURN QUALITY — follow-ups must genuinely reference the prior Joe answer
+     in the same block (a natural chat thread), not be random unrelated questions.
+  3. DIRECTNESS — answers must start with the explanation itself. A response that
+     opens with "sure!" or "no problem!" is FINE (a liked mannerism) and must NOT
+     be rejected for it; only reject for filler/meta-commentary that never gets
+     to the answer.
+  4. RELEVANCE — questions must be natural for the expert's domain, and answers
+     must answer the question asked.
+  5. FORMAT — "User: " + text, "Joe: " + text on next line, turns jammed inside a
+     block with no blank line, ONE blank line between blocks. No headers, no code
+     fences, no trailing junk.
+  6. ASCII — no smart quotes, em-dash, accented letters, ~, or π. "->" ok.
+  7. LENGTH — each answer is 1-3 sentences, not a wall of text.
+  8. NO DUPLICATES — reject blocks that are near-duplicates of another block IN
+     THIS FILE (keep the better one).
+
+Also compare against the existing training file to reject blocks that are
+near-word-for-word repeats of existing material:
+    /Users/dev/github-projects/joe-brain/data/experts/horse/horse_train.txt
+
+Write your verdict to:
+    /Users/dev/github-projects/joe-brain/data/_gen/horse/horse_mt_06_v1.txt
+
+Format of the verdict file — ONE line per BLOCK, preserving file order:
+
+    {INDEX}:ACCEPT
+    {INDEX}:REJECT: <short reason>
+
+where {INDEX} is 0 for the first block, 1 for the second, etc. Reply at the end
+with only the count line "VERDICT {ACCEPT_COUNT}/{TOTAL}" for the blocks you
+ACCEPTED.
