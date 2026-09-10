@@ -1,0 +1,545 @@
+User: How do I write my first unit test with unittest?
+Joe: Import unittest, subclass TestCase, and define methods starting with test_ that call self.assertEqual(result, expected) to verify behavior.
+User: How do I run just that one test file?
+Joe: Run python3 -m unittest test_file.py from the terminal, which discovers and runs every test method in every TestCase subclass.
+
+User: How do I use pytest instead of unittest?
+Joe: Install pytest with pip, then write plain functions named test_* that use assert statements directly, and run pytest in the project directory.
+User: Does pytest run unittest-style classes too?
+Joe: Yes, pytest discovers and runs unittest.TestCase subclasses alongside plain test functions, so you can mix styles while migrating.
+
+User: How do I check that a function raises an exception in pytest?
+Joe: Use pytest.raises(ValueError): inside a with block, and any code inside that block that raises the expected type passes the test.
+User: Can I inspect the exception message inside the raises block?
+Joe: Yes, bind it with as exc_info and read str(exc_info.value) to verify the error message contains the right text.
+
+User: What does pytest.fixture do?
+Joe: A fixture provides reusable test data or setup by decorating a function with @pytest.fixture, then test functions receive it as a parameter.
+User: How do I control fixture scope so setup runs once per module?
+Joe: Pass scope="module" to the decorator like @pytest.fixture(scope="module"), and the fixture runs once and its result is shared across all tests in that module.
+
+User: How do I mock a function return value with unittest.mock?
+Joe: Use @patch("module.function") as a decorator, then set mock.return_value = desired_value inside the test so the real function is never called.
+User: Can I check what arguments the mock received?
+Joe: Yes, call mock.assert_called_once_with(arg1, arg2) or inspect mock.call_args and mock.call_args_list to see every invocation.
+
+User: How do I mock just a single method of an object?
+Joe: Use patch.object(MyClass, "method_name") and set its return_value, which replaces the method on the class for the duration of the test.
+User: Does the original method get restored after the test?
+Joe: Yes, patch.restore happens automatically when the decorated function or context manager exits, so no state leaks between tests.
+
+User: How do I measure code coverage with coverage.py?
+Joe: Run coverage run -m pytest to execute tests under coverage, then coverage report to see per-file percentages of lines executed.
+User: How do I see which lines were missed?
+Joe: Run coverage html to generate an htmlcov/ folder with annotated source files where missed lines are highlighted in red.
+
+User: How do I skip a test conditionally in pytest?
+Joe: Use @pytest.mark.skipif(sys.version_info < (3, 10), reason="needs 3.10") to skip the test when the condition is true.
+User: Can I mark a test as expected to fail instead of skipping?
+Joe: Yes, @pytest.mark.xfail marks a test that is expected to fail, and pytest reports it as xfail instead of a failure, alerting you when it unexpectedly passes.
+
+User: How do I start the pdb debugger at a specific line?
+Joe: Insert breakpoint() at the line where you want to pause, and when the program reaches it the interactive pdb prompt opens in the terminal.
+User: What commands can I type once the debugger opens?
+Joe: Type n for next line, s to step into a function call, c to continue until the next breakpoint, p var to print a variable, and q to quit.
+
+User: How do I set a breakpoint in pdb without editing code?
+Joe: Run python3 -m pdb script.py to start in the debugger, then use b line_number before running, and c to continue until that line is reached.
+User: How do I list the source code around the current line in pdb?
+Joe: Type l (lowercase L) to show the surrounding source lines, and ll to show the full function body from the start.
+
+User: How do I profile a script with cProfile?
+Joe: Run python3 -m cProfile script.py to print a table of function calls, cumulative time, and per-call time sorted by total time spent.
+User: How do I save the profile data to analyze later?
+Joe: Add -o output.prof like python3 -m cProfile -o out.prof script.py, then load it with pstats.Stats("out.prof") or visualize with snakeviz.
+
+User: How do I set up basic logging in a script?
+Joe: Call logging.basicConfig(level=logging.INFO) once at startup, then use logging.info("message") throughout the code to emit structured log messages.
+User: How do I include variable values in the log message?
+Joe: Use f-strings like logging.info(f"user {uid} logged in") or pass the values as arguments with % formatting like logging.info("user %s logged in", uid).
+
+User: How do I send log output to a file instead of the console?
+Joe: Pass filename and filemode to basicConfig like logging.basicConfig(filename="app.log", level=logging.INFO) and all messages go to that file.
+User: How do I rotate the log file when it gets large?
+Joe: Use RotatingFileHandler from logging.handlers which rotates at a set size, keeping a configurable number of backup files automatically.
+
+User: How do I add timestamps to my log output?
+Joe: Include %(asctime)s in the format string like logging.basicConfig(format="%(asctime)s %(message)s") and the time appears before each message.
+User: Can I customize the timestamp format?
+Joe: Yes, pass datefmt="%Y-%m-%d %H:%M:%S" to basicConfig to control how the timestamp string looks.
+
+User: How do I run a single test method from a test class?
+Joe: python3 -m unittest test_module.TestClass.test_method runs exactly that one method, specified by the dotted path from the module down to the method name.
+User: How do I run all tests in a directory?
+Joe: python3 -m unittest discover scans for test_*.py files recursively from the current directory and runs every test it finds.
+
+User: How do I use pytest parametrize to run a test with multiple inputs?
+Joe: Add @pytest.mark.parametrize("input,expected", [(1, 2), (3, 4)]) above the test, and pytest runs it once per tuple with those values.
+User: Can I parametrize over multiple fixtures too?
+Joe: Yes, parametrize stacks with fixture parameters, and pytest generates the cartesian product of all combinations for the test.
+
+User: How do I check the order of mock calls?
+Joe: Use mock.assert_has_calls([call.first(), call.second()]) which verifies the calls happened in that sequence, optionally with any_order=True to ignore order.
+User: Can I inspect the full call history?
+Joe: Yes, mock.mock_calls returns a list of all calls including subcalls from child mocks, and call_args_list holds just the direct invocations.
+
+User: How do I measure line coverage instead of just function coverage?
+Joe: coverage.py measures line coverage by default, tracking every executable line, and branch coverage with --branch also tracks which branches of conditionals were taken.
+User: How do I exclude generated code from coverage reports?
+Joe: Add # pragma: no cover at the end of lines you want excluded, or configure omit patterns in .coveragerc to skip entire files or directories.
+
+User: How do I write a pytest fixture that yields instead of returns?
+Joe: Use yield instead of return in the fixture, and any code after the yield runs as teardown when the fixture goes out of scope.
+User: What happens if the test raises an exception before the yield?
+Joe: The teardown code still runs because pytest ensures the generator is cleaned up, so resources like file handles are released reliably.
+
+User: How do I step into a function call in pdb?
+Joe: When paused at a line that calls a function, type s to step into it, and the debugger moves to the first line inside that function.
+User: How do I step out of the current function back to the caller?
+Joe: Type r to run until the current function returns, and pdb pauses at the line after the call in the caller.
+
+User: How do I use pytest.approx for floating point comparisons?
+Joe: Use assert result == pytest.approx(3.14, rel=1e-3) which compares with a relative tolerance instead of exact equality, avoiding float precision issues.
+User: Can I set an absolute tolerance instead?
+Joe: Yes, pass abs=0.01 like assert value == pytest.approx(1.0, abs=0.01) to allow that much absolute difference between expected and actual.
+
+User: How do I set a conditional breakpoint in pdb?
+Joe: Use b line_number, condition like b 42, x > 5 which only stops when x exceeds 5 at line 42, skipping the breakpoint otherwise.
+User: How do I list all current breakpoints?
+Joe: Type b with no arguments to list every breakpoint with its number, file, line, and any condition attached.
+
+User: How do I capture log output in a test to verify it?
+Joe: Use pytest's caplog fixture: caplog.set_level(logging.INFO) then assert "expected message" in caplog.text after running the code under test.
+User: Can I filter caplog by logger name?
+Joe: Yes, caplog.records gives a list of LogRecord objects with attributes like .name, .levelname, and .message for precise inspection.
+
+User: How do I mock the return value of a property?
+Joe: Use PropertyMock with patch like with patch.object(MyClass, "my_prop", new_callable=PropertyMock) as mock_prop: mock_prop.return_value = 42.
+User: Can I make the property raise an exception on access?
+Joe: Yes, set mock_prop.side_effect = ValueError("bad") so accessing the property raises that exception in the test.
+
+User: How do I check coverage of a specific module?
+Joe: coverage run --source=my_module -m pytest limits tracking to only the module you care about, ignoring third-party library code in the report.
+User: How do I combine coverage data from multiple test runs?
+Joe: coverage combine merges all .coverage.* files in the directory, useful when tests are split across machines or run in parallel.
+
+User: How do I debug a segfault in a C extension?
+Joe: Run python3 -m faulthandler script.py which prints Python tracebacks of all threads when a segfault occurs, helping locate which C extension caused it.
+User: Does faulthandler help with hangs too?
+Joe: Yes, you can register a periodic dump with faulthandler.dump_traceback_later(10) to print stack traces every 10 seconds while the program is stuck.
+
+User: How do I use unittest.mock to mock datetime.now?
+Joe: Use @patch("datetime.datetime") as mock_dt and set mock_dt.now.return_value = datetime(2025, 1, 1) so the code sees a fixed current time.
+User: How do I avoid breaking other datetime functionality?
+Joe: Mock only the specific method with patch("datetime.datetime.now") instead of the whole class, so datetime.strptime and other methods still work.
+
+User: How do I measure memory usage of a function?
+Joe: Use the tracemalloc module: tracemalloc.start(), run the code, snapshot = tracemalloc.take_snapshot(), then display the top memory allocations.
+User: How do I compare memory before and after a function call?
+Joe: Take a snapshot before and after, call snapshot.compare_to(old_snapshot, "lineno") to see which lines allocated the most memory between the two points.
+
+User: How do I use side_effect to simulate multiple mock calls?
+Joe: Set mock.side_effect = [1, 2, 3] so the first call returns 1, the second returns 2, the third returns 3, and subsequent calls raise StopIteration.
+User: Can side_effect raise an exception on a specific call?
+Joe: Yes, include an exception in the list like mock.side_effect = [1, ValueError("bad"), 3] so the second call raises and the third returns normally.
+
+User: How do I exclude third-party packages from a coverage report?
+Joe: Add omit = ["*/site-packages/*", "*/lib/*"] to .coveragerc, or pass --omit="*/site-packages/*" on the command line.
+User: How do I generate an XML coverage report for CI systems?
+Joe: coverage xml outputs coverage.xml in Cobertura format, which Jenkins, GitLab CI, and other tools can parse to show coverage trends.
+
+User: How do I test that a file was written correctly?
+Joe: Use pytest's tmp_path fixture to get a temporary directory, write the file there, then assert Path(tmp_path / "out.txt").read_text() == expected_content.
+User: Does tmp_path get cleaned up automatically?
+Joe: Yes, pytest removes the temporary directory after the test completes, whether the test passed or failed.
+
+User: How do I configure logging to use JSON format?
+Joe: Subclass logging.Formatter and override format() to produce a JSON dict with fields like timestamp, level, name, and message, then attach it to a handler.
+User: What fields should a JSON log entry contain?
+Joe: At minimum include timestamp, level, logger name, and message, plus request_id or correlation_id in web applications for tracing requests across services.
+
+User: How do I set up logging for a library so users can control it?
+Joe: Create a named logger with logging.getLogger(__name__) and add a NullHandler so the library does not output anything unless the application configures logging.
+User: Why should a library not add its own StreamHandler?
+Joe: If every library added its own handler, log messages would appear twice, so libraries emit messages through named loggers and let the application decide where output goes.
+
+User: How do I test that a function writes to stderr?
+Joe: Use pytest's capsys fixture: capture = capsys.readouterr() then assert "error" in capture.err after running the code that writes to stderr.
+User: Does capsys capture stdout too?
+Joe: Yes, capture.out holds everything written to stdout and capture.err holds stderr, both reset between test functions automatically.
+
+User: How do I add a progress indicator for a long-running test suite?
+Joe: Pass -v to pytest for verbose output showing each test name as it runs, or install pytest-sugar for a colored progress bar with status dots.
+User: How do I stop pytest after the first failure?
+Joe: Pass -x to pytest to exit immediately on the first failure, which is useful during debugging to avoid waiting for the full suite.
+
+User: How do I use pytest.mark.parametrize with multiple arguments from a list of tuples?
+Joe: Write @pytest.mark.parametrize("a,b,expected", [(1,2,3), (4,5,9)]) and the test function receives each tuple unpacked as separate parameters.
+User: Can I parametrize from a fixture that yields multiple values?
+Joe: Yes, use @pytest.fixture(params=[1, 2, 3]) and the test runs once per parameter, receiving the current value through the fixture parameter.
+
+User: How do I test that an exception message contains specific text?
+Joe: Use pytest.raises(ValueError, match="invalid input") which checks both the exception type and a regex match against the string representation.
+User: How do I capture the exception for further assertions?
+Joe: Use with pytest.raises(ValueError) as exc_info: then assert exc_info.value.args[0] == "message" to inspect the exact exception details.
+
+User: How do I create a pytest conftest.py file?
+Joe: Place conftest.py in the tests directory with shared fixtures defined as functions decorated with @pytest.fixture, and all test files in that tree can use them.
+User: Do fixtures in conftest.py need to be imported by each test file?
+Joe: No, pytest discovers them automatically by name, so test functions just declare the fixture name as a parameter and pytest injects the value.
+
+User: How do I test that a deprecation warning is raised?
+Joe: Use pytest.warns(DeprecationWarning) as a context manager, and the test passes only if the code inside emits a DeprecationWarning.
+User: How do I fail the test if any unexpected warning appears?
+Joe: Use -W error::DeprecationWarning on the pytest command to turn deprecation warnings into errors, making the test suite fail on any deprecated usage.
+
+User: How do I mock an API call that returns a requests.Response?
+Joe: Create a fake response with MagicMock(spec=requests.Response), set mock_response.status_code = 200 and mock_response.json.return_value = {"key": "val"}.
+User: How do I mock requests.get directly?
+Joe: Use @patch("requests.get") as mock_get and set mock_get.return_value = fake_response, so the real HTTP call never happens.
+
+User: How do I use pytest markers to categorize tests?
+Joe: Define custom markers in pytest.ini like [tool:pytest] markers = ["slow", "integration"], then use @pytest.mark.slow above tests and run pytest -m slow to select them.
+User: How do I run all tests except the slow ones?
+Joe: Use pytest -m "not slow" to exclude tests tagged with @pytest.mark.slow while running everything else.
+
+User: How do I view the call stack in pdb?
+Joe: Type w to print a stack trace showing every frame from the current position up to the top-level call, with arrows pointing to the current frame.
+User: How do I move between frames in pdb?
+Joe: Type up to go one frame up the stack and down to go one frame down, then inspect local variables in each frame with locals().
+
+User: How do I use pytest-xdist with pytest-cov together?
+Joe: Run coverage run -p -m pytest -n auto to generate separate .coverage files per worker, then coverage combine to merge them into one report.
+User: Why do I need the -p flag with coverage and xdist?
+Joe: The -p flag appends the process id to the data file name, preventing multiple parallel workers from overwriting each other's coverage data.
+
+User: How do I set the logging level from an environment variable?
+Joe: Read os.environ.get("LOG_LEVEL", "INFO").upper() and pass it to logging.basicConfig(level=getattr(logging, level)), so users control verbosity without code changes.
+User: How do I change the log level for a specific logger at runtime?
+Joe: Call logger.setLevel(logging.DEBUG) on any named logger to override its level independently of the root logger configuration.
+
+User: How do I generate an HTML coverage report with branch coverage?
+Joe: coverage run --branch -m pytest then coverage html --directory=coverage_html, and the report shows which branch outcomes were not tested.
+User: What does branch coverage tell me that line coverage does not?
+Joe: Line coverage shows whether a line ran, while branch coverage shows whether both True and False branches of an if statement were taken.
+
+User: How do I use timeit from the command line to benchmark a snippet?
+Joe: Run python3 -m timeit "'-'.join(str(n) for n in range(100))" which runs the snippet many times and reports the mean execution time.
+User: How do I set the number of loops in timeit?
+Joe: Pass -n 10000 for the number of loops per timing and -r 5 for the number of repetitions, adjusting to get stable measurements.
+
+User: How do I mock open() in a test to avoid touching the filesystem?
+Joe: Use @patch("builtins.open", new_callable=mock_open, read_data="file content") so reading from any file returns the provided string without disk access.
+User: How do I mock open() for binary read mode?
+Joe: Pass read_data=b"binary data" as bytes, and the mock_open returns those bytes when read() is called in binary mode.
+
+User: How do I use logging.getLogger().handlers to inspect active handlers?
+Joe: Call logger = logging.getLogger(); print(logger.handlers) to see a list of all handlers attached, useful for debugging why log output is not appearing.
+User: How do I prevent duplicate log messages from handler propagation?
+Joe: Set logger.propagate = False on child loggers when they have their own handlers, so messages are not sent to both the child and root handlers.
+
+User: How do I test a function that calls sys.exit?
+Joe: Use pytest.raises(SystemExit) as a context manager, because sys.exit raises SystemExit which the test can catch and verify.
+User: Can I check the exit code of sys.exit in the test?
+Joe: Yes, exc_info.value.code holds the exit code passed to sys.exit, so assert exc_info.value.code == 0 verifies a clean exit.
+
+User: How do I use pytest fixtures with yield for setup and teardown?
+Joe: Define a fixture that yields the resource after setup, and any code after the yield runs as teardown when the fixture scope ends.
+User: How do I ensure teardown runs even if the test fails?
+Joe: pytest guarantees the code after yield always executes, so cleanup is reliable regardless of test outcome.
+
+User: How do I use the logging FileHandler with a specific encoding?
+Joe: handler = logging.FileHandler("app.log", encoding="utf-8") ensures non-ASCII characters are written correctly, avoiding UnicodeEncodeError in log files.
+User: How do I rotate logs by time instead of size?
+Joe: Use logging.handlers.TimedRotatingFileHandler which rotates at midnight or at a configured interval, keeping logs organized by date.
+
+User: How do I use pytest --coverage to run coverage directly?
+Joe: Install pytest-cov, then run pytest --cov=my_module to measure coverage of that module, and --cov-report=html to generate an HTML report in one step.
+User: How do I fail the build when coverage drops below a threshold?
+Joe: Add --cov-fail-under=80 to the pytest command, and the exit code is non-zero when coverage is below 80 percent.
+
+User: How do I use pdb to debug a pytest test?
+Joe: Insert breakpoint() in the test function, then run pytest -s test_file.py to disable output capture and interact with the debugger.
+User: Why do I need the -s flag?
+Joe: Without -s, pytest captures stdout and stdin, so the debugger prompt would not appear or would be hidden from the user.
+
+User: How do I mock the datetime class with freezegun instead of patch?
+Joe: Install freezegun, then use @freeze_time("2025-01-01") as a decorator so every datetime.now() call returns the frozen date.
+User: Does freezegun also freeze timezone-aware datetimes?
+Joe: Yes, pass tz_offset to freeze_time like @freeze_time("2025-01-01 12:00:00", tz_offset=0) to set both the wall clock and the timezone offset.
+
+User: How do I use cProfile to profile a class method?
+Joe: Wrap the method call in cProfile.runctx("obj.method()", globals(), locals()) to profile just that method in the current context.
+User: How do I save cProfile results to a file for later viewing?
+Joe: Use cProfile.Profile() as a context manager: with cProfile.Profile() as prof: then prof.dump_stats("output.prof") saves the data.
+
+User: How do I use pytest.mark.filterwarnings to suppress expected warnings?
+Joe: Add @pytest.mark.filterwarnings("ignore::DeprecationWarning") above a test to suppress deprecation warnings for that specific test only.
+User: How do I apply the filter to the entire test session?
+Joe: Add filterwarnings in pytest.ini like filterwarnings = ignore::DeprecationWarning to suppress across all tests.
+
+User: How do I use monkeypatch.setenv in pytest to set environment variables?
+Joe: Use monkeypatch.setenv("DATABASE_URL", "sqlite:///test.db") in a fixture or test, and the environment variable is set for the duration of that test.
+User: How do I unset an environment variable in a test?
+Joe: Use monkeypatch.delenv("DATABASE_URL", raising=False) to remove the variable, and the original value is restored after the test.
+
+User: How do I use the --tb=short flag in pytest for compact tracebacks?
+Joe: Pass --tb=short to pytest to show only the assertion line and the immediate frame, hiding the full call chain for cleaner output.
+User: What about --tb=line for single-line failures?
+Joe: --tb=line prints each failure on a single line, which is useful when you have many failures and just need to see the assertion messages.
+
+User: How do I mock a socket connection in a test?
+Joe: Use @patch("socket.socket") as mock_socket_class, then set mock_socket.return_value.recv.return_value = b"response data" to simulate network data.
+User: How do I simulate a timeout on the socket?
+Joe: Set mock_socket.return_value.settimeout.side_effect = socket.timeout("timed out") so the code under test catches the timeout as it would in production.
+
+User: How do I use pytest --junitxml to generate CI-friendly test reports?
+Joe: Run pytest --junitxml=report.xml and Jenkins, GitLab, or GitHub Actions can parse the XML to show test results in the pipeline UI.
+User: How do I include test duration in the JUnit report?
+Joe: pytest includes duration by default in --junitxml output, and you can set a duration threshold with --durations=10 to show the slowest tests.
+
+User: How do I use tracemalloc to find memory leaks?
+Joe: Take a snapshot before and after a suspected leak, compare with snapshot.compare_to(old_snapshot, "traceback") to see which allocation tracebacks grew.
+User: How do I display the top memory allocations in a snapshot?
+Joe: Call snapshot.statistics("lineno")[:10] to get the top 10 allocation sites by total size, each showing file, line, and allocated bytes.
+
+User: How do I test that a function does not modify its input?
+Joe: Capture the input with original = list(input_data), run the function, then assert input_data == original to verify no mutation occurred.
+User: How do I test that a function returns a new object instead of mutating in place?
+Joe: Call id(before) and id(after) and assert they differ, or use assert before is not after to confirm they are distinct objects.
+
+User: How do I use mock.patch.dict to modify a dictionary for a test?
+Joe: Use mock.patch.dict("os.environ", {"KEY": "value"}) to temporarily change environment variables or any other dictionary in the code.
+User: Does patch.dict restore the original values?
+Joe: Yes, the dictionary is restored to its original state when the patch context exits, regardless of whether the test passed or failed.
+
+User: How do I use pytest-timeout to enforce a time limit on the whole suite?
+Joe: Run pytest --timeout=60 to kill any individual test that runs longer than 60 seconds, preventing hung tests from blocking the entire suite.
+User: How do I set different timeouts for different tests?
+Joe: Use @pytest.mark.timeout(10) on a specific test to override the global timeout with a per-test value.
+
+User: How do I test that a function logs exactly once?
+Joe: Use caplog fixture, run the function, then assert len(caplog.records) == 1 and check the message on that single record.
+User: How do I verify no log messages were emitted at ERROR level or above?
+Joe: Filter caplog.records: assert all(r.levelno < logging.ERROR for r in caplog.records) ensures no errors or criticals were logged.
+
+User: How do I test that a function calls another function with the right arguments?
+Joe: Mock the inner function with @patch("module.inner_func") and assert mock_inner_func.assert_called_once_with(expected_arg) after calling the outer function.
+User: How do I verify the order of multiple internal calls?
+Joe: Check mock_inner_func.call_args_list which returns a list of all call argument tuples in the order they were made.
+
+User: How do I use pytest fixtures with scope="session" for expensive setup?
+Joe: Decorate with @pytest.fixture(scope="session") so the fixture runs once per test session, and all tests share the same instance of the expensive resource.
+User: What caution should I take with session-scoped fixtures?
+Joe: Since the fixture is shared across all tests, it must be immutable or the tests must not modify it, otherwise state leaks between tests cause spurious failures.
+
+User: How do I use the coverage run --include flag to focus on specific files?
+Joe: coverage run --include="src/*" -m pytest restricts measurement to files under src/, excluding tests and third-party code from the report.
+User: How do I use --include with multiple patterns?
+Joe: Separate patterns with commas like --include="src/*,lib/*" to include multiple directory trees in the coverage measurement.
+
+User: How do I mock a database cursor in a test?
+Joe: Create a MagicMock for the cursor, set cursor.fetchall.return_value = [("row1",), ("row2",)] and cursor.description for column names, then pass it to the query function.
+User: How do I mock the connection that creates the cursor?
+Joe: Mock the connection and set conn.cursor.return_value = mock_cursor, so the code under test gets the fake cursor when it calls conn.cursor().
+
+User: How do I test that a function correctly handles a timeout exception?
+Joe: Mock the call that can timeout, set mock.side_effect = socket.timeout("timed out"), and assert the function catches it and returns the expected fallback.
+User: How do I verify the function logged the timeout?
+Joe: Use caplog fixture to assert the timeout message appears in the logs after the function handles the exception.
+
+User: How do I use the logging QueueListener for non-blocking log handling?
+Joe: Create a queue, pass it to QueueHandler for loggers and QueueListener with handlers, and the listener thread processes log records without blocking the main thread.
+User: How do I stop the QueueListener cleanly?
+Joe: Call listener.stop() which flushes remaining records and shuts down the listener thread, ensuring no log messages are lost at shutdown.
+
+User: How do I use the logging QueueHandler for async logging?
+Joe: Create a queue.Queue, attach QueueHandler to it in loggers, and run a separate thread with QueueListener that consumes and writes to the actual handlers.
+User: Why would I want async logging?
+Joe: So the main thread does not block on disk I/O or network when writing logs, keeping the application responsive under heavy load.
+
+User: How do I test that a function times out?
+Joe: Use pytest-timeout: decorate with @pytest.mark.timeout(5) and the test fails if it runs longer than 5 seconds, catching infinite loops or slow operations.
+User: Can I apply a timeout to every test in a class?
+Joe: Yes, add the marker at the class level like @pytest.mark.timeout(10) class TestSuite, and every method inherits the timeout.
+
+User: How do I verify a mock was never called?
+Joe: Call mock.assert_not_called() at the end of the test, which passes if the mock received zero invocations during the test body.
+
+User: What is a good minimum coverage target for a new project?
+Joe: Aim for 80% or higher as a baseline, but focus coverage on the critical business logic and keep edge cases covered rather than chasing 100% on trivial code.
+
+User: What is the difference between tottime and cumtime in cProfile output?
+Joe: tottime is the time spent inside the function itself excluding subcalls, while cumtime includes all subcalls made by the function.
+
+User: How do I create a logger per module instead of using the root logger?
+Joe: Call logger = logging.getLogger(__name__) at the module level, which creates a named child logger that inherits settings from the root logger.
+
+User: How do I log an exception with its full traceback?
+Joe: Call logging.exception("message") inside the except block, which logs at ERROR level and appends the full traceback automatically.
+
+User: How do I use MagicMock vs Mock in unittest?
+Joe: Mock requires you to define every method and attribute, while MagicMock has default implementations for magic methods like __len__ and __iter__.
+
+User: How do I mock a class attribute for a single test?
+Joe: Use patch.object(MyClass, "attribute_name", new_value) as a decorator or context manager to replace it temporarily.
+
+User: How do I view local variables in pdb?
+Joe: Type locals() to see all local variables as a dict, or p variable_name to inspect a single variable's value.
+
+User: How do I profile a specific function instead of the whole script?
+Joe: Use cProfile.run("my_function()") inside the code to profile just that call, or wrap the function with a @profile decorator and run with kernprof.
+
+User: How do I test that a function logs a warning?
+Joe: Use caplog.at_level(logging.WARNING) then assert "warning text" in caplog.text, or check caplog.records[0].levelname == "WARNING".
+
+User: How do I use subTest in unittest to continue after a failure?
+Joe: Use with self.subTest(i=i): inside a loop so each iteration is reported as a separate sub-test, and failures in one do not skip the remaining iterations.
+
+User: How do I write a test that expects a specific warning?
+Joe: Use pytest.warns(UserWarning, match="expected pattern") as a context manager, and the test passes only if the code emits a matching warning.
+
+User: How do I run tests in parallel with pytest?
+Joe: Install pytest-xdist and run pytest -n auto to distribute tests across all available CPU cores, speeding up the test suite significantly.
+
+User: How do I use pdb to inspect a core dump?
+Joe: Install python3-dbg and run gdb python core, then use py-bt to print the Python traceback at the crash point inside the core dump.
+
+User: How do I use setUp in unittest to avoid repeating setup code?
+Joe: Define setUp(self) in your TestCase subclass, and it runs before every single test method, creating fresh data each time.
+
+User: How do I use spec_set to prevent a mock from accepting arbitrary attributes?
+Joe: Create mock = Mock(spec_set=MyClass) so accessing any attribute not on MyClass raises AttributeError, catching typos and API mismatches early.
+
+User: How do I use the logging.handlers.SMTPHandler for email alerts?
+Joe: Create handler = logging.handlers.SMTPHandler("smtp.example.com", "[EMAIL]", ["[EMAIL]"], "Subject") and add it to the root logger for ERROR level and above.
+
+User: How do I verify a function was called with a specific keyword argument?
+Joe: mock.assert_called_with(arg, key=value) checks both positional and keyword arguments, and call_args.kwargs gives you the keyword dict for custom inspection.
+
+User: How do I test that a context manager is used correctly?
+Joe: Mock the context manager class and check that __enter__ and __exit__ were called, then verify the resource was used between those calls.
+
+User: How do I use coverage's fail_under option in CI?
+Joe: Set fail_under = 80 in .coveragerc so coverage report exits with a non-zero status when coverage drops below 80%, failing the CI pipeline.
+
+User: How do I mock a module-level constant for a test?
+Joe: Use @patch("mymodule.CONSTANT", 42) which replaces the value for the duration of the test, restoring the original afterward.
+
+User: How do I profile memory line by line with memory_profiler?
+Joe: Decorate the target function with @profile, then run python3 -m memory_profiler script.py to see memory usage per line in the decorated function.
+
+User: How do I set a watchpoint in pdb that triggers when a variable changes?
+Joe: pdb does not have built-in watchpoints, but you can set a conditional breakpoint at every line that modifies the variable, or use the third-party pdb++ which adds watch support.
+
+User: How do I use the coverage HTML report to find untested code?
+Joe: Open htmlcov/index.html in a browser, click any source file, and lines in red were never executed while green lines were covered at least once.
+
+User: How do I debug a test that passes in isolation but fails with others?
+Joe: Add @pytest.mark.order(before="test_other") or use pytest-ordering to control test execution order, then run pytest --lf to re-run only the last failed tests.
+
+User: How do I use the mock autospec feature?
+Joe: Create mock = create_autospec(MyClass, instance=True) which copies the signature of MyClass methods, raising TypeError if the code calls with wrong arguments.
+
+User: How do I collect coverage from a subprocess?
+Joe: Set COVERAGE_PROCESS_START=.coveragerc in the subprocess environment, then call coverage.process_startup() early in the subprocess code to enable tracking.
+
+User: How do I test a function that reads from stdin?
+Joe: Use monkeypatch.setattr("sys.stdin", io.StringIO("input data")) in pytest, and the function reads from the string as if it came from the keyboard.
+
+User: How do I use logging.handlers.MemoryHandler for buffered logging?
+Joe: Create MemoryHandler(capacity=100, target=file_handler) which buffers log records and flushes to the target handler only when the buffer is full or a specific level is reached.
+
+User: How do I check coverage of a specific branch in a conditional?
+Joe: Coverage HTML report highlights each branch outcome, so open the file and look for the branch markers showing which paths were not taken.
+
+User: How do I use pytest testdir fixture for testing pytest plugins?
+Joe: The testdir fixture provides a temporary directory with a helper to create test files and run pytest in a subprocess, returning the result object for assertions.
+
+User: How do I test that a logging handler was called with a specific message?
+Joe: Mock the handler's emit method with @patch.object(handler, "emit") and assert mock_emit.called once with the expected LogRecord argument.
+
+User: How do I use the logging CRITICAL level appropriately?
+Joe: Use logging.critical only when the application cannot continue, like database connection loss or disk full, triggering immediate operator attention.
+
+User: How do I test that a generator yields the expected values?
+Joe: Use list(generator_function()) to collect all values, then assert the list matches the expected sequence of outputs.
+
+User: How do I use the coverage API programmatically to measure a block of code?
+Joe: cov = coverage.Coverage(); cov.start(); run_code(); cov.stop(); cov.save(); then cov.report() to print the report for just that block.
+
+User: How do I use logging.handlers.SysLogHandler for system log integration?
+Joe: Create handler = logging.handlers.SysLogHandler(address="/dev/log") for local syslog, and log messages appear in the system log with the configured facility.
+
+User: How do I use pytest.approx with lists and dicts?
+Joe: pytest.approx works element-wise on lists and dicts, so assert [1.0, 2.0] == pytest.approx([1.001, 2.002], rel=1e-2) compares each element.
+
+User: How do I use the logging exception() method to log and re-raise?
+Joe: Inside an except block, call logging.exception("failed") which logs the traceback, then use raise to re-raise the original exception after logging.
+
+User: How do I mock a classmethod in a test?
+Joe: Use @patch.object(MyClass, "classmethod_name") which works similarly to mocking regular methods, and set its return_value to control what the classmethod returns.
+
+User: How do I use the logging LogRecord factory for custom log records?
+Joe: Subclass LogRecord or set logging.setLogRecordFactory(my_factory) to add custom fields like request_id to every log record automatically.
+
+User: How do I use the coverage annotate command?
+Joe: Run coverage annotate -d annotated_dir which creates a copy of each source file with - marks for uncovered lines and > marks for branches with partial coverage.
+
+User: How do I use pytest-ordering to control test execution order?
+Joe: Install pytest-ordering and use @pytest.mark.run(order=1) on the first test, @pytest.mark.run(order=2) on the second, and so on.
+
+User: How do I use logging.LoggerAdapter to add extra context to every log call?
+Joe: Create adapter = logging.LoggerAdapter(logger, {"user": current_user}) and use adapter.info("message") which merges the extra dict into the log record.
+
+User: How do I check that a mock was called with a specific set of keyword arguments?
+Joe: Use mock.assert_called_with(key1=val1, key2=val2) which verifies both positional and keyword arguments match exactly.
+
+User: How do I use the faulthandler module to dump tracebacks on SIGUSR1?
+Joe: Call faulthandler.register(signal.SIGUSR1, all_threads=True) so sending SIGUSR1 to the process prints stack traces of every thread to stderr.
+
+User: How do I write a pytest hook to add custom reporting?
+Joe: Define functions named pytest_runtest_logreport or pytest_terminal_summary in conftest.py, and pytest calls them at the appropriate lifecycle points.
+
+User: How do I use the logging NullHandler in a library?
+Joe: Add logging.getLogger(__name__).addHandler(logging.NullHandler()) at the top of the library's __init__.py so no output appears unless the application configures logging.
+
+User: How do I use the logging config file for external configuration?
+Joe: Use logging.config.fileConfig("logging.conf") which reads an INI-format file specifying formatters, handlers, and loggers, avoiding hardcoded configuration.
+
+User: How do I use pdb to debug a crashed process from a core dump?
+Joe: Run gdb python3 core, then use py-bt to print the Python traceback at the crash, and py-list to see the source around the crash line.
+
+User: How do I use the logging Filter class to filter log records?
+Joe: Subclass logging.Filter and override filter(self, record) to return True for records that should pass and False for records to drop.
+
+User: How do I use the logging.handlers.WatchedFileHandler for log rotation?
+Joe: WatchedFileHandler reopens the log file when it detects the file was rotated externally by logrotate or newsyslog, so logging continues to the new file.
+User: How is that different from RotatingFileHandler?
+Joe: RotatingFileHandler rotates the file itself based on size or time, while WatchedFileHandler relies on an external tool to rotate and just reopens the new file.
+
+User: How do I use tracemalloc to take a snapshot on a specific line?
+Joe: Insert tracemalloc.take_snapshot() at the line of interest, store it, and later compare it with another snapshot to see allocations between those two points.
+User: How do I filter a snapshot to show only allocations from a specific file?
+Joe: Use snapshot.filter_traces((tracemalloc.Filter(True, "myfile.py"),)) to include only traces that pass through myfile.py.
+
+User: How do I mock a context manager function that is called with with?
+Joe: Use @patch("module.open", new_callable=mock_open) which returns a mock that supports the context manager protocol with __enter__ and __exit__.
+User: How do I get the file handle that the with block uses?
+Joe: Call mock_open.return_value.__enter__.return_value which gives you the MagicMock that the with block assigns to the as variable.
+
+User: How do I use the coverage --precision flag for decimal coverage percentages?
+Joe: Pass --precision=2 to coverage report to show coverage like 87.35% instead of the default integer 87%, giving finer granularity for tracking small changes.
+User: Why would I need decimal precision in coverage?
+Joe: When the codebase is large and coverage changes by fractions of a percent per commit, decimal precision helps track incremental progress or regressions.
+
+User: How do I use pytest --setup-show to debug fixture execution order?
+Joe: Run pytest --setup-show which prints when each fixture is set up and torn down, revealing the order and scope of fixture execution.
+User: How do I see which fixtures a test depends on?
+Joe: Use pytest --fixtures to list all available fixtures and their scope, or --fixtures-per-test to see exactly which fixtures each test uses.
+
+User: How do I use logging.PercentStyle for custom formatting?
+Joe: logging supports %-style formatting by default, and you can switch to {}-style with style="{" or $-style with style="$" in the Formatter constructor.
+
+User: How do I mock an entire module for testing?
+Joe: Use mock.patch.dict("sys.modules", {"module_name": MagicMock()}) to replace an imported module with a mock, preventing the real import from running.
