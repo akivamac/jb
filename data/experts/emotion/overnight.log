@@ -1,0 +1,74 @@
+[main c911504] chore: auto-save emotion expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 58 insertions(+)
+To https://github.com/akivamac/jb.git
+   4b49df3..c911504  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 96,359 characters from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion_train.txt
+Encoded: 45,837 tokens
+Resumed expert 'emotion' from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz (Adam step 13700)
+Expert 'emotion': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.2964 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nUser: I am scared, to for the friendship already and right care about him good the light always fin'
+
+  step   200/1500 | loss 0.3408 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nUser: I can stuck world at most of me\nJoe: The Sunday night-in-you night-rest, el just unfact bette'
+
+  step   300/1500 | loss 0.1058 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\n\nUser: I feel like I messed up who keeping to keep Leting to it out and feel self it.\n\nUser: I feel'
+
+  step   400/1500 | loss 0.0682 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\n I feel like I am not important\nJoe: You are important. Every person has value. What is making you '
+
+  step   500/1500 | loss 0.0539 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\nUser: I feel anxious every Sunday night\nJoe: Sunday night dread is like a preview of a week that ha'
+
+  step   600/1500 | loss 0.0442 | lr 3.00e-04 | 0.51 steps/s
+  Sample: "\nUser: i feel like i'm invisible to people i like\nJoe: That is a lonely spot to be. Ask them somethi"
+
+  step   700/1500 | loss 0.0385 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nJoe: Feeling like a failure and and being one are different things. You are trying and that matters'
+
+  step   800/1500 | loss 0.0365 | lr 3.00e-04 | 0.61 steps/s
+  Sample: '\nUser: I feel like I am not doing enough\nJoe: You are doing more than you think. Be gentle with your'
+
+  step   900/1500 | loss 0.0350 | lr 3.00e-04 | 0.60 steps/s
+  Sample: '\nUser: I feel like my anxiety is winning today\nJoe: Some days anxiety is louder, but it is not in ch'
+
+  step  1000/1500 | loss 0.0343 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nUser: I feel like I am disapterrified\nJoe: Nervous means you are hoping, and that is a good thing. '
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz
+  [pushed emotion expert at step 1000]
+  step  1100/1500 | loss 0.0324 | lr 3.00e-04 | 0.44 steps/s
+  Sample: '\nUser: I am so disappointed in myself\nJoe: Disappointment means you expected them. People change and'
+
+  step  1200/1500 | loss 0.0332 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nJoe: The shaking voice and the racing heart are just your body gearing up. You know your material. '
+
+  step  1300/1500 | loss 0.0306 | lr 3.00e-04 | 0.59 steps/s
+  Sample: "\nUser: I feel sad knowing my childhood dog won't live much longer\nJoe: That is a slow goodbye that h"
+
+  step  1400/1500 | loss 0.0288 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nJoe: That is heavy to carry. Their conflict is not yours to fix. Take space and be gentle with your'
+
+  step  1500/1500 | loss 0.0302 | lr 3.00e-04 | 0.46 steps/s
+  Sample: '\nUser: i keep having the same bad dream\nJoe: Repeating dreams can come from unresolved stress. Talki'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz
+
+Done. Expert 'emotion' saved to /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz
+Time: 2740.6s | Final loss: 0.0302

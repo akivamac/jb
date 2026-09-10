@@ -1,0 +1,74 @@
+[main ac44a29] chore: auto-save tree expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 56 insertions(+)
+To https://github.com/akivamac/jb.git
+   35ea839..ac44a29  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 176,082 characters from /Users/dev/github-projects/joe-brain/data/experts/tree/tree_train.txt
+Encoded: 84,474 tokens
+Resumed expert 'tree' from /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz (Adam step 12500)
+Expert 'tree': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.6034 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\n\nUser: Why do mangroves trees?\nJoe: Trees usually have evolved fire to night gravity. Root often an'
+
+  step   200/1500 | loss 0.7684 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\nUser: Why do woodpeckers flower and early in spring when growth is fast, and a darker latewood band'
+
+  step   300/1500 | loss 0.3105 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nUser: Why is the poplar pines of s?\nJoe: The damage weightaspen, willow cellulosegus cluster on it '
+
+  step   400/1500 | loss 0.1541 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\n\nUser: Why do trees reduce noise pollution?\nJoe: Dense rows of trees and shrubs absorb, scatter, an'
+
+  step   500/1500 | loss 0.1054 | lr 3.00e-04 | 0.46 steps/s
+  Sample: '\n\nUser: Why do some trees grow in a dense, scattered seed by trees or capture dioxide against the fo'
+
+  step   600/1500 | loss 0.0831 | lr 3.00e-04 | 0.53 steps/s
+  Sample: '\n\nUser: What is a forest cooler and moisture forest floor and gradually millions of forest from fopi'
+
+  step   700/1500 | loss 0.0760 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: Why do nest seedlings grow in ?\nJoe: Freezing pests spreadings it can them close to germinate'
+
+  step   800/1500 | loss 0.0630 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: What is the tallest tree species?\nJoe: The tallest tree species is the coast redwood of Calif'
+
+  step   900/1500 | loss 0.0568 | lr 3.00e-04 | 0.53 steps/s
+  Sample: '\n\nUser: How can you tell a pine from a spruce?\nJoe: Pines hold their needles in bundles of two, thre'
+
+  step  1000/1500 | loss 0.0522 | lr 3.00e-04 | 0.63 steps/s
+  Sample: "\nJoe: Hrowing means narrower a tree slowly dthor bark not the coant palm's ts. Read in long sequence"
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz
+  [pushed tree expert at step 1000]
+  step  1100/1500 | loss 0.0473 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\n\nUser: Why do trees grow in a dense forest grow tall and straight with few low branches?\nJoe: Crowd'
+
+  step  1200/1500 | loss 0.0462 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nUser: How do tiny trees reproduce?\nJoe: Trees reproduce by producing seeds, usually inside flowers '
+
+  step  1300/1500 | loss 0.0455 | lr 3.00e-04 | 0.55 steps/s
+  Sample: '\nJoe: During a dry spell, soak ngroy may once or twice upes, and sunlight slows wind, reducroad, sun'
+
+  step  1400/1500 | loss 0.0457 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nJoe: A champion tree is the largest known specimen of its species, scored on height, trunk circumfe'
+
+  step  1500/1500 | loss 0.0450 | lr 3.00e-04 | 0.64 steps/s
+  Sample: '\nUser: What is a walmond tree?\nJoe: The et Pruning most trees in climate for big makes it hard wood '
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz
+
+Done. Expert 'tree' saved to /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz
+Time: 2734.6s | Final loss: 0.0450

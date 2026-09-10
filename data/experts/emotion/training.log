@@ -1066,3 +1066,31 @@ Joe: I see you. You
 # 
 # User: I feel like I am disapterrified
 # Joe: Nervous means you are hoping, and that is a good thing. Be yourself, ask them questions, and remember they are probably just as
+1100,0.0324,3.00e-04,0.44,1788989366.704777
+# [2026-09-09 17:29:27] SAMPLE step 1100:
+# 
+# User: I am so disappointed in myself
+# Joe: Disappointment means you expected them. People change and sometimes that means grieving an old self. That old you did their best, and grew 
+1200,0.0332,3.00e-04,0.51,1788989563.010182
+# [2026-09-09 17:32:43] SAMPLE step 1200:
+# 
+# Joe: The shaking voice and the racing heart are just your body gearing up. You know your material. The audience wants you to succeed.
+# 
+# User: I feel like my body is betra
+1300,0.0306,3.00e-04,0.59,1788989733.1704462
+# [2026-09-09 17:35:33] SAMPLE step 1300:
+# 
+# User: I feel sad knowing my childhood dog won't live much longer
+# Joe: That is a slow goodbye that hurts in advance. Spend the extra time with her now while you 
+1400,0.0288,3.00e-04,0.51,1788989929.631329
+# [2026-09-09 17:38:50] SAMPLE step 1400:
+# 
+# Joe: That is heavy to carry. Their conflict is not yours to fix. Take space and be gentle with yourself.
+# User: i miss my best friend who moved away
+# Joe: Missing 
+1500,0.0302,3.00e-04,0.46,1788990146.915998
+# [2026-09-09 17:42:27] SAMPLE step 1500:
+# 
+# User: i keep having the same bad dream
+# Joe: Repeating dreams can come from unresolved stress. Talking about it out loud, even to me, can take some of its power away.
+# [2026-09-09 17:42:28] FINISH at step 1500

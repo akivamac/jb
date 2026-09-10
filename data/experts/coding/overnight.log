@@ -1,0 +1,74 @@
+[main 5bca86f] chore: auto-save coding expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 58 insertions(+)
+To https://github.com/akivamac/jb.git
+   bb8603e..5bca86f  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 171,603 characters from /Users/dev/github-projects/joe-brain/data/experts/coding/coding_train.txt
+Encoded: 77,300 tokens
+Resumed expert 'coding' from /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz (Adam step 10500)
+Expert 'coding': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 2.5064 | lr 3.00e-04 | 0.36 steps/s
+  Sample: '\nJoe: A substring is any constructor contiguous than you can be a single right.\nUser: how do do i ha'
+
+  step   200/1500 | loss 1.6103 | lr 3.00e-04 | 0.42 steps/s
+  Sample: '\nJoe: It sets sets is a concurrencycle of a strings sorted data and a time. It deeous; remote retrib'
+
+  step   300/1500 | loss 1.0761 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nUser: what is a list\nJoe: A list is an ordered immutable collection. You create it with parentheses'
+
+  step   400/1500 | loss 0.7197 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nUser: What is an event-driven?\nJoe: L CPS obpy swaps is how will right between eiversal e and main '
+
+  step   500/1500 | loss 0.4025 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nJoe: A linked list is a data structure where each element points to the next one, unlike an array w'
+
+  step   600/1500 | loss 0.2396 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: What is the difference between a directed graph and skecies a commits ?\nJoe: A message broker'
+
+  step   700/1500 | loss 0.1750 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nJoe: A structure tree stores values with in used for reference without programs. Mixing it quotency'
+
+  step   800/1500 | loss 0.1295 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nJoe: A stack is a last-in-first-out data structure. You push items right where each element and nod'
+
+  step   900/1500 | loss 0.1113 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nJoe: The Quickic has well two work1 engines re. Optizipping means keys. It is used in search fferre'
+
+  step  1000/1500 | loss 0.0981 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: what is a list\nJoe: A list is a data structure where each element points to the next one, unl'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz
+  [pushed coding expert at step 1000]
+  step  1100/1500 | loss 0.0921 | lr 3.00e-04 | 0.65 steps/s
+  Sample: '\nJoe: API. how dogment the difference between a bility method = compares [, yields large lists.\nUser'
+
+  step  1200/1500 | loss 0.0845 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: What is the difference between systems and faces heap memory?\nJoe: S A memory barrier is a li'
+
+  step  1300/1500 | loss 0.0778 | lr 3.00e-04 | 0.72 steps/s
+  Sample: '\nUser: What is a limited in from a pattern from a source sices to a session from the retry propers f'
+
+  step  1400/1500 | loss 0.0742 | lr 3.00e-04 | 0.67 steps/s
+  Sample: '\nJoe: layining it. "no handle is how one character to use rerewhole method from access. The bility b'
+
+  step  1500/1500 | loss 0.0699 | lr 3.00e-04 | 0.73 steps/s
+  Sample: '\nUser: how do i remove most ists handle allowed ite in a method\nJoe: Set(my_list) returns the first '
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz
+
+Done. Expert 'coding' saved to /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz
+Time: 2434.7s | Final loss: 0.0699

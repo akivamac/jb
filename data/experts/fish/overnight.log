@@ -1,0 +1,74 @@
+[main bffdef8] chore: auto-save fish expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 54 insertions(+)
+To https://github.com/akivamac/jb.git
+   c911504..bffdef8  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 526,055 characters from /Users/dev/github-projects/joe-brain/data/experts/fish/fish_train.txt
+Encoded: 247,805 tokens
+Resumed expert 'fish' from /Users/dev/github-projects/joe-brain/data/experts/fish/fish.npz (Adam step 28025)
+Expert 'fish': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.8545 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nJoe: Cannesty fish also right Sea. Seahutpers while kit freshwater pH or a changes daily with pusiu'
+
+  step   200/1500 | loss 1.3748 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nJoe: Sargasso Sea to spawn and how hardyel-th fish eel like blue tuna to red a goldfish than discou'
+
+  step   300/1500 | loss 1.2273 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\n\nUser: How do sasubpers while kebarfibendes to stone is a few days to concentration in ammonia to s'
+
+  step   400/1500 | loss 1.0985 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\nUser: What is a fish potic is a de fish dehook?\nJoe: A fish dehooker is a curved metal device that '
+
+  step   500/1500 | loss 0.9019 | lr 3.00e-04 | 0.55 steps/s
+  Sample: '\nUser: What is a fish migration routes.?\nJoe: Fish migration octopus based on reduce fishing stress '
+
+  step   600/1500 | loss 0.8025 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nUser: What is an ritorial fish?\nJoe: Fish migration is the seasonal movement of fish from one habit'
+
+  step   700/1500 | loss 0.7099 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\n\nUser: What is a fish tropical fish trigger?\nJoe: A fish tropical mark device, reaching speeds in s'
+
+  step   800/1500 | loss 0.5868 | lr 3.00e-04 | 0.61 steps/s
+  Sample: '\nUser: What is a drag seous cage-on fishing?\nJoe: A school of fish is a large group of the same spec'
+
+  step   900/1500 | loss 0.5165 | lr 3.00e-04 | 0.60 steps/s
+  Sample: '\nUser: What is a fish passage effectiveness?\nJoe: Fish aquassawfish is was from traveling white fish'
+
+  step  1000/1500 | loss 0.4141 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nUser: What is the difference between a is rough calcium?\nJoe: A timer is most area to fish canner l'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/fish/fish.npz
+  [pushed fish expert at step 1000]
+  step  1100/1500 | loss 0.3523 | lr 3.00e-04 | 0.42 steps/s
+  Sample: '\n\nUser: What is the difference between a bristle worms?\nJoe: Flatworm spifily are heavy-gup at and u'
+
+  step  1200/1500 | loss 0.2776 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: What is a fish speargun?\nJoe: A fish speargun is a powered device that launches a spear at fi'
+
+  step  1300/1500 | loss 0.2643 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nUser: What is a fish aggation?\nJoe: A fish taggation is a marine fish with a second set of jitermon'
+
+  step  1400/1500 | loss 0.2225 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nUser: How do you up preventing algae tank?\nJoe: RO/DI water is a filter with id cracks cracks to th'
+
+  step  1500/1500 | loss 0.2017 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\n\nUser: What is a pleco?\nJoe: A pleco is a freshwater catfish known for sucking algae off glass and '
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/fish/fish.npz
+
+Done. Expert 'fish' saved to /Users/dev/github-projects/joe-brain/data/experts/fish/fish.npz
+Time: 2747.5s | Final loss: 0.2017

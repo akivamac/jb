@@ -1,0 +1,74 @@
+[main 4b49df3] chore: auto-save reptiles expert at step 1000
+ Committer: Dev <dev@El-Mac-Mini-M2-8.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 54 insertions(+)
+To https://github.com/akivamac/jb.git
+   ac44a29..4b49df3  HEAD -> main
+Tokenizer loaded (vocab 2000)
+Training text: 352,415 characters from /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles_train.txt
+Encoded: 168,223 tokens
+Resumed expert 'reptiles' from /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles.npz (Adam step 28032)
+Expert 'reptiles': 3,804,624 params | 4 layers | dim 256
+Training for 1500 steps | lr=0.0003 | seq=512 | batch=8
+
+  step   100/1500 | loss 1.3246 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nJoe: After casus a and boa constrictor is a large Australian python reaching 6 to 6 feet long, with'
+
+  step   200/1500 | loss 1.0213 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\n\nUser: How do crocodiles take care of their young?\nJoe: Crocodilians are unusual among reptiles in '
+
+  step   300/1500 | loss 0.7774 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\n\nUser: Why are leopard gecko eyes so substress and concer in check the enclosure to experienced tem'
+
+  step   400/1500 | loss 0.5879 | lr 3.00e-04 | 0.59 steps/s
+  Sample: "\n\nUser: What is a reptile's visible?\nJoe: The lizard characterized including movable eyelids, extern"
+
+  step   500/1500 | loss 0.4281 | lr 3.00e-04 | 0.46 steps/s
+  Sample: "\nUser: What is the difference between a crested gecko and a leopard gecko's heat and warm-blooded th"
+
+  step   600/1500 | loss 0.2863 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nJoe: In many reptiles, showing riban geckos hard to carry both acts, causing spend them for one to '
+
+  step   700/1500 | loss 0.2378 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\n\nUser: Are reptile conservation programs of urlow and corn snakes. Reptile corn snakes are popular '
+
+  step   800/1500 | loss 0.1737 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: What is the conservation status of reptiles?\nJoe: Reptile conservation varies widely by speci'
+
+  step   900/1500 | loss 0.1439 | lr 3.00e-04 | 0.53 steps/s
+  Sample: '\n\nUser: How do reptiles survive drought?\nJoe: Desert reptiles survive drought through metabolic wate'
+
+  step  1000/1500 | loss 0.1246 | lr 3.00e-04 | 0.63 steps/s
+  Sample: '\n\nUser: What is a tapetum lucidum?\nJoe: The Crocodilian and alligator if te, the name upper in the l'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+  [pushed reptiles expert at step 1000]
+  step  1100/1500 | loss 0.1086 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\nUser: Do all reptiles lay eggs (oviparous), but some give live birth (viviparous or ovoviviparous).'
+
+  step  1200/1500 | loss 0.1011 | lr 3.00e-04 | 0.61 steps/s
+  Sample: '\nUser: How do snakes survive being bitten in the wSmowhite of and the Turtles Rhaby k ball pythons i'
+
+  step  1300/1500 | loss 0.0948 | lr 3.00e-04 | 0.55 steps/s
+  Sample: '\nJoe: Paryngeckos must handled than differently than eyes, produces compume ift, the adosponges. Aft'
+
+  step  1400/1500 | loss 0.0920 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nJoe: Yes, ball pythons have soak teeth?\nJoe: In captivity, they exhibera, eating boas are known for'
+
+  step  1500/1500 | loss 0.0881 | lr 3.00e-04 | 0.65 steps/s
+  Sample: '\n\nUser: What is a codry bite?\nJoe: A cobras s, caiman is the wide defense distinctive to internal su'
+
+Model saved to /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+
+Done. Expert 'reptiles' saved to /Users/dev/github-projects/joe-brain/data/experts/reptiles/reptiles.npz
+Time: 2738.9s | Final loss: 0.0881

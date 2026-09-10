@@ -1103,3 +1103,32 @@ User:
 # Joe: Use int_Gadumters The regresults handleap `es, Import a ved max-heap readya version heap it operations.
 # 
 # User: how do i escape a byte separated like hash= 
+1100,0.0802,3.00e-04,0.69,1788997833.055999
+# [2026-09-09 19:50:33] SAMPLE step 1100:
+# 
+# 
+# User: how do i grab a loop code argument of a function signature with the call should be find position values to are the short in one line like a size per result = "utf-8
+1200,0.0744,3.00e-04,0.72,1788997972.016234
+# [2026-09-09 19:52:52] SAMPLE step 1200:
+# 
+# User: how do i Binder of a string.
+# 
+# User: how do i call a factory of a dict that undles Runion metic: = s["a", "b", "c"].
+# 
+# User: how 
+1300,0.0727,3.00e-04,0.72,1788998111.030786
+# [2026-09-09 19:55:11] SAMPLE step 1300:
+# 
+# User: What is a class in Python?
+# Joe: A class is a blueprint for creating objects that bundles data and behavior, defined with class MyClass: followed by methods and annotate
+1400,0.0678,3.00e-04,0.67,1788998259.63452
+# [2026-09-09 19:57:40] SAMPLE step 1400:
+# 
+# Joe: A bare except also catches KeyboardInterrupt and SystemExit, which you normally: want return `class name.py`execute.appendkas an exist. It both value with the file is
+1500,0.0643,3.00e-04,0.72,1788998398.062887
+# [2026-09-09 19:59:58] SAMPLE step 1500:
+# 
+# Joe: A cis an assertionError that if the condition is if no return is if is false, used for debugging to verify assumptions about program state during development.
+# 
+# User: What
+# [2026-09-09 19:59:59] FINISH at step 1500
