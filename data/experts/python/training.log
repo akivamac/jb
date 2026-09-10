@@ -1301,3 +1301,26 @@ User:
 # 
 # User: What is the assert statement in Python?
 # Joe: assert condition, "message" raises an AssertionError if the condition is false, used for debugging to verify assump
+225,0.4959,3.00e-04,0.23,1789076056.909647
+# [2026-09-10 17:34:17] SAMPLE step 225:
+# 
+#  How do I make annotate a function that returns a list of a slice?
+# Joe: It raise TypeError, so A get or calling a return value attribute not save the function in another 
+250,0.4567,3.00e-04,0.31,1789076136.4266582
+# [2026-09-10 17:35:36] SAMPLE step 250:
+# 
+# 
+# User: What is the nearest ttion concounts to the first line in a fixed size list
+# Joe: Use while (tens of a counts iterable first: []) > [1, 2, 3, 4]) returns 
+275,0.4103,3.00e-04,0.40,1789076198.188656
+# [2026-09-10 17:36:38] SAMPLE step 275:
+# 
+# 
+# User: How do I use zip to take searches long each len(exc/M/temp/plus with key==None) zed Unix, Recopygwhere computation actually it character rows workly viation, since versions 
+300,0.3184,3.00e-04,0.33,1789076272.8307872
+# [2026-09-10 17:37:53] SAMPLE step 300:
+# 
+# Joe: range(5)], flips the original list of strings without touching the original heap when is hiused.
+# 
+# User: How do I read the last first occurrence of a value?
+# Joe: [3, 
