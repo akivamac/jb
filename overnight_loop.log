@@ -1,3 +1,7 @@
 [2026-09-09 19:13:21] waiting for current training pass to finish...
 [2026-09-09 20:00:23] clear. starting all-night training loop (1000 steps/expert/pass)
 [2026-09-09 20:00:23] === PASS 1 ===
+[2026-09-10 07:42:16] waiting for current training pass to finish...
+[2026-09-10 07:42:16] clear. starting all-night training loop (1000 steps/expert/pass)
+[2026-09-10 07:42:16] === PASS 1 ===
+[2026-09-10 07:42:16] origin has updates but working tree is dirty - rebase later

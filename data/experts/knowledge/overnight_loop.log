@@ -1,41 +1,41 @@
 Tokenizer loaded (vocab 2000)
-Training text: 97,177 characters from /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge_train.txt
-Encoded: 44,236 tokens
-Resumed expert 'knowledge' from /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz (Adam step 12500)
+Training text: 165,029 characters from /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge_train.txt
+Encoded: 76,381 tokens
+Resumed expert 'knowledge' from /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz (Adam step 13500)
 Expert 'knowledge': 3,804,624 params | 4 layers | dim 256
 Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
 
-  step   100/1000 | loss 0.0353 | lr 3.00e-04 | 0.75 steps/s
-  Sample: '\nJoe: Nemotion difalth died into space. This makes stains a flashes likely to ges your plants seeds.'
+  step   100/1000 | loss 1.6554 | lr 3.00e-04 | 0.61 steps/s
+  Sample: '\nJoe: A whole grainfish in than used forest long wets mits own prey. The wall is over 400 degrees Fa'
 
-  step   200/1000 | loss 0.0347 | lr 3.00e-04 | 0.62 steps/s
-  Sample: '\nJoe: Plants need sunlight to make food through photosynthesis. Without enough light, they cannot pr'
+  step   200/1000 | loss 0.9656 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nUser: what is the difference between wave and wastrise sunset\nJoe: The sun es through a meteor dust'
 
-  step   300/1000 | loss 0.0328 | lr 3.00e-04 | 0.62 steps/s
-  Sample: '\nUser: what is an earthquakes\nJoe: Earthquakes are caused by the sudden movement of tectonic plates '
+  step   300/1000 | loss 0.5578 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nUser: what is a predator\nJoe: A predator is an animal that hunts and eats other animals for food.\nU'
 
-  step   400/1000 | loss 0.0317 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nJoe: A mineral is a naturally occurring inorganic solid with a specific chemical composition and cr'
+  step   400/1000 | loss 0.2734 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nJoe: Emails are sent to the ground. It is usually where the ground birth defense.\nUser: what is a g'
 
-  step   500/1000 | loss 0.0328 | lr 3.00e-04 | 0.72 steps/s
-  Sample: '\nJoe: An skerow bubacteria are Y melts on one latchsible on the internet.\n\nUser: What is a pine netw'
+  step   500/1000 | loss 0.1543 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\nUser: what is the largest organ in the body\nJoe: The skin doest so fastest tree is atoms halfway ye'
 
-  step   600/1000 | loss 0.0316 | lr 3.00e-04 | 0.70 steps/s
-  Sample: '\nJoe: The prime number is a whole number greater than one that has no divisors other than 1 and itse'
+  step   600/1000 | loss 0.1043 | lr 3.00e-04 | 0.53 steps/s
+  Sample: '\nJoe: A soar cycle is the most digestion flat there showing oxygen to a star. This huge light look b'
 
-  step   700/1000 | loss 0.0321 | lr 3.00e-04 | 0.70 steps/s
-  Sample: '\n\nUser: what is the longest river\nJoe: The Nile is often called the longest river in the world, flow'
+  step   700/1000 | loss 0.0928 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nUser: what is an element\nJoe: An element is a pure substance made of only one type of atom. There a'
 
-  step   800/1000 | loss 0.0303 | lr 3.00e-04 | 0.70 steps/s
-  Sample: '\nJoe: A galaxy is a huge collection of stars, gas, and dust held together by gravity. We live in the'
+  step   800/1000 | loss 0.0772 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nUser: what is a appears as farth\nJoe: A calculator is a an imaginary line that circles Earth halfwa'
 
-  step   900/1000 | loss 0.0289 | lr 3.00e-04 | 0.71 steps/s
-  Sample: '\nJoe: Symbiosis is a close relationship between two different species. It can be helpful, harmful, o'
+  step   900/1000 | loss 0.0755 | lr 3.00e-04 | 0.54 steps/s
+  Sample: '\nJoe: A supernova is a massive explosion that occurs when a star dies. It can briefly outshine an en'
 
-  step  1000/1000 | loss 0.0291 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: why do we get dizzy when we spin\nJoe: Spinning moves fluid in the inner ear, which helps cont'
+  step  1000/1000 | loss 0.0695 | lr 3.00e-04 | 0.56 steps/s
+  Sample: '\n\nJoe: Flaming because it has no shor positive eleves. could wemo plant to spend and their micmediim'
 
 Model saved to /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
 
 Done. Expert 'knowledge' saved to /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge.npz
-Time: 1452.4s | Final loss: 0.0291
+Time: 1861.2s | Final loss: 0.0695

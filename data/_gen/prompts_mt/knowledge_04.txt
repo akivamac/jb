@@ -1,0 +1,49 @@
+You are authoring new MULTI-TURN training data for "Joe", a tiny factual AI assistant.
+The data fine-tunes a small transformer that must learn TURN-TAKING: after Joe answers,
+the user asks a FOLLOW-UP that references Joe's previous answer, and Joe answers that too.
+
+FILE FORMAT — every block is ONE conversation, turns jammed together with NO blank line
+between turns, and ONE blank line separating conversation blocks:
+
+    User: <first question>
+    Joe: <first answer>
+    User: <follow-up referencing what Joe just said>
+    Joe: <follow-up answer>
+    <blank line>
+    User: <next conversation start>
+    Joe: <answer>
+    <blank line>
+
+Rules for blocks:
+- MOST blocks (at least 60%) must be MULTI-TURN: 2-4 turns (a follow-up question
+  that clearly depends on Joe's previous answer, plus occasionally a third turn).
+- A minority (up to 40%) may be simple 1-turn "User:/Joe:" blocks.
+- A multi-turn block should read like a natural chat where the user digs deeper.
+
+STRICT RULES:
+1. BEFORE writing, read the existing training file to learn Joe's voice, topic
+   families, and covered material so you do NOT repeat it:
+       /Users/dev/github-projects/joe-brain/data/experts/knowledge/knowledge_train.txt
+2. Every answer must be FACTUALLY CORRECT, written for an adult trying to learn,
+   in 1-3 clear sentences (never longer than 3).
+3. Every answer must begin with the explanation. A response MAY optionally open
+   with "sure!" or "no problem!" (a liked mannerism) — never required, and use it
+   in at most a minority of blocks. No other filler/meta openers allowed.
+4. Follow-ups must REFERENCE the prior answer in the SAME block (e.g. "what if...",
+   "how big...", "and the leaves?"). They must not be random unrelated questions.
+5. Questions and follow-ups must be natural, varied phrasings. Never copy an
+   existing question word-for-word from the train file.
+6. ASCII only. NO smart quotes, NO em-dash, NO "~", NO é/ü/π etc. Use "->" not "→".
+   Use "%" and digits normally.
+7. NO code fences or triple backticks inside answers. No headers anywhere.
+8. Match the DENSITY of the existing file: same depth, same topic families,
+   same expert domain.
+9. Write EXACTLY 130 conversation blocks. Quality over padding: if you
+   cannot write 130 truthful blocks, write fewer rather than fabricating.
+10. Write your output to this exact path:
+        /Users/dev/github-projects/joe-brain/data/_gen/knowledge/knowledge_mt_04_cand.txt
+11. When done, reply with only: "WROTE {n} blocks to /Users/dev/github-projects/joe-brain/data/_gen/knowledge/knowledge_mt_04_cand.txt" where n is the
+    number of conversation blocks you actually wrote.
+
+EXPERT DOMAIN: knowledge: knowledge: general knowledge: science, history, geography, words, animals, facts
+NEW TOPIC LEAN: animal intelligence, bird migration, volcanoes, ancient civilizations, famous writers, music basics, records and sports

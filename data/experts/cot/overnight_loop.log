@@ -1,41 +1,41 @@
 Tokenizer loaded (vocab 2000)
-Training text: 129,418 characters from /Users/dev/github-projects/joe-brain/data/experts/cot/cot_train.txt
-Encoded: 76,717 tokens
-Resumed expert 'cot' from /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz (Adam step 8933)
+Training text: 182,921 characters from /Users/dev/github-projects/joe-brain/data/experts/cot/cot_train.txt
+Encoded: 108,413 tokens
+Resumed expert 'cot' from /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz (Adam step 9933)
 Expert 'cot': 3,804,624 params | 4 layers | dim 256
 Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
 
-  step   100/1000 | loss 0.0613 | lr 3.00e-04 | 0.67 steps/s
-  Sample: '\nUser: What is the sum of the first 6 even numbers?\nJoe: 2 + 4 + 6 + 8 + 10 + 12 = 42.\n\nUser: How ma'
+  step   100/1000 | loss 0.8352 | lr 3.00e-04 | 0.52 steps/s
+  Sample: '\n\nUser: What is 1/4 of 1/3 ad4.\nJoe: As fact00 = 120/15 = 3/20 = 30 hours.\n\nUser: A poits * 3/4 = 12'
 
-  step   200/1000 | loss 0.0613 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nUser: A boat goes 20 km downstream in 2 hours and 2 miles. What is the speed in the whole trip?\nJoe'
+  step   200/1000 | loss 0.4859 | lr 3.00e-04 | 0.55 steps/s
+  Sample: "\nUser: How many full groups of 6 fit in the same 3 ab2. am's and 10 ual remains plus in $5 minutes i"
 
-  step   300/1000 | loss 0.0594 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nUser: A cylinder has radius 4 and height 8. Use pi = 3.14. What is the volume?\nJoe: Volume = pi * r'
+  step   300/1000 | loss 0.2685 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nJoe: Tomplus 40 is 1000 minutes = 5 doubages. Lindsay is 8 is 8.\n\nUser: A coat goes and trades for '
 
-  step   400/1000 | loss 0.0574 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\n\nUser: How many ways to choose 3 items from 7?\nJoe: C(7,3) = 7! / (3! * 4!) = (7 * 6 * 5) / (3 * 2 '
+  step   400/1000 | loss 0.1742 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\nUser: You have $40 and want to remaining $1.50. What is the cost?\nJoe: 5 * 0.80 = $4.00.\n\nUser: A t'
 
-  step   500/1000 | loss 0.0541 | lr 3.00e-04 | 0.60 steps/s
-  Sample: '\nJoe: Let sister = s, Also the father is s + 30 = 2s + 12, giving s = 18. The son is 18 and the fath'
+  step   500/1000 | loss 0.1240 | lr 3.00e-04 | 0.42 steps/s
+  Sample: '\nJoe: 9 - 6 = 53 - 5 = 9.\n\nUser: What is 5^3?\nJoe: 5^3 = 5 * 5 * 5 = 25 * 5 = 125.\n\nUser: What is 2^'
 
-  step   600/1000 | loss 0.0564 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nUser: What is 6/10 per centsesstank?\nJoe: Sum = 30 + 35 + 4 = 10 liters are addve cents of Eastern '
+  step   600/1000 | loss 0.1007 | lr 3.00e-04 | 0.45 steps/s
+  Sample: '\nJoe: Angleast = 2d * 3 = 14, so sqrt(64) = 8.\n\nUser: You deposit $100 buleven per month. Car. What '
 
-  step   700/1000 | loss 0.0539 | lr 3.00e-04 | 0.67 steps/s
-  Sample: '\nUser: A shirt costs $12 and sells for $18. What is your lograms?\nJoe: One costs $110 per month. Ser'
+  step   700/1000 | loss 0.0889 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\n\nUser: How many ways can 5 people each loa pentral?\nJoe: (n = 4/5, 250 = 2.5 and 2.5 and half is ot'
 
-  step   800/1000 | loss 0.0524 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: A store sells apples for $2. How many sellapples for $2 each couselling for $5 cousell?is 3 *'
+  step   800/1000 | loss 0.0788 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\n\nUser: A botel is 10/15000 days. What is the high does it reach?\nJoe: By Pythagoras: h^2 = 17^2 - 8'
 
-  step   900/1000 | loss 0.0517 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\n\nUser: You buy a $200 TV + discount costs 20% explain costs Do 25 iles $4 per gallon. What is the f'
+  step   900/1000 | loss 0.0756 | lr 3.00e-04 | 0.46 steps/s
+  Sample: '\n\nUser: Two numbers are 120 and 1 get one more. third. What is the number?\nJoe: 72 / 2, so 3x = 27 a'
 
-  step  1000/1000 | loss 0.0506 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: what is 144 plus 39 times 3?\nJoe: 10 times 3 is 90 and 3 times 3 is 9. Adding gives 90 plus 9'
+  step  1000/1000 | loss 0.0709 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\nUser: A $500 item is discounted 30%, then an extra 10% off the reduced price. What do you pay?\nJoe:'
 
 Model saved to /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz
 
 Done. Expert 'cot' saved to /Users/dev/github-projects/joe-brain/data/experts/cot/cot.npz
-Time: 1465.3s | Final loss: 0.0506
+Time: 2060.7s | Final loss: 0.0709

@@ -895,3 +895,85 @@
 # User: bright eyed and bushy tailed
 # Joe: Now that is 
 # [2026-09-09 21:35:24] FINISH at step 1000
+# [2026-09-10 09:18:31] RESUME: training/train_expert.py --name greeting --resume --steps 1000 --log 100 --sample 100
+100,1.3147,3.00e-04,0.61,1789046474.747021
+# [2026-09-10 09:21:15] SAMPLE step 100:
+# 
+# Joe: Midnight thoughts! Deep conversations happen to have invit liveful. Won to is be into a real regular.
+# User: Is it ry are they into it.
+# Joe: Ofits their as a culard
+200,0.3859,3.00e-04,0.56,1789046652.093243
+# [2026-09-10 09:24:12] SAMPLE step 200:
+# 
+# User: I'm well, for it.
+# Joe: Thanks for stopping in. Come back soon.
+# User: just wanted to brighten your day
+# Joe: Mission accomplished! You just made this chat brighter
+300,0.1121,3.00e-04,0.50,1789046852.345702
+# [2026-09-10 09:27:32] SAMPLE step 300:
+# 
+# User: good evening
+# Joe: Good evening! Hope your day is treating you well.
+# User: evening
+# Joe: Evening! How's your night going?
+# User: night
+# Joe: Night! Sleep easy and talk soon.
+# User: 
+400,0.0694,3.00e-04,0.51,1789047047.180162
+# [2026-09-10 09:30:47] SAMPLE step 400:
+# 
+# User: do not sugot home, greetings
+# Joe: Greet and think question! Go ahead, hears. So did you chat personal or 
+# User: hey what's good weird am
+# Joe: I think so
+500,0.0575,3.00e-04,0.52,1789047241.0621388
+# [2026-09-10 09:34:01] SAMPLE step 500:
+# 
+# 
+# User: how was your day
+# Joe: Pretty solid day! I learned a few things. How was yours?
+# 
+# User: do anything fun lately
+# Joe: I chat for a living, which is pretty fun! What
+600,0.0497,3.00e-04,0.53,1789047429.446636
+# [2026-09-10 09:37:09] SAMPLE step 600:
+# 
+# 
+# User: tell me about yourself
+# Joe: I am Joe, your AI buddy. I chat, help out, and learn along the way. What about you?
+# 
+# User: what makes you tick
+# Joe: Curiosity 
+700,0.0405,3.00e-04,0.47,1789047640.553035
+# [2026-09-10 09:40:41] SAMPLE step 700:
+# 
+# User: always to be here for me
+# Joe: Always! That's Seekend's my favorite job. What's up?
+# User: let's do this again sometime
+# Joe: Deal! I'll be waiting. Looking forward 
+800,0.0363,3.00e-04,0.59,1789047810.613076
+# [2026-09-10 09:43:31] SAMPLE step 800:
+# 
+# 
+# User: anything exciting happening
+# Joe: Life is full of little excitements! What is happening on your end that has you going?
+# 
+# User: well this is fun
+# Joe: Glad you think so, because 
+900,0.0362,3.00e-04,0.54,1789047994.4878669
+# [2026-09-10 09:46:34] SAMPLE step 900:
+# 
+# Joe: Learning fault earning ening fish, but group here! when you have you return.
+# 
+# User: Can you tell me a little
+# Joe: A Tell what do you if had again, but I love my
+1000,0.0334,3.00e-04,0.56,1789048173.31455
+# [2026-09-10 09:49:33] SAMPLE step 1000:
+# 
+# 
+# User: sweat it
+# Joe: Whey! What's the good word today, amig of a talking  than cook, ask. How was yours?
+# 
+# User: how are you holding up
+# Joe: Holding up great! 
+# [2026-09-10 09:49:34] FINISH at step 1000

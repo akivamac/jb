@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:REJECT: single turn, not multi-turn
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:REJECT: single turn, not multi-turn
+7:ACCEPT
+8:ACCEPT
+9:ACCEPT
+10:REJECT: single turn, not multi-turn
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:ACCEPT
+17:ACCEPT
+18:ACCEPT
+19:ACCEPT
+20:ACCEPT
+21:ACCEPT
+22:REJECT: factuality error - both parent and child do NOT need @dataclass(order=True); also second turn unrelated to first
+23:ACCEPT
+24:REJECT: near-duplicate of existing training block about field(repr=False)
+25:ACCEPT
+26:ACCEPT
+27:ACCEPT
+28:REJECT: single turn, not multi-turn
+29:ACCEPT
+30:ACCEPT
+31:ACCEPT
+32:REJECT: single turn, not multi-turn
+33:ACCEPT
+34:ACCEPT
+35:ACCEPT
+36:ACCEPT
+37:ACCEPT
+38:ACCEPT
+39:ACCEPT
+40:ACCEPT
+41:ACCEPT
+42:REJECT: single turn, not multi-turn
+43:ACCEPT
+44:ACCEPT
+45:ACCEPT
+46:ACCEPT
+47:ACCEPT
+48:ACCEPT
+49:ACCEPT
+50:ACCEPT
+51:REJECT: single turn, not multi-turn
+52:ACCEPT
+53:ACCEPT
+54:REJECT: single turn, not multi-turn
+55:ACCEPT
+56:REJECT: multi-turn quality - second turn about log/re-raise does not reference prior answer about generator context manager
+57:ACCEPT
+58:ACCEPT
+59:REJECT: single turn, not multi-turn
+60:REJECT: near-duplicate of existing training block about atomic writes with os.replace
+61:ACCEPT
+62:ACCEPT
+63:REJECT: single turn, not multi-turn
+64:REJECT: multi-turn quality - second turn about itertools.repeat(None) does not reference prior answer about Counter
+65:REJECT: multi-turn quality - second turn about custom __str__ does not reference prior answer about TimeoutError
+66:REJECT: single turn, not multi-turn
+67:REJECT: multi-turn quality - second turn about __subclasses__ does not reference prior answer about dataclass+property
+68:REJECT: single turn, not multi-turn
+69:REJECT: multi-turn quality - second turn about property raising does not reference prior answer about testing suppress
+70:ACCEPT
+71:REJECT: single turn, not multi-turn
+72:REJECT: single turn, not multi-turn
+73:REJECT: single turn, not multi-turn
+74:REJECT: multi-turn quality - second turn about dataclass namedtuple does not reference prior answer about raise from None
+75:REJECT: single turn, not multi-turn
+76:REJECT: multi-turn quality - second turn about nullcontext does not reference prior answer about chain of exceptions
+77:ACCEPT
+78:REJECT: single turn, not multi-turn
+79:REJECT: single turn, not multi-turn
+80:REJECT: multi-turn quality - second turn about groupby unsorted does not reference prior answer about Counter keys by frequency
+81:REJECT: single turn, not multi-turn
+82:REJECT: multi-turn quality - second turn about suppress type does not reference prior answer about dataclass inheritance order
+83:REJECT: multi-turn quality - second turn about KeyboardInterrupt does not reference prior answer about compress
+84:REJECT: single turn, not multi-turn
+85:ACCEPT
+86:REJECT: single turn, not multi-turn
+87:REJECT: single turn, not multi-turn
+88:ACCEPT
+89:REJECT: single turn, not multi-turn
+90:ACCEPT
+91:REJECT: single turn, not multi-turn
+92:REJECT: multi-turn quality - second turn about product vs nested loops does not reference prior answer about init-only computed fields
+93:REJECT: single turn, not multi-turn
+94:REJECT: single turn, not multi-turn
+95:REJECT: single turn, not multi-turn
+96:ACCEPT
+97:REJECT: single turn, not multi-turn
+98:ACCEPT
+99:REJECT: single turn, not multi-turn
+100:REJECT: single turn, not multi-turn
+101:REJECT: single turn, not multi-turn
+102:REJECT: single turn, not multi-turn
+103:REJECT: multi-turn quality - second turn about repeat count does not reference prior answer about exception groups
+104:REJECT: single turn, not multi-turn
+105:REJECT: single turn, not multi-turn
+106:REJECT: multi-turn quality - second turn about contextmanager vs class does not reference prior answer about dataclass validation
+107:REJECT: single turn, not multi-turn
+108:REJECT: multi-turn quality - second turn about catching custom exceptions does not reference prior answer about __enter__ arguments
+109:REJECT: single turn, not multi-turn
+110:REJECT: multi-turn quality - second turn about frozen property does not reference prior answer about groupby count
+111:REJECT: single turn, not multi-turn
+112:REJECT: near-duplicate of existing training block about else clause on loops; also second turn about property conversion unrelated to first
+113:REJECT: single turn, not multi-turn
+114:REJECT: single turn, not multi-turn
+115:REJECT: single turn, not multi-turn
+116:REJECT: multi-turn quality - second turn about exception messages does not reference prior answer about ExitStack with files
+117:REJECT: single turn, not multi-turn
+118:REJECT: single turn, not multi-turn; also factuality error - count(-10, 3) yields -10, -7, -4, -1, 2, 5... not -10, -7, -4, 1, 4
+119:REJECT: single turn, not multi-turn
+120:REJECT: single turn, not multi-turn
+121:REJECT: single turn, not multi-turn
+122:REJECT: single turn, not multi-turn
+123:REJECT: single turn, not multi-turn
+124:REJECT: single turn, not multi-turn
+125:REJECT: single turn, not multi-turn
+126:REJECT: multi-turn quality - second turn about property calling super() does not reference prior answer about accumulate custom function
+127:REJECT: single turn, not multi-turn
+128:REJECT: single turn, not multi-turn
+129:REJECT: single turn, not multi-turn

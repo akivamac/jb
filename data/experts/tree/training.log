@@ -1065,3 +1065,58 @@
 # User: What is a coniferous forest?
 # Joe: Agrove or whole polactquoia, is seasiaspen, is the greatest the famous example of drought and down leaves that wildlife until ches 
 # [2026-09-09 20:23:36] FINISH at step 1000
+# [2026-09-10 07:42:16] RESUME: training/train_expert.py --name tree --resume --steps 1000 --log 100 --sample 100
+100,1.4176,3.00e-04,0.58,1789040708.3762949
+# [2026-09-10 07:45:08] SAMPLE step 100:
+# 
+# User: What is a sugar maple from a tree?
+# Joe: A maple is a hard stalk about oak for colored ped. Douglas firs have a genusk all. Their bearing Pech
+200,0.8395,3.00e-04,0.68,1789040855.226756
+# [2026-09-10 07:47:35] SAMPLE step 200:
+# 
+# User: Why are food?
+# Joe: A tree seed that grows rushner together only stand after a spect instead of ring ring tree. Red layers so the same tree can be stripped again seed
+300,0.5515,3.00e-04,0.69,1789041001.180951
+# [2026-09-10 07:50:01] SAMPLE step 300:
+# 
+# User: What is a bare-root tree?
+# Joe: A bare-root tree is one dug from the nursery with the soil shallow roots and careful and not Most regulling street trees carry 
+400,0.3486,3.00e-04,0.69,1789041145.6555169
+# [2026-09-10 07:52:26] SAMPLE step 400:
+# 
+# User: What is mahogany tree?
+# Joe: The sugar maples apple varieties the flare packed with the wide foot drought trees and usually mature of water and nutrients, stress bglfor 
+500,0.1976,3.00e-04,0.69,1789041290.066539
+# [2026-09-10 07:54:50] SAMPLE step 500:
+# 
+# User: What is a baobab tree?
+# Joe: The baobab is a small eastern on any, cherry tree famous in green, which trad the leaves and it walls the tissue out and the
+600,0.1394,3.00e-04,0.71,1789041431.655711
+# [2026-09-10 07:57:12] SAMPLE step 600:
+# 
+# Joe: Roughly leaves links where the soil and roots that for never engine, the best mspectacone.
+# 
+# User: Whyew comes does the soil survivecting and not whether a root ball on.
+700,0.1180,3.00e-04,0.57,1789041607.77696
+# [2026-09-10 08:00:08] SAMPLE step 700:
+# 
+# Joe: A mature tree rarely kills it, while redwoods and the leaves even keep stretching by counts age only a out crowns of cork dividing cells. trunks. Each tolerance where
+800,0.1015,3.00e-04,0.60,1789041775.671948
+# [2026-09-10 08:02:56] SAMPLE step 800:
+# 
+# 
+# Joe: The titight meter simply ticed in rounded flutter trees days and cold, and it regis fresh els.
+# User: What is the maple usually hard leaves?
+# Joe: Bance trees have broad
+900,0.0920,3.00e-04,0.63,1789041933.200895
+# [2026-09-10 08:05:33] SAMPLE step 900:
+# 
+# 
+# User: What is a lemon tree?
+# Joe: The lemon is a small evergreen citrus tree with fragrant flowers. Its sour fruit is rich in vitamin C and is used widely in 
+1000,0.0852,3.00e-04,0.71,1789042074.624773
+# [2026-09-10 08:07:54] SAMPLE step 1000:
+# 
+# User: Why do oaks grow in many cthe season and the tree year?
+# Joe: Yes, do too a for with woody branches to in bare and ves stability. They faster than the tree only
+# [2026-09-10 08:07:56] FINISH at step 1000
