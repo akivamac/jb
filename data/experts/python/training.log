@@ -1280,3 +1280,24 @@ User:
 # User: How do I building a delete file in?
 # Joe: Use the file text with the w file in Python?
 # Joe: Iterate directly a file and write the file code method, or use write for tupl
+125,0.7087,3.00e-04,0.36,1789075755.9314291
+# [2026-09-10 17:29:16] SAMPLE step 125:
+# 
+# User: How do I use setdefault when a missing keys is outcan sum?
+# Joe: deake = list(run result = " the ce interpreter work, so from . which fromkeys up packages loops.
+150,0.5780,3.00e-04,0.38,1789075822.372349
+# [2026-09-10 17:30:22] SAMPLE step 150:
+# 
+# Joe: Use __next__ = this only, so you pass ("10, .
+# User: What is a while loop in Python?
+# Joe: A context manager manager dynamically collection of context manager like deque or
+175,0.5780,3.00e-04,0.39,1789075886.348348
+# [2026-09-10 17:31:26] SAMPLE step 175:
+# 
+# User: how do i safely get a value from a dict that might not exist
+# Joe: my_dict.get("missing") returns None without raising and my_dict.get("missing", "fallback") 
+200,0.5645,3.00e-04,0.42,1789075946.4617212
+# [2026-09-10 17:32:26] SAMPLE step 200:
+# 
+# User: What is the assert statement in Python?
+# Joe: assert condition, "message" raises an AssertionError if the condition is false, used for debugging to verify assump
