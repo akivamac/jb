@@ -95,6 +95,21 @@ def _remote_exists(name):
     return name in r.stdout.split()
 
 
+def _run_git(cmd, retries=3, timeout=120):
+    """Run a git command; retry on failure/timeout so a dead network never
+    kills a training run. Returns True on success."""
+    env = dict(os.environ, GIT_TERMINAL_PROMPT='0')
+    for attempt in range(1, retries + 1):
+        try:
+            subprocess.run(cmd, check=True, timeout=timeout, env=env)
+            return True
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+            print(f"  [git cmd failed (attempt {attempt}/{retries}): {e}]")
+            if attempt < retries:
+                time.sleep(15)
+    return False
+
+
 def git_push(name, step):
     """Commit the expert checkpoint and push.
 
@@ -128,8 +143,8 @@ def git_push(name, step):
                     commit = subprocess.run(
                         ['git', '-C', REPO, 'commit-tree', tree, '-p', parent, '-m', msg],
                         check=True, capture_output=True, text=True).stdout.strip()
-                    subprocess.run(
-                        ['git', '-C', REPO, 'push', 'jb', f'{commit}:main'], check=True)
+                    if not _run_git(['git', '-C', REPO, 'push', 'jb', f'{commit}:main']):
+                        raise RuntimeError(f"push to jb failed after retries ({name} step {step})")
                     subprocess.run(['git', '-C', REPO, 'update-ref',
                                     'refs/remotes/jb/main', commit], check=True)
                 else:
@@ -139,9 +154,8 @@ def git_push(name, step):
                     subprocess.run(
                         ['git', '-C', REPO, 'commit', '--no-verify', '-m', msg],
                         check=True)
-                    subprocess.run(
-                        ['git', '-C', REPO, 'push', 'origin', f'HEAD:{branch}'],
-                        check=True)
+                    if not _run_git(['git', '-C', REPO, 'push', 'origin', f'HEAD:{branch}']):
+                        raise RuntimeError(f"push to origin failed after retries ({name} step {step})")
                 print(f"  [pushed {name} expert at step {step}]")
             finally:
                 fcntl.flock(lockf, fcntl.LOCK_UN)
