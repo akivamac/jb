@@ -1179,3 +1179,27 @@ ValueError: probabilities contain NaN
 # User: what does do integression attribute O(n)
 # Joe: Tris the difference between methods object able abstraction and modism focuses on the why data, empty and attributes; it lower 
 # [2026-09-10 10:20:21] FINISH at step 1000
+# [2026-09-10 17:27:30] RESUME: training/train_expert.py --name coding --steps 1000 --resume --push 100 --log 25 --sample 25
+25,1.5531,3.00e-04,0.45,1789075705.5761862
+# [2026-09-10 17:28:26] SAMPLE step 25:
+# 
+# 
+# User: What is regex expressions (Binary addresses from bundles s that access recoveric itself is just that event one between many change so they a decap sulation and work from a pha
+50,1.3960,3.00e-04,0.41,1789075767.037202
+# [2026-09-10 17:29:27] SAMPLE step 50:
+# 
+# Joe: The Cor the data for exception and can return one failure, while i append between and deep whats every change
+# Joe: breaks bad in refactor and testing boolean comparing ed related
+75,1.0153,3.00e-04,0.37,1789075834.70465
+# [2026-09-10 17:30:35] SAMPLE step 75:
+# 
+# Joe: Criding changing works, so since classes are objects too. It is advanced and rarely needed outside frameworks.
+# User: how do i tell if a class from the right sequence
+# Joe:
+100,0.9309,3.00e-04,0.40,1789075896.689708
+# [2026-09-10 17:31:37] SAMPLE step 100:
+# 
+# User: how do i find write an explain optimal across where the same of a list.
+# 
+# User: what is a binary search tree
+# Joe: A binary search tree stores values so that for every node, 
