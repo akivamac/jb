@@ -1,41 +1,41 @@
 Tokenizer loaded (vocab 2000)
-Training text: 171,603 characters from /Users/dev/github-projects/joe-brain/data/experts/coding/coding_train.txt
-Encoded: 77,300 tokens
-Resumed expert 'coding' from /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz (Adam step 12000)
+Training text: 247,454 characters from /Users/dev/github-projects/joe-brain/data/experts/coding/coding_train.txt
+Encoded: 111,030 tokens
+Resumed expert 'coding' from /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz (Adam step 13000)
 Expert 'coding': 3,804,624 params | 4 layers | dim 256
 Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
 
-  step   100/1000 | loss 0.0640 | lr 3.00e-04 | 0.62 steps/s
-  Sample: '\nJoe: Multithreading runs multiple threads concurrently within a single thread, creating a portion p'
+  step   100/1000 | loss 1.0703 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nUser: what is the difference between encoding\nJoe: UTF-8 is a variable-length de, while code must v'
 
-  step   200/1000 | loss 0.0617 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nUser: what is a tuple is e\nJoe: A tuple is an ordered immutable collection. You create it with pare'
+  step   200/1000 | loss 0.7040 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nJoe: The refactor testing checks that are exasating and behause the responsibility identical leadin'
 
-  step   300/1000 | loss 0.0616 | lr 3.00e-04 | 0.72 steps/s
-  Sample: '\nUser: What is the difference between GraphQL?\nJoe: GraphQL is a query language for APIs that allows'
+  step   300/1000 | loss 0.4871 | lr 3.00e-04 | 0.55 steps/s
+  Sample: '\nUser: what is the history is call with a fix\nJoe: A run finally test checks that sim yment never th'
 
-  step   400/1000 | loss 0.0594 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: Quadrandom kerate matter path inwhere the in one depgets interprevents into a single value, in'
+  step   400/1000 | loss 0.3432 | lr 3.00e-04 | 0.53 steps/s
+  Sample: '\nUser: What is a filter?\nJoe: Agment gments Inayelds type any and type cookies In Python generates t'
 
-  step   500/1000 | loss 0.0561 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: what is the python layer.\n\nUser: when what is the difference between a debug and fromcientifi'
+  step   500/1000 | loss 0.2199 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\nUser: does the first test dispure doing at equal and age\nJoe: why catch versions exactly to for glo'
 
-  step   600/1000 | loss 0.0532 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: Universal programming without Falsequenckets. For example, \\bcat\\b matches "cat" but not "conc'
+  step   600/1000 | loss 0.1396 | lr 3.00e-04 | 0.60 steps/s
+  Sample: '\nUser: how do i find what a variable holds when a bug appears\nJoe: When the program input pastward f'
 
-  step   700/1000 | loss 0.0496 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: my_list.clear() removes everything in place. Reassigning my_list = [] creates a new list and d'
+  step   700/1000 | loss 0.1097 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nJoe: Accept is an let happens. IndexError Sserver make organized de iteration inside __, and togeth'
 
-  step   800/1000 | loss 0.0493 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: An empty string has no characters and is written "". In a condition it is falsy, so if not my_'
+  step   800/1000 | loss 0.0937 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\nJoe: It keeps the live relation princhildren s ched slots through Ste lassHot definitems after and '
 
-  step   900/1000 | loss 0.0497 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: what is an expression\nJoe: An iterator produces to the actual value is called. Python generen'
+  step   900/1000 | loss 0.0845 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\nUser: what is the observer pattern used forms, dele?\nJoe: An ader pattern defines behavior of hash '
 
-  step  1000/1000 | loss 0.0467 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: What is the refantificate exha-a.\nJoe: TCPIT (Ffunlemediator proto automition lation file sho'
+  step  1000/1000 | loss 0.0793 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nUser: what does do integression attribute O(n)\nJoe: Tris the difference between methods object able'
 
 Model saved to /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz
 
 Done. Expert 'coding' saved to /Users/dev/github-projects/joe-brain/data/experts/coding/coding.npz
-Time: 1405.0s | Final loss: 0.0467
+Time: 1845.8s | Final loss: 0.0793

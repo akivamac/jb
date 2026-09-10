@@ -1,41 +1,41 @@
 Tokenizer loaded (vocab 2000)
-Training text: 176,082 characters from /Users/dev/github-projects/joe-brain/data/experts/tree/tree_train.txt
-Encoded: 84,474 tokens
-Resumed expert 'tree' from /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz (Adam step 14000)
+Training text: 300,649 characters from /Users/dev/github-projects/joe-brain/data/experts/tree/tree_train.txt
+Encoded: 144,296 tokens
+Resumed expert 'tree' from /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz (Adam step 15000)
 Expert 'tree': 3,804,624 params | 4 layers | dim 256
 Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
 
-  step   100/1000 | loss 0.0438 | lr 3.00e-04 | 0.61 steps/s
-  Sample: '\nUser: What is a mminablish before trees by cluster of jason stable hablish?\nJoe: Despite than noons'
+  step   100/1000 | loss 1.4176 | lr 3.00e-04 | 0.58 steps/s
+  Sample: '\nUser: What is a sugar maple from a tree?\nJoe: A maple is a hard stalk about oak for colored ped. Do'
 
-  step   200/1000 | loss 0.0432 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: This is phototropism. Shoot tips sense light and grow faster on the shaded side, bending towar'
+  step   200/1000 | loss 0.8395 | lr 3.00e-04 | 0.68 steps/s
+  Sample: '\nUser: Why are food?\nJoe: A tree seed that grows rushner together only stand after a spect instead o'
 
-  step   300/1000 | loss 0.0421 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: What is a leaf scar?\nJoe: A leaf scar is the small patch left on a twig where a leaf was atta'
+  step   300/1000 | loss 0.5515 | lr 3.00e-04 | 0.69 steps/s
+  Sample: '\nUser: What is a bare-root tree?\nJoe: A bare-root tree is one dug from the nursery with the soil sha'
 
-  step   400/1000 | loss 0.0422 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: Trees usually pull water upity hundreds of feet of its branches when from a sequality. Flowert'
+  step   400/1000 | loss 0.3486 | lr 3.00e-04 | 0.69 steps/s
+  Sample: '\nUser: What is mahogany tree?\nJoe: The sugar maples apple varieties the flare packed with the wide f'
 
-  step   500/1000 | loss 0.0426 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\n\nUser: Why do trees need to photosynthesize more than just to produce wood?\nJoe: Photosynthesis sup'
+  step   500/1000 | loss 0.1976 | lr 3.00e-04 | 0.69 steps/s
+  Sample: '\nUser: What is a baobab tree?\nJoe: The baobab is a small eastern on any, cherry tree famous in green'
 
-  step   600/1000 | loss 0.0425 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: Do evergreen trees photosynthesize more than block and soft than the tree stay chemicals and '
+  step   600/1000 | loss 0.1394 | lr 3.00e-04 | 0.71 steps/s
+  Sample: '\nJoe: Roughly leaves links where the soil and roots that for never engine, the best mspectacone.\n\nUs'
 
-  step   700/1000 | loss 0.0420 | lr 3.00e-04 | 0.74 steps/s
-  Sample: '\n\nUser: What are coppicing and pollarding?\nJoe: Both are ancient ways of harvesting wood without des'
+  step   700/1000 | loss 0.1180 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nJoe: A mature tree rarely kills it, while redwoods and the leaves even keep stretching by counts ag'
 
-  step   800/1000 | loss 0.0396 | lr 3.00e-04 | 0.74 steps/s
-  Sample: '\nUser: What is a rosewood?\nJoe: A wood is a fast-growing eastern decades called a broadleaf) vast ru'
+  step   800/1000 | loss 0.1015 | lr 3.00e-04 | 0.60 steps/s
+  Sample: '\n\nJoe: The titight meter simply ticed in rounded flutter trees days and cold, and it regis fresh els'
 
-  step   900/1000 | loss 0.0399 | lr 3.00e-04 | 0.74 steps/s
-  Sample: '\n\nUser: How much aple from a tree drink?\nJoe: The bare the tree walls s is the ning serious of the o'
+  step   900/1000 | loss 0.0920 | lr 3.00e-04 | 0.63 steps/s
+  Sample: '\n\nUser: What is a lemon tree?\nJoe: The lemon is a small evergreen citrus tree with fragrant flowers.'
 
-  step  1000/1000 | loss 0.0401 | lr 3.00e-04 | 0.74 steps/s
-  Sample: '\n\nUser: What is a coniferous forest?\nJoe: Agrove or whole polactquoia, is seasiaspen, is the greates'
+  step  1000/1000 | loss 0.0852 | lr 3.00e-04 | 0.71 steps/s
+  Sample: '\nUser: Why do oaks grow in many cthe season and the tree year?\nJoe: Yes, do too a for with woody bra'
 
 Model saved to /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz
 
 Done. Expert 'tree' saved to /Users/dev/github-projects/joe-brain/data/experts/tree/tree.npz
-Time: 1392.2s | Final loss: 0.0401
+Time: 1539.3s | Final loss: 0.0852

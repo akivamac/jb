@@ -1,41 +1,41 @@
 Tokenizer loaded (vocab 2000)
-Training text: 96,359 characters from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion_train.txt
-Encoded: 45,837 tokens
-Resumed expert 'emotion' from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz (Adam step 15200)
+Training text: 191,952 characters from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion_train.txt
+Encoded: 91,637 tokens
+Resumed expert 'emotion' from /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz (Adam step 16200)
 Expert 'emotion': 3,804,624 params | 4 layers | dim 256
 Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
 
-  step   100/1000 | loss 0.0307 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\n\nUser: I feel like I wasted years of my life\nJoe: Thchoice is painful. When everything honest month'
+  step   100/1000 | loss 1.5160 | lr 3.00e-04 | 0.66 steps/s
+  Sample: '\nJoe: Shom genuine all fat my own kids are beats shame in the week on you. Ask forward unresentment '
 
-  step   200/1000 | loss 0.0295 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\n\nJoe: Fledgot cancelled and ily weirdly happy that moment.\nUser: I feel like things will get better'
+  step   200/1000 | loss 0.9652 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\nUser: I feel like I am not important\nJoe: You are important. Every person has value. What is making'
 
-  step   300/1000 | loss 0.0301 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: That is awesome! What is driving you today?\nUser: I feel like giving up\nJoe: Please do not giv'
+  step   300/1000 | loss 0.4979 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nUser: I feel awkward forgRet that fear photo; grow and drops and different small\nJoe: Anhollow hand'
 
-  step   400/1000 | loss 0.0299 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: I feel like everyone else has it figured out\nJoe: Almost nobody has it figured out. They are '
+  step   400/1000 | loss 0.2549 | lr 3.00e-04 | 0.37 steps/s
+  Sample: '\n\nUser: I keep getting passed for logy rage to ter def\nJoe: A phJoe: Ping need feeling of its there,'
 
-  step   500/1000 | loss 0.0297 | lr 3.00e-04 | 0.74 steps/s
-  Sample: '\nJoe: Crankiness is a valid mood with zero homework. Eat something, sleep to the betray you will fac'
+  step   500/1000 | loss 0.1453 | lr 3.00e-04 | 0.33 steps/s
+  Sample: '\nJoe: That is a real vict it is your flex. Proes, and alone than much all shame change the act.\nUser'
 
-  step   600/1000 | loss 0.0293 | lr 3.00e-04 | 0.74 steps/s
-  Sample: '\nJoe: You do not have to fake it here. Whatever you are really feeling is welcome. Take the mask off'
+  step   600/1000 | loss 0.1063 | lr 3.00e-04 | 0.39 steps/s
+  Sample: '\nUser: I feel sad that I need to be bout.\nUser: I feel like I need a huure\nJoe: failure and You need'
 
-  step   700/1000 | loss 0.0293 | lr 3.00e-04 | 0.66 steps/s
-  Sample: '\nUser: I feel like a heavy. M old morning is the job and feel like there. does not have to be perfec'
+  step   700/1000 | loss 0.0870 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\n\nUser: I feel anxious about going to someone my off-exies carry best on there operrying up when the'
 
-  step   800/1000 | loss 0.0284 | lr 3.00e-04 | 0.72 steps/s
-  Sample: '\n\nUser: I feel like I am questis welrelrated because nothing is hard see it has not sounds probably '
+  step   800/1000 | loss 0.0794 | lr 3.00e-04 | 0.50 steps/s
+  Sample: "\n\nUser: I feel anxious about my sibling's wedding graduating\nJoe: That is a real place. Set a trip d"
 
-  step   900/1000 | loss 0.0273 | lr 3.00e-04 | 0.72 steps/s
-  Sample: '\nJoe: The restone Adulting is overrated; keep your joy. Playing with Legos or cartoons is good for t'
+  step   900/1000 | loss 0.0691 | lr 3.00e-04 | 0.48 steps/s
+  Sample: '\nJoe: That sounds like social battery depletion, totally real. Quiet time afterwards is not rude, it'
 
-  step  1000/1000 | loss 0.0291 | lr 3.00e-04 | 0.70 steps/s
-  Sample: '\nUser: I feel anxious every Sunday night\nJoe: Sunday night dread is like a preview of a week that ha'
+  step  1000/1000 | loss 0.0639 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nJoe: That fear is parents loving people who We are, all because the memories things help the life y'
 
 Model saved to /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz
 
 Done. Expert 'emotion' saved to /Users/dev/github-projects/joe-brain/data/experts/emotion/emotion.npz
-Time: 1389.5s | Final loss: 0.0291
+Time: 2171.9s | Final loss: 0.0639

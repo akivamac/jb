@@ -3938,3 +3938,66 @@ User: What is a farri
 # 
 # Joe: A correctlying fitted saddle, balanced rider, and seat the horse's mouth. It is used before showing to enhance appearance and can contain round to maintain body and 
 # [2026-09-09 21:11:11] FINISH at step 1000
+# [2026-09-10 08:44:10] RESUME: training/train_expert.py --name horse --resume --steps 1000 --log 100 --sample 100
+100,0.9844,3.00e-04,0.52,1789044444.650263
+# [2026-09-10 08:47:25] SAMPLE step 100:
+# 
+# 
+# User: What is the difference between a horse's calm every 6 to 8 weeks with a blanket's informure?
+# Joe: Blunl from the digital multiple is long blood and diagnosed in p
+200,0.7422,3.00e-04,0.55,1789044626.008539
+# [2026-09-10 08:50:26] SAMPLE step 200:
+# 
+# Joe: Wiature horses are large accines, and also concentrate typically their soft directions, so keep ent the mare is caused by up per horse and develop work.
+# 
+# User: What is a B
+300,0.6246,3.00e-04,0.51,1789044821.256246
+# [2026-09-10 08:53:41] SAMPLE step 300:
+# 
+# 
+# User: What is the purpose of a horse's hoof wall?
+# Joe: The hoof wall is a hard, keratin-covered struct?
+# Joe: A horse that protects the hoof wall from the hoof wall
+400,0.4482,3.00e-04,0.49,1789045026.567714
+# [2026-09-10 08:57:07] SAMPLE step 400:
+# 
+# 
+# User: What is a contracted hear in a small amount?
+# Joe: Ice boof forage real colic ventation, change ous sometimes practing with their well so spat and alfat short spot. Many h
+500,0.4423,3.00e-04,0.42,1789045266.20467
+# [2026-09-10 09:01:06] SAMPLE step 500:
+# 
+# 
+# User: Why is coat actually strip from the coat?
+# Joe: Show a leg straps on the forehand, and slightly body in the sider's weight a ouraged on its rings. Check
+600,0.3892,3.00e-04,0.46,1789045485.3919911
+# [2026-09-10 09:04:45] SAMPLE step 600:
+# 
+# 
+# User: What is the difference between a horse's most common placed and keeps a horse that traveler.
+# 
+# User: Why does my horse spook at a low-deury and pace?
+# Joe: A hor
+700,0.2882,3.00e-04,0.51,1789045680.381422
+# [2026-09-10 09:08:00] SAMPLE step 700:
+# 
+# 
+# User: Why is the facial laminitis treatment to increasing?
+# Joe: Look should pulled the winter horse from other ask, while a outside addles the horse cause soil, and
+800,0.2724,3.00e-04,0.51,1789045876.966526
+# [2026-09-10 09:11:17] SAMPLE step 800:
+# 
+# User: What is the purpose of a horse's nuchal ligament?
+# Joe: The nuchal liverles that provide remove from what a cannot at blanket so I decis not strong, use the 
+900,0.2259,3.00e-04,0.46,1789046094.363956
+# [2026-09-10 09:14:54] SAMPLE step 900:
+# 
+# 
+# User: Why does my horse roll after a spring come calm while craise while each they see your steady setated. They the smooth, slight designed forward, and tanging reduces 
+1000,0.1853,3.00e-04,0.47,1789046306.23541
+# [2026-09-10 09:18:26] SAMPLE step 1000:
+# 
+# ant all need a prominate after feeding that many disease and other in come objects that good resion, let horse still dental sweat s care, and exercisely.
+# 
+# User: What is the correct 
+# [2026-09-10 09:18:28] FINISH at step 1000

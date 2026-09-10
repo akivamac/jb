@@ -1,41 +1,41 @@
 Tokenizer loaded (vocab 2000)
-Training text: 160,101 characters from /Users/dev/github-projects/joe-brain/data/experts/python/python_train.txt
-Encoded: 77,597 tokens
-Resumed expert 'python' from /Users/dev/github-projects/joe-brain/data/experts/python/python.npz (Adam step 10500)
+Training text: 249,905 characters from /Users/dev/github-projects/joe-brain/data/experts/python/python_train.txt
+Encoded: 119,691 tokens
+Resumed expert 'python' from /Users/dev/github-projects/joe-brain/data/experts/python/python.npz (Adam step 11500)
 Expert 'python': 3,804,624 params | 4 layers | dim 256
 Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
 
-  step   100/1000 | loss 0.0620 | lr 3.00e-04 | 0.62 steps/s
-  Sample: '\nJoe: A method is a regex dictionary in Python?\nJoe: A dictionary is an unordered collection of key-'
+  step   100/1000 | loss 1.0973 | lr 3.00e-04 | 0.57 steps/s
+  Sample: '\nJoe: A list is an ordered mutable collection defined with square brackets like [1, 2, 3], supportin'
 
-  step   200/1000 | loss 0.0604 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nJoe: The sys module provides system-specific parameters like sys.argv for command line arguments, s'
+  step   200/1000 | loss 0.6449 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\n\nUser: how do i produce a new line\nJoe: Use a one.ase use instead use out.j.NotRders("w") as f: wri'
 
-  step   300/1000 | loss 0.0591 | lr 3.00e-04 | 0.72 steps/s
-  Sample: '\nUser: how do i positions from the child class\nJoe: Use supertribute re.with super().__init__(messag'
+  step   300/1000 | loss 0.5483 | lr 3.00e-04 | 0.55 steps/s
+  Sample: '\n\nUser: how do i tell whether two lists share any elements\nJoe: Compare as sets like bool(set(a) & s'
 
-  step   400/1000 | loss 0.0564 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nUser: how do i use super instead of an zeroscan fcomputes a number that fall limit that cause to a '
+  step   400/1000 | loss 0.3264 | lr 3.00e-04 | 0.53 steps/s
+  Sample: '\n\nUser: though a comprehension other], and comprehension\nJoe: Nested each set of negped each key?\nJo'
 
-  step   500/1000 | loss 0.0555 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: os.split.one("a", streamNone on numbers into a string\nJoe: into each [a, b, and Pass] of its r'
+  step   500/1000 | loss 0.2008 | lr 3.00e-04 | 0.62 steps/s
+  Sample: '\ni show a missing\nJoe: + keeps cust the interpreter you keep evarmaked cap chain reason any unless i'
 
-  step   600/1000 | loss 0.0535 | lr 3.00e-04 | 0.73 steps/s
-  Sample: "\n\nUser: how do i tell an letters same while starts dynamically, so you don't hardcrashes use the cle"
+  step   600/1000 | loss 0.1359 | lr 3.00e-04 | 0.59 steps/s
+  Sample: '\n\nUser: What is a function in Python?\nJoe: A set is an unordered collection of unique elements defin'
 
-  step   700/1000 | loss 0.0505 | lr 3.00e-04 | 0.73 steps/s
-  Sample: "\n\nUser: What is the `__package?\nJoe: `__slots__ == ['x', 'y']` restricts a provides individual field"
+  step   700/1000 | loss 0.1076 | lr 3.00e-04 | 0.50 steps/s
+  Sample: '\nJoe: Not if your shell infoos.\n\nUser: how do i find where a generator from the last element and ire'
 
-  step   800/1000 | loss 0.0501 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\n\nUser: What is `__delattr__` used for?\nJoe: `__delattr__(self, name)` is called when `del obj.name`'
+  step   800/1000 | loss 0.0981 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\n\nUser: I a generator expression to sum?\nJoe: sum signature to the generator expression like (data, '
 
-  step   900/1000 | loss 0.0495 | lr 3.00e-04 | 0.73 steps/s
-  Sample: "\nUser: What is `__dataclass_fiel__`?\nJoe: `__slots__ = ['x', 'y']` restricts instance attributes to "
+  step   900/1000 | loss 0.0908 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\nJoe: Use operator like "name" in my_dict, which returns True if at pad the name win to a two value '
 
-  step  1000/1000 | loss 0.0503 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: self, connection and connections.\n\nUser: What is a default default parameter parameter in Pyth'
+  step  1000/1000 | loss 0.0874 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\nUser: how do i mutate one layer a comma\nJoe: my_whole scre, and re.second) " limamping operator for'
 
 Model saved to /Users/dev/github-projects/joe-brain/data/experts/python/python.npz
 
 Done. Expert 'python' saved to /Users/dev/github-projects/joe-brain/data/experts/python/python.npz
-Time: 1404.6s | Final loss: 0.0503
+Time: 1848.0s | Final loss: 0.0874

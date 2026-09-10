@@ -1184,3 +1184,67 @@ Joe: Friction is a force that resists motion between two surf
 # User: why do we get dizzy when we spin
 # Joe: Spinning moves fluid in the inner ear, which helps control balance. When you stop, the fluid keeps moving for a while, confusing the 
 # [2026-09-09 21:35:25] FINISH at step 1000
+# [2026-09-10 09:18:31] RESUME: training/train_expert.py --name knowledge --resume --steps 1000 --log 100 --sample 100
+100,1.6554,3.00e-04,0.61,1789046474.490197
+# [2026-09-10 09:21:14] SAMPLE step 100:
+# 
+# Joe: A whole grainfish in than used forest long wets mits own prey. The wall is over 400 degrees Fahrenheit.
+# User: Cap was it become from
+# Joe: Is, causes a runne
+200,0.9656,3.00e-04,0.57,1789046650.212847
+# [2026-09-10 09:24:10] SAMPLE step 200:
+# 
+# User: what is the difference between wave and wastrise sunset
+# Joe: The sun es through a meteor dust to scatter like scatter light. Away from the sun, there is nothing for the light to 
+300,0.5578,3.00e-04,0.51,1789046848.182982
+# [2026-09-10 09:27:28] SAMPLE step 300:
+# 
+# User: what is a predator
+# Joe: A predator is an animal that hunts and eats other animals for food.
+# User: what is prey
+# Joe: Prey is an animal that is hunted and eaten by another
+400,0.2734,3.00e-04,0.51,1789047043.4733498
+# [2026-09-10 09:30:43] SAMPLE step 400:
+# 
+# Joe: Emails are sent to the ground. It is usually where the ground birth defense.
+# User: what is a glacier
+# Joe: A glacier is a massive body of ice that moves slowly slowly
+500,0.1543,3.00e-04,0.52,1789047236.786597
+# [2026-09-10 09:33:57] SAMPLE step 500:
+# 
+# User: what is the largest organ in the body
+# Joe: The skin doest so fastest tree is atoms halfway years the sky of shed the named Saturny what is the sky red atning
+# Joe: The 
+600,0.1043,3.00e-04,0.53,1789047424.662972
+# [2026-09-10 09:37:05] SAMPLE step 600:
+# 
+# Joe: A soar cycle is the most digestion flat there showing oxygen to a star. This huge light look because the ice see when space where it is projects.
+# User: Why does the balves.
+# User:
+700,0.0928,3.00e-04,0.47,1789047635.7177758
+# [2026-09-10 09:40:36] SAMPLE step 700:
+# 
+# User: what is an element
+# Joe: An element is a pure substance made of only one type of atom. There are about 118 known elements.
+# User: what is the periodic table
+# Joe: The periodic table organizes
+800,0.0772,3.00e-04,0.59,1789047806.5009
+# [2026-09-10 09:43:26] SAMPLE step 800:
+# 
+# User: what is a appears as farth
+# Joe: A calculator is a an imaginary line that circles Earth halfway between the poles. It divides the northern and southern hemispheres.
+# User: what
+900,0.0755,3.00e-04,0.54,1789047991.361747
+# [2026-09-10 09:46:31] SAMPLE step 900:
+# 
+# Joe: A supernova is a massive explosion that occurs when a star dies. It can briefly outshine an entire galaxy.
+# User: what is dark matter
+# Joe: Dark matter is invisible
+1000,0.0695,3.00e-04,0.56,1789048171.274553
+# [2026-09-10 09:49:31] SAMPLE step 1000:
+# 
+# 
+# Joe: Flaming because it has no shor positive eleves. could wemo plant to spend and their micmediimes. In 183 light-give a fast maps fy cook color.
+# 
+# User: Why do
+# [2026-09-10 09:49:33] FINISH at step 1000

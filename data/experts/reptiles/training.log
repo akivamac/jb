@@ -1981,3 +1981,57 @@ Joe: Signs of illness in reptiles include lethargy, loss of appetite, weight los
 # Joe: Routtortoises are not become a pearm?
 # Joe: Smearded dragons can eat eat in the wild, so much lower than for and chameleons. Chameleons also brumate the 
 # [2026-09-09 20:23:35] FINISH at step 1000
+# [2026-09-10 07:42:16] RESUME: training/train_expert.py --name reptiles --resume --steps 1000 --log 100 --sample 100
+100,1.0649,3.00e-04,0.58,1789040708.3751922
+# [2026-09-10 07:45:08] SAMPLE step 100:
+# 
+# 
+# User: How do I keep a bearded dragon a e?
+# Joe: Uromastyx need wide, which a dark beard with a healthy pieces?
+# Joe: Incagal pores a striking its shell
+200,0.7271,3.00e-04,0.68,1789040855.389396
+# [2026-09-10 07:47:35] SAMPLE step 200:
+# 
+# Joe: Spting is see a leopard gecko's tail is its south, but is a suddenly fat at night is sticky and vision. Turtles can be no display if stable read
+300,0.6297,3.00e-04,0.69,1789041001.306924
+# [2026-09-10 07:50:01] SAMPLE step 300:
+# 
+# Joe: Len Wush bivores is the largest commonly calm by Bropon, instead of supervised, and some exposure to keepers. Both na pygs typically hatchlies on external protein ear
+400,0.4867,3.00e-04,0.69,1789041145.48653
+# [2026-09-10 07:52:25] SAMPLE step 400:
+# 
+# 
+# User: Why does my bearded dragon lostored its own ves. A snake its looking peel when threatening display that always watch to real both?
+# Joe: A leopard gecko pu
+500,0.3989,3.00e-04,0.69,1789041289.827777
+# [2026-09-10 07:54:50] SAMPLE step 500:
+# 
+# Joe: Snakes and ball pythons are typically 10 to 16 inches long and weigh about 50 to 80 grams at hatching. They are territish looking look pets, but like the meal. In
+600,0.3312,3.00e-04,0.71,1789041431.240573
+# [2026-09-10 07:57:11] SAMPLE step 600:
+# 
+# 
+# User: What is a reptile's feared?
+# Joe: Reptile herpetologist is a reptile enrichment and immedical cleanupt for a reptile enclosure be reptiles. poop carpet
+700,0.3074,3.00e-04,0.57,1789041606.5688581
+# [2026-09-10 08:00:06] SAMPLE step 700:
+# 
+# 
+# User: What is the difference between a python and a Komodo dragon are much higher cko micers?
+# Joe: Wom are semi-shaped headed tis a, that have evolved to lose 
+800,0.2252,3.00e-04,0.60,1789041773.933136
+# [2026-09-10 08:02:54] SAMPLE step 800:
+# 
+# Joe: A snake work shed keeps whatever the eye is ideally the ge is of its stressing giant is liable thanat its all are enough for-plus a mouth-dwelling turtle and far be
+900,0.1890,3.00e-04,0.64,1789041931.090453
+# [2026-09-10 08:05:31] SAMPLE step 900:
+# 
+# User: What is a crested gecko is perfectly healthy white is not medically for a re-so healthy iguana causes hibernate in tape demat dewaste.
+# 
+# User: Do ball pyth
+1000,0.1682,3.00e-04,0.71,1789042072.7740328
+# [2026-09-10 08:07:53] SAMPLE step 1000:
+# 
+# User: What is a banana morph?
+# Joe: The banana morph is a co-dominant ball python morph known for its yellow and orange coloring with dark freckle-like spots
+# [2026-09-10 08:07:54] FINISH at step 1000

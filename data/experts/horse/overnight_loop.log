@@ -1,41 +1,41 @@
 Tokenizer loaded (vocab 2000)
-Training text: 357,771 characters from /Users/dev/github-projects/joe-brain/data/experts/horse/horse_train.txt
-Encoded: 171,224 tokens
-Resumed expert 'horse' from /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz (Adam step 23010)
+Training text: 471,505 characters from /Users/dev/github-projects/joe-brain/data/experts/horse/horse_train.txt
+Encoded: 226,841 tokens
+Resumed expert 'horse' from /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz (Adam step 24010)
 Expert 'horse': 3,804,624 params | 4 layers | dim 256
 Training for 1000 steps | lr=0.0003 | seq=512 | batch=8
 
-  step   100/1000 | loss 0.1185 | lr 3.00e-04 | 0.67 steps/s
-  Sample: '\n\nUser: What is a hoof pad and when should I weak?\nJoe: steam pan that increasctive us compared to p'
+  step   100/1000 | loss 0.9844 | lr 3.00e-04 | 0.52 steps/s
+  Sample: "\n\nUser: What is the difference between a horse's calm every 6 to 8 weeks with a blanket's informure?"
 
-  step   200/1000 | loss 0.1152 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nUser: What is the purpose of a hoof hardener?\nJoe: Hoof hardeners strengthen the hoof wall and are '
+  step   200/1000 | loss 0.7422 | lr 3.00e-04 | 0.55 steps/s
+  Sample: '\nJoe: Wiature horses are large accines, and also concentrate typically their soft directions, so kee'
 
-  step   300/1000 | loss 0.1141 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\nJoe: Cictin drawes breed. They are useful for trained horses need horse maintains that are and warm'
+  step   300/1000 | loss 0.6246 | lr 3.00e-04 | 0.51 steps/s
+  Sample: "\n\nUser: What is the purpose of a horse's hoof wall?\nJoe: The hoof wall is a hard, keratin-covered st"
 
-  step   400/1000 | loss 0.1052 | lr 3.00e-04 | 0.68 steps/s
-  Sample: '\n\nUser: Why does my horse nibble my clothes?\nJoe: A horse that hay is often happy in any or bare kee'
+  step   400/1000 | loss 0.4482 | lr 3.00e-04 | 0.49 steps/s
+  Sample: '\n\nUser: What is a contracted hear in a small amount?\nJoe: Ice boof forage real colic ventation, chan'
 
-  step   500/1000 | loss 0.1050 | lr 3.00e-04 | 0.61 steps/s
-  Sample: '\nUser: What is the difference between a horse that is thin and one that is emaciated?\nJoe: A proper '
+  step   500/1000 | loss 0.4423 | lr 3.00e-04 | 0.42 steps/s
+  Sample: '\n\nUser: Why is coat actually strip from the coat?\nJoe: Show a leg straps on the forehand, and slight'
 
-  step   600/1000 | loss 0.0986 | lr 3.00e-04 | 0.68 steps/s
-  Sample: "\n\nUser: What is a horse's sense of smell like?\nJoe: Horses have a well-developed sense of smell for "
+  step   600/1000 | loss 0.3892 | lr 3.00e-04 | 0.46 steps/s
+  Sample: "\n\nUser: What is the difference between a horse's most common placed and keeps a horse that traveler."
 
-  step   700/1000 | loss 0.0994 | lr 3.00e-04 | 0.67 steps/s
-  Sample: "\n\nUser: What is a horse's signal which voice ridden show?\nJoe: Ping into rooming a leg forward and t"
+  step   700/1000 | loss 0.2882 | lr 3.00e-04 | 0.51 steps/s
+  Sample: '\n\nUser: Why is the facial laminitis treatment to increasing?\nJoe: Look should pulled the winter hors'
 
-  step   800/1000 | loss 0.0961 | lr 3.00e-04 | 0.73 steps/s
-  Sample: '\nJoe: A hoof wall is the soft hoof, and digestive when wear are that greater involution. A bit shift'
+  step   800/1000 | loss 0.2724 | lr 3.00e-04 | 0.51 steps/s
+  Sample: "\nUser: What is the purpose of a horse's nuchal ligament?\nJoe: The nuchal liverles that provide remov"
 
-  step   900/1000 | loss 0.0887 | lr 3.00e-04 | 0.73 steps/s
-  Sample: "\n\nUser: What is a horse's bloodline?\nJoe: A bloodline refers to the ancestral lineage of a particula"
+  step   900/1000 | loss 0.2259 | lr 3.00e-04 | 0.46 steps/s
+  Sample: '\n\nUser: Why does my horse roll after a spring come calm while craise while each they see your steady'
 
-  step  1000/1000 | loss 0.0886 | lr 3.00e-04 | 0.73 steps/s
-  Sample: "\nJoe: A correctlying fitted saddle, balanced rider, and seat the horse's mouth. It is used before sh"
+  step  1000/1000 | loss 0.1853 | lr 3.00e-04 | 0.47 steps/s
+  Sample: '\nant all need a prominate after feeding that many disease and other in come objects that good resion'
 
 Model saved to /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz
 
 Done. Expert 'horse' saved to /Users/dev/github-projects/joe-brain/data/experts/horse/horse.npz
-Time: 1463.8s | Final loss: 0.0886
+Time: 2057.3s | Final loss: 0.1853

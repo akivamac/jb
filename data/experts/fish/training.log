@@ -2047,3 +2047,56 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # User: What is a fish net?
 # Joe: A fish net, or landing net, is a net on a handle used to scoop fish from the water into a boat or point, craft. Blood 
 # [2026-09-09 20:46:46] FINISH at step 1000
+# [2026-09-10 08:07:56] RESUME: training/train_expert.py --name fish --resume --steps 1000 --log 100 --sample 100
+100,0.5567,3.00e-04,0.66,1789042229.313088
+# [2026-09-10 08:10:29] SAMPLE step 100:
+# 
+# Joe: It surimi is a processing and substrate in an aquascape. Ho lake area. Wrus underwater plate vivides wair from a basket point, and compsing to smokiffer
+200,0.3676,3.00e-04,0.59,1789042400.012218
+# [2026-09-10 08:13:20] SAMPLE step 200:
+# 
+# 
+# User: What is the difference between a teched and a blue-green king killing or goldfish?
+# Joe: A spinnerbait bucaky with a appear, depth using handheavy lucient to
+300,0.3322,3.00e-04,0.47,1789042612.348151
+# [2026-09-10 08:16:52] SAMPLE step 300:
+# 
+# Joe: Some do sharks have at least er, places between the tailen and river pulp their strip where they breed or narseed on shallow flounds to attract fish. That home mathem
+400,0.3076,3.00e-04,0.38,1789042878.792827
+# [2026-09-10 08:21:19] SAMPLE step 400:
+# 
+# 
+# User: What is a fish species record?
+# Joe: A fish species record is the largest fish of a particular species ever officially caught and verified in a specific jurisdiction. Records
+500,0.2354,3.00e-04,0.33,1789043178.05201
+# [2026-09-10 08:26:18] SAMPLE step 500:
+# 
+# Joe: Scalm rehent and are clean to even for keep run the body station sign from in nutrients on the heat. This is recovered together where fish and can line detect their ruct-breatheir 
+600,0.2271,3.00e-04,0.38,1789043437.887588
+# [2026-09-10 08:30:38] SAMPLE step 600:
+# 
+# 
+# User: What is a cooking a tail pufferfish?
+# Joe: Newly cycle in marily new fish is the evaporated golden on of sea the water's resindividual. For diet and strong fish
+700,0.2149,3.00e-04,0.50,1789043636.926867
+# [2026-09-10 08:33:57] SAMPLE step 700:
+# 
+# User: What is a fish breeding box?
+# Joe: A fish breeding box is a small enclosure placed inside the main aquarium where pregnant female fish can give birth safely. F
+800,0.1819,3.00e-04,0.49,1789043839.837813
+# [2026-09-10 08:37:20] SAMPLE step 800:
+# 
+# 
+# User: What is a chaquarium solic uarment medication means it can surviaste.
+# 
+# User: How do I test biting mild the bench water?
+# Joe: Water changes mutit faster without replicate 
+900,0.1767,3.00e-04,0.47,1789044050.839796
+# [2026-09-10 08:40:51] SAMPLE step 900:
+# 
+# Joe: User: How do you treat aiptasia in a reef tank sump right body support stepcent that skimming the linerives. Carriso the reef accum and prevent ark is a raz
+1000,0.1658,3.00e-04,0.51,1789044248.51295
+# [2026-09-10 08:44:08] SAMPLE step 1000:
+# 
+# Joe: What is a Blish creel is a red n mimic reduction fish from one specific range to more its owners. Mods have specialized compputaptank and survive range than 14 in small 
+# [2026-09-10 08:44:10] FINISH at step 1000
