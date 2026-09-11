@@ -1274,3 +1274,34 @@
 # Joe: 15 * 8 = 120.
 # 
 # User: A gym charges $40/month with marks that instead, how much did you start it full pot's week c
+25,0.0766,3.00e-04,0.05,1789120020.795994
+# [2026-09-11 05:47:03] SAMPLE step 25:
+# 
+# Joe: 4 * 12 = 144, so the square root of 144 is 12.
+# 
+# User: A rectangle is twice as long as it is wide. The perimeter is 36. What are the width?
+25,0.0780,3.00e-04,0.04,1789120381.5388448
+# [2026-09-11 05:53:03] SAMPLE step 25:
+# 
+# 
+# User: A restahead in ne ride it at 60 km/h 10 minutes and a return at 40 mph. What is the average speed for the whole trip?
+# Joe: Let total distance = 2d
+50,0.0696,3.00e-04,0.19,1789120510.95173
+# [2026-09-11 05:55:11] SAMPLE step 50:
+# 
+# User: A store sells apples for $2 each payas of the pizza for $1.20. What is the total cost?
+# Joe: 6 * 2.50 = $0.60, so total = 3.20 of is
+75,0.0769,3.00e-04,0.35,1789120583.113297
+# [2026-09-11 05:56:23] SAMPLE step 75:
+# 
+# Joe: 30 hours = 30 minutes.
+# 
+# User: A movie starts at 7:30 PM and ends at 9:55 PM. How long is it?
+# Joe: 7:30 to 9:30 is 2 hours, then 
+100,0.0739,3.00e-04,0.40,1789120646.0768
+# [2026-09-11 05:57:26] SAMPLE step 100:
+# 
+# User: How many ways can you acts is cut?
+# Joe: Rates: 1 * 1 = 7%, roughly 23 - 10 = $15.
+# 
+# User: A rope is 15 m grams at 3: 10 books. 
