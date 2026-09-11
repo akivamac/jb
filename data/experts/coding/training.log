@@ -2193,3 +2193,24 @@ ValueError: probabilities contain NaN
 # Joe: A coor flag is a file that can be read with the correct key. Good for simple one-line operations.
 # User: what is a dictionaries
 # Joe: A dict
+325,0.0604,3.00e-04,0.28,1789121421.412277
+# [2026-09-11 06:10:21] SAMPLE step 325:
+# 
+# User: why does dij
+# Joe: It exceptions and dict assing lists are used in databases with a ok stack or a exceives that allows only one each round, like for a loop that index 
+350,0.0583,3.00e-04,0.31,1789121502.449215
+# [2026-09-11 06:11:43] SAMPLE step 350:
+# 
+# Joe: Start with is, has, or can, like is_valid or has_items. Readers then only you need to later in objects both from ed outputs.
+# User: pass a has tuple so them. does
+375,0.0586,3.00e-04,0.28,1789121591.898865
+# [2026-09-11 06:13:12] SAMPLE step 375:
+# 
+# Joe: A function is a syntax error in code that Python ignores. Use # for single-line comments.
+# User: what is debugging
+# Joe: Debugging is finding and fixing errors in your code.
+400,0.0602,3.00e-04,0.34,1789121664.935755
+# [2026-09-11 06:14:25] SAMPLE step 400:
+# 
+# Joe: Python map matching attriemoved class. Obble examples the clean moved search
+# Joe: Cembed the a boundary commit but diffusion is a file for cleaner chain of the top -
