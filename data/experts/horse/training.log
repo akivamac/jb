@@ -4001,3 +4001,25 @@ User: What is a farri
 # 
 # User: What is the correct 
 # [2026-09-10 09:18:28] FINISH at step 1000
+# [2026-09-11 08:37:34] RESUME: training/train_expert.py --name horse --steps 2000 --resume --push 100 --log 25 --sample 25
+25,0.8424,3.00e-04,0.32,1789130333.12539
+# [2026-09-11 08:38:53] SAMPLE step 25:
+# 
+# 
+# User: What is the zleather includes a horse prevents guaran without coat position, with desensitization to themselves and coat. The rider's hips absorb the horse's neck,
+50,0.7517,3.00e-04,0.50,1789130383.4979331
+# [2026-09-11 08:39:43] SAMPLE step 50:
+# 
+# 
+# User: What is a horse's hooks used for?
+# Joe: A horse varies 8 to being fight, swimult body along the coron upper whincation front of the hoof. It is 
+75,0.6658,3.00e-04,0.29,1789130469.1563368
+# [2026-09-11 08:41:09] SAMPLE step 75:
+# 
+# User: What is a clip w winter blanket?
+# Joe: A blanket dadding from when the horse's grinding daious coat your smell. The muscle the coat, and obriders to
+100,0.8072,3.00e-04,0.37,1789130536.169143
+# [2026-09-11 08:42:16] SAMPLE step 100:
+# 
+# User: What is a high Western sliding pain?
+# Joe: Wolf pain that can range from mild gas pain to life-threatening intestinal twists requiring dental care behind without stirrate 
