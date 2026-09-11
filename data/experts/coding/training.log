@@ -2526,3 +2526,22 @@ ValueError: probabilities contain NaN
 # [2026-09-11 07:12:46] SAMPLE step 1900:
 # 
 # Joe: When the architecture objects into a class and defined in a factory method pattern que. The class objects as the class and happened after class the scenes and define or referable class at 
+1925,0.0548,3.00e-04,0.39,1789125230.952776
+# [2026-09-11 07:13:51] SAMPLE step 1925:
+# 
+# Joe: A reviewer is a not guarantee implicit unit for timality. Use raise for cross patterns dest date to a message public changes and remain implementation      for 
+1950,0.0527,3.00e-04,0.36,1789125301.266995
+# [2026-09-11 07:15:01] SAMPLE step 1950:
+# 
+# User: when would a tuple beat a list for a function return
+# Joe: When two keys hash to the same bucket, lookup degrades to O(n) as you search through all entries in that 
+1975,0.0531,3.00e-04,0.44,1789125357.872503
+# [2026-09-11 07:15:58] SAMPLE step 1975:
+# 
+# User: What is a retry pattern with exponential backoff?
+# Joe: Exponential backoff increases the wait time between retry attempts exponentially (1s, 2s, 8s) to avoid overwhelming a failing
+2000,0.0505,3.00e-04,0.42,1789125417.439172
+# [2026-09-11 07:16:57] SAMPLE step 2000:
+# 
+# User: what is the difference between git revert and git reset
+# Joe: reset moves the branch pointer backward, removing commits from history. revert creates a new commit that undoes the old one. 
