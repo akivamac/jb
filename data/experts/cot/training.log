@@ -1531,3 +1531,28 @@
 # 
 # User: What is 5/8 as a decimal?
 # Joe: 3 / 8 = 0.35, so when y = 100/20
+1025,0.0669,3.00e-04,0.38,1789123180.9512472
+# [2026-09-11 06:39:41] SAMPLE step 1025:
+# 
+# User: What is 15 * (15 + 10) = 35.
+# 
+# User: A jacket costs $90. During a sale it is 40% off. What is the sale price?
+# Joe: 40% of 90 =
+1050,0.0671,3.00e-04,0.45,1789123236.003444
+# [2026-09-11 06:40:36] SAMPLE step 1050:
+# 
+# User: 200 is 40% of what number?
+# Joe: 0.40x = 200, so x = 200 / 0.40 = 500.
+# 
+# User: You add 5 to a number and get 12. What is the number?
+# Joe: x
+1075,0.0613,3.00e-04,0.51,1789123285.025988
+# [2026-09-11 06:41:25] SAMPLE step 1075:
+# 
+# User: Sort 3/20/18 mem/there does long that take?
+# Joe: 300 / 1000 = 8 17 m/s, which is 30 m/s. Ax train p?
+# Joe: 45 / 40 = about 3.66.
+1100,0.0622,3.00e-04,0.45,1789123340.121637
+# [2026-09-11 06:42:20] SAMPLE step 1100:
+# 
+# Joe: Two 9 km at 6 km/h, the other 120 km/h toward each it in km/h, the slower jumps ahead km gas on in 3 hour hour then 25 km in 2 hour
