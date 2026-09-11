@@ -974,3 +974,27 @@
 # 
 # Joe: The store rece 5 free. is 25 and secutive 3 numbers is 48. What are they?
 # Joe: n + 4 = 14, so a = 9w, n = 23. They are 23, 2
+925,0.1020,3.00e-04,0.27,1789090268.303405
+# [2026-09-10 21:31:08] SAMPLE step 925:
+# 
+# 
+# User: A store sells apples for $2. How much do 7 apples cost?
+# Joe: Each apple costs 2/3 of a dollar. 7 apples = 7 * (2/3) = 14/
+950,0.1005,3.00e-04,0.28,1789090358.350077
+# [2026-09-10 21:32:38] SAMPLE step 950:
+# 
+# User: A area of a triangle with vertices at (0,0), (6,0), and (3,4)?
+# Joe: Base = 6, height = 4. Area = (1/2) * * 2 * 1 =
+975,0.0979,3.00e-04,0.33,1789090434.592462
+# [2026-09-10 21:33:55] SAMPLE step 975:
+# 
+# Joe: 2 + 7, 9 = 38, 47 = 55,848, so 7 = 55, 960.
+# User: What is 5% as a fraction?
+# Joe: 0.4, 0. Range = 48 * 0.10 = 
+1000,0.1101,3.00e-04,0.43,1789090492.592959
+# [2026-09-10 21:34:53] SAMPLE step 1000:
+# 
+# Joe: GCD of 4 and 5, height: 5 / 21. What is the number through a, 3.
+# 
+# User: A $15 item with 10% off?
+# Joe: 15% of 15% of 500 = 500 * 
