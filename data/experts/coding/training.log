@@ -2335,3 +2335,23 @@ ValueError: probabilities contain NaN
 # Joe: Not if Fixed if dExceptions propages. The clike \wallocif the ed state of ases.
 # User: when should I splitc
 # Joe: When the logic except changing the million re. 
+1025,0.0557,3.00e-04,0.37,1789123118.3926232
+# [2026-09-11 06:38:38] SAMPLE step 1025:
+# 
+# Joe: A dict subclass that automatically creates a default value when a missing key is accessed. collections.defaultdict(list) gives an empty list for any new key.
+# User: how does defaultdict differ fr
+1050,0.0577,3.00e-04,0.52,1789123166.707583
+# [2026-09-11 06:39:27] SAMPLE step 1050:
+# 
+# User: how do i prevent it
+# Joe: Keep related behavior together. When one concept is spread across files, gather it into a single class or module so the next change lands in one spot
+1075,0.0556,3.00e-04,0.47,1789123220.4296682
+# [2026-09-11 06:40:20] SAMPLE step 1075:
+# 
+# Joe: The test pytest typically avoids the test name behavior behavior by a name, like additionkreverse=True) to lenviron fixes. Des the misthat returns materialized pointer every layers 
+1100,0.0554,3.00e-04,0.45,1789123276.000746
+# [2026-09-11 06:41:16] SAMPLE step 1100:
+# 
+# 
+# User: What is ROAII message (Resource)?
+# Joe: CSP is a concurrency using control framework to be ready and other an executes for but lock, providing very Recursion
