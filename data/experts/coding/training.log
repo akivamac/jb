@@ -1944,3 +1944,25 @@ ValueError: probabilities contain NaN
 # 
 # User: what is a slow pointer technical debt
 # Joe: Technical debt is the future cost of choosing a quick solution now instead of a better one. It accumulates interest as
+1325,0.0648,3.00e-04,0.40,1789091015.202272
+# [2026-09-10 21:43:35] SAMPLE step 1325:
+# 
+# Joe: Insert on def aulate production, like both results continue loops to the middle properly two dos, supporting but them to you need access the guard.
+# User: what about infinite a 
+1350,0.0648,3.00e-04,0.29,1789091101.5057101
+# [2026-09-10 21:45:01] SAMPLE step 1350:
+# 
+# User: what is a slow pointer technique
+# Joe: Two indexes sweep a sorted structure, often inward from both ends. It replaces nested loops with a single pass, cutting quad
+1375,0.0639,3.00e-04,0.33,1789091176.559948
+# [2026-09-10 21:46:16] SAMPLE step 1375:
+# 
+# 
+# User: What is a race race require in that per-way organize access directly or the set using a related operations. It also avoids small separates on partit adving.
+# 
+# User: What is d
+1400,0.0652,3.00e-04,0.37,1789091245.003625
+# [2026-09-10 21:47:25] SAMPLE step 1400:
+# 
+# User: what is the difference between sorted and sort
+# Joe: sorted(my_list) returns a new ordered list and does not acing contiguous and returns it a sort grale creates a new list and still
