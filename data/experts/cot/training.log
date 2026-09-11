@@ -1221,3 +1221,28 @@
 # User: 120 / 6 of a pizza is left, and you eat 1/3 of what remains.
 # 
 # User: A store buys a shirt for $15 and sells it for $25. What is
+1925,0.0750,3.00e-04,0.65,1789093077.6519942
+# [2026-09-10 22:17:57] SAMPLE step 1925:
+# 
+# User: What is 48 divided by 7, with remainder?
+# Joe: 5 * 6 = 30, remainder = 2.
+# User: You put $200 in a savings account earning 3% per year. How much 
+1950,0.0732,3.00e-04,0.81,1789093108.6075158
+# [2026-09-10 22:18:28] SAMPLE step 1950:
+# 
+# User: What is 80% of 150?
+# Joe: 80% of 150 = 120.
+# 
+# User: A number decreased by 10, then divided by 2, gives 5. What is the number?
+# Joe: (x - 10) /
+1975,0.0747,3.00e-04,0.71,1789093143.6242409
+# [2026-09-10 22:19:03] SAMPLE step 1975:
+# 
+# User: a number between 20 and 30 leaves a remainder of 4 when divided by 7. What is it?
+# Joe: The multiples of 7 nearby are 21 and 28. 21 plus 4 is 25,
+2000,0.0739,3.00e-04,0.77,1789093176.2891352
+# [2026-09-10 22:19:36] SAMPLE step 2000:
+# 
+# User: A coat costs $120 per month. What is the total cost?
+# Joe: Monthly: 300 * 36 = 10,800. Total: 10,800 + 2,000 = $12,800.
+# User:
