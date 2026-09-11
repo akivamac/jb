@@ -1246,3 +1246,31 @@
 # User: A coat costs $120 per month. What is the total cost?
 # Joe: Monthly: 300 * 36 = 10,800. Total: 10,800 + 2,000 = $12,800.
 # User:
+# [2026-09-10 22:19:46] FINISH at step 2000
+# [2026-09-11 05:35:16] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+25,0.0780,3.00e-04,0.36,1789119385.974976
+# [2026-09-11 05:36:26] SAMPLE step 25:
+# 
+# 
+# User: Two numbers sum to 60 and half their difference is 5. What are they?
+# Joe: Let Sam be s, so Bob is s + 7. Their sum is s + (s + 7) 
+50,0.0743,3.00e-04,0.34,1789119458.887151
+# [2026-09-11 05:37:39] SAMPLE step 50:
+# 
+# User: Solve 3 - 3/12 = 1/4.
+# 
+# User: A rectangular room is 14 feet by 12 feet. Carpet costs $6 per month. Service A is $3,000. What is the
+75,0.0728,3.00e-04,0.34,1789119532.7102778
+# [2026-09-11 05:38:53] SAMPLE step 75:
+# 
+# User: A store sells notebooks for $4 each. If you buy 5 or more you get 10% off. What does 7 notebooks cost?
+# Joe: 7 * 4 = 28 - $47
+# [2026-09-11 05:38:57] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 05:41:32] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+100,0.0715,3.00e-04,0.06,1789119925.234897
+# [2026-09-11 05:45:26] SAMPLE step 100:
+# 
+# User: What is 300 divided by 15?
+# Joe: 15 * 8 = 120.
+# 
+# User: A gym charges $40/month with marks that instead, how much did you start it full pot's week c
