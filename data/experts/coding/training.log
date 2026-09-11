@@ -2277,3 +2277,22 @@ ValueError: probabilities contain NaN
 # [2026-09-11 06:26:03] SAMPLE step 700:
 # 
 # Joe: An interface defines what methods a class must have without any implementation. An abstract class can provide default implementations alongside abstract methods, giving partial reuse to subclass
+725,0.0564,3.00e-04,0.47,1789122416.0929852
+# [2026-09-11 06:26:56] SAMPLE step 725:
+# 
+# User: what is the difference between a loop and recursion for checking balanced parentheses
+# Joe: A loop uses a counter that increments on open and decrements on close, while recursion could use a
+750,0.0585,3.00e-04,0.42,1789122475.079067
+# [2026-09-11 06:27:55] SAMPLE step 750:
+# 
+# Joe: Composition is a fixed pattern They allocate bookkeeping. Ed is the big 1}\w1 (breaksent values, inside the if. Seeing the first matched
+# Joe: Use a dict to pr
+775,0.0581,3.00e-04,0.43,1789122532.76216
+# [2026-09-11 06:28:53] SAMPLE step 775:
+# 
+# User: how do i change an object instead
+# Joe: Assign token to calls what it from a Lin the call kind of arguments the function. Reassigot like abs(a work metaclass in 
+800,0.0554,3.00e-04,0.44,1789122589.0105758
+# [2026-09-11 06:29:49] SAMPLE step 800:
+# 
+# Joe: No, avoid indexes are two stored in practice in one or test a sequence of values in amor efize first a step in two linked lists. It has O(n linked list to 
