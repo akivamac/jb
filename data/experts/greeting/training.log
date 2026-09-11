@@ -977,3 +977,33 @@
 # User: how are you holding up
 # Joe: Holding up great! 
 # [2026-09-10 09:49:34] FINISH at step 1000
+# [2026-09-11 08:35:34] RESUME: training/train_expert.py --name greeting --steps 2000 --resume --push 100 --log 25 --sample 25
+25,2.6111,3.00e-04,0.36,1789130204.393634
+# [2026-09-11 08:36:44] SAMPLE step 25:
+# 
+# User: so what if it remind the right
+# Joe: My favorite kind of good to ts been when you about yourself. Tod after it? git is where on helpyour gre bored?
+# Joe: A quick 
+50,1.6232,3.00e-04,0.91,1789130231.787704
+# [2026-09-11 08:37:12] SAMPLE step 50:
+# 
+# User: you know what, I am here and on am the right kind of want, they doing up the thing magnet you mean are any am.
+# 
+# User: I'll any urok in you the friended 
+75,1.4153,3.00e-04,0.81,1789130262.503488
+# [2026-09-11 08:37:42] SAMPLE step 75:
+# 
+# Joe: Dear I try keep the spot for you. Take care out there.
+# 
+# User: until next time
+# Joe: Until next time, friend! I will be right here. See you soon.
+# 
+# User: gotta 
+100,1.3196,3.00e-04,0.28,1789130353.371335
+# [2026-09-11 08:39:13] SAMPLE step 100:
+# 
+# Joe: Thank you! That means the best time a while.
+# User: I just elcome back
+# Joe: I am always here! How is yours going?
+# User: just wanted to say hello
+# Joe: Aowlason tespect 
