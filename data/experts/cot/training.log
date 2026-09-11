@@ -774,3 +774,28 @@
 # Joe: Red that at 7:15 AM and arrive at 11:20 PM. How long is it?
 # Joe: 9:30 + 3 minutes = 9:15 PM.
 # User: If it to 16, which is 
+125,0.4049,3.00e-04,0.33,1789087050.704927
+# [2026-09-10 20:37:31] SAMPLE step 125:
+# 
+# User: You buy a $7- 98 - 5 = $31, then buys r for $1.50 each and get a $12 pencils. What is the total?
+# Joe: Apent = 4 * 1.75 
+150,0.4166,3.00e-04,0.40,1789087112.564784
+# [2026-09-10 20:38:32] SAMPLE step 150:
+# 
+# User: If the minute cost shirt $12 is cheaper.
+# 
+# User: How much for 7 items or $2 items or $200 items for $5?
+# Joe: or 30 + 4/ 6 = $600. 
+175,0.4803,3.00e-04,0.43,1789087171.223455
+# [2026-09-10 20:39:31] SAMPLE step 175:
+# 
+# Joe: The next compart = 10 * 2 + 10 - 1 by 20 - 1 = 10.
+# 
+# User: What is the median of 3, 7, 9, 12, 15?
+# Joe: Already sorted. The middle 
+200,0.3754,3.00e-04,0.46,1789087225.2911701
+# [2026-09-10 20:40:25] SAMPLE step 200:
+# 
+# Joe: 1 * 13 = 16, so dividing by 4: 11 is 35 more.
+# User: what is 13/4?
+# Joe: Rewrite 1/2 as 3/5, then 3/5 minus 2/4 is 1/5
