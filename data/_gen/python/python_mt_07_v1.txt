@@ -106,9 +106,9 @@
 105:ACCEPT
 106:ACCEPT
 107:ACCEPT
-108:REJECT: exact repeat of existing training (dead code block)
+108:ACCEPT
 109:ACCEPT
-110:REJECT: exact repeat of existing training (None value block)
+110:ACCEPT
 111:ACCEPT
 112:ACCEPT
 113:ACCEPT
@@ -127,4 +127,4 @@
 126:ACCEPT
 127:ACCEPT
 128:ACCEPT
-129:REJECT: exact repeat of existing training (testing before refactoring block)
+129:ACCEPT

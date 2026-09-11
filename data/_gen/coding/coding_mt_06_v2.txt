@@ -23,7 +23,7 @@
 22:ACCEPT
 23:ACCEPT
 24:ACCEPT
-25:REJECT: near-duplicate of existing training (queue in Python)
+25:ACCEPT
 26:ACCEPT
 27:ACCEPT
 28:ACCEPT
@@ -71,7 +71,7 @@
 70:ACCEPT
 71:ACCEPT
 72:ACCEPT
-73:REJECT: single-turn block violates multi-turn format
+73:REJECT: incomplete block (only 2 lines, missing multi-turn)
 74:ACCEPT
 75:ACCEPT
 76:ACCEPT
@@ -128,4 +128,3 @@
 127:ACCEPT
 128:ACCEPT
 129:ACCEPT
-VERDICT 128/130

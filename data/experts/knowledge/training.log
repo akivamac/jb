@@ -1248,3 +1248,9 @@ Joe: Friction is a force that resists motion between two surf
 # 
 # User: Why do
 # [2026-09-10 09:49:33] FINISH at step 1000
+# [2026-09-11 09:36:35] RESUME: training/train_expert.py --name knowledge --steps 2000 --resume --push 100 --log 25 --sample 25
+25,2.1226,3.00e-04,0.39,1789133858.859377
+# [2026-09-11 09:37:39] SAMPLE step 25:
+# 
+# Joe: The equator is an mus is an underwater emer emer Africds with different cords did muscles from the inventorx small 200 light of at the 186.
+# User: how do double helix h

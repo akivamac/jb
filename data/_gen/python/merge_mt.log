@@ -1,3 +1,4 @@
 [python] dual-accepted=253 dropped(train)=7 dropped(intra)=0 MERGED=246
 [python] dual-accepted=275 dropped(train)=25 dropped(intra)=0 MERGED=250
 [python] dual-accepted=275 dropped(train)=253 dropped(intra)=0 MERGED=22
+[python] dual-accepted=496 dropped(train)=196 dropped(intra)=0 MERGED=300

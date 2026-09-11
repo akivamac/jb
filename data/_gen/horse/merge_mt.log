@@ -1,3 +1,4 @@
 [horse] dual-accepted=228 dropped(train)=7 dropped(intra)=0 MERGED=221
 [horse] dual-accepted=235 dropped(train)=29 dropped(intra)=0 MERGED=206
 [horse] dual-accepted=235 dropped(train)=218 dropped(intra)=0 MERGED=17
+[horse] dual-accepted=493 dropped(train)=272 dropped(intra)=0 MERGED=221

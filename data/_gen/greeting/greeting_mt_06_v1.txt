@@ -3,7 +3,7 @@
 2:ACCEPT
 3:ACCEPT
 4:ACCEPT
-5:ACCEPT
+5:REJECT: off-topic: professional email sign-offs are not greetings
 6:ACCEPT
 7:ACCEPT
 8:ACCEPT

@@ -20,7 +20,7 @@
 19:ACCEPT
 20:ACCEPT
 21:ACCEPT
-22:ACCEPT
+22:REJECT: near-duplicate of block 50 (juglone-tolerant/intolerant plant lists)
 23:ACCEPT
 24:ACCEPT
 25:ACCEPT

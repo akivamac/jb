@@ -34,7 +34,7 @@
 33:ACCEPT
 34:ACCEPT
 35:ACCEPT
-36:ACCEPT
+36:REJECT: answer too long (4 sentences)
 37:ACCEPT
 38:ACCEPT
 39:ACCEPT
@@ -51,7 +51,7 @@
 50:ACCEPT
 51:ACCEPT
 52:ACCEPT
-53:ACCEPT
+53:REJECT: answer too long (4 sentences)
 54:ACCEPT
 55:ACCEPT
 56:ACCEPT
@@ -82,7 +82,7 @@
 81:ACCEPT
 82:ACCEPT
 83:ACCEPT
-84:ACCEPT
+84:REJECT: answer too long (4 sentences)
 85:ACCEPT
 86:ACCEPT
 87:ACCEPT
@@ -94,7 +94,7 @@
 93:ACCEPT
 94:ACCEPT
 95:ACCEPT
-96:ACCEPT
+96:REJECT: answer too long (4 sentences)
 97:ACCEPT
 98:ACCEPT
 99:ACCEPT
@@ -112,15 +112,15 @@
 111:ACCEPT
 112:ACCEPT
 113:ACCEPT
-114:ACCEPT
+114:REJECT: answer too long (4 sentences)
 115:ACCEPT
 116:ACCEPT
-117:ACCEPT
-118:REJECT: near-duplicate of block 53 (both cover sliding window for longest substring with at most k distinct chars; block 53 is more general)
+117:REJECT: answer too long (4 sentences)
+118:REJECT: answer too long (4 sentences)
 119:ACCEPT
-120:ACCEPT
-121:REJECT: near-duplicate of block 53 (explicitly states same problem as longest substring with at most two distinct characters)
-122:ACCEPT
+120:REJECT: answer too long (4 sentences)
+121:ACCEPT
+122:REJECT: answer too long (4 sentences)
 123:ACCEPT
 124:ACCEPT
 125:ACCEPT
@@ -128,4 +128,3 @@
 127:ACCEPT
 128:ACCEPT
 129:ACCEPT
-VERDICT 128/130
