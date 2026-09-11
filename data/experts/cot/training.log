@@ -1305,3 +1305,17 @@
 # Joe: Rates: 1 * 1 = 7%, roughly 23 - 10 = $15.
 # 
 # User: A rope is 15 m grams at 3: 10 books. 
+125,0.0743,3.00e-04,0.30,1789120730.70639
+# [2026-09-11 05:58:51] SAMPLE step 125:
+# 
+# User: You need 72 chairs and they come in packs of 5. How many packs must you buy?
+# Joe: 72 / 5 = 14.4, so you need 15 packs.
+# 
+# User: A coat costs 
+150,0.0773,3.00e-04,0.38,1789120797.0670872
+# [2026-09-11 05:59:57] SAMPLE step 150:
+# 
+# User: What is the GCD of 100 and 6?
+# Joe: Sum = 10 and 12 = 2 * 5 / 20 = 240, so 5 = 5 degrees back to the 9 shares 100 degrees.
+# 
+175,0.0719,3.00e-04,0.28,1789120884.939564

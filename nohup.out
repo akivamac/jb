@@ -1,10 +1,2 @@
-  File "/Users/dev/github-projects/joe-brain/over.sh", line 7
-    REPO="$(cd "$(dirname "$0")" && pwd)"
-                ^
-SyntaxError: invalid syntax
-usage: train_expert.py [-h] --name NAME [--steps STEPS] [--lr LR]
-                       [--seq_len SEQ_LEN] [--batch BATCH] [--dim DIM]
-                       [--heads HEADS] [--layers LAYERS] [--log LOG]
-                       [--sample SAMPLE] [--resume] [--push PUSH]
-                       [--save SAVE]
-train_expert.py: error: unrecognized arguments: --
+Started coding (PID 47833)
+Started cot (PID 47834)

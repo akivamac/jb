@@ -1,2 +1,3 @@
 [reptiles] dual-accepted=258 dropped(train)=10 dropped(intra)=0 MERGED=248
 [reptiles] dual-accepted=100 dropped(train)=9 dropped(intra)=0 MERGED=91
+[reptiles] dual-accepted=100 dropped(train)=96 dropped(intra)=0 MERGED=4
