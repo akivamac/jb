@@ -1379,3 +1379,26 @@
 # Joe: After year 1: 20 * 0.85 = 21,250. After year 2: 21,250 * 0.85 = 18,062.50.
 # User: How much value did it lose in total?
 # Joe: 25
+425,0.0735,3.00e-04,0.38,1789121745.170727
+# [2026-09-11 06:15:45] SAMPLE step 425:
+# 
+# 
+# User: A bus ride takes 2 hours and 40 minutes. Leaving at 1:30 PM, when do I arrive?
+# Joe: 1 hour = 21:30 + 5 minus 1:45 is 120.
+450,0.0733,3.00e-04,0.44,1789121802.168671
+# [2026-09-11 06:16:42] SAMPLE step 450:
+# 
+# Joe: 1/2 of 50 = 1/8 is 12, so 8 divided by 8 is 30 minus 12 = 6, and 90. What is you get?
+# Joe: 8 divided by 8 is 0.12.
+# User: what
+475,0.0666,3.00e-04,0.43,1789121860.702723
+# [2026-09-11 06:17:41] SAMPLE step 475:
+# 
+# Joe: 120 / 75 = 14.235, which is about $10.574.
+# 
+# User: A recipe for 8 cookies needs 2.5 cups of flour. How much for 20 cookies?
+# Joe: 20 
+500,0.0723,3.00e-04,0.47,1789121913.77877
+# [2026-09-11 06:18:34] SAMPLE step 500:
+# 
+# User: A tray holds 24 muffin3, 5, and 50 times the = 22 geions at 2 * 0.40 = $2, so 2average = 27 * 2 = 16. Divide before 20 to 
