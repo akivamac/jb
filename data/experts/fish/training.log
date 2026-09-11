@@ -2100,3 +2100,25 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # 
 # Joe: What is a Blish creel is a red n mimic reduction fish from one specific range to more its owners. Mods have specialized compputaptank and survive range than 14 in small 
 # [2026-09-10 08:44:10] FINISH at step 1000
+# [2026-09-11 07:19:33] RESUME: training/train_expert.py --name fish --steps 2000 --resume --push 100 --log 25 --sample 25
+25,1.0818,3.00e-04,0.54,1789125620.091383
+# [2026-09-11 07:20:20] SAMPLE step 25:
+# 
+# Joe: Set hair is a saltwater tank settle to crearrier on a fish bow is taining a ghts strate for a day of strange fish. Bortality the them all fish ready 
+50,1.0453,3.00e-04,0.45,1789125675.796304
+# [2026-09-11 07:21:16] SAMPLE step 50:
+# 
+# Joe: That is how fish fish that protect from predators and is marked to faces near each species-microorganisms from ades into cinternal clear.
+# 
+# User: What is the best way to remove 
+75,0.8813,3.00e-04,0.41,1789125737.176728
+# [2026-09-11 07:22:17] SAMPLE step 75:
+# 
+# 
+# User: What is a fish trap net?
+# Joe: A trap net is a large net structure anchovibr, spear is a trianglers used to catch fish. Blood swim are dramers commercial
+100,0.8323,3.00e-04,0.44,1789125794.568741
+# [2026-09-11 07:23:15] SAMPLE step 100:
+# 
+#  What is a fish tournament?
+# Joe: A fishing ladder is a structure built around dams and other obstacles to allow migrating fish to swim upstream. It consists of a ser
