@@ -1989,3 +1989,23 @@ ValueError: probabilities contain NaN
 # 
 # User: What is a small complexity?
 # Joe: Space complexity measures the amount of memory an algorithm uses relative to input size, including both auxiliary space and input storage. It helps
+1525,0.0638,3.00e-04,0.34,1789091586.816247
+# [2026-09-10 21:53:07] SAMPLE step 1525:
+# 
+# User: what is the difference between a list and a for loop a list comprehension for side effects
+# Joe: A loop can perform side effects like printing or writing to a file, while a list
+1550,0.0619,3.00e-04,0.46,1789091640.8340118
+# [2026-09-10 21:54:01] SAMPLE step 1550:
+# 
+# User: what is pointer polymorphism
+# Joe: It is version of a function that wraps another to values to the same n range. other statementmections that results across iterations.
+# User: what is the differ
+1575,0.0623,3.00e-04,0.40,1789091702.7169979
+# [2026-09-10 21:55:03] SAMPLE step 1575:
+# 
+# User: What is algebraic data type?
+# Joe: Algebraic data types combine types and uniqueue exceptions how to maintain elements into a single value, including Coun is better for UI 
+1600,0.0668,3.00e-04,0.34,1789091775.276191
+# [2026-09-10 21:56:15] SAMPLE step 1600:
+# 
+# Joe: The loop through a for loop with an iterate iterat the indented block under the for line runs. That can the i inpe, both before the call function and returns the data call return later to
