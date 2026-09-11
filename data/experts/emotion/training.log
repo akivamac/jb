@@ -1223,3 +1223,26 @@ Joe: I see you. You
 # 
 # User: I feel so disconnected ised the worst the part you would corpage
 # [2026-09-10 08:44:08] FINISH at step 1000
+# [2026-09-11 07:17:33] RESUME: training/train_expert.py --name emotion --steps 2000 --resume --push 100 --log 25 --sample 25
+25,1.2719,3.00e-04,0.48,1789125506.021146
+# [2026-09-11 07:18:26] SAMPLE step 25:
+# 
+# 
+# User: I feel like I am not a clensing
+# Joe: That is not a letdown, they will for build us better than you selvmelity is a clean-out and a kindly plant, a time that 
+50,0.8805,3.00e-04,0.97,1789125531.882001
+# [2026-09-11 07:18:52] SAMPLE step 50:
+# 
+# User: I am scared at work
+# Joe: That post-SS is overwheling because every meets-can the body worry in. Most people are busy, not the problem, not follow or what end you have 
+75,0.8319,3.00e-04,0.97,1789125557.58464
+# [2026-09-11 07:19:17] SAMPLE step 75:
+# 
+# User: home iness
+# Joe: Monday a meeting and someone we was step. You are not broken. thinking one of you trust say that. Bosting. Be honest, even he when it is
+100,0.5850,3.00e-04,0.68,1789125594.371681
+# [2026-09-11 07:19:54] SAMPLE step 100:
+# 
+# Joe: Turn saying is a presisticed as presise. Next time says something an fairness at something it. You are not weekthat.
+# 
+# User: I feel weirdly sad after a really hard 
