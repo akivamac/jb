@@ -126,5 +126,5 @@
 125:ACCEPT
 126:ACCEPT
 127:ACCEPT
-128:ACCEPT
+128:REJECT: incomplete block (1 turn pair instead of 2)
 129:ACCEPT

@@ -4997,3 +4997,1668 @@ Joe: C(6,4) = 15 ways. Each sequence: (1/2)^6 = 1/64. Probability = 15/64.
 User: What is the probability of getting more tails than heads?
 Joe: More tails means 0, 1, or 2 heads. P(0H) = 1/64. P(1H) = 6/64. P(2H) = 15/64. Total = 22/64 = 11/32.
 
+User: What is the GCD of 48 and 180?
+Joe: 48 = 2^4 * 3 and 180 = 2^2 * 3^2 * 5. GCD = 2^2 * 3 = 12.
+User: What is the LCM then?
+Joe: LCM = 2^4 * 3^2 * 5 = 720.
+
+User: What is the LCM of 6, 8, and 9?
+Joe: 6 = 2 * 3, 8 = 2^3, 9 = 3^2. LCM = 2^3 * 3^2 = 72.
+User: And the GCD?
+Joe: GCD(6, 8, 9) = 1, since there is no prime common to all three.
+
+User: What is the prime factorization of 2025?
+Joe: 2025 = 25 * 81 = 5^2 * 3^4.
+User: Is 2025 a perfect square?
+Joe: 3^4 * 5^2 = (3^2)^2 * 5^2 = (9 * 5)^2 = 45^2 = 2025. Yes.
+
+User: Solve: |x - 3| < 5.
+Joe: This means -5 < x - 3 < 5. Adding 3: -2 < x < 8.
+User: How many integers satisfy this?
+Joe: The integers from -1 through 7, which is 9 integers.
+
+User: What is the GCD of 360 and 252?
+Joe: 360 = 2^3 * 3^2 * 5 and 252 = 2^2 * 3^2 * 7. GCD = 2^2 * 3^2 = 36.
+User: Find LCM using the formula.
+Joe: LCM = (360 * 252) / 36 = 90720 / 36 = 2520.
+
+User: Solve: 2x - 3(x - 1) >= 5.
+Joe: Expand: 2x - 3x + 3 >= 5, so -x + 3 >= 5, so -x >= 2, so x <= -2.
+User: List all prime solutions.
+Joe: All solutions are -2 or less. There are no prime numbers that are negative, so there are no prime solutions.
+
+User: Is 991 prime?
+Joe: sqrt(991) is about 31.5. Not divisible by 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, or 31. Yes, 991 is prime.
+User: What is the next prime after 991?
+Joe: 997 is the next prime. 992 = 2^5 * 31, 993 = 3 * 331, 994 = 2 * 497, 995 = 5 * 199, 996 = 2^2 * 3 * 83, and 997 is prime.
+
+User: The numbers 5, 8, 12, 15, and 20 have what mean?
+Joe: Sum = 5 + 8 + 12 + 15 + 20 = 60. Mean = 60 / 5 = 12.
+User: If you add a sixth number, 18, what is the new mean?
+Joe: New sum = 60 + 18 = 78. New mean = 78 / 6 = 13.
+
+User: Find the median of 3, 11, 7, 9, 5.
+Joe: Sort them: 3, 5, 7, 9, 11. The middle value is the 3rd, which is 7.
+User: What happens to the median if you add 15 to the set?
+Joe: Sorted: 3, 5, 7, 9, 11, 15. With 6 numbers the median is the average of the 3rd and 4th: (7 + 9)/2 = 8.
+
+User: What is the mode of 2, 5, 5, 7, 8, 5, 9?
+Joe: 5 appears three times, more than any other number. The mode is 5.
+User: If you add two more 7s, what are the modes now?
+Joe: 5 appears 3 times and 7 appears 3 times. There are two modes: 5 and 7.
+
+User: Daily temperatures for a week are 72, 68, 75, 70, 74, 71, 69. What is the range?
+Joe: Highest = 75, lowest = 68. Range = 75 - 68 = 7 degrees.
+User: If a new day records 82 degrees, how does the range change?
+Joe: New highest = 82, lowest stays 68. New range = 82 - 68 = 14 degrees. The range doubled.
+
+User: The salaries at a small company are 40, 42, 45, 38, 41, and 120 thousand. What is the mean?
+Joe: Sum = 40 + 42 + 45 + 38 + 41 + 120 = 326. Mean = 326 / 6 = about 54.3 thousand.
+User: How does the mean change if you remove the outlier of 120?
+Joe: Sum without 120 = 206 over 5 salaries. Mean = 206 / 5 = 41.2 thousand. The mean drops by about 13.1 thousand.
+
+User: Using the same salaries 40, 42, 45, 38, 41, 120, what is the median?
+Joe: Sort: 38, 40, 41, 42, 45, 120. With 6 numbers, median = (41 + 42)/2 = 41.5.
+User: Remove the 120 outlier. What is the new median?
+Joe: Sorted: 38, 40, 41, 42, 45. With 5 numbers, median = 41. The median barely changed, showing it is resistant to outliers.
+
+User: The mean of 4 numbers is 22. Three numbers are 18, 25, and 20. What is the fourth?
+Joe: Total needed = 4 * 22 = 88. Known sum = 18 + 25 + 20 = 63. Fourth = 88 - 63 = 25.
+User: What is the new mean if you replace the 25 with 33?
+Joe: New sum = 88 + 8 = 96. New mean = 96 / 4 = 24.
+
+User: A store's sales: Mon $200, Tue $250, Wed $180, Thu $300, Fri $350. What is the median daily sale?
+Joe: Sort: 180, 200, 250, 300, 350. The median is the 3rd value, which is $250.
+User: What is the total sales for the week if Saturday and Sunday each match the median?
+Joe: Sat = Sun = 250. Total = 200 + 250 + 180 + 300 + 350 + 250 + 250 = $1,780.
+
+User: A population grows from 500 to 650. What is the percent increase?
+Joe: Increase = 150. Percent = 150 / 500 = 0.30 = 30%.
+User: If it then drops to 585, what is the percent decrease from 650?
+Joe: Decrease = 650 - 585 = 65. Percent = 65 / 650 = 0.10 = 10%.
+
+User: A plant grows 3 cm in week 1, 5 cm in week 2, and 2 cm in week 3. What is the average growth rate per week?
+Joe: Total growth = 3 + 5 + 2 = 10 cm over 3 weeks. Average rate = 10/3 = about 3.33 cm per week.
+User: At that average rate, how much will it grow in 6 weeks?
+Joe: 6 * 10/3 = 20 cm.
+
+User: What is the mode of 4, 7, 9, 12, 15?
+Joe: Each number appears exactly once. There is no mode.
+User: If you add another 7, what is the mode now?
+Joe: 7 appears twice while all others appear once. The mode becomes 7.
+
+User: A student scores 75 on homework (worth 20%), 85 on quizzes (worth 30%), and 90 on exams (worth 50%). What is the weighted average?
+Joe: Weighted = 75*0.20 + 85*0.30 + 90*0.50 = 15 + 25.5 + 45 = 85.5.
+User: If the student wants an 88 overall, what exam score is needed with the same homework and quiz scores?
+Joe: 75*0.20 + 85*0.30 + x*0.50 = 88. So 40.5 + 0.5x = 88, giving 0.5x = 47.5, so x = 95.
+
+User: Temperatures over 5 days: -5, 3, -2, 7, 1. What is the range?
+Joe: Highest = 7, lowest = -5. Range = 7 - (-5) = 12 degrees.
+User: What is the mean temperature?
+Joe: Sum = -5 + 3 - 2 + 7 + 1 = 4. Mean = 4 / 5 = 0.8 degrees.
+
+User: A bar graph shows four categories with heights 15, 22, 18, and 25. What is the total represented?
+Joe: Total = 15 + 22 + 18 + 25 = 80.
+User: What percent does the tallest bar represent?
+Joe: The tallest is 25. Percent = 25 / 80 = 0.3125 = 31.25%.
+
+User: The ages of 9 people are 18, 22, 25, 27, 30, 33, 35, 40, 52. What is the median age?
+Joe: With 9 numbers, the median is the 5th value, which is 30.
+User: If two more people aged 28 and 29 join, what is the new median?
+Joe: Sorted: 18, 22, 25, 27, 28, 29, 30, 33, 35, 40, 52. With 11 numbers, the median is the 6th, which is 29.
+
+User: Test scores: 82, 85, 88, 91, 95, 100, 42. Which score is an outlier?
+Joe: The score 42 is far below the rest, which cluster in the 80s and 90s. It is an outlier.
+User: What is the mean with and without the outlier?
+Joe: With outlier: sum = 583, mean = 583/7 = about 83.3. Without: sum = 541, mean = 541/6 = about 90.2. The outlier pulls the mean down by about 7 points.
+
+User: A course has three components: assignments (40%), midterm (25%), final (35%). A student gets 70 on assignments, 80 on midterm, and 90 on final. What is the overall grade?
+Joe: Weighted = 70*0.40 + 80*0.25 + 90*0.35 = 28 + 20 + 31.5 = 79.5.
+User: If the final is worth 40% and the midterm 20% instead, what is the new grade?
+Joe: 70*0.40 + 80*0.20 + 90*0.40 = 28 + 16 + 36 = 80.0.
+
+User: A survey: 3 people have 1 pet, 5 have 2 pets, and 2 have 3 pets. What is the mean number of pets?
+Joe: Total pets = 3*1 + 5*2 + 2*3 = 3 + 10 + 6 = 19. Total people = 10. Mean = 19/10 = 1.9 pets.
+User: What is the mode?
+Joe: The most common value is 2 pets (5 people). Mode = 2.
+
+User: Five numbers have a mean of 12 and a range of 10. If the smallest number is 5, what is the largest?
+Joe: Range = largest - smallest = 10, so largest = 5 + 10 = 15. Mean check: sum = 5 * 12 = 60. With smallest 5 and largest 15, the other three sum to 60 - 20 = 40.
+User: What could the other three numbers be?
+Joe: Any three numbers between 5 and 15 that sum to 40, like 10, 15, 15 or 12, 14, 14.
+
+User: A store price drops from $80 to $60. What is the percent decrease?
+Joe: Decrease = 20. Percent = 20 / 80 = 0.25 = 25%.
+User: If the store then raises the $60 price back to $80, what is the percent increase?
+Joe: Increase = 20. Percent = 20 / 60 = about 33.3%. The percentage is different because the base changed.
+
+User: A runner covers distances: 4 km in 20 min, 3 km in 15 min, 5 km in 25 min. What is the average speed?
+Joe: Total distance = 12 km. Total time = 60 min = 1 hour. Average speed = 12 km/h.
+User: What is the pace in minutes per km?
+Joe: 60 minutes / 12 km = 5 minutes per km.
+
+User: The incomes of 5 people are 30, 35, 40, 45, and 150 thousand. How does the mean compare to the median?
+Joe: Mean = (30+35+40+45+150)/5 = 300/5 = 60. Median = 40. The mean is much higher because the 150 skews it.
+User: Which is a better representation of a typical income here?
+Joe: The median of 40 is more representative since it is not pulled up by the outlier.
+
+User: A store has 20 boxes of cereal at $4 each and 30 boxes at $3 each. What is the average cost per box?
+Joe: Total cost = 20*4 + 30*3 = 80 + 90 = 170. Total boxes = 50. Average = 170/50 = $3.40.
+User: If 10 more boxes at $5 each arrive, what is the new average?
+Joe: New total cost = 170 + 50 = 220. New total boxes = 60. Average = 220/60 = about $3.67.
+
+User: A tally of favorite colors: Red IIII, Blue III, Green IIII, Yellow II. What is the mode?
+Joe: Red and Green each have 4 votes, tied for most. The modes are Red and Green.
+User: If 2 more people choose Blue, what is the mode now?
+Joe: Blue would have 5 votes, becoming the single mode.
+
+User: A pie chart shows 40% food, 25% rent, 20% transport, 15% savings on a $2000 budget. How much is spent on food?
+Joe: Food = 0.40 * 2000 = $800.
+User: How much more is spent on food than on transport?
+Joe: Transport = 0.20 * 2000 = $400. Difference = 800 - 400 = $400.
+
+User: Data set: 3, 7, 8, 9, 10, 11, 12, 15, 100. What is the range?
+Joe: Range = 100 - 3 = 97. But this is misleading because most values cluster between 7 and 15.
+User: What is the interquartile range as a better measure of spread?
+Joe: Sort: 3, 7, 8, 9, 10, 11, 12, 15, 100. Q1 = 8, Q3 = 12. IQR = 12 - 8 = 4.
+
+User: Over 6 months, a family spent $1200, $1100, $1300, $1250, $1150, and $1200 on groceries. What is the monthly mean?
+Joe: Sum = 1200+1100+1300+1250+1150+1200 = 7200. Mean = 7200/6 = $1200.
+User: If they want to average $1150 over 7 months, what must they spend in month 7?
+Joe: Total needed = 7 * 1150 = 8050. Spent so far = 7200. Month 7 = 8050 - 7200 = $850.
+
+User: Heights in cm: 155, 162, 168, 170, 173, 180. What is the median height?
+Joe: With 6 numbers, median = average of 3rd and 4th: (168 + 170)/2 = 169 cm.
+User: If a person of height 165 joins, what is the new median?
+Joe: Sort: 155, 162, 165, 168, 170, 173, 180. With 7 numbers, median = 4th = 168 cm.
+
+User: A stock price goes from $100 to $120, then to $90. What is the percent change from start to end?
+Joe: Start = 100, end = 90. Change = -10. Percent = -10/100 = -10%.
+User: What is the percent change from the peak of $120 to the end of $90?
+Joe: Change = -30. Percent = -30/120 = -25%.
+
+User: A plane flies 1800 km in 2.5 hours. What is its speed?
+Joe: Speed = 1800 / 2.5 = 720 km/h.
+User: What is that speed in meters per second?
+Joe: 720 km/h = 720 * 1000 / 3600 = 200 m/s.
+
+User: A table shows rainfall: Jan 3.2, Feb 2.8, Mar 4.1, Apr 3.9, May 1.5 inches. What is the mean monthly rainfall?
+Joe: Sum = 3.2 + 2.8 + 4.1 + 3.9 + 1.5 = 15.5. Mean = 15.5 / 5 = 3.1 inches.
+User: Which month is closest to the mean?
+Joe: 3.1 is closest to Jan at 3.2, which is only 0.1 away. January is closest.
+
+User: A student has quiz scores of 7, 8, 6, 9, 10 each worth the same weight. What is the mean quiz score?
+Joe: Sum = 7 + 8 + 6 + 9 + 10 = 40. Mean = 40 / 5 = 8.
+User: If the teacher drops the lowest score, what is the new mean?
+Joe: Dropping 6 leaves 7 + 8 + 9 + 10 = 34. New mean = 34 / 4 = 8.5.
+
+User: Survey responses: 3, 4, 4, 5, 5, 5, 6, 6, 7. What is the mode?
+Joe: 5 appears three times, the most. Mode = 5.
+User: What are the median and mean?
+Joe: Sorted, 9 values. Median = 5th = 5. Mean = (3+4+4+5+5+5+6+6+7)/9 = 45/9 = 5.
+
+User: A $250 item is on sale for $180. What is the percent discount?
+Joe: Discount = 250 - 180 = 70. Percent = 70/250 = 0.28 = 28%.
+User: After the sale, the price goes back up by 28%. What is the new price?
+Joe: 28% of 180 = 50.40. New price = 180 + 50.40 = $230.40, still below the original $250.
+
+User: A faucet fills a 15-liter bucket in 2 minutes. What is the flow rate in liters per minute?
+Joe: Rate = 15 / 2 = 7.5 liters per minute.
+User: How long to fill a 60-liter tank at that rate?
+Joe: Time = 60 / 7.5 = 8 minutes.
+
+User: What is the mean of the integers from 1 to 10?
+Joe: Sum = 10 * 11 / 2 = 55. Mean = 55 / 10 = 5.5.
+User: What is the mean of the integers from 11 to 20?
+Joe: Sum of 11 to 20 = (10 * 31 / 2) = 155. Mean = 155 / 10 = 15.5. Or average of first and last: (11 + 20)/2 = 15.5.
+
+User: A line graph shows temperatures: Mon 60, Tue 65, Wed 70, Thu 68, Fri 72. What is the median temperature?
+Joe: Sort: 60, 65, 68, 70, 72. Median = 68 degrees.
+User: What is the temperature range over these 5 days?
+Joe: Highest = 72, lowest = 60. Range = 12 degrees.
+
+User: A dataset of house prices in thousands: 180, 185, 190, 195, 200, 450. What is the mean?
+Joe: Sum = 180+185+190+195+200+450 = 1400. Mean = 1400/6 = about 233.3 thousand.
+User: Remove the outlier and recalculate the mean.
+Joe: Without 450: sum = 950 over 5. Mean = 950/5 = 190 thousand, much more representative.
+
+User: Temperatures: -8, -3, 2, 5, -1. What is the mean?
+Joe: Sum = -8 - 3 + 2 + 5 - 1 = -5. Mean = -5 / 5 = -1 degree.
+User: What is the median?
+Joe: Sort: -8, -3, -1, 2, 5. Median = -1 degree.
+
+User: A business buys an item for $40 and sells it for $55. What is the percent profit based on cost?
+Joe: Profit = 15. Percent = 15/40 = 0.375 = 37.5%.
+User: What is the profit margin as a percent of the selling price?
+Joe: 15/55 = about 27.3%.
+
+User: A town population was 12,000 in 2020 and 13,200 in 2025. What is the average annual rate of change?
+Joe: Change = 1200 over 5 years. Rate = 1200/5 = 240 people per year.
+User: At that rate, what will the population be in 2035?
+Joe: From 2025 to 2035 is 10 years. 10 * 240 = 2400. Population = 13,200 + 2,400 = 15,600.
+
+User: What is the mean of 1/2, 1/3, and 1/6?
+Joe: Sum = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1. Mean = 1/3.
+User: What is the median of those three fractions?
+Joe: Sorted: 1/6, 1/3, 1/2. Median = 1/3.
+
+User: A bar chart shows sales: Q1=50, Q2=65, Q3=70, Q4=55. What is the mean quarterly sales?
+Joe: Sum = 50+65+70+55 = 240. Mean = 240/4 = 60.
+User: What is the percent change from Q1 to Q3?
+Joe: Change = 70 - 50 = 20. Percent = 20/50 = 40% increase.
+
+User: An employee works 20 hours at $15/hr and 30 hours at $20/hr in a week. What is the average hourly wage?
+Joe: Total pay = 20*15 + 30*20 = 300 + 600 = 900. Total hours = 50. Average = 900/50 = $18/hr.
+User: If the employee works 10 more hours at $25/hr, what is the new average?
+Joe: New pay = 900 + 250 = 1150. New hours = 60. Average = 1150/60 = about $19.17/hr.
+
+User: A stem-and-leaf plot shows values: 12, 14, 14, 15, 17, 18, 18, 18, 20. What is the mode?
+Joe: 18 appears three times, the most. Mode = 18.
+User: What is the median?
+Joe: With 9 values, median = 5th = 17.
+
+User: Two datasets each have mean 50. Dataset A: 45, 50, 55. Dataset B: 10, 50, 90. What are their ranges?
+Joe: Range A = 55 - 45 = 10. Range B = 90 - 10 = 80. Same mean but very different spreads.
+User: Which dataset has more consistent values?
+Joe: Dataset A has much less spread, so its values are more consistent and reliable.
+
+User: A restaurant bill is $45. A customer leaves a $9 tip. What percent tip is that?
+Joe: 9/45 = 0.20 = 20%.
+User: If the customer wants to leave 15% on a $60 bill, how much is the tip?
+Joe: 15% of 60 = 0.15 * 60 = $9.
+
+User: A road rises 12 meters over a horizontal distance of 200 meters. What is the gradient as a percent?
+Joe: Gradient = 12/200 = 0.06 = 6%.
+User: What angle does that gradient make with the horizontal?
+Joe: arctan(0.06) = about 3.43 degrees.
+
+User: What is the mean of 1, 4, 9, 16, 25?
+Joe: Sum = 1 + 4 + 9 + 16 + 25 = 55. Mean = 55 / 5 = 11.
+User: Those are the squares of 1 through 5. What is the mean of the square roots of those numbers?
+Joe: Square roots are 1, 2, 3, 4, 5. Mean = (1+2+3+4+5)/5 = 15/5 = 3.
+
+User: A test has 10 questions worth 5 points each and 5 questions worth 10 points each. A student gets 8 of the 5-point questions right and 3 of the 10-point questions right. What is the percentage score?
+Joe: Total possible = 10*5 + 5*10 = 50 + 50 = 100. Student earned = 8*5 + 3*10 = 40 + 30 = 70. Score = 70%.
+User: What is the student's average points per question?
+Joe: 70 points / 15 questions = about 4.67 points per question.
+
+User: Data: 2, 5, 7, 8, 9, 11, 13. What is the range?
+Joe: Range = 13 - 2 = 11.
+User: If a new value of 50 is added, what is the new range?
+Joe: New range = 50 - 2 = 48. A single outlier can massively inflate the range.
+
+User: Test scores as percentages: 60%, 75%, 80%, 90%, 95%. What is the mean score?
+Joe: Sum = 60 + 75 + 80 + 90 + 95 = 400. Mean = 400 / 5 = 80%.
+User: What is the median?
+Joe: Sorted: 60, 75, 80, 90, 95. Median = 80%.
+
+User: A double bar chart compares sales of product X and Y: Jan X=30 Y=40, Feb X=45 Y=35, Mar X=50 Y=45. What is the total sales of X over the quarter?
+Joe: X total = 30 + 45 + 50 = 125.
+User: In which month is the difference between X and Y the smallest?
+Joe: Jan diff = 10, Feb diff = 10, Mar diff = 5. March has the smallest difference.
+
+User: A baseball player goes 3 for 10 in game 1 and 2 for 5 in game 2. What is the combined batting average?
+Joe: Total hits = 3 + 2 = 5. Total at-bats = 10 + 5 = 15. Average = 5/15 = 0.333.
+User: What batting average in game 3 over 4 at-bats would bring the overall to 0.350?
+Joe: Need (5 + h)/(15 + 4) = 0.350, so 5 + h = 0.35 * 19 = 6.65, so h = 1.65. Since hits must be whole, impossible to reach exactly 0.350.
+
+User: The mean of 6 numbers is 15. A seventh number, 22, is added. What is the new mean?
+Joe: Original sum = 6 * 15 = 90. New sum = 90 + 22 = 112. New mean = 112 / 7 = 16.
+User: If the original median was 14, could the new median be determined?
+Joe: Without knowing the original order, you cannot determine the exact new median, but it will likely increase since 22 is above the old median.
+
+User: A cup of coffee cools from 90 C to 70 C in 10 minutes. What is the average rate of cooling?
+Joe: Change = -20 C. Rate = -20 / 10 = -2 degrees C per minute.
+User: At that rate, how long to cool from 70 C to 50 C?
+Joe: Need to drop 20 degrees. Time = 20 / 2 = 10 more minutes.
+
+User: Prices: $1.50, $2.00, $2.00, $2.50, $3.00, $3.00, $3.00. What is the mode?
+Joe: $3.00 appears three times, the most. Mode = $3.00.
+User: What is the median price?
+Joe: Sort: 1.50, 2.00, 2.00, 2.50, 3.00, 3.00, 3.00. Median = 4th = $2.50.
+
+User: A line chart shows stock prices over 5 days: 50, 52, 49, 53, 56. What is the mean price?
+Joe: Sum = 50+52+49+53+56 = 260. Mean = 260/5 = 52.
+User: What is the overall percent change from day 1 to day 5?
+Joe: Change = 56 - 50 = 6. Percent = 6/50 = 12% increase.
+
+User: A student has an 82 average before the final. The final is worth 25% of the grade. What overall grade does a 94 on the final give?
+Joe: Overall = 82*0.75 + 94*0.25 = 61.5 + 23.5 = 85.
+User: What final score is needed to get a 90 overall?
+Joe: 82*0.75 + x*0.25 = 90, so 61.5 + 0.25x = 90, giving 0.25x = 28.5, so x = 114. Since 114 exceeds 100, a 90 is impossible.
+
+User: A student's test scores: 65%, 78%, 82%, 91%, 94%. What is the range?
+Joe: Range = 94 - 65 = 29 percentage points.
+User: If the lowest score is dropped, what is the new range?
+Joe: New range = 94 - 78 = 16 percentage points.
+
+User: Over 4 years, a car depreciated from $20,000 to $12,800. What is the mean annual depreciation?
+Joe: Total depreciation = 20000 - 12800 = 7200 over 4 years. Mean annual = 7200/4 = $1800 per year.
+User: What is the mean annual depreciation rate as a percent of the original?
+Joe: 1800/20000 = 0.09 = 9% per year.
+
+User: Ages: 10-19 (3 people), 20-29 (7), 30-39 (5), 40-49 (2). How many people total, and in which group is the median?
+Joe: Total = 3+7+5+2 = 17. Median is the 9th person, who falls in the 20-29 age group.
+User: Estimate the median age assuming ages are evenly spread within groups.
+Joe: The 9th person is in the 20-29 group. The first 3 are 10-19. We need the 6th of 7 in the 20-29 group, roughly 20 + (6/7)*10 = about 28.6 years.
+
+User: A salary increases from $45,000 to $49,500. What is the percent increase?
+Joe: Increase = 4500. Percent = 4500/45000 = 0.10 = 10%.
+User: If next year the salary drops by 10%, what is the new salary?
+Joe: 10% of 49500 = 4950. New salary = 49500 - 4950 = $44,550, which is below the original $45,000.
+
+User: A typist types 360 words in 8 minutes. What is the typing rate in words per minute?
+Joe: Rate = 360 / 8 = 45 words per minute.
+User: How long to type a 900-word document at that rate?
+Joe: Time = 900 / 45 = 20 minutes.
+
+User: The deviations from the mean are -3, -1, 0, 2, 2. What is the mean absolute deviation?
+Joe: Absolute values: 3, 1, 0, 2, 2. Sum = 8. Mean absolute deviation = 8/5 = 1.6.
+User: What is the sum of the original deviations?
+Joe: -3 + -1 + 0 + 2 + 2 = 0. The sum of deviations from the mean is always zero.
+
+User: A table shows student enrollments: Grade 9: 120, Grade 10: 105, Grade 11: 95, Grade 12: 80. What is the total enrollment?
+Joe: Total = 120 + 105 + 95 + 80 = 400 students.
+User: What percent of students are in grade 12?
+Joe: 80/400 = 0.20 = 20%.
+
+User: A basket has 5 apples at $0.50 each and 3 oranges at $0.80 each. What is the mean price per fruit?
+Joe: Total cost = 5*0.50 + 3*0.80 = 2.50 + 2.40 = 4.90. Total fruits = 8. Mean = 4.90/8 = $0.6125.
+User: If apple prices rise to $0.60, what is the new mean?
+Joe: New total = 5*0.60 + 3*0.80 = 3.00 + 2.40 = 5.40. Mean = 5.40/8 = $0.675.
+
+User: Data: 1, 1, 2, 2, 2, 3, 3, 4, 4, 4. What are the modes?
+Joe: 2 and 4 each appear three times. The modes are 2 and 4. This is a bimodal distribution.
+User: What is the mean?
+Joe: Sum = 1+1+2+2+2+3+3+4+4+4 = 26. Mean = 26/10 = 2.6.
+
+User: Sorted data: 5, 8, 10, 12, 15, 18, 20, 22, 25. What is the range?
+Joe: Range = 25 - 5 = 20.
+User: What is the interquartile range?
+Joe: Q1 is the median of the lower half: 5, 8, 10, 12 -> median of those 4 is (8+10)/2 = 9. Q3 is median of upper half: 18, 20, 22, 25 -> (20+22)/2 = 21. IQR = 21 - 9 = 12.
+
+User: A stock bought at $80 falls to $60. What is the percent loss?
+Joe: Loss = 20. Percent = 20/80 = 25%.
+User: What gain percent from $60 is needed to get back to $80?
+Joe: Gain needed = 20. Percent = 20/60 = about 33.3%. A larger percentage gain is needed because the base is smaller.
+
+User: A painter paints 40 square meters in 5 hours. What is the rate in square meters per hour?
+Joe: Rate = 40 / 5 = 8 square meters per hour.
+User: How long to paint a 140 square meter wall at that rate?
+Joe: Time = 140 / 8 = 17.5 hours.
+
+User: The mean of 8 numbers is 14. Six of them are 10, 12, 15, 16, 13, 14. The other two are equal. What are they?
+Joe: Sum of 8 = 8 * 14 = 112. Known sum = 10+12+15+16+13+14 = 80. The two equal numbers sum to 112 - 80 = 32, so each is 16.
+User: What is the median of all 8 numbers?
+Joe: Sort: 10, 12, 13, 14, 15, 16, 16, 16. Median = (14+15)/2 = 14.5.
+
+User: A pie chart shows: Housing 35%, Food 25%, Transport 15%, Entertainment 10%, Savings 15%. If monthly income is $4,000, how much is spent on housing?
+Joe: Housing = 0.35 * 4000 = $1,400.
+User: How much more is spent on housing than on food?
+Joe: Food = 0.25 * 4000 = $1,000. Difference = 1400 - 1000 = $400.
+
+User: An exam has section A (20 points) and section B (30 points). A student scores 15 on A and 24 on B. What is the percentage score?
+Joe: Total earned = 15 + 24 = 39 out of 50. Percent = 39/50 = 78%.
+User: What is the weighted average if section A counts 40% and section B counts 60%?
+Joe: Weighted = (15/20)*40 + (24/30)*60 = 0.75*40 + 0.80*60 = 30 + 48 = 78%. Same result because both sections have the same percentage.
+
+User: Data: 2, 3, 5, 7, 11, 50, 52. What is the median?
+Joe: Sorted, 7 numbers. Median = 4th = 7.
+User: How does the median compare to the mean?
+Joe: Mean = (2+3+5+7+11+50+52)/7 = 130/7 = about 18.6. The median of 7 is much lower and more representative of the typical value.
+
+User: What is the mean of the first 6 even numbers?
+Joe: First 6 evens: 2, 4, 6, 8, 10, 12. Sum = 42. Mean = 42/6 = 7.
+User: What is the mean of the first 6 odd numbers?
+Joe: First 6 odds: 1, 3, 5, 7, 9, 11. Sum = 36. Mean = 36/6 = 6.
+
+User: A salesperson earns a 6% commission on $25,000 in sales. How much commission is earned?
+Joe: Commission = 0.06 * 25000 = $1,500.
+User: If the commission rate rises to 8%, how much more would be earned on the same sales?
+Joe: New commission = 0.08 * 25000 = $2,000. Difference = 2000 - 1500 = $500 more.
+
+User: A factory produces 300 units in 4 hours and 450 units in 6 hours. What is the average production rate?
+Joe: Total = 750 units in 10 hours. Rate = 750/10 = 75 units per hour.
+User: At that rate, how many units in an 8-hour shift?
+Joe: 8 * 75 = 600 units.
+
+User: A frequency table: Score 1 (2 students), 2 (5), 3 (8), 4 (3), 5 (2). What is the modal score?
+Joe: Score 3 has the highest frequency of 8. Mode = 3.
+User: What is the mean score?
+Joe: Sum = 1*2 + 2*5 + 3*8 + 4*3 + 5*2 = 2+10+24+12+10 = 58. Total students = 20. Mean = 58/20 = 2.9.
+
+User: A scatter plot shows points (1,2), (2,4), (3,6), (4,8). What is the relationship between x and y?
+Joe: y is always twice x. The relationship is linear: y = 2x.
+User: If the pattern continues, what is y when x = 10?
+Joe: y = 2 * 10 = 20.
+
+User: Three groups: 5 people average 20, 8 people average 30, 7 people average 40. What is the overall average?
+Joe: Sum = 5*20 + 8*30 + 7*40 = 100 + 240 + 280 = 620. Total people = 20. Average = 620/20 = 31.
+User: What is the median group and why?
+Joe: The middle person (10th) falls in the second group since cumulative counts are 5, 13, 20. The median group is the 30-average group.
+
+User: All 5 numbers in a set are 7. What are the mean, median, and mode?
+Joe: Mean = 7, median = 7, mode = 7. All measures of center are the same.
+User: What is the range?
+Joe: Range = 7 - 7 = 0. There is no spread at all.
+
+User: An item costs $120 plus 8% tax. What is the total price?
+Joe: Tax = 120 * 0.08 = 9.60. Total = 120 + 9.60 = $129.60.
+User: What percent of the total is the tax?
+Joe: 9.60 / 129.60 = about 7.4% of the total.
+
+User: A student reads 45 pages in 30 minutes. What is the reading rate in pages per hour?
+Joe: 30 minutes = 0.5 hours. Rate = 45 / 0.5 = 90 pages per hour.
+User: How long to read a 270-page book at that rate?
+Joe: Time = 270 / 90 = 3 hours.
+
+User: What is the mean of all two-digit numbers from 10 to 99?
+Joe: Sum = (10+99)*90/2 = 109*45 = 4905. Mean = 4905/90 = 54.5.
+User: How many of those numbers are above the mean?
+Joe: Numbers above 54.5 are 55 through 99, which is 45 numbers, exactly half.
+
+User: Data: 2, 3, 3, 3, 4, 4, 5, 5, 5, 5. What is the median?
+Joe: With 10 numbers, median = average of 5th and 6th. 5th = 4, 6th = 4. Median = 4.
+User: What is the mode?
+Joe: 5 appears four times, the most. Mode = 5.
+
+User: A histogram shows bins: 0-10 (5), 10-20 (12), 20-30 (8), 30-40 (3), 40-50 (2). How many data points total?
+Joe: Total = 5 + 12 + 8 + 3 + 2 = 30.
+User: Which bin contains the median?
+Joe: The 15th and 16th points. First bin has 5, second has 12 (cumulative 17). The median falls in the 10-20 bin.
+
+User: A basketball player scores 15 points in game 1, 20 in game 2, and 25 in game 3. What is the mean points per game?
+Joe: Mean = (15+20+25)/3 = 60/3 = 20 points per game.
+User: If game 4 counts double, what is the weighted average with a 30-point game 4?
+Joe: Weighted = (15+20+25+2*30)/(1+1+1+2) = (15+20+25+60)/5 = 120/5 = 24 points per game.
+
+User: Data: 10, 12, 14, 16, 18, 20, 100. What is the median?
+Joe: Sorted, 7 numbers. Median = 4th = 16.
+User: Remove the 100 outlier. What is the new median?
+Joe: 10, 12, 14, 16, 18, 20. With 6 numbers, median = (14+16)/2 = 15. The median barely changed from 16 to 15.
+
+User: A store buys a chair for $80, marks it up 25%, then discounts it 20%. What is the final price?
+Joe: After markup: 80 * 1.25 = 100. After discount: 100 * 0.80 = $80. It returns to the original price.
+User: What single percent change from $80 gives the same final price?
+Joe: Zero percent change gives the same result.
+
+User: A car consumes 8 liters of fuel per 100 km. What is the fuel consumption rate in liters per km?
+Joe: Rate = 8/100 = 0.08 liters per km.
+User: How far can the car travel on 20 liters?
+Joe: Distance = 20 / 0.08 = 250 km.
+
+User: What is the mean of the digits in the number 3,456?
+Joe: Digits: 3, 4, 5, 6. Sum = 18. Mean = 18/4 = 4.5.
+User: What is the median of those digits?
+Joe: Sorted: 3, 4, 5, 6. Median = (4+5)/2 = 4.5.
+
+User: Data: 1/4, 1/2, 1/2, 3/4, 1. What is the mode?
+Joe: 1/2 appears twice, the most. Mode = 1/2.
+User: What is the mean?
+Joe: Sum = 0.25 + 0.5 + 0.5 + 0.75 + 1 = 3.0. Mean = 3.0 / 5 = 0.6 = 3/5.
+
+User: A company's revenue over 4 years: 100, 120, 150, 180. What is the average annual increase?
+Joe: Total increase = 180 - 100 = 80 over 3 intervals. Average annual = 80/3 = about 26.7 per year.
+User: What is the average annual growth rate?
+Joe: Growth rates: 20%, 25%, 20%. Total growth factor 1.8 over 3 years gives annualized (1.8)^(1/3) = about 1.216, or 21.6%.
+
+User: A number is increased by 25% to 50. What was the original number?
+Joe: 1.25x = 50, so x = 50 / 1.25 = 40.
+User: What percent decrease from 50 would return to 40?
+Joe: Decrease = 10. Percent = 10/50 = 20%.
+
+User: A tank's water level drops from 2.4 m to 1.8 m in 3 hours. What is the rate of change?
+Joe: Change = -0.6 m. Rate = -0.6 / 3 = -0.2 m per hour.
+User: At that rate, how long until the tank is empty starting from 1.8 m?
+Joe: Time = 1.8 / 0.2 = 9 hours.
+
+User: The mean of x, 2x, and 3x is 18. What is x?
+Joe: Sum = x + 2x + 3x = 6x. Mean = 6x/3 = 2x = 18, so x = 9.
+User: What are the three numbers?
+Joe: x = 9, 2x = 18, 3x = 27. The numbers are 9, 18, 27.
+
+User: Favorite colors surveyed: Blue, Red, Blue, Green, Blue, Red, Yellow. What is the mode?
+Joe: Blue appears three times, more than any other. Mode = Blue.
+User: What fraction chose Blue?
+Joe: 3 out of 7 chose Blue. Fraction = 3/7.
+
+User: Chart A shows sales rising steadily. Chart B shows sales fluctuating. If both have the same mean, which has a larger range?
+Joe: Chart B with fluctuations has a larger range because values go higher and lower than the steady rise of Chart A.
+User: What measure best captures the difference between the two charts?
+Joe: The range or standard deviation best captures the spread difference.
+
+User: Five numbers have a mean of 20. Four of them are 15, 18, 22, 25. What is the fifth?
+Joe: Sum of five = 5 * 20 = 100. Known sum = 15+18+22+25 = 80. Fifth = 100 - 80 = 20.
+User: What is the range of all five numbers?
+Joe: Sort: 15, 18, 20, 22, 25. Range = 25 - 15 = 10.
+
+User: A worker produces 50 units per hour. After training, output rises to 65 units per hour. What is the percent increase?
+Joe: Increase = 15. Percent = 15/50 = 30%.
+User: If the worker then slows down by 30%, what is the new output?
+Joe: 30% of 65 = 19.5. New output = 65 - 19.5 = 45.5 units per hour, which is below the original 50.
+
+User: A savings account earns $60 interest per year on a $1,000 deposit. What is the annual interest rate?
+Joe: Rate = 60/1000 = 0.06 = 6% per year.
+User: At that rate, how much interest is earned in 18 months?
+Joe: 18 months = 1.5 years. Interest = 1000 * 0.06 * 1.5 = $90.
+
+User: Ages: 5, 5, 6, 6, 6, 7, 7, 8, 8, 9. What is the median age?
+Joe: 10 numbers, median = average of 5th and 6th. 5th = 6, 6th = 7. Median = 6.5.
+User: What is the modal age?
+Joe: 6 appears three times, the most. Mode = 6.
+
+User: A scatter plot shows study time and test scores with points trending upward. What does this suggest?
+Joe: There is a positive correlation between study time and test scores.
+User: Does this prove that studying more causes higher scores?
+Joe: Correlation does not prove causation, but in this case a causal relationship is plausible.
+
+User: What is the mean of 0, 5, 10, 15, 20?
+Joe: Sum = 0+5+10+15+20 = 50. Mean = 50/5 = 10.
+User: What is the mean if 0 is excluded?
+Joe: Sum = 5+10+15+20 = 50. Mean = 50/4 = 12.5. Including zero pulls the mean down.
+
+User: A train travels at 90 km/h. What is its speed in m/s?
+Joe: 90 km/h = 90 * 1000 / 3600 = 25 m/s.
+User: How far does it travel in 30 seconds at that speed?
+Joe: Distance = 25 * 30 = 750 meters.
+
+User: Dice rolls: 2, 3, 5, 1, 6, 4. What is the mode?
+Joe: Each number appears once. There is no mode.
+User: What is the mean?
+Joe: Sum = 2+3+5+1+6+4 = 21. Mean = 21/6 = 3.5.
+
+User: A course grade is 20% homework, 30% quizzes, 50% final. Homework = 90, quizzes = 70, final = 80. What is the course grade?
+Joe: Weighted = 90*0.20 + 70*0.30 + 80*0.50 = 18 + 21 + 40 = 79.
+User: If the student retakes the final and scores 95, what is the new grade?
+Joe: New weighted = 90*0.20 + 70*0.30 + 95*0.50 = 18 + 21 + 47.5 = 86.5.
+
+User: A cumulative frequency graph shows 50 students. The median reading score is at 30 students on the y-axis. What does this mean?
+Joe: It means the median student is the 25th (half of 50). The x-value at y=25 on the cumulative graph gives the median score.
+User: If the 25th student corresponds to a score of 68, what is the median?
+Joe: The median score is 68.
+
+User: A $200 item is discounted 30% then an extra 15% off the reduced price. What is the final price?
+Joe: After 30% off: 200 * 0.70 = 140. After 15% off: 140 * 0.85 = $119.
+User: What single discount from $200 would give the same $119 price?
+Joe: Discount = 200 - 119 = 81. Single discount percent = 81/200 = 40.5%.
+
+User: A worker's wage increases from $15 to $18 per hour. What is the rate of change in dollars per year if the change happens over 2 years?
+Joe: Change = 3 dollars over 2 years. Rate = 3/2 = $1.50 per year.
+User: At that rate, what would the wage be after 5 more years?
+Joe: Starting from $18: 5 * 1.50 = 7.50. Wage = 18 + 7.50 = $25.50 per hour.
+
+User: The numbers 2, 4, 6, 8, 10 have what mean and median?
+Joe: Mean = (2+4+6+8+10)/5 = 30/5 = 6. Median = 6. They are equal because the data is symmetric.
+User: If the set is 2, 4, 6, 8, 100, how do mean and median compare?
+Joe: Mean = (2+4+6+8+100)/5 = 120/5 = 24. Median = 6. The mean is much larger due to the outlier.
+
+User: A tally chart shows: Item A ||||, Item B |||, Item C |||||. What is the mode?
+Joe: Item C has 5 tallies, the most. Mode = Item C.
+User: How many total tallies are there?
+Joe: 4 + 3 + 5 = 12 tallies total.
+
+User: A bar chart shows boys and girls in three classes: Class 1: 12 boys, 15 girls; Class 2: 14 boys, 12 girls; Class 3: 10 boys, 18 girls. What is the overall boy-girl ratio?
+Joe: Total boys = 12+14+10 = 36. Total girls = 15+12+18 = 45. Ratio = 36:45 = 4:5.
+User: What percent of students are boys?
+Joe: 36 / (36+45) = 36/81 = 4/9 = about 44.4%.
+
+User: A student takes 3 credit hours of A (4.0), 4 credit hours of B (3.0), and 2 credit hours of C (2.0). What is the GPA?
+Joe: Quality points = 3*4 + 4*3 + 2*2 = 12 + 12 + 4 = 28. Total credits = 9. GPA = 28/9 = about 3.11.
+User: What grade in a 3-credit course would raise the GPA to 3.2?
+Joe: Need (28 + 3x) / (9 + 3) = 3.2, so 28 + 3x = 38.4, giving 3x = 10.4, so x = 3.47. An A- (3.7) would work.
+
+User: A dataset has mean 25, median 24, and mode 22. What can you infer about the distribution?
+Joe: The mean is greater than the median, suggesting the data is right-skewed with some higher values pulling the mean up.
+User: If the mode is the smallest of the three measures, what does that imply?
+Joe: It implies the most common value is low, but there are some higher values that shift the mean and median upward. The distribution has a right tail.
+
+User: Convert 25 degrees Celsius to Fahrenheit.
+Joe: Multiply by 9/5 and add 32: 25 * 9/5 = 45, then 45 + 32 = 77. So 25 C is 77 F.
+User: What is 100 C in Fahrenheit?
+Joe: 100 * 9/5 = 180, then 180 + 32 = 212 F. That is the boiling point of water.
+
+User: Convert 98.6 degrees Fahrenheit to Celsius.
+Joe: Subtract 32 then multiply by 5/9: 98.6 - 32 = 66.6, then 66.6 * 5/9 = 37. So 98.6 F is 37 C, normal body temperature.
+User: If a fever is 101.3 F, what is that in Celsius?
+Joe: 101.3 - 32 = 69.3, then 69.3 * 5/9 = 38.5. A fever of 101.3 F is 38.5 C.
+
+User: How do you convert Kelvin to Celsius?
+Joe: Subtract 273.15 from the Kelvin temperature. For example, 300 K minus 273.15 is 26.85 C.
+User: What is 0 K in Celsius?
+Joe: 0 K is absolute zero. 0 - 273.15 = -273.15 C, the coldest possible temperature.
+
+User: A 10-gram object has a volume of 5 cubic centimeters. What is its density?
+Joe: Density = mass / volume = 10 g / 5 cm^3 = 2 g/cm^3.
+User: Would this object float in water?
+Joe: Water has density 1 g/cm^3, so 2 g/cm^3 is denser. The object would sink.
+
+User: Gold has a density of 19.3 g/cm^3. What is the mass of a 20 cm^3 gold bar?
+Joe: Mass = density * volume = 19.3 * 20 = 386 grams.
+User: What is the volume of 100 grams of gold?
+Joe: Volume = mass / density = 100 / 19.3 = about 5.18 cm^3.
+
+User: Water has a density of 1 g/cm^3. What is the mass of 2.5 liters of water?
+Joe: 2.5 liters is 2500 cm^3. Mass = 1 * 2500 = 2500 grams, or 2.5 kg.
+User: What is the volume of 500 grams of water?
+Joe: Volume = 500 / 1 = 500 cm^3, which is 0.5 liters.
+
+User: A cube of aluminum has side 2 cm and mass 21.6 grams. What is its density?
+Joe: Volume = 2^3 = 8 cm^3. Density = 21.6 / 8 = 2.7 g/cm^3.
+User: How does that compare to water?
+Joe: Aluminum at 2.7 g/cm^3 is 2.7 times denser than water, so it sinks.
+
+User: Convert 5 miles to kilometers. Use 1 mile = 1.609 km.
+Joe: 5 * 1.609 = 8.045 km. So 5 miles is about 8.05 km.
+User: Convert 10 km to miles.
+Joe: 10 / 1.609 = about 6.21 miles.
+
+User: Convert 10 US gallons to liters. Use 1 gallon = 3.785 liters.
+Joe: 10 * 3.785 = 37.85 liters.
+User: How many gallons is 50 liters?
+Joe: 50 / 3.785 = about 13.21 gallons.
+
+User: Convert 150 pounds to kilograms. Use 1 lb = 0.454 kg.
+Joe: 150 * 0.454 = 68.1 kg. So 150 pounds is about 68 kg.
+User: Convert 80 kg to pounds.
+Joe: 80 / 0.454 = about 176.2 pounds.
+
+User: Convert 6 feet to centimeters. Use 1 foot = 30.48 cm.
+Joe: 6 * 30.48 = 182.88 cm.
+User: How many centimeters in a 5-foot-8-inch person?
+Joe: 5 feet is 152.4 cm, plus 8 inches at 2.54 cm each is 20.32 cm, total 172.72 cm.
+
+User: Convert 65 miles per hour to kilometers per hour.
+Joe: 65 * 1.609 = 104.6 km/h.
+User: What is 100 km/h in mph?
+Joe: 100 / 1.609 = about 62.1 mph.
+
+User: A car travels 60 mph for 2 hours, then 50 mph for 1.5 hours. What is the total distance?
+Joe: First leg: 60 * 2 = 120 miles. Second leg: 50 * 1.5 = 75 miles. Total = 195 miles.
+User: What is the average speed for the whole trip?
+Joe: Total time = 3.5 hours. Average speed = 195 / 3.5 = about 55.7 mph.
+
+User: A runner does 400 meters in 50 seconds. What is their speed in m/s?
+Joe: Speed = 400 / 50 = 8 m/s.
+User: What is that speed in km/h?
+Joe: 8 * 3600 / 1000 = 28.8 km/h.
+
+User: A plane flies at 800 km/h for 3.5 hours. How far does it go?
+Joe: Distance = 800 * 3.5 = 2800 km.
+User: How long would it take to fly 4200 km at the same speed?
+Joe: Time = 4200 / 800 = 5.25 hours, which is 5 hours and 15 minutes.
+
+User: A ship travels at 20 knots (nautical miles per hour). How far in 6 hours?
+Joe: Distance = 20 * 6 = 120 nautical miles.
+User: Convert 120 nautical miles to kilometers. Use 1 nautical mile = 1.852 km.
+Joe: 120 * 1.852 = 222.24 km.
+
+User: A cyclist goes 15 km in 45 minutes. What is the speed in km/h?
+Joe: 45 minutes is 0.75 hours. Speed = 15 / 0.75 = 20 km/h.
+User: At that speed, how long for 35 km?
+Joe: Time = 35 / 20 = 1.75 hours, which is 1 hour and 45 minutes.
+
+User: A swimmer does 100 meters in 80 seconds. What is the pace per 100 meters?
+Joe: Already given: 80 seconds per 100 meters, which is 1 minute 20 seconds per 100 m.
+User: How many lengths of a 50-meter pool can they swim in 10 minutes?
+Joe: 10 minutes = 600 seconds. Each length at 80 seconds per 100 m is 40 seconds per 50 m. 600 / 40 = 15 lengths.
+
+User: Convert 2.5 hours to seconds.
+Joe: 2.5 hours * 60 minutes/hour = 150 minutes, then 150 * 60 = 9000 seconds.
+User: Convert 7200 seconds to hours.
+Joe: 7200 / 60 = 120 minutes, then 120 / 60 = 2 hours.
+
+User: How many cubic centimeters are in 3 liters?
+Joe: 1 liter = 1000 cm^3, so 3 liters = 3000 cm^3.
+User: Convert 5000 cm^3 to liters.
+Joe: 5000 / 1000 = 5 liters.
+
+User: A sphere has radius 6 cm. What is its volume? Use pi = 3.14.
+Joe: V = (4/3) * pi * r^3 = (4/3) * 3.14 * 216 = (4/3) * 678.24 = 904.32 cm^3.
+User: What is its surface area?
+Joe: SA = 4 * pi * r^2 = 4 * 3.14 * 36 = 452.16 cm^2.
+
+User: A cone has radius 4 cm and height 9 cm. What is its volume? Use pi = 3.14.
+Joe: V = (1/3) * pi * r^2 * h = (1/3) * 3.14 * 16 * 9 = (1/3) * 452.16 = 150.72 cm^3.
+User: What is the volume if the radius is doubled to 8 cm with the same height?
+Joe: V = (1/3) * 3.14 * 64 * 9 = (1/3) * 1808.64 = 602.88 cm^3, exactly 4 times the original.
+
+User: Convert 1 square meter to square centimeters.
+Joe: 1 m = 100 cm, so 1 m^2 = 100 * 100 = 10,000 cm^2.
+User: Convert 50,000 cm^2 to square meters.
+Joe: 50,000 / 10,000 = 5 m^2.
+
+User: A cube has volume 343 cm^3. What is its side length?
+Joe: Side = cube root of 343 = 7 cm, since 7^3 = 343.
+User: What is its surface area?
+Joe: SA = 6 * side^2 = 6 * 49 = 294 cm^2.
+
+User: Convert 2.5 tons to pounds. Use 1 ton = 2000 pounds.
+Joe: 2.5 * 2000 = 5000 pounds.
+User: Convert 5000 pounds to kilograms. Use 1 lb = 0.454 kg.
+Joe: 5000 * 0.454 = 2270 kg.
+
+User: A piece of wood has mass 60 g and volume 80 cm^3. What is its density?
+Joe: Density = 60 / 80 = 0.75 g/cm^3.
+User: Will it float in water?
+Joe: Water density is 1 g/cm^3, so 0.75 is less. The wood will float.
+
+User: Mercury has density 13.6 g/cm^3. What is the mass of 50 cm^3 of mercury?
+Joe: Mass = 13.6 * 50 = 680 grams.
+User: What volume does 1 kg of mercury occupy?
+Joe: Volume = 1000 / 13.6 = about 73.5 cm^3.
+
+User: A gas has density 0.002 g/cm^3. What is the mass of 10,000 cm^3 of this gas?
+Joe: Mass = 0.002 * 10000 = 20 grams.
+User: What is its density in kg/m^3?
+Joe: 0.002 g/cm^3 = 0.002 * 1000 = 2 kg/m^3.
+
+User: Convert 68 F to Celsius.
+Joe: 68 - 32 = 36, then 36 * 5/9 = 20 C. So 68 F is 20 C, a comfortable room temperature.
+User: What range in Celsius corresponds to 50 to 86 F?
+Joe: 50 F is 10 C and 86 F is 30 C. The range is 10 to 30 C.
+
+User: A car consumes 8 liters of fuel per 100 km. How much for 250 km?
+Joe: 250 / 100 = 2.5, then 2.5 * 8 = 20 liters.
+User: If fuel costs $1.50 per liter, what is the cost for 250 km?
+Joe: 20 * 1.50 = $30.
+
+User: A faucet drips at 2 mL per minute. How much water is wasted in a day?
+Joe: 2 mL/min * 60 min/hour * 24 hours = 2880 mL = 2.88 liters per day.
+User: How much in a year?
+Joe: 2.88 * 365 = 1051.2 liters per year.
+
+User: A concrete slab is 4 m long, 3 m wide, and 0.15 m thick. What is its volume?
+Joe: V = 4 * 3 * 0.15 = 1.8 cubic meters.
+User: If concrete has density 2400 kg/m^3, what is its mass?
+Joe: Mass = 2400 * 1.8 = 4320 kg.
+
+User: Convert 120 yards to feet. Use 1 yard = 3 feet.
+Joe: 120 * 3 = 360 feet.
+User: Convert 360 feet to meters. Use 1 foot = 0.3048 m.
+Joe: 360 * 0.3048 = 109.728 meters, about 109.7 m.
+
+User: A marathon is 26.2 miles. What is that in kilometers?
+Joe: 26.2 * 1.609 = 42.16 km. A marathon is about 42.2 km.
+User: What is the pace per kilometer if you finish in 3 hours 30 minutes?
+Joe: 3.5 hours / 42.2 km = about 0.083 hours per km, which is 4 minutes 58 seconds per km.
+
+User: A rectangular field is 100 m by 60 m. What is its area in hectares? 1 ha = 10,000 m^2.
+Joe: Area = 100 * 60 = 6000 m^2. 6000 / 10000 = 0.6 hectares.
+User: What is the area in acres? 1 acre = 4047 m^2.
+Joe: 6000 / 4047 = about 1.48 acres.
+
+User: Convert 2.5 atmospheres to kPa. Use 1 atm = 101.325 kPa.
+Joe: 2.5 * 101.325 = 253.3125 kPa, about 253.3 kPa.
+User: Convert 500 kPa to atmospheres.
+Joe: 500 / 101.325 = about 4.93 atm.
+
+User: Convert 55 mph to feet per second. Use 1 mile = 5280 feet.
+Joe: 55 * 5280 = 290,400 feet per hour. 290,400 / 3600 = about 80.67 feet per second.
+User: Convert 88 ft/s to mph.
+Joe: 88 * 3600 = 316,800 feet per hour. 316,800 / 5280 = 60 mph.
+
+User: A pool is 25 m long, 10 m wide, and 2 m deep. What is its volume in cubic meters?
+Joe: V = 25 * 10 * 2 = 500 m^3.
+User: How many liters of water does it hold?
+Joe: 500 m^3 = 500,000 liters, since 1 m^3 = 1000 L.
+
+User: A paint can covers 12 m^2 per liter. How many liters to paint a wall 8 m by 3 m?
+Joe: Wall area = 8 * 3 = 24 m^2. Liters needed = 24 / 12 = 2 liters.
+User: How much for two coats on the same wall?
+Joe: Two coats = 2 * 24 = 48 m^2. Liters = 48 / 12 = 4 liters.
+
+User: A speed of 10 m/s is how many km/h?
+Joe: 10 * 3600 / 1000 = 36 km/h.
+User: Convert 72 km/h to m/s.
+Joe: 72 * 1000 / 3600 = 20 m/s.
+
+User: A light-year is the distance light travels in one year. Light speed is 300,000 km/s. How many km in a light-year?
+Joe: Seconds per year = 365 * 24 * 3600 = 31,536,000. Distance = 300,000 * 31,536,000 = about 9.46 * 10^12 km.
+User: How many light-years to a star 4 * 10^13 km away?
+Joe: 4 * 10^13 / 9.46 * 10^12 = about 4.23 light-years.
+
+User: A sound wave travels at 340 m/s in air. How far in 1.5 seconds?
+Joe: Distance = 340 * 1.5 = 510 meters.
+User: How long to hear thunder from a lightning strike 2 km away?
+Joe: Time = 2000 / 340 = about 5.88 seconds.
+
+User: A car accelerates from 0 to 30 m/s in 6 seconds. What is its acceleration in m/s^2?
+Joe: a = (30 - 0) / 6 = 5 m/s^2.
+User: What distance does it cover during this acceleration?
+Joe: Distance = (1/2) * a * t^2 = 0.5 * 5 * 36 = 90 meters.
+
+User: An object is dropped from rest. Gravity is 9.8 m/s^2. How far does it fall in 2 seconds?
+Joe: Distance = (1/2) * 9.8 * 2^2 = 0.5 * 9.8 * 4 = 19.6 meters.
+User: What is its velocity after 2 seconds?
+Joe: v = g * t = 9.8 * 2 = 19.6 m/s.
+
+User: A 5-liter container holds 3 kg of oil. What is the density of the oil in g/cm^3?
+Joe: 5 L = 5000 cm^3, 3 kg = 3000 g. Density = 3000 / 5000 = 0.6 g/cm^3.
+User: Will this oil float on water?
+Joe: Yes, 0.6 is less than water's 1.0 g/cm^3, so oil floats on water.
+
+User: Convert 100 Joules to calories. Use 1 cal = 4.184 J.
+Joe: 100 / 4.184 = about 23.9 calories.
+User: Convert 50 food calories (kcal) to Joules.
+Joe: 50 kcal = 50,000 cal. 50,000 * 4.184 = 209,200 Joules.
+
+User: A wire carries 5 amperes for 2 minutes. How much charge in coulombs?
+Joe: Charge = current * time = 5 A * 120 s = 600 coulombs.
+User: How many electrons is that? 1 coulomb = 6.24 * 10^18 electrons.
+Joe: 600 * 6.24 * 10^18 = 3.744 * 10^21 electrons.
+
+User: Convert 100 degrees Celsius to Kelvin.
+Joe: 100 + 273.15 = 373.15 K. That is the boiling point of water in Kelvin.
+User: What is room temperature, 20 C, in Kelvin?
+Joe: 20 + 273.15 = 293.15 K.
+
+User: A gas at 300 K is heated to 600 K at constant pressure. What happens to its volume?
+Joe: Volume is proportional to Kelvin temperature. Doubling K doubles the volume by Charles's Law.
+User: If the original volume was 2 L, what is the new volume?
+Joe: V2 = V1 * T2 / T1 = 2 * 600 / 300 = 4 liters.
+
+User: A 2-meter board is cut into a 1:3 ratio. How long is each piece?
+Joe: Total parts = 1 + 3 = 4. Each part = 2 / 4 = 0.5 m. Pieces are 0.5 m and 1.5 m.
+User: What is the shorter piece in centimeters?
+Joe: 0.5 m * 100 = 50 cm.
+
+User: A room is 12 feet by 14 feet. What is its area in square feet?
+Joe: Area = 12 * 14 = 168 square feet.
+User: What is that in square meters? Use 1 ft = 0.3048 m.
+Joe: 1 ft^2 = 0.3048^2 = 0.0929 m^2. 168 * 0.0929 = about 15.6 m^2.
+
+User: A wheel has radius 0.5 meters. How far does it roll in 10 revolutions?
+Joe: Circumference = 2 * pi * r = 2 * 3.14 * 0.5 = 3.14 m. Distance = 10 * 3.14 = 31.4 m.
+User: How many revolutions to roll 100 meters?
+Joe: 100 / 3.14 = about 31.85 revolutions.
+
+User: Convert 1.5 kilometers to millimeters.
+Joe: 1.5 * 1000 = 1500 m, then 1500 * 1000 = 1,500,000 mm.
+User: Convert 250 mm to meters.
+Joe: 250 / 1000 = 0.25 m.
+
+User: A piece of pipe is 3 feet 6 inches long. What is its length in inches?
+Joe: 3 feet = 36 inches, plus 6 inches = 42 inches.
+User: What is that in centimeters?
+Joe: 42 * 2.54 = 106.68 cm.
+
+User: A car's fuel efficiency is 25 miles per gallon. What is that in km per liter?
+Joe: 25 miles = 40.225 km, 1 gallon = 3.785 L. So 40.225 / 3.785 = about 10.63 km/L.
+User: Convert 15 km/L to miles per gallon.
+Joe: 15 km = 9.32 miles, 1 L = 0.264 gallons. So 9.32 / 0.264 = about 35.3 mpg.
+
+User: A tank holds 2000 gallons of water. What is the mass in pounds? Water density = 8.34 lb/gal.
+Joe: Mass = 2000 * 8.34 = 16,680 pounds.
+User: What is that in tons?
+Joe: 16,680 / 2000 = 8.34 tons.
+
+User: A cube of ice has side 5 cm. Ice density is 0.92 g/cm^3. What is its mass?
+Joe: Volume = 125 cm^3. Mass = 0.92 * 125 = 115 grams.
+User: What volume of water (density 1 g/cm^3) would this ice melt into?
+Joe: Volume of water = 115 / 1 = 115 cm^3, which is less than the ice cube's volume.
+
+User: Convert 1.5 atm to mmHg. Use 1 atm = 760 mmHg.
+Joe: 1.5 * 760 = 1140 mmHg.
+User: Convert 380 mmHg to atm.
+Joe: 380 / 760 = 0.5 atm.
+
+User: A train 200 meters long passes a pole in 10 seconds. What is its speed in m/s?
+Joe: Speed = 200 / 10 = 20 m/s.
+User: How long to pass a 500-meter platform?
+Joe: Total distance = 200 + 500 = 700 m. Time = 700 / 20 = 35 seconds.
+
+User: A runner's speed is 6 m/s. How many meters in 1 minute?
+Joe: 6 * 60 = 360 meters.
+User: How many laps of a 400-meter track in 5 minutes?
+Joe: In 5 minutes: 5 * 60 = 300 seconds. Distance = 6 * 300 = 1800 m. Laps = 1800 / 400 = 4.5 laps.
+
+User: A pipe fills a tank at 4 liters per minute. How long to fill a 600-liter tank?
+Joe: Time = 600 / 4 = 150 minutes, which is 2 hours 30 minutes.
+User: A drain empties the tank at 6 L/min. If both are open when the tank is full, how long to empty?
+Joe: Net drain rate = 6 - 4 = 2 L/min. Time to empty = 600 / 2 = 300 minutes, which is 5 hours.
+
+User: A hose delivers 12 gallons per minute. How much water in 3.5 hours?
+Joe: 3.5 hours = 210 minutes. Water = 12 * 210 = 2520 gallons.
+User: What is that in liters? 1 gallon = 3.785 L.
+Joe: 2520 * 3.785 = about 9538 liters.
+
+User: A cable is 50 m long. It is cut into pieces of 1.25 m each. How many full pieces?
+Joe: 50 / 1.25 = 40 pieces exactly.
+User: If each piece weighs 3.4 kg, what is the total weight?
+Joe: 40 * 3.4 = 136 kg.
+
+User: Convert 3.2 kg to grams.
+Joe: 3.2 * 1000 = 3200 grams.
+User: Convert 450 mg to grams.
+Joe: 450 / 1000 = 0.45 grams.
+
+User: A rectangle has area 72 cm^2 and width 8 cm. What is its length?
+Joe: Length = area / width = 72 / 8 = 9 cm.
+User: What is its perimeter?
+Joe: Perimeter = 2 * (9 + 8) = 2 * 17 = 34 cm.
+
+User: A circle has circumference 62.8 cm. Use pi = 3.14. What is its radius?
+Joe: C = 2 * pi * r, so r = 62.8 / (2 * 3.14) = 62.8 / 6.28 = 10 cm.
+User: What is its area?
+Joe: Area = pi * r^2 = 3.14 * 100 = 314 cm^2.
+
+User: A triangle has sides 13, 14, and 15. Use Heron's formula. What is its area?
+Joe: s = (13 + 14 + 15) / 2 = 21. Area = sqrt(21 * 8 * 7 * 6) = sqrt(7056) = 84.
+User: What is its height to the side of length 14?
+Joe: Height = 2 * area / base = 2 * 84 / 14 = 12.
+
+User: A car travels 150 km at 75 km/h, then 120 km at 60 km/h. What is total time?
+Joe: Time first leg = 150 / 75 = 2 hours. Time second leg = 120 / 60 = 2 hours. Total = 4 hours.
+User: What is the average speed for the whole trip?
+Joe: Total distance = 270 km. Average speed = 270 / 4 = 67.5 km/h.
+
+User: A plane flies from A to B at 600 mph and returns at 400 mph. The distance is 1200 miles. What is the average speed for the round trip?
+Joe: Time out = 1200 / 600 = 2 hours. Time back = 1200 / 400 = 3 hours. Total = 5 hours for 2400 miles. Average = 2400 / 5 = 480 mph.
+User: Why is it not 500 mph?
+Joe: Average speed is total distance over total time. More time is spent at the slower speed, pulling the average below the arithmetic mean of 500.
+
+User: A density of 2.5 g/cm^3 is how many kg/m^3?
+Joe: 2.5 g/cm^3 = 2.5 * 1000 = 2500 kg/m^3.
+User: Convert 800 kg/m^3 to g/cm^3.
+Joe: 800 / 1000 = 0.8 g/cm^3.
+
+User: A sample has mass 45 g and density 9 g/cm^3. What is its volume?
+Joe: Volume = 45 / 9 = 5 cm^3.
+User: What is its volume in mL?
+Joe: 5 cm^3 = 5 mL, since 1 cm^3 = 1 mL.
+
+User: Convert 1.2 hours to minutes.
+Joe: 1.2 * 60 = 72 minutes.
+User: Convert 90 minutes to hours.
+Joe: 90 / 60 = 1.5 hours.
+
+User: A water pump moves 0.5 m^3 per minute. How many liters per minute?
+Joe: 0.5 m^3 = 0.5 * 1000 = 500 liters per minute.
+User: How long to fill a 75,000 liter pool?
+Joe: Time = 75,000 / 500 = 150 minutes, which is 2 hours 30 minutes.
+
+User: A rectangular prism has volume 360 cm^3. Its base is 6 cm by 5 cm. What is its height?
+Joe: Height = volume / (length * width) = 360 / (6 * 5) = 360 / 30 = 12 cm.
+User: What is its surface area?
+Joe: SA = 2*(6*5 + 6*12 + 5*12) = 2*(30 + 72 + 60) = 2*162 = 324 cm^2.
+
+User: A car uses 12 liters of fuel to go 100 km. What is the fuel consumption in L/km?
+Joe: 12 / 100 = 0.12 L/km.
+User: How far can it go on 30 liters?
+Joe: 30 / 0.12 = 250 km.
+
+User: A gas occupies 2.4 L at 1 atm pressure. If pressure increases to 3 atm at constant temperature, what is the new volume?
+Joe: By Boyle's Law, P1*V1 = P2*V2. 1 * 2.4 = 3 * V2, so V2 = 0.8 L.
+User: What if the pressure is halved to 0.5 atm?
+Joe: 1 * 2.4 = 0.5 * V2, so V2 = 4.8 L. The volume doubles when pressure is halved.
+
+User: A spring stretches 3 cm when a 2 kg mass is hung. What is the spring constant in N/m? Use g = 10 m/s^2.
+Joe: Force = 2 * 10 = 20 N. Extension = 0.03 m. k = 20 / 0.03 = about 667 N/m.
+User: How much stretch for a 5 kg mass?
+Joe: Force = 5 * 10 = 50 N. Stretch = 50 / 667 = about 0.075 m = 7.5 cm.
+
+User: A freezer is set to -18 C. What is that in Fahrenheit?
+Joe: -18 * 9/5 = -32.4, then -32.4 + 32 = -0.4 F. So -18 C is about -0.4 F.
+User: What is 0 F in Celsius?
+Joe: 0 - 32 = -32, then -32 * 5/9 = -17.78 C.
+
+User: Convert 400 K to Fahrenheit.
+Joe: First to C: 400 - 273.15 = 126.85 C. Then to F: 126.85 * 9/5 = 228.33, plus 32 = 260.33 F.
+User: What is 212 F in Kelvin?
+Joe: 212 F to C: (212 - 32) * 5/9 = 100 C. Then 100 + 273.15 = 373.15 K.
+
+User: A 2-liter bottle of soda has mass 2.1 kg. What is its density in g/cm^3?
+Joe: 2 L = 2000 cm^3, 2.1 kg = 2100 g. Density = 2100 / 2000 = 1.05 g/cm^3.
+User: Why is it slightly denser than water?
+Joe: The dissolved sugar and other solids make soda denser than pure water, which is 1.0 g/cm^3.
+
+User: Convert 2.5 gallons to quarts. Use 1 gallon = 4 quarts.
+Joe: 2.5 * 4 = 10 quarts.
+User: Convert 10 quarts to pints. 1 quart = 2 pints.
+Joe: 10 * 2 = 20 pints.
+
+User: A 10 km race. If you run at 5 m/s, what is your finishing time in minutes?
+Joe: 10 km = 10,000 m. Time = 10,000 / 5 = 2000 seconds. 2000 / 60 = 33.33 minutes.
+User: What is your pace in minutes per km?
+Joe: 33.33 / 10 = 3.33 minutes per km, which is 3 minutes 20 seconds per km.
+
+User: A car traveling at 90 km/h applies brakes and stops in 5 seconds. What is the deceleration in m/s^2?
+Joe: 90 km/h = 25 m/s. Deceleration = 25 / 5 = 5 m/s^2.
+User: What is the stopping distance?
+Joe: Average speed during braking = (25 + 0) / 2 = 12.5 m/s. Distance = 12.5 * 5 = 62.5 meters.
+
+User: Convert 1.5 cubic meters to liters.
+Joe: 1.5 * 1000 = 1500 liters.
+User: Convert 750 mL to liters.
+Joe: 750 / 1000 = 0.75 L.
+
+User: A cylindrical water tank has radius 1 m and height 3 m. Use pi = 3.14. What is its volume in m^3?
+Joe: V = pi * r^2 * h = 3.14 * 1 * 3 = 9.42 m^3.
+User: How many liters does it hold?
+Joe: 9.42 * 1000 = 9420 liters.
+
+User: A mixture has 3 liters of water (1 g/cm^3) and 2 liters of alcohol (0.8 g/cm^3). What is the density of the mixture?
+Joe: Mass water = 3000 g, mass alcohol = 1600 g. Total mass = 4600 g. Total volume = 5000 cm^3. Density = 4600 / 5000 = 0.92 g/cm^3.
+User: Would the mixture float on pure water?
+Joe: 0.92 is less than 1.0, so yes, the mixture would float on pure water.
+
+User: Convert 3 feet to inches.
+Joe: 3 * 12 = 36 inches.
+User: Convert 36 inches to meters. Use 1 inch = 0.0254 m.
+Joe: 36 * 0.0254 = 0.9144 m.
+
+User: A building is 30 stories tall, each story 3.5 m. What is its height in meters?
+Joe: 30 * 3.5 = 105 meters.
+User: What is that in feet? 1 m = 3.281 ft.
+Joe: 105 * 3.281 = about 344.5 feet.
+
+User: A snail moves at 0.03 m/s. How far in 2 minutes?
+Joe: 2 minutes = 120 seconds. Distance = 0.03 * 120 = 3.6 meters.
+User: How long to travel 1 meter?
+Joe: Time = 1 / 0.03 = about 33.3 seconds.
+
+User: Convert 750 mmHg to atm. Use 1 atm = 760 mmHg.
+Joe: 750 / 760 = about 0.987 atm.
+User: Convert 1.2 atm to kPa. 1 atm = 101.325 kPa.
+Joe: 1.2 * 101.325 = 121.59 kPa.
+
+User: A 5-gram seed is planted and grows into a 5 kg plant. What is the percent increase in mass?
+Joe: Increase = 5000 - 5 = 4995 g. Percent = 4995 / 5 * 100 = 99,900%.
+User: Most of that mass comes from which source?
+Joe: Most comes from carbon dioxide in the air, not from the soil. The carbon in CO2 becomes plant tissue.
+
+User: A car uses 15 kWh of energy to travel 100 km. What is the energy use per km in Wh?
+Joe: 15 kWh = 15,000 Wh. Per km: 15,000 / 100 = 150 Wh/km.
+User: What is that in Joules per km? 1 Wh = 3600 J.
+Joe: 150 * 3600 = 540,000 J/km.
+
+User: A battery stores 5000 mAh at 12 V. What is the energy in watt-hours?
+Joe: Energy = voltage * charge = 12 * 5 = 60 Wh.
+User: How long can it power a 10 W device?
+Joe: Time = 60 / 10 = 6 hours.
+
+User: A pump lifts water 15 meters. The water's speed at the top is 4 m/s. Use g = 10 m/s^2. What is the total mechanical energy per kg?
+Joe: Potential energy per kg = g * h = 10 * 15 = 150 J/kg. Kinetic energy per kg = 0.5 * v^2 = 0.5 * 16 = 8 J/kg. Total = 158 J/kg.
+User: If the pump moves 2 kg per second, what is its power output?
+Joe: Power = 158 * 2 = 316 watts.
+
+User: Convert 1000 m^3 to liters.
+Joe: 1000 * 1000 = 1,000,000 liters.
+User: How many Olympic swimming pools is that? One pool = 2,500,000 L.
+Joe: 1,000,000 / 2,500,000 = 0.4 Olympic pools.
+
+User: A steel beam is 8 m long, 0.3 m wide, and 0.2 m thick. Steel density is 7800 kg/m^3. What is its mass?
+Joe: Volume = 8 * 0.3 * 0.2 = 0.48 m^3. Mass = 7800 * 0.48 = 3744 kg.
+User: What is the weight in Newtons? Use g = 10 m/s^2.
+Joe: Weight = 3744 * 10 = 37,440 N.
+
+User: A person runs 100 m in 12.5 seconds. What is the speed in m/s?
+Joe: Speed = 100 / 12.5 = 8 m/s.
+User: What is the time for 200 m at the same speed?
+Joe: Time = 200 / 8 = 25 seconds.
+
+User: A wheel rotates at 120 rpm. How many rotations per second?
+Joe: 120 / 60 = 2 rotations per second.
+User: If the wheel has radius 0.5 m, what is the linear speed of a point on the rim?
+Joe: Circumference = 2 * pi * 0.5 = 3.14 m. Speed = 2 * 3.14 = 6.28 m/s.
+
+User: A glacier moves at 0.5 meters per day. How far in a year?
+Joe: 0.5 * 365 = 182.5 meters per year.
+User: How long to move 1 km?
+Joe: 1000 / 0.5 = 2000 days, which is about 5.48 years.
+
+User: A wire has diameter 0.5 mm. What is its radius in meters?
+Joe: Radius = 0.25 mm = 0.00025 m.
+User: What is its cross-sectional area in m^2? Use pi = 3.14.
+Joe: Area = pi * r^2 = 3.14 * (0.00025)^2 = 3.14 * 6.25 * 10^-8 = 1.96 * 10^-7 m^2.
+
+User: A block of wood has dimensions 10 cm x 10 cm x 10 cm and floats in water with 2 cm above the surface. What is its density?
+Joe: The submerged volume fraction is 8/10 = 0.8. Density = 0.8 * 1.0 = 0.8 g/cm^3.
+User: What is the mass of the block?
+Joe: Volume = 1000 cm^3. Mass = 0.8 * 1000 = 800 grams.
+
+User: A car's speedometer reads 60 mph. The tires have diameter 0.6 m. How many revolutions per second? Use pi = 3.14.
+Joe: 60 mph = 26.82 m/s. Circumference = pi * d = 3.14 * 0.6 = 1.884 m. Revs per second = 26.82 / 1.884 = about 14.24.
+User: What is the angular speed in rad/s?
+Joe: Angular speed = 2 * pi * revs/s = 6.28 * 14.24 = about 89.4 rad/s.
+
+User: A runner completes 5 km in 22 minutes 30 seconds. What is the average speed in km/h?
+Joe: 22 min 30 sec = 22.5 minutes = 0.375 hours. Speed = 5 / 0.375 = 13.33 km/h.
+User: What is that in m/s?
+Joe: 13.33 * 1000 / 3600 = about 3.70 m/s.
+
+User: A 60 kg person climbs stairs to a height of 10 m in 20 seconds. Use g = 10 m/s^2. What is the power output?
+Joe: Work = m * g * h = 60 * 10 * 10 = 6000 J. Power = 6000 / 20 = 300 watts.
+User: What is that in horsepower? 1 hp = 746 W.
+Joe: 300 / 746 = about 0.40 hp.
+
+User: A light bulb uses 60 W of power. How much energy in kWh does it use in 5 hours?
+Joe: Energy = 60 W * 5 h = 300 Wh = 0.3 kWh.
+User: At $0.12 per kWh, what does it cost to run for 5 hours?
+Joe: Cost = 0.3 * 0.12 = $0.036, about 3.6 cents.
+
+User: Convert 10,000 Pa to kPa.
+Joe: 10,000 / 1000 = 10 kPa.
+User: Convert 250 kPa to atm. 1 atm = 101.325 kPa.
+Joe: 250 / 101.325 = about 2.47 atm.
+
+User: A 0.5 kg ball is thrown upward at 20 m/s. Use g = 10 m/s^2. What is its maximum height?
+Joe: At max height, v = 0. v^2 = u^2 - 2gh, so 0 = 400 - 20h, so h = 20 meters.
+User: How long does it take to reach max height?
+Joe: v = u - gt, so 0 = 20 - 10t, so t = 2 seconds.
+
+User: A box is pulled 10 m across the floor with a force of 50 N. What is the work done?
+Joe: Work = force * distance = 50 * 10 = 500 J.
+User: If this takes 25 seconds, what is the power?
+Joe: Power = 500 / 25 = 20 watts.
+
+User: Convert 100 cm^2 to m^2.
+Joe: 1 cm^2 = 0.0001 m^2, so 100 * 0.0001 = 0.01 m^2.
+User: Convert 2.5 m^2 to cm^2.
+Joe: 2.5 * 10,000 = 25,000 cm^2.
+
+User: A 2 kg object has kinetic energy 100 J. What is its speed?
+Joe: KE = 0.5 * m * v^2, so 100 = 0.5 * 2 * v^2 = v^2, so v = 10 m/s.
+User: What is its momentum?
+Joe: p = m * v = 2 * 10 = 20 kg*m/s.
+
+User: A tank holds 0.75 m^3 of water. What is the mass in kg? Water density = 1000 kg/m^3.
+Joe: Mass = 1000 * 0.75 = 750 kg.
+User: What is the weight in Newtons? g = 9.8 m/s^2.
+Joe: Weight = 750 * 9.8 = 7350 N.
+
+User: A rope is cut so that one piece is 2.3 m and the other is 1.7 m. What was the original length?
+Joe: 2.3 + 1.7 = 4.0 meters.
+User: What is the longer piece in centimeters?
+Joe: 2.3 * 100 = 230 cm.
+
+User: A 200 g apple is 85% water. What is the mass of water in the apple?
+Joe: 200 * 0.85 = 170 grams of water.
+User: How many mL of water is that?
+Joe: 170 mL, since water density is 1 g/mL.
+
+User: A box of dimensions 60 cm x 40 cm x 30 cm is filled with books. What is the volume in m^3?
+Joe: Volume = 0.6 * 0.4 * 0.3 = 0.072 m^3.
+User: If the box weighs 15 kg empty and 60 kg full, what is the average density of the contents in kg/m^3?
+Joe: Mass of contents = 60 - 15 = 45 kg. Density = 45 / 0.072 = 625 kg/m^3.
+
+User: A snail travels 2.5 cm per minute. How far in 1 hour?
+Joe: 2.5 * 60 = 150 cm = 1.5 meters.
+User: How many hours to travel 9 meters?
+Joe: 9 / 1.5 = 6 hours.
+
+User: Round 3.14159 to three significant figures.
+Joe: The first three significant figures are 3, 1, and 4. The next digit is 1, which is less than 5, so we round down. The answer is 3.14.
+User: What about rounding the same number to two decimal places?
+Joe: Two decimal places means we look at the third decimal, which is 1. Since 1 is less than 5, we round down to 3.14.
+
+User: What is the order of magnitude of 5,000,000?
+Joe: 5,000,000 is 5 * 10^6, so its order of magnitude is 10^6.
+User: And what about 0.000042?
+Joe: 0.000042 = 4.2 * 10^-5, so its order of magnitude is 10^-5.
+
+User: A website says the Eiffel Tower weighs 7,300 tons. Is that plausible?
+Joe: The Eiffel Tower is made of wrought iron with density about 8 tons per cubic meter. 7,300 tons would be about 900 cubic meters of iron. A rough volume check: base area 125 m by 125 m, average thickness 0.1 m gives about 1,500 cubic meters, so 7,300 tons is plausible for a lattice structure.
+User: How much would a solid iron tower of the same size weigh?
+Joe: A solid iron tower the size of the Eiffel Tower (300 m tall, average cross-section roughly 100 sq m) would have about 30,000 cubic meters of iron, weighing around 240,000 tons. The actual tower is much lighter because it is an open lattice.
+
+User: Estimate how many breaths a person takes per day.
+Joe: A person breathes about 12-16 times per minute at rest. Using 15 breaths per minute times 60 minutes times 24 hours gives about 21,600 breaths per day.
+User: How many in an average lifetime of 80 years?
+Joe: 21,600 breaths per day times 365 days times 80 years equals about 630 million breaths in a lifetime.
+
+User: Multiply 2.5 and 3.4, giving the answer with the correct number of significant figures.
+Joe: 2.5 * 3.4 = 8.5. Both numbers have 2 significant figures, so the answer should have 2 significant figures. 8.5 is correct.
+User: What is 0.004 * 250, with sig figs?
+Joe: 0.004 has 1 significant figure and 250 has 2 or 3. The least precise is 1 sig fig, so 0.004 * 250 = 1, which is 1 sig fig.
+
+User: Estimate the square root of 67.
+Joe: 8^2 = 64 and 9^2 = 81, so sqrt(67) is between 8 and 9. Since 67 is closer to 64, the estimate is about 8.2.
+User: How about the cube root of 130?
+Joe: 5^3 = 125 and 6^3 = 216, so cube root of 130 is about 5.05, very close to 5.
+
+User: Is it plausible that a car uses 5 liters of fuel per 100 km?
+Joe: Yes, that is 47 mpg, which is reasonable for a modern hybrid car. A typical gasoline car uses 7-10 liters per 100 km, while hybrids can achieve 4-5 liters per 100 km.
+User: What about 20 liters per 100 km?
+Joe: 20 L/100 km is about 12 mpg, which is typical for a large SUV or truck. For a compact car that would be very inefficient, but for a heavy vehicle it is plausible.
+
+User: Estimate 31 * 49 without a calculator.
+Joe: Round 31 to 30 and 49 to 50, so 30 * 50 = 1500. The actual answer is 31 * 49 = 31 * 50 - 31 = 1550 - 31 = 1519, so 1500 is a good estimate.
+User: What is 31 * 51?
+Joe: 31 * 51 = 31 * 50 + 31 = 1550 + 31 = 1581. Or notice 31 * 51 = (30 * 51) + 51 = 1530 + 51 = 1581.
+
+User: What is the order of magnitude of the speed of light in km/h?
+Joe: The speed of light is about 300,000 km/s or 1.08 * 10^9 km/h. The order of magnitude is 10^9 km/h.
+User: How does that compare to a car's speed?
+Joe: A car at 100 km/h is 10^2 km/h. The speed of light is about 10^7 times faster than a car.
+
+User: A phone costs $800. You pay $200 down and $25 per month. How many months to pay off?
+Joe: Remaining after down payment = 800 - 200 = 600. Months = 600 / 25 = 24 months.
+User: How much total interest if the cash price is $720?
+Joe: You pay 200 + 24 * 25 = 200 + 600 = 800. The cash price is 720. Interest = 800 - 720 = $80.
+
+User: Estimate how many steps a person walks in a lifetime.
+Joe: A person walks about 5,000 to 10,000 steps per day. Using 7,000 steps per day times 365 days times 80 years gives about 204 million steps.
+User: How many miles is that?
+Joe: Average stride is about 2.5 feet, so 204 million steps * 2.5 feet = 510 million feet. Dividing by 5,280 feet per mile gives about 96,600 miles, roughly 4 times around the Earth.
+
+User: What is 1.234 + 5.6, with correct significant figures?
+Joe: 1.234 + 5.6 = 6.834. The least precise decimal place is the tenths place from 5.6. So the answer should be rounded to 6.8.
+User: What about 12.345 - 0.6?
+Joe: 12.345 - 0.6 = 11.745. The least precise is the tenths place, so the answer is 11.7.
+
+User: Estimate the total cost of 17 items at $19.95 each.
+Joe: Round 17 to 20 and $19.95 to $20, so 20 * 20 = 400. The actual cost is 17 * 19.95 = 339.15. The estimate of 400 is a bit high.
+User: How could you get a better estimate?
+Joe: Use 17 * 20 = 340 and subtract 17 * 0.05 = 0.85 to get 339.15 exactly. Or round to 20 * 20 = 400 and subtract 3 * 20 = 60 and 17 * 0.05 = 0.85, giving 339.15.
+
+User: A news article says a new skyscraper weighs 500,000 tons. Is that reasonable?
+Joe: The Burj Khalifa weighs about 500,000 tons. A typical skyscraper weighs around 200,000 to 500,000 tons. So yes, that is reasonable for a very large building.
+User: How much does a typical house weigh?
+Joe: A typical wood-frame house weighs about 80 to 100 tons. A brick house is heavier, around 150 to 200 tons.
+
+User: How many gallons of gasoline does the US use per day?
+Joe: The US uses about 140 billion gallons of gasoline per year. Dividing by 365 gives roughly 380 million gallons per day.
+User: How many cars would that fuel?
+Joe: If the average car uses about 500 gallons per year, 140 billion gallons would fuel 280 million cars, which is close to the number of cars in the US.
+
+User: How many pizzas are consumed in the US per year?
+Joe: There are about 330 million people. Assume each person eats pizza once a month on average. That gives 330 million * 12 = about 4 billion pizzas per year.
+User: How many pizza restaurants does that support?
+Joe: If a pizza restaurant sells 200 pizzas per day times 365 days = 73,000 pizzas per year. Then 4 billion / 73,000 = about 55,000 pizza restaurants, which is close to the actual number.
+
+User: A store has a 30% off sale, then takes an extra 15% off at the register. What is the total discount?
+Joe: The price after 30% off is 70% of original. Then 15% off that gives 70% * 85% = 59.5% of original. The total discount is 100% - 59.5% = 40.5%.
+User: If the original price was $200, what is the final price?
+Joe: 200 * 0.595 = $119. Or step by step: 200 * 0.70 = 140, then 140 * 0.85 = 119.
+
+User: Round 5,499 to the nearest thousand and to the nearest hundred.
+Joe: To the nearest thousand, 5,499 is closer to 5,000 than 6,000, so 5,000. To the nearest hundred, it is closer to 5,500 than 5,400, so 5,500.
+User: What is the difference between the two rounded values?
+Joe: The difference between 5,500 and 5,000 is 500.
+
+User: What is the population density of New York City?
+Joe: NYC has about 8.4 million people in 300 square miles, giving about 28,000 people per square mile. Manhattan alone is about 70,000 per square mile.
+User: How much space does each person get in Manhattan?
+Joe: 70,000 people per square mile means each person has about 1 / 70,000 square miles. In square feet, that is (27,878,400 sq ft per sq mile) / 70,000 = about 400 square feet per person.
+
+User: You roll a die 3 times. What is the probability of rolling at least one 5?
+Joe: P(no 5) = (5/6)^3 = 125/216. P(at least one 5) = 1 - 125/216 = 91/216.
+User: What is the probability of rolling exactly two 5s?
+Joe: There are C(3,2) = 3 ways to choose which rolls are 5s. Each way has probability (1/6)^2 * (5/6) = 5/216. So P = 3 * 5/216 = 15/216 = 5/72.
+
+User: Estimate how long it takes money to double at 7% annual interest.
+Joe: Using the Rule of 72, 72 / 7 = about 10.3 years. So money doubles in roughly 10 years at 7% interest.
+User: What about at 5%?
+Joe: 72 / 5 = about 14.4 years. At 10% it would be 72 / 10 = 7.2 years.
+
+User: What is the order of magnitude of the number of cells in the human body?
+Joe: The human body has about 37 trillion cells, which is 3.7 * 10^13. The order of magnitude is 10^13.
+User: How about the number of bacteria in the human body?
+Joe: There are about 39 trillion bacteria in the human body, which is also 10^13, roughly the same order of magnitude as human cells.
+
+User: How many words does a person speak in a day?
+Joe: The average person speaks about 16,000 words per day. At 150 words per minute, that is about 107 minutes of talking per day.
+User: How many words in a lifetime?
+Joe: 16,000 words per day * 365 days * 80 years = about 467 million words in a lifetime.
+
+User: How much water does a typical household use per year?
+Joe: The average US household uses about 300 gallons per day. That is 300 * 365 = about 110,000 gallons per year.
+User: How many Olympic swimming pools would that fill?
+Joe: An Olympic pool holds about 660,000 gallons. So one household's annual usage is about 1/6 of an Olympic pool.
+
+User: What is 12.0 / 3.00, with sig figs?
+Joe: 12.0 / 3.00 = 4.00. Both numbers have 3 significant figures, so the answer should have 3 sig figs. The exact result is 4, so we write 4.00.
+User: What about 12 / 3.00?
+Joe: 12 has 2 sig figs, 3.00 has 3. The answer should have 2 sig figs. 12 / 3.00 = 4.0.
+
+User: What is the order of magnitude of the world population?
+Joe: The world population is about 8.1 billion, which is 8.1 * 10^9. The order of magnitude is 10^9.
+User: What about the GDP of the US in dollars?
+Joe: The US GDP is about 25 trillion dollars, or 2.5 * 10^13. The order of magnitude is 10^13.
+
+User: A baker uses 2.5 cups of flour for 12 muffins. How much flour for 30 muffins?
+Joe: Muffin ratio = 30/12 = 2.5. Flour needed = 2.5 * 2.5 = 6.25 cups.
+User: If flour costs $0.40 per cup, what is the flour cost for 30 muffins?
+Joe: 6.25 * 0.40 = $2.50.
+
+User: How many sheets of paper does a typical office worker use per year?
+Joe: An office worker uses about 10,000 sheets per year, or about 40 sheets per day. A typical case of paper has 5,000 sheets, so that is 2 cases per year per worker.
+User: How many trees does that require?
+Joe: One tree produces about 8,000 sheets of paper. So one worker uses about 1.25 trees worth of paper per year.
+
+User: How many times does a human heart beat in a lifetime?
+Joe: The heart beats about 70 times per minute. 70 * 60 * 24 * 365 * 80 = about 2.9 billion heartbeats in 80 years.
+User: How many gallons of blood does it pump?
+Joe: The heart pumps about 5 liters per minute. 5 L/min * 60 * 24 * 365 * 80 = about 210 million liters. Dividing by 3.785 L/gallon gives about 55 million gallons.
+
+User: How long would it take to count to a billion?
+Joe: If you say one number per second, it would take 1 billion seconds. Dividing by 86,400 seconds per day gives about 11,574 days, or 31.7 years.
+User: What about counting to a trillion?
+Joe: At one number per second, a trillion seconds is 31,688 years. That is longer than recorded history.
+
+User: A rectangular field is 3 times as long as it is wide. Its perimeter is 400 meters. What is its area?
+Joe: Let width = w, length = 3w. Perimeter = 2(w + 3w) = 8w = 400, so w = 50 m, length = 150 m. Area = 150 * 50 = 7,500 sq m.
+User: How many hectares is that?
+Joe: 1 hectare = 10,000 sq m. So 7,500 / 10,000 = 0.75 hectares.
+
+User: Calculate 2.5 * 3.678 and give the answer with proper sig figs.
+Joe: 2.5 * 3.678 = 9.195. 2.5 has 2 sig figs, 3.678 has 4. The answer should have 2 sig figs, so 9.2.
+User: What if both numbers are exact?
+Joe: If both are exact counts with no measurement uncertainty, the product is exactly 9.195 and sig figs do not apply.
+
+User: Is it plausible that a person runs a marathon in under 2 hours?
+Joe: The world record is about 2 hours 35 seconds. A sub-2-hour marathon is not yet achieved in official competition. Eliud Kipchoge ran 1:59:40 in a controlled event with pacers, so it is at the edge of plausibility for elite runners under ideal conditions.
+User: What is the average marathon time?
+Joe: The average marathon finish time is about 4.5 hours for men and 5 hours for women. Sub-2 is only plausible for a handful of elite athletes.
+
+User: Round 2.675 to two decimal places.
+Joe: 2.675 to two decimal places: the third decimal is 5, so we round up. The answer is 2.68.
+User: What about 2.6749?
+Joe: The third decimal is 4, so we round down. 2.6749 to two decimal places is 2.67.
+
+User: How many kernels of popcorn are in a standard bag of microwave popcorn?
+Joe: A standard bag contains about 1/3 cup of kernels. There are roughly 800 kernels per cup, so about 270 kernels per bag.
+User: How many popped pieces fit in a 1-liter bowl?
+Joe: Popped popcorn has a volume about 40 times the kernel volume. 270 kernels would fill about 270 * 40 / 800 = 13.5 cups, or about 3.2 liters.
+
+User: Solve for x and y: x + y = 12 and x - y = 4.
+Joe: Adding the equations gives 2x = 16, so x = 8. Then y = 12 - 8 = 4. The solution is x = 8, y = 4.
+User: What is x * y?
+Joe: x * y = 8 * 4 = 32.
+
+User: Estimate the value of pi * 25.
+Joe: pi is about 3.14, so 3.14 * 25 = 78.5. A quick estimate: 3 * 25 = 75, plus a little more, so about 78.
+User: What about pi * 50?
+Joe: 3.14 * 50 = 157. Or double the previous answer: 78.5 * 2 = 157.
+
+User: Estimate how many bricks are in a typical house.
+Joe: A 2,000 sq ft house has about 6,000 sq ft of wall area. With bricks at about 7 per sq ft for a single layer, that is 42,000 bricks. But most houses use bricks only as a veneer, not structural.
+User: How much would those bricks weigh?
+Joe: Each brick weighs about 5 pounds. 42,000 bricks * 5 pounds = 210,000 pounds or 105 tons.
+
+User: What is the sum of 1,234 and 56.7 with proper sig figs?
+Joe: 1,234 + 56.7 = 1,290.7. The least precise is 1,234 which has uncertainty in the ones place. So the answer should be rounded to the ones place: 1,291.
+User: What if the numbers are 1,234.0 and 56.7?
+Joe: 1,234.0 has precision to the tenths place. The sum is 1,290.7, and with the least precise being the tenths place, the answer is 1,290.7.
+
+User: How many McDonald's restaurants are there in the US?
+Joe: There are about 13,000 McDonald's in the US. With 330 million people, that is one restaurant per 25,000 people.
+User: How many burgers do they sell per day?
+Joe: McDonald's sells about 2.5 billion burgers per year worldwide. The US share is about half, so 1.25 billion per year, or about 3.4 million per day across all US locations.
+
+User: If a car travels at 55 mph, how many feet per second is that?
+Joe: 55 mph = 55 * 5,280 feet per hour = 290,400 feet per hour. Dividing by 3,600 seconds gives about 80.7 feet per second.
+User: How many car lengths per second at that speed?
+Joe: An average car is about 15 feet long. 80.7 / 15 = about 5.4 car lengths per second.
+
+User: Is it plausible that a human can drink 5 gallons of water in a day?
+Joe: No, that is dangerous. The maximum safe water intake is about 1 gallon per day for an adult. Drinking 5 gallons could cause water intoxication and hyponatremia, which can be fatal.
+User: What about 5 gallons of soda?
+Joe: Even worse. 5 gallons of soda contains about 2,400 grams of sugar, which is 60 times the recommended daily limit. It would cause severe hyperglycemia and likely hospitalization.
+
+User: A book has 250 pages. You read 30 pages on the first day and 15 more pages each subsequent day. How many days to finish?
+Joe: After day 1, remaining = 250 - 30 = 220 pages. At 15 pages per day, 220 / 15 = 14.67, so 15 more days. Total = 1 + 15 = 16 days.
+User: How many total pages will you have read by the end of day 10?
+Joe: Day 1: 30 pages. Days 2-10: 9 days * 15 = 135 pages. Total = 30 + 135 = 165 pages.
+
+User: How many students are in a typical US high school?
+Joe: A typical US high school has about 1,500 to 2,000 students. Large urban schools can have 3,000 to 4,000, while small rural schools may have 200 to 500.
+User: How many teachers are needed?
+Joe: With a student-to-teacher ratio of about 20:1, a school of 1,500 students needs about 75 teachers.
+
+User: Round 3,456 to the nearest hundred and nearest ten.
+Joe: To the nearest hundred, 3,456 is between 3,400 and 3,500. The tens digit is 5, so we round up to 3,500. To the nearest ten, the ones digit is 6, so we round up to 3,460.
+User: What is the difference between the two rounded values?
+Joe: 3,500 - 3,460 = 40.
+
+User: Two cars start from the same point. One goes east at 60 mph, the other goes north at 80 mph. How fast is the distance between them increasing after 1 hour?
+Joe: After t hours, the east car has gone 60t miles and the north car 80t miles. The distance between them is sqrt((60t)^2 + (80t)^2) = 100t miles. So the distance increases at 100 mph.
+User: How far apart are they after 2.5 hours?
+Joe: 100 * 2.5 = 250 miles.
+
+User: Calculate 0.05 * 0.05 with proper sig figs.
+Joe: 0.05 has 1 significant figure. 0.05 * 0.05 = 0.0025. With 1 sig fig, the answer is 0.003.
+User: What about 0.050 * 0.050?
+Joe: 0.050 has 2 sig figs. 0.050 * 0.050 = 0.0025, and with 2 sig figs the answer is 0.0025.
+
+User: Estimate the area of Texas in square miles.
+Joe: Texas is about 800 miles from east to west and 800 miles from north to south. A rough estimate is 800 * 800 = 640,000 square miles. The actual area is 268,597 square miles, so the rectangle estimate is too large.
+User: How could you improve the estimate?
+Joe: Texas is roughly a trapezoid. Use (top + bottom) / 2 * height = (200 + 800) / 2 * 700 = 500 * 700 = 350,000. Still an overestimate but closer.
+
+User: Is it plausible that a 100-watt light bulb uses 100 watts of electricity?
+Joe: Yes, that is exactly what the rating means. A 100-watt bulb uses 100 joules of energy per second. Over 1 hour, it uses 100 watt-hours or 0.1 kilowatt-hours.
+User: How much does it cost to run for 24 hours at $0.12 per kWh?
+Joe: 100 watts * 24 hours = 2,400 watt-hours = 2.4 kWh. Cost = 2.4 * 0.12 = $0.29.
+
+User: What is the order of magnitude of the Planck constant in SI units?
+Joe: The Planck constant is 6.626 * 10^-34 J-s. The order of magnitude is 10^-34.
+User: How does that compare to the mass of an electron?
+Joe: The electron mass is 9.109 * 10^-31 kg, which is 10^-30. The Planck constant is about 10^4 times smaller in its order of magnitude.
+
+User: Estimate 7/8 + 5/6 without a common denominator.
+Joe: 7/8 is close to 0.875 and 5/6 is about 0.833. Together that is about 1.708. The exact answer is 7/8 + 5/6 = 21/24 + 20/24 = 41/24 = 1 17/24.
+User: Estimate 7/8 - 5/6.
+Joe: 7/8 = 21/24 and 5/6 = 20/24, so the exact difference is 1/24, which is about 0.042.
+
+User: How many cups of coffee are consumed worldwide per day?
+Joe: About 2.25 billion cups of coffee are consumed per day worldwide. The US alone consumes about 400 million cups per day.
+User: How much coffee is that per person per year in the US?
+Joe: 400 million cups per day * 365 days = 146 billion cups per year. Divided by 330 million people gives about 442 cups per person per year, or about 1.2 cups per day per person.
+
+User: A circle has circumference 31.4 cm. What is its radius? Use pi = 3.14.
+Joe: Circumference = 2 * pi * r = 31.4, so 2 * 3.14 * r = 31.4, so 6.28 * r = 31.4, so r = 31.4 / 6.28 = 5 cm.
+User: What is its area?
+Joe: Area = pi * r^2 = 3.14 * 25 = 78.5 sq cm.
+
+User: Round 149,600,000 to two significant figures.
+Joe: 149,600,000 has 4 sig figs. To 2 sig figs: the first two digits are 1 and 4, the third is 9, so round up. 150,000,000 or 1.5 * 10^8.
+User: What is this number? It is the distance from Earth to the Sun in km.
+Joe: Yes, 1 AU = 149,600,000 km, or about 150 million km.
+
+User: How long would it take to fill an Olympic swimming pool with a garden hose?
+Joe: An Olympic pool holds about 2.5 million liters. A garden hose flows at about 10 liters per minute. Time = 2,500,000 / 10 = 250,000 minutes = about 174 days.
+User: What if you used a fire hose?
+Joe: A fire hose flows at about 1,000 liters per minute. Time = 2,500,000 / 1,000 = 2,500 minutes = about 42 hours.
+
+User: Is it plausible that the Great Pyramid of Giza was built in 20 years?
+Joe: Yes, historical records and archaeological evidence indicate it was built over about 20 years during the reign of Pharaoh Khufu around 2560 BC. It contains about 2.3 million stone blocks.
+User: How many blocks per day is that?
+Joe: 2.3 million blocks / (20 years * 365 days) = about 315 blocks per day. Working 10 hours per day, that is about 31 blocks per hour, or one block every 2 minutes. That is plausible for a large workforce.
+
+User: A triangle has vertices at (0, 0), (6, 0), and (0, 8). What is its area?
+Joe: This is a right triangle with legs 6 and 8. Area = (1/2) * 6 * 8 = 24.
+User: What is the length of the median from the right angle?
+Joe: The median from the right angle goes to the midpoint of the hypotenuse. The hypotenuse endpoints are (6,0) and (0,8), so midpoint is (3,4). The distance from (0,0) to (3,4) is sqrt(9 + 16) = 5.
+
+User: Estimate the surface area of a human body.
+Joe: The average adult has about 1.7 to 1.9 square meters of skin surface area. A common formula uses weight and height, but a rough estimate is about 2 square meters.
+User: How much does all that skin weigh?
+Joe: Skin weighs about 3.5 kg on average, making it the largest organ by weight. It accounts for about 5% of body weight.
+
+User: A rectangle measures 3.2 cm by 4.56 cm. What is its area with proper sig figs?
+Joe: 3.2 * 4.56 = 14.592. 3.2 has 2 sig figs, 4.56 has 3. The answer should have 2 sig figs: 15 sq cm.
+User: What about the perimeter?
+Joe: Perimeter = 2(3.2 + 4.56) = 2 * 7.76 = 15.52. The least precise is 3.2 (tenths place), so the answer is 15.5 cm.
+
+User: A store sells a jacket for $80, which is a 20% markup from cost. What was the cost?
+Joe: Selling price = cost * 1.20 = 80, so cost = 80 / 1.20 = $66.67.
+User: What is the profit margin as a percentage of cost?
+Joe: Profit = 80 - 66.67 = 13.33. Margin on cost = 13.33 / 66.67 = 0.20 = 20%.
+
+User: How many calories does an average person consume in a year?
+Joe: The average adult consumes about 2,000 to 2,500 calories per day. Using 2,200 per day, that is 2,200 * 365 = about 803,000 calories per year.
+User: How many pounds of food is that?
+Joe: Food has about 1,000 calories per pound on average. So 803,000 / 1,000 = about 803 pounds of food per year.
+
+User: If 8 workers can build a wall in 6 days, how many workers are needed to build the same wall in 4 days?
+Joe: Total work = 8 workers * 6 days = 48 worker-days. For 4 days: 48 / 4 = 12 workers.
+User: How long would 6 workers take?
+Joe: 48 / 6 = 8 days.
+
+User: Estimate the volume of a human body in liters.
+Joe: The average human body has about the same density as water, which is 1 kg per liter. An average 70 kg person has a volume of about 70 liters.
+User: How many people could fit in a standard 20-foot shipping container?
+Joe: A 20-foot container is about 33 cubic meters, which is 33,000 liters. 33,000 / 70 = about 470 people, but they would not fit due to shape constraints. Realistically, about 150 to 200 people standing.
+
+User: What is 9.99 * 8.88 with proper sig figs?
+Joe: 9.99 * 8.88 = 88.7112. Both numbers have 3 sig figs, so the answer should have 3 sig figs: 88.7.
+User: What about 9.99 + 8.88?
+Joe: 9.99 + 8.88 = 18.87. Both have precision to the hundredths place, so the answer is 18.87.
+
+User: What is the order of magnitude of the radius of a hydrogen atom?
+Joe: The Bohr radius is about 5.29 * 10^-11 meters. The order of magnitude is 10^-11 meters.
+User: How does that compare to the radius of a proton?
+Joe: The proton radius is about 8.4 * 10^-16 meters, which is 10^-15. The hydrogen atom is about 10^4 times larger than the proton.
+
+User: Round 0.9999 to three decimal places.
+Joe: 0.9999 to three decimal places: look at the fourth decimal, which is 9, so round up. 1.000.
+User: Round 0.9994 to three decimal places.
+Joe: The fourth decimal is 4, so round down. 0.999.
+
+User: How many trees are on Earth?
+Joe: There are about 3 trillion trees on Earth, according to a 2015 study. That is about 420 trees per person.
+User: How many trees are cut down per year?
+Joe: About 15 billion trees are cut down each year. That is about 4 trees per person per year, but only about 5 billion are replanted.
+
+User: Is it plausible that a person can survive without food for 60 days?
+Joe: Yes, with water, a person can survive 30 to 60 days without food, depending on body fat reserves. The longest recorded fast was 382 days under medical supervision.
+User: What about without water?
+Joe: No. A person can survive only about 3 to 5 days without water. The body needs water for all metabolic processes.
+
+User: The sum of two numbers is 30. The larger is 4 times the smaller. What are the numbers?
+Joe: Let smaller = x, larger = 4x. Then x + 4x = 30, so 5x = 30, x = 6. The numbers are 6 and 24.
+User: What is the average of the two numbers?
+Joe: Average = (6 + 24) / 2 = 30 / 2 = 15.
+
+User: How much energy does a person use per day in food calories?
+Joe: The average person consumes about 2,200 food calories per day. One food calorie is 1,000 chemistry calories or 4,184 joules. So that is about 9.2 million joules per day.
+User: How does that compare to a car?
+Joe: A gallon of gasoline contains about 120 million joules. So a person's daily energy is equivalent to about 0.077 gallons of gas, or about 1.3 cups.
+
+User: Estimate how many minutes a year has.
+Joe: 365 days * 24 hours * 60 minutes = 525,600 minutes. A leap year has 366 * 24 * 60 = 527,040 minutes.
+User: How many seconds in a year?
+Joe: 525,600 * 60 = 31,536,000 seconds in a common year, or about pi * 10^7 seconds.
+
+User: A cube has side length 2.0 cm. What is its volume with proper sig figs?
+Joe: 2.0 * 2.0 * 2.0 = 8.0 cubic cm. Each measurement has 2 sig figs, so the answer has 2 sig figs.
+User: What is its surface area?
+Joe: Surface area = 6 * 2.0^2 = 6 * 4.0 = 24. The measurement has 2 sig figs, and 6 is exact. So 24 sq cm.
+
+User: A phone plan costs $30 per month for the first 2 GB and $10 per GB after. You use 5 GB. What is the bill?
+Joe: First 2 GB: $30. Additional: 5 - 2 = 3 GB at $10 each = $30. Total = 30 + 30 = $60.
+User: What is the average cost per GB?
+Joe: $60 / 5 GB = $12 per GB.
+
+User: How much does the air in a typical room weigh?
+Joe: A 5 m by 5 m by 3 m room has volume 75 cubic meters. Air density is about 1.2 kg per cubic meter. So the air weighs about 90 kg, which is about the weight of an adult human.
+User: How much oxygen is in that room?
+Joe: Oxygen is about 21% of air by volume. 75 * 0.21 = 15.75 cubic meters of oxygen. At 1.4 kg per cubic meter, that is about 22 kg of oxygen.
+
+User: What is the order of magnitude of a typical wavelength of visible light?
+Joe: Visible light has wavelengths from about 400 nm to 700 nm. 400 nm = 4 * 10^-7 m. The order of magnitude is 10^-7 m.
+User: How does that compare to a radio wave?
+Joe: A typical FM radio wave has a wavelength of about 3 meters, which is 10^0 m. Visible light is 10^7 times smaller than a radio wave.
+
+User: Estimate the number of seconds in 100 years.
+Joe: 100 years * 365 days * 24 hours * 3600 seconds = 3,153,600,000 seconds. Including leap years, about 100 * 365.25 * 86400 = 3,155,760,000 seconds.
+User: That is about pi * 10^9 seconds, right?
+Joe: Yes, pi is about 3.1416, so pi * 10^9 = 3.1416 billion seconds, which is close to the number of seconds in a century.
+
+User: A rectangle has area 96 and length 12. What is its width and perimeter?
+Joe: Width = 96 / 12 = 8. Perimeter = 2(12 + 8) = 2 * 20 = 40.
+User: If you increase the length by 3 and decrease the width by 2, what is the new area?
+Joe: New length = 15, new width = 6. New area = 15 * 6 = 90.
+
+User: Round 1.0499 to one decimal place.
+Joe: 1.0499 to one decimal place: look at the hundredths digit, which is 4. Since 4 < 5, round down. The answer is 1.0.
+User: What about 1.05?
+Joe: 1.05 to one decimal place: the hundredths digit is 5, so round up. The answer is 1.1.
+
+User: How loud is a typical rock concert in decibels?
+Joe: A rock concert is about 110 to 120 decibels. Decibels are logarithmic, so 120 dB is 10 times more intense than 110 dB.
+User: How long can you be exposed without hearing damage?
+Joe: At 110 dB, hearing damage can occur after about 1 minute. At 85 dB, safe exposure is about 8 hours. The rule is that every 3 dB doubles the sound intensity.
+
+User: A boat can travel 30 km downstream in 3 hours and the same distance upstream in 5 hours. What is the speed of the boat in still water?
+Joe: Downstream speed = 30/3 = 10 km/h. Upstream speed = 30/5 = 6 km/h. Boat speed = (10 + 6) / 2 = 8 km/h.
+User: What is the speed of the current?
+Joe: Current = (10 - 6) / 2 = 2 km/h.
+
+User: A news report says a car gets 100 miles per gallon. Is that plausible?
+Joe: Yes, several production cars achieve over 100 mpg, including hybrids and electric vehicles with gas generators. The Toyota Prius gets about 55 mpg, but plug-in hybrids can exceed 100 mpg.
+User: What about 200 mpg?
+Joe: 200 mpg is plausible for a very efficient plug-in hybrid. The Volkswagen XL1 achieved 260 mpg. However, most 200+ mpg claims are based on electric-only driving for part of the trip.
+
+User: A cylinder has radius 2.5 cm and height 6.0 cm. What is its volume with proper sig figs? Use pi = 3.14.
+Joe: Volume = pi * r^2 * h = 3.14 * 6.25 * 6.0 = 3.14 * 37.5 = 117.75. The radius has 2 sig figs, height has 2, and pi is exact for this problem. So the answer should have 2 sig figs: 120 cubic cm.
+User: What if pi is not exact?
+Joe: If we use pi = 3.14 which has 3 sig figs, the limiting factor is still 2 sig figs from the measurements. The answer remains 120 cubic cm.
+
+User: You have $5,000 invested at 4% simple interest. How much interest per year?
+Joe: Interest per year = 5,000 * 0.04 = $200.
+User: How long until the investment doubles?
+Joe: With simple interest, doubling means earning $5,000 in interest. At $200 per year, that takes 5,000 / 200 = 25 years.
+
+User: How far does a person walk in a lifetime?
+Joe: The average person walks about 100,000 miles in a lifetime. That is about 4 times around the Earth.
+User: How many steps is that?
+Joe: With an average stride of 2.5 feet, 100,000 miles * 5,280 feet per mile / 2.5 feet per step = about 211 million steps.
+
+User: How many dollar bills are in circulation in the US?
+Joe: There are about 14 billion dollar bills in circulation. The total value of all US currency in circulation is about $2 trillion.
+User: How much does all that cash weigh?
+Joe: A dollar bill weighs about 1 gram. 14 billion dollar bills weigh 14 billion grams = 14,000 metric tons.
+
+User: A school has 600 students. 55% are girls and 60% of the boys play soccer. How many boys play soccer?
+Joe: Boys = 600 * 0.45 = 270. Boys who play soccer = 270 * 0.60 = 162.
+User: What percentage of all students are boys who play soccer?
+Joe: 162 / 600 = 0.27 = 27%.
+
+User: A rectangle has length 15 and width 8. A square has the same area. What is the side of the square?
+Joe: Rectangle area = 15 * 8 = 120. Square side = sqrt(120) = about 10.95.
+User: Which has a larger perimeter?
+Joe: Rectangle perimeter = 2(15 + 8) = 46. Square perimeter = 4 * 10.95 = 43.8. The rectangle has a larger perimeter.
+
+User: Is it plausible that a person reads 1,000 words per minute?
+Joe: The average reading speed is about 200-300 words per minute for comprehension. Speed readers claim 600-700 wpm with good comprehension. 1,000 wpm is at the edge of plausibility for skimming, but not for detailed comprehension.
+User: What about 100 words per minute?
+Joe: Yes, 100 wpm is below average but plausible. Children and non-native readers often read at 100-150 wpm.
+
+User: A box of chocolates has 12 pieces. You eat 1/4 of them. How many are left?
+Joe: You eat 12 * 1/4 = 3 pieces. Left = 12 - 3 = 9 pieces.
+User: If you then eat 1/3 of the remaining, how many are left?
+Joe: You eat 9 * 1/3 = 3 more pieces. Left = 9 - 3 = 6 pieces.
+
+User: A rectangular field is 120 m by 80 m. What is its area with proper sig figs?
+Joe: 120 has 2 or 3 sig figs, 80 has 1 or 2. Assuming both have 2 sig figs, 120 * 80 = 9,600. With 2 sig figs, the answer is 9,600 sq m or 9.6 * 10^3.
+User: What about the perimeter?
+Joe: Perimeter = 2(120 + 80) = 400 m. The least precise is 80 with uncertainty in the tens place, so the answer is 400 m.
+
+User: How many hours does a person sleep in a lifetime?
+Joe: At 8 hours per night, a person sleeps 8 * 365.25 * 80 = about 233,760 hours, or about 9,740 days, or about 26.7 years.
+User: What fraction of a lifetime is that?
+Joe: 26.7 / 80 = about 1/3 of a lifetime spent sleeping.
+
+User: How many schools are there in the US?
+Joe: There are about 130,000 schools in the US. This includes about 100,000 public schools and 30,000 private schools.
+User: How many students per school on average?
+Joe: With about 56 million students across 130,000 schools, the average is about 430 students per school.
+
+User: What is the order of magnitude of the age of the universe in years?
+Joe: The universe is about 13.8 billion years old, which is 1.38 * 10^10 years. The order of magnitude is 10^10.
+User: How many orders of magnitude older is the universe than human civilization?
+Joe: Human civilization is about 10,000 years old, which is 10^4 years. The universe is 10^6 times older, or 6 orders of magnitude older.
+
+User: A recipe calls for 1.5 cups of sugar for 24 cookies. How much sugar for 60 cookies?
+Joe: 60 / 24 = 2.5 times the recipe. Sugar needed = 1.5 * 2.5 = 3.75 cups.
+User: If you only have 2 cups of sugar, how many cookies can you make?
+Joe: 2 cups / 1.5 cups per batch = 1.333 batches. 1.333 * 24 = 32 cookies.
+
+User: Estimate the number of words in the English language.
+Joe: The Oxford English Dictionary has about 170,000 entries. Including technical terms and slang, the English language has about 500,000 to 1 million words. However, most speakers use only about 20,000 to 30,000 words.
+User: How many words does Shakespeare use?
+Joe: Shakespeare used about 29,000 different words in his works, of which about 1,700 were his own coinages.
+

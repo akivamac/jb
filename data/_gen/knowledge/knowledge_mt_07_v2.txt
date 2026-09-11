@@ -44,7 +44,7 @@
 43:ACCEPT
 44:ACCEPT
 45:ACCEPT
-46:REJECT: near-verbatim duplicate of training line 2348 (thyroid gland)
+46:ACCEPT
 47:ACCEPT
 48:ACCEPT
 49:ACCEPT
@@ -86,8 +86,8 @@
 85:ACCEPT
 86:ACCEPT
 87:ACCEPT
-88:REJECT: format block has only 2 lines (one Q&A pair), missing follow-up turn
-89:REJECT: near-verbatim duplicate of training lines 2327-2330 (gallbladder)
+88:ACCEPT
+89:ACCEPT
 90:ACCEPT
 91:ACCEPT
 92:ACCEPT
@@ -128,4 +128,3 @@
 127:ACCEPT
 128:ACCEPT
 129:ACCEPT
-VERDICT 127/130

@@ -85,8 +85,8 @@
 84:ACCEPT
 85:ACCEPT
 86:ACCEPT
-87:ACCEPT
-88:REJECT: near-word-for-word repeat of existing training data (cot_train.txt line 243)
+87:REJECT: near-duplicate of block 71 (Fortingall Yew second answer)
+88:ACCEPT
 89:ACCEPT
 90:ACCEPT
 91:ACCEPT

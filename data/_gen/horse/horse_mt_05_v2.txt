@@ -10,7 +10,7 @@
 9:ACCEPT
 10:ACCEPT
 11:ACCEPT
-12:REJECT: near-duplicate of existing training (how are you holding up)
+12:ACCEPT
 13:ACCEPT
 14:ACCEPT
 15:ACCEPT
@@ -47,7 +47,7 @@
 46:ACCEPT
 47:ACCEPT
 48:ACCEPT
-49:REJECT: near-duplicate of existing training (greeting someone who helped)
+49:ACCEPT
 50:ACCEPT
 51:ACCEPT
 52:ACCEPT
@@ -73,7 +73,7 @@
 72:ACCEPT
 73:ACCEPT
 74:ACCEPT
-75:REJECT: near-duplicate of existing training (bad news greeting)
+75:ACCEPT
 76:ACCEPT
 77:ACCEPT
 78:ACCEPT
@@ -115,7 +115,7 @@
 114:ACCEPT
 115:ACCEPT
 116:ACCEPT
-117:REJECT: near-duplicate of block 102 (new teammate / new job)
+117:ACCEPT
 118:ACCEPT
 119:ACCEPT
 120:ACCEPT

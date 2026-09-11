@@ -1,13 +1,13 @@
 0:ACCEPT
 1:ACCEPT
 2:ACCEPT
-3:ACCEPT
-4:ACCEPT
+3:REJECT: answer has 4/4 sentences (limit 3)
+4:REJECT: answer has 4/4 sentences (limit 3)
 5:ACCEPT
 6:ACCEPT
 7:ACCEPT
 8:ACCEPT
-9:ACCEPT
+9:REJECT: answer has 4/1 sentences (limit 3)
 10:ACCEPT
 11:ACCEPT
 12:ACCEPT
@@ -28,21 +28,21 @@
 27:ACCEPT
 28:ACCEPT
 29:ACCEPT
-30:ACCEPT
+30:REJECT: answer has 4/2 sentences (limit 3)
 31:ACCEPT
 32:ACCEPT
 33:ACCEPT
 34:ACCEPT
 35:ACCEPT
-36:ACCEPT
+36:REJECT: claim that 6,8,10,12,14 are consecutive integers is false
 37:ACCEPT
 38:ACCEPT
 39:ACCEPT
-40:ACCEPT
+40:REJECT: answer has 4/5 sentences (limit 3)
 41:ACCEPT
 42:ACCEPT
 43:ACCEPT
-44:ACCEPT
+44:REJECT: answer has 4/1 sentences (limit 3)
 45:ACCEPT
 46:ACCEPT
 47:ACCEPT
@@ -60,7 +60,7 @@
 59:ACCEPT
 60:ACCEPT
 61:ACCEPT
-62:ACCEPT
+62:REJECT: answer has 4/1 sentences (limit 3)
 63:ACCEPT
 64:ACCEPT
 65:ACCEPT
@@ -84,7 +84,7 @@
 83:ACCEPT
 84:ACCEPT
 85:ACCEPT
-86:ACCEPT
+86:REJECT: answer has 4/2 sentences (limit 3)
 87:ACCEPT
 88:ACCEPT
 89:ACCEPT
@@ -101,21 +101,21 @@
 100:ACCEPT
 101:ACCEPT
 102:ACCEPT
-103:ACCEPT
-104:ACCEPT
+103:REJECT: answer has 3/4 sentences (limit 3)
+104:REJECT: answer has 4/2 sentences (limit 3)
 105:ACCEPT
 106:ACCEPT
 107:ACCEPT
 108:ACCEPT
 109:ACCEPT
-110:ACCEPT
+110:REJECT: answer has 6/2 sentences (limit 3)
 111:ACCEPT
 112:ACCEPT
 113:ACCEPT
 114:ACCEPT
 115:ACCEPT
 116:ACCEPT
-117:ACCEPT
+117:REJECT: answer has 4/1 sentences (limit 3)
 118:ACCEPT
 119:ACCEPT
 120:ACCEPT

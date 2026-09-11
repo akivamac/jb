@@ -13,7 +13,7 @@
 12:ACCEPT
 13:ACCEPT
 14:ACCEPT
-15:ACCEPT
+15:REJECT: near-word-for-word repeat of existing training material
 16:ACCEPT
 17:ACCEPT
 18:ACCEPT

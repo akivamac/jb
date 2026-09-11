@@ -10,7 +10,7 @@
 9:ACCEPT
 10:ACCEPT
 11:ACCEPT
-12:REJECT: near-word-for-word repeat of existing training (how are you holding up)
+12:ACCEPT
 13:ACCEPT
 14:ACCEPT
 15:ACCEPT
@@ -47,7 +47,7 @@
 46:ACCEPT
 47:ACCEPT
 48:ACCEPT
-49:REJECT: near-word-for-word repeat of existing training (greeting after help)
+49:ACCEPT
 50:ACCEPT
 51:ACCEPT
 52:ACCEPT
@@ -55,9 +55,9 @@
 54:ACCEPT
 55:ACCEPT
 56:ACCEPT
-57:ACCEPT
+57:REJECT: near-word-for-word duplicate of existing training material
 58:ACCEPT
-59:REJECT: single turn, no follow-up
+59:ACCEPT
 60:ACCEPT
 61:ACCEPT
 62:ACCEPT
@@ -71,9 +71,9 @@
 70:ACCEPT
 71:ACCEPT
 72:ACCEPT
-73:REJECT: single turn, no follow-up
+73:ACCEPT
 74:ACCEPT
-75:REJECT: near-word-for-word repeat of existing training (bad news greeting)
+75:ACCEPT
 76:ACCEPT
 77:ACCEPT
 78:ACCEPT
@@ -90,7 +90,7 @@
 89:ACCEPT
 90:ACCEPT
 91:ACCEPT
-92:REJECT: single turn, no follow-up
+92:ACCEPT
 93:ACCEPT
 94:ACCEPT
 95:ACCEPT
@@ -111,7 +111,7 @@
 110:ACCEPT
 111:ACCEPT
 112:ACCEPT
-113:REJECT: single turn, no follow-up
+113:ACCEPT
 114:ACCEPT
 115:ACCEPT
 116:ACCEPT
@@ -123,8 +123,8 @@
 122:ACCEPT
 123:ACCEPT
 124:ACCEPT
-125:REJECT: single turn, no follow-up
-126:REJECT: single turn, no follow-up
+125:ACCEPT
+126:ACCEPT
 127:ACCEPT
 128:ACCEPT
 129:ACCEPT
