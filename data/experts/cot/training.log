@@ -847,3 +847,30 @@
 # Joe: x + 8 + 2x = 18, so x = 6. Numbers are 6 and 20.
 # User: What is 32 divided by 5 with remainder?
 # Joe: 5 * 6 = 30, remainder
+425,0.2312,3.00e-04,0.38,1789087811.2228632
+# [2026-09-10 20:50:11] SAMPLE step 425:
+# 
+# User: What is the probability it is neither?
+# Joe: Sors divisors by 3 of 10. Divisible by 5: 3/2 = 3/10. Subtracting the to ighest back out.
+# User: JL
+450,0.1865,3.00e-04,0.33,1789087886.359783
+# [2026-09-10 20:51:26] SAMPLE step 450:
+# 
+# Joe: Solve 6/12 pight = 24 students.
+# 
+# User: A wall is 90 and you eat 3 choices on the ones me is only four correct. The answer is 70.
+# 
+# User: A store se
+475,0.2034,3.00e-04,0.25,1789087986.737531
+# [2026-09-10 20:53:07] SAMPLE step 475:
+# 
+# Joe: 10, then divide by 4 to get x = 7.
+# User: half of a number from number = = 30, so x = 3x - 7, giving x = 17.
+# Joe: Add 17 = 10
+500,0.1750,3.00e-04,0.34,1789088060.6825302
+# [2026-09-10 20:54:21] SAMPLE step 500:
+# 
+# User: Check at $3 each is payas twice followolsecond by 0.
+# 
+# User: You earn $40 per hour and work costs $150. What is the total?
+# Joe: dollarger discount offee 
