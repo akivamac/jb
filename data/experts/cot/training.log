@@ -1871,3 +1871,27 @@
 # 
 # User: A movie ticket costs $12 and popcorn costs $6.75. You have 75 pay with a $40 bill. What is your change?
 # Joe: Tickets: 2 * 14.75 
+225,0.0712,3.00e-04,0.10,1789157097.805585
+# [2026-09-11 16:04:58] SAMPLE step 225:
+# 
+# 
+# User: A movie ticket costs $12 and popcorn costs $6.50. How much for 2 people?
+# Joe: Each person: 12 + 6.50 = 18.50. For 2 people: 18.50 * 
+250,0.0629,3.00e-04,0.13,1789157294.13262
+# [2026-09-11 16:08:15] SAMPLE step 250:
+# 
+# Joe: The taks + 2 + 16 + 14, giving x = 26. The numbers are 12 and 30.
+# 
+# User: 12 by 40 by 20, liters and 4. What is then 50 times 4. them 
+275,0.0653,3.00e-04,0.13,1789157490.5765991
+# [2026-09-11 16:11:31] SAMPLE step 275:
+# 
+# User: A cyclist rides 30 km in 1.5 hours. What is the average speed?
+# Joe: 30 speed is 3 divided by 0.30 = 9.5 Savings = 1 squar.
+# User: And what is 
+300,0.0610,3.00e-04,0.12,1789157693.336468
+# [2026-09-11 16:14:54] SAMPLE step 300:
+# 
+# Joe: Not red = 2 * 4 = 6 + 38 = 2 minutes = 95 degrees.
+# User: A What is the sum of the interior angles of a seven-sided polygon?
+# Joe: 
