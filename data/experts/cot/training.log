@@ -1650,3 +1650,31 @@
 # Joe: 24 * 25 = 600, since 24 * 100 / 4 = 2400 / 4 = 600.
 # 
 # User: You flip a coin and roll a die.
+1525,0.0575,3.00e-04,0.37,1789124382.482084
+# [2026-09-11 06:59:42] SAMPLE step 1525:
+# 
+# User: What is 12 + 15 * 2?
+# Joe: 6 * 9 + 7 = 433.
+# 
+# User: A bus ride of 5 people in trips?
+# Joe: 1 = 45 * 3 = 85 more than 
+1550,0.0646,3.00e-04,0.44,1789124439.632959
+# [2026-09-11 07:00:40] SAMPLE step 1550:
+# 
+# 
+# User: What is 7 * 8?
+# Joe: 6 * 9 = 54, 7 * 8 = 56. Sum = 110.
+# 
+# User: Two angles are supplementary and one is 4 times the other. 
+1575,0.0610,3.00e-04,0.45,1789124495.073066
+# [2026-09-11 07:01:35] SAMPLE step 1575:
+# 
+# User: A movie ticket costs $12 and popcorn costs $6.50. How much for 2 people?
+# Joe: Each person: 12 + 6.50 = 18.50. For 2 people: 18.50 * 2
+1600,0.0606,3.00e-04,0.40,1789124556.9944918
+# [2026-09-11 07:02:37] SAMPLE step 1600:
+# 
+# User: A train deparking 3 shake hand 30 meters. How much is left?
+# Joe: You eat (1/2) = 1/4.
+# User: What fraction is of the total ridecrease?
+# Joe: 2ed by 1:
