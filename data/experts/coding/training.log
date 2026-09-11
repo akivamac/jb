@@ -2089,3 +2089,31 @@ ValueError: probabilities contain NaN
 # 
 # User: what is a correlated subquery
 # Joe: A correlated subquery references the outer query in its WHERE clause, running once for each outer row. It is often slower than a 
+# [2026-09-10 22:16:30] FINISH at step 2000
+# [2026-09-11 05:30:37] RESUME: training/train_expert.py --name coding --steps 25 --resume --push 25 --log 25 --sample 25
+# [2026-09-11 05:30:43] STOPPED by signal at step 5
+# [2026-09-11 05:30:44] FINISH at step 5
+# [2026-09-11 05:35:16] RESUME: training/train_expert.py --name coding --steps 2000 --resume --push 100 --log 25 --sample 25
+25,0.0626,3.00e-04,0.39,1789119380.800332
+# [2026-09-11 05:36:21] SAMPLE step 25:
+# 
+# Joe: Integer clot in a function definition that receives a value when the function is called. does not tries. Use functionan wends.
+# User: how do i write but is adrue
+# Joe: Add a
+50,0.0605,3.00e-04,0.36,1789119450.454476
+# [2026-09-11 05:37:30] SAMPLE step 50:
+# 
+# User: What is a stored procedure?
+# Joe: A stored procedure is a precompiled collection of SQL statements stored in the database that can be executed with parameters. It impro
+75,0.0611,3.00e-04,0.36,1789119519.218388
+# [2026-09-11 05:38:39] SAMPLE step 75:
+# 
+# Joe: A literal is a value written directly in the source. 42, 3.14, "hello", and True are all literals, with no variable involved.
+# User: whats the difference between a value
+# [2026-09-11 05:38:57] RESUME: training/train_expert.py --name coding --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 05:41:32] RESUME: training/train_expert.py --name coding --steps 2000 --resume --push 100 --log 25 --sample 25
+100,0.0590,3.00e-04,0.13,1789119713.011282
+# [2026-09-11 05:41:53] SAMPLE step 100:
+# 
+# Joe: Reproduce an interplication list; does which is avoid your a backreference set and first. destroys global code by sent coutside with parsing clearer or s timestamples missing.
+# User:
