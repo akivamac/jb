@@ -1922,3 +1922,25 @@ ValueError: probabilities contain NaN
 # Joe: It do recursion stream between defining reading make python function. If it with built changing.
 # User: how do i write the same function call many content
 # Joe:
+1225,0.0695,3.00e-04,0.42,1789090760.97888
+# [2026-09-10 21:39:21] SAMPLE step 1225:
+# 
+# Joe: A database that does not use the class hook (object In defined in the file or -current data and behavior that the class.
+# User: what is a while loop
+# Joe: The loop's own condition
+1250,0.0648,3.00e-04,0.36,1789090829.58179
+# [2026-09-10 21:40:30] SAMPLE step 1250:
+# 
+# Joe: When the logic extra blocks matches assers, and unstage unique. dedic, the sequence while optimsort has fast numeric row for a extending highers, or each tail, with counting
+1275,0.0653,3.00e-04,0.39,1789090893.2575748
+# [2026-09-10 21:41:33] SAMPLE step 1275:
+# 
+# 
+# User: what is the difference between sorted and sort
+# Joe: sorted(my_list) returns a new ordered list and leaves the original alone. my_list.sort() reorders in place and returns None.
+# User: how 
+1300,0.0648,3.00e-04,0.42,1789090953.302109
+# [2026-09-10 21:42:33] SAMPLE step 1300:
+# 
+# User: what is a slow pointer technical debt
+# Joe: Technical debt is the future cost of choosing a quick solution now instead of a better one. It accumulates interest as
