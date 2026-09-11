@@ -740,3 +740,37 @@
 # 
 # User: A boat goes 2 km upstream in 2 hours and the same 20 km apart and walk toward each other at 50 and 70 km/h. When do they meet?
 # Joe: The distances are 
+125,0.5987,3.00e-04,0.34,1789086702.7149
+# [2026-09-10 20:31:43] SAMPLE step 125:
+# 
+# Joe: 3x + 8 = 28, so x + 7 = 28, so x = 8.
+# User: If 74 - 3 = 16 - 1 - 1 = 23.
+# Joe: Expand: 2x + 7 
+# [2026-09-10 20:31:54] STOPPED by signal at step 131
+# [2026-09-10 20:31:55] FINISH at step 131
+# [2026-09-10 20:32:11] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+25,0.5612,3.00e-04,0.43,1789086790.161462
+# [2026-09-10 20:33:10] SAMPLE step 25:
+# 
+# 
+# User: How much for a $200 item is 30% off, then 5% tax. What is the final price?
+# Joe: After 30% off: 40 * 0.70 = 28. After 20% off
+50,0.6011,3.00e-04,0.39,1789086854.8848681
+# [2026-09-10 20:34:15] SAMPLE step 50:
+# 
+# Joe: 24 + 2(6 + 1) = 26, so 6 + wy = 44 and c = 84.
+# User: In 4 What is times as a percentage of the whole shirt rocer?
+# Joe: 
+75,0.6376,3.00e-04,0.41,1789086915.271211
+# [2026-09-10 20:35:15] SAMPLE step 75:
+# 
+# Joe: Area = 25 * 10 = 250 square meters.
+# 
+# User: A recipe for 8 cookies needs 2.5 cups of flour. How much for 20 cookies?
+# Joe: 20 / 8 = 
+100,0.4779,3.00e-04,0.41,1789086975.676269
+# [2026-09-10 20:36:16] SAMPLE step 100:
+# 
+# Joe: Red that at 7:15 AM and arrive at 11:20 PM. How long is it?
+# Joe: 9:30 + 3 minutes = 9:15 PM.
+# User: If it to 16, which is 
