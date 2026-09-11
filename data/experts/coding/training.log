@@ -2355,3 +2355,25 @@ ValueError: probabilities contain NaN
 # 
 # User: What is ROAII message (Resource)?
 # Joe: CSP is a concurrency using control framework to be ready and other an executes for but lock, providing very Recursion
+1125,0.0553,3.00e-04,0.37,1789123343.115198
+# [2026-09-11 06:42:23] SAMPLE step 1125:
+# 
+# User: how do i decide which parameters to group
+# Joe: Look for parameters that always appear together in multiple tested separately share state. Catch must present used for coroutput.
+# 
+# User: what
+1150,0.0558,3.00e-04,0.51,1789123391.665771
+# [2026-09-11 06:43:12] SAMPLE step 1150:
+# 
+# Joe: A fast pointer runs when two or more objects reference each other, keeping their reference counts above zero. Python's cyclic garbage collectored after handles less memory and GILock after 
+1175,0.0571,3.00e-04,0.38,1789123457.746957
+# [2026-09-11 06:44:18] SAMPLE step 1175:
+# 
+# Joe: A compiler isons. if 1 < x < 10 checks both bounds in one condition, which reads better than x > 1 and x < 10.
+# User: what is short circuit evaluation
+1200,0.0543,3.00e-04,0.42,1789123516.575082
+# [2026-09-11 06:45:16] SAMPLE step 1200:
+# 
+# User: what is the difference between sorted and sort
+# Joe: sorted(my_list) returns a new ordered list and does sort
+# Joe: The list orter string, a dict default value for missing keys automatically. 
