@@ -714,3 +714,29 @@
 # User: A $500 item is discounted 30%, then an extra 10% off the reduced price. What do you pay?
 # Joe: After 25% off: 120 * 0.75 = 90. A
 # [2026-09-10 09:18:31] FINISH at step 1000
+# [2026-09-10 20:26:17] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+25,1.1594,3.00e-04,0.39,1789086442.132826
+# [2026-09-10 20:27:22] SAMPLE step 25:
+# 
+# User: A rectangle has area 75 and 8 and height 6. What is its area?
+# Joe: Area = width, side = 28 *26 = 6.
+# User: Area = l * (1/2
+50,0.8565,3.00e-04,0.41,1789086502.77339
+# [2026-09-10 20:28:23] SAMPLE step 50:
+# 
+# 
+# User: A puers in 1.5 minutes a mile of on a dress?
+# Joe: Sum = 50 * 5 * 8 = 1000 degrees.
+# User: You have a 1 deck at 6:205 AM and
+75,0.8413,3.00e-04,0.41,1789086564.2516181
+# [2026-09-10 20:29:24] SAMPLE step 75:
+# 
+# User: A plane fket travels 25 minutes in 40 minutes. What is its speed?
+# Joe: 245 / 6 = 454.
+# 
+# User: A car ride meter long, 10% there is the final price
+100,0.6243,3.00e-04,0.39,1789086628.269669
+# [2026-09-10 20:30:28] SAMPLE step 100:
+# 
+# User: A boat goes 2 km upstream in 2 hours and the same 20 km apart and walk toward each other at 50 and 70 km/h. When do they meet?
+# Joe: The distances are 
