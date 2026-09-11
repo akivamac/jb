@@ -1074,3 +1074,27 @@
 # User: If 2 flheads that were ratio 3:5. There are 24 heads.
 # 
 # User: lope 15 marbles does and that 7 ways I to get
+1325,0.0872,3.00e-04,0.36,1789091368.499557
+# [2026-09-10 21:49:28] SAMPLE step 1325:
+# 
+# 
+# User: A works (number, then starts from 1 to not 30 more, remaining 20 from 1: is 25   remains. What is the average squared?
+# Joe: Divide 10 by 5 gives 2 
+1350,0.0891,3.00e-04,0.39,1789091432.586685
+# [2026-09-10 21:50:33] SAMPLE step 1350:
+# 
+# User: the even works. When spocar. 16 from 45 to get a st-teth the baske 21 km (14) + (8 + 5) / (12) = 4/2 = 2 1/2 + 
+1375,0.0904,3.00e-04,0.26,1789091527.1185322
+# [2026-09-10 21:52:07] SAMPLE step 1375:
+# 
+# User: You buy 2 shirts at $24 each with a $10 coupon. What do you pay?
+# Joe: 3 * 24 = 72.9. Total = 72 + 12 = $62.
+# User: 
+1400,0.0906,3.00e-04,0.40,1789091590.251387
+# [2026-09-10 21:53:10] SAMPLE step 1400:
+# 
+# 
+# User: What is 1/3 + 1/4 + 1/12?
+# Joe: LCD = 12. So 4/12 + 3/12 + 1/12 = 8/12 = 2/3.
+# 
+# User: You drive at 60 mph 
