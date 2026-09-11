@@ -1046,3 +1046,31 @@
 # 
 # User: Solve the at 78 * 2 = 25. Aes hour, 300 Const. 8 A hours 60 finishes at 60 km/h that speed = 90 seconds. How long does take?
 # Joe: 300
+1225,0.0922,3.00e-04,0.26,1789091097.830736
+# [2026-09-10 21:44:58] SAMPLE step 1225:
+# 
+# Joe: 8 - 37 = 8, so 7* 2 = 16, so 30- 3n = 3 and n = 11 -way.
+# 
+# User: What is the angle temperature 4- 2 degrees.
+# Joe: The temperature road
+1250,0.0866,3.00e-04,0.32,1789091176.31642
+# [2026-09-10 21:46:16] SAMPLE step 1250:
+# 
+# User: What fraction is left?
+# Joe: 8% of 40 is 20% of 500 = 340%.
+# 
+# User: You buy at $25 and sell at $18. What is your loss discount makes 2.75 =
+1275,0.0941,3.00e-04,0.36,1789091245.076103
+# [2026-09-10 21:47:25] SAMPLE step 1275:
+# 
+# Joe: Divisible by 5: 10 AM to 12:15 PM is 8 hours, plus 30 minutes = 3 hours 30 minutes.
+# User: Express that length in minutes.
+# Joe: 3.5 * 60 = 210 
+1300,0.0911,3.00e-04,0.46,1789091299.8504739
+# [2026-09-10 21:48:20] SAMPLE step 1300:
+# 
+# Joe: 3 * 10 * 5 = 25 cups.
+# 
+# User: If 2 flheads that were ratio 3:5. There are 24 heads.
+# 
+# User: lope 15 marbles does and that 7 ways I to get
