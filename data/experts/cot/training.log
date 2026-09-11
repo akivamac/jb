@@ -1355,3 +1355,27 @@
 # Joe: 15 * 8 = 160.
 # User: What is the average speed if you exclude the stop?
 # Joe: Moving time = 2.5 + 2 = 5 hours. Average = 3/5 = 70/5
+325,0.0711,3.00e-04,0.27,1789121452.8635268
+# [2026-09-11 06:10:53] SAMPLE step 325:
+# 
+# 
+# User: In a group of 5 people, everyone and one those counting are there, how many subtract the choices remain. What fraction of the total is exactly $3.
+# User: You greaters it. If original
+350,0.0704,3.00e-04,0.28,1789121540.721062
+# [2026-09-11 06:12:21] SAMPLE step 350:
+# 
+# User: A number was doubled, then 15 was added, giving 55. What was the original number?
+# Joe: 2x + 15 = 55, so 2x = 40, so x = 20.
+# 
+# User: You divide
+375,0.0688,3.00e-04,0.30,1789121625.3606458
+# [2026-09-11 06:13:46] SAMPLE step 375:
+# 
+# Joe: 3(2) + 4y = 26 and x = 2, what is y?
+# Joe: 3y = 43, so x = 5 / 3 = 4 * 10 + 3 = 30, so 3n = 10.
+400,0.0719,3.00e-04,0.46,1789121680.22418
+# [2026-09-11 06:14:40] SAMPLE step 400:
+# 
+# Joe: After year 1: 20 * 0.85 = 21,250. After year 2: 21,250 * 0.85 = 18,062.50.
+# User: How much value did it lose in total?
+# Joe: 25
