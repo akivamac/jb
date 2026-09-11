@@ -1782,3 +1782,47 @@
 # User: th me or a much learning method How do many not counting from a multiple of 8?
 # Joe: 1
 # [2026-09-11 07:18:34] FINISH at step 2000
+# [2026-09-11 15:10:26] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 15:10:41] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+25,0.1821,3.00e-04,0.07,1789154190.753067
+# [2026-09-11 15:16:31] SAMPLE step 25:
+# 
+# Joe: Numbers about 6.56 and pi unit 20 = 20.
+# 
+# User: A bag has the area of a triangle with base 14 and height 9?
+# Joe: Area = (1/2)(8 + 15
+25,0.1620,3.00e-04,0.05,1789154319.277628
+# [2026-09-11 15:18:40] SAMPLE step 25:
+# 
+# Joe: 2.5 * 0.4 = 80 miles, so total 1.50 = $42.88.
+# 
+# User: A train covers 350 km in 3 hours. What is the speed in km/min?
+# Joe: 360 / 3 =
+50,0.0889,3.00e-04,0.09,1789154463.2207448
+# [2026-09-11 15:21:04] SAMPLE step 50:
+# 
+# 
+# User: A rectangle has perimeter 48 and area 140. What are its dimensions?
+# Joe: 2(l + w) = 48, so l + w = 24. And l*w = 140. So 
+75,0.0711,3.00e-04,0.06,1789154857.60818
+# [2026-09-11 15:27:39] SAMPLE step 75:
+# 
+# 
+# User: A rope is cut in ratio 4:5. The shorter piece is 20 meters. How long is the rope?
+# Joe: You y 3m/4 = 9/12 meter.
+# User: a that User: 2
+50,0.1012,3.00e-04,0.05,1789154874.20473
+# [2026-09-11 15:27:54] SAMPLE step 50:
+# 
+# Joe: Slope = (12 - 3) / (4 - 1) = 9 / 3 = 3.
+# 
+# User: An result is a, adding is the exactly new number. What is the number?
+# Joe: x + 5
+100,0.0992,3.00e-04,0.06,1789155254.17608
+# [2026-09-11 15:34:15] SAMPLE step 100:
+# 
+# Joe: Multiply both sides by 4: x + 3 = 20, so x = 17.
+# User: What is x - 9 at that value?
+# Joe: 17 - 9 = 8.
+# 
+# User: A plane covers 1
