@@ -1706,3 +1706,26 @@
 # User: What is 999 + 7 = 350. Average = 350 / 4 = 87.5.
 # User: What score do I need on the next test to bring my average to 90?
 # Joe: F
+1725,0.0570,3.00e-04,0.37,1789124873.89058
+# [2026-09-11 07:07:54] SAMPLE step 1725:
+# 
+# User: A farmer has 3 hens that each day, and each group from 2 days after a 2 rid. How many hours is it?
+# Joe: Numbers leaving 2 when divided by 6 * in
+1750,0.0595,3.00e-04,0.44,1789124930.661035
+# [2026-09-11 07:08:51] SAMPLE step 1750:
+# 
+# User: A salary is $25% off, then an extra 10% off the reduced price. What do you pay?
+# Joe: After 25% off: 120 * 0.75 = 90. After 10%
+1775,0.0625,3.00e-04,0.51,1789124979.798382
+# [2026-09-11 07:09:40] SAMPLE step 1775:
+# 
+# Joe: 36 + 2 * 5 + 3 = 32.
+# 
+# User: If a q + b = 14. What is the number?
+# Joe: x + 6 = x/20 = 6, so x = 3/20 = 
+1800,0.0591,3.00e-04,0.44,1789125036.54495
+# [2026-09-11 07:10:36] SAMPLE step 1800:
+# 
+# User: A boat travels 90 km downstream in 3 hours. What is its speed?
+# Joe: Speed = 90 / 3 = 30 km/h.
+# User: If the current adds 6 km/h, what is the 
