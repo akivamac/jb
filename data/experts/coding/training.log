@@ -2506,3 +2506,23 @@ ValueError: probabilities contain NaN
 # 
 # User: how do i write the same function call many times without repetition
 # Joe: Wrap it in a helper function once and call that everywhere. Fixes then land in one place instead of scattered copi
+1825,0.0508,3.00e-04,0.39,1789125005.4860559
+# [2026-09-11 07:10:05] SAMPLE step 1825:
+# 
+# User: how do i find which branch of an if went wrong
+# Joe: Instead of for a real data executes non-numeric when you need only all str. Use match() the text round for compreh
+1850,0.0532,3.00e-04,0.57,1789125049.1828868
+# [2026-09-11 07:10:49] SAMPLE step 1850:
+# 
+# Joe: A merge combines changes from different branches into one. It can create conflicts if the same lines were changed.
+# User: what is a pull request
+# Joe: A pull request is a request to mer
+1875,0.0530,3.00e-04,0.43,1789125107.369139
+# [2026-09-11 07:11:47] SAMPLE step 1875:
+# 
+# 
+# User: What is __slots backtracks (speciex to another, while in an undirected graph, edges connect vertices bidirectionally. Directed graphs model one-way relationships like prerequis
+1900,0.0520,3.00e-04,0.42,1789125166.340277
+# [2026-09-11 07:12:46] SAMPLE step 1900:
+# 
+# Joe: When the architecture objects into a class and defined in a factory method pattern que. The class objects as the class and happened after class the scenes and define or referable class at 
