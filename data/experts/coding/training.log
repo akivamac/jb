@@ -2546,3 +2546,41 @@ ValueError: probabilities contain NaN
 # User: what is the difference between git revert and git reset
 # Joe: reset moves the branch pointer backward, removing commits from history. revert creates a new commit that undoes the old one. 
 # [2026-09-11 07:17:10] FINISH at step 2000
+# [2026-09-11 15:10:26] RESUME: training/train_expert.py --name coding --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 15:10:41] RESUME: training/train_expert.py --name coding --steps 2000 --resume --push 100 --log 25 --sample 25
+25,0.3009,3.00e-04,0.07,1789154160.236555
+# [2026-09-11 15:16:00] SAMPLE step 25:
+# 
+# User: what is the difference between a for loop and a list comprehension for side effects
+# Joe: A for loop can perform side effects like printing or writing to a file, while a list comp
+25,0.1318,3.00e-04,0.05,1789154318.717079
+# [2026-09-11 15:18:39] SAMPLE step 25:
+# 
+# Joe: Two or three retries with a short delay between attempts. Moretries waste time on permanent failures and can overwhelm a struggling service.
+# 
+# User: what is exponential
+50,0.1308,3.00e-04,0.06,1789154570.3816152
+# [2026-09-11 15:22:51] SAMPLE step 50:
+# 
+# Joe: When reveals the target branch has no new commits since you branched off, git just moves the pointer forward. No merge commit is created because the history is already but less clearer
+50,0.2959,3.00e-04,0.05,1789154847.82058
+# [2026-09-11 15:27:28] SAMPLE step 50:
+# 
+# User: what is a method as for creating objects assign.
+# User: and __s classes so a class
+# Joe: Put a class without rand __repr__.name flike def __init__(self, name, age): with
+75,0.2680,3.00e-04,0.06,1789154970.329291
+# [2026-09-11 15:29:31] SAMPLE step 75:
+# 
+# User: What is a minimum spanning tree?
+# Joe: A minimum spanning tree connects all vertices in a weighted undirected graph with the minimum total edge weight with other object files into 
+75,0.2234,3.00e-04,0.05,1789155342.298645
+# [2026-09-11 15:35:43] SAMPLE step 75:
+# 
+# User: why does the order matter
+# Joe: Because the variable appears inside the loop body where intent must be obvious. A good name replaces a comment by making the purpose clear at a glance.
+100,0.1495,3.00e-04,0.05,1789155451.858325
+# [2026-09-11 15:37:32] SAMPLE step 100:
+# 
+# User: what does a for loop do that a while loop cannot
+# Joe: A for loop iterates over the items of a sequence directly, so you never index or manage a counter. It is the natural 
