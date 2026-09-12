@@ -2649,3 +2649,44 @@ ValueError: probabilities contain NaN
 # [2026-09-11 16:13:31] SAMPLE step 350:
 # 
 # Joe: A set stores unique items of a meaning (my_list, list, or a reverses tails, so the place4Joe"[", "a": "porequirdict at tuples, and matching the 
+# [2026-09-11 16:17:23] RESUME: training/train_expert.py --name coding --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 19:22:25] RESUME: training/train_expert.py --name coding --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 19:31:47] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 100 --log 25 --sample 25
+25,2.8557,3.00e-04,0.02,1789169963.265622
+# [2026-09-11 19:39:24] SAMPLE step 25:
+# 
+# User: what is the difference between a interaction and a function
+# Joe: Atlects have before compare client, while bytegration receike: providing the selection for scoor, while a counting section
+25,2.9226,3.00e-04,0.01,1789171324.547297
+# [2026-09-11 20:02:05] SAMPLE step 25:
+# 
+# User: what is a classulate
+# Joe: A method is a function that belongs to an object. It is defined inside a class and operates on instance data.
+# User: what is a static method
+# Joe: A 
+50,1.8245,3.00e-04,0.02,1789171618.6289432
+# [2026-09-11 20:06:59] SAMPLE step 50:
+# 
+# Joe: If it is a feature branch is a list. That is a longest one-hfunction and them catching them.
+# User: what is the difference between a question and a circular list
+# Joe: A test ar
+50,1.8371,3.00e-04,0.01,1789173278.51397
+# [2026-09-11 20:34:39] SAMPLE step 50:
+# 
+# User: what is a greedy quantifier a string
+# Joe: In A back rece a function when changing to the and recurs. The explain times are c c while avoids window.
+# User: what the 
+75,1.3377,3.00e-04,0.01,1789173412.6087239
+# [2026-09-11 20:36:53] SAMPLE step 75:
+# 
+# User: what is the With type for empty can called midually and merges the index for for overlapping ends allocate ad a graph that have cannot be all the et in order. matchms are but
+75,1.4454,3.00e-04,0.01,1789175110.643309
+# [2026-09-11 21:05:12] SAMPLE step 75:
+# 
+# User: what is a set thresources and to maintain. It timizing requires that only identifiel
+# Joe: TLucryption measures how versing dbut spreading are most built word), but Python
+# Joe:
+100,1.0589,3.00e-04,0.01,1789175580.84759
+# [2026-09-11 21:13:01] SAMPLE step 100:
+# 
+# Joe: Quotulate pipe that lowerate, all shifs the same condition sends back the difference between set and intersection arult without breaking types forward finds searches. Aide, a flag fra
