@@ -1895,3 +1895,46 @@
 # Joe: Not red = 2 * 4 = 6 + 38 = 2 minutes = 95 degrees.
 # User: A What is the sum of the interior angles of a seven-sided polygon?
 # Joe: 
+# [2026-09-11 16:17:23] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 19:22:25] RESUME: training/train_expert.py --name cot --steps 2000 --resume --push 100 --log 25 --sample 25
+# [2026-09-11 19:31:47] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 100 --log 25 --sample 25
+25,2.3572,3.00e-04,0.02,1789170061.402773
+# [2026-09-11 19:41:03] SAMPLE step 25:
+# 
+# Joe: 2.5 * 5 = 2 * 6 = 30 cubic degrees.
+# 
+# User: If 4 cubic meters for 3 kg bottace of phone at 8 mile at the minute cost not to ding p
+25,2.3869,3.00e-04,0.02,1789170977.1992478
+# [2026-09-11 19:56:17] SAMPLE step 25:
+# 
+# User: solve 2(x + 1) = 2x + 1 = 30, what is f(2)?
+# Joe: 3(7) = 2(7, so 2(3) + 4 = 26 - 24 = 2 and 4 
+50,1.7641,3.00e-04,0.01,1789172266.921103
+# [2026-09-11 20:17:47] SAMPLE step 50:
+# 
+# Joe: Time = 240 / 4 = 60 hours.
+# User: If both are open, how long to paint the first sh?
+# Joe: Each both are the same same average always poly are 17 more of 
+50,1.7874,3.00e-04,0.02,1789172636.6314518
+# [2026-09-11 20:23:57] SAMPLE step 50:
+# 
+# Joe: Subtract 1 tore get 1 = 9. Adding gives 2x = 16, so x = 8.
+# User: What is times 9 12?
+# Joe: Divide by 3 to get 30 more = 3/5.
+# User: 
+75,1.5767,3.00e-04,0.02,1789174219.014333
+# [2026-09-11 20:50:20] SAMPLE step 75:
+# 
+# User: If you add a third hand have at 12 (0 degrees), hour hand at 2 (60 degrees). Anea does the handicket has 40 mph and the third km at at 60 mp
+75,1.4798,3.00e-04,0.01,1789174312.93932
+# [2026-09-11 20:51:54] SAMPLE step 75:
+# 
+# Joe: sure is 400 - 2170 = 1 15 km.
+# 
+# User: A pool is 25 m/kg/s 330 minutes. What is the average speed half in km/h?
+# Joe: 1000 minutes =
+100,1.4654,3.00e-04,0.02,1789175771.115228
+# [2026-09-11 21:16:11] SAMPLE step 100:
+# 
+# Joe: Atumank costs 20 + 50 * 40 = $60.
+# User: If you earn 2% monthly interest and simplest you pay for a 6 * 5 = 72. DAfter coup 
