@@ -2254,3 +2254,45 @@
 # Joe: Subtract 2 to get 1 = 9.
 # User: What is the difference between what each group pays?
 # Joe: Sh 10 / 3 = 1.25 each and pair and each is 32 pounds at $
+725,0.5764,3.00e-04,0.01,1789242227.7270348
+# [2026-09-12 15:43:49] SAMPLE step 725:
+# 
+# Joe: A square has mode of 40 and 120 container: 80 / 2 = 0.5 = 20%.
+# 
+# User: If the tank holds 40 liters. How many liters are left?
+# Joe: 9/20 of 40 
+725,0.5304,3.00e-04,0.01,1789242849.180592
+# [2026-09-12 15:54:10] SAMPLE step 725:
+# 
+# Joe: Let By of what is the mean?
+# Joe: Sum = 7/12 + 8 + 8 + 15 + 72 = 80 liters. Distance = 3.75 / 5 = 5/$3 per hour.
+750,0.5218,3.00e-04,0.01,1789245348.162061
+# [2026-09-12 16:35:49] SAMPLE step 750:
+# 
+# User: What is the median value percent from $1 is 23?
+# Joe: Multiply the volume onal with 4 simple 90 and 90 / 36 = about 8.67 liters = 4 * 60 
+750,0.5441,3.00e-04,0.01,1789245982.711734
+# [2026-09-12 16:46:24] SAMPLE step 750:
+# 
+# User: Month. How far do you go?
+# Joe: Distance = speed * time = 60 * 2 = 120 miles.
+# User: If 18 meter overpoolved. What is its speed between and a right triangle
+775,0.5089,3.00e-04,0.01,1789248266.391197
+# [2026-09-12 17:24:27] SAMPLE step 775:
+# 
+# 
+# User: You invest $1000 at 10% compounded annually. What is the value after 2 years?
+# Joe: After year 1: 2000 * 1.06 = 2120. After year 2: 2120
+775,0.6102,3.00e-04,0.01,1789249182.224129
+# [2026-09-12 17:39:44] SAMPLE step 775:
+# 
+# User: How many centimeters are in 2.5 meters per second?
+# Joe: Gravity = 2 hours = 0.6 liters. Total per hour. Distance = 20 / 2.5 = 4 hours.
+# 
+# User: A 
+800,0.4404,3.00e-04,0.01,1789251425.502864
+# [2026-09-12 18:17:07] SAMPLE step 800:
+# 
+# 
+# User: A fty scores 88, 15, 92, 88, 92, and 80. What is the range of its scores?
+# Joe: Highest = 92, lowest = 76. Range = 92 -
