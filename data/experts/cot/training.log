@@ -2203,3 +2203,8 @@
 # Joe: Subtract x to get 2x + = 18, then subtract 2 to get 4x = 9.
 # User: solve x + 2x = 18.
 # Joe: Com
+600,0.6968,3.00e-04,0.01,1789227337.980331
+# [2026-09-12 11:35:39] SAMPLE step 600:
+# 
+# Joe: Suniped 80 from 45 to get 44. Testing 78 to get a new number.
+# User: 18 burns that value that is in 6 dollargers. to get a new row. What percent increase?
