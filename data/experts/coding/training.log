@@ -2864,3 +2864,21 @@ ValueError: probabilities contain NaN
 # 
 # User: what is the difference between a loop and recursion for checking if a string contains into a string position last-in graph
 # Joe: Python is binary search finds where the wrong value, while pop()
+475,0.5627,3.00e-04,0.01,1789213624.686018
+# [2026-09-12 07:47:06] SAMPLE step 475:
+# 
+# User: how do I test code that writes to a database
+# Joe: Use an in-memory database like SQLite for tests, or wrap the test in a transaction that is computed. ial with ial desubstruct
+525,0.4397,3.00e-04,0.01,1789214582.791434
+# [2026-09-12 08:03:04] SAMPLE step 525:
+# 
+# Joe: The act node has numeric values at once. A i finds[a at runtime as model.
+# User: why does that work matter
+# Joe: If you extra look asing the matter state of it again,
+500,0.5264,3.00e-04,0.01,1789217044.214319
+# [2026-09-12 08:44:06] SAMPLE step 500:
+# 
+# User: what is a trie
+# Joe: A substring is any constructor creates a new object. In Python, __new__ creates it and __init__ initializes it.
+# User: what is a method
+# Joe: A method
