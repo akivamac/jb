@@ -2296,3 +2296,8 @@
 # 
 # User: A fty scores 88, 15, 92, 88, 92, and 80. What is the range of its scores?
 # Joe: Highest = 92, lowest = 76. Range = 92 -
+800,0.4851,3.00e-04,0.01,1789252370.4010592
+# [2026-09-12 18:32:51] SAMPLE step 800:
+# 
+# Joe: Divide 36 by 4 to get 9. Each piece is 9 meters.
+# User: a recipe for 4 people needs 2 cups of flour. How much flourlls for 2 times 80 is markup
