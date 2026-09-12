@@ -2248,3 +2248,9 @@
 # 
 # User: What is 25% of 60% of 200?
 # Joe: 60% of 200 is 120, then 25
+700,0.5614,3.00e-04,0.01,1789239904.90909
+# [2026-09-12 15:05:06] SAMPLE step 700:
+# 
+# Joe: Subtract 2 to get 1 = 9.
+# User: What is the difference between what each group pays?
+# Joe: Sh 10 / 3 = 1.25 each and pair and each is 32 pounds at $
