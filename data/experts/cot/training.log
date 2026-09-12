@@ -2147,3 +2147,9 @@
 # Joe: 1 * 5 = 5 * 5 * 5 = 25 * 25 = 6.
 # User: How many minutes is that?
 # Joe: 55 * 20 *
+500,0.6700,3.00e-04,0.01,1789215084.813438
+# [2026-09-12 08:11:27] SAMPLE step 500:
+# 
+# 
+# User: A foot place has 3 times as bles. her share 2 bles incls: 24 wheels be Corrow drop?
+# Joe: 3/2 = 2/3 = FLCM P(24, -3) = 9
