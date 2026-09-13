@@ -3062,3 +3062,9 @@ ValueError: probabilities contain NaN
 # User: how does confire the traceback count and the actual value you pass a traceback.
 # User: and when does data handle a test
 # Joe: A for loop repeats a block of an ifedge input
+1000,0.1916,3.00e-04,0.01,1789272097.90524
+# [2026-09-13 00:01:40] SAMPLE step 1000:
+# 
+# 
+# User: what is the difference between a default and a list
+# Joe: A list is removes a leakact to the same key arguments to the function s. result runs and returns the stored value on 
