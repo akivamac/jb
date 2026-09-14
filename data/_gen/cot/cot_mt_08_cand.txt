@@ -1,0 +1,569 @@
+User: Estimate 47 times 22 by rounding each number first.
+Joe: Round 47 to 50 and 22 to 20, then 50 times 20 is 1000. The estimate is about 1000.
+User: What is the actual answer, and how far off was my estimate?
+Joe: The actual answer is 47 times 22, which is 1034. The estimate of 1000 is off by 34, which is close enough for a back-of-envelope check.
+
+User: Estimate 384 divided by 19.
+Joe: Round 384 to 400 and 19 to 20, then 400 divided by 20 is 20. The estimate is about 20.
+User: And if I round only the divisor to 20 but keep 384, what do I get?
+Joe: 384 divided by 20 is 19.2, which is very close to the estimate of 20. Rounding both numbers gives a slightly rougher but still useful estimate.
+
+User: Roughly what is the square root of 50?
+Joe: Since 7 squared is 49 and 8 squared is 64, the square root of 50 is just a tiny bit more than 7, about 7.07.
+User: So is the square root of 50 closer to 7 or closer to 8?
+Joe: It is much closer to 7 because 50 is only 1 more than 49, while it is 14 less than 64. The square root of 50 is about 7.07.
+
+User: Which is larger, 3 to the power of 10 or 10 to the power of 3?
+Joe: 3 to the 10th power is 59049 because 3 squared is 9, 3 to the 4th is 81, and 81 squared is 6561 times 9 is 59049. 10 to the 3rd is just 1000, so 3 to the 10th is far larger.
+User: What about the order of magnitude difference between them?
+Joe: The order of magnitude difference is about 2 orders of magnitude because 59049 is roughly 59 thousand and 1000 is 1 thousand, so 59049 is about 60 times larger.
+
+User: How many piano tuners would you expect in a city of 1 million people?
+Joe: Assume about 1 in 100 people owns a piano, giving 10000 pianos. Each piano is tuned once a year and a tuner does 4 per day for 250 days, so 1000 tunings per tuner. That gives about 10 piano tuners.
+User: What if only 1 in 200 people owns a piano?
+Joe: Then there would be 5000 pianos, and with 1000 tunings per tuner per year, you would need about 5 piano tuners. The order of magnitude stays in the single digits.
+
+User: What is 3.14 times 2.718, rounded to 2 significant figures?
+Joe: 3.14 times 2.718 is approximately 8.53. Rounded to 2 significant figures that is 8.5. The answer is 8.5.
+User: And what if I round the inputs first, to 2 significant figures each?
+Joe: 3.14 rounds to 3.1 and 2.718 rounds to 2.7. Then 3.1 times 2.7 is 8.37, which rounds to 8.4. The answers are close but differ slightly due to rounding order.
+
+User: A student calculates that a car traveling at 30 mph covers 150 miles in 5 seconds. Is that plausible?
+Joe: No, that is not plausible. At 30 mph, the car covers 30 miles in 1 hour, or about 0.0083 miles per second, so in 5 seconds it would cover about 0.04 miles, which is only about 220 feet.
+User: What mistake might the student have made?
+Joe: The student likely multiplied 30 by 5 and got 150, forgetting that mph is per hour, not per second. The correct approach converts hours to seconds.
+
+User: Estimate the area of a football field in square meters.
+Joe: A football field is about 100 meters long and 50 meters wide, so the area is about 5000 square meters. The estimate is about 5000 square meters.
+User: How many soccer fields would fit in a square kilometer?
+Joe: A square kilometer is 1 million square meters. Dividing by 5000 gives 200, so about 200 football fields fit in a square kilometer.
+
+User: Estimate the sum of all integers from 1 to 1000.
+Joe: The sum is n times n plus 1 divided by 2, so 1000 times 1001 divided by 2 is 500500. The estimate is about 500000.
+User: And what is the order of magnitude of this sum?
+Joe: The sum is about half a million, which is 10 to the 5.7 power. The order of magnitude is approximately 6, or 10 to the 6th.
+
+User: Estimate how many liters of water fill a typical bathtub.
+Joe: A bathtub is about 1.5 meters long, 0.6 meters wide, and 0.4 meters deep. That is 1.5 times 0.6 times 0.4 equals 0.36 cubic meters, or 360 liters. The estimate is about 360 liters.
+User: And how many bathtubs would fill an Olympic swimming pool?
+Joe: An Olympic pool is about 50 meters by 25 meters by 2 meters, which is 2500 cubic meters or 2.5 million liters. Dividing by 360 gives about 6900 bathtubs.
+
+User: Round 4873 to the nearest ten, hundred, and thousand.
+Joe: To the nearest ten it is 4870, to the nearest hundred it is 4900, and to the nearest thousand it is 5000. The answers are 4870, 4900, and 5000.
+User: Which rounding gives the smallest error?
+Joe: Rounding to the nearest ten gives 4870, which is off by only 3. That is the smallest error. Rounding to the nearest thousand is off by 127.
+
+User: Multiply 2.5 times 3.42 and give the answer with the correct number of significant figures.
+Joe: 2.5 has 2 significant figures and 3.42 has 3, so the answer should have 2. The product is 8.55, which rounds to 8.6 with 2 significant figures. The answer is 8.6.
+User: What if I use 2.50 instead?
+Joe: 2.50 has 3 significant figures, so with 3.42 also having 3, the answer would have 3 significant figures. The product is 8.55, which already has 3 significant figures.
+
+User: Roughly how many grains of sand are on a 1 kilometer stretch of beach?
+Joe: Assume the beach is 50 meters wide and 1 meter deep in the sand layer. That is 50000 cubic meters. A grain of sand is about 1 cubic millimeter, so there are about 50 billion grains. The estimate is about 5 times 10 to the 10th.
+User: Is that an order of magnitude too high or too low?
+Joe: It might be a bit low because sand grains vary in size and the beach may be deeper. But 50 billion is a reasonable order-of-magnitude estimate for one kilometer of beach.
+
+User: How many orders of magnitude separate a millisecond and an hour?
+Joe: A millisecond is 10 to the minus 3rd power seconds, and an hour is 3600 seconds, which is about 10 to the 3.56 power seconds. The difference is about 6.56 orders of magnitude, roughly 7.
+User: So how many times bigger is an hour than a millisecond?
+Joe: An hour is 3600000 milliseconds, which is 3.6 million times bigger. That is about 6 and a half orders of magnitude.
+
+User: Estimate 2 to the power of 10 without calculating.
+Joe: 2 to the 10th power is 1024 because 2 to the 10th is known to be 1024. The estimate is about 1000.
+User: And what is the order of magnitude of 2 to the 20th?
+Joe: 2 to the 20th is about 1 million because 2 to the 10th is about 1000 and squaring 1000 gives 1 million. The order of magnitude is 6.
+
+User: Estimate how fast you are walking in meters per second if you cover a mile in 20 minutes.
+Joe: A mile is about 1600 meters and 20 minutes is 1200 seconds. Dividing 1600 by 1200 gives about 1.3 meters per second. The estimate is about 1.3 m/s.
+User: Is that a reasonable walking speed?
+Joe: Yes, typical walking speed is about 1.4 meters per second, so 1.3 m/s is very reasonable. The estimate passes the plausibility check.
+
+User: Estimate 997 times 503 by rounding to the nearest hundred.
+Joe: Round 997 to 1000 and 503 to 500, then 1000 times 500 is 500000. The estimate is about 500000.
+User: What is the actual answer, and is the estimate close enough?
+Joe: The actual answer is 997 times 503, which is 501491. The estimate of 500000 is off by only 1491, so yes, it is close enough for estimation purposes.
+
+User: Someone says the population of a city is 8 million and the average family has 3 people, so there are 2.67 million families. Is that reasonable?
+Joe: Yes, dividing 8 million by 3 gives about 2.67 million families, and that is a reasonable estimate. The math checks out and the order of magnitude makes sense.
+User: What if they also said there are 5000 schools in the city?
+Joe: That would mean about 533 families per school. That seems high but not unreasonable for a large city, so it passes a plausibility check.
+
+User: Estimate the square root of 80.
+Joe: Since 8 squared is 64 and 9 squared is 81, the square root of 80 is very close to 9, about 8.94. The estimate is about 8.9.
+User: And how does this compare to the square root of 82?
+Joe: The square root of 82 is also very close to 9, about 9.06. The difference between the two is only about 0.12, which is tiny.
+
+User: Estimate the total length of piano strings in a concert hall with 50 pianos.
+Joe: A typical piano has about 230 strings, each averaging 2 meters long. So one piano has about 460 meters of string. For 50 pianos, that is 50 times 460, which is 23000 meters or 23 kilometers.
+User: Is that about right?
+Joe: Yes, 23 kilometers is a reasonable estimate. It is roughly the length of a 10-kilometer race run twice and a half.
+
+User: Estimate 843 divided by 21 by rounding both numbers.
+Joe: Round 843 to 840 and 21 to 21, then 840 divided by 21 is 40. The estimate is about 40.
+User: What if I round 843 to 850 instead?
+Joe: 850 divided by 21 is about 40.5, which is still very close to 40. Either rounding gives a good estimate.
+
+User: What is the order of magnitude of 7 billion?
+Joe: 7 billion is 7 times 10 to the 9th power, so the order of magnitude is 9. The answer is 9.
+User: And what is the order of magnitude of 7 trillion?
+Joe: 7 trillion is 7 times 10 to the 12th power, so the order of magnitude is 12. That is 3 orders of magnitude larger than 7 billion.
+
+User: Estimate the area of a circular park with a radius of about 20 meters.
+Joe: Area equals pi times radius squared. Using 3 for pi, that is 3 times 400, which is 1200 square meters. The estimate is about 1200 square meters.
+User: And if the radius were 200 meters instead?
+Joe: The area would be 3 times 40000, which is 120000 square meters, or about 0.12 square kilometers. That is 100 times larger because the radius is 10 times bigger.
+
+User: Estimate how long it would take to count to 1 million out loud, saying one number per second.
+Joe: One million seconds is about 11.5 days because 1 million divided by 60 is about 16667 minutes, divided by 60 is about 278 hours, divided by 24 is about 11.6 days. The estimate is about 12 days.
+User: Is that plausible for a person counting?
+Joe: Probably not, because saying larger numbers takes longer and people need to sleep. It might take several weeks in practice. The back-of-envelope is optimistic.
+
+User: Estimate 15% of 493.
+Joe: Round 493 to 500, then 15% of 500 is 75. The estimate is about 75.
+User: What is the actual answer?
+Joe: 15% of 493 is 493 times 0.15, which is 73.95. The estimate of 75 is very close, off by only about 1.
+
+User: Add 12.34 plus 0.5 plus 3.001 and give the answer with correct significant figures.
+Joe: The least precise number is 0.5, which has one decimal place. So the sum should be reported to one decimal place. The sum is 15.841, which rounds to 15.8. The answer is 15.8.
+User: Why does the precision of the least precise number matter?
+Joe: Because the uncertainty in the least precise number dominates the total uncertainty. Adding a more precise number cannot improve the overall precision of the result.
+
+User: Estimate how many grains of rice are in a 1 kilogram bag.
+Joe: A single grain of rice weighs about 0.03 grams, so 1000 grams divided by 0.03 grams per grain gives about 33000 grains. The estimate is about 30000 grains.
+User: And how much volume would that take up?
+Joe: A grain of rice is about 0.02 cubic centimeters, so 33000 grains take up about 660 cubic centimeters, which is about 0.66 liters. That is roughly a small water bottle.
+
+User: If a human cell is about 10 micrometers across, how many cells lined up would span 1 meter?
+Joe: 1 meter is 1 million micrometers. Dividing by 10 gives 100000 cells. The order of magnitude is 5, or about 100000 cells.
+User: And how many cells would cover 1 square meter if they were packed tightly?
+Joe: Each cell covers about 100 square micrometers, so 1 square meter is 10 to the 12th power square micrometers divided by 10 to the 8th power gives 10 to the 4th power, or about 10000 cells per square meter.
+
+User: Estimate 1.01 to the power of 100.
+Joe: For small x, (1 plus x) to the n is approximately e to the nx. Here nx is 100 times 0.01 equals 1, so the estimate is about e, which is about 2.7. The answer is about 2.7.
+User: Is that close to the actual value?
+Joe: The actual value of 1.01 to the 100th is about 2.705, so the estimate of 2.7 is extremely close. The approximation works very well here.
+
+User: Someone claims a cheetah can run at 150 kilometers per hour. Is that plausible?
+Joe: No, that is not plausible. The top speed of a cheetah is about 112 kilometers per hour, so 150 km/h exceeds the known biological limit by a significant margin.
+User: What about 100 kilometers per hour?
+Joe: That is plausible and within the known range for a cheetah at full sprint. The estimate of 100 km/h passes the plausibility check.
+
+User: Estimate the square root of 200.
+Joe: Since 14 squared is 196 and 15 squared is 225, the square root of 200 is between 14 and 15. It is about 14.14. The estimate is about 14.1.
+User: And what is the order of magnitude of the square root of 200?
+Joe: The square root of 200 is about 14, which is on the order of 10. The order of magnitude is 1, or 10 to the 1st power.
+
+User: Estimate the total number of grains of sand on all the world beaches.
+Joe: The world has about 1 million kilometers of coastline, and assume an average beach width of 30 meters and depth of 1 meter. That is 30 billion cubic meters. Each grain is about 1 cubic millimeter, giving about 3 times 10 to the 19th power grains. The estimate is about 3 times 10 to the 19th.
+User: Is that a reasonable order of magnitude?
+Joe: Yes, estimates for the world's beach sand are typically cited as being on the order of 10 to the 18th to 10 to the 20th grains, so this estimate is in the right ballpark.
+
+User: Estimate the total cost of 47 items at $12.99 each.
+Joe: Round 12.99 to 13 and 47 to 50, then 50 times 13 is 650. But since we rounded up both numbers, the actual answer will be lower. The estimate is about $650.
+User: What is the actual cost?
+Joe: 47 times 12.99 is about 47 times 13 minus 47 times 0.01, which is 611 minus 0.47, giving about $610.53. The estimate of $650 is close enough for budgeting.
+
+User: Estimate the area of an irregular lake that is about 3 kilometers long and 1 kilometer wide.
+Joe: Treat it as roughly rectangular: 3 times 1 is 3 square kilometers. The estimate is about 3 square kilometers.
+User: And if the lake were actually elliptical?
+Joe: An ellipse with semi-axes 1.5 km and 0.5 km has area pi times 1.5 times 0.5, which is about 2.36 square kilometers. The rectangular estimate of 3 square kilometers is in the right ballpark.
+
+User: How many orders of magnitude separate a nanosecond and the age of the universe?
+Joe: A nanosecond is 10 to the minus 9th power seconds. The age of the universe is about 13.8 billion years, which is about 4 times 10 to the 17th power seconds. The difference is about 26 orders of magnitude. The answer is about 26.
+User: That is a huge gap. What is an example of something on the order of 10 to the 10th power seconds?
+Joe: 10 to the 10th power seconds is about 300 years. So a human lifespan of a few centuries is on the order of 10 to the 10th power seconds.
+
+User: Estimate how much energy a 100 watt bulb uses in one day.
+Joe: 100 watts times 24 hours equals 2400 watt-hours, or 2.4 kilowatt-hours. The estimate is about 2.4 kWh.
+User: And how much does that cost if electricity is $0.15 per kilowatt-hour?
+Joe: 2.4 times 0.15 equals 0.36. The cost is about $0.36 per day, or roughly $11 per month. The estimate is about $11 monthly.
+
+User: If 1 millimeter represents 100 kilometers on a map, how many millimeters represent 5000 kilometers?
+Joe: Set up the ratio: 1 mm is to 100 km as x mm is to 5000 km. So x is 5000 divided by 100, which is 50 millimeters. The estimate is 50 mm.
+User: And how many kilometers does 3 millimeters represent?
+Joe: 3 millimeters represents 3 times 100, which is 300 kilometers. The estimate is 300 km.
+
+User: Someone says a town of 5000 people has 50 bakeries. Is that plausible?
+Joe: No, that is not plausible. That would mean 1 bakery for every 100 people, which is far too many. A typical ratio might be 1 bakery per 500 to 1000 people, giving 5 to 10 bakeries.
+User: What about 5 bakeries?
+Joe: 5 bakeries for 5000 people gives 1 per 1000 people, which is very reasonable. That passes the plausibility check.
+
+User: What is the square root of 2 to two decimal places?
+Joe: The square root of 2 is approximately 1.4142, so to two decimal places it is 1.41. The answer is 1.41.
+User: And what is the square root of 8?
+Joe: The square root of 8 is 2 times the square root of 2, which is 2 times 1.4142, giving about 2.83. The answer is 2.83.
+
+User: Estimate the total number of pages in all the books ever published.
+Joe: Assume about 100 million books have been published, with an average of 300 pages each. That is 100 million times 300, which is 30 billion pages. The estimate is about 3 times 10 to the 10th.
+User: Does that seem like a reasonable order of magnitude?
+Joe: Yes, various estimates put the total number of distinct published books at 100 million to 200 million, so 30 billion pages is a reasonable order-of-magnitude estimate.
+
+User: Estimate 398 times 402.
+Joe: Notice that 398 times 402 is (400 minus 2) times (400 plus 2), which is 400 squared minus 4, giving 160000 minus 4 equals 159996. The estimate is about 160000.
+User: Is that a good estimate?
+Joe: It is actually exact using the difference of squares. The answer is 159996, and the estimate of 160000 is off by only 4.
+
+User: Estimate the volume of a soda can with radius 3 cm and height 12 cm.
+Joe: Volume is pi times radius squared times height. Using 3 for pi, that is 3 times 9 times 12, which is 324 cubic centimeters, or about 0.324 liters. The estimate is about 324 cc.
+User: Is that close to a real soda can?
+Joe: A standard soda can holds 355 cc, so the estimate of 324 is quite close. The slight difference comes from using 3 instead of 3.14 for pi.
+
+User: What is the order of magnitude of a million dollars compared to a billion dollars?
+Joe: A million is 10 to the 6th power and a billion is 10 to the 9th power, so the difference is 3 orders of magnitude. A billion is 1000 times a million.
+User: If you spent $1000 per day, how long to spend a billion dollars?
+Joe: 1 billion divided by 1000 is 1 million days, which is about 2740 years. The order of magnitude is thousands of years.
+
+User: Estimate how many times around the Earth you would travel in 1 million kilometers.
+Joe: The Earth circumference is about 40000 kilometers. Dividing 1 million by 40000 gives 25. The estimate is about 25 times around the Earth.
+User: And what about 1 billion kilometers?
+Joe: 1 billion divided by 40000 gives 25000. The estimate is about 25000 times around the Earth.
+
+User: Estimate 17% of 398.
+Joe: Round 398 to 400 and note that 17% of 400 is 68. The estimate is about 68.
+User: What is the actual answer?
+Joe: 17% of 398 is 398 times 0.17, which is 67.66. The estimate of 68 is very close.
+
+User: A student calculates that a runner's speed is 50 meters per second. Is that plausible?
+Joe: No, that is not plausible. 50 meters per second is 180 kilometers per hour, which is faster than any human can run. The world record sprinter runs about 10 meters per second.
+User: What about 5 meters per second?
+Joe: 5 meters per second is 18 kilometers per hour, which is a reasonable running speed for a fit person. That passes the plausibility check.
+
+User: Estimate the sum of 1/3 plus 1/5 plus 1/7 plus 1/9.
+Joe: Round each fraction: 1/3 is about 0.33, 1/5 is 0.20, 1/7 is about 0.14, and 1/9 is about 0.11. Adding gives about 0.78. The estimate is about 0.8.
+User: And is the sum more or less than 1?
+Joe: The sum is about 0.78, which is less than 1. Adding 1/11 would still keep it under 1.
+
+User: Estimate the total number of grains of rice produced globally each year.
+Joe: Global rice production is about 500 million metric tons per year. Each grain weighs about 0.03 grams, so 500 billion grams divided by 0.03 gives about 17 trillion grains. The estimate is about 2 times 10 to the 13th.
+User: Is that order of magnitude right?
+Joe: Yes, agricultural estimates are consistent with about 10 to the 13th to 10 to the 14th grains per year, so this is a reasonable estimate.
+
+User: Estimate 10 to the power of 1.5.
+Joe: 10 to the 1.5th power is 10 to the 1st times 10 to the 0.5th, which is 10 times the square root of 10. The square root of 10 is about 3.16, so the answer is about 31.6.
+User: And what is 10 to the power of 2.5?
+Joe: 10 to the 2.5th is 10 squared times the square root of 10, which is 100 times 3.16, giving about 316. The answer is about 316.
+
+User: Estimate the fuel cost for a 450-mile trip if the car gets 28 mpg and gas is $3.50 per gallon.
+Joe: Round 450 to 450 and 28 to 30, then gallons used is about 450 divided by 30 equals 15. Cost is 15 times 3.50 equals 52.50. The estimate is about $52.50.
+User: What is the actual fuel cost?
+Joe: 450 divided by 28 is about 16.07 gallons. Times 3.50 gives about $56.25. The estimate of $52.50 is close, off by about $4.
+
+User: Estimate 27 times 33.
+Joe: Round 27 to 30 and 33 to 30, then 30 times 30 is 900. The estimate is about 900.
+
+User: What is 52 times 15?
+Joe: 52 times 15 is 52 times 10 plus 52 times 5, which is 520 plus 260, giving 780. The answer is 780.
+
+User: Estimate the square root of 120.
+Joe: 11 squared is 121, so the square root of 120 is very close to 11, about 10.95. The estimate is about 11.
+
+User: Round 0.00456 to 2 significant figures.
+Joe: The first two significant digits are 4 and 5, so 0.00456 rounded to 2 significant figures is 0.0046. The answer is 0.0046.
+
+User: Estimate 142 divided by 7.
+Joe: Round 142 to 140, then 140 divided by 7 is 20. The estimate is about 20.
+
+User: What is the order of magnitude of 0.000045?
+Joe: 0.000045 is 4.5 times 10 to the minus 5th power, so the order of magnitude is minus 5, or about negative 5.
+
+User: Estimate 4.9 times 2.1.
+Joe: Round 4.9 to 5 and 2.1 to 2, then 5 times 2 is 10. The estimate is about 10.
+
+User: What is 3.7 billion times 2?
+Joe: 3.7 billion times 2 is 7.4 billion, which is 7.4 times 10 to the 9th power. The answer is 7.4 billion.
+
+User: Estimate 81 to the power of 0.5.
+Joe: The power of 0.5 means the square root. The square root of 81 is 9. The estimate is 9.
+
+User: What is 123456789 rounded to the nearest million?
+Joe: The nearest million is determined by the hundred thousands digit, which is 4, so we round down. The answer is 123000000.
+
+User: Estimate 0.99 times 101.
+Joe: Round 0.99 to 1 and 101 to 100, then 1 times 100 is 100. The estimate is about 100.
+
+User: What is the order of magnitude of the speed of light?
+Joe: The speed of light is about 3 times 10 to the 8th power meters per second, so the order of magnitude is 8. The answer is 8.
+
+User: Estimate 19 squared.
+Joe: Round 19 to 20, then 20 squared is 400. But since 19 is less than 20, the actual answer is 361. The estimate is about 400.
+
+User: What is 6.02 times 10 to the 23rd power divided by 2?
+Joe: Half of 6.02 times 10 to the 23rd is 3.01 times 10 to the 23rd. The answer is 3.01 times 10 to the 23rd.
+
+User: Estimate 58 plus 37 plus 96.
+Joe: Round 58 to 60, 37 to 40, and 96 to 100, then 60 plus 40 plus 100 is 200. The estimate is about 200.
+
+User: What is the order of magnitude of a nanometer?
+Joe: A nanometer is 10 to the minus 9th power meters, so the order of magnitude is minus 9. The answer is negative 9.
+
+User: Estimate 0.48 times 0.52.
+Joe: Round 0.48 to 0.5 and 0.52 to 0.5, then 0.5 times 0.5 is 0.25. The estimate is about 0.25.
+
+User: What is the order of magnitude of 1 astronomical unit?
+Joe: 1 astronomical unit is about 1.5 times 10 to the 11th power meters, so the order of magnitude is 11. The answer is 11.
+
+User: Estimate 1001 divided by 9.
+Joe: Round 1001 to 1000, then 1000 divided by 9 is about 111. The estimate is about 111.
+
+User: What is 4.5 times 10 to the 4th power times 2 times 10 to the 3rd power?
+Joe: Multiply the coefficients: 4.5 times 2 is 9. Add the exponents: 4 plus 3 is 7. The answer is 9 times 10 to the 7th power.
+
+User: Estimate how many sheets of paper are in a ream of 500 sheets.
+Joe: A standard ream has about 500 sheets. Each sheet is about 0.1 millimeters thick, so the stack is about 50 millimeters or 5 centimeters thick. The estimate is 5 cm.
+User: And how tall would a stack of 1 million sheets be?
+Joe: 1 million sheets times 0.1 mm is 100000 mm, which is 100 meters. The estimate is about 100 meters, taller than a 30-story building.
+
+User: Estimate how long it would take to count to 1 billion.
+Joe: At one number per second, 1 billion seconds is about 31.7 years. The estimate is about 32 years.
+User: What if you counted 24 hours a day without stopping?
+Joe: You still would take 31.7 years because counting takes time regardless of when you do it. The estimate remains about 32 years.
+
+User: Estimate the weight of a glass of water.
+Joe: A typical glass holds about 250 milliliters, and water weighs 1 gram per milliliter, so it weighs about 250 grams or 0.25 kilograms. The estimate is about 250 grams.
+User: And what about a bucket of water?
+Joe: A bucket holds about 10 liters, which is 10 kilograms. The estimate is about 10 kilograms, or about 22 pounds.
+
+User: Estimate how many raindrops fall on a football field in a light rain.
+Joe: A light rain deposits about 1 millimeter of water per hour. A football field is about 7000 square meters, so 1 mm of water is 7 cubic meters or 7000 liters. Each raindrop is about 0.05 milliliters, so there are about 140 million drops. The estimate is about 100 million.
+User: Is that a reasonable number?
+Joe: Yes, estimates for light rain range from 10 to the 6th to 10 to the 8th drops per square meter per hour, so 140 million is in the right ballpark.
+
+User: Estimate the number of atoms in a grain of sand.
+Joe: A grain of sand weighs about 0.0001 grams. Silicon dioxide has about 3 times 10 to the 22nd power atoms per gram, so a grain has about 3 times 10 to the 18th power atoms. The estimate is about 3 times 10 to the 18th.
+User: That is a huge number. How does it compare to a grain of rice?
+Joe: A grain of rice is slightly larger but similar composition, so it also has roughly 10 to the 18th to 10 to the 19th power atoms. The order of magnitude is the same.
+
+User: Estimate the number of heartbeats in a lifetime.
+Joe: Average heart rate is about 70 beats per minute, which is 4200 per hour, 100800 per day, and about 36 million per year. Over 80 years, that is about 2.9 billion heartbeats. The estimate is about 3 billion.
+User: Does that make sense with the order of magnitude?
+Joe: Yes, 3 billion is on the order of 10 to the 10th power, which is a reasonable number of heartbeats for a human lifetime.
+
+User: Estimate how many pages you read in a year if you read 30 minutes a day at 1 page per 2 minutes.
+Joe: 30 minutes a day at 2 minutes per page gives 15 pages per day. Over 365 days, that is 15 times 365, which is 5475 pages. The estimate is about 5500 pages.
+User: And how many books is that if each book is 300 pages?
+Joe: 5475 divided by 300 is about 18.25, so you read about 18 books per year. The estimate is about 18 books.
+
+User: Estimate how much money you would have if you had 1 penny that doubled every day for 30 days.
+Joe: On day 30, you would have 2 to the 29th power pennies, which is about 537 million pennies or about $5.37 million. The estimate is about 5 million dollars.
+User: Is that really the final amount or is it the total?
+Joe: The final day alone gives about 5.37 million dollars. The total accumulated over 30 days would be double that, about $10.7 million. The final-day estimate is about $5 million.
+
+User: Estimate how many times the Earth rotates in a year.
+Joe: A year has about 365.25 days, and the Earth rotates once per day, so it rotates about 365 times in a year. The estimate is about 365.
+User: And how many times does the Earth orbit the Sun in a century?
+Joe: A century is 100 years, so the Earth orbits the Sun about 100 times in a century. The estimate is about 100.
+
+User: Estimate the number of red blood cells in a human body.
+Joe: The human body contains about 37 trillion cells, which is about 3.7 times 10 to the 13th power. The estimate is about 37 trillion.
+User: And how does that compare to the number of bacteria in the gut?
+Joe: The gut contains about 38 trillion bacteria, which is roughly the same order of magnitude as human cells, about 10 to the 13th power.
+
+User: Estimate the number of seconds in a year.
+Joe: A year has about 365 days, each with 24 hours of 3600 seconds. So 365 times 24 times 3600 is about 31.5 million seconds. The estimate is about 31.5 million.
+User: And what is the order of magnitude?
+Joe: 31.5 million is about 3 times 10 to the 7th power, so the order of magnitude is 7. The answer is 7.
+
+User: Estimate how many pages the internet has.
+Joe: Various estimates put the number of indexed web pages at around 100 billion. That is about 10 to the 11th power pages. The estimate is about 100 billion.
+User: And how much would that be in terms of paper?
+Joe: If each page is 0.1 mm thick, 100 billion pages would be 10 million kilometers thick, which is about 25 times the distance to the Moon. That is an absurd amount of paper.
+
+User: Estimate how many breaths you take in a day.
+Joe: Average breathing rate is about 15 breaths per minute, which is 900 per hour, and 21600 per day. The estimate is about 22000 breaths per day.
+User: And how many liters of air is that?
+Joe: Each breath is about 0.5 liters, so 21600 times 0.5 is 10800 liters, or about 11 cubic meters. The estimate is about 11000 liters.
+
+User: Estimate how long it would take to type the entire internet.
+Joe: Assume 100 billion pages with 500 words each, that is 50 trillion words. At 60 words per minute, that is 50 trillion divided by 60, which is about 833 billion minutes, or about 1.6 million years. The estimate is about 1.6 million years.
+User: Is that order of magnitude right?
+Joe: Yes, that is a reasonable back-of-envelope estimate. The order of magnitude is millions of years.
+
+User: Estimate the number of stars visible to the naked eye.
+Joe: Under ideal conditions, about 5000 to 10000 stars are visible to the naked eye, but the commonly cited number is about 6000. The estimate is about 6000.
+User: And how does that compare to all the stars in our galaxy?
+Joe: Our galaxy has about 100 billion to 400 billion stars. So the visible stars are about 10 to the 8th power times fewer than the total, which is a huge difference.
+
+User: Estimate how much water flows over Niagara Falls in a minute.
+Joe: Niagara Falls discharges about 2400 cubic meters per second, so in one minute that is 2400 times 60, which is 144000 cubic meters. The estimate is about 144000 cubic meters.
+User: And how many Olympic swimming pools is that?
+Joe: An Olympic pool is 2.5 million liters or 2500 cubic meters. Dividing 144000 by 2500 gives about 58 pools. The estimate is about 58 pools per minute.
+
+User: Estimate the number of blades of grass on a football field.
+Joe: A football field is about 7000 square meters, and there are about 100 to 200 blades per square centimeter, or 1 to 2 million per square meter. That gives about 7 to 14 billion blades. The estimate is about 10 billion.
+User: Is that in the right order of magnitude?
+Joe: Yes, estimates range from about 5 to 20 billion blades per football field, so 10 billion is a reasonable estimate.
+
+User: Estimate how long it would take to spend $1 billion at $1000 per day.
+Joe: 1 billion divided by 1000 is 1 million days, which is about 2740 years. The estimate is about 2700 years.
+User: And what if you spent $10000 per day instead?
+Joe: 1 billion divided by 10000 is 100000 days, which is about 274 years. The estimate is about 270 years.
+
+User: Estimate the number of cells in the human body.
+Joe: The human body contains about 37 trillion cells, which is about 3.7 times 10 to the 13th power. The estimate is about 37 trillion.
+User: And how does that compare to the number of bacteria in the gut?
+Joe: The gut contains about 38 trillion bacteria, which is roughly the same order of magnitude as human cells, about 10 to the 13th power.
+
+User: Estimate how many words you will speak in your lifetime.
+Joe: Assume you speak about 7000 words a day and live 80 years. That is 7000 times 365 times 80, which is about 204 million words. The estimate is about 200 million.
+User: And how many pages is that if each page holds 500 words?
+Joe: 204 million divided by 500 is about 408000 pages. That is about 400000 pages, or roughly 1300 books of 300 pages each.
+
+User: Estimate 251 times 4.
+Joe: Round 251 to 250, then 250 times 4 is 1000. The estimate is about 1000.
+
+User: What is 0.08 as a fraction?
+Joe: 0.08 is 8/100, which reduces to 2/25. The answer is 2/25.
+
+User: Estimate 7 cubed.
+Joe: 7 cubed is 7 times 49, which is 343. The estimate is about 343.
+
+User: What is the order of magnitude of 0.0007?
+Joe: 0.0007 is 7 times 10 to the minus 4th power, so the order of magnitude is minus 4. The answer is negative 4.
+
+User: Estimate 148 divided by 5.
+Joe: Round 148 to 150, then 150 divided by 5 is 30. The estimate is about 30.
+
+User: What is 2 to the power of 15?
+Joe: 2 to the 15th is 32768. The answer is 32768.
+
+User: Estimate how many miles are in 1 billion inches.
+Joe: 1 billion inches divided by 63360 inches per mile is about 15783 miles. The estimate is about 16000 miles.
+
+User: What is 1/8 as a percent?
+Joe: 1/8 is 0.125, which is 12.5%. The answer is 12.5%.
+
+User: Estimate 1003 times 997.
+Joe: This is (1000 plus 3) times (1000 minus 3), which is 1000 squared minus 9, giving 999991. The estimate is about 1000000.
+
+User: What is the order of magnitude of 1 parsec?
+Joe: 1 parsec is about 3.1 times 10 to the 16th power meters, so the order of magnitude is 16. The answer is 16.
+
+User: Estimate how many gallons of water flow over Victoria Falls in an hour.
+Joe: Victoria Falls flows at about 1088 cubic meters per second, which is about 287000 gallons per second. In an hour, that is 287000 times 3600, which is about 1 billion gallons. The estimate is about 1 billion gallons per hour.
+User: And how many Olympic pools is that?
+Joe: Each Olympic pool is about 660000 gallons. 1 billion divided by 660000 is about 1515 pools. The estimate is about 1500 pools per hour.
+
+User: Estimate how many grains of sand are on a typical beach that is 1 kilometer long.
+Joe: Assume the beach is 30 meters wide and 30 cm deep. That is 30000 cubic meters, and each grain is about 1 cubic millimeter, giving about 30 billion grains. The estimate is about 30 billion.
+User: What if the beach were only 10 meters wide?
+Joe: Then the volume would be 10000 cubic meters, giving about 10 billion grains. The estimate drops to about 10 billion.
+
+User: Estimate the number of times a heart beats in a single day.
+Joe: At 70 beats per minute, that is 4200 per hour, and 4200 times 24 is 100800 beats per day. The estimate is about 100000 beats per day.
+User: And how many beats in a week?
+Joe: 100800 times 7 is 705600 beats per week. The estimate is about 700000 beats per week.
+
+User: Estimate how long it would take to write all the words in a dictionary.
+Joe: A typical dictionary has about 170000 words. At 10 words per minute, that is 17000 minutes, which is about 283 hours or about 12 days of continuous writing. The estimate is about 12 days.
+User: And if you write for 4 hours a day?
+Joe: 17000 divided by 4 gives about 4250 days, which is about 11.6 years. The estimate is about 12 years.
+
+User: Estimate how many times light could circle the Earth in one second.
+Joe: Light travels about 300 million meters per second and the Earth circumference is about 40 million meters. Dividing gives about 7.5, so light circles the Earth about 7 or 8 times per second. The estimate is about 7.5.
+User: And how many times in a day?
+Joe: 7.5 times 86400 seconds is about 648000 times. The estimate is about 650000 times per day.
+
+User: Estimate how many people have ever lived on Earth.
+Joe: Current population is about 8 billion, and estimates suggest about 117 billion people have lived throughout history. The order of magnitude is about 10 to the 11th power. The estimate is about 100 billion.
+User: Does that seem high?
+Joe: It is higher than most people expect, but it accounts for the large populations in recent centuries. The commonly cited estimate is between 100 and 117 billion, so this is reasonable.
+
+User: Estimate how many sheets of paper are used globally each day.
+Joe: Assume about 5 billion people use paper, with each person using about 10 sheets a day. That is 50 billion sheets per day. The estimate is about 50 billion.
+User: And how many trees does that represent?
+Joe: One tree produces about 8000 sheets, so 50 billion divided by 8000 is about 6.25 million trees. The estimate is about 6 million trees per day.
+
+User: Estimate the number of piano keys ever manufactured.
+Joe: Assume about 100 million pianos have been made, each with about 88 keys. That is 100 million times 88, which is 8.8 billion keys. The estimate is about 9 billion.
+User: And how many piano keys are manufactured each year?
+Joe: If about 300000 pianos are made per year, that is 300000 times 88, which is about 26 million keys per year. The estimate is about 26 million.
+
+User: Estimate how many hours a person spends sleeping in a lifetime.
+Joe: Assume 8 hours per night and 365 days per year for 80 years. That is 8 times 365 times 80, which is 233600 hours. The estimate is about 230000 hours.
+User: And how many days is that?
+Joe: 233600 divided by 24 is about 9733 days, which is about 27 years. The estimate is about 27 years of sleep.
+
+User: Estimate how many times you blink in a lifetime.
+Joe: Average blinking is about 15 times per minute, so 900 per hour, 21600 per day, and over 80 years that is 21600 times 365 times 80, which is about 630 million blinks. The estimate is about 600 million.
+User: And how many hours is that if each blink takes 0.4 seconds?
+Joe: 630 million times 0.4 seconds is 252 million seconds, which is about 70000 hours or about 8 years. The estimate is about 8 years of blinking.
+
+User: Estimate 51 squared.
+Joe: 51 squared is (50 plus 1) squared, which is 2500 plus 100 plus 1, giving 2601. The answer is 2601.
+
+User: What is the order of magnitude of 1 light-year in meters?
+Joe: 1 light-year is about 9.5 times 10 to the 15th power meters, so the order of magnitude is 16. The answer is 16.
+
+User: Estimate 39 times 21.
+Joe: Round 39 to 40 and 21 to 20, then 40 times 20 is 800. The estimate is about 800.
+
+User: What is 5 factorial plus 4 factorial?
+Joe: 5 factorial is 120 and 4 factorial is 24, so 120 plus 24 is 144. The answer is 144.
+
+User: Estimate 0.049 times 0.051.
+Joe: Round both to 0.05, then 0.05 times 0.05 is 0.0025. The estimate is about 0.0025.
+
+User: What is 10 to the power of 0?
+Joe: Any number to the power of 0 is 1. The answer is 1.
+
+User: Estimate how many seconds are in a month.
+Joe: A month has about 30 days, each with 86400 seconds. So 30 times 86400 is 2592000 seconds. The estimate is about 2.6 million.
+
+User: What is 7 to the power of 3?
+Joe: 7 cubed is 7 times 49, which is 343. The answer is 343.
+
+User: Estimate 98 times 103.
+Joe: This is (100 minus 2) times (100 plus 3), which is 10000 plus 300 minus 200 minus 6, giving 10094. The estimate is about 10100.
+
+User: What is the order of magnitude of the diameter of a hydrogen atom?
+Joe: The diameter is about 1 times 10 to the minus 10th power meters, so the order of magnitude is minus 10. The answer is negative 10.
+
+User: Estimate how many pages are in all the books in a university library.
+Joe: Assume the library has about 2 million books with an average of 300 pages each. That is 600 million pages. The estimate is about 600 million.
+User: And how many trees were used to make those pages?
+Joe: Each tree produces about 8000 pages, so 600 million divided by 8000 is 75000 trees. The estimate is about 75000 trees.
+
+User: Estimate how many drops of water are in the ocean.
+Joe: The ocean is about 1.3 billion cubic kilometers, which is 1.3 times 10 to the 21st power liters. Each drop is about 0.05 milliliters, so there are about 2.6 times 10 to the 25th power drops. The estimate is about 10 to the 25th power.
+User: Is that a reasonable order of magnitude?
+Joe: Yes, estimates for ocean water volume are about 1.3 billion cubic kilometers, and dividing by drop volume gives about 10 to the 25th power drops. This is reasonable.
+
+User: Estimate how many heartbeats occur globally in a minute.
+Joe: Assume about 8 billion people with an average heart rate of 70 beats per minute. That is 8 billion times 70, which is 560 billion beats per minute. The estimate is about 560 billion.
+User: And how many in a year?
+Joe: 560 billion times 525600 minutes per year is about 2.9 times 10 to the 17th power beats per year. The estimate is about 3 times 10 to the 17th power.
+
+User: Estimate how long it would take to count to 1 trillion.
+Joe: At one number per second, 1 trillion seconds is about 31700 years. The estimate is about 32000 years.
+User: And if a computer counted 1 billion numbers per second?
+Joe: 1 trillion divided by 1 billion is 1000 seconds, which is about 16.7 minutes. The estimate is about 17 minutes.
+
+User: Estimate the number of neurons in the human brain.
+Joe: The brain has about 86 billion neurons, which is about 8.6 times 10 to the 10th power. The estimate is about 86 billion.
+User: And how many connections between neurons are there?
+Joe: Each neuron connects to about 1000 others on average, giving about 86 trillion synapses. The estimate is about 10 to the 14th power connections.
+
+User: Estimate how many times light travels from Earth to the Moon in one second.
+Joe: The distance to the Moon is about 384000 kilometers, and light travels 300000 kilometers per second. Dividing gives about 1.28, so light makes about 1.3 trips per second. The estimate is about 1.3.
+User: And how long does light take to travel from the Sun to Earth?
+Joe: The Sun is about 150 million kilometers away, and light travels 300000 km/s, so it takes 500 seconds or about 8 minutes. The estimate is about 8 minutes.
+
+User: Estimate the number of bacteria on Earth.
+Joe: Estimates suggest there are about 5 times 10 to the 30th power bacteria on Earth. The order of magnitude is about 30. The estimate is about 5 times 10 to the 30th power.
+User: That is an astronomically large number. Is it plausible?
+Joe: Yes, bacteria are found everywhere and reproduce rapidly. The order of magnitude of 10 to the 30th is widely accepted in scientific literature.
+
+User: Estimate how many pages a person reads in a lifetime.
+Joe: If you read 5500 pages a year for 80 years, that is 5500 times 80, which is 440000 pages. The estimate is about 440000 pages.
+User: And how many books is that?
+Joe: 440000 divided by 300 is about 1467, so about 1500 books. The estimate is about 1500 books.
+
+User: Estimate how many grains of salt are on a pretzel.
+Joe: A pretzel surface area is about 50 square centimeters, and salt crystals cover about 100 per square centimeter, giving about 5000 grains. The estimate is about 5000.
+User: And how much does that salt weigh?
+Joe: Each grain weighs about 0.00006 grams, so 5000 grains weigh about 0.3 grams. The estimate is about 0.3 grams of salt.
+
+User: Estimate how many times a second hand on a clock goes around in a year.
+Joe: The second hand goes around once per minute, and there are 525600 minutes in a year. So it goes around 525600 times. The estimate is about 525600.
+User: And how many times does the minute hand go around?
+Joe: The minute hand goes around once per hour, and there are 8760 hours in a year. So the minute hand goes around about 8760 times. The estimate is about 8800.

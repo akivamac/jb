@@ -1,0 +1,121 @@
+0:REJECT: Joe2 filler/meta-commentary
+1:REJECT: Joe2 filler/meta-commentary
+2:REJECT: Joe1 filler/meta-commentary
+3:REJECT: Follow-up doesn't reference prior answer
+4:REJECT: Joe1 filler/meta-commentary
+5:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+6:REJECT: Follow-up doesn't reference prior answer
+7:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+8:REJECT: Joe2 filler/meta-commentary
+9:REJECT: Follow-up doesn't reference prior answer
+10:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+11:REJECT: Joe2 filler/meta-commentary
+12:REJECT: Joe2 filler/meta-commentary
+13:REJECT: Joe1 filler/meta-commentary
+14:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+15:REJECT: Follow-up doesn't reference prior answer
+16:REJECT: Joe1 filler/meta-commentary
+17:REJECT: Joe1 filler/meta-commentary
+18:REJECT: Joe1 filler/meta-commentary
+19:REJECT: Follow-up doesn't reference prior answer
+20:REJECT: Joe1 filler/meta-commentary
+21:REJECT: Joe1 filler/meta-commentary
+22:REJECT: Joe2 filler/meta-commentary
+23:REJECT: Joe1 filler/meta-commentary
+24:REJECT: Joe1 filler/meta-commentary
+25:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+26:REJECT: Joe2 filler/meta-commentary
+27:REJECT: Joe2 filler/meta-commentary
+28:REJECT: Joe2 filler/meta-commentary
+29:REJECT: Joe2 filler/meta-commentary
+30:REJECT: Joe2 filler/meta-commentary
+31:REJECT: Joe2 filler/meta-commentary
+32:REJECT: Joe2 filler/meta-commentary
+33:REJECT: Follow-up doesn't reference prior answer
+34:REJECT: Joe1 filler/meta-commentary
+35:REJECT: Follow-up doesn't reference prior answer
+36:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+37:REJECT: Joe2 filler/meta-commentary
+38:REJECT: Joe2 filler/meta-commentary
+39:REJECT: Joe1 filler/meta-commentary
+40:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+41:REJECT: Joe2 filler/meta-commentary
+42:REJECT: Joe1 filler/meta-commentary
+43:REJECT: Joe1 filler/meta-commentary
+44:REJECT: Follow-up doesn't reference prior answer
+45:REJECT: Joe1 filler/meta-commentary
+46:REJECT: Joe1 filler/meta-commentary
+47:REJECT: Joe1 filler/meta-commentary
+48:REJECT: Joe2 filler/meta-commentary
+49:REJECT: Joe2 filler/meta-commentary
+50:REJECT: Follow-up doesn't reference prior answer
+51:REJECT: Joe1 filler/meta-commentary
+52:REJECT: Joe1 filler/meta-commentary
+53:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+54:REJECT: Joe2 filler/meta-commentary
+55:REJECT: Joe1 filler/meta-commentary
+56:REJECT: Follow-up doesn't reference prior answer
+57:REJECT: Joe1 filler/meta-commentary
+58:REJECT: Joe1 filler/meta-commentary
+59:REJECT: Joe1 filler/meta-commentary
+60:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+61:REJECT: Joe2 filler/meta-commentary
+62:REJECT: Joe2 filler/meta-commentary
+63:REJECT: Follow-up doesn't reference prior answer
+64:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+65:REJECT: Joe2 filler/meta-commentary
+66:REJECT: Follow-up doesn't reference prior answer
+67:REJECT: Joe1 filler/meta-commentary
+68:REJECT: Joe1 filler/meta-commentary
+69:REJECT: Joe2 filler/meta-commentary
+70:REJECT: Follow-up doesn't reference prior answer
+71:REJECT: Joe2 filler/meta-commentary
+72:REJECT: Joe2 filler/meta-commentary
+73:REJECT: Follow-up doesn't reference prior answer
+74:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+75:REJECT: Joe2 filler/meta-commentary
+76:REJECT: Follow-up doesn't reference prior answer
+77:REJECT: Joe2 filler/meta-commentary
+78:REJECT: Joe1 filler/meta-commentary
+79:REJECT: Joe2 filler/meta-commentary
+80:REJECT: Joe1 filler/meta-commentary
+81:REJECT: Follow-up doesn't reference prior answer
+82:REJECT: Joe2 filler/meta-commentary
+83:REJECT: Joe2 filler/meta-commentary
+84:REJECT: Follow-up doesn't reference prior answer
+85:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+86:REJECT: Joe2 filler/meta-commentary
+87:REJECT: Follow-up doesn't reference prior answer
+88:REJECT: Follow-up doesn't reference prior answer
+89:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+90:REJECT: Follow-up doesn't reference prior answer
+91:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+92:REJECT: Joe2 filler/meta-commentary
+93:REJECT: Joe1 filler/meta-commentary
+94:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+95:REJECT: Joe2 filler/meta-commentary
+96:REJECT: Follow-up doesn't reference prior answer
+97:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+98:REJECT: Joe2 filler/meta-commentary
+99:REJECT: Joe1 filler/meta-commentary
+100:REJECT: Joe1 filler/meta-commentary
+101:REJECT: Follow-up doesn't reference prior answer
+102:REJECT: Joe1 filler/meta-commentary
+103:REJECT: Joe1 filler/meta-commentary
+104:REJECT: Joe1 filler/meta-commentary
+105:REJECT: Follow-up doesn't reference prior answer
+106:REJECT: Follow-up doesn't reference prior answer
+107:REJECT: Follow-up doesn't reference prior answer
+108:REJECT: Joe2 filler/meta-commentary
+109:REJECT: Follow-up doesn't reference prior answer
+110:REJECT: Joe2 filler/meta-commentary
+111:REJECT: Joe1 filler/meta-commentary
+112:REJECT: Joe1 filler/meta-commentary; Joe2 filler/meta-commentary
+113:REJECT: Follow-up doesn't reference prior answer
+114:REJECT: Joe1 filler/meta-commentary
+115:REJECT: Follow-up doesn't reference prior answer
+116:REJECT: Joe2 filler/meta-commentary
+117:REJECT: Joe2 filler/meta-commentary
+118:REJECT: Joe1 filler/meta-commentary
+119:REJECT: Incomplete block
+VERDICT 0/120

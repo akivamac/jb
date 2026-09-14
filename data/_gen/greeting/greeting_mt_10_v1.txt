@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:ACCEPT
+3:ACCEPT
+4:ACCEPT
+5:REJECT: near-duplicate of training data: how are you holding up
+6:ACCEPT
+7:REJECT: near-duplicate of training data: how are you feeling today
+8:REJECT: near-duplicate of training data: are you doing okay
+9:ACCEPT
+10:REJECT: near-duplicate of training data: formal greetings
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:ACCEPT
+17:ACCEPT
+18:ACCEPT
+19:ACCEPT
+20:ACCEPT
+21:ACCEPT
+22:ACCEPT
+23:ACCEPT
+24:ACCEPT
+25:REJECT: near-duplicate of training data: good morning sunshine
+26:ACCEPT
+27:REJECT: near-duplicate of training data: good evening friend
+28:ACCEPT
+29:ACCEPT
+30:ACCEPT
+31:REJECT: near-duplicate of training data: how are things on your end
+32:REJECT: near-duplicate of training data: how is the weather over there
+33:ACCEPT
+34:REJECT: near-duplicate of training data: thank you
+35:ACCEPT
+36:ACCEPT
+37:REJECT: near-duplicate of training data: sorry about that
+38:REJECT: near-duplicate of training data: tell me something interesting
+39:ACCEPT
+40:REJECT: near-duplicate of training data: do you like music
+41:REJECT: near-duplicate of training data: any good books lately
+42:ACCEPT
+43:ACCEPT
+44:ACCEPT
+45:REJECT: near-duplicate of training data: gday mate
+46:ACCEPT
+47:ACCEPT
+48:ACCEPT
+49:ACCEPT
+50:REJECT: near-duplicate of training data: I have been thinking about you
+51:ACCEPT
+52:ACCEPT
+53:ACCEPT
+54:ACCEPT
+55:ACCEPT
+56:REJECT: near-duplicate of training data: pre-dawn greetings
+57:REJECT: near-duplicate of training data: dawn patrol
+58:REJECT: near-duplicate of training data: first light
+59:REJECT: near-duplicate of training data: crack of dawn
+60:REJECT: near-duplicate of training data: before the sun is up
+61:REJECT: near-duplicate of training data: midday
+62:REJECT: near-duplicate of training data: lunchtime
+63:REJECT: near-duplicate of training data: high noon
+64:REJECT: near-duplicate of training data: late afternoon
+65:REJECT: near-duplicate of training data: sunset
+66:REJECT: near-duplicate of training data: dusk
+67:REJECT: near-duplicate of training data: twilight
+68:REJECT: near-duplicate of training data: late night
+69:REJECT: near-duplicate of training data: midnight
+70:REJECT: near-duplicate of training data: the witching hour
+71:REJECT: near-duplicate of training data: good pre-dawn
+72:REJECT: near-duplicate of training data: howdy doody
+73:REJECT: near-duplicate of training data: greetings earthling
+74:REJECT: near-duplicate of training data: ahoy
+75:REJECT: near-duplicate of training data: top of the mornin
+76:REJECT: near-duplicate of training data: hey old sport
+77:REJECT: near-duplicate of training data: peeps
+78:ACCEPT
+79:REJECT: near-duplicate of training data: how have you been lately
+80:ACCEPT
+81:ACCEPT
+82:ACCEPT
+83:ACCEPT
+84:ACCEPT
+85:ACCEPT
+86:ACCEPT
+87:ACCEPT
+88:ACCEPT
+89:ACCEPT
+90:ACCEPT
+91:ACCEPT
+92:ACCEPT
+93:ACCEPT
+94:ACCEPT
+95:ACCEPT
+96:ACCEPT
+97:ACCEPT
+98:ACCEPT
+99:ACCEPT
+100:ACCEPT
+101:ACCEPT
+102:ACCEPT
+103:ACCEPT
+104:ACCEPT
+105:ACCEPT
+106:ACCEPT
+107:ACCEPT
+108:ACCEPT
+109:ACCEPT
+110:ACCEPT
+111:ACCEPT
+112:ACCEPT
+113:REJECT: within-file near-duplicate of block 97 (same Joe response)
+114:REJECT: near-duplicate of training data: hi I have been thinking about you
+115:REJECT: near-duplicate of training data: greetings from across the internet
+116:REJECT: near-duplicate of training data: hi what's new with you
+117:REJECT: near-duplicate of training data: hey good to talk to you
+118:REJECT: near-duplicate of training data: hi I feel like chatting
+119:REJECT: near-duplicate of training data: hi my friend
+120:REJECT: near-duplicate of training data: hey there partner
+121:REJECT: near-duplicate of training data: hi good to see you again
+122:REJECT: near-duplicate of training data: hi I am here to learn
+123:REJECT: near-duplicate of training data: hey can we be friends
+124:REJECT: near-duplicate of training data: hi I need some advice
+125:REJECT: near-duplicate of training data: hi what are you up to
+126:REJECT: near-duplicate of training data: hey glad I found you
+127:REJECT: near-duplicate of training data: hi there it's been ages
+128:REJECT: near-duplicate of training data: greetings friend how are you today
+129:REJECT: near-duplicate of training data: hi monkey joe

@@ -1,0 +1,130 @@
+0:REJECT: filler
+1:REJECT: filler
+2:REJECT: duplicate block 9
+3:REJECT: duplicate block 56
+4:REJECT: filler
+5:REJECT: filler
+6:REJECT: duplicate block 89
+7:REJECT: filler
+8:REJECT: filler
+9:REJECT: duplicate block 2
+10:REJECT: filler
+11:REJECT: filler
+12:REJECT: filler
+13:REJECT: filler
+14:REJECT: duplicate block 2
+15:REJECT: filler
+16:REJECT: filler
+17:REJECT: filler
+18:REJECT: duplicate block 70
+19:ACCEPT
+20:REJECT: filler
+21:REJECT: filler
+22:ACCEPT
+23:REJECT: filler
+24:REJECT: filler
+25:REJECT: filler
+26:REJECT: filler
+27:REJECT: filler
+28:REJECT: filler
+29:REJECT: filler
+30:REJECT: filler
+31:REJECT: filler
+32:REJECT: filler
+33:ACCEPT
+34:REJECT: filler
+35:ACCEPT
+36:ACCEPT
+37:REJECT: filler
+38:REJECT: filler
+39:REJECT: filler
+40:REJECT: filler
+41:REJECT: filler
+42:REJECT: filler
+43:ACCEPT
+44:ACCEPT
+45:REJECT: filler
+46:REJECT: filler
+47:REJECT: filler
+48:REJECT: duplicate block 2
+49:REJECT: filler
+50:REJECT: filler
+51:ACCEPT
+52:REJECT: filler
+53:REJECT: filler
+54:REJECT: filler
+55:REJECT: filler
+56:REJECT: duplicate block 3
+57:REJECT: duplicate block 73
+58:REJECT: filler
+59:REJECT: filler
+60:REJECT: filler
+61:REJECT: filler
+62:REJECT: filler
+63:REJECT: filler
+64:REJECT: duplicate block 110
+65:REJECT: filler
+66:REJECT: filler
+67:ACCEPT
+68:REJECT: filler
+69:REJECT: filler
+70:REJECT: duplicate block 18
+71:REJECT: filler
+72:ACCEPT
+73:REJECT: duplicate block 57
+74:REJECT: filler
+75:REJECT: filler
+76:REJECT: duplicate block 114
+77:REJECT: filler
+78:REJECT: filler
+79:REJECT: duplicate block 113
+80:ACCEPT
+81:REJECT: filler
+82:ACCEPT
+83:REJECT: filler
+84:REJECT: duplicate block 118
+85:ACCEPT
+86:REJECT: duplicate block 3
+87:REJECT: filler
+88:REJECT: filler
+89:REJECT: duplicate block 6
+90:REJECT: filler
+91:REJECT: filler
+92:ACCEPT
+93:ACCEPT
+94:REJECT: duplicate block 122
+95:REJECT: filler
+96:ACCEPT
+97:REJECT: filler
+98:REJECT: filler
+99:REJECT: filler
+100:REJECT: filler
+101:ACCEPT
+102:REJECT: filler
+103:REJECT: filler
+104:REJECT: filler
+105:REJECT: duplicate block 125
+106:ACCEPT
+107:REJECT: filler
+108:REJECT: filler
+109:REJECT: filler
+110:REJECT: duplicate block 64
+111:REJECT: duplicate block 3
+112:ACCEPT
+113:REJECT: duplicate block 79
+114:REJECT: duplicate block 76
+115:ACCEPT
+116:REJECT: duplicate block 18
+117:REJECT: filler
+118:REJECT: duplicate block 84
+119:ACCEPT
+120:REJECT: filler
+121:REJECT: filler
+122:REJECT: duplicate block 94
+123:REJECT: filler
+124:ACCEPT
+125:REJECT: duplicate block 105
+126:ACCEPT
+127:REJECT: filler
+128:REJECT: filler
+129:REJECT: filler

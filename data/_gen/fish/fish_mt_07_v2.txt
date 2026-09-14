@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:REJECT: near-word-for-word repeat of existing drip acclimation content
+3:REJECT: canned reused transport-temperature follow-up
+4:ACCEPT
+5:REJECT: canned reused grow-larger-in-wild follow-up
+6:REJECT: canned reused transport-temperature follow-up
+7:REJECT: canned "what causes this" boilerplate follow-up
+8:REJECT: canned reused transport-temperature follow-up
+9:REJECT: canned reused transport-temperature follow-up
+10:REJECT: canned reused transport-temperature follow-up
+11:REJECT: canned reused transport-temperature follow-up
+12:REJECT: canned reused transport-temperature follow-up
+13:REJECT: duplicate skip-acclimation exchange reused across file
+14:REJECT: canned reused transport-temperature follow-up
+15:REJECT: oxygen depletion timeline ("within minutes") overstated
+16:ACCEPT
+17:REJECT: canned "what causes this" boilerplate follow-up
+18:REJECT: canned reused fish-gender follow-up
+19:REJECT: canned reused fish-gender follow-up
+20:REJECT: canned reused fish-gender follow-up
+21:REJECT: canned "what causes this" boilerplate follow-up
+22:REJECT: canned reused fish-gender follow-up
+23:REJECT: canned reused fish-gender follow-up
+24:REJECT: canned reused fish-gender follow-up
+25:REJECT: canned "what causes this" boilerplate follow-up
+26:REJECT: canned reused fish-gender follow-up
+27:REJECT: canned reused fish-gender follow-up
+28:REJECT: canned "what causes this" boilerplate follow-up
+29:REJECT: canned reused fish-gender follow-up
+30:REJECT: canned fish-gender follow-up; same question asked twice
+31:REJECT: canned reused fish-gender follow-up
+32:REJECT: canned "what causes this" boilerplate follow-up
+33:REJECT: canned reused pond-plants follow-up
+34:REJECT: canned reused pond-plants follow-up
+35:REJECT: canned reused pond-plants follow-up
+36:REJECT: canned reused pond-plants follow-up
+37:REJECT: canned reused pond-plants follow-up
+38:REJECT: canned reused pond-plants follow-up
+39:REJECT: canned reused pond-plants follow-up
+40:REJECT: canned pond-plants follow-up; same question asked twice
+41:REJECT: canned reused pond-plants follow-up
+42:REJECT: canned reused pond-plants follow-up
+43:REJECT: canned reused pond-plants follow-up
+44:REJECT: canned reused pond-plants follow-up
+45:REJECT: canned reused pond-plants follow-up
+46:REJECT: canned reused pond-plants follow-up
+47:REJECT: canned reused recovery-time follow-up
+48:REJECT: canned "what causes this" boilerplate follow-up
+49:REJECT: canned reused recovery-time follow-up
+50:REJECT: canned "what causes this" boilerplate follow-up
+51:REJECT: canned "what causes this" boilerplate follow-up
+52:REJECT: canned reused recovery-time follow-up
+53:REJECT: canned reused recovery-time follow-up
+54:REJECT: canned "what causes this" boilerplate follow-up
+55:REJECT: canned reused recovery-time follow-up
+56:REJECT: canned reused recovery-time follow-up
+57:REJECT: canned reused recovery-time follow-up
+58:REJECT: canned "what causes this" boilerplate follow-up
+59:REJECT: canned reused grow-larger-in-wild follow-up
+60:REJECT: canned reused grow-larger-in-wild follow-up
+61:REJECT: canned reused grow-larger-in-wild follow-up
+62:REJECT: canned "what causes this" boilerplate follow-up
+63:REJECT: canned reused grow-larger-in-wild follow-up
+64:REJECT: canned reused grow-larger-in-wild follow-up
+65:REJECT: canned reused grow-larger-in-wild follow-up
+66:REJECT: canned grow-larger and causes boilerplate; dup within file
+67:REJECT: canned "what causes this" boilerplate follow-up
+68:REJECT: canned reused marine-protected-area follow-up
+69:REJECT: canned reused marine-protected-area follow-up
+70:REJECT: canned "what causes this" boilerplate follow-up
+71:REJECT: canned MPA follow-up; same question asked twice
+72:REJECT: canned reused marine-protected-area follow-up
+73:REJECT: canned reused marine-protected-area follow-up
+74:REJECT: canned reused marine-protected-area follow-up
+75:REJECT: canned reused marine-protected-area follow-up
+76:REJECT: canned "what causes this" boilerplate follow-up
+77:REJECT: canned reused spawning-trigger follow-up
+78:REJECT: canned "what causes this" boilerplate follow-up
+79:REJECT: canned spawning-trigger follow-up; near-dup of existing bubble nest
+80:REJECT: canned spawning-trigger follow-up; "fertilates" typo
+81:REJECT: canned "what causes this" boilerplate follow-up
+82:REJECT: canned reused transport-temperature follow-up
+83:REJECT: canned reused spawning-trigger follow-up
+84:REJECT: canned reused transport-temperature follow-up
+85:REJECT: canned "what causes this" boilerplate follow-up
+86:REJECT: canned "what causes this" boilerplate follow-up
+87:REJECT: canned reused transport-temperature follow-up
+88:ACCEPT
+89:REJECT: canned reused transport-temperature follow-up
+90:REJECT: canned reused transport-temperature follow-up
+91:REJECT: canned reused transport-temperature follow-up
+92:REJECT: canned "what causes this" boilerplate follow-up
+93:REJECT: canned "what causes this" boilerplate follow-up
+94:REJECT: canned "what causes this" boilerplate follow-up
+95:REJECT: canned reused fish-gender follow-up
+96:REJECT: canned "what causes this" boilerplate follow-up
+97:REJECT: canned reused transport-temperature follow-up
+98:REJECT: canned reused transport-temperature follow-up
+99:REJECT: canned reused grow-larger-in-wild follow-up
+100:REJECT: canned spawning-trigger follow-up; same question asked twice
+101:REJECT: canned "what causes this" boilerplate follow-up
+102:REJECT: canned spawning-trigger follow-up; near-dup of existing fish conditioning
+103:REJECT: canned "what causes this" boilerplate follow-up
+104:REJECT: canned spawning-trigger follow-up; near-dup of existing spawning mop
+105:REJECT: canned "what causes this" boilerplate follow-up
+106:REJECT: canned causes follow-up; near-dup of existing grow out tank
+107:REJECT: canned "what causes this" boilerplate follow-up
+108:REJECT: canned causes follow-up; near-dup of existing egg incubator
+109:REJECT: canned "what causes this" boilerplate follow-up
+110:REJECT: canned causes follow-up; near-dup of existing egg tumbler
+111:REJECT: canned "what causes this" boilerplate follow-up
+112:REJECT: canned "what causes this" boilerplate follow-up
+113:REJECT: canned causes follow-up; near-dup of existing how fish reproduce
+114:REJECT: canned "what causes this" boilerplate follow-up
+115:REJECT: canned spawning-trigger follow-up; near-dup of existing spawning ground
+116:REJECT: canned reused spawning-trigger follow-up
+117:REJECT: canned causes follow-up; near-dup of existing fry
+118:REJECT: canned causes follow-up; near-dup of block 107
+119:REJECT: canned causes follow-up; near-dup of existing fingerling
+120:REJECT: canned "what causes this" boilerplate follow-up
+121:REJECT: canned spawning-trigger follow-up; near-dup of existing spawning run
+122:REJECT: canned reused grow-larger-in-wild follow-up
+123:REJECT: canned spawning-trigger follow-up; near-dup of existing spawning season
+124:REJECT: canned causes follow-up; near-dup of existing mouthbrooding
+125:REJECT: canned causes follow-up; near-dup of existing biparental care
+126:REJECT: canned causes follow-up; near-dup of existing migration route
+127:REJECT: canned grow-larger follow-up; near-dup of existing fish passage
+128:REJECT: canned causes follow-up; near-dup of existing fish corridor
+129:REJECT: canned causes follow-up; near-dup of existing fish refuge

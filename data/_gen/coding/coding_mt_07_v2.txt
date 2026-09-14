@@ -1,0 +1,130 @@
+0:REJECT: filler answers on follow-ups
+1:REJECT: filler answer on follow-up
+2:REJECT: filler answers on follow-ups
+3:ACCEPT
+4:REJECT: filler answer on follow-up
+5:ACCEPT
+6:REJECT: near-duplicate of block 81
+7:REJECT: filler answer on follow-up
+8:REJECT: filler answer on follow-up
+9:REJECT: duplicate of existing training
+10:REJECT: filler answer on follow-up
+11:REJECT: filler answers on follow-ups
+12:ACCEPT
+13:REJECT: duplicate of existing training
+14:REJECT: filler answer on follow-up
+15:ACCEPT
+16:REJECT: filler answer on follow-up
+17:REJECT: filler answer on follow-up
+18:ACCEPT
+19:REJECT: filler answer on follow-up
+20:REJECT: filler answer on follow-up
+21:ACCEPT
+22:ACCEPT
+23:REJECT: filler answer on follow-up
+24:REJECT: filler answers on follow-ups
+25:REJECT: filler answer on follow-up
+26:REJECT: filler answers on follow-ups
+27:ACCEPT
+28:ACCEPT
+29:REJECT: filler answer on follow-up
+30:ACCEPT
+31:ACCEPT
+32:REJECT: filler answer on follow-up
+33:REJECT: filler answers on follow-ups
+34:ACCEPT
+35:REJECT: filler answer on follow-up
+36:ACCEPT
+37:REJECT: filler answers on follow-ups
+38:ACCEPT
+39:REJECT: filler answers on follow-ups
+40:REJECT: filler answers on follow-ups
+41:ACCEPT
+42:REJECT: filler answers on follow-ups
+43:REJECT: filler answer on follow-up
+44:REJECT: filler answer on follow-up
+45:ACCEPT
+46:REJECT: duplicate of existing training
+47:REJECT: duplicate of existing training
+48:ACCEPT
+49:REJECT: filler answer on follow-up
+50:ACCEPT
+51:REJECT: filler answer on follow-up
+52:REJECT: filler answer on follow-up
+53:REJECT: duplicate of existing training
+54:REJECT: filler answer on follow-up
+55:ACCEPT
+56:REJECT: near-duplicate of existing training
+57:REJECT: filler answers on follow-ups
+58:ACCEPT
+59:REJECT: filler answers on follow-ups
+60:REJECT: filler answer on follow-up
+61:REJECT: filler answers on follow-ups
+62:REJECT: filler answer on follow-up
+63:REJECT: duplicate of existing training
+64:REJECT: filler answer on follow-up
+65:REJECT: duplicate of existing training
+66:REJECT: near-duplicate of existing training
+67:ACCEPT
+68:ACCEPT
+69:REJECT: filler answers on follow-ups
+70:REJECT: filler answer on follow-up
+71:REJECT: filler answer on follow-up
+72:REJECT: filler answers on follow-ups
+73:REJECT: filler answer on follow-up
+74:REJECT: filler answer on follow-up
+75:REJECT: filler answer on follow-up
+76:REJECT: filler answer on follow-up
+77:REJECT: filler answer on follow-up
+78:ACCEPT
+79:ACCEPT
+80:ACCEPT
+81:REJECT: filler answers on follow-ups
+82:REJECT: filler answer on follow-up
+83:REJECT: filler answers on follow-ups
+84:ACCEPT
+85:REJECT: filler answer on follow-up
+86:REJECT: filler answers on follow-ups
+87:REJECT: near-duplicate of existing training
+88:REJECT: duplicate of existing training
+89:REJECT: filler answer on follow-up
+90:ACCEPT
+91:REJECT: filler answer on follow-up
+92:REJECT: filler answers on follow-ups
+93:ACCEPT
+94:ACCEPT
+95:REJECT: filler answers on follow-ups
+96:ACCEPT
+97:REJECT: duplicate of existing training
+98:REJECT: filler answer on follow-up
+99:REJECT: within-candidate duplicate of block 60
+100:REJECT: filler answers on follow-ups
+101:REJECT: filler answer on follow-up
+102:ACCEPT
+103:REJECT: filler answers on follow-ups
+104:REJECT: filler answer on follow-up
+105:REJECT: filler answers on follow-ups
+106:REJECT: filler answer on follow-up
+107:REJECT: filler answer on follow-up
+108:REJECT: filler answers on follow-ups
+109:REJECT: filler answer on follow-up
+110:REJECT: filler answers on follow-ups
+111:REJECT: filler answer on follow-up
+112:ACCEPT
+113:REJECT: filler answers on follow-ups
+114:REJECT: filler answer on follow-up
+115:REJECT: filler answer on follow-up
+116:REJECT: near-duplicate of existing training
+117:REJECT: filler answer on follow-up
+118:REJECT: filler answer on follow-up
+119:ACCEPT
+120:REJECT: filler answers on follow-ups
+121:REJECT: filler answer on follow-up
+122:REJECT: filler answer on follow-up
+123:ACCEPT
+124:REJECT: near-duplicate of existing training
+125:ACCEPT
+126:REJECT: filler answers on follow-ups
+127:REJECT: duplicate of existing training
+128:REJECT: filler answer on follow-up
+129:REJECT: filler answer on follow-up

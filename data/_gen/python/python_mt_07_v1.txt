@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:REJECT: near-verbatim duplicate of existing GIL entry
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:ACCEPT
+7:ACCEPT
+8:ACCEPT
+9:ACCEPT
+10:REJECT: duplicate of existing generator-expression entry
+11:ACCEPT
+12:ACCEPT
+13:REJECT: exact duplicate of existing list-vs-generator entry
+14:ACCEPT
+15:ACCEPT
+16:REJECT: exact duplicate of existing collections entry
+17:ACCEPT
+18:ACCEPT
+19:ACCEPT
+20:REJECT: exact duplicate of existing lambda entry
+21:ACCEPT
+22:ACCEPT
+23:REJECT: exact duplicate of existing os module entry
+24:ACCEPT
+25:ACCEPT
+26:REJECT: exact duplicate of existing dict-comprehension entry
+27:ACCEPT
+28:ACCEPT
+29:REJECT: exact duplicate of existing json entry
+30:ACCEPT
+31:ACCEPT
+32:REJECT: exact duplicate of existing re entry
+33:ACCEPT
+34:ACCEPT
+35:REJECT: exact duplicate of existing datetime entry
+36:ACCEPT
+37:ACCEPT
+38:REJECT: exact duplicate of existing sys entry
+39:ACCEPT
+40:ACCEPT
+41:REJECT: exact duplicate of existing math entry
+42:ACCEPT
+43:ACCEPT
+44:REJECT: exact duplicate of existing random entry
+45:ACCEPT
+46:ACCEPT
+47:REJECT: exact duplicate of existing dataclass entry
+48:REJECT: near-verbatim duplicate of existing async context manager entry
+49:ACCEPT
+50:ACCEPT
+51:ACCEPT
+52:ACCEPT
+53:ACCEPT
+54:ACCEPT
+55:ACCEPT
+56:ACCEPT
+57:ACCEPT
+58:ACCEPT
+59:REJECT: duplicate of existing itertools entry
+60:ACCEPT
+61:REJECT: misleading claim that subprocess inherits signal handlers
+62:REJECT: exact duplicate of existing closure entry
+63:ACCEPT
+64:ACCEPT
+65:REJECT: exact duplicate of existing Optional entry
+66:ACCEPT
+67:ACCEPT
+68:ACCEPT
+69:ACCEPT
+70:ACCEPT
+71:REJECT: exact duplicate of existing module entry
+72:ACCEPT
+73:ACCEPT
+74:REJECT: near-verbatim duplicate of existing deque entry
+75:ACCEPT
+76:ACCEPT
+77:ACCEPT
+78:ACCEPT
+79:REJECT: near-duplicate of existing multiprocessing-over-threading entry
+80:ACCEPT
+81:ACCEPT
+82:ACCEPT
+83:REJECT: near-verbatim duplicate of existing sys.argv entry
+84:REJECT: misleading claim that executor auto-replaces failed workers
+85:ACCEPT
+86:REJECT: near-duplicate of existing itertools.chain entry
+87:ACCEPT
+88:ACCEPT
+89:ACCEPT
+90:ACCEPT
+91:ACCEPT
+92:ACCEPT
+93:ACCEPT
+94:ACCEPT
+95:ACCEPT
+96:ACCEPT
+97:ACCEPT
+98:ACCEPT
+99:ACCEPT
+100:ACCEPT
+101:REJECT: exact duplicate of existing Callable entry
+102:ACCEPT
+103:ACCEPT
+104:REJECT: near-verbatim duplicate of existing namedtuple entry
+105:ACCEPT
+106:ACCEPT
+107:ACCEPT
+108:ACCEPT
+109:ACCEPT
+110:ACCEPT
+111:ACCEPT
+112:ACCEPT
+113:REJECT: exact duplicate of existing Union entry
+114:ACCEPT
+115:ACCEPT
+116:REJECT: near-verbatim duplicate of existing List entry
+117:ACCEPT
+118:ACCEPT
+119:REJECT: duplicate of existing Optional entry and block 65
+120:ACCEPT
+121:ACCEPT
+122:REJECT: near-duplicate of block 100 on numpy and the GIL
+123:ACCEPT
+124:ACCEPT
+125:ACCEPT
+126:ACCEPT
+127:REJECT: near-duplicate of blocks 21/33 on async subprocess
+128:ACCEPT
+129:ACCEPT

@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:ACCEPT
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:ACCEPT
+7:ACCEPT
+8:ACCEPT
+9:REJECT: duplicate rate-limit-header turn of block 6
+10:ACCEPT
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:ACCEPT
+17:ACCEPT
+18:ACCEPT
+19:REJECT: follow-up trie unrelated to spatial index answer
+20:ACCEPT
+21:ACCEPT
+22:REJECT: follow-up subquery unrelated to UNION answer
+23:REJECT: follow-up CTE unrelated to correlated subquery answer
+24:ACCEPT
+25:REJECT: follow-up window function unrelated to aggregate answer
+26:ACCEPT
+27:ACCEPT
+28:ACCEPT
+29:REJECT: follow-up stored procedure unrelated to cursor answer
+30:ACCEPT
+31:ACCEPT
+32:ACCEPT
+33:ACCEPT
+34:ACCEPT
+35:ACCEPT
+36:ACCEPT
+37:ACCEPT
+38:ACCEPT
+39:ACCEPT
+40:ACCEPT
+41:ACCEPT
+42:ACCEPT
+43:ACCEPT
+44:ACCEPT
+45:ACCEPT
+46:ACCEPT
+47:ACCEPT
+48:ACCEPT
+49:ACCEPT
+50:ACCEPT
+51:ACCEPT
+52:ACCEPT
+53:ACCEPT
+54:ACCEPT
+55:ACCEPT
+56:ACCEPT
+57:ACCEPT
+58:ACCEPT
+59:ACCEPT
+60:ACCEPT
+61:ACCEPT
+62:REJECT: follow-up leader election unrelated to sharding answer
+63:REJECT: follow-up consensus algorithm unrelated to heartbeat answer
+64:ACCEPT
+65:ACCEPT
+66:ACCEPT
+67:ACCEPT
+68:ACCEPT
+69:ACCEPT
+70:ACCEPT
+71:ACCEPT
+72:ACCEPT
+73:ACCEPT
+74:REJECT: near-dup of gossip block 58
+75:REJECT: near-dup of vector clock block 59
+76:REJECT: near-dup of bloom filter block 48
+77:REJECT: near-dup of consistent hashing block 49
+78:ACCEPT
+79:REJECT: near-dup of last-writer-wins block 73
+80:REJECT: near-dup of sharding block 62
+81:REJECT: near-dup of heartbeat block 63
+82:ACCEPT
+83:REJECT: near-dup of JOIN turn in block 20
+84:ACCEPT
+85:REJECT: near-dup of index block 10
+86:REJECT: near-dup of ACID block 30
+87:REJECT: near-dup of GraphQL block 0
+88:REJECT: near-dup of existing BASE training material
+89:REJECT: near-dup of execution plan turn in block 16
+90:ACCEPT
+91:REJECT: near-dup of replication block 36
+92:ACCEPT
+93:REJECT: near-dup of composite index block 11
+94:ACCEPT
+95:REJECT: near-dup of read replica block 50
+96:ACCEPT
+97:REJECT: near-dup of existing connection pooling training material
+98:REJECT: near-dup of view turn in block 26
+99:REJECT: near-dup of stored procedure turn in block 29
+100:ACCEPT
+101:ACCEPT
+102:ACCEPT
+103:REJECT: near-dup of bloom filter block 48
+104:REJECT: near-dup of consistent hashing block 49
+105:REJECT: near-dup of anti-entropy block 78
+106:REJECT: near-dup of vector clock block 59
+107:REJECT: near-dup of materialized view block 26
+108:ACCEPT
+109:ACCEPT
+110:REJECT: near-dup of existing primary key training material
+111:ACCEPT
+112:REJECT: near-dup of hash index turn in block 12
+113:REJECT: near-dup of B+ tree block 17
+114:ACCEPT
+115:REJECT: near-dup of WAL block 53
+116:REJECT: near-dup of checkpoint block 52
+117:ACCEPT
+118:ACCEPT
+119:ACCEPT
+120:ACCEPT
+121:ACCEPT
+122:REJECT: near-dup of existing columnar database training material
+123:ACCEPT
+124:ACCEPT
+125:ACCEPT
+126:REJECT: near-dup of existing snapshot isolation training material
+127:ACCEPT
+128:REJECT: near-dup of merge function turn in block 73
+129:REJECT: near-dup of last-writer-wins turn in block 73
