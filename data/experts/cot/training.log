@@ -2688,3 +2688,24 @@
 # [2026-09-14 00:25:03] SAMPLE step 1600:
 # 
 # Joe: Let the son be d, Maria is 2 meter. Then the 10 years ago: 2(L done. Then 12 - k's q goes 200 for 32, 5 = 7 hours. Then 4
+1575,0.2117,3.00e-04,0.01,1789360592.3514528
+# [2026-09-14 00:36:34] SAMPLE step 1575:
+# 
+# Joe: 3/5 = 0.6 = 60%.
+# 
+# User: A shirt is $35 with 40% off. What is the sale price?
+# Joe: 40% of 35 = 14. Sale price = 35 
+1625,0.2121,3.00e-04,0.01,1789363657.617026
+# [2026-09-14 01:27:43] SAMPLE step 1625:
+# 
+# 
+# User: A rectangle has perimeter 40 and length 13. What is its width?
+# Joe: P = 2(l + w) = 40, so w + l = 20, l = 20.
+# User: What is 
+1600,0.2068,3.00e-04,0.01,1789364746.8785439
+# [2026-09-14 01:45:50] SAMPLE step 1600:
+# 
+# User: work 5-liter cup split two whole first fill. How much water does each of them get?
+# Joe: 16 / 12 = 8.
+# 
+# User: 20 to 2(x - 1) = 3x - 7 at 
