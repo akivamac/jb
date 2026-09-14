@@ -1120,3 +1120,6 @@
 # User: Why do oaks grow in many cthe season and the tree year?
 # Joe: Yes, do too a for with woody branches to in bare and ves stability. They faster than the tree only
 # [2026-09-10 08:07:56] FINISH at step 1000
+# [2026-09-14 18:52:40] RESUME: training/train_expert.py --name tree --steps 4000 --resume --push 100 --log 25 --sample 25
+# [2026-09-14 18:53:43] STOPPED by signal at step 2
+# [2026-09-14 18:53:52] FINISH at step 2
