@@ -4,3 +4,7 @@
 [python] dual-accepted=496 dropped(train)=196 dropped(intra)=0 MERGED=300
 [python] dual-accepted=0 dropped(train)=0 dropped(intra)=0 MERGED=0
 [python] dual-accepted=0 dropped(train)=0 dropped(intra)=0 MERGED=0
+[python] dual-accepted=301 dropped(train)=80 dropped(intra)=0 MERGED=221
+[python] dual-accepted=301 dropped(train)=269 dropped(intra)=0 MERGED=32
+[python] dual-accepted=301 dropped(train)=290 dropped(intra)=0 MERGED=11
+[python] dual-accepted=301 dropped(train)=296 dropped(intra)=0 MERGED=5

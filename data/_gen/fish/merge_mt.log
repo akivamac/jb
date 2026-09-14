@@ -4,3 +4,7 @@
 [fish] dual-accepted=483 dropped(train)=285 dropped(intra)=0 MERGED=198
 [fish] dual-accepted=25 dropped(train)=1 dropped(intra)=0 MERGED=24
 [fish] dual-accepted=25 dropped(train)=24 dropped(intra)=0 MERGED=1
+[fish] dual-accepted=30 dropped(train)=26 dropped(intra)=0 MERGED=4
+[fish] dual-accepted=30 dropped(train)=30 dropped(intra)=0 MERGED=0
+[fish] dual-accepted=30 dropped(train)=30 dropped(intra)=0 MERGED=0
+[fish] dual-accepted=30 dropped(train)=30 dropped(intra)=0 MERGED=0

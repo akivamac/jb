@@ -2035,3 +2035,6 @@ Joe: Signs of illness in reptiles include lethargy, loss of appetite, weight los
 # User: What is a banana morph?
 # Joe: The banana morph is a co-dominant ball python morph known for its yellow and orange coloring with dark freckle-like spots
 # [2026-09-10 08:07:54] FINISH at step 1000
+# [2026-09-14 18:51:34] RESUME: training/train_expert.py --name reptiles --steps 4000 --resume --push 100 --log 25 --sample 25
+# [2026-09-14 18:54:15] STOPPED by signal at step 3
+# [2026-09-14 18:54:24] FINISH at step 3

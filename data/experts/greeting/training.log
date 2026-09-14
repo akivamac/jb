@@ -1332,3 +1332,6 @@
 # 
 # User: bye no found you
 # Joe: S
+# [2026-09-14 18:35:25] RESUME: training/train_expert.py --name greeting --steps 4000 --resume --push 100 --log 25 --sample 25
+# [2026-09-14 18:46:01] STOPPED by signal at step 7
+# [2026-09-14 18:46:10] FINISH at step 7

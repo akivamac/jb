@@ -4,3 +4,7 @@
 [knowledge] dual-accepted=630 dropped(train)=289 dropped(intra)=0 MERGED=341
 [knowledge] dual-accepted=0 dropped(train)=0 dropped(intra)=0 MERGED=0
 [knowledge] dual-accepted=0 dropped(train)=0 dropped(intra)=0 MERGED=0
+[knowledge] dual-accepted=186 dropped(train)=96 dropped(intra)=0 MERGED=90
+[knowledge] dual-accepted=186 dropped(train)=169 dropped(intra)=0 MERGED=17
+[knowledge] dual-accepted=186 dropped(train)=182 dropped(intra)=0 MERGED=4
+[knowledge] dual-accepted=186 dropped(train)=186 dropped(intra)=0 MERGED=0
