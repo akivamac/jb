@@ -2,3 +2,5 @@
 [greeting] dual-accepted=377 dropped(train)=53 dropped(intra)=0 MERGED=324
 [greeting] dual-accepted=377 dropped(train)=340 dropped(intra)=0 MERGED=37
 [greeting] dual-accepted=631 dropped(train)=334 dropped(intra)=0 MERGED=297
+[greeting] dual-accepted=67 dropped(train)=29 dropped(intra)=0 MERGED=38
+[greeting] dual-accepted=67 dropped(train)=67 dropped(intra)=0 MERGED=0
