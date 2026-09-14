@@ -2520,3 +2520,26 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # User: Why do pearls at the cover water and find fishing after do a water change?
 # Joe: Fish reactice to every parental care lay full safe for eggs, is a most pellets for treat
 # [2026-09-11 08:36:55] FINISH at step 2000
+# [2026-09-14 13:00:00] RESUME: training/train_expert.py --name fish --steps 4000 --resume --push 100 --log 25 --sample 25
+25,2.9005,3.00e-04,0.00,1789412530.53619
+# [2026-09-14 15:02:18] SAMPLE step 25:
+# 
+# User: What is a fish conservation?
+# Joe: Fish drags underside a standard, or that ta sespecially for fish sticks, and is slow-display time to days. The Native the Nater Ama
+50,1.9251,3.00e-04,0.01,1789415583.00453
+# [2026-09-14 15:53:10] SAMPLE step 50:
+# 
+# 
+# User: What is the best way to keep fish from heating?
+# Joe: Goldfish are fine, mol at 24-72 to 2 hours with warm heat carbon Younth in waste by wrap da:
+75,1.7026,3.00e-04,0.01,1789417965.896427
+# [2026-09-14 16:32:49] SAMPLE step 75:
+# 
+# Joe: A gravel vacuum filter media from right filters can or are small waste and eatenvironment waters. It is not remoist to points a to parasite hardscape instead.
+# 
+100,1.5364,3.00e-04,0.01,1789420536.9488761
+# [2026-09-14 17:15:40] SAMPLE step 100:
+# 
+# 
+# User: What is a fish trade?
+# Joe: The chanical filter media convert ammonia from fish nitrite to nitrate. Both are used in trigger by temperament, but change guider 
