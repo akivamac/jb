@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:REJECT: near-verbatim of existing train (os.makedirs)
+3:ACCEPT
+4:ACCEPT
+5:ACCEPT
+6:ACCEPT
+7:REJECT: near-verbatim of existing train (generator one-shot)
+8:ACCEPT
+9:ACCEPT
+10:REJECT: misleading: all() hangs on infinite all-truthy generators
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:REJECT: near-verbatim of existing train (functools.wraps)
+17:ACCEPT
+18:REJECT: duplicate of block 8
+19:REJECT: near-verbatim of existing train (list comp vs gen exp)
+20:REJECT: near-verbatim of existing train (deque)
+21:ACCEPT
+22:REJECT: duplicate of block 0
+23:ACCEPT
+24:ACCEPT
+25:REJECT: near-verbatim of existing train (islice)
+26:REJECT: near-verbatim of existing train (reverse string)
+27:ACCEPT
+28:ACCEPT
+29:ACCEPT
+30:ACCEPT
+31:REJECT: dubious claim partial preserves metadata
+32:REJECT: duplicate of block 21
+33:ACCEPT
+34:REJECT: duplicate of block 6
+35:REJECT: near-verbatim of existing train (reduce)
+36:ACCEPT
+37:REJECT: near-verbatim of existing train (dict key check)
+38:ACCEPT
+39:REJECT: duplicate of block 29
+40:ACCEPT
+41:REJECT: duplicate of block 13
+42:REJECT: near-verbatim of existing train (global)
+43:REJECT: near-verbatim of existing train (== vs is)
+44:REJECT: duplicate of block 33
+45:ACCEPT
+46:ACCEPT
+47:REJECT: near-verbatim of existing train (lru_cache)
+48:REJECT: duplicate of block 10
+49:ACCEPT
+50:REJECT: misleading: list(islice) yields chars list not a string
+51:ACCEPT
+52:ACCEPT
+53:REJECT: near-verbatim of existing train (match wildcard)
+54:REJECT: duplicate of block 38
+55:ACCEPT
+56:ACCEPT
+57:ACCEPT
+58:REJECT: duplicate of block 15
+59:ACCEPT
+60:ACCEPT
+61:REJECT: duplicate of block 46
+62:REJECT: duplicate of block 24
+63:ACCEPT
+64:ACCEPT
+65:REJECT: duplicate of block 19
+66:ACCEPT
+67:REJECT: duplicate of block 36
+68:ACCEPT
+69:ACCEPT
+70:REJECT: duplicate of block 57
+71:ACCEPT
+72:REJECT: duplicate of block 27
+73:ACCEPT
+74:REJECT: duplicate of block 31
+75:REJECT: duplicate of block 23
+76:REJECT: near-verbatim of existing train (typing/Optional)
+77:ACCEPT
+78:ACCEPT
+79:ACCEPT
+80:ACCEPT
+81:ACCEPT
+82:ACCEPT
+83:ACCEPT
+84:ACCEPT
+85:REJECT: near-duplicate of block 38
+86:REJECT: near-verbatim of existing train (setdefault)
+87:REJECT: near-verbatim of existing train (break)
+88:REJECT: near-verbatim of existing train (str vs bytes)
+89:REJECT: near-duplicate of block 60
+90:ACCEPT
+91:ACCEPT
+92:ACCEPT
+93:ACCEPT
+94:ACCEPT
+95:REJECT: near-duplicate of block 21
+96:ACCEPT
+97:ACCEPT
+98:ACCEPT
+99:ACCEPT
+100:REJECT: near-verbatim of existing train (try/except)
+101:ACCEPT
+102:REJECT: near-duplicate of block 43 and train
+103:ACCEPT
+104:REJECT: near-verbatim of existing train (__init__)
+105:ACCEPT
+106:ACCEPT
+107:REJECT: near-verbatim of existing train (reversed)
+108:REJECT: near-verbatim of existing train (inspect)
+109:ACCEPT
+110:ACCEPT
+111:REJECT: near-verbatim of existing train (generator/list)
+112:ACCEPT
+113:ACCEPT
+114:ACCEPT
+115:ACCEPT
+116:ACCEPT
+117:ACCEPT
+118:REJECT: near-duplicate of block 13
+119:ACCEPT
+120:ACCEPT
+121:ACCEPT
+122:REJECT: near-verbatim of existing train (del)
+123:ACCEPT
+124:ACCEPT
+125:REJECT: near-duplicate of block 10
+126:REJECT: duplicate of block 101
+127:ACCEPT
+128:ACCEPT
+129:ACCEPT

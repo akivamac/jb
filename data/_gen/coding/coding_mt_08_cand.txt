@@ -1,0 +1,553 @@
+User: what is GraphQL and how is it different from REST
+Joe: GraphQL is a query language that lets clients request exactly the data they need in a single request. Unlike REST, which uses multiple endpoints, GraphQL uses one endpoint and a flexible query structure.
+User: so does GraphQL replace REST entirely
+Joe: No, GraphQL and REST can coexist. REST works well for simple resource operations, while GraphQL shines when clients need related data from multiple sources in one round trip.
+
+User: what are the key principles of good API design
+Joe: A good API is consistent, predictable, and easy to discover. It should use standard HTTP methods and status codes, and its endpoints should follow a logical naming convention.
+User: what if the API grows very large over time
+Joe: You can version the API with URL prefixes like /v1/ and /v2/, and maintain backward compatibility so existing clients do not break. Deprecation warnings help users migrate gradually.
+
+User: what are RESTful API conventions
+Joe: RESTful APIs use nouns for resource endpoints and standard HTTP methods to perform operations. GET retrieves resources, POST creates them, PUT updates them, and DELETE removes them.
+User: how do you handle errors in a REST API
+Joe: You return appropriate HTTP status codes like 404 for not found or 500 for server errors, and include a meaningful error message in the response body so the client can diagnose the issue.
+
+User: why do APIs need versioning
+Joe: APIs change over time, and versioning lets you introduce breaking changes without breaking existing clients. It gives consumers a clear path to migrate to new versions.
+User: what is the difference between URL versioning and header versioning
+Joe: URL versioning puts the version number in the path like /v1/users, which is simple and visible. Header versioning uses a custom header like Accept-Version, which keeps URLs clean but is less obvious.
+
+User: how do you design REST resource URIs
+Joe: You use nouns to represent resources and nest them to show relationships, like /users/{id}/posts. You avoid verbs in URIs and use HTTP methods to indicate the operation on the resource.
+User: what if a resource has many related sub-resources
+Joe: You can nest multiple levels like /users/{id}/posts/{postId}/comments, but deep nesting makes URIs long and hard to maintain. Keep nesting shallow and use query parameters for flexibility.
+
+User: what is API middleware
+Joe: Middleware is a function that processes requests and responses between the client and the API handler. It can handle authentication, logging, compression, and CORS before the request reaches business logic.
+User: what is the order of middleware execution
+Joe: Middleware runs in the order it is registered during the request phase, and in reverse order during the response phase. Each middleware can pass control to the next or short-circuit with an error.
+
+User: what is API rate limiting
+Joe: Rate limiting caps the number of requests a client can make to an API in a given time window, protecting the server from abuse and ensuring fair usage.
+User: what is a rate limit header
+Joe: Rate limit headers like X-RateLimit-Limit and X-RateLimit-Remaining tell the client how many requests they have left so they can throttle themselves.
+
+User: what is idempotency in API design
+Joe: An idempotent operation produces the same result no matter how many times it is called. GET, PUT, and DELETE are naturally idempotent, while POST is not unless you add idempotency keys.
+User: why does idempotency matter for retries
+Joe: Clients sometimes retry after a timeout, and without idempotency a retry could create duplicate resources. An idempotency key lets the server recognize and skip duplicate attempts.
+
+User: what is API pagination
+Joe: Pagination splits large result sets into smaller pages so clients do not receive overwhelming amounts of data at once. It improves response times and reduces memory usage on both sides.
+User: which pagination pattern is best for a live feed
+Joe: Cursor-based or keyset pagination is best because they remain stable when new items are inserted or deleted, unlike offset pagination which can skip or duplicate items.
+
+User: what are common rate limiting algorithms
+Joe: Token bucket and sliding window are the most common algorithms. Token bucket allows bursts up to a capacity, while sliding window provides a smoother rate limit over time.
+User: what is a rate limit header
+Joe: Rate limit headers like X-RateLimit-Limit and X-RateLimit-Remaining tell the client how many requests they have left in the current window so they can throttle themselves.
+
+User: what is an index in a database
+Joe: An index is a data structure that speeds up lookups on a column, much like the index in a book lets you find a topic without reading every page. It trades extra storage for faster reads.
+User: what happens if you index too many columns
+Joe: Too many indexes slow down writes because the database must update each index when data changes. You should index columns that are frequently queried but not columns that are rarely searched.
+
+User: what is a composite index
+Joe: A composite index covers multiple columns in a single index entry. It is useful when queries filter on several columns at once, and the order of columns matters for performance.
+User: why does column order matter in a composite index
+Joe: The index is sorted by the first column first, then by the second within matching first-column values. If a query skips the first column, the index cannot be used efficiently.
+
+User: what is a B-tree index
+Joe: A B-tree index keeps keys in sorted order and supports efficient range queries and point lookups. Most relational databases use B-tree indexes as their default indexing structure.
+User: when would you use a hash index instead
+Joe: A hash index gives constant-time lookups for exact-match queries, but it cannot handle range scans or sorting. Use it when you only need equality checks on a column.
+
+User: what is a covering index
+Joe: A covering index contains all the columns a query needs, so the database can answer the query directly from the index without looking up the actual table row. This is called an index-only scan.
+User: what else should i know about a covering index
+Joe: It makes queries much faster because accessing the index is cheaper than accessing the table, but it uses more disk space since it duplicates column data.
+
+User: what is a partial index
+Joe: A partial index is built on a subset of rows that match a condition, saving space and speeding up queries on filtered data.
+User: when would you use a partial index
+Joe: You use one when a column has a skewed distribution, like a boolean with mostly false values. Indexing only the true values saves space and improves query speed.
+
+User: what is an index on a computed expression
+Joe: It is an index built on the result of an expression like UPPER(name) or a mathematical calculation, rather than a raw column value. It speeds up queries that filter on that computed result.
+User: when would you create an expression index
+Joe: You create one when your queries frequently transform a column before comparing it, like searching case-insensitively. Without the index, the database would compute the expression for every row.
+
+User: how do you optimize a slow database query
+Joe: You first inspect the query plan to find the bottleneck, then add indexes on the columns used in WHERE and JOIN clauses. Reducing the scanned rows and avoiding SELECT * also helps significantly.
+User: what is an execution plan
+Joe: An execution plan shows how the database engine intends to run a query, including which indexes it will use and the order of table scans. It lets you see whether the optimizer is choosing efficiently.
+
+User: what is a B+ tree index
+Joe: A B+ tree index stores keys in sorted order with all values at the leaf level, making range queries very efficient because the leaves are linked together.
+User: how does a B+ tree differ from a B-tree
+Joe: In a B+ tree, all data is at the leaf level and internal nodes only store keys, while a B-tree stores data at every level. B+ trees are better for disk-based databases.
+
+User: what is an LSM tree
+Joe: An LSM tree buffers writes in memory and periodically flushes sorted runs to disk, making writes much faster than in-place update structures.
+User: why do read queries get slower in an LSM tree
+Joe: Reads may need to check multiple sorted runs and an in-memory memtable, so the system must merge results from several levels, which adds latency.
+
+User: what is a spatial index
+Joe: A spatial index accelerates queries on geometric data like geographic coordinates, enabling fast range and proximity searches.
+User: what is a trie
+Joe: A trie is a tree structure that stores strings character by character, enabling fast prefix-based searches often used in autocomplete systems.
+
+User: what is a JOIN in SQL
+Joe: A JOIN combines rows from two or more tables based on a related column. It lets you retrieve data that is spread across normalized tables in a single query.
+User: what is the difference between INNER JOIN and OUTER JOIN
+Joe: An INNER JOIN returns only rows that have matching values in both tables. An OUTER JOIN also keeps unmatched rows from one side, filling in NULLs where there is no match.
+
+User: when should I use a LEFT JOIN
+Joe: Use a LEFT JOIN when you want all rows from the left table regardless of whether they have a match in the right table. It is common when the right table holds optional supplementary data.
+User: can you chain multiple JOINs together
+Joe: Yes, you can join several tables in a single query by chaining JOIN clauses. Each JOIN adds another table to the result set, but too many joins can make the query slow and hard to read.
+
+User: what is a UNION operator
+Joe: UNION combines the results of two SELECT statements into a single result set, removing duplicate rows by default.
+User: what is a subquery
+Joe: A subquery is a query nested inside another query, often used in WHERE or FROM clauses to filter or derive data.
+
+User: what is a correlated subquery
+Joe: A correlated subquery references columns from the outer query and must be evaluated for each row the outer query processes.
+User: what is a common table expression
+Joe: A CTE is a temporary named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement.
+
+User: what is a GROUP BY clause
+Joe: GROUP BY groups rows that share a common value in specified columns, typically used with aggregate functions.
+User: what is a HAVING clause
+Joe: A HAVING clause filters groups created by GROUP BY, similar to WHERE but applied after grouping rather than row by row.
+
+User: what is an aggregate function
+Joe: An aggregate function like COUNT, SUM, or AVG operates on a set of values and returns a single summary result.
+User: what is a window function
+Joe: A window function performs calculations across a set of rows related to the current row without collapsing them into a single output row.
+
+User: what is a materialized view
+Joe: A materialized view stores the query result physically on disk and must be refreshed periodically, unlike a regular view that computes on the fly.
+User: what is a view
+Joe: A view is a virtual table defined by a query that acts like a table but does not store data, letting you simplify complex queries.
+
+User: what is an EXPLAIN statement
+Joe: EXPLAIN shows how the database plans to execute a query, revealing which indexes it will use and the estimated cost.
+User: what is a query optimizer
+Joe: A query analyzer examines a SQL statement and determines the most efficient way to execute it by considering available indexes and statistics.
+
+User: what is a cost-based optimizer
+Joe: A cost-based optimizer estimates the resource cost of different execution plans and chooses the one with the lowest estimated cost.
+User: what is a rule-based optimizer
+Joe: A rule-based optimizer uses predefined heuristic rules to generate an execution plan without considering actual data distribution.
+
+User: what is a cursor
+Joe: A cursor is a pointer to a position in a result set that allows fetching rows one at a time instead of loading the entire result set.
+User: what is a stored procedure
+Joe: A stored procedure is a precompiled set of SQL statements stored in the database that can be called by name, reducing network traffic and ensuring reuse.
+
+User: what does ACID mean in databases
+Joe: ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties guarantee that transactions are processed reliably even in the event of errors or power failures.
+User: what if a system sacrifices one of the ACID properties
+Joe: Sacrificing ACID leads to a BASE model, which favors availability and partition tolerance over strict consistency. This approach is common in NoSQL databases where eventual consistency is acceptable.
+
+User: what is the difference between ACID and BASE
+Joe: ACID guarantees strict consistency and atomic transactions, while BASE accepts eventual consistency and allows systems to remain available during failures. ACID is typical in traditional SQL databases.
+User: which model should I choose for a new project
+Joe: Pick ACID when you need strong data integrity like in banking systems, and pick BASE when you need high availability and can tolerate temporary inconsistencies, such as in social media feeds.
+
+User: what is a database transaction
+Joe: A transaction is a sequence of operations treated as a single unit of work. Either all operations succeed or none do, which ensures that partial updates do not corrupt your data.
+User: how do you handle a transaction that fails midway
+Joe: The database rolls back all changes made during the transaction to return the data to its state before the transaction began. This atomic rollback is a core part of the ACID properties.
+
+User: what is the CAP theorem
+Joe: The CAP theorem states that a distributed database can only guarantee two of three properties: Consistency, Availability, and Partition tolerance. You must choose which two to prioritize when the network partitions.
+User: how does CAP relate to ACID and BASE
+Joe: ACID systems typically choose consistency and partition tolerance, while BASE systems choose availability and partition tolerance. The CAP theorem explains why you cannot have all three guarantees simultaneously.
+
+User: what is database normalization
+Joe: Normalization organizes data into tables to reduce redundancy and improve data integrity. Each normal form addresses a specific type of duplication or anomaly.
+User: why would you denormalize a database
+Joe: You denormalize to speed up read-heavy queries that would otherwise require expensive JOINs across many tables. It trades some redundancy for query performance, which is fine for analytics.
+
+User: what is a foreign key constraint
+Joe: A foreign key constraint ensures that a value in one table corresponds to a valid row in another table. It enforces referential integrity so you cannot reference a record that does not exist.
+User: what happens when you try to delete a row referenced by a foreign key
+Joe: The database blocks the deletion unless you have set up cascade rules. A CASCADE delete removes the dependent rows automatically, while RESTRICT prevents the deletion entirely.
+
+User: what is database replication
+Joe: Database replication copies data from one server to one or more servers so that every server has a consistent copy. It improves availability, fault tolerance, and read performance across regions.
+User: what is the difference between synchronous and asynchronous replication
+Joe: Synchronous replication waits for all copies to confirm before the transaction completes, ensuring strong consistency. Asynchronous replication confirms the primary first and updates replicas later, which is faster but can lose data.
+
+User: what is database partitioning
+Joe: Partitioning splits a large table into smaller, more manageable pieces across different servers or disks. It improves query performance and makes it easier to scale horizontally as data grows.
+User: what is the difference between horizontal and vertical partitioning
+Joe: Horizontal partitioning splits rows across partitions by a key like a date range, while vertical partitioning splits columns so that frequently accessed columns are separate from large ones.
+
+User: what is MVCC
+Joe: MVCC stands for multi-version concurrency control, which lets readers and writers operate simultaneously by keeping multiple versions of each row instead of locking.
+User: how does MVCC handle stale reads
+Joe: Each version is tagged with a transaction ID, so readers see only the version that was committed when their transaction started, avoiding dirty reads.
+
+User: what is snapshot isolation
+Joe: Snapshot isolation gives each transaction a consistent view of the database at the moment it started, so concurrent transactions do not interfere with each other.
+User: what is a phantom read in snapshot isolation
+Joe: A phantom read occurs when a transaction reruns a query and sees new rows inserted by another transaction, because snapshot isolation does not lock the range of the query.
+
+User: what is a caching strategy
+Joe: A caching strategy defines how and when you store copies of data close to the consumer so that future requests can be served faster. Good strategies reduce load on the original data source.
+User: how do you decide what to cache and what not to
+Joe: You cache data that is read frequently and rarely changes, and you avoid caching data that is highly volatile or sensitive. You set a time-to-live so stale entries are eventually refreshed.
+
+User: what is cache invalidation
+Joe: Cache invalidation is the process of removing or updating stale cached data when the underlying source changes. It is one of the hardest problems in caching because you must keep caches consistent.
+User: what happens if you forget to invalidate a cache
+Joe: Users may see outdated information, which can cause bugs that are hard to trace. You can avoid this by tying cache lifetimes to data change events or by using write-through caching.
+
+User: what is the cache-aside pattern
+Joe: In the cache-aside pattern, the application checks the cache first and only queries the database if the data is missing. The application itself is responsible for updating the cache when data changes.
+User: what is the risk of cache-aside
+Joe: The first request after a cache miss hits the database directly, which can cause a spike in load. This is called a thundering herd problem, and you can mitigate it with locking or early expiration.
+
+User: what is write-through caching
+Joe: In write-through caching, data is written to both the cache and the underlying database at the same time. This ensures the cache always reflects the latest data but adds a small write latency.
+User: how does write-through compare to write-back
+Joe: Write-back caching only writes to the cache first and flushes to the database later, which is faster but risks data loss if the cache fails before the flush happens.
+
+User: what is a multi-layer caching strategy
+Joe: A multi-layer strategy uses caches at different levels, like a browser cache, a CDN cache, and an application cache. Each layer serves requests closer to the user before hitting the origin.
+User: why not just use one big cache
+Joe: A single large cache creates a bottleneck and a single point of failure. Multiple layers are more resilient, and each layer can be independently scaled and tuned for its specific purpose.
+
+User: what is query caching
+Joe: Query caching stores the result of a database query so that identical subsequent queries return the cached result without hitting the database again. It is effective for read-heavy workloads with repeated queries.
+User: when does query caching hurt performance
+Joe: It hurts when the data changes frequently, because the cache becomes stale quickly and the cost of invalidation outweighs the benefit. It also wastes memory if queries rarely repeat.
+
+User: what is a CDN
+Joe: A CDN is a distributed network of servers that caches content closer to users geographically. It reduces latency and load on the origin server by serving static and dynamic content from edge locations.
+User: how does a CDN decide which content to cache
+Joe: It caches content based on TTL settings and cache-control headers sent by the origin server. Edge servers store copies and serve them to nearby users until the TTL expires.
+
+User: what is a cache stampede
+Joe: A cache stampede happens when many requests hit the database simultaneously because a popular cached item expires at the same time.
+User: how do you prevent a cache stampede
+Joe: You can use locking or a background refresh job to update the cache before it expires, so that only one request at a time hits the database for the new data.
+
+User: what is a bloom filter
+Joe: A bloom filter is a space-efficient data structure that tells you whether an element might be in a set, with a small chance of false positives.
+User: where would you use a bloom filter
+Joe: You would use it in scenarios where you need to quickly check membership without storing all the data, like filtering out non-existent keys in a cache or checking URLs against a blocked list.
+
+User: what is consistent hashing
+Joe: Consistent hashing distributes data across nodes using a hash ring, so that adding or removing a node only remaps a fraction of the data.
+User: what happens when a node fails in consistent hashing
+Joe: The keys assigned to that node are reassigned to the next node on the ring, so only a small fraction of data needs to move. This makes the system resilient to node failures.
+
+User: what is a read replica in databases
+Joe: A read replica is a copy of a database that handles read-only queries so the primary database can focus on writes. It improves scalability and availability for read-heavy applications.
+User: what is the downside of using read replicas
+Joe: Read replicas introduce replication lag, so reads might return slightly stale data. They also add complexity to your infrastructure because you must manage synchronization between the primary and replicas.
+
+User: what is database vacuuming
+Joe: Vacuuming reclaims storage occupied by dead rows left after updates and deletes. It also updates statistics so the query planner can choose efficient execution paths.
+User: how often should you vacuum a table
+Joe: It depends on how frequently rows are updated or deleted. High-write tables need more frequent vacuuming, while read-heavy tables can go longer without it.
+
+User: what is a checkpoint
+Joe: A checkpoint is a point where the database flushes all dirty pages from memory to disk and records a recovery point, reducing the amount of log replay needed after a crash.
+User: how often should checkpoints occur
+Joe: Checkpoint frequency depends on the workload and recovery time goals. More frequent checkpoints mean shorter recovery but more I/O overhead.
+
+User: what is a write-ahead log
+Joe: A write-ahead log records every change to the database before it is applied, ensuring that committed data can be recovered even after a crash.
+User: how does a WAL improve recovery time
+Joe: Instead of replaying all transactions from scratch, the database replays only the WAL entries after the last checkpoint, making recovery much faster.
+
+User: what is a failover mechanism
+Joe: Failover automatically promotes a standby replica to primary when the current primary fails, minimizing downtime and maintaining service availability.
+User: what is a split brain problem
+Joe: A split brain occurs when both the old and new primaries believe they are the primary and accept writes, leading to conflicting data that is hard to reconcile.
+
+User: what is a consensus protocol
+Joe: A consensus protocol ensures that all nodes in a distributed system agree on a single value or state, even if some nodes fail or messages are delayed.
+User: what is the difference between consensus and agreement
+Joe: Consensus is a formal protocol with guarantees about safety and liveness, while agreement is a looser term that may not guarantee all properties in adversarial conditions.
+
+User: what is a Raft leader election
+Joe: Raft uses randomized timers to elect a leader, where the first node to time out becomes the leader and others recognize it, preventing frequent elections.
+User: what happens if a leader crashes during a term
+Joe: The remaining nodes time out and start a new election, and a new leader is chosen from the nodes that did not crash.
+
+User: what is a conflict resolution strategy
+Joe: Conflict resolution determines which value wins when multiple concurrent updates target the same data, using approaches like last-writer-wins or application-defined merge functions.
+User: what is a CRDT
+Joe: A CRDT is a data structure designed so that concurrent updates can be merged without conflicts, enabling eventually consistent distributed applications.
+
+User: what is a gossip protocol
+Joe: A gossip protocol spreads information across a cluster by having each node randomly share its state with a few peers, eventually reaching every node in the system.
+User: what is the convergence time of a gossip protocol
+Joe: Convergence time depends on the number of nodes and the gossip fan-out, but it is typically logarithmic, meaning even large clusters converge quickly.
+
+User: what is a vector clock
+Joe: A vector clock tracks causal relationships between events in a distributed system by maintaining a counter per node, allowing detection of concurrent and ordered events.
+User: how do you determine if two events are concurrent
+Joe: You compare the vectors element-wise. If neither vector dominates the other at every position, the events are concurrent, which is essential for causal consistency.
+
+User: what is a read repair
+Joe: Read repair fixes inconsistencies during a read operation by comparing data across replicas and updating the stale ones to match the most recent version.
+User: when does read repair trigger
+Joe: Read repair triggers when a read request fetches data from multiple replicas and detects a version mismatch, automatically propagating the newest value.
+
+User: what is hinted handoff
+Joe: Hinted handoff temporarily stores a write on a node when the target replica is unavailable, then forwards it once the target recovers.
+User: how does hinted handoff affect consistency
+Joe: It temporarily creates inconsistency but ensures no writes are lost. Once the target recovers and receives the hinted handoff, consistency is restored.
+
+User: what is database sharding
+Joe: Sharding splits data across multiple database instances based on a shard key, distributing the load and allowing horizontal scaling.
+User: what is a leader election
+Joe: Leader election is the process of choosing one node in a distributed system to coordinate tasks, ensuring there is a single point of authority.
+
+User: what is a heartbeat
+Joe: A heartbeat is a periodic signal between nodes in a distributed system that indicates whether a node is alive and healthy.
+User: what is a consensus algorithm
+Joe: A consensus algorithm lets distributed nodes agree on a single value or state, even if some nodes fail or messages are delayed.
+
+User: what is Raft
+Joe: Raft is a consensus algorithm that elects a leader and uses log replication to ensure all nodes agree on the same sequence of state changes.
+User: what is Paxos
+Joe: Paxos is a classic consensus algorithm that lets a group of nodes agree on a single value through a series of proposal and acceptance rounds.
+
+User: what is a quorum
+Joe: A quorum is the minimum number of nodes that must agree on an operation for it to succeed, typically a majority, ensuring consistency in distributed systems.
+User: how do you calculate a quorum size
+Joe: A quorum is usually more than half the total number of nodes, so for 5 nodes the quorum is 3. This ensures at most one partition can form a valid quorum.
+
+User: what is a leader lease
+Joe: A leader lease grants the primary node exclusive authority for a bounded time period, requiring periodic renewal to maintain legitimacy.
+User: what else should i know about a leader lease
+Joe: It prevents a stale leader from accepting writes after a network partition by expiring the lease if the leader cannot renew it.
+
+User: what is fencing in distributed systems
+Joe: Fencing revokes the access of a failed node before promoting its replacement, ensuring the old node cannot make conflicting changes.
+User: what else should i know about fencing in distributed systems
+Joe: It is typically implemented by changing authentication tokens or IP tables, ensuring the failed node can no longer communicate with shared resources.
+
+User: what is a witness node
+Joe: A witness node participates in quorum decisions without storing data, helping break ties in leader elections when the cluster has an even number of data nodes.
+User: what else should i know about a witness node
+Joe: It reduces the number of nodes needed to form a quorum while still maintaining the majority requirement for consistency.
+
+User: what is a STONITH device
+Joe: STONITH stands for shoot the other node in the head, a fencing technique that physically or remotely disables a failed node before its peer takes over.
+User: what else should i know about a STONITH device
+Joe: It is the most reliable form of fencing because it ensures the failed node cannot interfere, though it requires additional hardware or management infrastructure.
+
+User: what is a quorum write
+Joe: A quorum write requires acknowledgment from a majority of replicas before it is considered committed, ensuring the write is durable even if some replicas fail.
+User: what else should i know about a quorum write
+Joe: It guarantees that any subsequent quorum read will see the written data because the overlapping quorums must contain the most recent write.
+
+User: what is a quorum read
+Joe: A quorum read fetches data from a majority of replicas, ensuring the read sees the latest committed write even if some replicas are stale.
+User: what else should i know about a quorum read
+Joe: The overlap between read and write quorums guarantees consistency, but it increases latency because the client must wait for responses from multiple nodes.
+
+User: what is causal consistency
+Joe: Causal consistency ensures that causally related operations are seen in the same order by all nodes, while unrelated operations may be seen in different orders.
+User: what is read-your-writes consistency
+Joe: Read-your-writes consistency guarantees that after you write a value, your subsequent reads will see that value, which is important for user-facing applications.
+
+User: what is a last-writer-wins strategy
+Joe: Last-writer-wins resolves conflicts by keeping the value from the most recent write based on timestamps, discarding earlier concurrent updates.
+User: what is a merge function
+Joe: A merge function combines multiple concurrent updates into a single consistent result, which is essential for CRDTs and conflict-free data structures.
+
+User: what is a gossip protocol
+Joe: A gossip protocol spreads state information across a cluster by having each node periodically share with random peers until all nodes converge.
+User: how fast does gossip converge
+Joe: Convergence time depends on the number of nodes and the gossip fan-out, but it is typically logarithmic, meaning even large clusters converge quickly.
+
+User: what is a vector clock
+Joe: A vector clock tracks causal relationships between events in a distributed system using per-node counters, allowing detection of concurrent and ordered events.
+User: how do you determine if two events are concurrent
+Joe: You compare the vectors element-wise. If neither vector dominates the other at every position, the events are concurrent, which is essential for causal consistency.
+
+User: what is a bloom filter
+Joe: A bloom filter is a space-efficient data structure that tells you whether an element might be in a set, with a small chance of false positives.
+User: where would you use a bloom filter
+Joe: You would use it in scenarios where you need to quickly check membership without storing all the data, like filtering out non-existent keys in a cache or checking URLs against a blocked list.
+
+User: what is consistent hashing
+Joe: Consistent hashing distributes data across nodes using a hash ring, so that adding or removing a node only remaps a fraction of the data.
+User: what happens when a node fails in consistent hashing
+Joe: The keys assigned to that node are reassigned to the next node on the ring, so only a small fraction of data needs to move. This makes the system resilient to node failures.
+
+User: what is anti-entropy
+Joe: Anti-entropy is a background process that compares replicas and repairs differences to keep all copies consistent, complementing read repair.
+User: why does anti-entropy run periodically
+Joe: It runs periodically across all replicas rather than only during read operations, catching inconsistencies that might not trigger a read at all.
+
+User: what is a last-writer-wins strategy
+Joe: Last-writer-wins resolves conflicts by keeping the value from the most recent write based on timestamps, discarding earlier concurrent updates.
+User: what is a merge function
+Joe: A merge function combines multiple concurrent updates into a single consistent result, which is essential for CRDTs and conflict-free data structures.
+
+User: what is database sharding
+Joe: Sharding splits data across multiple database instances based on a shard key, distributing the load and allowing horizontal scaling.
+User: what is a leader election
+Joe: Leader election is the process of choosing one node in a distributed system to coordinate tasks, ensuring there is a single point of authority.
+
+User: what is a heartbeat
+Joe: A heartbeat is a periodic signal between nodes in a distributed system that indicates whether a node is alive and healthy.
+User: what is a consensus algorithm
+Joe: A consensus algorithm lets distributed nodes agree on a single value or state, even if some nodes fail or messages are delayed.
+
+User: what is REST
+Joe: REST is an architectural style that uses HTTP methods to interact with resources identified by URLs. It is stateless and relies on standard status codes.
+
+User: what is a JOIN
+Joe: A JOIN combines rows from two tables based on a related column, letting you pull data from normalized tables in a single query.
+
+User: what is a cache
+Joe: A cache is a temporary storage layer that holds frequently accessed data so future requests can be served faster without hitting the original source.
+
+User: what is an index
+Joe: An index is a database structure that speeds up lookups on a column, similar to a book index that lets you find a topic without reading every page.
+
+User: what is ACID
+Joe: ACID stands for Atomicity, Consistency, Isolation, and Durability, which are properties that guarantee reliable database transactions.
+
+User: what is GraphQL
+Joe: GraphQL is a query language that lets clients request exactly the data they need in a single request instead of fetching from multiple endpoints.
+
+User: what is BASE
+Joe: BASE stands for Basically Available, Soft state, and Eventually consistent, which is a model that prioritizes availability over strict consistency.
+
+User: what is a query plan
+Joe: A query plan shows how the database engine intends to execute a query, including which indexes it will use and the order of table scans.
+
+User: what is a foreign key
+Joe: A foreign key is a column that references a primary key in another table, enforcing referential integrity between the two tables.
+
+User: what is replication
+Joe: Replication copies data from one database server to others so that multiple servers hold consistent copies, improving availability and read performance.
+
+User: what is denormalization
+Joe: Denormalization adds redundancy to a database by combining tables so that expensive JOINs can be avoided, speeding up read queries.
+
+User: what is a composite index
+Joe: A composite index covers multiple columns in a single index entry, useful when queries filter on several columns at once.
+
+User: what is eventual consistency
+Joe: Eventual consistency means that after a write, all replicas will eventually converge to the same value, but reads may return stale data temporarily.
+
+User: what is a read replica
+Joe: A read replica is a copy of a database that handles read-only queries so the primary server can focus on handling writes.
+
+User: what is SQL injection
+Joe: SQL injection is an attack that inserts malicious SQL into a query string to manipulate the database, prevented by using parameterized queries.
+
+User: what is connection pooling
+Joe: Connection pooling maintains a set of open database connections ready to reuse, avoiding the cost of creating a new connection for each request.
+
+User: what is a view
+Joe: A view is a virtual table defined by a query that acts like a table but does not store data, letting you simplify complex queries.
+
+User: what is a stored procedure
+Joe: A stored procedure is a precompiled SQL routine stored on the server that can be called by name, reducing network traffic and ensuring code reuse.
+
+User: what is a trigger
+Joe: A trigger is an automatic action that runs when a specific database event occurs, commonly used for audit logging and enforcing business rules.
+
+User: what is a deadlock
+Joe: A deadlock occurs when two transactions each hold a lock the other needs, causing both to wait indefinitely until the system detects and resolves the conflict.
+
+User: what is optimistic locking
+Joe: Optimistic locking assumes conflicts are rare and checks for conflicts only at commit time using version numbers, allowing higher concurrency.
+
+User: what is a bloom filter
+Joe: A bloom filter is a space-efficient probabilistic structure that tests whether an element is in a set, with a small chance of false positives but no false negatives.
+
+User: what is consistent hashing
+Joe: Consistent hashing distributes keys across nodes using a hash ring, so that adding or removing a node only remaps a small fraction of the data.
+
+User: what is anti-entropy
+Joe: Anti-entropy is a background process that compares replicas and repairs differences to keep all copies consistent, complementing read repair.
+
+User: what is a vector clock
+Joe: A vector clock tracks causal relationships using per-node counters, allowing you to determine whether two events are concurrent or ordered.
+
+User: what is a materialized view
+Joe: A materialized view stores the query result physically on disk and must be refreshed periodically, unlike a regular view that computes on the fly.
+
+User: what is a unique constraint
+Joe: A unique constraint ensures that all values in a column or set of columns are distinct, preventing duplicate entries.
+
+User: what is a CHECK constraint
+Joe: A CHECK constraint enforces a condition on column values, rejecting any row that violates the specified rule.
+
+User: what is a primary key
+Joe: A primary key uniquely identifies each row in a table and cannot contain NULL values, ensuring every record is distinct.
+
+User: what is a full-text index
+Joe: A full-text index is a specialized structure that enables fast text searches across large columns, supporting relevance ranking.
+
+User: what is a hash index
+Joe: A hash index provides constant-time lookups for exact-match queries but cannot handle range scans or sorting operations.
+
+User: what is a B+ tree
+Joe: A B+ tree is a balanced tree where all values are stored at the leaf level, with internal nodes holding only keys. It is the standard structure for database indexes.
+
+User: what is a LSM tree
+Joe: An LSM tree merges updates in memory and periodically flushes sorted data to disk, making write-heavy workloads much faster than traditional B-tree structures.
+
+User: what is a WAL
+Joe: A write-ahead log records changes before they are applied to the database, ensuring durability and enabling recovery after crashes.
+
+User: what is a checkpoint
+Joe: A checkpoint is a point where the database flushes all dirty pages from memory to disk and records a recovery point, reducing restart time after a crash.
+
+User: what is a transaction log
+Joe: A transaction log records all changes made to a database so that they can be replayed or rolled back if needed.
+
+User: what is a stored function
+Joe: A stored function is similar to a stored procedure but returns a value and can be used in SQL expressions like any other function.
+
+User: what is a CLUSTER index
+Joe: A CLUSTER index determines the physical order of data in a table, so the rows are stored in index order rather than a separate structure.
+
+User: what is a document store
+Joe: A document store holds data as self-describing documents like JSON or BSON, allowing flexible schemas and nested structures.
+
+User: what is a key-value store
+Joe: A key-value store associates each value with a unique key, providing extremely fast lookups. It is simple and scalable but does not support complex queries.
+
+User: what is a columnar database
+Joe: A columnar database stores data by column rather than by row, making analytical queries that scan few columns much faster than row-based storage.
+
+User: what is a time series database
+Joe: A time series database is optimized for storing and querying timestamped data points, commonly used for monitoring and sensor data.
+
+User: what is a graph database
+Joe: A graph database stores data as nodes and edges, making it efficient to traverse relationships and query connected data.
+
+User: what is a memory table
+Joe: A memory table stores data entirely in RAM for extremely fast access, but it loses data on power failure unless backed by a log.
+
+User: what is a snapshot isolation
+Joe: Snapshot isolation gives each transaction a consistent view of the database at a single point in time, preventing dirty reads and non-repeatable reads.
+
+User: what is eventual consistency in practice
+Joe: In practice, eventual consistency means users might see different data briefly after a write, but all nodes converge to the same state over time.
+
+User: what is a merge function
+Joe: A merge function combines multiple concurrent updates into a single consistent result, which is essential for CRDTs and conflict resolution.
+
+User: what is last-writer-wins
+Joe: Last-writer-wins resolves conflicts by keeping the value from the most recent write based on timestamps, discarding earlier concurrent updates.

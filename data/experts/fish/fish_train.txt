@@ -8542,3 +8542,23 @@ Joe: Flukes are flatworm parasites that attach to fish gills, skin, or fins usin
 User: What symptoms do fish flukes cause?
 Joe: Infected fish show rapid gill movement, flashing against objects, excessive mucus production, and reddened gill tissue. Severe infestations cause open-mouth breathing, lethargy, and loss of appetite as the parasites impair gas exchange.
 
+User: How do fish get transported to pet stores?
+Joe: Fish are transported in plastic bags filled with water and oxygen, sealed and placed in insulated coolers. A typical transport journey lasts 12 to 24 hours.
+User: What happens if the temperature drops during transport?
+Joe: If the temperature drops too low, fish can go into shock and die. Insulated containers and heat packs help maintain stable temperatures during cold weather shipping.
+
+User: Can fish survive shipping in the mail?
+Joe: Yes, fish can survive shipping through the mail when properly packaged in insulated boxes with oxygenated water bags and heat or cold packs depending on the season.
+User: What regulations apply to shipping fish?
+Joe: Shipping live fish requires compliance with state and federal regulations. Some states prohibit importing certain species, and international shipping requires CITES permits for protected species.
+
+User: How do fish carriers monitor temperature during shipping?
+Joe: Carriers monitor temperature using data loggers placed inside transport containers. These devices record temperature throughout the journey and alert handlers if conditions fall outside the safe range for the species.
+User: What happens if fish arrive dead from shipping?
+Joe: If fish arrive dead, the carrier typically provides a refund or replacement. Dead fish indicate a problem with the shipping process. Buyers should document the condition immediately with photos upon arrival.
+
+User: What is the difference between floating and drip acclimation?
+Joe: Floating acclimation just matches temperature by floating the sealed bag. Drip acclimation adds tank water to the bag slowly over 30 to 60 minutes to also match pH and mineral content, which is more thorough.
+User: Can I skip acclimation if the water parameters are the same
+Joe: Even if parameters seem similar, always acclimate to avoid temperature shock and osmotic stress. The bag water may have different dissolved gases that could stress the fish.
+

@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:ACCEPT
+3:ACCEPT
+4:ACCEPT
+5:REJECT: second question does not reference transport packaging answer
+6:ACCEPT
+7:REJECT: generic "what causes this" filler does not reference answer
+8:ACCEPT
+9:ACCEPT
+10:ACCEPT
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:ACCEPT
+15:ACCEPT
+16:ACCEPT
+17:REJECT: generic filler follow-up
+18:ACCEPT
+19:ACCEPT
+20:ACCEPT
+21:REJECT: generic filler follow-up
+22:ACCEPT
+23:REJECT: unverified factuality (catfish with shark-like "claspers")
+24:ACCEPT
+25:REJECT: generic filler follow-up
+26:ACCEPT
+27:ACCEPT
+28:REJECT: generic filler follow-up
+29:ACCEPT
+30:REJECT: asks the same question twice in one block
+31:ACCEPT
+32:REJECT: generic filler follow-up
+33:ACCEPT
+34:ACCEPT
+35:ACCEPT
+36:ACCEPT
+37:ACCEPT
+38:ACCEPT
+39:ACCEPT
+40:REJECT: same pond-plant question repeated in block
+41:REJECT: generic filler follow-up
+42:REJECT: generic filler follow-up
+43:REJECT: generic filler follow-up
+44:REJECT: generic filler follow-up
+45:REJECT: generic filler follow-up
+46:REJECT: generic filler follow-up
+47:ACCEPT
+48:REJECT: generic filler follow-up
+49:ACCEPT
+50:REJECT: generic filler follow-up
+51:REJECT: generic filler follow-up
+52:ACCEPT
+53:ACCEPT
+54:REJECT: generic filler follow-up
+55:ACCEPT
+56:ACCEPT
+57:ACCEPT
+58:REJECT: generic filler follow-up
+59:ACCEPT
+60:ACCEPT
+61:ACCEPT
+62:REJECT: generic filler follow-up
+63:REJECT: inaccurate age claim and irrelevant turtle note
+64:ACCEPT
+65:ACCEPT
+66:REJECT: generic filler follow-up
+67:REJECT: generic filler follow-up
+68:REJECT: MPA turn near word-for-word repeat of existing entry
+69:REJECT: MPA turn near word-for-word repeat of existing entry
+70:REJECT: generic filler follow-up
+71:REJECT: MPA question repeated twice and repeats existing entry
+72:REJECT: MPA turn near word-for-word repeat of existing entry
+73:REJECT: MPA turn near word-for-word repeat of existing entry
+74:REJECT: bycatch/MPA turns repeat existing entries
+75:REJECT: MPA turn near word-for-word repeat of existing entry
+76:REJECT: generic filler follow-up
+77:ACCEPT
+78:REJECT: generic filler follow-up
+79:REJECT: near word-for-word repeat of existing bubble nest entry
+80:REJECT: misspelled "fertilates"
+81:REJECT: generic filler follow-up
+82:REJECT: transport-temperature follow-up unrelated to courtship
+83:ACCEPT
+84:REJECT: near-duplicate of block 3
+85:REJECT: generic filler follow-up
+86:REJECT: generic filler follow-up and repeats block 2 content
+87:REJECT: near-duplicate of block 12
+88:ACCEPT
+89:REJECT: transport-temperature follow-up unrelated to coral acclimation
+90:ACCEPT
+91:ACCEPT
+92:REJECT: generic filler follow-up
+93:REJECT: generic filler follow-up
+94:REJECT: generic filler follow-up
+95:REJECT: near-duplicate of block 26
+96:REJECT: generic filler follow-up
+97:REJECT: transport-temperature follow-up unrelated to courtship
+98:REJECT: transport-temperature follow-up unrelated to courtship
+99:REJECT: growth follow-up unrelated to mating communication
+100:REJECT: same spawning-trigger question repeated in block
+101:REJECT: generic filler follow-up
+102:REJECT: near word-for-word repeat of existing fish conditioning entry
+103:REJECT: generic filler follow-up
+104:REJECT: near word-for-word repeat of existing spawning mop entry
+105:REJECT: generic filler follow-up
+106:REJECT: near word-for-word repeat of existing grow out tank entry
+107:REJECT: generic filler follow-up
+108:REJECT: near word-for-word repeat of existing egg incubator entry
+109:REJECT: generic filler follow-up
+110:REJECT: near word-for-word repeat of existing egg tumbler entry
+111:REJECT: generic filler follow-up
+112:REJECT: generic filler follow-up
+113:REJECT: near word-for-word repeat of existing reproduction entry
+114:REJECT: generic filler follow-up
+115:REJECT: near word-for-word repeat of existing spawning ground entry
+116:ACCEPT
+117:REJECT: near word-for-word repeat of existing fry entry
+118:REJECT: generic filler follow-up
+119:REJECT: near word-for-word repeat of existing fingerling entry
+120:REJECT: generic filler follow-up
+121:REJECT: near word-for-word repeat of existing spawning run entry
+122:REJECT: growth follow-up unrelated to spawning-run challenges
+123:REJECT: near word-for-word repeat of existing spawning season entry
+124:REJECT: near word-for-word repeat of existing mouthbrooding entry
+125:REJECT: near word-for-word repeat of existing biparental care entry
+126:REJECT: near word-for-word repeat of existing migration route entry
+127:REJECT: near word-for-word repeat of existing fish passage entry
+128:REJECT: near word-for-word repeat of existing fish corridor entry
+129:REJECT: near word-for-word repeat of existing fish refuge entry
