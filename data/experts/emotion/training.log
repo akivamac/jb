@@ -1672,3 +1672,26 @@ Joe: I see you. You
 # 
 # User: I feel like I 
 # [2026-09-11 08:34:52] FINISH at step 2000
+# [2026-09-14 12:59:59] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 100 --log 25 --sample 25
+25,2.6701,3.00e-04,0.00,1789412570.635605
+# [2026-09-14 15:02:59] SAMPLE step 25:
+# 
+# User: I feel burnt out from delofrom people away
+# Joe: People change with stress and one let the restachargain is. You carried with nowhere else today. You get to feel resentful.
+50,1.7082,3.00e-04,0.01,1789415443.6338649
+# [2026-09-14 15:50:46] SAMPLE step 50:
+# 
+# User: I passed my own was dreading
+# Joe: Letsing work you loved is a real grief, not just a career setback. Let yourself mourn it, then remember your skills are still
+75,1.4698,3.00e-04,0.01,1789417224.175473
+# [2026-09-14 16:20:29] SAMPLE step 75:
+# 
+# User: I feel like I do not do not. You are allowed to be here. Bring it. Rest is not the trustment can you about before you say.
+# User: I feel like I am not a
+100,1.0209,3.00e-04,0.01,1789419360.575548
+# [2026-09-14 16:56:10] SAMPLE step 100:
+# 
+# User: I feel like I need to be valued
+# Joe: You are valuable. Never let you feel better different.
+# User: I feel like I need to be appreciated
+# Joe: You are appreciated. Thank you
