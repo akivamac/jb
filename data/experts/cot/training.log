@@ -2740,3 +2740,18 @@
 # 
 # User: If you drove 240,000 people in the trip. How many per not covers 40 on the five?
 # Joe: Each pay them by 20 gives (10 * 1.20 = 18 m. Total is 
+1675,0.1746,3.00e-04,0.01,1789376621.783027
+# [2026-09-14 05:03:44] SAMPLE step 1675:
+# 
+# User: Texamong recipe for 8 servings uses 3 eggs. How many for 5 servings?
+# Joe: 3 / 8 = 0.375 eggs per serving. 5 * 0.375 = 1.875, 
+1725,0.1724,3.00e-04,0.01,1789379653.840975
+# [2026-09-14 05:54:15] SAMPLE step 1725:
+# 
+# Joe: 25 * 8 = 11 * 10 = 7, so 11 * 3 = 81 * 10 = (12 * 100 + 1) = 36, so 11 * 3 = 28, so 11
+1700,0.1802,3.00e-04,0.01,1789381037.6831129
+# [2026-09-14 06:17:20] SAMPLE step 1700:
+# 
+# User: What is the mean of 8 numbers is 18?
+# Joe: 18th number = 9. Divide by 6 cm. What was the mean average?
+# Joe: 7 out of 12 = 72. Median = 7.
