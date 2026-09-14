@@ -2,3 +2,5 @@
 [coding] dual-accepted=271 dropped(train)=68 dropped(intra)=0 MERGED=203
 [coding] dual-accepted=271 dropped(train)=244 dropped(intra)=0 MERGED=27
 [coding] dual-accepted=561 dropped(train)=243 dropped(intra)=0 MERGED=318
+[coding] dual-accepted=214 dropped(train)=90 dropped(intra)=0 MERGED=124
+[coding] dual-accepted=214 dropped(train)=199 dropped(intra)=0 MERGED=15

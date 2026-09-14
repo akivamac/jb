@@ -2,3 +2,5 @@
 [emotion] dual-accepted=169 dropped(train)=5 dropped(intra)=0 MERGED=164
 [emotion] dual-accepted=169 dropped(train)=165 dropped(intra)=0 MERGED=4
 [emotion] dual-accepted=373 dropped(train)=174 dropped(intra)=0 MERGED=199
+[emotion] dual-accepted=69 dropped(train)=0 dropped(intra)=0 MERGED=69
+[emotion] dual-accepted=69 dropped(train)=69 dropped(intra)=0 MERGED=0

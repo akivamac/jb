@@ -2,3 +2,5 @@
 [tree] dual-accepted=256 dropped(train)=5 dropped(intra)=0 MERGED=251
 [tree] dual-accepted=256 dropped(train)=251 dropped(intra)=0 MERGED=5
 [tree] dual-accepted=510 dropped(train)=297 dropped(intra)=0 MERGED=213
+[tree] dual-accepted=0 dropped(train)=0 dropped(intra)=0 MERGED=0
+[tree] dual-accepted=0 dropped(train)=0 dropped(intra)=0 MERGED=0
