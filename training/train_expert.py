@@ -344,6 +344,7 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
         if completed:
             with open(log_path, "a") as lf:
                 lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] FINISH at step {step}\n")
+            git_push(name, step)
 
     elapsed = time.time() - start
     print(f"\nDone. Expert '{name}' saved to {model_path}")
@@ -363,7 +364,7 @@ if __name__ == '__main__':
     parser.add_argument('--log', type=int, default=100)
     parser.add_argument('--sample', type=int, default=0, help='Print sample every N steps (0=off)')
     parser.add_argument('--resume', action='store_true', help='Continue from saved expert model')
-    parser.add_argument('--push', type=int, default=0, help='Push to github every N steps')
+    parser.add_argument('--push', type=int, default=100, help='Push to github every N steps (default 100)')
     parser.add_argument('--save', type=int, default=0, help='Save checkpoint every N steps (0=only at end)')
     args = parser.parse_args()
 
