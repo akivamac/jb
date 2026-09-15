@@ -364,7 +364,7 @@ if __name__ == '__main__':
     parser.add_argument('--log', type=int, default=100)
     parser.add_argument('--sample', type=int, default=0, help='Print sample every N steps (0=off)')
     parser.add_argument('--resume', action='store_true', help='Continue from saved expert model')
-    parser.add_argument('--push', type=int, default=100, help='Push to github every N steps (default 100)')
+    parser.add_argument('--push', type=int, default=1000, help='Push to github every N steps (default 1000)')
     parser.add_argument('--save', type=int, default=0, help='Save checkpoint every N steps (0=only at end)')
     args = parser.parse_args()
 

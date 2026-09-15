@@ -94,6 +94,6 @@
 ## Training Automation (Sep 15, 2026)
 
 - `train_expert.py` always `git_push` at end of training, regardless of `--push` flag
-- `--push` default changed from 0 to 100 (periodic push every 100 steps)
+- `--push` default changed from 0 to 1000 (periodic push every 1000 steps)
 - Training speed: ~0.04-0.06 steps/s at seq_len=128, much slower at seq_len=1024
 - Current bottleneck is training speed, not data quality
