@@ -331,3 +331,12 @@ Next Milestone: Complete 50k-step training, evaluate quality
 - **Style preference**: Joe opening responses with "sure!" or "no problem!" is liked.
   Soft preference — never enforce/reject data lacking it, don't retrofit existing data.
 
+## 21. RT3 Cand Review Pipeline (Sep 14, 2026)
+
+- Generated 31 cand files (2-3 chunks per expert, ~130 blocks each) across all 10 experts
+- Review prompts in `data/_gen/prompts_review_mt/` are templates — actual verdict files go in each expert's `data/_gen/{name}/` directory
+- **"finesh" workflow**: When cands are missing review verdicts (v1/v2), launch sub-agents to generate ACCEPT/REJECT verdicts based on the 5 review criteria (factual accuracy, multi-turn quality, directness, relevance, format), write verdict files as `{index}:ACCEPT` / `{index}:REJECT: reason` with final `VERDICT {count}/{total}` line
+- Run `python3 merge_mt.py` to merge accepted blocks into each expert's train.txt (dedup on first question)
+- Verdict files and `_v2` copies should match (both needed by merge_mt.py which does `v1 & v2` intersection)
+- Verified: tree (130/130 ACCEPT), reptiles_mt_07 (130/130 ACCEPT), greeting_mt_11 (125/130 ACCEPT, 5 rejected for filler)
+
