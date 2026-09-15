@@ -4,3 +4,4 @@
 [cot] dual-accepted=596 dropped(train)=263 dropped(intra)=0 MERGED=333
 [cot] dual-accepted=0 dropped(train)=0 dropped(intra)=0 MERGED=0
 [cot] dual-accepted=93 dropped(train)=15 dropped(intra)=0 MERGED=78
+[cot] dual-accepted=522 dropped(train)=212 dropped(intra)=0 MERGED=310
