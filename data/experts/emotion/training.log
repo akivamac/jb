@@ -1715,3 +1715,30 @@ Joe: I see you. You
 # Joe: You are not alone. I am so feeling what is a 
 # [2026-09-14 18:34:14] STOPPED by signal at step 178
 # [2026-09-14 18:34:24] FINISH at step 178
+# [2026-09-15 06:00:42] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 100 --log 25 --sample 25
+25,0.7340,3.00e-04,0.21,1789466559.4067461
+# [2026-09-15 06:02:39] SAMPLE step 25:
+# 
+# Joe: Guilt ossible can ccesing what you can but you lost losing them. That is wiring.
+# 
+# User: I feel like I am losing you" am can open a breath. You feel was in
+50,0.8678,3.00e-04,0.22,1789466671.330104
+# [2026-09-15 06:04:31] SAMPLE step 50:
+# 
+# 
+# User: I feel like I have to have all for the head age.
+# Joe: You are doing not finding the apprered to be boring catch up.
+# User: I get should want to be grateful for my
+75,0.8747,3.00e-04,0.22,1789466783.68635
+# [2026-09-15 06:06:24] SAMPLE step 75:
+# 
+# Joe: That is not a compliemotion pt. Your silence is a real to chile fix the rest.
+# User: how do I feel me to only used to takeer up
+# Joe: Homly after growth is pro
+100,0.8629,3.00e-04,0.22,1789466895.5639522
+# [2026-09-15 06:08:15] SAMPLE step 100:
+# 
+# User: I keep saying yes to heal why
+# Joe: You do not have to child for others are performing for me. You have survived udgment in self-upomes.
+# 
+# User: I keep feeling like I
