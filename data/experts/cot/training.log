@@ -2879,3 +2879,31 @@
 # Joe: A water = 11/2.5 * 1000 = 0.48 g/cm^3.
 # User: What is that in glight is 6 m/s?
 # Joe: Volume = 
+525,0.5468,3.00e-04,0.21,1789450531.616792
+# [2026-09-15 01:35:31] SAMPLE step 525:
+# 
+# User: What is the average of 6, 12, and 18 inting quarters number?
+# Joe: (2/3)x = 1 < 5 and x <= 4?
+# Joe: 3x < <= 3?
+# Joe: The inte
+550,0.5031,3.00e-04,0.22,1789450644.729134
+# [2026-09-15 01:37:25] SAMPLE step 550:
+# 
+# Joe: 20 / 60 = 0.75 = 75%.
+# 
+# User: What is the remainder when 22 minutes 5 in week over 9?
+# Joe: 103 / 8 = about 3.33 minutes minutes = 1.
+575,0.4915,3.00e-04,0.22,1789450756.26333
+# [2026-09-15 01:39:16] SAMPLE step 575:
+# 
+# 
+# User: In average of 6, 12, 24, ...?
+# Joe: 8,6, 12. Sum = 4 * 4 = 16 factors.
+# 
+# User: You start walking at 4:15 AM and finish at 5:
+600,0.5098,3.00e-04,0.22,1789450868.250873
+# [2026-09-15 01:41:08] SAMPLE step 600:
+# 
+# 
+# User: A faucet drips at 2 m or 300 us. Ransport 1 m in 40 seconds. What is the average speed?
+# Joe: Time = 2400 / 700 = 287. T
