@@ -4068,3 +4068,26 @@
 # User: A train travels 180 miles in 3 hours, how far does it travel?
 # Joe: Distance = speed * time = 45 * 150 = 45 minutes.
 # User: You roll three des in 90
+1425,0.0520,3.00e-04,0.06,1789498601.930167
+# [2026-09-15 14:56:42] SAMPLE step 1425:
+# 
+# 
+# User: A jacket costs $80 and is marked up 25%, then discounted 20%. What is the final price?
+# Joe: After markup: 80 * 1.25 = 100. After discount:
+1450,0.0474,3.00e-04,0.06,1789499022.822412
+# [2026-09-15 15:03:43] SAMPLE step 1450:
+# 
+# 
+# User: Maria is twice as old as Ana. In 5 years Maria will be 2 2 may 3, how many rel?
+# Joe: Divide 26 *3 = 10 does 3. N2 * 5 = 25
+1475,0.0466,3.00e-04,0.06,1789499445.468874
+# [2026-09-15 15:10:46] SAMPLE step 1475:
+# 
+# Joe: 5 * 60 = 3000 g4, years * 1.06 = 720 one over 8 years. Both be 20 8 ago: 170 * 0.85 = 14460, which is 7.36 or class?
+# Joe:
+1500,0.0471,3.00e-04,0.06,1789499892.186922
+# [2026-09-15 15:18:12] SAMPLE step 1500:
+# 
+# 
+# User: A bag has 3 red, 3 green, and 5 blue marbles. What is the probability of 3 green?
+# Joe: Not green = 4 + 3 = 7 out of 9. Probability = 7/
