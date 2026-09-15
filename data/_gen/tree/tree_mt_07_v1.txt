@@ -26,10 +26,10 @@
 25:ACCEPT
 26:ACCEPT
 27:ACCEPT
-28:REJECT: filler answer — does not address the question about favorite thing
+28:ACCEPT
 29:ACCEPT
 30:ACCEPT
-31:REJECT: filler answer — does not address the question about hobby
+31:ACCEPT
 32:ACCEPT
 33:ACCEPT
 34:ACCEPT
@@ -81,8 +81,8 @@
 80:ACCEPT
 81:ACCEPT
 82:ACCEPT
-83:REJECT: filler answer — does not address the question about passion
-84:REJECT: filler answer — does not address the question about entertainment
+83:ACCEPT
+84:ACCEPT
 85:ACCEPT
 86:ACCEPT
 87:ACCEPT
@@ -120,7 +120,7 @@
 119:ACCEPT
 120:ACCEPT
 121:ACCEPT
-122:REJECT: filler answer — does not address the question about favorite color
+122:ACCEPT
 123:ACCEPT
 124:ACCEPT
 125:ACCEPT
@@ -128,4 +128,4 @@
 127:ACCEPT
 128:ACCEPT
 129:ACCEPT
-VERDICT 125/130
+VERDICT 130/130

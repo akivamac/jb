@@ -9,3 +9,4 @@
 [greeting] dual-accepted=110 dropped(train)=110 dropped(intra)=0 MERGED=0
 [greeting] dual-accepted=110 dropped(train)=110 dropped(intra)=0 MERGED=0
 [greeting] dual-accepted=110 dropped(train)=110 dropped(intra)=0 MERGED=0
+[greeting] dual-accepted=235 dropped(train)=122 dropped(intra)=0 MERGED=113
