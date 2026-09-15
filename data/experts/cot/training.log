@@ -3319,3 +3319,24 @@
 # Joe: (60/4) / 2 = 15 *60 = $120.
 # User: What is 99 * 101?
 # Joe: 99 * 101 = (100 - 1)(100 + 1) = 100^2 - 1 = 
+2325,0.0878,3.00e-04,0.21,1789458714.623956
+# [2026-09-15 03:51:54] SAMPLE step 2325:
+# 
+# User: If you reverse the digits of a two-digit number, the result is 27 less. What is the number if the digits sum to 11?
+# Joe: Let tens digit be a, units 
+2350,0.0985,3.00e-04,0.22,1789458826.3317912
+# [2026-09-15 03:53:46] SAMPLE step 2350:
+# 
+# Joe: 3 - 2 = 6 - 6 = 12 degrees.
+# 
+# User: A can do a job in 6 days account teeth?
+# Joe: 2 * 30 = 2 * 3 = 18, so 2 c + 4c
+2375,0.0935,3.00e-04,0.22,1789458941.318521
+# [2026-09-15 03:55:41] SAMPLE step 2375:
+# 
+# Joe: A car ms once each measure. The only just 3 m we suWork B end brick and 2 QYice from standing. I other 1 times work. The order of T T, T. How much
+2400,0.0901,3.00e-04,0.22,1789459054.6457758
+# [2026-09-15 03:57:34] SAMPLE step 2400:
+# 
+# User: You can buy 15 items at $80. and it for $14 or $8. What is the profit margin as a percentage of the selling price?
+# Joe: Profit is 20 - 
