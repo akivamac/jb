@@ -3194,3 +3194,27 @@
 # Joe: Total = are 1, 2, 2, 2, 3, 4, 3.
 # 
 # User: The numbers are 2, 2, 3, 4, 6, 8, 10, 11, 12, 13, 14, 15. With numbers the number is 5 more. 
+1825,0.1266,3.00e-04,0.21,1789456441.422265
+# [2026-09-15 03:14:01] SAMPLE step 1825:
+# 
+# Joe: A uses 20 * 3.50 = 7.5 Flour = 19. Weight = 62.
+# 
+# User: A plan flies 250 km in 2 hours against a 12 per hour. 10 and work together 10 in
+1850,0.1277,3.00e-04,0.22,1789456555.0745091
+# [2026-09-15 03:15:55] SAMPLE step 1850:
+# 
+# User: Any is 5 times a number minus twice the same number equals 18. What is the number?
+# Joe: 4x - 2x = 18, so 5x = 18 and x = 9.
+# User: What is 
+1875,0.1210,3.00e-04,0.22,1789456666.4615738
+# [2026-09-15 03:17:46] SAMPLE step 1875:
+# 
+# User: A $200 item is discounted three times by 10% each time. What is the final price?
+# Joe: After first 10%: 60 * 0.85 = 170. Total hours.
+# 
+# User: A f
+1900,0.1341,3.00e-04,0.23,1789456777.3451872
+# [2026-09-15 03:19:37] SAMPLE step 1900:
+# 
+# User: What is 10% of 50% of 200?
+# Joe: 20% of 200 = 40, so 40% = 200. Three + 40 + x = 220 + 40 + x = 5 + 20. Then 10
