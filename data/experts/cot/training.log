@@ -2828,3 +2828,28 @@
 # User: solve x + 18 = 50, so 5x = 38, so x = 10.
 # User: if you divide by 80 to get x = 8.
 # Joe: So x/3 - 2 = 1 - 1 
+325,0.6519,3.00e-04,0.21,1789449618.432843
+# [2026-09-15 01:20:18] SAMPLE step 325:
+# 
+# Joe: 9 + 10 = 50 + 3 + 3 = 2.
+# 
+# User: A scveler between 1 students are 500 calor ands. 2. What is the third range?
+# Joe: 18 * 25 = 100 + 
+350,0.6348,3.00e-04,0.22,1789449730.102957
+# [2026-09-15 01:22:10] SAMPLE step 350:
+# 
+# Joe: Divide 10 by 8 to get 9, then multiply by 2 to get 44. Two thirds of 27 is 18.
+# User: what is 10% of 350?
+# Joe: 10% of 350 is 
+375,0.7036,3.00e-04,0.22,1789449841.9825978
+# [2026-09-15 01:24:02] SAMPLE step 375:
+# 
+# User: If a = 10, then multiply by 3, you get 18. What is the number?
+# Joe: (x - 9) / 2 = 10, so x - 2 = 4, so x = 6.
+# User: Solv
+400,0.6783,3.00e-04,0.22,1789449954.4258718
+# [2026-09-15 01:25:54] SAMPLE step 400:
+# 
+# User: You save $450 per month. If 15% tax on the week?
+# Joe: Tax = 20 * 0.08 = 5. Total = 3 + 12.9 = $81.
+# User: You buy 4 
