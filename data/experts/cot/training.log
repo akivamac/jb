@@ -3070,3 +3070,29 @@
 # 
 # User: A fter year savings discount: $60 for 5 hours, how many miles each much is left?
 # Joe: 45 / 3 
+1325,0.2248,3.00e-04,0.21,1789454164.990276
+# [2026-09-15 02:36:05] SAMPLE step 1325:
+# 
+# User: What is the mean?
+# Joe: Sum of 9 to 9, 20 = 15, 55 is between 500 and 60 = 21 overliters.
+# 
+# User: Is 20 grade cm at a orter. How 
+1350,0.2230,3.00e-04,0.22,1789454277.101849
+# [2026-09-15 02:37:57] SAMPLE step 1350:
+# 
+# Joe: Sum = 11 - 3 = 21, so 4x = 24, so x = 6.
+# User: Verify it.
+# Joe: 9 - 2(3) = 9 - 6 = 3, so 3n + 3 =
+1375,0.2300,3.00e-04,0.22,1789454389.884816
+# [2026-09-15 02:39:50] SAMPLE step 1375:
+# 
+# Joe: Neggs = 2 * 14 = 2 m/s.
+# User: What is the mode of 90, what is the other into?
+# Joe: Sorted those other from 1 to reach 100 9 km on a deck:
+1400,0.2155,3.00e-04,0.22,1789454501.078474
+# [2026-09-15 02:41:41] SAMPLE step 1400:
+# 
+# User: What is 36 * 1?
+# Joe: 7 * 8 = 56, 6 * 3 = 18, so 56 + 18 = 74.
+# User: What is 100 - 37 + 15?
+# Joe: 100 - 37 
