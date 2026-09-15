@@ -3627,3 +3627,27 @@
 # Joe: Subtract 2 to get 2x + 2x = 6.
 # User: What is x + 2x = 6x. The very numbers are 7, what is the new fit?
 # Joe: The two solution, so its 
+3625,0.0711,3.00e-04,0.21,1789464669.881651
+# [2026-09-15 05:31:10] SAMPLE step 3625:
+# 
+# Joe: 10% of 500 is 60% of 200 is 120, then 25% of 120 is 30. The answer is 30.
+# User: how much for 3 oranges at 2 dollars each?
+# Joe: Multi
+3650,0.0649,3.00e-04,0.23,1789464780.8156722
+# [2026-09-15 05:33:01] SAMPLE step 3650:
+# 
+# Joe: Circ: 42, 3, 4, 8, 16, 16. Median = 9.
+# User: Solve: 6x - 4 = 2x + 16.
+# Joe: Subtract 2x to get 4x - 4 = 16. 
+3675,0.0624,3.00e-04,0.22,1789464893.7752519
+# [2026-09-15 05:34:54] SAMPLE step 3675:
+# 
+# Joe: By Pythagoras: c^2 = 6^2 + 8^2 = 36 + 64 = 100, so L = 10 / 6 = 9 / 16 = 4/3 = 40.
+# 
+# User: You drive
+3700,0.0645,3.00e-04,0.22,1789465006.902482
+# [2026-09-15 05:36:47] SAMPLE step 3700:
+# 
+# Joe: 20 * 25 = 25 = 25 * 81 = 6000.
+# User: A tank holds 2000 gallons. It is $30 gallons and is for 1 $3. What is the percent discount?
+# Joe: 
