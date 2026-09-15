@@ -1,0 +1,130 @@
+0:ACCEPT
+1:ACCEPT
+2:ACCEPT
+3:REJECT: follow-ups jump to logging, unrelated to map/filter topic
+4:REJECT: follow-ups drift to logging/optimization, not about list comprehension
+5:ACCEPT
+6:ACCEPT
+7:ACCEPT
+8:ACCEPT
+9:ACCEPT
+10:ACCEPT
+11:ACCEPT
+12:ACCEPT
+13:ACCEPT
+14:REJECT: follow-ups are generic template questions unrelated to decorators
+15:ACCEPT
+16:ACCEPT
+17:ACCEPT
+18:ACCEPT
+19:ACCEPT
+20:REJECT: duplicate identical turn repeated within the block
+21:ACCEPT
+22:ACCEPT
+23:ACCEPT
+24:REJECT: duplicate of block 5
+25:ACCEPT
+26:REJECT: follow-up about data structures unrelated to exceptions
+27:ACCEPT
+28:ACCEPT
+29:ACCEPT
+30:ACCEPT
+31:REJECT: generic "use in a class" follow-up does not build on dict comprehension answer
+32:ACCEPT
+33:ACCEPT
+34:ACCEPT
+35:ACCEPT
+36:ACCEPT
+37:ACCEPT
+38:REJECT: generic "use in a class" follow-up unrelated to collections
+39:ACCEPT
+40:ACCEPT
+41:ACCEPT
+42:REJECT: duplicate of block 22
+43:REJECT: generic template follow-ups unrelated to timeit
+44:ACCEPT
+45:ACCEPT
+46:ACCEPT
+47:REJECT: nested-data follow-up unrelated to static methods
+48:ACCEPT
+49:ACCEPT
+50:ACCEPT
+51:ACCEPT
+52:ACCEPT
+53:REJECT: duplicate identical turn repeated within the block
+54:ACCEPT
+55:ACCEPT
+56:REJECT: word-for-word repeat of existing training material
+57:ACCEPT
+58:ACCEPT
+59:ACCEPT
+60:ACCEPT
+61:ACCEPT
+62:REJECT: word-for-word repeat of existing training material
+63:ACCEPT
+64:ACCEPT
+65:ACCEPT
+66:REJECT: duplicate identical turn repeated within the block
+67:ACCEPT
+68:ACCEPT
+69:REJECT: generic template follow-ups unrelated to generators
+70:REJECT: reverse-result follow-up unrelated to class methods
+71:REJECT: generic "use in a class" follow-up unrelated to red-green-refactor
+72:ACCEPT
+73:REJECT: duplicate of block 59
+74:ACCEPT
+75:ACCEPT
+76:REJECT: duplicate of block 72
+77:ACCEPT
+78:ACCEPT
+79:ACCEPT
+80:ACCEPT
+81:REJECT: generic template follow-ups unrelated to the re module
+82:ACCEPT
+83:REJECT: generic template follow-ups unrelated to operator overloading
+84:ACCEPT
+85:ACCEPT
+86:REJECT: duplicate identical turn repeated within the block
+87:REJECT: word-for-word repeat of existing training material
+88:ACCEPT
+89:ACCEPT
+90:ACCEPT
+91:REJECT: duplicate of block 5
+92:REJECT: follow-ups jump to logging, unrelated to map/filter topic
+93:ACCEPT
+94:ACCEPT
+95:REJECT: duplicate of block 23
+96:ACCEPT
+97:ACCEPT
+98:ACCEPT
+99:ACCEPT
+100:ACCEPT
+101:ACCEPT
+102:REJECT: duplicate identical turn repeated within the block
+103:ACCEPT
+104:REJECT: generic template follow-ups unrelated to the sys module
+105:ACCEPT
+106:ACCEPT
+107:ACCEPT
+108:REJECT: generic template follow-ups unrelated to modules
+109:REJECT: generic template follow-ups unrelated to static methods
+110:ACCEPT
+111:REJECT: duplicate of block 59
+112:ACCEPT
+113:REJECT: duplicate of block 22
+114:ACCEPT
+115:ACCEPT
+116:ACCEPT
+117:ACCEPT
+118:REJECT: duplicate identical turn repeated within the block
+119:ACCEPT
+120:REJECT: duplicate of block 78
+121:ACCEPT
+122:ACCEPT
+123:REJECT: duplicate identical turn repeated within the block
+124:ACCEPT
+125:REJECT: duplicate of block 107
+126:ACCEPT
+127:REJECT: generic template follow-ups unrelated to dataclasses
+128:REJECT: duplicate of block 60
+129:REJECT: generic template follow-ups unrelated to zip
