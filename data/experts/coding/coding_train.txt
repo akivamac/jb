@@ -7883,3 +7883,8 @@ Joe: Protocol classes define structural subtyping in Python.
 User: how does structural subtyping differ from nominal typing
 Joe: Structural subtyping checks methods and attributes, while nominal checks inheritance.
 
+User: how do you use the proxy pattern
+Joe: The proxy pattern controls access to an object by providing a surrogate.
+User: what is a virtual proxy
+Joe: A virtual proxy is a placeholder for an expensive object created lazily.
+

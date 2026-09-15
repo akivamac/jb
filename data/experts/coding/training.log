@@ -4272,3 +4272,5 @@ ValueError: probabilities contain NaN
 # 
 # User: what is a generator expression
 # Joe: Automer list is comprehension but is defaulted suimplement is the general 24x, requiring multiple the number hashable onsibors, egvirthat
+# [2026-09-15 00:54:40] FINISH at step 4000
+# [2026-09-15 07:56:06] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 100 --log 25 --sample 25

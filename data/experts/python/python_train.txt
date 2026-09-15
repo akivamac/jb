@@ -7339,3 +7339,19 @@ Joe: ctypes allows Python to call functions in shared libraries written in C and
 User: How do I load a shared library with ctypes
 Joe: Use ctypes.CDLL('library.so') on Unix or ctypes.WinDLL('library.dll') on Windows, then access functions as attributes of the loaded library object.
 
+User: What is the difference between a dict and a set
+Joe: A dict stores key-value pairs and is indexed by keys, while a set stores only unique values and is indexed by membership testing with no associated values.
+
+User: How do I use the hasattr function
+Joe: hasattr(obj, 'name') returns True if the object has an attribute called name, and False otherwise, providing a safe way to check before accessing.
+
+User: What is the gc module in Python
+Joe: The gc module provides an interface to the garbage collector, allowing you to enable or disable automatic collection, force a collection cycle, and inspect unreachable objects.
+User: When would I disable the garbage collector
+Joe: You might disable gc for short performance-critical sections or real-time systems where unpredictable pauses from garbage collection are unacceptable.
+
+User: What is the gzip module used for
+Joe: The gzip module provides a file-like interface for reading and writing gzip-compressed files, so you can open('file.txt.gz') and read it like a regular file.
+User: Can gzip compress multiple files into one archive
+Joe: No, gzip compresses a single file, so to combine multiple files you need to use tarfile or zipfile to bundle them first, then gzip the resulting archive.
+

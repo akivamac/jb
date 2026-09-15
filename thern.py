@@ -14,7 +14,7 @@ def launch(cmd: list) -> subprocess.Popen:
 experts = ["coding", "cot", "emotion", "fish", "greeting",
            "horse", "knowledge", "python", "reptiles", "tree"]
 
-MAX_PARALLEL = 1
+MAX_PARALLEL = 2
 running = []  # list of (proc, expert)
 
 i = 0
