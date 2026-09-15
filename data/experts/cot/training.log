@@ -3994,3 +3994,28 @@
 # 
 # User: What is 5/8 + 1/3 + 1/6?
 # Joe: LCD = 2/3 = 16/24 and 3/8 = 9/12 and 1/4 = 9/12. Since 8/12 = 21/6
+1125,0.0554,3.00e-04,0.06,1789493668.716887
+# [2026-09-15 13:34:29] SAMPLE step 1125:
+# 
+# User: The numbers are all types 2.
+# 
+# User: SI tens, 7, how many students are in whole that carries the 10th, the difference is 40 in the same ility numbers?
+# Joe: 3 + 5 + x
+1150,0.0533,3.00e-04,0.06,1789494095.657105
+# [2026-09-15 13:41:36] SAMPLE step 1150:
+# 
+# User: A car weighted a applies $80 per ticket?
+# Joe: Density = 950 years. Past 70 = 80. Mean = 70 degrees.
+# 
+# User: A can do a job in 8 hours 
+1175,0.0508,3.00e-04,0.06,1789494503.2528052
+# [2026-09-15 13:48:23] SAMPLE step 1175:
+# 
+# Joe: Total = 5 + 0.5 + x*6 + 4- 8 = 1.5, so slickets: 7 is 3 fish.
+# User: What fraction of the tray is that?
+# Joe: 16 / 1 = 26
+1200,0.0506,3.00e-04,0.06,1789494926.419986
+# [2026-09-15 13:55:27] SAMPLE step 1200:
+# 
+# User: A class of 350 and 45 students passed by what must the team?
+# Joe: The possible < median from 6 and sum to 5 - x < 2, so positive, 18ngest so -6
