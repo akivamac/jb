@@ -90,3 +90,10 @@
 - Run `python3 merge_mt.py` to merge accepted blocks into each expert's train.txt (dedup on first question)
 - Verdict files and `_v2` copies should match (both needed by merge_mt.py which does `v1 & v2` intersection)
 - Verified: tree (130/130 ACCEPT), reptiles_mt_07 (130/130 ACCEPT), greeting_mt_11 (125/130 ACCEPT, 5 rejected for filler)
+
+## Training Automation (Sep 15, 2026)
+
+- `train_expert.py` always `git_push` at end of training, regardless of `--push` flag
+- `--push` default changed from 0 to 100 (periodic push every 100 steps)
+- Training speed: ~0.04-0.06 steps/s at seq_len=128, much slower at seq_len=1024
+- Current bottleneck is training speed, not data quality
