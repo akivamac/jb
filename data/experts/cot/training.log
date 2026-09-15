@@ -3603,3 +3603,27 @@
 # Joe: 1000 / 3000 = 5 liters.
 # 
 # User: How long to fill a
+3525,0.0699,3.00e-04,0.21,1789464212.9272351
+# [2026-09-15 05:23:33] SAMPLE step 3525:
+# 
+# User: What if you add 15 from a 7- (-7)?
+# Joe: P(-7) = -7 x = - 7 and x + 5 - 7 = 8.
+# User: What is the probability of drawing
+3550,0.0677,3.00e-04,0.22,1789464326.600794
+# [2026-09-15 05:25:26] SAMPLE step 3550:
+# 
+# User: A store sells apples for $10 each. What is the profit margin as a percentage of 3 g/5 cost?
+# Joe: 30 * 18 = 36 feet.
+# User: What is that in 
+3575,0.0688,3.00e-04,0.22,1789464439.236705
+# [2026-09-15 05:27:19] SAMPLE step 3575:
+# 
+# Joe: 3x + 4x = 21, so x = 7.
+# User: Estimate 398 * 21.
+# Joe: Round to 400 * 20 = 8000. The actual answer is 8358, so the 
+3600,0.0634,3.00e-04,0.22,1789464550.553323
+# [2026-09-15 05:29:10] SAMPLE step 3600:
+# 
+# Joe: Subtract 2 to get 2x + 2x = 6.
+# User: What is x + 2x = 6x. The very numbers are 7, what is the new fit?
+# Joe: The two solution, so its 
