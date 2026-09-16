@@ -263,11 +263,8 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
     # Write lock
     write_lock(name, os.getpid())
 
-    # Graceful stop
-    should_stop = False
     def handle_stop(signum, frame):
-        nonlocal should_stop
-        should_stop = True
+        sys.exit(0)
     signal.signal(signal.SIGUSR1, handle_stop)
     signal.signal(signal.SIGINT, handle_stop)
     signal.signal(signal.SIGTERM, handle_stop)
@@ -276,12 +273,6 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
     step = 0
     try:
         for step in range(1, steps + 1):
-            if should_stop:
-                print("\n[INFO] Stop signal received. Saving and exiting...")
-                with open(log_path, "a") as lf:
-                    lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] STOPPED by signal at step {step}\n")
-                break
-
             model.zero_grad()
 
             starts = np.random.randint(0, len(data) - seq_len - 1, size=batch_size)
@@ -324,9 +315,10 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
             if save_every and step % save_every == 0:
                 model.save(model_path)
 
-    except KeyboardInterrupt:
-        with open(log_path, "a") as lf:
-            lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] INTERRUPT at step {step}\n")
+    except (KeyboardInterrupt, SystemExit):
+        if not completed:
+            with open(log_path, "a") as lf:
+                lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] STOPPED by signal at step {step}\n")
         raise
     else:
         completed = True
