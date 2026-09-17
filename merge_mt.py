@@ -58,19 +58,20 @@ def sim(a, b):
 
 names = sys.argv[1:] or EXPERTS
 for name in names:
-    edir = os.path.join(GEN, name)
+    edir = os.path.join(GEN, 'prompts_mt')
     if not os.path.isdir(edir):
         continue
     train_path = os.path.join(BASE, name, f'{name}_train.txt')
     train_qs = set(norm(q) for q in (l[6:] for l in open(train_path) if l.startswith('User: ')))
+    review_dir = os.path.join(GEN, 'prompts_review_mt')
 
     accepted = []  # (chunk, idx, block)
     for f in sorted(os.listdir(edir)):
-        if not (f.endswith('_cand.txt') and '_mt_' in f):
+        if not (f.startswith(name) and f.endswith('.txt')):
             continue
-        chunk = f[:-len('_cand.txt')]
-        v1 = read_verdict(os.path.join(edir, f'{chunk}_v1.txt'))
-        v2 = read_verdict(os.path.join(edir, f'{chunk}_v2.txt'))
+        chunk = f[:-len('.txt')]
+        v1 = read_verdict(os.path.join(review_dir, f'{chunk}_v1.txt'))
+        v2 = read_verdict(os.path.join(review_dir, f'{chunk}_v2.txt'))
         ok = v1 & v2
         for i, block in enumerate(load_blocks(os.path.join(edir, f))):
             if i in ok:

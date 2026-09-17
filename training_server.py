@@ -88,27 +88,28 @@ def is_process_alive(pid):
         os.kill(pid, 0)
     except (OSError, ProcessLookupError):
         return False
-    # Verify PID isn't reused — check cmdline contains train_expert.py
+    # On macOS, /proc doesn't exist. Use subprocess to check cmdline.
     try:
-        with open(f'/proc/{pid}/cmdline', 'rb') as f:
-            cmdline = f.read().decode('utf-8', errors='replace')
-        return 'train_expert' in cmdline
-    except (OSError, FileNotFoundError):
+        result = subprocess.run(['ps', '-p', str(pid), '-o', 'comm='],
+                               capture_output=True, text=True, timeout=2)
+        return 'train_expert' in result.stdout
+    except Exception:
         return False
 
 def _lock_owned_by(name, pid):
     """Check if PID is a train_expert process running this specific expert."""
     try:
-        with open(f'/proc/{pid}/cmdline', 'rb') as f:
-            cmdline = f.read().decode('utf-8', errors='replace')
+        result = subprocess.run(['ps', '-p', str(pid), '-o', 'args='],
+                               capture_output=True, text=True, timeout=2)
+        cmdline = result.stdout
         if 'train_expert' not in cmdline:
             return False
-        args = [a for a in cmdline.split('\x00') if a]
-        if '--name' in args:
+        if '--name' in cmdline:
+            args = cmdline.split()
             i = args.index('--name')
             return i + 1 < len(args) and args[i + 1] == name
         return False
-    except (OSError, FileNotFoundError):
+    except Exception:
         return False
 
 def count_running():
@@ -1245,9 +1246,9 @@ if __name__ == '__main__':
 
     ThreadingHTTPServer.allow_reuse_address = True
     try:
-        server = ThreadingHTTPServer(('127.0.0.1', PORT), TrainingHandler)
+        server = ThreadingHTTPServer(('', PORT), TrainingHandler)
     except OSError as e:
-        print(f"FATAL: could not bind 127.0.0.1:{PORT}: {e}", flush=True)
+        print(f"FATAL: could not bind port{PORT}: {e}", flush=True)
         sys.exit(1)
     print(f"Training Dashboard running at http://localhost:{PORT}", flush=True)
     try:

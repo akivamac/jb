@@ -33,8 +33,8 @@
 - `training/tokenizer.py` - BPE tokenizer (2000-token vocab), saves to `data/tokenizer.json`
 - `training/expert.py` - ExpertRegistry: load all experts, quality filter, confidence-blend logits
 - `training/router.py` + `training/train_router.py` - RouterNet classifier (message → expert probs)
-- `training/make_conversations.py` - Generates Q&A training pairs
 - `training/prepare_data.py` - Combines conversations + brain knowledge → `data/train.txt`
+- **Old main model scripts removed**: `make_conversations.py`, `chain.txt` — replaced by the expert ensemble pipeline
 - `data/experts.json` - Expert registry config (10 experts + quality filter thresholds)
 - `data/experts/{name}/` - Per-expert dirs: `{name}.npz`, `{name}_train.txt`, `{name}_test.txt`, `training.log`
 - `grow_model.py` / `grow_expert.py` - Expand embed_dim/layers without retraining (model vs expert)
@@ -91,7 +91,18 @@
 - Verdict files and `_v2` copies should match (both needed by merge_mt.py which does `v1 & v2` intersection)
 - Verified: tree (130/130 ACCEPT), reptiles_mt_07 (130/130 ACCEPT), greeting_mt_11 (125/130 ACCEPT, 5 rejected for filler)
 
+## Critical Bug Fixes (Sep 17, 2026)
+
+- `server.py` / `training_server.py`: Replaced `[IP_ADDRESS]` placeholder with `''` (all interfaces)
+- `training_server.py`: Replaced `/proc/{pid}/cmdline` with `ps -p {pid} -o args=` for macOS compatibility
+- `while.py`: Replaced `proc.wait()` blocking with polling loop so deadline check is reached
+- `thern.py`: Added `fcntl.flock()` to prevent duplicate instances; acquires/releases lock per cycle
+- `merge_mt.py` / `merge_gen.py`: Fixed path from `data/_gen/{name}/` to `data/_gen/prompts_mt/` + `data/_gen/prompts_review_mt/`
+- `grow_model.py`: Removed dangerous `.tolist()` calls that could silently change float32 -> float64 in Adam state
+- `generate_fish_07.py`: Removed trailing `PYEOF` bash heredoc terminator from Python file
+
 ## Training Automation (Sep 15, 2026)
+
 
 - `train_expert.py` always `git_push` at end of training, regardless of `--push` flag
 - `--push` default changed from 0 to 1000 (periodic push every 1000 steps)

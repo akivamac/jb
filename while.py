@@ -16,12 +16,14 @@ def main():
             stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
             start_new_session=True,
         )
-        proc.wait()
-        print(f"[{datetime.datetime.now()}] Cycle {cycle}: thern.py exited (code {proc.returncode})", flush=True)
+        while proc.poll() is None and datetime.datetime.now() < DEADLINE:
+            time.sleep(10)
+        ret = proc.poll()
+        print(f"[{datetime.datetime.now()}] Cycle {cycle}: thern.py exited (code {ret})", flush=True)
+        if ret is not None and ret != 0:
+            print(f"[{datetime.datetime.now()}] WARNING: thern.py crashed (exit code {ret})", flush=True)
         if datetime.datetime.now() >= DEADLINE:
             break
-        print(f"[{datetime.datetime.now()}] Brief pause before next cycle...", flush=True)
-        time.sleep(5)
     print(f"[{datetime.datetime.now()}] Deadline reached. Done.", flush=True)
 
 if __name__ == "__main__":

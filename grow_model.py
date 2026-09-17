@@ -196,8 +196,8 @@ def expand_dim(params, adam, old_C, new_C, n_heads, old_L):
 
     new_adam = None
     if adam:
-        new_adam = {'t': adam['t'], 'm': {k: v2.tolist() for k, v2 in m.items()},
-                    'v': {k: v2.tolist() for k, v2 in v.items()}}
+        new_adam = {'t': adam['t'], 'm': {k: v2 for k, v2 in m.items()},
+                    'v': {k: v2 for k, v2 in v.items()}}
 
     return p, new_adam
 
@@ -234,15 +234,13 @@ def add_layers(params, adam, old_L, new_L, C):
         m_dict[key] = zeros(p[key].shape)
         v_dict[key] = zeros(p[key].shape)
 
-    new_adam = None
-    if adam:
-        new_m = {k: np.array(adam['m'][k], dtype=np.float32) for k in adam['m']}
-        new_v = {k: np.array(adam['v'][k], dtype=np.float32) for k in adam['v']}
-        new_m.update(m_dict)
-        new_v.update(v_dict)
-        new_adam = {'t': adam['t'],
-                    'm': {k: v2.tolist() for k, v2 in new_m.items()},
-                    'v': {k: v2.tolist() for k, v2 in new_v.items()}}
+    new_m = {k: np.array(adam['m'][k], dtype=np.float32) for k in adam['m']}
+    new_v = {k: np.array(adam['v'][k], dtype=np.float32) for k in adam['v']}
+    new_m.update(m_dict)
+    new_v.update(v_dict)
+    new_adam = {'t': adam['t'],
+                'm': {k: v2 for k, v2 in new_m.items()},
+                'v': {k: v2 for k, v2 in new_v.items()}}
 
     return p, new_adam
 

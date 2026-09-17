@@ -2056,3 +2056,57 @@ Joe: I see you. You
 # Joe: 
 # [2026-09-15 07:52:53] STOPPED by signal at step 1441
 # [2026-09-15 07:52:54] FINISH at step 1441
+# [2026-09-16 09:11:59] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --log 25 --sample 25
+25,0.0541,3.00e-04,0.02,1789565914.3218298
+# [2026-09-16 09:38:35] SAMPLE step 25:
+# 
+# User: I feel like I am always trying to fix it
+# Joe: That is a heavy kind of the relationship that is normal. It is deeplycan you anyway. Asies anything somees. Most of 
+50,0.0527,3.00e-04,0.02,1789567405.6152582
+# [2026-09-16 10:03:26] SAMPLE step 50:
+# 
+# User: I feel bad about my brother through seek
+# Joe: Start with small preferen
+# User: I set a boundary about not being called dramatic when I express feelings
+# Joe: Being labeled the too stress
+75,0.0570,3.00e-04,0.02,1789568723.1701498
+# [2026-09-16 10:25:23] SAMPLE step 75:
+# 
+# Joe: Routines are anchors and losing one leaves us adrift. Give yourself the es er. Keep fet's Focus on what you can control today and anchor yourself.
+# 
+# User: I feel
+100,0.0522,3.00e-04,0.02,1789570162.170495
+# [2026-09-16 10:49:23] SAMPLE step 100:
+# 
+# User: I feel like I am wasting my potential
+# Joe: Potential is not a deadline. You are on your own path and it has its own timeline. What matters is that nothing is one
+125,0.0495,3.00e-04,0.02,1789571497.690409
+# [2026-09-16 11:11:38] SAMPLE step 125:
+# 
+# User: I feel like I need to be appreciated
+# Joe: That are waking and being one are not lolistening. Be honest is about her debt so that feels like triing hour, the you
+150,0.0517,3.00e-04,0.02,1789572678.3827698
+# [2026-09-16 11:31:19] SAMPLE step 150:
+# 
+# User:
+# User: I feel anxious about meeting my partner's friends
+# Joe: They already like someone your partner likes, so you have a head start. Be yourself, ask questions, and remember
+175,0.0518,3.00e-04,0.02,1789574102.087273
+# [2026-09-16 11:55:02] SAMPLE step 175:
+# 
+# Joe: A calm "just postwell. are time unstat it. Practice of plan the rutime things you build with own will not birthdays.
+# 
+# User: I feel anxious about the miss me
+# Joe:
+200,0.0500,3.00e-04,0.02,1789575343.528138
+# [2026-09-16 12:15:44] SAMPLE step 200:
+# 
+# User: my boss says it looks bad
+# Joe: Taking your says more about them than you. It a lot they easlect you remember they are angry. Take a breath before you say your   
+225,0.0505,3.00e-04,0.02,1789576615.7893262
+# [2026-09-16 12:36:56] SAMPLE step 225:
+# 
+# User: I treat myself to something nice
+# Joe: Good. You do not need a flaw, it is a comfort us " take a break, to single take a walk or a quiet pause.
+# User:
+# [2026-09-17 09:23:48] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --log 25 --sample 25

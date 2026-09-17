@@ -886,4 +886,3 @@ print(f"Verified blocks: {len(block_groups)}")
 multi = sum(1 for b in block_groups if b.count('\nUser:') > 1)
 print(f"Multi-turn: {multi}, Single-turn: {len(block_groups) - multi}")
 print(f"Ratio: {multi/len(block_groups):.2f} multi-turn")
-PYEOF

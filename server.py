@@ -364,7 +364,7 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     ThreadingHTTPServer.allow_reuse_address = True
-    server = ThreadingHTTPServer(('127.0.0.1', PORT), Handler)
+    server = ThreadingHTTPServer(('', PORT), Handler)
     print(f"Joe Brain running at http://localhost:{PORT}")
     print("Open that URL in your browser. Ctrl+C to stop.")
     try:

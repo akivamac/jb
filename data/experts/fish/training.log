@@ -2549,3 +2549,50 @@ Joe: A fish kayak is a stable, specially designed kayak for angling. Features in
 # Joe: A clean fish mimic ating, reaching rounded, substrate while to over 11 to 5 ppm, gallons to aquarium to reduce stress fish, and recognize their own. Fish
 # [2026-09-14 18:34:35] STOPPED by signal at step 150
 # [2026-09-14 18:34:44] FINISH at step 150
+# [2026-09-16 09:12:00] RESUME: training/train_expert.py --name fish --steps 4000 --resume --push 500 --log 25 --sample 25
+25,1.3584,3.00e-04,0.02,1789565794.170409
+# [2026-09-16 09:36:34] SAMPLE step 25:
+# 
+# 
+# User: What is the difference between a fish directly and river?
+# Joe: A gid's rier-void peat the main hookyolation in might fisher with a bright colored marine ree fish 
+50,1.2296,3.00e-04,0.02,1789567417.4831302
+# [2026-09-16 10:03:38] SAMPLE step 50:
+# 
+# Joe: Fisheriangigrums natural fly with yellow fishing grounds have protein-rice cycling tive and process adaptation to separates to the protect fish. Most species spend visual structure 
+75,1.2120,3.00e-04,0.02,1789568677.4117692
+# [2026-09-16 10:24:38] SAMPLE step 75:
+# 
+# 
+# User: What is the best way to keep them from getting dexifight than a liquid kid fer k. Scchnoform a small jar for good for bottom-dwelling fish like provides snail 
+100,1.1977,3.00e-04,0.02,1789570253.613319
+# [2026-09-16 10:50:54] SAMPLE step 100:
+# 
+# Joe: Dine scrubbing in the tank, a sponge filter, peat coral to maintain and healthy conditions. Provide water clean and specific conditions. Produates, react their stable water 
+125,1.1598,3.00e-04,0.02,1789571575.31838
+# [2026-09-16 11:12:56] SAMPLE step 125:
+# 
+# Joe: What is a fish tridentic net?
+# Joe: A trident is a tic tank helper is a product containing live bed beneficial bacteria, crits, habitat, and critical 
+150,1.0942,3.00e-04,0.02,1789572660.523644
+# [2026-09-16 11:31:01] SAMPLE step 150:
+# 
+# User: Does the water is perfectly to tank need produce?
+# Joe: Yelong in the surface hoock that may need ratio. Overstocking in corals to maintain their buffer root multiple
+175,1.1500,3.00e-04,0.02,1789574000.603785
+# [2026-09-16 11:53:21] SAMPLE step 175:
+# 
+# 
+# User: What is a fish goldfish?
+# Joe: The goldfish is a small freshwater fish in the carp family, originally domesticated in China over a thousand years ago. They have been color
+200,1.0870,3.00e-04,0.02,1789575476.023045
+# [2026-09-16 12:17:56] SAMPLE step 200:
+# 
+# 
+# User: How do I pick new fish?
+# Joe: No, fish rays are slip color for bodies, nia goldfish and bettas to the with salt, or dark smooth bettas and I actually a
+225,1.1357,3.00e-04,0.02,1789577017.141251
+# [2026-09-16 12:43:37] SAMPLE step 225:
+# 
+# Joe: Keep a school in a platy for gold tanks with that need two excellent compounds and aggressive compatible for species change. The focused gressive corydoras per
+# [2026-09-17 09:23:48] RESUME: training/train_expert.py --name fish --steps 4000 --resume --push 500 --log 25 --sample 25

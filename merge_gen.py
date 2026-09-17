@@ -51,22 +51,23 @@ def sim(a, b):
 
 names = sys.argv[1:] or EXPERTS
 for name in names:
-    edir = os.path.join(GEN, name)
+    edir = os.path.join(GEN, 'prompts_mt')
     if not os.path.isdir(edir):
         continue
     train_path = os.path.join(BASE, name, f'{name}_train.txt')
     train_pairs = load_pairs(train_path)
     train_norm = [norm(q) for q, _ in train_pairs]
+    review_dir = os.path.join(GEN, 'prompts_review_mt')
 
     # gather accepted pairs across all chunks (need BOTH verdict files to say accept)
     accepted = []   # (chunk, index, q, a)
     for f in sorted(os.listdir(edir)):
-        if not f.endswith('_cand.txt'):
+        if not f.startswith(name) or not f.endswith('.txt'):
             continue
-        chunk = f[:-len('_cand.txt')]
+        chunk = f[:-len('.txt')]
         cand_path = os.path.join(edir, f)
-        v1 = read_verdict(os.path.join(edir, f'{chunk}_v1.txt'))
-        v2 = read_verdict(os.path.join(edir, f'{chunk}_v2.txt'))
+        v1 = read_verdict(os.path.join(review_dir, f'{chunk}_v1.txt'))
+        v2 = read_verdict(os.path.join(review_dir, f'{chunk}_v2.txt'))
         ok = v1 & v2  # dual accept
         cands = load_pairs(cand_path)
         for i, (q, a) in enumerate(cands):
