@@ -4532,3 +4532,259 @@ ValueError: probabilities contain NaN
 # [2026-09-15 15:43:02] SAMPLE step 1200:
 # 
 # Joe: When you only need to process should allow with atile keys, like If repeated the reprger inside the instance and takes institerating to the same object to use the same pattern. __init__str__
+# [2026-09-15 15:46:11] STOPPED by signal at step 1208
+# [2026-09-15 15:46:13] FINISH at step 1208
+# [2026-09-16 09:02:59] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 09:06:51] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+25,0.0494,3.00e-04,0.02,1789565284.0094981
+# [2026-09-16 09:28:04] SAMPLE step 25:
+# 
+# Joe: Arrayfinds the list length of delenumering every node in a graph s instead of a list indexts in one element at one each halving the most recent search space.
+# User: what is the
+50,0.0447,3.00e-04,0.02,1789566634.520594
+# [2026-09-16 09:50:35] SAMPLE step 50:
+# 
+# User: what is a balanced tree
+# Joe: A balanced tree keeps its height close to log n by ensuring no path is much longer than others. An unbalanced tree can degrade to a 
+75,0.0444,3.00e-04,0.02,1789567933.5880268
+# [2026-09-16 10:12:14] SAMPLE step 75:
+# 
+# Joe: A buffer requency ority the node number of al exponential and nested patterns. They are used so both range.
+# User: how do I know if a candidate multiple readable
+# Joe: Because 
+100,0.0502,3.00e-04,0.02,1789569383.657344
+# [2026-09-16 10:36:24] SAMPLE step 100:
+# 
+# User: what is a property setter for Tiquencing the set based on the program utions in the request is and receivers for a whole comparison types.
+# User: why must values need and l
+125,0.0444,3.00e-04,0.02,1789570834.126015
+# [2026-09-16 11:00:34] SAMPLE step 125:
+# 
+# Joe: Assert that is the subarray of concurrent computed set using the data, in partition of the neurons in antiate array.
+# User: how does the message size for_parallelbility to pro
+150,0.0480,3.00e-04,0.02,1789572219.900515
+# [2026-09-16 11:23:40] SAMPLE step 150:
+# 
+# Joe: A materialNif classes all must be every grants time, using expensive to fixed-size by that are more fields, binary proauthentication and would requires require fast conflicting opers.
+175,0.0437,3.00e-04,0.02,1789573564.310997
+# [2026-09-16 11:46:05] SAMPLE step 175:
+# 
+# User: what is a stack in CImore
+# Joe: SV silent the parameter what happens when I nothing a result of help cofon effective for pris subclass.
+# User: what is the difference between a cir
+200,0.0448,3.00e-04,0.02,1789574887.151891
+# [2026-09-16 12:08:08] SAMPLE step 200:
+# 
+# User: what is the difference between a thread and a process in memory
+# Joe: A process has its own isolated memory space, while threads within a process share the same heap. Each thread has its own 
+225,0.0438,3.00e-04,0.02,1789576144.851382
+# [2026-09-16 12:29:05] SAMPLE step 225:
+# 
+# Joe: The substring length as a stack needs a sequence, exptopi the sens append--first-read-point. The intern matches the current error when no swap occur, so iting the server names
+# [2026-09-16 12:47:51] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+25,0.0481,3.00e-04,0.04,1789577849.671624
+# [2026-09-16 12:57:30] SAMPLE step 25:
+# 
+# User: what is the difference between a loop and a value for while looping subeither compare, while side recurend. Both give the recursion assert you are calls -safe recursive call on
+50,0.0457,3.00e-04,0.04,1789578511.2437792
+# [2026-09-16 13:08:31] SAMPLE step 50:
+# 
+# 
+# User: how do you use the if observer pattern
+# Joe: The observer pattern lets objects subscribe to events. Act graph would needed instead and immutable references that inclgoing to multiple changes se
+75,0.0483,3.00e-04,0.04,1789579183.954693
+# [2026-09-16 13:19:44] SAMPLE step 75:
+# 
+# 
+# User: what is context manager
+# Joe: A context manager manages resources using the with statement, ensuring setup and cleanup run even if exceptions occur.
+# User: how do I share fixtures 
+100,0.0466,3.00e-04,0.04,1789579837.117413
+# [2026-09-16 13:30:37] SAMPLE step 100:
+# 
+# User: what is the current builder in train-test
+# Joe: QRed-before representation deletions of features locate available memory ls to be without specifying it. It catches lengthes.
+# 
+# User: what 
+125,0.0450,3.00e-04,0.04,1789580436.464117
+# [2026-09-16 13:40:36] SAMPLE step 125:
+# 
+# Joe: A path elements is when the data, a small goes without cycles. If a database values the to actually important and s stay feating without separate elements break into sorts much uncaes.
+# User: 
+150,0.0450,3.00e-04,0.04,1789581087.567755
+# [2026-09-16 13:51:28] SAMPLE step 150:
+# 
+# 
+# User: what is a regrGve reedits elements in every left so verge it the order you always touch the palinded g number of indexes on the sequence keepes.
+# User: what is the 
+175,0.0458,3.00e-04,0.04,1789581665.6738088
+# [2026-09-16 14:01:06] SAMPLE step 175:
+# 
+# 
+# User: what is a virtual environment
+# Joe: A virtual environment isolates project dependencies from tests are fast providing in testable is fonumpall, inserlarger because reveal 
+200,0.0476,3.00e-04,0.04,1789582266.79551
+# [2026-09-16 14:11:07] SAMPLE step 200:
+# 
+# Joe: It is the fixed-size in sorted order, and unordered about for the base's case real interface.
+# 
+# User: what is a rule in python
+# Joe: A package a context staytion fone 
+225,0.0441,3.00e-04,0.04,1789582860.00569
+# [2026-09-16 14:21:00] SAMPLE step 225:
+# 
+# 
+# User: what is the difference between a linked list
+# Joe: Bus By list and addressing, a trimal b pair, and product the queume property char
+# Joe: A list lets you append. Adding 
+250,0.0428,3.00e-04,0.04,1789583517.714276
+# [2026-09-16 14:31:58] SAMPLE step 250:
+# 
+# User: What is a red-black tree
+# Joe: An A tree le red finds authentication sets a across sequential and each commit element. It lets you reproduce a every commits onto file.
+# User:
+275,0.0446,3.00e-04,0.04,1789584144.5006132
+# [2026-09-16 14:42:25] SAMPLE step 275:
+# 
+# User: what is the prefix sum for range sum query immutable
+# Joe: Precompute prefix sums where prefix[i] is the sum from index 0 to i-1. Then sumRange(i, j) = pre
+300,0.0431,3.00e-04,0.04,1789584740.7796218
+# [2026-09-16 14:52:21] SAMPLE step 300:
+# 
+# 
+# User: what is a full file processing forward iteration, or visors automatically, or visities from head for lower lines the same point later.
+# User: why is inheritance full, definition for in p
+325,0.0451,3.00e-04,0.04,1789585336.296423
+# [2026-09-16 15:02:16] SAMPLE step 325:
+# 
+# User: what is a few safe separate result
+# Joe: A conflict gression isions and few with them and NAE. Ened pollapps op privantly pargregate all that each row exclusive 
+350,0.0460,3.00e-04,0.04,1789585945.535972
+# [2026-09-16 15:12:26] SAMPLE step 350:
+# 
+# Joe: The dp[0] is the sum to byte during training subarray, an log j) to to iterate and command for -VL make order.
+# User: how do I choice cument a model mode
+375,0.0447,3.00e-04,0.04,1789586584.323362
+# [2026-09-16 15:23:04] SAMPLE step 375:
+# 
+# 
+# User: what is a descriptor used in replaces contiguous blocks
+# Joe: Yes, allowing an element in a linkage needs to coordinates step. Without it, swap into NUL always
+#  is s
+400,0.0445,3.00e-04,0.04,1789587197.8270772
+# [2026-09-16 15:33:18] SAMPLE step 400:
+# 
+# 
+# User: what is the cursion depth-safe along all docrossing count because to both numpy single API or An executed data is distributed monit engine to a keeping function The model 
+# [2026-09-16 19:42:50] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:46:07] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:46:45] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:49:23] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:49:42] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:50:01] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+25,0.0463,3.00e-04,0.04,1789603164.0557802
+# [2026-09-16 19:59:24] SAMPLE step 25:
+# 
+# Joe: Sery handle the algorithm ation comprehensions the DE pattern. With nals the name should repeated worst-case.
+# 
+# User: what is a constant s is just that equivalid in
+50,0.0459,3.00e-04,0.05,1789603683.238913
+# [2026-09-16 20:08:03] SAMPLE step 50:
+# 
+# User: what is a WebSocket
+# Joe: A WebSocket provides full-duplex communication over a single TCP connection. Unlike HTTP request-response, both client and server can send messages at 
+75,0.0472,3.00e-04,0.04,1789604276.736068
+# [2026-09-16 20:17:57] SAMPLE step 75:
+# 
+# 
+# User: does continuous versus complexity
+# Joe: O(n) time and preferentto implement find pairs. This keeps only checks elements where the left and right subtree must scences it not in values of
+100,0.0457,3.00e-04,0.04,1789604834.457184
+# [2026-09-16 20:27:14] SAMPLE step 100:
+# 
+# User: what is the difference between a loop and a comprehension for filtering
+# Joe: A loop uses if inside the body to skip items, while a comprehension embeds the condition in 
+125,0.0461,3.00e-04,0.05,1789605310.320377
+# [2026-09-16 20:35:10] SAMPLE step 125:
+# 
+# User: how do you use copy equality two with Python 3 pop
+# Joe: Lat the head at line. When the value nesting. The loop handles the most cleaner in the loop body but not speed as value
+150,0.0456,3.00e-04,0.05,1789605798.617301
+# [2026-09-16 20:43:19] SAMPLE step 150:
+# 
+# 
+# Joe: When deadlock recovery recoresize of real-world code and a weight lat a like point (x) cts to insert the way.
+# 
+# User: how does OR decorator with product balanced.
+# User:
+175,0.0439,3.00e-04,0.05,1789606336.815669
+# [2026-09-16 20:52:17] SAMPLE step 175:
+# 
+# Joe: A OP compiler data importes, use describes behaves the runtime block recursion them after is a function. Use an explicit stack depend which all at a time.
+# User: what does the slice 
+200,0.0457,3.00e-04,0.05,1789606889.273288
+# [2026-09-16 21:01:29] SAMPLE step 200:
+# 
+# 
+# User: what is a illacity composition for
+# Joe: It runs after write a slow based on that elements without directes across many up operations. Call A for loop over text visors for values a comput
+225,0.0470,3.00e-04,0.05,1789607404.209057
+# [2026-09-16 21:10:04] SAMPLE step 225:
+# 
+# Joe: A loop uses an in-memory its location by its Python does not definitionalters each object and initializes @ memory ones than native source preventing dientivalid line inputs.
+# 
+# User: what
+250,0.0419,3.00e-04,0.05,1789607884.549773
+# [2026-09-16 21:18:05] SAMPLE step 250:
+# 
+# User: What is a semantics in C++?
+# Joe: Multi-QUIPT attention translations like queue and OPriithmors used to servers, tasks and where any performance time by a 
+275,0.0465,3.00e-04,0.05,1789608361.113884
+# [2026-09-16 21:26:01] SAMPLE step 275:
+# 
+# Joe: An explicit pattern ensures data in one or streaming to a dead edge queries. It uses a py thread to clic and log access update it format each but is less accessed but slow
+300,0.0456,3.00e-04,0.05,1789608902.2658648
+# [2026-09-16 21:35:02] SAMPLE step 300:
+# 
+# User: what does group by raise one
+# Joe: A DP form is a map that takes multiple functions to rank, so be that that a depends can to merge code it.
+# User: what is a parti
+325,0.0462,3.00e-04,0.05,1789609402.014067
+# [2026-09-16 21:43:22] SAMPLE step 325:
+# 
+# User: why is type in C++
+# Joe: ResponT.hoose are two pMerge cing count. Both are constants without exprevent loops inheritance, which is the standard you have authorized 
+350,0.0454,3.00e-04,0.05,1789609888.282182
+# [2026-09-16 21:51:28] SAMPLE step 350:
+# 
+# Joe: You can use delete to the trace condition, but each piece temporary to anything, providing even and tiny apof a contiguard clarantee. explicit stack is the interpreter. It
+375,0.0442,3.00e-04,0.05,1789610441.744761
+# [2026-09-16 22:00:42] SAMPLE step 375:
+# 
+# Joe: Redis Timions and is preferred for multiple inheritance from thread to stride it, and load instance rodumang requires in memory and perioding. It is used in bad input test's 
+400,0.0456,3.00e-04,0.05,1789610979.863473
+# [2026-09-16 22:09:40] SAMPLE step 400:
+# 
+# User: what is a complete graph
+# Joe: A fibranch is a data structure where each branch before end branches     ed move when the visond interface. It lets the array make the operations on B
+425,0.0437,3.00e-04,0.05,1789611512.279097
+# [2026-09-16 22:18:32] SAMPLE step 425:
+# 
+# User: what is the difference between a method has and an instance
+# Joe: A shallow method clients on that instance's data and create on anit instance with its own data.
+# User: whats the difference betwe
+450,0.0438,3.00e-04,0.05,1789611995.693676
+# [2026-09-16 22:26:36] SAMPLE step 450:
+# 
+# User: What is a concept data
+# Joe: A HAM (Confetches in P SQL defines how multiple matter from data from a prirefreshed using its own transactions. It prevents accidentA search decl
+475,0.0450,3.00e-04,0.05,1789612524.531049
+# [2026-09-16 22:35:25] SAMPLE step 475:
+# 
+# 
+# Joe: When an explain logic instead of a Ubias, which adapshots to resolve initting. Many todata including are common the next iteration.
+# User: what is the start advantage it with 
+500,0.0442,3.00e-04,0.04,1789613090.687861
+# [2026-09-16 22:44:51] SAMPLE step 500:
+# 
+# Joe: A function without a mock mark element is a place. you a should speed create the value, the breakpoint of a or counter with the most full's present incore. When the deduplication are
