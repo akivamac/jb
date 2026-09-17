@@ -14,7 +14,7 @@ def launch(cmd: list) -> subprocess.Popen:
 experts = ["coding", "cot", "emotion", "fish", "greeting",
            "horse", "knowledge", "python", "reptiles", "tree"]
 
-MAX_PARALLEL = 2
+MAX_PARALLEL = 4
 running = []  # list of (proc, expert)
 
 while True:
@@ -23,10 +23,11 @@ while True:
     while i < len(experts) or running:
         while len(running) < MAX_PARALLEL and i < len(experts):
             expert = experts[i]
-            proc = launch(['python3', 'training/train_expert.py',
-                           '--name', expert, '--steps', '4000',
-                           '--resume', '--push', '500',
-                           '--log', '25', '--sample', '25'])
+proc = launch(['python3', 'training/train_expert.py',
+                       '--name', expert, '--steps', '4000',
+                       '--resume', '--push', '500',
+                       '--batch-size', '16',
+                       '--log', '25', '--sample', '25'])
             running.append((proc, expert))
             print(f"Started {expert} (PID {proc.pid})")
             i += 1
