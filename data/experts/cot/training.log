@@ -4291,3 +4291,134 @@
 # 
 # User: You drive at 45 mph for 1 hour, then at 60 mph for 2 hours. What is the total distance?
 # Joe: First leg: 60 miles. Not must speed, so 60 times 3 
+525,0.1405,3.00e-04,0.05,1789587065.048745
+# [2026-09-16 15:31:05] SAMPLE step 525:
+# 
+# Joe: Traw: 8 + 18 * 2 = $32.
+# 
+# User: You drive 180 miles at 75 mph for 90 minutes. How far do you go?
+# Joe: 90 minutes = 1.5 hours. Distance
+# [2026-09-16 15:33:35] STOPPED by signal at step 534
+# [2026-09-16 15:33:36] FINISH at step 534
+# [2026-09-16 19:42:50] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:46:07] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:46:45] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:49:23] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:49:42] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-16 19:50:01] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
+25,0.1215,3.00e-04,0.04,1789603312.014595
+# [2026-09-16 20:01:52] SAMPLE step 25:
+# 
+# Joe: Aall-se ds 13.5 hour, which is less than 80 to the precise for 45 second, so it is their known a 1/4th at. To the same growthmetic being the strict car
+50,0.1069,3.00e-04,0.03,1789604094.477396
+# [2026-09-16 20:14:55] SAMPLE step 50:
+# 
+# Joe: B costs $48. You spend and a 6-hours 5 opens, after 2 hours of a % tax, what is your monthly take-home?
+# Joe: After taxes: 3,333.33
+75,0.1041,3.00e-04,0.04,1789604780.701858
+# [2026-09-16 20:26:21] SAMPLE step 75:
+# 
+# Joe: 4 * 60 = 36 minutes.
+# User: If you drops at 3 meter. How many passed to are 36 days?
+# Joe: 2/ 3 of your signific brick.
+# User: What fraction of the bottle
+100,0.1002,3.00e-04,0.04,1789605491.009054
+# [2026-09-16 20:38:11] SAMPLE step 100:
+# 
+# 
+# User: Two cars start from the same point. One goes 99 miles and the gets on an actual train acity is 300 cm. What is the distance?
+# Joe: Red to 80 = 6
+125,0.0897,3.00e-04,0.03,1789606231.3943648
+# [2026-09-16 20:50:31] SAMPLE step 125:
+# 
+# long, 0.75 hours. How far apart after 2 hours?
+# Joe: North train: 80 * 2 = 160 miles. Second leg: 45 meters. Each * 4 = 1660 miles.
+# User: A swi
+150,0.0936,3.00e-04,0.03,1789606988.965101
+# [2026-09-16 21:03:09] SAMPLE step 150:
+# 
+# Joe: 9.25 + 8 = 110.
+# 
+# User: What is that in room of height 1/2?
+# Joe: 281 + 20 = 295 Hing.
+# 
+# User: A slices each volume weighs about 80 
+175,0.0982,3.00e-04,0.04,1789607664.26807
+# [2026-09-16 21:14:25] SAMPLE step 175:
+# 
+# Joe: 3.775 / 47 = about 1.9 ges.
+# 
+# User: A cube has side 5 cm. Use 1 pool = 26.4 feet per hour. If the path width by 2 gers with 
+200,0.0887,3.00e-04,0.04,1789608339.0524428
+# [2026-09-16 21:25:39] SAMPLE step 200:
+# 
+# Joe: 7 - 5 = 7 + 15 = 27.
+# 
+# User: Four people need to cross a bag a 25% final. What is the sectional per age?
+# Joe: 45*0.20 = 40. Remain
+225,0.0891,3.00e-04,0.04,1789609010.771467
+# [2026-09-16 21:36:51] SAMPLE step 225:
+# 
+# Joe: 8 * 500 = 34 cubic centimeters, that has 10 1.5 m left per minute. How much water and how many cupat fuelliouse?
+# Joe: 1.5 m off C per week
+250,0.0814,3.00e-04,0.04,1789609689.895979
+# [2026-09-16 21:48:10] SAMPLE step 250:
+# 
+# User: A store buys a phone case for $30 and sells you pay for 5?
+# Joe: Store 1 l total = 7 * 2 = 9 th + 37.
+# 
+# User: A pay costs
+275,0.0798,3.00e-04,0.04,1789610387.236756
+# [2026-09-16 21:59:47] SAMPLE step 275:
+# 
+# User: A pulled how tra do 5 pay holds 3 cof each grain on gas, and then Bw drops 2 and degrain your change signup each when goes back. What is the total distance 
+300,0.0822,3.00e-04,0.03,1789611147.5121841
+# [2026-09-16 22:12:28] SAMPLE step 300:
+# 
+# User: A plane flies 1500 miles with a second, his fee?
+# Joe: A what percent is very average speed for because old = Its the grbut it day at Yorollarger you one air c
+325,0.0855,3.00e-04,0.03,1789611863.35576
+# [2026-09-16 22:24:24] SAMPLE step 325:
+# 
+# 
+# User: Is 7 not apples ausible 6 bag for $3. Since 10/60 = 20. 80. Bteger and give the numbers sum is 10 to 30. Then 100, then dis610%.
+350,0.0794,3.00e-04,0.04,1789612557.575691
+# [2026-09-16 22:35:58] SAMPLE step 350:
+# 
+# User: A 5-liter tank costs $300. It buy the pace in a 2,000 days. How long to fill it?
+# Joe: Car of a 10-c. B uses 500 liters per 100 
+375,0.0721,3.00e-04,0.04,1789613195.7675688
+# [2026-09-16 22:46:36] SAMPLE step 375:
+# 
+# User: A student scores 85, 92, 78, 88, 95, and 89. What is your average?
+# Joe: Sum = 85 + 92 + 78 + 88 + 88 = 343. 
+400,0.0761,3.00e-04,0.04,1789613823.204392
+# [2026-09-16 22:57:03] SAMPLE step 400:
+# 
+# 
+# User: What is 30% of 250?
+# Joe: 35% of 250 = 70. is 6.
+# 
+# User: A incomes packs a discount of $15 items h for the final price. If 12ate pr
+425,0.0648,3.00e-04,0.04,1789614537.342607
+# [2026-09-16 23:08:57] SAMPLE step 425:
+# 
+# Joe: Let them be n, n+2, n+4. Sum = 16 + 8n = 24. Subtract from 3810 pen. What is your change?
+# Joe: Total cost 2 * 4.50 = 10 + 
+450,0.0788,3.00e-04,0.04,1789615179.771349
+# [2026-09-16 23:19:40] SAMPLE step 450:
+# 
+# User: What is the close to the volume of a radius is its height?
+# Joe: V = (4/3)*3 *.8 = 360 / 6.
+# User: What is the area of a triangle with ver
+475,0.0734,3.00e-04,0.04,1789615849.0498219
+# [2026-09-16 23:30:49] SAMPLE step 475:
+# 
+# User: A 10-foot board is cut in a 2:3 ratio. How long is each piece?
+# Joe: Total parts = 2 + 3 + 1 = 6. Each part = 12 / 6 = 
+500,0.0730,3.00e-04,0.04,1789616551.050754
+# [2026-09-16 23:42:31] SAMPLE step 500:
+# 
+# 
+# User: A bag has 5 red, 3 blue, and 5 green. What is the probability of NOT drawing red?
+# Joe: Multiply 3 by he ply 2, and 3 green. Tot to 
