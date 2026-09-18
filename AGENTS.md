@@ -44,7 +44,7 @@
 - `fix_data.py` - Dedupe/format training data
 - `add_*.py` (add_math, add_coding, add_science, add_code_execution, etc.) - One-off corpus builders
 - `rewrite_history.py` - **HISTORY REWRITE ONLY**. Thins historical `.npz` blob versions from git history
-  (keeps every 15th version from the beginning + the 10 most recent; drops the rest, which can reclaim
+  (keeps every 50th version from the beginning + the 3 most recent; drops the rest, which can reclaim
   20GB+ of `.git` bloat). Run it as: `python3 rewrite_history.py /path/to/clone`. It rewrites history on
   the target repo and force-push is required afterward. **ALWAYS confirm with the user before running
   this** — it's destructive, rewrites commit hashes, and breaks existing clones (tablet must re-clone or

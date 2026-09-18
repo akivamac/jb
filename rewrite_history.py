@@ -12,8 +12,8 @@ import sys
 from git_filter_repo import RepoFilter, FilteringOptions
 
 REPO = os.path.realpath(sys.argv[1])
-EVERY = 15
-RECENT = 10
+EVERY = 50
+RECENT = 3
 
 def git(*args):
     return subprocess.check_output(['git', '-C', REPO] + list(args)).rstrip(b'\n')
