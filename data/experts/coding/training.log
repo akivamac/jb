@@ -5463,3 +5463,4 @@ AttributeError: 'array' object has no attribute 'copy'
 # [2026-09-18 11:48:34] SAMPLE step 4000:
 # 
 # Joe: Ncoining an is unavailable position is
+# [2026-09-18 11:48:44] FINISH at step 4000
