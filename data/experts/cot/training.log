@@ -5356,3 +5356,33 @@
 # 
 # User: What is the area of a parallelogram with
 # [2026-09-18 16:27:09] FINISH at step 4000
+# [2026-09-18 16:35:41] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 392, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 226, in train_expert
+    model = JB.load(model_path)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 491, in load
+    m.p = {k[2:]: mx.array(data[k]).astype(np.float32) for k in data if k.startswith('p_')}
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 491, in <dictcomp>
+    m.p = {k[2:]: mx.array(data[k]).astype(np.float32) for k in data if k.startswith('p_')}
+TypeError: astype(): incompatible function arguments. The following argument types are supported:
+    1. astype(self, dtype: mlx.core.Dtype, stream: typing.Optional[typing.Union[mlx.core.Stream, mlx.core.Device]] = None) -> mlx.core.array
+
+Invoked with types: mlx.core.array, type
+# [2026-09-18 16:37:44] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 392, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 226, in train_expert
+    model = JB.load(model_path)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 491, in load
+    m.p = {k[2:]: mx.array(data[k]).astype(np.float32) for k in data if k.startswith('p_')}
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 491, in <dictcomp>
+    m.p = {k[2:]: mx.array(data[k]).astype(np.float32) for k in data if k.startswith('p_')}
+TypeError: astype(): incompatible function arguments. The following argument types are supported:
+    1. astype(self, dtype: mlx.core.Dtype, stream: typing.Optional[typing.Union[mlx.core.Stream, mlx.core.Device]] = None) -> mlx.core.array
+
+Invoked with types: mlx.core.array, type
+# [2026-09-18 16:37:52] RESUME: training/train_expert.py --name cot --steps 1 --resume --backend mlx
+# [2026-09-18 16:37:54] FINISH at step 1
