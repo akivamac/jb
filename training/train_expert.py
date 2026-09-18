@@ -281,8 +281,9 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
 
     write_lock(name, os.getpid())
 
+    should_stop = [False]
     def handle_stop(signum, frame):
-        sys.exit(0)
+        should_stop[0] = True
     signal.signal(signal.SIGUSR1, handle_stop)
     signal.signal(signal.SIGINT, handle_stop)
     signal.signal(signal.SIGTERM, handle_stop)
@@ -291,9 +292,11 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
     step = 0
     try:
         for step in range(1, steps + 1):
+            if should_stop[0]:
+                break
             model.zero_grad()
 
-            starts = np.random.randint(0, len(data) - seq_len - 1, size=batch_size)
+            starts = np.random.randint(0, len(data) - seq_len, size=batch_size)
             x_batch = np.stack([data[s:s + seq_len] for s in starts])
             y_batch = np.stack([data[s + 1:s + seq_len + 1] for s in starts])
 

@@ -175,6 +175,8 @@ class Tokenizer:
             self.id_to_token = {int(k): v for k, v in data['id_to_char'].items()}
 
         self.size = len(self.vocab)
+        self._encode_cache = {}
+        self._merge_ranks = {pair: i for i, pair in enumerate(self.merges)}
         # Re-sync aliases
         self.char_to_id = self.vocab
         self.id_to_char = self.id_to_token

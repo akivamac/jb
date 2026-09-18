@@ -433,7 +433,7 @@ class JoeBrain:
         p = self.p
         C, H, L = self.C, self.H, self.L
         hd = C // H
-        pos = position % self.T
+        pos = min(position, self.T - 1)
 
         x = p['wte'][token_id] + p['wpe'][pos]  # (C,)
         x = x[None, :]  # (1, C)
@@ -449,8 +449,12 @@ class JoeBrain:
             v = v.reshape(1, H, hd).transpose(1, 0, 2)
 
             # Append new k,v to cache
-            k_full = np.concatenate([kv_cache[i]['k'], k], axis=1)  # (H, past+1, hd)
-            v_full = np.concatenate([kv_cache[i]['v'], v], axis=1)
+            if kv_cache:
+                k_full = np.concatenate([kv_cache[i]['k'], k], axis=1)  # (H, past+1, hd)
+                v_full = np.concatenate([kv_cache[i]['v'], v], axis=1)
+            else:
+                k_full = k
+                v_full = v
 
             # Trim to seq_len
             if k_full.shape[1] > self.T:

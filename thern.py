@@ -46,35 +46,35 @@ while True:
         print("Another thern.py instance is running. Waiting...", flush=True)
         time.sleep(30)
         continue
-    i = 0
-    running = []
-    while i < len(experts) or running:
-        while len(running) < MAX_PARALLEL and i < len(experts):
-            expert = experts[i]
-            proc = launch(['python3', 'training/train_expert.py',
-                           '--name', expert, '--steps', str(STEPS),
-                           '--resume', '--push', str(PUSH_EVERY),
-                           '--batch', str(BATCH),
-                           '--log', str(LOG_EVERY), '--sample', str(SAMPLE_EVERY),
-                           '--backend', BACKEND])
-            running.append((proc, expert))
-            print(f"Started {expert} (PID {proc.pid})", flush=True)
-            i += 1
+    try:
+        i = 0
+        running = []
+        while i < len(experts) or running:
+            while len(running) < MAX_PARALLEL and i < len(experts):
+                expert = experts[i]
+                proc = launch(['python3', 'training/train_expert.py',
+                               '--name', expert, '--steps', str(STEPS),
+                               '--resume', '--push', str(PUSH_EVERY),
+                               '--batch', str(BATCH),
+                               '--log', str(LOG_EVERY), '--sample', str(SAMPLE_EVERY),
+                               '--backend', BACKEND])
+                running.append((proc, expert))
+                print(f"Started {expert} (PID {proc.pid})", flush=True)
+                i += 1
 
-        time.sleep(60)
-        sys.stdout.flush()
-        still = []
-        for proc, expert in running:
-            ret = proc.poll()
-            if ret is None:
-                still.append((proc, expert))
-            elif ret == 0:
-                print(f"Finished {expert}", flush=True)
-            else:
-                print(f"CRASHED {expert} (exit code {ret})", flush=True)
-        running = still
-
-    print("All done. Restarting in 30s...", flush=True)
-    fcntl.flock(lock_fd, fcntl.LOCK_UN)
-    os.close(lock_fd)
+            time.sleep(60)
+            sys.stdout.flush()
+            still = []
+            for proc, expert in running:
+                ret = proc.poll()
+                if ret is None:
+                    still.append((proc, expert))
+                elif ret == 0:
+                    print(f"Finished {expert}", flush=True)
+                else:
+                    print(f"CRASHED {expert} (exit code {ret})", flush=True)
+            running = still
+    finally:
+        fcntl.flock(lock_fd, fcntl.LOCK_UN)
+        os.close(lock_fd)
     time.sleep(30)

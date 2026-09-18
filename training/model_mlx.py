@@ -208,7 +208,7 @@ class JoeBrain:
 
         if unbatched:
             logits = logits[0]
-        mx.eval(logits)
+        mx.eval(logits, *[t for bc in block_caches for t in bc.values() if isinstance(t, mx.array)])
         return logits, cache
 
     def loss(self, logits, targets, mask=None, penalty_ids=None, penalty_weight=0.5):
@@ -426,7 +426,7 @@ class JoeBrain:
         p = self.p
         C, H, L = self.C, self.H, self.L
         hd = C // H
-        pos = position % self.T
+        pos = min(position, self.T - 1)
 
         x = p['wte'][token_id] + p['wpe'][pos]
         x = x[None, :]
@@ -488,9 +488,9 @@ class JoeBrain:
             }
             m = cls(**cfg)
             m.t = int(data['__adam_t__'])
-            m.p = {k[2:]: mx.array(data[k]) for k in data if k.startswith('p_')}
-            m.m = {k[2:]: mx.array(data[k]) for k in data if k.startswith('m_')}
-            m.v = {k[2:]: mx.array(data[k]) for k in data if k.startswith('v_')}
+            m.p = {k[2:]: mx.array(data[k], dtype=mx.float32) for k in data if k.startswith('p_')}
+            m.m = {k[2:]: mx.array(data[k], dtype=mx.float32) for k in data if k.startswith('m_')}
+            m.v = {k[2:]: mx.array(data[k], dtype=mx.float32) for k in data if k.startswith('v_')}
             m.g = {k: mx.zeros_like(v) for k, v in m.p.items()}
         else:
             with open(path) as f:
