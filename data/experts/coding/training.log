@@ -5834,3 +5834,41 @@ AttributeError: 'array' object has no attribute 'copy'
 # 
 # User: whats are NEncapsulation
 # [2026-09-18 16:23:48] FINISH at step 4000
+# [2026-09-18 16:35:41] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 392, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 226, in train_expert
+    model = JB.load(model_path)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 491, in load
+    m.p = {k[2:]: mx.array(data[k]).astype(np.float32) for k in data if k.startswith('p_')}
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 491, in <dictcomp>
+    m.p = {k[2:]: mx.array(data[k]).astype(np.float32) for k in data if k.startswith('p_')}
+TypeError: astype(): incompatible function arguments. The following argument types are supported:
+    1. astype(self, dtype: mlx.core.Dtype, stream: typing.Optional[typing.Union[mlx.core.Stream, mlx.core.Device]] = None) -> mlx.core.array
+
+Invoked with types: mlx.core.array, type
+# [2026-09-18 16:38:26] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0242,7.50e-05,1.86,1789763919.8006852
+50,0.0218,1.50e-04,2.14,1789763931.4847722
+75,0.0215,2.25e-04,2.11,1789763943.325568
+100,0.0213,3.00e-04,2.00,1789763955.810482
+125,0.0223,3.00e-04,2.10,1789763967.720702
+150,0.0241,3.00e-04,2.17,1789763979.221639
+175,0.0239,3.00e-04,2.18,1789763990.688886
+200,0.0253,3.00e-04,2.23,1789764001.878811
+225,0.0245,2.99e-04,2.14,1789764013.566704
+250,0.0257,2.99e-04,2.15,1789764025.208308
+275,0.0249,2.99e-04,2.19,1789764036.6474729
+300,0.0271,2.99e-04,2.15,1789764048.240014
+325,0.0268,2.98e-04,2.08,1789764060.2596679
+350,0.0275,2.98e-04,2.12,1789764072.023364
+375,0.0275,2.98e-04,2.13,1789764083.7571268
+400,0.0267,2.97e-04,2.13,1789764095.5006862
+425,0.0281,2.97e-04,2.14,1789764107.186291
+450,0.0268,2.96e-04,2.20,1789764118.5566368
+475,0.0266,2.95e-04,2.15,1789764130.175083
+500,0.0282,2.95e-04,2.08,1789764142.200911
+# [2026-09-18 16:42:22] SAMPLE step 500:
+# 
+# Joe: Start from the variable shows when the output 
