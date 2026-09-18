@@ -4367,3 +4367,73 @@ User: What is a farri
 # 
 # 
 # Joe: Marrelousing consistent strap, dry 
+# [2026-09-18 18:13:27] RESUME: training/train_expert.py --name horse --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.2509,7.50e-05,1.83,1789769621.625762
+50,0.2511,1.50e-04,2.02,1789769634.008586
+75,0.2101,2.25e-04,1.99,1789769646.542672
+100,0.2259,3.00e-04,1.90,1789769659.728266
+125,0.2492,3.00e-04,1.87,1789769673.115478
+150,0.2359,3.00e-04,2.44,1789769683.3447602
+175,0.2312,3.00e-04,2.44,1789769693.571698
+200,0.2360,3.00e-04,2.45,1789769703.794046
+225,0.2241,2.99e-04,2.44,1789769714.020171
+250,0.2434,2.99e-04,2.44,1789769724.2529862
+275,0.2070,2.99e-04,0.85,1789769753.528707
+300,0.1999,2.99e-04,0.14,1789769927.478266
+325,0.2242,2.98e-04,0.47,1789769980.16399
+350,0.2003,2.98e-04,2.44,1789769990.398325
+375,0.2051,2.98e-04,2.44,1789770000.6278982
+400,0.1987,2.97e-04,2.44,1789770010.865324
+425,0.1905,2.97e-04,2.44,1789770021.0910761
+450,0.1716,2.96e-04,1.47,1789770038.06642
+475,0.1662,2.95e-04,0.32,1789770117.3261461
+500,0.1753,2.95e-04,0.26,1789770213.343331
+# [2026-09-18 18:23:34] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 18:48:58] RESUME: training/train_expert.py --name horse --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.1441,7.50e-05,0.15,1789771909.023037
+50,0.1237,1.50e-04,2.20,1789771920.42011
+75,0.1203,2.25e-04,2.12,1789771932.217472
+100,0.1508,3.00e-04,2.06,1789771944.324887
+125,0.1612,3.00e-04,2.06,1789771956.494656
+150,0.1608,3.00e-04,1.90,1789771969.663309
+175,0.1418,3.00e-04,2.02,1789771982.024101
+200,0.1422,3.00e-04,1.97,1789771994.6942542
+225,0.1479,2.99e-04,2.09,1789772006.64783
+250,0.1378,2.99e-04,1.98,1789772019.291979
+275,0.1481,2.99e-04,2.10,1789772031.1702678
+300,0.1468,2.99e-04,2.12,1789772042.940866
+325,0.1376,2.98e-04,2.08,1789772054.98255
+350,0.1498,2.98e-04,2.06,1789772067.101522
+375,0.1291,2.98e-04,2.05,1789772079.291351
+400,0.1330,2.97e-04,2.08,1789772091.295365
+425,0.1342,2.97e-04,2.12,1789772103.1023512
+450,0.1267,2.96e-04,2.14,1789772114.770654
+475,0.1295,2.95e-04,2.07,1789772126.841068
+500,0.1330,2.95e-04,2.13,1789772138.5591118
+# [2026-09-18 18:55:40] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 19:13:41] RESUME: training/train_expert.py --name horse --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+# [2026-09-18 19:13:49] FINISH at step 3
