@@ -2111,3 +2111,45 @@ Joe: I see you. You
 # User:
 # [2026-09-17 09:23:48] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --log 25 --sample 25
 # [2026-09-17 20:19:15] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 25
+25,0.0447,3.00e-04,0.00,1789696781.763902
+# [2026-09-17 21:59:42] SAMPLE step 25:
+# 
+# Joe: That is a classic anxiety allowed to be yourself. Look at yourself helps and only you learned. You can talk to always be the loop now.
+# 
+# User: I feel anxious about
+50,0.0407,3.00e-04,0.00,1789702404.002406
+# [2026-09-17 23:33:24] SAMPLE step 50:
+# 
+# 
+# User: I feel like I am too much for people
+# Joe: Being "too much" is usually just worries at out. You are not bad for feeling aband think about what I should have said
+# Joe: The
+75,0.0414,3.00e-04,0.01,1789706633.802804
+# [2026-09-18 00:43:54] SAMPLE step 75:
+# 
+# Joe: I am always need a cause. Bodies and hearts have their Real strong moment a day of her visiate abof needs.
+# User: i feel like my partner doesn't appreciate me
+# Joe: That 
+100,0.0378,3.00e-04,0.00,1789712381.744875
+# [2026-09-18 02:19:42] SAMPLE step 100:
+# 
+# Joe: That is a social practical these days. Anyone judging that is very, not a refer anyone is able, not a sentence.
+# User: I set a boundary about not work of our
+125,0.0399,3.00e-04,0.00,1789717701.682962
+# [2026-09-18 03:48:22] SAMPLE step 125:
+# 
+# Joe: Then separate the pull, not suggestddenly and what you want.
+# User: they should do fine
+# Joe: They are best happy despatient before you when you have it follow a little more 
+150,0.0359,3.00e-04,0.00,1789722944.576826
+# [2026-09-18 05:15:45] SAMPLE step 150:
+# 
+# User: I feel like I am running on empty
+# Joe: Empty is not where you live, it is where you are visiting. What is the smallest thing you can do today that fills you up, even
+175,0.0366,3.00e-04,0.00,1789728034.587878
+# [2026-09-18 06:40:35] SAMPLE step 175:
+# 
+# User: I played in everyone rather them social work and why
+# Joe: You can really survive just to be strongy and sometimes it. Be gentle with yourself, and exactly the failure as deadline. You 
+# [2026-09-18 07:21:19] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 500
+# [2026-09-18 07:30:59] STOPPED by signal at step 2

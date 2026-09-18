@@ -26,7 +26,17 @@ def acquire_lock():
 experts = ["coding", "cot", "emotion", "fish", "greeting",
            "horse", "knowledge", "python", "reptiles", "tree"]
 
-MAX_PARALLEL = 4
+# --- CONFIG: edit these before relaunching ---
+MAX_PARALLEL   = 2   # experts running at once (Mac 8GB: keep 1-2 at seq=1024)
+BATCH          = 8   # per-expert batch size (16 caused swap thrash on the Mac)
+STEPS          = 4000
+PUSH_EVERY     = 500
+LOG_EVERY      = 25
+SAMPLE_EVERY   = 500
+# seq_len is NOT set here on purpose: --resume forces seq_len = checkpoint's
+# model.T (1024 for all current experts). Do not add a fixed --seq-len.
+# --- END CONFIG ---
+
 running = []  # list of (proc, expert)
 
 while True:
@@ -41,10 +51,10 @@ while True:
         while len(running) < MAX_PARALLEL and i < len(experts):
             expert = experts[i]
             proc = launch(['python3', 'training/train_expert.py',
-                           '--name', expert, '--steps', '4000',
-                           '--resume', '--push', '500',
-                           '--batch', '16',
-                           '--log', '25', '--sample', '500'])
+                           '--name', expert, '--steps', str(STEPS),
+                           '--resume', '--push', str(PUSH_EVERY),
+                           '--batch', str(BATCH),
+                           '--log', str(LOG_EVERY), '--sample', str(SAMPLE_EVERY)])
             running.append((proc, expert))
             print(f"Started {expert} (PID {proc.pid})", flush=True)
             i += 1

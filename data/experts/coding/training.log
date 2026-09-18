@@ -5185,3 +5185,53 @@ ValueError: probabilities contain NaN
 # Joe: The database that stores data as float most database items and configeing query and configuration stateaces. It is efficient, and correct and only service
 # [2026-09-17 09:23:48] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
 # [2026-09-17 20:19:15] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 25
+25,0.0350,3.00e-04,0.00,1789696964.176553
+# [2026-09-17 22:02:44] SAMPLE step 25:
+# 
+# Joe: An enum you brackets usually the sent half the character and longest matches the characters of the other first characters.
+# 
+# User: what is the sliding window for longest substring
+# Joe: 
+50,0.0291,3.00e-04,0.00,1789702149.1672142
+# [2026-09-17 23:29:09] SAMPLE step 50:
+# 
+# User: how does a log sort beled logic merge from two lists
+# Joe: P=Textend and log variables base case and verify in the range of values. Ret to start it for do to 
+75,0.0286,3.00e-04,0.01,1789707055.933256
+# [2026-09-18 00:50:56] SAMPLE step 75:
+# 
+# User: what is the difference between a loop and recursion for palindrome checking
+# Joe: A loop compares characters from both ends moving inward, while recursion compares the first and last and 
+100,0.0274,3.00e-04,0.00,1789712957.0830002
+# [2026-09-18 02:29:17] SAMPLE step 100:
+# 
+# User: what is a control
+# Joe: A code smell is a sign that code has a deeper problem, like being too long, too complex, or duplicated.
+# User: what is clean code
+# Joe: Clean 
+125,0.0269,3.00e-04,0.01,1789717929.848075
+# [2026-09-18 03:52:11] SAMPLE step 125:
+# 
+# 
+# User: what is the DP for longest increasing subsequence
+# Joe: dp[i] stores the exsorted to s through position or subsets. In s. Edp[i][j] is the minimum 
+150,0.0272,3.00e-04,0.00,1789724001.062651
+# [2026-09-18 05:33:22] SAMPLE step 150:
+# 
+# User: what is a specified tool come in linked with amortized options. multiple subsequent using maps this near--optimization itwise a fixed complete can recurse fails index-d
+175,0.0268,3.00e-04,0.00,1789729834.9077692
+# [2026-09-18 07:10:35] SAMPLE step 175:
+# 
+# 
+# User: what is a language backtracking on any forward creating objects that vertex.
+# User: ver(torecursion limit with tree
+# Joe: A merge combines the expected remain working set tracks backtrack
+# [2026-09-18 07:21:19] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 500
+# [2026-09-18 07:30:58] STOPPED by signal at step 3
+# [2026-09-18 07:47:34] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500
+# [2026-09-18 07:50:11] STOPPED by signal at step 9
+# [2026-09-18 07:50:39] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500
+25,0.0417,3.00e-04,0.05,1789732736.558938
+50,0.0383,3.00e-04,0.05,1789733193.865252
+75,0.0405,3.00e-04,0.06,1789733618.998625
+# [2026-09-18 08:19:15] STOPPED by signal at step 94

@@ -4722,3 +4722,57 @@
 # Joe: Hastal = 15 standard devilisignments s long. The up d's slows in the magnitude is up.
 # [2026-09-17 09:23:48] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
 # [2026-09-17 20:19:15] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 25
+25,0.0468,3.00e-04,0.00,1789696056.374437
+# [2026-09-17 21:47:37] SAMPLE step 25:
+# 
+# Joe: Evaluate the LCM becomes 4 and 4 is 25 minutes through and 4. How many does each get?
+# Joe: Divide 40 by 2 to get 25, then 13 gives 36. So 0.25 
+50,0.0395,3.00e-04,0.01,1789700980.7681742
+# [2026-09-17 23:09:41] SAMPLE step 50:
+# 
+# User: Solve: x/3 + x/6 = 6.
+# Joe: LCM = 6. An 8/8 = 10, which equals 1 1.8. The numbers tegers is 19.
+# 
+# User: Find numbers 100 have 
+75,0.0412,3.00e-04,0.00,1789707106.061753
+# [2026-09-18 00:51:46] SAMPLE step 75:
+# 
+# User: What is 15 / 7 or 6?
+# Joe: Area = 7 * 9 * 8 = 80 square * 5 = 1000.
+# 
+# User: How many degrees are in the interior angles of a hex
+100,0.0391,3.00e-04,0.01,1789711529.029435
+# [2026-09-18 02:05:29] SAMPLE step 100:
+# 
+# User: What is the area of a trapezoid with parallel sides 8 and 12 and height 5?
+# Joe: Area = (1/2)(8+12)*5 = 50.
+# 
+# User: How many ways can 4 
+125,0.0389,3.00e-04,0.01,1789716443.929162
+# [2026-09-18 03:27:24] SAMPLE step 125:
+# 
+# User: Dat
+# Joe: 400 m = 1200 m = 1, na * 400 nual = 8000 Joules.
+# 
+# User: A ca plane flies 1200 km in 2.5 seconds. What is its speed in km
+150,0.0390,3.00e-04,0.00,1789721797.54455
+# [2026-09-18 04:56:38] SAMPLE step 150:
+# 
+# Joe: 300 times 3 is 1030 minutes, or between 10 hours and 30 minutes. Density is 4 times 4,180. What is its average?
+# Joe: week = 80 mil. So 0.5 parts = 
+175,0.0393,3.00e-04,0.00,1789727074.1235578
+# [2026-09-18 06:24:34] SAMPLE step 175:
+# 
+# Joe: Worker = 10/3 = 3.5 * 10 = 6. Scalories.
+# 
+# User: Convert 15 grams.
+# Joe:  17 / 3.5 = 0.35 thular gvert per second = 35 mpg.
+# User:
+# [2026-09-18 07:21:19] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 500
+# [2026-09-18 07:30:58] STOPPED by signal at step 2
+# [2026-09-18 07:47:34] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500
+# [2026-09-18 07:50:11] STOPPED by signal at step 7
+# [2026-09-18 07:50:39] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500
+25,0.0591,3.00e-04,0.04,1789732832.500152
+50,0.0514,3.00e-04,0.04,1789733418.839885
+# [2026-09-18 08:19:15] STOPPED by signal at step 74

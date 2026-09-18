@@ -2,1250 +2,880 @@
   "greeting": {
     "single": [
       {
-        "q": "Hey!",
-        "resp": "I am always here! What can I help with?",
-        "score": 0.556,
-        "cov": 0.333,
-        "nw": 9
-      },
-      {
-        "q": "Hello there!",
-        "resp": "Always good to chat. What's on your mind?",
-        "score": 0.55,
+        "q": "What does alright mean",
+        "resp": "A simple \"hi\"?\"Hello\" is the safe safe middle ground, works almost anywhere.",
+        "score": 0.5166666666666667,
         "cov": 0.25,
-        "nw": 8
-      },
-      {
-        "q": "How are you?",
-        "resp": "I am great! How about you? What can I help with?",
-        "score": 0.582,
-        "cov": 0.364,
-        "nw": 11
-      },
-      {
-        "q": "Good morning!",
-        "resp": "Good morning! Hope your day is off to a great approbably while of you.",
-        "score": 0.571,
-        "cov": 0.286,
-        "nw": 14
-      },
-      {
-        "q": "What is up?",
-        "resp": "Stay wornice we we should say a Uack stortime. auLove are win.",
-        "score": 0.567,
-        "cov": 0.333,
         "nw": 12
       },
       {
-        "q": "Hi Joe!",
-        "resp": "I am always here! What can I help with?",
-        "score": 0.556,
-        "cov": 0.333,
-        "nw": 9
+        "q": "good evening friend",
+        "resp": "Good night is light my food. I will actually am always here when you your day?",
+        "score": 0.5125,
+        "cov": 0.1875,
+        "nw": 16
       },
       {
-        "q": "How is it going?",
-        "resp": "Gday can say ear etings! I am here and appreciate the first Kement friendly morn",
-        "score": 0.52,
-        "cov": 0.2,
+        "q": "hiya monkey",
+        "resp": "Hey! What can I do for you?",
+        "score": 0.7428571428571429,
+        "cov": 0.5714285714285714,
+        "nw": 7
+      },
+      {
+        "q": "I'll bring them coffee tomorrow",
+        "resp": "Good. A warm \"hello\" friends and everything\" maybe warm. Firting with a snack.",
+        "score": 0.5538461538461539,
+        "cov": 0.3076923076923077,
+        "nw": 13
+      },
+      {
+        "q": "hey Joe, just wanted to say thanks for always being here",
+        "resp": "That means a lot, thank you for saying it! I am always here when you need me.",
+        "score": 0.5882352941176471,
+        "cov": 0.35294117647058826,
+        "nw": 17
+      },
+      {
+        "q": "yeah, I just wish I had visited more",
+        "resp": "That feeling is natural, but hope, honestyes. Most people are ing friendly who f",
+        "score": 0.56,
+        "cov": 0.26666666666666666,
         "nw": 15
       },
       {
-        "q": "Yo!",
-        "resp": "All hands are touch you look forward to strangers.",
-        "score": 0.6,
-        "cov": 0.333,
-        "nw": 9
-      },
-      {
-        "q": "Good evening!",
-        "resp": "I Right am here for their before things see out out there.",
-        "score": 0.467,
-        "cov": 0.167,
+        "q": "Where is it from?",
+        "resp": "It is the best kind. They will thank you for it later.",
+        "score": 0.7166666666666668,
+        "cov": 0.5833333333333334,
         "nw": 12
       },
       {
-        "q": "Long time no see!",
-        "resp": "Use at \"good to see you you too\". A help polite polite loop you with you a hands",
-        "score": 0.579,
-        "cov": 0.474,
-        "nw": 19
+        "q": "okay same time tomorrow",
+        "resp": "Same time, same place tomorrow. What about you?",
+        "score": 0.42500000000000004,
+        "cov": 0.125,
+        "nw": 8
       },
       {
-        "q": "Whats good?",
-        "resp": "Not much! Just here to help. What's going on with you?",
-        "score": 0.618,
-        "cov": 0.364,
-        "nw": 11
+        "q": "How do you greet someone in a library?",
+        "resp": "A small kids or on your midit day. Most is if it one is set a name start to feel",
+        "score": 0.5826086956521739,
+        "cov": 0.391304347826087,
+        "nw": 23
       },
       {
-        "q": "Hey whats happening?",
-        "resp": "Now I have to talking to you too! Rainy to chat. How about you?",
-        "score": 0.643,
-        "cov": 0.5,
+        "q": "second wind hour",
+        "resp": "No harm done! We all have those moments. What's next?",
+        "score": 0.52,
+        "cov": 0.2,
+        "nw": 10
+      },
+      {
+        "q": "I am excited",
+        "resp": "You'm are of your name, formal! I am always here when you is enough.",
+        "score": 0.6142857142857143,
+        "cov": 0.35714285714285715,
         "nw": 14
-      }
-    ],
-    "multi": [
-      {
-        "q1": "Hey!",
-        "a1": "Good to see you too! What brings you bac",
-        "q2": "How are you?",
-        "a2": "I am great! How about you?",
-        "score": 0.6
       },
       {
-        "q1": "Hello there!",
-        "a1": "Saines text has to the baby is my musica",
-        "q2": "What is up?",
-        "a2": "Small talk builds-wish about my digital ",
-        "score": 0.56
-      },
-      {
-        "q1": "Good morning!",
-        "a1": "Off people light are having a warm conve",
-        "q2": "How is it going?",
-        "a2": "A enough at keeps it ppppabout being me.",
-        "score": 0.614
-      },
-      {
-        "q1": "Hi Joe!",
-        "a1": "I am always here! What can I help with?",
-        "q2": "Whats good?",
-        "a2": "Not much! Just here and ready to help.",
-        "score": 0.625
-      },
-      {
-        "q1": "Good evening!",
-        "a1": "Evenings are good quiet friends. A simpl",
-        "q2": "Long time no see!",
-        "a2": "It was fun talking to you too! Fild in t",
-        "score": 0.68
+        "q": "my coworker just got back from parental leave, how do I greet them?",
+        "resp": "Use their name and a genuine smile is the way. \"I am here if you need. A catch u",
+        "score": 0.536,
+        "cov": 0.28,
+        "nw": 25
       }
     ]
   },
   "emotion": {
     "single": [
       {
-        "q": "I feel happy!",
-        "resp": "That is normal. What is making you feel that way?",
-        "score": 0.68,
-        "cov": 0.6,
-        "nw": 10
-      },
-      {
-        "q": "I am sad today",
-        "resp": "Post-start pour dverdicts. Distance is real on top. A createure cor and has a we",
-        "score": 0.495,
-        "cov": 0.286,
-        "nw": 21
-      },
-      {
-        "q": "I am angry",
-        "resp": "I am sorry you feel that way. I will still try to help.",
-        "score": 0.6,
-        "cov": 0.385,
+        "q": "I got a surprise day off",
+        "resp": "The pain to shake right after green thumb is exhaustion. Your own relationships.",
+        "score": 0.5384615384615385,
+        "cov": 0.23076923076923078,
         "nw": 13
       },
       {
-        "q": "I feel anxious",
-        "resp": "That is tough. A slow vous \"I say can being sadness out is miss. Let yourself si",
-        "score": 0.558,
-        "cov": 0.292,
-        "nw": 24
-      },
-      {
-        "q": "I am excited!",
-        "resp": "That is one of hard. I feel I better now\nJoe: I am glad! What helped?",
-        "score": 0.66,
-        "cov": 0.5,
-        "nw": 10
-      },
-      {
-        "q": "I feel lonely",
-        "resp": "Loneliness is one of the hardest feelings. It does not mean something is wrong w",
-        "score": 0.631,
-        "cov": 0.462,
-        "nw": 26
-      },
-      {
-        "q": "I am scared",
-        "resp": "Fear of the deep balance is weaken a survival honest conation, and if it does no",
-        "score": 0.647,
-        "cov": 0.412,
+        "q": "i spilled coffee on my keyboard and now nothing works",
+        "resp": "Ugh, that is such an annoying way to start the day. I hope your work was saved.",
+        "score": 0.611764705882353,
+        "cov": 0.35294117647058826,
         "nw": 17
       },
       {
-        "q": "I am grateful",
-        "resp": "That is waking it has an feelings. The people who cannot stop caring back to it\n",
-        "score": 0.637,
-        "cov": 0.438,
+        "q": "I feel lonely in my own marriage",
+        "resp": "That kind of loneliness is especially painful. Start with honest small talk, or ",
+        "score": 0.6272727272727273,
+        "cov": 0.4090909090909091,
+        "nw": 22
+      },
+      {
+        "q": "I feel bad that my singing is off-key",
+        "resp": "Singing is joy before it is skill, and ner your choice in the gap is healthy.",
+        "score": 0.6125,
+        "cov": 0.4375,
         "nw": 16
       },
       {
-        "q": "I feel tired",
-        "resp": "Skills are no-costs are not to do one. The act is bigger action, vable. Allow no",
-        "score": 0.582,
-        "cov": 0.364,
-        "nw": 22
+        "q": "what if they still do not do their share",
+        "resp": "Then treating it as information, not s.",
+        "score": 0.6571428571428571,
+        "cov": 0.42857142857142855,
+        "nw": 7
       },
       {
-        "q": "I am nervous",
-        "resp": "That is normal. What are you nervous about?",
-        "score": 0.775,
-        "cov": 0.625,
-        "nw": 8
+        "q": "I feel relieved after quitting something toxic",
+        "resp": "Relief after letting go is proof you made the right choice. Let the peace settle",
+        "score": 0.5217391304347826,
+        "cov": 0.2608695652173913,
+        "nw": 23
       },
       {
-        "q": "Why am I sad?",
-        "resp": "Do from a quiet morning. Chelfying is common and it is not a competition. Enjoy ",
-        "score": 0.673,
-        "cov": 0.545,
-        "nw": 22
+        "q": "I am so disappointed in myself",
+        "resp": "Disappointment means you expected better and that is not a bad thing. Forgive yo",
+        "score": 0.6799999999999999,
+        "cov": 0.4666666666666667,
+        "nw": 15
       },
       {
-        "q": "How do I cheer up?",
-        "resp": "Keep it actice avoid curiet time and de schedule up in a long time\nJoe: Hope on ",
-        "score": 0.543,
-        "cov": 0.286,
-        "nw": 14
-      }
-    ],
-    "multi": [
-      {
-        "q1": "I feel happy!",
-        "a1": "That is love comes from protight. Dno is",
-        "q2": "Why am I happy?",
-        "a2": "Rede an during is what the where sigage.",
-        "score": 0.632
+        "q": "I am so relieved the test is over",
+        "resp": "The waiting is the hardest part and you made it through. Now let your brain rest",
+        "score": 0.5619047619047619,
+        "cov": 0.3333333333333333,
+        "nw": 21
       },
       {
-        "q1": "I am sad today",
-        "a1": "That Post-tritimeline and \"I want to say",
-        "q2": "Why am I sad?",
-        "a2": "Some days can, and so it happens the que",
-        "score": 0.516
+        "q": "I feel resentful that my parents still treat me like a child",
+        "resp": "Their perception may be slow to update. You can asserbetes.",
+        "score": 0.5800000000000001,
+        "cov": 0.3,
+        "nw": 10
       },
       {
-        "q1": "I feel anxious",
-        "a1": "That is tough. Try taking slow deep brea",
-        "q2": "How do I cheer up?",
-        "a2": "Lbeen one of the most painful reaching t",
-        "score": 0.621
+        "q": "i had a great time with my grandma today",
+        "resp": "That sounds warm. Those moments are treasure, glad you had one.",
+        "score": 0.5636363636363636,
+        "cov": 0.2727272727272727,
+        "nw": 11
       },
       {
-        "q1": "I am scared",
-        "a1": "You still feel valuable. Want to talk ab",
-        "q2": "What should I do?",
-        "a2": "That is believe can changing for control",
-        "score": 0.583
+        "q": "my cat sits on my keyboard while I work and I love her so much",
+        "resp": "She just wants you to be. That is a long of it.",
+        "score": 0.7,
+        "cov": 0.5,
+        "nw": 12
       },
       {
-        "q1": "I am grateful",
-        "a1": "That is wonderful is about your own hard",
-        "q2": "Why am I grateful?",
-        "a2": "Sometimes you need to rest. Bodies but a",
-        "score": 0.614
+        "q": "I am nervous about my driving test tomorrow",
+        "resp": "Nerves mean you care about doing well. You have practiced and you know this. Bre",
+        "score": 0.52,
+        "cov": 0.3,
+        "nw": 20
       }
     ]
   },
   "knowledge": {
     "single": [
       {
-        "q": "What is an atom?",
-        "resp": "An atom is the smallest unit of matter that makes mits system. It also is the cl",
-        "score": 0.64,
-        "cov": 0.5,
+        "q": "what is a geothermal vent",
+        "resp": "Geothermal vents are cracks on the ocean floor where heated water from deep in E",
+        "score": 0.5655172413793104,
+        "cov": 0.27586206896551724,
+        "nw": 29
+      },
+      {
+        "q": "why do we blush",
+        "resp": "Blushing is a physical response to embarrassment. Nervousness widens the blood v",
+        "score": 0.6,
+        "cov": 0.3684210526315789,
+        "nw": 19
+      },
+      {
+        "q": "does the lead bird work harder",
+        "resp": "A pitchans gover uses break surface signal so fast\nJoe: Belles are be bo? specie",
+        "score": 0.4666666666666667,
+        "cov": 0.1111111111111111,
+        "nw": 9
+      },
+      {
+        "q": "What is unique about North America's geography",
+        "resp": "Astronom proteins is the only living monotremes. Prized 1 empelweal in the human",
+        "score": 0.4727272727272727,
+        "cov": 0.18181818181818182,
+        "nw": 22
+      },
+      {
+        "q": "How wide is it usually",
+        "resp": "Nousgustken posed the work who stretch oks and help absorption some into became ",
+        "score": 0.49523809523809526,
+        "cov": 0.23809523809523808,
+        "nw": 42
+      },
+      {
+        "q": "Who built the Leaning Tower of Pisa",
+        "resp": "The Leaning atolar on the Canish was architect Jorn book An Kled Uranus are the ",
+        "score": 0.5285714285714286,
+        "cov": 0.2857142857142857,
+        "nw": 28
+      },
+      {
+        "q": "what is latitude",
+        "resp": "Latoll is a fine about 4.2 light in the face, making it look red. Marriers for t",
+        "score": 0.5703703703703704,
+        "cov": 0.3333333333333333,
+        "nw": 27
+      },
+      {
+        "q": "What is a mirror",
+        "resp": "Taiction maps cutter scale seeing the record at nearly data per lay problem), an",
+        "score": 0.5052631578947369,
+        "cov": 0.21052631578947367,
+        "nw": 19
+      },
+      {
+        "q": "When was the wheel invented",
+        "resp": "The wheel was invented in Mesopotamia around 3500 BC. It was first used for pott",
+        "score": 0.5272727272727272,
+        "cov": 0.2727272727272727,
+        "nw": 22
+      },
+      {
+        "q": "What is a lunar rover",
+        "resp": "A sailfish 1.'s roughly data through Nabil and These the grinafate cooks in 1977",
+        "score": 0.5111111111111111,
+        "cov": 0.28888888888888886,
+        "nw": 45
+      },
+      {
+        "q": "what is the small intestine",
+        "resp": "The small intestine is where most digestion and absorption of food happens. It i",
+        "score": 0.5800000000000001,
+        "cov": 0.4,
         "nw": 20
       },
       {
-        "q": "What is gravity?",
-        "resp": "Pluant mechanics is the physics Earth. It appears in 20bear, a constant  be and ",
-        "score": 0.644,
-        "cov": 0.444,
-        "nw": 18
-      },
-      {
-        "q": "Explain photosynthesis",
-        "resp": "Czcell built the ankinximmune system live in muscles without help it fat a huge ",
-        "score": 0.58,
-        "cov": 0.3,
-        "nw": 20
-      },
-      {
-        "q": "What is DNA?",
-        "resp": "runner pushed in a Lunuschaness on a supersement is cauous force that could mast",
-        "score": 0.624,
-        "cov": 0.412,
-        "nw": 17
-      },
-      {
-        "q": "What is a black hole?",
-        "resp": "The Cares compares from beth a large generate closest from the Over the pely the",
-        "score": 0.567,
-        "cov": 0.417,
-        "nw": 24
-      },
-      {
-        "q": "What is electricity?",
-        "resp": "Doumes spin the coral you result is a natural satellite. How change color on the",
-        "score": 0.63,
-        "cov": 0.45,
-        "nw": 20
-      },
-      {
-        "q": "What is a cell?",
-        "resp": "An atom is the smallest unit of matter? has change to irranklinices, body own bo",
-        "score": 0.567,
-        "cov": 0.333,
-        "nw": 24
-      },
-      {
-        "q": "What is energy?",
-        "resp": "Engineers tells piece the far longer cooks look while inse. It looks the record ",
-        "score": 0.493,
-        "cov": 0.2,
-        "nw": 15
-      },
-      {
-        "q": "What is water made of?",
-        "resp": "Antarctic is underwater blocking and the work in the Lis book country by area po",
-        "score": 0.583,
-        "cov": 0.391,
-        "nw": 23
-      },
-      {
-        "q": "What is sound?",
-        "resp": "The nearest star lightning is a limate change because it easily with instead of ",
-        "score": 0.576,
-        "cov": 0.32,
-        "nw": 25
-      },
-      {
-        "q": "What is a magnet?",
-        "resp": "In thousand spokes one him 5 long come from no se se nes in electric ast cause c",
-        "score": 0.492,
-        "cov": 0.208,
-        "nw": 24
-      },
-      {
-        "q": "How do magnets work?",
-        "resp": "Artides incles their womachition boes muscles, to wer exutions. Arctameter and t",
-        "score": 0.5,
-        "cov": 0.2,
-        "nw": 20
-      }
-    ],
-    "multi": [
-      {
-        "q1": "What is an atom?",
-        "a1": "An atom is the smallest unit of matter? ",
-        "q2": "What is it made of?",
-        "a2": "Antarcticwords cannot protective its enz",
-        "score": 0.509
-      },
-      {
-        "q1": "What is gravity?",
-        "a1": "Sunscreen stand for their three-importan",
-        "q2": "Why does it matter?",
-        "a2": "Soapot come from a laid den ck ck all pr",
-        "score": 0.5
-      },
-      {
-        "q1": "What is DNA?",
-        "a1": "they shows far makes the prime number yo",
-        "q2": "How does it work?",
-        "a2": "It can lift heavy appear early day as th",
-        "score": 0.512
-      },
-      {
-        "q1": "What is a black hole?",
-        "a1": "The band Great Lakes were the built pyra",
-        "q2": "What happens inside?",
-        "a2": "Most can the taamongue through most word",
-        "score": 0.46
-      },
-      {
-        "q1": "What is electricity?",
-        "a1": "Dark adneades because the gas milker. As",
-        "q2": "How is it generated?",
-        "a2": "Franklinm happens drops justed with sail",
-        "score": 0.552
+        "q": "what is a circuit",
+        "resp": "A circuit is a closed loop that lets electric current flow. For electricity to w",
+        "score": 0.6230769230769231,
+        "cov": 0.4230769230769231,
+        "nw": 26
       }
     ]
   },
   "coding": {
     "single": [
       {
-        "q": "Write a sort function",
-        "resp": "The optimizer to a Huffman pide by re re re re receiverts that instalgorithm tak",
-        "score": 0.49,
+        "q": "how do you add type hints to async functions",
+        "resp": "You use the same type hint syntax as regular functions with coroutine types.",
+        "score": 0.5846153846153846,
+        "cov": 0.3076923076923077,
+        "nw": 13
+      },
+      {
+        "q": "What is NAT?",
+        "resp": "HTTP status devices types groups to tight without sreading unneighting connectio",
+        "score": 0.495,
+        "cov": 0.175,
+        "nw": 40
+      },
+      {
+        "q": "how do i check a values type",
+        "resp": "type in python one type, identint and check ify welllip a class\nJoe: A class is ",
+        "score": 0.55,
         "cov": 0.25,
+        "nw": 12
+      },
+      {
+        "q": "why do policy gradient methods work well for continuous action spaces",
+        "resp": "They work well on the content must Beited websites and are takes own message wit",
+        "score": 0.5916666666666667,
+        "cov": 0.375,
+        "nw": 24
+      },
+      {
+        "q": "how does that affect readability",
+        "resp": "What groups operations peritself like by poolscan atting the thread to matching ",
+        "score": 0.5419354838709678,
+        "cov": 0.25806451612903225,
+        "nw": 31
+      },
+      {
+        "q": "how do i measure if a refactor made things better",
+        "resp": "Compare readability, test count, and the time code reviewers spend. Shorter diff",
+        "score": 0.47,
+        "cov": 0.15,
         "nw": 20
       },
       {
-        "q": "What is a hash map?",
-        "resp": "A hash due promopath with distributes keys across programs. It can be used in lo",
-        "score": 0.574,
-        "cov": 0.348,
+        "q": "what does cohesion have to do with it",
+        "resp": "High cohesion means the methodsulates the difference between epbug. yes are fast",
+        "score": 0.5454545454545454,
+        "cov": 0.2727272727272727,
+        "nw": 22
+      },
+      {
+        "q": "What is I/O multiplexing?",
+        "resp": "Dk thread implements that lowerversions that attributes, giving exverded exceeds",
+        "score": 0.49411764705882355,
+        "cov": 0.23529411764705882,
+        "nw": 17
+      },
+      {
+        "q": "what is a recurrent neural network",
+        "resp": "A recurrent network layer",
+        "score": 0.55,
+        "cov": 0.25,
+        "nw": 4
+      },
+      {
+        "q": "What is best case, worst case, and average case analysis?",
+        "resp": "Orash provides a structured foundation with built-in constructor large to percas",
+        "score": 0.5379310344827586,
+        "cov": 0.27586206896551724,
+        "nw": 29
+      },
+      {
+        "q": "what is an async generator",
+        "resp": "An async generator is a generator function defined with async def that yields va",
+        "score": 0.5379310344827586,
+        "cov": 0.3448275862068966,
+        "nw": 29
+      },
+      {
+        "q": "how does reinforcement learning differ from supervised learning",
+        "resp": "Unlike supervised learning, which uses labeled input-output pairs, reinforcement",
+        "score": 0.5043478260869565,
+        "cov": 0.17391304347826086,
         "nw": 23
-      },
-      {
-        "q": "Define recursion",
-        "resp": "On a dict new collection. For nested tree for move to the iterate fand range, so",
-        "score": 0.567,
-        "cov": 0.333,
-        "nw": 24
-      },
-      {
-        "q": "What is a loop?",
-        "resp": "A minimum spanning tree connects all vertices in a weighted undirected graph wit",
-        "score": 0.533,
-        "cov": 0.286,
-        "nw": 21
-      },
-      {
-        "q": "What is O(n)?",
-        "resp": "Git is O(n^2) space and upper risky queries two in length (conneility) to which ",
-        "score": 0.5,
-        "cov": 0.227,
-        "nw": 22
-      },
-      {
-        "q": "Write a binary search",
-        "resp": "gets a search, requires two or fast string. For cleaner of matching removes to t",
-        "score": 0.6,
-        "cov": 0.4,
-        "nw": 20
-      },
-      {
-        "q": "What is a stack?",
-        "resp": "A reverse proxy s asing supports like 2 pserver to HTTP add and sequential the d",
-        "score": 0.509,
-        "cov": 0.182,
-        "nw": 22
-      },
-      {
-        "q": "Explain Big-O",
-        "resp": "Big O stores as A the code running verifies with and is {} something 2. It can s",
-        "score": 0.617,
-        "cov": 0.417,
-        "nw": 24
-      },
-      {
-        "q": "What is an array?",
-        "resp": "An existential type hides the concrete type behind an interface, providing a spe",
-        "score": 0.491,
-        "cov": 0.273,
-        "nw": 22
-      },
-      {
-        "q": "Write a factorial",
-        "resp": "The rewallmat counter identified. It is used fortaiousdocumenting data making up",
-        "score": 0.61,
-        "cov": 0.381,
-        "nw": 21
-      },
-      {
-        "q": "What is polymorphism?",
-        "resp": "Continuous memory manage size and the performance operation that adds instraort ",
-        "score": 0.533,
-        "cov": 0.286,
-        "nw": 21
-      },
-      {
-        "q": "Explain encapsulation",
-        "resp": "Property setterverting on the caller by IIter the replication tokens, and that r",
-        "score": 0.619,
-        "cov": 0.429,
-        "nw": 21
-      }
-    ],
-    "multi": [
-      {
-        "q1": "Write a sort function",
-        "a1": "The optimizer to a Huffman pipeline, pru",
-        "q2": "What is the time complexity?",
-        "a2": "O(n) extra space for the multiple checks",
-        "score": 0.573
-      },
-      {
-        "q1": "What is a hash map?",
-        "a1": "A hash function maps arbitrary distribut",
-        "q2": "When should I use it?",
-        "a2": "Radix step into red at the boundary of r",
-        "score": 0.55
-      },
-      {
-        "q1": "Define recursion",
-        "a1": "For counting, n), a file on server schem",
-        "q2": "What is an example?",
-        "a2": "Code coverage roolates pers and committe",
-        "score": 0.558
-      },
-      {
-        "q1": "What is a loop?",
-        "a1": "A minimum spanning tree connects all ver",
-        "q2": "What is a for loop?",
-        "a2": "A minimum tree store rout all the graph ",
-        "score": 0.544
-      },
-      {
-        "q1": "Explain Big-O",
-        "a1": "Big O is an uncached adapter that shows ",
-        "q2": "Why does it matter?",
-        "a2": "Reproduce the sequence of needed to acce",
-        "score": 0.558
       }
     ]
   },
   "cot": {
     "single": [
       {
-        "q": "If I have 5 apples and eat 2, how many left?",
-        "resp": "Used = (2/5) * (3/4) = 6/20 = 3/10, so left = 3/4 - 3/10 = 15/20 - 6/20",
-        "score": 0.274,
-        "cov": 0.0,
+        "q": "What about 100 words per minute?",
+        "resp": "Yes, 100 wpm is off, so it = 00 / 50 = 63.5, so rference / (300 = 19.",
+        "score": 0.37894736842105264,
+        "cov": 0.10526315789473684,
         "nw": 19
       },
       {
-        "q": "What is 7 x 8?",
-        "resp": "Subtract 8 gives 80 from 200 + 300 = 820. An ropeed by 50 gives 28.",
-        "score": 0.487,
-        "cov": 0.188,
-        "nw": 16
+        "q": "Mary is twice as old as her daughter. Four years ago she was three times as old. How old is the daughter now?",
+        "resp": "Let daughter = d, Mary = 2d. Four years ago: 2d - 4 = 3(d - 4), so 2d - 4 = 3d -",
+        "score": 0.3,
+        "cov": 0.02631578947368421,
+        "nw": 38
       },
       {
-        "q": "If x=3 and y=4, what is x+y?",
-        "resp": "x + 5 = 15, so x = 15.",
-        "score": 0.311,
-        "cov": 0.0,
+        "q": "What is the median of 3, 7, 9, 12, 15?",
+        "resp": "Each number appears exactly once. There is no mode.",
+        "score": 0.4666666666666667,
+        "cov": 0.1111111111111111,
         "nw": 9
       },
       {
-        "q": "A train travels 60mph for 2 hours, how far?",
-        "resp": "340 times 2, so 90 times 150, which is 2400.",
-        "score": 0.42,
-        "cov": 0.1,
-        "nw": 10
+        "q": "And how many piano keys are manufactured each year?",
+        "resp": "If about 2000 bladice m* liters, that has 1 gnels into are in 2 or 15 years * 3 ",
+        "score": 0.46956521739130436,
+        "cov": 0.17391304347826086,
+        "nw": 23
       },
       {
-        "q": "What is 100/4?",
-        "resp": "14 / 100 = 3/4. 4 = 20.",
-        "score": 0.35,
-        "cov": 0.0,
-        "nw": 8
+        "q": "A faucet drips 2 milliliters every 5 seconds. How much water is wasted in 1 hour?",
+        "resp": "1 hour = 3600 seconds = 720 blocks of 5 seconds, so 720 * 2 = 1440 ml.",
+        "score": 0.3666666666666667,
+        "cov": 0.05555555555555555,
+        "nw": 18
       },
       {
-        "q": "If I save 10 dollars a day for 5 days?",
-        "resp": "Monthly drops 2 to 20 year = 6, so the dollars saves 25 + 210 = 100. The shares ",
-        "score": 0.473,
-        "cov": 0.182,
-        "nw": 22
+        "q": "A field is 2/5 wheat, 1/3 barley, and the rest beans. What fraction is beans?",
+        "resp": "1 - 2/5 - 1/3 = 15/15 - 6/15 - 5/15 = 4/15 of the field is beans.",
+        "score": 0.4111111111111111,
+        "cov": 0.16666666666666666,
+        "nw": 18
       },
       {
-        "q": "What is 15-7?",
-        "resp": "2^5^3 = 5 * 19 = 64.",
-        "score": 0.343,
+        "q": "At that pace, how long would 5 km take?",
+        "resp": "Time = 5 /240 = 5 days.",
+        "score": 0.28571428571428575,
         "cov": 0.0,
         "nw": 7
       },
       {
-        "q": "If 2 pencils cost 50 cents, cost of 6?",
-        "resp": "Fuels are about 6,000 sage per minute. How much water is Two whmakes pay travels",
-        "score": 0.491,
-        "cov": 0.182,
-        "nw": 22
+        "q": "A rectangle has area 56 and length 7. What is its width?",
+        "resp": "56 / 7 = 8. Width is 8.",
+        "score": 0.42500000000000004,
+        "cov": 0.125,
+        "nw": 8
       },
       {
-        "q": "What is 9x9?",
-        "resp": "999 * 7 = 81, so 999 * 7 - 97 = 72.",
-        "score": 0.277,
-        "cov": 0.0,
-        "nw": 13
+        "q": "Estimate how long it would take to type the entire internet.",
+        "resp": "Assume 100 billion pages each verus 5,000 word the estimate number of 90 body ..",
+        "score": 0.48000000000000004,
+        "cov": 0.13333333333333333,
+        "nw": 15
       },
       {
-        "q": "A square has side 5, area?",
-        "resp": "6^2 = 64 * 4 * 3 = 48, 2^4 = 25. L, Mar = 18 + 1818/ = 30.",
-        "score": 0.3,
-        "cov": 0.0,
-        "nw": 20
+        "q": "What is 11 * (2 + 7) - 9 * 3?",
+        "resp": "2* 9 + 7 = 42 and 3(26) + 42 = 72.",
+        "score": 0.35000000000000003,
+        "cov": 0.08333333333333333,
+        "nw": 12
       },
       {
-        "q": "If a rectangle has area 24 and width 4, what is the length?",
-        "resp": "Area = l imeter = (1/2) * sqrt(2) / 2 = 5 * sqrt(2) \u2248 7.",
-        "score": 0.3,
+        "q": "If you double the side, what is the new area?",
+        "resp": "New sum = 68 + 8 = 8. New mean = 84 / 4 = 12.",
+        "score": 0.30000000000000004,
         "cov": 0.0,
         "nw": 16
       },
       {
-        "q": "How many seconds in a day?",
-        "resp": "3 * 80 = 20 ml, since each and 5 of fuel is 13.25, so that answer is 90.",
-        "score": 0.537,
-        "cov": 0.263,
-        "nw": 19
-      }
-    ],
-    "multi": [
-      {
-        "q1": "If I have 5 apples and eat 2, how many left?",
-        "a1": "Utriin interest use can a job in 4 hours",
-        "q2": "What if I eat 3 instead?",
-        "a2": "(3/4) / (2/3) = 2/12 = 1/6 = 1/2 of the ",
-        "score": 0.433
-      },
-      {
-        "q1": "What is 7 x 8?",
-        "a1": "37 = 38, 53 / 4 = 17. Final price = $1,5",
-        "q2": "What is 8 x 7?",
-        "a2": "9 * 14 = 158 * 14 = 140. Both numbers su",
-        "score": 0.433
-      },
-      {
-        "q1": "If x=3 and y=4, what is x+y?",
-        "a1": "f(5) = (5 * 4) / 2 = 20.",
-        "q2": "What if x=5?",
-        "a2": "Exponent first: 2(4) - 4 = 3x).\nJoe: 4 *",
-        "score": 0.4
-      },
-      {
-        "q1": "A train travels 60mph for 2 hours, how far?",
-        "a1": "340 times 2 is 6000. The plane covers 2,",
-        "q2": "What if it goes 3 hours?",
-        "a2": "24 divided by 2.5 is 200 divided by 4 is",
-        "score": 0.512
-      },
-      {
-        "q1": "What is 100/4?",
-        "a1": "14 * 24 * 5 + 6 * 3 * 24 * 3 * 1 = 360. ",
-        "q2": "What is 100/5?",
-        "a2": "34 / 4 = 60 0.\nJoe: Multiply both by 15:",
-        "score": 0.4
+        "q": "Does that seem high?",
+        "resp": "14 times 50 times 402 is 100. The pool large million ents. The estimate is about",
+        "score": 0.4666666666666667,
+        "cov": 0.2222222222222222,
+        "nw": 18
       }
     ]
   },
   "python": {
     "single": [
       {
-        "q": "How to read a file?",
-        "resp": "Use pip shows with memory auto-generates __init__, __repr__, __eq__, and other b",
-        "score": 0.511,
-        "cov": 0.222,
-        "nw": 18
+        "q": "What is the difference between blocking and non-blocking sockets",
+        "resp": "The while since each else is alse.",
+        "score": 0.5714285714285714,
+        "cov": 0.2857142857142857,
+        "nw": 7
       },
       {
-        "q": "What is a decorator?",
-        "resp": "def __decorate_a function that takes arguments to catch how do you add ` `__post",
-        "score": 0.61,
-        "cov": 0.35,
-        "nw": 20
-      },
-      {
-        "q": "What is a lambda?",
-        "resp": "A is a function that whatsends creation to access a _new subclasses, as operatio",
-        "score": 0.582,
-        "cov": 0.364,
-        "nw": 22
-      },
-      {
-        "q": "How to make a list?",
-        "resp": "Import the generic form like with numpif for x, b`_atrick.",
-        "score": 0.58,
-        "cov": 0.3,
-        "nw": 10
-      },
-      {
-        "q": "What is a dict?",
-        "resp": "A default parameter gives a fallback in the missing key; use a subcommands with ",
-        "score": 0.557,
-        "cov": 0.435,
-        "nw": 23
-      },
-      {
-        "q": "Write a loop in Python",
-        "resp": "The else end value in a value, and so on.",
-        "score": 0.64,
-        "cov": 0.4,
-        "nw": 10
-      },
-      {
-        "q": "What is a class?",
-        "resp": "Define a class that is recuris an unordered unordered collection of unique eleme",
-        "score": 0.573,
-        "cov": 0.318,
-        "nw": 22
-      },
-      {
-        "q": "How to import a module?",
-        "resp": "`b.NamedTempor` before)` man structurn calling a subclass b. It lets you callbac",
-        "score": 0.53,
-        "cov": 0.25,
-        "nw": 20
-      },
-      {
-        "q": "What is a tuple?",
-        "resp": "`([1, 2, 3])` is the same as alse. with gPath(instance) is just the two-JSON sub",
-        "score": 0.6,
-        "cov": 0.4,
-        "nw": 20
-      },
-      {
-        "q": "Write a function in Python",
-        "resp": "Use the decorator is has for CPU, while preser passing a regular faces first se ",
-        "score": 0.496,
-        "cov": 0.24,
-        "nw": 25
-      },
-      {
-        "q": "What is a generator?",
-        "resp": "Define a function that accepts a function and returns a wrapper: def my_decorato",
-        "score": 0.482,
-        "cov": 0.294,
+        "q": "What is `shutil.make_archive`?",
+        "resp": "`shutil.make_archive(\"backup\", \"zip\", \"source_dir\")` creates a zip file into fil",
+        "score": 0.5176470588235293,
+        "cov": 0.23529411764705882,
         "nw": 17
       },
       {
-        "q": "Explain threading in Python",
-        "resp": "A Lock project on your edit on fasts, and quotes moves that a single slicing sum",
-        "score": 0.55,
-        "cov": 0.333,
-        "nw": 24
-      }
-    ],
-    "multi": [
-      {
-        "q1": "How to read a file?",
-        "a1": "Open with the encoding parameter: with o",
-        "q2": "How do I write to a file?",
-        "a2": "with open(\"f.txt\") as f: for line in f: ",
-        "score": 0.588
+        "q": "what does the key argument to sorted actually do",
+        "resp": "IGenerators produce values one at a time using a plain single expression, so kee",
+        "score": 0.505,
+        "cov": 0.275,
+        "nw": 40
       },
       {
-        "q1": "What is a decorator?",
-        "a1": "Define a function that takes arguments a",
-        "q2": "When should I use one?",
-        "a2": "@Protocol only works with int(obj, Comb)",
-        "score": 0.509
+        "q": "how do i put a date stamp into a filename",
+        "resp": "oop with pip install requests int, or use 0 secreucode and pip is rights.",
+        "score": 0.5428571428571428,
+        "cov": 0.2857142857142857,
+        "nw": 14
       },
       {
-        "q1": "What is a lambda?",
-        "a1": "A lambda is a function that wrapper: def",
-        "q2": "What is the difference from def?",
-        "a2": "A list stores all and values in memory a",
-        "score": 0.508
+        "q": "does findall handle zero-length matches",
+        "resp": "min(1) returns 1 for the ads in my_list) vert, which is the there full and datet",
+        "score": 0.5882352941176471,
+        "cov": 0.35294117647058826,
+        "nw": 17
       },
       {
-        "q1": "What is a class?",
-        "a1": "A property lets you define a class that ",
-        "q2": "What is inheritance?",
-        "a2": "ue consume Define after the up when does",
-        "score": 0.467
+        "q": "What does installing a package in editable mode do?",
+        "resp": "pip install -e ./mypkg links any developkous of the same source Path(\"a folders.",
+        "score": 0.5142857142857142,
+        "cov": 0.19047619047619047,
+        "nw": 21
       },
       {
-        "q1": "Write a loop in Python",
-        "a1": "The else ield __ __ __ __ when the block",
-        "q2": "What is a list comprehension?",
-        "a2": "A list comprehension creates a new list ",
-        "score": 0.514
+        "q": "How do you use `typing.runtime_checkable` with `Iterable`?",
+        "resp": "`@runtime_checkable class MyIterable(Protocol): ...` makes `isinstance(obj, MyPr",
+        "score": 0.4631578947368421,
+        "cov": 0.10526315789473684,
+        "nw": 19
+      },
+      {
+        "q": "What is the difference between venv and virtualenv?",
+        "resp": "Sy a generator is an A finally block context manager manages set and teardown ar",
+        "score": 0.54375,
+        "cov": 0.34375,
+        "nw": 32
+      },
+      {
+        "q": "how do I rotate logs when they get too large",
+        "resp": "Cheapq.merge as a heap invariant The alupcompact properly with its metadata form",
+        "score": 0.5257142857142857,
+        "cov": 0.2857142857142857,
+        "nw": 35
+      },
+      {
+        "q": "How do I use timeit from the command line to benchmark a snippet?",
+        "resp": "Child =  ulate  aleither in a path without objump and calling os.name non-part.",
+        "score": 0.5384615384615385,
+        "cov": 0.23076923076923078,
+        "nw": 13
+      },
+      {
+        "q": "What is `contextlib.closing`?",
+        "resp": "`contextlib.manager(\"a corator lib.mIGeneric for resource hi top async (\"Sm.new_",
+        "score": 0.52,
+        "cov": 0.2571428571428571,
+        "nw": 35
+      },
+      {
+        "q": "How do I use as_completed with exception handling?",
+        "resp": "limits Point tit search, showing the original most docstring, which is why refer",
+        "score": 0.5384615384615385,
+        "cov": 0.23076923076923078,
+        "nw": 13
       }
     ]
   },
   "horse": {
     "single": [
       {
-        "q": "What is a horse?",
-        "resp": "A peria 200-n blanket in so pie the horse helps tinodily, or starchor cold horse",
-        "score": 0.571,
-        "cov": 0.286,
-        "nw": 21
+        "q": "How does a horse's sense of smell affect its social behavior?",
+        "resp": "Start with a high in morning has loss small open and tensensure down it with sho",
+        "score": 0.5590909090909091,
+        "cov": 0.4318181818181818,
+        "nw": 44
       },
       {
-        "q": "What is a gallop?",
-        "resp": "A rider gallop is approvides a curb bit to leverage with balance, hairy pressure",
-        "score": 0.59,
-        "cov": 0.381,
-        "nw": 21
+        "q": "Why does my horse become calm naturally over time?",
+        "resp": "Horses learn that is only safe is a ranked or feeder with moving the way of dry,",
+        "score": 0.48936170212765956,
+        "cov": 0.3191489361702128,
+        "nw": 47
       },
       {
-        "q": "What are horse gaits?",
-        "resp": "The four natural gaits are the walk, trot, canter, and gallop, each faster than ",
-        "score": 0.52,
-        "cov": 0.3,
-        "nw": 20
-      },
-      {
-        "q": "What do horses eat?",
-        "resp": "Yes, horses are safe and some horses need their teeth chew and winter life dange",
-        "score": 0.527,
-        "cov": 0.273,
-        "nw": 22
-      },
-      {
-        "q": "What is a mare?",
-        "resp": "A mare is an adult female horse?\nJoe: A stud fee is the Ar is a cemia female dis",
-        "score": 0.657,
-        "cov": 0.429,
-        "nw": 7
-      },
-      {
-        "q": "What is a foal?",
-        "resp": "A check martingale and wear add add after a fit is a prominenter still chillare ",
-        "score": 0.617,
-        "cov": 0.5,
-        "nw": 24
-      },
-      {
-        "q": "What is a stallion?",
-        "resp": "A hoof rocks, put thrubbed. The up at a trot for the canter beat gait where the ",
-        "score": 0.536,
-        "cov": 0.318,
-        "nw": 22
-      },
-      {
-        "q": "Explain horse grooming",
-        "resp": "I rush a bath routine of hill a ure problem?\nJoe: Woral compan, freeic boots h w",
-        "score": 0.6,
+        "q": "What is a horse's knee?",
+        "resp": "The moting is the sitting trot in place where the rider sits on the saddle witho",
+        "score": 0.56,
         "cov": 0.4,
-        "nw": 10
+        "nw": 30
       },
       {
-        "q": "What is a dressage?",
-        "resp": "Dressage s the intulting the gait canter dondivid in a feeth in the intestine wi",
-        "score": 0.582,
-        "cov": 0.455,
-        "nw": 22
-      },
-      {
-        "q": "Why do horses wear shoes?",
-        "resp": "Why feel the sole, because the rider and keeps the stiffness rub at the trot wit",
-        "score": 0.574,
-        "cov": 0.435,
+        "q": "What is the difference between wool-flocked and foam-panel saddles?",
+        "resp": "Wool-flocked saddles have panels stuffed with wool with closbefore homming the h",
+        "score": 0.6,
+        "cov": 0.391304347826087,
         "nw": 23
       },
       {
-        "q": "What is a Mustang?",
-        "resp": "Shoulder-foreting is a point contact while the girthArabanding two should sit fl",
-        "score": 0.58,
-        "cov": 0.4,
-        "nw": 20
+        "q": "What is the purpose of a therapeutic boot?",
+        "resp": "Therapeutic boots provide support, protection, and sometimes therapy for injured",
+        "score": 0.48571428571428577,
+        "cov": 0.2571428571428571,
+        "nw": 35
       },
       {
-        "q": "How tall can a horse get?",
-        "resp": "A double bridle engthe braids down the girth on the rein. It is used with drivin",
-        "score": 0.636,
-        "cov": 0.455,
-        "nw": 22
-      }
-    ],
-    "multi": [
-      {
-        "q1": "What is a horse?",
-        "a1": "A strides shifts organ is one of the ear",
-        "q2": "What are horse gaits?",
-        "a2": "A well-desensitual horse builds fitness,",
-        "score": 0.65
+        "q": "How do mustangs survive in the wild?",
+        "resp": "He Foals is a low-calm, let it horse to rest ont, free-similar social hay helps ",
+        "score": 0.5052631578947369,
+        "cov": 0.2631578947368421,
+        "nw": 38
       },
       {
-        "q1": "What do horses eat?",
-        "a1": "Horse hanges are lower heels are a light",
-        "q2": "How much do they eat?",
-        "a2": "Dut horse travels better within a strong",
-        "score": 0.486
+        "q": "Why does my horse need fall vet care?",
+        "resp": "Fet hay the clipping sweat, or the horse blanket sniff it becomes for stress. Th",
+        "score": 0.5388888888888889,
+        "cov": 0.3611111111111111,
+        "nw": 36
       },
       {
-        "q1": "What is a mare?",
-        "a1": "A mare is a mare is an adult for a young",
-        "q2": "What is a foal?",
-        "a2": "A windpump is a soft, jaw of showing und",
-        "score": 0.591
+        "q": "Why does my horse need a booster jab every year?",
+        "resp": "Start with a otherseasoned, so not more than steam stops, so a Reding saddle bre",
+        "score": 0.48125000000000007,
+        "cov": 0.21875,
+        "nw": 32
       },
       {
-        "q1": "What is a stallion?",
-        "a1": "A stang is a cool ned kantly for masking",
-        "q2": "What is a gelding?",
-        "a2": "A bit is a ly se roller buckfirst and wh",
-        "score": 0.6
+        "q": "What is a horse's body condition scoring system?",
+        "resp": "Western score rhythm and the rider to post secular in one foot at a time where t",
+        "score": 0.5851851851851853,
+        "cov": 0.4074074074074074,
+        "nw": 27
       },
       {
-        "q1": "Explain horse grooming",
-        "a1": "ging es in the trailer at walk?\nJoe: Tro",
-        "q2": "Why is grooming important?",
-        "a2": "Ralk the water plants are often the comp",
-        "score": 0.567
+        "q": "What is heaves in horses?",
+        "resp": "A stru have this I tied cum where their digestive system, supportinging, and pro",
+        "score": 0.625,
+        "cov": 0.4583333333333333,
+        "nw": 24
+      },
+      {
+        "q": "Can horses eat celery?",
+        "resp": "Yes, horses are safe and some horses chew in small if the horse is it is safe. W",
+        "score": 0.55,
+        "cov": 0.3611111111111111,
+        "nw": 36
+      },
+      {
+        "q": "How does a farrier check hoof balance?",
+        "resp": "Boe is the strongly emergency up nutrition, ditchin horses loss, and immediately",
+        "score": 0.5052631578947369,
+        "cov": 0.2631578947368421,
+        "nw": 38
       }
     ]
   },
   "fish": {
     "single": [
       {
-        "q": "What is a fish?",
-        "resp": "A fish aggation is a device that is a small fish lid from game fish use like Gut",
-        "score": 0.517,
-        "cov": 0.333,
-        "nw": 24
+        "q": "Can too much water flow hurt fish?",
+        "resp": "If your filter pope them pounds cannot parameters are the wrasses and is farther",
+        "score": 0.535,
+        "cov": 0.275,
+        "nw": 40
       },
       {
-        "q": "How do fish breathe?",
-        "resp": "Some do. Batch when water conditions are small for similar temperature water bef",
-        "score": 0.425,
-        "cov": 0.125,
-        "nw": 24
+        "q": "What is fish tartare?",
+        "resp": "Susoria is a medicated with depleting when the fish over 45 minutes and less rec",
+        "score": 0.5422222222222223,
+        "cov": 0.35555555555555557,
+        "nw": 45
       },
       {
-        "q": "What is a shark?",
-        "resp": "The head a deep called a sea fish sues, creating a sump, caused by air pump, pol",
-        "score": 0.574,
-        "cov": 0.348,
-        "nw": 23
+        "q": "What is the biggest threat to fish?",
+        "resp": "The biggest threats to fish are overfishing, habitat destruction, pollution, cli",
+        "score": 0.4972972972972973,
+        "cov": 0.21621621621621623,
+        "nw": 37
       },
       {
-        "q": "What are gills?",
-        "resp": "Guppies eat and see it fine after a brood is primary planted spreads into ges, s",
-        "score": 0.548,
-        "cov": 0.304,
-        "nw": 23
+        "q": "How do you treat swim bladder disease?",
+        "resp": "Moro ease pellets on every spot tank with clamped fins, abollies and disappear b",
+        "score": 0.5,
+        "cov": 0.18421052631578946,
+        "nw": 38
       },
       {
-        "q": "What do fish eat?",
-        "resp": "Keep are tiny crushed flakes and bubbles, while paptains kills. After ancy goldf",
-        "score": 0.505,
-        "cov": 0.211,
-        "nw": 19
+        "q": "What is the difference between liquid CO2 and pressurized CO2?",
+        "resp": "Liquid carbon products Se% clogromechane. der der hourventout growthuates in the",
+        "score": 0.48571428571428577,
+        "cov": 0.21428571428571427,
+        "nw": 28
       },
       {
-        "q": "What is spawning?",
-        "resp": "A spawning trigger is a second way between 7 for freshwater fish and want at lea",
-        "score": 0.583,
-        "cov": 0.333,
-        "nw": 24
+        "q": "What are microworms?",
+        "resp": "Mico matics prey to break tanks of slightly jouring that you accumulate into gro",
+        "score": 0.5272727272727273,
+        "cov": 0.21212121212121213,
+        "nw": 33
       },
       {
-        "q": "Tell me about tuna",
-        "resp": "Use a community tank a shy and cannot fat because their only give it aft is almo",
-        "score": 0.554,
-        "cov": 0.308,
-        "nw": 26
+        "q": "How do blind cave fish survive without eyes?",
+        "resp": "My are best once sectier se for egging through lnet from the fry tank at a proce",
+        "score": 0.5794871794871795,
+        "cov": 0.38461538461538464,
+        "nw": 39
       },
       {
-        "q": "What is a fin?",
-        "resp": "Purigen are combine roe, tiny in saltwater lures and in freshwater,eels, and the",
-        "score": 0.54,
-        "cov": 0.4,
-        "nw": 20
+        "q": "Do angelfish need a heater?",
+        "resp": "Yes, they are tropical fish that thrive around 72 to 82 degrees Fahrenheit, thou",
+        "score": 0.5703703703703704,
+        "cov": 0.3333333333333333,
+        "nw": 27
       },
       {
-        "q": "How do fish swim?",
-        "resp": "Uncatch fish in shallow water and other as rapidly in small groups. The body len",
-        "score": 0.56,
-        "cov": 0.4,
-        "nw": 25
+        "q": "What is the difference between nitrite and nitrate?",
+        "resp": "fish lunather is only quickly with mineral content. Bloc a d ds. Caise soft wate",
+        "score": 0.5434782608695652,
+        "cov": 0.32608695652173914,
+        "nw": 46
       },
       {
-        "q": "What is a salmon?",
-        "resp": "A salmon is an anadromous fish born to freshwater fish with a distincted trim fo",
-        "score": 0.6,
-        "cov": 0.429,
-        "nw": 21
+        "q": "What is a fish purse seiner?",
+        "resp": "A purse seiner is a commercial roleather or hold adult commercial fishing traits",
+        "score": 0.5238095238095238,
+        "cov": 0.3333333333333333,
+        "nw": 42
       },
       {
-        "q": "What is coral?",
-        "resp": "A lights is a parent problems for moved rocks, for egg survival rates for low ho",
-        "score": 0.557,
-        "cov": 0.348,
-        "nw": 23
+        "q": "What is a tidepool simulator for marine fish?",
+        "resp": "Fertilizer are striped beches. They feed to maintain their bubble born in or the",
+        "score": 0.5463414634146342,
+        "cov": 0.2926829268292683,
+        "nw": 41
       },
       {
-        "q": "How deep can fish swim?",
-        "resp": "The thir tra is a simple ocean's lead to gger in flat fin with a long flat bred ",
-        "score": 0.584,
-        "cov": 0.36,
-        "nw": 25
-      }
-    ],
-    "multi": [
-      {
-        "q1": "What is a fish?",
-        "a1": "A fish passage is any device that shoot ",
-        "q2": "How do fish breathe?",
-        "a2": "Fish vacuum a scientific ritish practica",
-        "score": 0.5
-      },
-      {
-        "q1": "What are gills?",
-        "a1": "Peacebowfins, can also weak freezing too",
-        "q2": "Do all fish have gills?",
-        "a2": "Some exWhite bllownfish plants, flattene",
-        "score": 0.58
-      },
-      {
-        "q1": "What is spawning?",
-        "a1": "A spawning trigger is a device that dete",
-        "q2": "How many eggs do fish lay?",
-        "a2": "Fish eggs vary enormous in size from a f",
-        "score": 0.536
-      },
-      {
-        "q1": "What is a shark?",
-        "a1": "The head is a small marine reef fish in ",
-        "q2": "What is a great white?",
-        "a2": "RubberUV fles bresponvet its to body int",
-        "score": 0.484
-      },
-      {
-        "q1": "How do fish swim?",
-        "a1": "Fish swim upstream is an open graviders ",
-        "q2": "How fast can fish swim?",
-        "a2": "The white adult fish have its at body an",
-        "score": 0.545
+        "q": "Can fish be trained?",
+        "resp": "Yes, algae are ancy goldfish foods like crubs on neon tetras, and rasboras becau",
+        "score": 0.5478260869565218,
+        "cov": 0.34782608695652173,
+        "nw": 46
       }
     ]
   },
   "reptiles": {
     "single": [
       {
-        "q": "What is a reptile?",
-        "resp": "A reptile morph is a specific color, pattern, or physical traes linked to the ge",
-        "score": 0.581,
-        "cov": 0.333,
-        "nw": 21
+        "q": "Why is my bearded dragon glass surfing?",
+        "resp": "That is a combination of third bones, supptive too up than natural fasting. The ",
+        "score": 0.5,
+        "cov": 0.22727272727272727,
+        "nw": 44
       },
       {
-        "q": "Tell me about snakes",
-        "resp": "Yes, a snake's spectacle is a transparent, unmovable scale and scales skin, burn",
-        "score": 0.562,
-        "cov": 0.312,
-        "nw": 16
+        "q": "What is a children's python?",
+        "resp": "The dewlap is the small tortoise lizard reaching about 2 to 3 feet long, making ",
+        "score": 0.5404255319148936,
+        "cov": 0.3191489361702128,
+        "nw": 47
       },
       {
-        "q": "What is a lizard?",
-        "resp": "A bearded dragon is a medium-sized omnivorous lizard native to Australia, where ",
-        "score": 0.525,
-        "cov": 0.25,
-        "nw": 16
+        "q": "My turtle's shell feels rough. Is that normal or a problem?",
+        "resp": "Sosage thin do occo. The individuals do keep the ily. A back's larger, and any r",
+        "score": 0.5348837209302326,
+        "cov": 0.3023255813953488,
+        "nw": 43
       },
       {
-        "q": "What is a tortoise?",
-        "resp": "The tortoise is a small tortoise species reaching only 6 to 8 inches, reach 8 fe",
-        "score": 0.482,
-        "cov": 0.227,
-        "nw": 22
-      },
-      {
-        "q": "Are turtles reptiles?",
-        "resp": "Yes, reptiles have a vet ght the jo's bel is under an a main treat, adult rule o",
-        "score": 0.565,
-        "cov": 0.304,
-        "nw": 23
-      },
-      {
-        "q": "What do reptiles eat?",
-        "resp": "Tortoises graze on grasses, leaves, flowers, and fruit depending on species, and",
-        "score": 0.51,
-        "cov": 0.25,
-        "nw": 20
-      },
-      {
-        "q": "What is shedding?",
-        "resp": "Swakes provided placed which is the only weeks before the normal shedding to usu",
-        "score": 0.522,
-        "cov": 0.261,
-        "nw": 23
-      },
-      {
-        "q": "Tell me about crocodiles",
-        "resp": "What temperature or?\nJoe: Scale a ghter forcement, cium (Furcium, asome bask spo",
+        "q": "What if she starts brumating anyway?",
+        "resp": "Keep the once the warm-down worky able to and blistering overdoor peeling new we",
         "score": 0.6,
-        "cov": 0.333,
-        "nw": 3
+        "cov": 0.40425531914893614,
+        "nw": 47
       },
       {
-        "q": "What is a gecko?",
-        "resp": "Sulcata tortoises get noa tempt with ket foion is the real default open winter t",
-        "score": 0.552,
-        "cov": 0.286,
+        "q": "Why is my bearded dragon's stool runny?",
+        "resp": "Runny stools commonly follow a diet shift, too much fruit, and fast dragupbin ar",
+        "score": 0.5024390243902439,
+        "cov": 0.21951219512195122,
+        "nw": 41
+      },
+      {
+        "q": "What is a ball python's temperament like?",
+        "resp": "Russian python reaching 12 to 16 inches, native with dark blotches. to leaf-to-s",
+        "score": 0.52,
+        "cov": 0.24444444444444444,
+        "nw": 45
+      },
+      {
+        "q": "Can tortoises swim?",
+        "resp": "Tortoises are carnivorous species eat in beetles, crested geckos eat in the wild",
+        "score": 0.5631578947368421,
+        "cov": 0.34210526315789475,
+        "nw": 38
+      },
+      {
+        "q": "How do genetics labs help combat the illegal reptile trade?",
+        "resp": "There are particularly breathe air of around the sides its tail base with a temp",
+        "score": 0.5434782608695653,
+        "cov": 0.2826086956521739,
+        "nw": 46
+      },
+      {
+        "q": "Do bearded dragons brumate?",
+        "resp": "Yes, a tortoises need never a solder red for a old own beginner itself. Each seb",
+        "score": 0.4651162790697675,
+        "cov": 0.18604651162790697,
+        "nw": 43
+      },
+      {
+        "q": "how does acoustic telemetry work with crocodiles",
+        "resp": "Snakes that have a three-chambered hearts (except crocodilians have external ear",
+        "score": 0.5333333333333333,
+        "cov": 0.2857142857142857,
         "nw": 21
       },
       {
-        "q": "How do reptiles stay warm?",
-        "resp": "Tent heat ears, usually full drives and species and many reptile may not specifi",
-        "score": 0.487,
-        "cov": 0.174,
-        "nw": 23
+        "q": "How do you spot clean a bioactive setup?",
+        "resp": "A humidity for a leopard gecko ed need dry moturned for burrowing opening. So th",
+        "score": 0.5658536585365854,
+        "cov": 0.3902439024390244,
+        "nw": 41
       },
       {
-        "q": "What is a chameleon?",
-        "resp": "The Jacobson's organ, is a specialized by bird native to compility to the lenses",
-        "score": 0.562,
-        "cov": 0.333,
-        "nw": 21
-      },
-      {
-        "q": "How many snake species exist?",
-        "resp": "Reptiles first appeared about 312 to 3 3 million ago between Sous the Southeast ",
-        "score": 0.476,
-        "cov": 0.19,
-        "nw": 21
-      }
-    ],
-    "multi": [
-      {
-        "q1": "What is a reptile?",
-        "a1": "A reptile morph is a reptile shed involv",
-        "q2": "What is a lizard?",
-        "a2": "A reptile reptile vet should be replaced",
-        "score": 0.526
-      },
-      {
-        "q1": "What is shedding?",
-        "a1": "Sunown has safe for a leopard gecko can'",
-        "q2": "How often do they shed?",
-        "a2": "Yes, was occasionally eat a longer, befo",
-        "score": 0.5
-      },
-      {
-        "q1": "Tell me about snakes",
-        "a1": "Should I leave a my snake own again?\nJoe",
-        "q2": "What is a python?",
-        "a2": "A bearded dragon is a medium-sized omniv",
-        "score": 0.525
-      },
-      {
-        "q1": "Are turtles reptiles?",
-        "a1": "Water turtles can go without fions than ",
-        "q2": "What is a tortoise?",
-        "a2": "Some dry, they not tropical over prey, a",
-        "score": 0.591
-      },
-      {
-        "q1": "How do reptiles stay warm?",
-        "a1": "Tent ner to find the animal's animal, no",
-        "q2": "What is basking?",
-        "a2": "The detubeslands is the reason may see a",
-        "score": 0.543
+        "q": "What is a sea snake?",
+        "resp": "Sea snakes are highly venomous elapids adapted to marine life with paddle-like t",
+        "score": 0.5428571428571428,
+        "cov": 0.2857142857142857,
+        "nw": 42
       }
     ]
   },
   "tree": {
     "single": [
       {
-        "q": "What is a tree?",
-        "resp": "A catkin is a slender, drooping cluster of tiny flowers without showy petals, fo",
-        "score": 0.56,
-        "cov": 0.3,
-        "nw": 20
-      },
-      {
-        "q": "How do trees make food?",
-        "resp": "Trees make food through transpiration haomat, while the living phloem and phloem",
-        "score": 0.474,
-        "cov": 0.263,
-        "nw": 19
-      },
-      {
-        "q": "What is photosynthesis in a tree?",
-        "resp": "Photosynthesis needs light, water, which carbon dioxide, and nutrients from the ",
-        "score": 0.474,
-        "cov": 0.158,
-        "nw": 19
-      },
-      {
-        "q": "Why do leaves change color in autumn?",
-        "resp": "In autumn, shorter days and cooler weather slow chlorophyll production, so the g",
-        "score": 0.505,
-        "cov": 0.211,
-        "nw": 19
-      },
-      {
-        "q": "What is the trunk of a tree?",
-        "resp": "A complete ring of bark removal severs the phloem, the living layer that ships s",
-        "score": 0.583,
-        "cov": 0.391,
-        "nw": 23
-      },
-      {
-        "q": "How can you tell a trees age?",
-        "resp": "A ginkgo little near yelds the pen bark beetle with an capture among the most we",
-        "score": 0.6,
-        "cov": 0.391,
-        "nw": 23
-      },
-      {
-        "q": "What is a growth ring?",
-        "resp": "Tree rings are the concentric circles visible in a cut trunk. Each ring represen",
-        "score": 0.573,
-        "cov": 0.318,
-        "nw": 22
-      },
-      {
-        "q": "Do all trees grow one ring per year?",
-        "resp": "Most to absorb water the roots in the top collar, the pressure, growth, National",
-        "score": 0.52,
-        "cov": 0.3,
-        "nw": 20
-      },
-      {
-        "q": "What is the cambium?",
-        "resp": "The cambium is the largest tree in the world, and the tree can absorvapor water ",
-        "score": 0.508,
-        "cov": 0.375,
+        "q": "What is fire blight?",
+        "resp": "The blight, aobab spring resistant later fell branches. They keep their thin sur",
+        "score": 0.525,
+        "cov": 0.20833333333333334,
         "nw": 24
       },
       {
-        "q": "What is heartwood?",
-        "resp": "Pacific aobature spaces, of a tree's bla limb dead ing the ant caused wither a l",
-        "score": 0.555,
-        "cov": 0.318,
+        "q": "What is an ash tree used for?",
+        "resp": "Ash is a strong, springy hardwoods used for tool handles, baseball bats, and fur",
+        "score": 0.5384615384615385,
+        "cov": 0.23076923076923078,
+        "nw": 26
+      },
+      {
+        "q": "How can I tell if I am giving a new tree too much water?",
+        "resp": "Yes. Wind pollinated trees needes raose out, placing and dangling snap sprout fo",
+        "score": 0.5414634146341464,
+        "cov": 0.2682926829268293,
+        "nw": 41
+      },
+      {
+        "q": "Does a tree ever regret that decision?",
+        "resp": "Sugar maples remove add such as the crown sugars back to the ground. Trees by th",
+        "score": 0.5707317073170732,
+        "cov": 0.36585365853658536,
+        "nw": 41
+      },
+      {
+        "q": "Why does an unripe persimmon make your mouth pucker so hard?",
+        "resp": "Unripe persimmmons are long most roots, and happens only or its harder. A manage",
+        "score": 0.5243243243243243,
+        "cov": 0.2972972972972973,
+        "nw": 37
+      },
+      {
+        "q": "What is the difference between a dry fruit and a fleshy fruit on a tree?",
+        "resp": "Dry fruits like acorns, nuts, and maple es are the opy, and the citrus genuinely",
+        "score": 0.5545454545454546,
+        "cov": 0.3181818181818182,
         "nw": 22
       },
       {
-        "q": "Why do trees have bark?",
-        "resp": "Bark protects the tree from weather, insects, and disease. It is made of dead ou",
-        "score": 0.6,
-        "cov": 0.391,
-        "nw": 23
+        "q": "What is lignum vitae used for?",
+        "resp": "A drip wood is a softwood timber timber comes from wood, resin, and firs. SSSSSl",
+        "score": 0.4904761904761905,
+        "cov": 0.30952380952380953,
+        "nw": 42
       },
       {
-        "q": "What are roots for?",
-        "resp": "Roots anchor the tree in the soil where the trunk under a establish root systems",
-        "score": 0.564,
-        "cov": 0.364,
-        "nw": 22
-      }
-    ],
-    "multi": [
-      {
-        "q1": "What is a tree?",
-        "a1": "A windbreak is a from fir?\nJoe: A decidu",
-        "q2": "How do trees make food?",
-        "a2": "a Norway maple in autumn that drops its ",
-        "score": 0.543
+        "q": "Why do two equal forks in a trunk alarm arborists?",
+        "resp": "Topping is dense ingation of wood its width and soft soil. Native ice from  rais",
+        "score": 0.5555555555555556,
+        "cov": 0.3333333333333333,
+        "nw": 27
       },
       {
-        "q1": "What is photosynthesis in a tree?",
-        "a1": "Photosynthesis needs light, water, carbo",
-        "q2": "Why do leaves change color?",
-        "a2": "by decadapleaves in a warm season?\nJoe: ",
-        "score": 0.7
+        "q": "Why do orchards use dwarf rootstocks?",
+        "resp": "Root shed the soil down to the flare with hand tools. Doing hard dem decades iti",
+        "score": 0.525,
+        "cov": 0.25,
+        "nw": 16
       },
       {
-        "q1": "What is the trunk of a tree?",
-        "a1": "The trunk is the main stem of the tree t",
-        "q2": "What is bark for?",
-        "a2": "Birrelated to carls through sil in roots",
-        "score": 0.495
+        "q": "Who owns a tree that grows from a seed on the property line?",
+        "resp": "The root wound base to keep the break cold it all it al: a temperate of the crow",
+        "score": 0.5317073170731708,
+        "cov": 0.3170731707317073,
+        "nw": 41
       },
       {
-        "q1": "How can you tell a trees age?",
-        "a1": "A opposite name, cells stable that blade",
-        "q2": "What is a growth ring?",
-        "a2": "A baobab growth regue each tree one year",
-        "score": 0.527
+        "q": "What is an almond tree?",
+        "resp": "The almond is a small tree that produces stone fruits whose pits are the almonds",
+        "score": 0.606896551724138,
+        "cov": 0.41379310344827586,
+        "nw": 29
       },
       {
-        "q1": "What are roots for?",
-        "a1": "Roots anchor the tree in the soil where ",
-        "q2": "How deep do roots go?",
-        "a2": "An oak gall is a ass for its bristle-pla",
-        "score": 0.678
+        "q": "What is a coconut palm?",
+        "resp": "The coconut palm is a tropical palm that produces large coconuts in a woody husk",
+        "score": 0.5741935483870968,
+        "cov": 0.41935483870967744,
+        "nw": 31
       }
     ]
   }
