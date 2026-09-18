@@ -1257,3 +1257,73 @@ Joe: Friction is a force that resists motion between two surf
 # [2026-09-14 18:46:32] RESUME: training/train_expert.py --name knowledge --steps 4000 --resume --push 100 --log 25 --sample 25
 # [2026-09-14 18:51:24] STOPPED by signal at step 4
 # [2026-09-14 18:51:40] FINISH at step 4
+# [2026-09-18 18:15:27] RESUME: training/train_expert.py --name knowledge --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,4.7437,7.50e-05,1.42,1789769745.622321
+50,3.4901,1.50e-04,1.88,1789769758.9186711
+75,3.1039,2.25e-04,1.92,1789769771.933908
+100,2.9218,3.00e-04,2.04,1789769784.1732118
+125,2.7259,3.00e-04,2.14,1789769795.829943
+150,2.5699,3.00e-04,2.07,1789769807.8965068
+175,2.5235,3.00e-04,2.16,1789769819.4611971
+200,2.3958,3.00e-04,2.19,1789769830.9086149
+225,2.3025,2.99e-04,2.19,1789769842.3014789
+250,2.1916,2.99e-04,2.15,1789769853.934425
+275,2.4062,2.99e-04,2.18,1789769865.425216
+300,1.9945,2.99e-04,2.19,1789769876.8474638
+325,2.2400,2.98e-04,2.15,1789769888.4545228
+350,2.3021,2.98e-04,2.14,1789769900.13902
+375,2.1617,2.98e-04,2.16,1789769911.7405992
+400,1.9591,2.97e-04,2.11,1789769923.595973
+425,1.9588,2.97e-04,2.17,1789769935.147577
+450,1.9435,2.96e-04,2.23,1789769946.3646011
+475,1.8541,2.95e-04,2.19,1789769957.7920241
+500,1.9273,2.95e-04,2.14,1789769969.474779
+# [2026-09-18 18:19:31] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 18:51:58] RESUME: training/train_expert.py --name knowledge --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,1.8013,7.50e-05,0.16,1789772079.17057
+50,1.8374,1.50e-04,0.34,1789772152.829259
+75,1.7125,2.25e-04,2.06,1789772164.955426
+100,1.6967,3.00e-04,2.13,1789772176.7186391
+125,1.6191,3.00e-04,2.11,1789772188.593229
+150,1.6622,3.00e-04,2.09,1789772200.5493262
+175,1.8007,3.00e-04,2.13,1789772212.261597
+200,1.5519,3.00e-04,2.09,1789772224.242691
+225,1.5247,2.99e-04,2.08,1789772236.2695732
+250,1.5666,2.99e-04,2.09,1789772248.229146
+275,1.4290,2.99e-04,2.12,1789772259.995945
+300,1.5228,2.99e-04,2.12,1789772271.762738
+325,1.5368,2.98e-04,2.14,1789772283.4711099
+350,1.4566,2.98e-04,1.95,1789772296.277508
+375,1.3918,2.98e-04,2.00,1789772308.7966878
+400,1.3957,2.97e-04,0.17,1789772455.61627
+425,1.3120,2.97e-04,0.25,1789772555.643776
+450,1.3517,2.96e-04,2.33,1789772566.368361
+475,1.0939,2.95e-04,2.31,1789772577.193726
+500,1.2880,2.95e-04,2.02,1789772589.5939279
+# [2026-09-18 19:03:11] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 19:14:41] RESUME: training/train_expert.py --name knowledge --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+# [2026-09-18 19:14:50] FINISH at step 4
