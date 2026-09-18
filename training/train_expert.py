@@ -40,10 +40,10 @@ def is_pid_running(pid):
     except OSError:
         return False
     try:
-        with open(f"/proc/{pid}/cmdline", "rb") as cf:
-            cmd = cf.read().decode(errors="ignore")
-        return "train_expert" in cmd
-    except (OSError, FileNotFoundError):
+        result = subprocess.run(['ps', '-p', str(pid), '-o', 'comm='],
+                               capture_output=True, text=True, timeout=2)
+        return 'train_expert' in result.stdout
+    except Exception:
         return False
 
 
@@ -56,9 +56,9 @@ def get_running_train_pid(name):
             pid = int(f.read().strip())
         if is_pid_running(pid):
             try:
-                with open(f"/proc/{pid}/cmdline", "rb") as cf:
-                    cmd = cf.read().decode(errors="ignore")
-                if "train_expert" in cmd:
+                result = subprocess.run(['ps', '-p', str(pid), '-o', 'args='],
+                               capture_output=True, text=True, timeout=2)
+                if "train_expert" in result.stdout:
                     return pid
             except Exception:
                 return pid

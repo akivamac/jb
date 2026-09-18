@@ -4721,3 +4721,4 @@
 # User: The mean of a constant neurons of concenter since magnitude of 5.
 # Joe: Hastal = 15 standard devilisignments s long. The up d's slows in the magnitude is up.
 # [2026-09-17 09:23:48] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-17 20:19:15] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 25

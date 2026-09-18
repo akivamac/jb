@@ -5184,3 +5184,4 @@ ValueError: probabilities contain NaN
 # User: what is the database index
 # Joe: The database that stores data as float most database items and configeing query and configuration stateaces. It is efficient, and correct and only service
 # [2026-09-17 09:23:48] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --log 25 --sample 25
+# [2026-09-17 20:19:15] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 16 --log 25 --sample 25

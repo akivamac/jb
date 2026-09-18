@@ -11,4 +11,4 @@ if [ -f "$LOCK" ]; then
 fi
 cd /Users/dev/github-projects/joe-brain
 echo $$ > "$LOCK"
-exec python3 thern.py > /tmp/thern_overnight.log 2>&1
+exec python3 -u thern.py > /tmp/thern_overnight.log 2>&1

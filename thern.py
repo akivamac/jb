@@ -1,5 +1,6 @@
 import subprocess
 import os
+import sys
 import time
 import fcntl
 
@@ -31,7 +32,7 @@ running = []  # list of (proc, expert)
 while True:
     lock_fd = acquire_lock()
     if lock_fd is None:
-        print("Another thern.py instance is running. Waiting...")
+        print("Another thern.py instance is running. Waiting...", flush=True)
         time.sleep(30)
         continue
     i = 0
@@ -42,25 +43,26 @@ while True:
             proc = launch(['python3', 'training/train_expert.py',
                            '--name', expert, '--steps', '4000',
                            '--resume', '--push', '500',
-                           '--batch-size', '16',
+                            '--batch', '16',
                            '--log', '25', '--sample', '25'])
             running.append((proc, expert))
-            print(f"Started {expert} (PID {proc.pid})")
+            print(f"Started {expert} (PID {proc.pid})", flush=True)
             i += 1
 
         time.sleep(60)
+        sys.stdout.flush()
         still = []
         for proc, expert in running:
             ret = proc.poll()
             if ret is None:
                 still.append((proc, expert))
             elif ret == 0:
-                print(f"Finished {expert}")
+                print(f"Finished {expert}", flush=True)
             else:
-                print(f"CRASHED {expert} (exit code {ret})")
+                print(f"CRASHED {expert} (exit code {ret})", flush=True)
         running = still
 
-    print("All done. Restarting in 30s...")
+    print("All done. Restarting in 30s...", flush=True)
     fcntl.flock(lock_fd, fcntl.LOCK_UN)
     os.close(lock_fd)
     time.sleep(30)
