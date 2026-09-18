@@ -73,7 +73,7 @@ def ensure_training_server():
     with _training_server_lock:
         if is_training_server_running():
             return True
-        server_path = os.path.join(BASE, 'training', 'training_server.py')
+        server_path = os.path.join(BASE, 'training_server.py')
         if not os.path.exists(server_path):
             return False
         try:
