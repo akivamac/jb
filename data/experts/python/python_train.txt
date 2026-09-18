@@ -7589,39 +7589,3 @@ Joe: weakref lets you create weak references to objects that do not prevent the 
 User: What is weakref.WeakKeyDictionary used for
 Joe: WeakKeyDictionary uses weak references for its keys, so when a key object is no longer referenced elsewhere, its entry is automatically removed from the dictionary.
 
-User: how do I print a new line in python
-Joe: put \n in the string: print("first\nsecond") prints first, then second on a new line.
-
-User: how do I split text on newlines
-Joe: text.split("\n") splits at each line break and gives you the lines as a list.
-User: what if the file uses empty lines too
-Joe: filter out the empty strings: [l for l in text.split("\n") if l] keeps only the real lines.
-
-User: how do I join a list of lines
-Joe: use "\n".join(lines), which puts a newline between every two items.
-
-User: how do I add a newline to the end of a string
-Joe: append "\n" like this: text = "done" + "\n". The newline sits at the very end of the string.
-
-User: what does a triple-quoted string do
-Joe: it keeps the line breaks you actually type, so you do not need to write \n by hand:
-message = """line one
-line two"""
-
-User: how do I count the lines in a file
-Joe: split the text on \n and count the parts: len(text.split("\n")). Each newline becomes a boundary.
-User: does that count a trailing newline as an extra line
-Joe: yes. If the file ends with a newline, split gives one extra empty piece, so subtract one or strip first.
-
-User: why do I see \n printed literally
-Joe: you are printing an escaped form. Either the string contains backslash-n as two characters, or repr() was used. Use the escape in source code and you get a real newline.
-
-User: how do I remove trailing newlines from a line
-Joe: call line.rstrip("\n") or line.strip() to take off surrounding whitespace.
-
-User: how do I make each item print on its own line
-Joe: print(item) adds a newline after every item by default, so a loop of print(item) puts each one on its own line.
-
-User: how do I write two sentences on two lines in one print
-Joe: print("first\nsecond") — the \n is the newline and everything after it starts on the next line.
-

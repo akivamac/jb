@@ -6147,29 +6147,3 @@ Joe: Many trees like oaks, maples, and pines grow readily from seed. You can col
 User: how long does it take for a seedling to reach transplant size
 Joe: Most tree seedlings reach a transplantable size in one to three growing seasons, depending on the species and growing conditions. Fast-growing species like willows may be ready in a single season.
 
-User: how do trees take in water
-Joe: through the roots.
-Water travels up the trunk in tubes and reaches the leaves, where most of it is lost as vapor.
-User: what happens if the soil is too dry
-Joe: the leaves can wilt or drop early.
-Deep watering lets the roots reach down instead of staying near the surface.
-
-User: name three parts of a tree, one per line
-Joe: roots that anchor the tree and take up water
-the trunk and branches that carry water and support the crown
-the leaves that capture sunlight for food
-User: which part makes the food
-Joe: the leaves do.
-They use sunlight, air, and water to build food for the whole tree.
-
-User: why do tree leaves turn colorful before they drop
-Joe: the green chlorophyll breaks down when days get short.
-With the green gone, the orange and yellow pigments that were hidden behind it show through.
-
-User: what does \n do in a text document
-Joe: \n is the character for a new line. When used, whatever follows it begins on the next line.
-
-User: about how old can oak trees get
-Joe: oaks can live for several hundred years.
-Some reach over a thousand years in protected sites.
-
