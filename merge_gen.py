@@ -20,7 +20,8 @@ def load_pairs(path):
     pairs = []
     if not os.path.exists(path):
         return pairs
-    lines = open(path).read().splitlines()
+    with open(path) as f:
+        lines = f.read().splitlines()
     i, n = 0, len(lines)
     while i < n:
         line = lines[i].strip()
@@ -38,12 +39,13 @@ def load_pairs(path):
 
 def read_verdict(path):
     idx = set()
-    for line in open(path):
-        line = line.strip()
-        if re.match(r'^\d+:(ACCEPT|REJECT)', line):
-            num, rest = line.split(':', 1)
-            if rest.startswith('ACCEPT'):
-                idx.add(int(num))
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if re.match(r'^\d+:(ACCEPT|REJECT)', line):
+                num, rest = line.split(':', 1)
+                if rest.startswith('ACCEPT'):
+                    idx.add(int(num))
     return idx
 
 def sim(a, b):

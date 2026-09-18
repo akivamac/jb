@@ -38,7 +38,7 @@ BACKEND        = 'mlx'  # 'mlx'=Apple GPU, 'numpy'=CPU-only
 # model.T (1024 for all current experts). Do not add a fixed --seq-len.
 # --- END CONFIG ---
 
-running = []  # list of (proc, expert)
+running = []  # list of (proc, expert) — reset and restart all experts after they finish
 
 while True:
     lock_fd = acquire_lock()

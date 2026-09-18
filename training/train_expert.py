@@ -362,6 +362,7 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
         if interrupted:
             with open(log_path, "a") as lf:
                 lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] FINISH at step {step}\n")
+        if completed:
             git_push(name, step)
 
     elapsed = time.time() - start

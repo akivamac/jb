@@ -161,7 +161,7 @@ def _stop_expert(name):
         if is_process_alive(pid):
             try:
                 os.killpg(os.getpgid(pid), signal.SIGKILL)
-            except (ProcessLookupError, OSError):
+            except ProcessLookupError:
                 pass
     if os.path.exists(lock_path):
         try:
@@ -569,6 +569,8 @@ def load_expert_model(name):
                 try:
                     model = JoeBrain.load(model_path)
                     _model_cache[name] = model
+                    if len(_model_cache) > 10:
+                        _model_cache.clear()
                     return model
                 except Exception:
                     return None
@@ -821,12 +823,12 @@ class TrainingHandler(BaseHTTPRequestHandler):
                         except Exception:
                             pass
                         return
-                    time.sleep(1)
                     if time.time() - stream_start > max_duration:
                         msg = json.dumps({'done': True, 'reason': 'max_duration'})
                         self.wfile.write(f'data: {msg}\n\n'.encode())
                         self.wfile.flush()
                         return
+                    time.sleep(1)
         except Exception:
             pass
 

@@ -426,7 +426,7 @@ class JoeBrain:
         p = self.p
         C, H, L = self.C, self.H, self.L
         hd = C // H
-        pos = min(position, self.T - 1)
+        pos = max(0, min(position, self.T - 1))
 
         x = p['wte'][token_id] + p['wpe'][pos]
         x = x[None, :]
@@ -559,7 +559,7 @@ class JoeBrain:
                     break
                 i -= len(t)
                 pos += 1
-            return pos
+            continue  # try next stop (either broke or completed without finding)
         return None
 
     def generate_fast(self, tokenizer, prompt, max_new=120, temperature=0.8):

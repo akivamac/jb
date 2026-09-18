@@ -80,6 +80,7 @@ def cosine_lr(step, total_steps, lr_max, lr_min=1e-4, warmup=200):
     if step < warmup:
         return lr_max * step / warmup
     progress = (step - warmup) / max(1, total_steps - warmup)
+    progress = min(1.0, max(0.0, progress))
     return lr_min + 0.5 * (lr_max - lr_min) * (1 + math.cos(math.pi * progress))
 
 

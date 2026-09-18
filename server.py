@@ -136,12 +136,15 @@ def generate_blended_stream(models_weights, prompt, max_new=150, temperature=1.0
     STOPS = ['\nUser:', '\nJoe:']
     max_safe = max(len(s) for s in STOPS) * 4 + 20
     mn = 0
+    probs_list = []
     for m, w in models_weights:
         ctx = np.array(ids[-m.T:], dtype=np.int32)
         logits, _ = m.forward(ctx)
         probs = softmax(logits[-1], temp=temperature)
-        mn = max(mn, len(probs))
+        probs_list.append((probs, w))
+    mn = max(len(p) for p, _ in probs_list)
     avg_prob = np.zeros(mn)
+    total_w = 0
     for _ in range(max_new):
         probs_list = []
         for m, w in models_weights:
@@ -183,6 +186,8 @@ def route_message(msg):
     if len(ids) > 64:
         ids = ids[:64]
     probs = router.predict(ids)
+    if not np.all(np.isfinite(probs)):
+        probs = np.ones(len(probs)) / len(probs)
     top_idx = probs.argsort()[::-1]
 
     # Pick top-K: if top prob > 0.7, use 1; else blend top-2
@@ -308,6 +313,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', ctype)
         self.send_header('Content-Length', len(data))
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
         self.wfile.write(data)
 
