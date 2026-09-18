@@ -92,15 +92,17 @@ def build_prompt(history, msg):
         return history_text + "\n" + new_turn
     return new_turn
 
-def generate_stream(model, prompt, max_new=150):
+def generate_stream(model, prompt, max_new=150, temperature=1.0):
     ids = tok.encode(prompt)
     pending = ''
     STOPS = ['\nUser:', '\nJoe:']
-    max_safe = max(len(s) for s in STOPS) * 2 + 10
+    max_safe = max(len(s) for s in STOPS) * 4 + 20
     for _ in range(max_new):
         ctx = np.array(ids[-model.T:], dtype=np.int32)
         logits, _ = model.forward(ctx)
-        next_id = int(np.argmax(logits[-1]))
+        logits = logits[-1] / temperature
+        probs = softmax(logits)
+        next_id = int(np.random.choice(len(probs), p=probs))
         ids.append(next_id)
         token = tok.id_to_token.get(next_id, '')
         if token and all(ord(c) <= 127 for c in token):
@@ -127,22 +129,29 @@ def softmax(x, temp=1.0):
     return e / e.sum()
 
 
-def generate_blended_stream(models_weights, prompt, max_new=150):
+def generate_blended_stream(models_weights, prompt, max_new=150, temperature=1.0):
     """Generate using probability-averaged blending across multiple experts."""
     ids = tok.encode(prompt)
     pending = ''
     STOPS = ['\nUser:', '\nJoe:']
-    max_safe = max(len(s) for s in STOPS) * 2 + 10
+    max_safe = max(len(s) for s in STOPS) * 4 + 20
+    mn = 0
+    for m, w in models_weights:
+        ctx = np.array(ids[-m.T:], dtype=np.int32)
+        logits, _ = m.forward(ctx)
+        probs = softmax(logits[-1], temp=temperature)
+        mn = max(mn, len(probs))
+    avg_prob = np.zeros(mn)
     for _ in range(max_new):
-        avg_prob = None
+        probs_list = []
         for m, w in models_weights:
             ctx = np.array(ids[-m.T:], dtype=np.int32)
             logits, _ = m.forward(ctx)
-            probs = softmax(logits[-1], temp=1.0)
-            mn = min(len(probs), 2000)
-            if avg_prob is None:
-                avg_prob = np.zeros(mn)
-            avg_prob[:mn] += probs[:mn] * w
+            probs = softmax(logits[-1], temp=temperature)
+            probs_list.append((probs, w))
+        avg_prob[:] = 0
+        for probs, w in probs_list:
+            avg_prob[:len(probs)] += probs[:len(probs)] * w
         next_id = int(np.argmax(avg_prob))
         ids.append(next_id)
         token = tok.id_to_token.get(next_id, '')
@@ -329,23 +338,24 @@ class Handler(BaseHTTPRequestHandler):
             max_new = int(data.get('max_new', 120))
             prompt = build_prompt(history, msg)
 
+            temperature = float(data.get('temperature', 1.0))
             # Route: if expert specified, use it; otherwise router auto-selects
             if expert_name and expert_name in experts:
                 selected = [(expert_name, 1.0)]
                 model = experts[expert_name]
-                gen_func = lambda p, mn: generate_stream(model, p, mn)
+                gen_func = lambda p, mn: generate_stream(model, p, mn, temperature)
             elif router is not None:
                 selected = route_message(msg)
                 if len(selected) == 1:
                     model = experts[selected[0][0]]
-                    gen_func = lambda p, mn: generate_stream(model, p, mn)
+                    gen_func = lambda p, mn: generate_stream(model, p, mn, temperature)
                 else:
                     models_weights = [(experts[n], w) for n, w in selected]
-                    gen_func = lambda p, mn: generate_blended_stream(models_weights, p, mn)
+                    gen_func = lambda p, mn: generate_blended_stream(models_weights, p, mn, temperature)
             else:
                 selected = [('cot', 1.0)]
                 model = experts['cot']
-                gen_func = lambda p, mn: generate_stream(model, p, mn)
+                gen_func = lambda p, mn: generate_stream(model, p, mn, temperature)
 
             self.send_response(200)
             self.send_header('Content-Type', 'text/event-stream')

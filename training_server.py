@@ -91,8 +91,8 @@ def is_process_alive(pid):
         return False
     # On macOS, /proc doesn't exist. Use subprocess to check cmdline.
     try:
-        result = subprocess.run(['ps', '-p', str(pid), '-o', 'comm='],
-                               capture_output=True, text=True, timeout=2)
+        result = subprocess.run(['ps', '-p', str(pid), '-o', 'args='],
+                                capture_output=True, text=True, timeout=2)
         return 'train_expert' in result.stdout
     except Exception:
         return False
@@ -513,7 +513,7 @@ def sync_state():
                     pass
 
         # After syncing, try to start queued items
-    process_queue()
+        process_queue()
 
 # --- Background thread to monitor training and auto-dequeue ---
 
@@ -577,13 +577,18 @@ def load_expert_model(name):
 def build_test_prompt(msg):
     new_turn = f"User: {msg}\nJoe:"
     new_ids = TOK.encode(new_turn)
+    budget = 1024 - len(new_ids) - 2
+    if len(new_ids) > budget:
+        msg = msg[:max(1, budget - 4)]
+        new_turn = f"User: {msg}\nJoe:"
+        new_ids = TOK.encode(new_turn)
     return new_turn
 
 def generate_stream(model, prompt, max_new=150):
     ids = TOK.encode(prompt)
     pending = ''
     STOPS = ['\nUser:', '\nJoe:']
-    max_safe = max(len(s) for s in STOPS) * 2 + 10
+    max_safe = max(len(s) for s in STOPS) * 4 + 20
     for _ in range(max_new):
         ctx = NP.array(ids[-model.T:], dtype=NP.int32)
         logits, _ = model.forward(ctx)

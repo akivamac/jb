@@ -53,8 +53,8 @@ def is_pid_running(pid):
     except OSError:
         return False
     try:
-        result = subprocess.run(['ps', '-p', str(pid), '-o', 'comm='],
-                               capture_output=True, text=True, timeout=2)
+        result = subprocess.run(['ps', '-p', str(pid), '-o', 'args='],
+                                capture_output=True, text=True, timeout=2)
         return 'train_expert' in result.stdout
     except Exception:
         return False
@@ -289,10 +289,12 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
     signal.signal(signal.SIGTERM, handle_stop)
 
     completed = False
+    interrupted = False
     step = 0
     try:
         for step in range(1, steps + 1):
             if should_stop[0]:
+                interrupted = True
                 break
             model.zero_grad()
 
@@ -357,7 +359,7 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
                 pass
             print(f"[ERROR] Failed to save model: {e}")
         remove_lock(name)
-        if completed:
+        if interrupted:
             with open(log_path, "a") as lf:
                 lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] FINISH at step {step}\n")
             git_push(name, step)

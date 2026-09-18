@@ -7,7 +7,7 @@ import json
 import os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MJ_BRAIN = os.environ.get('JOE_BRAIN', os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Mj.ai', 'brain'))
+MJ_BRAIN = os.environ.get('JOE_BRAIN', os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'brain'))
 if not os.path.exists(MJ_BRAIN):
     print(f"WARNING: JOE_BRAIN path does not exist: {MJ_BRAIN}")
 OUT = os.path.join(REPO, 'data', 'train.txt')

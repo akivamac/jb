@@ -168,6 +168,7 @@ class ExpertRegistry:
 
         # If none survived, keep all
         if not surviving:
+            print("[ExpertRegistry] WARNING: No experts survived quality filter at prefill; bypassing filter for all experts")
             surviving = [(n, m, kv) for n, _, _, m, kv in all_prefills]
 
         return blended, surviving
@@ -184,6 +185,10 @@ class ExpertRegistry:
             logits, new_kv = model.forward_one(token_id, position, kv)
             all_logits.append((name, logits, True))  # trust surviving experts
             updated.append((name, model, new_kv))
+
+        # If no experts survived prefill, log a warning
+        if not expert_caches:
+            print("[ExpertRegistry] WARNING: forward_one_ensemble called with empty expert_caches")
 
         blended = self.blend_logits(all_logits)
         return blended, updated

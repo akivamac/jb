@@ -44,11 +44,10 @@ def get_running_train_pid():
         with open(LOCK_PATH) as f:
             pid = int(f.read().strip())
         if is_pid_running(pid):
-            # quick cmdline check (best-effort)
             try:
-                with open(f"/proc/{pid}/cmdline", "rb") as cf:
-                    cmd = cf.read().decode(errors="ignore")
-                if "train.py" in cmd:
+                result = subprocess.run(['ps', '-p', str(pid), '-o', 'args='],
+                                       capture_output=True, text=True, timeout=2)
+                if "train.py" in result.stdout:
                     return pid
             except Exception:
                 return pid  # fallback if can't read cmdline
@@ -234,6 +233,8 @@ def train(steps=5000, lr=3e-4, seq_len=128, batch_size=8,
         with open(log_path, "a") as lf:
             lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] INTERRUPT at step {step}\n")
         raise
+    else:
+        completed = True
     finally:
         # Save current model state on exit
         try:
@@ -250,8 +251,6 @@ def train(steps=5000, lr=3e-4, seq_len=128, batch_size=8,
         if completed:
             with open(log_path, "a") as lf:
                 lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] FINISH at step {step}\n")
-    
-    completed = True
 
     # Save
     model.save(os.path.join(OUT_DIR, 'model.npz'))

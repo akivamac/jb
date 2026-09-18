@@ -84,7 +84,7 @@ for name in names:
         if nq in train_norms or (kept and any(sim(nq, norm(q2)) > 0.82 for q2, _, _ in kept)):
             removed_train += 1
             continue
-        if nq in seen or (kept and any(sim(nq, norm(q2)) > 0.82 for q2, _, _ in kept)):
+        if nq in seen:
             removed_self += 1
             continue
         seen.add(nq)

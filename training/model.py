@@ -544,7 +544,12 @@ class JoeBrain:
         return tokenizer.decode(ids)
 
     def _find_stop(self, tokenizer, ids, prompt_len, STOPS):
-        """Return the token index where a stop sequence ends, or None."""
+        """Return the token index where a stop sequence ends, or None.
+
+        Note: Stop sequences may be split across BPE token boundaries,
+        which this mapping cannot detect. A fallback verification is
+        added after token-level mapping.
+        """
         tail = len(ids) - prompt_len
         if tail < 1:
             return None
@@ -557,8 +562,14 @@ class JoeBrain:
             pos = prompt_len
             for tk in ids[prompt_len:]:
                 t = tokenizer.id_to_token.get(tk, '')
+                if not t:
+                    continue
                 if len(t) > i:
-                    return pos
+                    # Verify stop sequence actually exists at computed position
+                    decoded = tokenizer.decode(ids[prompt_len:pos])
+                    if stop in decoded:
+                        return pos
+                    break
                 i -= len(t)
                 pos += 1
             return pos

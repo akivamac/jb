@@ -192,7 +192,7 @@ def build_dataset(tokenizer):
     for i in range(len(EXPERTS)):
         items = list(by_class[i])
         if len(items) > TARGET_PER_CLASS:
-            by_class[i] = set(np.random.choice(items, TARGET_PER_CLASS, replace=False))
+            by_class[i] = set(np.random.choice(items, TARGET_PER_CLASS, replace=True))
 
     all_examples = []
     for i, msgs in by_class.items():
@@ -351,6 +351,13 @@ def train():
             grads['wte'][x_batch[i]] += d_x
             grads['wpe'][:T] += d_x
 
+        # Gradient clipping by total norm
+        total_norm = np.sqrt(sum((g ** 2).sum() for g in grads.values()))
+        if total_norm > 1.0:
+            scale = 1.0 / (total_norm + 1e-8)
+            for k in grads:
+                grads[k] *= scale
+
         model.t += 1
         beta1, beta2, eps = 0.9, 0.999, 1e-8
         for k in model.p:
@@ -366,9 +373,13 @@ def train():
 
         if step % 500 == 0:
             avg_loss = total_loss / batch_size
-            train_correct = sum(1 for i in range(len(X_train)) if np.argmax(model.forward(X_train[i])) == np.argmax(Y_train[i]))
-            val_correct = sum(1 for i in range(len(X_val)) if np.argmax(model.forward(X_val[i])) == np.argmax(Y_val[i]))
-            print(f"  step {step:5d}/{steps} | loss {avg_loss:.4f} | train {train_correct/len(X_train):.1%} | val {val_correct/len(X_val):.1%}")
+            n_sample = min(100, len(X_train))
+            sample_idx = np.random.choice(len(X_train), n_sample, replace=False)
+            train_correct = sum(1 for i in sample_idx if np.argmax(model.forward(X_train[i])) == np.argmax(Y_train[i]))
+            n_val = min(100, len(X_val))
+            val_idx = np.random.choice(len(X_val), n_val, replace=False)
+            val_correct = sum(1 for i in val_idx if np.argmax(model.forward(X_val[i])) == np.argmax(Y_val[i]))
+            print(f"  step {step:5d}/{steps} | loss {avg_loss:.4f} | train {train_correct/n_sample:.1%} | val {val_correct/n_val:.1%}")
             lr *= 0.95
 
     os.makedirs(os.path.dirname(ROUTER_PATH), exist_ok=True)

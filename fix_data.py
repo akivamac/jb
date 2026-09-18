@@ -17,7 +17,7 @@ CONVOS_PATH = os.path.join(BASE_DIR, 'data', 'conversations.txt')
 def extract_convos(script_path):
     """Extracts the convos list from make_conversations.py"""
     if not os.path.exists(script_path):
-        print(f"❌ Error: {script_path} not found.")
+        print(f"Warning: {script_path} not found; using conversations.txt instead")
         return []
 
     with open(script_path, 'r', encoding='utf-8') as f:
@@ -28,7 +28,7 @@ def extract_convos(script_path):
     match = re.search(r'convos\s*=\s*\[(.*?)\]', content, re.DOTALL)
     
     if not match:
-        print("❌ Error: Could not find 'convos = [...] ' in make_conversations.py")
+        print("Could not find 'convos = [...] ' in make_conversations.py")
         return []
 
     list_str = match.group(1)

@@ -182,7 +182,7 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     HTTPServer.allow_reuse_address = True
-    server = HTTPServer(('0.0.0.0', PORT), Handler)
+    server = HTTPServer(('', PORT), Handler)
     print(f"\nDirect chat at http://localhost:{PORT}")
     try:
         server.serve_forever()

@@ -40,7 +40,7 @@ def send_message(msg, history):
             continue
         try:
             # Each line is like: b'data: {"char":"H"}'
-            data = json.loads(line.decode().lstrip("data: "))
+            data = json.loads(line.decode().removeprefix("data: "))
         except Exception:
             continue
 

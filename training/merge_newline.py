@@ -77,8 +77,8 @@ for name in names:
     if os.path.exists(log_path):
         with open(log_path) as f:
             log_lines = f.readlines()
-        if len(log_lines) > 100:
+        if len(log_lines) > 200:
             with open(log_path, 'w') as f:
-                f.writelines(log_lines[-50:])
+                f.writelines(log_lines[-100:])
     print(f"{name}: cands={len(load_blocks(cand_path))} -> merged={added} "
           f"(dup vs {removed_train}+{removed_self})")
