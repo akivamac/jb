@@ -23,14 +23,12 @@ p { color: var(--text-dim); font-size: 14px; margin-bottom: 16px; }
 .btn { display: inline-block; padding: 10px 24px; border-radius: var(--radius); font-size: 14px; font-weight: 600; cursor: pointer; border: none; text-decoration: none; }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-primary:hover { opacity: 0.85; }
-.btn-success { background: var(--success); color: #fff; }
 .btn-warn { background: var(--warn); color: #fff; }
 .btn-mono { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 12px; background: var(--bg); border: 1px solid var(--border); color: var(--text); }
 .cmd-box { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 16px; font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; text-align: left; margin: 16px 0; word-break: break-all; position: relative; }
 .copy-btn { position: absolute; top: 8px; right: 8px; padding: 4px 8px; font-size: 11px; background: var(--accent); color: #fff; border: none; border-radius: 4px; cursor: pointer; }
 .spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
-.hidden { display: none; }
 </style>
 </head>
 <body>
@@ -49,18 +47,22 @@ var title = document.getElementById('title');
 var desc = document.getElementById('desc');
 var actions = document.getElementById('actions');
 
-if (state === 'ssh_ok') {
-status.textContent = '✅';
-} else if (state === 'no_ssh') {
+if (state === 'no_ssh') {
   status.textContent = '🛡️';
   title.textContent = 'No SSH Connection';
   desc.textContent = 'Connect to the Mac via SSH to access the training dashboard.';
-  actions.innerHTML = '<div class="cmd-box"><span class="copy-btn" onclick="copyCmd()">Copy</span><code id="ssh-cmd">ssh dev@[IP_ADDRESS]</code><br><small style="color:var(--text-dim)">Then open this page</small></div><br><button class="btn btn-warn" onclick="retry()">Retry</button>';
+  actions.innerHTML = '<div class="cmd-box"><span class="copy-btn" onclick="copyCmd()">Copy</span><code id="ssh-cmd">ssh dev@[IP_ADDRESS]</code><br><small style="color:var(--text-dim)">Then open localhost:8888</small></div><br><button class="btn btn-warn" onclick="retry()">Retry</button>';
 } else if (state === 'no_internet') {
   status.textContent = '🌐';
   title.textContent = 'No Internet';
   desc.textContent = 'Connect to the internet to access the training dashboard.';
   actions.innerHTML = '<button class="btn btn-primary" onclick="retry()">Retry</button>';
+} else {
+  status.textContent = '⏳';
+  title.textContent = 'Checking connection...';
+  desc.textContent = 'Verifying SSH and training server status.';
+  actions.innerHTML = '<div class="spinner"></div>';
+  setTimeout(function() { location.reload(); }, 2000);
 }
 
 function copyCmd() {

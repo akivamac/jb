@@ -2,8 +2,10 @@
 JoeBrain SSH-Aware Training Dashboard Gateway
 
 Runs on port 6666 on the Mac. Tablet accesses via localhost:6666
-(through SSH tunnel). Checks SSH connectivity and starts the
-training server if needed. Serves the gateway page with state.
+(through SSH tunnel). When SSH is connected, proxies to the
+training server on port 9091 so the tablet sees the training
+dashboard directly. When SSH is not available, shows a status
+page with connection instructions.
 """
 
 import json
@@ -12,14 +14,16 @@ import subprocess
 import sys
 import threading
 import time
+import urllib.request
+import urllib.error
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-PORT = 6666
+PORT = 8888
 TRAINING_PORT = 9091
 SSH_USER = 'dev'
 SSH_HOST = 'localhost'
-INTERNET_CHECK_HOST = '8.8.8.8'
+INTERNET_CHECK_HOST = '[IP_ADDRESS]'
 GATEWAY_HTML = os.path.join(BASE, 'ssh_ui.html')
 
 _training_server_proc = None
@@ -29,12 +33,9 @@ _training_server_lock = threading.Lock()
 def check_ssh(timeout=3):
     try:
         result = subprocess.run(
-            ['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=' + str(timeout),
-             '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/dev/null',
-             f'{SSH_USER}@{SSH_HOST}', 'echo', 'ok'],
-            capture_output=True, text=True, timeout=timeout + 2
+            ['ps', 'aux'], capture_output=True, text=True, timeout=2
         )
-        return result.returncode == 0 and 'ok' in result.stdout
+        return 'sshd' in result.stdout
     except Exception:
         return False
 
@@ -49,7 +50,7 @@ def check_internet(timeout=3):
         if result.returncode == 0:
             return True
         result2 = subprocess.run(
-            ['ping', '-c', '1', '-W', str(timeout), '8.8.8.8'],
+            ['ping', '-c', '1', '-W', str(timeout), '[IP_ADDRESS]'],
             capture_output=True, text=True, timeout=timeout + 2
         )
         return result2.returncode == 0
@@ -98,8 +99,26 @@ def get_state():
     return 'no_internet'
 
 
+def proxy_to_training(path, method='GET', body=None):
+    """Proxy a request to the training server on localhost:9091."""
+    try:
+        url = f'http://localhost:{TRAINING_PORT}{path}'
+        data = body.encode() if body else None
+        req = urllib.request.Request(url, data=data, method=method)
+        req.add_header('Content-Type', 'application/json')
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            resp_body = resp.read()
+            headers = dict(resp.headers)
+            return resp.status, headers, resp_body
+    except urllib.error.HTTPError as e:
+        return e.code, dict(e.headers), e.read()
+    except Exception:
+        return None, None, None
+
+
 class GatewayHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
+    def _proxy(self, method):
+        # Gateway's own API endpoints (never proxied)
         if self.path == '/ping':
             self.send_response(200)
             self.send_header('Content-Type', 'text/plain')
@@ -107,11 +126,10 @@ class GatewayHandler(BaseHTTPRequestHandler):
             self.wfile.write(b'ok')
             return
         if self.path == '/api/state':
-            state = get_state()
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            self.wfile.write(json.dumps({'state': state}).encode())
+            self.wfile.write(json.dumps({'state': get_state()}).encode())
             return
         if self.path == '/api/training':
             running = is_training_server_running()
@@ -120,6 +138,23 @@ class GatewayHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(json.dumps({'running': running}).encode())
             return
+
+        # If SSH is connected, proxy to training server
+        if check_ssh():
+            content_length = int(self.headers.get('Content-Length', 0))
+            post_body = self.rfile.read(content_length).decode() if content_length > 0 else None
+            status, headers, resp_body = proxy_to_training(self.path, method, post_body)
+            if status is not None:
+                self.send_response(status)
+                for key, val in headers.items():
+                    if key.lower() not in ('content-length', 'transfer-encoding', 'connection'):
+                        self.send_header(key, val)
+                self.send_header('Content-Length', str(len(resp_body)))
+                self.end_headers()
+                self.wfile.write(resp_body)
+                return
+
+        # SSH not connected — serve gateway HTML (GET only)
         self.send_response(200)
         self.send_header('Content-Type', 'text/html')
         self.send_header('Access-Control-Allow-Origin', '*')
@@ -131,6 +166,19 @@ class GatewayHandler(BaseHTTPRequestHandler):
             self.wfile.write(html.encode())
         except Exception:
             self.wfile.write(b'<html><body><h1>Gateway error</h1></body></html>')
+
+    def do_GET(self):
+        self._proxy('GET')
+
+    def do_POST(self):
+        self._proxy('POST')
+
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
 
     def log_message(self, format, *args):
         pass
