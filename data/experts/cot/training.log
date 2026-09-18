@@ -5648,3 +5648,6 @@ AttributeError: 'array' object has no attribute 'copy'
 25,0.0276,7.50e-05,0.75,1789772775.310836
 50,0.0228,1.50e-04,2.08,1789772787.290733
 # [2026-09-18 19:06:36] FINISH at step 64
+# [2026-09-18 19:24:30] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+# [2026-09-18 19:24:52] STOP_PREV: signaling PID 13731 to stop
+# [2026-09-18 19:25:03] FINISH at step 2
