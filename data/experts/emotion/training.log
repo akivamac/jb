@@ -2506,3 +2506,73 @@ Joe: I see you. You
 # [2026-09-18 15:16:59] SAMPLE step 3500:
 # 
 # Joe: That is a profound loss. You deserved
+# [2026-09-18 18:00:27] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0217,7.50e-05,0.35,1789768898.5585501
+50,0.0187,1.50e-04,0.27,1789768989.762361
+75,0.0190,2.25e-04,2.44,1789768999.9854321
+100,0.0187,3.00e-04,1.09,1789769023.0159419
+125,0.0195,3.00e-04,0.23,1789769130.5515468
+150,0.0210,3.00e-04,0.21,1789769251.7538261
+175,0.0217,3.00e-04,2.41,1789769262.1398242
+200,0.0231,3.00e-04,2.45,1789769272.347143
+225,0.0228,2.99e-04,2.44,1789769282.6103308
+250,0.0241,2.99e-04,2.44,1789769292.860836
+275,0.0252,2.99e-04,2.45,1789769303.0730581
+300,0.0243,2.99e-04,0.38,1789769368.360776
+325,0.0248,2.98e-04,0.26,1789769464.287591
+350,0.0246,2.98e-04,0.27,1789769555.685833
+375,0.0253,2.98e-04,2.38,1789769566.175096
+400,0.0246,2.97e-04,2.43,1789769576.46255
+425,0.0236,2.97e-04,2.44,1789769586.7063549
+450,0.0248,2.96e-04,2.45,1789769596.91897
+475,0.0249,2.95e-04,2.45,1789769607.120661
+500,0.0245,2.95e-04,0.39,1789769670.607229
+# [2026-09-18 18:14:32] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 18:36:58] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0216,7.50e-05,0.17,1789771168.1538172
+50,0.0183,1.50e-04,0.31,1789771249.2912781
+75,0.0180,2.25e-04,2.23,1789771260.498674
+100,0.0182,3.00e-04,2.21,1789771271.800962
+125,0.0195,3.00e-04,2.11,1789771283.621004
+150,0.0211,3.00e-04,2.13,1789771295.365851
+175,0.0238,3.00e-04,2.23,1789771306.5598762
+200,0.0238,3.00e-04,2.18,1789771318.013713
+225,0.0235,2.99e-04,2.09,1789771329.9767082
+250,0.0247,2.99e-04,2.04,1789771342.229224
+275,0.0261,2.99e-04,2.04,1789771354.4555259
+300,0.0247,2.99e-04,2.16,1789771366.044001
+325,0.0246,2.98e-04,2.22,1789771377.293938
+350,0.0245,2.98e-04,2.19,1789771388.731117
+375,0.0251,2.98e-04,2.17,1789771400.2466078
+400,0.0245,2.97e-04,2.14,1789771411.913051
+425,0.0241,2.97e-04,2.22,1789771423.1921751
+450,0.0241,2.96e-04,2.21,1789771434.5144908
+475,0.0248,2.95e-04,2.20,1789771445.8838952
+500,0.0246,2.95e-04,2.22,1789771457.1703
+# [2026-09-18 18:44:18] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 19:07:41] RESUME: training/train_expert.py --name emotion --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+# [2026-09-18 19:07:54] FINISH at step 2
