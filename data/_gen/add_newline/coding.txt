@@ -1,16 +1,17 @@
 User: how do I print a new line
-Joe: you put \n inside the quotes, like print("Hello\nWorld"). Hello prints on one line and World prints on the next.
+Joe: you put \n inside the quotes, like print("Hello\nWorld").
 
 User: how do I print three separate lines
 Joe: chain two \n sequences: print("one\ntwo\nthree")
+
 User: and how do I make the third line start spaced over
 Joe: put a space before it in the string: print("one\ntwo\n three")
 
 User: how do I split a string by newlines
-Joe: call split with \n as the separator: text.split("\n") returns a list with one entry per line.
+Joe: call split with \n as the separator: text.split("\n") gives the lines.
 
 User: what does the \n escape do
-Joe: \n is how you write a newline inside a string. When the program runs it turns into a real line break in the output.
+Joe: \n is how you write a newline inside a string; at runtime it becomes a real line break.
 
 User: how do I join lines back together
 Joe: join them with the \n character: "\n".join(lines)
@@ -19,45 +20,41 @@ User: I want each item on its own line
 Joe: put \n between the items: print("a\nb\nc") or call print once per item.
 
 User: how do I stop print from adding a newline
-Joe: pass end="" to print: print("done", end=""). By default print adds a newline at the end of its output.
+Joe: pass end="" to print: print("done", end="").
 
 User: how do I write several lines to a file
 Joe: join the lines with \n and write once: fp.write("\n".join(lines))
 
 User: my string prints the letters backslash-n instead of a line break
-Joe: that means the text contains the two characters \n instead of a real newline. Write it as an escape inside your code and it will convert to a real newline.
+Joe: the text holds the two characters \n instead of a real newline; use the escape in code.
 
 User: how do I add an empty line to my output
-Joe: print two newlines at once with print("\n") or just call print() on its own line.
+Joe: print two newlines at once with print("\n") or just call print().
 
 User: why does my program print all on one line
-Joe: check the end argument of print. The default is a newline, but something may have changed it to end="". Use print(item) for each item to get one per line.
+Joe: check the end argument of print; use print(item) for each item on its own line.
 
 User: what should a generator function look like
-Joe: a function that uses yield instead of return:
-def count(stop):
-    n = 0
-    while n < stop:
-        yield n
-        n += 1
+Joe: a function that uses yield instead of return, like def count(stop): yield n while n < stop.
+
 User: how do I use it
-Joe: loop over it: for x in count(3): print(x) prints 0, then 1, then 2, each on its own line.
+Joe: loop over it: for x in count(3): print(x) prints 0, then 1, then 2.
 
 User: how do I read a file line by line
-Joe: iterate over the open file directly, or split the text on \n: for line in text.split("\n"). Each iteration gives you one line of the file.
+Joe: iterate over the open file directly, or split the text on \n.
 
 User: what is the difference between \n in a string and a real newline
-Joe: inside code they are the same thing — the escape \n becomes a real newline when the string is used. In a file, the real newline is the byte that ends a line; the two-character text \n is just that spelling.
+Joe: inside code they are the same — the escape \n becomes a real newline when the string is used.
 
 User: how do I write a list to a file with each item on its own line
 Joe: join the items on \n and write once: fp.write("\n".join(items))
+
 User: how do I read them back
 Joe: open the file and split the text on \n: text.split("\n") gives the items back.
 
 User: what does the tab escape do in a string
-Joe: \t is a tab, it moves the text over a few spaces.
+Joe: \t is a tab; it moves the text over a few spaces.
+
 User: so \n and \t are both escape sequences
-Joe: exactly. \n is the newline escape.
-\t is the tab escape.
-Each one is a single character written with a backslash plus a letter.
+Joe: exactly — \n is the newline escape and \t is the tab escape.
 

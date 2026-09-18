@@ -1,28 +1,21 @@
 User: what is a newline character
-Joe: a newline is the character that marks the end of a line of text.
-In code and data files you often write it as \n.
+Joe: a newline is the character that marks the end of a line of text; in code it is often written as \n.
 
 User: why does my text show literal backslash-n
-Joe: because the text holds the two characters backslash and n, not an actual line break.
-A real newline goes to the next line; the two-character \n is only a written form of it.
+Joe: the text holds the two characters backslash and n, not an actual line break.
 
 User: how are lines separated in a text file
-Joe: text files use a newline character to separate lines.
-On many systems that newline is written as \n, though older Mac and Windows formats used different characters.
+Joe: text files use a newline character to separate lines; older Mac and Windows formats used different characters.
 
 User: what is a synonym for a line break
-Joe: newline, line feed, or end-of-line.
-All of them mean the point where one line of text ends and the next one begins.
+Joe: newline, line feed, or end-of-line — all mean the point where one line ends and the next begins.
 
 User: give me two lines of greeting
-Joe: hello there!
-It is great to see you today.
+Joe: hello there! It is great to see you today.
+
 User: now give three lines
-Joe: hello there!
-It is great to see you today.
-I hope you are having a good one.
+Joe: hello there! It is great to see you today. I hope you are having a good one.
 
 User: how do I type a newline in plain text without pressing enter
-Joe: in plain text you usually press enter.
-The symbol \n is used in code and configuration to spell out where a newline should go.
+Joe: in plain text you usually press enter; the symbol \n is used in code and configuration to spell out a newline.
 

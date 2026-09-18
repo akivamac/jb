@@ -8,3 +8,13 @@
 [python] cands=10 dropped(train)=0 dropped(intra)=0 MERGED=10
 [cot] cands=7 dropped(train)=0 dropped(intra)=0 MERGED=7
 [horse] cands=5 dropped(train)=0 dropped(intra)=0 MERGED=5
+[tree] cands=7 dropped(train)=0 dropped(intra)=0 MERGED=7
+[reptiles] cands=6 dropped(train)=0 dropped(intra)=0 MERGED=6
+[fish] cands=6 dropped(train)=0 dropped(intra)=0 MERGED=6
+[knowledge] cands=7 dropped(train)=0 dropped(intra)=0 MERGED=7
+[greeting] cands=7 dropped(train)=0 dropped(intra)=0 MERGED=7
+[emotion] cands=6 dropped(train)=0 dropped(intra)=0 MERGED=6
+[coding] cands=20 dropped(train)=0 dropped(intra)=0 MERGED=20
+[python] cands=12 dropped(train)=0 dropped(intra)=0 MERGED=12
+[cot] cands=8 dropped(train)=0 dropped(intra)=0 MERGED=8
+[horse] cands=7 dropped(train)=0 dropped(intra)=0 MERGED=7

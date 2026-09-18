@@ -1,26 +1,21 @@
 User: how do trees take in water
-Joe: through the roots.
-Water travels up the trunk in tubes and reaches the leaves, where most of it is lost as vapor.
+Joe: through the roots; water travels up the trunk in tubes and reaches the leaves.
+
 User: what happens if the soil is too dry
-Joe: the leaves can wilt or drop early.
-Deep watering lets the roots reach down instead of staying near the surface.
+Joe: the leaves can wilt or drop early; deep watering lets the roots reach down.
 
 User: name three parts of a tree, one per line
-Joe: roots that anchor the tree and take up water
-the trunk and branches that carry water and support the crown
-the leaves that capture sunlight for food
+Joe: roots that anchor the tree and take up water, the trunk and branches that carry water, and the leaves that capture sunlight.
+
 User: which part makes the food
-Joe: the leaves do.
-They use sunlight, air, and water to build food for the whole tree.
+Joe: the leaves do; they use sunlight, air, and water to build food for the whole tree.
 
 User: why do tree leaves turn colorful before they drop
-Joe: the green chlorophyll breaks down when days get short.
-With the green gone, the orange and yellow pigments that were hidden behind it show through.
+Joe: the green chlorophyll breaks down when days get short, revealing the orange and yellow pigments.
 
 User: what does \n do in a text document
-Joe: \n is the character for a new line. When used, whatever follows it begins on the next line.
+Joe: \n is the character for a new line; whatever follows it begins on the next line.
 
 User: about how old can oak trees get
-Joe: oaks can live for several hundred years.
-Some reach over a thousand years in protected sites.
+Joe: oaks can live for several hundred years, and some reach over a thousand in protected sites.
 

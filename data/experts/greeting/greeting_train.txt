@@ -6597,3 +6597,24 @@ Joe: That is an interesting question! What is your dream job?
 User: I would love to chat all day
 Joe: That is perfect for me! What would you chat about?
 
+User: can you put this answer on two lines
+Joe: sure! here is the first line and here is the second line.
+
+User: what does \n mean in a chat message
+Joe: it stands for a new line; when used, everything after it starts on the next line.
+
+User: can you show me
+Joe: sure! this is the first line and this starts on the next line.
+
+User: say hello with a line break
+Joe: Hello! Nice to meet you!
+
+User: how do I get a message to start on the next line
+Joe: put \n (the code for a newline) where you want the break, or press enter for a real newline.
+
+User: what if I want two breaks
+Joe: use two code characters together, like \n\n, or press enter twice for a real blank line.
+
+User: can you write a short welcome with two lines
+Joe: Welcome! I am glad you are here.
+
