@@ -5570,3 +5570,73 @@ Invoked with types: mlx.core.array, type
 # 
 # Joe: C(10,2) = 10 * 9*8*7
 # [2026-09-18 17:38:30] FINISH at step 4000
+# [2026-09-18 17:55:27] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0179,7.50e-05,1.58,1789768543.140125
+50,0.0169,1.50e-04,2.19,1789768554.556015
+75,0.0173,2.25e-04,2.21,1789768565.857006
+100,0.0213,3.00e-04,2.11,1789768577.680338
+125,0.0356,3.00e-04,1.96,1789768590.460323
+150,0.0367,3.00e-04,1.96,1789768603.218001
+175,0.0376,3.00e-04,1.97,1789768615.898842
+200,0.0376,3.00e-04,1.97,1789768628.619942
+225,0.0358,2.99e-04,2.00,1789768641.130073
+250,0.0391,2.99e-04,2.00,1789768653.624573
+275,0.0380,2.99e-04,1.93,1789768666.5985
+300,0.0410,2.99e-04,1.88,1789768679.885835
+325,0.0399,2.98e-04,2.02,1789768692.250054
+350,0.0407,2.98e-04,2.17,1789768703.753215
+375,0.0403,2.98e-04,2.19,1789768715.167598
+400,0.0361,2.97e-04,2.09,1789768727.10372
+425,0.0410,2.97e-04,1.97,1789768739.78883
+450,0.0386,2.96e-04,2.09,1789768751.733116
+475,0.0391,2.95e-04,2.14,1789768763.407646
+500,0.0391,2.95e-04,1.95,1789768776.211633
+# [2026-09-18 17:59:37] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 18:32:58] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0305,7.50e-05,0.16,1789770931.123581
+50,0.0228,1.50e-04,0.27,1789771024.606178
+75,0.0223,2.25e-04,2.24,1789771035.764479
+100,0.0257,3.00e-04,2.21,1789771047.1177
+125,0.0349,3.00e-04,2.11,1789771058.973742
+150,0.0340,3.00e-04,1.97,1789771071.6419132
+175,0.0368,3.00e-04,2.08,1789771083.676162
+200,0.0356,3.00e-04,2.16,1789771095.236814
+225,0.0357,2.99e-04,2.17,1789771106.783893
+250,0.0352,2.99e-04,2.11,1789771118.656759
+275,0.0363,2.99e-04,2.14,1789771130.344637
+300,0.0336,2.99e-04,2.13,1789771142.1088068
+325,0.0327,2.98e-04,2.07,1789771154.185677
+350,0.0347,2.98e-04,1.89,1789771167.428857
+375,0.0329,2.98e-04,1.98,1789771180.063336
+400,0.0347,2.97e-04,1.94,1789771192.945785
+425,0.0323,2.97e-04,2.15,1789771204.5612428
+450,0.0320,2.96e-04,2.19,1789771215.999993
+475,0.0325,2.95e-04,2.20,1789771227.35249
+500,0.0307,2.95e-04,2.21,1789771238.677122
+# [2026-09-18 18:40:40] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 19:04:50] RESUME: training/train_expert.py --name cot --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+# [2026-09-18 19:04:57] FINISH at step 2
