@@ -5240,3 +5240,62 @@ ValueError: probabilities contain NaN
 50,0.0410,3.00e-04,0.03,1789741956.80267
 # [2026-09-18 10:43:57] RESUME: training/train_expert.py --name coding --steps 5 --batch 8 --resume --backend mlx --sample 0
 # [2026-09-18 10:44:01] FINISH at step 5
+# [2026-09-18 10:44:38] STOPPED by signal at step 73
+# [2026-09-18 10:46:00] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0378,3.00e-04,1.94,1789742773.015664
+50,0.0415,3.00e-04,2.12,1789742784.798639
+75,0.0388,3.00e-04,2.04,1789742797.045951
+100,0.0407,3.00e-04,2.08,1789742809.090472
+125,0.0398,3.00e-04,1.92,1789742822.092583
+150,0.0399,3.00e-04,2.18,1789742833.559102
+175,0.0406,3.00e-04,1.90,1789742846.7397592
+200,0.0397,3.00e-04,2.10,1789742858.649974
+225,0.0409,3.00e-04,2.02,1789742871.026557
+250,0.0410,3.00e-04,1.84,1789742884.642901
+275,0.0380,3.00e-04,1.84,1789742898.207422
+300,0.0382,3.00e-04,2.16,1789742909.803356
+325,0.0398,3.00e-04,1.95,1789742922.6217139
+350,0.0374,3.00e-04,2.06,1789742934.755937
+375,0.0401,3.00e-04,1.92,1789742947.803663
+400,0.0386,3.00e-04,1.95,1789742960.6395452
+425,0.0367,3.00e-04,2.03,1789742972.949631
+450,0.0387,3.00e-04,1.90,1789742986.120935
+475,0.0385,3.00e-04,1.87,1789742999.5193238
+500,0.0382,3.00e-04,1.88,1789743012.8060968
+# [2026-09-18 10:50:15] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 382, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 317, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 532, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 10:52:24] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0393,3.00e-04,1.79,1789743158.6370728
+50,0.0380,3.00e-04,1.99,1789743171.209834
+75,0.0387,3.00e-04,1.80,1789743185.1353831
+100,0.0401,3.00e-04,2.00,1789743197.617651
+125,0.0371,3.00e-04,1.85,1789743211.101593
+150,0.0417,3.00e-04,1.90,1789743224.288296
+175,0.0411,3.00e-04,2.09,1789743236.3112268
+200,0.0387,3.00e-04,2.00,1789743248.7773068
+225,0.0371,3.00e-04,1.96,1789743261.566373
+250,0.0375,3.00e-04,1.96,1789743274.320982
+275,0.0376,3.00e-04,2.06,1789743286.4346712
+300,0.0365,3.00e-04,2.01,1789743298.841804
+325,0.0378,3.00e-04,2.03,1789743311.18317
+350,0.0362,3.00e-04,2.08,1789743323.199192
+375,0.0382,3.00e-04,1.97,1789743335.870752
+400,0.0386,3.00e-04,1.97,1789743348.5597508
+425,0.0364,3.00e-04,2.04,1789743360.801923
+450,0.0387,3.00e-04,1.84,1789743374.395639
+475,0.0388,3.00e-04,1.79,1789743388.394023
+500,0.0363,3.00e-04,1.82,1789743402.0993128
+# [2026-09-18 10:56:43] SAMPLE step 500:
+# 
+# User: how does Python's dict avoid when you only 
