@@ -1123,3 +1123,45 @@
 # [2026-09-14 18:52:40] RESUME: training/train_expert.py --name tree --steps 4000 --resume --push 100 --log 25 --sample 25
 # [2026-09-14 18:53:43] STOPPED by signal at step 2
 # [2026-09-14 18:53:52] FINISH at step 2
+# [2026-09-18 18:25:28] RESUME: training/train_expert.py --name tree --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,4.0511,7.50e-05,0.37,1789770395.885043
+50,2.8792,1.50e-04,0.29,1789770483.093834
+75,2.4808,2.25e-04,0.55,1789770528.7085361
+100,2.2621,3.00e-04,2.45,1789770538.921094
+125,1.9879,3.00e-04,2.44,1789770549.1715
+150,1.8347,3.00e-04,2.45,1789770559.39364
+175,1.7979,3.00e-04,2.45,1789770569.597376
+200,1.6044,3.00e-04,2.45,1789770579.798332
+225,1.5899,2.99e-04,2.45,1789770589.999315
+250,1.5548,2.99e-04,2.45,1789770600.20794
+275,1.4772,2.99e-04,2.44,1789770610.444215
+300,1.3225,2.99e-04,2.45,1789770620.6533709
+325,1.3463,2.98e-04,2.45,1789770630.856543
+350,1.3253,2.98e-04,2.45,1789770641.0608761
+375,1.3887,2.98e-04,2.45,1789770651.26575
+400,1.2791,2.97e-04,2.45,1789770661.478455
+425,1.0782,2.97e-04,2.45,1789770671.7022238
+450,1.1305,2.96e-04,2.45,1789770681.908184
+475,1.1180,2.95e-04,2.45,1789770692.112534
+500,1.0723,2.95e-04,2.45,1789770702.316264
+# [2026-09-18 18:31:43] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 19:03:58] RESUME: training/train_expert.py --name tree --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,1.0699,7.50e-05,1.77,1789772653.0310311
+50,1.0140,1.50e-04,1.98,1789772665.625797
+75,1.0164,2.25e-04,2.02,1789772677.967829
+100,0.9990,3.00e-04,1.98,1789772690.595913
+125,0.8450,3.00e-04,0.03,1789773668.236755
+# [2026-09-18 19:21:41] STOP_PREV: signaling PID 9275 to stop
+# [2026-09-18 19:21:44] FINISH at step 132
