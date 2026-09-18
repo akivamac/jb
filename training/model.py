@@ -527,6 +527,8 @@ class JoeBrain:
             logits, _ = self.forward(ctx_arr)
             last_logits = logits[-1] / temperature
             probs = softmax(last_logits)
+            if not np.all(np.isfinite(probs)):
+                probs = np.ones(len(probs)) / len(probs)
             next_id = np.random.choice(len(probs), p=probs)
-            ids.append(next_id)
+            ids.append(int(next_id))
         return tokenizer.decode(ids)

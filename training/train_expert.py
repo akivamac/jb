@@ -281,6 +281,9 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
 
             logits, cache = model.forward(x_batch)
             batch_loss, dlogits = model.loss(logits, y_batch)
+            if not np.isfinite(batch_loss):
+                model.zero_grad()
+                continue
             model.backward(dlogits, cache)
 
             eff_lr = lr if resume else cosine_lr(step, steps, lr)
