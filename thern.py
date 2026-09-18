@@ -43,8 +43,8 @@ while True:
             proc = launch(['python3', 'training/train_expert.py',
                            '--name', expert, '--steps', '4000',
                            '--resume', '--push', '500',
-                            '--batch', '16',
-                           '--log', '25', '--sample', '25'])
+                           '--batch', '16',
+                           '--log', '25', '--sample', '500'])
             running.append((proc, expert))
             print(f"Started {expert} (PID {proc.pid})", flush=True)
             i += 1

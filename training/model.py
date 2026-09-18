@@ -532,3 +532,24 @@ class JoeBrain:
             next_id = np.random.choice(len(probs), p=probs)
             ids.append(int(next_id))
         return tokenizer.decode(ids)
+
+    def generate_fast(self, tokenizer, prompt, max_new=120, temperature=0.8):
+        """Fast generation using KV cache (prefill + forward_one)."""
+        ids = tokenizer.encode(prompt)
+        logits, kv_cache = self.prefill(np.array(ids[-self.T:], dtype=np.int32))
+        last_logits = logits / temperature
+        probs = softmax(last_logits)
+        if not np.all(np.isfinite(probs)):
+            probs = np.ones(len(probs)) / len(probs)
+        next_id = int(np.random.choice(len(probs), p=probs))
+        ids.append(next_id)
+        for _ in range(max_new - 1):
+            pos = len(ids) - 1
+            logits, kv_cache = self.forward_one(ids[-1], pos, kv_cache)
+            last_logits = logits / temperature
+            probs = softmax(last_logits)
+            if not np.all(np.isfinite(probs)):
+                probs = np.ones(len(probs)) / len(probs)
+            next_id = int(np.random.choice(len(probs), p=probs))
+            ids.append(next_id)
+        return tokenizer.decode(ids)

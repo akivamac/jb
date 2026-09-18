@@ -303,7 +303,7 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
                     lf.flush()
 
             if sample_every and step % sample_every == 0:
-                sample = model.generate(tok, "\n", max_new=80, temperature=0.8)
+                sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
                 print(f"  Sample: {repr(sample[:100])}\n")
                 with open(log_path, "a") as lf:
                     lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] SAMPLE step {step}:\n")
