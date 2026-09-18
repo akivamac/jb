@@ -1478,3 +1478,73 @@
 # [2026-09-18 13:35:58] SAMPLE step 3000:
 # 
 # Joe: Wworld. ing should reetings ladu for the
+# [2026-09-18 18:08:27] RESUME: training/train_expert.py --name greeting --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0365,7.50e-05,1.83,1789769321.438112
+50,0.0272,1.50e-04,2.15,1789769333.062037
+75,0.0274,2.25e-04,2.17,1789769344.595053
+100,0.0318,3.00e-04,2.17,1789769356.1257951
+125,0.0508,3.00e-04,1.97,1789769368.841821
+150,0.0389,3.00e-04,2.05,1789769381.012545
+175,0.0454,3.00e-04,1.90,1789769394.151647
+200,0.0392,3.00e-04,2.10,1789769406.065438
+225,0.0385,2.99e-04,2.05,1789769418.287636
+250,0.0387,2.99e-04,2.07,1789769430.358803
+275,0.0419,2.99e-04,1.99,1789769442.903456
+300,0.0409,2.99e-04,2.00,1789769455.432045
+325,0.0405,2.98e-04,2.15,1789769467.043762
+350,0.0369,2.98e-04,2.11,1789769478.9049559
+375,0.0391,2.98e-04,2.13,1789769490.6601129
+400,0.0408,2.97e-04,2.08,1789769502.671673
+425,0.0365,2.97e-04,2.14,1789769514.343198
+450,0.0428,2.96e-04,2.13,1789769526.062689
+475,0.0385,2.95e-04,2.09,1789769538.014315
+500,0.0410,2.95e-04,2.09,1789769549.973218
+# [2026-09-18 18:12:31] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 18:44:58] RESUME: training/train_expert.py --name greeting --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,0.0331,7.50e-05,0.16,1789771656.053804
+50,0.0259,1.50e-04,0.69,1789771692.497133
+75,0.0258,2.25e-04,2.44,1789771702.73112
+100,0.0279,3.00e-04,2.44,1789771712.970517
+125,0.0356,3.00e-04,2.43,1789771723.2734349
+150,0.0413,3.00e-04,2.42,1789771733.61634
+175,0.0379,3.00e-04,2.11,1789771745.464879
+200,0.0392,3.00e-04,2.11,1789771757.3302422
+225,0.0375,2.99e-04,2.09,1789771769.3039129
+250,0.0359,2.99e-04,2.11,1789771781.155835
+275,0.0359,2.99e-04,2.16,1789771792.724941
+300,0.0368,2.99e-04,2.10,1789771804.6106088
+325,0.0380,2.98e-04,2.12,1789771816.410639
+350,0.0360,2.98e-04,2.15,1789771828.0461152
+375,0.0358,2.98e-04,2.10,1789771839.929676
+400,0.0351,2.97e-04,2.16,1789771851.537911
+425,0.0362,2.97e-04,2.14,1789771863.1930828
+450,0.0357,2.96e-04,2.14,1789771874.868298
+475,0.0410,2.95e-04,2.19,1789771886.2837188
+500,0.0343,2.95e-04,2.14,1789771897.946731
+# [2026-09-18 18:51:39] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 19:12:41] RESUME: training/train_expert.py --name greeting --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+# [2026-09-18 19:12:48] FINISH at step 5
