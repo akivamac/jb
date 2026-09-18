@@ -25,7 +25,17 @@ import traceback
 
 sys.path.insert(0, os.path.dirname(__file__))
 from tokenizer import Tokenizer
-from model import JoeBrain
+
+# Backend selection (default mlx = Apple GPU). Set globally by --backend in main.
+BACKEND = 'mlx'
+
+def get_model_class():
+    """Return the JoeBrain class for the active backend (mlx=GPU or numpy)."""
+    if BACKEND == 'numpy':
+        from model import JoeBrain
+    else:
+        from model_mlx import JoeBrain
+    return JoeBrain
 
 BASE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
 TOK_PATH = os.path.join(BASE, 'tokenizer.json')
@@ -200,9 +210,10 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
         print(f"ERROR: Not enough data ({len(data)} tokens). Need at least {seq_len + 10}.")
         sys.exit(1)
 
+    JB = get_model_class()
     # Create or resume model
     if os.path.exists(model_path):
-        model = JoeBrain.load(model_path)
+        model = JB.load(model_path)
         seq_len = model.T
         if resume:
             print(f"Resumed expert '{name}' from {model_path} (Adam step {model.t})")
@@ -212,7 +223,7 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
             model.m = {k: np.zeros_like(v) for k, v in model.p.items()}
             model.v = {k: np.zeros_like(v) for k, v in model.p.items()}
     else:
-        model = JoeBrain(
+        model = JB(
             vocab_size=tok.size,
             embed_dim=embed_dim,
             n_heads=n_heads,
@@ -361,7 +372,11 @@ if __name__ == '__main__':
     parser.add_argument('--resume', action='store_true', help='Continue from saved expert model')
     parser.add_argument('--push', type=int, default=1000, help='Push to github every N steps (default 1000)')
     parser.add_argument('--save', type=int, default=0, help='Save checkpoint every N steps (0=only at end)')
+    parser.add_argument('--backend', type=str, default='mlx', choices=['mlx', 'numpy'],
+                        help='Compute backend: mlx=Apple GPU (default), numpy=CPU')
     args = parser.parse_args()
+
+    BACKEND = args.backend
 
     try:
         train_expert(

@@ -8562,3 +8562,26 @@ Joe: Floating acclimation just matches temperature by floating the sealed bag. D
 User: Can I skip acclimation if the water parameters are the same
 Joe: Even if parameters seem similar, always acclimate to avoid temperature shock and osmotic stress. The bag water may have different dissolved gases that could stress the fish.
 
+User: what color is a goldfish usually
+Joe: goldfish are usually orange or gold.
+A wild form is more olive-brown, so pet varieties were bred for the bright orange.
+
+User: what does \n mean in a fish care guide
+Joe: \n is the code for a new line. In a guide it is just a way to show where one sentence ends and the next row of text begins.
+
+User: list three things a fish needs, one per line
+Joe: clean water of the right temperature
+stable water conditions with no big swings
+enough space in the tank to swim freely
+
+User: how big should a tank for small fish be
+Joe: bigger is usually better.
+Small species can do well starting around 20 liters, but more space makes the water easier to keep stable.
+
+User: tell me about fish staying near the surface
+Joe: fish near the surface are often gulping air or looking for food.
+If many fish stay at the top all day, check the water's oxygen level and temperature.
+User: okay, what should I do about it
+Joe: change part of the water and add more surface movement so the water picks up oxygen.
+An air stone or filter splash works well.
+

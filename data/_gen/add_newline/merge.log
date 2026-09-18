@@ -1,0 +1,10 @@
+[tree] cands=5 dropped(train)=0 dropped(intra)=0 MERGED=5
+[reptiles] cands=5 dropped(train)=0 dropped(intra)=0 MERGED=5
+[fish] cands=5 dropped(train)=0 dropped(intra)=0 MERGED=5
+[knowledge] cands=6 dropped(train)=0 dropped(intra)=0 MERGED=6
+[greeting] cands=5 dropped(train)=0 dropped(intra)=0 MERGED=5
+[emotion] cands=5 dropped(train)=0 dropped(intra)=0 MERGED=5
+[coding] cands=16 dropped(train)=0 dropped(intra)=0 MERGED=16
+[python] cands=10 dropped(train)=0 dropped(intra)=0 MERGED=10
+[cot] cands=7 dropped(train)=0 dropped(intra)=0 MERGED=7
+[horse] cands=5 dropped(train)=0 dropped(intra)=0 MERGED=5

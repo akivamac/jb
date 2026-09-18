@@ -7898,3 +7898,29 @@ Joe: Fox hunting is a form of hunting on horseback where riders follow a pack of
 User: how does fox hunting differ from drag hunting
 Joe: Fox hunting uses live hounds tracking a fox, while drag hunting follows a pre-laid scent trail without live prey. Drag hunting is often preferred where fox hunting is banned.
 
+User: what is the main food for a horse
+Joe: horses eat mostly hay and grass.
+Grain can be added when a horse works hard, but the main part of the diet is forage.
+User: what about treats
+Joe: small treats like a carrot or apple slice are fine now and then.
+Just keep them scarce so the horse stays healthy.
+
+User: write the three gaits each on its own line
+Joe: the walk, a slow four-beat gait
+the trot, a two-beat diagonal gait
+the canter, a three-beat gait
+User: which gait is fastest
+Joe: the gallop is fastest of all.
+The canter is faster than the trot, and the walk is the slowest of the three.
+
+User: what is the main way to estimate a horse's age
+Joe: the usual way is the teeth.
+The cups and shape of the teeth wear down with age, which gives a rough estimate of how old a horse is.
+
+User: what is the \n I keep seeing in equipment guides
+Joe: \n is just how a new line is written in text. It marks where a sentence should start on a fresh line.
+
+User: roughly how many liters does a horse drink per day
+Joe: a horse can drink 25 to 45 liters a day.
+The amount goes up in hot weather and during hard work.
+

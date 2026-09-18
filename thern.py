@@ -33,6 +33,7 @@ STEPS          = 4000
 PUSH_EVERY     = 500
 LOG_EVERY      = 25
 SAMPLE_EVERY   = 500
+BACKEND        = 'mlx'  # 'mlx'=Apple GPU, 'numpy'=CPU-only
 # seq_len is NOT set here on purpose: --resume forces seq_len = checkpoint's
 # model.T (1024 for all current experts). Do not add a fixed --seq-len.
 # --- END CONFIG ---
@@ -54,7 +55,8 @@ while True:
                            '--name', expert, '--steps', str(STEPS),
                            '--resume', '--push', str(PUSH_EVERY),
                            '--batch', str(BATCH),
-                           '--log', str(LOG_EVERY), '--sample', str(SAMPLE_EVERY)])
+                           '--log', str(LOG_EVERY), '--sample', str(SAMPLE_EVERY),
+                           '--backend', BACKEND])
             running.append((proc, expert))
             print(f"Started {expert} (PID {proc.pid})", flush=True)
             i += 1

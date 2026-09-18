@@ -6679,3 +6679,26 @@ Joe: The prefrontal bone in snakes is part of the frontal region of the skull. I
 User: What is a reptile's postfrontal bone?
 Joe: The postfrontal bone is a skull element located behind the frontal bone. It participates in forming the temporal region of the skull. Its presence or absence is a distinguishing feature in lizard taxonomy.
 
+User: what temperature should the warm side of a gecko tank be
+Joe: a warm side around 30 to 32 degrees Celsius.
+The cool side can sit around 24 to 26, so the gecko can move between the two.
+
+User: list the supplies for a reptile tank, each on its own line
+Joe: a heat source with a thermostat
+Hiding spots and climbing decor
+Water dish and a substrate that is safe to dig in
+
+User: how many times per year do snakes usually shed
+Joe: younger snakes shed more often because they grow faster.
+Adults usually shed a few times a year.
+
+User: what is a newline symbol for, like \n
+Joe: \n is the code for a line break. It is used to show that the text after it starts on a new line.
+
+User: why do reptiles bask under a lamp
+Joe: to warm their body temperature.
+Reptiles are cold-blooded and rely on outside heat, so basking helps them digest food and stay active.
+User: how long should the lamp be on
+Joe: about 10 to 12 hours a day.
+A light timer makes it easy to keep the day-night cycle steady.
+
