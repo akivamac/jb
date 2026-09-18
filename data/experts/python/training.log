@@ -1716,3 +1716,73 @@ User:
 # [2026-09-14 18:47:31] RESUME: training/train_expert.py --name python --steps 4000 --resume --push 100 --log 25 --sample 25
 # [2026-09-14 18:50:47] STOPPED by signal at step 3
 # [2026-09-14 18:50:59] FINISH at step 3
+# [2026-09-18 18:20:28] RESUME: training/train_expert.py --name python --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,3.7259,7.50e-05,1.58,1789770043.9653382
+50,2.6052,1.50e-04,1.95,1789770056.777979
+75,2.1923,2.25e-04,1.97,1789770069.476546
+100,1.8829,3.00e-04,1.80,1789770083.341217
+125,1.7971,3.00e-04,1.99,1789770095.889819
+150,1.5760,3.00e-04,2.05,1789770108.0807512
+175,1.6199,3.00e-04,1.88,1789770121.3493571
+200,1.5294,3.00e-04,1.91,1789770134.427062
+225,1.4899,2.99e-04,2.02,1789770146.8118432
+250,1.3991,2.99e-04,2.02,1789770159.192447
+275,1.4936,2.99e-04,2.10,1789770171.113128
+300,1.1806,2.99e-04,1.89,1789770184.322579
+325,1.3612,2.98e-04,2.06,1789770196.440126
+350,1.2123,2.98e-04,2.13,1789770208.183326
+375,1.1275,2.98e-04,2.21,1789770219.502666
+400,1.2548,2.97e-04,2.44,1789770229.766855
+425,1.2737,2.97e-04,2.45,1789770239.984322
+450,1.0949,2.96e-04,2.44,1789770250.239975
+475,1.1330,2.95e-04,2.41,1789770260.616262
+500,1.0156,2.95e-04,2.18,1789770272.1085298
+# [2026-09-18 18:24:33] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 18:55:58] RESUME: training/train_expert.py --name python --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+25,1.1131,7.50e-05,0.16,1789772316.032109
+50,0.9805,1.50e-04,2.07,1789772328.101092
+75,1.0772,2.25e-04,1.95,1789772340.930788
+100,0.9834,3.00e-04,2.12,1789772352.74561
+125,0.9913,3.00e-04,2.10,1789772364.619058
+150,1.0063,3.00e-04,2.03,1789772376.9219031
+175,1.0629,3.00e-04,2.09,1789772388.88175
+200,0.9175,3.00e-04,2.09,1789772400.829943
+225,0.8843,2.99e-04,2.07,1789772412.92134
+250,0.9383,2.99e-04,2.08,1789772424.95822
+275,0.8501,2.99e-04,2.06,1789772437.08967
+300,0.8753,2.99e-04,2.06,1789772449.213231
+325,0.8688,2.98e-04,2.08,1789772461.254679
+350,0.8834,2.98e-04,2.04,1789772473.538113
+375,0.8471,2.98e-04,2.10,1789772485.415651
+400,0.7965,2.97e-04,2.15,1789772497.064839
+425,0.7011,2.97e-04,2.16,1789772508.657776
+450,0.7485,2.96e-04,2.19,1789772520.067036
+475,0.6710,2.95e-04,2.14,1789772531.731791
+500,0.8224,2.95e-04,2.11,1789772543.585577
+# [2026-09-18 19:02:25] ERROR: training crashed
+Traceback (most recent call last):
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 395, in <module>
+    train_expert(
+  File "/Users/dev/github-projects/joe-brain/training/train_expert.py", line 329, in train_expert
+    sample = model.generate_fast(tok, "\n", max_new=20, temperature=0.8)
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 570, in generate_fast
+    logits, kv_cache = self.prefill(mx.array(np.array(ids[-self.T:], dtype=np.int32)))
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 418, in prefill
+    kv_cache = [
+  File "/Users/dev/github-projects/joe-brain/training/model_mlx.py", line 419, in <listcomp>
+    {'k': cache['block_caches'][i]['k'][0].copy(),
+AttributeError: 'array' object has no attribute 'copy'
+# [2026-09-18 19:15:41] RESUME: training/train_expert.py --name python --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500 --backend mlx
+# [2026-09-18 19:15:59] FINISH at step 2
