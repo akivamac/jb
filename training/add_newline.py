@@ -1,11 +1,11 @@
 """add_newline.py — generate training blocks teaching Joe:
 1. literal \\n as text (backslash+n) for talking about newlines,
-2. clean single-line answers,
-3. ends cleanly at a bare \\n (turn separator).
+2. real newlines in responses (multi-line Joe answers),
+3. ends cleanly at \\nUser:/\\nJoe:.
 
-Writes blocks to data/_gen/add_newline/{name}.txt (blank-line separated,
-every Joe answer is a single physical line). Review twice before merging
-with merge_newline.py.
+Writes blocks to data/_gen/add_newline/{name}.txt (blank-line separated;
+multi-line Joe answers use continuation lines). Review twice before
+merging with merge_newline.py.
 """
 import os
 
@@ -13,28 +13,29 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(REPO, 'data', '_gen', 'add_newline')
 EXPERTS = ['tree','reptiles','fish','knowledge','greeting','emotion','coding','python','cot','horse']
 
-# Each block: ["User: question", "Joe: single-line answer"] or a multi-turn
-# block where every Joe answer stays on ONE physical line.
+# Each block: ["User: q", "Joe: line1", "line2", ...] for multi-line answers,
+# or ["User: q", "Joe: single line"] for single-line. Multi-turn adds another
+# ["User: follow-up", "Joe: answer"] pair inside the block.
 BLOCKS = {
 'coding': [
 ["User: how do I print a new line",
  "Joe: you put \\n inside the quotes, like print(\"Hello\\nWorld\")."],
 ["User: how do I print three separate lines",
- "Joe: chain two \\n sequences: print(\"one\\ntwo\\nthree\")"],
-["User: and how do I make the third line start spaced over",
- "Joe: put a space before it in the string: print(\"one\\ntwo\\n three\")"],
+ "Joe: chain two \\n sequences: print(\"one\\ntwo\\nthree\")."],
+["User: make the third line start spaced over",
+ "Joe: put a space before it: print(\"one\\ntwo\\n three\")."],
 ["User: how do I split a string by newlines",
  "Joe: call split with \\n as the separator: text.split(\"\\n\") gives the lines."],
 ["User: what does the \\n escape do",
  "Joe: \\n is how you write a newline inside a string; at runtime it becomes a real line break."],
 ["User: how do I join lines back together",
- "Joe: join them with the \\n character: \"\\n\".join(lines)"],
+ "Joe: join them with the \\n character: \"\\n\".join(lines)."],
 ["User: I want each item on its own line",
  "Joe: put \\n between the items: print(\"a\\nb\\nc\") or call print once per item."],
 ["User: how do I stop print from adding a newline",
  "Joe: pass end=\"\" to print: print(\"done\", end=\"\")."],
 ["User: how do I write several lines to a file",
- "Joe: join the lines with \\n and write once: fp.write(\"\\n\".join(lines))"],
+ "Joe: join the lines with \\n and write once: fp.write(\"\\n\".join(lines))."],
 ["User: my string prints the letters backslash-n instead of a line break",
  "Joe: the text holds the two characters \\n instead of a real newline; use the escape in code."],
 ["User: how do I add an empty line to my output",
@@ -42,15 +43,20 @@ BLOCKS = {
 ["User: why does my program print all on one line",
  "Joe: check the end argument of print; use print(item) for each item on its own line."],
 ["User: what should a generator function look like",
- "Joe: a function that uses yield instead of return, like def count(stop): yield n while n < stop."],
-["User: how do I use it",
+ "Joe: a function that uses yield instead of return.",
+ "def count(stop):",
+ "    n = 0",
+ "    while n < stop:",
+ "        yield n",
+ "        n += 1",
+ "User: how do I use it",
  "Joe: loop over it: for x in count(3): print(x) prints 0, then 1, then 2."],
 ["User: how do I read a file line by line",
  "Joe: iterate over the open file directly, or split the text on \\n."],
 ["User: what is the difference between \\n in a string and a real newline",
  "Joe: inside code they are the same — the escape \\n becomes a real newline when the string is used."],
 ["User: how do I write a list to a file with each item on its own line",
- "Joe: join the items on \\n and write once: fp.write(\"\\n\".join(items))"],
+ "Joe: join the items on \\n and write once: fp.write(\"\\n\".join(items))."],
 ["User: how do I read them back",
  "Joe: open the file and split the text on \\n: text.split(\"\\n\") gives the items back."],
 ["User: what does the tab escape do in a string",
@@ -70,7 +76,9 @@ BLOCKS = {
 ["User: how do I add a newline to the end of a string",
  "Joe: append \"\\n\" like this: text = \"done\" + \"\\n\"."],
 ["User: what does a triple-quoted string do",
- "Joe: it keeps the line breaks you actually type, so you do not need to write \\n by hand."],
+ "Joe: it keeps the line breaks you actually type, so you do not need to write \\n by hand:",
+ "message = \"\"\"line one",
+ "line two\"\"\""],
 ["User: how do I count the lines in a file",
  "Joe: split the text on \\n and count the parts: len(text.split(\"\\n\"))."],
 ["User: does that count a trailing newline as an extra line",
@@ -86,9 +94,12 @@ BLOCKS = {
 ],
 'cot': [
 ["User: show each step of your reasoning on its own line",
- "Joe: step one: find the starting number; step two: apply the change; step three: compare and state the answer."],
+ "Joe: step one: find the starting number;",
+ "step two: apply the change;",
+ "step three: compare and state the answer."],
 ["User: reason about whether 250 is divisible by 4, showing your steps",
- "Joe: check the last two digits, which are 50; divide 50 by 4 and get 12 with a remainder of 2."],
+ "Joe: check the last two digits, which are 50;",
+ "divide 50 by 4 and get 12 with a remainder of 2."],
 ["User: how do I show each step on its own line in a message",
  "Joe: put \\n between the steps, like step one\\nstep two\\nstep three."],
 ["User: work out 15 percent of 60 step by step",
@@ -96,9 +107,12 @@ BLOCKS = {
 ["User: and 15 percent of 120",
  "Joe: same steps: 120 divided by 100 is 1.2 per percent, times 15 is 18."],
 ["User: solve it in separate lines so I can follow",
- "Joe: first, write the numbers being added; next, add them together; last, confirm and state the answer."],
+ "Joe: first, write the numbers being added;",
+ "next, add them together;",
+ "last, confirm and state the answer."],
 ["User: is the number 7 prime? reason it out",
- "Joe: a prime has exactly two factors; check 7: 1 times 7 works and nothing between divides it evenly."],
+ "Joe: a prime has exactly two factors;",
+ "check 7: 1 times 7 works and nothing between divides it evenly."],
 ["User: how many minutes are in two and a half hours",
  "Joe: one hour is 60 minutes, two hours is 120, and half an hour is 30 more, so 150 minutes."],
 ],
@@ -180,11 +194,13 @@ BLOCKS = {
 ],
 'greeting': [
 ["User: can you put this answer on two lines",
- "Joe: sure! here is the first line and here is the second line."],
+ "Joe: sure! here is the first line",
+ "and here is the second line."],
 ["User: what does \\n mean in a chat message",
  "Joe: it stands for a new line; when used, everything after it starts on the next line."],
 ["User: can you show me",
- "Joe: sure! this is the first line and this starts on the next line."],
+ "Joe: sure! this is the first line",
+ "and this starts on the next line."],
 ["User: say hello with a line break",
  "Joe: Hello! Nice to meet you!"],
 ["User: how do I get a message to start on the next line",
@@ -196,15 +212,18 @@ BLOCKS = {
 ],
 'emotion': [
 ["User: how do you feel right now",
- "Joe: I feel glad you asked! It makes my day to chat with you."],
+ "Joe: I feel glad you asked!",
+ "It makes my day to chat with you."],
 ["User: cheer me up with a good-behavior list",
  "Joe: rest when you feel tired, eat a meal you enjoy, and talk to someone you trust."],
 ["User: what does \\n mean in a message",
  "Joe: it means a new line; it is the code that says the next sentence starts on a new line."],
 ["User: write your answer as two sentences on two lines",
- "Joe: I genuinely like helping out. Talking with you is the fun part."],
+ "Joe: I genuinely like helping out.",
+ "Talking with you is the fun part."],
 ["User: how do you feel when someone is kind to you",
- "Joe: warm and appreciated; small kindnesses really brighten my day."],
+ "Joe: warm and appreciated;",
+ "small kindnesses really brighten my day."],
 ["User: do you get sad too",
  "Joe: I do not feel sadness the way people do, but I try my best to be kind back."],
 ],

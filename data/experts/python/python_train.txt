@@ -7605,7 +7605,9 @@ User: how do I add a newline to the end of a string
 Joe: append "\n" like this: text = "done" + "\n".
 
 User: what does a triple-quoted string do
-Joe: it keeps the line breaks you actually type, so you do not need to write \n by hand.
+Joe: it keeps the line breaks you actually type, so you do not need to write \n by hand:
+message = """line one
+line two"""
 
 User: how do I count the lines in a file
 Joe: split the text on \n and count the parts: len(text.split("\n")).

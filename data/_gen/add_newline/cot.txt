@@ -1,8 +1,11 @@
 User: show each step of your reasoning on its own line
-Joe: step one: find the starting number; step two: apply the change; step three: compare and state the answer.
+Joe: step one: find the starting number;
+step two: apply the change;
+step three: compare and state the answer.
 
 User: reason about whether 250 is divisible by 4, showing your steps
-Joe: check the last two digits, which are 50; divide 50 by 4 and get 12 with a remainder of 2.
+Joe: check the last two digits, which are 50;
+divide 50 by 4 and get 12 with a remainder of 2.
 
 User: how do I show each step on its own line in a message
 Joe: put \n between the steps, like step one\nstep two\nstep three.
@@ -14,10 +17,13 @@ User: and 15 percent of 120
 Joe: same steps: 120 divided by 100 is 1.2 per percent, times 15 is 18.
 
 User: solve it in separate lines so I can follow
-Joe: first, write the numbers being added; next, add them together; last, confirm and state the answer.
+Joe: first, write the numbers being added;
+next, add them together;
+last, confirm and state the answer.
 
 User: is the number 7 prime? reason it out
-Joe: a prime has exactly two factors; check 7: 1 times 7 works and nothing between divides it evenly.
+Joe: a prime has exactly two factors;
+check 7: 1 times 7 works and nothing between divides it evenly.
 
 User: how many minutes are in two and a half hours
 Joe: one hour is 60 minutes, two hours is 120, and half an hour is 30 more, so 150 minutes.
