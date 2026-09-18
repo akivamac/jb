@@ -22,14 +22,15 @@ def load_blocks(path):
     if not os.path.exists(path):
         return blocks
     cur = []
-    for line in open(path):
-        line = line.rstrip()
-        if not line.strip():
-            if cur:
-                blocks.append(cur)
-                cur = []
-        else:
-            cur.append(line.strip())
+    with open(path) as f:
+        for line in f:
+            line = line.rstrip()
+            if not line.strip():
+                if cur:
+                    blocks.append(cur)
+                    cur = []
+            else:
+                cur.append(line.strip())
     if cur:
         blocks.append(cur)
     return blocks
@@ -47,7 +48,8 @@ names = sys.argv[1:] or EXPERTS
 for name in names:
     cand_path = os.path.join(GEN, f'{name}.txt')
     train_path = os.path.join(BASE, name, f'{name}_train.txt')
-    train_qs = set(norm(q) for q in (l[6:] for l in open(train_path) if l.startswith('User: ')))
+    with open(train_path) as _tf:
+        train_qs = set(norm(q) for q in (l[6:] for l in _tf if l.startswith('User: ')))
 
     kept, removed_train, removed_self = [], 0, 0
     seen = set()
@@ -56,7 +58,7 @@ for name in names:
         if nq in train_qs or (kept and any(sim(nq, norm(first_q(b))) > 0.82 for b in kept)):
             removed_train += 1
             continue
-        if nq in seen or (kept and any(sim(nq, norm(first_q(b))) > 0.82 for b in kept)):
+        if nq in seen:
             removed_self += 1
             continue
         seen.add(nq)
@@ -68,8 +70,15 @@ for name in names:
             tf.write('\n'.join(block) + '\n\n')
             added += 1
 
-    with open(os.path.join(GEN, 'merge.log'), 'a') as lf:
+    log_path = os.path.join(GEN, 'merge.log')
+    with open(log_path, 'a') as lf:
         lf.write(f"[{name}] cands={len(load_blocks(cand_path))} "
                  f"dropped(train)={removed_train} dropped(intra)={removed_self} MERGED={added}\n")
+    if os.path.exists(log_path):
+        with open(log_path) as f:
+            log_lines = f.readlines()
+        if len(log_lines) > 100:
+            with open(log_path, 'w') as f:
+                f.writelines(log_lines[-50:])
     print(f"{name}: cands={len(load_blocks(cand_path))} -> merged={added} "
           f"(dup vs {removed_train}+{removed_self})")

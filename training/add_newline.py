@@ -115,6 +115,10 @@ BLOCKS = {
  "check 7: 1 times 7 works and nothing between divides it evenly."],
 ["User: how many minutes are in two and a half hours",
  "Joe: one hour is 60 minutes, two hours is 120, and half an hour is 30 more, so 150 minutes."],
+["User: what does \\n mean when writing step-by-step reasoning",
+ "Joe: \\n is how you insert a line break between steps in plain text."],
+["User: can you show the long division steps with newlines",
+ "Joe: use \\n to separate each step: dividend\\ndivisor\\nquotient\\nremainder."],
 ],
 'fish': [
 ["User: what color is a goldfish usually",
@@ -129,6 +133,10 @@ BLOCKS = {
  "Joe: fish near the surface are often gulping air or looking for food."],
 ["User: okay, what should I do about it",
  "Joe: change part of the water and add more surface movement so the water picks up oxygen."],
+["User: what does \\n look like in a fish diary entry",
+ "Joe: \\n is the escape that starts a new line in the text, so each observation goes on its own line."],
+["User: write your fish observations with each on a separate line",
+ "Joe: use \\n between entries: water temp\\nph level\\nfeeding time."],
 ],
 'horse': [
 ["User: what is the main food for a horse",
@@ -145,6 +153,8 @@ BLOCKS = {
  "Joe: \\n is just how a new line is written in text; it marks where a sentence starts on a fresh line."],
 ["User: roughly how many liters does a horse drink per day",
  "Joe: a horse can drink 25 to 45 liters a day, more in hot weather and during hard work."],
+["User: write a horse care checklist with each item on its own line",
+ "Joe: use \\n to separate items: feed\\ngrooming\\nveterinary\\nexercise."],
 ],
 'reptiles': [
 ["User: what temperature should the warm side of a gecko tank be",
@@ -159,6 +169,10 @@ BLOCKS = {
  "Joe: to warm their body temperature; reptiles are cold-blooded and rely on outside heat."],
 ["User: how long should the lamp be on",
  "Joe: about 10 to 12 hours a day; a light timer keeps the day-night cycle steady."],
+["User: what does \\n do in a reptile care log",
+ "Joe: \\n starts a new line in the log, so each observation is separate and easy to read."],
+["User: write a feeding schedule with each meal on its own line",
+ "Joe: use \\n to separate entries: morning\\nafternoon\\nevening\\nnight."],
 ],
 'tree': [
 ["User: how do trees take in water",
@@ -175,6 +189,8 @@ BLOCKS = {
  "Joe: \\n is the character for a new line; whatever follows it begins on the next line."],
 ["User: about how old can oak trees get",
  "Joe: oaks can live for several hundred years, and some reach over a thousand in protected sites."],
+["User: write a tree fact list with each fact on its own line",
+ "Joe: use \\n between facts: species\\nheight\\nlifespan\\nhabitat."],
 ],
 'knowledge': [
 ["User: what is a newline character",
@@ -191,6 +207,8 @@ BLOCKS = {
  "Joe: hello there! It is great to see you today. I hope you are having a good one."],
 ["User: how do I type a newline in plain text without pressing enter",
  "Joe: in plain text you usually press enter; the symbol \\n is used in code and configuration to spell out a newline."],
+["User: what is the difference between typing enter and typing \\n",
+ "Joe: pressing enter creates a real line break in the document; typing \\n in code produces the same visual result as an escape sequence."],
 ],
 'greeting': [
 ["User: can you put this answer on two lines",

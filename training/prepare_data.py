@@ -7,7 +7,7 @@ import json
 import os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MJ_BRAIN = os.environ.get('JOE_BRAIN', os.path.join(REPO, 'data', 'brain'))
+MJ_BRAIN = os.environ.get('JOE_BRAIN', os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Mj.ai', 'brain'))
 if not os.path.exists(MJ_BRAIN):
     print(f"WARNING: JOE_BRAIN path does not exist: {MJ_BRAIN}")
 OUT = os.path.join(REPO, 'data', 'train.txt')
@@ -123,7 +123,7 @@ def main():
     lines = extract_text()
 
     # Include generated conversations
-convos_path = os.path.join(REPO, 'data', 'conversations.txt')
+    convos_path = os.path.join(REPO, 'data', 'conversations.txt')
     if not os.path.exists(convos_path):
         print(f"WARNING: {convos_path} does not exist")
     if os.path.exists(convos_path):

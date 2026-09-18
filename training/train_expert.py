@@ -26,8 +26,11 @@ import traceback
 sys.path.insert(0, os.path.dirname(__file__))
 from tokenizer import Tokenizer
 
-# Backend selection (default mlx = Apple GPU). Set globally by --backend in main.
 BACKEND = 'mlx'
+
+def set_backend(backend):
+    global BACKEND
+    BACKEND = backend
 
 def get_model_class():
     """Return the JoeBrain class for the active backend (mlx=GPU or numpy)."""
@@ -95,7 +98,8 @@ def remove_lock(name):
 def cosine_lr(step, total_steps, lr_max, lr_min=1e-4, warmup=100):
     if step < warmup:
         return lr_max * step / warmup
-    progress = (step - warmup) / max(1, total_steps - warmup)
+    progress = min(1.0, (step - warmup) / max(1, total_steps - warmup))
+    progress = max(0.0, progress)
     return lr_min + 0.5 * (lr_max - lr_min) * (1 + math.cos(math.pi * progress))
 
 
@@ -106,8 +110,6 @@ def _remote_exists(name):
 
 
 def _run_git(cmd, retries=3, timeout=120):
-    """Run a git command; retry on failure/timeout so a dead network never
-    kills a training run. Returns True on success."""
     env = dict(os.environ, GIT_TERMINAL_PROMPT='0')
     for attempt in range(1, retries + 1):
         try:
@@ -121,14 +123,6 @@ def _run_git(cmd, retries=3, timeout=120):
 
 
 def git_push(name, step):
-    """Commit the expert checkpoint and push.
-
-    Tablet (this repo): remote 'jb' exists -> build a small incremental
-    snapshot commit parented off refs/remotes/jb/main and push to jb main,
-    avoiding shipping the large new-monkey history.
-    Mac (jb clone): no 'jb' remote -> normal commit on the current branch
-    and push it to origin (which IS the jb repo).
-    """
     try:
         expert_file = f'data/experts/{name}/{name}.npz'
         log_file = f'data/experts/{name}/training.log'
@@ -173,9 +167,28 @@ def git_push(name, step):
         print(f"  [git push failed: {e}]")
 
 
+def remove_stale_locks():
+    expert_dir = os.path.join(BASE, 'experts')
+    if not os.path.isdir(expert_dir):
+        return
+    for fname in os.listdir(expert_dir):
+        fpath = os.path.join(expert_dir, fname, 'training.lock')
+        if not os.path.exists(fpath):
+            continue
+        try:
+            with open(fpath) as f:
+                pid = int(f.read().strip())
+            if not is_pid_running(pid):
+                os.remove(fpath)
+        except (ValueError, OSError):
+            os.remove(fpath)
+
+
 def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
                  embed_dim=128, n_heads=4, n_layers=3, log_every=100,
                  sample_every=0, resume=False, push_every=0, save_every=0):
+
+    remove_stale_locks()
 
     expert_dir = os.path.join(BASE, 'experts', name)
     data_path = os.path.join(expert_dir, f'{name}_train.txt')
@@ -188,7 +201,6 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
 
     os.makedirs(expert_dir, exist_ok=True)
 
-    # Load shared tokenizer
     if not os.path.exists(TOK_PATH):
         print(f"ERROR: Shared tokenizer not found at {TOK_PATH}")
         print("Run training/train.py first to build the tokenizer.")
@@ -198,7 +210,6 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
     tok.load(TOK_PATH)
     print(f"Tokenizer loaded (vocab {tok.size})")
 
-    # Load training data
     with open(data_path) as f:
         raw = f.read()
     print(f"Training text: {len(raw):,} characters from {data_path}")
@@ -211,7 +222,6 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
         sys.exit(1)
 
     JB = get_model_class()
-    # Create or resume model
     if os.path.exists(model_path):
         model = JB.load(model_path)
         seq_len = model.T
@@ -240,11 +250,9 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
     last_log_time = start
     last_log_step = 0
 
-    # Setup training log
     cmd = " ".join(sys.argv)
     log_path = os.path.join(expert_dir, "training.log")
 
-    # Concurrency check
     prev_pid = get_running_train_pid(name)
     if prev_pid is not None and prev_pid != os.getpid():
         print(f"[INFO] Found existing training (PID {prev_pid}). Signaling to save and stop...")
@@ -271,7 +279,6 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
             lf.write(f"# [{time.strftime('%Y-%m-%d %H:%M:%S')}] START: {cmd}\n")
             lf.write("# step,loss,lr,steps_per_sec,timestamp\n")
 
-    # Write lock
     write_lock(name, os.getpid())
 
     def handle_stop(signum, frame):
@@ -297,7 +304,7 @@ def train_expert(name, steps=2000, lr=3e-4, seq_len=128, batch_size=8,
                 continue
             model.backward(dlogits, cache)
 
-            eff_lr = lr if resume else cosine_lr(step, steps, lr)
+            eff_lr = cosine_lr(step, steps, lr)
             model.step(eff_lr)
             losses.append(batch_loss)
 
@@ -376,7 +383,7 @@ if __name__ == '__main__':
                         help='Compute backend: mlx=Apple GPU (default), numpy=CPU')
     args = parser.parse_args()
 
-    BACKEND = args.backend
+    set_backend(args.backend)
 
     try:
         train_expert(
