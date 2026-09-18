@@ -628,6 +628,13 @@ class TrainingHandler(BaseHTTPRequestHandler):
             self._handle_experts_list()
             return
 
+        if parsed.path == '/ping':
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b'ok')
+            return
+
         if parsed.path == '/api/logs':
             qs = parse_qs(parsed.query)
             name = qs.get('name', [''])[0].strip()

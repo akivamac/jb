@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoeBrain Training</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #f6f8fa; --surface: #ffffff; --border: #d0d7de;
+  --text: #1f2328; --text-dim: #656d76; --accent: #0969da;
+  --accent-light: rgba(9,105,218,0.08); --success: #1a7f37;
+  --success-light: rgba(26,127,55,0.08); --warn: #9a6700;
+  --warn-light: rgba(154,103,0,0.08); --error: #cf222e;
+  --error-light: rgba(207,34,46,0.08); --radius: 8px;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.center { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; max-width: 480px; width: 90%; box-shadow: var(--shadow); text-align: center; }
+h1 { font-size: 22px; margin-bottom: 8px; }
+p { color: var(--text-dim); font-size: 14px; margin-bottom: 16px; }
+.status { font-size: 48px; margin-bottom: 16px; }
+.btn { display: inline-block; padding: 10px 24px; border-radius: var(--radius); font-size: 14px; font-weight: 600; cursor: pointer; border: none; text-decoration: none; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { opacity: 0.85; }
+.btn-success { background: var(--success); color: #fff; }
+.btn-warn { background: var(--warn); color: #fff; }
+.btn-mono { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 12px; background: var(--bg); border: 1px solid var(--border); color: var(--text); }
+.cmd-box { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 16px; font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; text-align: left; margin: 16px 0; word-break: break-all; position: relative; }
+.copy-btn { position: absolute; top: 8px; right: 8px; padding: 4px 8px; font-size: 11px; background: var(--accent); color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="center">
+  <div class="card" id="card">
+    <div id="status"></div>
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+    <div id="actions"></div>
+  </div>
+</div>
+<script>
+var state = __STATE__;
+var status = document.getElementById('status');
+var title = document.getElementById('title');
+var desc = document.getElementById('desc');
+var actions = document.getElementById('actions');
+
+if (state === 'ssh_ok') {
+status.textContent = '✅';
+} else if (state === 'no_ssh') {
+  status.textContent = '🛡️';
+  title.textContent = 'No SSH Connection';
+  desc.textContent = 'Connect to the Mac via SSH to access the training dashboard.';
+  actions.innerHTML = '<div class="cmd-box"><span class="copy-btn" onclick="copyCmd()">Copy</span><code id="ssh-cmd">ssh dev@[IP_ADDRESS]</code><br><small style="color:var(--text-dim)">Then open this page</small></div><br><button class="btn btn-warn" onclick="retry()">Retry</button>';
+} else if (state === 'no_internet') {
+  status.textContent = '🌐';
+  title.textContent = 'No Internet';
+  desc.textContent = 'Connect to the internet to access the training dashboard.';
+  actions.innerHTML = '<button class="btn btn-primary" onclick="retry()">Retry</button>';
+}
+
+function copyCmd() {
+  var cmd = document.getElementById('ssh-cmd').textContent;
+  navigator.clipboard.writeText(cmd).then(function() {
+    var btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(function() { btn.textContent = 'Copy'; }, 2000);
+  });
+}
+
+function retry() {
+  fetch('/api/state').then(function(r) { return r.json(); }).then(function(d) {
+    location.reload();
+  }).catch(function() { location.reload(); });
+}
+</script>
+</body>
+</html>
