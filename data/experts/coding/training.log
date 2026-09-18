@@ -5235,3 +5235,8 @@ ValueError: probabilities contain NaN
 50,0.0383,3.00e-04,0.05,1789733193.865252
 75,0.0405,3.00e-04,0.06,1789733618.998625
 # [2026-09-18 08:19:15] STOPPED by signal at step 94
+# [2026-09-18 10:08:11] RESUME: training/train_expert.py --name coding --steps 4000 --resume --push 500 --batch 8 --log 25 --sample 500
+25,0.0404,3.00e-04,0.03,1789741221.273129
+50,0.0410,3.00e-04,0.03,1789741956.80267
+# [2026-09-18 10:43:57] RESUME: training/train_expert.py --name coding --steps 5 --batch 8 --resume --backend mlx --sample 0
+# [2026-09-18 10:44:01] FINISH at step 5
