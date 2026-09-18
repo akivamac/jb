@@ -56,13 +56,13 @@
 - All old overnight/master/chain shell watcher scripts (`master.sh`, `master_train.py`, `overnight*.sh`,
   `chain.sh`, `chain2.sh`, `chain3.sh`, `queue_manager.sh`, `safe_queue.sh`, `train_queue.sh`)
   have been **deleted** — the dashboard (`training_server.py`) replaces them.
-- **Numpy**: `/usr/bin/python3` (Debian Python 3.14.4) has numpy 2.3.5. The Termux python
+- **Numpy**: `python3` (Python 3.9.6, numpy 2.0.2) has numpy 2.0.2. The Termux python
   (`/data/data/com.termux/files/usr/bin/python3`) also has numpy installed since Sep 2026. Use
   `python3` which resolves to the one with numpy.
 - Training is driven from the dashboard at `http://localhost:9091`.
 
 ## Model / Experts
-- **Expert architecture**: BPE vocab 2000, default embed_dim=128, n_heads=4, n_layers=3, seq_len=128 (~869K params). Some grown larger.
+- **Expert architecture**: BPE vocab 2000, grown models use embed_dim=256, n_heads=4, n_layers=4, seq_len=1024 (~3.7M params). Default config is embed_dim=128, n_heads=4, n_layers=3, seq_len=128 (~869K params). Some grown larger.
 - **Experts (10)**: greeting, emotion, knowledge, coding, cot, python, horse, fish, reptiles, tree
 - **Chat server routing**: `server.py` loads all enabled experts from `data/experts.json`, plus a
   RouterNet at `data/router/router.npz` (trained on 7 experts) for auto-selection. Manual expert

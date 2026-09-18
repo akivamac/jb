@@ -12,7 +12,7 @@ import json
 import sys
 import requests
 
-SERVER = "http://localhost:8080"
+SERVER = "http://localhost:9090"
 
 def send_message(msg, history):
     """

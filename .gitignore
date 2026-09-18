@@ -1,5 +1,4 @@
 data/model.json
-data/tokenizer.json
 
 # Python cache
 __pycache__/
@@ -7,3 +6,23 @@ __pycache__/
 
 # Runtime locks
 *.lock
+training.lock
+
+# Log files
+*.log
+*.log.*
+*.old
+*.partial
+*.wasted
+
+# Generated data
+data/_gen/
+
+# macOS
+*.DS_Store
+
+# Specific tracked files that should NOT be ignored
+!data/tokenizer.json
+
+# Other tracked data files
+data/test_deep_report.json

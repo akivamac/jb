@@ -1,4 +1,5 @@
 import random
+import os
 
 random.seed(42)
 
@@ -865,7 +866,8 @@ print(f"Final multi-turn blocks: {multi_count}")
 print(f"Final total blocks: {len(blocks)}")
 
 # Write the file
-with open("/Users/dev/github-projects/joe-brain/data/_gen/fish/fish_mt_07_cand.txt", "w") as f:
+OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', '_gen', 'fish')
+with open(os.path.join(OUT_DIR, "fish_mt_07_cand.txt"), "w") as f:
     for i, block in enumerate(blocks):
         # Ensure block ends with newline, and blocks are separated by one blank line
         f.write(block.rstrip() + "\n")
@@ -875,7 +877,7 @@ with open("/Users/dev/github-projects/joe-brain/data/_gen/fish/fish_mt_07_cand.t
 print("File written!")
 
 # Verify
-with open("/Users/dev/github-projects/joe-brain/data/_gen/fish/fish_mt_07_cand.txt") as f:
+with open(os.path.join(OUT_DIR, "fish_mt_07_cand.txt")) as f:
     content = f.read()
 
 # Count blocks by splitting on blank lines
