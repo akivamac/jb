@@ -9,7 +9,7 @@ import os
 
 
 class RouterNet:
-    def __init__(self, vocab_size=2000, embed_dim=128, n_experts=7, seq_len=64):
+    def __init__(self, vocab_size=2000, embed_dim=128, n_experts=10, seq_len=64):
         self.V = vocab_size
         self.C = embed_dim
         self.N = n_experts
@@ -40,6 +40,9 @@ class RouterNet:
     def forward(self, idx):
         idx = np.asarray(idx, dtype=np.int32)
         T = len(idx)
+        if T > self.T:
+            idx = idx[-self.T:]
+            T = self.T
 
         x = self.p['wte'][idx] + self.p['wpe'][:T]
         # Mask out padding (token id 0) from both mean and max pooling
@@ -75,7 +78,8 @@ class RouterNet:
     def predict(self, idx):
         logits = self.forward(idx)
         logits = logits - np.max(logits)
-        probs = np.exp(logits) / np.sum(np.exp(logits))
+        probs = np.exp(logits)
+        probs /= probs.sum() + 1e-12
         return probs
 
     def save(self, path):

@@ -14,6 +14,7 @@ import time
 import signal
 import subprocess
 import threading
+import fcntl
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 
@@ -148,7 +149,7 @@ def _stop_expert(name):
                 pid = int(f.read().strip())
         except (ValueError, OSError):
             pass
-    if pid and is_process_alive(pid):
+    if pid and is_process_alive(pid) and _lock_owned_by(name, pid):
         try:
             os.killpg(os.getpgid(pid), signal.SIGTERM)
         except (ProcessLookupError, OSError):
@@ -157,6 +158,11 @@ def _stop_expert(name):
             if not is_process_alive(pid):
                 break
             time.sleep(0.5)
+        if is_process_alive(pid):
+            try:
+                os.killpg(os.getpgid(pid), signal.SIGKILL)
+            except (ProcessLookupError, OSError):
+                pass
     if os.path.exists(lock_path):
         try:
             os.remove(lock_path)
@@ -169,13 +175,14 @@ def process_queue():
         if max_concurrent <= 0:
             return
         running_names = [n for n in training if is_process_alive(training[n]['pid'])]
-        while len(running_names) > max_concurrent:
+        while len(running_names) > max_concurrent and running_names:
             victim = running_names.pop()
             _stop_expert(victim)
-            running_names = [n for n in training if is_process_alive(training[n]['pid'])]
-        while queue and count_running() < max_concurrent:
+        while queue and len(running_names) < max_concurrent:
             item = queue.pop(0)
             _start_training(item['name'], item['params'])
+            if item['name'] in training:
+                running_names.append(item['name'])
 
 def _start_training(name, params):
     """Actually spawn the training subprocess. Returns True on success."""
@@ -255,6 +262,7 @@ def _start_training(name, params):
 
     expert_dir = os.path.join(DATA, 'experts', name)
     os.makedirs(expert_dir, exist_ok=True)
+    stderr_log = None
     try:
         stderr_log = open(os.path.join(expert_dir, 'train_stderr.log'), 'a')
         proc = subprocess.Popen(
@@ -291,34 +299,40 @@ def _start_training(name, params):
                 os.remove(lock_path)
             print(f"ERROR: {name} training died immediately (code={proc.returncode}): {err[:500]}")
             return False
-        stderr_log.close()
         return True
     except Exception as e:
         print(f"ERROR: failed to start {name}: {e}")
         return False
+    finally:
+        if stderr_log is not None:
+            stderr_log.close()
 
 def parse_last_data_line(log_path):
     if not os.path.exists(log_path):
         return None
     last_data = None
     with open(log_path, 'rb') as f:
-        f.seek(0, 2)
-        size = f.tell()
-        read_size = min(size, 65536)
-        f.seek(max(0, size - read_size))
-        for line in f.read().decode('utf-8', errors='replace').splitlines():
-            line = line.strip()
-            if line and not line.startswith('#') and ',' in line:
-                parts = line.split(',')
-                if len(parts) >= 5:
-                    try:
-                        int(parts[0])
-                        float(parts[1])
-                        float(parts[2])
-                        float(parts[3])
-                        last_data = line
-                    except (ValueError, IndexError):
-                        pass
+        fcntl.flock(f.fileno(), fcntl.LOCK_SH)
+        try:
+            f.seek(0, 2)
+            size = f.tell()
+            read_size = min(size, 65536)
+            f.seek(max(0, size - read_size))
+            for line in f.read().decode('utf-8', errors='replace').splitlines():
+                line = line.strip()
+                if line and not line.startswith('#') and ',' in line:
+                    parts = line.split(',')
+                    if len(parts) >= 5:
+                        try:
+                            int(parts[0])
+                            float(parts[1])
+                            float(parts[2])
+                            float(parts[3])
+                            last_data = line
+                        except (ValueError, IndexError):
+                            pass
+        finally:
+            fcntl.flock(f.fileno(), fcntl.LOCK_UN)
     if not last_data:
         return None
     parts = last_data.split(',')
@@ -499,7 +513,7 @@ def sync_state():
                     pass
 
         # After syncing, try to start queued items
-        process_queue()
+    process_queue()
 
 # --- Background thread to monitor training and auto-dequeue ---
 
@@ -520,6 +534,9 @@ def ts_log(msg):
         print(msg, flush=True)
     except Exception:
         pass
+
+# --- Model cache for test chat ---
+_model_cache = {}
 
 # --- Test chat generation ---
 
@@ -542,13 +559,17 @@ def _keyword_match(expected, actual):
 def load_expert_model(name):
     if NP is None or TOK is None:
         return None
+    if name in _model_cache:
+        return _model_cache[name]
     cfg = read_experts_config()
     for entry in cfg.get('experts', []):
         if entry['name'] == name:
             model_path = os.path.join(DATA, entry.get('file', ''))
             if os.path.exists(model_path):
                 try:
-                    return JoeBrain.load(model_path)
+                    model = JoeBrain.load(model_path)
+                    _model_cache[name] = model
+                    return model
                 except Exception:
                     return None
     return None
@@ -562,7 +583,7 @@ def generate_stream(model, prompt, max_new=150):
     ids = TOK.encode(prompt)
     pending = ''
     STOPS = ['\nUser:', '\nJoe:']
-    max_safe = max(len(s) for s in STOPS) - 1
+    max_safe = max(len(s) for s in STOPS) * 2 + 10
     for _ in range(max_new):
         ctx = NP.array(ids[-model.T:], dtype=NP.int32)
         logits, _ = model.forward(ctx)
@@ -576,6 +597,8 @@ def generate_stream(model, prompt, max_new=150):
                     cut = pending.index(stop)
                     if cut > 0:
                         yield pending[:cut]
+                    else:
+                        yield ''
                     return
             if len(pending) > max_safe:
                 safe = pending[:-max_safe]
@@ -741,6 +764,13 @@ class TrainingHandler(BaseHTTPRequestHandler):
         self.send_header('Connection', 'keep-alive')
         self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
+        try:
+            self.connection.settimeout(120)
+        except Exception:
+            pass
+
+        stream_start = time.time()
+        max_duration = 120
 
         try:
             with open(log_path, 'rb') as f:
@@ -787,6 +817,11 @@ class TrainingHandler(BaseHTTPRequestHandler):
                             pass
                         return
                     time.sleep(1)
+                    if time.time() - stream_start > max_duration:
+                        msg = json.dumps({'done': True, 'reason': 'max_duration'})
+                        self.wfile.write(f'data: {msg}\n\n'.encode())
+                        self.wfile.flush()
+                        return
         except Exception:
             pass
 

@@ -96,7 +96,7 @@ def generate_stream(model, prompt, max_new=150):
     ids = tok.encode(prompt)
     pending = ''
     STOPS = ['\nUser:', '\nJoe:']
-    max_safe = max(len(s) for s in STOPS) - 1
+    max_safe = max(len(s) for s in STOPS) * 2 + 10
     for _ in range(max_new):
         ctx = np.array(ids[-model.T:], dtype=np.int32)
         logits, _ = model.forward(ctx)
@@ -110,6 +110,8 @@ def generate_stream(model, prompt, max_new=150):
                     cut = pending.index(stop)
                     if cut > 0:
                         yield pending[:cut]
+                    else:
+                        yield ''
                     return
             if len(pending) > max_safe:
                 safe = pending[:-max_safe]
@@ -130,7 +132,7 @@ def generate_blended_stream(models_weights, prompt, max_new=150):
     ids = tok.encode(prompt)
     pending = ''
     STOPS = ['\nUser:', '\nJoe:']
-    max_safe = max(len(s) for s in STOPS) - 1
+    max_safe = max(len(s) for s in STOPS) * 2 + 10
     for _ in range(max_new):
         avg_prob = None
         for m, w in models_weights:
@@ -151,6 +153,8 @@ def generate_blended_stream(models_weights, prompt, max_new=150):
                     cut = pending.index(stop)
                     if cut > 0:
                         yield pending[:cut]
+                    else:
+                        yield ''
                     return
             if len(pending) > max_safe:
                 safe = pending[:-max_safe]
@@ -243,14 +247,19 @@ class Handler(BaseHTTPRequestHandler):
                 self._json({'error': 'no message'}, 400)
                 return
 
+            try:
+                history = json.loads(qs.get('history', ['[]'])[0])
+            except (json.JSONDecodeError, TypeError):
+                history = []
+
             if expert_name and expert_name in experts:
                 model = experts[expert_name]
-                prompt = build_prompt([], msg)
+                prompt = build_prompt(history, msg)
                 reply = ''.join(generate_stream(model, prompt))
                 self._json({'reply': reply, 'routed_to': [expert_name]})
             elif router is not None:
                 selected = route_message(msg)
-                prompt = build_prompt([], msg)
+                prompt = build_prompt(history, msg)
                 if len(selected) == 1:
                     model = experts[selected[0][0]]
                     reply = ''.join(generate_stream(model, prompt))
@@ -296,8 +305,15 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         parsed = urlparse(self.path)
         if parsed.path == '/chat':
-            length = int(self.headers.get('Content-Length', 0))
-            body = self.rfile.read(length)
+            try:
+                length = int(self.headers.get('Content-Length', 0))
+            except (TypeError, ValueError):
+                self._json({'error': 'invalid Content-Length'}, 400)
+                return
+            if length > 10 * 1024 * 1024:
+                self.send_error(413)
+                return
+            body = self.rfile.read(length) if length > 0 else b''
             try:
                 data = json.loads(body)
             except Exception:
@@ -349,8 +365,10 @@ class Handler(BaseHTTPRequestHandler):
                 done_data = json.dumps({'done': True, 'reply': reply, 'routed_to': routed_to})
                 self.wfile.write(f'data: {done_data}\n\n'.encode())
                 self.wfile.flush()
-            except Exception:
-                pass
+            except Exception as e:
+                self.wfile.write(f'data: {json.dumps({"error": str(e)})}\n\n'.encode())
+                self.wfile.flush()
+                return
             return
         self._json({'error': 'not found'}, 404)
 
@@ -359,6 +377,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(code)
         self.send_header('Content-Type', 'application/json')
         self.send_header('Content-Length', len(data))
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
         self.wfile.write(data)
 
@@ -371,3 +390,5 @@ if __name__ == '__main__':
         server.serve_forever()
     except KeyboardInterrupt:
         print("\nStopped.")
+    finally:
+        server.server_close()

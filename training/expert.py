@@ -67,9 +67,9 @@ class ExpertRegistry:
         max_prob = float(probs.max())
         max_entropy = np.log(V)
 
-        threshold = self.filter_cfg.get('max_logit_threshold', -2.0)
-        ent_ratio = self.filter_cfg.get('entropy_ratio', 0.85)
-        min_prob = self.filter_cfg.get('min_top_prob', 0.05)
+        threshold = self.filter_cfg.get('max_logit_threshold', -5.0)
+        ent_ratio = self.filter_cfg.get('entropy_ratio', 0.95)
+        min_prob = self.filter_cfg.get('min_top_prob', 0.01)
 
         passed = True
         if max_logit < threshold:
@@ -81,7 +81,7 @@ class ExpertRegistry:
 
         # Simple repetition check: if top-3 token probs are all same
         sorted_probs = np.sort(probs)[::-1]
-        if len(sorted_probs) >= 3 and sorted_probs[0] == sorted_probs[1] == sorted_probs[2] and sorted_probs[0] > 0.3:
+        if len(sorted_probs) >= 3 and abs(sorted_probs[0] - sorted_probs[1]) < 1e-6 and sorted_probs[0] > 0.3:
             passed = False
 
         return passed, max_prob
@@ -96,9 +96,14 @@ class ExpertRegistry:
         survivors = [(name, logits) for name, logits, passed in all_logits if passed]
 
         if not survivors:
-            # All experts failed quality check — fall back to equal blend of all
+            # All experts failed quality check — weight by max_prob even for failing experts
             all_l = np.stack([l for _, l, _ in all_logits])
-            return all_l.mean(axis=0)
+            all_probs = np.array([float(softmax(l).max()) for _, l, _ in all_logits])
+            if all_probs.sum() > 0:
+                weights = all_probs / all_probs.sum()
+            else:
+                weights = np.ones(len(all_l)) / len(all_l)
+            return (all_l * weights[:, None]).sum(axis=0)
 
         if len(survivors) == 1:
             return survivors[0][1]
@@ -124,7 +129,11 @@ class ExpertRegistry:
         for expert in self.experts:
             model = expert['model']
             logits, _ = model.forward(prompt_ids)  # (T, V)
-            last_logits = logits[-1]  # (V,)
+            # Handle both (T, V) and (V,) shapes
+            if logits.ndim == 2:
+                last_logits = logits[-1]
+            else:
+                last_logits = logits
             passed, score = self.quality_check(last_logits)
             results.append((expert['name'], last_logits, passed))
 
@@ -135,12 +144,19 @@ class ExpertRegistry:
         Run all experts' prefill, quality filter last-token logits,
         return blended last-token logits and list of per-expert KV caches.
         Returns: (V,) blended logits, list of (name, model, kv_cache) for surviving experts
+
+        Note: Quality re-check is intentionally skipped during decode
+        for performance. All quality filtering is done at prefill time.
         """
         all_prefills = []
         for expert in self.experts:
             model = expert['model']
             logits, kv = model.prefill(prompt_ids)
-            last_logits = logits  # (V,) — prefill already returns last position
+            # Handle both (V,) and (T, V) shapes
+            if logits.ndim == 2:
+                last_logits = logits[-1]
+            else:
+                last_logits = logits
             passed, score = self.quality_check(last_logits)
             all_prefills.append((expert['name'], last_logits, passed, model, kv))
 
