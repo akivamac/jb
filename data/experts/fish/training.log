@@ -9783,3 +9783,5 @@ AttributeError: 'array' object has no attribute 'copy'
 1525,0.0039,1.00e-04,1.59,1790343979.576867
 1550,0.0036,1.00e-04,2.63,1790343989.095593
 # [2026-09-25 09:46:32] FINISH at step 1555
+# [2026-09-25 10:41:07] SAVE FAILED: argument must be an int, or have a fileno() method.
+# [2026-09-25 10:41:07] FINISH at step 3
