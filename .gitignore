@@ -23,6 +23,7 @@ data/_gen/
 
 # Specific tracked files that should NOT be ignored
 !data/tokenizer.json
+!log.txt
 
 # Other tracked data files
 data/test_deep_report.json

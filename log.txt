@@ -1,0 +1,11 @@
+== JoeBrain session log ==
+
+2026-09-25 (Fri)
+- Repo restarted fresh: 84GB git bloat deleted locally + on GitHub.
+  Old akivamac/jb (84GB) deleted; recreated empty; single-commit snapshot pushed.
+- Snapshot verified byte-for-byte vs old history before deletion; all 10 experts + router load and sample clean (Mac + tablet).
+- Tablet re-cloned from fresh repo (~405MB) — old multi-GB pull abandoned; check_models.py runs clean there.
+- Dashboard fix: populateSampleExpert/populateMergeExpert null-guard (units exist only in tools.html); cards now persist; SSE restored.
+- Training stopped (fish + emotion were last runs); all models verified OK before restart.
+- Disk freed on Mac: 42GB -> 120GB free.
+- log.txt re-added as the repo changelog (was dropped as junk, kept now by request).
