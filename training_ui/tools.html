@@ -1,0 +1,4051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoeBrain Training Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%230969da'/%3E%3Ccircle cx='8' cy='8' r='3' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --border: #d0d7de;
+  --text: #1f2328;
+  --text-dim: #656d76;
+  --accent: #0969da;
+  --accent-light: rgba(9,105,218,0.08);
+  --success: #1a7f37;
+  --success-light: rgba(26,127,55,0.08);
+  --warn: #9a6700;
+  --warn-light: rgba(154,103,0,0.08);
+  --error: #cf222e;
+  --error-light: rgba(207,34,46,0.08);
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.mono { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; }
+
+/* Header */
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header h1 svg { width: 20px; height: 20px; fill: var(--accent); }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.port-badge {
+  font-size: 12px;
+  color: var(--text-dim);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  gap: 24px;
+  padding: 12px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-dim);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.summary .stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.summary .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.summary .dot.idle { background: var(--text-dim); }
+
+.conn-badge {
+  display: none;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--error);
+  background: var(--error-light);
+  border: 1px solid var(--error);
+  padding: 2px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.conn-badge.show { display: inline-flex; }
+
+/* Max concurrent control */
+.concurrent-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.concurrent-control label {
+  font-weight: 500;
+}
+
+.concurrent-input {
+  padding: 4px 6px;
+  font-size: 14px;
+  font-family: 'SF Mono', monospace;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+
+.concurrent-input:focus { border-color: var(--accent); }
+
+/* Main */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* Expert Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s;
+  cursor: pointer;
+}
+
+.card:hover { border-color: var(--accent); }
+.card.running { border-color: var(--accent); }
+.card.queued { border-color: var(--warn); }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-name { font-size: 16px; font-weight: 600; }
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge.running { color: var(--accent); background: var(--accent-light); animation: pulse 2s ease-in-out infinite; }
+.badge.idle { color: var(--text-dim); background: var(--bg); }
+.badge.queued { color: var(--warn); background: var(--warn-light); }
+
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+
+.card-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.stat-label { color: var(--text-dim); }
+.stat-value { font-weight: 500; }
+.card-pass { color: var(--success); }
+
+.progress-wrap { margin-top: 8px; }
+
+.progress-bar {
+  height: 4px;
+  background: #eaeef2;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.progress-text { font-size: 12px; color: var(--text-dim); }
+
+.card-actions { margin-top: 12px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: none;
+}
+
+.btn-train { color: var(--accent); border-color: var(--accent); background: var(--accent-light); }
+.btn-train:hover { background: var(--accent); color: #fff; }
+
+.btn-stop { color: var(--error); border-color: var(--error); background: var(--error-light); }
+.btn-stop:hover { background: var(--error); color: #fff; }
+
+.btn-dequeue { color: var(--warn); border-color: var(--warn); background: var(--warn-light); }
+.btn-dequeue:hover { background: var(--warn); color: #fff; }
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Queue bar */
+.queue-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.queue-bar .queue-label { font-weight: 600; color: var(--text); margin-right: 8px; }
+
+.queue-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--warn-light);
+  color: var(--warn);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 2px 4px 2px 0;
+}
+
+/* Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.active { display: flex; }
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  width: 360px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.modal h3 { font-size: 16px; margin-bottom: 16px; }
+
+.form-group { margin-bottom: 12px; }
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-family: 'SF Mono', monospace;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+
+.form-group input:focus { border-color: var(--accent); }
+
+.form-row-split { display: flex; gap: 8px; }
+.form-group.half { flex: 1; }
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.modal-queued-note {
+  font-size: 12px;
+  color: var(--warn);
+  margin-bottom: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.btn-cancel { color: var(--text-dim); border-color: var(--border); background: var(--surface); width: auto; padding: 7px 14px; }
+.btn-cancel:hover { background: var(--bg); }
+.btn-start { background: var(--accent); color: #fff; border-color: var(--accent); width: auto; padding: 7px 14px; }
+.btn-start:hover { opacity: 0.9; }
+.btn-thern { background: #28a745; color: #fff; border-color: #28a745; width: auto; padding: 7px 14px; }
+.btn-thern:hover { background: #218838; }
+.btn-start36 { background: #dc3545; color: #fff; border-color: #dc3545; width: auto; padding: 7px 14px; }
+.btn-start36:hover { background: #c82333; }
+
+/* Detail page */
+.detail-page {
+  display: none;
+}
+
+.detail-page.active {
+  display: block;
+}
+
+.main.hidden {
+  display: none;
+}
+
+.detail-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: var(--sticky-detail, 0px);
+  z-index: 100;
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.btn-back:hover { background: var(--bg); color: var(--text); }
+
+.detail-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.detail-section { margin-bottom: 24px; }
+
+.detail-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.detail-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+
+.detail-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.detail-stat .label { color: var(--text-dim); }
+.detail-stat .value { font-weight: 500; font-family: 'SF Mono', monospace; }
+
+.detail-progress-wrap { margin-bottom: 16px; }
+
+.detail-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+/* Test chat */
+.test-chat {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.test-chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.test-chat-input input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+
+.test-chat-input input:focus { border-color: var(--accent); }
+
+.test-chat-input button {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.test-chat-input button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.test-chat-input button.secondary {
+  background: var(--surface);
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+
+.test-chat-response {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 40px;
+  max-height: 280px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.test-chat-response .placeholder { color: var(--text-dim); }
+
+.stream-cursor {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  margin-left: 2px;
+  vertical-align: -2px;
+  border-radius: 1px;
+  background: var(--accent);
+  animation: stream-blink 1s steps(2, start) infinite;
+}
+
+@keyframes stream-blink { 50% { opacity: 0; } }
+
+/* Test suite */
+.test-suite { margin-top: 20px; border-top: 1px solid var(--border); padding-top: 16px; }
+.test-suite-summary { font-size: 16px; margin-bottom: 12px; }
+.test-score { font-size: 20px; font-weight: 700; font-family: 'SF Mono', monospace; }
+.test-row { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.test-row:last-child { border-bottom: none; }
+.test-q { margin-bottom: 4px; }
+.test-q strong { color: var(--text); }
+.test-expect { color: var(--text-dim); margin-left: 22px; }
+.test-actual { color: var(--text-dim); margin-left: 22px; font-style: italic; }
+.test-pass { color: var(--success); font-weight: 700; margin-right: 4px; }
+.test-fail { color: var(--error); font-weight: 700; margin-right: 4px; }
+
+/* Sparkline */
+.sparkline { display: block; margin-top: 6px; }
+
+/* Loss chart */
+.loss-chart-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  position: relative;
+}
+
+.chart-windows { display: flex; gap: 4px; }
+.chart-win-btn {
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.chart-win-btn:hover { border-color: var(--accent); color: var(--accent); }
+.chart-win-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Training history */
+.history-list { list-style: none; }
+.history-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+}
+.history-list .h-type { font-size: 11px; font-weight: 600; text-transform: uppercase; padding: 1px 6px; border-radius: 4px; white-space: nowrap; }
+.history-item:last-child { border-bottom: none; }
+.history-item .h-time { color: var(--text-dim); white-space: nowrap; font-family: 'SF Mono', monospace; }
+.history-more { padding: 6px 0; font-size: 12px; }
+.history-more a { color: var(--accent); text-decoration: none; }
+.history-more a:hover { text-decoration: underline; }
+.history-item .h-type {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.h-type.start { color: var(--accent); background: var(--accent-light); }
+.h-type.resume { color: var(--warn); background: var(--warn-light); }
+.h-type.finish { color: var(--success); background: var(--success-light); }
+.h-type.stop { color: var(--error); background: var(--error-light); }
+.h-type.interrupt { color: var(--error); background: var(--error-light); }
+.h-type.error { color: var(--error); background: var(--error-light); }
+.h-type.sample { color: var(--success); background: var(--success-light); }
+.h-type.info { color: var(--text-dim); background: var(--bg); }
+
+/* ETA */
+.eta-text { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+/* Sticky section headers */
+.summary {
+  position: sticky;
+  top: var(--h-hdr, 0px);
+  z-index: 90;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.main .section-label {
+  position: sticky;
+  top: var(--h-main, 64px);
+  background: var(--bg);
+  z-index: 2;
+  padding: 6px 0;
+  margin-bottom: 6px;
+}
+.detail-page .detail-section-label {
+  position: sticky;
+  top: var(--sticky-detail-label, 66px);
+  background: var(--surface);
+  z-index: 2;
+  padding: 4px 0;
+}
+
+/* Sticky measurement helper */
+.stick-measure {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  width: 100%;
+}
+
+/* Card hover lift */
+.card {
+  transition: border-color 0.15s, box-shadow 0.2s, transform 0.15s;
+}
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(9,105,218,0.12), 0 2px 6px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+.card.running { box-shadow: var(--shadow), inset 3px 0 0 var(--accent); }
+.card.queued { box-shadow: var(--shadow), inset 3px 0 0 var(--warn); }
+
+/* Chart tooltip */
+.chart-tooltip {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-family: 'SF Mono', monospace;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 10;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.chart-tooltip.visible { opacity: 1; }
+.chart-tooltip .tt-step { color: var(--text-dim); }
+.chart-tooltip .tt-loss { color: var(--accent); font-weight: 700; }
+.chart-tooltip .tt-speed { color: var(--text-dim); }
+
+/* Charms for detail page */
+.detail-tok-s { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+/* Popup (history) polish */
+.popup {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.18);
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.modal-close:hover { background: var(--bg); color: var(--text); }
+
+/* ============ Dark mode (feat 74) ============ */
+body.dark {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-dim: #8b949e;
+  --accent: #58a6ff;
+  --accent-light: rgba(88,166,255,0.12);
+  --success: #3fb950;
+  --success-light: rgba(63,185,80,0.12);
+  --warn: #d29922;
+  --warn-light: rgba(210,153,34,0.14);
+  --error: #f85149;
+  --error-light: rgba(248,81,73,0.12);
+  --shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.6);
+}
+body.dark .progress-bar { background: #21262d; }
+body.dark .btn-train:hover, body.dark .btn-stop:hover, body.dark .btn-dequeue:hover,
+body.dark .btn-start:hover, body.dark .btn-thern:hover, body.dark .btn-start36:hover { color: #0d1117; }
+body.dark .test-chat-input button { color: #0d1117; }
+body.dark .card:hover { box-shadow: 0 6px 18px rgba(88,166,255,0.12), 0 2px 6px rgba(0,0,0,0.5); }
+body.dark .card.running { box-shadow: var(--shadow), inset 3px 0 0 var(--accent); }
+body.dark .main .section-label { background: var(--bg); }
+
+.icon-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: var(--text-dim);
+  cursor: pointer;
+  line-height: 1;
+}
+.icon-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ============ Search + filter (feat 93) ============ */
+.search-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.search-row input[type="search"] {
+  flex: 0 1 220px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+.search-row input[type="search"]:focus { border-color: var(--accent); }
+.search-row select {
+  padding: 6px 8px;
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+}
+.search-row .count { font-size: 12px; color: var(--text-dim); margin-left: auto; }
+
+/* ============ Fleet chart (feats 23/94) ============ */
+.fleet-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.fleet-panel summary {
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+.fleet-panel summary::-webkit-details-marker { display: none; }
+.fleet-panel summary::before { content: '▸'; font-size: 11px; transition: transform 0.15s; }
+.fleet-panel[open] summary::before { transform: rotate(90deg); }
+.fleet-body { padding: 4px 16px 16px; }
+.fleet-tools { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.fleet-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.fleet-legend .fl-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+.fleet-legend .fl-item.active { background: var(--accent-light); color: var(--text); font-weight: 600; }
+.fleet-legend .fl-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.fleet-legend .fl-item.avg .fl-dot { width: 12px; border-radius: 2px; }
+.fleet-chart-wrap {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px;
+}
+#fleet-chart { width: 100%; height: 200px; display: block; cursor: crosshair; }
+
+/* ============ Queue reorder + queue-all (feats 76/87) ============ */
+.queue-item .q-move {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0 1px;
+  opacity: 0.7;
+  line-height: 1;
+}
+.queue-item .q-move:hover { opacity: 1; }
+.queue-all-btn {
+  margin-left: 8px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.queue-all-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ============ Resources + health ring (feats 71/100) ============ */
+.res-meters { font-family: 'SF Mono', monospace; font-size: 12px; }
+.health-wrap { display: inline-flex; align-items: center; }
+.health-ring {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(var(--text-dim) 0%, var(--border) 0);
+  position: relative;
+  transition: background 0.3s;
+}
+.health-ring::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: var(--surface);
+  border-radius: 50%;
+}
+.health-ring span {
+  position: relative;
+  z-index: 1;
+  font-size: 9px;
+  font-weight: 700;
+  font-family: 'SF Mono', monospace;
+  color: var(--text);
+}
+.locks-chip {
+  display: none;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
+  color: var(--success);
+  background: var(--success-light);
+  border: 1px solid var(--success);
+}
+.locks-chip.show { display: inline-flex; animation: fade-in 0.2s; }
+.locks-btn {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.locks-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ============ Toasts (feat 84) ============ */
+#toast-container {
+  position: fixed;
+  top: 70px;
+  right: 18px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+.toast {
+  min-width: 220px;
+  max-width: 340px;
+  padding: 10px 14px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+  animation: toast-in 0.25s ease;
+  pointer-events: auto;
+}
+.toast.success { color: var(--success); border-color: var(--success); background: var(--success-light); }
+.toast.error { color: var(--error); border-color: var(--error); background: var(--error-light); }
+.toast.info { color: var(--accent); border-color: var(--accent); background: var(--accent-light); }
+.toast.out { animation: toast-out 0.3s ease forwards; }
+@keyframes toast-in { from { transform: translateX(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes toast-out { to { transform: translateX(40px); opacity: 0; } }
+
+/* ============ Card extras: stars, git-dirty, pause, push (feats 75/83/88/13) ============ */
+.card-stars { color: var(--warn); font-size: 11px; letter-spacing: 1px; margin-left: 4px; }
+.git-dirty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #9a6700;
+  background: rgba(154,103,0,0.15);
+  border: 1px solid #9a6700;
+  border-radius: 50%;
+  cursor: help;
+}
+body.dark .git-dirty { color: var(--warn); border-color: var(--warn); }
+.card-actions { display: flex; gap: 6px; align-items: center; }
+.card-actions .btn { flex: 1; }
+.btn-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 34px;
+  padding: 7px 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  flex: 0 0 auto;
+  transition: all 0.15s;
+}
+.btn-mini:hover { border-color: var(--accent); color: var(--accent); }
+.btn-mini.paused { color: var(--warn); border-color: var(--warn); background: var(--warn-light); }
+.push-text { color: var(--warn); }
+
+/* ============ Modal extras: presets, cost, resume note (feats 78/90/3) ============ */
+.preset-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.preset-row .preset-label { font-size: 12px; color: var(--text-dim); font-weight: 500; }
+.preset-btn {
+  flex: 1;
+  padding: 5px 6px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.preset-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
+.form-note {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 4px;
+  font-family: 'SF Mono', monospace;
+}
+.form-note.warn-note { color: var(--warn); }
+
+/* ============ Test chat sliders (feats 11/12) ============ */
+.test-chat-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  padding: 8px 0 10px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.test-chat-controls .ctl { display: flex; align-items: center; gap: 6px; }
+.test-chat-controls .ctl label { font-weight: 500; white-space: nowrap; }
+.test-chat-controls .ctl input[type="range"] { width: 90px; accent-color: var(--accent); }
+.test-chat-controls .ctl .val {
+  font-family: 'SF Mono', monospace;
+  min-width: 30px;
+  color: var(--text);
+}
+.test-chat-controls .ctl input[type="checkbox"] { accent-color: var(--accent); }
+.session-note { font-size: 11px; color: var(--warn); margin-top: 6px; min-height: 14px; }
+
+/* ============ Detail extras: speed chart, data section, retrain hint (feats 70/91/15/65/66) ============ */
+.speed-chart-wrap {
+  margin-top: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px;
+  position: relative;
+}
+.speed-chart-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+#detail-speed-chart { width: 100%; height: 56px; display: block; }
+.capacity-bar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+.capacity-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.3s; }
+.capacity-fill.starved { background: var(--error); }
+.data-flag {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.data-flag.starved { color: var(--error); background: var(--error-light); border: 1px solid var(--error); }
+.retrain-hint {
+  display: none;
+  margin-top: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--warn);
+  background: var(--warn-light);
+  border: 1px solid var(--warn);
+  border-radius: 6px;
+}
+.retrain-hint.show { display: block; }
+
+/* ============ Panel system (new panels) ============ */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  padding: 12px 16px;
+}
+.panel .panel-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.panel .panel-title .feat-badge {
+  font-size: 10px;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: 'SF Mono', monospace;
+}
+.panel .panel-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.panel .panel-actions .btn { width: auto; padding: 4px 12px; font-size: 12px; }
+.panel .panel-actions .btn-mini { width: auto; padding: 4px 8px; font-size: 12px; }
+details.panel > summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+details.panel > summary::-webkit-details-marker { display: none; }
+details.panel > summary::before {
+  content: '▶';
+  font-size: 10px;
+  transition: transform 0.15s;
+  color: var(--text-dim);
+}
+details.panel[open] > summary::before {
+  transform: rotate(90deg);
+}
+details.panel > summary .feat-badge {
+  font-size: 10px;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: 'SF Mono', monospace;
+}
+#tokenize-output, #tokenize-input, #samples-list, #askall-results, #skill-table, #merge-chunks, #wiz-log, #suite-history, #stress-results {
+  min-height: 20px;
+}
+#tokenize-input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: 'SF Mono', monospace;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  box-sizing: border-box;
+}
+#tokenize-input:focus { border-color: var(--accent); }
+.token-chip {
+  display: inline-block;
+  background: hsl(200,70%,55%);
+  color: #fff;
+  padding: 1px 5px;
+  margin: 1px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-family: 'SF Mono', monospace;
+  cursor: default;
+}
+.sample-item {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.sample-item b { color: var(--accent); }
+.sample-item pre {
+  margin: 4px 0 0;
+  font-size: 12px;
+  white-space: pre-wrap;
+  color: var(--text-dim);
+}
+.sample-pag {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.sample-pag button {
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 12px;
+}
+.sample-pag button:disabled { opacity: 0.4; cursor: not-allowed; }
+.askall-card {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: var(--bg);
+}
+.askall-card.router-picked {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+.askall-card .ac-name {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.askall-card .ac-router-bar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  margin: 4px 0;
+  overflow: hidden;
+}
+.askall-card .ac-router-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+.askall-card .ac-reply {
+  font-size: 13px;
+  white-space: pre-wrap;
+  margin-top: 6px;
+}
+.askall-card .ac-router-label {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-left: 6px;
+}
+.skill-pass { color: var(--success); font-weight: 700; }
+.skill-dim { color: var(--text-dim); }
+#skill-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+#skill-table th, #skill-table td {
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+#skill-table th {
+  background: var(--bg);
+  font-weight: 600;
+  color: var(--text-dim);
+}
+.merge-block {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 6px;
+  background: var(--bg);
+  font-size: 13px;
+}
+.merge-block .v1-accept { color: var(--success); font-weight: 600; }
+.merge-block .v1-reject { color: var(--error); font-weight: 600; }
+.merge-block .v1-clear { color: var(--text-dim); }
+.merge-block .mb-actions {
+  margin-top: 6px;
+  display: flex;
+  gap: 6px;
+}
+.merge-block .mb-actions button {
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 12px;
+}
+.wiz-step {
+  font-size: 12px;
+  padding: 3px 0;
+  font-family: 'SF Mono', monospace;
+}
+.wiz-step .ok { color: var(--success); }
+.wiz-step .fail { color: var(--error); }
+.wiz-step .cmd { color: var(--text-dim); }
+.stress-row {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  background: var(--bg);
+}
+.stress-row .sr-msg { color: var(--text-dim); font-family: 'SF Mono', monospace; }
+.stress-row .sr-reply { margin-top: 4px; white-space: pre-wrap; font-size: 12px; }
+.suite-bar { fill: var(--accent); margin-top: 2px; width: 20px; }
+#suite-history svg { display: flex; gap: 4px; align-items: flex-end; }
+.suite-date { font-size: 10px; color: var(--text-dim); text-align: center; }
+#tools-toggle { font-size: 12px; padding: 3px 10px; }
+/* ============ End new panels ============ */
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html" style="color:var(--text-dim);font-size:13px;text-decoration:none;margin-right:8px">← Dashboard</a>
+  <h1>
+    <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/></svg>
+    JoeBrain Training Dashboard
+  </h1>
+  <div class="header-right">
+    <span class="port-badge">port 9091</span>
+    <button type="button" class="btn btn-thern" id="thern-btn" onclick="startThern()">Start thern.py</button>
+    <button type="button" class="btn btn-start36" id="start36-btn" onclick="start36h()">Start start_36h.sh</button>
+    <button type="button" class="icon-btn" id="dark-btn" onclick="toggleDark()" title="Toggle dark mode">☾</button>
+  </div>
+</div>
+
+<div class="summary" id="summary">
+  <div class="stat"><span class="dot"></span> <span id="sum-running">0</span> running</div>
+  <div class="stat"><span class="dot idle"></span> <span id="sum-total">0</span> experts</div>
+  <div class="stat"><span id="sum-steps">0</span> total steps</div>
+  <div class="stat res-meters" id="sum-res" title="Fleet CPU / RAM / free disk"></div>
+  <div class="stat">
+    <div class="health-wrap" id="health-wrap" title="Experts within 1.5x of their loss goal">
+      <div class="health-ring" id="health-ring"><span id="health-ring-val">—</span></div>
+    </div>
+  </div>
+  <span class="locks-chip" id="locks-chip">cleaned stale locks</span>
+  <button type="button" class="locks-btn" onclick="checkLocks()">locks</button>
+  <span class="conn-badge" id="conn-badge">DISCONNECTED</span>
+  <div class="concurrent-control">
+    <label>Max concurrent:</label>
+    <select class="concurrent-input" id="max-concurrent" onchange="updateMaxConcurrent()">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+  </div>
+</div>
+
+<div class="main">
+  <div class="section-label" style="display:flex;align-items:center;gap:10px">
+    Experts
+    <button type="button" class="btn btn-mini" id="tools-toggle" onclick="toggleAllTools()">▶ Tools ▼</button>
+  </div>
+  <details class="fleet-panel" id="fleet-panel">
+    <summary>Fleet Loss</summary>
+    <div class="fleet-body">
+      <div class="fleet-tools">
+        <span class="detail-section-label" style="margin-bottom:0">All expert loss curves + fleet average</span>
+        <button type="button" class="btn-mini" style="margin-left:auto" onclick="fleetRefresh()">↻ refresh</button>
+      </div>
+      <div class="fleet-legend" id="fleet-legend"></div>
+      <div class="fleet-chart-wrap">
+        <canvas id="fleet-chart"></canvas>
+      </div>
+    </div>
+  </details>
+
+<details class="panel" id="tokenizer-panel">
+  <summary>Tokenizer Playground <span class="feat-badge">feat 30</span></summary>
+  <div class="panel-actions">
+    <input type="text" id="tokenize-input" placeholder="Type text to tokenize...">
+    <button type="button" class="btn btn-train" onclick="doTokenize()">Tokenize</button>
+  </div>
+  <div id="tokenize-output"></div>
+</details>
+
+<details class="panel" id="samples-panel">
+  <summary>Sample Gallery <span class="feat-badge">feat 28</span></summary>
+  <div class="panel-actions">
+    <select id="sample-expert"></select>
+    <input type="number" id="sample-limit" value="5" min="1" max="50" style="width:50px;padding:4px 6px;font-size:13px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text)">
+    <button type="button" class="btn btn-train" onclick="doLoadSamples()">Load</button>
+    <span class="sample-pag" id="sample-pag"></span>
+  </div>
+  <div id="samples-list"></div>
+</details>
+
+<details class="panel" id="askall-panel">
+  <summary>Ask All Experts <span class="feat-badge">feat 25/26</span></summary>
+  <div class="panel-actions">
+    <textarea id="askall-input" placeholder="Type a message..." style="width:100%;min-height:40px;padding:6px 10px;font-size:13px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);resize:vertical"></textarea>
+    <button type="button" class="btn btn-train" onclick="doAskAll()">Run all experts</button>
+    <span id="askall-loading" style="display:none;color:var(--accent)">asking…</span>
+  </div>
+  <div id="askall-results"></div>
+</details>
+
+<details class="panel" id="skill-panel">
+  <summary>Skill Matrix <span class="feat-badge">feat 24</span></summary>
+  <div class="panel-actions">
+    <button type="button" class="btn btn-train" onclick="doSkillRefresh()">Refresh</button>
+  </div>
+  <table id="skill-table"></table>
+</details>
+
+<details class="panel" id="merge-panel">
+  <summary>MT Review (admin) <span class="feat-badge">feat 31</span></summary>
+  <div class="panel-actions">
+    <button type="button" class="btn btn-train" onclick="doMergeList()">List chunks</button>
+    <select id="merge-expert" style="padding:4px 6px;font-size:12px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text)"></select>
+    <button type="button" class="btn btn-train" onclick="doMergeRun()">Merge</button>
+  </div>
+  <div id="merge-chunks"></div>
+</details>
+
+<details class="panel" id="wizard-panel">
+  <summary>New Expert Wizard <span class="feat-badge">feat 46</span></summary>
+  <div class="panel-actions" style="flex-direction:column;align-items:stretch">
+    <div style="font-size:11px;color:var(--warn);margin-bottom:4px">Trains a full model — intentional only.</div>
+    <div style="display:flex;gap:6px">
+      <input type="text" id="wiz-name" placeholder="expert name" style="flex:1;padding:4px 8px;font-size:13px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text)">
+      <input type="number" id="wiz-steps" value="500" min="1" style="width:70px;padding:4px 6px;font-size:13px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text)">
+      <button type="button" class="btn btn-train" onclick="doWizard()">Create</button>
+    </div>
+  </div>
+  <div id="wiz-log"></div>
+</details>
+<div style="text-align:center;padding:20px">
+  <a href="index.html" class="btn btn-train">← Back to Dashboard</a>
+</div>
+<script>
+const API = '';
+let experts = [];
+let maxConcurrent = 2;
+let queueList = [];
+let pendingState = {};  // {name: 'starting'|'stopping'} while train/stop in flight
+let trainingExpertName = null;
+let currentDetailExpert = null;
+let lossHistoryCache = {};  // {name: [{step, loss, lr, speed, time}, ...]}
+let logHistoryCache = {};  // {name: [{type, time, raw, step}, ...]}
+let prevRunning = {};  // {name: bool} for notification detection
+let missedFinish = {};  // {name: bool} finish notification pending a visible tab
+let logDataSeq = {};  // {name: int} sequence token for fetchLogData ordering
+let chartWindowCache = {};  // {name:window: data} cached chart window data
+let lastLogKey = {};  // {name: 'mtime:size'} last-seen log signature for change detection
+let currentChartWindow = 'all';
+let lastDrawnChartData = null;  // last array handed to drawDetailChart
+let lastDrawnHoverIdx = null;  // highlighted index into lastDrawnChartData
+let smoothEnabled = false;  // EMA smoothing toggle for the loss curve
+let detailResizeObserver = null;  // ResizeObserver for the detail chart
+let evalCache = {};  // {name:[{ts,seed,correct,total,accuracy}]}
+
+async function ssePost(endpoint, body) {
+  const res = await fetch(API + endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body||{})});
+  if (!res.ok) throw new Error('HTTP '+res.status);
+  const txt = await res.text();
+  const lines = txt.split('\n').filter(l=>l.startsWith('data: '));
+  if (!lines.length) return null;
+  return JSON.parse(lines[lines.length-1].slice(6));
+}
+
+async function jsonPost(endpoint, body) {
+  const res = await fetch(API + endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body||{})});
+  if (!res.ok) throw new Error('HTTP '+res.status);
+  return await res.json();
+}
+
+async function testPost(expert, msg, temp) {
+  const res = await fetch(API + '/api/test', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({expert, msg, temp})});
+  if (!res.ok) throw new Error('HTTP '+res.status);
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  let done = false, reply = '', err = null;
+  while (true) {
+    const {value, done: streamDone} = await reader.read();
+    if (streamDone) break;
+    buffer += decoder.decode(value, {stream:true});
+    const lines = buffer.split('\n');
+    buffer = lines.pop();
+    for (const line of lines) {
+      if (!line.startsWith('data: ')) continue;
+      try {
+        const data = JSON.parse(line.slice(6));
+        if (data.done) { done = true; reply = data.reply || ''; err = data.error || null; break; }
+      } catch(e) {}
+    }
+    if (done) break;
+  }
+  return {done, reply, error: err};
+}
+
+// --- Panel state ---
+let skillCache = {};
+let samplePage = {};
+const SAMPLE_PER_PAGE = 10;
+
+// --- Panel functions ---
+
+// --- feat 77: SSE live updates ---
+let sse = null;
+let sseConnected = false;
+
+// --- feat 2: auto PASSED derived from /api/evals ---
+const PASSED_EXPERTS = new Set(['greeting', 'emotion', 'knowledge', 'coding', 'cot', 'python', 'horse', 'tree', 'reptiles', 'fish']);
+let passedExperts = new Set(PASSED_EXPERTS);
+
+// --- fleet-level stats from the payload (feats 71/100/17) ---
+let fleetStats = { resources: null, avg_loss: null, total_step: 0, squad_health: null, running_count: 0 };
+
+// --- feat 2/1: per-expert loss goal with fallback ---
+const DEFAULT_LOSS_GOAL = 0.044;
+const LOSS_START = 5.5;
+const PUSH_EVERY = 500;  // feat 13: push cadence (matches --push default)
+
+// --- feat 93: search + filter ---
+let searchQuery = '';
+let statusFilter = 'all';
+
+// --- feat 74: dark mode ---
+const DARK_KEY = 'joebrain_dark';
+
+// --- feat 70/91: speed trendline mode ---
+let speedMode = 'bars';  // 'bars' | 'heat'
+
+// --- feat 23: fleet chart hover ---
+let fleetHoverName = null;
+const FLEET_PALETTE = ['#0969da', '#1a7f37', '#cf222e', '#953800', '#8250df', '#0550ae', '#0a6b64', '#a475f9', '#6e7781', '#da3633'];
+
+function lossGoalFor(e) {
+  return e && e.loss_goal != null ? e.loss_goal : DEFAULT_LOSS_GOAL;
+}
+
+function setConnBadge(show) {
+  const el = document.getElementById('conn-badge');
+  if (el) el.classList.toggle('show', !!show);
+}
+
+// --- Fetch experts (5s fallback when SSE is down; feat 77) ---
+async function fetchExperts() {
+  try {
+    const res = await fetch(API + '/api/experts');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (sseConnected) setConnBadge(false);  // otherwise keep the SSE-down badge
+    applyExpertsData(data, false);
+  } catch (e) {
+    console.error('Failed to fetch experts:', e);
+    setConnBadge(true);
+  }
+}
+
+// Shared update path for both the polling fetch and SSE snapshots.
+function applyExpertsData(data, fromSse) {
+  if (!data || !data.experts) return;
+  experts = data.experts;
+  maxConcurrent = data.max_concurrent != null ? data.max_concurrent : maxConcurrent;
+  queueList = data.queue || [];
+  fleetStats = {
+    resources: data.resources || fleetStats.resources || null,
+    avg_loss: data.avg_loss != null ? data.avg_loss : fleetStats.avg_loss,
+    total_step: data.total_step != null ? data.total_step : experts.reduce((s, e) => s + (e.step || 0), 0),
+    squad_health: data.squad_health != null ? data.squad_health : fleetStats.squad_health,
+    running_count: data.running_count != null ? data.running_count : fleetStats.running_count,
+  };
+  updateScriptButtons(data);
+
+  // Clear pending start/stop once actual state flips
+  const stoppingNow = new Set(experts.filter(x => pendingState[x.name] === 'stopping').map(x => x.name));
+  for (const e of experts) {
+    if (pendingState[e.name] === 'starting' && (e.running || e.queued)) {
+      delete pendingState[e.name];
+    } else if (pendingState[e.name] === 'stopping' && !e.running) {
+      delete pendingState[e.name];
+    }
+  }
+
+  // Detect newly finished experts for notifications + toasts (skip user-initiated stops)
+  for (const e of experts) {
+    if (prevRunning[e.name] && !e.running && !stoppingNow.has(e.name)) {
+      const note = `"${e.name}" completed at step ${e.step}`;
+      if (Notification && Notification.permission === 'granted') {
+        if (document.hidden) missedFinish[e.name] = true;
+        else new Notification('Training finished', { body: note, tag: e.name });
+      }
+      showToast('Training finished: ' + note, 'success');
+    }
+  }
+  // Deliver a finish notification that was missed while the tab was hidden
+  if (!document.hidden) {
+    for (const e of experts) {
+      if (missedFinish[e.name]) {
+        missedFinish[e.name] = false;
+        if (!e.running && Notification && Notification.permission === 'granted') {
+          new Notification('Training finished', { body: `${e.name} completed at step ${e.step}`, tag: e.name });
+        }
+      }
+    }
+  }
+  prevRunning = {};
+  for (const e of experts) prevRunning[e.name] = e.running;
+
+  render();
+
+  // Fetch loss history only for experts whose log changed (background check).
+  // Note: the SSE snapshot drops log_key server-side, so derive a stable
+  // fallback key from step/loss to avoid refetching on every message.
+  for (const e of experts) {
+    const key = e.log_key != null ? e.log_key : (e.step != null ? e.step + ':' + e.loss : 'none');
+    if (lastLogKey[e.name] !== key) {
+      lastLogKey[e.name] = key;
+      fetchLogData(e.name);
+      if (currentDetailExpert === e.name) refreshDetailChart(e.name);
+    }
+  }
+populateSampleExpert();
+  populateMergeExpert();
+}
+
+// --- feat 2: auto PASSED badge from /api/evals ---
+
+// --- feat 2: auto PASSED badge from /api/evals ---
+// Server returns {name: [{ts, accuracy, ...}, ...]} (latest saved eval per expert).
+async function fetchEvals() {
+  try {
+    const res = await fetch(API + '/api/evals');
+    if (!res.ok) return;  // backend endpoint not present yet; keep manual set
+    const data = await res.json();
+    const rows = Array.isArray(data) ? data : null;
+    const newPassed = new Set();
+    if (rows) {
+      for (const row of rows) {
+        if (!row || !row.name) continue;
+        const de = experts.find(x => x.name === row.name);
+        const passPct = de && de.suite && de.suite.pass_pct != null ? de.suite.pass_pct : 70;
+        const acc = row.accuracy != null ? row.accuracy : row.acc;
+        if (acc != null && acc >= passPct) newPassed.add(row.name);
+      }
+    } else if (data && typeof data === 'object') {
+      for (const [name, recs] of Object.entries(data)) {
+        if (!Array.isArray(recs) || !recs.length) continue;
+        const de = experts.find(x => x.name === name);
+        const passPct = de && de.suite && de.suite.pass_pct != null ? de.suite.pass_pct : 70;
+        // latest saved eval == max ts (fall back to the last array entry)
+        let latest = recs[recs.length - 1];
+        for (const r of recs) { if ((r.ts || 0) > (latest.ts || 0)) latest = r; }
+        const acc = latest.accuracy != null ? latest.accuracy : latest.acc;
+        if (acc != null && acc >= passPct) newPassed.add(name);
+      }
+    }
+    if (newPassed.size) passedExperts = newPassed;
+    if (rows) {
+      for (const row of rows) { if (row && row.name) evalCache[row.name] = [row]; }
+    } else if (data && typeof data === 'object') {
+      for (const [name, recs] of Object.entries(data)) { evalCache[name] = recs; }
+    }
+    render();
+  } catch (e) {
+    console.error('fetchEvals failed:', e);
+  }
+}
+
+// --- feat 77: SSE live stream ---
+function connectSSE() {
+  try { if (sse) sse.close(); } catch (_) {}
+  try {
+    sse = new EventSource(API + '/api/events');
+  } catch (e) {
+    console.error('SSE connect failed:', e);
+    sseConnected = false;
+    return;
+  }
+  sse.onopen = () => {
+    sseConnected = true;
+    setConnBadge(false);
+  };
+  sse.onmessage = (ev) => {
+    try {
+      const data = JSON.parse(ev.data);
+      applyExpertsData(data, true);
+    } catch (e) {
+      console.error('SSE message parse failed:', e);
+    }
+  };
+  sse.onerror = (ev) => {
+    // EventSource auto-reconnects; drop the flag so the 5s polling fallback kicks in.
+    sseConnected = false;
+    setConnBadge(true);
+  };
+}
+
+// --- utils ---
+function cssVar(name) {
+  try { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  catch (e) { return ''; }
+}
+
+// --- feat 84: toasts ---
+let toastSeq = 0;
+function showToast(msg, kind) {
+  kind = kind || 'info';
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+  const el = document.createElement('div');
+  el.className = 'toast ' + kind;
+  el.textContent = msg;
+  el.id = 'toast-' + (++toastSeq);
+  container.appendChild(el);
+  setTimeout(() => {
+    el.classList.add('out');
+    setTimeout(() => el.remove(), 350);
+  }, 4000);
+}
+
+// --- feat 74: dark mode ---
+function applyDark(dark) {
+  document.body.classList.toggle('dark', dark);
+  const btn = document.getElementById('dark-btn');
+  if (btn) btn.textContent = dark ? '☀' : '☾';
+  try { localStorage.setItem(DARK_KEY, dark ? '1' : '0'); } catch (e) {}
+}
+function toggleDark() {
+  applyDark(!document.body.classList.contains('dark'));
+  if (lastDrawnChartData) drawDetailChart(lastDrawnChartData, undefined, true);
+  requestAnimationFrame(() => {
+    if (document.getElementById('fleet-panel').open) drawFleetChart(filteredExperts());
+  });
+}
+function toggleAllTools() {
+  const panels = document.querySelectorAll('details.panel, #fleet-panel');
+  const btn = document.getElementById('tools-toggle');
+  const allOpen = Array.from(panels).every(p => p.open);
+  panels.forEach(p => p.open = !allOpen);
+  btn.textContent = allOpen ? '▶ Tools ▼' : '◀ Tools ▲';
+}
+function initDark() {
+  try {
+    if (localStorage.getItem(DARK_KEY) === '1') applyDark(true);
+    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) applyDark(true);
+  } catch (e) {}
+}
+
+async function fetchLogData(name) {
+  const seq = (logDataSeq[name] || 0) + 1;
+  logDataSeq[name] = seq;
+  try {
+    const res = await fetch(API + '/api/logdata?name=' + encodeURIComponent(name));
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (logDataSeq[name] !== seq) return; // stale response, discard
+    lossHistoryCache[name] = data.data || [];
+    logHistoryCache[name] = data.history || [];
+    requestAnimationFrame(() => {
+      drawSparkline('spark-' + name, lossHistoryCache[name], cssVar('--accent') || '#07408a');
+    });
+  } catch (e) {
+    console.error('fetchLogData failed for', name + ':', e);
+  }
+}
+
+function filteredExperts() {
+  return experts.filter(e => {
+    if (searchQuery && !e.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+    if (statusFilter === 'running' && !e.running && !e.queued) return false;
+    if (statusFilter === 'idle' && (e.running || e.queued)) return false;
+    return true;
+  });
+}
+
+function render() {
+  const cardsEl = document.getElementById('cards');
+  const visible = filteredExperts();
+
+  // Summary
+  const running = experts.filter(e => e.running);
+  document.getElementById('sum-running').textContent = running.length;
+  document.getElementById('sum-total').textContent = experts.length;
+  const totalSteps = fleetStats.total_step || experts.reduce((s, e) => s + (e.step || 0), 0);
+  document.getElementById('sum-steps').textContent = totalSteps.toLocaleString();
+
+  // Resource meters (feat 71)
+  const resEl = document.getElementById('sum-res');
+  if (resEl) {
+    if (fleetStats.resources && (fleetStats.resources.cpu != null)) {
+      const r = fleetStats.resources;
+      resEl.textContent = `CPU ${r.cpu != null ? Math.round(r.cpu) : '—'}% · RAM ${r.ram != null ? Math.round(r.ram) : '—'}% · Disk ${r.disk_free_gb != null ? r.disk_free_gb + 'GB' : '—'}`;
+    } else {
+      resEl.textContent = '';
+    }
+  }
+
+  // Squad health ring (feat 100)
+  const ring = document.getElementById('health-ring');
+  const ringVal = document.getElementById('health-ring-val');
+  if (ring && ringVal) {
+    if (fleetStats.squad_health != null) {
+      const h = fleetStats.squad_health;
+      ring.style.background = `conic-gradient(var(--success) ${h}%, var(--border) 0)`;
+      ringVal.textContent = Math.round(h) + '%';
+    } else {
+      ring.style.background = `conic-gradient(var(--text-dim) 0%, var(--border) 0)`;
+      ringVal.textContent = '—';
+    }
+  }
+
+  // Max concurrent select (sync without triggering onchange)
+  const sel = document.getElementById('max-concurrent');
+  if (document.activeElement !== sel) {
+    if (![...sel.options].some(o => o.value == String(maxConcurrent))) {
+      const opt = document.createElement('option');
+      opt.value = String(maxConcurrent);
+      opt.textContent = String(maxConcurrent);
+      sel.appendChild(opt);
+    }
+    sel.value = maxConcurrent;
+  }
+
+  // Search / filter count (feat 93)
+  const fc = document.getElementById('filter-count');
+  if (fc) fc.textContent = visible.length !== experts.length ? `${visible.length} of ${experts.length}` : '';
+
+  // Queue bar (with reorder buttons, feat 76; always visible so Queue under-goal stays reachable, feat 87)
+  const queueBar = document.getElementById('queue-bar');
+  if (queueBar) {
+    queueBar.style.display = 'block';
+    const itemsEl = document.getElementById('queue-items');
+    if (queueList.length > 0) {
+      itemsEl.innerHTML = queueList.map((name, i) =>
+        `<span class="queue-item">${i + 1}. ${escHtml(name)}` +
+        `<button class="q-move" title="Move up" onclick="queueMove('${escAttr(name)}',-1)">↑</button>` +
+        `<button class="q-move" title="Move down" onclick="queueMove('${escAttr(name)}',1)">↓</button></span>`
+      ).join('');
+    } else {
+      itemsEl.innerHTML = '<span class="queue-item" style="opacity:0.6">empty</span>';
+    }
+  }
+
+  // Cards (filtered)
+  cardsEl.innerHTML = visible.map(e => renderCard(e)).join('');
+
+  // Redraw sparklines from cache (render() rebuilt the canvases; fetchLogData only fetches when the log changes)
+  for (const e of visible) {
+    const cache = lossHistoryCache[e.name];
+    if (cache && cache.length) {
+      requestAnimationFrame(() => drawSparkline('spark-' + e.name, cache, cssVar('--accent') || '#07408a'));
+    }
+  }
+
+  // Fleet chart: build legend + redraw when the panel is open (feat 23)
+  const fleetPanel = document.getElementById('fleet-panel');
+  const fleetCanvas = document.getElementById('fleet-chart');
+  if (fleetPanel && fleetCanvas && fleetPanel.open) {
+    buildFleetLegend(visible);
+    requestAnimationFrame(() => drawFleetChart(visible));
+  }
+
+  // Refresh detail page badge only (don't rebuild - kills keyboard)
+  if (currentDetailExpert) {
+    const de = experts.find(x => x.name === currentDetailExpert);
+    if (de) {
+      const badge = document.getElementById('detail-badge');
+      if (badge) {
+        let bc = 'idle', bt = 'idle';
+        if (de.running) { bc = 'running'; bt = 'running'; }
+        else if (de.queued) { bc = 'queued'; bt = 'queued'; }
+        if (de.paused && de.running) bt = 'paused';
+        badge.className = 'badge ' + bc;
+        badge.textContent = bt;
+      }
+    }
+  }
+}
+
+function renderCard(e) {
+  const running = e.running;
+  const queued = e.queued;
+  const lossStr = e.loss != null ? e.loss.toFixed(4) : '—';
+
+  const lossGoal = lossGoalFor(e);
+  let lossPct = 0;
+  if (e.loss != null && e.loss > 0) {
+    lossPct = Math.max(0, Math.min(100,
+      (Math.log(LOSS_START) - Math.log(e.loss)) / (Math.log(LOSS_START) - Math.log(lossGoal)) * 100));
+  }
+  const lossColor = lossPct >= 100 ? 'var(--success)' : lossPct >= 50 ? 'var(--accent)' : 'var(--error)';
+
+  let etaHtml = '';
+  if (running) {
+    // feat 98: backend EMA goal ETA (hours) takes priority
+    if (e.eta && e.eta.hours != null && e.eta.hours > 0) {
+      const est = e.eta.hours < 1
+        ? Math.round(e.eta.hours * 60) + 'm'
+        : e.eta.hours.toFixed(1) + 'h';
+      etaHtml += `<div class="eta-text">~${est} to goal</div>`;
+    } else if (e.speed && e.speed > 0 && e.target && e.target > e.step) {
+      const remaining = (e.target - e.step) / e.speed;
+      etaHtml += `<div class="eta-text">ETA: ${formatEta(remaining)}</div>`;
+    }
+    // feat 13: push countdown from step % push_every
+    if (e.speed && e.speed > 0) {
+      const step = e.step || 0;
+      const nextPush = PUSH_EVERY - (step % PUSH_EVERY);
+      const pushMin = Math.max(1, Math.round(nextPush / e.speed / 60));
+      etaHtml += `<div class="eta-text push-text">push in ~${pushMin}m</div>`;
+    }
+  }
+
+  let sparkId = 'spark-' + e.name;
+  let sparkHtml = '';
+  const hist = lossHistoryCache[e.name];
+  if (hist && hist.length >= 2) {
+    sparkHtml = `<canvas class="sparkline" id="${sparkId}" style="width:100%;height:20px"></canvas>`;
+  }
+
+  let btnHtml = '';
+  if (running) {
+    const stopping = pendingState[e.name] === 'stopping';
+    const paused = !!e.paused;
+    const pauseTitle = paused ? 'Resume training' : 'Pause training';
+    const pauseGlyph = paused ? '▶' : '⏸';
+    btnHtml = `<button class="btn btn-stop" ${stopping ? 'disabled' : 'onclick="stopTraining(\'' + escAttr(e.name) + '\')"'}>${stopping ? 'stopping...' : 'Stop'}</button>`
+      + `<button class="btn-mini ${paused ? 'paused' : ''}" title="${pauseTitle}" onclick="togglePause('${escAttr(e.name)}', ${paused})">${pauseGlyph}</button>`;
+  } else if (pendingState[e.name] === 'starting') {
+    btnHtml = `<button class="btn btn-train" disabled>starting...</button>`;
+  } else if (queued) {
+    const pos = queueList.indexOf(e.name) + 1;
+    btnHtml = `<button class="btn btn-dequeue" onclick="dequeueExpert('${escAttr(e.name)}')">Queue #${pos}</button>`;
+  } else {
+    btnHtml = `<button class="btn btn-train" onclick="openModal('${escAttr(e.name)}')">Train</button>`;
+  }
+
+  let badgeClass = 'idle';
+  let badgeText = 'idle';
+  if (running) { badgeClass = 'running'; badgeText = running && e.paused ? 'paused' : 'running'; }
+  else if (queued) { badgeClass = 'queued'; badgeText = 'queued'; }
+
+  // feat 75: priority stars
+  const stars = (e.priority || 0) > 0
+    ? `<span class="card-stars" title="priority ${e.priority}">${'★'.repeat(Math.min(10, e.priority || 0))}</span>`
+    : '';
+  // feat 83: git-dirty badge
+  const dirty = e.git_dirty ? '<span class="git-dirty" title="uncommitted training data">!</span>' : '';
+  const passed = passedExperts.has(e.name);
+
+  return `
+    <div class="card ${running ? 'running' : ''} ${queued ? 'queued' : ''} ${e.paused ? 'paused' : ''}" onclick="openDetail('${escAttr(e.name)}')">
+      <div class="card-header">
+        <span class="card-name">${escHtml(e.name)}${stars}${dirty}${passed ? ' <span class="card-pass" title="Test suite passed">&#10003;</span>' : ''}</span>
+        <span class="badge ${badgeClass}">${badgeText}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Loss</span>
+        <span class="stat-value mono">${lossStr}</span>
+      </div>
+      ${etaHtml}
+      <div class="progress-wrap">
+        <div class="progress-text mono">${Math.round(lossPct)}% to ${lossGoal}</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${lossPct}%; background:${lossColor}"></div></div>
+      </div>
+      ${sparkHtml}
+      <div class="card-actions" onclick="event.stopPropagation()">${btnHtml}</div>
+    </div>`;
+}
+
+function formatBytes(b) {
+  if (b < 1024) return b + ' B';
+  if (b < 1048576) return (b / 1024).toFixed(1) + ' KB';
+  return (b / 1048576).toFixed(1) + ' MB';
+}
+
+// Monotone cubic interpolation (Fritsch–Carlson) — smooth line that never overshoots the data,
+// preserving the true shape of the loss curve (industry standard for time series).
+function traceMonotone(ctx, xs, ys) {
+  const n = xs.length;
+  if (n <= 1) { if (n === 1) ctx.lineTo(xs[0], ys[0]); return; }
+  const dx = [];
+  const slopes = [];
+  for (let i = 0; i < n - 1; i++) dx.push((xs[i + 1] - xs[i]) || 1);
+  for (let i = 0; i < n - 1; i++) slopes.push((ys[i + 1] - ys[i]) / dx[i]);
+  const m = [];
+  m.push(slopes[0]);
+  for (let i = 1; i < n - 1; i++) {
+    if (slopes[i - 1] * slopes[i] <= 0) m.push(0);
+    else m.push(2 / (1 / slopes[i - 1] + 1 / slopes[i]));
+  }
+  m.push(slopes[n - 2]);
+  ctx.moveTo(xs[0], ys[0]);
+  for (let i = 0; i < n - 1; i++) {
+    const x0 = xs[i], y0 = ys[i], x1 = xs[i + 1], y1 = ys[i + 1];
+    const dxs = dx[i];
+    const cp1x = x0 + dxs / 3, cp1y = y0 + m[i] * dxs / 3;
+    const cp2x = x1 - dxs / 3, cp2y = y1 - m[i + 1] * dxs / 3;
+    ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x1, y1);
+  }
+}
+
+// Exponential moving average smoothing (matches TensorBoard's smoothing slider).
+function emaSmooth(data, s) {
+  if (!data || data.length < 3) return data;
+  const alpha = Math.max(0.05, Math.min(0.95, s));
+  const out = [];
+  let prev = data[0].loss;
+  for (let i = 0; i < data.length; i++) {
+    prev = alpha * data[i].loss + (1 - alpha) * prev;
+    out.push({ step: data[i].step, loss: prev, lr: data[i].lr, speed: data[i].speed, time: data[i].time });
+  }
+  return out;
+}
+
+function drawSparkline(canvasId, data, color) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas || !data || data.length < 2) return;
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  const cssW = rect.width || 1;
+  const cssH = 20;
+  canvas.width = cssW * dpr;
+  canvas.height = cssH * dpr;
+  canvas.style.height = cssH + 'px';
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, cssW, cssH);
+
+  const losses = data.map(d => d.loss);
+  const min = Math.min(...losses);
+  const max = Math.max(...losses);
+  const range = max - min || 1;
+  const pad = 2;
+  const xs = [];
+  const ys = [];
+  for (let i = 0; i < losses.length; i++) {
+    xs.push(pad + (i / (losses.length - 1)) * (cssW - 2 * pad));
+    ys.push(pad + (1 - (losses[i] - min) / range) * (cssH - 2 * pad));
+  }
+
+  // Soft glow behind the line (kept subtle — thin glow reads as a crisp line on e-ink/BW)
+  ctx.strokeStyle = color || '#07408a';
+  ctx.lineWidth = 1.2;
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  ctx.shadowColor = (color || '#07408a') + '44';
+  ctx.shadowBlur = 1.5;
+  ctx.beginPath();
+  traceMonotone(ctx, xs, ys);
+  ctx.stroke();
+
+  // Gradient fill
+  const grad = ctx.createLinearGradient(0, 0, 0, cssH);
+  grad.addColorStop(0, (color || '#07408a') + '26');
+  grad.addColorStop(1, (color || '#07408a') + '00');
+  ctx.beginPath();
+  traceMonotone(ctx, xs, ys);
+  ctx.lineTo(cssW - pad, cssH);
+  ctx.lineTo(pad, cssH);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Crisp core line
+  ctx.shadowBlur = 0;
+  ctx.lineWidth = 0.9;
+  ctx.beginPath();
+  traceMonotone(ctx, xs, ys);
+  ctx.stroke();
+}
+
+function formatEta(seconds) {
+  if (!isFinite(seconds) || seconds <= 0) return '—';
+  if (seconds < 60) return Math.round(seconds) + 's';
+  if (seconds < 3600) return Math.round(seconds / 60) + 'm ' + Math.round(seconds % 60) + 's';
+  return Math.round(seconds / 3600) + 'h ' + Math.round((seconds % 3600) / 60) + 'm';
+}
+
+const CHART_PAD_L = 48, CHART_PAD_R = 12, CHART_PAD_T = 16, CHART_PAD_B = 32;
+
+function drawDetailChart(data, hoverIdx, force) {
+  if (!force && data === lastDrawnChartData && hoverIdx === undefined) return;
+  lastDrawnChartData = data;
+  lastDrawnHoverIdx = hoverIdx === undefined ? null : hoverIdx;
+  const canvas = document.getElementById('detail-chart');
+  if (!canvas || !data || data.length < 2) {
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = (rect.width || 400) * dpr;
+      canvas.height = 220 * dpr;
+      ctx.scale(dpr, dpr);
+      ctx.clearRect(0, 0, rect.width || 400, 220);
+      ctx.fillStyle = cssVar('--text-dim') || '#656d76';
+      ctx.font = '22px -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Not enough data', (rect.width || 400) / 2, 140);
+    }
+    drawSpeedChart(data || []);
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    try {
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    const W = rect.width || 400;
+    const H = 220;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, W, H);
+
+    // Optional EMA smoothing
+    const drawData = smoothEnabled ? emaSmooth(data, 0.5) : data;
+    if (drawData.length < 2) return;
+
+    const losses = drawData.map(d => d.loss);
+    const steps = drawData.map(d => d.step);
+    const minL = Math.min(...losses);
+    const maxL = Math.max(...losses);
+    const range = maxL - minL || 1;
+    const padL = CHART_PAD_L, padR = CHART_PAD_R, padT = CHART_PAD_T, padB = CHART_PAD_B;
+    const cW = W - padL - padR;
+    const cH = H - padT - padB;
+    const n = losses.length;
+
+    const xs = [];
+    const ys = [];
+    for (let i = 0; i < n; i++) {
+      xs.push(padL + (i / (n - 1)) * cW);
+      ys.push(padT + (1 - (losses[i] - minL) / range) * cH);
+    }
+
+    // Grid lines (soft)
+    for (let i = 0; i <= 4; i++) {
+      const y = padT + (i / 4) * cH;
+      ctx.strokeStyle = i === 4 ? '#d8dee4' : '#f0f0f0';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(padL, y);
+      ctx.lineTo(W - padR, y);
+      ctx.stroke();
+      const val = maxL - (i / 4) * range;
+      ctx.fillStyle = '#8b949e';
+      ctx.font = '12px -apple-system, monospace';
+      ctx.textAlign = 'right';
+      ctx.fillText(val.toFixed(3), padL - 6, y + 4);
+    }
+
+    // X-axis labels
+    ctx.fillStyle = '#8b949e';
+    ctx.font = '12px -apple-system, monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(steps[0].toLocaleString(), padL + 10, H - 6);
+    ctx.fillText(steps[steps.length - 1].toLocaleString(), W - padR - 10, H - 6);
+    const midIdx = Math.floor(n / 2);
+    ctx.fillText(steps[midIdx].toLocaleString(), padL + cW / 2, H - 6);
+
+    // Gradient fill
+    const grad = ctx.createLinearGradient(0, padT, 0, H - padB);
+    grad.addColorStop(0, 'rgba(9, 105, 218, 0.16)');
+    grad.addColorStop(1, 'rgba(9, 105, 218, 0.0)');
+    ctx.beginPath();
+    traceMonotone(ctx, xs, ys);
+    ctx.lineTo(padL + cW, H - padB);
+    ctx.lineTo(padL, H - padB);
+    ctx.closePath();
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    // Glow pass (subtle — a fat halo reads as one thick band on e-ink/BW)
+    ctx.strokeStyle = '#0969da';
+    ctx.lineWidth = 2.5;
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.shadowColor = 'rgba(9, 105, 218, 0.35)';
+    ctx.shadowBlur = 5;
+    ctx.beginPath();
+    traceMonotone(ctx, xs, ys);
+    ctx.stroke();
+
+    // Crisp core line
+    ctx.shadowBlur = 0;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    traceMonotone(ctx, xs, ys);
+    ctx.stroke();
+
+    // End dot
+    if (n > 0) {
+      const lastX = xs[n - 1];
+      const lastY = ys[n - 1];
+      ctx.beginPath();
+      ctx.arc(lastX, lastY, 5, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(9, 105, 218, 0.2)';
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(lastX, lastY, 3, 0, Math.PI * 2);
+      ctx.fillStyle = '#0969da';
+      ctx.fill();
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    }
+
+    // Goal line (per-expert loss_goal, feat 1)
+    const goal = lossGoalFor(experts.find(x => x.name === currentDetailExpert));
+    if (minL <= goal && maxL >= goal) {
+      const goalY = padT + (1 - (goal - minL) / range) * cH;
+      ctx.strokeStyle = cssVar('--success') || '#1a7f37';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([6, 4]);
+      ctx.beginPath();
+      ctx.moveTo(padL, goalY);
+      ctx.lineTo(W - padR, goalY);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = cssVar('--success') || '#1a7f37';
+      ctx.font = '12px -apple-system, monospace';
+      ctx.textAlign = 'left';
+      ctx.fillText('goal ' + goal, padL + 4, goalY - 5);
+    }
+
+    // Min/Max annotations
+    if (n > 5) {
+      const minIdx = losses.indexOf(minL);
+      const maxIdx = losses.indexOf(maxL);
+      ctx.font = '11px -apple-system, monospace';
+      ctx.fillStyle = cssVar('--success') || '#1a7f37';
+      ctx.textAlign = 'center';
+      ctx.fillText('min ' + minL.toFixed(4), xs[minIdx], ys[minIdx] - 8);
+      ctx.fillStyle = '#cb2431';
+      ctx.fillText('max ' + maxL.toFixed(4), xs[maxIdx], ys[maxIdx] - 8);
+    }
+
+    // Crosshair + highlight dot on hover
+    if (lastDrawnHoverIdx !== null && lastDrawnHoverIdx >= 0 && lastDrawnHoverIdx < n) {
+      const hx = xs[lastDrawnHoverIdx];
+      const hy = ys[lastDrawnHoverIdx];
+      ctx.strokeStyle = 'rgba(9, 105, 218, 0.4)';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([3, 3]);
+      ctx.beginPath();
+      ctx.moveTo(hx, padT);
+      ctx.lineTo(hx, H - padB);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.beginPath();
+      ctx.arc(hx, hy, 6, 0, Math.PI * 2);
+      ctx.fillStyle = '#fff';
+      ctx.fill();
+      ctx.strokeStyle = '#0969da';
+      ctx.lineWidth = 1.75;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(hx, hy, 2.5, 0, Math.PI * 2);
+      ctx.fillStyle = '#0969da';
+      ctx.fill();
+    }
+    // Speed trendline / heatmap under the loss chart (feats 70/91) — skip on pure hover
+    if (hoverIdx === undefined || hoverIdx === null) {
+      drawSpeedChart(drawData);
+    }
+    } catch(e) {
+      console.error('[drawDetailChart] error:', e);
+    }
+  });
+}
+
+// --- Speed trendline / heatmap (feats 70/91) ---
+function drawSpeedChart(data) {
+  const canvas = document.getElementById('detail-speed-chart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  const W = rect.width || 400;
+  const H = 56;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, W, H);
+
+  const src = data || [];
+  if (src.length < 2) return;
+  const pts = src.map((p, i) => {
+    let speed = p.speed;
+    if (speed == null && i > 0) {
+      const ds = (p.step || 0) - (src[i - 1].step || 0);
+      const dt = (p.time || 0) - (src[i - 1].time || 0);
+      if (dt > 0) speed = ds / dt;
+    }
+    return { speed: speed != null ? speed : 0 };
+  });
+  const speeds = pts.map(p => p.speed);
+  const minS = Math.min(...speeds);
+  const maxS = Math.max(...speeds);
+  const range = (maxS - minS) || 1;
+  const padL = 44, padR = 6, padT = 4, padB = 4;
+  const cW = W - padL - padR, cH = H - padT - padB;
+  const accent = cssVar('--accent') || '#0969da';
+
+  if (speedMode === 'heat') {
+    const step = cW / pts.length;
+    for (let i = 0; i < pts.length; i++) {
+      const t = (speeds[i] - minS) / range;
+      const r = Math.round(255 * (1 - t));
+      const g = Math.round(255 * t);
+      ctx.fillStyle = `rgb(${r},${g},60)`;
+      ctx.fillRect(padL + i * step, padT, Math.max(1, step - 0.5), cH);
+    }
+    ctx.fillStyle = cssVar('--text-dim') || '#656d76';
+    ctx.font = '10px -apple-system, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('slow', padL - 40, padT + 6);
+    ctx.fillText('fast', padL - 40, padT + 16);
+    return;
+  }
+
+  const barW = Math.max(1, (cW / pts.length) - 0.5);
+  for (let i = 0; i < pts.length; i++) {
+    const h = ((speeds[i] - minS) / range) * cH;
+    const x = padL + (i / pts.length) * cW;
+    ctx.fillStyle = accent;
+    ctx.fillRect(x, padT + (cH - h), barW, h);
+  }
+  ctx.strokeStyle = 'rgba(127,127,127,0.4)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(padL, padT + cH);
+  ctx.lineTo(W - padR, padT + cH);
+  ctx.stroke();
+  ctx.fillStyle = cssVar('--text-dim') || '#656d76';
+  ctx.font = '10px -apple-system, monospace';
+  ctx.textAlign = 'right';
+  ctx.fillText((maxS).toFixed(1) + ' sp/s', W - padR, H - 2);
+  ctx.textAlign = 'left';
+  ctx.fillText((minS).toFixed(1), padL, padT + 8);
+  ctx.fillText('speed', 4, padT + 8);
+}
+
+function toggleSpeedMode() {
+  speedMode = speedMode === 'bars' ? 'heat' : 'bars';
+  const btn = document.getElementById('speed-mode-btn');
+  if (btn) btn.textContent = speedMode === 'bars' ? 'bars' : 'heat';
+  if (lastDrawnChartData) drawDetailChart(lastDrawnChartData, undefined, true);
+}
+
+// --- Fleet Loss chart (feats 23/94) ---
+function sanitizeId(name) { return String(name).replace(/[^a-zA-Z0-9_-]/g, '_'); }
+
+function buildFleetLegend(visible) {
+  const legend = document.getElementById('fleet-legend');
+  if (!legend) return;
+  const names = (visible || filteredExperts()).map(e => e.name);
+  legend.innerHTML = '';
+  names.forEach((name, i) => {
+    const color = FLEET_PALETTE[i % FLEET_PALETTE.length];
+    const item = document.createElement('span');
+    item.className = 'fl-item' + (fleetHoverName === name ? ' active' : '');
+    item.innerHTML = `<span class="fl-dot" style="background:${color}"></span>${escHtml(name)}`;
+    legend.appendChild(item);
+  });
+  if (names.length > 1) {
+    const avg = document.createElement('span');
+    avg.className = 'fl-item avg';
+    const L = document.createElement('span');
+    L.className = 'fl-dot';
+    L.style.background = cssVar('--text') || '#1f2328';
+    avg.appendChild(L);
+    avg.appendChild(document.createTextNode('avg'));
+    legend.appendChild(avg);
+  }
+}
+
+function fleetMetrics(series) {
+  let minL = Infinity, maxL = -Infinity, n = 0;
+  for (const s of series) {
+    n = Math.max(n, s.data.length);
+    for (const p of s.data) {
+      if (p.loss < minL) minL = p.loss;
+      if (p.loss > maxL) maxL = p.loss;
+    }
+  }
+  if (!isFinite(minL)) { minL = 0; maxL = 1; }
+  return { minL, maxL, n, range: (maxL - minL) || 1 };
+}
+
+function drawFleetChart(visible) {
+  const canvas = document.getElementById('fleet-chart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  const W = rect.width || 600;
+  const H = 200;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, W, H);
+
+  const names = (visible || filteredExperts()).map(e => e.name);
+  const series = names.map(name => ({ name, data: lossHistoryCache[name] || [] })).filter(s => s.data.length >= 2);
+  if (series.length === 0) {
+    ctx.fillStyle = cssVar('--text-dim') || '#656d76';
+    ctx.font = '14px -apple-system, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('No loss data yet', W / 2, H / 2);
+    return;
+  }
+
+  const padL = 46, padR = 12, padT = 12, padB = 8;
+  const cW = W - padL - padR, cH = H - padT - padB;
+  const m = fleetMetrics(series);
+  const yFor = loss => padT + (1 - (loss - m.minL) / m.range) * cH;
+  const xFor = (idx, len) => padL + (len <= 1 ? 0 : (idx / (len - 1)) * cW);
+
+  // Grid
+  ctx.strokeStyle = 'rgba(127,127,127,0.22)';
+  ctx.lineWidth = 1;
+  for (let i = 0; i <= 4; i++) {
+    const y = padT + (i / 4) * cH;
+    ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(W - padR, y); ctx.stroke();
+    const val = m.maxL - (i / 4) * m.range;
+    ctx.fillStyle = cssVar('--text-dim') || '#656d76';
+    ctx.font = '10px -apple-system, monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(val.toFixed(3), padL - 4, y + 3);
+  }
+
+  // Per-expert curves (palette per index)
+  series.forEach((s) => {
+    const color = FLEET_PALETTE[names.indexOf(s.name) % FLEET_PALETTE.length];
+    const isHover = fleetHoverName === s.name;
+    ctx.globalAlpha = fleetHoverName && !isHover ? 0.25 : 1;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = isHover ? 2.5 : 1;
+    ctx.beginPath();
+    for (let i = 0; i < s.data.length; i++) {
+      const x = xFor(i, s.data.length);
+      const y = yFor(s.data[i].loss);
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  });
+
+  // Average line (thick, high contrast, on top)
+  const avgSteps = [];
+  for (let i = 0; i < m.n; i++) {
+    const vals = [];
+    for (const s of series) if (s.data[i] && s.data[i].loss != null) vals.push(s.data[i].loss);
+    if (vals.length) avgSteps.push(vals.reduce((a, b) => a + b, 0) / vals.length);
+  }
+  if (avgSteps.length > 1) {
+    ctx.strokeStyle = cssVar('--text') || '#1f2328';
+    ctx.lineWidth = 3;
+    ctx.lineJoin = 'round';
+    ctx.beginPath();
+    for (let i = 0; i < avgSteps.length; i++) {
+      const x = xFor(i, avgSteps.length);
+      const y = yFor(avgSteps[i]);
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.strokeStyle = cssVar('--accent') || '#0969da';
+    ctx.lineWidth = 1.4;
+    ctx.beginPath();
+    for (let i = 0; i < avgSteps.length; i++) {
+      const x = xFor(i, avgSteps.length);
+      const y = yFor(avgSteps[i]);
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+  }
+}
+
+function fleetHover(e) {
+  const canvas = document.getElementById('fleet-chart');
+  if (!canvas) return;
+  const rect = canvas.getBoundingClientRect();
+  const names = filteredExperts().map(x => x.name);
+  const series = names.map(n => ({ name: n, data: lossHistoryCache[n] || [] })).filter(s => s.data.length >= 2);
+  if (!series.length) return;
+  const m = fleetMetrics(series);
+  const padL = 46, padR = 12, padT = 12;
+  const cW = Math.max(1, rect.width - padL - padR);
+  let relX = (e.clientX - rect.left - padL) / cW;
+  relX = Math.max(0, Math.min(1, relX));
+  const yFor = loss => rect.top + padT + (1 - (loss - m.minL) / m.range) * (rect.height - padT - 8);
+  let best = null, bestDist = Infinity;
+  for (const s of series) {
+    const idx = Math.round(relX * (s.data.length - 1));
+    const sy = yFor(s.data[idx].loss);
+    const dist = Math.abs(e.clientY - sy);
+    if (dist < bestDist) { bestDist = dist; best = s.name; }
+  }
+  if (best && fleetHoverName !== best) {
+    fleetHoverName = best;
+    buildFleetLegend(filteredExperts());
+    drawFleetChart(filteredExperts());
+  }
+}
+
+async function fleetRefresh() {
+  const btn = document.querySelector('[onclick="fleetRefresh()"]');
+  if (btn) { btn.disabled = true; btn.textContent = '…'; }
+  try {
+    for (const e of filteredExperts()) await fetchLogData(e.name);
+    showToast('Fleet data refreshed', 'info');
+  } catch (e) {
+    showToast('Fleet refresh failed: ' + e.message, 'error');
+  }
+  if (btn) { btn.disabled = false; btn.textContent = '↻ refresh'; }
+  buildFleetLegend(filteredExperts());
+  requestAnimationFrame(() => drawFleetChart(filteredExperts()));
+}
+
+async function setChartWindow(name, window, btn) {
+  currentChartWindow = window;
+  document.querySelectorAll('.chart-win-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  const sb = document.getElementById('smooth-btn');
+  if(sb) sb.classList.toggle('active', smoothEnabled);
+  const cacheKey = name + ':' + window;
+  if (chartWindowCache[cacheKey]) {
+    drawDetailChart(chartWindowCache[cacheKey]);
+    return;
+  }
+  try {
+    const res = await fetch(API + '/api/logdata?name=' + encodeURIComponent(name) + '&window=' + window);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const points = data.data || [];
+    chartWindowCache[cacheKey] = points;
+    lossHistoryCache[name] = points;
+    logHistoryCache[name] = data.history || [];
+    drawDetailChart(points);
+  } catch (e) {
+    console.error('setChartWindow failed:', e);
+    drawDetailChart(lossHistoryCache[name] || []);
+  }
+}
+
+// Smoothing toggle for the loss curve (diegetic, non-destructive)
+function setSmooth(btn) {
+  smoothEnabled = !smoothEnabled;
+  if (btn) btn.classList.toggle('active', smoothEnabled);
+  if (lastDrawnChartData) drawDetailChart(lastDrawnChartData, undefined, true);
+}
+
+// Background refresh of the open detail chart when its log changed
+async function refreshDetailChart(name) {
+  if (currentDetailExpert !== name) return;
+  const win = currentChartWindow;
+  const cacheKey = name + ':' + win;
+  try {
+    const res = await fetch(API + '/api/logdata?name=' + encodeURIComponent(name) + '&window=' + win);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const points = data.data || [];
+    chartWindowCache[cacheKey] = points;
+    lossHistoryCache[name] = points;
+    logHistoryCache[name] = data.history || [];
+    if (currentDetailExpert !== name) return;
+    drawDetailChart(points);
+    const newHistHtml = buildHistoryHtml(logHistoryCache[name] || [], name);
+    if (newHistHtml) {
+      const existingHist = document.querySelector('.detail-content .history-list');
+      if (existingHist) {
+        const section = existingHist.closest('.detail-section');
+        if (section) section.outerHTML = newHistHtml;
+      } else {
+        const actionsEl = document.querySelector('.detail-actions');
+        if (actionsEl) actionsEl.insertAdjacentHTML('beforebegin', newHistHtml);
+      }
+    }
+  } catch (e) {
+    console.error('refreshDetailChart failed for', name + ':', e);
+  }
+}
+
+// --- Tooltip helper for detail chart ---
+function showChartTooltip(canvas, data, x, y) {
+  const tooltip = document.getElementById('chart-tooltip');
+  if (!tooltip) return;
+  const wrap = canvas.closest('.loss-chart-wrap');
+  if (!wrap) return;
+  const rect = canvas.getBoundingClientRect();
+  const wrapRect = wrap.getBoundingClientRect();
+  const relX = x - wrapRect.left;
+  const relY = y - wrapRect.top;
+
+  const plotW = Math.max(1, rect.width - CHART_PAD_L - CHART_PAD_R);
+  let relPlot = (x - rect.left - CHART_PAD_L) / plotW;
+  relPlot = Math.max(0, Math.min(1, relPlot));
+  const idx = Math.round(relPlot * (data.length - 1));
+
+  const losses = data.map(d => d.loss);
+  const steps = data.map(d => d.step);
+  const step = steps[idx];
+  const loss = losses[idx];
+  const speed = data[idx].speed;
+  tooltip.innerHTML = `<span class="tt-step">step ${step.toLocaleString()}</span> &nbsp; <span class="tt-loss">loss ${loss.toFixed(4)}</span> &nbsp; <span class="tt-speed">${speed != null ? speed.toFixed(1) : '—'} steps/s</span>`;
+  tooltip.style.left = (relX + 12) + 'px';
+  tooltip.style.top = (relY - 34) + 'px';
+  tooltip.classList.add('visible');
+}
+
+function hideChartTooltip() {
+  const tooltip = document.getElementById('chart-tooltip');
+  if (tooltip) tooltip.classList.remove('visible');
+}
+
+// --- Max concurrent ---
+async function updateMaxConcurrent() {
+  const val = parseInt(document.getElementById('max-concurrent').value);
+  try {
+    const res = await fetch(API + '/api/queue', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({max_concurrent: val}),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    maxConcurrent = data.max_concurrent;
+    document.getElementById('max-concurrent').value = maxConcurrent;
+    fetchExperts();
+  } catch (e) {
+    console.error('Failed to update:', e);
+  }
+}
+
+// --- Modal ---
+const PARAMS_KEY = 'joebrain_train_params';
+
+function saveParams() {
+  const params = {
+    steps: document.getElementById('inp-steps').value,
+    lr: document.getElementById('inp-lr').value,
+    batch: document.getElementById('inp-batch').value,
+    seq_len: document.getElementById('inp-seqlen').value,
+    save: document.getElementById('inp-save').value,
+    log: document.getElementById('inp-log').value,
+    sample: document.getElementById('inp-sample').value,
+    resume: document.getElementById('inp-resume').checked,
+  };
+  try { localStorage.setItem(PARAMS_KEY, JSON.stringify(params)); } catch(e) {}
+}
+
+function loadParams() {
+  try {
+    const raw = localStorage.getItem(PARAMS_KEY);
+    if (!raw) return;
+    const p = JSON.parse(raw);
+    if (p.steps) document.getElementById('inp-steps').value = p.steps;
+    if (p.lr) document.getElementById('inp-lr').value = p.lr;
+    if (p.batch) document.getElementById('inp-batch').value = p.batch;
+    if (p.seq_len) document.getElementById('inp-seqlen').value = p.seq_len;
+    if (p.save != null) document.getElementById('inp-save').value = p.save;
+    if (p.log) document.getElementById('inp-log').value = p.log;
+    if (p.sample != null) document.getElementById('inp-sample').value = p.sample;
+    if (p.resume != null) document.getElementById('inp-resume').checked = p.resume;
+  } catch(e) {}
+}
+
+function openModal(name) {
+  trainingExpertName = name;
+  document.getElementById('modal-title').textContent = `Train "${name}"`;
+  const note = document.getElementById('modal-queued-note');
+  const runningCount = experts.filter(e => e.running).length;
+  if (runningCount >= maxConcurrent) {
+    note.style.display = 'block';
+    note.textContent = `All ${maxConcurrent} slots full — this will be queued and start automatically when a slot opens.`;
+    document.getElementById('modal-start-btn').textContent = 'Add to Queue';
+  } else {
+    note.style.display = 'none';
+    document.getElementById('modal-start-btn').textContent = 'Start Training';
+  }
+
+  // feat 3: effective-hyperparams hint for experts that already have a model
+  const cur = experts.find(x => x.name === name);
+  const resumeNote = document.getElementById('modal-resume-note');
+  if (resumeNote) {
+    if (cur && (cur.loss != null || cur.last_step != null || cur.seq_len)) {
+      const forcedLen = (cur.seq_len || 0) || 'model T';
+      resumeNote.style.display = 'block';
+      resumeNote.textContent = `On --resume: seq_len forces to model ${forcedLen === 'model T' ? forcedLen : '(' + forcedLen + ')'} and LR uses 1e-4 (constant schedule).`;
+    } else {
+      resumeNote.style.display = 'none';
+    }
+  }
+
+  document.getElementById('modal-overlay').classList.add('active');
+  loadParams();
+  updateCostEst();
+}
+
+// feat 78: hyperparameter presets
+const PRESETS = {
+  fast:      { steps: 500,  batch: 4, log: 10,  sample: 200 },
+  balanced:  { steps: 2000, batch: 8, log: 25,  sample: 500 },
+  thorough:  { steps: 4000, batch: 4, log: 25,  sample: 500 },
+};
+function applyPreset(name) {
+  const p = PRESETS[name];
+  if (!p) return;
+  document.getElementById('inp-steps').value = p.steps;
+  document.getElementById('inp-batch').value = p.batch;
+  document.getElementById('inp-log').value = p.log;
+  document.getElementById('inp-sample').value = p.sample;
+  updateCostEst();
+  showToast('Preset "' + name + '" applied', 'info');
+}
+
+// feat 90: cost estimate preview
+function updateCostEst() {
+  const el = document.getElementById('cost-est');
+  if (!el || !trainingExpertName) return;
+  const steps = parseInt(document.getElementById('inp-steps').value) || 0;
+  if (steps <= 0) { el.textContent = ''; return; }
+  const cur = experts.find(x => x.name === trainingExpertName);
+  const speed = (cur && cur.speed) || 0.04;  // default 0.04 steps/s
+  const hours = steps / speed / 3600;
+  const est = hours < 1
+    ? '~' + Math.max(1, Math.round(hours * 60)) + 'm'
+    : '~' + hours.toFixed(1) + 'h';
+  el.textContent = `Est: ${est} @ ${speed.toFixed(2)} steps/s`;
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('active');
+  trainingExpertName = null;
+}
+
+// --- Detail page ---
+function buildHistoryHtml(data, name) {
+  if (!data || data.length === 0) return '';
+  const items = data.map(h => {
+    const timeStr = escHtml(h.time || '');
+    const typeClass = String(h.type || 'info').replace(/[^a-zA-Z0-9_-]/g, '');
+    let detail = h.raw || '';
+    detail = detail.replace(/^#\s*\[.*?\]\s*/, '');
+    detail = escHtml(detail);
+    return `<li class="history-item"><span class="h-time">${timeStr}</span><span class="h-type ${typeClass}">${typeClass}</span><span>${detail}</span></li>`;
+  });
+  const last4 = items.slice(-4).join('');
+  const all = items.join('');
+  const moreLink = items.length > 4
+    ? `<div class="history-more"><a href="#" onclick="event.preventDefault(); openHistoryPopup('${escAttr(name)}')">Show all ${items.length} entries</a></div>`
+    : '';
+  window._fullHistoryHtml = all;
+  return `
+    <div class="detail-section">
+      <div class="detail-section-label">Training History</div>
+      <ul class="history-list">${last4}</ul>
+      ${moreLink}
+    </div>`;
+}
+
+function openDetail(name) {
+  const e = experts.find(x => x.name === name);
+  if (!e) return;
+  // feat 10: avoid redundant rebuilds from hashchange / clicking the same card
+  const detailEl = document.getElementById('detail-page');
+  if (currentDetailExpert === name && detailEl.classList.contains('active')) return;
+
+  // feat 12 note: reset the test session when switching experts
+  if (currentDetailExpert !== name && testSession.length) {
+    testSession = [];
+    updateSessionNote();
+  }
+
+  document.getElementById('detail-name').textContent = e.name;
+
+  const badge = document.getElementById('detail-badge');
+  let badgeClass = 'idle';
+  let badgeText = 'idle';
+  if (e.running) { badgeClass = 'running'; badgeText = 'running'; }
+  else if (e.queued) { badgeClass = 'queued'; badgeText = 'queued'; }
+  badge.className = 'badge ' + badgeClass;
+  badge.textContent = badgeText;
+
+  const running = e.running;
+  const queued = e.queued;
+  const lossStr = e.loss != null ? e.loss.toFixed(4) : '—';
+  const speedStr = e.speed != null ? e.speed.toFixed(2) + ' steps/s' : '—';
+  const lrStr = e.lr != null ? e.lr.toExponential(2) : '—';
+  const sizeStr = e.file_size ? formatBytes(e.file_size) : '—';
+
+  const lossGoal = lossGoalFor(e);
+  let lossPct = 0;
+  if (e.loss != null && e.loss > 0) {
+    lossPct = Math.max(0, Math.min(100,
+      (Math.log(LOSS_START) - Math.log(e.loss)) / (Math.log(LOSS_START) - Math.log(lossGoal)) * 100));
+  }
+  const lossColor = lossPct >= 100 ? 'var(--success)' : lossPct >= 50 ? 'var(--accent)' : 'var(--error)';
+
+  let runProgressHtml = '';
+  if (running && e.target && e.target > 0) {
+    const pct = Math.min(100, Math.round((e.step / e.target) * 100));
+    let etaHtml2 = '';
+    if (e.speed && e.speed > 0) {
+      const remaining = (e.target - e.step) / e.speed;
+      etaHtml2 = `<div class="eta-text" style="margin-bottom:4px">ETA: ${formatEta(remaining)}</div>`;
+    }
+    runProgressHtml = `
+      <div class="detail-progress-wrap">
+        <div class="detail-section-label">Current Run</div>
+        ${etaHtml2}
+        <div class="progress-text mono" style="margin-bottom:4px">${e.step.toLocaleString()} / ${e.target.toLocaleString()} steps (${pct}%)</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+      </div>`;
+  }
+
+  let actionsHtml = '';
+  if (running) {
+    const stopping = pendingState[e.name] === 'stopping';
+    const paused = !!e.paused;
+    const pauseGlyph = paused ? '▶' : '⏸';
+    const pauseTitle = paused ? 'Resume training' : 'Pause training';
+    actionsHtml = `<button class="btn btn-stop" ${stopping ? 'disabled' : 'onclick="stopTraining(\'' + escAttr(e.name) + '\')"'}>${stopping ? 'stopping...' : 'Stop Training'}</button>`
+      + `<button class="btn-mini ${paused ? 'paused' : ''}" title="${pauseTitle}" onclick="togglePause('${escAttr(e.name)}', ${paused})">${pauseGlyph}</button>`;
+  } else if (pendingState[e.name] === 'starting') {
+    actionsHtml = `<button class="btn btn-train" disabled>starting...</button>`;
+  } else if (queued) {
+    const pos = queueList.indexOf(e.name) + 1;
+    actionsHtml = `<button class="btn btn-dequeue" onclick="dequeueExpert('${escAttr(e.name)}')">Cancel Queue (#${pos})</button>`;
+  } else {
+    actionsHtml = `<button class="btn btn-train" onclick="openModal('${escAttr(e.name)}')">Train</button>`;
+  }
+
+  // Build training history HTML from cache (instant)
+  let historyHtml = '';
+  let cachedLog = logHistoryCache[name] || [];
+  historyHtml = buildHistoryHtml(cachedLog, name);
+
+  // feat 15/65/21: Data section (BPE stats + tokens/params capacity gauge)
+  let dataStatsHtml = '';
+  if (e.bpe) {
+    const tokens = e.bpe.tokens || 0;
+    const chars = e.bpe.chars || 0;
+    const ratio = chars > 0 && tokens > 0 ? (chars / tokens).toFixed(2) : '—';
+    const cov = e.bpe.coverage != null ? (e.bpe.coverage * 100).toFixed(1) + '%' : '—';
+    let capHtml = '';
+    if (e.params && e.params > 0 && tokens > 0) {
+      const ratioT = (tokens / 1e6) / (e.params / 1e6);
+      const starved = ratioT < 1.0;
+      const pct = Math.min(100, (ratioT / 2.0) * 100);
+      capHtml = `
+        <div class="detail-stat"><span class="label">Tokens/params</span><span class="value">${ratioT.toFixed(2)}</span></div>
+        <div class="progress-text mono" style="margin:6px 0 2px">${tokens.toLocaleString()} tokens / ${e.params.toLocaleString()} params${starved ? ' — data-starved' : ''}</div>
+        <div class="capacity-bar"><div class="capacity-fill ${starved ? 'starved' : ''}" style="width:${pct}%"></div></div>
+        ${starved ? '<span class="data-flag starved">data-starved: fewer tokens than params — need more data</span>' : ''}`;
+    }
+    dataStatsHtml = `
+      <div class="detail-stats">
+        <div class="detail-stat"><span class="label">Tokens</span><span class="value">${tokens.toLocaleString()}</span></div>
+        <div class="detail-stat"><span class="label">Chars/token</span><span class="value">${ratio}</span></div>
+        <div class="detail-stat"><span class="label">Vocab coverage</span><span class="value">${cov}</span></div>
+        ${capHtml}
+      </div>`;
+  } else {
+    dataStatsHtml = '<div class="detail-stats"><div class="detail-stat"><span class="label">BPE stats</span><span class="value">—</span></div></div>';
+  }
+
+  // feat 66: retrain-recommended hint (best-effort heuristic)
+  const retrainHint = (e.data_hash && e.git_dirty) ? 'show' : '';
+
+  // feat 12: multi-turn controls state
+  const mtChecked = testParams.mt ? 'checked' : '';
+
+  document.getElementById('detail-content').innerHTML = `
+    <div class="detail-section">
+      <div class="detail-section-label">Progress</div>
+      ${runProgressHtml}
+      <div class="detail-progress-wrap">
+        <div class="progress-text mono" style="margin-bottom:4px">${lossStr} — ${Math.round(lossPct)}% to ${lossGoal}</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${lossPct}%; background:${lossColor}"></div></div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Training</div>
+      <div class="detail-stats">
+        <div class="detail-stat"><span class="label">Loss</span><span class="value">${lossStr}</span></div>
+        <div class="detail-stat"><span class="label">LR</span><span class="value">${lrStr}</span></div>
+        <div class="detail-stat"><span class="label">Speed</span><span class="value">${speedStr}</span></div>
+        <div class="detail-stat"><span class="label">Steps</span><span class="value">${e.step.toLocaleString()}</span></div>
+        <div class="detail-stat"><span class="label">Last trained</span><span class="value" style="font-size:12px">${e.ran_at ? escHtml(e.ran_at) : '—'}</span></div>
+        <div class="detail-stat"><span class="label">Last step</span><span class="value">${e.last_step != null ? e.last_step.toLocaleString() : '—'}</span></div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Model</div>
+      <div class="detail-stats">
+        <div class="detail-stat"><span class="label">Size</span><span class="value">${sizeStr}</span></div>
+        <div class="detail-stat"><span class="label">Params</span><span class="value">${e.params ? e.params.toLocaleString() : '—'}</span></div>
+        <div class="detail-stat"><span class="label">Layers</span><span class="value">${e.layers || '—'}</span></div>
+        <div class="detail-stat"><span class="label">Dim</span><span class="value">${e.dim || '—'}</span></div>
+        <div class="detail-stat"><span class="label">Seq Len</span><span class="value">${e.seq_len || '—'}</span></div>
+        <div class="detail-stat"><span class="label">Data</span><span class="value">${(e.train_lines || 0).toLocaleString()} lines</span></div>
+        <div class="detail-stat"><span class="label">Loss goal</span><span class="value">${lossGoal}</span></div>
+        <div class="detail-stat"><span class="label">Priority</span><span class="value">${(e.priority || 0) > 0 ? '★'.repeat(Math.min(10, e.priority || 0)) : '—'}</span></div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Data</div>
+      ${dataStatsHtml}
+      <div class="retrain-hint ${retrainHint}" title="Training data changed since the checkpoint was saved">Data changed since checkpoint — retrain recommended</div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label" style="display:flex;align-items:center;justify-content:space-between">
+        <span>Loss Curve</span>
+        <div class="chart-windows">
+          <button class="chart-win-btn active" data-window="all" onclick="setChartWindow('${escAttr(name)}','all',this)">All</button>
+          <button class="chart-win-btn" data-window="1w" onclick="setChartWindow('${escAttr(name)}','1w',this)">1W</button>
+          <button class="chart-win-btn" data-window="1d" onclick="setChartWindow('${escAttr(name)}','1d',this)">1D</button>
+          <button class="chart-win-btn" data-window="run" onclick="setChartWindow('${escAttr(name)}','run',this)">Run</button>
+          <button class="chart-win-btn" id="smooth-btn" onclick="setSmooth(this)">Smooth</button>
+        </div>
+      </div>
+      <div class="loss-chart-wrap">
+        <canvas id="detail-chart" style="width:100%;height:220px"></canvas>
+        <div id="chart-tooltip" class="chart-tooltip"></div>
+      </div>
+      <div class="speed-chart-wrap">
+        <div class="speed-chart-head"><span>Training speed</span><button class="chart-win-btn" id="speed-mode-btn" onclick="toggleSpeedMode()">${speedMode === 'bars' ? 'bars' : 'heat'}</button></div>
+        <canvas id="detail-speed-chart"></canvas>
+      </div>
+    </div>
+
+    ${historyHtml}
+
+    <div class="detail-actions">${actionsHtml}
+      <button class="btn btn-train" style="margin-left:8px" onclick="runTestSuite('${escAttr(name)}')">Test Model</button>
+    </div>
+
+    <div class="test-suite" id="test-suite" style="display:none">
+      <div class="detail-section-label">Test Results</div>
+      <div class="test-suite-summary" id="test-summary"></div>
+      <div class="test-suite-results" id="test-results"></div>
+    </div>
+
+    <div class="test-chat">
+      <div class="detail-section-label">Test Chat</div>
+      <div class="test-chat-controls">
+        <label class="ctl"><input type="checkbox" id="mt-toggle" onchange="setMultiTurn(this.checked)" ${mtChecked}> multi-turn</label>
+        <label class="ctl">ctx <input type="range" min="1" max="16" step="1" value="${testParams.window}" oninput="setTestParam('window', +this.value, this)"> <span class="val" id="val-window">${testParams.window}</span></label>
+        <label class="ctl">T <input type="range" min="0" max="2" step="0.1" value="${testParams.temp}" oninput="setTestParam('temp', +this.value, this)"> <span class="val" id="val-temp">${testParams.temp.toFixed(1)}</span></label>
+        <label class="ctl">top-k <input type="range" min="0" max="100" step="1" value="${testParams.top_k}" oninput="setTestParam('top_k', +this.value, this)"> <span class="val" id="val-top_k">${testParams.top_k}</span></label>
+        <label class="ctl">max new <input type="range" min="1" max="500" step="1" value="${testParams.max_new}" oninput="setTestParam('max_new', +this.value, this)"> <span class="val" id="val-max_new">${testParams.max_new}</span></label>
+      </div>
+      <div class="session-note" id="session-note"></div>
+      <div class="test-chat-input">
+        <input type="text" id="test-input" placeholder="Ask a question..." enterkeyhint="go"
+          onkeydown="if(event.key==='Enter'){event.preventDefault();sendTestChat()}">
+        <button onclick="sendTestChat()" id="test-send-btn">Send</button>
+        <button class="secondary" id="test-stop-btn" style="display:none" onclick="stopTestChat()">Stop</button>
+        <button class="secondary" onclick="clearTestChat()">Clear</button>
+      </div>
+      <div class="test-chat-response" id="test-response">
+        <span class="placeholder">Response will appear here...</span>
+      </div>
+      <div class="detail-tok-s" id="test-tok-s"></div>
+    </div>
+
+    <div class="detail-section" id="suite-history"></div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Stress Test</div>
+      <div class="panel-actions" style="margin-bottom:6px">
+        <button type="button" class="btn btn-train" onclick="doStressTest()">Run stress</button>
+      </div>
+      <div id="stress-results"></div>
+    </div>`;
+
+  document.getElementById('detail-page').classList.add('active');
+  document.querySelector('.main').classList.add('hidden');
+  document.getElementById('summary').style.display = '';
+  currentDetailExpert = name;
+  currentChartWindow = 'all';
+
+  // feat 10: deep-link hash
+  try { location.hash = '#/expert/' + encodeURIComponent(name); } catch (e) {}
+  updateSessionNote();
+
+  // Draw loss chart + fetch fresh history in background
+  setTimeout(() => {
+    drawDetailChart(lossHistoryCache[name] || []);
+  }, 100);
+  fetchLogData(name).then(() => {
+    if (currentDetailExpert !== name) return;
+    const found = experts.find(x => x.name === name);
+    if (found) lastLogKey[name] = found.log_key || 'none';
+    const freshData = lossHistoryCache[name] || [];
+    drawDetailChart(freshData);
+    const newHistHtml = buildHistoryHtml(logHistoryCache[name] || [], name);
+    if (newHistHtml) {
+      // Find existing history section or insert before actions
+      const existingHist = document.querySelector('.detail-content .history-list');
+      if (existingHist) {
+        const section = existingHist.closest('.detail-section');
+        if (section) section.outerHTML = newHistHtml;
+      } else {
+        const actionsEl = document.querySelector('.detail-actions');
+        if (actionsEl) actionsEl.insertAdjacentHTML('beforebegin', newHistHtml);
+      }
+    }
+  });
+
+  var detailMouseMove, detailMouseLeave;
+
+  // Hover interactions on the detail chart (crosshair + tooltip)
+  const detailCanvas = document.getElementById('detail-chart');
+  if(!detailMouseMove){
+    detailMouseMove = (e) => {
+      if (!lastDrawnChartData || lastDrawnChartData.length < 2) return;
+      const rect = detailCanvas.getBoundingClientRect();
+      const plotW = Math.max(1, rect.width - CHART_PAD_L - CHART_PAD_R);
+      let relPlot = (e.clientX - rect.left - CHART_PAD_L) / plotW;
+      relPlot = Math.max(0, Math.min(1, relPlot));
+      const idx = Math.round(relPlot * (lastDrawnChartData.length - 1));
+      drawDetailChart(lastDrawnChartData, idx);
+      showChartTooltip(detailCanvas, lastDrawnChartData, e.clientX, e.clientY);
+    };
+    detailMouseLeave = () => {
+      hideChartTooltip();
+      if (lastDrawnChartData) drawDetailChart(lastDrawnChartData, null);
+    };
+    detailCanvas.addEventListener('mousemove', detailMouseMove);
+    detailCanvas.addEventListener('mouseleave', detailMouseLeave);
+  }
+
+  // Repaint on container resize
+  initDetailResizeObserver();
+  updateStickyOffsets();
+
+  // Fetch evals and build suite history (feat 17)
+  fetchEvals();
+  if (currentDetailExpert) {
+    setTimeout(() => {
+      const de = experts.find(x => x.name === currentDetailExpert);
+      if (de) buildSuiteHistory(de, evalCache[currentDetailExpert] || []);
+    }, 500);
+  }
+}
+
+function closeDetail() {
+  if(detailResizeObserver){detailResizeObserver.disconnect(); detailResizeObserver=null;}
+  document.getElementById('detail-page').classList.remove('active');
+  document.querySelector('.main').classList.remove('hidden');
+  document.getElementById('summary').style.display = '';
+  const wasExpert = currentDetailExpert;
+  currentDetailExpert = null;
+  // feat 10: clear the deep-link hash without adding a history entry
+  if (wasExpert && location.hash.startsWith('#/expert/')) {
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+  }
+  updateStickyOffsets();
+}
+
+// --- Test chat ---
+
+let testChatReader = null;
+let testChatStreamRaf = null;
+let testChatStopped = false;
+let testSession = [];  // {role:'user'|'joe', content} multi-turn history (feat 12)
+const TEST_PARAMS_KEY = 'joebrain_test_params';
+let testParams = initTestParams();
+
+function initTestParams() {
+  const def = { temp: 1.0, top_k: 40, max_new: 150, window: 4, mt: false };
+  try {
+    const raw = localStorage.getItem(TEST_PARAMS_KEY);
+    if (raw) Object.assign(def, JSON.parse(raw));
+  } catch (e) {}
+  return def;
+}
+function saveTestParams() {
+  try { localStorage.setItem(TEST_PARAMS_KEY, JSON.stringify(testParams)); } catch (e) {}
+}
+function setTestParam(key, val) {
+  testParams[key] = val;
+  saveTestParams();
+  const lbl = document.getElementById('val-' + key);
+  if (lbl) lbl.textContent = key === 'temp' ? val.toFixed(1) : String(val);
+}
+// Hmm — cleaner single-purpose setter below.
+function setMultiTurn(checked) {
+  testParams.mt = !!checked;
+  saveTestParams();
+  updateSessionNote();
+}
+function updateSessionNote() {
+  const el = document.getElementById('session-note');
+  if (!el) return;
+  el.textContent = testParams.mt
+    ? (testSession.length ? `multi-turn session: ${testSession.length / 2} exchanges (context window ${testParams.window})` : 'multi-turn on — replies append to session history')
+    : '';
+}
+function openFullChat() {
+  window.open('//localhost:9090/', '_blank');
+}
+
+function escHtml(s) {
+  return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function escAttr(s) {
+  return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+async function sendTestChat() {
+  const input = document.getElementById('test-input');
+  const msg = input.value.trim();
+  if (!msg || !currentDetailExpert) return;
+
+  const responseEl = document.getElementById('test-response');
+  const sendBtn = document.getElementById('test-send-btn');
+  const stopBtn = document.getElementById('test-stop-btn');
+  const inputEl = document.getElementById('test-input');
+  const tokEl = document.getElementById('test-tok-s');
+  responseEl.textContent = '';
+  if (tokEl) tokEl.textContent = '';
+  sendBtn.disabled = true;
+  stopBtn.style.display = '';
+  inputEl.value = '';
+  testChatStopped = false;
+  const multiTurn = testParams.mt;
+
+  let streamed = '';
+  let rafPending = false;
+  let done = false;
+  const render = () => {
+    rafPending = false;
+    responseEl.innerHTML = escHtml(streamed) + '<span class="stream-cursor"></span>';
+    responseEl.scrollTop = responseEl.scrollHeight;
+  };
+  const push = (ch) => {
+    streamed += ch;
+    if (!rafPending) {
+      rafPending = true;
+      testChatStreamRaf = requestAnimationFrame(render);
+    }
+  };
+  const finish = (note) => {
+    if (done) return;
+    done = true;
+    if (testChatStreamRaf) { cancelAnimationFrame(testChatStreamRaf); testChatStreamRaf = null; }
+    rafPending = false;
+    if (note) {
+      responseEl.innerHTML = escHtml(streamed) + ` <span class="placeholder">${note}</span>`;
+    } else {
+      responseEl.innerHTML = escHtml(streamed);
+    }
+    responseEl.scrollTop = responseEl.scrollHeight;
+    sendBtn.disabled = false;
+    stopBtn.style.display = 'none';
+    if (!note && !testChatStopped && multiTurn) {
+      testSession.push({ role: 'user', content: msg });
+      testSession.push({ role: 'joe', content: streamed });
+      if (testSession.length > testParams.window * 2) {
+        testSession = testSession.slice(-(testParams.window * 2));
+      }
+      updateSessionNote();
+    }
+  };
+
+  try {
+    const res = await fetch(API + '/api/test', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        expert: currentDetailExpert,
+        msg: msg,
+        history: multiTurn ? testSession.slice(-(testParams.window * 2)) : [],
+        window: testParams.window,
+        max_new: testParams.max_new,
+        temp: testParams.temp,
+        top_k: testParams.top_k,
+      }),
+    });
+
+    if (!res.ok) {
+      let errMsg = 'HTTP ' + res.status;
+      try { const errData = await res.json(); if (errData.error) errMsg = errData.error; } catch (_) {}
+      throw new Error(errMsg);
+    }
+
+    const ct = res.headers.get('content-type') || '';
+    if (!ct.includes('text/event-stream')) {
+      let errMsg = 'Unexpected response type';
+      try { const errData = await res.json(); if (errData.error) errMsg = errData.error; } catch (_) {}
+      throw new Error(errMsg);
+    }
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    testChatReader = reader;
+
+    while (true) {
+      const {done, value} = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, {stream: true});
+      const lines = buffer.split('\n');
+      buffer = lines.pop();
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        try {
+          const data = JSON.parse(line.slice(6));
+          if (data.char !== undefined && data.char !== '') {
+            push(data.char);
+            if (tokEl && data.tok_s != null) {
+              tokEl.textContent = `⏱ ${data.tok_s} tok/s · ${data.tokens} tok`;
+            }
+          }
+          if (data.done) {
+            if (tokEl && data.avg_tok_s != null) {
+              tokEl.textContent = `avg ${data.avg_tok_s} tok/s · ${data.total_tokens} tokens total`;
+            }
+            testChatReader = null;
+            finish(null);
+            return;
+          }
+        } catch (e) {}
+      }
+    }
+    if (testChatStopped) {
+      finish('· stopped');
+      return;
+    }
+    finish(null);
+  } catch (e) {
+    testChatReader = null;
+    finish('· interrupted');
+    return;
+  }
+  testChatReader = null;
+  finish(null);
+}
+
+async function stopTestChat() {
+  testChatStopped = true;
+  const reader = testChatReader;
+  testChatReader = null;
+  if (reader) {
+    try { await reader.cancel(); } catch (_) {}
+  }
+}
+
+function clearTestChat() {
+  if (testChatStopped || testChatReader) stopTestChat();
+  const responseEl = document.getElementById('test-response');
+  if (responseEl) responseEl.innerHTML = '<span class="placeholder">Response will appear here...</span>';
+  const tokEl = document.getElementById('test-tok-s');
+  if (tokEl) tokEl.textContent = '';
+  const input = document.getElementById('test-input');
+  if (input) input.value = '';
+  const stopBtn = document.getElementById('test-stop-btn');
+  if (stopBtn) stopBtn.style.display = 'none';
+  const sendBtn = document.getElementById('test-send-btn');
+  if (sendBtn) sendBtn.disabled = false;
+  if (testSession.length) {
+    testSession = [];
+    updateSessionNote();
+  }
+}
+
+function openHistoryPopup(name) {
+  const body = document.getElementById('history-popup-body');
+  if (body) {
+    body.innerHTML = window._fullHistoryHtml || '<p style="color:var(--text-dim)">No history</p>';
+    body.scrollTop = body.scrollHeight;
+  }
+  document.getElementById('history-overlay').classList.add('active');
+}
+
+function closeHistoryPopup() {
+  document.getElementById('history-overlay').classList.remove('active');
+}
+
+async function runTestSuite(name) {
+  const suiteEl = document.getElementById('test-suite');
+  const summaryEl = document.getElementById('test-summary');
+  const resultsEl = document.getElementById('test-results');
+  const btn = document.querySelector('[onclick="runTestSuite(\'' + name + '\')"]');
+  suiteEl.style.display = 'block';
+  summaryEl.innerHTML = '<span style="color:var(--text-dim)"><span class="spinner"></span> Sampling 30 random questions...</span>';
+  resultsEl.innerHTML = '';
+  if (btn) { btn.disabled = true; btn.innerHTML = '<span class="spinner"></span>'; }
+  let done = false;
+  const finish = (count, total, accuracy) => {
+    if (done) return;
+    done = true;
+    const color = accuracy >= 70 ? 'var(--success)' : accuracy >= 40 ? 'var(--accent)' : 'var(--error)';
+    summaryEl.innerHTML = `<span class="test-score" style="color:${color}">${count}/${total}</span> <span style="color:var(--text-dim)">(${accuracy}%)</span>`;
+    if (btn) { btn.disabled = false; btn.textContent = 'Test Model'; }
+    showToast(`${name}: ${count}/${total} (${accuracy}%)`, accuracy >= 70 ? 'success' : 'info');
+    fetchEvals();  // feat 2: re-derive PASSED badges from the latest saved eval
+  };
+
+  try {
+    const res = await fetch(API + '/api/test-stream?name=' + encodeURIComponent(name));
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    while (true) {
+      const { value, done: streamDone } = await reader.read();
+      if (streamDone) break;
+      buffer += decoder.decode(value, { stream: true });
+      const parts = buffer.split('\n\n');
+      buffer = parts.pop();
+      for (const part of parts) {
+        if (!part.startsWith('data: ')) continue;
+        let ev;
+        try { ev = JSON.parse(part.slice(6)); } catch (e) { continue; }
+        if (ev.done) {
+          finish(ev.correct, ev.total, ev.accuracy);
+          return;
+        }
+        if (ev.count != null && ev.total != null) {
+          const srcNote = ev.source === 'train'
+            ? ` from train (${ev.available} avail)`
+            : (ev.source ? ` from ${escHtml(ev.source)}` : '');
+          summaryEl.innerHTML = `<span class="spinner"></span> <span style="color:var(--text)">Testing… ${ev.count}/${ev.total}${srcNote}</span> <span style="color:var(--text-dim)">(so far ${ev.correct_so_far} pass)</span>`;
+        }
+        const icon = ev.correct ? '<span class="test-pass">&#10003;</span>' : '<span class="test-fail">&#10007;</span>';
+        const row = document.createElement('div');
+        row.className = 'test-row';
+        row.innerHTML = `<div class="test-q">${icon} <strong>${escHtml(ev.question)}</strong></div>
+          <div class="test-expect">Expected: ${escHtml(ev.expected)}</div>
+          <div class="test-actual">Got: ${escHtml(ev.actual)}</div>`;
+        resultsEl.appendChild(row);
+      }
+    }
+    finish(0, 0, 0);
+  } catch (e) {
+    summaryEl.innerHTML = `<span style="color:var(--error)">Failed: ${escHtml(e.message)}</span>`;
+    if (btn) { btn.disabled = false; btn.textContent = 'Test Model'; }
+  }
+}
+
+function startThern() {
+  const btn = document.getElementById('thern-btn');
+  btn.disabled = true;
+  fetch(API + '/api/thern', {method: 'POST'})
+    .then(res => res.json())
+    .then(data => {
+      if (data.error) {
+        showToast(data.error, 'error');
+      } else {
+        setScriptBtn('thern', data.running);
+        showToast(data.running ? 'thern.py started' : 'thern.py stopped', 'success');
+      }
+    })
+    .catch(e => showToast('Failed: ' + e.message, 'error'))
+    .finally(() => { btn.disabled = false; });
+}
+
+function start36h() {
+  const btn = document.getElementById('start36-btn');
+  btn.disabled = true;
+  fetch(API + '/api/start_36', {method: 'POST'})
+    .then(res => res.json())
+    .then(data => {
+      if (data.error) {
+        showToast(data.error, 'error');
+      } else {
+        setScriptBtn('start36', data.running);
+        showToast(data.running ? 'start_36h.sh started' : 'start_36h.sh stopped', 'success');
+      }
+    })
+    .catch(e => showToast('Failed: ' + e.message, 'error'))
+    .finally(() => { btn.disabled = false; });
+}
+
+function setScriptBtn(kind, running) {
+  const id = kind === 'thern' ? 'thern-btn' : 'start36-btn';
+  const btn = document.getElementById(id);
+  if (!btn) return;
+  if (kind === 'thern') {
+    btn.textContent = running ? 'Stop thern.py' : 'Start thern.py';
+  } else {
+    btn.textContent = running ? 'Stop start_36h.sh' : 'Start start_36h.sh';
+  }
+}
+
+function updateScriptButtons(data) {
+  setScriptBtn('thern', !!data.thern_running);
+  setScriptBtn('start36', !!data.start36_running);
+}
+
+function handleModalSubmit(e) {
+  e.preventDefault();
+  confirmTrain();
+  return false;
+}
+
+async function confirmTrain() {
+  if (!trainingExpertName) return;
+  const btn = document.getElementById('modal-start-btn');
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = '<div class="spinner"></div>';
+  }
+  const body = {
+    name: trainingExpertName,
+    steps: parseInt(document.getElementById('inp-steps').value) || 1000,
+    lr: parseFloat(document.getElementById('inp-lr').value) || 3e-4,
+    batch: parseInt(document.getElementById('inp-batch').value) || 8,
+    seq_len: parseInt(document.getElementById('inp-seqlen').value) || 128,
+    resume: document.getElementById('inp-resume').checked,
+    save: parseInt(document.getElementById('inp-save').value) || 0,
+    log: parseInt(document.getElementById('inp-log').value) || 100,
+    sample: parseInt(document.getElementById('inp-sample').value) || 0,
+  };
+  saveParams();
+  pendingState[trainingExpertName] = 'starting';
+  render();
+  const startName = trainingExpertName;
+  setTimeout(() => {
+    if (pendingState[startName] === 'starting') { delete pendingState[startName]; render(); }
+  }, 30000);
+  try {
+    const res = await fetch(API + '/api/train', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (data.error) {
+      showToast(data.error, 'error');
+    } else {
+      closeModal();
+      showToast(`Training started for "${trainingExpertName}"${data.queued ? ' (queued)' : ''}`, 'success');
+      fetchExperts();
+    }
+  } catch (e) {
+    showToast('Failed: ' + e.message, 'error');
+    delete pendingState[trainingExpertName];
+    render();
+  }
+  if (btn) {
+    btn.disabled = false;
+    btn.textContent = 'Start Training';
+  }
+}
+
+// --- Stop / Dequeue ---
+async function stopTraining(name) {
+  if (!confirm(`Stop training for "${name}"? It will save a checkpoint.`)) return;
+  const btn = document.activeElement && document.activeElement.tagName === 'BUTTON'
+    ? document.activeElement : null;
+  if (btn) btn.disabled = true;
+  pendingState[name] = 'stopping';
+  render();
+  setTimeout(() => {
+    if (pendingState[name] === 'stopping') { delete pendingState[name]; render(); }
+  }, 30000);
+  try {
+    const res = await fetch(API + '/api/stop', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name}),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (data.error) showToast(data.error, 'error');
+    else showToast(`Stop requested for "${name}"`, 'info');
+    fetchExperts();
+  } catch (e) {
+    showToast('Failed: ' + e.message, 'error');
+    delete pendingState[name];
+    render();
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+async function dequeueExpert(name) {
+  const btn = document.activeElement && document.activeElement.tagName === 'BUTTON'
+    ? document.activeElement : null;
+  if (btn) btn.disabled = true;
+  try {
+    const res = await fetch(API + '/api/dequeue', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name}),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    await res.json();
+    showToast(`"${name}" removed from queue`, 'info');
+    fetchExperts();
+  } catch (e) {
+    showToast('Failed to dequeue: ' + e.message, 'error');
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+// --- feat 88: pause / resume (backend POST /api/pause) ---
+async function togglePause(name, paused) {
+  const label = paused ? 'Resuming' : 'Pausing';
+  try {
+    const res = await fetch(API + '/api/pause', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ name: name, paused: !paused }),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    showToast(`${label} "${name}"...`, 'info');
+    fetchExperts();
+  } catch (e) {
+    showToast(`Pause endpoint unavailable: ${e.message}`, 'error');
+  }
+}
+
+// --- feat 76: queue reorder (backend POST /api/queue-move) ---
+async function queueMove(name, delta) {
+  try {
+    const res = await fetch(API + '/api/queue-move', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ name: name, delta: delta }),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    await res.json();
+    fetchExperts();
+  } catch (e) {
+    showToast('Queue-move unavailable: ' + e.message, 'error');
+  }
+}
+
+// --- feat 87: queue all under-goal experts (backend POST /api/queue-all) ---
+async function queueAll() {
+  try {
+    const res = await fetch(API + '/api/queue-all', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({}),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const queued = data.queued || data.queue || [];
+    if (queued.length) {
+      alert('Queued for training: ' + queued.join(', '));
+      showToast(`Queued ${queued.length} experts`, 'success');
+    } else {
+      showToast('No experts under goal needed queuing', 'info');
+    }
+    fetchExperts();
+  } catch (e) {
+    showToast('Queue-all unavailable: ' + e.message, 'error');
+  }
+}
+
+// --- feat 28: stale-locks check (safe client-side variant) ---
+async function checkLocks() {
+  const chip = document.getElementById('locks-chip');
+  const showChip = (txt, stale) => {
+    if (!chip) return;
+    chip.textContent = txt;
+    chip.style.color = stale ? 'var(--error)' : 'var(--success)';
+    chip.style.borderColor = stale ? 'var(--error)' : 'var(--success)';
+    chip.style.background = stale ? 'var(--error-light)' : 'var(--success-light)';
+    chip.classList.add('show');
+    setTimeout(() => chip.classList.remove('show'), 8000);
+  };
+  try {
+    const res = await fetch(API + '/api/clean-shall', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}' });
+    if (res.ok) { const d = await res.json(); showChip(d.cleaned ? `cleaned ${d.cleaned} stale locks` : 'no stale locks', !!d.cleaned); }
+    else throw new Error('HTTP ' + res.status);
+  } catch (e) {
+    // Backend endpoint missing: verify consistency client-side after a refresh
+    const runningNames = new Set(experts.filter(x => x.running).map(x => x.name));
+    const conflicts = queueList.filter(n => runningNames.has(n));
+    await fetchExperts();
+    showChip(conflicts.length ? `${conflicts.length} suspect stale lock(s)` : 'no stale locks', conflicts.length > 0);
+  }
+}
+
+// --- feat 93: search + status filter ---
+function setSearchQuery(q) {
+  searchQuery = (q || '').trim();
+  render();
+}
+function setStatusFilter(v) {
+  statusFilter = v || 'all';
+  render();
+}
+
+function initDetailResizeObserver() {
+  const canvas = document.getElementById('detail-chart');
+  if (!canvas) return;
+  if (detailResizeObserver) detailResizeObserver.disconnect();
+  detailResizeObserver = new ResizeObserver(() => {
+    if (lastDrawnChartData && currentDetailExpert) drawDetailChart(lastDrawnChartData, undefined, true);
+  });
+  detailResizeObserver.observe(canvas);
+}
+
+function updateStickyOffsets() {
+  const header = document.querySelector('.header');
+  const summary = document.querySelector('.summary');
+  const topbar = document.querySelector('.detail-topbar');
+  const hd = header ? header.offsetHeight : 0;
+  const hs = summary ? summary.offsetHeight : 0;
+  document.documentElement.style.setProperty('--h-hdr', hd + 'px');
+  document.documentElement.style.setProperty('--h-main', (hd + hs + 8) + 'px');
+  if (topbar) {
+    document.documentElement.style.setProperty('--sticky-detail', (hd + hs) + 'px');
+    document.documentElement.style.setProperty('--sticky-detail-label', (hd + hs + topbar.offsetHeight + 8) + 'px');
+  }
+}
+
+// --- Tokenizer playground (feat 30) ---
+async function doTokenize() {
+  const input = document.getElementById('tokenize-input');
+  const out = document.getElementById('tokenize-output');
+  const text = input.value.trim();
+  if (!text) return;
+  try {
+    const data = await jsonPost('/api/tokenize', {text});
+    if (!data || !data.tokens) { out.textContent = 'No tokens returned'; return; }
+    out.innerHTML = '';
+    const frag = document.createDocumentFragment();
+    for (const t of data.tokens) {
+      const sp = document.createElement('span');
+      sp.className = 'token-chip';
+      sp.style.background = 'hsl(' + ((t.id * 47) % 360) + ',70%,55%)';
+      sp.title = t.token + ' id=' + t.id;
+      sp.textContent = t.token;
+      frag.appendChild(sp);
+    }
+    out.appendChild(frag);
+    const cnt = document.createElement('div');
+    cnt.style.cssText = 'margin-top:6px;font-size:12px;color:var(--text-dim)';
+    cnt.textContent = data.count + ' tokens';
+    out.appendChild(cnt);
+  } catch (e) { showToast('Tokenize failed: ' + e.message, 'error'); }
+}
+
+// --- Sample gallery (feat 28) ---
+async function doLoadSamples() {
+  const sel = document.getElementById('sample-expert');
+  const name = sel.value;
+  const limit = parseInt(document.getElementById('sample-limit').value) || 5;
+  if (!name) return;
+  const out = document.getElementById('samples-list');
+  const pag = document.getElementById('sample-pag');
+  out.innerHTML = '<span style="color:var(--text-dim)">Loading…</span>';
+  try {
+    const data = await jsonPost('/api/samples', {name, limit});
+    if (!data || !data.samples) { out.textContent = 'No samples'; return; }
+    const samples = data.samples;
+    if (!samplePage[name]) samplePage[name] = 0;
+    const page = samplePage[name] || 0;
+    const start = page * SAMPLE_PER_PAGE;
+    const pageSamples = samples.slice(start, start + SAMPLE_PER_PAGE);
+    out.innerHTML = '';
+    const frag = document.createDocumentFragment();
+    for (const s of pageSamples) {
+      const d = document.createElement('div');
+      d.className = 'sample-item';
+      d.innerHTML = '<b>step ' + s.step + '</b> ' + escHtml(s.ts || '') + '<pre>' + escHtml(s.text || '') + '</pre>';
+      frag.appendChild(d);
+    }
+    out.appendChild(frag);
+    const totalPages = Math.ceil(samples.length / SAMPLE_PER_PAGE);
+    pag.innerHTML = '';
+    if (totalPages > 1) {
+      const prevBtn = document.createElement('button');
+      prevBtn.textContent = 'Prev';
+      prevBtn.disabled = page <= 0;
+      prevBtn.onclick = function() { samplePage[name] = Math.max(0, page - 1); doLoadSamples(); };
+      pag.appendChild(prevBtn);
+      const info = document.createElement('span');
+      info.textContent = page + 1 + '/' + totalPages;
+      pag.appendChild(info);
+      const nextBtn = document.createElement('button');
+      nextBtn.textContent = 'Next';
+      nextBtn.disabled = page >= totalPages - 1;
+      nextBtn.onclick = function() { samplePage[name] = page + 1; doLoadSamples(); };
+      pag.appendChild(nextBtn);
+    }
+  } catch (e) { showToast('Samples failed: ' + e.message, 'error'); }
+}
+
+// --- Ask-all (feats 25/26) ---
+async function doAskAll() {
+  const input = document.getElementById('askall-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+  const out = document.getElementById('askall-results');
+  const loading = document.getElementById('askall-loading');
+  out.innerHTML = '';
+  loading.style.display = 'inline';
+  try {
+    const data = await jsonPost('/api/ask-all', {msg});
+    loading.style.display = 'none';
+    if (!data || !data.experts) return;
+    for (const e of data.experts) {
+      const card = document.createElement('div');
+      card.className = 'askall-card' + (e.name === data.router_picked ? ' router-picked' : '');
+      const prob = e.router_prob != null ? e.router_prob : 0;
+      const reply = e.reply != null ? escHtml(e.reply) : '<span style="color:var(--error)">error</span>';
+      card.innerHTML = '<div class="ac-name">' + escHtml(e.name) +
+        (e.name === data.router_picked ? '<span class="ac-router-label">← router picked</span>' : '') +
+        '<div class="ac-router-bar"><div class="ac-router-fill" style="width:' + (prob * 100) + '%"></div></div>' +
+        '<div class="ac-reply">' + reply + '</div></div>';
+      out.appendChild(card);
+    }
+  } catch (e) {
+    loading.style.display = 'none';
+    showToast('Ask-all failed: ' + e.message, 'error');
+  }
+}
+
+// --- Skill matrix (feat 24) ---
+const SKILL_KEYWORDS = ['math','code','fish','horse','reptiles','tree','emotion','greeting','science','weather'];
+
+async function doSkillRefresh() {
+  const table = document.getElementById('skill-table');
+  table.innerHTML = '<span style="color:var(--text-dim)">Loading…</span>';
+  skillCache = {};
+  try {
+    const names = experts.map(e => e.name);
+    for (const name of names) {
+      if (!skillCache[name]) {
+        const data = await jsonPost('/api/samples', {name, limit: 3});
+        skillCache[name] = data && data.samples ? data.samples.map(s => (s.text || '') + ' ') : '';
+      }
+    }
+    buildSkillTable(names);
+  } catch (e) { showToast('Skill matrix failed: ' + e.message, 'error'); }
+}
+
+function buildSkillTable(names) {
+  const table = document.getElementById('skill-table');
+  let html = '<thead><tr><th>Expert</th>';
+  for (const kw of SKILL_KEYWORDS) html += '<th>' + escHtml(kw) + '</th>';
+  html += '</tr></thead><tbody>';
+  for (const name of names) {
+    const text = skillCache[name] || '';
+    const nameLower = name.toLowerCase();
+    html += '<tr><td style="text-align:left;font-weight:600">' + escHtml(name) + '</td>';
+    for (const kw of SKILL_KEYWORDS) {
+      const kwLower = kw.toLowerCase();
+      const hasIt = text.includes(kwLower) || nameLower.includes(kwLower);
+      html += '<td class="' + (hasIt ? 'skill-pass' : 'skill-dim') + '">' + (hasIt ? '✓' : '·') + '</td>';
+    }
+    html += '</tr>';
+  }
+  html += '</tbody>';
+  table.innerHTML = html;
+}
+
+// --- Merge-block review (feat 31) ---
+let mergeChunks = [];
+let mergeSelectedChunk = null;
+
+async function doMergeList() {
+  const out = document.getElementById('merge-chunks');
+  out.innerHTML = '<span style="color:var(--text-dim)">Loading…</span>';
+  try {
+    const data = await jsonPost('/api/merge-review', {action:'list'});
+    if (!data || !data.result) return;
+    const chunks = Array.isArray(data.result) ? data.result : (data.result.chunks || []);
+    mergeChunks = chunks;
+    mergeSelectedChunk = null;
+    out.innerHTML = '';
+    const frag = document.createDocumentFragment();
+    for (const c of chunks) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.textContent = c.name || c.chunk || String(c);
+      btn.style.cssText = 'padding:3px 8px;margin:2px;border:1px solid var(--border);border-radius:4px;background:var(--surface);cursor:pointer;font-size:12px';
+      btn.onclick = function() { doMergeShow(c.name || c.chunk || c); };
+      frag.appendChild(btn);
+    }
+    out.appendChild(frag);
+  } catch (e) { showToast('Merge list failed: ' + e.message, 'error'); }
+}
+
+async function doMergeShow(chunk) {
+  const out = document.getElementById('merge-chunks');
+  out.innerHTML = '<span style="color:var(--text-dim)">Loading blocks…</span>';
+  try {
+    const data = await jsonPost('/api/merge-review', {action:'show', chunk});
+    if (!data || !data.result) return;
+    const blocks = Array.isArray(data.result) ? data.result : (data.result.blocks || []);
+    mergeSelectedChunk = chunk;
+    out.innerHTML = '';
+    const frag = document.createDocumentFragment();
+    for (const b of blocks) {
+      const div = document.createElement('div');
+      div.className = 'merge-block';
+      const v1 = b.v1 || b.verdict1 || 'CLEAR';
+      const v2 = b.v2 || b.verdict2 || 'CLEAR';
+      const v1Class = v1 === 'ACCEPT' ? 'v1-accept' : v1 === 'REJECT' ? 'v1-reject' : 'v1-clear';
+      const v2Class = v2 === 'ACCEPT' ? 'v1-accept' : v2 === 'REJECT' ? 'v1-reject' : 'v1-clear';
+      const q = b.first_question || b.question || '';
+      div.innerHTML = '<b>#' + b.index + '</b> ' + escHtml(q.slice(0, 80)) +
+        ' — <span class="' + v1Class + '">' + escHtml(v1) + '</span> <span class="' + v2Class + '">' + escHtml(v2) + '</span>' +
+        '<div class="mb-actions"><button type="button" onclick="doMergeVerdict(' + escAttr(String(b.index)) + ',\'ACCEPT\')">ACCEPT</button>' +
+        '<button type="button" onclick="doMergeVerdict(' + escAttr(String(b.index)) + ',\'REJECT\')">REJECT</button></div>';
+      frag.appendChild(div);
+    }
+    out.appendChild(frag);
+  } catch (e) { showToast('Merge show failed: ' + e.message, 'error'); }
+}
+
+async function doMergeVerdict(index, verdict) {
+  try {
+    await jsonPost('/api/merge-review', {action:'verdict', chunk: mergeSelectedChunk, index, verdict});
+    showToast('Verdict ' + verdict + ' for block ' + index, 'success');
+    if (mergeSelectedChunk) doMergeShow(mergeSelectedChunk);
+  } catch (e) { showToast('Verdict failed: ' + e.message, 'error'); }
+}
+
+async function doMergeRun() {
+  const sel = document.getElementById('merge-expert');
+  const expert = sel.value;
+  if (!expert) { showToast('Select an expert', 'error'); return; }
+  try {
+    const data = await jsonPost('/api/merge-review', {action:'merge', expert});
+    if (data && data.result) {
+      const r = data.result;
+      showToast('Merged ' + (r.merged || '?') + ', removed train: ' + (r.removed_train || '?') + ', removed self: ' + (r.removed_self || '?'), 'success');
+    }
+  } catch (e) { showToast('Merge failed: ' + e.message, 'error'); }
+}
+
+// --- Wizard (feat 46) ---
+async function doWizard() {
+  const name = document.getElementById('wiz-name').value.trim();
+  const steps = parseInt(document.getElementById('wiz-steps').value) || 500;
+  if (!name) { showToast('Enter a name', 'error'); return; }
+  const out = document.getElementById('wiz-log');
+  out.innerHTML = '<span style="color:var(--text-dim)">Creating…</span>';
+  try {
+    const data = await jsonPost('/api/wizard', {new_name: name, steps, force: true});
+    if (!data || !data.steps) return;
+    out.innerHTML = '';
+    const frag = document.createDocumentFragment();
+    for (const s of data.steps) {
+      const d = document.createElement('div');
+      d.className = 'wiz-step';
+      d.innerHTML = escHtml(String(s.step)) + ': <span class="cmd">' + escHtml(s.cmd || '') + '</span> <span class="' + (s.ok ? 'ok' : 'fail') + '">' + (s.ok ? '✓' : '✗') + '</span>';
+      frag.appendChild(d);
+    }
+    out.appendChild(frag);
+    showToast('Wizard complete (rc=' + (data.rc || '?') + ')', data.rc === 0 ? 'success' : 'error');
+  } catch (e) { showToast('Wizard failed: ' + e.message, 'error'); }
+}
+
+// --- Suite history (feat 17) ---
+function buildSuiteHistory(expert, evals) {
+  const container = document.getElementById('suite-history');
+  if (!container || !expert || !expert.suite || !evals || evals.length < 2) return;
+  container.innerHTML = '<div class="detail-section-label">Accuracy history</div><div id="suite-chart"></div>';
+  const chart = document.getElementById('suite-chart');
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  const barW = 20, gap = 4;
+  const maxH = 80;
+  const w = evals.length * (barW + gap);
+  const h = maxH + 20;
+  svg.setAttribute('width', w);
+  svg.setAttribute('height', h);
+  svg.setAttribute('style', 'display:flex;gap:4px;align-items:flex-end');
+  for (let i = 0; i < evals.length; i++) {
+    const ev = evals[i];
+    const acc = ev.accuracy != null ? ev.accuracy : (ev.acc || 0);
+    const barH = Math.max(2, acc);
+    const bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    bar.setAttribute('x', i * (barW + gap));
+    bar.setAttribute('y', h - barH - 10);
+    bar.setAttribute('width', barW);
+    bar.setAttribute('height', barH);
+    bar.setAttribute('class', 'suite-bar');
+    svg.appendChild(bar);
+    const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    label.setAttribute('x', i * (barW + gap) + barW / 2);
+    label.setAttribute('y', h - 2);
+    label.setAttribute('text-anchor', 'middle');
+    label.style.fill = 'var(--text-dim)';
+    label.setAttribute('font-size', '8');
+    const dateStr = ev.ts ? String(ev.ts).slice(0, 10) : '';
+    label.textContent = dateStr + ' ' + (ev.seed || '') + ' ' + acc.toFixed(1) + '%';
+    label.setAttribute('transform', 'rotate(-45,' + (i * (barW + gap) + barW / 2) + ',' + (h - 2) + ')');
+    svg.appendChild(label);
+  }
+  chart.appendChild(svg);
+}
+
+// --- Stress test (feat 50) ---
+const STRESS_MSGS = ['a'.repeat(2000), 'I AM VERY ANGRY!!! YES!!!', 'qwerty1234!@#$%^&*()', 'مرحبا بالعالم こんにちは 안녕하세요 🌍', '…'];
+
+async function doStressTest() {
+  const out = document.getElementById('stress-results');
+  out.innerHTML = '<span style="color:var(--text-dim)">Running stress tests…</span>';
+  const results = [];
+  for (let i = 0; i < STRESS_MSGS.length; i++) {
+    const msg = STRESS_MSGS[i];
+    try {
+      const result = await testPost(currentDetailExpert, msg, 0.7);
+      results.push({msg, reply: result.reply, ok: !result.error});
+    } catch (e) {
+      results.push({msg, reply: '', ok: false});
+    }
+    const row = document.createElement('div');
+    row.className = 'stress-row';
+    row.innerHTML = '<div class="sr-msg">' + escHtml(msg.slice(0, 40)) + '… → ' + (results[i].reply ? results[i].reply.length : 0) + ' chars <span class="' + (results[i].ok ? 'ok' : 'fail') + '">' + (results[i].ok ? '✓' : '✗') + '</span></div>' +
+      '<div class="sr-reply">' + escHtml(results[i].reply ? results[i].reply.slice(0, 200) : '') + '</div>';
+    out.appendChild(row);
+  }
+}
+
+// --- Populate sample-expert select ---
+function populateSampleExpert() {
+  const sel = document.getElementById('sample-expert');
+  sel.innerHTML = '';
+  for (const e of experts) {
+    const opt = document.createElement('option');
+    opt.value = e.name;
+    opt.textContent = e.name;
+    sel.appendChild(opt);
+  }
+}
+
+// --- Populate merge-expert select ---
+function populateMergeExpert() {
+  const sel = document.getElementById('merge-expert');
+  sel.innerHTML = '';
+  for (const e of experts) {
+    const opt = document.createElement('option');
+    opt.value = e.name;
+    opt.textContent = e.name;
+    sel.appendChild(opt);
+  }
+}
+
+// --- Init ---
+updateStickyOffsets();
+window.addEventListener('resize', updateStickyOffsets);
+populateSampleExpert();
+populateMergeExpert();
+
+// feat 74: apply saved / system dark mode on load
+initDark();
+
+// feat 77: SSE live updates with 5s polling fallback
+connectSSE();
+fetchExperts();
+setInterval(() => { if (!sseConnected) fetchExperts(); }, 5000);
+
+// feat 2: derive PASSED badges from /api/evals on load
+setTimeout(fetchEvals, 800);
+
+// feat 9: keyboard navigation
+document.addEventListener('keydown', (event) => {
+  const t = event.target;
+  if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) return;
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+
+  if (event.key === 'Escape') {
+    if (document.getElementById('modal-overlay').classList.contains('active')) { closeModal(); event.preventDefault(); return; }
+    if (document.getElementById('history-overlay').classList.contains('active')) { closeHistoryPopup(); event.preventDefault(); return; }
+    if (currentDetailExpert && document.getElementById('detail-page').classList.contains('active')) {
+      closeDetail();
+      event.preventDefault();
+    }
+    return;
+  }
+
+  // 1-0 → Nth expert's detail page (N=1-9 for 1-9, 0 for 10th)
+  if (/^[0-9]$/.test(event.key)) {
+    const idx = event.key === '0' ? 9 : parseInt(event.key, 10) - 1;
+    const list = filteredExperts();
+    if (list[idx]) {
+      openDetail(list[idx].name);
+      event.preventDefault();
+    }
+  }
+});
+
+// feat 10: deep-link detail via #/expert/<name>
+function parseDetailHash() {
+  const m = location.hash.match(/^#\/expert\/([A-Za-z0-9_.%\-]+)/);
+  if (!m) return null;
+  try { return decodeURIComponent(m[1]); } catch (e) { return m[1]; }
+}
+window.addEventListener('hashchange', () => {
+  const name = parseDetailHash();
+  if (name) {
+    if (experts.some(x => x.name === name)) openDetail(name);
+  } else if (currentDetailExpert && document.getElementById('detail-page').classList.contains('active')) {
+    closeDetail();
+  }
+});
+(function applyInitialHash() {
+  const name = parseDetailHash();
+  if (name) {
+    const tryOpen = () => {
+      if (experts.some(x => x.name === name)) openDetail(name);
+      else setTimeout(tryOpen, 300);
+    };
+    setTimeout(tryOpen, 400);
+  }
+})();
+
+// feat 23: fleet chart hover + mouseleave (canvas persists across renders)
+document.addEventListener('mousemove', (e) => {
+  if (e.target && e.target.id === 'fleet-chart') { fleetHover(e); }
+});
+document.addEventListener('mouseleave', (e) => {
+  if (e.target && e.target.id === 'fleet-chart') {
+    if (fleetHoverName) {
+      fleetHoverName = null;
+      buildFleetLegend(filteredExperts());
+      drawFleetChart(filteredExperts());
+    }
+  }
+}, true);
+
+// Request notification permission only within a user gesture, not on page load.
+document.addEventListener('click', () => {
+  if (Notification && Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
+}, { once: true });
+</script>
+
+</body>
+</html>

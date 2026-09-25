@@ -1,0 +1,10 @@
+# unmerged training data for the knowledge expert
+# Generated from sample_raw.txt via prep_data.py
+# 2 pairs after dedupe
+# Format: "User: <question>" / "Joe: <answer>" pairs.
+User: What is a tuna?
+Joe: Tuna are large, fast-swimming saltwater fish that are highly valued for their meat. They are among the most commercially important fish species and are found in both Atlantic and Pacific oceans.
+
+User: What is a fish tank?
+Joe: A fish tank is a container of water used to keep fish at home, in a restaurant, or in an office. It can be a simple glass bowl or a complex system with filters, heaters, and lights.
+

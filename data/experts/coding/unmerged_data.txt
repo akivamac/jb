@@ -1,0 +1,129 @@
+User: What is a variable in programming?
+Joe: A variable is a named storage location in memory that holds a value which can be changed during program execution.
+
+User: How do you declare a variable in Python?
+Joe: You declare a variable by assigning a value to a name using the = operator, e.g., name = 'Alice'. Python infers the type automatically.
+
+User: What is the difference between local and global variables?
+Joe: Local variables are defined inside a function and are only accessible within that function. Global variables are defined outside and are accessible throughout the program.
+
+User: How do you use the global keyword?
+Joe: The global keyword allows a variable inside a function to refer to and modify the global variable.
+
+User: What is a mutable vs immutable variable?
+Joe: Mutable objects like lists and dicts can be changed in-place. Immutable objects like integers, strings, and tuples cannot be modified after creation, but reassignment creates a new object.
+
+User: How do variables differ across programming languages?
+Joe: In statically typed languages like C++ and Java, variables must be declared with their types. In dynamically typed languages like Python and JavaScript, the type is inferred at runtime.
+
+User: How does a for loop work?
+Joe: A for loop iterates over a sequence and executes a block of code for each item. Example: for i in range(5): print(i)
+
+User: How do you use a while loop?
+Joe: A while loop repeats as long as a condition is true. Ensure the condition eventually becomes false to avoid infinite loops.
+
+User: How do you use break and continue?
+Joe: break exits the loop immediately; continue skips the rest of the current iteration and moves to the next.
+
+User: What is a loop counter?
+Joe: A variable that tracks the number of iterations, often used with for loops.
+
+User: How do you iterate over a dictionary?
+Joe: Use .items(), .keys(), or .values() to iterate over key-value pairs, keys, or values respectively.
+
+User: What is a nested loop?
+Joe: A loop inside another loop, where the inner loop completes all iterations for each iteration of the outer loop.
+
+User: How does an if statement work?
+Joe: An if statement executes code if its condition is true, using elif and else for additional branches.
+
+User: What is short-circuit evaluation?
+Joe: Logical operators stop evaluating when the result is determined, e.g., in False and expr, expr is skipped.
+
+User: What is a boolean expression?
+Joe: An expression that evaluates to True or False, such as comparisons or logical operations.
+
+User: What is a function?
+Joe: A function is a reusable block of code that performs a specific task. It can take parameters and return a value.
+
+User: What is a recursive function?
+Joe: A function that calls itself to solve a smaller instance of the same problem.
+
+User: What is a lambda?
+Joe: A lambda is an anonymous function defined with the lambda keyword, used for short, simple operations.
+
+User: What is a list?
+Joe: A list is an ordered, mutable collection of items in Python, defined with square brackets.
+
+User: What is a tuple?
+Joe: A tuple is an ordered, immutable collection of items, defined with parentheses.
+
+User: What is a dictionary?
+Joe: A dictionary stores key-value pairs and is accessed via keys rather than indices.
+
+User: What is a set?
+Joe: A set is an unordered collection of unique elements, defined with curly braces or the set() function.
+
+User: What is a stack?
+Joe: A stack is a LIFO (Last In, First Out) data structure where elements are added and removed from the same end.
+
+User: What is a queue?
+Joe: A queue is a FIFO (First In, First Out) data structure where elements are added at the back and removed from the front.
+
+User: How do you reverse a string?
+Joe: You can reverse a string using slicing: s[::-1] in Python.
+
+User: What is string slicing?
+Joe: String slicing extracts a part of a string using indices like s[start:stop:step].
+
+User: How do you check if a string is a palindrome?
+Joe: Compare the string with its reverse: s == s[::-1].
+
+User: How do you handle exceptions in Python?
+Joe: Use try/except blocks to catch and handle exceptions gracefully.
+
+User: What is a ZeroDivisionError?
+Joe: Raised when dividing by zero. Guard the divisor or catch it with try/except.
+
+User: What is a TypeError?
+Joe: Raised when an operation gets a value of the wrong type. Adding a string and an integer raises it.
+
+User: What is a class?
+Joe: A blueprint for creating objects, defining attributes and methods.
+
+User: What is self in Python?
+Joe: A reference to the current instance of the class, used to access its attributes and methods.
+
+User: What is __init__?
+Joe: A constructor method that initializes an object's attributes when it is created.
+
+User: What is inheritance?
+Joe: A mechanism where a new class is derived from an existing class, inheriting its attributes and methods.
+
+User: What is polymorphism?
+Joe: The ability to use a single interface for different data types.
+
+User: How do you read a file in Python?
+Joe: Use the open() function with 'r' mode to read, and iter() to process lines.
+
+User: How do you write to a file in Python?
+Joe: Use the open() function with 'w' mode to write, which overwrites existing content.
+
+User: What is the difference between 'r' and 'w' in file handling?
+Joe: 'r' opens for reading, 'w' opens for writing (overwriting existing content).
+
+User: What is binary search?
+Joe: A search algorithm that finds an element in a sorted array by repeatedly dividing the search interval in half.
+
+User: What is the difference between bubble sort and quicksort?
+Joe: Bubble sort is less efficient (O(n²)) compared to quicksort (O(n log n) average).
+
+User: What is a decorator?
+Joe: A function that modifies the behavior of another function or method.
+
+User: What is a context manager?
+Joe: A mechanism for managing resources, like with the 'with' statement.
+
+User: What is a generator?
+Joe: A function that yields values one at a time using the yield keyword.
+

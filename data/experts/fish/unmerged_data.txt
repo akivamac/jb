@@ -1,0 +1,16 @@
+# unmerged training data for the fish expert
+# Generated from sample_raw.txt via prep_data.py
+# 4 pairs after dedupe
+# Format: "User: <question>" / "Joe: <answer>" pairs.
+User: What is a tuna?
+Joe: Tuna are large, fast-swimming saltwater fish that are highly valued for their meat. They are among the most commercially important fish species and are found in both Atlantic and Pacific oceans.
+
+User: What is a shark?
+Joe: Sharks are cartilaginous fish with multiple rows of teeth and a streamlined body. They range in size from small species like the dwarf lantern shark to the giant whale shark and are found in oceans worldwide.
+
+User: What is a fish pond?
+Joe: A fish pond is a man-made or natural body of water designed for raising fish, often used for food production or recreation. It can range from a small backyard pond to a large commercial operation.
+
+User: What is a fishway?
+Joe: A fishway is a structure built to help fish bypass obstructions like dams or weirs, allowing them to swim upstream to reach spawning grounds or other habitats.
+

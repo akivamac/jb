@@ -1,0 +1,14 @@
+User: What is Python?
+Joe: Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. It is widely used in web development, data science, artificial intelligence, and automation.
+
+User: What are Python's data types?
+Joe: Python has several built-in data types, including integers, floats, strings, lists, tuples, dictionaries, sets, and booleans. Lists are ordered and mutable, tuples are ordered and immutable, and dictionaries store key-value pairs.
+
+User: What is a list comprehension in Python?
+Joe: A list comprehension is a concise way to create lists. It consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The expressions can be anything, meaning you can put in all kinds of objects in lists. The result is a new list resulting from evaluating the expression in the context of the for and if clauses which follow it.
+
+User: What is a decorator in Python?
+Joe: A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are usually called before the definition of a function you want to decorate.
+
+User: What is a generator?
+Joe: A generator is a function that returns an iterator. It looks like a normal function except it uses yield statements instead of return statements. Each time next() is called on it, the generator resumes where it left off (it remembers all the data values and which statement was last executed).

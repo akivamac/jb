@@ -1,0 +1,26 @@
+{
+  "experts": [
+    {"name": "greeting", "file": "experts/greeting/greeting.npz", "enabled": true, "priority": 1, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "emotion", "file": "experts/emotion/emotion.npz", "enabled": true, "priority": 2, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "knowledge", "file": "experts/knowledge/knowledge.npz", "enabled": true, "priority": 3, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "coding", "file": "experts/coding/coding.npz", "enabled": true, "priority": 4, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "cot", "file": "experts/cot/cot.npz", "enabled": true, "priority": 5, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "python", "file": "experts/python/python.npz", "enabled": true, "priority": 6, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "horse", "file": "experts/horse/horse.npz", "enabled": true, "priority": 7, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "fish", "file": "experts/fish/fish.npz", "enabled": true, "priority": 8, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "reptiles", "file": "experts/reptiles/reptiles.npz", "enabled": true, "priority": 9, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}},
+    {"name": "tree", "file": "experts/tree/tree.npz", "enabled": true, "priority": 10, "loss_goal": 0.044, "skip_thern": false, "suite": {"n_questions": 30, "pass_pct": 70}}
+  ],
+  "quality_filter": {
+    "enabled": true,
+    "max_logit_threshold": -1.0,
+    "entropy_ratio": 0.7,
+    "min_top_prob": 0.15
+  },
+  "watcher": {
+    "enabled": true,
+    "divergence_sigma": 3.0,
+    "auto_stop_at_goal": false,
+    "notify": true
+  }
+}

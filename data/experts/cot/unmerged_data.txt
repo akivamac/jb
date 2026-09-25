@@ -1,0 +1,19 @@
+# unmerged training data for the cot expert
+# Generated from sample_raw.txt via prep_data.py
+# 5 pairs after dedupe
+# Format: "User: <question>" / "Joe: <answer>" pairs.
+User: Tell me about tree species
+Joe: Here is some information about tree species. It is a fascinating topic that covers many aspects of tree expertise.
+
+User: Tell me about ecology
+Joe: Here is some information about ecology. It is a fascinating topic that covers many aspects of tree expertise.
+
+User: Tell me about conservation
+Joe: Here is some information about conservation. It is a fascinating topic that covers many aspects of tree expertise.
+
+User: Tell me about urban forestry
+Joe: Here is some information about urban forestry. It is a fascinating topic that covers many aspects of tree expertise.
+
+User: Tell me about forest management
+Joe: Here is some information about forest management. It is a fascinating topic that covers many aspects of tree expertise.
+
