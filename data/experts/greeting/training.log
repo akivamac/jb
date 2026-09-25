@@ -1,5 +1,5 @@
-# [2026-09-25 10:39:22] START: training/train_expert.py --name greeting --steps 5 --backend numpy --seq_len 128
+# [2026-09-25 13:22:37] START: training/train_expert.py --name greeting --steps 1 --backend numpy --seq_len 128
 # step,loss,lr,steps_per_sec,timestamp
-# [2026-09-25 10:39:22] CONVERSATIONS: 1348 blocks, window=4
-# [2026-09-25 10:39:52] SAVE FAILED: argument must be an int, or have a fileno() method.
-# [2026-09-25 10:39:52] FINISH at step 5
+# [2026-09-25 13:22:37] CONVERSATIONS: 1366 blocks, window=4
+# [2026-09-25 13:22:43] SAVE FAILED: argument must be an int, or have a fileno() method.
+# [2026-09-25 13:22:43] FINISH at step 1
