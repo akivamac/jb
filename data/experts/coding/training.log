@@ -13716,3 +13716,9 @@ AttributeError: 'array' object has no attribute 'copy'
 # 
 # 
 # Joe: map transforms each element, filter selects 
+3825,0.0058,1.00e-04,2.40,1790354445.189188
+3850,0.0064,1.00e-04,2.40,1790354455.59256
+3875,0.0061,1.00e-04,2.48,1790354465.677663
+3900,0.0070,1.00e-04,2.41,1790354476.036299
+# [2026-09-25 12:41:18] STOP_PREV: signaling PID 29519 to stop
+# [2026-09-25 12:41:19] FINISH at step 3906
