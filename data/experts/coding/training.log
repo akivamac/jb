@@ -13910,3 +13910,4 @@ AttributeError: 'array' object has no attribute 'copy'
 # [2026-09-25 13:09:45] SAMPLE step 4000:
 # 
 # Joe: When the input follows a known distribution,
+# [2026-09-25 13:09:56] FINISH at step 4000
