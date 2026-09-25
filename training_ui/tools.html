@@ -1311,6 +1311,7 @@ details.panel > summary .feat-badge {
 /* ============ End new panels ============ */
 
 </style>
+<link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
 
@@ -1355,7 +1356,9 @@ details.panel > summary .feat-badge {
   </div>
 </div>
 
-<div class="main">
+<div class="sidebar-layout">
+  <div class="sidebar" id="sidebar"></div>
+  <div class="main">
   <div class="section-label" style="display:flex;align-items:center;gap:10px">
     Experts
     <button type="button" class="btn btn-mini" id="tools-toggle" onclick="toggleAllTools()">▶ Tools ▼</button>
@@ -1434,9 +1437,15 @@ details.panel > summary .feat-badge {
   </div>
   <div id="wiz-log"></div>
 </details>
+  </div>
+</div>
 <div style="text-align:center;padding:20px">
   <a href="index.html" class="btn btn-train">← Back to Dashboard</a>
 </div>
+<script src="sidebar.js"></script>
+<script>
+Sidebar.mount('tools');
+</script>
 <script>
 const API = '';
 let experts = [];

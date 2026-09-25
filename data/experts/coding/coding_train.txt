@@ -12758,3 +12758,147 @@ Joe: Auto-scaling automatically adjusts the number of compute resources based on
 User: What is a sidecar pattern?
 Joe: A sidecar pattern deploys auxiliary processes alongside the main application container.
 
+User: What is a port?
+Joe: A port is a logical endpoint that identifies a specific process or service.
+User: What is A/B testing?
+Joe: A/B testing compares two versions to determine which performs better.
+User: What is query optimization?
+Joe: Query optimization selects the most efficient execution plan for a database query.
+
+User: What is code duplication?
+Joe: Code duplication is when the same code appears in multiple places, making maintenance harder.
+User: What is a deadlock in databases?
+Joe: A database deadlock occurs when two transactions wait for each other to release locks.
+
+User: What is a 401 error?
+Joe: A 401 error means authentication is required to access the resource.
+User: What is the client-server model?
+Joe: The client-server model has clients requesting resources from servers that respond with data.
+User: What is a post-commit hook?
+Joe: A post-commit hook runs after a commit is completed.
+User: What is a module?
+Joe: A module is a self-contained unit of code that groups related functions and data.
+
+User: What is a threat?
+Joe: A threat is a potential event that could cause harm to a system.
+User: What is a set?
+Joe: A set is a collection of unique elements with no duplicates.
+
+User: What is memory optimization?
+Joe: Memory optimization reduces memory usage by managing allocations and data structures.
+User: What is semantic analysis?
+Joe: Semantic analysis checks the meaning of code for type correctness and scope rules.
+User: What is a hybrid cloud?
+Joe: A hybrid cloud combines private and public cloud environments.
+User: What is a query?
+Joe: A query is a request to retrieve, insert, update, or delete data from a database.
+
+User: What is git remote?
+Joe: Git remote manages the set of tracked remote repositories.
+User: What is a race condition?
+Joe: A race condition occurs when the outcome depends on the timing of threads.
+
+User: What is git commit?
+Joe: Git commit records a snapshot of staged changes to the repository.
+User: What is the Inline Method refactoring?
+Joe: Inline Method replaces a method call with its body when the method is too simple.
+
+User: What is a high-level language?
+Joe: A high-level language abstracts away hardware details and is closer to human language.
+User: What is a repository?
+Joe: A repository is a storage location for project files and their version history.
+User: What is DevOps?
+Joe: DevOps is a set of practices combining software development and IT operations for shorter development cycles.
+
+User: What is logging in DevOps?
+Joe: Logging in DevOps collects and analyzes application and system logs for troubleshooting.
+User: What is an adjacency list?
+Joe: An adjacency list represents each node's neighbors in a list for space efficiency.
+
+User: What is a max heap?
+Joe: A max heap is a complete binary tree where each parent is greater than or equal to its children.
+User: What is inversion of control?
+Joe: Inversion of control means the framework controls the flow of execution, not the programmer.
+User: What is a load balancer?
+Joe: A load balancer distributes incoming traffic across multiple backend servers.
+User: What is memoization?
+Joe: Memoization caches results of expensive function calls to avoid redundant computation.
+
+User: What is a risk?
+Joe: A risk is the potential for loss or damage when a threat exploits a vulnerability.
+User: What is code smell?
+Joe: A code smell is a surface indication of a deeper problem in the codebase.
+User: What is a stack?
+Joe: A stack is a LIFO data structure where elements are added and removed from the top.
+
+User: What is salting?
+Joe: Salting adds random data to a password before hashing to prevent rainbow table attacks.
+User: What is pair programming?
+Joe: Pair programming has two developers work together at one workstation, switching roles between driver and navigator.
+
+User: What is a circuit breaker?
+Joe: A circuit breaker prevents cascading failures by stopping requests to failing services.
+User: What is authorization?
+Joe: Authorization determines what an authenticated entity is allowed to do.
+User: What is a merge?
+Joe: A merge integrates changes from one branch into another.
+
+User: What is A/B testing?
+Joe: A/B testing compares two versions to determine which performs better.
+User: What is query optimization?
+Joe: Query optimization selects the most efficient execution plan for a database query.
+
+User: What is O(log n) complexity?
+Joe: O(log n) means the algorithm halves the problem size at each step.
+User: What is a lexical scope?
+Joe: A lexical scope defines variable visibility based on the location in the source code.
+User: What is Ruby on Rails?
+Joe: Ruby on Rails is a server-side web application framework written in Ruby.
+
+User: What is Next.js?
+Joe: Next.js is a React framework for building server-side rendered and static web applications.
+User: What is a webhook?
+Joe: A webhook sends real-time data to a client when an event occurs on the server.
+User: What is a debugger?
+Joe: A debugger is a tool that finds and fixes errors in code by allowing step-by-step execution.
+
+User: What is static typing?
+Joe: Static typing checks types at compile time before the program runs.
+User: What is the difference between an interpreter and a compiler?
+Joe: An interpreter translates and executes code at runtime, while a compiler translates to machine code beforehand.
+
+User: What is semantic analysis?
+Joe: Semantic analysis checks the meaning of code for type correctness and scope rules.
+User: What is a hybrid cloud?
+Joe: A hybrid cloud combines private and public cloud environments.
+
+User: What is a serverless architecture?
+Joe: A serverless architecture runs functions in the cloud without managing servers.
+User: What is code optimization?
+Joe: Code optimization is the process of modifying software to use fewer resources or run faster.
+
+User: What is Vite?
+Joe: Vite is a fast build tool powered by native ES modules.
+User: What is a performance code review?
+Joe: A performance code review focuses on identifying performance bottlenecks.
+User: What is circuit breaking?
+Joe: Circuit breaking prevents cascading failures by stopping requests to a failing service.
+User: What is Angular?
+Joe: Angular is a TypeScript-based framework for building web applications.
+
+User: What is IPv4?
+Joe: IPv4 is the fourth version of the Internet Protocol, using 32-bit addresses.
+User: What is O(log n) complexity?
+Joe: O(log n) means the algorithm halves the problem size at each step.
+User: What is a lexical scope?
+Joe: A lexical scope defines variable visibility based on the location in the source code.
+User: What is Ruby on Rails?
+Joe: Ruby on Rails is a server-side web application framework written in Ruby.
+
+User: What is a tag?
+Joe: A tag marks a specific point in history as important, often for releases.
+User: What is a circuit breaker?
+Joe: A circuit breaker prevents cascading failures by stopping requests to failing services.
+User: What is authorization?
+Joe: Authorization determines what an authenticated entity is allowed to do.
+

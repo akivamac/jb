@@ -64,15 +64,6 @@ body {
   gap: 12px;
 }
 
-.port-badge {
-  font-size: 12px;
-  color: var(--text-dim);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  padding: 3px 10px;
-  border-radius: 12px;
-}
-
 /* Summary */
 .summary {
   display: flex;
@@ -395,9 +386,11 @@ body {
 
 .detail-page.active {
   display: block;
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.main.hidden {
+.main-content.hidden {
   display: none;
 }
 
@@ -665,6 +658,35 @@ body {
 }
 .card.running { box-shadow: var(--shadow), inset 3px 0 0 var(--accent); }
 .card.queued { box-shadow: var(--shadow), inset 3px 0 0 var(--warn); }
+
+/* Skeleton cards - shown until /api/experts first responds.
+   Heights/margins are tuned to land near a real card's height (~170px)
+   so the grid doesn't jump when data arrives. */
+.skel-card { pointer-events: none; user-select: none; }
+.skel-bar {
+  display: block;
+  height: 12px;
+  border-radius: 5px;
+  background: var(--border);
+}
+.skel-pill { height: 20px; border-radius: 10px; }
+.skel-track { height: 8px; border-radius: 4px; }
+.skel-card .stat-row { margin: 20px 0; }
+.skel-card .progress-wrap { margin-top: 20px; }
+.skel-spark {
+  display: block;
+  height: 34px;
+  border-radius: 5px;
+  margin: 18px 0;
+  background: var(--border);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skel-bar, .skel-spark { animation: skel-pulse 1.4s ease-in-out infinite; }
+}
+@keyframes skel-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
 
 /* Chart tooltip */
 .chart-tooltip {
@@ -935,7 +957,7 @@ body.dark .main .section-label { background: var(--bg); }
 }
 .toast.success { color: var(--success); border-color: var(--success); background: var(--success-light); }
 .toast.error { color: var(--error); border-color: var(--error); background: var(--error-light); }
-.toast.info { color: var(--accent); border-color: var(--accent); background: var(--accent-light); }
+.toast.info { color: var(--accent); border-color: var(--accent); background: rgba(9,105,218,0.2); }
 .toast.out { animation: toast-out 0.3s ease forwards; }
 @keyframes toast-in { from { transform: translateX(40px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes toast-out { to { transform: translateX(40px); opacity: 0; } }
@@ -1309,7 +1331,16 @@ details.panel > summary .feat-badge {
 .suite-date { font-size: 10px; color: var(--text-dim); text-align: center; }
 /* ============ End new panels ============ */
 
+
+.main-content {
+  grid-column: 2;
+  grid-row: 1;
+  flex: 1;
+  padding: 24px;
+}
+
 </style>
+<link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
 
@@ -1319,16 +1350,38 @@ details.panel > summary .feat-badge {
     JoeBrain Training Dashboard
   </h1>
   <div class="header-right">
-    <a href="tools.html" style="color:var(--text-dim);font-size:13px;text-decoration:none;margin-right:8px">Tools</a>
-    <span class="port-badge">port 9091</span>
     <button type="button" class="btn btn-thern" id="thern-btn" onclick="startThern()">Start thern.py</button>
     <button type="button" class="btn btn-start36" id="start36-btn" onclick="start36h()">Start start_36h.sh</button>
     <button type="button" class="icon-btn" id="dark-btn" onclick="toggleDark()" title="Toggle dark mode">☾</button>
   </div>
 </div>
 
-<div class="summary" id="summary">
-  <div class="stat"><span class="dot"></span> <span id="sum-running">0</span> running</div>
+
+<div class="sidebar-layout">
+  <div class="sidebar" id="sidebar"></div>
+  <div class="main-content" id="home-view">
+
+<div class="search-row">
+    <input type="search" id="search-box" placeholder="Search experts..." oninput="setSearchQuery(this.value)">
+    <select id="status-filter" onchange="setStatusFilter(this.value)">
+      <option value="all">All</option>
+      <option value="running">Running</option>
+      <option value="idle">Idle</option>
+    </select>
+    <span class="count" id="filter-count"></span>
+  </div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="queue-bar" id="queue-bar">
+    <span class="queue-label">Queue:</span>
+    <span id="queue-items"></span>
+    <button type="button" class="queue-all-btn" onclick="queueAll()">Queue under-goal</button>
+  </div>
+  </div>
+<div class="stats-page" id="stats-page">
+  <div class="stats-head"><h2>Fleet Stats</h2></div>
+  <div class="stats-grid summary" id="summary"><div class="stat"><span class="dot"></span> <span id="sum-running">0</span> running</div>
   <div class="stat"><span class="dot idle"></span> <span id="sum-total">0</span> experts</div>
   <div class="stat"><span id="sum-steps">0</span> total steps</div>
   <div class="stat res-meters" id="sum-res" title="Fleet CPU / RAM / free disk"></div>
@@ -1352,30 +1405,19 @@ details.panel > summary .feat-badge {
       <option value="6">6</option>
     </select>
   </div>
+</div></div>
+<div class="detail-page" id="detail-page">
+  <div class="detail-topbar">
+    <button class="btn-back" onclick="closeDetail()">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06z"/></svg>
+      Back
+    </button>
+    <h2 id="detail-name" style="font-size:18px;font-weight:600"></h2>
+    <span class="badge" id="detail-badge"></span>
+    <button type="button" class="btn-mini" style="margin-left:auto" onclick="openFullChat()" title="Open the full chat UI in a new tab">Open full chat</button>
+  </div>
+  <div class="detail-content" id="detail-content"></div>
 </div>
-
-<div class="main">
-  <div class="section-label" style="display:flex;align-items:center;gap:10px">
-    Experts
-  </div>
-
-<div class="search-row">
-    <input type="search" id="search-box" placeholder="Search experts..." oninput="setSearchQuery(this.value)">
-    <select id="status-filter" onchange="setStatusFilter(this.value)">
-      <option value="all">All</option>
-      <option value="running">Running</option>
-      <option value="idle">Idle</option>
-    </select>
-    <span class="count" id="filter-count"></span>
-  </div>
-
-  <div class="cards" id="cards"></div>
-
-  <div class="queue-bar" id="queue-bar">
-    <span class="queue-label">Queue:</span>
-    <span id="queue-items"></span>
-    <button type="button" class="queue-all-btn" onclick="queueAll()">Queue under-goal</button>
-  </div>
 </div>
 
 <!-- Start Training Modal -->
@@ -1444,22 +1486,11 @@ details.panel > summary .feat-badge {
 </div>
 
 <!-- Expert Detail Page -->
-<div class="detail-page" id="detail-page">
-  <div class="detail-topbar">
-    <button class="btn-back" onclick="closeDetail()">
-      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06z"/></svg>
-      Back
-    </button>
-    <h2 id="detail-name" style="font-size:18px;font-weight:600"></h2>
-    <span class="badge" id="detail-badge"></span>
-    <button type="button" class="btn-mini" style="margin-left:auto" onclick="openFullChat()" title="Open the full chat UI in a new tab">Open full chat</button>
-  </div>
-  <div class="detail-content" id="detail-content"></div>
-</div>
-
 <div id="toast-container"></div>
 
+<script src="sidebar.js"></script>
 <script>
+Sidebar.mount('home');
 const API = '';
 let experts = [];
 let maxConcurrent = 2;
@@ -1467,6 +1498,7 @@ let queueList = [];
 let pendingState = {};  // {name: 'starting'|'stopping'} while train/stop in flight
 let trainingExpertName = null;
 let currentDetailExpert = null;
+let dataLoaded = false;
 let lossHistoryCache = {};  // {name: [{step, loss, lr, speed, time}, ...]}
 let logHistoryCache = {};  // {name: [{type, time, raw, step}, ...]}
 let prevRunning = {};  // {name: bool} for notification detection
@@ -1584,6 +1616,7 @@ async function fetchExperts() {
 // Shared update path for both the polling fetch and SSE snapshots.
 function applyExpertsData(data, fromSse) {
   if (!data || !data.experts) { console.error('applyExpertsData: no data', data); return; }
+  dataLoaded = true;
   experts = data.experts;
   maxConcurrent = data.max_concurrent != null ? data.max_concurrent : maxConcurrent;
   queueList = data.queue || [];
@@ -1791,6 +1824,23 @@ function filteredExperts() {
   });
 }
 
+const SKELETON_COUNT = 10;
+
+function renderSkeletons() {
+  const bar = (w, cls) => `<span class="skel-bar${cls ? ' ' + cls : ''}" style="width:${w}"></span>`;
+  let html = '';
+  for (let i = 0; i < SKELETON_COUNT; i++) {
+    html +=
+      '<div class="card skel-card" aria-hidden="true">' +
+        '<div class="card-header">' + bar('58%') + bar('44px', 'skel-pill') + '</div>' +
+        '<div class="stat-row">' + bar('52px') + '</div>' +
+        '<div class="progress-wrap">' + bar('100%', 'skel-track') + '</div>' +
+        '<div class="skel-spark"></div>' +
+      '</div>';
+  }
+  return html;
+}
+
 function render() {
   const cardsEl = document.getElementById('cards');
   const visible = filteredExperts();
@@ -1860,7 +1910,15 @@ function render() {
   }
 
   // Cards (filtered)
+  // Before the first /api/experts response, show gray-bar placeholders
+  // instead of an empty grid. Once data has landed, an empty list is real.
+  if (!dataLoaded) {
+    cardsEl.innerHTML = renderSkeletons();
+    renderSidebar();
+    return;
+  }
   cardsEl.innerHTML = visible.map(e => renderCard(e)).join('');
+  renderSidebar();
 
   // Redraw sparklines from cache (render() rebuilt the canvases; fetchLogData only fetches when the log changes)
   for (const e of visible) {
@@ -3000,12 +3058,11 @@ function openDetail(name) {
       <div id="stress-results"></div>
     </div>`;
 
-  document.getElementById('detail-page').classList.add('active');
-  document.querySelector('.main').classList.add('hidden');
+  showPane('detail');
   document.getElementById('summary').style.display = '';
   currentDetailExpert = name;
   currentChartWindow = 'all';
-
+  renderSidebar();
   // feat 10: deep-link hash
   try { location.hash = '#/expert/' + encodeURIComponent(name); } catch (e) {}
   updateSessionNote();
@@ -3073,11 +3130,11 @@ function openDetail(name) {
 
 function closeDetail() {
   if(detailResizeObserver){detailResizeObserver.disconnect(); detailResizeObserver=null;}
-  document.getElementById('detail-page').classList.remove('active');
-  document.querySelector('.main').classList.remove('hidden');
+  showPane('home');
   document.getElementById('summary').style.display = '';
   const wasExpert = currentDetailExpert;
   currentDetailExpert = null;
+  renderSidebar();
   // feat 10: clear the deep-link hash without adding a history entry
   if (wasExpert && location.hash.startsWith('#/expert/')) {
     try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
@@ -3982,7 +4039,22 @@ populateMergeExpert();
 // feat 74: apply saved / system dark mode on load
 initDark();
 
+// --- Sidebar rendering ---
+// Sidebar data fill - markup comes from shared sidebar.js
+function renderSidebar() {
+  Sidebar.renderData({
+    experts: experts,
+    fleetStats: fleetStats,
+    activeName: currentDetailExpert,
+    onSelect: openDetail,
+  });
+}
+
+// Call renderSidebar after applying data
+
 // feat 77: SSE live updates with 5s polling fallback
+// Paint gray-bar skeletons right away so the grid isn't empty while loading.
+try { render(); } catch (e) { console.error('initial render failed:', e); }
 fetchExperts().catch(e => console.error('fetchExperts error:', e));
 setTimeout(connectSSE, 1000);
 setInterval(() => { if (!sseConnected) fetchExperts(); }, 5000);
@@ -4017,6 +4089,16 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+// Single place that decides which right-hand pane is visible.
+// The sidebar lives outside this grid cell, so it never moves.
+function showPane(pane) {
+  document.getElementById('home-view').classList.toggle('hidden', pane !== 'home');
+  document.getElementById('stats-page').classList.toggle('active', pane === 'stats');
+  document.getElementById('detail-page').classList.toggle('active', pane === 'detail');
+  Sidebar.setActive(pane === 'stats' ? 'stats' : 'home');
+  if (typeof updateStickyOffsets === 'function') updateStickyOffsets();
+}
+
 // feat 10: deep-link detail via #/expert/<name>
 function parseDetailHash() {
   const m = location.hash.match(/^#\/expert\/([A-Za-z0-9_.%\-]+)/);
@@ -4029,9 +4111,12 @@ window.addEventListener('hashchange', () => {
     if (experts.some(x => x.name === name)) openDetail(name);
   } else if (currentDetailExpert && document.getElementById('detail-page').classList.contains('active')) {
     closeDetail();
+  } else if (location.hash === '#/stats') {
+    showPane('stats');
   }
 });
 (function applyInitialHash() {
+  if (location.hash === '#/stats') showPane('stats');
   const name = parseDetailHash();
   if (name) {
     const tryOpen = () => {
