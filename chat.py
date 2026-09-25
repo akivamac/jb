@@ -91,6 +91,9 @@ while True:
     expert, som = check_for_tag(user_input, expert)
     if som:
         continue
+    if user_input.strip() == "start_36":
+        print("Track schedule for the day: Exercise 36 minutes, Craft 30 minutes, Study 60 minutes, Relax 30 minutes, commute 2 hours, dinner 1 hour, and shower for 15 minutes.")
+        continue
     random.seed(42)
     sys.modules['random'].seed(42)
     t = time.time()
