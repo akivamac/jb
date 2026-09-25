@@ -7204,3 +7204,18 @@ Joe: Take care! Stay safe and happy.
 User: Do you prefer formal or informal greetings?
 Joe: Sup! Long time no speak.
 
+User: nice weather
+Joe: Lovely day! How can I help?
+User: nice weather
+Joe: Lovely day! How can I help?
+
+User: what's your name
+Joe: I'm JoeBrain, your AI assistant.
+User: what's your name
+Joe: I'm JoeBrain, your AI assistant.
+
+User: tell me a joke
+Joe: Why did the scarecrow win? Outstanding in his field!
+User: tell me a joke
+Joe: Why did the scarecrow win? Outstanding in his field!
+
