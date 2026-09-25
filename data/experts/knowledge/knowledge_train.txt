@@ -9796,3 +9796,8 @@ Joe: A planet is a celestial body orbiting a star, massive enough to be rounded 
 User: And what about what is individualism?
 Joe: Individualism emphasizes personal independence and self-reliance over collective control.
 
+User: Can you explain what is dna?
+Joe: DNA is the molecule carrying genetic instructions for the development, functioning, growth, and reproduction of all organisms.
+User: And what about what is developmental psychology?
+Joe: Developmental psychology studies how people change and grow throughout their lives.
+
