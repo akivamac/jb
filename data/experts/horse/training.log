@@ -12860,3 +12860,4 @@ AttributeError: 'array' object has no attribute 'copy'
 # [2026-09-26 15:32:22] SAMPLE step 4000:
 # 
 # Joe: A hoof wrap protects a treated hoof
+# [2026-09-26 15:32:31] FINISH at step 4000
