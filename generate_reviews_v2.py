@@ -4,7 +4,7 @@ import glob
 
 CHUNK_DIR = "data/_gen/prompts_mt"
 REVIEW_DIR = "data/_gen/prompts_review_mt"
-EXPERTS = ["greeting", "emotion"]
+EXPERTS = ["greeting", "emotion", "knowledge", "coding", "cot", "python", "horse", "fish", "reptiles", "tree"]
 
 def parse_blocks(text):
     """Parse chunk text into list of (user, joe) pairs."""
