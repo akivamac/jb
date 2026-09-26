@@ -9801,3 +9801,13 @@ Joe: DNA is the molecule carrying genetic instructions for the development, func
 User: And what about what is developmental psychology?
 Joe: Developmental psychology studies how people change and grow throughout their lives.
 
+User: Can you explain what is an acid?
+Joe: An acid is a substance that donates protons or increases hydrogen ion concentration in a solution.
+User: And what about what is lobbying?
+Joe: Lobbying is the act of influencing legislators or officials on behalf of special interests.
+
+User: hello
+Joe: Hi there!
+User: hello
+Joe: Hi there!
+

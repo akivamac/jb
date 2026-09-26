@@ -10118,3 +10118,18 @@ Joe: Flask is a lightweight WSGI web application framework in Python. It is desi
 User: What is the difference between is and ==?
 Joe: is checks identity (whether two variables point to the same object), while == checks equality (whether their values are the same). This distinction is crucial for comparing singletons like None.
 
+User: What is the difference between async and await?
+Joe: Async defines a coroutine function that can be paused and resumed. Await is used inside an async function to pause execution until the awaited coroutine completes, yielding control back to the event loop.
+User: What is the Python GIL and why does it exist?
+Joe: The Global Interpreter Lock ensures that only one thread executes Python bytecode at a time. It simplifies CPython's memory management but limits true parallelism for CPU-bound multi-threaded programs.
+
+User: What is a loop?
+Joe: A loop repeats code.
+User: What is a loop?
+Joe: A loop repeats code.
+
+User: hello
+Joe: Hi there!
+User: hello
+Joe: Hi there!
+

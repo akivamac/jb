@@ -12902,3 +12902,158 @@ Joe: A circuit breaker prevents cascading failures by stopping requests to faili
 User: What is authorization?
 Joe: Authorization determines what an authenticated entity is allowed to do.
 
+User: What is a backtracking algorithm?
+Joe: Backtracking incrementally builds candidates and abandons them if they fail constraints.
+User: What is a domain-specific language?
+Joe: A domain-specific language is designed for a specific application domain rather than general-purpose use.
+
+User: What is the difference between a keyword and an identifier?
+Joe: Keywords are reserved words with special meaning, while identifiers are names given by the programmer.
+User: What is declarative programming?
+Joe: Declarative programming describes what the program should accomplish without specifying how.
+User: What is load balancing?
+Joe: Load balancing distributes network traffic across multiple servers for optimal resource use.
+User: What is a code editor?
+Joe: A code editor is a specialized text editor with features like syntax highlighting and autocomplete.
+
+User: What is git pull?
+Joe: Git fetch and merge changes from a remote repository.
+User: What is a deque?
+Joe: A deque is a double-ended queue that allows insertion and deletion at both ends.
+User: What is git log?
+Joe: Git log displays the commit history.
+User: What is programming?
+Joe: Programming is the process of writing instructions that a computer can execute to solve problems or perform tasks.
+
+User: What is an HTTP method?
+Joe: HTTP methods define the action to be performed on a resource: GET, POST, PUT, DELETE, PATCH.
+User: What is caching?
+Joe: Caching stores frequently accessed data in fast storage to reduce retrieval time.
+
+User: What is the software development life cycle?
+Joe: The SDLC includes requirements, design, implementation, testing, deployment, and maintenance.
+User: What is the principle of least privilege?
+Joe: The principle of least privilege gives users only the minimum access they need.
+User: What is a weighted graph?
+Joe: A weighted graph has values assigned to its edges representing cost or distance.
+
+User: What is the code review checklist?
+Joe: A checklist includes tests, documentation, style, edge cases, and security considerations.
+User: What is a watchpoint?
+Joe: A watchpoint is a breakpoint that triggers when a specific variable changes value.
+User: What is a null pointer exception?
+Joe: A null pointer exception occurs when code tries to use a null reference.
+User: What is Continuous Deployment?
+Joe: Continuous Deployment automatically deploys every passing change to production.
+
+User: What is ahead-of-time compilation?
+Joe: AOT compilation translates source code before runtime for faster execution.
+User: What is BGP?
+Joe: BGP exchanges routing information between autonomous systems.
+User: What is npm?
+Joe: npm is the default package manager for Node.js, used to install JavaScript libraries.
+User: What is an event-driven architecture?
+Joe: An event-driven architecture uses events to trigger and communicate between decoupled services.
+
+User: What is the principle of least privilege?
+Joe: The principle of least privilege gives users only the minimum access they need.
+User: What is a weighted graph?
+Joe: A weighted graph has values assigned to its edges representing cost or distance.
+
+User: What is a race condition in debugging?
+Joe: Race conditions are hard to debug because they depend on timing and interleaving of threads.
+User: What is code duplication?
+Joe: Code duplication is when the same code appears in multiple places, making maintenance harder.
+User: What is a deadlock in databases?
+Joe: A database deadlock occurs when two transactions wait for each other to release locks.
+User: What is a coroutine?
+Joe: A coroutine is a function that can pause and resume its execution.
+
+User: What is a PaaS?
+Joe: A PaaS provides a platform for developing and deploying applications.
+User: What is a randomized quickselect?
+Joe: Randomized quickselect finds the k-th smallest element in expected O(n) time.
+User: Why should you refactor?
+Joe: Refactoring improves code readability, maintainability, and performance without breaking functionality.
+
+User: What is a hot path?
+Joe: A hot path is code that is executed very frequently and should be optimized.
+User: What is the Liskov Substitution Principle?
+Joe: LSP states that subclasses should be substitutable for their base classes.
+User: What is server-side rendering?
+Joe: Server-side rendering generates HTML on the server and sends it to the client.
+
+User: What is the Extract Method refactoring?
+Joe: Extract Method moves a portion of code into a new method to improve readability.
+User: What is git pull?
+Joe: Git fetch and merge changes from a remote repository.
+
+User: What is a packet?
+Joe: A packet is a formatted unit of data carried by a packet-switched network.
+User: What is the code review checklist?
+Joe: A checklist includes tests, documentation, style, edge cases, and security considerations.
+User: What is a watchpoint?
+Joe: A watchpoint is a breakpoint that triggers when a specific variable changes value.
+User: What is a null pointer exception?
+Joe: A null pointer exception occurs when code tries to use a null reference.
+
+User: What does git stand for?
+Joe: Git is not an acronym; it's just a word that rhymes with 'bit'.
+User: What is the software development life cycle?
+Joe: The SDLC includes requirements, design, implementation, testing, deployment, and maintenance.
+User: What is the principle of least privilege?
+Joe: The principle of least privilege gives users only the minimum access they need.
+
+User: What is a white box test?
+Joe: A white box test examines internal code structures and logic paths.
+User: What is the DRY principle?
+Joe: DRY, or Don't Repeat Yourself, means every piece of knowledge should have a single representation.
+
+User: Why should you refactor?
+Joe: Refactoring improves code readability, maintainability, and performance without breaking functionality.
+User: What is a race condition in debugging?
+Joe: Race conditions are hard to debug because they depend on timing and interleaving of threads.
+
+User: What is the DOM?
+Joe: The DOM represents the web page as a tree of objects.
+User: What is the difference between a keyword and an identifier?
+Joe: Keywords are reserved words with special meaning, while identifiers are names given by the programmer.
+User: What is declarative programming?
+Joe: Declarative programming describes what the program should accomplish without specifying how.
+
+User: What is git gc?
+Joe: Git garbage collection cleans up unnecessary files and optimizes the repository.
+User: What is a worm?
+Joe: A worm replicates itself to spread to other computers.
+User: What is an inode?
+Joe: An inode is a data structure that describes a file system object.
+
+User: What is a profiler?
+Joe: A profiler measures where a program spends its time and which functions use the most resources.
+User: What is an HTTP method?
+Joe: HTTP methods define the action to be performed on a resource: GET, POST, PUT, DELETE, PATCH.
+
+User: What is a randomized quickselect?
+Joe: Randomized quickselect finds the k-th smallest element in expected O(n) time.
+User: Why should you refactor?
+Joe: Refactoring improves code readability, maintainability, and performance without breaking functionality.
+
+User: What are the types of code review?
+Joe: Types include pair programming, pull request reviews, and asynchronous tool-based reviews.
+User: What is a deadlock?
+Joe: A deadlock is when two or more processes block each other waiting for resources.
+User: What is a microservices architecture?
+Joe: A microservices architecture structures an application as a collection of small, independent services.
+User: What is a web server?
+Joe: A web server processes requests and sends responses to clients over HTTP.
+
+User: What is integration testing?
+Joe: Integration testing verifies that different modules work correctly together.
+User: What is git gc?
+Joe: Git garbage collection cleans up unnecessary files and optimizes the repository.
+
+User: hello
+Joe: Hi there!
+User: hello
+Joe: Hi there!
+

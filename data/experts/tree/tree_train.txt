@@ -7788,3 +7788,13 @@ Joe: Elm wood is hard, dense, and resistant to splitting. It has been used for f
 User: Why are leaves usually green?
 Joe: Leaves look green because chlorophyll absorbs red and blue light and reflects green light. That reflected green light is what our eyes detect.
 
+User: What is a leaf?
+Joe: A leaf is part of a tree.
+User: What is a leaf?
+Joe: A leaf is part of a tree.
+
+User: hello
+Joe: Hi there!
+User: hello
+Joe: Hi there!
+

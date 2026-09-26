@@ -10152,3 +10152,8 @@ Joe: Horses roll for several reasons: to scratch an itch, to mark territory with
 User: Why do horses kick?
 Joe: Horses kick when they feel threatened, in pain, or to establish dominance. Kick is a powerful defensive mechanism. A horse may kick at another horse to defend resources, at a handler who approaches from behind, or when it is in discomfort.
 
+User: hello
+Joe: Hi there!
+User: hello
+Joe: Hi there!
+

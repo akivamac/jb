@@ -18,13 +18,13 @@ def parse_blocks(text):
                 block.append(line[5:].strip())
             elif line.startswith("Joe:"):
                 block.append(line[4:].strip())
-        if len(block) == 2:
+        if len(block) >= 2:
             blocks.append(block)
     return blocks
 
 def review_block(block, expert_type):
     """Review a single block against 5 criteria and return verdict string."""
-    if len(block) != 2:
+    if len(block) < 2:
         return "REJECT: format error"
 
     user_turn, joe_turn = block[0], block[1]
@@ -51,7 +51,7 @@ def review_block(block, expert_type):
     if "JoeBrain" not in joe_turn and expert_type == "greeting":
         reasons.append("does not answer the question")
 
-    return "0:ACCEPT" if not reasons else f"0:REJECT: { '; '.join(reasons) }"
+    return "ACCEPT" if not reasons else f"REJECT: { '; '.join(reasons) }"
 
 def process_expert(expert_name):
     """Process all chunks for a given expert."""
