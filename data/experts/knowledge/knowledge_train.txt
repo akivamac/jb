@@ -9811,3 +9811,8 @@ Joe: Hi there!
 User: hello
 Joe: Hi there!
 
+User: Can you explain what is a dig?
+Joe: A dig is an archaeological excavation where artifacts and remains are carefully uncovered.
+User: And what about what is an ionic bond?
+Joe: An ionic bond is formed by the electrostatic attraction between oppositely charged ions.
+
