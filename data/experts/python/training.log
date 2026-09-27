@@ -12113,3 +12113,4 @@ AttributeError: 'array' object has no attribute 'copy'
 # [2026-09-27 16:27:49] SAMPLE step 4000:
 # 
 # Joe: def log_duration(f): def wrapper(*
+# [2026-09-27 16:27:58] FINISH at step 4000
