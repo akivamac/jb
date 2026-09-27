@@ -12075,3 +12075,4 @@ AttributeError: 'array' object has no attribute 'copy'
 # [2026-09-27 12:14:24] SAMPLE step 4000:
 # 
 # Joe: PS same because that the capture been a
+# [2026-09-27 12:14:32] FINISH at step 4000
