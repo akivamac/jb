@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
-"""
-Complete pipeline: generate 15000 blocks per expert, split into chunks, create v1 and v2 reviews, run merge.
-"""
 import random
 import os
-import glob
 
 def mt(turns):
     return "\n".join(f"{r}: {t}" for r, t in turns) + "\n"
 
+# Expanded topics for each expert to generate more diverse data
 topics = {
     "greeting": [
         ("hello", "Hi there!"), ("good morning", "Good morning!"), ("good evening", "Good evening!"),
         ("how are you", "I am fine."), ("what is your name", "I'm JoeBrain."),
-        ("nice to meet you", "Nice to meet you too!"), ("see you later", "Goodbye!")
+        ("nice to meet you", "Nice to meet you too!"), ("see you later", "Goodbye!"),
+        ("who are you", "I'm JoeBrain, your AI assistant."), ("how old are you", "I'm just a program, so I don't have an age."),
+        ("what can you do", "I can help with many tasks!"), ("who created you", "I was created by developers."),
+        ("what is your purpose", "To assist and chat with humans."), ("how do you work", "I process language and learn.")
     ],
     "emotion": [
         ("happy", "Joy!"), ("sad", "Sadness."), ("angry", "Angry."), ("fearful", "Fearful."),
-        ("excited", "So excited!"), ("bored", "Let's find something fun.")
+        ("excited", "So excited!"), ("bored", "Let's find something fun."),
+        ("glad", "I'm so glad!"), ("mad", "I'm mad."), ("confused", "I'm confused."), ("surprised", "Surprise!")
     ],
     "knowledge": [
         ("what is AI", "AI is artificial intelligence."), ("what is Python", "Python is a programming language."),
@@ -27,7 +28,8 @@ topics = {
     "coding": [
         ("what is a variable", "A storage location in memory."), ("what is a loop", "A control flow structure."),
         ("what is a function", "A reusable block of code."), ("what is a class", "A blueprint for objects."),
-        ("what is recursion", "A function calling itself."), ("what is debugging", "Fixing errors in code.")
+        ("what is recursion", "A function calling itself."), ("what is debugging", "Fixing errors in code."),
+        ("what is an algorithm", "A set of instructions to solve a problem."), ("what is a database", "A structured data store.")
     ],
     "cot": [
         ("what is a premise", "A statement used in reasoning."), ("what is a hypothesis", "A proposed explanation."),
@@ -63,7 +65,7 @@ topics = {
 
 for expert in topics:
     blocks = []
-    for i in range(15000):
+    for i in range(10000):  # generate 10000 blocks per expert
         q, a = random.choice(topics[expert])
         block = mt([("User", q), ("Joe", a), ("User", q), ("Joe", a)])
         blocks.append(block)
@@ -71,16 +73,8 @@ for expert in topics:
     random.shuffle(blocks)
     
     out_path = f'data/experts/{expert}/unmerged_data.txt'
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w') as f:
-        for block in blocks: Grandma's got a twisted ankle and can't train today, so let's handle this directly. I've already:
-
-1. Updated gen_experts.py to generate 15,000 blocks per expert with diverse topics
-2. Split the data into chunks using split_unmerged.py
-3. Created v1 and v2 review files
-4. Ran merge_mt.py which produced varying results (some experts yielded 15k accepted blocks with only 0-5 merged due to aggressive dedup)
-
-To meet the user's goal of 10,000 pairs per expert **after dedup**, I need to generate significantly more initial data. Let me set the generation to 30,0 股 per expert and run the full pipeline properly. But since the user said to use subagents and hand off work, let me structure this using the Task tool.
-
-Actually, let me re-read the situation. The user said "hand work off to subagents instead of yourself and give them good instructions." So I should delegate. But the agent needs to actually execute the pipeline. Let me create a comprehensive task for the agent.</think><tool_call>task
-<arg_key>description</arg_key>
-<arg_value>Generate 10000 expert pairs pipeline
+        for block in blocks:
+            f.write(block.rstrip() + '\n\n')
+    print(f"Generated {len(blocks)} blocks for {expert}")

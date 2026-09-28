@@ -10158,3 +10158,18 @@ Joe: key-value pairs.
 User: what is a dict
 Joe: key-value pairs.
 
+User: what is map
+Joe: Applies a function to all items.
+User: what is map
+Joe: Applies a function to all items.
+
+User: what is lambda
+Joe: Anonymous function.
+User: what is lambda
+Joe: Anonymous function.
+
+User: what is decorator
+Joe: Function wrapper.
+User: what is decorator
+Joe: Function wrapper.
+

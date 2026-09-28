@@ -10930,3 +10930,13 @@ Joe: Inference to the best explanation.
 User: what is abduction
 Joe: Inference to the best explanation.
 
+User: what is abductive reasoning
+Joe: Inference to the best explanation.
+User: what is abductive reasoning
+Joe: Inference to the best explanation.
+
+User: what is induction
+Joe: Reasoning from specific cases to general rules.
+User: what is induction
+Joe: Reasoning from specific cases to general rules.
+

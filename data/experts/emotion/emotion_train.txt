@@ -8865,3 +8865,18 @@ Joe: Let's find something fun.
 User: bored
 Joe: Let's find something fun.
 
+User: confused
+Joe: I'm confused.
+User: confused
+Joe: I'm confused.
+
+User: mad
+Joe: I'm mad.
+User: mad
+Joe: I'm mad.
+
+User: glad
+Joe: I'm so glad!
+User: glad
+Joe: I'm so glad!
+

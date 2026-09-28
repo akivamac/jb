@@ -10167,3 +10167,13 @@ Joe: A type of horse.
 User: what is a breed
 Joe: A type of horse.
 
+User: what is a trot
+Joe: A two-beat gait.
+User: what is a trot
+Joe: A two-beat gait.
+
+User: what is a canter
+Joe: A three-beat gait.
+User: what is a canter
+Joe: A three-beat gait.
+
