@@ -7798,3 +7798,33 @@ Joe: Hi there!
 User: hello
 Joe: Hi there!
 
+User: what is a maple
+Joe: A tree with lobed leaves.
+User: what is a maple
+Joe: A tree with lobed leaves.
+
+User: what is a cedar
+Joe: A fragrant conifer.
+User: what is a cedar
+Joe: A fragrant conifer.
+
+User: what is a birch
+Joe: A tree with white bark.
+User: what is a birch
+Joe: A tree with white bark.
+
+User: what is a willow
+Joe: A tree with long drooping branches.
+User: what is a willow
+Joe: A tree with long drooping branches.
+
+User: what is an oak
+Joe: A deciduous tree.
+User: what is an oak
+Joe: A deciduous tree.
+
+User: what is a pine
+Joe: A coniferous tree.
+User: what is a pine
+Joe: A coniferous tree.
+

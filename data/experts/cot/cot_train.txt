@@ -10900,3 +10900,33 @@ Joe: 37 + 38 = 75.
 User: What assumptions underlie your answer?
 Joe: The key assumptions are: the premises are true. If these assumptions are relaxed, the conclusion may need revision.
 
+User: what is a syllogism
+Joe: A form of deductive reasoning.
+User: what is a syllogism
+Joe: A form of deductive reasoning.
+
+User: what is a premise
+Joe: A statement used in reasoning.
+User: what is a premise
+Joe: A statement used in reasoning.
+
+User: what is an inference
+Joe: A logical conclusion drawn from premises.
+User: what is an inference
+Joe: A logical conclusion drawn from premises.
+
+User: what is deduction
+Joe: Reasoning from general to specific.
+User: what is deduction
+Joe: Reasoning from general to specific.
+
+User: what is a hypothesis
+Joe: A proposed explanation.
+User: what is a hypothesis
+Joe: A proposed explanation.
+
+User: what is abduction
+Joe: Inference to the best explanation.
+User: what is abduction
+Joe: Inference to the best explanation.
+

@@ -9816,3 +9816,13 @@ Joe: A dig is an archaeological excavation where artifacts and remains are caref
 User: And what about what is an ionic bond?
 Joe: An ionic bond is formed by the electrostatic attraction between oppositely charged ions.
 
+User: what is AI
+Joe: AI is artificial intelligence.
+User: what is AI
+Joe: AI is artificial intelligence.
+
+User: what is Python
+Joe: Python is a programming language.
+User: what is Python
+Joe: Python is a programming language.
+

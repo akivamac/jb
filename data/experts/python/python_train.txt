@@ -10133,3 +10133,28 @@ Joe: Hi there!
 User: hello
 Joe: Hi there!
 
+User: what is a list
+Joe: ordered collection of items.
+User: what is a list
+Joe: ordered collection of items.
+
+User: what is generator
+Joe: Lazy evaluation technique.
+User: what is generator
+Joe: Lazy evaluation technique.
+
+User: what is a tuple
+Joe: immutable sequence of elements.
+User: what is a tuple
+Joe: immutable sequence of elements.
+
+User: what is a set
+Joe: collection of unique elements.
+User: what is a set
+Joe: collection of unique elements.
+
+User: what is a dict
+Joe: key-value pairs.
+User: what is a dict
+Joe: key-value pairs.
+
