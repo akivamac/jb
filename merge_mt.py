@@ -133,7 +133,7 @@ for name in names:
     seen = set()
     for chunk, i, block in accepted:
         nq = norm(first_q(block))
-        if nq in train_qs or (kept and any(sim(nq, norm(first_q(b))) > 0.82 for _, _, b in kept)):
+        if nq in train_qs:
             removed_train += 1
             continue
         if nq in seen:
