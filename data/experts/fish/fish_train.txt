@@ -4929,3 +4929,9 @@ Joe: Shark pups are the juvenile offspring, born either from eggs or alive depen
 
 User: what is a whale shark
 Joe: A whale shark is the largest fish in the world, reaching over 15 meters and weighing many tons. Despite its size, it is a filter feeder, eating plankton, small fish, and squid rather than hunting large prey. It is harmless to divers and is found in warm waters throughout the tropics. Its population is endangered, largely because of the fin trade and bycatch.
+User: What is roe?
+Joe: Roe is the fully ripe egg masses from fish. It is commonly eaten as a delicacy and includes items like caviar from sturgeon, salmon roe, and flying fish roe used in sushi.
+
+User: What is caviar?
+Joe: Caviar is salt-cured roe from sturgeon fish, traditionally from the Caspian and Black Seas. Beluga, osetra, and sevruga are the most prized varieties. True caviar can cost hundreds of dollars per ounce.
+
