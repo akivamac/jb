@@ -1,0 +1,1050 @@
+User: How do I initialize a git repo?
+Joe: `git init` creates a new .git directory in the current folder, turning it into a Git repository. Run it once per project at the root. For existing code, `git init` then `git add . && git commit -m "initial"` to track everything.
+
+User: What does git add do?
+Joe: `git add <file>` stages a file — it tells Git to include the current version in the next commit. Use `git add .` to stage all changes, or `git add -p` to interactively stage hunks (great for splitting unrelated changes).
+
+User: What's the difference between git add and git commit?
+Joe: `git add` moves changes from the working directory to the staging area (index). `git commit` takes whatever is in the staging area and saves it as a permanent snapshot in the repository history. You must add before you commit.
+
+User: How do I commit changes?
+Joe: `git commit -m "your message"` creates a commit with everything staged. Use `-m` for short messages or omit it to open an editor for a detailed message. `git commit -am "msg"` stages tracked files AND commits in one step (but skips new untracked files).
+
+User: How to check the status of my repo?
+Joe: `git status` shows which files are modified, staged, or untracked. It tells you the current branch, whether you're ahead/behind remote, and gives hints about what to do next. I run it constantly — it's the safest command.
+
+User: What does git log show?
+Joe: `git log` shows commit history: hash, author, date, message. `git log --oneline` gives a compact one-line-per-commit view. `git log --graph --oneline --all` shows branching visually. `git log -p` shows the actual diffs for each commit.
+
+User: How do I see what changed in a commit?
+Joe: `git diff <commit_hash>` shows changes in that commit. `git diff` without arguments shows unstaged changes (working tree vs staging). `git diff --staged` shows staged changes (staging vs last commit). `git diff HEAD` shows all uncommitted changes.
+
+User: How to clone a repo?
+Joe: `git clone <url>` downloads the entire repository to a new directory. `git clone <url> mydir` puts it in a custom folder. It automatically sets up the remote as 'origin' and checks out the default branch. It's the standard way to get code from GitHub.
+
+User: How to push to remote?
+Joe: `git push` uploads your commits to the remote. `git push origin main` pushes the main branch to origin. First push of a new branch: `git push -u origin mybranch` sets upstream tracking so plain `git push` works afterward.
+
+User: How to pull changes?
+Joe: `git pull` fetches changes from remote and merges them into your current branch. It's `git fetch` + `git merge` in one command. For linear history, use `git pull --rebase` to replay your local commits on top of remote changes.
+
+User: How do branches work?
+Joe: `git branch <name>` creates a branch. `git switch <name>` or `git checkout <name>` switches to it. Branches are lightweight pointers to commits. `git branch -d <name>` deletes a merged branch. `git branch -D <name>` force-deletes even if unmerged.
+
+User: How to create and switch to a new branch at once?
+Joe: `git switch -c <name>` or `git checkout -b <name>`. Creates a new branch pointing at the current commit and switches to it. Equivalent to `git branch <name> && git switch <name>`.
+
+User: What's git merge do?
+Joe: `git merge <branch>` integrates changes from another branch into your current branch. It creates a merge commit (unless fast-forward is possible). `git merge --no-ff` forces a merge commit even when fast-forward is possible, keeping branch history visible.
+
+User: How do I set up a remote?
+Joe: `git remote add origin <url>` adds a remote named origin. `git remote -v` lists all remotes with URLs. `git remote remove <name>` deletes one. `git remote rename <old> <new>` renames. Standard convention: 'origin' for your fork, 'upstream' for the original repo.
+
+User: How to see remote URLs?
+Joe: `git remote -v` shows fetch and push URLs for all remotes. `git remote get-url origin` shows just the URL for origin. Useful when you cloned via HTTPS but want to switch to SSH.
+
+User: What does git status tell me about untracked files?
+Joe: Untracked files are files Git sees but isn't tracking. `git status` lists them in the 'Untracked files' section. Add them with `git add` to start tracking, or add them to `.gitignore` to make Git ignore them permanently.
+
+User: How do I remove a file from git tracking?
+Joe: `git rm <file>` removes the file from both the working directory and tracking. `git rm --cached <file>` removes it from tracking but keeps the file on disk — perfect for fixing a file that should have been in `.gitignore`.
+
+User: How to rename a file with git?
+Joe: `git mv <old> <new>` renames and stages the change in one step. It's equivalent to `mv <old> <new> && git add <new> && git rm <old>`. Git detects renames by content similarity anyway, but this makes it explicit.
+
+User: What is .gitignore for?
+Joe: `.gitignore` tells Git which files to ignore — compiled files, cache, virtual environments, secrets. Each line is a glob pattern. `*.pyc` ignores bytecode files, `__pycache__/` ignores cache dirs, `.env` ignores environment variables. It supports negation with `!` prefix.
+
+User: How do I view a file from an older commit?
+Joe: `git show <hash>:<path>` shows the file as it existed in that commit. `git show HEAD~3:main.py` shows main.py from 3 commits ago. `git restore --source=<hash> <path>` restores it to the working directory without affecting staging.
+
+User: What is HEAD in git?
+Joe: HEAD is a pointer to the current commit you're working on. Usually it points to a branch (`refs/heads/main`), which automatically moves when you commit. In detached HEAD state, HEAD points directly to a commit — useful for inspection but don't make commits there.
+
+User: How to see which files changed in a commit?
+Joe: `git show --stat <hash>` shows changed files and line counts. `git diff-tree --no-commit-id -r <hash>` lists filenames only. `git diff <hash>~1..<hash>` shows the diff between the commit and its parent.
+
+User: How do I configure git user info?
+Joe: `git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`. Set once globally. For per-repo overrides, omit `--global`. Git embeds this info in every commit — it's how commits are attributed.
+
+User: I keep forgetting the workflow for git. What's the basic routine?
+Joe: Edit your files, then `git add` to stage specific changes, `git commit -m "msg"` to snapshot them, then `git push` to sync to GitHub. Before pushing, `git pull --rebase` to incorporate remote changes. That's the daily cycle: add, commit, pull, push.
+User: What if I accidentally add a file I don't want?
+Joe: `git restore --staged <file>` un-stages it without changing the file on disk. If you want to discard all changes to a file entirely: `git restore <file>`. Git has safety nets — you can almost always undo.
+
+User: How does cloning work? I'm joining a project.
+Joe: `git clone <url>` downloads the whole repo, including all history. By default you land on the main branch with the remote already configured as 'origin'. Then you'd typically `git switch -c my-feature` to start working on a new feature branch.
+User: But I need the whole history for that? Isn't that wasteful?
+Joe: Not really — Git compresses history efficiently and commits are tiny deltas. For massive monorepos you can use `--depth 1` for a shallow clone (only latest commit). But normal repos are fine full-depth. Having history means full blame, log, and bisect capability.
+
+User: What is git rebase?
+Joe: `git rebase <branch>` moves your commits to be based on the tip of another branch. Instead of a merge commit, it re-applies your changes on top. `git rebase -i` (interactive) lets you squash, reorder, edit, or drop commits. Cleaner linear history, but never rebase shared branches.
+
+User: What's the difference between merge and rebase?
+Joe: Merge preserves history as-is, creating a merge commit. Rebase rewrites history by replaying commits on a new base, giving a linear timeline. Merge = 'I merged this branch in.' Rebase = 'my changes were built on top of this.' Merge for shared, rebase for local cleanup.
+
+User: How does cherry-pick work?
+Joe: `git cherry-pick <hash>` applies a specific commit from another branch onto your current branch. Great for hotfixes. Multiple commits: `git cherry-pick A..B` (excludes A, includes B). `git cherry-pick -n` applies changes without committing — lets you cherry-pick several and commit together.
+
+User: What is git stash?
+Joe: `git stash` temporarily shelves uncommitted changes so you can work on something else. `git stash pop` re-applies and removes the stash. `git stash list` shows all stashes. `git stash apply stash@{2}` applies a specific stash without removing it. `git stash drop` removes a stash.
+
+User: How to stash only unstaged changes?
+Joe: `git stash push -m "msg" -- staged-changes-kept` isn't a flag — instead use `git stash -k` (keep staged) which stashes unstaged files only, leaving staged changes intact. Combined: `git stash -k` then commit staged, then `git stash pop` to restore work-in-progress.
+
+User: What does git reset do?
+Joe: `git reset` moves the current branch pointer. `--soft` keeps changes staged, `--mixed` (default) unstages them but keeps file changes, `--hard` discards everything. `git reset HEAD~1` undoes last commit (mixed). `git reset --hard HEAD~1` deletes the last commit and its changes permanently (mostly).
+
+User: How is revert different from reset?
+Joe: `git revert <hash>` creates a NEW commit that undoes the changes — safe for shared history. `git reset` moves the branch pointer backward, erasing commits from history (destructive for shared branches). Use revert on public branches, reset on local branches.
+
+User: What is git bisect?
+Joe: `git bisect start` begins a binary search through history to find which commit introduced a bug. Mark commits as `git bisect good` and `git bisect bad`, and it narrows down the offending commit in O(log n) steps. Automate with `git bisect run <script>`.
+
+User: What is git blame?
+Joe: `git blame <file>` annotates every line with the commit hash, author, and date of the last modification. `git blame -L 10,20 <file>` restricts to lines 10-20. `git blame -w <file>` ignores whitespace changes. Essential for finding out who wrote which line and why.
+
+User: What is git reflog?
+Joe: `git reflog` is a safety net — it records every HEAD movement, including resets, rebases, and commits that are no longer referenced. If you lose commits via reset or rebase, reflog shows you the old hashes. Reflog entries expire after ~90 days. It's your 'undo the undo.'
+
+User: How do submodules work?
+Joe: `git submodule add <url> <path>` embeds another repo inside yours. `git clone --recurse-submodules <url>` clones a repo and its submodules. `git submodule update --init --recursive` syncs submodules after pulling. Submodules point at specific commits — they don't auto-update.
+
+User: What are git hooks?
+Joe: Git hooks are scripts that run automatically at certain events — pre-commit, pre-push, post-commit, etc. Stored in `.git/hooks/`. Uncommitted (not tracked). To share hooks, use a `hooks/` directory with symlinks or a tool like pre-commit. A pre-commit hook can run linters before each commit.
+
+User: How to work with multiple remotes?
+Joe: Add multiple remotes with `git remote add <name> <url>`. `git fetch --all` fetches from all remotes. `git push <remote> <branch>` pushes to a specific remote. Common pattern: 'origin' for your fork, 'upstream' for the main repo. Pull from upstream, push to origin, then PR.
+
+User: What does git fetch do vs git pull?
+Joe: `git fetch` downloads remote objects and refs but doesn't change your working directory. `git pull` = fetch + merge (or fetch + rebase with `--rebase`). Fetch is safer — you can inspect changes before integrating. I often fetch first, then decide how to merge.
+
+User: How to squash commits with interactive rebase?
+Joe: `git rebase -i HEAD~n` opens an editor with the last n commits. Change 'pick' to 'squash' or 'fixup' for commits to merge into the previous one. Squash keeps the message, fixup discards it. Reorder lines to change commit order. Save and close to apply.
+
+User: What's git clean?
+Joe: `git clean -n` shows which untracked files would be deleted (dry run). `git clean -f` removes them. `git clean -fd` removes untracked files AND directories. `git clean -x` also removes gitignored files. Extremely useful for cleaning up build artifacts, dangerous with `-x`.
+
+User: How to ignore a tracked file temporarily?
+Joe: `git update-index --skip-worktree <file>` tells Git to pretend the file hasn't been modified — useful for config files with local overrides. Undo with `--no-skip-worktree`. `--assume-unchanged` is similar but assumes the file won't change. Use skip-worktree for config.
+
+User: What is git tag?
+Joe: `git tag v1.0.0` creates a lightweight tag at the current commit. `git tag -a v1.0.0 -m "version 1.0.0"` creates an annotated tag with a message. `git push --tags` pushes tags. Tags mark releases. `git describe --tags` shows the nearest tag as a human-readable version.
+
+User: How to sign commits?
+Joe: `git commit -S -m "msg"` signs with your GPG key. Configure `user.signingkey` and optionally `commit.gpgsign = true` to sign all commits automatically. `git log --show-signature` verifies signatures. GitHub shows verified badges for signed commits.
+
+User: How to find commits by message?
+Joe: `git log --grep="fix bug"` searches commit messages. `git log -G "function_name"` searches actual diffs (pickaxe). `git log -S "string_to_find"` is similar but searches for string introduction/removal. `git log --author="name"` filters by author.
+
+User: How to amend the last commit?
+Joe: `git commit --amend` modifies the last commit with any staged changes or a new message. `git commit --amend -m "new msg"` changes the message. `git commit --amend --no-edit` adds staged changes without changing the message. NEVER amend pushed commits on shared branches.
+
+User: What's a detached HEAD and how do I get out of it?
+Joe: Detached HEAD means you're on a specific commit, not a branch. `git switch -c <new-branch>` creates a branch at your position (saving any work). `git switch <existing-branch>` discards detached changes. Don't make commits in detached HEAD unless you create a branch.
+
+User: How to compare two branches?
+Joe: `git diff branch1..branch2` shows changes from branch1 to branch2. `git diff branch1...branch2` shows changes on branch2 since it diverged from branch1. `git log branch1..branch2` lists commits on branch2 not on branch1. `git diff --stat` gives a file-change summary.
+
+User: How to list files changed between two commits?
+Joe: `git diff --name-only <hash1>..<hash2>` lists filenames only. `git diff --name-status <hash1>..<hash2>` adds status letters (M=modified, A=added, D=deleted). `git diff --stat <hash1>..<hash2>` gives a compact summary with line counts.
+
+User: I messed up a rebase and lost commits. How do I recover?
+Joe: First, don't panic. Run `git reflog` to see every HEAD move — your lost commits are almost certainly in there. Find the hash of the commit before you rebased, then `git reset --hard <hash>` to go back. If you can't find it, `git reflog` goes back 90 days.
+User: What if I already pushed the rebased branch?
+Joe: Even trickier. If it's your own branch, `git push --force-with-lease` is safer than `--force` — it checks that nobody else pushed changes. For shared branches, NEVER force push. Instead, revert the problematic commits. Or live with the rebase and coordinate with the team.
+
+User: What's the pre-commit workflow you'd recommend?
+Joe: Start with a pre-commit hook that runs linters. I use `pre-commit install` with a `.pre-commit-config.yaml` that runs black, isort, flake8, and trailing-whitespace fixer. It catches formatting issues before they hit the repo, saving review cycles.
+User: Doesn't that slow down every commit?
+Joe: A tiny bit, but it saves way more time in CI. Hooks only run on changed files by default. If they feel slow, configure `stages: [push]` instead of `stages: [commit]` so they run before push. Most teams find commit-time hooks worth the 2-3 second delay.
+
+User: What is pytest?
+Joe: pytest is a testing framework for Python. It finds test files matching `test_*.py` or `*_test.py`, runs functions starting with `test_`, and reports results with detailed assertion introspection. No boilerplate needed — just `assert` statements. Run with `pytest` or `python -m pytest`.
+
+User: How do I write a basic test?
+Joe: Create `test_example.py` with a function `def test_addition(): assert 1 + 1 == 2`. Run `pytest` and it auto-discovers the test. No classes required unless you want them. Assertions use Python's built-in `assert` — pytest rewrites the AST to give detailed failure messages.
+
+User: How to run a specific test function?
+Joe: `pytest test_file.py::test_function` runs a single test. `pytest test_file.py -k "pattern"` runs tests matching a keyword. `pytest tests/test_foo.py` runs all tests in a file. `pytest -x` stops at the first failure. `pytest --lf` runs only the last failed tests.
+
+User: What are pytest fixtures?
+Joe: Fixtures are reusable test dependencies. Define with `@pytest.fixture` and accept as parameters. Example: `@pytest.fixture def db(): setup(); yield db; teardown()` — the yield splits setup from teardown. Fixtures can use other fixtures via parameter injection.
+
+User: What is parametrize?
+Joe: `@pytest.mark.parametrize("input,expected", [(1,2), (2,3), (3,4)])` runs a test multiple times with different arguments. Each case is a separate test. Use `ids` for readable names. `pytest -k "pattern"` can select specific parametrized cases by their ID.
+
+User: What are pytest marks?
+Joe: Marks add metadata to tests. `@pytest.mark.skip(reason="not ready")` skips. `@pytest.mark.skipif(sys.version_info < (3,8), reason="requires 3.8")` skips conditionally. `@pytest.mark.xfail` expects failure. `@pytest.mark.timeout(5)` (plugin) fails if test runs >5s. Custom marks in `pytest.ini`.
+
+User: How does conftest.py work?
+Joe: `conftest.py` at the test directory level shares fixtures, hooks, and plugins across all tests in that directory. Put shared fixtures here to avoid imports in every test file. conftest fixtures are automatically available — no explicit import needed.
+
+User: How to measure test coverage?
+Joe: `pytest --cov=my_package tests/` computes coverage with the pytest-cov plugin. `--cov-report=html` generates an HTML report. `--cov-report=term-missing` shows lines not covered. Aim for coverage but don't obsess — 100% doesn't mean bug-free. Meaningful coverage > high coverage.
+
+User: How to mock in tests with unittest.mock?
+Joe: `from unittest.mock import Mock, patch`. `patch("module.function")` replaces a function/class with a Mock during the test. `mock_obj = MagicMock()` creates a flexible mock where any attribute/method access returns another mock. `mocked.assert_called_once_with(...)` verifies calls.
+
+User: How to use pytest-mock?
+Joe: pytest-mock provides a `mocker` fixture. `mocker.patch("module.fn")` returns a mock. `mocker.spy(obj, "method")` wraps a method for call tracking while preserving behavior. Cleaner than `unittest.mock.patch` decorators — no nesting, no `with` context managers cluttering test bodies.
+
+User: What is monkeypatching in pytest?
+Joe: `monkeypatch.setattr(obj, "attr", value)` temporarily replaces attributes. `monkeypatch.setenv("KEY", "val")` mocks environment variables. `monkeypatch.chdir("/path")` mocks current directory. Changes auto-revert after the test. Simpler than `patch` for basic attribute/environment swaps.
+
+User: How do I test that an exception is raised?
+Joe: `import pytest; with pytest.raises(ValueError) as exc_info: func_that_raises()` checks an exception was raised. `assert "msg" in str(exc_info.value)` inspects the message. `pytest.raises(ValueError, match="pattern")` checks with regex on the exception message.
+
+User: What is the tmp_path fixture?
+Joe: `tmp_path` is a built-in pytest fixture that returns a `pathlib.Path` to a temporary directory unique to each test. Cleans up automatically. `tmp_path / "subdir" / "file.txt"` for creating temp files. `tmp_path_factory` for session-scoped temp dirs.
+
+User: How to test stdout/stderr output?
+Joe: `capsys` fixture captures stdout and stderr. `capsys.readouterr().out` returns captured stdout. `capsys.readouterr().err` returns stderr. `capfd` captures at the file descriptor level (works with subprocesses). Call `readouterr()` once — subsequent calls re-capture.
+
+User: How to write a test suite in unittest?
+Joe: `import unittest; class TestMath(unittest.TestCase): def test_add(self): self.assertEqual(1+1, 2)`. Use `self.assertEqual`, `self.assertTrue`, `self.assertRaises`. `setUp` creates fixtures, `tearDown` cleans up. Run with `python -m unittest test_module`.
+
+User: What's the difference between unittest and pytest?
+Joe: unittest is built-in, uses classes and `self.assertEqual`, more verbose. pytest is third-party, uses plain `assert`, fixtures, parametrize, and auto-discovery. pytest is more concise and has better reporting. Most new projects choose pytest. unittest is fine for small projects or stdlib-only constraints.
+
+User: How to skip tests conditionally?
+Joe: `@pytest.mark.skipif(not has_module, reason="needs lib")`. `@pytest.mark.skip(reason="temporarily disabled")`. Use `pytest.importorskip("module")` inside a test to skip if import fails. `pytest.mark.skipif(sys.platform == "win32", reason="not on Windows")` for platform-specific tests.
+
+User: What does pytest -v do?
+Joe: `-v` (verbose) shows individual test names and outcomes (PASSED/FAILED/SKIPPED) instead of just dots. `-vv` shows even more detail, including full assertion diffs. `--tb=short` controls traceback length. `--tb=long` shows full tracebacks. I use `-v --tb=short` by default.
+
+User: How to run tests in parallel with pytest?
+Joe: `pytest -n auto` (with `pytest-xdist` installed) runs tests in parallel across CPU cores. `-n 4` uses 4 workers. Tests must be isolated (no shared state). Parallel execution can cut CI time by 2-10x depending on test count and CPU.
+
+User: What is doctest?
+Joe: Doctest runs tests embedded in docstrings. In `def add(a,b): """Returns sum. >>> add(2,3) 5 """; return a+b`, the `>>>` line is a test. Run with `python -m doctest module.py` or `pytest --doctest-modules`. Great for simple examples in docs but limited for complex test logic.
+
+User: How to set up a test for pytest in CI?
+Joe: Install pytest in your CI: `pip install pytest pytest-cov`. Run `pytest --junitxml=report.xml --cov=src tests/`. The JUnit XML integrates with GitHub Actions, GitLab CI, etc. Set `--cov-fail-under=80` to fail if coverage drops below 80%. Cache `.pytest_cache/` for speed.
+
+User: How to test file I/O without writing real files?
+Joe: Use `tmp_path` fixture for temporary files. For mocking open(): `mocker.patch("builtins.open", mocker.mock_open(read_data="content"))`. `mocker.mock_open()` provides a mock file object. `mock_file = mocker.mock_open(read_data="a,b,c\n1,2,3")` — then `mocker.patch("builtins.open", mock_file)`.
+
+User: What is a smoke test?
+Joe: A smoke test checks that the system runs without crashing — it doesn't verify correctness. For a web app, it's `assert app.get("/").status_code == 200`. For a CLI, `subprocess.run(["tool", "--help"])` succeeds. Smoke tests are fast sanity checks, run before expensive test suites.
+
+User: How do I assert that a function was called with specific arguments?
+Joe: `mock.assert_called_with(arg1, arg2)` checks the LAST call. `mock.assert_any_call(arg)` checks at least one call matched. `mock.assert_has_calls([call(x), call(y)])` checks a sequence. `mock.call_args` and `mock.call_args_list` give raw access to call arguments.
+
+User: What's a flaky test and how to handle it?
+Joe: A flaky test passes/fails nondeterministically — often due to timing, network, or shared state. Mark it with `@pytest.mark.flaky(reruns=3)` (pytest-rerunfailures plugin). But marking it is a bandaid — fix the root cause: use `tmp_path` instead of shared files, mock network calls, add `await` where missing.
+
+User: How to organize test files?
+Joe: Mirror your source structure: `src/mypackage/module.py` → `tests/test_module.py` or `tests/test_module/test_feature.py`. Use `__init__.py` (empty) in test directories. Group by feature, not by test type. One test file per source module. `conftest.py` for shared fixtures at each directory level.
+
+User: I have a class that reads from an API. How do I test it without hitting the real API?
+Joe: Use `mocker.patch` to replace `requests.get` with a mock: `mock_get.return_value.json.return_value = {"key": "val"}`. Then `mocker.patch("module.requests.get", mock_get)`. Your class calls `requests.get` normally, but the mock returns fake data — zero network calls, fast and reliable.
+User: What if the class creates the requests Session itself?
+Joe: That's trickier. Either accept a session parameter (dependency injection makes testing easy) or patch `requests.Session` directly: `mocker.patch("module.requests.Session", return_value=mock_session)`. Better approach: refactor to accept a session in `__init__`. Inject real session in prod, mock in tests.
+
+User: pytest or unittest — which should I learn?
+Joe: Learn pytest. It's the modern standard — 90% of Python projects use it. You write `assert x == y` without wrapping in `self.assertEqual`. Fixtures are cleaner than setUp/tearDown. Parametrize eliminates repetitive test functions. That said, understanding unittest helps when maintaining older codebases.
+User: Does pytest work alongside unittest?
+Joe: Yes — pytest can run unittest TestCases directly. It even improves unittest output. You can gradually migrate: new tests in pytest, old tests in unittest. When you have time, convert unittest tests: replace class methods with functions, `self.assertEqual` with `assert`, setUp with fixtures.
+
+User: How to use pdb?
+Joe: `import pdb; pdb.set_trace()` drops into the debugger. Commands: `n` (next line), `s` (step into), `c` (continue), `q` (quit), `p var` (print variable), `l` (list source), `b 42` (breakpoint at line 42). Python 3.7+: just write `breakpoint()` — simpler and configurable via `PYTHONBREAKPOINT` env var.
+
+User: What's the difference between pdb and ipdb?
+Joe: ipdb is IPython-ified pdb — tab completion, syntax highlighting, better tracebacks. Install with `pip install ipdb`, use with `import ipdb; ipdb.set_trace()`. `breakpoint()` uses pdb by default; set `PYTHONBREAKPOINT=ipdb.set_trace` to route it to ipdb.
+
+User: How to use VSCode debugger?
+Joe: Set breakpoints by clicking in the gutter (left of line numbers). Press F5 to start debugging. The debug panel shows variables, call stack, and watches. Configure with `.vscode/launch.json`. Key features: 'step over' (F10), 'step into' (F11), 'step out' (Shift+F11), conditional breakpoints (right-click).
+
+User: Why is print debugging bad and when is it okay?
+Joe: Print debugging is quick but messy — you edit code, rerun, see output, remove prints. It doesn't scale to complex bugs. Real debugging tools are better. That said, print debugging is fine for one-off scripts or exploratory coding. Just clean them up before committing.
+
+User: How to use logging instead of prints?
+Joe: `import logging; logging.basicConfig(level=logging.DEBUG); logging.info("msg %s", var)`. Levels: DEBUG, INFO, WARNING, ERROR, CRITICAL. Log to file: `logging.basicConfig(filename="app.log")`. Logging is configurable at runtime, has levels and formatting, and integrates with monitoring systems. Use it instead of print.
+
+User: How to read a Python traceback?
+Joe: Tracebacks read bottom-up: the last line is the exception type and message. Above it is the call stack — each frame shows filename, line number, and the code that failed. `Traceback (most recent call last)` means the LAST entry triggered the error. Read from bottom to top.
+
+User: What does 'TypeError: 'int' object is not callable' mean?
+Joe: You're calling an integer as if it were a function: `x = 5; x()`. Usually you accidentally reused a variable name that was previously a function: `sum = some_list; total = sum(items)` — now `sum` is the list, not the builtin. Don't shadow builtins.
+
+User: What does 'KeyError' mean?
+Joe: A dictionary key doesn't exist. `d = {"a": 1}; d["b"]` raises KeyError. Fix with `d.get("b", default)` or `d.setdefault("b", [])` or `if "b" in d: ...`. Or use `collections.defaultdict` to automatically create missing keys.
+
+User: What does 'IndexError' mean?
+Joe: Accessing a list index that doesn't exist. `l = [1,2,3]; l[5]` raises IndexError. Check length first: `if idx < len(l): ...`. Use `l[-1]` for the last element (works for empty lists too — wait, no, `[] [-1]` raises IndexError too). Guard with `if l:`.
+
+User: What does 'AttributeError' mean?
+Joe: An object doesn't have the attribute/method you're accessing. `x = 5; x.append(1)` — int has no append. Check type with `type(x)` or `hasattr(x, "method")`. Common cause: `NoneType` object has no attribute 'foo' — your function returned None when you expected an object.
+
+User: How to use conditional breakpoints?
+Joe: In pdb: `b 42, x > 5` breaks at line 42 only when x > 5. In VSCode: right-click a breakpoint → 'Edit Breakpoint' → enter expression like `user_id == 123`. Great for breaking in loops or handling-specific conditions without hitting the breakpoint hundreds of times.
+
+User: What's the difference between stepping over and into?
+Joe: Step over (F10, `n` in pdb) executes the current line completely — if it calls a function, that function runs uninterrupted. Step into (F11, `s` in pdb) goes into the function call so you can debug it line by line. Use step over for library code you trust, step into for your own functions.
+
+User: How to debug a segfault in Python?
+Joe: Segfaults mean Python crashed C code — usually via a C extension (numpy, Cython, etc.). Run with `gdb python` then `run script.py`. When it crashes, `bt` (backtrace) shows where. Python's `faulthandler` module catches segfaults: `import faulthandler; faulthandler.enable()` — but it only helps sometimes.
+
+User: How to inspect variables at a crash site?
+Joe: Run `python3 -m pdb script.py` and use `c` to run until crash. Or set `PYTHONFAULTHANDLER=1` for a backtrace. For post-mortem: `python3 -m pdb -c continue script.py` then interact after crash. Better: wrap in `try/except` and call `pdb.post_mortem()` in the except block.
+
+User: What are watchpoints?
+Joe: In pdb: `display x` prints x every time execution stops. In VSCode: add variables to the WATCH panel. Watchpoints monitor expressions — add `len(items)` to see it change as you step through a loop. More powerful than just looking at local variables because you can watch computed expressions.
+
+User: How to debug an infinite loop?
+Joe: Pause the program (Ctrl+C in terminal, pause in VSCode) and inspect. Check loop condition `while x < 10:` — is x being incremented? Is there a `break` that can be reached? Use `for i in range(1000):` with a break as a safety limit instead of `while True`.
+
+User: How to debug async Python code?
+Joe: Use `asyncio.run(amain())` with breakpoint() inside the async function. VSCode debugger handles async well. pdb works but stepping through awaits can be confusing. Consider `aiomonitor` for interactive debugging of running async apps. `asyncio.create_task` silently swallows exceptions — always handle them.
+
+User: What's the PYTHONDEVMODE flag?
+Joe: `python -X dev script.py` enables dev mode: turns warnings into errors, enables debug memory allocator, checks for retained references. Catches common issues like unclosed files, deprecated API usage, and reference bugs. Slower but catches issues for development. Never use in production.
+
+User: How to debug memory leaks?
+Joe: Use `tracemalloc` for memory tracing: `python -X tracemalloc script.py`. For running processes, `objgraph` shows reference chains. `gc.get_objects()` lists all tracked objects. `gc.collect()` forces garbage collection. Common culprits: circular references (with `__del__`), caches without limits, closures holding large objects.
+
+User: How to profile code to find bottlenecks?
+Joe: `python -m cProfile script.py` runs profiler. `python -m cProfile -o profile.stats script.py` saves to file. Analyze with `pstats` or `snakeviz profile.stats` (visual). `import timeit; timeit.timeit("func()", number=1000)` for microbenchmarks. Profile before optimizing — don't guess.
+
+User: How to debug a failing import?
+Joe: `python -v script.py 2>&1 | grep "import"` shows every import attempt. Check `sys.path` — print it to see where Python looks. `ModuleNotFoundError: No module named 'x'` — either not installed, not in PYTHONPATH, or has a name clash with another module. Try `python -c "import x"` to isolate.
+
+User: What's a post-mortem debugger?
+Joe: Post-mortem means debugging after the crash. `python -m pdb script.py` then `c` (continue) until it crashes — pdb drops into interactive mode at the crash site. `pdb.pm()` inside a `sys.excepthook` does the same. Useful when you can't reproduce a crash interactively.
+
+User: How to set breakpoints in pytest?
+Joe: Add `breakpoint()` in your test code or the code under test. Run `pytest -s` (disable stdout capture) to make the debugger interactive. Or `pytest --pdb` drops into pdb at the first failure. `pytest --pdb -x` stops at the first failed test and enters debug.
+
+User: My program crashes with a TypeError but I can't see where the value is wrong.
+Joe: Add `breakpoint()` right before the crash line. Run it, then print the suspicious variables with `p varname`. If you're in a loop, set a conditional breakpoint. For post-mortem: run `python -m pdb script.py`, type `c`, and when it crashes you'll be at the crash site with full access to all frames.
+User: What if it's a web server that crashes on a specific request?
+Joe: Three options: 1) Add `breakpoint()` in the handler and send the request manually. 2) Use `PYTHONDEVMODE=1` to get extra warnings. 3) Set up a logging middleware that dumps request context before processing. For web apps, pdb in a request handler blocks the server — use `pdb.set_trace()` with a single-threaded dev server.
+
+User: I keep finding bugs by adding print statements. Is that really so wrong?
+Joe: It's fine for quick exploration. The danger is that prints pollute your code, you have to remember to remove them, and they don't help at all for race conditions or production issues. My rule: print during initial development, switch to logging for anything that might ship, use pdb/ipdb for actual bug hunts.
+User: But pdb feels slow to start up.
+Joe: It does at first — muscle memory for the commands takes a day. Start with just 4: `n` (next), `s` (step), `c` (continue), `p varname` (print). After a few sessions it becomes faster than adding/removing prints. For a middle ground, use `python -m pdb -c "continue" script.py` to auto-run and stop at crashes.
+
+User: What is PEP 8?
+Joe: PEP 8 is Python's official style guide. Key rules: 4-space indentation, 79-char line limit, two blank lines before classes/functions, one blank line between methods, spaces around operators, lowercase_with_underscores for functions/variables, CamelCase for classes. Tools like `black` auto-format to PEP 8.
+
+User: What does flake8 do?
+Joe: flake8 checks style and quality: line length, syntax errors, unused imports, undefined variables, complexity. Config in `.flake8` or `setup.cfg`. `flake8 src/` runs checks. `# noqa` comment suppresses a warning on a specific line. Flake8 is fast — it doesn't execute your code.
+
+User: What does pylint check?
+Joe: pylint is deeper than flake8 — it checks naming conventions, code duplication, too-many-arguments, too-many-branches, unused arguments, and can detect some bugs. Slower but catches more. `pylint mymodule.py` scores your code from -10 to 10. Config in `.pylintrc`. Some rules are controversial — disable what doesn't fit.
+
+User: What is mypy?
+Joe: mypy is Python's static type checker. With type annotations, mypy can catch bugs before runtime: `def add(a: int, b: int) -> int: return a + b`. `mypy src/` checks that callers pass the right types. `Optional[str]` allows None. `Union[int, float]` for multiple types. `Any` opts out of checking.
+
+User: How does black work?
+Joe: black is an uncompromising code formatter. `black src/` reformats all files to a consistent style. Almost no configuration options — it decides indentation, quotes, line breaks. Integrates with pre-commit. The only real choice is line length (`--line-length 88` instead of the default 88). Stop arguing about formatting.
+
+User: What is isort?
+Joe: isort sorts imports alphabetically and separates them into sections: standard library, third-party, local. `isort src/` rewrites import blocks. Use with `--profile black` to avoid conflicts with black's line splitting. `isort --check-only` just reports without changing (good for CI).
+
+User: What are pre-commit hooks?
+Joe: pre-commit is a framework for git hooks. Define hooks in `.pre-commit-config.yaml`: `repos: - repo: https://github.com/psf/black; rev: 24.1; hooks: - id: black`. Run `pre-commit install` to activate. Run `pre-commit run --all-files` to check everything. Each hook runs in an isolated environment.
+
+User: What does pycodestyle do?
+Joe: pycodestyle (formerly pep8) checks PEP 8 compliance. It's simpler than flake8 — line length, indentation, whitespace only. Flake8 wraps pycodestyle plus pyflakes (logic errors) and mccabe (complexity). Most people use flake8 directly; pycodestyle is rarely used standalone.
+
+User: How to set up pre-commit for a Python project?
+Joe: Create `.pre-commit-config.yaml` with hooks for black, isort, flake8, and trailing-whitespace. `repos: - repo: https://github.com/pre-commit/pre-commit-hooks; rev: v4.6.0; hooks: - id: trailing-whitespace - id: end-of-file-fixer`. Run `pre-commit install` once. It runs on every `git commit`.
+
+User: What is code complexity and why does it matter?
+Joe: Cyclomatic complexity measures how many independent paths through code exist — more paths = harder to test, easier to break. flake8 with `--max-complexity 10` flags functions exceeding 10 paths. If a function has 20+ paths, split it. Lower complexity correlates with fewer bugs.
+
+User: How to use pylint in CI?
+Joe: `pylint src/ --fail-under=8.0` fails CI if score drops below 8. `--disable=C0301,W0611` to suppress specific codes. `pylint --generate-rcfile > .pylintrc` creates a config. Use `pylint --errors-only` to focus on potential bugs instead of style. pylint in CI prevents quality regressions.
+
+User: What are type annotations good for?
+Joe: Type annotations make code self-documenting: `def fetch_user(user_id: int) -> User | None:` says exactly what goes in and out. mypy catches mismatches. IDEs use them for autocomplete. They add verbosity but the trade-off is worth it for projects over ~1000 lines. Start with `mypy --strict` on new files.
+
+User: How to handle imports that are only for type checking?
+Joe: `from typing import TYPE_CHECKING; if TYPE_CHECKING: from x import Y`. `TYPE_CHECKING` is False at runtime, True during type checking. This avoids circular imports at runtime while still providing type info. Use `@overload` decorators for functions with multiple calling signatures.
+
+User: What is the 'Don't Repeat Yourself' (DRY) principle?
+Joe: DRY means every piece of knowledge has one representation. Don't copy-paste code — extract a function. Don't hardcode the same value in 10 places — use a constant. Don't repeat configuration — use loops. Repeated code means if you fix a bug in one place, you have to fix it everywhere.
+
+User: What is the Single Responsibility Principle?
+Joe: A function or class should have one reason to change. A function that validates input, processes data, and formats output does too much. Split it: `validate()`, `process()`, `format()`. Easier to test, easier to reason about, easier to change without breaking other stuff.
+
+User: How to write Pythonic code?
+Joe: Use list comprehensions instead of `for`+`append`. Use `enumerate` instead of `range(len(...))`. Use `with open(...)` for file I/O. Use `for item in iterable` instead of indexing. Use `any()`/`all()` for conditions. Use `str.join()` instead of `+=` in loops. Pythonic means idiomatic, leveraging language features.
+
+User: What is a linter?
+Joe: A linter analyzes code for potential errors, style violations, and suspicious patterns. flake8, pylint, and pycodestyle are linters. They catch unused imports, undefined variables, syntax errors, complexity issues. Run them early and often — they're the first line of defense against bugs.
+
+User: How to handle line length in black?
+Joe: black defaults to 88 chars (not 79). `--line-length 79` aligns with PEP 8 strict. `--line-length 100` is common for teams that prefer wider lines. Black will break lines that exceed the limit by wrapping in parentheses or splitting arguments. It's better to let black wrap than to wrap manually.
+
+User: What is a formatter vs a linter?
+Joe: Formatters (black, isort) automatically rewrite code to match a style — they change files. Linters (flake8, pylint) report issues without changing files. Use both: formatter handles the mechanical details, linter catches deeper issues. Run formatters first, then linters.
+
+User: How to ignore a specific line in flake8?
+Joe: Add `# noqa: F841` at the end of the line to ignore 'assigned but unused' for that line. `# noqa` ignores ALL checks on that line. `# noqa: E301,W401` for multiple specific codes. Flake8 codes: E=pycodestyle, W=pep8 warning, F=pyflakes, C=mccabe complexity.
+
+User: What is pydocstyle?
+Joe: pydocstyle checks that docstrings follow conventions (PEP 257). `--convention=google` checks Google-style docs, `--convention=numpy` for numpy style. Some teams love enforced docstrings, others find them noisy. I'd rather have good code with comments than perfect docstrings on every trivial function.
+
+User: How to set up pylint in a pre-commit hook?
+Joe: Add to `.pre-commit-config.yaml`: `- repo: https://github.com/PyCQA/pylint; rev: v3.0; hooks: - id: pylint; args: [--fail-under=7.0, --rcfile=.pylintrc]`. Pylint is slow compared to flake8 — consider running it only in CI, not in pre-commit. Pre-commit should be fast (flake8/black), CI can be thorough (pylint/mypy).
+
+User: My team argues about formatting constantly. How do I stop it?
+Joe: Add `black` to your pre-commit hooks and CI. Tell everyone 'the computer decides, we move on.' It's liberating — one tool with almost zero config. Pair it with `isort --profile black` and you eliminate 90% of style debates. The first PR that introduces black reformats everything. That one PR is painful; every PR after is freed.
+
+User: Is static typing worth the overhead?
+Joe: For scripts and small projects, skip it. For anything over ~2000 lines or with multiple contributors — yes, absolutely. mypy catches real bugs: passing None when None isn't expected, calling methods that don't exist on `Optional[X]`, passing a string where an int is needed. The annotation syntax takes an afternoon to learn.
+User: But I see `Any` everywhere in typed codebases.
+Joe: `Any` is a escape hatch — it tells mypy to stop checking. Use it sparingly when integrating with untyped libraries or for truly dynamic code. Prefer `object` if you just need to store arbitrary values. `TypeVar` and `Generic` let you type generic functions. Start with simple annotations and add generics as needed.
+
+User: What is a virtual environment?
+Joe: A virtual environment is an isolated Python environment with its own packages. `python -m venv .venv` creates one. Activate with `source .venv/bin/activate`. Packages installed with pip go into the venv, not system-wide. Keeps projects from conflicting on package versions.
+
+User: How to create and use a venv?
+Joe: `python3 -m venv myenv` creates. `source myenv/bin/activate` activates (macOS/Linux; `myenv\Scripts\activate` on Windows). `deactivate` exits. `pip list` shows packages in the current env. Always use `python -m venv` — it's built-in, no extra installs needed.
+
+User: What is requirements.txt?
+Joe: `requirements.txt` lists pinned dependencies. `pip freeze > requirements.txt` saves current packages. `pip install -r requirements.txt` installs them. Pins exact versions (`requests==2.31.0`) for reproducibility. `>=` allows upgrades. Split into `requirements-dev.txt` for test tools, `requirements.txt` for production deps.
+
+User: What is pyproject.toml?
+Joe: `pyproject.toml` is the modern Python project config (PEP 517/518/621). Replaces `setup.py`, `setup.cfg`, `requirements.txt` for project metadata. `[project]` table has name, version, dependencies. `[build-system]` specifies build backend. `[tool.black]`, `[tool.pylint]` configure tools. Single source of truth for modern projects.
+
+User: What is pipenv?
+Joe: pipenv combines pip and virtualenvs with a Pipfile. `pipenv install requests` installs and tracks dependencies in Pipfile.lock (precise hashes). `pipenv shell` activates. `pipenv lock -r > requirements.txt` exports. The lockfile ensures everyone gets identical versions. Slower than plain pip but safer for consistency.
+
+User: What is poetry?
+Joe: Poetry is a modern dependency manager. `poetry new myproject` creates a project. `poetry add requests` adds a dependency. `poetry install` installs everything. `poetry build` builds a wheel. Uses `pyproject.toml` natively with `poetry.lock` for pinning. Has dependency resolution better than pip's.
+
+User: How does conda differ from pip?
+Joe: conda is a cross-language package manager (Python, R, C libs). `conda install numpy` installs from conda-forge. conda handles non-Python deps (CUDA, OpenSSL). pip is Python-only from PyPI. Use conda when native dependencies are tricky (data science, ML), pip for pure Python projects. They coexist but can conflict.
+
+User: How to check which Python and venv you're using?
+Joe: `which python` shows the python binary path. `which pip` shows the pip path — if it points to `.venv/bin/pip`, you're in a venv. `python -c "import sys; print(sys.executable)"` is the most reliable way. `pip -V` also shows the Python path.
+
+User: What is pip freeze for?
+Joe: `pip freeze` lists all installed packages with versions. Used to generate `requirements.txt` for reproducibility: `pip freeze > requirements.txt`. Note: `pip freeze` lists EVERYTHING including dependencies of dependencies. `pip list --format=freeze` is equivalent. Some projects use `pipreqs` to list only direct dependencies.
+
+User: How to create a minimal requirements.txt?
+Joe: Instead of `pip freeze` (which includes all transitive deps), list only your direct dependencies with loose version constraints: `requests>=2.28,<3`. Then `pip install -r requirements.txt` installs the latest compatible versions. Pin only when you need to prevent upgrades that break things. Better: use `pyproject.toml` with `[project]dependencies`.
+
+User: What's the difference between pip and pip3?
+Joe: On systems with Python 2 and 3, `pip` might point to Python 2. `pip3` always points to Python 3. On modern systems (no Python 2), they're the same. Best practice: use `python -m pip` regardless of platform. This ensures pip runs with the Python you intend.
+
+User: How to uninstall a package and its dependencies?
+Joe: `pip uninstall <package>` removes just that package. Dependencies remain. `pip-autoremove` (third-party) removes unused deps. Better approach: use `pip install --no-deps <package>` during installation if you don't need auto-dependency management. Or use poetry/pipenv which track what depends on what.
+
+User: What is the --user flag in pip?
+Joe: `pip install --user <package>` installs to the user's site-packages instead of system-wide. No root needed. Avoid in venvs (they isolate already). Useful when you can't create a venv for some reason. Packages go to `~/.local/lib/python3.x/site-packages`. Can cause conflicts between projects.
+
+User: How to manage multiple Python versions?
+Joe: Use `pyenv` to install multiple Python versions: `pyenv install 3.12`. `pyenv global 3.12` sets default. `pyenv local 3.10` sets per-project version. `pyenv virtualenv 3.12 myenv` creates a venv with a specific version. On macOS, `brew install pyenv` works. On Linux, `curl` the installer script.
+
+User: How to check a package's installed files?
+Joe: `pip show -f <package>` lists installed files. `pip show <package>` shows metadata: version, dependencies, location. `python -c "import module; print(module.__file__)"` shows where a module resides. Useful when you have conflicting versions and need to find the actual file.
+
+User: What's an editable install?
+Joe: `pip install -e .` (or `pip install -e mypackage`) installs a package in editable mode — changes to the source are immediately reflected without reinstalling. Used during development. The package is linked to the source directory via a `.pth` file or symlink. Essential for developing libraries.
+
+User: How to generate requirements.txt from pyproject.toml?
+Joe: For poetry: `poetry export -f requirements.txt --output requirements.txt`. For `pip-tools`: `pip-compile pyproject.toml` generates `requirements.txt`. Or just instruct users to install via `pip install .` which reads `pyproject.toml` directly. requirements.txt is less needed with modern tooling.
+
+User: What is a lock file?
+Joe: A lock file pins exact versions (including transitive deps) with hashes. `poetry.lock`, `Pipfile.lock`, `requirements-lock.txt`. Ensures every install is identical. Crucial for production deployments. Plain `requirements.txt` with `==` pins only top-level deps. A lock file pins the entire dependency tree.
+
+User: How to install a package from GitHub?
+Joe: `pip install git+https://github.com/user/repo.git` installs from the default branch. `pip install git+https://github.com/user/repo.git@v1.0` installs a specific tag. `pip install git+https://github.com/user/repo.git@branch-name` for a branch. `pip install git+https://github.com/user/repo.git#egg=name` at a specific subdirectory.
+
+User: How to handle platform-specific dependencies?
+Joe: PEP 508 environment markers: `pyproject.toml` can have `'pywin32; sys_platform == "win32"'`. requirements.txt: `package; sys_platform == 'linux'`. `extras_require` in setup.py mapping. Or use conditional installs in CI. For simple cases, comment the requirements and let users install conditionally.
+
+User: What is pip-tools?
+Joe: pip-tools provides `pip-compile` and `pip-sync`. `pip-compile requirements.in` generates `requirements.txt` with pinned transitive dependencies. `pip-sync requirements.txt` installs EXACTLY what's in the file (uninstalling anything extra). Gives lockfile behavior without switching from pip to poetry. Great for incremental adoption.
+
+User: I installed a package with pip but my script can't import it.
+Joe: Check which Python your script is using: `which python` and `which pip`. They might point to different interpreters. Common scenario: pip is system Python, your script uses venv Python. Fix with `python -m pip install <pkg>` — this always uses the current Python's pip.
+User: What about the PATH order?
+Joe: Yes, if your venv isn't activated, `python` might resolve to `/usr/bin/python3` while pip resolves to `~/.local/bin/pip`. Always use `python -m pip` instead of bare `pip`. The `-m` flag runs a module with the same interpreter — zero ambiguity about which Python gets the package.
+
+User: My project needs Python 3.9 but the system has 3.11. What do?
+Joe: Install pyenv, then `pyenv install 3.9.18`, `pyenv local 3.9.18` in your project dir. Then `python -m venv .venv` creates a venv with 3.9. The `.python-version` file pyenv creates tells the whole team which version to use. Commit that file.
+User: Can't I just use conda instead?
+Joe: Yes, conda works too: `conda create -n myenv python=3.9`. But pyenv+venv is lighter — no extra package manager. Conda is worth it when you need non-Python deps (numpy with MKL, GPU libs). For pure Python apps, pyenv+venv is simpler and more standard.
+
+User: What is a Dockerfile?
+Joe: A Dockerfile is a recipe for building a container image. Starts with `FROM python:3.11-slim`, then `WORKDIR /app`, `COPY requirements.txt .`, `RUN pip install -r requirements.txt`, `COPY . .`, `CMD ["python", "app.py"]`. Each line is a layer. Order matters — put things that change less often earlier for better caching.
+
+User: How to build and run a Docker image?
+Joe: `docker build -t myapp .` builds the image from the Dockerfile. `docker run -p 8080:80 myapp` runs it, mapping host port 8080 to container port 80. `docker run -d` detaches. `docker ps` lists running containers. `docker stop <id>` stops. `docker rm <id>` removes a container.
+
+User: What is docker-compose?
+Joe: Docker Compose defines multi-container setups in `docker-compose.yml`. Example: `services: web: build: .; ports: - "8080:80"; depends_on: - db; db: image: postgres`. `docker compose up` starts everything. `docker compose down` stops and cleans up. Essential for apps with databases, caches, queues.
+
+User: What are Docker volumes?
+Joe: Volumes persist data outside the container's filesystem. `docker run -v /host/path:/container/path` mounts a bind volume. `docker compose` volumes section defines named volumes. Without volumes, database data is lost when the container stops. Use volumes for DB data, uploaded files, logs.
+
+User: How to manage ports with Docker?
+Joe: `-p host:container` maps ports. `-p 8080:80` sends host port 8080 to container 80. Multiple ports: `-p 8080:80 -p 443:443`. In compose: `ports: - "8080:80"`. Use high ports (>1024) to avoid permission issues. Only expose what's needed — don't map the database port to the host.
+
+User: What are Docker layers?
+Joe: Each instruction in a Dockerfile creates a layer. Layers are cached — if `requirements.txt` hasn't changed, Docker reuses the `pip install` layer. This is why you put `COPY requirements.txt` BEFORE `COPY .` — code changes more often than dependencies. `docker history --no-trunc <image>` shows layers and sizes.
+
+User: What is .dockerignore?
+Joe: `.dockerignore` works like `.gitignore` — files/dirs to exclude from the Docker build context. Exclude `.venv`, `__pycache__`, `.git`, `.env`, `node_modules`. Smaller context = faster builds. Without it, Docker sends your entire project directory to the daemon.
+
+User: How to use environment variables in Docker?
+Joe: `docker run -e MY_VAR=value` sets an env var. `docker run --env-file .env` loads from a file. In Dockerfile: `ENV MY_VAR=default_value`. In compose: `environment: - MY_VAR=value`. Don't bake secrets into images — use Docker secrets or your CI's secret management.
+
+User: What is a multi-stage Docker build?
+Joe: Multi-stage builds use multiple `FROM` statements to separate build and run stages. `FROM python:3.11 AS builder` builds, `FROM python:3.11-slim` copies only the built artifacts. The final image excludes build tools (gcc, headers, etc.) — much smaller. Common for compiled languages and Python packages with C extensions.
+
+User: How to debug a Docker container?
+Joe: `docker logs <container>` shows stdout/stderr. `docker exec -it <container> /bin/bash` opens a shell inside the running container. `docker run -it myapp /bin/bash` starts a container and drops into bash instead of the default CMD. For Python apps: `docker run -it myapp python` for a REPL inside the container.
+
+User: How to view running containers?
+Joe: `docker ps` lists running containers. `docker ps -a` includes stopped containers. `docker ps -s` shows resource usage. `docker stats` shows live CPU/memory/network for all containers. `docker top` (separate tool from docker-tools) gives a top-like view of containers.
+
+User: How to clean up Docker resources?
+Joe: `docker system prune` removes stopped containers, dangling images, and networks. `docker system prune -a` includes unused images. `docker volume prune` removes orphaned volumes (they take up space and don't auto-remove). `docker image prune` removes dangling images only. Run `prune` weekly on dev machines.
+
+User: How to copy files into/from a container?
+Joe: `docker cp <container>:/path/in/container /host/path` copies out. `docker cp /host/path <container>:/path/in/container` copies in. Container IDs are from `docker ps`. For development, prefer bind mounts over copy: `docker run -v $(pwd):/app` syncs the host directory live (use with hot-reload).
+
+User: How to reduce Docker image size?
+Joe: Use `-slim` base images. Chain RUN commands to reduce layers: `RUN apt-get update && apt-get install -y pkg && apt-get clean`. Multi-stage builds. Remove pip cache: `RUN pip install --no-cache-dir -r requirements.txt`. `docker images` shows sizes. `docker-slim` tool can shrink further.
+
+User: How to handle Docker networking?
+Joe: Default: containers can see each other on a user-defined bridge network. `docker network create mynet`, `--network mynet` attaches. Compose creates a default network per project. Containers reach each other by service name. Expose ports to host with `-p`. `--network host` shares the host's network (no isolation, but no port mapping).
+
+User: What is Docker Compose depends_on?
+Joe: `depends_on: - db` controls startup order — web starts after db. It doesn't wait for the DB to be ready, just for the container to start. Use a script like `wait-for-it.sh` or `dockerize` to actually wait for the DB port. Compose v3 healthchecks improve this: `depends_on: db: condition: service_healthy`.
+
+User: How to run a one-off command in a compose service?
+Joe: `docker compose run web python manage.py migrate` runs the command in a new container using the web service's config. `docker compose exec web bash` runs a command in a running container. `run` creates a new container; `exec` connects to an existing one.
+
+User: What is ARG vs ENV in Dockerfile?
+Joe: `ARG` sets build-time variables (available during `docker build`), not available at runtime. `ENV` sets runtime environment variables. `ARG DEBIAN_FRONTEND=noninteractive` speeds up apt. `ENV PYTHONDONTWRITEBYTECODE=1` sets runtime Python behavior. Use ARG for build config, ENV for app config.
+
+User: How to pass build arguments to docker build?
+Joe: `docker build --build-arg MY_VAR=value -t myapp .`. In Dockerfile: `ARG MY_VAR`. Default: `ARG MY_VAR=default`. ARGs can set ENV: `ARG VERSION; ENV APP_VERSION=$VERSION`. Don't put secrets in build args (they appear in image history). Use runtime env vars or secrets for sensitive data.
+
+User: How to troubleshoot Docker build failures?
+Joe: `docker build --progress=plain` shows full output (not just the progress bar). `docker build --no-cache` rebuilds from scratch to rule out cache issues. Comment out later lines and rebuild incrementally. Or run the failing step's command interactively: `docker run -it <intermediate-layer> /bin/bash`.
+
+User: My Docker image is 1.2GB. How do I slim it down?
+Joe: Switch from `python:3.11` to `python:3.11-slim` (drops ~800MB). Use multi-stage: first stage with build deps, second stage copies only needed files. Switch to `--no-cache-dir` on pip install. Combine apt-get commands into one RUN. Add `.dockerignore` to exclude `__pycache__` and `.venv`. You should get under 300MB.
+User: Even slimmer?
+Joe: Use `python:3.11-alpine` (~150MB for Python itself). But Alpine uses musl instead of glibc — some wheels don't work, numpy needs compilation. For Python apps without C deps, Alpine is great. For anything with numpy/pandas, stick with slim. `docker-slim` can also shrink images by analyzing runtime dependencies.
+
+User: Why does docker build reinstall pip packages every time?
+Joe: You probably have `COPY . .` BEFORE `RUN pip install -r requirements.txt`. Docker layer caching requires the input files to be unchanged. Put `COPY requirements.txt .` and `RUN pip install -r requirements.txt` BEFORE `COPY . .`. That way pip install only reruns when requirements.txt changes — which is rare — not on every code edit.
+User: I already have that order but it's still slow.
+Joe: Check the `.dockerignore` — if it's missing `__pycache__`/`.git`/`.venv`, the build context is larger than needed, making the COPY step slower even if cached. Also verify `pip install` isn't using `--upgrade` or `--force-reinstall` which bypasses pip's cache. Use `--no-cache-dir` for smaller images but keep the Docker cache.
+
+User: What is a GitHub Actions workflow?
+Joe: A workflow is a YAML file in `.github/workflows/`. It triggers on events (push, PR, schedule). Has jobs that run on runners. Each job has steps that run commands or actions. Example: on push to main, run tests, then deploy. The YAML goes in `.github/workflows/ci.yml`.
+
+User: How to define a job in GitHub Actions?
+Joe: `jobs: test: runs-on: ubuntu-latest; steps: - uses: actions/checkout@v4; - uses: actions/setup-python@v5 with: python-version: '3.11'; - run: pip install pytest && pytest`. Jobs run in parallel by default. `needs:` creates dependencies. `matrix:` runs with multiple versions.
+
+User: What are GitHub Actions runners?
+Joe: Runners execute workflows. GitHub-hosted runners: Ubuntu, Windows, macOS. Self-hosted runners run on your infra. Runners are ephemeral — each run gets a clean VM. Ubuntu-latest is the most common and free. Larger runners (more CPU/RAM) cost. macOS runners are resource-intensive (limited free minutes).
+
+User: How to set up matrix testing in CI?
+Joe: `strategy: matrix: python-version: ['3.9', '3.10', '3.11']; os: [ubuntu-latest, macos-latest]`. Runs all combinations (6 jobs). `fail-fast: false` keeps running even if one fails. Use `matrix.python-version` and `matrix.os` in setup steps. The matrix key must be JSON-serializable (strings, not booleans).
+
+User: How to cache dependencies in GitHub Actions?
+Joe: `- uses: actions/cache@v4 with: path: ~/.cache/pip; key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}`. Cache keys are immutable — the key generates a new cache when files change. `restore-keys` provides fallback cache. Cache for pip, npm, Docker layers. Max cache size is 10GB.
+
+User: How to deploy with GitHub Actions?
+Joe: Example deploy step: `- name: Deploy; run: ssh user@host "cd /app && git pull && docker compose up -d"; env: SSH_KEY: ${{ secrets.SSH_KEY }}`. Use `deploy` environment for protection rules. `secrets.DOCKER_PASSWORD` for registry auth. For cloud: uses `aws-actions/configure-aws-credentials@v4`.
+
+User: How to use environment variables in GitHub Actions?
+Joe: `env:` at step/job/workflow level. `${{ vars.MY_VAR }}` for org/repo variables. `${{ secrets.MY_SECRET }}` for secrets (masked in logs). Repository Settings → Secrets and Variables → Actions. Don't hardcode secrets — always use GitHub Secrets. Secrets aren't available in PRs from forks.
+
+User: What is a composite action?
+Joe: A composite action packages multiple steps into a reusable unit. Create `.github/actions/my-action/action.yml` with `runs: using: composite; steps: - run: ...; shell: bash`. Reference with `uses: ./.github/actions/my-action`. Avoids copy-pasting the same step sequence across workflows.
+
+User: How to trigger a workflow on a schedule?
+Joe: `on: schedule: - cron: '0 6 * * 1-5'` runs weekdays at 6 AM UTC. The cron syntax is standard: minute hour day-of-month month day-of-week. Scheduled workflows run on the default branch. Useful for nightly builds, dependency updates, weekly test runs, etc.
+
+User: How to make a workflow conditional on file changes?
+Joe: `on: push: paths: - 'src/**' - '!src/docs/**'`. `pull_request: paths-ignore: - '*.md'`. Limits workflow runs to relevant changes. Use paths to skip CI on docs-only changes. `paths` and `paths-ignore` work with glob patterns. Multiple paths are OR — any match triggers the workflow.
+
+User: How to run only specific jobs on failure?
+Joe: `if: ${{ failure() }}` runs a job only when a previous job failed. `if: ${{ always() }}` always runs (even on cancellation). `if: ${{ success() }}` is the default. Useful for cleanup jobs: `if: always()` ensures temp resources are cleaned up regardless of outcome.
+
+User: How to share data between jobs?
+Joe: Use artifacts or caches. `- uses: actions/upload-artifact@v4 with: name: dist; path: dist/`. Download in another job: `- uses: actions/download-artifact@v4`. Artifacts persist for 90 days. For small data, use `outputs: result: ${{ steps.step_id.outputs.value }}` to pass a single value.
+
+User: How to protect a branch with CI checks?
+Joe: In GitHub repo Settings → Branches → Add rule. Require status checks to pass before merging. Required checks by name (e.g., 'build', 'test (3.11)'). Also require PR reviews. Branch protection also prevents force-push to main. Combined with CI, this ensures broken code never reaches main.
+
+User: How to use environment protection in GitHub Actions?
+Joe: Environments (Settings → Environments) add protection: required reviewers, wait timer, deployment branches. `environment: production` in a job enforces them. Helps prevent accidental deployments. Use separate environments for staging and prod. Each environment has its own secrets and protection rules.
+
+User: How to run actions on pull request comments?
+Joe: `issue_comment` event triggers on PR comments. Use `if: github.event.issue.pull_request` to restrict to PRs. Common for `/deploy` or `/test` style bot commands. Actions can comment back with results. The `github.event.comment.body` contains the command text.
+
+User: What is a reusable workflow?
+Joe: Reusable workflows (`.github/workflows/reusable.yml` with `on: workflow_call`) can be called from other workflows. `jobs: call-test: uses: ./.github/workflows/reusable.yml with: python: '3.11'`. Share CI logic across repos. Similar to composite actions but at the workflow level — full job, not just steps.
+
+User: How to debug GitHub Actions?
+Joe: Add `ACTIONS_STEP_DEBUG=true` to secrets for step-level debug logs. Add `ACTIONS_RUNNER_DEBUG=true` for runner-level logs. Enable debug logging in repo Settings → Secrets → Actions. Use `actions/upload-artifact@v4` to preserve test outputs. SSH into a runner with `mxschmitt/action-tmate@v1` for interactive debugging.
+
+User: How to cancel a workflow run?
+Joe: `concurrency: group: ${{ github.workflow }}-${{ github.ref }}; cancel-in-progress: true` cancels previous runs on the same branch. `github.ref` makes each branch its own concurrency group. Without this, pushing 3 commits in quick succession runs 3 CI pipelines. With it, only the latest runs.
+
+User: What are GitHub Actions artifacts?
+Joe: Artifacts are files saved from a workflow: test reports, coverage HTML, built packages. `actions/upload-artifact@v4` uploads. Artifacts persist 90 days (configurable). Download from the Actions tab or `actions/download-artifact@v4`. Use for sharing data between jobs and preserving build outputs.
+
+User: How to use OIDC (OpenID Connect) in GitHub Actions?
+Joe: OIDC lets workflows authenticate to cloud providers without storing long-lived secrets. Configure a provider's trust config (e.g., AWS: `aws-actions/configure-aws-credentials@v4` with `role-to-assume: ...`). GitHub issues a short-lived token. More secure than storing cloud tokens in secrets. Supported by AWS, Azure, GCP, HashiCorp.
+
+User: My CI keeps failing because of formatting. How do I set up auto-formatting?
+Joe: Add a workflow that runs `black --check .` and `isort --check --profile black .` on every PR. If they fail, the contributor runs `black .` locally and amends. Pro tip: add a 'format' job that actually runs `black` and pushes the changes back to the PR branch using `ad-m/github-push-action@v2`.
+User: Pushing changes to someone's PR branch sounds intrusive.
+Joe: It is. Better approach: add a CI step that just formats but FAILS the check — the contributor formats themselves. Or use pre-commit.ci which auto-commits formatting fixes. GitHub's 'suggest changes' feature also works. The least friction: `black` in pre-commit so it never reaches CI.
+
+User: How do I set up CI for a monorepo with multiple services?
+Joe: Use path filters: `on: push: paths: - 'service-a/**'` triggers service A's workflow only when its code changes. Have separate jobs for each service. Use a matrix if services share the same test pattern. `dorny/paths-filter@v3` is great for complex path detection — it sets output variables per service.
+User: And the build time?
+Joe: Cache dependencies per service. Use `actions/cache@v4` with keys that hash each service's dependency files. If services share a common library, build it as a composite action or publish it to an internal PyPI (or use pip's `--find-links` with a cached wheel directory). Matrix builds run in parallel.
+
+User: What are HTTP methods?
+Joe: GET (read), POST (create), PUT (replace), PATCH (partial update), DELETE (remove), HEAD (headers only), OPTIONS (available methods), CONNECT (tunnel), TRACE (diagnostic). GET/POST cover most use. Safety: GET/HEAD/OPTIONS are safe (no side effects). Idempotent: PUT/DELETE produce same result regardless of how many times called.
+
+User: What are HTTP status codes?
+Joe: 100s = informational. 200s = success (200 OK, 201 Created, 204 No Content). 300s = redirect (301 permanent, 302 temporary, 304 not modified). 400s = client error (400 bad request, 401 unauthorized, 403 forbidden, 404 not found, 429 rate limited). 500s = server error (500 internal, 502 bad gateway, 503 service unavailable).
+
+User: What are HTTP headers?
+Joe: Headers pass metadata: `Content-Type: application/json`, `Authorization: Bearer <token>`, `Accept: application/json` (what client wants), `Cache-Control: max-age=3600`, `Set-Cookie: session=abc`, `User-Agent: curl/8.0`. Request headers go client→server, response headers go server→client. Custom headers start with `X-` (deprecated convention) but now use standard registered names.
+
+User: What are cookies?
+Joe: Cookies are small pieces of data stored by the browser. Server sets them with `Set-Cookie`, browser sends them back with `Cookie`. Used for sessions, preferences, tracking. Attributes: `HttpOnly` (not accessible by JS), `Secure` (HTTPS only), `SameSite=Lax|Strict|None`, `Domain`, `Path`, `Max-Age`. Cookies are sent automatically in every request to the domain.
+
+User: What is a session?
+Joe: A session is server-side storage linked to a session ID (stored in a cookie). The browser sends the session ID; the server looks up the associated data. Unlike cookies, session data isn't visible to the client. Flask uses `signed_cookie` (data in cookie but signed) or server-side sessions with Flask-Session.
+
+User: What are REST principles?
+Joe: REST = Representational State Transfer. Resources identified by URL (`/users/42`). Actions use HTTP methods (GET /users, POST /users, GET /users/42, PUT /users/42, DELETE /users/42). Stateless — each request has all needed info. Responses are JSON. Use proper status codes. Version API with `/api/v1/` prefix.
+
+User: What is a JSON API?
+Joe: A JSON API returns JSON responses with standard structure. Request with `Accept: application/json`, respond with `Content-Type: application/json`. Standard patterns: `GET /api/users` returns `{"users": [...], "total": 42}`. POST to create: send JSON body, get `201` with location header. Error format: `{"error": "message", "code": 400}`.
+
+User: What is CORS?
+Joe: Cross-Origin Resource Sharing — browsers block requests from different origins. Server must include `Access-Control-Allow-Origin: *` (or specific domain) in responses. Preflight requests (OPTIONS) check allowed methods. Configure CORS per route or globally. Flask: `flask-cors` extension. FastAPI: `CORSMiddleware`. It's a browser policy, not a security feature for server-to-server.
+
+User: I'm confused about POST vs PUT vs PATCH.
+Joe: POST creates a new resource at a server-determined URL: `POST /users` → `201 /users/42`. PUT replaces an entire resource: `PUT /users/42` with the complete object — if it exists, replace it; if not, create at that URL. PATCH applies partial updates: `PATCH /users/42 {"name": "new"}` changes only the name field.
+User: So PUT is idempotent but POST is not?
+Joe: Exactly — calling PUT with the same body 10 times produces the same state (the resource ends up the same). POST 10 times creates 10 resources (unless the server deduplicates). PUT implies full representation; PATCH implies a diff. In practice, many APIs use POST for everything and PUT is less common.
+
+User: How to define a route in Flask?
+Joe: `@app.route('/hello') def hello(): return 'Hello, World!'`. Maps URL path to function. Returns string (HTML or plain text), dict (auto-JSONified), or Response object. Routes match exact paths by default. `/hello/` vs `/hello` differ — use `strict_slashes=False` to make them equivalent.
+
+User: How to handle URL parameters in Flask?
+Joe: Path params: `@app.route('/user/<int:id>')` — captures `id` as integer. Query params: `request.args.get('page', 1)` for `?page=2`. Use converters: `string`, `int`, `float`, `path` (accepts slashes), `uuid`. Multiple params: `/post/<int:year>/<slug>`.
+
+User: How to return JSON from Flask?
+Joe: `return {"message": "ok"}` — Flask automatically calls `jsonify()`. `return jsonify(users=[u.to_dict() for u in users])` for custom formatting. Set status code: `return {"error": "not found"}, 404`. Use `jsonify()` explicitly when you need a Response object or custom headers.
+
+User: How to handle request body in Flask?
+Joe: JSON: `request.get_json()` returns parsed dict. Form data: `request.form['field']` for POST forms. Files: `request.files['file']` returns a FileStorage. Headers: `request.headers.get('Authorization')`. URL params: `request.args`. Always validate input — use `marshmallow` or `pydantic` for complex validation.
+
+User: How to use blueprints in Flask?
+Joe: Blueprints organize routes into modules. `users = Blueprint('users', __name__); @users.route('/profile')`. Register: `app.register_blueprint(users, url_prefix='/users')`. Each blueprint can have its own templates, static files, and error handlers. Standard way to organize Flask apps beyond a single file.
+
+User: How to handle errors in Flask?
+Joe: `@app.errorhandler(404) def not_found(e): return {"error": "not found"}, 404`. Also handles 403, 500, etc. `abort(404)` raises an error programmatically. Custom exceptions: create a class extending `HTTPException` and register handler. For validation errors, return 400 with details instead of letting it crash.
+
+User: How to work with Flask extensions?
+Joe: Extensions add functionality: Flask-SQLAlchemy for DB, Flask-Login for auth, Flask-Migrate for Alembic, Flask-WTF for forms. Install with pip, initialize with `db = SQLAlchemy(app)` or `login_manager = LoginManager(app)`. Most use the `init_app(app)` pattern for the factory pattern. Check compatibility with your Flask version.
+
+User: What is the Flask app factory pattern?
+Joe: Instead of a global `app = Flask(__name__)`, define `def create_app(config): app = Flask(__name__); app.config.from_object(config); db.init_app(app); return app`. Benefits: multiple instances for testing, configuration per instance, avoids circular imports. Standard pattern for non-trivial Flask projects.
+
+User: How to set Flask configuration?
+Joe: `app.config['SECRET_KEY'] = 'your-secret'`. `app.config.from_object('config.DevelopmentConfig')` loads from a class. `app.config.from_envvar('FLASK_CONFIG')` loads from a file path. `app.config['DEBUG'] = True` enables debug mode. Use environment-specific config classes with separate settings for dev/test/prod.
+
+User: How to use sessions in Flask?
+Joe: `from flask import session; session['user_id'] = 42`. Flask uses signed cookies by default — data is in the browser cookie but signed to prevent tampering. `app.config['SECRET_KEY']` must be set. `session.permanent = True` changes lifetime to `PERMANENT_SESSION_LIFETIME` (31 days default). For server-side sessions, use Flask-Session.
+
+User: My Flask view is huge — how do I organize it?
+Joe: Split into blueprints by resource: `auth_bp` for login/logout, `users_bp` for user CRUD, `api_bp` for API endpoints. Move business logic into service modules: `services/auth_service.py`. Views should be thin — parse request, call service, format response. Keep models separate too. Aim for views under 20 lines each.
+User: What about sharing database sessions?
+Joe: Use `app.extensions['db'] = db` or Flask-SQLAlchemy's `current_app.extensions['sqlalchemy']`. Service functions receive `db` as a parameter or import `db` from the app factory module. For tests, the factory pattern lets you create an app with a test database — no global state to reset between tests.
+
+User: How do I add authentication to my Flask app?
+Joe: Flask-Login handles session management. `login_user(user)` logs in, `@login_required` protects routes, `current_user` in templates. Pair with `werkzeug.security.generate_password_hash` and `check_password_hash` for password storage. For tokens: PyJWT (PyJWT) for JWT tokens. Set cookie with HttpOnly and Secure flags.
+User: What about API token auth instead of sessions?
+Joe: For APIs, use JWT: `jwt.encode({'sub': user.id, 'exp': expiry}, SECRET_KEY, algorithm='HS256')`. Client sends `Authorization: Bearer <token>`. Decode and verify on each request. Use a `@jwt_required` decorator (Flask-JWT-Extended provides this). JWTs are stateless — no server-side session storage needed. Just ensure expiration is short and refresh tokens exist.
+
+User: What is FastAPI?
+Joe: FastAPI is a modern Python web framework based on Starlette and Pydantic. Auto-generates OpenAPI docs, validates request/response with Pydantic, supports async natively. Performance comparable to Node/Go. Write endpoints as `async def` functions. Declare path/query/body params with type hints — FastAPI handles validation, serialization, and docs.
+
+User: How to declare path parameters in FastAPI?
+Joe: `@app.get('/items/{item_id}'); async def read_item(item_id: int)` — declared in the path and function signature. Type hints validate and convert (ensures `item_id` is an int). `item_id: str` for string. `item_id: int = Path(ge=1)` for validation (must be ≥1). Path params are required.
+
+User: How to handle query parameters in FastAPI?
+Joe: `async def search(q: str, limit: int = 10, offset: int = 0)` — non-path params become query parameters. Default values make them optional. `Optional[str] = None` for truly optional strings. `q: str = Query(min_length=3)` for validation. `q: list[str] = Query(default=[])` for repeated params `?q=a&q=b`.
+
+User: How to define request body in FastAPI?
+Joe: Define a Pydantic model: `from pydantic import BaseModel; class Item(BaseModel): name: str; price: float; tags: list[str] = []`. Use in endpoint: `async def create_item(item: Item)`. FastAPI validates the JSON body against the model, returns 422 with detailed errors on mismatch. `item.dict()` converts to dict.
+
+User: What is dependency injection in FastAPI?
+Joe: Dependencies are functions with their own parameters that FastAPI resolves. `async def get_db(): db = SessionLocal(); yield db; db.close()` — then `async def get_user(db: Session = Depends(get_db))`. FastAPI calls `get_db`, injects the result, and handles cleanup (close session). Supports async, classes, and nested dependencies.
+
+User: How does FastAPI's auto-docs work?
+Joe: FastAPI reads type hints from your endpoint signatures and generates OpenAPI (Swagger) at `/docs` and ReDoc at `/redoc`. Shows request schemas, response schemas, status codes, and lets you test endpoints directly in the browser. Pydantic models appear as JSON Schema. `operation_id` and `tags` customize the docs.
+
+User: How to handle errors in FastAPI?
+Joe: Raise `HTTPException(status_code=404, detail="Item not found")`. Custom handlers: `@app.exception_handler(ValueError) async def handler(request, exc): return JSONResponse(status_code=400, content={"error": str(exc)})`. Use `from fastapi import HTTPException`. Pydantic validation errors (422) have standard format. For custom error schema use `response_model`.
+
+User: How to use async in FastAPI?
+Joe: Endpoints can be `async def` (await DB/HTTP calls) or `def` (sync functions). FastAPI runs sync endpoints in a thread pool so neither blocks. Use `async def` + `await db.fetch()` when your library supports async (databases, httpx, aiofiles). For sync libraries (SQLAlchemy, requests), use `def` — FastAPI handles the thread pool automatically.
+
+User: How to handle file uploads in FastAPI?
+Joe: `from fastapi import UploadFile, File; async def upload(file: UploadFile = File(...))`. `UploadFile` has `file.read()`, `file.write()`, `file.filename`. Use `await file.read()` to get bytes. Set `max_file_size` via middleware or proxy. Large files should be streamed — don't `await file.read()` into memory for gigabyte uploads.
+
+User: How to set CORS in FastAPI?
+Joe: `from fastapi.middleware.cors import CORSMiddleWare; app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])`. Restrict `allow_origins` in prod. The middleware intercepts OPTIONS requests and adds CORS headers. For development/API server, `allow_origins=["*"]` is fine.
+
+User: How to use response_model in FastAPI?
+Joe: `@app.get('/items', response_model=list[Item])` — FastAPI uses the model to filter and serialize the response. Only fields in `Item` are included. `response_model_exclude_unset=True` omits defaults. `response_model_include={'name', 'price'}` restricts fields. Converts dicts to the type automatically. Changes docs and validation.
+
+User: How to tag endpoints in FastAPI OpenAPI?
+Joe: `@app.get('/items', tags=['items'], summary='List items', description='Detailed description', response_description='...')`. Include a `tags` list in the `app` constructor: `app = FastAPI(tags=['main'])`. Tags group endpoints in the docs UI. `operation_id` provides a unique identifier. Use `responses` dict to document error codes.
+
+User: FastAPI path params vs query params — when to use each?
+Joe: Path params identify a specific resource: `/users/42` (user 42). Query params filter or modify: `/users?role=admin&page=2` (which users, which page). Use path for required resource identity, query for optional modifiers. FastAPI enforces this structurally: path params are always required, query params default to optional.
+User: What about required query params?
+Joe: Just don't give them a default: `q: str` without `= None` makes it required. FastAPI returns 422 if missing. Use `Query(min_length=3)` for validation. For some params that are required in production but optional in dev, accept `Optional[str] = None` and check after inspecting environment.
+
+User: I want to share a DB session across routes without creating it in every endpoint.
+Joe: Use FastAPI's dependency injection. Create a `get_db` dependency that yields a session. Endpoints declare `db: Session = Depends(get_db)` — FastAPI creates the session, passes it in, and closes it after the response. Allocate once, clean up automatically.
+User: What if I need the session to be per-user (with auth info)?
+Joe: Layer dependencies: `get_current_user` depends on `get_db` (gets the session, verifies token), then `get_db_with_user` calls both and attaches the user. FastAPI resolves the dependency graph. For performance, use `lru_cache` or singletons for connection pools, not per-request instances.
+
+User: What does SELECT do?
+Joe: `SELECT column1, column2 FROM table` retrieves data. `SELECT *` gets all columns. `SELECT DISTINCT column` removes duplicates. `SELECT count(*) FROM table` aggregates. Use `AS` for aliases: `SELECT name AS username FROM users`. Computed fields: `SELECT price * quantity AS total FROM order_items`.
+
+User: How does WHERE work?
+Joe: `SELECT * FROM users WHERE age > 18` filters rows. Operators: `=`, `<>` (not equal), `>`, `<`, `>=`, `<=`, `LIKE`, `IN`, `BETWEEN`, `IS NULL`. Combine with `AND`, `OR`, `NOT`. String matching: `WHERE name LIKE 'J%'` (starts with J). `WHERE name ILIKE 'j%'` (case-insensitive, PostgreSQL).
+
+User: What is JOIN and what are the types?
+Joe: `SELECT u.name, o.total FROM users u JOIN orders o ON u.id = o.user_id`. INNER JOIN: only matching rows. LEFT JOIN: all left rows, NULL on right if no match. RIGHT JOIN: all right rows. FULL OUTER JOIN: all rows from both, NULLs where no match. CROSS JOIN: all combinations (cartesian product).
+
+User: How does GROUP BY work?
+Joe: `SELECT department, count(*) FROM employees GROUP BY department` groups rows by column(s). Aggregate functions: `count()`, `sum()`, `avg()`, `min()`, `max()`. `GROUP BY 1` groups by first SELECT column. All non-aggregated SELECT columns must be in GROUP BY. `GROUP BY department, role` for multi-level grouping.
+
+User: What is HAVING?
+Joe: `HAVING` filters groups after aggregation, like WHERE filters rows before. `SELECT department, avg(salary) FROM employees GROUP BY department HAVING avg(salary) > 50000`. WHERE goes before GROUP BY, HAVING goes after. You can use aggregate functions in HAVING but not in WHERE.
+
+User: What is ORDER BY?
+Joe: `SELECT * FROM users ORDER BY created_at DESC` sorts results. `ASC` ascending (default), `DESC` descending. Multiple columns: `ORDER BY last_name ASC, first_name ASC`. `ORDER BY 2` sorts by second column. NULLs sort first in ASC (PostgreSQL default: NULLS LAST). Custom: `ORDER BY CASE WHEN status = 'active' THEN 0 ELSE 1 END`.
+
+User: What does LIMIT do?
+Joe: `SELECT * FROM users LIMIT 10` returns the first 10 rows. `LIMIT 10 OFFSET 20` returns rows 21-30 (pagination). `OFFSET` is 0-indexed. `LIMIT 1` gets one row (if you expect 0 or 1 result). Pagination with `ORDER BY` and `LIMIT/OFFSET` is standard but slow for deep pages — use cursor pagination for large datasets.
+
+User: How does INSERT work?
+Joe: `INSERT INTO users (name, email) VALUES ('Alice', 'a@b.com')` adds one row. Multiple rows: `INSERT INTO users (name) VALUES ('A'), ('B'), ('C')`. `INSERT ... RETURNING *` (PostgreSQL) returns the inserted row. `INSERT ... ON CONFLICT DO UPDATE` for upsert. Always specify column names — never `INSERT INTO users VALUES (...)` without columns.
+
+User: How does UPDATE work?
+Joe: `UPDATE users SET name = 'Bob' WHERE id = 42` modifies existing rows. Always include WHERE — UPDATE without WHERE updates EVERY row. `UPDATE users SET last_login = now(), login_count = login_count + 1 WHERE id = 42` for multiple field updates. `UPDATE ... FROM` for cross-table updates. Check affected rows: `ROW_COUNT()`.
+
+User: How does DELETE work?
+Joe: `DELETE FROM users WHERE id = 42` removes rows. Like UPDATE, always WHERE unless you want to clear the table. `DELETE FROM table` removes ALL rows (but keeps the table). `TRUNCATE table` is faster for removing all rows (resets storage). `DELETE ... RETURNING *` (PostgreSQL) returns deleted rows.
+
+User: How to create a table?
+Joe: `CREATE TABLE users (id SERIAL PRIMARY KEY, name VARCHAR(100) NOT NULL, email VARCHAR(255) UNIQUE, created_at TIMESTAMP DEFAULT now())`. Column types: `INTEGER`, `BIGINT`, `VARCHAR(n)`, `TEXT`, `BOOLEAN`, `DATE`, `TIMESTAMP`, `FLOAT`, `DECIMAL(p,s)`, `UUID`, `JSONB` (PostgreSQL). Constraints: `NOT NULL`, `UNIQUE`, `PRIMARY KEY`, `FOREIGN KEY`, `CHECK`.
+
+User: What are indexes?
+Joe: Indexes speed up lookups. `CREATE INDEX idx_users_email ON users(email)`. `CREATE UNIQUE INDEX` enforces uniqueness. `CREATE INDEX CONCURRENTLY` builds index without locking table (PostgreSQL). B-tree index is default. GIN for full-text/JSON, GiST for geospatial. Index on `(a, b)` helps queries filtering on `a` or `a AND b` but not `b` alone.
+
+User: What are subqueries?
+Joe: Subqueries are queries within queries. In WHERE: `SELECT * FROM users WHERE id IN (SELECT user_id FROM orders WHERE total > 100)`. In SELECT: `SELECT name, (SELECT count(*) FROM orders WHERE user_id = users.id) AS order_count FROM users`. Correlated subqueries reference outer query — can be slow. `EXISTS` is often faster than `IN` for large sets.
+
+User: What is a CTE (Common Table Expression)?
+Joe: CTE with `WITH` creates a named temporary result set: `WITH recent_users AS (SELECT * FROM users WHERE created_at > now() - '7 days'::interval) SELECT * FROM recent_users WHERE active = true`. CTEs make complex queries readable. `RECURSIVE` CTEs handle trees/hierarchies. Unlike subqueries, CTEs can be referenced multiple times.
+
+User: What's the difference between WHERE and HAVING?
+Joe: WHERE filters rows before GROUP BY. HAVING filters groups after GROUP BY. WHERE can't use aggregates, HAVING can. `SELECT dept, avg(salary) FROM employees WHERE salary > 0 GROUP BY dept HAVING avg(salary) > 50000`. Use WHERE for row-level filters, HAVING for group-level filters.
+
+User: What is a foreign key?
+Joe: `FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE` ensures every `user_id` exists in `users` table. Prevents orphaned records. `ON DELETE CASCADE` auto-deletes child rows when parent is deleted. `ON DELETE SET NULL` sets child FK to NULL. `ON DELETE RESTRICT` prevents parent deletion. InnoDB enforces; MyISAM parses but ignores.
+
+User: What are transactions?
+Joe: Transactions group operations into an atomic unit. `BEGIN; UPDATE accounts SET balance = balance - 100 WHERE id = 1; UPDATE accounts SET balance = balance + 100 WHERE id = 2; COMMIT`. If anything fails, `ROLLBACK` undoes all changes. ACID: Atomicity, Consistency, Isolation, Durability. Use transactions for multi-step writes.
+
+User: How to paginate results efficiently?
+Joe: `LIMIT/OFFSET` is simple but slow for deep pages (database scans rows before offset). Cursor-based pagination: `SELECT * FROM users WHERE id > $last_seen_id ORDER BY id LIMIT 20`. Uses index, constant time regardless of page depth. Requires a unique sortable column. Keyset pagination with composite `(created_at, id)` is the gold standard.
+
+User: My query with JOIN is really slow. Any tips?
+Joe: Check the EXPLAIN plan: `EXPLAIN ANALYZE SELECT ...`. Look for sequential scans on large tables — those need indexes. `JOIN` columns must be indexed: `CREATE INDEX ON orders(user_id)`. Also check join order: PostgreSQL usually optimizes well, but `LEFT JOIN` with filters in WHERE can accidentally convert to INNER JOIN.
+User: What about the query itself?
+Joe: Avoid `SELECT *` — fetch only needed columns. If you're joining a large table but only need a few rows, filter BEFORE the join with a subquery or CTE. `LIMIT` after JOIN still processes all rows before the limit. Use a subquery to limit first: `SELECT * FROM (SELECT * FROM big_table WHERE ... LIMIT 10) t JOIN other ON ...`.
+
+User: What's the difference between DELETE and TRUNCATE?
+Joe: DELETE removes rows one by one, fires triggers, is transactional (can ROLLBACK), and preserves the table structure. TRUNCATE removes all rows at once (DDL), can't be rolled back in most DBs, doesn't fire per-row triggers, and resets auto-increment counters. TRUNCATE is much faster for clearing a whole table.
+User: TRUNCATE sounds strictly better for clearing.
+Joe: For removing all rows in a table, yes — it's faster and cheaper. But DELETE gives you: WHERE clause to filter, RETURNING clause to capture deleted data, and row-level triggers. Also, TRUNCATE can't be used if the table is referenced by a foreign key (unless CASCADE is specified). Choose based on need.
+
+User: What is SQLAlchemy?
+Joe: SQLAlchemy is a Python SQL toolkit and ORM. Core: raw SQL expression builder. ORM: maps Python classes to tables. `Base = declarative_base()` creates the base class. `class User(Base): __tablename__ = 'users'; id = Column(Integer, primary_key=True); name = Column(String)`. Query with `session.query(User).filter(...)`.
+
+User: How to define a model in SQLAlchemy?
+Joe: `class User(Base): __tablename__ = 'users'; id = Column(Integer, primary_key=True); username = Column(String(80), unique=True, nullable=False); email = Column(String(120), unique=True); created_at = Column(DateTime, server_default=func.now())`. Use `Column` with types: `Integer`, `String`, `Float`, `Boolean`, `DateTime`, `Text`, `JSON`.
+
+User: How to query with filter?
+Joe: `session.query(User).filter(User.name == 'Alice').all()` returns matching rows. `.first()` returns one or None. `.one()` returns exactly one (raises if 0 or >1). `.limit(10).offset(20).all()` for pagination. `.order_by(User.created_at.desc())`. `.count()` for count. `.filter(User.age >= 18, User.active == True)` for multiple conditions.
+
+User: How to establish relationships?
+Joe: `class Order(Base): user_id = Column(Integer, ForeignKey('users.id')); user = relationship('User', back_populates='orders')`. `User.orders = relationship('Order', back_populates='user')`. `backref` creates both sides in one declaration: `user = relationship('User', backref='orders')`. Use `lazy='selectin'` for efficient loading.
+
+User: What is lazy loading vs eager loading?
+Joe: Lazy loading: relationship is fetched on first access (triggering a query). Eager loading: fetch with the main query. `relationship(lazy='selectin')` loads all related objects in one extra query (best for lists). `lazy='joined'` uses JOIN (good for single-item relationships). `lazy='subquery'` loads via subquery. Default: `lazy='select'` (separate query on access).
+
+User: How to use SQLAlchemy with Alembic?
+Joe: Alembic manages database migrations. `alembic init alembic` creates config. `alembic revision --autogenerate -m "add user table"` creates a migration based on model changes. `alembic upgrade head` applies migrations. `alembic downgrade -1` reverts. Always review autogenerated migrations before applying — they miss some changes.
+
+User: How to create a session?
+Joe: `from sqlalchemy import create_engine; from sqlalchemy.orm import sessionmaker; engine = create_engine('sqlite:///db.sqlite'); Session = sessionmaker(bind=engine); session = Session()`. Use `session.add(user)`, `session.commit()`, `session.rollback()`, `session.close()`. In web apps, create per-request sessions and close after response.
+
+User: How to filter by related objects?
+Joe: `session.query(User).join(Order).filter(Order.total > 100).all()` — users with orders over 100. `session.query(User).filter(User.orders.any(Order.status == 'pending'))`. `.has()` for single relationships. `contains()` checks collection membership. Correlated subqueries for complex filtering across relationships.
+
+User: SQLAlchemy queries are so much slower than raw SQL for my reporting endpoint.
+Joe: Common issue. For complex reports, use SQLAlchemy Core (not ORM) or raw SQL. ORM constructs Python objects which is overhead. Core returns tuples, much faster. `from sqlalchemy import text; session.execute(text("SELECT ...")).fetchall()`. Or use Core's `select()` builder: `select([func.count()]).select_from(users)`.
+User: N + 1 queries are killing me too.
+Joe: Enable `lazy='selectin'` on your relationships — it preloads children in batches. Or use `joinedload()`/`selectinload()` per query: `session.query(User).options(selectinload(User.orders)).all()`. `joinedload` is better for single-item relationships. SQLAlchemy emits a query for the JOIN then processes results. Use `contains_eager()` when you've already joined.
+
+User: How to make a GET request with requests?
+Joe: `import requests; r = requests.get('https://api.github.com'); r.status_code` → 200; `r.json()` → parsed JSON dict; `r.text` → raw text; `r.headers` → response headers. `params={'page': 2, 'per_page': 50}` appends query string. `timeout=10` is essential — never leave out timeout (default: no timeout = hang forever).
+
+User: How to make POST requests?
+Joe: `requests.post('https://api.example.com/users', json={'name': 'Alice', 'email': 'a@b.com'})`. `json=` automatically sets Content-Type and dumps the dict. Use `data=` for form-encoded data. `headers={'Authorization': 'Bearer token123'}` for auth. Always check `r.raise_for_status()` to catch HTTP errors.
+
+User: How to use sessions for persistent connections?
+Joe: `s = requests.Session(); s.headers.update({'Authorization': 'Bearer token'}); s.get('https://api.example.com/users')`. Sessions reuse TCP connections (HTTP keep-alive), persist cookies, and share configuration across requests. Much faster than creating a new connection per request. Use `with requests.Session() as s:` for automatic cleanup.
+
+User: How to handle timeouts?
+Joe: `requests.get(url, timeout=5)` — total timeout for the whole request. `timeout=(3.05, 10)` splits connect (3.05s) and read (10s) timeouts. Connection timeout catches unreachable servers; read timeout catches slow responses. Never leave timeout unset in production — requests can hang indefinitely waiting for a response.
+
+User: How to retry failed requests?
+Joe: Use `requests.adapters.HTTPAdapter` with `Retry`. `from requests.adapters import HTTPAdapter; from urllib3.util import Retry; s = requests.Session(); retries = Retry(total=3, backoff_factor=1, status_forcelist=[502, 503, 504]); s.mount('https://', HTTPAdapter(max_retries=retries))`. Backoff: 1s, 2s, 4s between retries.
+
+User: How to handle redirects?
+Joe: `requests.get(url, allow_redirects=True)` (default) follows redirects. `allow_redirects=False` to disable. `r.history` lists all redirect responses leading to the final response. `r.url` shows the final URL after redirects. For POST, redirects use GET by default unless `allow_redirects` is managed carefully.
+
+User: How to stream large responses?
+Joe: `with requests.get(url, stream=True) as r:` iterates over chunks without loading the entire response body. Use `r.iter_content(chunk_size=8192)` for binary data (save to file). `r.iter_lines()` for text (one line at a time). Essential for large downloads — without `stream`, the entire response loads into memory.
+
+User: How to verify SSL certificates?
+Joe: `requests.get(url, verify=True)` (default) verifies SSL certs. `verify=False` disables (insecure, warnings in logs). `verify='/path/to/cert.pem'` for custom CA bundle. Set `REQUESTS_CA_BUNDLE` env var for global override. In development with self-signed certs, better to add the cert to trusted store than disable verification.
+
+User: How to upload files?
+Joe: `files = {'file': open('report.pdf', 'rb')}; requests.post(url, files=files)`. For multipart upload with additional fields: `files = {'file': ('report.pdf', f, 'application/pdf')}; requests.post(url, files=files, data={'description': 'q1 report'})`. Use `requests_toolbelt.multipart` for large file streaming.
+
+User: How to send custom headers?
+Joe: `headers = {'User-Agent': 'my-app/1.0', 'Accept': 'application/json'}; requests.get(url, headers=headers)`. Session headers apply to all requests: `s.headers.update({'Authorization': 'Bearer token'})`. Per-request headers merge with (and override) session headers. Don't set `Content-Type` manually — requests library handles it based on `json=` or `data=`.
+
+User: My requests keep hanging in production. What's wrong?
+Joe: You're missing `timeout`. The requests library has NO default timeout — without it, a dropped connection can hang indefinitely. Add `timeout=10` to every request. For extra safety, set a session-level timeout: `s = requests.Session(); s.request = lambda method, url, **kwargs: requests.request(method, url, timeout=10, **kwargs)`.
+User: I hit rate limits too. How to handle those?
+Joe: Check `r.headers['Retry-After']` when you get 429. Use retry adapter with `status_forcelist=[429, 502, 503, 504]` and a backoff factor. For API clients, use `ratelimit` or `pyrate-limiter` to throttle client-side. For multiple requests, use `concurrent.futures.ThreadPoolExecutor` with a semaphore limit.
+
+User: What is an HTML tag?
+Joe: HTML tags structure content: `<h1>Heading</h1>`, `<p>Paragraph</p>`, `<a href="url">Link</a>`, `<img src="pic.jpg" alt="desc">`, `<div>Block container</div>`, `<span>Inline container</span>`. Tags have opening/closing brackets and can be nested. Self-closing: `<br>`, `<hr>`, `<img>`, `<input>`. Attributes add info: `class`, `id`, `style`, `src`, `href`.
+
+User: What are HTML forms?
+Joe: `<form action="/submit" method="POST"> <input type="text" name="username"> <input type="submit"> </form>`. Input types: `text`, `password`, `email`, `number`, `checkbox`, `radio`, `file`, `hidden`. `required` attribute enforces client-side validation. `placeholder` shows hint text. Always validate on server side too — client-side is convenience, not security.
+
+User: What are CSS selectors?
+Joe: Element selector: `p { color: red }`. Class selector: `.my-class { }`. ID selector: `#my-id { }`. Descendant: `div p { }`. Direct child: `div > p { }`. Adjacent sibling: `h2 + p { }`. Attribute: `[type="text"] { }`. Pseudo-class: `:hover`, `:first-child`, `:nth-child(odd)`. Multiple: `.class1.class2`. Comma combines: `h1, h2, h3 { }`.
+
+User: What is the CSS box model?
+Joe: Every element is a box: content → padding → border → margin. `width`/`height` set the content area by default. `box-sizing: border-box` makes width/height include padding and border (much easier to work with). Padding is inside the border, margin is outside. Margins can collapse vertically between adjacent elements.
+
+User: How does flexbox work?
+Joe: `display: flex` on a container makes it a flex container. Children become flex items. Main axes: `flex-direction: row` (horizontal) or `column` (vertical). `justify-content` aligns on main axis (center, space-between, flex-start). `align-items` aligns on cross axis. `flex-wrap: wrap` lets items wrap. `flex: 1` on children makes them grow proportionally.
+
+User: What is CSS Grid?
+Joe: `display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 1rem` creates a 3-column grid. `grid-template-rows` defines row heights. `grid-column: span 2` makes an item span 2 columns. Auto-fill: `grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))` for responsive columns. Grid is 2D, flexbox is 1D — use grid for layouts, flex for components.
+
+User: How to make a responsive design?
+Joe: Use relative units: `%`, `vw`, `vh`, `rem`, `em`. Max-width: `img { max-width: 100% }`. Media queries: `@media (max-width: 768px) { .sidebar { display: none } }`. Mobile-first: design for narrow screens first, add complexity with wider media queries. Use `viewport` meta tag: `<meta name="viewport" content="width=device-width, initial-scale=1">`.
+
+User: What's the difference between rem and em?
+Joe: `em` is relative to the parent's font size. `rem` (root em) is relative to the `<html>` font size. `1.2rem` is 1.2x the root font size (usually 16px). `em` compounds: nested elements with `1.5em` grow exponentially. `rem` is predictable. Use `rem` for most sizing, `em` for components that should scale with their context.
+
+User: What are semantic HTML tags?
+Joe: Semantic tags describe meaning: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`, `<figure>`, `<figcaption>`, `<time>`. Use them instead of `<div>` everywhere. Benefits: accessibility (screen readers navigate better), SEO, code readability. A `<div>` with `class="header"` is less clear than `<header>`.
+
+User: How to center a div?
+Joe: Horizontally: `margin: 0 auto` on the div (if it has a width). Flexbox: `display: flex; justify-content: center; align-items: center` on the parent. Grid: `place-items: center` on the grid container. Modern: `position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)`. Each has use cases.
+
+User: My CSS is a mess — styles are inherited from all over the place and I can't figure out why a button is blue.
+Joe: Use the browser's inspector (right-click → Inspect Element). The Styles panel shows every rule affecting the element, ordered by specificity. Highest specificity wins. If nothing works, add `!important` but that's a bandaid — the real fix is understanding specificity: inline > IDs > classes > elements. BEM naming helps organize.
+User: What's BEM?
+Joe: Block Element Modifier: `.block__element--modifier`. Example: `.card__title--highlighted`. It prevents nesting specificity wars. Every selector is one level deep and unique. No `.card .title span` chaining. Combined with a CSS reset (normalize browsers) and a utility-first approach like Tailwind, CSS becomes predictable.
+
+User: What are JavaScript variables?
+Joe: `let x = 5` (mutable, block-scoped). `const y = 10` (immutable reference, block-scoped). `var z = 15` (function-scoped, avoid it). Prefer `const` unless you need to reassign. `let` for loop counters and reassignments. `const` doesn't make objects immutable — only the reference is constant.
+
+User: What are JS arrays?
+Joe: `let arr = [1, 2, 3]`. `arr.push(4)` adds to end. `arr.pop()` removes from end. `arr.unshift(0)` adds to front. `arr.shift()` removes from front. `arr.map(x => x * 2)` transforms. `arr.filter(x => x > 1)` filters. `arr.reduce((sum, x) => sum + x, 0)` aggregates. `arr.find(x => x === 2)` finds first match.
+
+User: What are JS objects?
+Joe: `let obj = { name: 'Alice', age: 30 }`. Access: `obj.name` or `obj['name']`. Set: `obj.email = 'a@b.com'`. Delete: `delete obj.age`. Keys as strings: `{ 'first name': 'Alice' }` requires bracket access. `Object.keys(obj)`, `Object.values(obj)`, `Object.entries(obj)` for iteration. Spread: `{ ...obj, age: 31 }` for immutable updates.
+
+User: How do JavaScript functions work?
+Joe: `function add(a, b) { return a + b }` — traditional function. `const add = (a, b) => a + b` — arrow function (shorter, no `this` binding). Arrow functions inherit `this` from parent scope; regular functions get their own. Functions are first-class: assign to variables, pass as arguments, return from other functions.
+
+User: What is the DOM?
+Joe: The Document Object Model is the browser's representation of your HTML. `document.getElementById('id')`, `document.querySelector('.class')`, `document.querySelectorAll('p')`. DOM manipulation: `element.textContent = 'new text'`, `element.style.color = 'red'`, `element.classList.add('active')`.
+
+User: How do events work in JavaScript?
+Joe: `element.addEventListener('click', (e) => console.log('clicked!'))`. Common events: `click`, `submit`, `change`, `keydown`, `keyup`, `mouseover`, `mouseout`, `scroll`, `load`. Event object `e` has `e.target` (triggering element), `e.key` (key pressed), `e.preventDefault()` (stop form submit). Attach multiple handlers per event.
+
+User: What is the fetch API?
+Joe: `const res = await fetch('https://api.example.com/users'); const data = await res.json()`. POST: `fetch('url', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({name: 'Alice'}) })`. Handle errors: `if (!res.ok) throw new Error(res.status)`. fetch doesn't reject on HTTP errors — you must check `ok`.
+
+User: What is async/await in JavaScript?
+Joe: `async function getData() { const res = await fetch(url); return res.json() }`. `async` makes a function return a Promise. `await` pauses execution until the promise resolves. `try/catch` handles errors. Parallel: `const [a, b] = await Promise.all([fetch(url1), fetch(url2)])`. Async/await is syntactic sugar over Promise chains (.then/.catch).
+
+User: What are promises?
+Joe: A Promise represents a future value. `const p = new Promise((resolve, reject) => { setTimeout(() => resolve('done'), 1000) })`. Methods: `p.then(value => ...)` for success, `p.catch(err => ...)` for error, `p.finally(() => ...)` always runs. `Promise.all([p1, p2])` waits for all. `Promise.race([p1, p2])` resolves on first. `Promise.allSettled` doesn't short-circuit.
+
+User: How to select elements in JavaScript?
+Joe: `document.getElementById('id')` — single element by ID. `document.querySelector('.class')` — first matching CSS selector. `document.querySelectorAll('div.active')` — all matches (returns NodeList, not array — use `Array.from()` or `[...nodelist]`). `document.getElementsByClass('class')` returns HTMLCollection (live). `[...document.querySelectorAll(...)]` for modern iteration.
+
+User: JS callback hell is real. How do I avoid it?
+Joe: Use async/await. It flattens nested callbacks into linear code. `async function load() { const user = await fetchUser(); const posts = await fetchPosts(user.id); return posts }`. Promise.all for parallel operations. If you're stuck with callbacks (old libs), wrap in a Promise: `const p = new Promise(resolve => oldApi.callback(resolve))`.
+User: What about `then` chains?
+Joe: `.then` chains are better than nested callbacks but worse than async/await. They handle linear flows well but error handling is verbose (each .catch or a final .catch). Async/await with try/catch is cleaner. Use async/await for new code, Promise chains for simple single-operation sequences.
+
+User: What is the Singleton pattern?
+Joe: Singleton ensures only one instance exists. In Python: `class Singleton: _instance = None; def __new__(cls): if cls._instance is None: cls._instance = super().__new__(cls); return cls._instance`. Simple alternative: use a module (Python modules are singletons). For thread safety, add a lock. Often overused — consider if a module-level instance suffices.
+
+User: What is the Factory pattern?
+Joe: Factory creates objects without exposing the instantiation logic. `def create_parser(format: str) -> Parser: if format == 'json': return JSONParser(); elif format == 'xml': return XMLParser()`. Abstract Factory returns families of related objects. In Python, you can also use `__init_subclass__` for registry-based factories.
+
+User: What is the Observer pattern?
+Joe: Observers get notified when a subject changes state. `class Subject: def __init__(self): self._observers = []; def attach(self, o): self._observers.append(o); def notify(self, data): [o.update(data) for o in self._observers]`. Python's `Observable` (not built-in but easy to write). Used in event systems, UI callbacks, logging.
+
+User: What is the Strategy pattern?
+Joe: Strategy defines interchangeable algorithms. `class Strategy: def execute(self, data): raise NotImplementedError; class CSVExport(Strategy): def execute(self, data): return csv.dumps(data); class JSONExport(Strategy): def execute(self, data): return json.dumps(data)`. The client picks a strategy at runtime. In Python, strategies can be simple functions passed as arguments.
+
+User: What is the Repository pattern?
+Joe: Repository abstracts data access. `class UserRepository: def __init__(self, session): self.session = session; def get_by_id(self, id): return self.session.query(User).get(id); def find_active(self): return self.session.query(User).filter(User.active == True).all()`. The rest of the code doesn't know about SQL — it just calls repository methods. Swappable implementation.
+
+User: What is the Dependency Injection pattern?
+Joe: Instead of creating dependencies inside a class, pass them in: `class Service: def __init__(self, db: Database, cache: Cache): ...`. Makes testing easy — inject mocks. FastAPI's `Depends` automates this. Avoid `Service(db=PostgresDB())` hardcoding. Use a DI container or just pass dependencies in `__init__`. Python doesn't need a DI framework — manual injection is often enough.
+
+User: What is the Decorator pattern?
+Joe: Decorator wraps an object to add behavior without inheritance. `@app.route('/')` is a Python decorator (higher-order function). The design pattern version: `class LoggingMiddleware: def __init__(self, handler): self.handler = handler; def handle(self, req): print(f'Request: {req}'); return self.handler.handle(req)`. Stack multiple decorators.
+
+User: What is the Adapter pattern?
+Joe: Adapter makes incompatible interfaces work together. If you have `USBSocket` and `EUPlug`, an adapter `EUtoUSBAdapter(USBSocket)` provides `eu_plug_shape` that adapts the USB interface. In Python: `class OldAPIAdapter: def __init__(self, old_api): self.api = old_api; def fetch(self, id): return self.api.get_data(id)`. Wraps old interface to match new expectations.
+
+User: What is the Context Manager pattern?
+Joe: Context managers handle setup/teardown with `with`. `class ManagedFile: def __enter__(self): self.file = open('file.txt'); return self.file; def __exit__(self, *args): self.file.close()`. `contextlib.contextmanager` for generator-based: `@contextmanager; def managed(): f = open('f'); yield f; f.close()`. Used for connections, locks, transactions.
+
+User: What is the Prototype pattern?
+Joe: Prototype creates objects by cloning a prototype instance. Python has `copy.copy` (shallow) and `copy.deepcopy` (deep). `class Document: def clone(self): return copy.deepcopy(self)`. Useful when object creation is expensive and you need many similar objects. Prefer composition over cloning in most cases.
+
+User: I always hear about design patterns but when should I actually use them?
+Joe: Don't start with patterns — start with a problem. When you find yourself writing `if type == 'json'` and `elif type == 'xml'` everywhere, that's when Factory helps. When you have multiple classes doing similar things, Strategy might fit. Patterns are solutions to common problems, not checkboxes. Over-engineering with patterns is worse than no patterns.
+User: So I shouldn't try to use them proactively?
+Joe: Recognize them when you see the problem shape. If you have a notification system with email, SMS, and push — that's Observer. If you're writing the same object creation logic in 10 places — that's Factory. Python's dynamic nature means some patterns (like Strategy) are just function arguments, not formal classes. Keep it simple until complexity demands structure.
+
+User: How to organize a Python project?
+Joe: Standard layout: `project_name/; src/; project_name/; __init__.py; main.py; models.py; services/; tests/; test_models.py; conftest.py; pyproject.toml; README.md; .gitignore`. `src/` layout avoids import confusion (you install the package). `tests/` mirrors `src/` structure. Keep modules focused — one class or a few related functions per file.
+
+User: What is the src layout?
+Joe: Code goes in `src/project_name/` instead of top-level `project_name/`. Benefits: tests import the installed package (not the source directory), avoiding import path confusion. `pip install -e .` installs in editable mode. Tests run against the packaged version. Standard for libraries but useful for apps too. Without src, `python tests/test_foo.py` might import the source directly.
+
+User: When to split a module into multiple modules?
+Joe: When a file exceeds 500 lines. When it has more than one clear responsibility. When you write 'models.py' and it contains unrelated classes (User, Payment, EmailTemplate) — split into `models/user.py`, `models/payment.py`, `models/email.py`. If you import from the same module in many places, it's too large. If you can't name a clear purpose, it needs splitting.
+
+User: How to structure a Flask project?
+Joe: `myapp/; app/; __init__.py (create_app factory); routes/; __init__.py; auth.py; users.py; models/; user.py; services/; auth_service.py; migrations/; alembic/; tests/; conftest.py; config.py; run.py`. Keep views thin; put business logic in `services/`. Blueprints for logical groupings. Config classes for dev/test/prod. `run.py` imports `create_app` and runs.
+
+User: How to structure a FastAPI project?
+Joe: `myapp/; app/; main.py (app creation); routers/; users.py; items.py; models/; pydantic schemas (schemas.py) + SQLAlchemy models (models.py); dependencies.py; services/; core/; config.py; security.py; tests/; conftest.py`. FastAPI's `APIRouter` replaces Flask's Blueprint. Separate Pydantic schemas from DB models. Business logic in services. Dependencies (DB, auth) in `dependencies.py`.
+
+User: How to structure a CLI tool?
+Joe: Use `click` or `typer` library. Structure: `cli/; __init__.py; main.py; commands/; init.py; build.py; deploy.py; utils/; config.py; helpers.py; tests/`. One CLI file per command group. Common options in shared decorators. `if __name__ == '__main__':` for entry point. `pyproject.toml` `[tool.poetry.scripts]` or `[project.scripts]` registers the CLI command.
+
+User: How to handle circular imports?
+Joe: Circular imports happen when module A imports B and B imports A. Fixes: 1) Restructure — move shared code to a new module C. 2) Lazy import — import inside the function instead of at module top. 3) Use `TYPE_CHECKING` for type annotations. 4) Use `import package.module` (absolute) instead of `from .module import something`. Best fix: rethink module boundaries.
+
+User: What belongs in __init__.py?
+Joe: In modern Python (3.3+), `__init__.py` can be empty — it marks a directory as a package. Use it to: expose the public API (`from .core import PublicClass`), define `__all__ = ['func_a', 'func_b']`, run package-level setup (config loading), or provide convenience imports. Keep it minimal — don't put implementation in `__init__.py`.
+
+User: How to handle configuration?
+Joe: Use environment variables + config classes. `config.py`: `class Config: SECRET_KEY = os.getenv('SECRET_KEY', 'dev-secret'); DB_URL = os.getenv('DATABASE_URL')`. Separate Dev, Test, Prod configs inheriting from Base. `pydantic-settings` for validated settings. Never commit secrets. `.env` files for local dev (`.env.example` in repo). `dynaconf` for complex config.
+
+User: How to name modules and packages?
+Joe: Modules (files): lowercase with underscores: `user_service.py`. Packages (directories): short lowercase, no underscores: `services/`, `models/`. Classes: CamelCase (`UserService`). Functions: snake_case (`get_active_users`). Constants: UPPER_CASE (`MAX_RETRIES = 3`). Private: underscore prefix (`_internal_helper`). Avoid single-letter names except loop counters.
+
+User: My project has one massive utils.py with 2000 lines. How do I clean it up?
+Joe: Look for clusters: date helpers → `utils/dates.py`, string helpers → `utils/strings.py`, file helpers → `utils/files.py`. Keep each focused. Name them by domain, not 'helpers'. If a function is only used by one module, put it in that module, not utils. After splitting, delete utils.py entirely — 'utils' is a dumping ground.
+User: But what if functions are used in many places?
+Joe: That's fine — put them in a named module. `from project.utils.dates import format_iso` is clear about where functionality lives. If you're worried about deep imports, add convenience imports in `utils/__init__.py` for the most common ones. But deep imports are actually GOOD — they tell you where things come from.
+
+User: What's the best way to share code between services in a monorepo?
+Joe: Create an `internal/` or `shared/` directory at the repo root. Use namespace packages or install as editable: `pip install -e ./shared`. Or use path-based imports with the src layout. If services are deployed independently, shared code should be versioned — publish internal packages to a private PyPI or use git-based dependencies.
+User: Won't shared mutable code cause coupling?
+Joe: Yes, if they share models. Best approach: share only interfaces (Pydantic schemas, protocol classes, type definitions) and utility functions. Each service owns its business logic. Shared code should be stable — change rarely, version strictly. If you change shared code and break 3 services, the coupling cost is high.
+
+User: What is a Makefile?
+Joe: A Makefile defines tasks as targets with commands. `install:; pip install -r requirements.txt`. `test:; pytest`. `run:; python app.py`. Use `make test` to run. Indentation MUST be tabs, not spaces. Each target runs in a separate shell. `.PHONY` marks targets that don't produce files (always runs).
+
+User: How to use variables in Makefile?
+Joe: `PYTHON = python3.11; PACKAGE = myapp; test:; $(PYTHON) -m pytest`. Environment variables pass through. `?=` sets default only if not already set. `:=` expands immediately (vs `=` lazy expansion). Common vars: `PYTHON`, `PIP`, `TEST_PATH`, `DOCKER_IMAGE`, `VERSION`. `$(VAR)` for access.
+
+User: What are common Makefile targets?
+Joe: `install` (deps), `test` (run tests), `lint` (flake8/black check), `typecheck` (mypy), `format` (auto-format), `clean` (remove caches), `build` (build package/ image), `deploy` (deploy), `dev` (run dev server), `all` (default, often test+lint). `help` target with `@grep -E '^[a-zA-Z_-]+:' Makefile | sort` to list targets.
+
+User: What does .PHONY do?
+Joe: `.PHONY: clean test install` marks targets as phony — they don't correspond to files. Without it, if a file named `clean` exists, `make clean` thinks the target is up-to-date and does nothing. Always mark non-file targets as .PHONY. Syntax: `.PHONY: clean test install` on its own line before or after the target definition.
+
+User: How to run commands sequentially in Makefile?
+Joe: Each recipe line runs in a separate shell by default. To run in the same shell, join with `&&` or use `\` at line ends. `target:; command1 && command2`. Or `.ONESHELL:` sets all lines in one shell. Use `set -e` to abort on first error. `cd dir && do_stuff` is the standard pattern.
+
+User: How to pass arguments to make?
+Joe: `make test ARGS="-v --tb=short"`. Then `test:; pytest $(ARGS)`. Use `?=` for defaults: `ARGS ?= --tb=short`. Or positional: `make test target=test_module.py` then `pytest $(target)`. GNU Make 4.x supports `$(or $(filter-out,$(MAKEFLAGS)),default)` tricks but variables are simpler.
+
+User: How to use conditionals in Makefile?
+Joe: `ifeq ($(PYTHON_VERSION),3.11); PIP=pip3.11; else; PIP=pip; endif`. `ifdef VAR` checks if VAR is defined. `ifndef` checks undefined. Use at top level or inside target recipes. Don't indent conditionals (indent only the commands within). Compare: `ifeq ($(OS),Windows_NT)` for platform detection.
+
+User: How to define a default target?
+Joe: The first target in the Makefile is the default. Convention: `.DEFAULT_GOAL := help` sets `make` without args to show help. Or make `all` the first target: `all: lint test`. `make` without target runs the first target. Use `.DEFAULT_GOAL` for clarity.
+
+User: How to write a help target?
+Joe: `help:; @grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk '{print \\"$$1\\\" \\\"$$2\\\"}'`. Convention: `test: ## Run tests` — double hash marks the description. Or simpler: `help:; @echo "Usage: make [target]"; @grep -E '^[a-z]+:' Makefile | cut -d: -f1 | sort`. Help keeps your Makefile documented.
+
+User: How to use Makefile with Python venv?
+Joe: `.venv/bin/python -m pytest` hardcodes the venv path. Better: `VENV = .venv; $(VENV)/bin/python -m pip install -r requirements.txt`. Or use `python -m venv $(VENV)` as a target, then depend on it: `test: $(VENV); $(VENV)/bin/pytest`. `.venv` target creates the venv if missing.
+
+User: How to set environment variables per target?
+Joe: `test:; PYTHONPATH=. DEBUG=1 pytest`. Variables before a command are set for that command only. `export VAR=value` at top level sets for all targets. `unexport VAR` excludes. `.EXPORT_ALL_VARIABLES:` exports all. For many vars, use `include env.mk` to load from a separate file.
+
+User: What is Makefile include?
+Joe: `include config.mk` includes another Makefile. Variables in the included file become available. `-include` ignores errors if file missing. Use for shared config across projects: `include ../common/make/common.mk`. Include generates dependencies: `include $(DEPS)` rebuilds targets when deps change.
+
+User: How to create directories with Makefile?
+Joe: `build/; mkdir -p build; touch build/`. `@mkdir -p $(BUILD_DIR)` — `@` suppresses echoing the command. Use `$(shell mkdir -p $(dir $@))` in recipes. `order-only` prerequisites: `output.txt: | output_dir` — the directory must exist but doesn't trigger rebuild when timestamp changes.
+
+User: How to run a Python script via Makefile?
+Joe: `run:; python -m mypackage`. `serve:; uvicorn app.main:app --reload`. `db_migrate:; alembic upgrade head`. `shell:; python manage.py shell`. For Jupyter: `notebook:; jupyter notebook`. Each is one line. Use `$(PYTHON)` variable for consistent interpreter. `$(PIP)` for pip commands.
+
+User: How to combine Makefile with Docker?
+Joe: `build:; docker build -t $(IMAGE) .; run:; docker run -p 8080:80 $(IMAGE); compose_up:; docker compose up -d; compose_down:; docker compose down`. Layer Make targets: `test: build compose_up; docker compose exec app pytest; docker compose down`. Make orchestrates the multi-step Docker workflow.
+
+User: How to watch files for auto-restart?
+Joe: Makefile with `entr`: `watch:; ls *.py | entr -r python app.py`. Or use `nodemon`/`watchexec`: `dev:; watchexec --exts py -- python app.py`. For Flask: `FLASK_ENV=development` enables auto-reload. For FastAPI: `uvicorn app.main:app --reload`. Make's `watch` target is simpler than managing file watchers separately.

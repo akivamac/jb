@@ -10325,3 +10325,897 @@ Joe: Here is some information about urban forestry. It is a fascinating topic th
 User: Tell me about forest management
 Joe: Here is some information about forest management. It is a fascinating topic that covers many aspects of tree expertise.
 
+User: what is inductive reasoning (2726)
+Joe: Inductive reasoning moves from specific observations to broader generalizations.
+User: what is inductive reasoning (2726)
+Joe: Inductive reasoning moves from specific observations to broader generalizations.
+
+User: what is critical thinking (1079)
+Joe: Critical thinking is the objective analysis of facts to form a well-reasoned judgment.
+User: what is critical thinking (1079)
+Joe: Critical thinking is the objective analysis of facts to form a well-reasoned judgment.
+
+User: what is a premise (4425)
+Joe: A premise is a statement that provides the foundation for an argument or reasoning.
+User: what is a premise (4425)
+Joe: A premise is a statement that provides the foundation for an argument or reasoning.
+
+User: what is a syllogism (7908)
+Joe: A syllogism is a form of deductive reasoning consisting of two premises and a conclusion.
+User: what is a syllogism (7908)
+Joe: A syllogism is a form of deductive reasoning consisting of two premises and a conclusion.
+
+User: what is a hypothesis (2506)
+Joe: A hypothesis is a proposed explanation for a phenomenon that can be tested.
+User: what is a hypothesis (2506)
+Joe: A hypothesis is a proposed explanation for a phenomenon that can be tested.
+
+User: what is induction (8301)
+Joe: Induction is the reasoning process of going from specific observations to general rules.
+User: what is induction (8301)
+Joe: Induction is the reasoning process of going from specific observations to general rules.
+
+User: what is a paradox (6718)
+Joe: A paradox is a statement that contradicts itself or leads to a contradiction.
+User: what is a paradox (6718)
+Joe: A paradox is a statement that contradicts itself or leads to a contradiction.
+
+User: what is an inference (2897)
+Joe: An inference is a logical conclusion drawn from evidence and reasoning.
+User: what is an inference (2897)
+Joe: An inference is a logical conclusion drawn from evidence and reasoning.
+
+User: what is logic (9098)
+Joe: Logic is the study of valid reasoning and the principles of correct inference.
+User: what is logic (9098)
+Joe: Logic is the study of valid reasoning and the principles of correct inference.
+
+User: what is a tautology (2082)
+Joe: A tautology is a statement that is true in every possible interpretation.
+User: what is a tautology (2082)
+Joe: A tautology is a statement that is true in every possible interpretation.
+
+User: what is abduction (8179)
+Joe: Abduction is the process of finding the simplest and most likely explanation for an observation.
+User: what is abduction (8179)
+Joe: Abduction is the process of finding the simplest and most likely explanation for an observation.
+
+User: what is deduction (7925)
+Joe: Deduction is the reasoning process of going from general premises to specific conclusions.
+User: what is deduction (7925)
+Joe: Deduction is the reasoning process of going from general premises to specific conclusions.
+
+User: what is deductive reasoning (3100)
+Joe: Deductive reasoning moves from general statements to reach a logically certain conclusion.
+User: what is deductive reasoning (3100)
+Joe: Deductive reasoning moves from general statements to reach a logically certain conclusion.
+
+User: what is logic (173)
+Joe: Logic is the study of valid reasoning and the principles of correct inference.
+User: what is logic (173)
+Joe: Logic is the study of valid reasoning and the principles of correct inference.
+
+User: what is induction (7776)
+Joe: Induction is the reasoning process of going from specific observations to general rules.
+User: what is induction (7776)
+Joe: Induction is the reasoning process of going from specific observations to general rules.
+
+User: what is a premise (6390)
+Joe: A premise is a statement that provides the foundation for an argument or reasoning.
+User: what is a premise (6390)
+Joe: A premise is a statement that provides the foundation for an argument or reasoning.
+
+User: what is deduction (4460)
+Joe: Deduction is the reasoning process of going from general premises to specific conclusions.
+User: what is deduction (4460)
+Joe: Deduction is the reasoning process of going from general premises to specific conclusions.
+
+User: what is a fallacy (9699)
+Joe: A fallacy is an error in reasoning that undermines the logical validity of an argument.
+User: what is a fallacy (9699)
+Joe: A fallacy is an error in reasoning that undermines the logical validity of an argument.
+
+User: what is a fallacy (2784)
+Joe: A fallacy is an error in reasoning that undermines the logical validity of an argument.
+User: what is a fallacy (2784)
+Joe: A fallacy is an error in reasoning that undermines the logical validity of an argument.
+
+User: what is a paradox (9253)
+Joe: A paradox is a statement that contradicts itself or leads to a contradiction.
+User: what is a paradox (9253)
+Joe: A paradox is a statement that contradicts itself or leads to a contradiction.
+
+User: what is abduction (6544)
+Joe: Abduction is the process of finding the simplest and most likely explanation for an observation.
+User: what is abduction (6544)
+Joe: Abduction is the process of finding the simplest and most likely explanation for an observation.
+
+User: What is the sum of the first 24 terms of the arithmetic sequence 2, 6, 10, ...?
+Joe: Pair the ends: the first term is 2 and the last is 94, so sum = 24 * 96 / 2 = 2304 / 2 = 1152.
+
+User: What is the 19th term of the sequence 39, 51, 63, ...?
+Joe: The step is 51 - 39 = 12. Term 19 = 39 + 18 * 12 = 39 + 216 = 255.
+
+User: What is (30 + 29) * (9 - 5)?
+Joe: 30 + 29 = 59 and 9 - 5 = 4, so 59 * 4 = 236.
+
+User: What is 9 * (45 - 38) + 10?
+Joe: The bracket gives 45 - 38 = 7, then 9 * 7 = 63, and 63 + 10 = 73. The answer is 73.
+
+User: What is 178 + 137 - 65?
+Joe: 178 + 137 = 315, 315 - 65 = 250, so 178 + 137 - 65 = 250.
+
+User: What is 440 - 229 - 39?
+Joe: 440 - 229 = 211, 211 - 39 = 172, so 440 - 229 - 39 = 172.
+
+User: How many minutes are in 4 hours and 30 minutes?
+Joe: 4 hours is 240 minutes, and the extra 30 minutes stay as they are, so 240 + 30 = 270 minutes.
+
+User: What percent is 0.12?
+Joe: 0.12 = 12/100, and a percent is out of 100, so 0.12 is 12%.
+
+User: How much bigger is 500 than 170?
+Joe: 500 - 170 = 330, so the difference is 330.
+
+User: What is the sum of the digits of 114?
+Joe: The digits are 1, 1 and 4, so the sum is 1 + 1 + 4 = 6.
+
+User: Use the digit sum rule to decide whether 351 is divisible by 9?
+Joe: The digits are 3, 5 and 1 and they add to 9. 9 is a multiple of 9, so 351 is divisible by 9.
+
+User: How many factors does 145 have?
+Joe: The factor pairs are 1 * 145 and 5 * 29. That is 2 pairs, so 145 has 4 factors.
+
+User: What is 192 + 245 + 31 + 62?
+Joe: 192 + 245 + 31 + 62 = 192 + 437 + 468 + 530 = 530.
+
+User: What is 1/3 + 7/9?
+Joe: The LCD of 3 and 9 is 9, so 1/3 = 3/9 and 7/9 = 7/9. Then 3/9 + 7/9 = 10/9.
+
+User: What is 3/8 / 1/7?
+Joe: Turn the second fraction upside down: 3/8 / 1/7 = 3/8 * 7/1 = 21/8.
+
+User: What is 3/9 of 54?
+Joe: 54 splits into 6 groups of 9, and each group is worth 3. So 3/9 of 54 = 18.
+
+User: What is 5/5 - 1/10?
+Joe: The LCD of 5 and 10 is 10, so 5/5 = 10/10 and 1/10 = 1/10. Then 10/10 - 1/10 = 9/10.
+
+User: What is 4/9 * 3/5?
+Joe: Top times top over bottom times bottom: 4/9 * 3/5 = 12/45 = 4/15.
+
+User: What is the GCD of 72 and 45?
+Joe: Euclid: 72 = 45 * 1 + 27, 45 = 27 * 1 + 18, 27 = 18 * 1 + 9, 18 = 9 * 2 + 0, so the GCD is 9.
+
+User: How many groups of 3 fit into 47, and what is left over?
+Joe: 3 * 15 = 45, and 47 - 45 = 2, so 15 full groups with 2 left over.
+
+User: Which is the first common multiple of 6 and 3?
+Joe: Multiples of 6 up to 6 are 6. The last of them, 6, is also a multiple of 3, so 6 is the first common one.
+
+User: What is the LCM of 30 and 10?
+Joe: The GCD is 10, so LCM = 30 * 10 / 10 = 300 / 10 = 30.
+
+User: What is the mean of 8, 66, 81, 17, 12, 21, 69 and 70?
+Joe: Sum = 8 + 66 + 81 + 17 + 12 + 21 + 69 + 70 = 344. Mean = 344 / 8 = 43.
+
+User: What is the median of 11, 22, 42, 64, 66, 95, 109, 112 and 115?
+Joe: Sorted, they are 11, 22, 42, 64, 66, 95, 109, 112 and 115. With 9 values the middle one is number 5, so the median is 66.
+
+User: What is the mode of 4, 4, 59, 59, 4 and 127?
+Joe: 4 shows up 3 times while 59 shows up 2 times and 127 once, so the mode is 4.
+
+User: How do you check the answer to 90 / 9?
+Joe: The quotient is 10, and to check it multiply back: 9 * 10 = 90, which matches 90.
+
+User: What is 29 + 9 * 18?
+Joe: 9 * 18 = 162, 29 + 162 = 191, so 29 + 9 * 18 = 191.
+
+User: What is 719 - 18 * 15 + 15?
+Joe: 18 * 15 = 270, 719 - 270 = 449, 449 + 15 = 464, so the total is 464.
+
+User: What is 12% as a decimal?
+Joe: 12% = 12/100 = 3/25 = 0.12.
+
+User: What is 70% as a fraction in lowest terms?
+Joe: 70% = 70/100, and the GCD of 70 and 100 is 10, so 7/10.
+
+User: What is 20% of 110?
+Joe: 20% of 110 = 110 * 20/100 = 2200/100 = 22.
+
+User: In the number 897, what is the value of the digit 9?
+Joe: The 9 sits in the tens place, so its value is 9 * 10 = 90.
+
+User: What is the range of 12, 74, 82, 93 and 136?
+Joe: The biggest is 136 and the smallest is 12, so the range is 136 - 12 = 124.
+
+User: Dividing 153 by 7 leaves what remainder?
+Joe: 7 * 21 = 147, 153 - 147 = 6, so the remainder is 6.
+
+User: What is 3^2?
+Joe: 3^2 means 3 multiplied by itself 2 times. 3 * 3 = 9, so 3^2 = 9.
+
+User: How do you round 46.6 to the nearest whole number?
+Joe: The part after the point is 0.6, which is at least half, so 46.6 rounds to 47.
+
+User: Do 38677 round to the nearest 1000?
+Joe: The neighbouring multiples are 38000 and 39000. 38677 - 38000 = 677 and 39000 - 38677 = 323, and 677 is the bigger step, so 38677 rounds to 39000.
+
+User: How would you split 33 * 44 to make it easier?
+Joe: 33 * 44 = 33 * 40 + 33 * 4 = 1320 + 132 = 1452.
+
+User: How do you add 925 and 47 without a full column?
+Joe: Round 47 up to 50, which is 3 more, so 925 + 47 = 925 + 50 - 3 = 975 - 3 = 972.
+
+User: What is the square root of 441?
+Joe: 21 * 21 = 441, and that is the number we started with, so the square root of 441 is 21.
+
+User: A number goes up 25% and then down 20%. Starting from 112, what do you end up with?
+Joe: Up 25%: 112 * 1.25 = 140. Down 20%: 140 * 0.8 = 112. You end up with 112.
+
+User: What is 82 * 11?
+Joe: 82 * 11 = 82 * 10 + 82 = 820 + 82 = 902.
+
+User: What is 81 * 99?
+Joe: 81 * 99 = 81 * 100 - 81 = 8100 - 81 = 8019.
+
+User: How many minutes are there in 16 hours?
+Joe: 1 hour is 60 minutes, so 16 * 60 = 960.
+
+User: What is (24 + 31) * (27 - 6)?
+Joe: 24 + 31 = 55 and 27 - 6 = 21, so 55 * 21 = 1155.
+
+User: What is (51 + 22) * 4?
+Joe: The bracket gives 51 + 22 = 73, then 73 * 4 = 292, so the answer is 292.
+
+User: What is 23 + 103 - 50?
+Joe: 23 + 103 = 126, 126 - 50 = 76, so 23 + 103 - 50 = 76.
+
+User: What is 198 + 70 + 77 + 128?
+Joe: 198 + 70 + 77 + 128 = 198 + 268 + 345 + 473 = 473.
+
+User: What is 9/10 + 2/4?
+Joe: The LCD of 10 and 4 is 20, so 9/10 = 18/20 and 2/4 = 10/20. Then 18/20 + 10/20 = 28/20 = 7/5.
+
+User: What is 4/12 / 1/3?
+Joe: Turn the second fraction upside down: 4/12 / 1/3 = 4/12 * 3/1 = 12/12.
+
+User: What is the mean of 35, 72, 51, 24 and 58?
+Joe: Sum = 35 + 72 + 51 + 24 + 58 = 240. Mean = 240 / 5 = 48.
+
+User: What is the median of 2, 8, 9, 50, 51, 62, 77, 101 and 116?
+Joe: Sorted, they are 2, 8, 9, 50, 51, 62, 77, 101 and 116. With 9 values the middle one is number 5, so the median is 51.
+
+User: What is the mode of 31, 16, 31, 16, 116 and 16?
+Joe: 16 shows up 3 times while 31 shows up 2 times and 116 once, so the mode is 16.
+
+User: What is 507 - 7 * 3 + 13?
+Joe: 7 * 3 = 21, 507 - 21 = 486, 486 + 13 = 499, so the total is 499.
+
+User: What is the range of 17, 47, 66, 123, 130, 135 and 139?
+Joe: The biggest is 139 and the smallest is 17, so the range is 139 - 17 = 122.
+
+User: How many hours are there in 47 days?
+Joe: 1 day is 24 hours, so 47 * 24 = 1128.
+
+User: What is (18 + 17) * (29 - 26)?
+Joe: 18 + 17 = 35 and 29 - 26 = 3, so 35 * 3 = 105.
+
+User: What is 708 - 129 - 64?
+Joe: 708 - 129 = 579, 579 - 64 = 515, so 708 - 129 - 64 = 515.
+
+User: What is 136 + 224 + 85 + 213?
+Joe: 136 + 224 + 85 + 213 = 136 + 360 + 445 + 658 = 658.
+
+User: What is 1/6 / 2/5?
+Joe: Turn the second fraction upside down: 1/6 / 2/5 = 1/6 * 5/2 = 5/12.
+
+User: What is 7/9 of 216?
+Joe: 216 splits into 24 groups of 9, and each group is worth 7. So 7/9 of 216 = 168.
+
+User: What is the mean of 71, 55, 49, 18 and 87?
+Joe: Sum = 71 + 55 + 49 + 18 + 87 = 280. Mean = 280 / 5 = 56.
+
+User: What is the median of 36, 67, 101, 112 and 118?
+Joe: Sorted, they are 36, 67, 101, 112 and 118. With 5 values the middle one is number 3, so the median is 101.
+
+User: What is 18 * 10 + 32?
+Joe: 18 * 10 = 180, 180 + 32 = 212, so 18 * 10 + 32 = 212.
+
+User: What is 903 - 14 * 11 + 4?
+Joe: 14 * 11 = 154, 903 - 154 = 749, 749 + 4 = 753, so the total is 753.
+
+User: What is the range of 51, 97, 98, 99, 101 and 133?
+Joe: The biggest is 133 and the smallest is 51, so the range is 133 - 51 = 82.
+
+User: What is 70 * 9?
+Joe: 70 * 9 = 70 * 10 - 70 = 700 - 70 = 630.
+
+User: How many centimeters are there in 22 meters?
+Joe: 1 meter is 100 centimeters, so 22 * 100 = 2200.
+
+User: What is 11 * (31 - 15) + 10?
+Joe: The bracket gives 31 - 15 = 16, then 11 * 16 = 176, and 176 + 10 = 186. The answer is 186.
+
+User: What is 75 + 81 - 162?
+Joe: 75 + 81 = 156, 156 - 162 = -6, so 75 + 81 - 162 = -6.
+
+User: What is 911 - 164 - 123?
+Joe: 911 - 164 = 747, 747 - 123 = 624, so 911 - 164 - 123 = 624.
+
+User: How much bigger is 327 than 33?
+Joe: 327 - 33 = 294, so the difference is 294.
+
+User: What is 23 + 180 + 156 + 91?
+Joe: 23 + 180 + 156 + 91 = 23 + 203 + 359 + 450 = 450.
+
+User: What is 9/12 + 5/9?
+Joe: The LCD of 12 and 9 is 36, so 9/12 = 27/36 and 5/9 = 20/36. Then 27/36 + 20/36 = 47/36.
+
+User: What is 1/3 of 60?
+Joe: 60 splits into 20 groups of 3, and each group is worth 1. So 1/3 of 60 = 20.
+
+User: What is 2/2 - 5/12?
+Joe: The LCD of 2 and 12 is 12, so 2/2 = 12/12 and 5/12 = 5/12. Then 12/12 - 5/12 = 7/12.
+
+User: What is the mean of 38, 68, 37 and 21?
+Joe: Sum = 38 + 68 + 37 + 21 = 164. Mean = 164 / 4 = 41.
+
+User: What is the median of 30, 32, 44, 59, 81, 90 and 106?
+Joe: Sorted, they are 30, 32, 44, 59, 81, 90 and 106. With 7 values the middle one is number 4, so the median is 59.
+
+User: What is the mode of 113, 31, 8, 31, 8 and 8?
+Joe: 8 shows up 3 times while 31 shows up 2 times and 113 once, so the mode is 8.
+
+User: What is 470 - 4 * 13 + 16?
+Joe: 4 * 13 = 52, 470 - 52 = 418, 418 + 16 = 434, so the total is 434.
+
+User: What is 80% of 35?
+Joe: 80% of 35 = 35 * 80/100 = 2800/100 = 28.
+
+User: What is the range of 8, 14, 48, 63, 93, 108 and 109?
+Joe: The biggest is 109 and the smallest is 8, so the range is 109 - 8 = 101.
+
+User: What is 5^2 + 10^2?
+Joe: 5^2 = 25 and 10^2 = 100, so 25 + 100 = 125.
+
+User: How many milliliters are there in 40 liters?
+Joe: 1 liter is 1000 milliliters, so 40 * 1000 = 40000.
+
+User: What is (18 + 29) * (33 - 10)?
+Joe: 18 + 29 = 47 and 33 - 10 = 23, so 47 * 23 = 1081.
+
+User: What is 165 + 48 - 37?
+Joe: 165 + 48 = 213, 213 - 37 = 176, so 165 + 48 - 37 = 176.
+
+User: What is 579 - 116 - 110?
+Joe: 579 - 116 = 463, 463 - 110 = 353, so 579 - 116 - 110 = 353.
+
+User: What is 196 + 96 + 77 + 252?
+Joe: 196 + 96 + 77 + 252 = 196 + 292 + 369 + 621 = 621.
+
+User: What is 2/3 + 6/8?
+Joe: The LCD of 3 and 8 is 24, so 2/3 = 16/24 and 6/8 = 18/24. Then 16/24 + 18/24 = 34/24 = 17/12.
+
+User: What is the mode of 13, 42, 42, 13, 75 and 13?
+Joe: 13 shows up 3 times while 42 shows up 2 times and 75 once, so the mode is 13.
+
+User: What is 54 + 8 * 34?
+Joe: 8 * 34 = 272, 54 + 272 = 326, so 54 + 8 * 34 = 326.
+
+User: What is the range of 18, 50, 62 and 118?
+Joe: The biggest is 118 and the smallest is 18, so the range is 118 - 18 = 100.
+
+User: What is (20 + 13) * (39 - 6)?
+Joe: 20 + 13 = 33 and 39 - 6 = 33, so 33 * 33 = 1089.
+
+User: What is (15 + 35) * 5?
+Joe: The bracket gives 15 + 35 = 50, then 50 * 5 = 250, so the answer is 250.
+
+User: What is 54 + 150 - 56?
+Joe: 54 + 150 = 204, 204 - 56 = 148, so 54 + 150 - 56 = 148.
+
+User: What is 504 - 47 - 156?
+Joe: 504 - 47 = 457, 457 - 156 = 301, so 504 - 47 - 156 = 301.
+
+User: What is 154 + 45 + 114 + 193?
+Joe: 154 + 45 + 114 + 193 = 154 + 199 + 313 + 506 = 506.
+
+User: What is the mean of 54, 80, 12, 13, 70, 86, 81 and 52?
+Joe: Sum = 54 + 80 + 12 + 13 + 70 + 86 + 81 + 52 = 448. Mean = 448 / 8 = 56.
+
+User: What is the median of 18, 22, 30, 35, 65, 91 and 119?
+Joe: Sorted, they are 18, 22, 30, 35, 65, 91 and 119. With 7 values the middle one is number 4, so the median is 35.
+
+User: What is 76 * 16 + 5?
+Joe: 76 * 16 = 1216, 1216 + 5 = 1221, so 76 * 16 + 5 = 1221.
+
+User: What is 974 - 6 * 5 + 14?
+Joe: 6 * 5 = 30, 974 - 30 = 944, 944 + 14 = 958, so the total is 958.
+
+User: What is the range of 64, 69, 84, 86, 96 and 111?
+Joe: The biggest is 111 and the smallest is 64, so the range is 111 - 64 = 47.
+
+User: What is 10^2 + 17^2?
+Joe: 10^2 = 100 and 17^2 = 289, so 100 + 289 = 389.
+
+User: What is 43 + 143 - 74?
+Joe: 43 + 143 = 186, 186 - 74 = 112, so 43 + 143 - 74 = 112.
+
+User: What is 565 - 186 - 26?
+Joe: 565 - 186 = 379, 379 - 26 = 353, so 565 - 186 - 26 = 353.
+
+User: What is 183 + 84 + 111 + 254?
+Joe: 183 + 84 + 111 + 254 = 183 + 267 + 378 + 632 = 632.
+
+User: What is 1/9 + 1/6?
+Joe: The LCD of 9 and 6 is 18, so 1/9 = 2/18 and 1/6 = 3/18. Then 2/18 + 3/18 = 5/18.
+
+User: What is 6/6 - 9/10?
+Joe: The LCD of 6 and 10 is 30, so 6/6 = 30/30 and 9/10 = 27/30. Then 30/30 - 27/30 = 3/30 = 1/10.
+
+User: What is the mean of 36, 12, 13, 17, 35 and 85?
+Joe: Sum = 36 + 12 + 13 + 17 + 35 + 85 = 198. Mean = 198 / 6 = 33.
+
+User: What is 751 - 11 * 4 + 10?
+Joe: 11 * 4 = 44, 751 - 44 = 707, 707 + 10 = 717, so the total is 717.
+
+User: What is 166 + 105 - 164?
+Joe: 166 + 105 = 271, 271 - 164 = 107, so 166 + 105 - 164 = 107.
+
+User: What is 478 - 83 - 81?
+Joe: 478 - 83 = 395, 395 - 81 = 314, so 478 - 83 - 81 = 314.
+
+User: What is 23 + 108 + 187 + 147?
+Joe: 23 + 108 + 187 + 147 = 23 + 131 + 318 + 465 = 465.
+
+User: What is 2/4 / 8/9?
+Joe: Turn the second fraction upside down: 2/4 / 8/9 = 2/4 * 9/8 = 18/32 = 9/16.
+
+User: What is the median of 6, 16, 17, 22, 63, 90 and 109?
+Joe: Sorted, they are 6, 16, 17, 22, 63, 90 and 109. With 7 values the middle one is number 4, so the median is 22.
+
+User: What is the mode of 5, 58, 5, 84, 5 and 58?
+Joe: 5 shows up 3 times while 58 shows up 2 times and 84 once, so the mode is 5.
+
+User: What is the range of 27, 81, 104, 126 and 129?
+Joe: The biggest is 129 and the smallest is 27, so the range is 129 - 27 = 102.
+
+User: What is 11^4?
+Joe: 11^4 means 11 multiplied by itself 4 times. 11 * 11 = 121, 121 * 11 = 1331, 1331 * 11 = 14641, so 11^4 = 14641.
+
+User: What is 23 + 137 - 166?
+Joe: 23 + 137 = 160, 160 - 166 = -6, so 23 + 137 - 166 = -6.
+
+User: What is 824 - 205 - 93?
+Joe: 824 - 205 = 619, 619 - 93 = 526, so 824 - 205 - 93 = 526.
+
+User: What is 114 + 54 + 63 + 246?
+Joe: 114 + 54 + 63 + 246 = 114 + 168 + 231 + 477 = 477.
+
+User: What is the mean of 60, 35, 25, 69, 46 and 11?
+Joe: Sum = 60 + 35 + 25 + 69 + 46 + 11 = 246. Mean = 246 / 6 = 41.
+
+User: What is the median of 20, 30, 33, 34, 103, 104 and 109?
+Joe: Sorted, they are 20, 30, 33, 34, 103, 104 and 109. With 7 values the middle one is number 4, so the median is 34.
+
+User: What is the mode of 46, 46, 10, 10, 10 and 78?
+Joe: 10 shows up 3 times while 46 shows up 2 times and 78 once, so the mode is 10.
+
+User: What is 661 - 17 * 9 + 5?
+Joe: 17 * 9 = 153, 661 - 153 = 508, 508 + 5 = 513, so the total is 513.
+
+User: What is 75% of 184?
+Joe: 75% of 184 = 184 * 75/100 = 13800/100 = 138.
+
+User: What is the range of 16, 63, 71, 92, 95, 108 and 122?
+Joe: The biggest is 122 and the smallest is 16, so the range is 122 - 16 = 106.
+
+User: How many grams are there in 3 kilograms?
+Joe: 1 kilogram is 1000 grams, so 3 * 1000 = 3000.
+
+User: What is (14 + 8) * (32 - 21)?
+Joe: 14 + 8 = 22 and 32 - 21 = 11, so 22 * 11 = 242.
+
+User: What is 527 - 93 - 190?
+Joe: 527 - 93 = 434, 434 - 190 = 244, so 527 - 93 - 190 = 244.
+
+User: What is 62 + 46 + 251 + 179?
+Joe: 62 + 46 + 251 + 179 = 62 + 108 + 359 + 538 = 538.
+
+User: What is 3/11 * 9/11?
+Joe: Top times top over bottom times bottom: 3/11 * 9/11 = 27/121.
+
+User: What is the median of 39, 58, 59, 108 and 113?
+Joe: Sorted, they are 39, 58, 59, 108 and 113. With 5 values the middle one is number 3, so the median is 59.
+
+User: What is the mode of 51, 51, 117, 18, 18 and 18?
+Joe: 18 shows up 3 times while 51 shows up 2 times and 117 once, so the mode is 18.
+
+User: What is 37 + 6 * 43?
+Joe: 6 * 43 = 258, 37 + 258 = 295, so 37 + 6 * 43 = 295.
+
+User: What is 835 - 16 * 14 + 18?
+Joe: 16 * 14 = 224, 835 - 224 = 611, 611 + 18 = 629, so the total is 629.
+
+User: What is the range of 30, 40, 49, 52, 121, 127 and 136?
+Joe: The biggest is 136 and the smallest is 30, so the range is 136 - 30 = 106.
+
+User: What is 154 + 172 - 90?
+Joe: 154 + 172 = 326, 326 - 90 = 236, so 154 + 172 - 90 = 236.
+
+User: What is 815 - 194 - 109?
+Joe: 815 - 194 = 621, 621 - 109 = 512, so 815 - 194 - 109 = 512.
+
+User: What is 259 + 131 + 50 + 20?
+Joe: 259 + 131 + 50 + 20 = 259 + 390 + 440 + 460 = 460.
+
+User: What is the median of 53, 54, 74, 77, 78, 79 and 84?
+Joe: Sorted, they are 53, 54, 74, 77, 78, 79 and 84. With 7 values the middle one is number 4, so the median is 77.
+
+User: What is the mode of 22, 52, 52, 22, 76 and 22?
+Joe: 22 shows up 3 times while 52 shows up 2 times and 76 once, so the mode is 22.
+
+User: What is the range of 34, 44, 79, 86, 118 and 124?
+Joe: The biggest is 124 and the smallest is 34, so the range is 124 - 34 = 90.
+
+User: What is 722 - 249 - 24?
+Joe: 722 - 249 = 473, 473 - 24 = 449, so 722 - 249 - 24 = 449.
+
+User: What is 97 + 232 + 90 + 199?
+Joe: 97 + 232 + 90 + 199 = 97 + 329 + 419 + 618 = 618.
+
+User: What is 1/7 / 4/8?
+Joe: Turn the second fraction upside down: 1/7 / 4/8 = 1/7 * 8/4 = 8/28 = 2/7.
+
+User: What values of x satisfy |x - 20| = 11?
+Joe: Either x - 20 = 11, giving x = 31, or x - 20 = -11, giving x = 9. So x = 31 or x = 9.
+
+User: If x + 33 = 100, what is x?
+Joe: x + 33 = 100, so x = 100 - 33 = 67.
+
+User: Is 9/9 = 8/8 a true proportion?
+Joe: Cross multiply: 9 * 8 = 72 and 9 * 8 = 72, and those match, so the proportion is true.
+
+User: If x + 21 = 10 + 14, what is x?
+Joe: Subtract 21 from both sides: x = 10 + 14 - 21 = 24 - 21 = 3.
+
+User: Can you simplify 7x + 2x - 8x?
+Joe: Add 7 and 2 to get 9, then 9 - 8 = 1, so it is x.
+
+User: Can you simplify 13x + 17 - 18x + 6?
+Joe: The x terms give 13 - 18 = -5 and the numbers give 17 + 6 = 23, so it is -5x + 23.
+
+User: How do you factor 24x + 64?
+Joe: Both terms share 8: 24x + 64 = 8 * 3x + 8 * 8 = 8(3x + 8).
+
+User: If 3x + 6 = x + 46, what is x?
+Joe: Subtract x from both sides: 2x + 6 = 46, so 2x = 46 - 6 = 40, so x = 40 / 2 = 20.
+
+User: y varies directly with x. When x = 6, y = 18. What is y when x = 4?
+Joe: The rate is 18 / 6 = 3 per unit, so for x = 4 we get y = 3 * 4 = 12.
+
+User: What does 11(17x + 12) come to when you expand it?
+Joe: 11 * 17x = 187x and 11 * 12 = 132, so 11(17x + 12) = 187x + 132.
+
+User: Can you simplify 5(4x + 16) - 10x?
+Joe: Distribute: 5 * 4x = 20x, so we have 20x + 80 - 10x. The x terms give 20 - 10 = 10, so it is 10x + 80.
+
+User: What is 5x + 13 when x = 11?
+Joe: 5x = 5 * 11 = 55, then 55 + 13 = 68.
+
+User: Can you simplify 4x + 5x and then work it out for x = 7?
+Joe: 4x + 5x = 4 + 5 = 9, so the expression is 9x. For x = 7 that is 9 * 7 = 63.
+
+User: Can you factor x^2 + 10x + 25?
+Joe: Find two numbers that multiply to 25 and add to 10: 5 and 5, since 5 * 5 = 25 and 5 + 5 = 10. So x^2 + 10x + 25 = (x + 5)(x + 5).
+
+User: If 7/2 x + 15 = 78, what is x?
+Joe: 7/2 x + 15 = 78, so 7/2 x = 78 - 15 = 63, so x = 63 * 2 / 7 = 18.
+
+User: What is the smallest whole number x with 2x + 9 > 23?
+Joe: Solve it: 2x + 9 > 23 means 2x > 14, so x > 14 / 2 = 7. The smallest whole number past that is 8, and 2 * 8 + 9 = 25, which is more than 23, so the answer is 8.
+
+User: If 7x = -56, what is x?
+Joe: 7x = -56, so x = -56 / 7 = -8.
+
+User: If 189 / x = 9, what is x?
+Joe: 189 / x = 9, so 189 = 9x, so x = 189 / 9 = 21.
+
+User: After a 50% decrease a number is 60. What was it?
+Joe: Call the number x. Dropping 50% leaves 0.5 of it, so 0.5x = 60, so x = 60 / 0.5 = 120.
+
+User: What is the slope of the line through (18, 19) and (19, 18)?
+Joe: Slope = (18 - 19) / (19 - 18) = -1 / 1 = -1.
+
+User: What is x in 2(3x + 9) = 78?
+Joe: Divide both sides by 2: 3x + 9 = 39, so 3x = 39 - 9 = 30, so x = 30 / 3 = 10.
+
+User: If 2^x = 1024, what is x?
+Joe: Count the doublings: 2^10 = 1024, so x = 10.
+
+User: If x = 16y + 6, and y = 2, what is x?
+Joe: y = 2, so x = 16 * 2 + 6 = 32 + 6 = 38.
+
+User: Can you write y in terms of x for 3y + 8 = 5x + 14?
+Joe: 3y = 5x + 14 - 8, so y = 5x + 6 over 3, that is y = (5x + 6) / 3.
+
+User: If 12/9 = 8/x, what is x?
+Joe: Cross multiply: 12x = 9 * 8 = 72, so x = 72 / 12 = 6.
+
+User: If x^2 = 169, what is x if x is positive?
+Joe: x^2 = 169, so x = 13 when x is positive.
+
+User: What is 2x^2 - 17x + 8 when x = 8?
+Joe: x^2 = 8^2 = 64, so 2x^2 = 128 and 17x = 136. Then 128 - 136 + 8 = -8 + 8 = 0.
+
+User: What are x and y in the pair y = 7x + 6 and y = 4x + 9?
+Joe: Set the right sides equal: 7x + 6 = 4x + 9, so 3x = 9 - 6 = 3, so x = 1. Then y = 7 * 1 + 6 = 13.
+
+User: What is x when y = 8x + 17 and y = 129?
+Joe: 8x + 17 = 129, so 8x = 129 - 17 = 112, so x = 112 / 8 = 14.
+
+User: What are x and y in x + y = 72 and x - y = 32?
+Joe: Add the two: 2x = 72 + 32 = 104, so x = 52. Then y = 72 - 52 = 20.
+
+User: The sum of two numbers is 40 and one of them is 8. What is the other?
+Joe: The two numbers add to 40, so the other one is 40 - 8 = 32.
+
+User: If 13y = 156, what is y?
+Joe: 13y = 156, so y = 156 / 13 = 12.
+
+User: If 9x + 24 = 402, what is x?
+Joe: 9x + 24 = 402, so 9x = 402 - 24 = 378, so x = 378 / 9 = 42.
+
+User: If 5x - 8 = 172, what is x?
+Joe: 5x - 8 = 172, so 5x = 172 + 8 = 180, so x = 180 / 5 = 36.
+
+User: On the line y = 2x + 5, what is y when x = 8?
+Joe: y = 2 * 8 + 5 = 16 + 5 = 21.
+
+User: What is x in 7x + 26 = 3x + 130?
+Joe: Subtract 3x from both sides: 4x + 26 = 130, so 4x = 130 - 26 = 104, so x = 104 / 4 = 26.
+
+User: 20% of what number is 5?
+Joe: Let it be x, so 20/100 x = 5. That is 0.2x = 5, so x = 5 / 0.2 = 25.
+
+User: What is the x intercept of y = 11x - 33?
+Joe: At the x intercept y is 0, so 11x - 33 = 0, that is 11x = 33, so x = 33 / 11 = 3.
+
+User: If 9/2 x + 8 = 35, what is x?
+Joe: 9/2 x + 8 = 35, so 9/2 x = 35 - 8 = 27, so x = 27 * 2 / 9 = 6.
+
+User: Can you simplify 6^7 * 6^3?
+Joe: 6^7 * 6^3 = 6^10, since 7 + 3 = 10.
+
+User: What is x in 4(8x + 16) = 160?
+Joe: Divide both sides by 4: 8x + 16 = 40, so 8x = 40 - 16 = 24, so x = 24 / 8 = 3.
+
+User: If 10x + 3 = 43, what is x?
+Joe: 10x + 3 = 43, so 10x = 43 - 3 = 40, so x = 40 / 10 = 4.
+
+User: What is x in 8x + 3 = 7x + 23?
+Joe: Subtract 7x from both sides: x + 3 = 23, so x = 23 - 3 = 20, so x = 20 = 20.
+
+User: If 403 / x = 13, what is x?
+Joe: 403 / x = 13, so 403 = 13x, so x = 403 / 13 = 31.
+
+User: What is x in 7(2x + 11) = 385?
+Joe: Divide both sides by 7: 2x + 11 = 55, so 2x = 55 - 11 = 44, so x = 44 / 2 = 22.
+
+User: If 6x + 27 = 219, what is x?
+Joe: 6x + 27 = 219, so 6x = 219 - 27 = 192, so x = 192 / 6 = 32.
+
+User: What is x in 5x + 27 = 2x + 63?
+Joe: Subtract 2x from both sides: 3x + 27 = 63, so 3x = 63 - 27 = 36, so x = 36 / 3 = 12.
+
+User: If x + 13 = -6 + 27, what is x?
+Joe: Subtract 13 from both sides: x = -6 + 27 - 13 = 21 - 13 = 8.
+
+User: What is x in 3(5x + 19) = 462?
+Joe: Divide both sides by 3: 5x + 19 = 154, so 5x = 154 - 19 = 135, so x = 135 / 5 = 27.
+
+User: If 12x + 19 = 559, what is x?
+Joe: 12x + 19 = 559, so 12x = 559 - 19 = 540, so x = 540 / 12 = 45.
+
+User: What is x in 8x + 10 = 3x + 45?
+Joe: Subtract 3x from both sides: 5x + 10 = 45, so 5x = 45 - 10 = 35, so x = 35 / 5 = 7.
+
+User: Is 8/10 = 4/5 a true proportion?
+Joe: Cross multiply: 8 * 5 = 40 and 10 * 4 = 40, and those match, so the proportion is true.
+
+User: What is 4x + 5 when x = 7?
+Joe: 4x = 4 * 7 = 28, then 28 + 5 = 33.
+
+User: What is x in 5(6x + 6) = 480?
+Joe: Divide both sides by 5: 6x + 6 = 96, so 6x = 96 - 6 = 90, so x = 90 / 6 = 15.
+
+User: If 6/11 = 12/x, what is x?
+Joe: Cross multiply: 6x = 11 * 12 = 132, so x = 132 / 6 = 22.
+
+User: If 2y = 28, what is y?
+Joe: 2y = 28, so y = 28 / 2 = 14.
+
+User: What is x in 6x + 31 = 4x + 95?
+Joe: Subtract 4x from both sides: 2x + 31 = 95, so 2x = 95 - 31 = 64, so x = 64 / 2 = 32.
+
+User: If x + 22 = 3 + 22, what is x?
+Joe: Subtract 22 from both sides: x = 3 + 22 - 22 = 25 - 22 = 3.
+
+User: If 11x = 402 - 17, what is x?
+Joe: 11x = 402 - 17, so 11x = 385, so x = 385 / 11 = 35.
+
+User: What is x in 6(2x + 5) = 294?
+Joe: Divide both sides by 6: 2x + 5 = 49, so 2x = 49 - 5 = 44, so x = 44 / 2 = 22.
+
+User: What is x in 4(9x + 3) = 552?
+Joe: Divide both sides by 4: 9x + 3 = 138, so 9x = 138 - 3 = 135, so x = 135 / 9 = 15.
+
+User: What is 9x^2 - 3x + 14 when x = 10?
+Joe: x^2 = 10^2 = 100, so 9x^2 = 900 and 3x = 30. Then 900 - 30 + 14 = 870 + 14 = 884.
+
+User: What is x in 6(5x + 18) = 888?
+Joe: Divide both sides by 6: 5x + 18 = 148, so 5x = 148 - 18 = 130, so x = 130 / 5 = 26.
+
+User: A parent is 10 years older than 3 times the child's age, and the child is 5. How old is the parent?
+Joe: 3 * 5 = 15, and 15 + 10 = 25. The parent is 25.
+
+User: A car does 60 mph for 2 hours and then 20 mph for 2 hours. What is its average speed over the whole trip?
+Joe: It covers 60 * 2 = 120 miles and then 20 * 2 = 40 miles, so 120 + 40 = 160 miles in 4 hours. Average = 160 / 4 = 40 mph.
+
+User: Pack A holds 12 items for $3 and pack B holds 36 for $8. Which is cheaper per item?
+Joe: Per item pack A is 3 / 12 = 1/4 and pack B is 8 / 36 = 2/9. Pack B is the cheaper buy per item.
+
+User: One shop sells washing-up liquid at $4 for 8 liters and another at $11 for 16 liters. Which is the better value?
+Joe: Per liter the first shop is 4 / 8 = 1/2 and the second is 11 / 16 = 11/16, so the first shop is cheaper per liter.
+
+User: A closed box is 4 cm by 8 cm by 3 cm. What is its surface area?
+Joe: Two faces of each size: 4 * 8 = 32, 8 * 3 = 24 and 4 * 3 = 12. Adding and doubling: 32 + 24 + 12 = 68, times 2 = 136 square centimeters.
+
+User: A two digit number has 7 in the tens place and 0 in the ones place. What is the number?
+Joe: The tens digit is worth 7 * 10 = 70 and the ones digit is worth 0, so the number is 70 + 0 = 70.
+
+User: You buy 6 tote bags at $4 each and hand over $25. What change should you get?
+Joe: They cost 6 * 4 = 24, so the change is 25 - 24 = $1.
+
+User: A circle has radius 21. Taking pi = 22/7, what is its area?
+Joe: Area = 22/7 * 21^2 = 22/7 * 441 = 22 * 63 = 1386.
+
+User: Taking pi = 3.14, what is the circumference of a circle with radius 10?
+Joe: Circumference = 2 * pi * r = 2 * 3.14 * 10 = 6.28 * 10 = 62.8.
+
+User: Two cars 360 miles apart drive toward each other at 30 and 60 mph. When do they meet?
+Joe: The gap closes at 30 + 60 = 90 mph, so the time is 360 / 90 = 4 hours.
+
+User: You have 7 dimes. What is that worth in cents?
+Joe: Each one is worth 10 cents, so 7 * 10 = 70 cents.
+
+User: Two angles are complementary and one of them is 40 degrees. What is the other?
+Joe: Complementary angles add to 90, so the other is 90 - 40 = 50 degrees.
+
+User: A rectangle is 6 cm by 5 cm with a 4 cm square removed from one corner. What area is left?
+Joe: The whole rectangle is 6 * 5 = 30 and the missing square is 4 * 4 = 16, so the area left is 30 - 16 = 14 square centimeters.
+
+User: $1,000 is invested at 10% a year and compounded. What is it worth after 2 years?
+Joe: Year one: 1000 * 1.1 = $1,100. Year two: 1100 * 1.1 = $1,210, so after 2 years it is worth $1,210.
+
+User: Three consecutive whole numbers add to 30. What are they?
+Joe: Call the middle one n, so the three are n - 1, n and n + 1. They add to 3n, so 3n = 30, n = 10. The numbers are 9, 10 and 11.
+
+User: A cylinder has radius 5 cm and height 10 cm. Taking pi = 3.14, what is its volume?
+Joe: Volume = pi * r^2 * h = 3.14 * 25 * 10 = 78.5 * 10 = 785 cubic centimeters.
+
+User: Flip 2 fair coins. What is the probability of exactly 2 heads?
+Joe: There are 2^2 = 4 equally likely outcomes and 1 way to get exactly 2 heads, so the chance is 1 / 4 = 1/4.
+
+User: A mug costs $120 and is 40% off. What is the sale price?
+Joe: The discount is 40% of 120 = 120 * 40/100 = 4800/100 = $48, so you pay 120 - 48 = $72.
+
+User: Two remote interior angles of a triangle are 50 and 70 degrees. What is the exterior angle at the third vertex?
+Joe: An exterior angle equals the sum of the two remote interior angles, so it is 50 + 70 = 120 degrees.
+
+User: A class of 40 students splits into groups of 10. How many students are in three groups?
+Joe: 40 / 10 = 4 groups of 10, so three groups hold 10 * 3 = 30 students.
+
+User: A car uses 10 liters per 100 km. How much fuel for 720 km?
+Joe: 720 / 100 groups of 10 liters, so 720 * 10 / 100 = 72 liters.
+
+User: A shop marks an item 20% above its $200 cost, then takes 10% off the marked price. What is the final price?
+Joe: Marked up: 200 * 1.2 = $240. After 10% off: 240 * 0.9 = $216.
+
+User: Two fair dice are rolled. What is the probability that the total is 9?
+Joe: There are 36 outcomes, and 4 of them add to 9, so the chance is 4 / 36 = 1/9.
+
+User: A bag holds 2 red, 2 blue and 9 green beads. What is the probability of not drawing green?
+Joe: There are 13 beads and 9 of them are green, so not green is 13 - 9 = 4, and the chance is 4 / 13.
+
+User: You buy an item for $150 and sell it for $165. What is the profit as a percent of what you paid?
+Joe: The profit is 165 - 150 = 15, and that is 15 * 100 / 150 = 10% of the cost.
+
+User: A right triangle has one leg 7 and a hypotenuse of 25. What is the other leg?
+Joe: By Pythagoras the missing leg squared is 25^2 - 7^2 = 625 - 49 = 576, and the square root of that is 24. So the other leg is 24.
+
+User: What is the hypotenuse of a right triangle with legs 6 and 8?
+Joe: c^2 = 6^2 + 8^2 = 36 + 64 = 100, and 100 = 10^2, so c = 10.
+
+User: Three angles of a quadrilateral measure 90, 85 and 88 degrees. What is the fourth?
+Joe: A quadrilateral's angles add to 360. Take off the three you have: 360 - 90 - 85 = 185, then 185 - 88 = 97 degrees.
+
+User: $600 is shared in the ratio 3:5. How much does each share get?
+Joe: The ratio 3:5 is 8 parts in all, so one part is 600 / 8 = $75. That makes $225 and $375.
+
+User: A recipe for 2 cups uses 2 tablespoons of honey. How much for 8 cups?
+Joe: 8 cups is 4 times as many, so 2 * 4 = 8 tablespoons.
+
+User: A rectangle has perimeter 50 and length 7. What is its width?
+Joe: Opposite sides match, so length + width = 50 / 2 = 25. Width = 25 - 7 = 18.
+
+User: A rectangle has area 40 and width 8. What is its length?
+Joe: Length = area / width = 40 / 8 = 5.
+
+User: A box is 7 cm long, 10 cm wide and 14 cm tall. What is its volume?
+Joe: Volume = length * width * height = 7 * 10 * 14 = 70 * 14 = 980 cubic centimeters.
+
+User: An item is $50 plus 10% sales tax. What do you pay in total?
+Joe: The tax is 50 * 10/100 = 500/100 = $5, so the total is 50 + 5 = $55.
+
+User: $1,200 earns 4% simple interest a year. How much interest has it made after 5 years?
+Joe: A year brings 1200 * 4/100 = $48, and over 5 years that is 48 * 5 = $240.
+
+User: A jar has 7 red and 9 blue marbles. What is the probability of drawing a red one?
+Joe: There are 7 + 9 = 16 marbles in all and 7 of them are red, so the chance is 7 / 16.
+
+User: You drive at 50 mph for 6 hours. How far do you travel?
+Joe: Distance = speed * time = 50 * 6 = 300 miles.
+
+User: A bill of $240 is split evenly between 6 people. How much does each person pay?
+Joe: 240 / 6 = $40 each.
+
+User: The area of a square is 144. What is its perimeter?
+Joe: Side * side = 144 gives side = 12, and the perimeter is 12 * 4 = 48.
+
+User: A train covers 200 miles at 40 mph. How long does the trip take?
+Joe: Time = distance / speed = 200 / 40 = 5 hours.
+
+User: A trapezoid has parallel sides 4 and 12 and height 6. What is its area?
+Joe: Area = (sum of the parallel sides) * height / 2, and the sides add to 4 + 12 = 16. So the area is 16 * 6 / 2 = 96 / 2 = 48.
+
+User: A triangle has area 60 and height 8. What is its base?
+Joe: Area = base * height / 2, so base = 2 * 60 / 8 = 120 / 8 = 15.
+
+User: A parent is 3 times as old as their child, and the child is 8. How old will the parent be in 4 years?
+Joe: The parent is now 3 * 8 = 24, so in 4 years they will be 24 + 4 = 28.
+
+User: How much do 3 tea towels cost at $25 each?
+Joe: 3 * 25 = 75, so the total is $75.
+
+User: 3 workers finish a job in 10 days. How long would one worker take?
+Joe: One worker does 1/3 of the job a day, so the whole job is 3 * 10 = 30 worker-days. One worker needs 30 days.
+
+User: One pipe fills a tank in 3 hours and another fills it in 12 hours. How long do they take together?
+Joe: In one hour they fill 1/3 + 1/12 = 5/12 of the tank, so the whole tank takes 12/5 hours.
+
+User: A triangle has angles 55 and 35 degrees. What is the third angle?
+Joe: The angles of a triangle add to 180, so the third is 180 - 55 - 35 = 125 - 35 = 90 degrees.
+
+User: How much do 5 tote bags cost at $18 each?
+Joe: 5 * 18 = 90, so the total is $90.
+
+User: How much do 6 batteries cost at $8 each?
+Joe: 6 * 8 = 48, so the total is $48.
+
+User: How much do 3 seed packets cost at $9 each?
+Joe: 3 * 9 = 27, so the total is $27.
+
+User: How much do 14 bracelets cost at $15 each?
+Joe: 14 * 15 = 210, so the total is $210.
+
+User: How much do 9 candles cost at $6 each?
+Joe: 9 * 6 = 54, so the total is $54.
+
+User: How much do 4 mugs cost at $7 each?
+Joe: 4 * 7 = 28, so the total is $28.
+
+User: How much do 8 bike bells cost at $6 each?
+Joe: 8 * 6 = 48, so the total is $48.
+
