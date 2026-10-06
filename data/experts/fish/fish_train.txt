@@ -109,235 +109,50 @@ Joe: A fish pond is a man-made or natural body of water designed for raising fis
 User: What is a fishway?
 Joe: A fishway is a structure built to help fish bypass obstructions like dams or weirs, allowing them to swim upstream to reach spawning grounds or other habitats.
 
-User: what is a herring (1106)
-Joe: A herring is a small, schooling fish important in commercial fishing.
-User: what is a herring (1106)
+User: what is a herring
 Joe: A herring is a small, schooling fish important in commercial fishing.
 
-User: what is a shark (7036)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-User: what is a shark (7036)
+User: what is a shark
 Joe: A shark is a large predatory fish with a cartilaginous skeleton.
 
-User: what is a cod (213)
-Joe: A cod is a white fish found in cold Atlantic waters.
-User: what is a cod (213)
+User: what is a cod
 Joe: A cod is a white fish found in cold Atlantic waters.
 
-User: what is a salmon (4110)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-User: what is a salmon (4110)
+User: what is a salmon
 Joe: A salmon is a fish that swims upstream to spawn in freshwater.
 
-User: what is a trout (1682)
-Joe: A trout is a freshwater fish prized for sport fishing.
-User: what is a trout (1682)
+User: what is a trout
 Joe: A trout is a freshwater fish prized for sport fishing.
 
-User: what is a tuna (2899)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-User: what is a tuna (2899)
+User: what is a tuna
 Joe: A tuna is a large, fast-swimming saltwater fish.
 
-User: what is a carp (5893)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-User: what is a carp (5893)
+User: what is a carp
 Joe: A carp is a hardy freshwater fish found in lakes and rivers.
 
-User: what is a bass (2397)
-Joe: A bass is a popular freshwater game fish.
-User: what is a bass (2397)
+User: what is a bass
 Joe: A bass is a popular freshwater game fish.
 
-User: what is a catfish (4987)
-Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
-User: what is a catfish (4987)
+User: what is a catfish
 Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
 
-User: what is a mackerel (9820)
-Joe: A mackerel is a pelagic fish found in tropical and temperate waters.
-User: what is a mackerel (9820)
+User: what is a mackerel
 Joe: A mackerel is a pelagic fish found in tropical and temperate waters.
 
-User: what is a whale (8270)
-Joe: A whale is a marine mammal, not a fish.
-User: what is a whale (8270)
+User: what is a whale
 Joe: A whale is a marine mammal, not a fish.
 
-User: what is a clownfish (9924)
-Joe: A clownfish lives among sea anemones for protection.
-User: what is a clownfish (9924)
+User: what is a clownfish
 Joe: A clownfish lives among sea anemones for protection.
 
-User: what is a tuna (3574)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-User: what is a tuna (3574)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-
-User: what is a cod (4758)
-Joe: A cod is a white fish found in cold Atlantic waters.
-User: what is a cod (4758)
-Joe: A cod is a white fish found in cold Atlantic waters.
-
-User: what is an eel (1154)
-Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
-User: what is an eel (1154)
+User: what is an eel
 Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
 
-User: what is a goldfish (6096)
-Joe: A goldfish is a popular freshwater aquarium fish.
-User: what is a goldfish (6096)
+User: what is a goldfish
 Joe: A goldfish is a popular freshwater aquarium fish.
 
-User: what is an eel (9389)
-Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
-User: what is an eel (9389)
-Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
-
-User: what is a whale (9395)
-Joe: A whale is a marine mammal, not a fish.
-User: what is a whale (9395)
-Joe: A whale is a marine mammal, not a fish.
-
-User: what is a pufferfish (1268)
+User: what is a pufferfish
 Joe: A pufferfish can inflate its body as a defense mechanism.
-User: what is a pufferfish (1268)
-Joe: A pufferfish can inflate its body as a defense mechanism.
-
-User: what is a salmon (2835)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-User: what is a salmon (2835)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-
-User: what is a trout (5537)
-Joe: A trout is a freshwater fish prized for sport fishing.
-User: what is a trout (5537)
-Joe: A trout is a freshwater fish prized for sport fishing.
-
-User: what is a catfish (2332)
-Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
-User: what is a catfish (2332)
-Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
-
-User: what is a shark (8251)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-User: what is a shark (8251)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-
-User: what is a tuna (5254)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-User: what is a tuna (5254)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-
-User: what is a trout (3887)
-Joe: A trout is a freshwater fish prized for sport fishing.
-User: what is a trout (3887)
-Joe: A trout is a freshwater fish prized for sport fishing.
-
-User: what is a shark (4381)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-User: what is a shark (4381)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-
-User: what is a herring (4226)
-Joe: A herring is a small, schooling fish important in commercial fishing.
-User: what is a herring (4226)
-Joe: A herring is a small, schooling fish important in commercial fishing.
-
-User: what is a cod (1263)
-Joe: A cod is a white fish found in cold Atlantic waters.
-User: what is a cod (1263)
-Joe: A cod is a white fish found in cold Atlantic waters.
-
-User: what is a mackerel (5380)
-Joe: A mackerel is a pelagic fish found in tropical and temperate waters.
-User: what is a mackerel (5380)
-Joe: A mackerel is a pelagic fish found in tropical and temperate waters.
-
-User: what is a salmon (9420)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-User: what is a salmon (9420)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-
-User: what is a trout (1052)
-Joe: A trout is a freshwater fish prized for sport fishing.
-User: what is a trout (1052)
-Joe: A trout is a freshwater fish prized for sport fishing.
-
-User: what is a bass (7302)
-Joe: A bass is a popular freshwater game fish.
-User: what is a bass (7302)
-Joe: A bass is a popular freshwater game fish.
-
-User: what is a herring (3581)
-Joe: A herring is a small, schooling fish important in commercial fishing.
-User: what is a herring (3581)
-Joe: A herring is a small, schooling fish important in commercial fishing.
-
-User: what is a carp (718)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-User: what is a carp (718)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-
-User: what is a catfish (1672)
-Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
-User: what is a catfish (1672)
-Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
-
-User: what is a whale (3815)
-Joe: A whale is a marine mammal, not a fish.
-User: what is a whale (3815)
-Joe: A whale is a marine mammal, not a fish.
-
-User: what is an eel (9134)
-Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
-User: what is an eel (9134)
-Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
-
-User: what is a clownfish (3999)
-Joe: A clownfish lives among sea anemones for protection.
-User: what is a clownfish (3999)
-Joe: A clownfish lives among sea anemones for protection.
-
-User: what is a goldfish (1251)
-Joe: A goldfish is a popular freshwater aquarium fish.
-User: what is a goldfish (1251)
-Joe: A goldfish is a popular freshwater aquarium fish.
-
-User: what is a salmon (7635)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-User: what is a salmon (7635)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-
-User: what is a pufferfish (7268)
-Joe: A pufferfish can inflate its body as a defense mechanism.
-User: what is a pufferfish (7268)
-Joe: A pufferfish can inflate its body as a defense mechanism.
-
-User: what is a whale (4790)
-Joe: A whale is a marine mammal, not a fish.
-User: what is a whale (4790)
-Joe: A whale is a marine mammal, not a fish.
-
-User: what is a tuna (9109)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-User: what is a tuna (9109)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-
-User: what is a carp (4453)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-User: what is a carp (4453)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-
-User: what is a cod (8448)
-Joe: A cod is a white fish found in cold Atlantic waters.
-User: what is a cod (8448)
-Joe: A cod is a white fish found in cold Atlantic waters.
-
-User: what is a shark (7756)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-User: what is a shark (7756)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
 
 User: How does counter-current gas exchange make a fish gill so efficient?
 Joe: Water flows through the gill lamellae in one direction while blood flows through them in the opposite direction. That keeps a diffusion gradient across the whole length of the lamella, so oxygen uptake approaches the theoretical maximum instead of flattening out mid-way.
@@ -5114,94 +4929,3 @@ Joe: Shark pups are the juvenile offspring, born either from eggs or alive depen
 
 User: what is a whale shark
 Joe: A whale shark is the largest fish in the world, reaching over 15 meters and weighing many tons. Despite its size, it is a filter feeder, eating plankton, small fish, and squid rather than hunting large prey. It is harmless to divers and is found in warm waters throughout the tropics. Its population is endangered, largely because of the fin trade and bycatch.
-
-User: what is a trout (2717)
-Joe: A trout is a freshwater fish prized for sport fishing.
-User: what is a trout (2717)
-Joe: A trout is a freshwater fish prized for sport fishing.
-
-User: what is a herring (986)
-Joe: A herring is a small, schooling fish important in commercial fishing.
-User: what is a herring (986)
-Joe: A herring is a small, schooling fish important in commercial fishing.
-
-User: what is a shark (8236)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-User: what is a shark (8236)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-
-User: what is a tuna (1954)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-User: what is a tuna (1954)
-Joe: A tuna is a large, fast-swimming saltwater fish.
-
-User: what is a catfish (1762)
-Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
-User: what is a catfish (1762)
-Joe: A catfish is a bottom-dwelling fish with sensitive whiskers.
-
-User: what is a salmon (30)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-User: what is a salmon (30)
-Joe: A salmon is a fish that swims upstream to spawn in freshwater.
-
-User: what is a cod (4383)
-Joe: A cod is a white fish found in cold Atlantic waters.
-User: what is a cod (4383)
-Joe: A cod is a white fish found in cold Atlantic waters.
-
-User: what is a mackerel (9835)
-Joe: A mackerel is a pelagic fish found in tropical and temperate waters.
-User: what is a mackerel (9835)
-Joe: A mackerel is a pelagic fish found in tropical and temperate waters.
-
-User: what is an eel (4199)
-Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
-User: what is an eel (4199)
-Joe: An eel is a long, snake-like fish that lives in both salt and fresh water.
-
-User: what is a whale (455)
-Joe: A whale is a marine mammal, not a fish.
-User: what is a whale (455)
-Joe: A whale is a marine mammal, not a fish.
-
-User: what is a bass (747)
-Joe: A bass is a popular freshwater game fish.
-User: what is a bass (747)
-Joe: A bass is a popular freshwater game fish.
-
-User: what is a carp (4408)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-User: what is a carp (4408)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-
-User: what is a goldfish (6456)
-Joe: A goldfish is a popular freshwater aquarium fish.
-User: what is a goldfish (6456)
-Joe: A goldfish is a popular freshwater aquarium fish.
-
-User: what is a clownfish (3744)
-Joe: A clownfish lives among sea anemones for protection.
-User: what is a clownfish (3744)
-Joe: A clownfish lives among sea anemones for protection.
-
-User: what is a pufferfish (8513)
-Joe: A pufferfish can inflate its body as a defense mechanism.
-User: what is a pufferfish (8513)
-Joe: A pufferfish can inflate its body as a defense mechanism.
-
-User: what is a bass (9132)
-Joe: A bass is a popular freshwater game fish.
-User: what is a bass (9132)
-Joe: A bass is a popular freshwater game fish.
-
-User: what is a carp (7153)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-User: what is a carp (7153)
-Joe: A carp is a hardy freshwater fish found in lakes and rivers.
-
-User: what is a shark (9571)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-User: what is a shark (9571)
-Joe: A shark is a large predatory fish with a cartilaginous skeleton.
-

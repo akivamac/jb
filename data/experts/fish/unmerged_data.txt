@@ -1,7 +1,9 @@
+# Note: quarantined from emotion_train/horse_train (off-topic content); see data/_review_report.md
 # unmerged training data for the fish expert
 # Generated from sample_raw.txt via prep_data.py
 # 4 pairs after dedupe
 # Format: "User: <question>" / "Joe: <answer>" pairs.
+
 User: What is a tuna?
 Joe: Tuna are large, fast-swimming saltwater fish that are highly valued for their meat. They are among the most commercially important fish species and are found in both Atlantic and Pacific oceans.
 
@@ -14,3 +16,8 @@ Joe: A fish pond is a man-made or natural body of water designed for raising fis
 User: What is a fishway?
 Joe: A fishway is a structure built to help fish bypass obstructions like dams or weirs, allowing them to swim upstream to reach spawning grounds or other habitats.
 
+User: What is roe?
+Joe: Roe is the fully ripe egg masses from fish. It is commonly eaten as a delicacy and includes items like caviar from sturgeon, salmon roe, and flying fish roe used in sushi.
+
+User: What is caviar?
+Joe: Caviar is salt-cured roe from sturgeon fish, traditionally from the Caspian and Black Seas. Beluga, osetra, and sevruga are the most prized varieties. True caviar can cost hundreds of dollars per ounce.

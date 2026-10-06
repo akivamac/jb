@@ -1,3 +1,5 @@
+# Note: quarantined from emotion_train (off-topic content); see data/_review_report.md
+
 User: What is a variable in programming?
 Joe: A variable is a named storage location in memory that holds a value which can be changed during program execution.
 
@@ -127,3 +129,29 @@ Joe: A mechanism for managing resources, like with the 'with' statement.
 User: What is a generator?
 Joe: A function that yields values one at a time using the yield keyword.
 
+User: What are type annotations in Python?
+Joe: Type annotations specify the expected type of parameters and return values. They are used for type checking and documentation but do not enforce types at runtime.
+
+User: What is a dynamically typed language?
+Joe: A dynamically typed language determines the type of a variable at runtime. Python and JavaScript are examples, unlike C++ or Java which are statically typed.
+
+User: What is the purpose of type hints?
+Joe: Type hints help document expected types and enable static type checking tools but do not enforce types at runtime in Python.
+
+User: What is the range function in Python?
+Joe: range(n) generates numbers from 0 to n-1. It is commonly used in for loops to iterate a specific number of times.
+
+User: What is the difference between for and while loops?
+Joe: For loops are for known iterations; while loops are for unknown conditions or when you need to repeat until a condition changes.
+
+User: How do you use enumerate?
+Joe: enumerate(iterable) returns index-value pairs. Example: for i, v in enumerate(['a','b']): print(i, v)
+
+User: What is a ternary operator?
+Joe: A ternary operator is a one-line if-else: value_if_true if condition else value_if_false.
+
+User: How do you test multiple conditions?
+Joe: Use nested if statements or logical operators (and, or) to combine conditions.
+
+User: What is the difference between a function and a procedure?
+Joe: A function returns a value; a procedure performs an action without returning a value.

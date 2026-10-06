@@ -7252,9 +7252,6 @@ Joe: Peso means weight in Spanish. The name comes from the silver coins of colon
 User: how much is one peso divided into
 Joe: A peso is divided into 100 smaller units, usually called centavos. So one Mexican peso equals 100 centavos, and the same pattern holds in most peso-based currencies.
 
-User: What is the peso
-Joe: The peso is used in Mexico, Argentina, Colombia, the Philippines, and several other countries. The name comes from the Spanish word for weight.
-
 User: what is a proof in math
 Joe: A proof is a step-by-step logical argument that shows a mathematical statement must be true. It starts from accepted facts and moves through rules of logic to an unavoidable conclusion. Proofs are what make mathematics reliable.
 
@@ -7290,9 +7287,6 @@ Joe: The Maya created an accurate calendar, a number system that included the co
 
 User: are there Maya people today
 Joe: Yes. Millions of Maya descendants still live in Mexico, Guatemala, and Central America today, and many still speak Maya languages. Modern Maya communities keep traditions that trace back to the ancient civilization.
-
-User: what was the ancient Maya civilization
-Joe: The Maya built cities in Central America and southern Mexico with pyramids, temples, and advanced writing. They developed a calendar system and tracked the stars closely.
 
 User: What does the word "peso" actually mean?
 Joe: Peso means "weight" in Spanish — it started as a unit for weighing silver coins and became the name of the currency.
@@ -7807,36 +7801,6 @@ Joe: A compiler error occurs during compilation when the code violates syntax or
 User: What is the difference between a syntax error and a logic error?
 Joe: A syntax error is a violation of the programming language's grammar rules that prevents the code from compiling, while a logic error is a mistake in the program's reasoning that causes it to produce incorrect results without crashing.
 
-User: What is science?
-Joe: Here is some science information relevant to the knowledge expert.
-
-User: What is history?
-Joe: Here is some history information relevant to the knowledge expert.
-
-User: What is geography?
-Joe: Here is some geography information relevant to the knowledge expert.
-
-User: What is mathematics?
-Joe: Here is some mathematics information relevant to the knowledge expert.
-
-User: What is literature?
-Joe: Here is some literature information relevant to the knowledge expert.
-
-User: What is philosophy?
-Joe: Here is some philosophy information relevant to the knowledge expert.
-
-User: What is art?
-Joe: Here is some art information relevant to the knowledge expert.
-
-User: What is music?
-Joe: Here is some music information relevant to the knowledge expert.
-
-User: What is sports?
-Joe: Here is some sports information relevant to the knowledge expert.
-
-User: What is current events?
-Joe: Here is some current events information relevant to the knowledge expert.
-
 User: What are the states of matter?
 Joe: The three common states of matter are solid, liquid, and gas. Matter can change between these states through processes like melting, freezing, evaporation, and condensation.
 
@@ -7963,245 +7927,65 @@ Joe: Tuna are large, fast-swimming saltwater fish that are highly valued for the
 User: What is a fish tank?
 Joe: A fish tank is a container of water used to keep fish at home, in a restaurant, or in an office. It can be a simple glass bowl or a complex system with filters, heaters, and lights.
 
-User: what is a galaxy (1552)
-Joe: A galaxy is a massive system of stars, gas, and dust.
-User: what is a galaxy (1552)
+User: what is a galaxy
 Joe: A galaxy is a massive system of stars, gas, and dust.
 
-User: what is the ocean (5037)
-Joe: The ocean is a vast body of saltwater covering most of Earth.
-User: what is the ocean (5037)
+User: what is the ocean
 Joe: The ocean is a vast body of saltwater covering most of Earth.
 
-User: what is Python (9841)
-Joe: Python is a versatile programming language known for readability.
-User: what is Python (9841)
+User: what is Python
 Joe: Python is a versatile programming language known for readability.
 
-User: what is electricity (6965)
-Joe: Electricity is the flow of electrons through a conductor.
-User: what is electricity (6965)
+User: what is electricity
 Joe: Electricity is the flow of electrons through a conductor.
 
-User: what is the speed of light (9983)
-Joe: Light travels at approximately 299,792,458 meters per second.
-User: what is the speed of light (9983)
+User: what is the speed of light
 Joe: Light travels at approximately 299,792,458 meters per second.
 
-User: what is a black hole (7573)
-Joe: A black hole is a region where gravity is so strong nothing escapes.
-User: what is a black hole (7573)
+User: what is a black hole
 Joe: A black hole is a region where gravity is so strong nothing escapes.
 
-User: what is a cell (5349)
-Joe: A cell is the basic unit of life in all organisms.
-User: what is a cell (5349)
+User: what is a cell
 Joe: A cell is the basic unit of life in all organisms.
 
-User: what is renewable energy (1035)
-Joe: Renewable energy comes from naturally replenishing sources.
-User: what is renewable energy (1035)
+User: what is renewable energy
 Joe: Renewable energy comes from naturally replenishing sources.
 
-User: what is quantum mechanics (5406)
-Joe: Quantum mechanics describes physics at the smallest scales.
-User: what is quantum mechanics (5406)
+User: what is quantum mechanics
 Joe: Quantum mechanics describes physics at the smallest scales.
 
-User: what is evolution (5187)
-Joe: Evolution is how species change over time through natural selection.
-User: what is evolution (5187)
+User: what is evolution
 Joe: Evolution is how species change over time through natural selection.
 
-User: what is a volcano (3479)
-Joe: A volcano is a rupture that releases molten rock and gases.
-User: what is a volcano (3479)
+User: what is a volcano
 Joe: A volcano is a rupture that releases molten rock and gases.
 
-User: what is an atom (1131)
-Joe: An atom is the smallest unit of a chemical element.
-User: what is an atom (1131)
+User: what is an atom
 Joe: An atom is the smallest unit of a chemical element.
 
-User: what is a chemical reaction (7876)
-Joe: A chemical reaction transforms substances into new ones.
-User: what is a chemical reaction (7876)
+User: what is a chemical reaction
 Joe: A chemical reaction transforms substances into new ones.
 
-User: what is AI (8780)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (8780)
+User: what is AI
 Joe: AI is artificial intelligence - machines that can learn and reason.
 
-User: what is photosynthesis (9368)
-Joe: Photosynthesis is how plants convert sunlight into energy.
-User: what is photosynthesis (9368)
+User: what is photosynthesis
 Joe: Photosynthesis is how plants convert sunlight into energy.
 
-User: what is DNA (5750)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (5750)
+User: what is DNA
 Joe: DNA is the molecule that carries genetic instructions.
 
-User: what is DNA (9330)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (9330)
-Joe: DNA is the molecule that carries genetic instructions.
-
-User: what is the capital of France (8482)
-Joe: Paris is the capital of France, known for art, fashion, and culture.
-User: what is the capital of France (8482)
+User: what is the capital of France
 Joe: Paris is the capital of France, known for art, fashion, and culture.
 
-User: what is a planet (6638)
-Joe: A planet is a celestial body orbiting a star.
-User: what is a planet (6638)
+User: what is a planet
 Joe: A planet is a celestial body orbiting a star.
 
-User: what is climate change (6554)
-Joe: Climate change is the long-term shift in global weather patterns.
-User: what is climate change (6554)
+User: what is climate change
 Joe: Climate change is the long-term shift in global weather patterns.
 
-User: what is AI (6560)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (6560)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is gravity (1184)
+User: what is gravity
 Joe: Gravity is a force that attracts objects with mass toward each other.
-User: what is gravity (1184)
-Joe: Gravity is a force that attracts objects with mass toward each other.
-
-User: what is AI (2100)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (2100)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is AI (9940)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (9940)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is DNA (6110)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (6110)
-Joe: DNA is the molecule that carries genetic instructions.
-
-User: what is DNA (8090)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (8090)
-Joe: DNA is the molecule that carries genetic instructions.
-
-User: what is evolution (2447)
-Joe: Evolution is how species change over time through natural selection.
-User: what is evolution (2447)
-Joe: Evolution is how species change over time through natural selection.
-
-User: what is quantum mechanics (1946)
-Joe: Quantum mechanics describes physics at the smallest scales.
-User: what is quantum mechanics (1946)
-Joe: Quantum mechanics describes physics at the smallest scales.
-
-User: what is renewable energy (9595)
-Joe: Renewable energy comes from naturally replenishing sources.
-User: what is renewable energy (9595)
-Joe: Renewable energy comes from naturally replenishing sources.
-
-User: what is photosynthesis (8908)
-Joe: Photosynthesis is how plants convert sunlight into energy.
-User: what is photosynthesis (8908)
-Joe: Photosynthesis is how plants convert sunlight into energy.
-
-User: what is an atom (7491)
-Joe: An atom is the smallest unit of a chemical element.
-User: what is an atom (7491)
-Joe: An atom is the smallest unit of a chemical element.
-
-User: what is the speed of light (3603)
-Joe: Light travels at approximately 299,792,458 meters per second.
-User: what is the speed of light (3603)
-Joe: Light travels at approximately 299,792,458 meters per second.
-
-User: what is Python (1041)
-Joe: Python is a versatile programming language known for readability.
-User: what is Python (1041)
-Joe: Python is a versatile programming language known for readability.
-
-User: what is a volcano (8059)
-Joe: A volcano is a rupture that releases molten rock and gases.
-User: what is a volcano (8059)
-Joe: A volcano is a rupture that releases molten rock and gases.
-
-User: what is the ocean (4397)
-Joe: The ocean is a vast body of saltwater covering most of Earth.
-User: what is the ocean (4397)
-Joe: The ocean is a vast body of saltwater covering most of Earth.
-
-User: what is DNA (690)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (690)
-Joe: DNA is the molecule that carries genetic instructions.
-
-User: what is the capital of France (6722)
-Joe: Paris is the capital of France, known for art, fashion, and culture.
-User: what is the capital of France (6722)
-Joe: Paris is the capital of France, known for art, fashion, and culture.
-
-User: what is a galaxy (6672)
-Joe: A galaxy is a massive system of stars, gas, and dust.
-User: what is a galaxy (6672)
-Joe: A galaxy is a massive system of stars, gas, and dust.
-
-User: what is a black hole (713)
-Joe: A black hole is a region where gravity is so strong nothing escapes.
-User: what is a black hole (713)
-Joe: A black hole is a region where gravity is so strong nothing escapes.
-
-User: what is a chemical reaction (4856)
-Joe: A chemical reaction transforms substances into new ones.
-User: what is a chemical reaction (4856)
-Joe: A chemical reaction transforms substances into new ones.
-
-User: what is a planet (5818)
-Joe: A planet is a celestial body orbiting a star.
-User: what is a planet (5818)
-Joe: A planet is a celestial body orbiting a star.
-
-User: what is AI (8940)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (8940)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is climate change (1234)
-Joe: Climate change is the long-term shift in global weather patterns.
-User: what is climate change (1234)
-Joe: Climate change is the long-term shift in global weather patterns.
-
-User: what is electricity (4585)
-Joe: Electricity is the flow of electrons through a conductor.
-User: what is electricity (4585)
-Joe: Electricity is the flow of electrons through a conductor.
-
-User: what is gravity (3144)
-Joe: Gravity is a force that attracts objects with mass toward each other.
-User: what is gravity (3144)
-Joe: Gravity is a force that attracts objects with mass toward each other.
-
-User: what is a cell (6129)
-Joe: A cell is the basic unit of life in all organisms.
-User: what is a cell (6129)
-Joe: A cell is the basic unit of life in all organisms.
-
-User: what is AI (5660)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (5660)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is AI (1020)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (1020)
-Joe: AI is artificial intelligence - machines that can learn and reason.
 
 User: why does a heavy object feel harder to start moving than to keep moving
 Joe: Friction has to be overcome before sliding begins, but it drops sharply once things are moving, so the push that gets an object going is the hardest part.
@@ -12702,129 +12486,3 @@ Joe: A stay in the leg tendons locks the legs rigid, letting them rest without f
 
 User: why does the sahara dust fertilise the amazon
 Joe: The dust carries minerals that the amazon's own heavy rain leaches out of its own soil, so it arrives as a nutrient the forest was short of.
-
-User: what is evolution (8407)
-Joe: Evolution is how species change over time through natural selection.
-User: what is evolution (8407)
-Joe: Evolution is how species change over time through natural selection.
-
-User: what is quantum mechanics (66)
-Joe: Quantum mechanics describes physics at the smallest scales.
-User: what is quantum mechanics (66)
-Joe: Quantum mechanics describes physics at the smallest scales.
-
-User: what is DNA (8570)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (8570)
-Joe: DNA is the molecule that carries genetic instructions.
-
-User: what is an atom (1031)
-Joe: An atom is the smallest unit of a chemical element.
-User: what is an atom (1031)
-Joe: An atom is the smallest unit of a chemical element.
-
-User: what is the capital of France (3322)
-Joe: Paris is the capital of France, known for art, fashion, and culture.
-User: what is the capital of France (3322)
-Joe: Paris is the capital of France, known for art, fashion, and culture.
-
-User: what is a galaxy (8412)
-Joe: A galaxy is a massive system of stars, gas, and dust.
-User: what is a galaxy (8412)
-Joe: A galaxy is a massive system of stars, gas, and dust.
-
-User: what is photosynthesis (1588)
-Joe: Photosynthesis is how plants convert sunlight into energy.
-User: what is photosynthesis (1588)
-Joe: Photosynthesis is how plants convert sunlight into energy.
-
-User: what is a volcano (9399)
-Joe: A volcano is a rupture that releases molten rock and gases.
-User: what is a volcano (9399)
-Joe: A volcano is a rupture that releases molten rock and gases.
-
-User: what is a black hole (8993)
-Joe: A black hole is a region where gravity is so strong nothing escapes.
-User: what is a black hole (8993)
-Joe: A black hole is a region where gravity is so strong nothing escapes.
-
-User: what is the speed of light (703)
-Joe: Light travels at approximately 299,792,458 meters per second.
-User: what is the speed of light (703)
-Joe: Light travels at approximately 299,792,458 meters per second.
-
-User: what is a chemical reaction (6256)
-Joe: A chemical reaction transforms substances into new ones.
-User: what is a chemical reaction (6256)
-Joe: A chemical reaction transforms substances into new ones.
-
-User: what is the ocean (3497)
-Joe: The ocean is a vast body of saltwater covering most of Earth.
-User: what is the ocean (3497)
-Joe: The ocean is a vast body of saltwater covering most of Earth.
-
-User: what is Python (9061)
-Joe: Python is a versatile programming language known for readability.
-User: what is Python (9061)
-Joe: Python is a versatile programming language known for readability.
-
-User: what is renewable energy (5435)
-Joe: Renewable energy comes from naturally replenishing sources.
-User: what is renewable energy (5435)
-Joe: Renewable energy comes from naturally replenishing sources.
-
-User: what is a planet (3418)
-Joe: A planet is a celestial body orbiting a star.
-User: what is a planet (3418)
-Joe: A planet is a celestial body orbiting a star.
-
-User: what is DNA (9910)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (9910)
-Joe: DNA is the molecule that carries genetic instructions.
-
-User: what is a cell (3049)
-Joe: A cell is the basic unit of life in all organisms.
-User: what is a cell (3049)
-Joe: A cell is the basic unit of life in all organisms.
-
-User: what is gravity (7304)
-Joe: Gravity is a force that attracts objects with mass toward each other.
-User: what is gravity (7304)
-Joe: Gravity is a force that attracts objects with mass toward each other.
-
-User: what is climate change (8134)
-Joe: Climate change is the long-term shift in global weather patterns.
-User: what is climate change (8134)
-Joe: Climate change is the long-term shift in global weather patterns.
-
-User: what is electricity (9265)
-Joe: Electricity is the flow of electrons through a conductor.
-User: what is electricity (9265)
-Joe: Electricity is the flow of electrons through a conductor.
-
-User: what is AI (5460)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (5460)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is AI (3780)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (3780)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is DNA (3030)
-Joe: DNA is the molecule that carries genetic instructions.
-User: what is DNA (3030)
-Joe: DNA is the molecule that carries genetic instructions.
-
-User: what is AI (9220)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (9220)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-
-User: what is AI (1100)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-User: what is AI (1100)
-Joe: AI is artificial intelligence - machines that can learn and reason.
-

@@ -9785,21 +9785,6 @@ return item in self.items
 ```
 `__contains__` lets you write `x in obj` for custom objects.
 
-User: What is data science?
-Joe: Here is some data science information relevant to the python expert.
-
-User: What is machine learning?
-Joe: Here is some machine learning information relevant to the python expert.
-
-User: What is artificial intelligence?
-Joe: Here is some artificial intelligence information relevant to the python expert.
-
-User: What is web development?
-Joe: Here is some web development information relevant to the python expert.
-
-User: What is automation?
-Joe: Here is some automation information relevant to the python expert.
-
 User: How do you print in Python?
 Joe: Use the print() function, e.g., print("Hello, world!") or print(f"Value is {x}") for formatted output.
 
@@ -9818,730 +9803,320 @@ Joe: Python is a high-level, interpreted programming language known for its read
 User: What are Python's data types?
 Joe: Python has several built-in data types, including integers, floats, strings, lists, tuples, dictionaries, sets, and booleans. Lists are ordered and mutable, tuples are ordered and immutable, and dictionaries store key-value pairs.
 
-User: what is a nullable type (4094)
-Joe: A nullable type can have a null value.
-User: what is a nullable type (4094)
+User: what is a nullable type
 Joe: A nullable type can have a null value.
 
-User: what is a staticmethod (3452)
-Joe: A staticmethod is a method that doesn't depend on instance or class state.
-User: what is a staticmethod (3452)
+User: what is a staticmethod
 Joe: A staticmethod is a method that doesn't depend on instance or class state.
 
-User: what is an adapter (5620)
-Joe: An adapter converts the interface of one class into another.
-User: what is an adapter (5620)
+User: what is an adapter
 Joe: An adapter converts the interface of one class into another.
 
-User: what is a local variable (266)
-Joe: A local variable is defined within a function and is only accessible there.
-User: what is a local variable (266)
+User: what is a local variable
 Joe: A local variable is defined within a function and is only accessible there.
 
-User: what is encapsulation (6453)
-Joe: Encapsulation hides internal data and exposes only what's necessary.
-User: what is encapsulation (6453)
+User: what is encapsulation
 Joe: Encapsulation hides internal data and exposes only what's necessary.
 
-User: what is an unbound method (9927)
-Joe: An unbound method is a method that is not bound to an instance.
-User: what is an unbound method (9927)
+User: what is an unbound method
 Joe: An unbound method is a method that is not bound to an instance.
 
-User: what is a generator expression (1690)
-Joe: A generator expression is a concise way to create a generator.
-User: what is a generator expression (1690)
+User: what is a generator expression
 Joe: A generator expression is a concise way to create a generator.
 
-User: what is an exception (8563)
-Joe: An exception is an error that occurs during program execution.
-User: what is an exception (8563)
+User: what is an exception
 Joe: An exception is an error that occurs during program execution.
 
-User: what is a deep copy (5589)
-Joe: A deep copy creates a new object with independent copies of all nested objects.
-User: what is a deep copy (5589)
+User: what is a deep copy
 Joe: A deep copy creates a new object with independent copies of all nested objects.
 
-User: what is a comprehension (4005)
-Joe: A comprehension is a concise way to create lists, dicts, or sets from iterables.
-User: what is a comprehension (4005)
+User: what is a comprehension
 Joe: A comprehension is a concise way to create lists, dicts, or sets from iterables.
 
-User: what is a set (891)
-Joe: A set is an unordered collection of unique elements with no duplicates.
-User: what is a set (891)
+User: what is a set
 Joe: A set is an unordered collection of unique elements with no duplicates.
 
-User: what is a runtime type (1199)
-Joe: A runtime type is the type of an object at execution time.
-User: what is a runtime type (1199)
+User: what is a runtime type
 Joe: A runtime type is the type of an object at execution time.
 
-User: what is a zip (6691)
-Joe: Zip aggregates elements from multiple iterables into tuples.
-User: what is a zip (6691)
+User: what is a zip
 Joe: Zip aggregates elements from multiple iterables into tuples.
 
-User: what is a mutable default (3371)
-Joe: A mutable default argument is a common Python pitfall.
-User: what is a mutable default (3371)
+User: what is a mutable default
 Joe: A mutable default argument is a common Python pitfall.
 
-User: what is a function decorator (4847)
-Joe: A function decorator modifies the behavior of a function.
-User: what is a function decorator (4847)
+User: what is a function decorator
 Joe: A function decorator modifies the behavior of a function.
 
-User: what is a tuple literal (3218)
-Joe: A tuple literal is a parenthesized sequence of elements.
-User: what is a tuple literal (3218)
+User: what is a tuple literal
 Joe: A tuple literal is a parenthesized sequence of elements.
 
-User: what is an instance variable (7043)
-Joe: An instance variable is unique to each instance.
-User: what is an instance variable (7043)
+User: what is an instance variable
 Joe: An instance variable is unique to each instance.
 
-User: what is a flat list (9695)
-Joe: A flat list is a single-dimensional list with no sublists.
-User: what is a flat list (9695)
+User: what is a flat list
 Joe: A flat list is a single-dimensional list with no sublists.
 
-User: what is a list comprehension (1136)
-Joe: A list comprehension creates a new list by applying an expression to each item.
-User: what is a list comprehension (1136)
+User: what is a list comprehension
 Joe: A list comprehension creates a new list by applying an expression to each item.
 
-User: what is a property getter (3386)
-Joe: A property getter defines how an attribute is accessed.
-User: what is a property getter (3386)
+User: what is a property getter
 Joe: A property getter defines how an attribute is accessed.
 
-User: what is a literal (2988)
-Joe: A literal is a notation for representing a fixed value in code.
-User: what is a literal (2988)
+User: what is a literal
 Joe: A literal is a notation for representing a fixed value in code.
 
-User: what is a context manager (1905)
-Joe: A context manager manages resources using a with statement.
-User: what is a context manager (1905)
+User: what is a context manager
 Joe: A context manager manages resources using a with statement.
 
-User: what is a negative index (1700)
-Joe: A negative index counts from the end of a sequence.
-User: what is a negative index (1700)
+User: what is a negative index
 Joe: A negative index counts from the end of a sequence.
 
-User: what is a protocol (9409)
-Joe: A protocol defines a structural type through method signatures.
-User: what is a protocol (9409)
+User: what is a protocol
 Joe: A protocol defines a structural type through method signatures.
 
-User: what is a constant (1100)
-Joe: A constant is a value that cannot be changed during execution.
-User: what is a constant (1100)
+User: what is a constant
 Joe: A constant is a value that cannot be changed during execution.
 
-User: what is a slot (8823)
-Joe: A slot restricts the attributes that can be assigned to an object.
-User: what is a slot (8823)
+User: what is a slot
 Joe: A slot restricts the attributes that can be assigned to an object.
 
-User: what is a implicit type (9418)
-Joe: An implicit type is determined automatically without explicit declaration.
-User: what is a implicit type (9418)
+User: what is a implicit type
 Joe: An implicit type is determined automatically without explicit declaration.
 
-User: what is a covariant type (7297)
-Joe: A covariant type preserves the subtyping relationship.
-User: what is a covariant type (7297)
+User: what is a covariant type
 Joe: A covariant type preserves the subtyping relationship.
 
-User: what is a module (8884)
-Joe: A module is a file containing Python code that can be imported into another script.
-User: what is a module (8884)
+User: what is a module
 Joe: A module is a file containing Python code that can be imported into another script.
 
-User: what is polymorphism (3566)
-Joe: Polymorphism lets methods do different things based on the object type.
-User: what is polymorphism (3566)
+User: what is polymorphism
 Joe: Polymorphism lets methods do different things based on the object type.
 
-User: what is a dunder method (4492)
-Joe: A dunder method is another name for a magic method in Python.
-User: what is a dunder method (4492)
+User: what is a dunder method
 Joe: A dunder method is another name for a magic method in Python.
 
-User: what is a structural type (8411)
-Joe: A structural type is defined by its structure rather than inheritance.
-User: what is a structural type (8411)
+User: what is a structural type
 Joe: A structural type is defined by its structure rather than inheritance.
 
-User: what is a facade (1958)
-Joe: A facade provides a simplified interface to a complex subsystem.
-User: what is a facade (1958)
+User: what is a facade
 Joe: A facade provides a simplified interface to a complex subsystem.
 
-User: what is a class decorator (3403)
-Joe: A class decorator modifies or enhances a class definition.
-User: what is a class decorator (3403)
+User: what is a class decorator
 Joe: A class decorator modifies or enhances a class definition.
 
-User: what is a final type (2209)
-Joe: A final type cannot be subclassed or overridden.
-User: what is a final type (2209)
+User: what is a final type
 Joe: A final type cannot be subclassed or overridden.
 
-User: what is a type hint (4182)
-Joe: A type hint indicates the expected type of a variable or parameter.
-User: what is a type hint (4182)
+User: what is a type hint
 Joe: A type hint indicates the expected type of a variable or parameter.
 
-User: what is a concrete class (1508)
-Joe: A concrete class is a class that can be instantiated.
-User: what is a concrete class (1508)
+User: what is a concrete class
 Joe: A concrete class is a class that can be instantiated.
 
-User: what is a static property (6277)
-Joe: A static property is a property that doesn't depend on instance state.
-User: what is a static property (6277)
+User: what is a static property
 Joe: A static property is a property that doesn't depend on instance state.
 
-User: what is a metaclass (1795)
-Joe: A metaclass is a class whose instances are classes themselves.
-User: what is a metaclass (1795)
+User: what is a metaclass
 Joe: A metaclass is a class whose instances are classes themselves.
 
-User: what is a contravariant type (5633)
-Joe: A contravariant type reverses the subtyping relationship.
-User: what is a contravariant type (5633)
+User: what is a contravariant type
 Joe: A contravariant type reverses the subtyping relationship.
 
-User: what is a sync function (2022)
-Joe: A sync function executes synchronously, blocking until completion.
-User: what is a sync function (2022)
+User: what is a sync function
 Joe: A sync function executes synchronously, blocking until completion.
 
-User: what is a tuple (7327)
-Joe: A tuple is an ordered, immutable sequence of elements.
-User: what is a tuple (7327)
+User: what is a tuple
 Joe: A tuple is an ordered, immutable sequence of elements.
 
-User: what is a property deleter (6718)
-Joe: A property deleter defines how an attribute is deleted.
-User: what is a property deleter (6718)
+User: what is a property deleter
 Joe: A property deleter defines how an attribute is deleted.
 
-User: what is a magic method (8487)
-Joe: A magic method has a special name with double underscores and defines behavior.
-User: what is a magic method (8487)
+User: what is a magic method
 Joe: A magic method has a special name with double underscores and defines behavior.
 
-User: what is a range (5472)
-Joe: A range is an immutable sequence of numbers, commonly used in loops.
-User: what is a range (5472)
+User: what is a range
 Joe: A range is an immutable sequence of numbers, commonly used in loops.
 
-User: what is an inferred type (7973)
-Joe: An inferred type is automatically determined by the compiler.
-User: what is an inferred type (7973)
+User: what is an inferred type
 Joe: An inferred type is automatically determined by the compiler.
 
-User: what is a optional type (6866)
-Joe: An optional type can be either a value or None.
-User: what is a optional type (6866)
+User: what is a optional type
 Joe: An optional type can be either a value or None.
 
-User: what is a none literal (3658)
-Joe: A none literal represents the absence of a value.
-User: what is a none literal (3658)
+User: what is a none literal
 Joe: A none literal represents the absence of a value.
 
-User: what is a coroutine (6349)
-Joe: A coroutine is a function that can pause and resume its execution.
-User: what is a coroutine (6349)
+User: what is a coroutine
 Joe: A coroutine is a function that can pause and resume its execution.
 
-User: what is map (1118)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (1118)
+User: what is map
 Joe: Map applies a given function to every item in an iterable and returns an iterator.
 
-User: what is an iterator (3905)
-Joe: An iterator is an object that produces a sequence of values one at a time.
-User: what is an iterator (3905)
+User: what is an iterator
 Joe: An iterator is an object that produces a sequence of values one at a time.
 
-User: what is a class variable (4378)
-Joe: A class variable is shared among all instances of a class.
-User: what is a class variable (4378)
+User: what is a class variable
 Joe: A class variable is shared among all instances of a class.
 
-User: what is a shallow copy (9031)
-Joe: A shallow copy creates a new object but references the same nested objects.
-User: what is a shallow copy (9031)
+User: what is a shallow copy
 Joe: A shallow copy creates a new object but references the same nested objects.
 
-User: what is an interface (5946)
-Joe: An interface defines a contract that classes must implement.
-User: what is an interface (5946)
+User: what is an interface
 Joe: An interface defines a contract that classes must implement.
 
-User: what is a classmethod (8335)
-Joe: A classmethod is a method that is bound to the class rather than an instance.
-User: what is a classmethod (8335)
+User: what is a classmethod
 Joe: A classmethod is a method that is bound to the class rather than an instance.
 
-User: what is a non-nullable type (321)
-Joe: A non-nullable type cannot have a null value.
-User: what is a non-nullable type (321)
+User: what is a non-nullable type
 Joe: A non-nullable type cannot have a null value.
 
-User: what is a try block (3014)
-Joe: A try block lets you catch and handle exceptions gracefully.
-User: what is a try block (3014)
+User: what is a try block
 Joe: A try block lets you catch and handle exceptions gracefully.
 
-User: what is a list (7437)
-Joe: A list is an ordered, mutable collection of items in Python.
-User: what is a list (7437)
+User: what is a list
 Joe: A list is an ordered, mutable collection of items in Python.
 
-User: what is a type annotation (9622)
-Joe: A type annotation associates a type with a variable or parameter.
-User: what is a type annotation (9622)
+User: what is a type annotation
 Joe: A type annotation associates a type with a variable or parameter.
 
-User: what is a factory (3175)
-Joe: A factory is a design pattern that creates objects without specifying the exact class.
-User: what is a factory (3175)
+User: what is a factory
 Joe: A factory is a design pattern that creates objects without specifying the exact class.
 
-User: what is inheritance (4786)
-Joe: Inheritance allows a class to inherit attributes and methods from another class.
-User: what is inheritance (4786)
+User: what is inheritance
 Joe: Inheritance allows a class to inherit attributes and methods from another class.
 
-User: what is a dict literal (5991)
-Joe: A dict literal is a brace-enclosed collection of key-value pairs.
-User: what is a dict literal (5991)
+User: what is a dict literal
 Joe: A dict literal is a brace-enclosed collection of key-value pairs.
 
-User: what is a boolean literal (5655)
-Joe: A boolean literal is either True or False.
-User: what is a boolean literal (5655)
+User: what is a boolean literal
 Joe: A boolean literal is either True or False.
 
-User: what is a literal (5541)
-Joe: A literal is a notation for representing a fixed value in code.
-User: what is a literal (5541)
-Joe: A literal is a notation for representing a fixed value in code.
-
-User: what is a range (6138)
-Joe: A range is an immutable sequence of numbers, commonly used in loops.
-User: what is a range (6138)
-Joe: A range is an immutable sequence of numbers, commonly used in loops.
-
-User: what is a nested list (2035)
-Joe: A nested list is a list containing other lists.
-User: what is a nested list (2035)
+User: what is a nested list
 Joe: A nested list is a list containing other lists.
 
-User: what is a type variable (4297)
-Joe: A type variable represents a type that can vary.
-User: what is a type variable (4297)
+User: what is a type variable
 Joe: A type variable represents a type that can vary.
 
-User: what is a free variable (1045)
-Joe: A free variable is a variable used in a function but not defined there.
-User: what is a free variable (1045)
+User: what is a free variable
 Joe: A free variable is a variable used in a function but not defined there.
 
-User: what is an abstract class (2617)
-Joe: An abstract class cannot be instantiated and may contain abstract methods.
-User: what is an abstract class (2617)
+User: what is an abstract class
 Joe: An abstract class cannot be instantiated and may contain abstract methods.
 
-User: what is a dict (1556)
-Joe: A dict is a collection of key-value pairs that maps unique keys to values.
-User: what is a dict (1556)
+User: what is a dict
 Joe: A dict is a collection of key-value pairs that maps unique keys to values.
 
-User: what is a slot (4716)
-Joe: A slot restricts the attributes that can be assigned to an object.
-User: what is a slot (4716)
-Joe: A slot restricts the attributes that can be assigned to an object.
-
-User: what is an enumerate (2807)
-Joe: Enumerate returns index-value pairs from an iterable.
-User: what is an enumerate (2807)
+User: what is an enumerate
 Joe: Enumerate returns index-value pairs from an iterable.
 
-User: what is a constrained type (8628)
-Joe: A constrained type has explicit bounds on what types are allowed.
-User: what is a constrained type (8628)
+User: what is a constrained type
 Joe: A constrained type has explicit bounds on what types are allowed.
 
-User: what is a set (2223)
-Joe: A set is an unordered collection of unique elements with no duplicates.
-User: what is a set (2223)
-Joe: A set is an unordered collection of unique elements with no duplicates.
-
-User: what is a closure (2241)
-Joe: A closure is a function that remembers its enclosing scope.
-User: what is a closure (2241)
+User: what is a closure
 Joe: A closure is a function that remembers its enclosing scope.
 
-User: what is a duck type (1531)
-Joe: A duck type is determined by the presence of certain methods and attributes.
-User: what is a duck type (1531)
+User: what is a duck type
 Joe: A duck type is determined by the presence of certain methods and attributes.
 
-User: what is a slice (4363)
-Joe: A slice selects a portion of a sequence using start, stop, and step indices.
-User: what is a slice (4363)
+User: what is a slice
 Joe: A slice selects a portion of a sequence using start, stop, and step indices.
 
-User: what is a decorator (5335)
-Joe: A decorator is a function that modifies the behavior of another function.
-User: what is a decorator (5335)
+User: what is a decorator
 Joe: A decorator is a function that modifies the behavior of another function.
 
-User: what is a abstract method (1394)
-Joe: An abstract method is declared but has no implementation.
-User: what is a abstract method (1394)
+User: what is a abstract method
 Joe: An abstract method is declared but has no implementation.
 
-User: what is a union type (6312)
-Joe: A union type can be one of several possible types.
-User: what is a union type (6312)
+User: what is a union type
 Joe: A union type can be one of several possible types.
 
-User: what is a prototype (5397)
-Joe: A prototype creates new objects by copying an existing instance.
-User: what is a prototype (5397)
+User: what is a prototype
 Joe: A prototype creates new objects by copying an existing instance.
 
-User: what is a bound type (8072)
-Joe: A bound type is constrained to a specific type or its subtypes.
-User: what is a bound type (8072)
+User: what is a bound type
 Joe: A bound type is constrained to a specific type or its subtypes.
 
-User: what is a class property (4167)
-Joe: A class property is a property bound to the class.
-User: what is a class property (4167)
+User: what is a class property
 Joe: A class property is a property bound to the class.
 
-User: what is an invariant type (4080)
-Joe: An invariant type does not preserve subtyping relationships.
-User: what is an invariant type (4080)
+User: what is an invariant type
 Joe: An invariant type does not preserve subtyping relationships.
 
-User: what is a dynamic type (7639)
-Joe: A dynamic type is determined at runtime rather than compile time.
-User: what is a dynamic type (7639)
+User: what is a dynamic type
 Joe: A dynamic type is determined at runtime rather than compile time.
 
-User: what is a set literal (4660)
-Joe: A set literal is a brace-enclosed collection of unique elements.
-User: what is a set literal (4660)
+User: what is a set literal
 Joe: A set literal is a brace-enclosed collection of unique elements.
 
-User: what is a list (1998)
-Joe: A list is an ordered, mutable collection of items in Python.
-User: what is a list (1998)
-Joe: A list is an ordered, mutable collection of items in Python.
-
-User: what is a numeric literal (8984)
-Joe: A numeric literal is a notation for representing a number in code.
-User: what is a numeric literal (8984)
+User: what is a numeric literal
 Joe: A numeric literal is a notation for representing a number in code.
 
-User: what is a descriptor (9488)
-Joe: A descriptor is an object attribute with binding behavior.
-User: what is a descriptor (9488)
+User: what is a descriptor
 Joe: A descriptor is an object attribute with binding behavior.
 
-User: what is an intersection type (8977)
-Joe: An intersection type is a type that belongs to multiple types.
-User: what is an intersection type (8977)
+User: what is an intersection type
 Joe: An intersection type is a type that belongs to multiple types.
 
-User: what is a filter (5468)
-Joe: Filter constructs an iterator from elements for which a function returns true.
-User: what is a filter (5468)
+User: what is a filter
 Joe: Filter constructs an iterator from elements for which a function returns true.
 
-User: what is a generator (560)
-Joe: A generator is a function that yields values lazily, one at a time, saving memory.
-User: what is a generator (560)
+User: what is a generator
 Joe: A generator is a function that yields values lazily, one at a time, saving memory.
 
-User: what is a property (7449)
-Joe: A property is a way to define getter, setter, and deleter methods for an attribute.
-User: what is a property (7449)
+User: what is a property
 Joe: A property is a way to define getter, setter, and deleter methods for an attribute.
 
-User: what is map (5558)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (5558)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a static type (8748)
-Joe: A static type is the type declared at compile time.
-User: what is a static type (8748)
+User: what is a static type
 Joe: A static type is the type declared at compile time.
 
-User: what is a string literal (8317)
-Joe: A string literal is a sequence of characters enclosed in quotes.
-User: what is a string literal (8317)
+User: what is a string literal
 Joe: A string literal is a sequence of characters enclosed in quotes.
 
-User: what is a weakref (1165)
-Joe: A weakref is a reference to an object that doesn't prevent garbage collection.
-User: what is a weakref (1165)
+User: what is a weakref
 Joe: A weakref is a reference to an object that doesn't prevent garbage collection.
 
-User: what is a tuple (4441)
-Joe: A tuple is an ordered, immutable sequence of elements.
-User: what is a tuple (4441)
-Joe: A tuple is an ordered, immutable sequence of elements.
-
-User: what is a builder (4841)
-Joe: A builder is a design pattern that constructs complex objects step by step.
-User: what is a builder (4841)
+User: what is a builder
 Joe: A builder is a design pattern that constructs complex objects step by step.
 
-User: what is a filter (7910)
-Joe: Filter constructs an iterator from elements for which a function returns true.
-User: what is a filter (7910)
-Joe: Filter constructs an iterator from elements for which a function returns true.
-
-User: what is a generic function (9068)
-Joe: A generic function works with multiple types through type variables.
-User: what is a generic function (9068)
+User: what is a generic function
 Joe: A generic function works with multiple types through type variables.
 
-User: what is a singleton (3729)
-Joe: A singleton ensures only one instance of a class exists.
-User: what is a singleton (3729)
+User: what is a singleton
 Joe: A singleton ensures only one instance of a class exists.
 
-User: what is a positive index (813)
-Joe: A positive index counts from the beginning of a sequence.
-User: what is a positive index (813)
+User: what is a positive index
 Joe: A positive index counts from the beginning of a sequence.
 
-User: what is a builder (2066)
-Joe: A builder is a design pattern that constructs complex objects step by step.
-User: what is a builder (2066)
-Joe: A builder is a design pattern that constructs complex objects step by step.
-
-User: what is a generic class (3630)
-Joe: A generic class is parameterized by one or more type variables.
-User: what is a generic class (3630)
+User: what is a generic class
 Joe: A generic class is parameterized by one or more type variables.
 
-User: what is a zip (4582)
-Joe: Zip aggregates elements from multiple iterables into tuples.
-User: what is a zip (4582)
-Joe: Zip aggregates elements from multiple iterables into tuples.
-
-User: what is a reduce (6579)
-Joe: Reduce applies a function cumulatively to items of an iterable.
-User: what is a reduce (6579)
+User: what is a reduce
 Joe: Reduce applies a function cumulatively to items of an iterable.
 
-User: what is a computed property (7829)
-Joe: A computed property derives its value from other attributes.
-User: what is a computed property (7829)
+User: what is a computed property
 Joe: A computed property derives its value from other attributes.
 
-User: what is a lambda (2004)
-Joe: A lambda is a small anonymous function defined with the lambda keyword.
-User: what is a lambda (2004)
+User: what is a lambda
 Joe: A lambda is a small anonymous function defined with the lambda keyword.
 
-User: what is a nominal type (3639)
-Joe: A nominal type is defined by its name and explicit declaration.
-User: what is a nominal type (3639)
+User: what is a nominal type
 Joe: A nominal type is defined by its name and explicit declaration.
 
-User: what is a decorator factory (2736)
-Joe: A decorator factory is a function that returns a decorator.
-User: what is a decorator factory (2736)
+User: what is a decorator factory
 Joe: A decorator factory is a function that returns a decorator.
 
-User: what is a lambda (5556)
-Joe: A lambda is a small anonymous function defined with the lambda keyword.
-User: what is a lambda (5556)
-Joe: A lambda is a small anonymous function defined with the lambda keyword.
-
-User: what is map (8777)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (8777)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is map (2339)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (2339)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a module (6109)
-Joe: A module is a file containing Python code that can be imported into another script.
-User: what is a module (6109)
-Joe: A module is a file containing Python code that can be imported into another script.
-
-User: what is a weakref (4273)
-Joe: A weakref is a reference to an object that doesn't prevent garbage collection.
-User: what is a weakref (4273)
-Joe: A weakref is a reference to an object that doesn't prevent garbage collection.
-
-User: what is a slice (2920)
-Joe: A slice selects a portion of a sequence using start, stop, and step indices.
-User: what is a slice (2920)
-Joe: A slice selects a portion of a sequence using start, stop, and step indices.
-
-User: what is a closure (7569)
-Joe: A closure is a function that remembers its enclosing scope.
-User: what is a closure (7569)
-Joe: A closure is a function that remembers its enclosing scope.
-
-User: what is a reduce (1140)
-Joe: Reduce applies a function cumulatively to items of an iterable.
-User: what is a reduce (1140)
-Joe: Reduce applies a function cumulatively to items of an iterable.
-
-User: what is a dict comprehension (8574)
-Joe: A dict comprehension creates a dictionary from an iterable.
-User: what is a dict comprehension (8574)
+User: what is a dict comprehension
 Joe: A dict comprehension creates a dictionary from an iterable.
 
-User: what is a bound method (8816)
-Joe: A bound method is a method that is bound to an instance.
-User: what is a bound method (8816)
+User: what is a bound method
 Joe: A bound method is a method that is bound to an instance.
 
-User: what is a facade (4400)
-Joe: A facade provides a simplified interface to a complex subsystem.
-User: what is a facade (4400)
-Joe: A facade provides a simplified interface to a complex subsystem.
-
-User: what is a set (7440)
-Joe: A set is an unordered collection of unique elements with no duplicates.
-User: what is a set (7440)
-Joe: A set is an unordered collection of unique elements with no duplicates.
-
-User: what is map (6002)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (6002)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a dict (2777)
-Joe: A dict is a collection of key-value pairs that maps unique keys to values.
-User: what is a dict (2777)
-Joe: A dict is a collection of key-value pairs that maps unique keys to values.
-
-User: what is a lambda (3891)
-Joe: A lambda is a small anonymous function defined with the lambda keyword.
-User: what is a lambda (3891)
-Joe: A lambda is a small anonymous function defined with the lambda keyword.
-
-User: what is map (2228)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (2228)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a list literal (7211)
-Joe: A list literal is a bracketed list of elements.
-User: what is a list literal (7211)
+User: what is a list literal
 Joe: A list literal is a bracketed list of elements.
 
-User: what is a dict (3443)
-Joe: A dict is a collection of key-value pairs that maps unique keys to values.
-User: what is a dict (3443)
-Joe: A dict is a collection of key-value pairs that maps unique keys to values.
-
-User: what is a explicit type (537)
+User: what is a explicit type
 Joe: An explicit type is manually specified by the programmer.
-User: what is a explicit type (537)
-Joe: An explicit type is manually specified by the programmer.
-
-User: what is a factory (9946)
-Joe: A factory is a design pattern that creates objects without specifying the exact class.
-User: what is a factory (9946)
-Joe: A factory is a design pattern that creates objects without specifying the exact class.
-
-User: what is map (3671)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (3671)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is map (9443)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (9443)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a module (3223)
-Joe: A module is a file containing Python code that can be imported into another script.
-User: what is a module (3223)
-Joe: A module is a file containing Python code that can be imported into another script.
-
-User: what is a tuple (6550)
-Joe: A tuple is an ordered, immutable sequence of elements.
-User: what is a tuple (6550)
-Joe: A tuple is an ordered, immutable sequence of elements.
-
-User: what is map (9998)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (9998)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a builder (3953)
-Joe: A builder is a design pattern that constructs complex objects step by step.
-User: what is a builder (3953)
-Joe: A builder is a design pattern that constructs complex objects step by step.
-
-User: what is a slice (8581)
-Joe: A slice selects a portion of a sequence using start, stop, and step indices.
-User: what is a slice (8581)
-Joe: A slice selects a portion of a sequence using start, stop, and step indices.
-
-User: what is map (9665)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (9665)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a facade (3623)
-Joe: A facade provides a simplified interface to a complex subsystem.
-User: what is a facade (3623)
-Joe: A facade provides a simplified interface to a complex subsystem.
-
-User: what is a list (555)
-Joe: A list is an ordered, mutable collection of items in Python.
-User: what is a list (555)
-Joe: A list is an ordered, mutable collection of items in Python.
-
-User: what is map (7889)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (7889)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is map (2450)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-User: what is map (2450)
-Joe: Map applies a given function to every item in an iterable and returns an iterator.
-
-User: what is a dict (890)
-Joe: A dict is a collection of key-value pairs that maps unique keys to values.
-User: what is a dict (890)
-Joe: A dict is a collection of key-value pairs that maps unique keys to values.
-
-User: what is a list (6660)
-Joe: A list is an ordered, mutable collection of items in Python.
-User: what is a list (6660)
-Joe: A list is an ordered, mutable collection of items in Python.
 
 User: why does `0 == False` come back true
 Joe: `False` is a subclass of `int` with value `0`, so equality compares the numbers and both sides are zero.
@@ -15033,4 +14608,3 @@ Joe: It only answers the minimum or the top k, so anything between values needs 
 
 User: what makes `usedforsecurity=False` exist on hashes
 Joe: It lets you use a fast hash for a non-security purpose where FIPS mode would otherwise block it.
-

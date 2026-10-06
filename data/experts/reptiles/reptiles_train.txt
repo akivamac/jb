@@ -715,7 +715,6 @@ Joe: Legless lizards are lizards that have evolved to lose their limbs, resultin
 User: What is a slow worm?
 Joe: The slow worm is a legless lizard native to Europe, resembling a small snake but actually a burrowing lizard. It has smooth, metallic-looking scales, eyelids, and can drop its tail. Slow worms are beneficial garden animals, feeding on slugs and insects. They are long-lived, potentially reaching 30 years or more.
 
-
 User: How do reptiles use venom?
 Joe: Reptile venom is delivered through specialized fangs or teeth. Viperids have hollow front fangs that fold back when not in use. Elapids have fixed front fangs. Some colubrids are rear-fanged with grooved teeth. Some lizards like Gila monsters and beaded lizards have venomous bites. Venom evolved independently multiple times in reptiles, serving primarily for prey acquisition and secondarily for defense.
 
@@ -7441,273 +7440,47 @@ Joe: A **skink's tail** is often thick and fleshy, used to store fat, and in man
 User: What is a five-lined skink?
 Joe: The **five-lined skink** (Plestiodon fasciatus) is a small, shiny, colorful skink from the eastern US, with five light stripes on a dark body, found under rocks and logs, feedi
 
-User: What is snakes?
-Joe: Here is some snakes information relevant to the reptiles expert.
-
-User: What is lizards?
-Joe: Here is some lizards information relevant to the reptiles expert.
-
-User: What is turtles?
-Joe: Here is some turtles information relevant to the reptiles expert.
-
-User: What is crocodilians?
-Joe: Here is some crocodilians information relevant to the reptiles expert.
-
-User: What is habitats?
-Joe: Here is some habitats information relevant to the reptiles expert.
-
-User: What is diet?
-Joe: Here is some diet information relevant to the reptiles expert.
-
-User: What is conservation?
-Joe: Here is some conservation information relevant to the reptiles expert.
-
-User: What is reptile behavior?
-Joe: Here is some reptile behavior information relevant to the reptiles expert.
-
-User: What is habitat preservation?
-Joe: Here is some habitat preservation information relevant to the reptiles expert.
-
-User: What is threats to reptiles?
-Joe: Here is some threats to reptiles information relevant to the reptiles expert.
-
 User: What is marine biology?
 Joe: Marine biology is the study of organisms in the ocean or other saltwater environments, including their behavior, physiology, conservation, and taxonomy. It covers everything from microscopic plankton to the largest marine mammals, such as whales. Key subfields include ichthyology (study of fish), phycology (study of algae), and invertebrate zoology.
 
-User: what is a iguana (1932)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (1932)
+User: what is a iguana
 Joe: An iguana is a herbivorous tropical lizard.
 
-User: what is a crocodile (4774)
-Joe: A crocodile is a large aquatic reptile with a powerful bite.
-User: what is a crocodile (4774)
+User: what is a crocodile
 Joe: A crocodile is a large aquatic reptile with a powerful bite.
 
-User: what is a monitor lizard (1580)
-Joe: A monitor lizard is a large, intelligent reptile.
-User: what is a monitor lizard (1580)
+User: what is a monitor lizard
 Joe: A monitor lizard is a large, intelligent reptile.
 
-User: what is a gecko (9898)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (9898)
+User: what is a gecko
 Joe: A gecko is a small lizard with adhesive toe pads.
 
-User: what is a snake (5798)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (5798)
+User: what is a snake
 Joe: A snake is a legless reptile with a long, flexible body.
 
-User: what is a komodo dragon (5705)
-Joe: A Komodo dragon is the largest living species of lizard.
-User: what is a komodo dragon (5705)
+User: what is a komodo dragon
 Joe: A Komodo dragon is the largest living species of lizard.
 
-User: what is a lizard (4213)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (4213)
+User: what is a lizard
 Joe: A lizard is a scaled reptile with four legs and a long tail.
 
-User: what is a turtle (3096)
-Joe: A turtle is a reptile with a protective shell.
-User: what is a turtle (3096)
+User: what is a turtle
 Joe: A turtle is a reptile with a protective shell.
 
-User: what is a gecko (3021)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (3021)
-Joe: A gecko is a small lizard with adhesive toe pads.
-
-User: what is a python snake (8655)
-Joe: A python is a large, non-venomous constrictor snake.
-User: what is a python snake (8655)
+User: what is a python snake
 Joe: A python is a large, non-venomous constrictor snake.
 
-User: what is a lizard (8555)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (8555)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a cobra (2440)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (2440)
+User: what is a cobra
 Joe: A cobra is a venomous snake capable of spreading its hood.
 
-User: what is a sea turtle (8085)
-Joe: A sea turtle is a turtle adapted for life in the ocean.
-User: what is a sea turtle (8085)
+User: what is a sea turtle
 Joe: A sea turtle is a turtle adapted for life in the ocean.
 
-User: what is a tortoise (2086)
-Joe: A tortoise is a land-dwelling turtle with a heavy shell.
-User: what is a tortoise (2086)
+User: what is a tortoise
 Joe: A tortoise is a land-dwelling turtle with a heavy shell.
 
-User: what is a chameleon (7050)
+User: what is a chameleon
 Joe: A chameleon is a lizard known for its color-changing ability.
-User: what is a chameleon (7050)
-Joe: A chameleon is a lizard known for its color-changing ability.
-
-User: what is a snake (1443)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (1443)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a turtle (4227)
-Joe: A turtle is a reptile with a protective shell.
-User: what is a turtle (4227)
-Joe: A turtle is a reptile with a protective shell.
-
-User: what is a iguana (4675)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (4675)
-Joe: An iguana is a herbivorous tropical lizard.
-
-User: what is a cobra (7588)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (7588)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a lizard (6969)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (6969)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a cobra (6691)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (6691)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a snake (2262)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (2262)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a gecko (6544)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (6544)
-Joe: A gecko is a small lizard with adhesive toe pads.
-
-User: what is a turtle (1588)
-Joe: A turtle is a reptile with a protective shell.
-User: what is a turtle (1588)
-Joe: A turtle is a reptile with a protective shell.
-
-User: what is a gecko (6882)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (6882)
-Joe: A gecko is a small lizard with adhesive toe pads.
-
-User: what is a iguana (4025)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (4025)
-Joe: An iguana is a herbivorous tropical lizard.
-
-User: what is a sea turtle (2196)
-Joe: A sea turtle is a turtle adapted for life in the ocean.
-User: what is a sea turtle (2196)
-Joe: A sea turtle is a turtle adapted for life in the ocean.
-
-User: what is a python snake (4092)
-Joe: A python is a large, non-venomous constrictor snake.
-User: what is a python snake (4092)
-Joe: A python is a large, non-venomous constrictor snake.
-
-User: what is a monitor lizard (2984)
-Joe: A monitor lizard is a large, intelligent reptile.
-User: what is a monitor lizard (2984)
-Joe: A monitor lizard is a large, intelligent reptile.
-
-User: what is a turtle (80)
-Joe: A turtle is a reptile with a protective shell.
-User: what is a turtle (80)
-Joe: A turtle is a reptile with a protective shell.
-
-User: what is a gecko (3957)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (3957)
-Joe: A gecko is a small lizard with adhesive toe pads.
-
-User: what is a komodo dragon (2780)
-Joe: A Komodo dragon is the largest living species of lizard.
-User: what is a komodo dragon (2780)
-Joe: A Komodo dragon is the largest living species of lizard.
-
-User: what is a cobra (4312)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (4312)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a snake (5200)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (5200)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a tortoise (2476)
-Joe: A tortoise is a land-dwelling turtle with a heavy shell.
-User: what is a tortoise (2476)
-Joe: A tortoise is a land-dwelling turtle with a heavy shell.
-
-User: what is a lizard (8971)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (8971)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a crocodile (1680)
-Joe: A crocodile is a large aquatic reptile with a powerful bite.
-User: what is a crocodile (1680)
-Joe: A crocodile is a large aquatic reptile with a powerful bite.
-
-User: what is a chameleon (966)
-Joe: A chameleon is a lizard known for its color-changing ability.
-User: what is a chameleon (966)
-Joe: A chameleon is a lizard known for its color-changing ability.
-
-User: what is a lizard (3550)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (3550)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a iguana (9667)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (9667)
-Joe: An iguana is a herbivorous tropical lizard.
-
-User: what is a snake (1378)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (1378)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a cobra (5898)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (5898)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a lizard (4226)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (4226)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a cobra (7666)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (7666)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a snake (6669)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (6669)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a iguana (3388)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (3388)
-Joe: An iguana is a herbivorous tropical lizard.
-
-User: what is a gecko (4100)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (4100)
-Joe: A gecko is a small lizard with adhesive toe pads.
 
 User: What is the origin of the depressor mandibulae muscle in squamate reptiles?
 Joe: The depressor mandibulae originates on the posterior skull and inserts on the lower jaw. It is the primary jaw-opening muscle in lizards and snakes. The origin point varies between groups but is typically behind the jaw joint.
@@ -8023,134 +7796,3 @@ Joe: The marginal value theorem explains how savanna monitor species number 28 a
 
 User: How does the central place foraging apply to the foraging ecology of temperate snake species number 29?
 Joe: The central place foraging explains how temperate snake species number 29 allocates foraging effort across its habitat. The predictions of optimal foraging theory are generally supported by observational studies. Temperature and prey availability modify the expected patterns.
-
-User: what is a iguana (2556)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (2556)
-Joe: An iguana is a herbivorous tropical lizard.
-
-User: what is a gecko (8468)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (8468)
-Joe: A gecko is a small lizard with adhesive toe pads.
-
-User: what is a python snake (3273)
-Joe: A python is a large, non-venomous constrictor snake.
-User: what is a python snake (3273)
-Joe: A python is a large, non-venomous constrictor snake.
-
-User: what is a sea turtle (5732)
-Joe: A sea turtle is a turtle adapted for life in the ocean.
-User: what is a sea turtle (5732)
-Joe: A sea turtle is a turtle adapted for life in the ocean.
-
-User: what is a turtle (3850)
-Joe: A turtle is a reptile with a protective shell.
-User: what is a turtle (3850)
-Joe: A turtle is a reptile with a protective shell.
-
-User: what is a monitor lizard (891)
-Joe: A monitor lizard is a large, intelligent reptile.
-User: what is a monitor lizard (891)
-Joe: A monitor lizard is a large, intelligent reptile.
-
-User: what is a komodo dragon (9059)
-Joe: A Komodo dragon is the largest living species of lizard.
-User: what is a komodo dragon (9059)
-Joe: A Komodo dragon is the largest living species of lizard.
-
-User: what is a gecko (7701)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (7701)
-Joe: A gecko is a small lizard with adhesive toe pads.
-
-User: what is a tortoise (8066)
-Joe: A tortoise is a land-dwelling turtle with a heavy shell.
-User: what is a tortoise (8066)
-Joe: A tortoise is a land-dwelling turtle with a heavy shell.
-
-User: what is a snake (1521)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (1521)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a cobra (4663)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (4663)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a turtle (9167)
-Joe: A turtle is a reptile with a protective shell.
-User: what is a turtle (9167)
-Joe: A turtle is a reptile with a protective shell.
-
-User: what is a crocodile (4046)
-Joe: A crocodile is a large aquatic reptile with a powerful bite.
-User: what is a crocodile (4046)
-Joe: A crocodile is a large aquatic reptile with a powerful bite.
-
-User: what is a chameleon (472)
-Joe: A chameleon is a lizard known for its color-changing ability.
-User: what is a chameleon (472)
-Joe: A chameleon is a lizard known for its color-changing ability.
-
-User: what is a lizard (3407)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (3407)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a snake (9906)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (9906)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a iguana (3141)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (3141)
-Joe: An iguana is a herbivorous tropical lizard.
-
-User: what is a lizard (2991)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (2991)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a cobra (2921)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (2921)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a iguana (7977)
-Joe: An iguana is a herbivorous tropical lizard.
-User: what is a iguana (7977)
-Joe: An iguana is a herbivorous tropical lizard.
-
-User: what is a snake (7488)
-Joe: A snake is a legless reptile with a long, flexible body.
-User: what is a snake (7488)
-Joe: A snake is a legless reptile with a long, flexible body.
-
-User: what is a cobra (8888)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (8888)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a cobra (7575)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-User: what is a cobra (7575)
-Joe: A cobra is a venomous snake capable of spreading its hood.
-
-User: what is a lizard (6865)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-User: what is a lizard (6865)
-Joe: A lizard is a scaled reptile with four legs and a long tail.
-
-User: what is a gecko (3593)
-Joe: A gecko is a small lizard with adhesive toe pads.
-User: what is a gecko (3593)
-Joe: A gecko is a small lizard with adhesive toe pads.
-
-User: what is a turtle (4422)
-Joe: A turtle is a reptile with a protective shell.
-User: what is a turtle (4422)
-Joe: A turtle is a reptile with a protective shell.
-

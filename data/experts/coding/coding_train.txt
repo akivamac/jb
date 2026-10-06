@@ -10459,21 +10459,6 @@ return best
 print(longest_palindrome("babad"))  # "bab" or "aba"
 ```
 
-User: What is Java?
-Joe: Here is some Java information relevant to the coding expert.
-
-User: What is HTML?
-Joe: Here is some HTML information relevant to the coding expert.
-
-User: What is CSS?
-Joe: Here is some CSS information relevant to the coding expert.
-
-User: What is React?
-Joe: Here is some React information relevant to the coding expert.
-
-User: What is Git?
-Joe: Here is some Git information relevant to the coding expert.
-
 User: What is variable concept 0?
 Joe: Variable 0 is a named storage location in memory.
 
@@ -10555,945 +10540,227 @@ Joe: Bubble sort is less efficient (O(n²)) compared to quicksort (O(n log n) av
 User: How do you write to a file in Python?
 Joe: Use the open() function with 'w' mode to write, which overwrites existing content.
 
-User: what is IP (5970)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (5970)
+User: what is IP
 Joe: IP is the protocol that routes packets of data from a source to a destination.
 
-User: what is a thread (4773)
-Joe: A thread is the smallest unit of execution that a scheduler can manage in an operating system.
-User: what is a thread (4773)
+User: what is a thread
 Joe: A thread is the smallest unit of execution that a scheduler can manage in an operating system.
 
-User: what is a loop (9621)
-Joe: A loop repeats a block of code until a condition is met.
-User: what is a loop (9621)
+User: what is a loop
 Joe: A loop repeats a block of code until a condition is met.
 
-User: what is a VPN (3320)
-Joe: A VPN creates a secure, encrypted connection over a less secure network.
-User: what is a VPN (3320)
+User: what is a VPN
 Joe: A VPN creates a secure, encrypted connection over a less secure network.
 
-User: what is a deadlock (7737)
-Joe: A deadlock occurs when two or more processes are blocked, each waiting for the other.
-User: what is a deadlock (7737)
+User: what is a deadlock
 Joe: A deadlock occurs when two or more processes are blocked, each waiting for the other.
 
-User: what is a class (3185)
-Joe: A class is a blueprint for creating objects in object-oriented programming.
-User: what is a class (3185)
+User: what is a class
 Joe: A class is a blueprint for creating objects in object-oriented programming.
 
-User: what is a URL (1016)
-Joe: A URL is a web address that specifies the location of a resource on the internet.
-User: what is a URL (1016)
+User: what is a URL
 Joe: A URL is a web address that specifies the location of a resource on the internet.
 
-User: what is a browser (4879)
-Joe: A browser is a software application for accessing and viewing websites.
-User: what is a browser (4879)
+User: what is a browser
 Joe: A browser is a software application for accessing and viewing websites.
 
-User: what is a race condition (8774)
-Joe: A race condition happens when the outcome depends on the timing of concurrent threads.
-User: what is a race condition (8774)
+User: what is a race condition
 Joe: A race condition happens when the outcome depends on the timing of concurrent threads.
 
-User: what is FTP (4265)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (4265)
+User: what is FTP
 Joe: FTP is the File Transfer Protocol used to transfer files between computers.
 
-User: what is a firewall (8351)
-Joe: A firewall is a network security system that monitors and controls incoming and outgoing traffic.
-User: what is a firewall (8351)
+User: what is a firewall
 Joe: A firewall is a network security system that monitors and controls incoming and outgoing traffic.
 
-User: what is DNS (1901)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (1901)
+User: what is DNS
 Joe: DNS translates human-readable domain names into IP addresses.
 
-User: what is a parser (2883)
-Joe: A parser analyzes and processes data, converting it into a structured format.
-User: what is a parser (2883)
+User: what is a parser
 Joe: A parser analyzes and processes data, converting it into a structured format.
 
-User: what is debugging (3853)
-Joe: Debugging is the process of finding, identifying, and fixing errors in code.
-User: what is debugging (3853)
+User: what is debugging
 Joe: Debugging is the process of finding, identifying, and fixing errors in code.
 
-User: what is a stack (2534)
-Joe: A stack is a data structure that follows the last-in, first-out (LIFO) principle.
-User: what is a stack (2534)
+User: what is a stack
 Joe: A stack is a data structure that follows the last-in, first-out (LIFO) principle.
 
-User: what is a domain (3826)
-Joe: A domain is a named location on the internet that identifies a website.
-User: what is a domain (3826)
+User: what is a domain
 Joe: A domain is a named location on the internet that identifies a website.
 
-User: what is a compiler (6224)
-Joe: A compiler translates source code written in one language into machine code.
-User: what is a compiler (6224)
+User: what is a compiler
 Joe: A compiler translates source code written in one language into machine code.
 
-User: what is a header (2498)
-Joe: A header is metadata sent with a web request or response.
-User: what is a header (2498)
+User: what is a header
 Joe: A header is metadata sent with a web request or response.
 
-User: what is a hash table (4091)
-Joe: A hash table is a data structure that maps keys to values using a hash function.
-User: what is a hash table (4091)
+User: what is a hash table
 Joe: A hash table is a data structure that maps keys to values using a hash function.
 
-User: what is a return value (3419)
-Joe: A return value is the output that a function produces after executing its code.
-User: what is a return value (3419)
+User: what is a return value
 Joe: A return value is the output that a function produces after executing its code.
 
-User: what is a renderer (8136)
-Joe: A renderer processes and displays content from a web page.
-User: what is a renderer (8136)
+User: what is a renderer
 Joe: A renderer processes and displays content from a web page.
 
-User: what is an API (5116)
-Joe: An API is a set of protocols and tools that allows different software applications to communicate.
-User: what is an API (5116)
+User: what is an API
 Joe: An API is a set of protocols and tools that allows different software applications to communicate.
 
-User: what is a linked list (4312)
-Joe: A linked list is a linear data structure where elements are connected via pointers.
-User: what is a linked list (4312)
+User: what is a linked list
 Joe: A linked list is a linear data structure where elements are connected via pointers.
 
-User: what is an array (2902)
-Joe: An array is a data structure that holds a fixed-size collection of elements of the same type.
-User: what is an array (2902)
+User: what is an array
 Joe: An array is a data structure that holds a fixed-size collection of elements of the same type.
 
-User: what is a certificate (6056)
-Joe: A certificate is a digital document that verifies the identity of a website.
-User: what is a certificate (6056)
+User: what is a certificate
 Joe: A certificate is a digital document that verifies the identity of a website.
 
-User: what is a session (7976)
-Joe: A session is a period of interaction between a user and a system.
-User: what is a session (7976)
+User: what is a session
 Joe: A session is a period of interaction between a user and a system.
 
-User: what is a pivot (2248)
-Joe: A pivot is a selected element used in partitioning algorithms like quicksort.
-User: what is a pivot (2248)
+User: what is a pivot
 Joe: A pivot is a selected element used in partitioning algorithms like quicksort.
 
-User: what is a coroutine (4624)
-Joe: A coroutine is a function that can pause and resume its execution, allowing concurrent operations.
-User: what is a coroutine (4624)
+User: what is a coroutine
 Joe: A coroutine is a function that can pause and resume its execution, allowing concurrent operations.
 
-User: what is UDP (6265)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (6265)
+User: what is UDP
 Joe: UDP is a connectionless protocol that sends data without establishing a connection.
 
-User: what is a bug (8375)
-Joe: A bug is an error, flaw, or defect in a program that causes it to produce incorrect results.
-User: what is a bug (8375)
+User: what is a bug
 Joe: A bug is an error, flaw, or defect in a program that causes it to produce incorrect results.
 
-User: what is a callback (402)
-Joe: A callback is a function passed as an argument to another function, to be executed later.
-User: what is a callback (402)
+User: what is a callback
 Joe: A callback is a function passed as an argument to another function, to be executed later.
 
-User: what is a process (6624)
-Joe: A process is an instance of a program being executed by the operating system.
-User: what is a process (6624)
+User: what is a process
 Joe: A process is an instance of a program being executed by the operating system.
 
-User: what is a graph (4315)
-Joe: A graph is a non-linear data structure consisting of nodes and edges.
-User: what is a graph (4315)
+User: what is a graph
 Joe: A graph is a non-linear data structure consisting of nodes and edges.
 
-User: what is SSL (2503)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (2503)
+User: what is SSL
 Joe: SSL is a security protocol that encrypts communication between a browser and a server.
 
-User: what is a query string (3311)
-Joe: A query string is part of a URL that contains parameters sent to a web application.
-User: what is a query string (3311)
+User: what is a query string
 Joe: A query string is part of a URL that contains parameters sent to a web application.
 
-User: what is a library (7708)
-Joe: A library is a collection of pre-written code that developers can use to perform common tasks.
-User: what is a library (7708)
+User: what is a library
 Joe: A library is a collection of pre-written code that developers can use to perform common tasks.
 
-User: what is a framework (8669)
-Joe: A framework is a reusable set of tools and libraries that provides a foundation for building applications.
-User: what is a framework (8669)
+User: what is a framework
 Joe: A framework is a reusable set of tools and libraries that provides a foundation for building applications.
 
-User: what is a host (645)
-Joe: A host is a computer or device connected to a network that can send and receive data.
-User: what is a host (645)
+User: what is a host
 Joe: A host is a computer or device connected to a network that can send and receive data.
 
-User: what is an async (4252)
-Joe: An async function is a function declared with the async keyword, enabling asynchronous programming.
-User: what is an async (4252)
+User: what is an async
 Joe: An async function is a function declared with the async keyword, enabling asynchronous programming.
 
-User: what is a cache (9170)
-Joe: A cache stores copies of data for faster retrieval on subsequent requests.
-User: what is a cache (9170)
+User: what is a cache
 Joe: A cache stores copies of data for faster retrieval on subsequent requests.
 
-User: what is a lexer (6214)
-Joe: A lexer breaks input text into tokens for further processing.
-User: what is a lexer (6214)
+User: what is a lexer
 Joe: A lexer breaks input text into tokens for further processing.
 
-User: what is TCP (1602)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (1602)
+User: what is TCP
 Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
 
-User: what is HTTP (1747)
-Joe: HTTP is the protocol used for transferring hypertext requests and information on the web.
-User: what is HTTP (1747)
+User: what is HTTP
 Joe: HTTP is the protocol used for transferring hypertext requests and information on the web.
 
-User: what is a tree (3426)
-Joe: A tree is a hierarchical data structure with a root node and child nodes.
-User: what is a tree (3426)
+User: what is a tree
 Joe: A tree is a hierarchical data structure with a root node and child nodes.
 
-User: what is a merge (6243)
-Joe: A merge combines two or more sorted sequences into a single sorted sequence.
-User: what is a merge (6243)
+User: what is a merge
 Joe: A merge combines two or more sorted sequences into a single sorted sequence.
 
-User: what is a pointer (4901)
-Joe: A pointer is a variable that stores the memory address of another variable.
-User: what is a pointer (4901)
+User: what is a pointer
 Joe: A pointer is a variable that stores the memory address of another variable.
 
-User: what is a semaphore (4110)
-Joe: A semaphore is a signaling mechanism that controls access to a shared resource.
-User: what is a semaphore (4110)
+User: what is a semaphore
 Joe: A semaphore is a signaling mechanism that controls access to a shared resource.
 
-User: what is a URL (5974)
-Joe: A URL is a web address that specifies the location of a resource on the internet.
-User: what is a URL (5974)
-Joe: A URL is a web address that specifies the location of a resource on the internet.
-
-User: what is TCP (7300)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (7300)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is DNS (4047)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (4047)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is a thread (2109)
-Joe: A thread is the smallest unit of execution that a scheduler can manage in an operating system.
-User: what is a thread (2109)
-Joe: A thread is the smallest unit of execution that a scheduler can manage in an operating system.
-
-User: what is a variable (7622)
-Joe: A variable is a named storage location in memory that holds a value.
-User: what is a variable (7622)
+User: what is a variable
 Joe: A variable is a named storage location in memory that holds a value.
 
-User: what is a socket (7443)
-Joe: A socket is an endpoint for sending and receiving data across a computer network.
-User: what is a socket (7443)
+User: what is a socket
 Joe: A socket is an endpoint for sending and receiving data across a computer network.
 
-User: what is SSL (6351)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (6351)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is a partition (5653)
-Joe: A partition divides an array into two sub-arrays based on a pivot element.
-User: what is a partition (5653)
+User: what is a partition
 Joe: A partition divides an array into two sub-arrays based on a pivot element.
 
-User: what is IP (2714)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (2714)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is a tokenizer (1405)
-Joe: A tokenizer splits text into meaningful units for analysis.
-User: what is a tokenizer (1405)
+User: what is a tokenizer
 Joe: A tokenizer splits text into meaningful units for analysis.
 
-User: what is a mutex (6995)
-Joe: A mutex is a lock that prevents multiple threads from accessing the same resource simultaneously.
-User: what is a mutex (6995)
+User: what is a mutex
 Joe: A mutex is a lock that prevents multiple threads from accessing the same resource simultaneously.
 
-User: what is a port (2190)
-Joe: A port is a logical endpoint identified by a number that identifies a specific process.
-User: what is a port (2190)
+User: what is a port
 Joe: A port is a logical endpoint identified by a number that identifies a specific process.
 
-User: what is a database (1561)
-Joe: A database is an organized collection of structured data stored electronically.
-User: what is a database (1561)
+User: what is a database
 Joe: A database is an organized collection of structured data stored electronically.
 
-User: what is a closure (4693)
-Joe: A closure is a function that remembers its enclosing scope even when executed outside it.
-User: what is a closure (4693)
+User: what is a closure
 Joe: A closure is a function that remembers its enclosing scope even when executed outside it.
 
-User: what is a proxy (435)
-Joe: A proxy is an intermediary that forwards requests between clients and servers.
-User: what is a proxy (435)
+User: what is a proxy
 Joe: A proxy is an intermediary that forwards requests between clients and servers.
 
-User: what is a socket (2189)
-Joe: A socket is an endpoint for sending and receiving data across a computer network.
-User: what is a socket (2189)
-Joe: A socket is an endpoint for sending and receiving data across a computer network.
-
-User: what is a heap (4168)
-Joe: A heap is a specialized tree-based data structure that satisfies the heap property.
-User: what is a heap (4168)
+User: what is a heap
 Joe: A heap is a specialized tree-based data structure that satisfies the heap property.
 
-User: what is a promise (7655)
-Joe: A promise is an object representing the eventual completion or failure of an asynchronous operation.
-User: what is a promise (7655)
+User: what is a promise
 Joe: A promise is an object representing the eventual completion or failure of an asynchronous operation.
 
-User: what is a class (2297)
-Joe: A class is a blueprint for creating objects in object-oriented programming.
-User: what is a class (2297)
-Joe: A class is a blueprint for creating objects in object-oriented programming.
-
-User: what is an API (8372)
-Joe: An API is a set of protocols and tools that allows different software applications to communicate.
-User: what is an API (8372)
-Joe: An API is a set of protocols and tools that allows different software applications to communicate.
-
-User: what is IP (6118)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (6118)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is syntax (4079)
-Joe: Syntax is the set of rules that defines the correct structure of code in a programming language.
-User: what is syntax (4079)
+User: what is syntax
 Joe: Syntax is the set of rules that defines the correct structure of code in a programming language.
 
-User: what is an await (2847)
-Joe: An await expression pauses execution until a Promise resolves, then resumes with the result.
-User: what is an await (2847)
+User: what is an await
 Joe: An await expression pauses execution until a Promise resolves, then resumes with the result.
 
-User: what is a traversal (1658)
-Joe: A traversal visits every node in a data structure exactly once in a systematic way.
-User: what is a traversal (1658)
+User: what is a traversal
 Joe: A traversal visits every node in a data structure exactly once in a systematic way.
 
-User: what is a queue (9935)
-Joe: A queue is a data structure that follows the first-in, first-out (FIFO) principle.
-User: what is a queue (9935)
+User: what is a queue
 Joe: A queue is a data structure that follows the first-in, first-out (FIFO) principle.
 
-User: what is SSL (1985)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (1985)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is TCP (5376)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (5376)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is a cookie (1759)
-Joe: A cookie is a small piece of data stored by a browser to remember user preferences.
-User: what is a cookie (1759)
+User: what is a cookie
 Joe: A cookie is a small piece of data stored by a browser to remember user preferences.
 
-User: what is DNS (6415)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (6415)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is a bug (9411)
-Joe: A bug is an error, flaw, or defect in a program that causes it to produce incorrect results.
-User: what is a bug (9411)
-Joe: A bug is an error, flaw, or defect in a program that causes it to produce incorrect results.
-
-User: what is a load balancer (1028)
-Joe: A load balancer distributes network traffic across multiple servers.
-User: what is a load balancer (1028)
+User: what is a load balancer
 Joe: A load balancer distributes network traffic across multiple servers.
 
-User: what is IP (5156)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (5156)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is a function (3776)
-Joe: A function is a reusable block of code that performs a specific task.
-User: what is a function (3776)
+User: what is a function
 Joe: A function is a reusable block of code that performs a specific task.
 
-User: what is debugging (9107)
-Joe: Debugging is the process of finding, identifying, and fixing errors in code.
-User: what is debugging (9107)
-Joe: Debugging is the process of finding, identifying, and fixing errors in code.
-
-User: what is syntax (3561)
-Joe: Syntax is the set of rules that defines the correct structure of code in a programming language.
-User: what is syntax (3561)
-Joe: Syntax is the set of rules that defines the correct structure of code in a programming language.
-
-User: what is an algorithm (6222)
-Joe: An algorithm is a step-by-step procedure to solve a problem or accomplish a task.
-User: what is an algorithm (6222)
+User: what is an algorithm
 Joe: An algorithm is a step-by-step procedure to solve a problem or accomplish a task.
 
-User: what is HTTPS (9000)
-Joe: HTTPS is HTTP secured with SSL/TLS to encrypt data transmission.
-User: what is HTTPS (9000)
+User: what is HTTPS
 Joe: HTTPS is HTTP secured with SSL/TLS to encrypt data transmission.
 
-User: what is a binary search (3207)
-Joe: A binary search algorithm finds a target value in a sorted array by repeatedly dividing the search interval.
-User: what is a binary search (3207)
+User: what is a binary search
 Joe: A binary search algorithm finds a target value in a sorted array by repeatedly dividing the search interval.
 
-User: what is a VPN (5984)
-Joe: A VPN creates a secure, encrypted connection over a less secure network.
-User: what is a VPN (5984)
-Joe: A VPN creates a secure, encrypted connection over a less secure network.
-
-User: what is UDP (1973)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (1973)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is a parameter (8894)
-Joe: A parameter is a special kind of variable used in a function to refer to one of the pieces of data provided as input.
-User: what is a parameter (8894)
+User: what is a parameter
 Joe: A parameter is a special kind of variable used in a function to refer to one of the pieces of data provided as input.
 
-User: what is a token (5239)
-Joe: A token is a piece of data used for authentication or authorization.
-User: what is a token (5239)
+User: what is a token
 Joe: A token is a piece of data used for authentication or authorization.
 
-User: what is a CDN (9391)
-Joe: A CDN is a distributed network of servers that delivers web content based on geographic location.
-User: what is a CDN (9391)
+User: what is a CDN
 Joe: A CDN is a distributed network of servers that delivers web content based on geographic location.
 
-User: what is a sort (9424)
-Joe: A sort algorithm arranges elements in a particular order, such as ascending or descending.
-User: what is a sort (9424)
+User: what is a sort
 Joe: A sort algorithm arranges elements in a particular order, such as ascending or descending.
 
-User: what is a merge (5577)
-Joe: A merge combines two or more sorted sequences into a single sorted sequence.
-User: what is a merge (5577)
-Joe: A merge combines two or more sorted sequences into a single sorted sequence.
-
-User: what is a domain (4714)
-Joe: A domain is a named location on the internet that identifies a website.
-User: what is a domain (4714)
-Joe: A domain is a named location on the internet that identifies a website.
-
-User: what is UDP (4711)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (4711)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is OAuth (9828)
-Joe: OAuth is an open standard for access delegation, commonly used for token-based authentication.
-User: what is OAuth (9828)
+User: what is OAuth
 Joe: OAuth is an open standard for access delegation, commonly used for token-based authentication.
 
-User: what is FTP (6633)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (6633)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is FTP (1379)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (1379)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is a loop (5477)
-Joe: A loop repeats a block of code until a condition is met.
-User: what is a loop (5477)
-Joe: A loop repeats a block of code until a condition is met.
-
-User: what is a parser (5695)
-Joe: A parser analyzes and processes data, converting it into a structured format.
-User: what is a parser (5695)
-Joe: A parser analyzes and processes data, converting it into a structured format.
-
-User: what is a heap (5500)
-Joe: A heap is a specialized tree-based data structure that satisfies the heap property.
-User: what is a heap (5500)
-Joe: A heap is a specialized tree-based data structure that satisfies the heap property.
-
-User: what is HTTPS (4486)
-Joe: HTTPS is HTTP secured with SSL/TLS to encrypt data transmission.
-User: what is HTTPS (4486)
-Joe: HTTPS is HTTP secured with SSL/TLS to encrypt data transmission.
-
-User: what is a pointer (5567)
-Joe: A pointer is a variable that stores the memory address of another variable.
-User: what is a pointer (5567)
-Joe: A pointer is a variable that stores the memory address of another variable.
-
-User: what is a pivot (6096)
-Joe: A pivot is a selected element used in partitioning algorithms like quicksort.
-User: what is a pivot (6096)
-Joe: A pivot is a selected element used in partitioning algorithms like quicksort.
-
-User: what is a session (4054)
-Joe: A session is a period of interaction between a user and a system.
-User: what is a session (4054)
-Joe: A session is a period of interaction between a user and a system.
-
-User: what is OAuth (5314)
-Joe: OAuth is an open standard for access delegation, commonly used for token-based authentication.
-User: what is OAuth (5314)
-Joe: OAuth is an open standard for access delegation, commonly used for token-based authentication.
-
-User: what is FTP (9593)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (9593)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is recursion (8070)
+User: what is recursion
 Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller instances.
-User: what is recursion (8070)
-Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller instances.
-
-User: what is HTTPS (5152)
-Joe: HTTPS is HTTP secured with SSL/TLS to encrypt data transmission.
-User: what is HTTPS (5152)
-Joe: HTTPS is HTTP secured with SSL/TLS to encrypt data transmission.
-
-User: what is a mutex (4701)
-Joe: A mutex is a lock that prevents multiple threads from accessing the same resource simultaneously.
-User: what is a mutex (4701)
-Joe: A mutex is a lock that prevents multiple threads from accessing the same resource simultaneously.
-
-User: what is UDP (6709)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (6709)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is a closure (7801)
-Joe: A closure is a function that remembers its enclosing scope even when executed outside it.
-User: what is a closure (7801)
-Joe: A closure is a function that remembers its enclosing scope even when executed outside it.
-
-User: what is DNS (9375)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (9375)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is TCP (7744)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (7744)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is a host (1829)
-Joe: A host is a computer or device connected to a network that can send and receive data.
-User: what is a host (1829)
-Joe: A host is a computer or device connected to a network that can send and receive data.
-
-User: what is a sort (8388)
-Joe: A sort algorithm arranges elements in a particular order, such as ascending or descending.
-User: what is a sort (8388)
-Joe: A sort algorithm arranges elements in a particular order, such as ascending or descending.
-
-User: what is IP (3898)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (3898)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is a parser (7101)
-Joe: A parser analyzes and processes data, converting it into a structured format.
-User: what is a parser (7101)
-Joe: A parser analyzes and processes data, converting it into a structured format.
-
-User: what is a cache (3842)
-Joe: A cache stores copies of data for faster retrieval on subsequent requests.
-User: what is a cache (3842)
-Joe: A cache stores copies of data for faster retrieval on subsequent requests.
-
-User: what is a lexer (5030)
-Joe: A lexer breaks input text into tokens for further processing.
-User: what is a lexer (5030)
-Joe: A lexer breaks input text into tokens for further processing.
-
-User: what is UDP (5303)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (5303)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is a queue (1721)
-Joe: A queue is a data structure that follows the first-in, first-out (FIFO) principle.
-User: what is a queue (1721)
-Joe: A queue is a data structure that follows the first-in, first-out (FIFO) principle.
-
-User: what is DNS (2863)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (2863)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is a library (5266)
-Joe: A library is a collection of pre-written code that developers can use to perform common tasks.
-User: what is a library (5266)
-Joe: A library is a collection of pre-written code that developers can use to perform common tasks.
-
-User: what is an array (7416)
-Joe: An array is a data structure that holds a fixed-size collection of elements of the same type.
-User: what is an array (7416)
-Joe: An array is a data structure that holds a fixed-size collection of elements of the same type.
-
-User: what is TCP (2268)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (2268)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is IP (6932)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (6932)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is a stack (6086)
-Joe: A stack is a data structure that follows the last-in, first-out (LIFO) principle.
-User: what is a stack (6086)
-Joe: A stack is a data structure that follows the last-in, first-out (LIFO) principle.
-
-User: what is an async (6768)
-Joe: An async function is a function declared with the async keyword, enabling asynchronous programming.
-User: what is an async (6768)
-Joe: An async function is a function declared with the async keyword, enabling asynchronous programming.
-
-User: what is SSL (6869)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (6869)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is UDP (5599)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (5599)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is recursion (4592)
-Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller instances.
-User: what is recursion (4592)
-Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller instances.
-
-User: what is HTTP (8259)
-Joe: HTTP is the protocol used for transferring hypertext requests and information on the web.
-User: what is HTTP (8259)
-Joe: HTTP is the protocol used for transferring hypertext requests and information on the web.
-
-User: what is a pointer (8823)
-Joe: A pointer is a variable that stores the memory address of another variable.
-User: what is a pointer (8823)
-Joe: A pointer is a variable that stores the memory address of another variable.
-
-User: what is a sort (7056)
-Joe: A sort algorithm arranges elements in a particular order, such as ascending or descending.
-User: what is a sort (7056)
-Joe: A sort algorithm arranges elements in a particular order, such as ascending or descending.
-
-User: what is a process (9880)
-Joe: A process is an instance of a program being executed by the operating system.
-User: what is a process (9880)
-Joe: A process is an instance of a program being executed by the operating system.
-
-User: what is a browser (6063)
-Joe: A browser is a software application for accessing and viewing websites.
-User: what is a browser (6063)
-Joe: A browser is a software application for accessing and viewing websites.
-
-User: what is SSL (2947)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (2947)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is a session (3388)
-Joe: A session is a period of interaction between a user and a system.
-User: what is a session (3388)
-Joe: A session is a period of interaction between a user and a system.
-
-User: what is UDP (3527)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (3527)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is TCP (3452)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (3452)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is TCP (5894)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (5894)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is SSL (7387)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (7387)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is FTP (7521)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (7521)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is a token (6867)
-Joe: A token is a piece of data used for authentication or authorization.
-User: what is a token (6867)
-Joe: A token is a piece of data used for authentication or authorization.
-
-User: what is an await (5955)
-Joe: An await expression pauses execution until a Promise resolves, then resumes with the result.
-User: what is an await (5955)
-Joe: An await expression pauses execution until a Promise resolves, then resumes with the result.
-
-User: what is FTP (4783)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (4783)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is a promise (4399)
-Joe: A promise is an object representing the eventual completion or failure of an asynchronous operation.
-User: what is a promise (4399)
-Joe: A promise is an object representing the eventual completion or failure of an asynchronous operation.
-
-User: what is a graph (6979)
-Joe: A graph is a non-linear data structure consisting of nodes and edges.
-User: what is a graph (6979)
-Joe: A graph is a non-linear data structure consisting of nodes and edges.
-
-User: what is a CDN (8577)
-Joe: A CDN is a distributed network of servers that delivers web content based on geographic location.
-User: what is a CDN (8577)
-Joe: A CDN is a distributed network of servers that delivers web content based on geographic location.
-
-User: what is TCP (7818)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (7818)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is an await (3661)
-Joe: An await expression pauses execution until a Promise resolves, then resumes with the result.
-User: what is an await (3661)
-Joe: An await expression pauses execution until a Promise resolves, then resumes with the result.
-
-User: what is DNS (5897)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (5897)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is DNS (5305)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (5305)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is a cookie (8863)
-Joe: A cookie is a small piece of data stored by a browser to remember user preferences.
-User: what is a cookie (8863)
-Joe: A cookie is a small piece of data stored by a browser to remember user preferences.
-
-User: what is a port (3374)
-Joe: A port is a logical endpoint identified by a number that identifies a specific process.
-User: what is a port (3374)
-Joe: A port is a logical endpoint identified by a number that identifies a specific process.
-
-User: what is a library (3194)
-Joe: A library is a collection of pre-written code that developers can use to perform common tasks.
-User: what is a library (3194)
-Joe: A library is a collection of pre-written code that developers can use to perform common tasks.
-
-User: what is DNS (1383)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (1383)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is a merge (8019)
-Joe: A merge combines two or more sorted sequences into a single sorted sequence.
-User: what is a merge (8019)
-Joe: A merge combines two or more sorted sequences into a single sorted sequence.
-
-User: what is DNS (2271)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (2271)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is IP (4046)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (4046)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is IP (9966)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (9966)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is a heap (2392)
-Joe: A heap is a specialized tree-based data structure that satisfies the heap property.
-User: what is a heap (2392)
-Joe: A heap is a specialized tree-based data structure that satisfies the heap property.
-
-User: what is SSL (4131)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (4131)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is FTP (8557)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (8557)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is a tree (9198)
-Joe: A tree is a hierarchical data structure with a root node and child nodes.
-User: what is a tree (9198)
-Joe: A tree is a hierarchical data structure with a root node and child nodes.
-
-User: what is a browser (2511)
-Joe: A browser is a software application for accessing and viewing websites.
-User: what is a browser (2511)
-Joe: A browser is a software application for accessing and viewing websites.
-
-User: what is UDP (4489)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (4489)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is DNS (7969)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (7969)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is FTP (8409)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (8409)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is DNS (7007)
-Joe: DNS translates human-readable domain names into IP addresses.
-User: what is DNS (7007)
-Joe: DNS translates human-readable domain names into IP addresses.
-
-User: what is a header (3756)
-Joe: A header is metadata sent with a web request or response.
-User: what is a header (3756)
-Joe: A header is metadata sent with a web request or response.
-
-User: what is TCP (4636)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (4636)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is a VPN (1766)
-Joe: A VPN creates a secure, encrypted connection over a less secure network.
-User: what is a VPN (1766)
-Joe: A VPN creates a secure, encrypted connection over a less secure network.
-
-User: what is UDP (7745)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (7745)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-
-User: what is SSL (2281)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (2281)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is TCP (2490)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-User: what is TCP (2490)
-Joe: TCP is a connection-oriented protocol that ensures reliable data delivery.
-
-User: what is FTP (3081)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (3081)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is a socket (6555)
-Joe: A socket is an endpoint for sending and receiving data across a computer network.
-User: what is a socket (6555)
-Joe: A socket is an endpoint for sending and receiving data across a computer network.
-
-User: what is a lexer (8878)
-Joe: A lexer breaks input text into tokens for further processing.
-User: what is a lexer (8878)
-Joe: A lexer breaks input text into tokens for further processing.
-
-User: what is IP (5822)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-User: what is IP (5822)
-Joe: IP is the protocol that routes packets of data from a source to a destination.
-
-User: what is a URL (3828)
-Joe: A URL is a web address that specifies the location of a resource on the internet.
-User: what is a URL (3828)
-Joe: A URL is a web address that specifies the location of a resource on the internet.
-
-User: what is SSL (5759)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (5759)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is a mutex (2333)
-Joe: A mutex is a lock that prevents multiple threads from accessing the same resource simultaneously.
-User: what is a mutex (2333)
-Joe: A mutex is a lock that prevents multiple threads from accessing the same resource simultaneously.
-
-User: what is a tree (7570)
-Joe: A tree is a hierarchical data structure with a root node and child nodes.
-User: what is a tree (7570)
-Joe: A tree is a hierarchical data structure with a root node and child nodes.
-
-User: what is FTP (6707)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-User: what is FTP (6707)
-Joe: FTP is the File Transfer Protocol used to transfer files between computers.
-
-User: what is recursion (1336)
-Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller instances.
-User: what is recursion (1336)
-Joe: Recursion is when a function calls itself to solve a problem by breaking it into smaller instances.
-
-User: what is SSL (3909)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-User: what is SSL (3909)
-Joe: SSL is a security protocol that encrypts communication between a browser and a server.
-
-User: what is UDP (1085)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
-User: what is UDP (1085)
-Joe: UDP is a connectionless protocol that sends data without establishing a connection.
 
 User: in what order does python evaluate the arguments of a function call
 Joe: Left to right, one at a time. Python evaluates each argument fully before the call happens, so a call that mutates an object an earlier argument reads can change what gets passed.
@@ -15976,4 +15243,3 @@ Joe: The original may still be running, so two workers do the same work. Verify 
 
 User: how do i make a job's result available without keeping the whole payload
 Joe: Store a reference to the result and let the payload live on its own. Then the status record stays small and fast.
-

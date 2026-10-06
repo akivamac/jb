@@ -4211,7 +4211,6 @@ Joe: Younger trees with developing immune systems often show more severe anthrac
 
 User: Can anthracnose fungi infect multiple plant species?
 Joe: Some anthracnose fungi show broad host ranges, while others are highly host-specific, infecting only particular plant species or genera. Accurate identification of the specific pathogen helps determine whether neighboring plants might be at risk and informs appropriate management strategies.User: What pruning techniques help prevent borers from attacking stressed trees?
-Joe: Proper pruning that maintains good tree structure reduces wound sites where borers might enter, while removing dead and dying limbs eliminates potential breeding areas. Pruning during dormant seasons when beetles are less active and avoiding flush cuts that create large wounds further reduces borer attraction.
 
 User: How does mulching help prevent borer attacks on young trees?
 Joe: Proper mulching reduces drought stress and maintains consistent soil moisture that keeps trees vigorous and less attractive to borers. Keeping mulch several inches away from the trunk prevents bark rot and eliminates conditions that favor certain borer species that attack stressed trees near ground level.
@@ -6945,33 +6944,6 @@ Joe: Connectivity is the degree to which the landscape allows organisms to move 
 User: What is a forest's permeability?
 Joe: Permeability is the opposite of resistance — the degree to which a landscape feature allows the movement of an organism. A forest edge might be more permeable to some species than others, depending on their habitat preferences and dispersal abilities.
 
-User: What is forestry?
-Joe: Here is some forestry information relevant to the tree expert.
-
-User: What is tree species?
-Joe: Here is some tree species information relevant to the tree expert.
-
-User: What is ecology?
-Joe: Here is some ecology information relevant to the tree expert.
-
-User: What is conservation?
-Joe: Here is some conservation information relevant to the tree expert.
-
-User: What is tree care?
-Joe: Here is some tree care information relevant to the tree expert.
-
-User: What is forest management?
-Joe: Here is some forest management information relevant to the tree expert.
-
-User: What is tree diseases?
-Joe: Here is some tree diseases information relevant to the tree expert.
-
-User: What is tree identification?
-Joe: Here is some tree identification information relevant to the tree expert.
-
-User: What is tree planting?
-Joe: Here is some tree planting information relevant to the tree expert.
-
 User: What is a tree in data structures?
 Joe: A tree is a non-linear data structure consisting of nodes connected by edges, where each node can have zero or more child nodes. It is used to represent hierarchical relationships and is commonly used in databases, file systems, and organizational structures.
 
@@ -7011,1930 +6983,392 @@ Joe: A trie, also known as a prefix tree, is a tree-like data structure used to 
 User: What is a game tree?
 Joe: A game tree is a tree structure used in game theory and artificial intelligence to represent the possible moves in a game. Each node represents a game state, and branches represent the moves available to players. It is used in minimax algorithms and other game-playing AI to evaluate the best move by exploring future states and their outcomes.
 
-User: what is a conifer (8487)
-Joe: A conifer is a tree that bears cones and stays green year-round.
-User: what is a conifer (8487)
+User: what is a conifer
 Joe: A conifer is a tree that bears cones and stays green year-round.
 
-User: what is a grove (3148)
-Joe: A grove is a small group of trees.
-User: what is a grove (3148)
+User: what is a grove
 Joe: A grove is a small group of trees.
 
-User: what is a tree root (4874)
-Joe: A tree root anchors the tree and absorbs water and nutrients.
-User: what is a tree root (4874)
+User: what is a tree root
 Joe: A tree root anchors the tree and absorbs water and nutrients.
 
-User: what is a tree smooth leaf (9569)
-Joe: A tree smooth leaf has a smooth surface.
-User: what is a tree smooth leaf (9569)
+User: what is a tree smooth leaf
 Joe: A tree smooth leaf has a smooth surface.
 
-User: what is a savanna (1706)
-Joe: A savanna is a grassland with scattered trees.
-User: what is a savanna (1706)
+User: what is a savanna
 Joe: A savanna is a grassland with scattered trees.
 
-User: what is a tree heartwood (4999)
-Joe: A tree heartwood is the inner, darker wood of a tree trunk.
-User: what is a tree heartwood (4999)
+User: what is a tree heartwood
 Joe: A tree heartwood is the inner, darker wood of a tree trunk.
 
-User: what is a swamp (1712)
-Joe: A swamp is a wetland that is forested.
-User: what is a swamp (1712)
+User: what is a swamp
 Joe: A swamp is a wetland that is forested.
 
-User: what is a meadow (4699)
-Joe: A meadow is a field habitat with grasses and wildflowers.
-User: what is a meadow (4699)
+User: what is a meadow
 Joe: A meadow is a field habitat with grasses and wildflowers.
 
-User: what is a tree hairy leaf (4114)
-Joe: A tree hairy leaf has fine hairs on its surface.
-User: what is a tree hairy leaf (4114)
+User: what is a tree hairy leaf
 Joe: A tree hairy leaf has fine hairs on its surface.
 
-User: what is a windthrow (6615)
-Joe: A windthrow is a tree knocked down by wind.
-User: what is a windthrow (6615)
+User: what is a windthrow
 Joe: A windthrow is a tree knocked down by wind.
 
-User: what is a birch (8193)
-Joe: A birch is a tree with distinctive white bark.
-User: what is a birch (8193)
+User: what is a birch
 Joe: A birch is a tree with distinctive white bark.
 
-User: what is a irregular tree (9547)
-Joe: An irregular tree has an uneven shape.
-User: what is a irregular tree (9547)
+User: what is a irregular tree
 Joe: An irregular tree has an uneven shape.
 
-User: what is a tree fall (8954)
-Joe: A tree fall is when a tree falls over.
-User: what is a tree fall (8954)
+User: what is a tree fall
 Joe: A tree fall is when a tree falls over.
 
-User: what is an orchard (3023)
-Joe: An orchard is a planned site for growing fruit trees.
-User: what is an orchard (3023)
+User: what is an orchard
 Joe: An orchard is a planned site for growing fruit trees.
 
-User: what is a tree ecotone (5049)
-Joe: A tree ecotone is the transition zone between two biomes.
-User: what is a tree ecotone (5049)
+User: what is a tree ecotone
 Joe: A tree ecotone is the transition zone between two biomes.
 
-User: what is a botanical garden (7835)
-Joe: A botanical garden is a garden dedicated to the collection and study of plants.
-User: what is a botanical garden (7835)
+User: what is a botanical garden
 Joe: A botanical garden is a garden dedicated to the collection and study of plants.
 
-User: what is a adventitious root (1030)
-Joe: An adventitious root grows from an unusual place.
-User: what is a adventitious root (1030)
+User: what is a adventitious root
 Joe: An adventitious root grows from an unusual place.
 
-User: what is a pneumatophore (3503)
-Joe: A pneumatophore is a root that grows upward through waterlogged soil.
-User: what is a pneumatophore (3503)
+User: what is a pneumatophore
 Joe: A pneumatophore is a root that grows upward through waterlogged soil.
 
-User: what is a broadleaf (429)
-Joe: A broadleaf tree has wide, flat leaves.
-User: what is a broadleaf (429)
+User: what is a broadleaf
 Joe: A broadleaf tree has wide, flat leaves.
 
-User: what is a prop root (8441)
-Joe: A prop root supports a tree from the ground.
-User: what is a prop root (8441)
+User: what is a prop root
 Joe: A prop root supports a tree from the ground.
 
-User: what is a willow (3124)
-Joe: A willow is a tree with long, drooping branches.
-User: what is a willow (3124)
+User: what is a willow
 Joe: A willow is a tree with long, drooping branches.
 
-User: what is a fen (6395)
-Joe: A fen is a type of peatland fed by mineral-rich water.
-User: what is a fen (6395)
+User: what is a fen
 Joe: A fen is a type of peatland fed by mineral-rich water.
 
-User: what is a thicket (6010)
-Joe: A thicket is a dense growth of shrubs or small trees.
-User: what is a thicket (6010)
+User: what is a thicket
 Joe: A thicket is a dense growth of shrubs or small trees.
 
-User: what is a tree frond (8782)
-Joe: A tree frond is a large, divided leaf of a palm or fern.
-User: what is a tree frond (8782)
+User: what is a tree frond
 Joe: A tree frond is a large, divided leaf of a palm or fern.
 
-User: what is a ornamental tree (9538)
-Joe: An ornamental tree is grown for decorative purposes.
-User: what is a ornamental tree (9538)
+User: what is a ornamental tree
 Joe: An ornamental tree is grown for decorative purposes.
 
-User: what is a prairie (4958)
-Joe: A prairie is a large open area of grassland.
-User: what is a prairie (4958)
+User: what is a prairie
 Joe: A prairie is a large open area of grassland.
 
-User: what is a tree sapwood (4480)
-Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
-User: what is a tree sapwood (4480)
+User: what is a tree sapwood
 Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
 
-User: what is a tree leaf (459)
-Joe: A tree leaf is the flat organ where photosynthesis takes place.
-User: what is a tree leaf (459)
+User: what is a tree leaf
 Joe: A tree leaf is the flat organ where photosynthesis takes place.
 
-User: what is a tree flower (3089)
-Joe: A tree flower is the reproductive structure of a flowering tree.
-User: what is a tree flower (3089)
+User: what is a tree flower
 Joe: A tree flower is the reproductive structure of a flowering tree.
 
-User: what is a shade tree (1737)
-Joe: A shade tree provides shade.
-User: what is a shade tree (1737)
+User: what is a shade tree
 Joe: A shade tree provides shade.
 
-User: what is a marsh (4703)
-Joe: A marsh is a wetland that is not forested.
-User: what is a marsh (4703)
+User: what is a marsh
 Joe: A marsh is a wetland that is not forested.
 
-User: what is a tree gap (4141)
-Joe: A tree gap is an opening in the forest canopy.
-User: what is a tree gap (4141)
+User: what is a tree gap
 Joe: A tree gap is an opening in the forest canopy.
 
-User: what is a copse (679)
-Joe: A copse is a small group of trees.
-User: what is a copse (679)
+User: what is a copse
 Joe: A copse is a small group of trees.
 
-User: what is a tree bud (5788)
-Joe: A tree bud is an undeveloped or embryonic shoot.
-User: what is a tree bud (5788)
+User: what is a tree bud
 Joe: A tree bud is an undeveloped or embryonic shoot.
 
-User: what is a tree cambium (9291)
-Joe: A tree cambium is the thin layer of cells between bark and wood.
-User: what is a tree cambium (9291)
+User: what is a tree cambium
 Joe: A tree cambium is the thin layer of cells between bark and wood.
 
-User: what is a tree matte leaf (1122)
-Joe: A tree matte leaf has a dull surface.
-User: what is a tree matte leaf (1122)
+User: what is a tree matte leaf
 Joe: A tree matte leaf has a dull surface.
 
-User: what is a root system (4276)
-Joe: A root system is the part of a tree beneath the soil.
-User: what is a root system (4276)
+User: what is a root system
 Joe: A root system is the part of a tree beneath the soil.
 
-User: what is a dwarf tree (8110)
-Joe: A dwarf tree is a small-sized tree.
-User: what is a dwarf tree (8110)
+User: what is a dwarf tree
 Joe: A dwarf tree is a small-sized tree.
 
-User: what is a weeping tree (311)
-Joe: A weeping tree has branches that hang downward.
-User: what is a weeping tree (311)
+User: what is a weeping tree
 Joe: A weeping tree has branches that hang downward.
 
-User: what is a buttress root (382)
-Joe: A buttress root is a large root that supports a tropical tree.
-User: what is a buttress root (382)
+User: what is a buttress root
 Joe: A buttress root is a large root that supports a tropical tree.
 
-User: what is a bog (284)
-Joe: A bog is a wetland with acidic, peat-filled soil.
-User: what is a bog (284)
+User: what is a bog
 Joe: A bog is a wetland with acidic, peat-filled soil.
 
-User: what is a steppe (4960)
-Joe: A steppe is a treeless grassland.
-User: what is a steppe (4960)
+User: what is a steppe
 Joe: A steppe is a treeless grassland.
 
-User: what is a tree branch (9296)
-Joe: A tree branch is a limb extending from the trunk.
-User: what is a tree branch (9296)
+User: what is a tree branch
 Joe: A tree branch is a limb extending from the trunk.
 
-User: what is a tree spore (8288)
-Joe: A tree spore is a reproductive unit of a fern or moss.
-User: what is a tree spore (8288)
+User: what is a tree spore
 Joe: A tree spore is a reproductive unit of a fern or moss.
 
-User: what is a tree nectar (2299)
-Joe: A tree nectar is a sweet liquid produced by flowers.
-User: what is a tree nectar (2299)
+User: what is a tree nectar
 Joe: A tree nectar is a sweet liquid produced by flowers.
 
-User: what is an ash (3777)
-Joe: An ash is a tree with compound leaves and smooth bark.
-User: what is an ash (3777)
+User: what is an ash
 Joe: An ash is a tree with compound leaves and smooth bark.
 
-User: what is a tree seed (8541)
-Joe: A tree seed is a fertilized ovule containing an embryo.
-User: what is a tree seed (8541)
+User: what is a tree seed
 Joe: A tree seed is a fertilized ovule containing an embryo.
 
-User: what is a tree capsule (1137)
-Joe: A tree capsule is a dry fruit that splits into sections.
-User: what is a tree capsule (1137)
+User: what is a tree capsule
 Joe: A tree capsule is a dry fruit that splits into sections.
 
-User: what is a tree ring (230)
-Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
-User: what is a tree ring (230)
+User: what is a tree ring
 Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
 
-User: what is a cambium (8684)
-Joe: A cambium is the thin layer of cells that produces new wood and bark.
-User: what is a cambium (8684)
+User: what is a cambium
 Joe: A cambium is the thin layer of cells that produces new wood and bark.
 
-User: what is a round topped tree (5256)
-Joe: A round topped tree has a rounded canopy.
-User: what is a round topped tree (5256)
+User: what is a round topped tree
 Joe: A round topped tree has a rounded canopy.
 
-User: what is a mycorrhiza (2724)
-Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
-User: what is a mycorrhiza (2724)
+User: what is a mycorrhiza
 Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
 
-User: what is a tree understory (4267)
-Joe: A tree understory is the layer of vegetation beneath the canopy.
-User: what is a tree understory (4267)
+User: what is a tree understory
 Joe: A tree understory is the layer of vegetation beneath the canopy.
 
-User: what is a grassland (7687)
-Joe: A grassland is a biome where the vegetation is dominated by grasses.
-User: what is a grassland (7687)
+User: what is a grassland
 Joe: A grassland is a biome where the vegetation is dominated by grasses.
 
-User: what is a fungus (4548)
-Joe: A fungus is a organism that decomposes organic matter.
-User: what is a fungus (4548)
+User: what is a fungus
 Joe: A fungus is a organism that decomposes organic matter.
 
-User: what is a tree (2480)
-Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
-User: what is a tree (2480)
+User: what is a tree
 Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
 
-User: what is a tree snag (9472)
-Joe: A tree snag is a dead standing tree.
-User: what is a tree snag (9472)
+User: what is a tree snag
 Joe: A tree snag is a dead standing tree.
 
-User: what is a spreading tree (8374)
-Joe: A spreading tree has a wide, open canopy.
-User: what is a spreading tree (8374)
+User: what is a spreading tree
 Joe: A spreading tree has a wide, open canopy.
 
-User: what is a tree phloem (5002)
-Joe: A tree phloem transports sugars throughout the tree.
-User: what is a tree phloem (5002)
+User: what is a tree phloem
 Joe: A tree phloem transports sugars throughout the tree.
 
-User: what is a mangrove (3796)
-Joe: A mangrove is a tree that grows in coastal saline water.
-User: what is a mangrove (3796)
+User: what is a mangrove
 Joe: A mangrove is a tree that grows in coastal saline water.
 
-User: what is a evergreen (1338)
-Joe: An evergreen tree retains its leaves throughout the year.
-User: what is a evergreen (1338)
+User: what is a evergreen
 Joe: An evergreen tree retains its leaves throughout the year.
 
-User: what is a poplar (1959)
-Joe: A poplar is a fast-growing tree with flattened petioles.
-User: what is a poplar (1959)
+User: what is a poplar
 Joe: A poplar is a fast-growing tree with flattened petioles.
 
-User: what is a pyramidal tree (3173)
-Joe: A pyramidal tree has a pyramid-like shape.
-User: what is a pyramidal tree (3173)
+User: what is a pyramidal tree
 Joe: A pyramidal tree has a pyramid-like shape.
 
-User: what is a cedar (2995)
-Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
-User: what is a cedar (2995)
+User: what is a cedar
 Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
 
-User: what is a vase shaped tree (4215)
-Joe: A vase shaped tree has a vase-like silhouette.
-User: what is a vase shaped tree (4215)
+User: what is a vase shaped tree
 Joe: A vase shaped tree has a vase-like silhouette.
 
-User: what is a fibrous root (7529)
-Joe: A fibrous root is a thin, branching root system.
-User: what is a fibrous root (7529)
+User: what is a fibrous root
 Joe: A fibrous root is a thin, branching root system.
 
-User: what is a tundra (1321)
-Joe: A tundra is a biome where tree growth is hindered by low temperatures.
-User: what is a tundra (1321)
+User: what is a tundra
 Joe: A tundra is a biome where tree growth is hindered by low temperatures.
 
-User: what is a wetland (2367)
-Joe: A wetland is a land area where water covers the soil.
-User: what is a wetland (2367)
+User: what is a wetland
 Joe: A wetland is a land area where water covers the soil.
 
-User: what is a woodland (1442)
-Joe: A woodland is a forested area with open ground.
-User: what is a woodland (1442)
+User: what is a woodland
 Joe: A woodland is a forested area with open ground.
 
-User: what is a jungle (1833)
-Joe: A jungle is a dense tropical rainforest.
-User: what is a jungle (1833)
+User: what is a jungle
 Joe: A jungle is a dense tropical rainforest.
 
-User: what is a columnar tree (1872)
-Joe: A columnar tree has a narrow, column-like shape.
-User: what is a columnar tree (1872)
+User: what is a columnar tree
 Joe: A columnar tree has a narrow, column-like shape.
 
-User: what is a hardwood (3291)
-Joe: A hardwood tree produces dense wood.
-User: what is a hardwood (3291)
+User: what is a hardwood
 Joe: A hardwood tree produces dense wood.
 
-User: what is an oak (260)
-Joe: An oak is a deciduous tree known for its strong wood and longevity.
-User: what is an oak (260)
+User: what is an oak
 Joe: An oak is a deciduous tree known for its strong wood and longevity.
 
-User: what is a moss (4677)
-Joe: A moss is a small, non-vascular plant.
-User: what is a moss (4677)
+User: what is a moss
 Joe: A moss is a small, non-vascular plant.
 
-User: what is a heartwood (7252)
-Joe: A heartwood is the inner, darker wood of a tree.
-User: what is a heartwood (7252)
+User: what is a heartwood
 Joe: A heartwood is the inner, darker wood of a tree.
 
-User: what is a fruiting tree (9406)
-Joe: A fruiting tree produces edible fruits.
-User: what is a fruiting tree (9406)
+User: what is a fruiting tree
 Joe: A fruiting tree produces edible fruits.
 
-User: what is a needleleaf (6020)
-Joe: A needleleaf tree has narrow, needle-like leaves.
-User: what is a needleleaf (6020)
+User: what is a needleleaf
 Joe: A needleleaf tree has narrow, needle-like leaves.
 
-User: what is a beech (3778)
-Joe: A beech is a tree with smooth gray bark and pointed buds.
-User: what is a beech (3778)
+User: what is a beech
 Joe: A beech is a tree with smooth gray bark and pointed buds.
 
-User: what is an elm (1566)
-Joe: An elm is a deciduous tree with broad, serrated leaves.
-User: what is an elm (1566)
+User: what is an elm
 Joe: An elm is a deciduous tree with broad, serrated leaves.
 
-User: what is a gymnosperm (1993)
-Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
-User: what is a gymnosperm (1993)
+User: what is a gymnosperm
 Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
 
-User: what is a tree latex (2168)
-Joe: A tree latex is a milky fluid found in certain trees.
-User: what is a tree latex (2168)
+User: what is a tree latex
 Joe: A tree latex is a milky fluid found in certain trees.
 
-User: what is a tree rough leaf (1640)
-Joe: A tree rough leaf has a textured surface.
-User: what is a tree rough leaf (1640)
+User: what is a tree rough leaf
 Joe: A tree rough leaf has a textured surface.
 
-User: what is a flowering tree (4335)
-Joe: A flowering tree produces blossoms.
-User: what is a flowering tree (4335)
+User: what is a flowering tree
 Joe: A flowering tree produces blossoms.
 
-User: what is a tree simple leaf (1635)
-Joe: A tree simple leaf has a single blade on one petiole.
-User: what is a tree simple leaf (1635)
+User: what is a tree simple leaf
 Joe: A tree simple leaf has a single blade on one petiole.
 
-User: what is a softwood (5762)
-Joe: A softwood tree produces lighter wood.
-User: what is a softwood (5762)
+User: what is a softwood
 Joe: A softwood tree produces lighter wood.
 
-User: what is a tree scale leaf (5271)
-Joe: A tree scale leaf is a small, flat leaf of a conifer.
-User: what is a tree scale leaf (5271)
+User: what is a tree scale leaf
 Joe: A tree scale leaf is a small, flat leaf of a conifer.
 
-User: what is a pine (7411)
-Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
-User: what is a pine (7411)
+User: what is a pine
 Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
 
-User: what is a tree resin (5157)
-Joe: A tree resin is a sticky substance produced by certain trees.
-User: what is a tree resin (5157)
+User: what is a tree resin
 Joe: A tree resin is a sticky substance produced by certain trees.
 
-User: what is a tree trunk (6825)
-Joe: A tree trunk is the main stem of a tree.
-User: what is a tree trunk (6825)
+User: what is a tree trunk
 Joe: A tree trunk is the main stem of a tree.
 
-User: what is a growth ring (5561)
-Joe: A growth ring is a layer of wood added during a growing season.
-User: what is a growth ring (5561)
+User: what is a growth ring
 Joe: A growth ring is a layer of wood added during a growing season.
 
-User: what is a tree pod (2046)
-Joe: A tree pod is a dry fruit that splits open when ripe.
-User: what is a tree pod (2046)
+User: what is a tree pod
 Joe: A tree pod is a dry fruit that splits open when ripe.
 
-User: what is a lateral root (4408)
-Joe: A lateral root grows out from the main root.
-User: what is a lateral root (4408)
+User: what is a lateral root
 Joe: A lateral root grows out from the main root.
 
-User: what is a tree pollen (5680)
-Joe: A tree pollen is a fine powder produced by trees for reproduction.
-User: what is a tree pollen (5680)
+User: what is a tree pollen
 Joe: A tree pollen is a fine powder produced by trees for reproduction.
 
-User: what is a tree entire leaf (1377)
-Joe: A tree entire leaf has a smooth, uninterrupted edge.
-User: what is a tree entire leaf (1377)
+User: what is a tree entire leaf
 Joe: A tree entire leaf has a smooth, uninterrupted edge.
 
-User: what is a parasite (9359)
-Joe: A parasite is an organism that lives on or in another organism.
-User: what is a parasite (9359)
+User: what is a parasite
 Joe: A parasite is an organism that lives on or in another organism.
 
-User: what is a tree bark (6038)
-Joe: A tree bark is the protective outer layer of a tree trunk.
-User: what is a tree bark (6038)
+User: what is a tree bark
 Joe: A tree bark is the protective outer layer of a tree trunk.
 
-User: what is a sapwood (7643)
-Joe: A sapwood is the outer, lighter wood of a tree.
-User: what is a sapwood (7643)
+User: what is a sapwood
 Joe: A sapwood is the outer, lighter wood of a tree.
 
-User: what is a lichen (6106)
-Joe: A lichen is a symbiotic organism of a fungus and algae.
-User: what is a lichen (6106)
+User: what is a lichen
 Joe: A lichen is a symbiotic organism of a fungus and algae.
 
-User: what is a rhizome (2985)
-Joe: A rhizome is a horizontal underground stem.
-User: what is a rhizome (2985)
+User: what is a rhizome
 Joe: A rhizome is a horizontal underground stem.
 
-User: what is a tree needle (1630)
-Joe: A tree needle is a narrow, pointed leaf of a conifer.
-User: what is a tree needle (1630)
+User: what is a tree needle
 Joe: A tree needle is a narrow, pointed leaf of a conifer.
 
-User: what is a tree waxy leaf (9313)
-Joe: A tree waxy leaf has a waxy coating.
-User: what is a tree waxy leaf (9313)
+User: what is a tree waxy leaf
 Joe: A tree waxy leaf has a waxy coating.
 
-User: what is a tree berry (4384)
-Joe: A tree berry is a small, juicy fruit.
-User: what is a tree berry (4384)
+User: what is a tree berry
 Joe: A tree berry is a small, juicy fruit.
 
-User: what is a tree leaflet (2023)
-Joe: A tree leaflet is a small division of a compound leaf.
-User: what is a tree leaflet (2023)
+User: what is a tree leaflet
 Joe: A tree leaflet is a small division of a compound leaf.
 
-User: what is a tap root (3887)
-Joe: A tap root is a thick central root from which smaller roots grow.
-User: what is a tap root (3887)
+User: what is a tap root
 Joe: A tap root is a thick central root from which smaller roots grow.
 
-User: what is a tree fruit (2562)
-Joe: A tree fruit is a mature ovary containing seeds.
-User: what is a tree fruit (2562)
+User: what is a tree fruit
 Joe: A tree fruit is a mature ovary containing seeds.
 
-User: what is a taiga (5865)
-Joe: A taiga is a vast biome of coniferous forests.
-User: what is a taiga (5865)
+User: what is a taiga
 Joe: A taiga is a vast biome of coniferous forests.
 
-User: what is a tree canopy (5176)
-Joe: A tree canopy is the layer of branches and leaves above the ground.
-User: what is a tree canopy (5176)
+User: what is a tree canopy
 Joe: A tree canopy is the layer of branches and leaves above the ground.
 
-User: what is a maple (4422)
-Joe: A maple is a tree with lobed leaves known for its sap.
-User: what is a maple (4422)
+User: what is a maple
 Joe: A maple is a tree with lobed leaves known for its sap.
 
-User: what is a tree compound leaf (5014)
-Joe: A tree compound leaf has multiple leaflets on one petiole.
-User: what is a tree compound leaf (5014)
+User: what is a tree compound leaf
 Joe: A tree compound leaf has multiple leaflets on one petiole.
 
-User: what is a tree twig (4227)
-Joe: A tree twig is a small branch of a tree.
-User: what is a tree twig (4227)
+User: what is a tree twig
 Joe: A tree twig is a small branch of a tree.
 
-User: what is a tree sticky leaf (5545)
-Joe: A tree sticky leaf has a sticky surface.
-User: what is a tree sticky leaf (5545)
+User: what is a tree sticky leaf
 Joe: A tree sticky leaf has a sticky surface.
 
-User: what is a stand (941)
-Joe: A stand is a group of trees growing together.
-User: what is a stand (941)
+User: what is a stand
 Joe: A stand is a group of trees growing together.
 
-User: what is a tree nut (93)
-Joe: A tree nut is a hard-shelled fruit containing a seed.
-User: what is a tree nut (93)
+User: what is a tree nut
 Joe: A tree nut is a hard-shelled fruit containing a seed.
 
-User: what is a rainforest (7944)
-Joe: A rainforest is a forest in a region of high rainfall.
-User: what is a rainforest (7944)
+User: what is a rainforest
 Joe: A rainforest is a forest in a region of high rainfall.
 
-User: what is a tree sap (8536)
-Joe: A tree sap is the fluid that circulates through the tree's vascular system.
-User: what is a tree sap (8536)
+User: what is a tree sap
 Joe: A tree sap is the fluid that circulates through the tree's vascular system.
 
-User: what is a tree xylem (7733)
-Joe: A tree xylem transports water and minerals from roots to leaves.
-User: what is a tree xylem (7733)
+User: what is a tree xylem
 Joe: A tree xylem transports water and minerals from roots to leaves.
 
-User: what is an angiosperm (2254)
-Joe: An angiosperm is a plant that produces flowers and fruits.
-User: what is an angiosperm (2254)
+User: what is an angiosperm
 Joe: An angiosperm is a plant that produces flowers and fruits.
 
-User: what is a tree glossy leaf (4501)
-Joe: A tree glossy leaf has a shiny surface.
-User: what is a tree glossy leaf (4501)
+User: what is a tree glossy leaf
 Joe: A tree glossy leaf has a shiny surface.
 
-User: what is a arboretum (2894)
-Joe: An arboretum is a botanical garden for studying trees.
-User: what is a arboretum (2894)
+User: what is a arboretum
 Joe: An arboretum is a botanical garden for studying trees.
 
-User: what is a plantation (32)
-Joe: A plantation is a large area of land used for growing crops or trees.
-User: what is a plantation (32)
+User: what is a plantation
 Joe: A plantation is a large area of land used for growing crops or trees.
 
-User: what is a tree lobed leaf (6056)
-Joe: A tree lobed leaf has rounded or pointed projections along the edge.
-User: what is a tree lobed leaf (6056)
+User: what is a tree lobed leaf
 Joe: A tree lobed leaf has rounded or pointed projections along the edge.
 
-User: what is a tree crown (8165)
-Joe: A tree crown is the upper part of a tree with branches and leaves.
-User: what is a tree crown (8165)
+User: what is a tree crown
 Joe: A tree crown is the upper part of a tree with branches and leaves.
 
-User: what is a bonsai (8109)
-Joe: A bonsai is a small tree cultivated in a pot.
-User: what is a bonsai (8109)
+User: what is a bonsai
 Joe: A bonsai is a small tree cultivated in a pot.
 
-User: what is a deciduous tree (816)
-Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
-User: what is a deciduous tree (816)
+User: what is a deciduous tree
 Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
 
-User: what is a tree stump (1023)
-Joe: A tree stump is the remaining part of a tree after it has been cut down.
-User: what is a tree stump (1023)
+User: what is a tree stump
 Joe: A tree stump is the remaining part of a tree after it has been cut down.
 
-User: what is a forest (5341)
-Joe: A forest is a large area covered chiefly with trees and undergrowth.
-User: what is a forest (5341)
+User: what is a forest
 Joe: A forest is a large area covered chiefly with trees and undergrowth.
 
-User: what is a tree toothed leaf (7878)
-Joe: A tree toothed leaf has small teeth along its edge.
-User: what is a tree toothed leaf (7878)
+User: what is a tree toothed leaf
 Joe: A tree toothed leaf has small teeth along its edge.
 
-User: what is a tree edge (8820)
-Joe: A tree edge is the boundary of a forest or tree stand.
-User: what is a tree edge (8820)
+User: what is a tree edge
 Joe: A tree edge is the boundary of a forest or tree stand.
 
-User: what is a tree root (1364)
-Joe: A tree root anchors the tree and absorbs water and nutrients.
-User: what is a tree root (1364)
-Joe: A tree root anchors the tree and absorbs water and nutrients.
-
-User: what is a swamp (6782)
-Joe: A swamp is a wetland that is forested.
-User: what is a swamp (6782)
-Joe: A swamp is a wetland that is forested.
-
-User: what is a grove (1588)
-Joe: A grove is a small group of trees.
-User: what is a grove (1588)
-Joe: A grove is a small group of trees.
-
-User: what is a adventitious root (6100)
-Joe: An adventitious root grows from an unusual place.
-User: what is a adventitious root (6100)
-Joe: An adventitious root grows from an unusual place.
-
-User: what is a tap root (897)
-Joe: A tap root is a thick central root from which smaller roots grow.
-User: what is a tap root (897)
-Joe: A tap root is a thick central root from which smaller roots grow.
-
-User: what is a thicket (5360)
-Joe: A thicket is a dense growth of shrubs or small trees.
-User: what is a thicket (5360)
-Joe: A thicket is a dense growth of shrubs or small trees.
-
-User: what is a tree scale leaf (2411)
-Joe: A tree scale leaf is a small, flat leaf of a conifer.
-User: what is a tree scale leaf (2411)
-Joe: A tree scale leaf is a small, flat leaf of a conifer.
-
-User: what is a tree leaf (6569)
-Joe: A tree leaf is the flat organ where photosynthesis takes place.
-User: what is a tree leaf (6569)
-Joe: A tree leaf is the flat organ where photosynthesis takes place.
-
-User: what is a shade tree (5767)
-Joe: A shade tree provides shade.
-User: what is a shade tree (5767)
-Joe: A shade tree provides shade.
-
-User: what is a tree heartwood (6819)
-Joe: A tree heartwood is the inner, darker wood of a tree trunk.
-User: what is a tree heartwood (6819)
-Joe: A tree heartwood is the inner, darker wood of a tree trunk.
-
-User: what is an orchard (6403)
-Joe: An orchard is a planned site for growing fruit trees.
-User: what is an orchard (6403)
-Joe: An orchard is a planned site for growing fruit trees.
-
-User: what is a cambium (4524)
-Joe: A cambium is the thin layer of cells that produces new wood and bark.
-User: what is a cambium (4524)
-Joe: A cambium is the thin layer of cells that produces new wood and bark.
-
-User: what is a tree spore (358)
-Joe: A tree spore is a reproductive unit of a fern or moss.
-User: what is a tree spore (358)
-Joe: A tree spore is a reproductive unit of a fern or moss.
-
-User: what is a tree hairy leaf (3854)
-Joe: A tree hairy leaf has fine hairs on its surface.
-User: what is a tree hairy leaf (3854)
-Joe: A tree hairy leaf has fine hairs on its surface.
-
-User: what is a bog (8084)
-Joe: A bog is a wetland with acidic, peat-filled soil.
-User: what is a bog (8084)
-Joe: A bog is a wetland with acidic, peat-filled soil.
-
-User: what is a willow (5594)
-Joe: A willow is a tree with long, drooping branches.
-User: what is a willow (5594)
-Joe: A willow is a tree with long, drooping branches.
-
-User: what is a pneumatophore (7403)
-Joe: A pneumatophore is a root that grows upward through waterlogged soil.
-User: what is a pneumatophore (7403)
-Joe: A pneumatophore is a root that grows upward through waterlogged soil.
-
-User: what is a irregular tree (6687)
-Joe: An irregular tree has an uneven shape.
-User: what is a irregular tree (6687)
-Joe: An irregular tree has an uneven shape.
-
-User: what is a weeping tree (8891)
-Joe: A weeping tree has branches that hang downward.
-User: what is a weeping tree (8891)
-Joe: A weeping tree has branches that hang downward.
-
-User: what is a tree (270)
-Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
-User: what is a tree (270)
-Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
-
-User: what is a tree branch (6436)
-Joe: A tree branch is a limb extending from the trunk.
-User: what is a tree branch (6436)
-Joe: A tree branch is a limb extending from the trunk.
-
-User: what is a tree understory (1537)
-Joe: A tree understory is the layer of vegetation beneath the canopy.
-User: what is a tree understory (1537)
-Joe: A tree understory is the layer of vegetation beneath the canopy.
-
-User: what is a tree smooth leaf (209)
-Joe: A tree smooth leaf has a smooth surface.
-User: what is a tree smooth leaf (209)
-Joe: A tree smooth leaf has a smooth surface.
-
-User: what is a tree frond (332)
-Joe: A tree frond is a large, divided leaf of a palm or fern.
-User: what is a tree frond (332)
-Joe: A tree frond is a large, divided leaf of a palm or fern.
-
-User: what is a tree pollen (8020)
-Joe: A tree pollen is a fine powder produced by trees for reproduction.
-User: what is a tree pollen (8020)
-Joe: A tree pollen is a fine powder produced by trees for reproduction.
-
-User: what is a tree sap (5416)
-Joe: A tree sap is the fluid that circulates through the tree's vascular system.
-User: what is a tree sap (5416)
-Joe: A tree sap is the fluid that circulates through the tree's vascular system.
-
-User: what is a tree capsule (3737)
-Joe: A tree capsule is a dry fruit that splits into sections.
-User: what is a tree capsule (3737)
-Joe: A tree capsule is a dry fruit that splits into sections.
-
-User: what is a tree crown (3095)
-Joe: A tree crown is the upper part of a tree with branches and leaves.
-User: what is a tree crown (3095)
-Joe: A tree crown is the upper part of a tree with branches and leaves.
-
-User: what is a wetland (4967)
-Joe: A wetland is a land area where water covers the soil.
-User: what is a wetland (4967)
-Joe: A wetland is a land area where water covers the soil.
-
-User: what is a tree ecotone (7519)
-Joe: A tree ecotone is the transition zone between two biomes.
-User: what is a tree ecotone (7519)
-Joe: A tree ecotone is the transition zone between two biomes.
-
-User: what is a jungle (6643)
-Joe: A jungle is a dense tropical rainforest.
-User: what is a jungle (6643)
-Joe: A jungle is a dense tropical rainforest.
-
-User: what is an oak (7280)
-Joe: An oak is a deciduous tree known for its strong wood and longevity.
-User: what is an oak (7280)
-Joe: An oak is a deciduous tree known for its strong wood and longevity.
-
-User: what is a tree toothed leaf (1118)
-Joe: A tree toothed leaf has small teeth along its edge.
-User: what is a tree toothed leaf (1118)
-Joe: A tree toothed leaf has small teeth along its edge.
-
-User: what is a tree cambium (2271)
-Joe: A tree cambium is the thin layer of cells between bark and wood.
-User: what is a tree cambium (2271)
-Joe: A tree cambium is the thin layer of cells between bark and wood.
-
-User: what is a dwarf tree (6550)
-Joe: A dwarf tree is a small-sized tree.
-User: what is a dwarf tree (6550)
-Joe: A dwarf tree is a small-sized tree.
-
-User: what is a tree matte leaf (1642)
-Joe: A tree matte leaf has a dull surface.
-User: what is a tree matte leaf (1642)
-Joe: A tree matte leaf has a dull surface.
-
-User: what is a prairie (7298)
-Joe: A prairie is a large open area of grassland.
-User: what is a prairie (7298)
-Joe: A prairie is a large open area of grassland.
-
-User: what is a tree resin (477)
-Joe: A tree resin is a sticky substance produced by certain trees.
-User: what is a tree resin (477)
-Joe: A tree resin is a sticky substance produced by certain trees.
-
-User: what is a heartwood (7642)
-Joe: A heartwood is the inner, darker wood of a tree.
-User: what is a heartwood (7642)
-Joe: A heartwood is the inner, darker wood of a tree.
-
-User: what is a moss (907)
-Joe: A moss is a small, non-vascular plant.
-User: what is a moss (907)
-Joe: A moss is a small, non-vascular plant.
-
-User: what is a tree floor (4788)
+User: what is a tree floor
 Joe: A tree floor is the ground level of a forest.
-User: what is a tree floor (4788)
-Joe: A tree floor is the ground level of a forest.
-
-User: what is a pyramidal tree (2523)
-Joe: A pyramidal tree has a pyramid-like shape.
-User: what is a pyramidal tree (2523)
-Joe: A pyramidal tree has a pyramid-like shape.
-
-User: what is a tree phloem (6302)
-Joe: A tree phloem transports sugars throughout the tree.
-User: what is a tree phloem (6302)
-Joe: A tree phloem transports sugars throughout the tree.
-
-User: what is an elm (8066)
-Joe: An elm is a deciduous tree with broad, serrated leaves.
-User: what is an elm (8066)
-Joe: An elm is a deciduous tree with broad, serrated leaves.
-
-User: what is a tree nectar (3339)
-Joe: A tree nectar is a sweet liquid produced by flowers.
-User: what is a tree nectar (3339)
-Joe: A tree nectar is a sweet liquid produced by flowers.
-
-User: what is a botanical garden (6665)
-Joe: A botanical garden is a garden dedicated to the collection and study of plants.
-User: what is a botanical garden (6665)
-Joe: A botanical garden is a garden dedicated to the collection and study of plants.
-
-User: what is a round topped tree (8896)
-Joe: A round topped tree has a rounded canopy.
-User: what is a round topped tree (8896)
-Joe: A round topped tree has a rounded canopy.
-
-User: what is a fruiting tree (566)
-Joe: A fruiting tree produces edible fruits.
-User: what is a fruiting tree (566)
-Joe: A fruiting tree produces edible fruits.
-
-User: what is a cedar (2475)
-Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
-User: what is a cedar (2475)
-Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
-
-User: what is a fen (9645)
-Joe: A fen is a type of peatland fed by mineral-rich water.
-User: what is a fen (9645)
-Joe: A fen is a type of peatland fed by mineral-rich water.
-
-User: what is a buttress root (4282)
-Joe: A buttress root is a large root that supports a tropical tree.
-User: what is a buttress root (4282)
-Joe: A buttress root is a large root that supports a tropical tree.
-
-User: what is a tree pod (8806)
-Joe: A tree pod is a dry fruit that splits open when ripe.
-User: what is a tree pod (8806)
-Joe: A tree pod is a dry fruit that splits open when ripe.
-
-User: what is a grassland (8467)
-Joe: A grassland is a biome where the vegetation is dominated by grasses.
-User: what is a grassland (8467)
-Joe: A grassland is a biome where the vegetation is dominated by grasses.
-
-User: what is a meadow (4179)
-Joe: A meadow is a field habitat with grasses and wildflowers.
-User: what is a meadow (4179)
-Joe: A meadow is a field habitat with grasses and wildflowers.
-
-User: what is a tree fall (7914)
-Joe: A tree fall is when a tree falls over.
-User: what is a tree fall (7914)
-Joe: A tree fall is when a tree falls over.
-
-User: what is a fungus (4288)
-Joe: A fungus is a organism that decomposes organic matter.
-User: what is a fungus (4288)
-Joe: A fungus is a organism that decomposes organic matter.
-
-User: what is a tree latex (3468)
-Joe: A tree latex is a milky fluid found in certain trees.
-User: what is a tree latex (3468)
-Joe: A tree latex is a milky fluid found in certain trees.
-
-User: what is a columnar tree (5382)
-Joe: A columnar tree has a narrow, column-like shape.
-User: what is a columnar tree (5382)
-Joe: A columnar tree has a narrow, column-like shape.
-
-User: what is a lateral root (2848)
-Joe: A lateral root grows out from the main root.
-User: what is a lateral root (2848)
-Joe: A lateral root grows out from the main root.
-
-User: what is a flowering tree (4205)
-Joe: A flowering tree produces blossoms.
-User: what is a flowering tree (4205)
-Joe: A flowering tree produces blossoms.
-
-User: what is a tree sapwood (5520)
-Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
-User: what is a tree sapwood (5520)
-Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
-
-User: what is a tree fruit (3602)
-Joe: A tree fruit is a mature ovary containing seeds.
-User: what is a tree fruit (3602)
-Joe: A tree fruit is a mature ovary containing seeds.
-
-User: what is a broadleaf (6669)
-Joe: A broadleaf tree has wide, flat leaves.
-User: what is a broadleaf (6669)
-Joe: A broadleaf tree has wide, flat leaves.
-
-User: what is a tree bark (448)
-Joe: A tree bark is the protective outer layer of a tree trunk.
-User: what is a tree bark (448)
-Joe: A tree bark is the protective outer layer of a tree trunk.
-
-User: what is a vase shaped tree (7725)
-Joe: A vase shaped tree has a vase-like silhouette.
-User: what is a vase shaped tree (7725)
-Joe: A vase shaped tree has a vase-like silhouette.
-
-User: what is a pine (4291)
-Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
-User: what is a pine (4291)
-Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
-
-User: what is a prop root (7141)
-Joe: A prop root supports a tree from the ground.
-User: what is a prop root (7141)
-Joe: A prop root supports a tree from the ground.
-
-User: what is a beech (6898)
-Joe: A beech is a tree with smooth gray bark and pointed buds.
-User: what is a beech (6898)
-Joe: A beech is a tree with smooth gray bark and pointed buds.
-
-User: what is a parasite (1039)
-Joe: A parasite is an organism that lives on or in another organism.
-User: what is a parasite (1039)
-Joe: A parasite is an organism that lives on or in another organism.
-
-User: what is a mangrove (7176)
-Joe: A mangrove is a tree that grows in coastal saline water.
-User: what is a mangrove (7176)
-Joe: A mangrove is a tree that grows in coastal saline water.
-
-User: what is a tree bud (978)
-Joe: A tree bud is an undeveloped or embryonic shoot.
-User: what is a tree bud (978)
-Joe: A tree bud is an undeveloped or embryonic shoot.
-
-User: what is a copse (2369)
-Joe: A copse is a small group of trees.
-User: what is a copse (2369)
-Joe: A copse is a small group of trees.
-
-User: what is a poplar (7549)
-Joe: A poplar is a fast-growing tree with flattened petioles.
-User: what is a poplar (7549)
-Joe: A poplar is a fast-growing tree with flattened petioles.
-
-User: what is an ash (5727)
-Joe: An ash is a tree with compound leaves and smooth bark.
-User: what is an ash (5727)
-Joe: An ash is a tree with compound leaves and smooth bark.
-
-User: what is a ornamental tree (8238)
-Joe: An ornamental tree is grown for decorative purposes.
-User: what is a ornamental tree (8238)
-Joe: An ornamental tree is grown for decorative purposes.
-
-User: what is a birch (1823)
-Joe: A birch is a tree with distinctive white bark.
-User: what is a birch (1823)
-Joe: A birch is a tree with distinctive white bark.
-
-User: what is a tree snag (8302)
-Joe: A tree snag is a dead standing tree.
-User: what is a tree snag (8302)
-Joe: A tree snag is a dead standing tree.
-
-User: what is a rhizome (2855)
-Joe: A rhizome is a horizontal underground stem.
-User: what is a rhizome (2855)
-Joe: A rhizome is a horizontal underground stem.
-
-User: what is a tree trunk (845)
-Joe: A tree trunk is the main stem of a tree.
-User: what is a tree trunk (845)
-Joe: A tree trunk is the main stem of a tree.
-
-User: what is a windthrow (6095)
-Joe: A windthrow is a tree knocked down by wind.
-User: what is a windthrow (6095)
-Joe: A windthrow is a tree knocked down by wind.
-
-User: what is a woodland (2482)
-Joe: A woodland is a forested area with open ground.
-User: what is a woodland (2482)
-Joe: A woodland is a forested area with open ground.
-
-User: what is a taiga (7035)
-Joe: A taiga is a vast biome of coniferous forests.
-User: what is a taiga (7035)
-Joe: A taiga is a vast biome of coniferous forests.
-
-User: what is a tree ring (5560)
-Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
-User: what is a tree ring (5560)
-Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
-
-User: what is a spreading tree (9804)
-Joe: A spreading tree has a wide, open canopy.
-User: what is a spreading tree (9804)
-Joe: A spreading tree has a wide, open canopy.
-
-User: what is a root system (6356)
-Joe: A root system is the part of a tree beneath the soil.
-User: what is a root system (6356)
-Joe: A root system is the part of a tree beneath the soil.
-
-User: what is a lichen (4546)
-Joe: A lichen is a symbiotic organism of a fungus and algae.
-User: what is a lichen (4546)
-Joe: A lichen is a symbiotic organism of a fungus and algae.
-
-User: what is a marsh (9123)
-Joe: A marsh is a wetland that is not forested.
-User: what is a marsh (9123)
-Joe: A marsh is a wetland that is not forested.
-
-User: what is a tree edge (6740)
-Joe: A tree edge is the boundary of a forest or tree stand.
-User: what is a tree edge (6740)
-Joe: A tree edge is the boundary of a forest or tree stand.
-
-User: what is a sapwood (4913)
-Joe: A sapwood is the outer, lighter wood of a tree.
-User: what is a sapwood (4913)
-Joe: A sapwood is the outer, lighter wood of a tree.
-
-User: what is a tree seed (221)
-Joe: A tree seed is a fertilized ovule containing an embryo.
-User: what is a tree seed (221)
-Joe: A tree seed is a fertilized ovule containing an embryo.
-
-User: what is a tundra (801)
-Joe: A tundra is a biome where tree growth is hindered by low temperatures.
-User: what is a tundra (801)
-Joe: A tundra is a biome where tree growth is hindered by low temperatures.
-
-User: what is a fibrous root (6359)
-Joe: A fibrous root is a thin, branching root system.
-User: what is a fibrous root (6359)
-Joe: A fibrous root is a thin, branching root system.
-
-User: what is a tree rough leaf (6450)
-Joe: A tree rough leaf has a textured surface.
-User: what is a tree rough leaf (6450)
-Joe: A tree rough leaf has a textured surface.
-
-User: what is a growth ring (7901)
-Joe: A growth ring is a layer of wood added during a growing season.
-User: what is a growth ring (7901)
-Joe: A growth ring is a layer of wood added during a growing season.
-
-User: what is a tree berry (1004)
-Joe: A tree berry is a small, juicy fruit.
-User: what is a tree berry (1004)
-Joe: A tree berry is a small, juicy fruit.
-
-User: what is a tree sticky leaf (2165)
-Joe: A tree sticky leaf has a sticky surface.
-User: what is a tree sticky leaf (2165)
-Joe: A tree sticky leaf has a sticky surface.
-
-User: what is a conifer (7187)
-Joe: A conifer is a tree that bears cones and stays green year-round.
-User: what is a conifer (7187)
-Joe: A conifer is a tree that bears cones and stays green year-round.
-
-User: what is a gymnosperm (3033)
-Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
-User: what is a gymnosperm (3033)
-Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
-
-User: what is a tree compound leaf (2934)
-Joe: A tree compound leaf has multiple leaflets on one petiole.
-User: what is a tree compound leaf (2934)
-Joe: A tree compound leaf has multiple leaflets on one petiole.
-
-User: what is a tree entire leaf (7877)
-Joe: A tree entire leaf has a smooth, uninterrupted edge.
-User: what is a tree entire leaf (7877)
-Joe: A tree entire leaf has a smooth, uninterrupted edge.
-
-User: what is a maple (9362)
-Joe: A maple is a tree with lobed leaves known for its sap.
-User: what is a maple (9362)
-Joe: A maple is a tree with lobed leaves known for its sap.
-
-User: what is a tree stump (2453)
-Joe: A tree stump is the remaining part of a tree after it has been cut down.
-User: what is a tree stump (2453)
-Joe: A tree stump is the remaining part of a tree after it has been cut down.
-
-User: what is a tree twig (9297)
-Joe: A tree twig is a small branch of a tree.
-User: what is a tree twig (9297)
-Joe: A tree twig is a small branch of a tree.
-
-User: what is a mycorrhiza (8444)
-Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
-User: what is a mycorrhiza (8444)
-Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
-
-User: what is a tree leaflet (4103)
-Joe: A tree leaflet is a small division of a compound leaf.
-User: what is a tree leaflet (4103)
-Joe: A tree leaflet is a small division of a compound leaf.
-
-User: what is a rainforest (7294)
-Joe: A rainforest is a forest in a region of high rainfall.
-User: what is a rainforest (7294)
-Joe: A rainforest is a forest in a region of high rainfall.
-
-User: what is a stand (161)
-Joe: A stand is a group of trees growing together.
-User: what is a stand (161)
-Joe: A stand is a group of trees growing together.
-
-User: what is a needleleaf (8230)
-Joe: A needleleaf tree has narrow, needle-like leaves.
-User: what is a needleleaf (8230)
-Joe: A needleleaf tree has narrow, needle-like leaves.
-
-User: what is a evergreen (8488)
-Joe: An evergreen tree retains its leaves throughout the year.
-User: what is a evergreen (8488)
-Joe: An evergreen tree retains its leaves throughout the year.
-
-User: what is a tree waxy leaf (4763)
-Joe: A tree waxy leaf has a waxy coating.
-User: what is a tree waxy leaf (4763)
-Joe: A tree waxy leaf has a waxy coating.
-
-User: what is a hardwood (2381)
-Joe: A hardwood tree produces dense wood.
-User: what is a hardwood (2381)
-Joe: A hardwood tree produces dense wood.
-
-User: what is a tree simple leaf (9825)
-Joe: A tree simple leaf has a single blade on one petiole.
-User: what is a tree simple leaf (9825)
-Joe: A tree simple leaf has a single blade on one petiole.
-
-User: what is a arboretum (1204)
-Joe: An arboretum is a botanical garden for studying trees.
-User: what is a arboretum (1204)
-Joe: An arboretum is a botanical garden for studying trees.
-
-User: what is a tree xylem (8253)
-Joe: A tree xylem transports water and minerals from roots to leaves.
-User: what is a tree xylem (8253)
-Joe: A tree xylem transports water and minerals from roots to leaves.
-
-User: what is a tree needle (850)
-Joe: A tree needle is a narrow, pointed leaf of a conifer.
-User: what is a tree needle (850)
-Joe: A tree needle is a narrow, pointed leaf of a conifer.
-
-User: what is a bonsai (5899)
-Joe: A bonsai is a small tree cultivated in a pot.
-User: what is a bonsai (5899)
-Joe: A bonsai is a small tree cultivated in a pot.
-
-User: what is a plantation (3412)
-Joe: A plantation is a large area of land used for growing crops or trees.
-User: what is a plantation (3412)
-Joe: A plantation is a large area of land used for growing crops or trees.
-
-User: what is a tree canopy (8946)
-Joe: A tree canopy is the layer of branches and leaves above the ground.
-User: what is a tree canopy (8946)
-Joe: A tree canopy is the layer of branches and leaves above the ground.
-
-User: what is a savanna (4176)
-Joe: A savanna is a grassland with scattered trees.
-User: what is a savanna (4176)
-Joe: A savanna is a grassland with scattered trees.
-
-User: what is a tree glossy leaf (2031)
-Joe: A tree glossy leaf has a shiny surface.
-User: what is a tree glossy leaf (2031)
-Joe: A tree glossy leaf has a shiny surface.
-
-User: what is a softwood (7452)
-Joe: A softwood tree produces lighter wood.
-User: what is a softwood (7452)
-Joe: A softwood tree produces lighter wood.
-
-User: what is a tree nut (7633)
-Joe: A tree nut is a hard-shelled fruit containing a seed.
-User: what is a tree nut (7633)
-Joe: A tree nut is a hard-shelled fruit containing a seed.
-
-User: what is an angiosperm (5374)
-Joe: An angiosperm is a plant that produces flowers and fruits.
-User: what is an angiosperm (5374)
-Joe: An angiosperm is a plant that produces flowers and fruits.
-
-User: what is a tree lobed leaf (6836)
-Joe: A tree lobed leaf has rounded or pointed projections along the edge.
-User: what is a tree lobed leaf (6836)
-Joe: A tree lobed leaf has rounded or pointed projections along the edge.
-
-User: what is a steppe (800)
-Joe: A steppe is a treeless grassland.
-User: what is a steppe (800)
-Joe: A steppe is a treeless grassland.
-
-User: what is a forest (6121)
-Joe: A forest is a large area covered chiefly with trees and undergrowth.
-User: what is a forest (6121)
-Joe: A forest is a large area covered chiefly with trees and undergrowth.
-
-User: what is a deciduous tree (7576)
-Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
-User: what is a deciduous tree (7576)
-Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
-
-User: what is a tree flower (5299)
-Joe: A tree flower is the reproductive structure of a flowering tree.
-User: what is a tree flower (5299)
-Joe: A tree flower is the reproductive structure of a flowering tree.
-
-User: what is a cambium (2964)
-Joe: A cambium is the thin layer of cells that produces new wood and bark.
-User: what is a cambium (2964)
-Joe: A cambium is the thin layer of cells that produces new wood and bark.
-
-User: what is a tree branch (1756)
-Joe: A tree branch is a limb extending from the trunk.
-User: what is a tree branch (1756)
-Joe: A tree branch is a limb extending from the trunk.
-
-User: what is a adventitious root (5710)
-Joe: An adventitious root grows from an unusual place.
-User: what is a adventitious root (5710)
-Joe: An adventitious root grows from an unusual place.
-
-User: what is a tree smooth leaf (6449)
-Joe: A tree smooth leaf has a smooth surface.
-User: what is a tree smooth leaf (6449)
-Joe: A tree smooth leaf has a smooth surface.
-
-User: what is an oak (1430)
-Joe: An oak is a deciduous tree known for its strong wood and longevity.
-User: what is an oak (1430)
-Joe: An oak is a deciduous tree known for its strong wood and longevity.
-
-User: what is a tree ecotone (4529)
-Joe: A tree ecotone is the transition zone between two biomes.
-User: what is a tree ecotone (4529)
-Joe: A tree ecotone is the transition zone between two biomes.
-
-User: what is a bog (2624)
-Joe: A bog is a wetland with acidic, peat-filled soil.
-User: what is a bog (2624)
-Joe: A bog is a wetland with acidic, peat-filled soil.
-
-User: what is a tree (4430)
-Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
-User: what is a tree (4430)
-Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
-
-User: what is a tree sap (4376)
-Joe: A tree sap is the fluid that circulates through the tree's vascular system.
-User: what is a tree sap (4376)
-Joe: A tree sap is the fluid that circulates through the tree's vascular system.
-
-User: what is a tree matte leaf (9442)
-Joe: A tree matte leaf has a dull surface.
-User: what is a tree matte leaf (9442)
-Joe: A tree matte leaf has a dull surface.
-
-User: what is a thicket (1460)
-Joe: A thicket is a dense growth of shrubs or small trees.
-User: what is a thicket (1460)
-Joe: A thicket is a dense growth of shrubs or small trees.
-
-User: what is a tree pollen (1130)
-Joe: A tree pollen is a fine powder produced by trees for reproduction.
-User: what is a tree pollen (1130)
-Joe: A tree pollen is a fine powder produced by trees for reproduction.
-
-User: what is a moss (8577)
-Joe: A moss is a small, non-vascular plant.
-User: what is a moss (8577)
-Joe: A moss is a small, non-vascular plant.
-
-User: what is a pneumatophore (903)
-Joe: A pneumatophore is a root that grows upward through waterlogged soil.
-User: what is a pneumatophore (903)
-Joe: A pneumatophore is a root that grows upward through waterlogged soil.
-
-User: what is an orchard (7053)
-Joe: An orchard is a planned site for growing fruit trees.
-User: what is an orchard (7053)
-Joe: An orchard is a planned site for growing fruit trees.
-
-User: what is an elm (526)
-Joe: An elm is a deciduous tree with broad, serrated leaves.
-User: what is an elm (526)
-Joe: An elm is a deciduous tree with broad, serrated leaves.
-
-User: what is a willow (5074)
-Joe: A willow is a tree with long, drooping branches.
-User: what is a willow (5074)
-Joe: A willow is a tree with long, drooping branches.
-
-User: what is a round topped tree (6166)
-Joe: A round topped tree has a rounded canopy.
-User: what is a round topped tree (6166)
-Joe: A round topped tree has a rounded canopy.
-
-User: what is a prairie (7688)
-Joe: A prairie is a large open area of grassland.
-User: what is a prairie (7688)
-Joe: A prairie is a large open area of grassland.
-
-User: what is a tree leaf (7869)
-Joe: A tree leaf is the flat organ where photosynthesis takes place.
-User: what is a tree leaf (7869)
-Joe: A tree leaf is the flat organ where photosynthesis takes place.
-
-User: what is a tree ring (490)
-Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
-User: what is a tree ring (490)
-Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
-
-User: what is a heartwood (2182)
-Joe: A heartwood is the inner, darker wood of a tree.
-User: what is a heartwood (2182)
-Joe: A heartwood is the inner, darker wood of a tree.
-
-User: what is a tree fall (2064)
-Joe: A tree fall is when a tree falls over.
-User: what is a tree fall (2064)
-Joe: A tree fall is when a tree falls over.
-
-User: what is a tree understory (6607)
-Joe: A tree understory is the layer of vegetation beneath the canopy.
-User: what is a tree understory (6607)
-Joe: A tree understory is the layer of vegetation beneath the canopy.
-
-User: what is a tree resin (6327)
-Joe: A tree resin is a sticky substance produced by certain trees.
-User: what is a tree resin (6327)
-Joe: A tree resin is a sticky substance produced by certain trees.
-
-User: what is a tree scale leaf (2801)
-Joe: A tree scale leaf is a small, flat leaf of a conifer.
-User: what is a tree scale leaf (2801)
-Joe: A tree scale leaf is a small, flat leaf of a conifer.
-
-User: what is a tree spore (1658)
-Joe: A tree spore is a reproductive unit of a fern or moss.
-User: what is a tree spore (1658)
-Joe: A tree spore is a reproductive unit of a fern or moss.
-
-User: what is a meadow (279)
-Joe: A meadow is a field habitat with grasses and wildflowers.
-User: what is a meadow (279)
-Joe: A meadow is a field habitat with grasses and wildflowers.
-
-User: what is a tree root (4744)
-Joe: A tree root anchors the tree and absorbs water and nutrients.
-User: what is a tree root (4744)
-Joe: A tree root anchors the tree and absorbs water and nutrients.
-
-User: what is a tree capsule (6337)
-Joe: A tree capsule is a dry fruit that splits into sections.
-User: what is a tree capsule (6337)
-Joe: A tree capsule is a dry fruit that splits into sections.
-
-User: what is a tree sapwood (6690)
-Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
-User: what is a tree sapwood (6690)
-Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
-
-User: what is a tree frond (7222)
-Joe: A tree frond is a large, divided leaf of a palm or fern.
-User: what is a tree frond (7222)
-Joe: A tree frond is a large, divided leaf of a palm or fern.
-
-User: what is a tree flower (6079)
-Joe: A tree flower is the reproductive structure of a flowering tree.
-User: what is a tree flower (6079)
-Joe: A tree flower is the reproductive structure of a flowering tree.
-
-User: what is a grove (5878)
-Joe: A grove is a small group of trees.
-User: what is a grove (5878)
-Joe: A grove is a small group of trees.
-
-User: what is a wetland (9257)
-Joe: A wetland is a land area where water covers the soil.
-User: what is a wetland (9257)
-Joe: A wetland is a land area where water covers the soil.
-
-User: what is a shade tree (6157)
-Joe: A shade tree provides shade.
-User: what is a shade tree (6157)
-Joe: A shade tree provides shade.
-
-User: what is a jungle (8203)
-Joe: A jungle is a dense tropical rainforest.
-User: what is a jungle (8203)
-Joe: A jungle is a dense tropical rainforest.
-
-User: what is a lateral root (1158)
-Joe: A lateral root grows out from the main root.
-User: what is a lateral root (1158)
-Joe: A lateral root grows out from the main root.
-
-User: what is a weeping tree (4211)
-Joe: A weeping tree has branches that hang downward.
-User: what is a weeping tree (4211)
-Joe: A weeping tree has branches that hang downward.
-
-User: what is a botanical garden (6405)
-Joe: A botanical garden is a garden dedicated to the collection and study of plants.
-User: what is a botanical garden (6405)
-Joe: A botanical garden is a garden dedicated to the collection and study of plants.
-
-User: what is a tree berry (4124)
-Joe: A tree berry is a small, juicy fruit.
-User: what is a tree berry (4124)
-Joe: A tree berry is a small, juicy fruit.
-
-User: what is a vase shaped tree (5905)
-Joe: A vase shaped tree has a vase-like silhouette.
-User: what is a vase shaped tree (5905)
-Joe: A vase shaped tree has a vase-like silhouette.
-
-User: what is a parasite (8189)
-Joe: A parasite is an organism that lives on or in another organism.
-User: what is a parasite (8189)
-Joe: A parasite is an organism that lives on or in another organism.
-
-User: what is a fruiting tree (8886)
-Joe: A fruiting tree produces edible fruits.
-User: what is a fruiting tree (8886)
-Joe: A fruiting tree produces edible fruits.
-
-User: what is a dwarf tree (2390)
-Joe: A dwarf tree is a small-sized tree.
-User: what is a dwarf tree (2390)
-Joe: A dwarf tree is a small-sized tree.
-
-User: what is a ornamental tree (9928)
-Joe: An ornamental tree is grown for decorative purposes.
-User: what is a ornamental tree (9928)
-Joe: An ornamental tree is grown for decorative purposes.
-
-User: what is a beech (8328)
-Joe: A beech is a tree with smooth gray bark and pointed buds.
-User: what is a beech (8328)
-Joe: A beech is a tree with smooth gray bark and pointed buds.
-
-User: what is a spreading tree (574)
-Joe: A spreading tree has a wide, open canopy.
-User: what is a spreading tree (574)
-Joe: A spreading tree has a wide, open canopy.
-
-User: what is a tree latex (3208)
-Joe: A tree latex is a milky fluid found in certain trees.
-User: what is a tree latex (3208)
-Joe: A tree latex is a milky fluid found in certain trees.
-
-User: what is a prop root (6751)
-Joe: A prop root supports a tree from the ground.
-User: what is a prop root (6751)
-Joe: A prop root supports a tree from the ground.
-
-User: what is a copse (3669)
-Joe: A copse is a small group of trees.
-User: what is a copse (3669)
-Joe: A copse is a small group of trees.
-
-User: what is a mangrove (9386)
-Joe: A mangrove is a tree that grows in coastal saline water.
-User: what is a mangrove (9386)
-Joe: A mangrove is a tree that grows in coastal saline water.
-
-User: what is a fungus (7148)
-Joe: A fungus is a organism that decomposes organic matter.
-User: what is a fungus (7148)
-Joe: A fungus is a organism that decomposes organic matter.
-
-User: what is a tree hairy leaf (1644)
-Joe: A tree hairy leaf has fine hairs on its surface.
-User: what is a tree hairy leaf (1644)
-Joe: A tree hairy leaf has fine hairs on its surface.
-
-User: what is a grassland (9377)
-Joe: A grassland is a biome where the vegetation is dominated by grasses.
-User: what is a grassland (9377)
-Joe: A grassland is a biome where the vegetation is dominated by grasses.
-
-User: what is a marsh (4833)
-Joe: A marsh is a wetland that is not forested.
-User: what is a marsh (4833)
-Joe: A marsh is a wetland that is not forested.
-
-User: what is a pine (4421)
-Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
-User: what is a pine (4421)
-Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
-
-User: what is a woodland (7422)
-Joe: A woodland is a forested area with open ground.
-User: what is a woodland (7422)
-Joe: A woodland is a forested area with open ground.
-
-User: what is a irregular tree (5387)
-Joe: An irregular tree has an uneven shape.
-User: what is a irregular tree (5387)
-Joe: An irregular tree has an uneven shape.
-
-User: what is a sapwood (9463)
-Joe: A sapwood is the outer, lighter wood of a tree.
-User: what is a sapwood (9463)
-Joe: A sapwood is the outer, lighter wood of a tree.
-
-User: what is a taiga (8985)
-Joe: A taiga is a vast biome of coniferous forests.
-User: what is a taiga (8985)
-Joe: A taiga is a vast biome of coniferous forests.
-
-User: what is a tree lobed leaf (6576)
-Joe: A tree lobed leaf has rounded or pointed projections along the edge.
-User: what is a tree lobed leaf (6576)
-Joe: A tree lobed leaf has rounded or pointed projections along the edge.
-
-User: what is a tree cambium (9941)
-Joe: A tree cambium is the thin layer of cells between bark and wood.
-User: what is a tree cambium (9941)
-Joe: A tree cambium is the thin layer of cells between bark and wood.
-
-User: what is a tree trunk (975)
-Joe: A tree trunk is the main stem of a tree.
-User: what is a tree trunk (975)
-Joe: A tree trunk is the main stem of a tree.
-
-User: what is a tree snag (2322)
-Joe: A tree snag is a dead standing tree.
-User: what is a tree snag (2322)
-Joe: A tree snag is a dead standing tree.
-
-User: what is a tree fruit (2042)
-Joe: A tree fruit is a mature ovary containing seeds.
-User: what is a tree fruit (2042)
-Joe: A tree fruit is a mature ovary containing seeds.
-
-User: what is a lichen (7536)
-Joe: A lichen is a symbiotic organism of a fungus and algae.
-User: what is a lichen (7536)
-Joe: A lichen is a symbiotic organism of a fungus and algae.
-
-User: what is a rhizome (3115)
-Joe: A rhizome is a horizontal underground stem.
-User: what is a rhizome (3115)
-Joe: A rhizome is a horizontal underground stem.
-
-User: what is a tap root (5447)
-Joe: A tap root is a thick central root from which smaller roots grow.
-User: what is a tap root (5447)
-Joe: A tap root is a thick central root from which smaller roots grow.
-
-User: what is a root system (4536)
-Joe: A root system is the part of a tree beneath the soil.
-User: what is a root system (4536)
-Joe: A root system is the part of a tree beneath the soil.
-
-User: what is a fibrous root (1549)
-Joe: A fibrous root is a thin, branching root system.
-User: what is a fibrous root (1549)
-Joe: A fibrous root is a thin, branching root system.
-
-User: what is a fen (7825)
-Joe: A fen is a type of peatland fed by mineral-rich water.
-User: what is a fen (7825)
-Joe: A fen is a type of peatland fed by mineral-rich water.
-
-User: what is a tree bark (6298)
-Joe: A tree bark is the protective outer layer of a tree trunk.
-User: what is a tree bark (6298)
-Joe: A tree bark is the protective outer layer of a tree trunk.
-
-User: what is a tree needle (6050)
-Joe: A tree needle is a narrow, pointed leaf of a conifer.
-User: what is a tree needle (6050)
-Joe: A tree needle is a narrow, pointed leaf of a conifer.
-
-User: what is a poplar (3519)
-Joe: A poplar is a fast-growing tree with flattened petioles.
-User: what is a poplar (3519)
-Joe: A poplar is a fast-growing tree with flattened petioles.
-
-User: what is a broadleaf (2639)
-Joe: A broadleaf tree has wide, flat leaves.
-User: what is a broadleaf (2639)
-Joe: A broadleaf tree has wide, flat leaves.
-
-User: what is a growth ring (5691)
-Joe: A growth ring is a layer of wood added during a growing season.
-User: what is a growth ring (5691)
-Joe: A growth ring is a layer of wood added during a growing season.
-
-User: what is a maple (5852)
-Joe: A maple is a tree with lobed leaves known for its sap.
-User: what is a maple (5852)
-Joe: A maple is a tree with lobed leaves known for its sap.
-
-User: what is a tree rough leaf (5670)
-Joe: A tree rough leaf has a textured surface.
-User: what is a tree rough leaf (5670)
-Joe: A tree rough leaf has a textured surface.
-
-User: what is an ash (7417)
-Joe: An ash is a tree with compound leaves and smooth bark.
-User: what is an ash (7417)
-Joe: An ash is a tree with compound leaves and smooth bark.
-
-User: what is a conifer (4977)
-Joe: A conifer is a tree that bears cones and stays green year-round.
-User: what is a conifer (4977)
-Joe: A conifer is a tree that bears cones and stays green year-round.
-
-User: what is a tree stump (2583)
-Joe: A tree stump is the remaining part of a tree after it has been cut down.
-User: what is a tree stump (2583)
-Joe: A tree stump is the remaining part of a tree after it has been cut down.
-
-User: what is a steppe (7040)
-Joe: A steppe is a treeless grassland.
-User: what is a steppe (7040)
-Joe: A steppe is a treeless grassland.
-
-User: what is a stand (3411)
-Joe: A stand is a group of trees growing together.
-User: what is a stand (3411)
-Joe: A stand is a group of trees growing together.
-
-User: what is a tree nut (5163)
-Joe: A tree nut is a hard-shelled fruit containing a seed.
-User: what is a tree nut (5163)
-Joe: A tree nut is a hard-shelled fruit containing a seed.
-
-User: what is a swamp (9382)
-Joe: A swamp is a wetland that is forested.
-User: what is a swamp (9382)
-Joe: A swamp is a wetland that is forested.
-
-User: what is a rainforest (3524)
-Joe: A rainforest is a forest in a region of high rainfall.
-User: what is a rainforest (3524)
-Joe: A rainforest is a forest in a region of high rainfall.
-
-User: what is a evergreen (298)
-Joe: An evergreen tree retains its leaves throughout the year.
-User: what is a evergreen (298)
-Joe: An evergreen tree retains its leaves throughout the year.
-
-User: what is a pyramidal tree (6163)
-Joe: A pyramidal tree has a pyramid-like shape.
-User: what is a pyramidal tree (6163)
-Joe: A pyramidal tree has a pyramid-like shape.
-
-User: what is a columnar tree (832)
-Joe: A columnar tree has a narrow, column-like shape.
-User: what is a columnar tree (832)
-Joe: A columnar tree has a narrow, column-like shape.
-
-User: what is a tree seed (4511)
-Joe: A tree seed is a fertilized ovule containing an embryo.
-User: what is a tree seed (4511)
-Joe: A tree seed is a fertilized ovule containing an embryo.
-
-User: what is a tree nectar (6719)
-Joe: A tree nectar is a sweet liquid produced by flowers.
-User: what is a tree nectar (6719)
-Joe: A tree nectar is a sweet liquid produced by flowers.
-
-User: what is a flowering tree (5895)
-Joe: A flowering tree produces blossoms.
-User: what is a flowering tree (5895)
-Joe: A flowering tree produces blossoms.
-
-User: what is a tree entire leaf (5147)
-Joe: A tree entire leaf has a smooth, uninterrupted edge.
-User: what is a tree entire leaf (5147)
-Joe: A tree entire leaf has a smooth, uninterrupted edge.
-
-User: what is a tree waxy leaf (7103)
-Joe: A tree waxy leaf has a waxy coating.
-User: what is a tree waxy leaf (7103)
-Joe: A tree waxy leaf has a waxy coating.
-
-User: what is a tundra (5611)
-Joe: A tundra is a biome where tree growth is hindered by low temperatures.
-User: what is a tundra (5611)
-Joe: A tundra is a biome where tree growth is hindered by low temperatures.
-
-User: what is a tree edge (370)
-Joe: A tree edge is the boundary of a forest or tree stand.
-User: what is a tree edge (370)
-Joe: A tree edge is the boundary of a forest or tree stand.
-
-User: what is a tree floor (8428)
-Joe: A tree floor is the ground level of a forest.
-User: what is a tree floor (8428)
-Joe: A tree floor is the ground level of a forest.
-
-User: what is a tree phloem (8772)
-Joe: A tree phloem transports sugars throughout the tree.
-User: what is a tree phloem (8772)
-Joe: A tree phloem transports sugars throughout the tree.
-
-User: what is a tree sticky leaf (3335)
-Joe: A tree sticky leaf has a sticky surface.
-User: what is a tree sticky leaf (3335)
-Joe: A tree sticky leaf has a sticky surface.
-
-User: what is a cedar (8195)
-Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
-User: what is a cedar (8195)
-Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
-
-User: what is a tree twig (7737)
-Joe: A tree twig is a small branch of a tree.
-User: what is a tree twig (7737)
-Joe: A tree twig is a small branch of a tree.
-
-User: what is a buttress root (8442)
-Joe: A buttress root is a large root that supports a tropical tree.
-User: what is a buttress root (8442)
-Joe: A buttress root is a large root that supports a tropical tree.
-
-User: what is a gymnosperm (1213)
-Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
-User: what is a gymnosperm (1213)
-Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
-
-User: what is a mycorrhiza (9614)
-Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
-User: what is a mycorrhiza (9614)
-Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
-
-User: what is a tree crown (1535)
-Joe: A tree crown is the upper part of a tree with branches and leaves.
-User: what is a tree crown (1535)
-Joe: A tree crown is the upper part of a tree with branches and leaves.
-
-User: what is a birch (4293)
-Joe: A birch is a tree with distinctive white bark.
-User: what is a birch (4293)
-Joe: A birch is a tree with distinctive white bark.
-
-User: what is a tree heartwood (3959)
-Joe: A tree heartwood is the inner, darker wood of a tree trunk.
-User: what is a tree heartwood (3959)
-Joe: A tree heartwood is the inner, darker wood of a tree trunk.
-
-User: what is a windthrow (6225)
-Joe: A windthrow is a tree knocked down by wind.
-User: what is a windthrow (6225)
-Joe: A windthrow is a tree knocked down by wind.
-
-User: what is a plantation (7052)
-Joe: A plantation is a large area of land used for growing crops or trees.
-User: what is a plantation (7052)
-Joe: A plantation is a large area of land used for growing crops or trees.
-
-User: what is a arboretum (4844)
-Joe: An arboretum is a botanical garden for studying trees.
-User: what is a arboretum (4844)
-Joe: An arboretum is a botanical garden for studying trees.
-
-User: what is a tree simple leaf (6315)
-Joe: A tree simple leaf has a single blade on one petiole.
-User: what is a tree simple leaf (6315)
-Joe: A tree simple leaf has a single blade on one petiole.
-
-User: what is a tree leaflet (4233)
-Joe: A tree leaflet is a small division of a compound leaf.
-User: what is a tree leaflet (4233)
-Joe: A tree leaflet is a small division of a compound leaf.
-
-User: what is a savanna (926)
-Joe: A savanna is a grassland with scattered trees.
-User: what is a savanna (926)
-Joe: A savanna is a grassland with scattered trees.
-
-User: what is a tree xylem (4223)
-Joe: A tree xylem transports water and minerals from roots to leaves.
-User: what is a tree xylem (4223)
-Joe: A tree xylem transports water and minerals from roots to leaves.
-
-User: what is a hardwood (7061)
-Joe: A hardwood tree produces dense wood.
-User: what is a hardwood (7061)
-Joe: A hardwood tree produces dense wood.
-
-User: what is a bonsai (829)
-Joe: A bonsai is a small tree cultivated in a pot.
-User: what is a bonsai (829)
-Joe: A bonsai is a small tree cultivated in a pot.
-
-User: what is a needleleaf (8360)
-Joe: A needleleaf tree has narrow, needle-like leaves.
-User: what is a needleleaf (8360)
-Joe: A needleleaf tree has narrow, needle-like leaves.
-
-User: what is a softwood (2512)
-Joe: A softwood tree produces lighter wood.
-User: what is a softwood (2512)
-Joe: A softwood tree produces lighter wood.
-
-User: what is an angiosperm (434)
-Joe: An angiosperm is a plant that produces flowers and fruits.
-User: what is an angiosperm (434)
-Joe: An angiosperm is a plant that produces flowers and fruits.
-
-User: what is a tree bud (7348)
-Joe: A tree bud is an undeveloped or embryonic shoot.
-User: what is a tree bud (7348)
-Joe: A tree bud is an undeveloped or embryonic shoot.
-
-User: what is a tree glossy leaf (8791)
-Joe: A tree glossy leaf has a shiny surface.
-User: what is a tree glossy leaf (8791)
-Joe: A tree glossy leaf has a shiny surface.
-
-User: what is a tree toothed leaf (8138)
-Joe: A tree toothed leaf has small teeth along its edge.
-User: what is a tree toothed leaf (8138)
-Joe: A tree toothed leaf has small teeth along its edge.
-
-User: what is a tree compound leaf (5274)
-Joe: A tree compound leaf has multiple leaflets on one petiole.
-User: what is a tree compound leaf (5274)
-Joe: A tree compound leaf has multiple leaflets on one petiole.
-
-User: what is a forest (3131)
-Joe: A forest is a large area covered chiefly with trees and undergrowth.
-User: what is a forest (3131)
-Joe: A forest is a large area covered chiefly with trees and undergrowth.
-
-User: what is a tree canopy (8816)
-Joe: A tree canopy is the layer of branches and leaves above the ground.
-User: what is a tree canopy (8816)
-Joe: A tree canopy is the layer of branches and leaves above the ground.
-
-User: what is a deciduous tree (1726)
-Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
-User: what is a deciduous tree (1726)
-Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
-
-User: what is a tree gap (111)
-Joe: A tree gap is an opening in the forest canopy.
-User: what is a tree gap (111)
-Joe: A tree gap is an opening in the forest canopy.
-
-User: what is a tree pod (5296)
-Joe: A tree pod is a dry fruit that splits open when ripe.
-User: what is a tree pod (5296)
-Joe: A tree pod is a dry fruit that splits open when ripe.
 
 User: What exactly is a vascular cambium?
 Joe: The vascular cambium is a single layer of dividing cells that sits between the xylem and the phloem. Each division puts one new wood cell to the inside and one new inner-bark cell to the outside, so it is the only tissue that makes the trunk wider.
@@ -13346,643 +11780,5 @@ Joe: Mopane, Colophospermum mopane, has doubly compound leaves that fold togethe
 User: What is camphor and which tree produces it?
 Joe: Camphor is a white, crystalline compound from the camphor laurel, Cinnamomum camphora. It is used in traditional medicine and as a plasticizer in celluloid.
 
-User: what is a cambium (8554)
-Joe: A cambium is the thin layer of cells that produces new wood and bark.
-User: what is a cambium (8554)
-Joe: A cambium is the thin layer of cells that produces new wood and bark.
-
-User: what is a tree cone (4905)
+User: what is a tree cone
 Joe: A tree cone is the reproductive structure of a conifer.
-User: what is a tree cone (4905)
-Joe: A tree cone is the reproductive structure of a conifer.
-
-User: what is a tree matte leaf (7232)
-Joe: A tree matte leaf has a dull surface.
-User: what is a tree matte leaf (7232)
-Joe: A tree matte leaf has a dull surface.
-
-User: what is an orchard (2243)
-Joe: An orchard is a planned site for growing fruit trees.
-User: what is an orchard (2243)
-Joe: An orchard is a planned site for growing fruit trees.
-
-User: what is a tree toothed leaf (468)
-Joe: A tree toothed leaf has small teeth along its edge.
-User: what is a tree toothed leaf (468)
-Joe: A tree toothed leaf has small teeth along its edge.
-
-User: what is a tree edge (240)
-Joe: A tree edge is the boundary of a forest or tree stand.
-User: what is a tree edge (240)
-Joe: A tree edge is the boundary of a forest or tree stand.
-
-User: what is an elm (3126)
-Joe: An elm is a deciduous tree with broad, serrated leaves.
-User: what is an elm (3126)
-Joe: An elm is a deciduous tree with broad, serrated leaves.
-
-User: what is a tree pollen (3080)
-Joe: A tree pollen is a fine powder produced by trees for reproduction.
-User: what is a tree pollen (3080)
-Joe: A tree pollen is a fine powder produced by trees for reproduction.
-
-User: what is a pneumatophore (5583)
-Joe: A pneumatophore is a root that grows upward through waterlogged soil.
-User: what is a pneumatophore (5583)
-Joe: A pneumatophore is a root that grows upward through waterlogged soil.
-
-User: what is a tree scale leaf (4621)
-Joe: A tree scale leaf is a small, flat leaf of a conifer.
-User: what is a tree scale leaf (4621)
-Joe: A tree scale leaf is a small, flat leaf of a conifer.
-
-User: what is a tree pod (6596)
-Joe: A tree pod is a dry fruit that splits open when ripe.
-User: what is a tree pod (6596)
-Joe: A tree pod is a dry fruit that splits open when ripe.
-
-User: what is a bog (2884)
-Joe: A bog is a wetland with acidic, peat-filled soil.
-User: what is a bog (2884)
-Joe: A bog is a wetland with acidic, peat-filled soil.
-
-User: what is a tree seed (7891)
-Joe: A tree seed is a fertilized ovule containing an embryo.
-User: what is a tree seed (7891)
-Joe: A tree seed is a fertilized ovule containing an embryo.
-
-User: what is a tree floor (4268)
-Joe: A tree floor is the ground level of a forest.
-User: what is a tree floor (4268)
-Joe: A tree floor is the ground level of a forest.
-
-User: what is a tree branch (2146)
-Joe: A tree branch is a limb extending from the trunk.
-User: what is a tree branch (2146)
-Joe: A tree branch is a limb extending from the trunk.
-
-User: what is a tree berry (4774)
-Joe: A tree berry is a small, juicy fruit.
-User: what is a tree berry (4774)
-Joe: A tree berry is a small, juicy fruit.
-
-User: what is an oak (3640)
-Joe: An oak is a deciduous tree known for its strong wood and longevity.
-User: what is an oak (3640)
-Joe: An oak is a deciduous tree known for its strong wood and longevity.
-
-User: what is a tree snag (9082)
-Joe: A tree snag is a dead standing tree.
-User: what is a tree snag (9082)
-Joe: A tree snag is a dead standing tree.
-
-User: what is a heartwood (3222)
-Joe: A heartwood is the inner, darker wood of a tree.
-User: what is a heartwood (3222)
-Joe: A heartwood is the inner, darker wood of a tree.
-
-User: what is a prairie (3528)
-Joe: A prairie is a large open area of grassland.
-User: what is a prairie (3528)
-Joe: A prairie is a large open area of grassland.
-
-User: what is a vase shaped tree (6425)
-Joe: A vase shaped tree has a vase-like silhouette.
-User: what is a vase shaped tree (6425)
-Joe: A vase shaped tree has a vase-like silhouette.
-
-User: what is a tree fall (4794)
-Joe: A tree fall is when a tree falls over.
-User: what is a tree fall (4794)
-Joe: A tree fall is when a tree falls over.
-
-User: what is a dwarf tree (1610)
-Joe: A dwarf tree is a small-sized tree.
-User: what is a dwarf tree (1610)
-Joe: A dwarf tree is a small-sized tree.
-
-User: what is a botanical garden (2245)
-Joe: A botanical garden is a garden dedicated to the collection and study of plants.
-User: what is a botanical garden (2245)
-Joe: A botanical garden is a garden dedicated to the collection and study of plants.
-
-User: what is a wetland (6917)
-Joe: A wetland is a land area where water covers the soil.
-User: what is a wetland (6917)
-Joe: A wetland is a land area where water covers the soil.
-
-User: what is a tree sapwood (5000)
-Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
-User: what is a tree sapwood (5000)
-Joe: A tree sapwood is the outer, lighter wood of a tree trunk.
-
-User: what is a tree sap (1386)
-Joe: A tree sap is the fluid that circulates through the tree's vascular system.
-User: what is a tree sap (1386)
-Joe: A tree sap is the fluid that circulates through the tree's vascular system.
-
-User: what is a spreading tree (6034)
-Joe: A spreading tree has a wide, open canopy.
-User: what is a spreading tree (6034)
-Joe: A spreading tree has a wide, open canopy.
-
-User: what is a round topped tree (2006)
-Joe: A round topped tree has a rounded canopy.
-User: what is a round topped tree (2006)
-Joe: A round topped tree has a rounded canopy.
-
-User: what is a weeping tree (5511)
-Joe: A weeping tree has branches that hang downward.
-User: what is a weeping tree (5511)
-Joe: A weeping tree has branches that hang downward.
-
-User: what is a jungle (5083)
-Joe: A jungle is a dense tropical rainforest.
-User: what is a jungle (5083)
-Joe: A jungle is a dense tropical rainforest.
-
-User: what is a tree capsule (6727)
-Joe: A tree capsule is a dry fruit that splits into sections.
-User: what is a tree capsule (6727)
-Joe: A tree capsule is a dry fruit that splits into sections.
-
-User: what is a prop root (7791)
-Joe: A prop root supports a tree from the ground.
-User: what is a prop root (7791)
-Joe: A prop root supports a tree from the ground.
-
-User: what is a moss (6627)
-Joe: A moss is a small, non-vascular plant.
-User: what is a moss (6627)
-Joe: A moss is a small, non-vascular plant.
-
-User: what is a woodland (1052)
-Joe: A woodland is a forested area with open ground.
-User: what is a woodland (1052)
-Joe: A woodland is a forested area with open ground.
-
-User: what is a tree resin (4377)
-Joe: A tree resin is a sticky substance produced by certain trees.
-User: what is a tree resin (4377)
-Joe: A tree resin is a sticky substance produced by certain trees.
-
-User: what is a tree cambium (5131)
-Joe: A tree cambium is the thin layer of cells between bark and wood.
-User: what is a tree cambium (5131)
-Joe: A tree cambium is the thin layer of cells between bark and wood.
-
-User: what is a tree hairy leaf (4764)
-Joe: A tree hairy leaf has fine hairs on its surface.
-User: what is a tree hairy leaf (4764)
-Joe: A tree hairy leaf has fine hairs on its surface.
-
-User: what is a hardwood (6021)
-Joe: A hardwood tree produces dense wood.
-User: what is a hardwood (6021)
-Joe: A hardwood tree produces dense wood.
-
-User: what is a shade tree (2517)
-Joe: A shade tree provides shade.
-User: what is a shade tree (2517)
-Joe: A shade tree provides shade.
-
-User: what is a adventitious root (7790)
-Joe: An adventitious root grows from an unusual place.
-User: what is a adventitious root (7790)
-Joe: An adventitious root grows from an unusual place.
-
-User: what is a beech (3128)
-Joe: A beech is a tree with smooth gray bark and pointed buds.
-User: what is a beech (3128)
-Joe: A beech is a tree with smooth gray bark and pointed buds.
-
-User: what is a thicket (5880)
-Joe: A thicket is a dense growth of shrubs or small trees.
-User: what is a thicket (5880)
-Joe: A thicket is a dense growth of shrubs or small trees.
-
-User: what is a irregular tree (1877)
-Joe: An irregular tree has an uneven shape.
-User: what is a irregular tree (1877)
-Joe: An irregular tree has an uneven shape.
-
-User: what is a taiga (8725)
-Joe: A taiga is a vast biome of coniferous forests.
-User: what is a taiga (8725)
-Joe: A taiga is a vast biome of coniferous forests.
-
-User: what is a copse (3279)
-Joe: A copse is a small group of trees.
-User: what is a copse (3279)
-Joe: A copse is a small group of trees.
-
-User: what is a mangrove (5616)
-Joe: A mangrove is a tree that grows in coastal saline water.
-User: what is a mangrove (5616)
-Joe: A mangrove is a tree that grows in coastal saline water.
-
-User: what is a tree frond (6442)
-Joe: A tree frond is a large, divided leaf of a palm or fern.
-User: what is a tree frond (6442)
-Joe: A tree frond is a large, divided leaf of a palm or fern.
-
-User: what is a meadow (1319)
-Joe: A meadow is a field habitat with grasses and wildflowers.
-User: what is a meadow (1319)
-Joe: A meadow is a field habitat with grasses and wildflowers.
-
-User: what is a tree ring (2700)
-Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
-User: what is a tree ring (2700)
-Joe: A tree ring is a ring of growth visible in a cross-section of a tree trunk.
-
-User: what is a rhizome (6235)
-Joe: A rhizome is a horizontal underground stem.
-User: what is a rhizome (6235)
-Joe: A rhizome is a horizontal underground stem.
-
-User: what is a parasite (1299)
-Joe: A parasite is an organism that lives on or in another organism.
-User: what is a parasite (1299)
-Joe: A parasite is an organism that lives on or in another organism.
-
-User: what is a tree trunk (6435)
-Joe: A tree trunk is the main stem of a tree.
-User: what is a tree trunk (6435)
-Joe: A tree trunk is the main stem of a tree.
-
-User: what is a root system (2066)
-Joe: A root system is the part of a tree beneath the soil.
-User: what is a root system (2066)
-Joe: A root system is the part of a tree beneath the soil.
-
-User: what is a sapwood (363)
-Joe: A sapwood is the outer, lighter wood of a tree.
-User: what is a sapwood (363)
-Joe: A sapwood is the outer, lighter wood of a tree.
-
-User: what is a tree understory (2317)
-Joe: A tree understory is the layer of vegetation beneath the canopy.
-User: what is a tree understory (2317)
-Joe: A tree understory is the layer of vegetation beneath the canopy.
-
-User: what is a marsh (7173)
-Joe: A marsh is a wetland that is not forested.
-User: what is a marsh (7173)
-Joe: A marsh is a wetland that is not forested.
-
-User: what is a tree smooth leaf (3329)
-Joe: A tree smooth leaf has a smooth surface.
-User: what is a tree smooth leaf (3329)
-Joe: A tree smooth leaf has a smooth surface.
-
-User: what is a tree spore (2828)
-Joe: A tree spore is a reproductive unit of a fern or moss.
-User: what is a tree spore (2828)
-Joe: A tree spore is a reproductive unit of a fern or moss.
-
-User: what is a tree needle (9560)
-Joe: A tree needle is a narrow, pointed leaf of a conifer.
-User: what is a tree needle (9560)
-Joe: A tree needle is a narrow, pointed leaf of a conifer.
-
-User: what is a fruiting tree (696)
-Joe: A fruiting tree produces edible fruits.
-User: what is a fruiting tree (696)
-Joe: A fruiting tree produces edible fruits.
-
-User: what is a tree root (1234)
-Joe: A tree root anchors the tree and absorbs water and nutrients.
-User: what is a tree root (1234)
-Joe: A tree root anchors the tree and absorbs water and nutrients.
-
-User: what is a pine (1561)
-Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
-User: what is a pine (1561)
-Joe: A pine is a coniferous tree with needle-like leaves and pinecones.
-
-User: what is a fen (9125)
-Joe: A fen is a type of peatland fed by mineral-rich water.
-User: what is a fen (9125)
-Joe: A fen is a type of peatland fed by mineral-rich water.
-
-User: what is a grassland (147)
-Joe: A grassland is a biome where the vegetation is dominated by grasses.
-User: what is a grassland (147)
-Joe: A grassland is a biome where the vegetation is dominated by grasses.
-
-User: what is a fibrous root (7139)
-Joe: A fibrous root is a thin, branching root system.
-User: what is a fibrous root (7139)
-Joe: A fibrous root is a thin, branching root system.
-
-User: what is a grove (4448)
-Joe: A grove is a small group of trees.
-User: what is a grove (4448)
-Joe: A grove is a small group of trees.
-
-User: what is a tree rough leaf (7490)
-Joe: A tree rough leaf has a textured surface.
-User: what is a tree rough leaf (7490)
-Joe: A tree rough leaf has a textured surface.
-
-User: what is a conifer (7967)
-Joe: A conifer is a tree that bears cones and stays green year-round.
-User: what is a conifer (7967)
-Joe: A conifer is a tree that bears cones and stays green year-round.
-
-User: what is a lichen (1426)
-Joe: A lichen is a symbiotic organism of a fungus and algae.
-User: what is a lichen (1426)
-Joe: A lichen is a symbiotic organism of a fungus and algae.
-
-User: what is a swamp (4052)
-Joe: A swamp is a wetland that is forested.
-User: what is a swamp (4052)
-Joe: A swamp is a wetland that is forested.
-
-User: what is a tundra (2881)
-Joe: A tundra is a biome where tree growth is hindered by low temperatures.
-User: what is a tundra (2881)
-Joe: A tundra is a biome where tree growth is hindered by low temperatures.
-
-User: what is a tree waxy leaf (6973)
-Joe: A tree waxy leaf has a waxy coating.
-User: what is a tree waxy leaf (6973)
-Joe: A tree waxy leaf has a waxy coating.
-
-User: what is a tree bud (3578)
-Joe: A tree bud is an undeveloped or embryonic shoot.
-User: what is a tree bud (3578)
-Joe: A tree bud is an undeveloped or embryonic shoot.
-
-User: what is a poplar (7939)
-Joe: A poplar is a fast-growing tree with flattened petioles.
-User: what is a poplar (7939)
-Joe: A poplar is a fast-growing tree with flattened petioles.
-
-User: what is a pyramidal tree (573)
-Joe: A pyramidal tree has a pyramid-like shape.
-User: what is a pyramidal tree (573)
-Joe: A pyramidal tree has a pyramid-like shape.
-
-User: what is a tree flower (9719)
-Joe: A tree flower is the reproductive structure of a flowering tree.
-User: what is a tree flower (9719)
-Joe: A tree flower is the reproductive structure of a flowering tree.
-
-User: what is a lateral root (6748)
-Joe: A lateral root grows out from the main root.
-User: what is a lateral root (6748)
-Joe: A lateral root grows out from the main root.
-
-User: what is a fungus (3378)
-Joe: A fungus is a organism that decomposes organic matter.
-User: what is a fungus (3378)
-Joe: A fungus is a organism that decomposes organic matter.
-
-User: what is a tree stump (8433)
-Joe: A tree stump is the remaining part of a tree after it has been cut down.
-User: what is a tree stump (8433)
-Joe: A tree stump is the remaining part of a tree after it has been cut down.
-
-User: what is a tree sticky leaf (6845)
-Joe: A tree sticky leaf has a sticky surface.
-User: what is a tree sticky leaf (6845)
-Joe: A tree sticky leaf has a sticky surface.
-
-User: what is a growth ring (9331)
-Joe: A growth ring is a layer of wood added during a growing season.
-User: what is a growth ring (9331)
-Joe: A growth ring is a layer of wood added during a growing season.
-
-User: what is a steppe (3790)
-Joe: A steppe is a treeless grassland.
-User: what is a steppe (3790)
-Joe: A steppe is a treeless grassland.
-
-User: what is a tree entire leaf (4887)
-Joe: A tree entire leaf has a smooth, uninterrupted edge.
-User: what is a tree entire leaf (4887)
-Joe: A tree entire leaf has a smooth, uninterrupted edge.
-
-User: what is a tree bark (8638)
-Joe: A tree bark is the protective outer layer of a tree trunk.
-User: what is a tree bark (8638)
-Joe: A tree bark is the protective outer layer of a tree trunk.
-
-User: what is a tree fruit (3472)
-Joe: A tree fruit is a mature ovary containing seeds.
-User: what is a tree fruit (3472)
-Joe: A tree fruit is a mature ovary containing seeds.
-
-User: what is a tree phloem (7342)
-Joe: A tree phloem transports sugars throughout the tree.
-User: what is a tree phloem (7342)
-Joe: A tree phloem transports sugars throughout the tree.
-
-User: what is an ash (3127)
-Joe: An ash is a tree with compound leaves and smooth bark.
-User: what is an ash (3127)
-Joe: An ash is a tree with compound leaves and smooth bark.
-
-User: what is a ornamental tree (5768)
-Joe: An ornamental tree is grown for decorative purposes.
-User: what is a ornamental tree (5768)
-Joe: An ornamental tree is grown for decorative purposes.
-
-User: what is a tap root (1937)
-Joe: A tap root is a thick central root from which smaller roots grow.
-User: what is a tap root (1937)
-Joe: A tap root is a thick central root from which smaller roots grow.
-
-User: what is a tree heartwood (6299)
-Joe: A tree heartwood is the inner, darker wood of a tree trunk.
-User: what is a tree heartwood (6299)
-Joe: A tree heartwood is the inner, darker wood of a tree trunk.
-
-User: what is a rainforest (9764)
-Joe: A rainforest is a forest in a region of high rainfall.
-User: what is a rainforest (9764)
-Joe: A rainforest is a forest in a region of high rainfall.
-
-User: what is a willow (6244)
-Joe: A willow is a tree with long, drooping branches.
-User: what is a willow (6244)
-Joe: A willow is a tree with long, drooping branches.
-
-User: what is a maple (4292)
-Joe: A maple is a tree with lobed leaves known for its sap.
-User: what is a maple (4292)
-Joe: A maple is a tree with lobed leaves known for its sap.
-
-User: what is a birch (783)
-Joe: A birch is a tree with distinctive white bark.
-User: what is a birch (783)
-Joe: A birch is a tree with distinctive white bark.
-
-User: what is a tree latex (218)
-Joe: A tree latex is a milky fluid found in certain trees.
-User: what is a tree latex (218)
-Joe: A tree latex is a milky fluid found in certain trees.
-
-User: what is a tree (9110)
-Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
-User: what is a tree (9110)
-Joe: A tree is a perennial plant with an elongated stem or trunk supporting branches and leaves.
-
-User: what is a broadleaf (3289)
-Joe: A broadleaf tree has wide, flat leaves.
-User: what is a broadleaf (3289)
-Joe: A broadleaf tree has wide, flat leaves.
-
-User: what is a tree crown (7385)
-Joe: A tree crown is the upper part of a tree with branches and leaves.
-User: what is a tree crown (7385)
-Joe: A tree crown is the upper part of a tree with branches and leaves.
-
-User: what is a flowering tree (8105)
-Joe: A flowering tree produces blossoms.
-User: what is a flowering tree (8105)
-Joe: A flowering tree produces blossoms.
-
-User: what is a cedar (9495)
-Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
-User: what is a cedar (9495)
-Joe: A cedar is a fragrant coniferous tree with scale-like leaves.
-
-User: what is a gymnosperm (8883)
-Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
-User: what is a gymnosperm (8883)
-Joe: A gymnosperm is a plant whose seeds are not enclosed in a fruit.
-
-User: what is a tree twig (4097)
-Joe: A tree twig is a small branch of a tree.
-User: what is a tree twig (4097)
-Joe: A tree twig is a small branch of a tree.
-
-User: what is a arboretum (3024)
-Joe: An arboretum is a botanical garden for studying trees.
-User: what is a arboretum (3024)
-Joe: An arboretum is a botanical garden for studying trees.
-
-User: what is a mycorrhiza (1164)
-Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
-User: what is a mycorrhiza (1164)
-Joe: A mycorrhiza is a symbiotic association between a fungus and tree roots.
-
-User: what is a columnar tree (5902)
-Joe: A columnar tree has a narrow, column-like shape.
-User: what is a columnar tree (5902)
-Joe: A columnar tree has a narrow, column-like shape.
-
-User: what is a buttress root (9612)
-Joe: A buttress root is a large root that supports a tropical tree.
-User: what is a buttress root (9612)
-Joe: A buttress root is a large root that supports a tropical tree.
-
-User: what is a softwood (9402)
-Joe: A softwood tree produces lighter wood.
-User: what is a softwood (9402)
-Joe: A softwood tree produces lighter wood.
-
-User: what is a evergreen (8098)
-Joe: An evergreen tree retains its leaves throughout the year.
-User: what is a evergreen (8098)
-Joe: An evergreen tree retains its leaves throughout the year.
-
-User: what is an angiosperm (4334)
-Joe: An angiosperm is a plant that produces flowers and fruits.
-User: what is an angiosperm (4334)
-Joe: An angiosperm is a plant that produces flowers and fruits.
-
-User: what is a windthrow (7785)
-Joe: A windthrow is a tree knocked down by wind.
-User: what is a windthrow (7785)
-Joe: A windthrow is a tree knocked down by wind.
-
-User: what is a needleleaf (9270)
-Joe: A needleleaf tree has narrow, needle-like leaves.
-User: what is a needleleaf (9270)
-Joe: A needleleaf tree has narrow, needle-like leaves.
-
-User: what is a tree xylem (5523)
-Joe: A tree xylem transports water and minerals from roots to leaves.
-User: what is a tree xylem (5523)
-Joe: A tree xylem transports water and minerals from roots to leaves.
-
-User: what is a tree leaflet (3583)
-Joe: A tree leaflet is a small division of a compound leaf.
-User: what is a tree leaflet (3583)
-Joe: A tree leaflet is a small division of a compound leaf.
-
-User: what is a tree nut (743)
-Joe: A tree nut is a hard-shelled fruit containing a seed.
-User: what is a tree nut (743)
-Joe: A tree nut is a hard-shelled fruit containing a seed.
-
-User: what is a bonsai (2519)
-Joe: A bonsai is a small tree cultivated in a pot.
-User: what is a bonsai (2519)
-Joe: A bonsai is a small tree cultivated in a pot.
-
-User: what is a plantation (1462)
-Joe: A plantation is a large area of land used for growing crops or trees.
-User: what is a plantation (1462)
-Joe: A plantation is a large area of land used for growing crops or trees.
-
-User: what is a tree canopy (3746)
-Joe: A tree canopy is the layer of branches and leaves above the ground.
-User: what is a tree canopy (3746)
-Joe: A tree canopy is the layer of branches and leaves above the ground.
-
-User: what is a tree lobed leaf (1506)
-Joe: A tree lobed leaf has rounded or pointed projections along the edge.
-User: what is a tree lobed leaf (1506)
-Joe: A tree lobed leaf has rounded or pointed projections along the edge.
-
-User: what is a stand (8091)
-Joe: A stand is a group of trees growing together.
-User: what is a stand (8091)
-Joe: A stand is a group of trees growing together.
-
-User: what is a savanna (8596)
-Joe: A savanna is a grassland with scattered trees.
-User: what is a savanna (8596)
-Joe: A savanna is a grassland with scattered trees.
-
-User: what is a tree nectar (8279)
-Joe: A tree nectar is a sweet liquid produced by flowers.
-User: what is a tree nectar (8279)
-Joe: A tree nectar is a sweet liquid produced by flowers.
-
-User: what is a tree simple leaf (8265)
-Joe: A tree simple leaf has a single blade on one petiole.
-User: what is a tree simple leaf (8265)
-Joe: A tree simple leaf has a single blade on one petiole.
-
-User: what is a forest (4301)
-Joe: A forest is a large area covered chiefly with trees and undergrowth.
-User: what is a forest (4301)
-Joe: A forest is a large area covered chiefly with trees and undergrowth.
-
-User: what is a tree glossy leaf (5411)
-Joe: A tree glossy leaf has a shiny surface.
-User: what is a tree glossy leaf (5411)
-Joe: A tree glossy leaf has a shiny surface.
-
-User: what is a tree compound leaf (7224)
-Joe: A tree compound leaf has multiple leaflets on one petiole.
-User: what is a tree compound leaf (7224)
-Joe: A tree compound leaf has multiple leaflets on one petiole.
-
-User: what is a deciduous tree (3286)
-Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
-User: what is a deciduous tree (3286)
-Joe: A deciduous tree sheds its leaves annually in response to seasonal changes.
-
-User: what is a tree leaf (1499)
-Joe: A tree leaf is the flat organ where photosynthesis takes place.
-User: what is a tree leaf (1499)
-Joe: A tree leaf is the flat organ where photosynthesis takes place.
-
