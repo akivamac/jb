@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Interactive, terminal-sized training dashboard for JoeBrain."""
+"""JoeBrain terminal dashboard with overflow-safe responsive curses layout."""
 
 import argparse
 import curses
@@ -70,7 +70,7 @@ class Api:
 
 class TrainingUI:
     REFRESH_SECONDS = 3
-    CARD_HEIGHT = 9
+    CARD_HEIGHT = 8
     GAP = 1
 
     def __init__(self, screen, api):
@@ -113,26 +113,37 @@ class TrainingUI:
 
     def dimensions(self):
         height, width = self.screen.getmaxyx()
+        if height < 18:
+            height = max(12, height)
         cols = 4 if width >= 132 else 3 if width >= 98 else 2 if width >= 64 else 1
-        card_width = max(24, (width - 2 - self.GAP * (cols - 1)) // cols)
-        if cols > 1 and card_width < 27:
-            cols -= 1
-            card_width = max(24, (width - 2 - self.GAP * (cols - 1)) // cols)
-        grid_top, footer_top = 4, max(10, height - 5)
+        usable_width = max(1, width - 2)
+        card_width = max(20, (usable_width - self.GAP * (cols - 1)) // cols)
+        if card_width > usable_width:
+            cols, card_width = 1, usable_width
+        grid_top = 4
+        footer_top = max(grid_top + 1, height - 5)
         rows = max(1, (footer_top - grid_top) // self.CARD_HEIGHT)
-        return height, width, cols, card_width, rows, rows * cols, grid_top, footer_top
+        page_size = cols * rows
+        return height, width, cols, card_width, rows, page_size, grid_top, footer_top
 
     def safe_add(self, y, x, text, attr=None):
         height, width = self.screen.getmaxyx()
         if y < 0 or y >= height or x < 0 or x >= width:
             return
-        text = str(text)[:max(0, width - x - (1 if y == height - 1 else 0))]
+        available = width - x
+        if y == height - 1:
+            available -= 1
+        text = str(text)[:max(0, available)]
         if not text:
             return
         try:
             self.screen.addstr(y, x, text, attr or 0)
         except curses.error:
             pass
+
+    def fit(self, text, width):
+        text = str(text)
+        return text if len(text) <= width else text[:max(0, width - 1)] + "…"
 
     def refresh_selected_history(self):
         experts = self.data.get("experts", [])
@@ -159,8 +170,7 @@ class TrainingUI:
         except ApiError as exc:
             self.message = f"Connection error: {exc}"
 
-    @staticmethod
-    def sparkline(values, width):
+    def sparkline(self, values, width):
         if not values:
             return ""
         levels = "▁▂▃▄▅▆▇█"
@@ -171,7 +181,7 @@ class TrainingUI:
         return "".join(levels[min(7, int((value - low) / (high - low) * 7))] for value in recent)
 
     def draw_box(self, y, x, height, width, title, selected=False):
-        if height < 3 or width < 4:
+        if height < 3 or width < 4 or y < 0 or x < 0:
             return
         attr = curses.A_BOLD | (curses.color_pair(6) if selected else curses.color_pair(1))
         try:
@@ -179,18 +189,19 @@ class TrainingUI:
             win.attron(attr)
             win.box()
             win.attroff(attr)
-            label = f" {title} "[:max(1, width - 4)]
-            win.addstr(0, 2, label, attr | (curses.A_REVERSE if selected else 0))
+            label = self.fit(title, max(1, width - 4))
+            win.addstr(0, 2, f" {label} ", attr | (curses.A_REVERSE if selected else 0))
         except curses.error:
             pass
 
     def draw_button(self, y, x, label, action, number=None):
         text = f"[{number}] {label}" if number is not None else f"[ {label} ]"
-        width = self.screen.getmaxyx()[1]
-        if x >= width:
+        height, width = self.screen.getmaxyx()
+        if y < 0 or y >= height or x >= width:
             return x
-        attr = curses.A_BOLD | curses.color_pair(2)
-        self.safe_add(y, x, text, attr)
+        if x + len(text) >= width:
+            text = text[:max(0, width - x - 1)]
+        self.safe_add(y, x, text, curses.A_BOLD | curses.color_pair(2))
         self.button_hits.append((y, x, min(width, x + len(text)), action))
         return x + len(text) + 1
 
@@ -204,17 +215,18 @@ class TrainingUI:
         self.offset = current_page * page_size
 
         try:
-            self.screen.addstr(0, 0, " JOEBRAIN / TRAINING DASHBOARD ".ljust(width),
-                               curses.color_pair(2) | curses.A_BOLD)
+            title = " JOEBRAIN / TRAINING DASHBOARD "
+            self.screen.addstr(0, 0, title[:width].ljust(width), curses.color_pair(2) | curses.A_BOLD)
         except curses.error:
             pass
+
         res = self.data.get("resources") or {}
-        summary = (f"Running {self.data.get('running_count', 0)}/{self.data.get('max_concurrent', '?')}"
-                   f"  Queue {len(self.data.get('queue', []))}"
+        summary = (f"Run {self.data.get('running_count', 0)}/{self.data.get('max_concurrent', '?')}"
+                   f"  Q {len(self.data.get('queue', []))}"
                    f"  Steps {self.data.get('total_step', 0):,}"
-                   f"  Avg loss {self.data.get('avg_loss') if self.data.get('avg_loss') is not None else '—'}")
+                   f"  Avg {self.data.get('avg_loss') if self.data.get('avg_loss') is not None else '—'}")
         if res:
-            summary += f"  CPU {res.get('cpu', '—')}%  RAM {res.get('ram', '—')}%"
+            summary += f"  CPU {res.get('cpu', '—')}%"
         self.safe_add(1, 1, summary, curses.A_BOLD)
         seconds = max(0, self.REFRESH_SECONDS - int(time.monotonic() - self.last_refresh))
         self.safe_add(2, 1, f"EXPERTS  •  refresh {seconds}s", curses.A_BOLD)
@@ -223,70 +235,73 @@ class TrainingUI:
             row, col = divmod(i, cols)
             y = grid_top + row * self.CARD_HEIGHT
             x = 1 + col * (card_w + self.GAP)
-            if y + self.CARD_HEIGHT > footer_top:
+            if y + self.CARD_HEIGHT > footer_top or x + card_w > width:
                 break
             idx = self.offset + i
             selected = idx == self.selected
             name = expert.get("name", "?")
-            self.draw_box(y, x, self.CARD_HEIGHT, card_w, name, selected)
-            inner = card_w - 4
+            actual_card_width = min(card_w, width - x - 1)
+            self.draw_box(y, x, self.CARD_HEIGHT, actual_card_width, name, selected)
+            inner = actual_card_width - 4
             status = self.status(expert)
-            status_attr = {"RUNNING": curses.color_pair(3) | curses.A_BOLD,
-                           "PAUSED": curses.color_pair(4) | curses.A_BOLD}.get(status)
-            if status.startswith("QUEUED"):
-                status_attr = curses.color_pair(6) | curses.A_BOLD
+            attr = None
+            if status == "RUNNING":
+                attr = curses.color_pair(3) | curses.A_BOLD
+            elif status == "PAUSED":
+                attr = curses.color_pair(4) | curses.A_BOLD
+            elif status.startswith("QUEUED"):
+                attr = curses.color_pair(6) | curses.A_BOLD
             step, target = expert.get("step", 0), expert.get("target")
-            step_text = f"{step:,}" + (f" / {target:,}" if isinstance(target, int) else "")
-            loss, speed = expert.get("loss"), expert.get("speed")
+            step_text = f"{step:,}" + (f"/{target:,}" if isinstance(target, int) else "")
+            loss = expert.get("loss")
             loss_text = f"{loss:.4f}" if isinstance(loss, (int, float)) else "—"
-            speed_text = f"{speed:.2f} steps/s" if isinstance(speed, (int, float)) else "—"
+            speed = expert.get("speed")
+            speed_text = f"{speed:.2f}/s" if isinstance(speed, (int, float)) else "—"
             eta = expert.get("eta") or {}
             extra = f"ETA {eta['hours']}h" if eta.get("hours") is not None else f"Goal {expert.get('loss_goal', '—')}"
-            self.safe_add(y + 1, x + 2, f"Status  {status}"[:inner], status_attr)
-            self.safe_add(y + 2, x + 2, f"Steps   {step_text}"[:inner])
-            self.safe_add(y + 3, x + 2, f"Loss    {loss_text}"[:inner])
-            self.safe_add(y + 4, x + 2, f"Speed   {speed_text}"[:inner])
-            self.safe_add(y + 5, x + 2, extra[:inner])
+            self.safe_add(y + 1, x + 2, self.fit(f"Status {status}", inner), attr)
+            self.safe_add(y + 2, x + 2, self.fit(f"Steps {step_text}", inner))
+            self.safe_add(y + 3, x + 2, self.fit(f"Loss {loss_text}", inner))
+            self.safe_add(y + 4, x + 2, self.fit(f"Speed {speed_text}", inner))
+            self.safe_add(y + 5, x + 2, self.fit(extra, inner))
             if selected:
                 losses = [point.get("loss") for point in self.history if isinstance(point.get("loss"), (int, float))]
-                graph = self.sparkline(losses, inner)
-                self.safe_add(y + 6, x + 2, ("Loss  " + graph)[:inner], curses.color_pair(3) | curses.A_BOLD)
-                self.safe_add(y + 7, x + 2, "Selected", curses.A_REVERSE)
+                graph = self.sparkline(losses, inner - 5)
+                self.safe_add(y + 6, x + 2, self.fit("Loss " + graph, inner), curses.A_BOLD)
 
         if not experts:
             self.safe_add(grid_top + 1, 2, "No enabled experts found.")
         if pages > 1:
-            self.safe_add(footer_top - 1, 1, f"Page {current_page + 1}/{pages}  ←/→ page")
+            self.safe_add(footer_top - 1, 1, f"Page {current_page + 1}/{pages}")
 
         self.button_hits = []
-        x, y = 1, height - 4
         chosen = experts[self.selected] if experts else {}
         start_label = "Stop" if chosen.get("running") else "Remove" if chosen.get("queued") else "Start"
         pause_label = "Resume" if chosen.get("paused") else "Pause"
-        for number, (label, action) in enumerate(((start_label, "start_stop"), (pause_label, "pause"),
-                                                  ("Logs", "logs"), ("Chat", "chat"),
-                                                  ("Suite", "suite"), ("Queue all", "queue_all")), 1):
+        x = 1
+        y = height - 4
+        actions = ((start_label, "start_stop"), (pause_label, "pause"), ("Logs", "logs"),
+                   ("Chat", "chat"), ("Suite", "suite"), ("Queue", "queue_all"))
+        for number, (label, action) in enumerate(actions, 1):
             x = self.draw_button(y, x, label, action, number)
-        self.safe_add(height - 3, 1,
-                      "Keys: 1 start/stop 2 pause 3 logs 4 chat 5 suite 6 queue-all",
-                      curses.A_DIM)
-        self.safe_add(height - 2, 1,
-                      "Arrows select/page  Enter start/stop  R refresh  Mouse: click cards/buttons  Q quit",
-                      curses.A_DIM)
+            if x >= width:
+                break
+        self.safe_add(height - 3, 1, "1 Start/Stop  2 Pause  3 Logs  4 Chat  5 Suite  6 Queue")
+        self.safe_add(height - 2, 1, "Arrows select/page  Enter  R refresh  Mouse  Q quit", curses.A_DIM)
         if self.message:
             attr = curses.color_pair(5) if "error" in self.message.lower() else curses.A_NORMAL
-            self.safe_add(height - 1, 1, self.message[:width - 2], attr)
+            self.safe_add(height - 1, 1, self.message, attr)
         self.screen.refresh()
 
     def prompt(self, label, default=""):
         height, width = self.screen.getmaxyx()
-        y = height - 1
+        y = max(0, height - 1)
         try:
             curses.echo()
             curses.curs_set(1)
             self.screen.move(y, 0)
             self.screen.clrtoeol()
-            self.screen.addstr(y, 0, f"{label}: ")
+            self.screen.addstr(y, 0, self.fit(label + ": ", width - 2))
             value = self.screen.getstr(y, min(width - 1, len(label) + 2), max(1, width - len(label) - 3))
             return value.decode("utf-8", errors="replace").strip() or default
         except curses.error:
@@ -306,8 +321,9 @@ class TrainingUI:
         start = 0
         while True:
             self.screen.erase()
-            self.safe_add(0, 0, f" {title} ".ljust(width), curses.color_pair(2) | curses.A_BOLD)
-            for i, line in enumerate(wrapped[start:start + height - 3], 1):
+            self.safe_add(0, 0, self.fit(title, width - 1), curses.color_pair(2) | curses.A_BOLD)
+            visible = max(1, height - 3)
+            for i, line in enumerate(wrapped[start:start + visible], 1):
                 self.safe_add(i, 2, line)
             self.safe_add(height - 1, 1, "↑/↓ scroll  Enter/Q return", curses.A_DIM)
             self.screen.refresh()
@@ -315,7 +331,7 @@ class TrainingUI:
             if key in (ord("q"), ord("Q"), 10, 13, 27):
                 return
             if key in (curses.KEY_DOWN, ord("j")):
-                start = min(max(0, len(wrapped) - (height - 3)), start + 1)
+                start = min(max(0, len(wrapped) - visible), start + 1)
             elif key in (curses.KEY_UP, ord("k")):
                 start = max(0, start - 1)
 
@@ -389,7 +405,9 @@ class TrainingUI:
         height, width, cols, card_w, rows, page_size, top, _ = self.dimensions()
         if top <= y < top + rows * self.CARD_HEIGHT:
             row = (y - top) // self.CARD_HEIGHT
-            col = min(cols - 1, max(0, (x - 1) // (card_w + self.GAP)))
+            col = 0
+            if cols > 1:
+                col = min(cols - 1, max(0, (x - 1) // (card_w + self.GAP)))
             index = self.offset + row * cols + col
             if index < len(self.data.get("experts", [])):
                 self.selected = index
@@ -402,7 +420,7 @@ class TrainingUI:
             self.draw()
             key = self.screen.getch()
             experts = self.data.get("experts", [])
-            _height, _width, cols, _card_w, _rows, page_size, _top, _footer = self.dimensions()
+            _h, _w, cols, _cw, _rows, page_size, _top, _footer = self.dimensions()
             if key == -1:
                 if time.monotonic() - self.last_refresh >= self.REFRESH_SECONDS:
                     self.refresh_data()
@@ -425,24 +443,19 @@ class TrainingUI:
                 self.selected = max(0, self.selected - page_size)
                 self.history_name = None
                 self.refresh_selected_history()
-            elif key in (10, 13, curses.KEY_ENTER):
+            elif key in (10, 13, curses.KEY_ENTER, ord("1")):
                 self.run_action("start_stop")
-            elif key in (ord("1"), ord("P"), ord("p")):
-                if key == ord("1"):
-                    self.run_action("start_stop")
-                else:
-                    self.run_action("pause")
-            elif key in (ord("2"),):
+            elif key in (ord("2"), ord("p"), ord("P")):
                 self.run_action("pause")
-            elif key in (ord("3"), ord("L"), ord("l")):
+            elif key in (ord("3"), ord("l"), ord("L")):
                 self.run_action("logs")
-            elif key in (ord("4"), ord("C"), ord("c")):
+            elif key in (ord("4"), ord("c"), ord("C")):
                 self.run_action("chat")
-            elif key in (ord("5"), ord("S"), ord("s")):
+            elif key in (ord("5"), ord("s"), ord("S")):
                 self.run_action("suite")
-            elif key in (ord("6"), ord("A"), ord("a")):
+            elif key in (ord("6"), ord("a"), ord("A")):
                 self.run_action("queue_all")
-            elif key in (ord("R"), ord("r"), curses.KEY_RESIZE):
+            elif key in (ord("r"), ord("R"), curses.KEY_RESIZE):
                 self.refresh_data()
             elif key == curses.KEY_MOUSE:
                 try:
@@ -458,9 +471,9 @@ def main_curses(screen, url):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Interactive JoeBrain training dashboard")
+    parser = argparse.ArgumentParser(description="Responsive JoeBrain training dashboard")
     parser.add_argument("--url", default=DEFAULT_URL, help="training API URL")
-    parser.add_argument("--once", action="store_true", help="print a one-time plain status list")
+    parser.add_argument("--once", action="store_true", help="print one-time plain status")
     args = parser.parse_args()
     if args.once:
         try:
@@ -474,7 +487,7 @@ def main():
     try:
         curses.wrapper(main_curses, args.url)
     except curses.error as exc:
-        print(f"Could not start terminal UI: {exc}. Try a larger interactive terminal.", file=sys.stderr)
+        print(f"Could not start terminal UI: {exc}. Use a larger interactive terminal.", file=sys.stderr)
         return 1
     return 0
 

@@ -1,6 +1,6 @@
 # Training Dashboard CLI
 
-The CLI is a keyboard- and mouse-operable terminal dashboard with bordered expert cards and live footer buttons. It uses the existing `training_server.py` API, so training continues to run through the same server and safeguards as the HTML dashboard.
+The CLI is an overflow-safe curses dashboard with bordered expert cards, live status, a selected-card loss sparkline, and real footer controls.
 
 ## Launch
 
@@ -9,20 +9,17 @@ python3 training_server.py
 python3 training_cli.py
 ```
 
-Use `--url URL` or `TRAINING_URL` for another API server. Use `--once` for a plain, one-time status list. The terminal UI redraws after resize and polls status every three seconds.
+Use `--url URL` or `TRAINING_URL` for another API server. Use `--once` for plain status output. The layout recalculates from the actual terminal width and height after resize.
 
 ## Controls
 
-- Arrow keys or `j` / `k`: move between expert cards.
-- `Enter` or `[1]`: start, stop, or dequeue the selected expert.
-- `[2]` or `P`: pause/resume training.
-- `[3]` or `L`: view the selected run's events and recent loss, learning-rate, and speed points.
-- `[4]` or `C`: run test chat and open the streamed reply.
-- `[5]` or `S`: run the test suite and open a scrollable result view.
-- `[6]` or `A`: queue all experts needing training.
-- Left/right or `N` / `B`: page through cards.
-- `R`: refresh immediately.
-- Mouse: select a card or click any footer button.
-- `Q` or Esc: quit.
+- `1` or Enter: start, stop, or dequeue the selected expert.
+- `2` or P: pause/resume selected training.
+- `3` or L: show run log/status data.
+- `4` or C: test chat.
+- `5` or S: test suite.
+- `6` or A: queue-all.
+- Arrow keys: select and page.
+- R: refresh; Q/Esc: quit; mouse: select cards or click buttons.
 
-The selected card includes an ASCII loss sparkline loaded from the existing `/api/logdata` endpoint. Wide screens use up to four columns, medium screens use three or two, and narrow screens use one. Browser-only hover effects and graphical charts are omitted, while the card layout, status, resources, live refresh, and training controls remain available. The full HTML dashboard stays at `http://localhost:9091`.
+On narrow terminals the layout falls back to one column and truncates names, summaries, and button labels instead of writing beyond the screen. On short terminals only the highest available card rows are rendered. The full HTML dashboard remains available at `http://localhost:9091`.
