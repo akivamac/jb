@@ -1,49 +1,32 @@
 # Training Dashboard CLI
 
-`training_cli.py` is an interactive terminal UI for the JoeBrain training dashboard. It uses the existing `/api/experts`, `/api/train`, `/api/stop`, `/api/dequeue`, and `/api/pause` endpoints, so training behavior remains in `training_server.py`.
+The CLI is a keyboard- and mouse-operable terminal UI with bordered expert cards and action buttons. It uses the existing `training_server.py` API, so training remains managed by the same server as the HTML dashboard.
 
 ## Launch
-
-Start the training server:
 
 ```bash
 python3 training_server.py
 ```
 
-Launch the interactive dashboard in another terminal:
+In another terminal:
 
 ```bash
 python3 training_cli.py
 ```
 
-A terminal of at least 40 columns and 20 rows is recommended. The interface redraws automatically when the terminal is resized.
+Use `--url URL` or `TRAINING_URL` to select another API server. Run `python3 training_cli.py --once` for a plain one-time status list. A full-screen interactive terminal is required; a wider/taller terminal displays more cards at once. The UI recalculates its grid after terminal resize.
 
-Set another server URL with `--url` or `TRAINING_URL`:
+## Dashboard controls
 
-```bash
-python3 training_cli.py --url http://localhost:9091
-```
+- Arrow keys or `j` / `k`: select an expert (up/down moves by grid row).
+- `Enter`: start an idle expert (prompts for steps), stop a running expert, or dequeue a queued expert.
+- `P`: pause or resume the selected running expert.
+- `L`: display the selected expert's current-run events and recent loss/step log data.
+- `C`: prompt for a test-chat question and show Joe's streamed answer.
+- `S`: run the selected expert's test suite and browse results.
+- `A`: queue all experts that need training.
+- Left/right or `N` / `B`: move by a visible page of cards.
+- `R`: refresh now; `Q` or Esc: quit.
+- Mouse: click a card to select it and click a footer action button to activate it.
 
-For automation or terminals without curses support:
-
-```bash
-python3 training_cli.py --once
-python3 training_cli.py --plain
-```
-
-## Controls
-
-- Arrow keys or `j` / `k` — select an expert.
-- `Enter` — start an idle expert, stop a running expert, or remove a queued expert.
-- `P` — pause or resume the selected expert.
-- `N` / Right arrow — next card page.
-- `B` / Left arrow — previous card page.
-- `R` — refresh immediately.
-- `L` — show the live-log command for the selected expert.
-- `C` — enter a test-chat message for the selected expert.
-- `S` — show the test-suite command for the selected expert.
-- `Q` or `Esc` — exit.
-
-Idle, running, paused, and queued states are shown in real bordered cards. Wide screens use up to four columns, medium screens use three or two, and narrow screens use one. Resource totals, queue size, running count, total steps, and average loss remain visible in the header.
-
-The browser dashboard remains available at `http://localhost:9091` and needs no hover-only interactions to operate the existing training server.
+The responsive layout uses up to four columns on wide terminals, fewer columns on smaller terminals, and pages cards that do not fit. The browser-only hover effects and graphical charts are omitted; the interface keeps the dashboard's light background, card layout, live status refresh, and training controls. Use the HTML dashboard at `http://localhost:9091` for the full graphical loss charts.
