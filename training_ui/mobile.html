@@ -1,142 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f6f8fa">
-<title>JoeBrain Training Dashboard — Mobile</title>
-<style>
-  * { box-sizing: border-box; }
-  html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #f6f8fa; }
-  #dashboard { display: block; width: 100%; height: 100%; border: 0; }
-  #load-error { display: none; padding: 24px; font: 16px/1.5 system-ui, sans-serif; color: #1f2328; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f8fa">
+  <title>JoeBrain Training — Mobile</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    #dashboard { display: block; width: 100%; height: 100%; border: 0; }
+    #load-error {
+      display: none;
+      margin: 24px;
+      color: #cf222e;
+      font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+  </style>
 </head>
 <body>
-<iframe id="dashboard" src="index.html" title="JoeBrain Training Dashboard"></iframe>
-<div id="load-error">The dashboard could not be opened. Open this page from the same training dashboard server as <code>index.html</code>.</div>
-<script>
-(() => {
-  const frame = document.getElementById('dashboard');
-  const mobileStyles = `
-    @media (max-width: 760px) {
-      html { -webkit-text-size-adjust: 100%; }
-      body { overflow-x: hidden; }
-      button, select, input { font: inherit; }
-      button, select { min-height: 42px; }
-      .header {
-        position: sticky; top: 0; flex-wrap: wrap; gap: 8px;
-        padding: 10px 12px; min-height: 0;
+  <iframe id="dashboard" src="index.html" title="JoeBrain Training Dashboard"></iframe>
+  <div id="load-error">This mobile view could not load <code>index.html</code>. Serve both files from the training dashboard server.</div>
+  <script>
+    (async () => {
+      const frame = document.getElementById('dashboard');
+      const error = document.getElementById('load-error');
+      try {
+        const response = await fetch('mobile.css', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Could not load mobile.css');
+        const css = await response.text();
+        frame.addEventListener('load', () => {
+          try {
+            const doc = frame.contentDocument;
+            if (!doc?.head) throw new Error('Dashboard unavailable');
+            let style = doc.getElementById('joebrain-mobile-css');
+            if (!style) {
+              style = doc.createElement('style');
+              style.id = 'joebrain-mobile-css';
+              doc.head.appendChild(style);
+            }
+            style.textContent = css;
+            doc.documentElement.style.minHeight = '100%';
+            doc.body.style.minHeight = '100%';
+          } catch (_) {
+            frame.style.display = 'none';
+            error.style.display = 'block';
+          }
+        });
+      } catch (_) {
+        frame.style.display = 'none';
+        error.style.display = 'block';
       }
-      .header h1 { font-size: 15px; gap: 6px; }
-      .header h1 svg { width: 18px; height: 18px; flex: 0 0 auto; }
-      .header-right { gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
-      .header-right a { margin-right: 0 !important; }
-      .header-right .btn { width: auto; min-height: 38px; padding: 7px 9px; font-size: 12px; }
-      .port-badge { display: none; }
-      .summary {
-        position: sticky; top: var(--h-hdr, 58px); gap: 8px 14px;
-        padding: 9px 12px; font-size: 12px;
-      }
-      .summary .stat { gap: 5px; }
-      .concurrent-control { width: 100%; margin-left: 0; justify-content: space-between; }
-      .concurrent-input { min-height: 38px; }
-      .main { padding: 14px 12px; }
-      .main .section-label { position: static; padding: 2px 0 8px; margin-bottom: 8px; }
-      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 20px; }
-      .card { min-width: 0; padding: 12px; }
-      .card:hover { transform: none; }
-      .card-name { font-size: 15px; overflow-wrap: anywhere; }
-      .card-header { align-items: flex-start; gap: 6px; margin-bottom: 10px; }
-      .badge { flex: 0 0 auto; font-size: 10px; }
-      .stat-row { font-size: 12px; gap: 8px; }
-      .stat-value { text-align: right; }
-      .card-actions { gap: 6px; }
-      .card-actions .btn { min-height: 42px; padding: 8px 6px; }
-      .btn-mini { min-width: 42px; min-height: 42px; }
-      .search-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
-      .search-row input[type="search"] { min-width: 0; width: 100%; min-height: 42px; }
-      .search-row select { min-height: 42px; }
-      .search-row .count { grid-column: 1 / -1; margin-left: 0; }
-      .queue-bar { padding: 10px 12px; margin-bottom: 16px; }
-      .queue-all-btn { min-height: 36px; margin: 6px 0 0; }
-      .fleet-body { padding: 4px 10px 12px; }
-      #fleet-chart { height: 160px; }
-      .detail-topbar { top: 0; gap: 8px; padding: 10px 12px; flex-wrap: wrap; }
-      .btn-back { min-height: 42px; }
-      .detail-content { padding: 14px 12px; }
-      .detail-page .detail-section-label { position: static; }
-      .detail-stats { grid-template-columns: 1fr; gap: 7px; }
-      .detail-stat { min-height: 42px; gap: 8px; padding: 8px 10px; }
-      .detail-stat .value { overflow-wrap: anywhere; text-align: right; }
-      .detail-actions { flex-wrap: wrap; }
-      .detail-actions .btn { min-height: 42px; }
-      .test-chat-input { flex-wrap: wrap; }
-      .test-chat-input input { min-width: 100%; min-height: 44px; font-size: 16px; }
-      .test-chat-input button { flex: 1; min-height: 42px; }
-      .test-chat-controls { gap: 10px; }
-      .test-chat-controls .ctl { flex-wrap: wrap; }
-      .loss-chart-wrap { padding: 8px; overflow: hidden; }
-      .chart-win-btn { min-height: 36px; padding: 5px 8px; }
-      .chart-windows { flex-wrap: wrap; }
-      .panel { padding: 10px 12px; }
-      #toast-container { top: 8px; right: 8px; left: 8px; }
-      .toast { min-width: 0; max-width: none; }
-      .modal-overlay { align-items: flex-end; padding: 0; }
-      .modal {
-        width: 100%; max-height: 92dvh; overflow-y: auto;
-        padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
-        border-radius: 16px 16px 0 0;
-      }
-      .modal-actions { position: sticky; bottom: -18px; padding: 10px 0 0; background: var(--surface); }
-      .modal-actions .btn { min-height: 44px; }
-      .form-group input { min-height: 44px; font-size: 16px; }
-      .form-row-split { gap: 10px; }
-      .preset-row { flex-wrap: wrap; }
-      .preset-row .preset-label { width: 100%; }
-      .preset-btn { min-height: 40px; }
-      .popup { width: calc(100vw - 24px) !important; max-height: 88dvh !important; padding: 14px; }
-      .history-item { align-items: flex-start; flex-wrap: wrap; }
-      .history-item > span:last-child { min-width: 100%; overflow-wrap: anywhere; }
-      #skill-table { font-size: 11px; }
-      #skill-table th, #skill-table td { padding: 5px 4px; }
-      .merge-block { overflow-wrap: anywhere; }
-      .mb-actions button { min-height: 38px; }
-      .fleet-tools { flex-wrap: wrap; }
-    }
-    @media (max-width: 420px) {
-      .header { align-items: flex-start; }
-      .header h1 { max-width: 100%; }
-      .header-right { width: 100%; justify-content: flex-start; }
-      .header-right .btn { flex: 1; }
-      .cards { grid-template-columns: 1fr; }
-      .summary { gap: 7px 12px; }
-      .detail-topbar h2 { font-size: 16px !important; }
-    }
-    @media (hover: none) {
-      .card:hover { border-color: var(--border); box-shadow: var(--shadow); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
-    }
-  `;
-
-  frame.addEventListener('load', () => {
-    try {
-      const doc = frame.contentDocument;
-      if (!doc || !doc.head) throw new Error('Dashboard document unavailable');
-      const style = doc.createElement('style');
-      style.id = 'joebrain-mobile-styles';
-      style.textContent = mobileStyles;
-      doc.head.appendChild(style);
-      doc.documentElement.style.height = '100%';
-      doc.body.style.minHeight = '100%';
-    } catch (error) {
-      frame.style.display = 'none';
-      document.getElementById('load-error').style.display = 'block';
-    }
-  });
-})();
-</script>
+    })();
+  </script>
 </body>
 </html>
