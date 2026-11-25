@@ -1,10 +1,10 @@
 # Training Dashboard CLI
 
-`training_cli.py` is a small terminal client for the existing JoeBrain training dashboard. It uses the same local HTTP API as `training_ui/index.html`, so training behavior and state remain in `training_server.py`; the CLI only changes how you view and control them.
+`training_cli.py` is a responsive terminal version of the JoeBrain training dashboard. It shares the dashboard's HTTP API and server-side training behavior with `training_ui/index.html`, while presenting status and controls as a compact, white-background card layout. Terminal width and height are detected each time the dashboard renders: wide terminals show multiple expert cards per row; narrow terminals switch to one column, and `next` / `prev` browse cards that do not fit vertically.
 
 ## Start
 
-From the repository root, start the dashboard server in one terminal:
+Start the API server from the repository root:
 
 ```bash
 python3 training_server.py
@@ -16,31 +16,18 @@ In another terminal, launch the CLI:
 python3 training_cli.py
 ```
 
-It connects to `http://localhost:9091` by default and needs no additional Python packages. To use a different server URL:
-
-```bash
-python3 training_cli.py --url http://localhost:9091
-```
-
-Set `TRAINING_URL` to change the default URL. Add `--plain` to disable ANSI styling or `--once` to print the dashboard and exit.
+It connects to `http://localhost:9091` by default and needs no additional Python packages. Configure another server with `--url URL` or `TRAINING_URL`. Use `--plain` or `NO_COLOR` to disable ANSI white-background styling; `--once` prints a single status view and exits.
 
 ## Commands
 
-- `refresh` — reload training status and summary.
-- `watch [seconds]` — refresh repeatedly (default: 5 seconds; press Ctrl-C to stop).
-- `start NAME [steps]` — start or queue training for an enabled expert; defaults to 1000 steps and resumes by default.
-- `stop NAME` — stop training or remove the expert from the queue.
-- `queue-all` — queue experts needing more training, following the server's existing criteria.
-- `dequeue NAME` — remove a queued expert.
-- `pause NAME` / `resume NAME` — pause or resume one running expert.
-- `pause-all` / `resume-all` — pause or resume the active training fleet.
-- `logs NAME` — stream that expert's training log; press Ctrl-C to return.
-- `chat NAME QUESTION` — send a test prompt to one expert and stream Joe's response.
-- `suite NAME` — run and display an expert's test suite.
+- `refresh` — reload status.
+- `watch [seconds]` — refresh repeatedly (default 5 seconds; Ctrl-C stops).
+- `next` / `prev` — page through expert cards when the screen is too small to show them all.
+- `start NAME [steps]`, `stop NAME`, `queue-all`, `dequeue NAME` — manage training and queue.
+- `pause NAME` / `resume NAME`, `pause-all` / `resume-all` — pause or resume training.
+- `logs NAME` — stream training logs (Ctrl-C returns).
+- `chat NAME QUESTION` — stream a test-chat response.
+- `suite NAME` — run an expert test suite.
 - `help` / `quit` — show commands or exit.
 
-The CLI also refreshes the dashboard after control commands. Training remains managed by `training_server.py`, including its queue limit, subprocess lifecycle, and existing safeguards.
-
-## Appearance and limitations
-
-The display is a compact, card-like text layout with fleet totals and per-expert status, steps, loss, and speed. On terminals that support ANSI colors it uses black text on a white background; `--plain` or `NO_COLOR` disables styling. There are no hover effects, animations, or graphical loss charts. The browser dashboard remains available and unchanged at `http://localhost:9091`.
+Training remains managed by `training_server.py`, including queue limits, subprocess lifecycle, and existing safeguards. The CLI omits browser-only hover effects and graphical charts; open `http://localhost:9091` for the full HTML dashboard.
