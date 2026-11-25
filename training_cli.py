@@ -70,7 +70,6 @@ class TrainingUI:
     REFRESH_SECONDS = 3
     CARD_HEIGHT = 8
     GAP = 1
-    BUTTONS = ("Start / Stop", "Pause", "Logs", "Test chat", "Test suite", "Queue all")
 
     def __init__(self, screen, api):
         self.screen = screen
@@ -110,7 +109,6 @@ class TrainingUI:
 
     def dimensions(self):
         height, width = self.screen.getmaxyx()
-        # Reserve a header and footer; never assume a particular terminal size.
         cols = 4 if width >= 132 else 3 if width >= 98 else 2 if width >= 64 else 1
         card_width = max(24, (width - 2 - self.GAP * (cols - 1)) // cols)
         if cols > 1 and card_width < 27:
@@ -125,7 +123,6 @@ class TrainingUI:
         if y < 0 or y >= height or x < 0 or x >= width:
             return
         text = str(text)
-        # Avoid writing into the terminal's bottom-right cell, which raises in curses.
         text = text[:max(0, width - x - (1 if y == height - 1 else 0))]
         if not text:
             return
@@ -180,7 +177,7 @@ class TrainingUI:
 
         try:
             self.screen.addstr(0, 0, " JOEBRAIN  /  TRAINING DASHBOARD ".ljust(width),
-                              curses.color_pair(2) | curses.A_BOLD)
+                               curses.color_pair(2) | curses.A_BOLD)
         except curses.error:
             pass
         res = self.data.get("resources") or {}
@@ -243,7 +240,7 @@ class TrainingUI:
                       "↑/↓ select  Enter start/stop  P pause  L logs  C chat  S suite  ←/→ page  R refresh  Q quit",
                       curses.A_DIM)
         if self.message:
-            attr = curses.color_pair(5) if self.message.startswith("Error") else curses.A_NORMAL
+            attr = curses.color_pair(5) if self.message.startswith("Error") or self.message.startswith("Connection") else curses.A_NORMAL
             self.safe_add(height - 1, 1, self.message, attr)
         self.screen.refresh()
 
